@@ -1,0 +1,62 @@
+{
+  "problem_id": "68fdc3b1fe535fa0f4f1d8a6",
+  "filter_criteria": {
+    "min_token_overlap": 80,
+    "min_similarity_percent": 60
+  },
+  "total_cases_found": 3,
+  "total_cases_filtered": 3,
+  "cases": [
+    {
+      "case_id": 1,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68fdc3b1fe535fa0f4f1d8a6/f95120b3a38a461085ef58cb/sub_1761582420125_mam5glsrw.py",
+        "similarity_percent": 100.0,
+        "full_code": "t = int(input())\nfor i in range(t):\n    n = int(input())\n    if n % 3 == 0:\n        print(\"YES\")\n    else:\n        print(\"NO\")",
+        "highlighted_code": "<span class='highlight-red'>t = int(input())\nfor i in range(t):\n    n = int(input())\n    if n % 3 == 0:\n        print(&#34;YES&#34;)\n    else:\n        print(&#34;NO&#34;</span>)"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68fdc3b1fe535fa0f4f1d8a6/30d29d0969994c929976d40a/sub_1761466303974_llg42m7wt.py",
+        "similarity_percent": 100.0,
+        "full_code": "t=int(input())\nfor _ in range(t):\n    n=int(input())\n    if n%3==0:\n        print(\"YES\")\n    else:\n        print(\"NO\")",
+        "highlighted_code": "<span class='highlight-green'>t=int(input())\nfor _ in range(t):\n    n=int(input())\n    if n%3==0:\n        print(&#34;YES&#34;)\n    else:\n        print(&#34;NO&#34;</span>)"
+      },
+      "token_overlap": 76,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 2,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68fdc3b1fe535fa0f4f1d8a6/f95120b3a38a461085ef58cb/sub_1761582420125_mam5glsrw.py",
+        "similarity_percent": 100.0,
+        "full_code": "t = int(input())\nfor i in range(t):\n    n = int(input())\n    if n % 3 == 0:\n        print(\"YES\")\n    else:\n        print(\"NO\")",
+        "highlighted_code": "<span class='highlight-red'>t = int(input())\nfor i in range(t):\n    n = int(input())\n    if n % 3 == 0:\n        print(&#34;YES&#34;)\n    else:\n        print(&#34;NO&#34;</span>)"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68fdc3b1fe535fa0f4f1d8a6/d82933fea814463eb5b029d1/sub_1761615519760_5d5svgseu.py",
+        "similarity_percent": 100.0,
+        "full_code": "t = int(input())\nfor i in range(t):\n    n = int(input())\n    if n % 3 == 0:\n        print(\"YES\")\n    else:\n        print(\"NO\")",
+        "highlighted_code": "<span class='highlight-green'>t = int(input())\nfor i in range(t):\n    n = int(input())\n    if n % 3 == 0:\n        print(&#34;YES&#34;)\n    else:\n        print(&#34;NO&#34;</span>)"
+      },
+      "token_overlap": 76,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 3,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68fdc3b1fe535fa0f4f1d8a6/30d29d0969994c929976d40a/sub_1761466303974_llg42m7wt.py",
+        "similarity_percent": 100.0,
+        "full_code": "t=int(input())\nfor _ in range(t):\n    n=int(input())\n    if n%3==0:\n        print(\"YES\")\n    else:\n        print(\"NO\")",
+        "highlighted_code": "<span class='highlight-red'>t=int(input())\nfor _ in range(t):\n    n=int(input())\n    if n%3==0:\n        print(&#34;YES&#34;)\n    else:\n        print(&#34;NO&#34;</span>)"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68fdc3b1fe535fa0f4f1d8a6/d82933fea814463eb5b029d1/sub_1761615519760_5d5svgseu.py",
+        "similarity_percent": 100.0,
+        "full_code": "t = int(input())\nfor i in range(t):\n    n = int(input())\n    if n % 3 == 0:\n        print(\"YES\")\n    else:\n        print(\"NO\")",
+        "highlighted_code": "<span class='highlight-green'>t = int(input())\nfor i in range(t):\n    n = int(input())\n    if n % 3 == 0:\n        print(&#34;YES&#34;)\n    else:\n        print(&#34;NO&#34;</span>)"
+      },
+      "token_overlap": 76,
+      "max_similarity_percent": 100.0
+    }
+  ]
+}

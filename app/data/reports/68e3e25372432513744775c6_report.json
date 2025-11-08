@@ -1,0 +1,2408 @@
+{
+  "problem_id": "68e3e25372432513744775c6",
+  "filter_criteria": {
+    "min_token_overlap": 80,
+    "min_similarity_percent": 60
+  },
+  "total_cases_found": 156,
+  "total_cases_filtered": 141,
+  "cases": [
+    {
+      "case_id": 1,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e25372432513744775c6/295d4dcad1f74d87afc29fce/sub_1761640453002_inwu1r3gs.py",
+        "similarity_percent": 100.0,
+        "full_code": "n=int(input())\nfor i in range(1,11):\n    print(f\"{n} x {i} = {n*i}\")",
+        "highlighted_code": "<span class='highlight-red'>n=int(input())\nfor i in range(1,11):\n    print(f&#34;{n} x {i} = {n</span>*i}&#34;)"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e25372432513744775c6/43fad0845ec445b4aecbfd8c/sub_1761643580895_2sjdv8iey.py",
+        "similarity_percent": 100.0,
+        "full_code": "n=int(input())\nfor i in range(1,11):\n    print(f\"{n} x {i} = {n*i}\")",
+        "highlighted_code": "<span class='highlight-green'>n=int(input())\nfor i in range(1,11):\n    print(f&#34;{n} x {i} = {n</span>*i}&#34;)"
+      },
+      "token_overlap": 50,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 2,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e25372432513744775c6/295d4dcad1f74d87afc29fce/sub_1761640453002_inwu1r3gs.py",
+        "similarity_percent": 100.0,
+        "full_code": "n=int(input())\nfor i in range(1,11):\n    print(f\"{n} x {i} = {n*i}\")",
+        "highlighted_code": "<span class='highlight-red'>n=int(input())\nfor i in range(1,11):\n    print(f&#34;{n} x {i} = {n</span>*i}&#34;)"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e25372432513744775c6/c747e87428cc4dbab36bd7aa/sub_1761644037045_eer4ipbq5.py",
+        "similarity_percent": 100.0,
+        "full_code": "n = int(input())\nfor i in range(1, 11):\n    print(f'{n} x {i} = {n*i}')",
+        "highlighted_code": "<span class='highlight-green'>n = int(input())\nfor i in range(1, 11):\n    print(f&#39;{n} x {i} = {n</span>*i}&#39;)"
+      },
+      "token_overlap": 50,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 3,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e25372432513744775c6/295d4dcad1f74d87afc29fce/sub_1761640453002_inwu1r3gs.py",
+        "similarity_percent": 100.0,
+        "full_code": "n=int(input())\nfor i in range(1,11):\n    print(f\"{n} x {i} = {n*i}\")",
+        "highlighted_code": "<span class='highlight-red'>n=int(input())\nfor i in range(1,11):\n    print(f&#34;{n} x {i} = {n</span>*i}&#34;)"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e25372432513744775c6/30d29d0969994c929976d40a/sub_1761651295463_yzg4czw7e.py",
+        "similarity_percent": 100.0,
+        "full_code": "n=int(input())\nfor i in range(1,11):\n    print(f\"{n} x {i} = {n*i}\")",
+        "highlighted_code": "<span class='highlight-green'>n=int(input())\nfor i in range(1,11):\n    print(f&#34;{n} x {i} = {n</span>*i}&#34;)"
+      },
+      "token_overlap": 50,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 4,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e25372432513744775c6/295d4dcad1f74d87afc29fce/sub_1761640453002_inwu1r3gs.py",
+        "similarity_percent": 100.0,
+        "full_code": "n=int(input())\nfor i in range(1,11):\n    print(f\"{n} x {i} = {n*i}\")",
+        "highlighted_code": "<span class='highlight-red'>n=int(input())\nfor i in range(1,11):\n    print(f&#34;{n} x {i} = {n</span>*i}&#34;)"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e25372432513744775c6/e7457b81cbe24d9d9bdac641/sub_1761669779416_q1i899ok8.py",
+        "similarity_percent": 100.0,
+        "full_code": "n=int(input())\nfor i in range(1,11):\n    print(f\"{n} x {i} = {n * i}\")",
+        "highlighted_code": "<span class='highlight-green'>n=int(input())\nfor i in range(1,11):\n    print(f&#34;{n} x {i} = {n </span>* i}&#34;)"
+      },
+      "token_overlap": 50,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 5,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e25372432513744775c6/4619643a0f2348b6b74a746a/sub_1761640585865_r4b5zrth9.py",
+        "similarity_percent": 100.0,
+        "full_code": "n = int(input())\nfor i in range(1,11):\n    tich = i * n\n    print(n,\"x\",i,\"=\",tich)",
+        "highlighted_code": "<span class='highlight-red'>n = int(input())\nfor i in range(1,11):\n    tich = i * n\n    print(n,&#34;x&#34;,i,&#34;=&#34;</span>,tich)"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e25372432513744775c6/f8a2bab9778140ecb46b6a60/sub_1761463003309_rvc3ldday.py",
+        "similarity_percent": 100.0,
+        "full_code": "n = int(input())\nfor i in range(1, 11):\n    h = n * i\n    print(n, 'x', i, '=', h)",
+        "highlighted_code": "<span class='highlight-green'>n = int(input())\nfor i in range(1, 11):\n    h = n * i\n    print(n, &#39;x&#39;, i, &#39;=&#39;</span>, h)"
+      },
+      "token_overlap": 54,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 6,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e25372432513744775c6/f0199fcb94bf405a8bf2ca38/sub_1761633169253_xn3pli5ut.py",
+        "similarity_percent": 100.0,
+        "full_code": "n = int(input())\nfor i in range (1,11):\n    print(n,\"x\",i,\"=\", n*i)",
+        "highlighted_code": "<span class='highlight-red'>n = int(input())\nfor i in range (1,11):\n    print(n,&#34;x&#34;,i,&#34;=&#34;, n*</span>i)"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e25372432513744775c6/2e99febeecc6490f8e7c3f87/sub_1761643211506_wj0uld111.py",
+        "similarity_percent": 100.0,
+        "full_code": "n = int(input())\nfor i in range(1,11):\n    print(n, 'x', i, '=', n*i)\n    ",
+        "highlighted_code": "<span class='highlight-green'>n = int(input())\nfor i in range(1,11):\n    print(n, &#39;x&#39;, i, &#39;=&#39;, n*</span>i)\n    "
+      },
+      "token_overlap": 52,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 7,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e25372432513744775c6/f0199fcb94bf405a8bf2ca38/sub_1761633169253_xn3pli5ut.py",
+        "similarity_percent": 100.0,
+        "full_code": "n = int(input())\nfor i in range (1,11):\n    print(n,\"x\",i,\"=\", n*i)",
+        "highlighted_code": "<span class='highlight-red'>n = int(input())\nfor i in range (1,11):\n    print(n,&#34;x&#34;,i,&#34;=&#34;, n*</span>i)"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e25372432513744775c6/cd93b2ff882a4ffa85f4518f/sub_1761547864363_qjzdoj7kp.py",
+        "similarity_percent": 100.0,
+        "full_code": "n=int(input())\nfor i in range (1,11):\n    print (n,\"x\",i,\"=\",n*i)",
+        "highlighted_code": "<span class='highlight-green'>n=int(input())\nfor i in range (1,11):\n    print (n,&#34;x&#34;,i,&#34;=&#34;,n*</span>i)"
+      },
+      "token_overlap": 52,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 8,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e25372432513744775c6/2e99febeecc6490f8e7c3f87/sub_1761643211506_wj0uld111.py",
+        "similarity_percent": 100.0,
+        "full_code": "n = int(input())\nfor i in range(1,11):\n    print(n, 'x', i, '=', n*i)\n    ",
+        "highlighted_code": "<span class='highlight-red'>n = int(input())\nfor i in range(1,11):\n    print(n, &#39;x&#39;, i, &#39;=&#39;, n*</span>i)\n    "
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e25372432513744775c6/cd93b2ff882a4ffa85f4518f/sub_1761547864363_qjzdoj7kp.py",
+        "similarity_percent": 100.0,
+        "full_code": "n=int(input())\nfor i in range (1,11):\n    print (n,\"x\",i,\"=\",n*i)",
+        "highlighted_code": "<span class='highlight-green'>n=int(input())\nfor i in range (1,11):\n    print (n,&#34;x&#34;,i,&#34;=&#34;,n*</span>i)"
+      },
+      "token_overlap": 52,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 9,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e25372432513744775c6/8045cd76adf946038858d2bc/sub_1761638366447_gzdp7ptdp.py",
+        "similarity_percent": 100.0,
+        "full_code": "n=int(input())\nfor i in range(1,11):\n    tich=n*i\n    print(f'{n} x {i} = {tich}')",
+        "highlighted_code": "<span class='highlight-red'>n=int(input())\nfor i in range(1,11):\n    tich=n*i\n    print(f&#39;{n} x {i} = {tich}</span>&#39;)"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e25372432513744775c6/f95120b3a38a461085ef58cb/sub_1761622446758_9lyk75jrg.py",
+        "similarity_percent": 100.0,
+        "full_code": "n = int(input())\nfor i in range(1, 11):\n    result = n * i\n    print(f\"{n} × {i} = {result}\")",
+        "highlighted_code": "<span class='highlight-green'>n = int(input())\nfor i in range(1, 11):\n    result = n * i\n    print(f&#34;{n} × {i} = {result}</span>&#34;)"
+      },
+      "token_overlap": 56,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 10,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e25372432513744775c6/8045cd76adf946038858d2bc/sub_1761638366447_gzdp7ptdp.py",
+        "similarity_percent": 100.0,
+        "full_code": "n=int(input())\nfor i in range(1,11):\n    tich=n*i\n    print(f'{n} x {i} = {tich}')",
+        "highlighted_code": "<span class='highlight-red'>n=int(input())\nfor i in range(1,11):\n    tich=n*i\n    print(f&#39;{n} x {i} = {tich}</span>&#39;)"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e25372432513744775c6/522be41104e24b1fa5d14200/sub_1761648000915_cgbt3bx9h.py",
+        "similarity_percent": 100.0,
+        "full_code": "n=int(input())\nfor i in range(1,11):\n    result=n*i\n    print(f\"{n} x {i} = {result}\")\n        ",
+        "highlighted_code": "<span class='highlight-green'>n=int(input())\nfor i in range(1,11):\n    result=n*i\n    print(f&#34;{n} x {i} = {result}</span>&#34;)\n        "
+      },
+      "token_overlap": 56,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 11,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e25372432513744775c6/8045cd76adf946038858d2bc/sub_1761638366447_gzdp7ptdp.py",
+        "similarity_percent": 100.0,
+        "full_code": "n=int(input())\nfor i in range(1,11):\n    tich=n*i\n    print(f'{n} x {i} = {tich}')",
+        "highlighted_code": "<span class='highlight-red'>n=int(input())\nfor i in range(1,11):\n    tich=n*i\n    print(f&#39;{n} x {i} = {tich}</span>&#39;)"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e25372432513744775c6/51bbd72f42174843b97698b4/sub_1761638699754_00fp7643l.py",
+        "similarity_percent": 100.0,
+        "full_code": "n = int(input())\nfor i in range(1, 11):\n    tich = n * i\n    print(f\"{n} x {i} = {tich}\")",
+        "highlighted_code": "<span class='highlight-green'>n = int(input())\nfor i in range(1, 11):\n    tich = n * i\n    print(f&#34;{n} x {i} = {tich}</span>&#34;)"
+      },
+      "token_overlap": 56,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 12,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e25372432513744775c6/c747e87428cc4dbab36bd7aa/sub_1761643455129_jqolagvc6.py",
+        "similarity_percent": 100.0,
+        "full_code": "n=int(input())\nif 1<=n<=10:\n    for i in range(1, 11):\n        print(f'{n} x {i} = {n*i}')\n",
+        "highlighted_code": "<span class='highlight-red'>n=int(input())\nif 1&lt;=n&lt;=10:\n    for i in range(1, 11):\n        print(f&#39;{n} x {i} = {n</span>*i}&#39;)\n"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e25372432513744775c6/c747e87428cc4dbab36bd7aa/sub_1761643234459_phu4hsisf.py",
+        "similarity_percent": 78.21,
+        "full_code": "n=int(input())\nif 1<=n<=10:\n    for i in range(1, 11):\n        print(f'{n} x {i} = {n*i}')\nelse:\n    print()",
+        "highlighted_code": "<span class='highlight-green'>n=int(input())\nif 1&lt;=n&lt;=10:\n    for i in range(1, 11):\n        print(f&#39;{n} x {i} = {n</span>*i}&#39;)\nelse:\n    print()"
+      },
+      "token_overlap": 61,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 13,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e25372432513744775c6/f95120b3a38a461085ef58cb/sub_1761622446758_9lyk75jrg.py",
+        "similarity_percent": 100.0,
+        "full_code": "n = int(input())\nfor i in range(1, 11):\n    result = n * i\n    print(f\"{n} × {i} = {result}\")",
+        "highlighted_code": "<span class='highlight-red'>n = int(input())\nfor i in range(1, 11):\n    result = n * i\n    print(f&#34;{n} × {i} = {result}</span>&#34;)"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e25372432513744775c6/522be41104e24b1fa5d14200/sub_1761648000915_cgbt3bx9h.py",
+        "similarity_percent": 100.0,
+        "full_code": "n=int(input())\nfor i in range(1,11):\n    result=n*i\n    print(f\"{n} x {i} = {result}\")\n        ",
+        "highlighted_code": "<span class='highlight-green'>n=int(input())\nfor i in range(1,11):\n    result=n*i\n    print(f&#34;{n} x {i} = {result}</span>&#34;)\n        "
+      },
+      "token_overlap": 56,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 14,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e25372432513744775c6/f95120b3a38a461085ef58cb/sub_1761622446758_9lyk75jrg.py",
+        "similarity_percent": 100.0,
+        "full_code": "n = int(input())\nfor i in range(1, 11):\n    result = n * i\n    print(f\"{n} × {i} = {result}\")",
+        "highlighted_code": "<span class='highlight-red'>n = int(input())\nfor i in range(1, 11):\n    result = n * i\n    print(f&#34;{n} × {i} = {result}</span>&#34;)"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e25372432513744775c6/51bbd72f42174843b97698b4/sub_1761638699754_00fp7643l.py",
+        "similarity_percent": 100.0,
+        "full_code": "n = int(input())\nfor i in range(1, 11):\n    tich = n * i\n    print(f\"{n} x {i} = {tich}\")",
+        "highlighted_code": "<span class='highlight-green'>n = int(input())\nfor i in range(1, 11):\n    tich = n * i\n    print(f&#34;{n} x {i} = {tich}</span>&#34;)"
+      },
+      "token_overlap": 56,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 15,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e25372432513744775c6/43fad0845ec445b4aecbfd8c/sub_1761643580895_2sjdv8iey.py",
+        "similarity_percent": 100.0,
+        "full_code": "n=int(input())\nfor i in range(1,11):\n    print(f\"{n} x {i} = {n*i}\")",
+        "highlighted_code": "<span class='highlight-red'>n=int(input())\nfor i in range(1,11):\n    print(f&#34;{n} x {i} = {n</span>*i}&#34;)"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e25372432513744775c6/c747e87428cc4dbab36bd7aa/sub_1761644037045_eer4ipbq5.py",
+        "similarity_percent": 100.0,
+        "full_code": "n = int(input())\nfor i in range(1, 11):\n    print(f'{n} x {i} = {n*i}')",
+        "highlighted_code": "<span class='highlight-green'>n = int(input())\nfor i in range(1, 11):\n    print(f&#39;{n} x {i} = {n</span>*i}&#39;)"
+      },
+      "token_overlap": 50,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 16,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e25372432513744775c6/43fad0845ec445b4aecbfd8c/sub_1761643580895_2sjdv8iey.py",
+        "similarity_percent": 100.0,
+        "full_code": "n=int(input())\nfor i in range(1,11):\n    print(f\"{n} x {i} = {n*i}\")",
+        "highlighted_code": "<span class='highlight-red'>n=int(input())\nfor i in range(1,11):\n    print(f&#34;{n} x {i} = {n</span>*i}&#34;)"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e25372432513744775c6/30d29d0969994c929976d40a/sub_1761651295463_yzg4czw7e.py",
+        "similarity_percent": 100.0,
+        "full_code": "n=int(input())\nfor i in range(1,11):\n    print(f\"{n} x {i} = {n*i}\")",
+        "highlighted_code": "<span class='highlight-green'>n=int(input())\nfor i in range(1,11):\n    print(f&#34;{n} x {i} = {n</span>*i}&#34;)"
+      },
+      "token_overlap": 50,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 17,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e25372432513744775c6/43fad0845ec445b4aecbfd8c/sub_1761643580895_2sjdv8iey.py",
+        "similarity_percent": 100.0,
+        "full_code": "n=int(input())\nfor i in range(1,11):\n    print(f\"{n} x {i} = {n*i}\")",
+        "highlighted_code": "<span class='highlight-red'>n=int(input())\nfor i in range(1,11):\n    print(f&#34;{n} x {i} = {n</span>*i}&#34;)"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e25372432513744775c6/e7457b81cbe24d9d9bdac641/sub_1761669779416_q1i899ok8.py",
+        "similarity_percent": 100.0,
+        "full_code": "n=int(input())\nfor i in range(1,11):\n    print(f\"{n} x {i} = {n * i}\")",
+        "highlighted_code": "<span class='highlight-green'>n=int(input())\nfor i in range(1,11):\n    print(f&#34;{n} x {i} = {n </span>* i}&#34;)"
+      },
+      "token_overlap": 50,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 18,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e25372432513744775c6/522be41104e24b1fa5d14200/sub_1761648000915_cgbt3bx9h.py",
+        "similarity_percent": 100.0,
+        "full_code": "n=int(input())\nfor i in range(1,11):\n    result=n*i\n    print(f\"{n} x {i} = {result}\")\n        ",
+        "highlighted_code": "<span class='highlight-red'>n=int(input())\nfor i in range(1,11):\n    result=n*i\n    print(f&#34;{n} x {i} = {result}</span>&#34;)\n        "
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e25372432513744775c6/51bbd72f42174843b97698b4/sub_1761638699754_00fp7643l.py",
+        "similarity_percent": 100.0,
+        "full_code": "n = int(input())\nfor i in range(1, 11):\n    tich = n * i\n    print(f\"{n} x {i} = {tich}\")",
+        "highlighted_code": "<span class='highlight-green'>n = int(input())\nfor i in range(1, 11):\n    tich = n * i\n    print(f&#34;{n} x {i} = {tich}</span>&#34;)"
+      },
+      "token_overlap": 56,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 19,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e25372432513744775c6/c747e87428cc4dbab36bd7aa/sub_1761644037045_eer4ipbq5.py",
+        "similarity_percent": 100.0,
+        "full_code": "n = int(input())\nfor i in range(1, 11):\n    print(f'{n} x {i} = {n*i}')",
+        "highlighted_code": "<span class='highlight-red'>n = int(input())\nfor i in range(1, 11):\n    print(f&#39;{n} x {i} = {n</span>*i}&#39;)"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e25372432513744775c6/30d29d0969994c929976d40a/sub_1761651295463_yzg4czw7e.py",
+        "similarity_percent": 100.0,
+        "full_code": "n=int(input())\nfor i in range(1,11):\n    print(f\"{n} x {i} = {n*i}\")",
+        "highlighted_code": "<span class='highlight-green'>n=int(input())\nfor i in range(1,11):\n    print(f&#34;{n} x {i} = {n</span>*i}&#34;)"
+      },
+      "token_overlap": 50,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 20,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e25372432513744775c6/c747e87428cc4dbab36bd7aa/sub_1761644037045_eer4ipbq5.py",
+        "similarity_percent": 100.0,
+        "full_code": "n = int(input())\nfor i in range(1, 11):\n    print(f'{n} x {i} = {n*i}')",
+        "highlighted_code": "<span class='highlight-red'>n = int(input())\nfor i in range(1, 11):\n    print(f&#39;{n} x {i} = {n</span>*i}&#39;)"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e25372432513744775c6/e7457b81cbe24d9d9bdac641/sub_1761669779416_q1i899ok8.py",
+        "similarity_percent": 100.0,
+        "full_code": "n=int(input())\nfor i in range(1,11):\n    print(f\"{n} x {i} = {n * i}\")",
+        "highlighted_code": "<span class='highlight-green'>n=int(input())\nfor i in range(1,11):\n    print(f&#34;{n} x {i} = {n </span>* i}&#34;)"
+      },
+      "token_overlap": 50,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 21,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e25372432513744775c6/30d29d0969994c929976d40a/sub_1761651295463_yzg4czw7e.py",
+        "similarity_percent": 100.0,
+        "full_code": "n=int(input())\nfor i in range(1,11):\n    print(f\"{n} x {i} = {n*i}\")",
+        "highlighted_code": "<span class='highlight-red'>n=int(input())\nfor i in range(1,11):\n    print(f&#34;{n} x {i} = {n</span>*i}&#34;)"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e25372432513744775c6/e7457b81cbe24d9d9bdac641/sub_1761669779416_q1i899ok8.py",
+        "similarity_percent": 100.0,
+        "full_code": "n=int(input())\nfor i in range(1,11):\n    print(f\"{n} x {i} = {n * i}\")",
+        "highlighted_code": "<span class='highlight-green'>n=int(input())\nfor i in range(1,11):\n    print(f&#34;{n} x {i} = {n </span>* i}&#34;)"
+      },
+      "token_overlap": 50,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 22,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e25372432513744775c6/295d4dcad1f74d87afc29fce/sub_1761640453002_inwu1r3gs.py",
+        "similarity_percent": 94.0,
+        "full_code": "n=int(input())\nfor i in range(1,11):\n    print(f\"{n} x {i} = {n*i}\")",
+        "highlighted_code": "<span class='highlight-red'>n=int(input())\nfor i in range(1,11):\n    print(f&#34;{n} x {i}</span> = {n*i}&#34;)"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e25372432513744775c6/c78f5dfafb144ed89a06ddba/sub_1761640093080_1oi0em3e6.py",
+        "similarity_percent": 88.68,
+        "full_code": "a = int(input())\nfor i in range(1,11):\n    print(f\"{a} x {i} =\", i * a)",
+        "highlighted_code": "<span class='highlight-green'>a = int(input())\nfor i in range(1,11):\n    print(f&#34;{a} x {i}</span> =&#34;, i * a)"
+      },
+      "token_overlap": 47,
+      "max_similarity_percent": 94.0
+    },
+    {
+      "case_id": 23,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e25372432513744775c6/43fad0845ec445b4aecbfd8c/sub_1761643580895_2sjdv8iey.py",
+        "similarity_percent": 94.0,
+        "full_code": "n=int(input())\nfor i in range(1,11):\n    print(f\"{n} x {i} = {n*i}\")",
+        "highlighted_code": "<span class='highlight-red'>n=int(input())\nfor i in range(1,11):\n    print(f&#34;{n} x {i}</span> = {n*i}&#34;)"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e25372432513744775c6/c78f5dfafb144ed89a06ddba/sub_1761640093080_1oi0em3e6.py",
+        "similarity_percent": 88.68,
+        "full_code": "a = int(input())\nfor i in range(1,11):\n    print(f\"{a} x {i} =\", i * a)",
+        "highlighted_code": "<span class='highlight-green'>a = int(input())\nfor i in range(1,11):\n    print(f&#34;{a} x {i}</span> =&#34;, i * a)"
+      },
+      "token_overlap": 47,
+      "max_similarity_percent": 94.0
+    },
+    {
+      "case_id": 24,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e25372432513744775c6/c747e87428cc4dbab36bd7aa/sub_1761644037045_eer4ipbq5.py",
+        "similarity_percent": 94.0,
+        "full_code": "n = int(input())\nfor i in range(1, 11):\n    print(f'{n} x {i} = {n*i}')",
+        "highlighted_code": "<span class='highlight-red'>n = int(input())\nfor i in range(1, 11):\n    print(f&#39;{n} x {i}</span> = {n*i}&#39;)"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e25372432513744775c6/c78f5dfafb144ed89a06ddba/sub_1761640093080_1oi0em3e6.py",
+        "similarity_percent": 88.68,
+        "full_code": "a = int(input())\nfor i in range(1,11):\n    print(f\"{a} x {i} =\", i * a)",
+        "highlighted_code": "<span class='highlight-green'>a = int(input())\nfor i in range(1,11):\n    print(f&#34;{a} x {i}</span> =&#34;, i * a)"
+      },
+      "token_overlap": 47,
+      "max_similarity_percent": 94.0
+    },
+    {
+      "case_id": 25,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e25372432513744775c6/c78f5dfafb144ed89a06ddba/sub_1761640093080_1oi0em3e6.py",
+        "similarity_percent": 88.68,
+        "full_code": "a = int(input())\nfor i in range(1,11):\n    print(f\"{a} x {i} =\", i * a)",
+        "highlighted_code": "<span class='highlight-red'>a = int(input())\nfor i in range(1,11):\n    print(f&#34;{a} x {i}</span> =&#34;, i * a)"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e25372432513744775c6/30d29d0969994c929976d40a/sub_1761651295463_yzg4czw7e.py",
+        "similarity_percent": 94.0,
+        "full_code": "n=int(input())\nfor i in range(1,11):\n    print(f\"{n} x {i} = {n*i}\")",
+        "highlighted_code": "<span class='highlight-green'>n=int(input())\nfor i in range(1,11):\n    print(f&#34;{n} x {i}</span> = {n*i}&#34;)"
+      },
+      "token_overlap": 47,
+      "max_similarity_percent": 94.0
+    },
+    {
+      "case_id": 26,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e25372432513744775c6/c78f5dfafb144ed89a06ddba/sub_1761640093080_1oi0em3e6.py",
+        "similarity_percent": 88.68,
+        "full_code": "a = int(input())\nfor i in range(1,11):\n    print(f\"{a} x {i} =\", i * a)",
+        "highlighted_code": "<span class='highlight-red'>a = int(input())\nfor i in range(1,11):\n    print(f&#34;{a} x {i}</span> =&#34;, i * a)"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e25372432513744775c6/e7457b81cbe24d9d9bdac641/sub_1761669779416_q1i899ok8.py",
+        "similarity_percent": 94.0,
+        "full_code": "n=int(input())\nfor i in range(1,11):\n    print(f\"{n} x {i} = {n * i}\")",
+        "highlighted_code": "<span class='highlight-green'>n=int(input())\nfor i in range(1,11):\n    print(f&#34;{n} x {i}</span> = {n * i}&#34;)"
+      },
+      "token_overlap": 47,
+      "max_similarity_percent": 94.0
+    },
+    {
+      "case_id": 27,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e25372432513744775c6/4619643a0f2348b6b74a746a/sub_1761640585865_r4b5zrth9.py",
+        "similarity_percent": 77.78,
+        "full_code": "n = int(input())\nfor i in range(1,11):\n    tich = i * n\n    print(n,\"x\",i,\"=\",tich)",
+        "highlighted_code": "<span class='highlight-red'>n = int(input())\nfor i in range(1,11):\n    tich = i * n\n    print</span>(n,&#34;x&#34;,i,&#34;=&#34;,tich)"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e25372432513744775c6/8045cd76adf946038858d2bc/sub_1761638366447_gzdp7ptdp.py",
+        "similarity_percent": 75.0,
+        "full_code": "n=int(input())\nfor i in range(1,11):\n    tich=n*i\n    print(f'{n} x {i} = {tich}')",
+        "highlighted_code": "<span class='highlight-green'>n=int(input())\nfor i in range(1,11):\n    tich=n*i\n    print</span>(f&#39;{n} x {i} = {tich}&#39;)"
+      },
+      "token_overlap": 42,
+      "max_similarity_percent": 77.78
+    },
+    {
+      "case_id": 28,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e25372432513744775c6/4619643a0f2348b6b74a746a/sub_1761640585865_r4b5zrth9.py",
+        "similarity_percent": 77.78,
+        "full_code": "n = int(input())\nfor i in range(1,11):\n    tich = i * n\n    print(n,\"x\",i,\"=\",tich)",
+        "highlighted_code": "<span class='highlight-red'>n = int(input())\nfor i in range(1,11):\n    tich = i * n\n    print</span>(n,&#34;x&#34;,i,&#34;=&#34;,tich)"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e25372432513744775c6/f95120b3a38a461085ef58cb/sub_1761622446758_9lyk75jrg.py",
+        "similarity_percent": 75.0,
+        "full_code": "n = int(input())\nfor i in range(1, 11):\n    result = n * i\n    print(f\"{n} × {i} = {result}\")",
+        "highlighted_code": "<span class='highlight-green'>n = int(input())\nfor i in range(1, 11):\n    result = n * i\n    print</span>(f&#34;{n} × {i} = {result}&#34;)"
+      },
+      "token_overlap": 42,
+      "max_similarity_percent": 77.78
+    },
+    {
+      "case_id": 29,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e25372432513744775c6/4619643a0f2348b6b74a746a/sub_1761640585865_r4b5zrth9.py",
+        "similarity_percent": 77.78,
+        "full_code": "n = int(input())\nfor i in range(1,11):\n    tich = i * n\n    print(n,\"x\",i,\"=\",tich)",
+        "highlighted_code": "<span class='highlight-red'>n = int(input())\nfor i in range(1,11):\n    tich = i * n\n    print</span>(n,&#34;x&#34;,i,&#34;=&#34;,tich)"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e25372432513744775c6/522be41104e24b1fa5d14200/sub_1761648000915_cgbt3bx9h.py",
+        "similarity_percent": 75.0,
+        "full_code": "n=int(input())\nfor i in range(1,11):\n    result=n*i\n    print(f\"{n} x {i} = {result}\")\n        ",
+        "highlighted_code": "<span class='highlight-green'>n=int(input())\nfor i in range(1,11):\n    result=n*i\n    print</span>(f&#34;{n} x {i} = {result}&#34;)\n        "
+      },
+      "token_overlap": 42,
+      "max_similarity_percent": 77.78
+    },
+    {
+      "case_id": 30,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e25372432513744775c6/4619643a0f2348b6b74a746a/sub_1761640585865_r4b5zrth9.py",
+        "similarity_percent": 77.78,
+        "full_code": "n = int(input())\nfor i in range(1,11):\n    tich = i * n\n    print(n,\"x\",i,\"=\",tich)",
+        "highlighted_code": "n = int(input(<span class='highlight-red'>))\nfor i in range(1,11):\n    tich = i * n\n    print(n,&#34;x&#34;,i,&#34;=&#34;</span>,tich)"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e25372432513744775c6/9d6164b8a6c2435ea956e22b/sub_1761641871528_aiktu9zke.py",
+        "similarity_percent": 75.0,
+        "full_code": "n = int (input(\"\"))\nfor i in range (1, 11):\n    tich = n * i\n    print (n, \"x\", i, \"=\", tich)\n",
+        "highlighted_code": "n = int (input(&#34;&#34;<span class='highlight-green'>))\nfor i in range (1, 11):\n    tich = n * i\n    print (n, &#34;x&#34;, i, &#34;=&#34;</span>, tich)\n"
+      },
+      "token_overlap": 42,
+      "max_similarity_percent": 77.78
+    },
+    {
+      "case_id": 31,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e25372432513744775c6/4619643a0f2348b6b74a746a/sub_1761640585865_r4b5zrth9.py",
+        "similarity_percent": 77.78,
+        "full_code": "n = int(input())\nfor i in range(1,11):\n    tich = i * n\n    print(n,\"x\",i,\"=\",tich)",
+        "highlighted_code": "<span class='highlight-red'>n = int(input())\nfor i in range(1,11):\n    tich = i * n\n    print</span>(n,&#34;x&#34;,i,&#34;=&#34;,tich)"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e25372432513744775c6/51bbd72f42174843b97698b4/sub_1761638699754_00fp7643l.py",
+        "similarity_percent": 75.0,
+        "full_code": "n = int(input())\nfor i in range(1, 11):\n    tich = n * i\n    print(f\"{n} x {i} = {tich}\")",
+        "highlighted_code": "<span class='highlight-green'>n = int(input())\nfor i in range(1, 11):\n    tich = n * i\n    print</span>(f&#34;{n} x {i} = {tich}&#34;)"
+      },
+      "token_overlap": 42,
+      "max_similarity_percent": 77.78
+    },
+    {
+      "case_id": 32,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e25372432513744775c6/f8a2bab9778140ecb46b6a60/sub_1761463003309_rvc3ldday.py",
+        "similarity_percent": 77.78,
+        "full_code": "n = int(input())\nfor i in range(1, 11):\n    h = n * i\n    print(n, 'x', i, '=', h)",
+        "highlighted_code": "<span class='highlight-red'>n = int(input())\nfor i in range(1, 11):\n    h = n * i\n    print</span>(n, &#39;x&#39;, i, &#39;=&#39;, h)"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e25372432513744775c6/51bbd72f42174843b97698b4/sub_1761638699754_00fp7643l.py",
+        "similarity_percent": 75.0,
+        "full_code": "n = int(input())\nfor i in range(1, 11):\n    tich = n * i\n    print(f\"{n} x {i} = {tich}\")",
+        "highlighted_code": "<span class='highlight-green'>n = int(input())\nfor i in range(1, 11):\n    tich = n * i\n    print</span>(f&#34;{n} x {i} = {tich}&#34;)"
+      },
+      "token_overlap": 42,
+      "max_similarity_percent": 77.78
+    },
+    {
+      "case_id": 33,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e25372432513744775c6/8045cd76adf946038858d2bc/sub_1761638366447_gzdp7ptdp.py",
+        "similarity_percent": 75.0,
+        "full_code": "n=int(input())\nfor i in range(1,11):\n    tich=n*i\n    print(f'{n} x {i} = {tich}')",
+        "highlighted_code": "<span class='highlight-red'>n=int(input())\nfor i in range(1,11):\n    tich=n*i\n    print</span>(f&#39;{n} x {i} = {tich}&#39;)"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e25372432513744775c6/f8a2bab9778140ecb46b6a60/sub_1761463003309_rvc3ldday.py",
+        "similarity_percent": 77.78,
+        "full_code": "n = int(input())\nfor i in range(1, 11):\n    h = n * i\n    print(n, 'x', i, '=', h)",
+        "highlighted_code": "<span class='highlight-green'>n = int(input())\nfor i in range(1, 11):\n    h = n * i\n    print</span>(n, &#39;x&#39;, i, &#39;=&#39;, h)"
+      },
+      "token_overlap": 42,
+      "max_similarity_percent": 77.78
+    },
+    {
+      "case_id": 34,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e25372432513744775c6/f95120b3a38a461085ef58cb/sub_1761622446758_9lyk75jrg.py",
+        "similarity_percent": 75.0,
+        "full_code": "n = int(input())\nfor i in range(1, 11):\n    result = n * i\n    print(f\"{n} × {i} = {result}\")",
+        "highlighted_code": "<span class='highlight-red'>n = int(input())\nfor i in range(1, 11):\n    result = n * i\n    print</span>(f&#34;{n} × {i} = {result}&#34;)"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e25372432513744775c6/f8a2bab9778140ecb46b6a60/sub_1761463003309_rvc3ldday.py",
+        "similarity_percent": 77.78,
+        "full_code": "n = int(input())\nfor i in range(1, 11):\n    h = n * i\n    print(n, 'x', i, '=', h)",
+        "highlighted_code": "<span class='highlight-green'>n = int(input())\nfor i in range(1, 11):\n    h = n * i\n    print</span>(n, &#39;x&#39;, i, &#39;=&#39;, h)"
+      },
+      "token_overlap": 42,
+      "max_similarity_percent": 77.78
+    },
+    {
+      "case_id": 35,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e25372432513744775c6/522be41104e24b1fa5d14200/sub_1761648000915_cgbt3bx9h.py",
+        "similarity_percent": 75.0,
+        "full_code": "n=int(input())\nfor i in range(1,11):\n    result=n*i\n    print(f\"{n} x {i} = {result}\")\n        ",
+        "highlighted_code": "<span class='highlight-red'>n=int(input())\nfor i in range(1,11):\n    result=n*i\n    print</span>(f&#34;{n} x {i} = {result}&#34;)\n        "
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e25372432513744775c6/f8a2bab9778140ecb46b6a60/sub_1761463003309_rvc3ldday.py",
+        "similarity_percent": 77.78,
+        "full_code": "n = int(input())\nfor i in range(1, 11):\n    h = n * i\n    print(n, 'x', i, '=', h)",
+        "highlighted_code": "<span class='highlight-green'>n = int(input())\nfor i in range(1, 11):\n    h = n * i\n    print</span>(n, &#39;x&#39;, i, &#39;=&#39;, h)"
+      },
+      "token_overlap": 42,
+      "max_similarity_percent": 77.78
+    },
+    {
+      "case_id": 36,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e25372432513744775c6/9d6164b8a6c2435ea956e22b/sub_1761641871528_aiktu9zke.py",
+        "similarity_percent": 75.0,
+        "full_code": "n = int (input(\"\"))\nfor i in range (1, 11):\n    tich = n * i\n    print (n, \"x\", i, \"=\", tich)\n",
+        "highlighted_code": "n = int (input(&#34;&#34;<span class='highlight-red'>))\nfor i in range (1, 11):\n    tich = n * i\n    print (n, &#34;x&#34;, i, &#34;=&#34;</span>, tich)\n"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e25372432513744775c6/f8a2bab9778140ecb46b6a60/sub_1761463003309_rvc3ldday.py",
+        "similarity_percent": 77.78,
+        "full_code": "n = int(input())\nfor i in range(1, 11):\n    h = n * i\n    print(n, 'x', i, '=', h)",
+        "highlighted_code": "n = int(input(<span class='highlight-green'>))\nfor i in range(1, 11):\n    h = n * i\n    print(n, &#39;x&#39;, i, &#39;=&#39;</span>, h)"
+      },
+      "token_overlap": 42,
+      "max_similarity_percent": 77.78
+    },
+    {
+      "case_id": 37,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e25372432513744775c6/295d4dcad1f74d87afc29fce/sub_1761640453002_inwu1r3gs.py",
+        "similarity_percent": 74.0,
+        "full_code": "n=int(input())\nfor i in range(1,11):\n    print(f\"{n} x {i} = {n*i}\")",
+        "highlighted_code": "<span class='highlight-red'>n=int(input())\nfor i in range(1,11):\n    print</span>(f&#34;{n} x {i} = {n*i}&#34;)"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e25372432513744775c6/f0199fcb94bf405a8bf2ca38/sub_1761633169253_xn3pli5ut.py",
+        "similarity_percent": 71.15,
+        "full_code": "n = int(input())\nfor i in range (1,11):\n    print(n,\"x\",i,\"=\", n*i)",
+        "highlighted_code": "<span class='highlight-green'>n = int(input())\nfor i in range (1,11):\n    print</span>(n,&#34;x&#34;,i,&#34;=&#34;, n*i)"
+      },
+      "token_overlap": 37,
+      "max_similarity_percent": 74.0
+    },
+    {
+      "case_id": 38,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e25372432513744775c6/295d4dcad1f74d87afc29fce/sub_1761640453002_inwu1r3gs.py",
+        "similarity_percent": 74.0,
+        "full_code": "n=int(input())\nfor i in range(1,11):\n    print(f\"{n} x {i} = {n*i}\")",
+        "highlighted_code": "<span class='highlight-red'>n=int(input())\nfor i in range(1,11):\n    print</span>(f&#34;{n} x {i} = {n*i}&#34;)"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e25372432513744775c6/2e99febeecc6490f8e7c3f87/sub_1761643211506_wj0uld111.py",
+        "similarity_percent": 71.15,
+        "full_code": "n = int(input())\nfor i in range(1,11):\n    print(n, 'x', i, '=', n*i)\n    ",
+        "highlighted_code": "<span class='highlight-green'>n = int(input())\nfor i in range(1,11):\n    print</span>(n, &#39;x&#39;, i, &#39;=&#39;, n*i)\n    "
+      },
+      "token_overlap": 37,
+      "max_similarity_percent": 74.0
+    },
+    {
+      "case_id": 39,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e25372432513744775c6/295d4dcad1f74d87afc29fce/sub_1761640453002_inwu1r3gs.py",
+        "similarity_percent": 74.0,
+        "full_code": "n=int(input())\nfor i in range(1,11):\n    print(f\"{n} x {i} = {n*i}\")",
+        "highlighted_code": "<span class='highlight-red'>n=int(input())\nfor i in range(1,11):\n    print</span>(f&#34;{n} x {i} = {n*i}&#34;)"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e25372432513744775c6/cd93b2ff882a4ffa85f4518f/sub_1761547864363_qjzdoj7kp.py",
+        "similarity_percent": 71.15,
+        "full_code": "n=int(input())\nfor i in range (1,11):\n    print (n,\"x\",i,\"=\",n*i)",
+        "highlighted_code": "<span class='highlight-green'>n=int(input())\nfor i in range (1,11):\n    print </span>(n,&#34;x&#34;,i,&#34;=&#34;,n*i)"
+      },
+      "token_overlap": 37,
+      "max_similarity_percent": 74.0
+    },
+    {
+      "case_id": 40,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e25372432513744775c6/43fad0845ec445b4aecbfd8c/sub_1761643580895_2sjdv8iey.py",
+        "similarity_percent": 74.0,
+        "full_code": "n=int(input())\nfor i in range(1,11):\n    print(f\"{n} x {i} = {n*i}\")",
+        "highlighted_code": "<span class='highlight-red'>n=int(input())\nfor i in range(1,11):\n    print</span>(f&#34;{n} x {i} = {n*i}&#34;)"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e25372432513744775c6/cd93b2ff882a4ffa85f4518f/sub_1761547864363_qjzdoj7kp.py",
+        "similarity_percent": 71.15,
+        "full_code": "n=int(input())\nfor i in range (1,11):\n    print (n,\"x\",i,\"=\",n*i)",
+        "highlighted_code": "<span class='highlight-green'>n=int(input())\nfor i in range (1,11):\n    print </span>(n,&#34;x&#34;,i,&#34;=&#34;,n*i)"
+      },
+      "token_overlap": 37,
+      "max_similarity_percent": 74.0
+    },
+    {
+      "case_id": 41,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e25372432513744775c6/c747e87428cc4dbab36bd7aa/sub_1761644037045_eer4ipbq5.py",
+        "similarity_percent": 74.0,
+        "full_code": "n = int(input())\nfor i in range(1, 11):\n    print(f'{n} x {i} = {n*i}')",
+        "highlighted_code": "<span class='highlight-red'>n = int(input())\nfor i in range(1, 11):\n    print</span>(f&#39;{n} x {i} = {n*i}&#39;)"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e25372432513744775c6/cd93b2ff882a4ffa85f4518f/sub_1761547864363_qjzdoj7kp.py",
+        "similarity_percent": 71.15,
+        "full_code": "n=int(input())\nfor i in range (1,11):\n    print (n,\"x\",i,\"=\",n*i)",
+        "highlighted_code": "<span class='highlight-green'>n=int(input())\nfor i in range (1,11):\n    print </span>(n,&#34;x&#34;,i,&#34;=&#34;,n*i)"
+      },
+      "token_overlap": 37,
+      "max_similarity_percent": 74.0
+    },
+    {
+      "case_id": 42,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e25372432513744775c6/30d29d0969994c929976d40a/sub_1761651295463_yzg4czw7e.py",
+        "similarity_percent": 74.0,
+        "full_code": "n=int(input())\nfor i in range(1,11):\n    print(f\"{n} x {i} = {n*i}\")",
+        "highlighted_code": "<span class='highlight-red'>n=int(input())\nfor i in range(1,11):\n    print</span>(f&#34;{n} x {i} = {n*i}&#34;)"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e25372432513744775c6/cd93b2ff882a4ffa85f4518f/sub_1761547864363_qjzdoj7kp.py",
+        "similarity_percent": 71.15,
+        "full_code": "n=int(input())\nfor i in range (1,11):\n    print (n,\"x\",i,\"=\",n*i)",
+        "highlighted_code": "<span class='highlight-green'>n=int(input())\nfor i in range (1,11):\n    print </span>(n,&#34;x&#34;,i,&#34;=&#34;,n*i)"
+      },
+      "token_overlap": 37,
+      "max_similarity_percent": 74.0
+    },
+    {
+      "case_id": 43,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e25372432513744775c6/f0199fcb94bf405a8bf2ca38/sub_1761633169253_xn3pli5ut.py",
+        "similarity_percent": 71.15,
+        "full_code": "n = int(input())\nfor i in range (1,11):\n    print(n,\"x\",i,\"=\", n*i)",
+        "highlighted_code": "<span class='highlight-red'>n = int(input())\nfor i in range (1,11):\n    print</span>(n,&#34;x&#34;,i,&#34;=&#34;, n*i)"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e25372432513744775c6/43fad0845ec445b4aecbfd8c/sub_1761643580895_2sjdv8iey.py",
+        "similarity_percent": 74.0,
+        "full_code": "n=int(input())\nfor i in range(1,11):\n    print(f\"{n} x {i} = {n*i}\")",
+        "highlighted_code": "<span class='highlight-green'>n=int(input())\nfor i in range(1,11):\n    print</span>(f&#34;{n} x {i} = {n*i}&#34;)"
+      },
+      "token_overlap": 37,
+      "max_similarity_percent": 74.0
+    },
+    {
+      "case_id": 44,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e25372432513744775c6/f0199fcb94bf405a8bf2ca38/sub_1761633169253_xn3pli5ut.py",
+        "similarity_percent": 71.15,
+        "full_code": "n = int(input())\nfor i in range (1,11):\n    print(n,\"x\",i,\"=\", n*i)",
+        "highlighted_code": "<span class='highlight-red'>n = int(input())\nfor i in range (1,11):\n    print</span>(n,&#34;x&#34;,i,&#34;=&#34;, n*i)"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e25372432513744775c6/c747e87428cc4dbab36bd7aa/sub_1761644037045_eer4ipbq5.py",
+        "similarity_percent": 74.0,
+        "full_code": "n = int(input())\nfor i in range(1, 11):\n    print(f'{n} x {i} = {n*i}')",
+        "highlighted_code": "<span class='highlight-green'>n = int(input())\nfor i in range(1, 11):\n    print</span>(f&#39;{n} x {i} = {n*i}&#39;)"
+      },
+      "token_overlap": 37,
+      "max_similarity_percent": 74.0
+    },
+    {
+      "case_id": 45,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e25372432513744775c6/f0199fcb94bf405a8bf2ca38/sub_1761633169253_xn3pli5ut.py",
+        "similarity_percent": 71.15,
+        "full_code": "n = int(input())\nfor i in range (1,11):\n    print(n,\"x\",i,\"=\", n*i)",
+        "highlighted_code": "<span class='highlight-red'>n = int(input())\nfor i in range (1,11):\n    print</span>(n,&#34;x&#34;,i,&#34;=&#34;, n*i)"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e25372432513744775c6/c78f5dfafb144ed89a06ddba/sub_1761640093080_1oi0em3e6.py",
+        "similarity_percent": 69.81,
+        "full_code": "a = int(input())\nfor i in range(1,11):\n    print(f\"{a} x {i} =\", i * a)",
+        "highlighted_code": "<span class='highlight-green'>a = int(input())\nfor i in range(1,11):\n    print</span>(f&#34;{a} x {i} =&#34;, i * a)"
+      },
+      "token_overlap": 37,
+      "max_similarity_percent": 71.15
+    },
+    {
+      "case_id": 46,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e25372432513744775c6/f0199fcb94bf405a8bf2ca38/sub_1761633169253_xn3pli5ut.py",
+        "similarity_percent": 71.15,
+        "full_code": "n = int(input())\nfor i in range (1,11):\n    print(n,\"x\",i,\"=\", n*i)",
+        "highlighted_code": "<span class='highlight-red'>n = int(input())\nfor i in range (1,11):\n    print</span>(n,&#34;x&#34;,i,&#34;=&#34;, n*i)"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e25372432513744775c6/30d29d0969994c929976d40a/sub_1761651295463_yzg4czw7e.py",
+        "similarity_percent": 74.0,
+        "full_code": "n=int(input())\nfor i in range(1,11):\n    print(f\"{n} x {i} = {n*i}\")",
+        "highlighted_code": "<span class='highlight-green'>n=int(input())\nfor i in range(1,11):\n    print</span>(f&#34;{n} x {i} = {n*i}&#34;)"
+      },
+      "token_overlap": 37,
+      "max_similarity_percent": 74.0
+    },
+    {
+      "case_id": 47,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e25372432513744775c6/f0199fcb94bf405a8bf2ca38/sub_1761633169253_xn3pli5ut.py",
+        "similarity_percent": 71.15,
+        "full_code": "n = int(input())\nfor i in range (1,11):\n    print(n,\"x\",i,\"=\", n*i)",
+        "highlighted_code": "<span class='highlight-red'>n = int(input())\nfor i in range (1,11):\n    print</span>(n,&#34;x&#34;,i,&#34;=&#34;, n*i)"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e25372432513744775c6/e7457b81cbe24d9d9bdac641/sub_1761669779416_q1i899ok8.py",
+        "similarity_percent": 74.0,
+        "full_code": "n=int(input())\nfor i in range(1,11):\n    print(f\"{n} x {i} = {n * i}\")",
+        "highlighted_code": "<span class='highlight-green'>n=int(input())\nfor i in range(1,11):\n    print</span>(f&#34;{n} x {i} = {n * i}&#34;)"
+      },
+      "token_overlap": 37,
+      "max_similarity_percent": 74.0
+    },
+    {
+      "case_id": 48,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e25372432513744775c6/2e99febeecc6490f8e7c3f87/sub_1761643211506_wj0uld111.py",
+        "similarity_percent": 71.15,
+        "full_code": "n = int(input())\nfor i in range(1,11):\n    print(n, 'x', i, '=', n*i)\n    ",
+        "highlighted_code": "<span class='highlight-red'>n = int(input())\nfor i in range(1,11):\n    print</span>(n, &#39;x&#39;, i, &#39;=&#39;, n*i)\n    "
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e25372432513744775c6/43fad0845ec445b4aecbfd8c/sub_1761643580895_2sjdv8iey.py",
+        "similarity_percent": 74.0,
+        "full_code": "n=int(input())\nfor i in range(1,11):\n    print(f\"{n} x {i} = {n*i}\")",
+        "highlighted_code": "<span class='highlight-green'>n=int(input())\nfor i in range(1,11):\n    print</span>(f&#34;{n} x {i} = {n*i}&#34;)"
+      },
+      "token_overlap": 37,
+      "max_similarity_percent": 74.0
+    },
+    {
+      "case_id": 49,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e25372432513744775c6/2e99febeecc6490f8e7c3f87/sub_1761643211506_wj0uld111.py",
+        "similarity_percent": 71.15,
+        "full_code": "n = int(input())\nfor i in range(1,11):\n    print(n, 'x', i, '=', n*i)\n    ",
+        "highlighted_code": "<span class='highlight-red'>n = int(input())\nfor i in range(1,11):\n    print</span>(n, &#39;x&#39;, i, &#39;=&#39;, n*i)\n    "
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e25372432513744775c6/c747e87428cc4dbab36bd7aa/sub_1761644037045_eer4ipbq5.py",
+        "similarity_percent": 74.0,
+        "full_code": "n = int(input())\nfor i in range(1, 11):\n    print(f'{n} x {i} = {n*i}')",
+        "highlighted_code": "<span class='highlight-green'>n = int(input())\nfor i in range(1, 11):\n    print</span>(f&#39;{n} x {i} = {n*i}&#39;)"
+      },
+      "token_overlap": 37,
+      "max_similarity_percent": 74.0
+    },
+    {
+      "case_id": 50,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e25372432513744775c6/2e99febeecc6490f8e7c3f87/sub_1761643211506_wj0uld111.py",
+        "similarity_percent": 71.15,
+        "full_code": "n = int(input())\nfor i in range(1,11):\n    print(n, 'x', i, '=', n*i)\n    ",
+        "highlighted_code": "<span class='highlight-red'>n = int(input())\nfor i in range(1,11):\n    print</span>(n, &#39;x&#39;, i, &#39;=&#39;, n*i)\n    "
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e25372432513744775c6/c78f5dfafb144ed89a06ddba/sub_1761640093080_1oi0em3e6.py",
+        "similarity_percent": 69.81,
+        "full_code": "a = int(input())\nfor i in range(1,11):\n    print(f\"{a} x {i} =\", i * a)",
+        "highlighted_code": "<span class='highlight-green'>a = int(input())\nfor i in range(1,11):\n    print</span>(f&#34;{a} x {i} =&#34;, i * a)"
+      },
+      "token_overlap": 37,
+      "max_similarity_percent": 71.15
+    },
+    {
+      "case_id": 51,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e25372432513744775c6/2e99febeecc6490f8e7c3f87/sub_1761643211506_wj0uld111.py",
+        "similarity_percent": 71.15,
+        "full_code": "n = int(input())\nfor i in range(1,11):\n    print(n, 'x', i, '=', n*i)\n    ",
+        "highlighted_code": "<span class='highlight-red'>n = int(input())\nfor i in range(1,11):\n    print</span>(n, &#39;x&#39;, i, &#39;=&#39;, n*i)\n    "
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e25372432513744775c6/30d29d0969994c929976d40a/sub_1761651295463_yzg4czw7e.py",
+        "similarity_percent": 74.0,
+        "full_code": "n=int(input())\nfor i in range(1,11):\n    print(f\"{n} x {i} = {n*i}\")",
+        "highlighted_code": "<span class='highlight-green'>n=int(input())\nfor i in range(1,11):\n    print</span>(f&#34;{n} x {i} = {n*i}&#34;)"
+      },
+      "token_overlap": 37,
+      "max_similarity_percent": 74.0
+    },
+    {
+      "case_id": 52,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e25372432513744775c6/2e99febeecc6490f8e7c3f87/sub_1761643211506_wj0uld111.py",
+        "similarity_percent": 71.15,
+        "full_code": "n = int(input())\nfor i in range(1,11):\n    print(n, 'x', i, '=', n*i)\n    ",
+        "highlighted_code": "<span class='highlight-red'>n = int(input())\nfor i in range(1,11):\n    print</span>(n, &#39;x&#39;, i, &#39;=&#39;, n*i)\n    "
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e25372432513744775c6/e7457b81cbe24d9d9bdac641/sub_1761669779416_q1i899ok8.py",
+        "similarity_percent": 74.0,
+        "full_code": "n=int(input())\nfor i in range(1,11):\n    print(f\"{n} x {i} = {n * i}\")",
+        "highlighted_code": "<span class='highlight-green'>n=int(input())\nfor i in range(1,11):\n    print</span>(f&#34;{n} x {i} = {n * i}&#34;)"
+      },
+      "token_overlap": 37,
+      "max_similarity_percent": 74.0
+    },
+    {
+      "case_id": 53,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e25372432513744775c6/cd93b2ff882a4ffa85f4518f/sub_1761547864363_qjzdoj7kp.py",
+        "similarity_percent": 71.15,
+        "full_code": "n=int(input())\nfor i in range (1,11):\n    print (n,\"x\",i,\"=\",n*i)",
+        "highlighted_code": "<span class='highlight-red'>n=int(input())\nfor i in range (1,11):\n    print </span>(n,&#34;x&#34;,i,&#34;=&#34;,n*i)"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e25372432513744775c6/e7457b81cbe24d9d9bdac641/sub_1761669779416_q1i899ok8.py",
+        "similarity_percent": 74.0,
+        "full_code": "n=int(input())\nfor i in range(1,11):\n    print(f\"{n} x {i} = {n * i}\")",
+        "highlighted_code": "<span class='highlight-green'>n=int(input())\nfor i in range(1,11):\n    print</span>(f&#34;{n} x {i} = {n * i}&#34;)"
+      },
+      "token_overlap": 37,
+      "max_similarity_percent": 74.0
+    },
+    {
+      "case_id": 54,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e25372432513744775c6/c78f5dfafb144ed89a06ddba/sub_1761640093080_1oi0em3e6.py",
+        "similarity_percent": 69.81,
+        "full_code": "a = int(input())\nfor i in range(1,11):\n    print(f\"{a} x {i} =\", i * a)",
+        "highlighted_code": "<span class='highlight-red'>a = int(input())\nfor i in range(1,11):\n    print</span>(f&#34;{a} x {i} =&#34;, i * a)"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e25372432513744775c6/cd93b2ff882a4ffa85f4518f/sub_1761547864363_qjzdoj7kp.py",
+        "similarity_percent": 71.15,
+        "full_code": "n=int(input())\nfor i in range (1,11):\n    print (n,\"x\",i,\"=\",n*i)",
+        "highlighted_code": "<span class='highlight-green'>n=int(input())\nfor i in range (1,11):\n    print </span>(n,&#34;x&#34;,i,&#34;=&#34;,n*i)"
+      },
+      "token_overlap": 37,
+      "max_similarity_percent": 71.15
+    },
+    {
+      "case_id": 55,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e25372432513744775c6/295d4dcad1f74d87afc29fce/sub_1761640453002_inwu1r3gs.py",
+        "similarity_percent": 68.0,
+        "full_code": "n=int(input())\nfor i in range(1,11):\n    print(f\"{n} x {i} = {n*i}\")",
+        "highlighted_code": "n=int(input())\nfo<span class='highlight-red'>r i in range(1,11):\n    print(f&#34;{n} x {i} = {n</span>*i}&#34;)"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e25372432513744775c6/c747e87428cc4dbab36bd7aa/sub_1761643581115_a2z60ynbs.py",
+        "similarity_percent": 52.31,
+        "full_code": "n = int(input())\nif n >= 1 and n <= 10:\n    for i in range(1, 11):\n        print(f'{n} x {i} = {n*i}')",
+        "highlighted_code": "n = int(input())\nif n &gt;= 1 and n &lt;= 10:\n    fo<span class='highlight-green'>r i in range(1, 11):\n        print(f&#39;{n} x {i} = {n</span>*i}&#39;)"
+      },
+      "token_overlap": 34,
+      "max_similarity_percent": 68.0
+    },
+    {
+      "case_id": 56,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e25372432513744775c6/295d4dcad1f74d87afc29fce/sub_1761640453002_inwu1r3gs.py",
+        "similarity_percent": 68.0,
+        "full_code": "n=int(input())\nfor i in range(1,11):\n    print(f\"{n} x {i} = {n*i}\")",
+        "highlighted_code": "n=int(input())\nfo<span class='highlight-red'>r i in range(1,11):\n    print(f&#34;{n} x {i} = {n</span>*i}&#34;)"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e25372432513744775c6/c747e87428cc4dbab36bd7aa/sub_1761643455129_jqolagvc6.py",
+        "similarity_percent": 55.74,
+        "full_code": "n=int(input())\nif 1<=n<=10:\n    for i in range(1, 11):\n        print(f'{n} x {i} = {n*i}')\n",
+        "highlighted_code": "n=int(input())\nif 1&lt;=n&lt;=10:\n    fo<span class='highlight-green'>r i in range(1, 11):\n        print(f&#39;{n} x {i} = {n</span>*i}&#39;)\n"
+      },
+      "token_overlap": 34,
+      "max_similarity_percent": 68.0
+    },
+    {
+      "case_id": 57,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e25372432513744775c6/295d4dcad1f74d87afc29fce/sub_1761640453002_inwu1r3gs.py",
+        "similarity_percent": 68.0,
+        "full_code": "n=int(input())\nfor i in range(1,11):\n    print(f\"{n} x {i} = {n*i}\")",
+        "highlighted_code": "n=int(input())\nfo<span class='highlight-red'>r i in range(1,11):\n    print(f&#34;{n} x {i} = {n</span>*i}&#34;)"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e25372432513744775c6/c747e87428cc4dbab36bd7aa/sub_1761643234459_phu4hsisf.py",
+        "similarity_percent": 43.59,
+        "full_code": "n=int(input())\nif 1<=n<=10:\n    for i in range(1, 11):\n        print(f'{n} x {i} = {n*i}')\nelse:\n    print()",
+        "highlighted_code": "n=int(input())\nif 1&lt;=n&lt;=10:\n    fo<span class='highlight-green'>r i in range(1, 11):\n        print(f&#39;{n} x {i} = {n</span>*i}&#39;)\nelse:\n    print()"
+      },
+      "token_overlap": 34,
+      "max_similarity_percent": 68.0
+    },
+    {
+      "case_id": 58,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e25372432513744775c6/295d4dcad1f74d87afc29fce/sub_1761640453002_inwu1r3gs.py",
+        "similarity_percent": 68.0,
+        "full_code": "n=int(input())\nfor i in range(1,11):\n    print(f\"{n} x {i} = {n*i}\")",
+        "highlighted_code": "n=int(input())\nfo<span class='highlight-red'>r i in range(1,11):\n    print(f&#34;{n} x {i} = {n</span>*i}&#34;)"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e25372432513744775c6/d341c622453349d180c0378f/sub_1761642861114_64brb4je8.py",
+        "similarity_percent": 60.71,
+        "full_code": "n=int(input())\nif n>0:\n    for i in range(1,11):\n       print(f\"{n} x {i} = {i*n}\")",
+        "highlighted_code": "n=int(input())\nif n&gt;0:\n    fo<span class='highlight-green'>r i in range(1,11):\n       print(f&#34;{n} x {i} = {i</span>*n}&#34;)"
+      },
+      "token_overlap": 34,
+      "max_similarity_percent": 68.0
+    },
+    {
+      "case_id": 59,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e25372432513744775c6/43fad0845ec445b4aecbfd8c/sub_1761643580895_2sjdv8iey.py",
+        "similarity_percent": 68.0,
+        "full_code": "n=int(input())\nfor i in range(1,11):\n    print(f\"{n} x {i} = {n*i}\")",
+        "highlighted_code": "n=int(input())\nfo<span class='highlight-red'>r i in range(1,11):\n    print(f&#34;{n} x {i} = {n</span>*i}&#34;)"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e25372432513744775c6/c747e87428cc4dbab36bd7aa/sub_1761643234459_phu4hsisf.py",
+        "similarity_percent": 43.59,
+        "full_code": "n=int(input())\nif 1<=n<=10:\n    for i in range(1, 11):\n        print(f'{n} x {i} = {n*i}')\nelse:\n    print()",
+        "highlighted_code": "n=int(input())\nif 1&lt;=n&lt;=10:\n    fo<span class='highlight-green'>r i in range(1, 11):\n        print(f&#39;{n} x {i} = {n</span>*i}&#39;)\nelse:\n    print()"
+      },
+      "token_overlap": 34,
+      "max_similarity_percent": 68.0
+    },
+    {
+      "case_id": 60,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e25372432513744775c6/43fad0845ec445b4aecbfd8c/sub_1761643580895_2sjdv8iey.py",
+        "similarity_percent": 68.0,
+        "full_code": "n=int(input())\nfor i in range(1,11):\n    print(f\"{n} x {i} = {n*i}\")",
+        "highlighted_code": "n=int(input())\nfo<span class='highlight-red'>r i in range(1,11):\n    print(f&#34;{n} x {i} = {n</span>*i}&#34;)"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e25372432513744775c6/d341c622453349d180c0378f/sub_1761642861114_64brb4je8.py",
+        "similarity_percent": 60.71,
+        "full_code": "n=int(input())\nif n>0:\n    for i in range(1,11):\n       print(f\"{n} x {i} = {i*n}\")",
+        "highlighted_code": "n=int(input())\nif n&gt;0:\n    fo<span class='highlight-green'>r i in range(1,11):\n       print(f&#34;{n} x {i} = {i</span>*n}&#34;)"
+      },
+      "token_overlap": 34,
+      "max_similarity_percent": 68.0
+    },
+    {
+      "case_id": 61,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e25372432513744775c6/295d4dcad1f74d87afc29fce/sub_1761640453002_inwu1r3gs.py",
+        "similarity_percent": 66.0,
+        "full_code": "n=int(input())\nfor i in range(1,11):\n    print(f\"{n} x {i} = {n*i}\")",
+        "highlighted_code": "<span class='highlight-red'>n=int(input())\nfor i in range(1,11):\n    p</span>rint(f&#34;{n} x {i} = {n*i}&#34;)"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e25372432513744775c6/fed45b08a578484ebf92e830/sub_1761569577538_rrb9udqos.py",
+        "similarity_percent": 57.89,
+        "full_code": "n= int(input())\nfor i in range(1,11):\n    print('{0} x {1} = {2}'.format(n,i,n*i))",
+        "highlighted_code": "<span class='highlight-green'>n= int(input())\nfor i in range(1,11):\n    p</span>rint(&#39;{0} x {1} = {2}&#39;.format(n,i,n*i))"
+      },
+      "token_overlap": 33,
+      "max_similarity_percent": 66.0
+    },
+    {
+      "case_id": 62,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e25372432513744775c6/43fad0845ec445b4aecbfd8c/sub_1761643580895_2sjdv8iey.py",
+        "similarity_percent": 66.0,
+        "full_code": "n=int(input())\nfor i in range(1,11):\n    print(f\"{n} x {i} = {n*i}\")",
+        "highlighted_code": "<span class='highlight-red'>n=int(input())\nfor i in range(1,11):\n    p</span>rint(f&#34;{n} x {i} = {n*i}&#34;)"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e25372432513744775c6/fed45b08a578484ebf92e830/sub_1761569577538_rrb9udqos.py",
+        "similarity_percent": 57.89,
+        "full_code": "n= int(input())\nfor i in range(1,11):\n    print('{0} x {1} = {2}'.format(n,i,n*i))",
+        "highlighted_code": "<span class='highlight-green'>n= int(input())\nfor i in range(1,11):\n    p</span>rint(&#39;{0} x {1} = {2}&#39;.format(n,i,n*i))"
+      },
+      "token_overlap": 33,
+      "max_similarity_percent": 66.0
+    },
+    {
+      "case_id": 63,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e25372432513744775c6/c747e87428cc4dbab36bd7aa/sub_1761644037045_eer4ipbq5.py",
+        "similarity_percent": 66.0,
+        "full_code": "n = int(input())\nfor i in range(1, 11):\n    print(f'{n} x {i} = {n*i}')",
+        "highlighted_code": "<span class='highlight-red'>n = int(input())\nfor i in range(1, 11):\n    p</span>rint(f&#39;{n} x {i} = {n*i}&#39;)"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e25372432513744775c6/fed45b08a578484ebf92e830/sub_1761569577538_rrb9udqos.py",
+        "similarity_percent": 57.89,
+        "full_code": "n= int(input())\nfor i in range(1,11):\n    print('{0} x {1} = {2}'.format(n,i,n*i))",
+        "highlighted_code": "<span class='highlight-green'>n= int(input())\nfor i in range(1,11):\n    p</span>rint(&#39;{0} x {1} = {2}&#39;.format(n,i,n*i))"
+      },
+      "token_overlap": 33,
+      "max_similarity_percent": 66.0
+    },
+    {
+      "case_id": 64,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e25372432513744775c6/30d29d0969994c929976d40a/sub_1761651295463_yzg4czw7e.py",
+        "similarity_percent": 66.0,
+        "full_code": "n=int(input())\nfor i in range(1,11):\n    print(f\"{n} x {i} = {n*i}\")",
+        "highlighted_code": "<span class='highlight-red'>n=int(input())\nfor i in range(1,11):\n    p</span>rint(f&#34;{n} x {i} = {n*i}&#34;)"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e25372432513744775c6/fed45b08a578484ebf92e830/sub_1761569577538_rrb9udqos.py",
+        "similarity_percent": 57.89,
+        "full_code": "n= int(input())\nfor i in range(1,11):\n    print('{0} x {1} = {2}'.format(n,i,n*i))",
+        "highlighted_code": "<span class='highlight-green'>n= int(input())\nfor i in range(1,11):\n    p</span>rint(&#39;{0} x {1} = {2}&#39;.format(n,i,n*i))"
+      },
+      "token_overlap": 33,
+      "max_similarity_percent": 66.0
+    },
+    {
+      "case_id": 65,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e25372432513744775c6/295d4dcad1f74d87afc29fce/sub_1761640453002_inwu1r3gs.py",
+        "similarity_percent": 64.0,
+        "full_code": "n=int(input())\nfor i in range(1,11):\n    print(f\"{n} x {i} = {n*i}\")",
+        "highlighted_code": "<span class='highlight-red'>n=int(input())\nfor i in range(1,11):\n    </span>print(f&#34;{n} x {i} = {n*i}&#34;)"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e25372432513744775c6/4619643a0f2348b6b74a746a/sub_1761640585865_r4b5zrth9.py",
+        "similarity_percent": 59.26,
+        "full_code": "n = int(input())\nfor i in range(1,11):\n    tich = i * n\n    print(n,\"x\",i,\"=\",tich)",
+        "highlighted_code": "<span class='highlight-green'>n = int(input())\nfor i in range(1,11):\n    </span>tich = i * n\n    print(n,&#34;x&#34;,i,&#34;=&#34;,tich)"
+      },
+      "token_overlap": 32,
+      "max_similarity_percent": 64.0
+    },
+    {
+      "case_id": 66,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e25372432513744775c6/295d4dcad1f74d87afc29fce/sub_1761640453002_inwu1r3gs.py",
+        "similarity_percent": 64.0,
+        "full_code": "n=int(input())\nfor i in range(1,11):\n    print(f\"{n} x {i} = {n*i}\")",
+        "highlighted_code": "<span class='highlight-red'>n=int(input())\nfor i in range(1,11):\n    </span>print(f&#34;{n} x {i} = {n*i}&#34;)"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e25372432513744775c6/8045cd76adf946038858d2bc/sub_1761638366447_gzdp7ptdp.py",
+        "similarity_percent": 57.14,
+        "full_code": "n=int(input())\nfor i in range(1,11):\n    tich=n*i\n    print(f'{n} x {i} = {tich}')",
+        "highlighted_code": "<span class='highlight-green'>n=int(input())\nfor i in range(1,11):\n    </span>tich=n*i\n    print(f&#39;{n} x {i} = {tich}&#39;)"
+      },
+      "token_overlap": 32,
+      "max_similarity_percent": 64.0
+    },
+    {
+      "case_id": 67,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e25372432513744775c6/295d4dcad1f74d87afc29fce/sub_1761640453002_inwu1r3gs.py",
+        "similarity_percent": 64.0,
+        "full_code": "n=int(input())\nfor i in range(1,11):\n    print(f\"{n} x {i} = {n*i}\")",
+        "highlighted_code": "<span class='highlight-red'>n=int(input())\nfor i in range(1,11):\n    </span>print(f&#34;{n} x {i} = {n*i}&#34;)"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e25372432513744775c6/f95120b3a38a461085ef58cb/sub_1761622446758_9lyk75jrg.py",
+        "similarity_percent": 57.14,
+        "full_code": "n = int(input())\nfor i in range(1, 11):\n    result = n * i\n    print(f\"{n} × {i} = {result}\")",
+        "highlighted_code": "<span class='highlight-green'>n = int(input())\nfor i in range(1, 11):\n    </span>result = n * i\n    print(f&#34;{n} × {i} = {result}&#34;)"
+      },
+      "token_overlap": 32,
+      "max_similarity_percent": 64.0
+    },
+    {
+      "case_id": 68,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e25372432513744775c6/295d4dcad1f74d87afc29fce/sub_1761640453002_inwu1r3gs.py",
+        "similarity_percent": 64.0,
+        "full_code": "n=int(input())\nfor i in range(1,11):\n    print(f\"{n} x {i} = {n*i}\")",
+        "highlighted_code": "<span class='highlight-red'>n=int(input())\nfor i in range(1,11):\n    </span>print(f&#34;{n} x {i} = {n*i}&#34;)"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e25372432513744775c6/522be41104e24b1fa5d14200/sub_1761648000915_cgbt3bx9h.py",
+        "similarity_percent": 57.14,
+        "full_code": "n=int(input())\nfor i in range(1,11):\n    result=n*i\n    print(f\"{n} x {i} = {result}\")\n        ",
+        "highlighted_code": "<span class='highlight-green'>n=int(input())\nfor i in range(1,11):\n    </span>result=n*i\n    print(f&#34;{n} x {i} = {result}&#34;)\n        "
+      },
+      "token_overlap": 32,
+      "max_similarity_percent": 64.0
+    },
+    {
+      "case_id": 69,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e25372432513744775c6/295d4dcad1f74d87afc29fce/sub_1761640453002_inwu1r3gs.py",
+        "similarity_percent": 64.0,
+        "full_code": "n=int(input())\nfor i in range(1,11):\n    print(f\"{n} x {i} = {n*i}\")",
+        "highlighted_code": "<span class='highlight-red'>n=int(input())\nfor i in range(1,11):\n    </span>print(f&#34;{n} x {i} = {n*i}&#34;)"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e25372432513744775c6/f8a2bab9778140ecb46b6a60/sub_1761463003309_rvc3ldday.py",
+        "similarity_percent": 59.26,
+        "full_code": "n = int(input())\nfor i in range(1, 11):\n    h = n * i\n    print(n, 'x', i, '=', h)",
+        "highlighted_code": "<span class='highlight-green'>n = int(input())\nfor i in range(1, 11):\n    </span>h = n * i\n    print(n, &#39;x&#39;, i, &#39;=&#39;, h)"
+      },
+      "token_overlap": 32,
+      "max_similarity_percent": 64.0
+    },
+    {
+      "case_id": 70,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e25372432513744775c6/295d4dcad1f74d87afc29fce/sub_1761640453002_inwu1r3gs.py",
+        "similarity_percent": 64.0,
+        "full_code": "n=int(input())\nfor i in range(1,11):\n    print(f\"{n} x {i} = {n*i}\")",
+        "highlighted_code": "<span class='highlight-red'>n=int(input())\nfor i in range(1,11):\n    </span>print(f&#34;{n} x {i} = {n*i}&#34;)"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e25372432513744775c6/51bbd72f42174843b97698b4/sub_1761638699754_00fp7643l.py",
+        "similarity_percent": 57.14,
+        "full_code": "n = int(input())\nfor i in range(1, 11):\n    tich = n * i\n    print(f\"{n} x {i} = {tich}\")",
+        "highlighted_code": "<span class='highlight-green'>n = int(input())\nfor i in range(1, 11):\n    </span>tich = n * i\n    print(f&#34;{n} x {i} = {tich}&#34;)"
+      },
+      "token_overlap": 32,
+      "max_similarity_percent": 64.0
+    },
+    {
+      "case_id": 71,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e25372432513744775c6/43fad0845ec445b4aecbfd8c/sub_1761643580895_2sjdv8iey.py",
+        "similarity_percent": 64.0,
+        "full_code": "n=int(input())\nfor i in range(1,11):\n    print(f\"{n} x {i} = {n*i}\")",
+        "highlighted_code": "<span class='highlight-red'>n=int(input())\nfor i in range(1,11):\n    </span>print(f&#34;{n} x {i} = {n*i}&#34;)"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e25372432513744775c6/522be41104e24b1fa5d14200/sub_1761648000915_cgbt3bx9h.py",
+        "similarity_percent": 57.14,
+        "full_code": "n=int(input())\nfor i in range(1,11):\n    result=n*i\n    print(f\"{n} x {i} = {result}\")\n        ",
+        "highlighted_code": "<span class='highlight-green'>n=int(input())\nfor i in range(1,11):\n    </span>result=n*i\n    print(f&#34;{n} x {i} = {result}&#34;)\n        "
+      },
+      "token_overlap": 32,
+      "max_similarity_percent": 64.0
+    },
+    {
+      "case_id": 72,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e25372432513744775c6/43fad0845ec445b4aecbfd8c/sub_1761643580895_2sjdv8iey.py",
+        "similarity_percent": 64.0,
+        "full_code": "n=int(input())\nfor i in range(1,11):\n    print(f\"{n} x {i} = {n*i}\")",
+        "highlighted_code": "<span class='highlight-red'>n=int(input())\nfor i in range(1,11):\n    </span>print(f&#34;{n} x {i} = {n*i}&#34;)"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e25372432513744775c6/f8a2bab9778140ecb46b6a60/sub_1761463003309_rvc3ldday.py",
+        "similarity_percent": 59.26,
+        "full_code": "n = int(input())\nfor i in range(1, 11):\n    h = n * i\n    print(n, 'x', i, '=', h)",
+        "highlighted_code": "<span class='highlight-green'>n = int(input())\nfor i in range(1, 11):\n    </span>h = n * i\n    print(n, &#39;x&#39;, i, &#39;=&#39;, h)"
+      },
+      "token_overlap": 32,
+      "max_similarity_percent": 64.0
+    },
+    {
+      "case_id": 73,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e25372432513744775c6/43fad0845ec445b4aecbfd8c/sub_1761643580895_2sjdv8iey.py",
+        "similarity_percent": 64.0,
+        "full_code": "n=int(input())\nfor i in range(1,11):\n    print(f\"{n} x {i} = {n*i}\")",
+        "highlighted_code": "<span class='highlight-red'>n=int(input())\nfor i in range(1,11):\n    </span>print(f&#34;{n} x {i} = {n*i}&#34;)"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e25372432513744775c6/51bbd72f42174843b97698b4/sub_1761638699754_00fp7643l.py",
+        "similarity_percent": 57.14,
+        "full_code": "n = int(input())\nfor i in range(1, 11):\n    tich = n * i\n    print(f\"{n} x {i} = {tich}\")",
+        "highlighted_code": "<span class='highlight-green'>n = int(input())\nfor i in range(1, 11):\n    </span>tich = n * i\n    print(f&#34;{n} x {i} = {tich}&#34;)"
+      },
+      "token_overlap": 32,
+      "max_similarity_percent": 64.0
+    },
+    {
+      "case_id": 74,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e25372432513744775c6/c747e87428cc4dbab36bd7aa/sub_1761644037045_eer4ipbq5.py",
+        "similarity_percent": 64.0,
+        "full_code": "n = int(input())\nfor i in range(1, 11):\n    print(f'{n} x {i} = {n*i}')",
+        "highlighted_code": "<span class='highlight-red'>n = int(input())\nfor i in range(1, 11):\n    </span>print(f&#39;{n} x {i} = {n*i}&#39;)"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e25372432513744775c6/f8a2bab9778140ecb46b6a60/sub_1761463003309_rvc3ldday.py",
+        "similarity_percent": 59.26,
+        "full_code": "n = int(input())\nfor i in range(1, 11):\n    h = n * i\n    print(n, 'x', i, '=', h)",
+        "highlighted_code": "<span class='highlight-green'>n = int(input())\nfor i in range(1, 11):\n    </span>h = n * i\n    print(n, &#39;x&#39;, i, &#39;=&#39;, h)"
+      },
+      "token_overlap": 32,
+      "max_similarity_percent": 64.0
+    },
+    {
+      "case_id": 75,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e25372432513744775c6/c747e87428cc4dbab36bd7aa/sub_1761644037045_eer4ipbq5.py",
+        "similarity_percent": 64.0,
+        "full_code": "n = int(input())\nfor i in range(1, 11):\n    print(f'{n} x {i} = {n*i}')",
+        "highlighted_code": "<span class='highlight-red'>n = int(input())\nfor i in range(1, 11):\n    </span>print(f&#39;{n} x {i} = {n*i}&#39;)"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e25372432513744775c6/51bbd72f42174843b97698b4/sub_1761638699754_00fp7643l.py",
+        "similarity_percent": 57.14,
+        "full_code": "n = int(input())\nfor i in range(1, 11):\n    tich = n * i\n    print(f\"{n} x {i} = {tich}\")",
+        "highlighted_code": "<span class='highlight-green'>n = int(input())\nfor i in range(1, 11):\n    </span>tich = n * i\n    print(f&#34;{n} x {i} = {tich}&#34;)"
+      },
+      "token_overlap": 32,
+      "max_similarity_percent": 64.0
+    },
+    {
+      "case_id": 76,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e25372432513744775c6/30d29d0969994c929976d40a/sub_1761651295463_yzg4czw7e.py",
+        "similarity_percent": 64.0,
+        "full_code": "n=int(input())\nfor i in range(1,11):\n    print(f\"{n} x {i} = {n*i}\")",
+        "highlighted_code": "<span class='highlight-red'>n=int(input())\nfor i in range(1,11):\n    </span>print(f&#34;{n} x {i} = {n*i}&#34;)"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e25372432513744775c6/f8a2bab9778140ecb46b6a60/sub_1761463003309_rvc3ldday.py",
+        "similarity_percent": 59.26,
+        "full_code": "n = int(input())\nfor i in range(1, 11):\n    h = n * i\n    print(n, 'x', i, '=', h)",
+        "highlighted_code": "<span class='highlight-green'>n = int(input())\nfor i in range(1, 11):\n    </span>h = n * i\n    print(n, &#39;x&#39;, i, &#39;=&#39;, h)"
+      },
+      "token_overlap": 32,
+      "max_similarity_percent": 64.0
+    },
+    {
+      "case_id": 77,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e25372432513744775c6/30d29d0969994c929976d40a/sub_1761651295463_yzg4czw7e.py",
+        "similarity_percent": 64.0,
+        "full_code": "n=int(input())\nfor i in range(1,11):\n    print(f\"{n} x {i} = {n*i}\")",
+        "highlighted_code": "<span class='highlight-red'>n=int(input())\nfor i in range(1,11):\n    </span>print(f&#34;{n} x {i} = {n*i}&#34;)"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e25372432513744775c6/51bbd72f42174843b97698b4/sub_1761638699754_00fp7643l.py",
+        "similarity_percent": 57.14,
+        "full_code": "n = int(input())\nfor i in range(1, 11):\n    tich = n * i\n    print(f\"{n} x {i} = {tich}\")",
+        "highlighted_code": "<span class='highlight-green'>n = int(input())\nfor i in range(1, 11):\n    </span>tich = n * i\n    print(f&#34;{n} x {i} = {tich}&#34;)"
+      },
+      "token_overlap": 32,
+      "max_similarity_percent": 64.0
+    },
+    {
+      "case_id": 78,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e25372432513744775c6/e7457b81cbe24d9d9bdac641/sub_1761669779416_q1i899ok8.py",
+        "similarity_percent": 64.0,
+        "full_code": "n=int(input())\nfor i in range(1,11):\n    print(f\"{n} x {i} = {n * i}\")",
+        "highlighted_code": "<span class='highlight-red'>n=int(input())\nfor i in range(1,11):\n    </span>print(f&#34;{n} x {i} = {n * i}&#34;)"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e25372432513744775c6/51bbd72f42174843b97698b4/sub_1761638699754_00fp7643l.py",
+        "similarity_percent": 57.14,
+        "full_code": "n = int(input())\nfor i in range(1, 11):\n    tich = n * i\n    print(f\"{n} x {i} = {tich}\")",
+        "highlighted_code": "<span class='highlight-green'>n = int(input())\nfor i in range(1, 11):\n    </span>tich = n * i\n    print(f&#34;{n} x {i} = {tich}&#34;)"
+      },
+      "token_overlap": 32,
+      "max_similarity_percent": 64.0
+    },
+    {
+      "case_id": 79,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e25372432513744775c6/f0199fcb94bf405a8bf2ca38/sub_1761633169253_xn3pli5ut.py",
+        "similarity_percent": 63.46,
+        "full_code": "n = int(input())\nfor i in range (1,11):\n    print(n,\"x\",i,\"=\", n*i)",
+        "highlighted_code": "<span class='highlight-red'>n = int(input())\nfor i in range (1,11):\n    p</span>rint(n,&#34;x&#34;,i,&#34;=&#34;, n*i)"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e25372432513744775c6/fed45b08a578484ebf92e830/sub_1761569577538_rrb9udqos.py",
+        "similarity_percent": 57.89,
+        "full_code": "n= int(input())\nfor i in range(1,11):\n    print('{0} x {1} = {2}'.format(n,i,n*i))",
+        "highlighted_code": "<span class='highlight-green'>n= int(input())\nfor i in range(1,11):\n    p</span>rint(&#39;{0} x {1} = {2}&#39;.format(n,i,n*i))"
+      },
+      "token_overlap": 33,
+      "max_similarity_percent": 63.46
+    },
+    {
+      "case_id": 80,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e25372432513744775c6/2e99febeecc6490f8e7c3f87/sub_1761643211506_wj0uld111.py",
+        "similarity_percent": 63.46,
+        "full_code": "n = int(input())\nfor i in range(1,11):\n    print(n, 'x', i, '=', n*i)\n    ",
+        "highlighted_code": "<span class='highlight-red'>n = int(input())\nfor i in range(1,11):\n    p</span>rint(n, &#39;x&#39;, i, &#39;=&#39;, n*i)\n    "
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e25372432513744775c6/fed45b08a578484ebf92e830/sub_1761569577538_rrb9udqos.py",
+        "similarity_percent": 57.89,
+        "full_code": "n= int(input())\nfor i in range(1,11):\n    print('{0} x {1} = {2}'.format(n,i,n*i))",
+        "highlighted_code": "<span class='highlight-green'>n= int(input())\nfor i in range(1,11):\n    p</span>rint(&#39;{0} x {1} = {2}&#39;.format(n,i,n*i))"
+      },
+      "token_overlap": 33,
+      "max_similarity_percent": 63.46
+    },
+    {
+      "case_id": 81,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e25372432513744775c6/c78f5dfafb144ed89a06ddba/sub_1761640093080_1oi0em3e6.py",
+        "similarity_percent": 62.26,
+        "full_code": "a = int(input())\nfor i in range(1,11):\n    print(f\"{a} x {i} =\", i * a)",
+        "highlighted_code": "<span class='highlight-red'>a = int(input())\nfor i in range(1,11):\n    p</span>rint(f&#34;{a} x {i} =&#34;, i * a)"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e25372432513744775c6/fed45b08a578484ebf92e830/sub_1761569577538_rrb9udqos.py",
+        "similarity_percent": 57.89,
+        "full_code": "n= int(input())\nfor i in range(1,11):\n    print('{0} x {1} = {2}'.format(n,i,n*i))",
+        "highlighted_code": "<span class='highlight-green'>n= int(input())\nfor i in range(1,11):\n    p</span>rint(&#39;{0} x {1} = {2}&#39;.format(n,i,n*i))"
+      },
+      "token_overlap": 33,
+      "max_similarity_percent": 62.26
+    },
+    {
+      "case_id": 82,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e25372432513744775c6/f0199fcb94bf405a8bf2ca38/sub_1761633169253_xn3pli5ut.py",
+        "similarity_percent": 61.54,
+        "full_code": "n = int(input())\nfor i in range (1,11):\n    print(n,\"x\",i,\"=\", n*i)",
+        "highlighted_code": "<span class='highlight-red'>n = int(input())\nfor i in range (1,11):\n    </span>print(n,&#34;x&#34;,i,&#34;=&#34;, n*i)"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e25372432513744775c6/8045cd76adf946038858d2bc/sub_1761638366447_gzdp7ptdp.py",
+        "similarity_percent": 57.14,
+        "full_code": "n=int(input())\nfor i in range(1,11):\n    tich=n*i\n    print(f'{n} x {i} = {tich}')",
+        "highlighted_code": "<span class='highlight-green'>n=int(input())\nfor i in range(1,11):\n    </span>tich=n*i\n    print(f&#39;{n} x {i} = {tich}&#39;)"
+      },
+      "token_overlap": 32,
+      "max_similarity_percent": 61.54
+    },
+    {
+      "case_id": 83,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e25372432513744775c6/f0199fcb94bf405a8bf2ca38/sub_1761633169253_xn3pli5ut.py",
+        "similarity_percent": 61.54,
+        "full_code": "n = int(input())\nfor i in range (1,11):\n    print(n,\"x\",i,\"=\", n*i)",
+        "highlighted_code": "<span class='highlight-red'>n = int(input())\nfor i in range (1,11):\n    </span>print(n,&#34;x&#34;,i,&#34;=&#34;, n*i)"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e25372432513744775c6/f95120b3a38a461085ef58cb/sub_1761622446758_9lyk75jrg.py",
+        "similarity_percent": 57.14,
+        "full_code": "n = int(input())\nfor i in range(1, 11):\n    result = n * i\n    print(f\"{n} × {i} = {result}\")",
+        "highlighted_code": "<span class='highlight-green'>n = int(input())\nfor i in range(1, 11):\n    </span>result = n * i\n    print(f&#34;{n} × {i} = {result}&#34;)"
+      },
+      "token_overlap": 32,
+      "max_similarity_percent": 61.54
+    },
+    {
+      "case_id": 84,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e25372432513744775c6/f0199fcb94bf405a8bf2ca38/sub_1761633169253_xn3pli5ut.py",
+        "similarity_percent": 61.54,
+        "full_code": "n = int(input())\nfor i in range (1,11):\n    print(n,\"x\",i,\"=\", n*i)",
+        "highlighted_code": "<span class='highlight-red'>n = int(input())\nfor i in range (1,11):\n    </span>print(n,&#34;x&#34;,i,&#34;=&#34;, n*i)"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e25372432513744775c6/522be41104e24b1fa5d14200/sub_1761648000915_cgbt3bx9h.py",
+        "similarity_percent": 57.14,
+        "full_code": "n=int(input())\nfor i in range(1,11):\n    result=n*i\n    print(f\"{n} x {i} = {result}\")\n        ",
+        "highlighted_code": "<span class='highlight-green'>n=int(input())\nfor i in range(1,11):\n    </span>result=n*i\n    print(f&#34;{n} x {i} = {result}&#34;)\n        "
+      },
+      "token_overlap": 32,
+      "max_similarity_percent": 61.54
+    },
+    {
+      "case_id": 85,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e25372432513744775c6/f0199fcb94bf405a8bf2ca38/sub_1761633169253_xn3pli5ut.py",
+        "similarity_percent": 61.54,
+        "full_code": "n = int(input())\nfor i in range (1,11):\n    print(n,\"x\",i,\"=\", n*i)",
+        "highlighted_code": "<span class='highlight-red'>n = int(input())\nfor i in range (1,11):\n    </span>print(n,&#34;x&#34;,i,&#34;=&#34;, n*i)"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e25372432513744775c6/f8a2bab9778140ecb46b6a60/sub_1761463003309_rvc3ldday.py",
+        "similarity_percent": 59.26,
+        "full_code": "n = int(input())\nfor i in range(1, 11):\n    h = n * i\n    print(n, 'x', i, '=', h)",
+        "highlighted_code": "<span class='highlight-green'>n = int(input())\nfor i in range(1, 11):\n    </span>h = n * i\n    print(n, &#39;x&#39;, i, &#39;=&#39;, h)"
+      },
+      "token_overlap": 32,
+      "max_similarity_percent": 61.54
+    },
+    {
+      "case_id": 86,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e25372432513744775c6/f0199fcb94bf405a8bf2ca38/sub_1761633169253_xn3pli5ut.py",
+        "similarity_percent": 61.54,
+        "full_code": "n = int(input())\nfor i in range (1,11):\n    print(n,\"x\",i,\"=\", n*i)",
+        "highlighted_code": "<span class='highlight-red'>n = int(input())\nfor i in range (1,11):\n    </span>print(n,&#34;x&#34;,i,&#34;=&#34;, n*i)"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e25372432513744775c6/51bbd72f42174843b97698b4/sub_1761638699754_00fp7643l.py",
+        "similarity_percent": 57.14,
+        "full_code": "n = int(input())\nfor i in range(1, 11):\n    tich = n * i\n    print(f\"{n} x {i} = {tich}\")",
+        "highlighted_code": "<span class='highlight-green'>n = int(input())\nfor i in range(1, 11):\n    </span>tich = n * i\n    print(f&#34;{n} x {i} = {tich}&#34;)"
+      },
+      "token_overlap": 32,
+      "max_similarity_percent": 61.54
+    },
+    {
+      "case_id": 87,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e25372432513744775c6/2e99febeecc6490f8e7c3f87/sub_1761643211506_wj0uld111.py",
+        "similarity_percent": 61.54,
+        "full_code": "n = int(input())\nfor i in range(1,11):\n    print(n, 'x', i, '=', n*i)\n    ",
+        "highlighted_code": "<span class='highlight-red'>n = int(input())\nfor i in range(1,11):\n    </span>print(n, &#39;x&#39;, i, &#39;=&#39;, n*i)\n    "
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e25372432513744775c6/8045cd76adf946038858d2bc/sub_1761638366447_gzdp7ptdp.py",
+        "similarity_percent": 57.14,
+        "full_code": "n=int(input())\nfor i in range(1,11):\n    tich=n*i\n    print(f'{n} x {i} = {tich}')",
+        "highlighted_code": "<span class='highlight-green'>n=int(input())\nfor i in range(1,11):\n    </span>tich=n*i\n    print(f&#39;{n} x {i} = {tich}&#39;)"
+      },
+      "token_overlap": 32,
+      "max_similarity_percent": 61.54
+    },
+    {
+      "case_id": 88,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e25372432513744775c6/2e99febeecc6490f8e7c3f87/sub_1761643211506_wj0uld111.py",
+        "similarity_percent": 61.54,
+        "full_code": "n = int(input())\nfor i in range(1,11):\n    print(n, 'x', i, '=', n*i)\n    ",
+        "highlighted_code": "<span class='highlight-red'>n = int(input())\nfor i in range(1,11):\n    </span>print(n, &#39;x&#39;, i, &#39;=&#39;, n*i)\n    "
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e25372432513744775c6/f95120b3a38a461085ef58cb/sub_1761622446758_9lyk75jrg.py",
+        "similarity_percent": 57.14,
+        "full_code": "n = int(input())\nfor i in range(1, 11):\n    result = n * i\n    print(f\"{n} × {i} = {result}\")",
+        "highlighted_code": "<span class='highlight-green'>n = int(input())\nfor i in range(1, 11):\n    </span>result = n * i\n    print(f&#34;{n} × {i} = {result}&#34;)"
+      },
+      "token_overlap": 32,
+      "max_similarity_percent": 61.54
+    },
+    {
+      "case_id": 89,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e25372432513744775c6/2e99febeecc6490f8e7c3f87/sub_1761643211506_wj0uld111.py",
+        "similarity_percent": 61.54,
+        "full_code": "n = int(input())\nfor i in range(1,11):\n    print(n, 'x', i, '=', n*i)\n    ",
+        "highlighted_code": "<span class='highlight-red'>n = int(input())\nfor i in range(1,11):\n    </span>print(n, &#39;x&#39;, i, &#39;=&#39;, n*i)\n    "
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e25372432513744775c6/522be41104e24b1fa5d14200/sub_1761648000915_cgbt3bx9h.py",
+        "similarity_percent": 57.14,
+        "full_code": "n=int(input())\nfor i in range(1,11):\n    result=n*i\n    print(f\"{n} x {i} = {result}\")\n        ",
+        "highlighted_code": "<span class='highlight-green'>n=int(input())\nfor i in range(1,11):\n    </span>result=n*i\n    print(f&#34;{n} x {i} = {result}&#34;)\n        "
+      },
+      "token_overlap": 32,
+      "max_similarity_percent": 61.54
+    },
+    {
+      "case_id": 90,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e25372432513744775c6/2e99febeecc6490f8e7c3f87/sub_1761643211506_wj0uld111.py",
+        "similarity_percent": 61.54,
+        "full_code": "n = int(input())\nfor i in range(1,11):\n    print(n, 'x', i, '=', n*i)\n    ",
+        "highlighted_code": "<span class='highlight-red'>n = int(input())\nfor i in range(1,11):\n    </span>print(n, &#39;x&#39;, i, &#39;=&#39;, n*i)\n    "
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e25372432513744775c6/f8a2bab9778140ecb46b6a60/sub_1761463003309_rvc3ldday.py",
+        "similarity_percent": 59.26,
+        "full_code": "n = int(input())\nfor i in range(1, 11):\n    h = n * i\n    print(n, 'x', i, '=', h)",
+        "highlighted_code": "<span class='highlight-green'>n = int(input())\nfor i in range(1, 11):\n    </span>h = n * i\n    print(n, &#39;x&#39;, i, &#39;=&#39;, h)"
+      },
+      "token_overlap": 32,
+      "max_similarity_percent": 61.54
+    },
+    {
+      "case_id": 91,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e25372432513744775c6/2e99febeecc6490f8e7c3f87/sub_1761643211506_wj0uld111.py",
+        "similarity_percent": 61.54,
+        "full_code": "n = int(input())\nfor i in range(1,11):\n    print(n, 'x', i, '=', n*i)\n    ",
+        "highlighted_code": "<span class='highlight-red'>n = int(input())\nfor i in range(1,11):\n    </span>print(n, &#39;x&#39;, i, &#39;=&#39;, n*i)\n    "
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e25372432513744775c6/51bbd72f42174843b97698b4/sub_1761638699754_00fp7643l.py",
+        "similarity_percent": 57.14,
+        "full_code": "n = int(input())\nfor i in range(1, 11):\n    tich = n * i\n    print(f\"{n} x {i} = {tich}\")",
+        "highlighted_code": "<span class='highlight-green'>n = int(input())\nfor i in range(1, 11):\n    </span>tich = n * i\n    print(f&#34;{n} x {i} = {tich}&#34;)"
+      },
+      "token_overlap": 32,
+      "max_similarity_percent": 61.54
+    },
+    {
+      "case_id": 92,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e25372432513744775c6/cd93b2ff882a4ffa85f4518f/sub_1761547864363_qjzdoj7kp.py",
+        "similarity_percent": 61.54,
+        "full_code": "n=int(input())\nfor i in range (1,11):\n    print (n,\"x\",i,\"=\",n*i)",
+        "highlighted_code": "<span class='highlight-red'>n=int(input())\nfor i in range (1,11):\n    </span>print (n,&#34;x&#34;,i,&#34;=&#34;,n*i)"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e25372432513744775c6/f8a2bab9778140ecb46b6a60/sub_1761463003309_rvc3ldday.py",
+        "similarity_percent": 59.26,
+        "full_code": "n = int(input())\nfor i in range(1, 11):\n    h = n * i\n    print(n, 'x', i, '=', h)",
+        "highlighted_code": "<span class='highlight-green'>n = int(input())\nfor i in range(1, 11):\n    </span>h = n * i\n    print(n, &#39;x&#39;, i, &#39;=&#39;, h)"
+      },
+      "token_overlap": 32,
+      "max_similarity_percent": 61.54
+    },
+    {
+      "case_id": 93,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e25372432513744775c6/cd93b2ff882a4ffa85f4518f/sub_1761547864363_qjzdoj7kp.py",
+        "similarity_percent": 61.54,
+        "full_code": "n=int(input())\nfor i in range (1,11):\n    print (n,\"x\",i,\"=\",n*i)",
+        "highlighted_code": "<span class='highlight-red'>n=int(input())\nfor i in range (1,11):\n    </span>print (n,&#34;x&#34;,i,&#34;=&#34;,n*i)"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e25372432513744775c6/51bbd72f42174843b97698b4/sub_1761638699754_00fp7643l.py",
+        "similarity_percent": 57.14,
+        "full_code": "n = int(input())\nfor i in range(1, 11):\n    tich = n * i\n    print(f\"{n} x {i} = {tich}\")",
+        "highlighted_code": "<span class='highlight-green'>n = int(input())\nfor i in range(1, 11):\n    </span>tich = n * i\n    print(f&#34;{n} x {i} = {tich}&#34;)"
+      },
+      "token_overlap": 32,
+      "max_similarity_percent": 61.54
+    },
+    {
+      "case_id": 94,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e25372432513744775c6/d341c622453349d180c0378f/sub_1761642861114_64brb4je8.py",
+        "similarity_percent": 60.71,
+        "full_code": "n=int(input())\nif n>0:\n    for i in range(1,11):\n       print(f\"{n} x {i} = {i*n}\")",
+        "highlighted_code": "n=int(input())\nif n&gt;0:\n    fo<span class='highlight-red'>r i in range(1,11):\n       print(f&#34;{n} x {i} = {i</span>*n}&#34;)"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e25372432513744775c6/c747e87428cc4dbab36bd7aa/sub_1761644037045_eer4ipbq5.py",
+        "similarity_percent": 68.0,
+        "full_code": "n = int(input())\nfor i in range(1, 11):\n    print(f'{n} x {i} = {n*i}')",
+        "highlighted_code": "n = int(input())\nfo<span class='highlight-green'>r i in range(1, 11):\n    print(f&#39;{n} x {i} = {n</span>*i}&#39;)"
+      },
+      "token_overlap": 34,
+      "max_similarity_percent": 68.0
+    },
+    {
+      "case_id": 95,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e25372432513744775c6/d341c622453349d180c0378f/sub_1761642861114_64brb4je8.py",
+        "similarity_percent": 60.71,
+        "full_code": "n=int(input())\nif n>0:\n    for i in range(1,11):\n       print(f\"{n} x {i} = {i*n}\")",
+        "highlighted_code": "n=int(input())\nif n&gt;0:\n    fo<span class='highlight-red'>r i in range(1,11):\n       print(f&#34;{n} x {i} = {i</span>*n}&#34;)"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e25372432513744775c6/30d29d0969994c929976d40a/sub_1761651295463_yzg4czw7e.py",
+        "similarity_percent": 68.0,
+        "full_code": "n=int(input())\nfor i in range(1,11):\n    print(f\"{n} x {i} = {n*i}\")",
+        "highlighted_code": "n=int(input())\nfo<span class='highlight-green'>r i in range(1,11):\n    print(f&#34;{n} x {i} = {n</span>*i}&#34;)"
+      },
+      "token_overlap": 34,
+      "max_similarity_percent": 68.0
+    },
+    {
+      "case_id": 96,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e25372432513744775c6/d341c622453349d180c0378f/sub_1761642861114_64brb4je8.py",
+        "similarity_percent": 60.71,
+        "full_code": "n=int(input())\nif n>0:\n    for i in range(1,11):\n       print(f\"{n} x {i} = {i*n}\")",
+        "highlighted_code": "n=int(input())\nif n&gt;0:\n    fo<span class='highlight-red'>r i in range(1,11):\n       print(f&#34;{n} x {i} = {i</span>*n}&#34;)"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e25372432513744775c6/e7457b81cbe24d9d9bdac641/sub_1761669779416_q1i899ok8.py",
+        "similarity_percent": 68.0,
+        "full_code": "n=int(input())\nfor i in range(1,11):\n    print(f\"{n} x {i} = {n * i}\")",
+        "highlighted_code": "n=int(input())\nfo<span class='highlight-green'>r i in range(1,11):\n    print(f&#34;{n} x {i} = {n </span>* i}&#34;)"
+      },
+      "token_overlap": 34,
+      "max_similarity_percent": 68.0
+    },
+    {
+      "case_id": 97,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e25372432513744775c6/c747e87428cc4dbab36bd7aa/sub_1761643455129_jqolagvc6.py",
+        "similarity_percent": 60.66,
+        "full_code": "n=int(input())\nif 1<=n<=10:\n    for i in range(1, 11):\n        print(f'{n} x {i} = {n*i}')\n",
+        "highlighted_code": "n=int(input())\nif 1&lt;=n&lt;=10<span class='highlight-red'>:\n    for i in range(1, 11):\n        print(f&#39;{n} x {i} = {n</span>*i}&#39;)\n"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e25372432513744775c6/d341c622453349d180c0378f/sub_1761642861114_64brb4je8.py",
+        "similarity_percent": 66.07,
+        "full_code": "n=int(input())\nif n>0:\n    for i in range(1,11):\n       print(f\"{n} x {i} = {i*n}\")",
+        "highlighted_code": "n=int(input())\nif n&gt;0<span class='highlight-green'>:\n    for i in range(1,11):\n       print(f&#34;{n} x {i} = {i</span>*n}&#34;)"
+      },
+      "token_overlap": 37,
+      "max_similarity_percent": 66.07
+    },
+    {
+      "case_id": 98,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e25372432513744775c6/c78f5dfafb144ed89a06ddba/sub_1761640093080_1oi0em3e6.py",
+        "similarity_percent": 60.38,
+        "full_code": "a = int(input())\nfor i in range(1,11):\n    print(f\"{a} x {i} =\", i * a)",
+        "highlighted_code": "<span class='highlight-red'>a = int(input())\nfor i in range(1,11):\n    </span>print(f&#34;{a} x {i} =&#34;, i * a)"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e25372432513744775c6/f8a2bab9778140ecb46b6a60/sub_1761463003309_rvc3ldday.py",
+        "similarity_percent": 59.26,
+        "full_code": "n = int(input())\nfor i in range(1, 11):\n    h = n * i\n    print(n, 'x', i, '=', h)",
+        "highlighted_code": "<span class='highlight-green'>n = int(input())\nfor i in range(1, 11):\n    </span>h = n * i\n    print(n, &#39;x&#39;, i, &#39;=&#39;, h)"
+      },
+      "token_overlap": 32,
+      "max_similarity_percent": 60.38
+    },
+    {
+      "case_id": 99,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e25372432513744775c6/c78f5dfafb144ed89a06ddba/sub_1761640093080_1oi0em3e6.py",
+        "similarity_percent": 60.38,
+        "full_code": "a = int(input())\nfor i in range(1,11):\n    print(f\"{a} x {i} =\", i * a)",
+        "highlighted_code": "<span class='highlight-red'>a = int(input())\nfor i in range(1,11):\n    </span>print(f&#34;{a} x {i} =&#34;, i * a)"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e25372432513744775c6/51bbd72f42174843b97698b4/sub_1761638699754_00fp7643l.py",
+        "similarity_percent": 57.14,
+        "full_code": "n = int(input())\nfor i in range(1, 11):\n    tich = n * i\n    print(f\"{n} x {i} = {tich}\")",
+        "highlighted_code": "<span class='highlight-green'>n = int(input())\nfor i in range(1, 11):\n    </span>tich = n * i\n    print(f&#34;{n} x {i} = {tich}&#34;)"
+      },
+      "token_overlap": 32,
+      "max_similarity_percent": 60.38
+    },
+    {
+      "case_id": 100,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e25372432513744775c6/4619643a0f2348b6b74a746a/sub_1761640585865_r4b5zrth9.py",
+        "similarity_percent": 59.26,
+        "full_code": "n = int(input())\nfor i in range(1,11):\n    tich = i * n\n    print(n,\"x\",i,\"=\",tich)",
+        "highlighted_code": "<span class='highlight-red'>n = int(input())\nfor i in range(1,11):\n    </span>tich = i * n\n    print(n,&#34;x&#34;,i,&#34;=&#34;,tich)"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e25372432513744775c6/f0199fcb94bf405a8bf2ca38/sub_1761633169253_xn3pli5ut.py",
+        "similarity_percent": 61.54,
+        "full_code": "n = int(input())\nfor i in range (1,11):\n    print(n,\"x\",i,\"=\", n*i)",
+        "highlighted_code": "<span class='highlight-green'>n = int(input())\nfor i in range (1,11):\n    </span>print(n,&#34;x&#34;,i,&#34;=&#34;, n*i)"
+      },
+      "token_overlap": 32,
+      "max_similarity_percent": 61.54
+    },
+    {
+      "case_id": 101,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e25372432513744775c6/4619643a0f2348b6b74a746a/sub_1761640585865_r4b5zrth9.py",
+        "similarity_percent": 59.26,
+        "full_code": "n = int(input())\nfor i in range(1,11):\n    tich = i * n\n    print(n,\"x\",i,\"=\",tich)",
+        "highlighted_code": "<span class='highlight-red'>n = int(input())\nfor i in range(1,11):\n    </span>tich = i * n\n    print(n,&#34;x&#34;,i,&#34;=&#34;,tich)"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e25372432513744775c6/2e99febeecc6490f8e7c3f87/sub_1761643211506_wj0uld111.py",
+        "similarity_percent": 61.54,
+        "full_code": "n = int(input())\nfor i in range(1,11):\n    print(n, 'x', i, '=', n*i)\n    ",
+        "highlighted_code": "<span class='highlight-green'>n = int(input())\nfor i in range(1,11):\n    </span>print(n, &#39;x&#39;, i, &#39;=&#39;, n*i)\n    "
+      },
+      "token_overlap": 32,
+      "max_similarity_percent": 61.54
+    },
+    {
+      "case_id": 102,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e25372432513744775c6/4619643a0f2348b6b74a746a/sub_1761640585865_r4b5zrth9.py",
+        "similarity_percent": 59.26,
+        "full_code": "n = int(input())\nfor i in range(1,11):\n    tich = i * n\n    print(n,\"x\",i,\"=\",tich)",
+        "highlighted_code": "<span class='highlight-red'>n = int(input())\nfor i in range(1,11):\n    </span>tich = i * n\n    print(n,&#34;x&#34;,i,&#34;=&#34;,tich)"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e25372432513744775c6/43fad0845ec445b4aecbfd8c/sub_1761643580895_2sjdv8iey.py",
+        "similarity_percent": 64.0,
+        "full_code": "n=int(input())\nfor i in range(1,11):\n    print(f\"{n} x {i} = {n*i}\")",
+        "highlighted_code": "<span class='highlight-green'>n=int(input())\nfor i in range(1,11):\n    </span>print(f&#34;{n} x {i} = {n*i}&#34;)"
+      },
+      "token_overlap": 32,
+      "max_similarity_percent": 64.0
+    },
+    {
+      "case_id": 103,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e25372432513744775c6/4619643a0f2348b6b74a746a/sub_1761640585865_r4b5zrth9.py",
+        "similarity_percent": 59.26,
+        "full_code": "n = int(input())\nfor i in range(1,11):\n    tich = i * n\n    print(n,\"x\",i,\"=\",tich)",
+        "highlighted_code": "<span class='highlight-red'>n = int(input())\nfor i in range(1,11):\n    </span>tich = i * n\n    print(n,&#34;x&#34;,i,&#34;=&#34;,tich)"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e25372432513744775c6/c747e87428cc4dbab36bd7aa/sub_1761644037045_eer4ipbq5.py",
+        "similarity_percent": 64.0,
+        "full_code": "n = int(input())\nfor i in range(1, 11):\n    print(f'{n} x {i} = {n*i}')",
+        "highlighted_code": "<span class='highlight-green'>n = int(input())\nfor i in range(1, 11):\n    </span>print(f&#39;{n} x {i} = {n*i}&#39;)"
+      },
+      "token_overlap": 32,
+      "max_similarity_percent": 64.0
+    },
+    {
+      "case_id": 104,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e25372432513744775c6/4619643a0f2348b6b74a746a/sub_1761640585865_r4b5zrth9.py",
+        "similarity_percent": 59.26,
+        "full_code": "n = int(input())\nfor i in range(1,11):\n    tich = i * n\n    print(n,\"x\",i,\"=\",tich)",
+        "highlighted_code": "<span class='highlight-red'>n = int(input())\nfor i in range(1,11):\n    </span>tich = i * n\n    print(n,&#34;x&#34;,i,&#34;=&#34;,tich)"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e25372432513744775c6/c78f5dfafb144ed89a06ddba/sub_1761640093080_1oi0em3e6.py",
+        "similarity_percent": 60.38,
+        "full_code": "a = int(input())\nfor i in range(1,11):\n    print(f\"{a} x {i} =\", i * a)",
+        "highlighted_code": "<span class='highlight-green'>a = int(input())\nfor i in range(1,11):\n    </span>print(f&#34;{a} x {i} =&#34;, i * a)"
+      },
+      "token_overlap": 32,
+      "max_similarity_percent": 60.38
+    },
+    {
+      "case_id": 105,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e25372432513744775c6/4619643a0f2348b6b74a746a/sub_1761640585865_r4b5zrth9.py",
+        "similarity_percent": 59.26,
+        "full_code": "n = int(input())\nfor i in range(1,11):\n    tich = i * n\n    print(n,\"x\",i,\"=\",tich)",
+        "highlighted_code": "<span class='highlight-red'>n = int(input())\nfor i in range(1,11):\n    </span>tich = i * n\n    print(n,&#34;x&#34;,i,&#34;=&#34;,tich)"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e25372432513744775c6/30d29d0969994c929976d40a/sub_1761651295463_yzg4czw7e.py",
+        "similarity_percent": 64.0,
+        "full_code": "n=int(input())\nfor i in range(1,11):\n    print(f\"{n} x {i} = {n*i}\")",
+        "highlighted_code": "<span class='highlight-green'>n=int(input())\nfor i in range(1,11):\n    </span>print(f&#34;{n} x {i} = {n*i}&#34;)"
+      },
+      "token_overlap": 32,
+      "max_similarity_percent": 64.0
+    },
+    {
+      "case_id": 106,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e25372432513744775c6/4619643a0f2348b6b74a746a/sub_1761640585865_r4b5zrth9.py",
+        "similarity_percent": 59.26,
+        "full_code": "n = int(input())\nfor i in range(1,11):\n    tich = i * n\n    print(n,\"x\",i,\"=\",tich)",
+        "highlighted_code": "<span class='highlight-red'>n = int(input())\nfor i in range(1,11):\n    </span>tich = i * n\n    print(n,&#34;x&#34;,i,&#34;=&#34;,tich)"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e25372432513744775c6/cd93b2ff882a4ffa85f4518f/sub_1761547864363_qjzdoj7kp.py",
+        "similarity_percent": 61.54,
+        "full_code": "n=int(input())\nfor i in range (1,11):\n    print (n,\"x\",i,\"=\",n*i)",
+        "highlighted_code": "<span class='highlight-green'>n=int(input())\nfor i in range (1,11):\n    </span>print (n,&#34;x&#34;,i,&#34;=&#34;,n*i)"
+      },
+      "token_overlap": 32,
+      "max_similarity_percent": 61.54
+    },
+    {
+      "case_id": 107,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e25372432513744775c6/4619643a0f2348b6b74a746a/sub_1761640585865_r4b5zrth9.py",
+        "similarity_percent": 59.26,
+        "full_code": "n = int(input())\nfor i in range(1,11):\n    tich = i * n\n    print(n,\"x\",i,\"=\",tich)",
+        "highlighted_code": "<span class='highlight-red'>n = int(input())\nfor i in range(1,11):\n    </span>tich = i * n\n    print(n,&#34;x&#34;,i,&#34;=&#34;,tich)"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e25372432513744775c6/e7457b81cbe24d9d9bdac641/sub_1761669779416_q1i899ok8.py",
+        "similarity_percent": 64.0,
+        "full_code": "n=int(input())\nfor i in range(1,11):\n    print(f\"{n} x {i} = {n * i}\")",
+        "highlighted_code": "<span class='highlight-green'>n=int(input())\nfor i in range(1,11):\n    </span>print(f&#34;{n} x {i} = {n * i}&#34;)"
+      },
+      "token_overlap": 32,
+      "max_similarity_percent": 64.0
+    },
+    {
+      "case_id": 108,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e25372432513744775c6/f8a2bab9778140ecb46b6a60/sub_1761463003309_rvc3ldday.py",
+        "similarity_percent": 59.26,
+        "full_code": "n = int(input())\nfor i in range(1, 11):\n    h = n * i\n    print(n, 'x', i, '=', h)",
+        "highlighted_code": "<span class='highlight-red'>n = int(input())\nfor i in range(1, 11):\n    </span>h = n * i\n    print(n, &#39;x&#39;, i, &#39;=&#39;, h)"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e25372432513744775c6/e7457b81cbe24d9d9bdac641/sub_1761669779416_q1i899ok8.py",
+        "similarity_percent": 64.0,
+        "full_code": "n=int(input())\nfor i in range(1,11):\n    print(f\"{n} x {i} = {n * i}\")",
+        "highlighted_code": "<span class='highlight-green'>n=int(input())\nfor i in range(1,11):\n    </span>print(f&#34;{n} x {i} = {n * i}&#34;)"
+      },
+      "token_overlap": 32,
+      "max_similarity_percent": 64.0
+    },
+    {
+      "case_id": 109,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e25372432513744775c6/fed45b08a578484ebf92e830/sub_1761569577538_rrb9udqos.py",
+        "similarity_percent": 57.89,
+        "full_code": "n= int(input())\nfor i in range(1,11):\n    print('{0} x {1} = {2}'.format(n,i,n*i))",
+        "highlighted_code": "<span class='highlight-red'>n= int(input())\nfor i in range(1,11):\n    p</span>rint(&#39;{0} x {1} = {2}&#39;.format(n,i,n*i))"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e25372432513744775c6/cd93b2ff882a4ffa85f4518f/sub_1761547864363_qjzdoj7kp.py",
+        "similarity_percent": 63.46,
+        "full_code": "n=int(input())\nfor i in range (1,11):\n    print (n,\"x\",i,\"=\",n*i)",
+        "highlighted_code": "<span class='highlight-green'>n=int(input())\nfor i in range (1,11):\n    p</span>rint (n,&#34;x&#34;,i,&#34;=&#34;,n*i)"
+      },
+      "token_overlap": 33,
+      "max_similarity_percent": 63.46
+    },
+    {
+      "case_id": 110,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e25372432513744775c6/fed45b08a578484ebf92e830/sub_1761569577538_rrb9udqos.py",
+        "similarity_percent": 57.89,
+        "full_code": "n= int(input())\nfor i in range(1,11):\n    print('{0} x {1} = {2}'.format(n,i,n*i))",
+        "highlighted_code": "<span class='highlight-red'>n= int(input())\nfor i in range(1,11):\n    p</span>rint(&#39;{0} x {1} = {2}&#39;.format(n,i,n*i))"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e25372432513744775c6/e7457b81cbe24d9d9bdac641/sub_1761669779416_q1i899ok8.py",
+        "similarity_percent": 66.0,
+        "full_code": "n=int(input())\nfor i in range(1,11):\n    print(f\"{n} x {i} = {n * i}\")",
+        "highlighted_code": "<span class='highlight-green'>n=int(input())\nfor i in range(1,11):\n    p</span>rint(f&#34;{n} x {i} = {n * i}&#34;)"
+      },
+      "token_overlap": 33,
+      "max_similarity_percent": 66.0
+    },
+    {
+      "case_id": 111,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e25372432513744775c6/8045cd76adf946038858d2bc/sub_1761638366447_gzdp7ptdp.py",
+        "similarity_percent": 57.14,
+        "full_code": "n=int(input())\nfor i in range(1,11):\n    tich=n*i\n    print(f'{n} x {i} = {tich}')",
+        "highlighted_code": "<span class='highlight-red'>n=int(input())\nfor i in range(1,11):\n    </span>tich=n*i\n    print(f&#39;{n} x {i} = {tich}&#39;)"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e25372432513744775c6/43fad0845ec445b4aecbfd8c/sub_1761643580895_2sjdv8iey.py",
+        "similarity_percent": 64.0,
+        "full_code": "n=int(input())\nfor i in range(1,11):\n    print(f\"{n} x {i} = {n*i}\")",
+        "highlighted_code": "<span class='highlight-green'>n=int(input())\nfor i in range(1,11):\n    </span>print(f&#34;{n} x {i} = {n*i}&#34;)"
+      },
+      "token_overlap": 32,
+      "max_similarity_percent": 64.0
+    },
+    {
+      "case_id": 112,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e25372432513744775c6/8045cd76adf946038858d2bc/sub_1761638366447_gzdp7ptdp.py",
+        "similarity_percent": 57.14,
+        "full_code": "n=int(input())\nfor i in range(1,11):\n    tich=n*i\n    print(f'{n} x {i} = {tich}')",
+        "highlighted_code": "<span class='highlight-red'>n=int(input())\nfor i in range(1,11):\n    </span>tich=n*i\n    print(f&#39;{n} x {i} = {tich}&#39;)"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e25372432513744775c6/c747e87428cc4dbab36bd7aa/sub_1761644037045_eer4ipbq5.py",
+        "similarity_percent": 64.0,
+        "full_code": "n = int(input())\nfor i in range(1, 11):\n    print(f'{n} x {i} = {n*i}')",
+        "highlighted_code": "<span class='highlight-green'>n = int(input())\nfor i in range(1, 11):\n    </span>print(f&#39;{n} x {i} = {n*i}&#39;)"
+      },
+      "token_overlap": 32,
+      "max_similarity_percent": 64.0
+    },
+    {
+      "case_id": 113,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e25372432513744775c6/8045cd76adf946038858d2bc/sub_1761638366447_gzdp7ptdp.py",
+        "similarity_percent": 57.14,
+        "full_code": "n=int(input())\nfor i in range(1,11):\n    tich=n*i\n    print(f'{n} x {i} = {tich}')",
+        "highlighted_code": "<span class='highlight-red'>n=int(input())\nfor i in range(1,11):\n    </span>tich=n*i\n    print(f&#39;{n} x {i} = {tich}&#39;)"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e25372432513744775c6/c78f5dfafb144ed89a06ddba/sub_1761640093080_1oi0em3e6.py",
+        "similarity_percent": 60.38,
+        "full_code": "a = int(input())\nfor i in range(1,11):\n    print(f\"{a} x {i} =\", i * a)",
+        "highlighted_code": "<span class='highlight-green'>a = int(input())\nfor i in range(1,11):\n    </span>print(f&#34;{a} x {i} =&#34;, i * a)"
+      },
+      "token_overlap": 32,
+      "max_similarity_percent": 60.38
+    },
+    {
+      "case_id": 114,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e25372432513744775c6/8045cd76adf946038858d2bc/sub_1761638366447_gzdp7ptdp.py",
+        "similarity_percent": 57.14,
+        "full_code": "n=int(input())\nfor i in range(1,11):\n    tich=n*i\n    print(f'{n} x {i} = {tich}')",
+        "highlighted_code": "<span class='highlight-red'>n=int(input())\nfor i in range(1,11):\n    </span>tich=n*i\n    print(f&#39;{n} x {i} = {tich}&#39;)"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e25372432513744775c6/30d29d0969994c929976d40a/sub_1761651295463_yzg4czw7e.py",
+        "similarity_percent": 64.0,
+        "full_code": "n=int(input())\nfor i in range(1,11):\n    print(f\"{n} x {i} = {n*i}\")",
+        "highlighted_code": "<span class='highlight-green'>n=int(input())\nfor i in range(1,11):\n    </span>print(f&#34;{n} x {i} = {n*i}&#34;)"
+      },
+      "token_overlap": 32,
+      "max_similarity_percent": 64.0
+    },
+    {
+      "case_id": 115,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e25372432513744775c6/8045cd76adf946038858d2bc/sub_1761638366447_gzdp7ptdp.py",
+        "similarity_percent": 57.14,
+        "full_code": "n=int(input())\nfor i in range(1,11):\n    tich=n*i\n    print(f'{n} x {i} = {tich}')",
+        "highlighted_code": "<span class='highlight-red'>n=int(input())\nfor i in range(1,11):\n    </span>tich=n*i\n    print(f&#39;{n} x {i} = {tich}&#39;)"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e25372432513744775c6/cd93b2ff882a4ffa85f4518f/sub_1761547864363_qjzdoj7kp.py",
+        "similarity_percent": 61.54,
+        "full_code": "n=int(input())\nfor i in range (1,11):\n    print (n,\"x\",i,\"=\",n*i)",
+        "highlighted_code": "<span class='highlight-green'>n=int(input())\nfor i in range (1,11):\n    </span>print (n,&#34;x&#34;,i,&#34;=&#34;,n*i)"
+      },
+      "token_overlap": 32,
+      "max_similarity_percent": 61.54
+    },
+    {
+      "case_id": 116,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e25372432513744775c6/8045cd76adf946038858d2bc/sub_1761638366447_gzdp7ptdp.py",
+        "similarity_percent": 57.14,
+        "full_code": "n=int(input())\nfor i in range(1,11):\n    tich=n*i\n    print(f'{n} x {i} = {tich}')",
+        "highlighted_code": "<span class='highlight-red'>n=int(input())\nfor i in range(1,11):\n    </span>tich=n*i\n    print(f&#39;{n} x {i} = {tich}&#39;)"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e25372432513744775c6/e7457b81cbe24d9d9bdac641/sub_1761669779416_q1i899ok8.py",
+        "similarity_percent": 64.0,
+        "full_code": "n=int(input())\nfor i in range(1,11):\n    print(f\"{n} x {i} = {n * i}\")",
+        "highlighted_code": "<span class='highlight-green'>n=int(input())\nfor i in range(1,11):\n    </span>print(f&#34;{n} x {i} = {n * i}&#34;)"
+      },
+      "token_overlap": 32,
+      "max_similarity_percent": 64.0
+    },
+    {
+      "case_id": 117,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e25372432513744775c6/f95120b3a38a461085ef58cb/sub_1761622446758_9lyk75jrg.py",
+        "similarity_percent": 57.14,
+        "full_code": "n = int(input())\nfor i in range(1, 11):\n    result = n * i\n    print(f\"{n} × {i} = {result}\")",
+        "highlighted_code": "<span class='highlight-red'>n = int(input())\nfor i in range(1, 11):\n    </span>result = n * i\n    print(f&#34;{n} × {i} = {result}&#34;)"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e25372432513744775c6/43fad0845ec445b4aecbfd8c/sub_1761643580895_2sjdv8iey.py",
+        "similarity_percent": 64.0,
+        "full_code": "n=int(input())\nfor i in range(1,11):\n    print(f\"{n} x {i} = {n*i}\")",
+        "highlighted_code": "<span class='highlight-green'>n=int(input())\nfor i in range(1,11):\n    </span>print(f&#34;{n} x {i} = {n*i}&#34;)"
+      },
+      "token_overlap": 32,
+      "max_similarity_percent": 64.0
+    },
+    {
+      "case_id": 118,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e25372432513744775c6/f95120b3a38a461085ef58cb/sub_1761622446758_9lyk75jrg.py",
+        "similarity_percent": 57.14,
+        "full_code": "n = int(input())\nfor i in range(1, 11):\n    result = n * i\n    print(f\"{n} × {i} = {result}\")",
+        "highlighted_code": "<span class='highlight-red'>n = int(input())\nfor i in range(1, 11):\n    </span>result = n * i\n    print(f&#34;{n} × {i} = {result}&#34;)"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e25372432513744775c6/c747e87428cc4dbab36bd7aa/sub_1761644037045_eer4ipbq5.py",
+        "similarity_percent": 64.0,
+        "full_code": "n = int(input())\nfor i in range(1, 11):\n    print(f'{n} x {i} = {n*i}')",
+        "highlighted_code": "<span class='highlight-green'>n = int(input())\nfor i in range(1, 11):\n    </span>print(f&#39;{n} x {i} = {n*i}&#39;)"
+      },
+      "token_overlap": 32,
+      "max_similarity_percent": 64.0
+    },
+    {
+      "case_id": 119,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e25372432513744775c6/f95120b3a38a461085ef58cb/sub_1761622446758_9lyk75jrg.py",
+        "similarity_percent": 57.14,
+        "full_code": "n = int(input())\nfor i in range(1, 11):\n    result = n * i\n    print(f\"{n} × {i} = {result}\")",
+        "highlighted_code": "<span class='highlight-red'>n = int(input())\nfor i in range(1, 11):\n    </span>result = n * i\n    print(f&#34;{n} × {i} = {result}&#34;)"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e25372432513744775c6/c78f5dfafb144ed89a06ddba/sub_1761640093080_1oi0em3e6.py",
+        "similarity_percent": 60.38,
+        "full_code": "a = int(input())\nfor i in range(1,11):\n    print(f\"{a} x {i} =\", i * a)",
+        "highlighted_code": "<span class='highlight-green'>a = int(input())\nfor i in range(1,11):\n    </span>print(f&#34;{a} x {i} =&#34;, i * a)"
+      },
+      "token_overlap": 32,
+      "max_similarity_percent": 60.38
+    },
+    {
+      "case_id": 120,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e25372432513744775c6/f95120b3a38a461085ef58cb/sub_1761622446758_9lyk75jrg.py",
+        "similarity_percent": 57.14,
+        "full_code": "n = int(input())\nfor i in range(1, 11):\n    result = n * i\n    print(f\"{n} × {i} = {result}\")",
+        "highlighted_code": "<span class='highlight-red'>n = int(input())\nfor i in range(1, 11):\n    </span>result = n * i\n    print(f&#34;{n} × {i} = {result}&#34;)"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e25372432513744775c6/30d29d0969994c929976d40a/sub_1761651295463_yzg4czw7e.py",
+        "similarity_percent": 64.0,
+        "full_code": "n=int(input())\nfor i in range(1,11):\n    print(f\"{n} x {i} = {n*i}\")",
+        "highlighted_code": "<span class='highlight-green'>n=int(input())\nfor i in range(1,11):\n    </span>print(f&#34;{n} x {i} = {n*i}&#34;)"
+      },
+      "token_overlap": 32,
+      "max_similarity_percent": 64.0
+    },
+    {
+      "case_id": 121,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e25372432513744775c6/f95120b3a38a461085ef58cb/sub_1761622446758_9lyk75jrg.py",
+        "similarity_percent": 57.14,
+        "full_code": "n = int(input())\nfor i in range(1, 11):\n    result = n * i\n    print(f\"{n} × {i} = {result}\")",
+        "highlighted_code": "<span class='highlight-red'>n = int(input())\nfor i in range(1, 11):\n    </span>result = n * i\n    print(f&#34;{n} × {i} = {result}&#34;)"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e25372432513744775c6/cd93b2ff882a4ffa85f4518f/sub_1761547864363_qjzdoj7kp.py",
+        "similarity_percent": 61.54,
+        "full_code": "n=int(input())\nfor i in range (1,11):\n    print (n,\"x\",i,\"=\",n*i)",
+        "highlighted_code": "<span class='highlight-green'>n=int(input())\nfor i in range (1,11):\n    </span>print (n,&#34;x&#34;,i,&#34;=&#34;,n*i)"
+      },
+      "token_overlap": 32,
+      "max_similarity_percent": 61.54
+    },
+    {
+      "case_id": 122,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e25372432513744775c6/f95120b3a38a461085ef58cb/sub_1761622446758_9lyk75jrg.py",
+        "similarity_percent": 57.14,
+        "full_code": "n = int(input())\nfor i in range(1, 11):\n    result = n * i\n    print(f\"{n} × {i} = {result}\")",
+        "highlighted_code": "<span class='highlight-red'>n = int(input())\nfor i in range(1, 11):\n    </span>result = n * i\n    print(f&#34;{n} × {i} = {result}&#34;)"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e25372432513744775c6/e7457b81cbe24d9d9bdac641/sub_1761669779416_q1i899ok8.py",
+        "similarity_percent": 64.0,
+        "full_code": "n=int(input())\nfor i in range(1,11):\n    print(f\"{n} x {i} = {n * i}\")",
+        "highlighted_code": "<span class='highlight-green'>n=int(input())\nfor i in range(1,11):\n    </span>print(f&#34;{n} x {i} = {n * i}&#34;)"
+      },
+      "token_overlap": 32,
+      "max_similarity_percent": 64.0
+    },
+    {
+      "case_id": 123,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e25372432513744775c6/522be41104e24b1fa5d14200/sub_1761648000915_cgbt3bx9h.py",
+        "similarity_percent": 57.14,
+        "full_code": "n=int(input())\nfor i in range(1,11):\n    result=n*i\n    print(f\"{n} x {i} = {result}\")\n        ",
+        "highlighted_code": "<span class='highlight-red'>n=int(input())\nfor i in range(1,11):\n    </span>result=n*i\n    print(f&#34;{n} x {i} = {result}&#34;)\n        "
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e25372432513744775c6/c747e87428cc4dbab36bd7aa/sub_1761644037045_eer4ipbq5.py",
+        "similarity_percent": 64.0,
+        "full_code": "n = int(input())\nfor i in range(1, 11):\n    print(f'{n} x {i} = {n*i}')",
+        "highlighted_code": "<span class='highlight-green'>n = int(input())\nfor i in range(1, 11):\n    </span>print(f&#39;{n} x {i} = {n*i}&#39;)"
+      },
+      "token_overlap": 32,
+      "max_similarity_percent": 64.0
+    },
+    {
+      "case_id": 124,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e25372432513744775c6/522be41104e24b1fa5d14200/sub_1761648000915_cgbt3bx9h.py",
+        "similarity_percent": 57.14,
+        "full_code": "n=int(input())\nfor i in range(1,11):\n    result=n*i\n    print(f\"{n} x {i} = {result}\")\n        ",
+        "highlighted_code": "<span class='highlight-red'>n=int(input())\nfor i in range(1,11):\n    </span>result=n*i\n    print(f&#34;{n} x {i} = {result}&#34;)\n        "
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e25372432513744775c6/c78f5dfafb144ed89a06ddba/sub_1761640093080_1oi0em3e6.py",
+        "similarity_percent": 60.38,
+        "full_code": "a = int(input())\nfor i in range(1,11):\n    print(f\"{a} x {i} =\", i * a)",
+        "highlighted_code": "<span class='highlight-green'>a = int(input())\nfor i in range(1,11):\n    </span>print(f&#34;{a} x {i} =&#34;, i * a)"
+      },
+      "token_overlap": 32,
+      "max_similarity_percent": 60.38
+    },
+    {
+      "case_id": 125,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e25372432513744775c6/522be41104e24b1fa5d14200/sub_1761648000915_cgbt3bx9h.py",
+        "similarity_percent": 57.14,
+        "full_code": "n=int(input())\nfor i in range(1,11):\n    result=n*i\n    print(f\"{n} x {i} = {result}\")\n        ",
+        "highlighted_code": "<span class='highlight-red'>n=int(input())\nfor i in range(1,11):\n    </span>result=n*i\n    print(f&#34;{n} x {i} = {result}&#34;)\n        "
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e25372432513744775c6/30d29d0969994c929976d40a/sub_1761651295463_yzg4czw7e.py",
+        "similarity_percent": 64.0,
+        "full_code": "n=int(input())\nfor i in range(1,11):\n    print(f\"{n} x {i} = {n*i}\")",
+        "highlighted_code": "<span class='highlight-green'>n=int(input())\nfor i in range(1,11):\n    </span>print(f&#34;{n} x {i} = {n*i}&#34;)"
+      },
+      "token_overlap": 32,
+      "max_similarity_percent": 64.0
+    },
+    {
+      "case_id": 126,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e25372432513744775c6/522be41104e24b1fa5d14200/sub_1761648000915_cgbt3bx9h.py",
+        "similarity_percent": 57.14,
+        "full_code": "n=int(input())\nfor i in range(1,11):\n    result=n*i\n    print(f\"{n} x {i} = {result}\")\n        ",
+        "highlighted_code": "<span class='highlight-red'>n=int(input())\nfor i in range(1,11):\n    </span>result=n*i\n    print(f&#34;{n} x {i} = {result}&#34;)\n        "
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e25372432513744775c6/cd93b2ff882a4ffa85f4518f/sub_1761547864363_qjzdoj7kp.py",
+        "similarity_percent": 61.54,
+        "full_code": "n=int(input())\nfor i in range (1,11):\n    print (n,\"x\",i,\"=\",n*i)",
+        "highlighted_code": "<span class='highlight-green'>n=int(input())\nfor i in range (1,11):\n    </span>print (n,&#34;x&#34;,i,&#34;=&#34;,n*i)"
+      },
+      "token_overlap": 32,
+      "max_similarity_percent": 61.54
+    },
+    {
+      "case_id": 127,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e25372432513744775c6/522be41104e24b1fa5d14200/sub_1761648000915_cgbt3bx9h.py",
+        "similarity_percent": 57.14,
+        "full_code": "n=int(input())\nfor i in range(1,11):\n    result=n*i\n    print(f\"{n} x {i} = {result}\")\n        ",
+        "highlighted_code": "<span class='highlight-red'>n=int(input())\nfor i in range(1,11):\n    </span>result=n*i\n    print(f&#34;{n} x {i} = {result}&#34;)\n        "
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e25372432513744775c6/e7457b81cbe24d9d9bdac641/sub_1761669779416_q1i899ok8.py",
+        "similarity_percent": 64.0,
+        "full_code": "n=int(input())\nfor i in range(1,11):\n    print(f\"{n} x {i} = {n * i}\")",
+        "highlighted_code": "<span class='highlight-green'>n=int(input())\nfor i in range(1,11):\n    </span>print(f&#34;{n} x {i} = {n * i}&#34;)"
+      },
+      "token_overlap": 32,
+      "max_similarity_percent": 64.0
+    },
+    {
+      "case_id": 128,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e25372432513744775c6/c747e87428cc4dbab36bd7aa/sub_1761643581115_a2z60ynbs.py",
+        "similarity_percent": 56.92,
+        "full_code": "n = int(input())\nif n >= 1 and n <= 10:\n    for i in range(1, 11):\n        print(f'{n} x {i} = {n*i}')",
+        "highlighted_code": "n = int(input())\nif n &gt;= 1 and n &lt;= 10<span class='highlight-red'>:\n    for i in range(1, 11):\n        print(f&#39;{n} x {i} = {n</span>*i}&#39;)"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e25372432513744775c6/c747e87428cc4dbab36bd7aa/sub_1761643455129_jqolagvc6.py",
+        "similarity_percent": 60.66,
+        "full_code": "n=int(input())\nif 1<=n<=10:\n    for i in range(1, 11):\n        print(f'{n} x {i} = {n*i}')\n",
+        "highlighted_code": "n=int(input())\nif 1&lt;=n&lt;=10<span class='highlight-green'>:\n    for i in range(1, 11):\n        print(f&#39;{n} x {i} = {n</span>*i}&#39;)\n"
+      },
+      "token_overlap": 37,
+      "max_similarity_percent": 60.66
+    },
+    {
+      "case_id": 129,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e25372432513744775c6/c747e87428cc4dbab36bd7aa/sub_1761643581115_a2z60ynbs.py",
+        "similarity_percent": 56.92,
+        "full_code": "n = int(input())\nif n >= 1 and n <= 10:\n    for i in range(1, 11):\n        print(f'{n} x {i} = {n*i}')",
+        "highlighted_code": "n = int(input())\nif n &gt;= 1 and n &lt;= 10<span class='highlight-red'>:\n    for i in range(1, 11):\n        print(f&#39;{n} x {i} = {n</span>*i}&#39;)"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e25372432513744775c6/d341c622453349d180c0378f/sub_1761642861114_64brb4je8.py",
+        "similarity_percent": 66.07,
+        "full_code": "n=int(input())\nif n>0:\n    for i in range(1,11):\n       print(f\"{n} x {i} = {i*n}\")",
+        "highlighted_code": "n=int(input())\nif n&gt;0<span class='highlight-green'>:\n    for i in range(1,11):\n       print(f&#34;{n} x {i} = {i</span>*n}&#34;)"
+      },
+      "token_overlap": 37,
+      "max_similarity_percent": 66.07
+    },
+    {
+      "case_id": 130,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e25372432513744775c6/c747e87428cc4dbab36bd7aa/sub_1761643455129_jqolagvc6.py",
+        "similarity_percent": 55.74,
+        "full_code": "n=int(input())\nif 1<=n<=10:\n    for i in range(1, 11):\n        print(f'{n} x {i} = {n*i}')\n",
+        "highlighted_code": "n=int(input())\nif 1&lt;=n&lt;=10:\n    fo<span class='highlight-red'>r i in range(1, 11):\n        print(f&#39;{n} x {i} = {n</span>*i}&#39;)\n"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e25372432513744775c6/43fad0845ec445b4aecbfd8c/sub_1761643580895_2sjdv8iey.py",
+        "similarity_percent": 68.0,
+        "full_code": "n=int(input())\nfor i in range(1,11):\n    print(f\"{n} x {i} = {n*i}\")",
+        "highlighted_code": "n=int(input())\nfo<span class='highlight-green'>r i in range(1,11):\n    print(f&#34;{n} x {i} = {n</span>*i}&#34;)"
+      },
+      "token_overlap": 34,
+      "max_similarity_percent": 68.0
+    },
+    {
+      "case_id": 131,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e25372432513744775c6/c747e87428cc4dbab36bd7aa/sub_1761643455129_jqolagvc6.py",
+        "similarity_percent": 55.74,
+        "full_code": "n=int(input())\nif 1<=n<=10:\n    for i in range(1, 11):\n        print(f'{n} x {i} = {n*i}')\n",
+        "highlighted_code": "n=int(input())\nif 1&lt;=n&lt;=10:\n    fo<span class='highlight-red'>r i in range(1, 11):\n        print(f&#39;{n} x {i} = {n</span>*i}&#39;)\n"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e25372432513744775c6/c747e87428cc4dbab36bd7aa/sub_1761644037045_eer4ipbq5.py",
+        "similarity_percent": 68.0,
+        "full_code": "n = int(input())\nfor i in range(1, 11):\n    print(f'{n} x {i} = {n*i}')",
+        "highlighted_code": "n = int(input())\nfo<span class='highlight-green'>r i in range(1, 11):\n    print(f&#39;{n} x {i} = {n</span>*i}&#39;)"
+      },
+      "token_overlap": 34,
+      "max_similarity_percent": 68.0
+    },
+    {
+      "case_id": 132,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e25372432513744775c6/c747e87428cc4dbab36bd7aa/sub_1761643455129_jqolagvc6.py",
+        "similarity_percent": 55.74,
+        "full_code": "n=int(input())\nif 1<=n<=10:\n    for i in range(1, 11):\n        print(f'{n} x {i} = {n*i}')\n",
+        "highlighted_code": "n=int(input())\nif 1&lt;=n&lt;=10:\n    fo<span class='highlight-red'>r i in range(1, 11):\n        print(f&#39;{n} x {i} = {n</span>*i}&#39;)\n"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e25372432513744775c6/30d29d0969994c929976d40a/sub_1761651295463_yzg4czw7e.py",
+        "similarity_percent": 68.0,
+        "full_code": "n=int(input())\nfor i in range(1,11):\n    print(f\"{n} x {i} = {n*i}\")",
+        "highlighted_code": "n=int(input())\nfo<span class='highlight-green'>r i in range(1,11):\n    print(f&#34;{n} x {i} = {n</span>*i}&#34;)"
+      },
+      "token_overlap": 34,
+      "max_similarity_percent": 68.0
+    },
+    {
+      "case_id": 133,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e25372432513744775c6/c747e87428cc4dbab36bd7aa/sub_1761643455129_jqolagvc6.py",
+        "similarity_percent": 55.74,
+        "full_code": "n=int(input())\nif 1<=n<=10:\n    for i in range(1, 11):\n        print(f'{n} x {i} = {n*i}')\n",
+        "highlighted_code": "n=int(input())\nif 1&lt;=n&lt;=10:\n    fo<span class='highlight-red'>r i in range(1, 11):\n        print(f&#39;{n} x {i} = {n</span>*i}&#39;)\n"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e25372432513744775c6/e7457b81cbe24d9d9bdac641/sub_1761669779416_q1i899ok8.py",
+        "similarity_percent": 68.0,
+        "full_code": "n=int(input())\nfor i in range(1,11):\n    print(f\"{n} x {i} = {n * i}\")",
+        "highlighted_code": "n=int(input())\nfo<span class='highlight-green'>r i in range(1,11):\n    print(f&#34;{n} x {i} = {n </span>* i}&#34;)"
+      },
+      "token_overlap": 34,
+      "max_similarity_percent": 68.0
+    },
+    {
+      "case_id": 134,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e25372432513744775c6/c747e87428cc4dbab36bd7aa/sub_1761643581115_a2z60ynbs.py",
+        "similarity_percent": 52.31,
+        "full_code": "n = int(input())\nif n >= 1 and n <= 10:\n    for i in range(1, 11):\n        print(f'{n} x {i} = {n*i}')",
+        "highlighted_code": "n = int(input())\nif n &gt;= 1 and n &lt;= 10:\n    fo<span class='highlight-red'>r i in range(1, 11):\n        print(f&#39;{n} x {i} = {n</span>*i}&#39;)"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e25372432513744775c6/43fad0845ec445b4aecbfd8c/sub_1761643580895_2sjdv8iey.py",
+        "similarity_percent": 68.0,
+        "full_code": "n=int(input())\nfor i in range(1,11):\n    print(f\"{n} x {i} = {n*i}\")",
+        "highlighted_code": "n=int(input())\nfo<span class='highlight-green'>r i in range(1,11):\n    print(f&#34;{n} x {i} = {n</span>*i}&#34;)"
+      },
+      "token_overlap": 34,
+      "max_similarity_percent": 68.0
+    },
+    {
+      "case_id": 135,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e25372432513744775c6/c747e87428cc4dbab36bd7aa/sub_1761643581115_a2z60ynbs.py",
+        "similarity_percent": 52.31,
+        "full_code": "n = int(input())\nif n >= 1 and n <= 10:\n    for i in range(1, 11):\n        print(f'{n} x {i} = {n*i}')",
+        "highlighted_code": "n = int(input())\nif n &gt;= 1 and n &lt;= 10:\n    fo<span class='highlight-red'>r i in range(1, 11):\n        print(f&#39;{n} x {i} = {n</span>*i}&#39;)"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e25372432513744775c6/c747e87428cc4dbab36bd7aa/sub_1761644037045_eer4ipbq5.py",
+        "similarity_percent": 68.0,
+        "full_code": "n = int(input())\nfor i in range(1, 11):\n    print(f'{n} x {i} = {n*i}')",
+        "highlighted_code": "n = int(input())\nfo<span class='highlight-green'>r i in range(1, 11):\n    print(f&#39;{n} x {i} = {n</span>*i}&#39;)"
+      },
+      "token_overlap": 34,
+      "max_similarity_percent": 68.0
+    },
+    {
+      "case_id": 136,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e25372432513744775c6/c747e87428cc4dbab36bd7aa/sub_1761643581115_a2z60ynbs.py",
+        "similarity_percent": 52.31,
+        "full_code": "n = int(input())\nif n >= 1 and n <= 10:\n    for i in range(1, 11):\n        print(f'{n} x {i} = {n*i}')",
+        "highlighted_code": "n = int(input())\nif n &gt;= 1 and n &lt;= 10:\n    fo<span class='highlight-red'>r i in range(1, 11):\n        print(f&#39;{n} x {i} = {n</span>*i}&#39;)"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e25372432513744775c6/30d29d0969994c929976d40a/sub_1761651295463_yzg4czw7e.py",
+        "similarity_percent": 68.0,
+        "full_code": "n=int(input())\nfor i in range(1,11):\n    print(f\"{n} x {i} = {n*i}\")",
+        "highlighted_code": "n=int(input())\nfo<span class='highlight-green'>r i in range(1,11):\n    print(f&#34;{n} x {i} = {n</span>*i}&#34;)"
+      },
+      "token_overlap": 34,
+      "max_similarity_percent": 68.0
+    },
+    {
+      "case_id": 137,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e25372432513744775c6/c747e87428cc4dbab36bd7aa/sub_1761643581115_a2z60ynbs.py",
+        "similarity_percent": 52.31,
+        "full_code": "n = int(input())\nif n >= 1 and n <= 10:\n    for i in range(1, 11):\n        print(f'{n} x {i} = {n*i}')",
+        "highlighted_code": "n = int(input())\nif n &gt;= 1 and n &lt;= 10:\n    fo<span class='highlight-red'>r i in range(1, 11):\n        print(f&#39;{n} x {i} = {n</span>*i}&#39;)"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e25372432513744775c6/e7457b81cbe24d9d9bdac641/sub_1761669779416_q1i899ok8.py",
+        "similarity_percent": 68.0,
+        "full_code": "n=int(input())\nfor i in range(1,11):\n    print(f\"{n} x {i} = {n * i}\")",
+        "highlighted_code": "n=int(input())\nfo<span class='highlight-green'>r i in range(1,11):\n    print(f&#34;{n} x {i} = {n </span>* i}&#34;)"
+      },
+      "token_overlap": 34,
+      "max_similarity_percent": 68.0
+    },
+    {
+      "case_id": 138,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e25372432513744775c6/c747e87428cc4dbab36bd7aa/sub_1761643234459_phu4hsisf.py",
+        "similarity_percent": 47.44,
+        "full_code": "n=int(input())\nif 1<=n<=10:\n    for i in range(1, 11):\n        print(f'{n} x {i} = {n*i}')\nelse:\n    print()",
+        "highlighted_code": "n=int(input())\nif 1&lt;=n&lt;=10<span class='highlight-red'>:\n    for i in range(1, 11):\n        print(f&#39;{n} x {i} = {n</span>*i}&#39;)\nelse:\n    print()"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e25372432513744775c6/d341c622453349d180c0378f/sub_1761642861114_64brb4je8.py",
+        "similarity_percent": 66.07,
+        "full_code": "n=int(input())\nif n>0:\n    for i in range(1,11):\n       print(f\"{n} x {i} = {i*n}\")",
+        "highlighted_code": "n=int(input())\nif n&gt;0<span class='highlight-green'>:\n    for i in range(1,11):\n       print(f&#34;{n} x {i} = {i</span>*n}&#34;)"
+      },
+      "token_overlap": 37,
+      "max_similarity_percent": 66.07
+    },
+    {
+      "case_id": 139,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e25372432513744775c6/c747e87428cc4dbab36bd7aa/sub_1761643234459_phu4hsisf.py",
+        "similarity_percent": 43.59,
+        "full_code": "n=int(input())\nif 1<=n<=10:\n    for i in range(1, 11):\n        print(f'{n} x {i} = {n*i}')\nelse:\n    print()",
+        "highlighted_code": "n=int(input())\nif 1&lt;=n&lt;=10:\n    fo<span class='highlight-red'>r i in range(1, 11):\n        print(f&#39;{n} x {i} = {n</span>*i}&#39;)\nelse:\n    print()"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e25372432513744775c6/c747e87428cc4dbab36bd7aa/sub_1761644037045_eer4ipbq5.py",
+        "similarity_percent": 68.0,
+        "full_code": "n = int(input())\nfor i in range(1, 11):\n    print(f'{n} x {i} = {n*i}')",
+        "highlighted_code": "n = int(input())\nfo<span class='highlight-green'>r i in range(1, 11):\n    print(f&#39;{n} x {i} = {n</span>*i}&#39;)"
+      },
+      "token_overlap": 34,
+      "max_similarity_percent": 68.0
+    },
+    {
+      "case_id": 140,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e25372432513744775c6/c747e87428cc4dbab36bd7aa/sub_1761643234459_phu4hsisf.py",
+        "similarity_percent": 43.59,
+        "full_code": "n=int(input())\nif 1<=n<=10:\n    for i in range(1, 11):\n        print(f'{n} x {i} = {n*i}')\nelse:\n    print()",
+        "highlighted_code": "n=int(input())\nif 1&lt;=n&lt;=10:\n    fo<span class='highlight-red'>r i in range(1, 11):\n        print(f&#39;{n} x {i} = {n</span>*i}&#39;)\nelse:\n    print()"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e25372432513744775c6/30d29d0969994c929976d40a/sub_1761651295463_yzg4czw7e.py",
+        "similarity_percent": 68.0,
+        "full_code": "n=int(input())\nfor i in range(1,11):\n    print(f\"{n} x {i} = {n*i}\")",
+        "highlighted_code": "n=int(input())\nfo<span class='highlight-green'>r i in range(1,11):\n    print(f&#34;{n} x {i} = {n</span>*i}&#34;)"
+      },
+      "token_overlap": 34,
+      "max_similarity_percent": 68.0
+    },
+    {
+      "case_id": 141,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e25372432513744775c6/c747e87428cc4dbab36bd7aa/sub_1761643234459_phu4hsisf.py",
+        "similarity_percent": 43.59,
+        "full_code": "n=int(input())\nif 1<=n<=10:\n    for i in range(1, 11):\n        print(f'{n} x {i} = {n*i}')\nelse:\n    print()",
+        "highlighted_code": "n=int(input())\nif 1&lt;=n&lt;=10:\n    fo<span class='highlight-red'>r i in range(1, 11):\n        print(f&#39;{n} x {i} = {n</span>*i}&#39;)\nelse:\n    print()"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e25372432513744775c6/e7457b81cbe24d9d9bdac641/sub_1761669779416_q1i899ok8.py",
+        "similarity_percent": 68.0,
+        "full_code": "n=int(input())\nfor i in range(1,11):\n    print(f\"{n} x {i} = {n * i}\")",
+        "highlighted_code": "n=int(input())\nfo<span class='highlight-green'>r i in range(1,11):\n    print(f&#34;{n} x {i} = {n </span>* i}&#34;)"
+      },
+      "token_overlap": 34,
+      "max_similarity_percent": 68.0
+    }
+  ]
+}

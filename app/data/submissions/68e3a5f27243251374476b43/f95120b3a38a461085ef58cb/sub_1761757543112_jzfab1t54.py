@@ -1,0 +1,5 @@
+num = int(input())
+so_dao_nguoc = int(str(num)[::-1])
+dao_nguoc_2lan = int(str(so_dao_nguoc)[::-1])
+result = (num == dao_nguoc_2lan)
+print(result)

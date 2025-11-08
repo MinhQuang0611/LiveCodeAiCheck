@@ -1,0 +1,5 @@
+n = int(input())
+a = list(map(float,input().split()))
+a.remove(max(a))
+a.remove(max(a))
+print(round((sum(a))/(float(n-2)),2))

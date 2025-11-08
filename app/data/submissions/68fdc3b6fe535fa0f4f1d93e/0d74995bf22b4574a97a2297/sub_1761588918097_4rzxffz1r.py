@@ -1,0 +1,6 @@
+n = int(input())
+m = list(map(int,input().split()))
+m.remove(max(m))
+m.remove(min(m))
+res = float(sum(m) / len(m))
+print(res)

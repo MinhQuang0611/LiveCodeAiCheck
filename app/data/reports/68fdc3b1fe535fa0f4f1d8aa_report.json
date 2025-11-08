@@ -1,0 +1,249 @@
+{
+  "problem_id": "68fdc3b1fe535fa0f4f1d8aa",
+  "filter_criteria": {
+    "min_token_overlap": 80,
+    "min_similarity_percent": 60
+  },
+  "total_cases_found": 15,
+  "total_cases_filtered": 14,
+  "cases": [
+    {
+      "case_id": 1,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68fdc3b1fe535fa0f4f1d8aa/ffdb326842044f2e98b7aaa7/sub_1761804273248_r097iuhll.py",
+        "similarity_percent": 83.23,
+        "full_code": "t = int(input())\n\nwhile t > 0:\n    n = int(input())\n\n    team_a = list(map(int, input().split()))\n    team_b = list(map(int, input().split()))\n\n    check = True\n\n    for i in range(n):\n        if team_a[i] > team_b[i]:\n            check = False\n\n    if check:\n        print(\"YES\")\n    else:\n        print(\"NO\")\n    t -= 1",
+        "highlighted_code": "t = int(input())\n\nwhile t &gt; 0:\n    <span class='highlight-red'>n = int(input())\n\n    team_a = list(map(int, input().split()))\n    team_b = list(map(int, input().split()))\n\n    check = True\n\n    for i in range(n):\n        if team_a[i] &gt; team_b[i]:\n            check = Fals</span>e\n\n    if check<span class='highlight-red'>:\n        print(&#34;YES&#34;)\n    else:\n        print(&#34;NO&#34;</span>)\n    t -= 1"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68fdc3b1fe535fa0f4f1d8aa/d9aec9d917da4c5e9beeb80b/sub_1761748051934_awc86kfjr.py",
+        "similarity_percent": 74.18,
+        "full_code": "\nt = int(input())\nfor _ in range(t):\n    n = int(input())  \n    \n    \n    a = list(map(int, input().split()))\n    b = list(map(int, input().split()))\n    \n    \n    a.sort()\n    b.sort()\n    \n    \n    ok = True\n    for i in range(n):\n        if a[i] > b[i]:\n            ok = False\n            break\n\n    \n    if ok:\n        print(\"YES\")\n    else:\n        print(\"NO\")",
+        "highlighted_code": "\nt = int(input())\nfor _ in range(t):\n   <span class='highlight-green'> n = int(input())  \n    \n    \n    a = list(map(int, input().split()))\n    b = list(map(int, input().split()))\n    \n    \n    </span>a.sort()\n    b.sort()\n    \n    \n   <span class='highlight-green'> ok = True\n    for i in range(n):\n        if a[i] &gt; b[i]:\n            ok = Fal</span>se\n            break\n\n    \n    if o<span class='highlight-green'>k:\n        print(&#34;YES&#34;)\n    else:\n        print(&#34;NO</span>&#34;)"
+      },
+      "token_overlap": 134,
+      "max_similarity_percent": 83.23
+    },
+    {
+      "case_id": 2,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68fdc3b1fe535fa0f4f1d8aa/d82933fea814463eb5b029d1/sub_1761619063412_qb67l5ghv.py",
+        "similarity_percent": 75.9,
+        "full_code": "t = int(input())\nfor i in range(t):\n    n = int(input())\n    a = list(map(int, input().split()))\n    b = list(map(int, input().split()))\n    a.sort()\n    b.sort()\nfor j in range(n):\n        if a[j] <= b[i]:\n            print('YES')\n        else:\n            print(\"NO\")    \n            break",
+        "highlighted_code": "t = i<span class='highlight-red'>nt(input())\nfor i in range(t):\n    n = int(input())\n    a = list(map(int, input().split()))\n    b = list(map(int, input().split()))\n    a</span>.<span class='highlight-red'>sort()\n    b.sort()\nfor j in range(n):\n        if a[j] </span>&lt;= b[i]:\n            print(&#39;YES&#39;)\n        else:\n            print(&#34;NO&#34;)    \n            break"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68fdc3b1fe535fa0f4f1d8aa/91001b54722a4328a2b7b879/sub_1761475223827_8zq5pgtdj.py",
+        "similarity_percent": 69.49,
+        "full_code": "# Hàm xử lý một test case\ndef process_test_case(n, a, b):\n    a.sort()  # Sắp xếp đội A\n    b.sort()  # Sắp xếp đội B\n    \n    # So sánh từng thành viên của đội A và B\n    for i in range(n):\n        if a[i] > b[i]:  # Nếu thành viên đội A mạnh hơn thành viên đội B\n            return \"NO\"\n    return \"YES\"\n\n# Đọc số lượng test case\nt = int(input())\n\n# Xử lý từng test case\nfor _ in range(t):\n    n = int(input())  # Số lượng thành viên của mỗi đội\n    a = list(map(int, input().split()))  # Sức mạnh đội A\n    b = list(map(int, input().split()))  # Sức mạnh đội B\n    \n    # Gọi hàm xử lý và in kết quả\n    print(process_test_case(n, a, b))\n",
+        "highlighted_code": "# Hàm xử lý một test case\ndef process_test_case(n, a, b):\n    a.<span class='highlight-green'>sort()  # Sắp xếp đội A\n    b.sort()  # Sắp xếp đội B\n    \n    # So sánh từng thành viên của đội A và B\n    for i in range(n):\n        if a[i] </span>&gt; b[i]:  # Nếu thành viên đội A mạnh hơn thành viên đội B\n            return &#34;NO&#34;\n    return &#34;YES&#34;\n\n# Đọc số lượng test case\nt = i<span class='highlight-green'>nt(input())\n\n# Xử lý từng test case\nfor _ in range(t):\n    n = int(input())  # Số lượng thành viên của mỗi đội\n    a = list(map(int, input().split()))  # Sức mạnh đội A\n    b = list(map(int, input().split()</span>))  # Sức mạnh đội B\n    \n    # Gọi hàm xử lý và in kết quả\n    print(process_test_case(n, a, b))\n"
+      },
+      "token_overlap": 126,
+      "max_similarity_percent": 75.9
+    },
+    {
+      "case_id": 3,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68fdc3b1fe535fa0f4f1d8aa/8e236cb825b041b0a82527f2/sub_1761640234166_5kiduh3o8.py",
+        "similarity_percent": 71.84,
+        "full_code": "t = int(input())\nfor _ in range(t):\n    n = int(input())\n    ta = list(map(int, input().split()))[:n]\n    tb = list(map(int, input().split()))[:n]\n\n    ta.sort()\n    tb.sort()\n\n    for i in range(n):\n        if ta[i] > tb[i]:\n            print(\"NO\")\n            break\n    else:\n        print(\"YES\")",
+        "highlighted_code": "t = i<span class='highlight-red'>nt(input())\nfor _ in range(t):\n    n = int(input())\n    ta = list(map(int, input().split()</span>))[:n]\n    tb <span class='highlight-red'>= list(map(int, input().split()</span>))[:n]\n\n    ta.<span class='highlight-red'>sort()\n    tb.sort()\n\n    for i in range(n):\n        if ta[i] &gt; tb[i]</span>:\n            print(&#34;NO&#34;)\n            break\n    else:\n        print(&#34;YES&#34;)"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68fdc3b1fe535fa0f4f1d8aa/91001b54722a4328a2b7b879/sub_1761475223827_8zq5pgtdj.py",
+        "similarity_percent": 70.62,
+        "full_code": "# Hàm xử lý một test case\ndef process_test_case(n, a, b):\n    a.sort()  # Sắp xếp đội A\n    b.sort()  # Sắp xếp đội B\n    \n    # So sánh từng thành viên của đội A và B\n    for i in range(n):\n        if a[i] > b[i]:  # Nếu thành viên đội A mạnh hơn thành viên đội B\n            return \"NO\"\n    return \"YES\"\n\n# Đọc số lượng test case\nt = int(input())\n\n# Xử lý từng test case\nfor _ in range(t):\n    n = int(input())  # Số lượng thành viên của mỗi đội\n    a = list(map(int, input().split()))  # Sức mạnh đội A\n    b = list(map(int, input().split()))  # Sức mạnh đội B\n    \n    # Gọi hàm xử lý và in kết quả\n    print(process_test_case(n, a, b))\n",
+        "highlighted_code": "# Hàm xử lý một test case\ndef process_test_case(n, a, b):\n    a.<span class='highlight-green'>sort()  # Sắp xếp đội A\n    b.sort()  # Sắp xếp đội B\n    \n    # So sánh từng thành viên của đội A và B\n    for i in range(n):\n        if a[i] &gt; b[i]</span>:  # Nếu thành viên đội A mạnh hơn thành viên đội B\n            return &#34;NO&#34;\n    return &#34;YES&#34;\n\n# Đọc số lượng test case\nt = i<span class='highlight-green'>nt(input())\n\n# Xử lý từng test case\nfor _ in range(t):\n    n = int(input())  # Số lượng thành viên của mỗi đội\n    a = list(map(int, input().split()</span>))  # Sức mạnh đội A\n    b <span class='highlight-green'>= list(map(int, input().split()</span>))  # Sức mạnh đội B\n    \n    # Gọi hàm xử lý và in kết quả\n    print(process_test_case(n, a, b))\n"
+      },
+      "token_overlap": 125,
+      "max_similarity_percent": 71.84
+    },
+    {
+      "case_id": 4,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68fdc3b1fe535fa0f4f1d8aa/d9aec9d917da4c5e9beeb80b/sub_1761748051934_awc86kfjr.py",
+        "similarity_percent": 71.43,
+        "full_code": "\nt = int(input())\nfor _ in range(t):\n    n = int(input())  \n    \n    \n    a = list(map(int, input().split()))\n    b = list(map(int, input().split()))\n    \n    \n    a.sort()\n    b.sort()\n    \n    \n    ok = True\n    for i in range(n):\n        if a[i] > b[i]:\n            ok = False\n            break\n\n    \n    if ok:\n        print(\"YES\")\n    else:\n        print(\"NO\")",
+        "highlighted_code": "<span class='highlight-red'>\nt = int(input())\nfor _ in range(t):\n    n = int(input())  \n    \n    \n    a = list(map(int, input().split()))\n    b = list(map(int, input().split()))\n    \n    \n    a.sort()\n    </span>b.sort()\n    \n    \n    ok = True\n    for i in range(n):\n        if a[i] &gt; b[i]:\n            ok = False\n            break\n\n    \n    if o<span class='highlight-red'>k:\n        print(&#34;YES&#34;)\n    else:\n        print(&#34;NO</span>&#34;)"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68fdc3b1fe535fa0f4f1d8aa/d82933fea814463eb5b029d1/sub_1761619063412_qb67l5ghv.py",
+        "similarity_percent": 78.31,
+        "full_code": "t = int(input())\nfor i in range(t):\n    n = int(input())\n    a = list(map(int, input().split()))\n    b = list(map(int, input().split()))\n    a.sort()\n    b.sort()\nfor j in range(n):\n        if a[j] <= b[i]:\n            print('YES')\n        else:\n            print(\"NO\")    \n            break",
+        "highlighted_code": "<span class='highlight-green'>t = int(input())\nfor i in range(t):\n    n = int(input())\n    a = list(map(int, input().split()))\n    b = list(map(int, input().split()))\n    a.sort()\n    b</span>.sort()\nfor j in range(n):\n        if a[j] &lt;= b[i]<span class='highlight-green'>:\n            print(&#39;YES&#39;)\n        else:\n            print(&#34;NO&#34;</span>)    \n            break"
+      },
+      "token_overlap": 130,
+      "max_similarity_percent": 78.31
+    },
+    {
+      "case_id": 5,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68fdc3b1fe535fa0f4f1d8aa/8e236cb825b041b0a82527f2/sub_1761640234166_5kiduh3o8.py",
+        "similarity_percent": 70.69,
+        "full_code": "t = int(input())\nfor _ in range(t):\n    n = int(input())\n    ta = list(map(int, input().split()))[:n]\n    tb = list(map(int, input().split()))[:n]\n\n    ta.sort()\n    tb.sort()\n\n    for i in range(n):\n        if ta[i] > tb[i]:\n            print(\"NO\")\n            break\n    else:\n        print(\"YES\")",
+        "highlighted_code": "<span class='highlight-red'>t = int(input())\nfor _ in range(t):\n    n = int(input())\n    ta = list(map(int, input().split()</span>))[:n]\n    tb <span class='highlight-red'>= list(map(int, input().split()</span>))[:n]\n\n    ta.<span class='highlight-red'>sort()\n    tb.sort()\n\n    for i in range(n):\n        if ta[i] </span>&gt; tb[i]:\n            print(&#34;NO&#34;)\n            break\n    else:\n        print(&#34;YES&#34;)"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68fdc3b1fe535fa0f4f1d8aa/d82933fea814463eb5b029d1/sub_1761619063412_qb67l5ghv.py",
+        "similarity_percent": 74.1,
+        "full_code": "t = int(input())\nfor i in range(t):\n    n = int(input())\n    a = list(map(int, input().split()))\n    b = list(map(int, input().split()))\n    a.sort()\n    b.sort()\nfor j in range(n):\n        if a[j] <= b[i]:\n            print('YES')\n        else:\n            print(\"NO\")    \n            break",
+        "highlighted_code": "<span class='highlight-green'>t = int(input())\nfor i in range(t):\n    n = int(input())\n    a = list(map(int, input().split()</span>))\n    b <span class='highlight-green'>= list(map(int, input().split()</span>))\n    a.<span class='highlight-green'>sort()\n    b.sort()\nfor j in range(n):\n        if a[j] </span>&lt;= b[i]:\n            print(&#39;YES&#39;)\n        else:\n            print(&#34;NO&#34;)    \n            break"
+      },
+      "token_overlap": 123,
+      "max_similarity_percent": 74.1
+    },
+    {
+      "case_id": 6,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68fdc3b1fe535fa0f4f1d8aa/8e236cb825b041b0a82527f2/sub_1761640234166_5kiduh3o8.py",
+        "similarity_percent": 68.39,
+        "full_code": "t = int(input())\nfor _ in range(t):\n    n = int(input())\n    ta = list(map(int, input().split()))[:n]\n    tb = list(map(int, input().split()))[:n]\n\n    ta.sort()\n    tb.sort()\n\n    for i in range(n):\n        if ta[i] > tb[i]:\n            print(\"NO\")\n            break\n    else:\n        print(\"YES\")",
+        "highlighted_code": "<span class='highlight-red'>t = int(input())\nfor _ in range(t):\n    n = int(input())\n    ta = list(map(int, input().split()</span>))[:n]\n    tb <span class='highlight-red'>= list(map(int, input().split()</span>))[:n]\n\n    ta.sort()\n    tb.sort()\n\n    f<span class='highlight-red'>or i in range(n):\n        if ta[i] &gt; tb[i]</span>:\n            print(&#34;NO&#34;)\n            break\n    else:\n        print(&#34;YES&#34;)"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68fdc3b1fe535fa0f4f1d8aa/d9aec9d917da4c5e9beeb80b/sub_1761748051934_awc86kfjr.py",
+        "similarity_percent": 65.38,
+        "full_code": "\nt = int(input())\nfor _ in range(t):\n    n = int(input())  \n    \n    \n    a = list(map(int, input().split()))\n    b = list(map(int, input().split()))\n    \n    \n    a.sort()\n    b.sort()\n    \n    \n    ok = True\n    for i in range(n):\n        if a[i] > b[i]:\n            ok = False\n            break\n\n    \n    if ok:\n        print(\"YES\")\n    else:\n        print(\"NO\")",
+        "highlighted_code": "<span class='highlight-green'>\nt = int(input())\nfor _ in range(t):\n    n = int(input())  \n    \n    \n    a = list(map(int, input().split(</span>)))\n    b<span class='highlight-green'> = list(map(int, input().split(</span>)))\n    \n    \n    a.sort()\n    b.sort()\n    \n    \n    ok = True\n    <span class='highlight-green'>for i in range(n):\n        if a[i] &gt; b[i</span>]:\n            ok = False\n            break\n\n    \n    if ok:\n        print(&#34;YES&#34;)\n    else:\n        print(&#34;NO&#34;)"
+      },
+      "token_overlap": 119,
+      "max_similarity_percent": 68.39
+    },
+    {
+      "case_id": 7,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68fdc3b1fe535fa0f4f1d8aa/d9aec9d917da4c5e9beeb80b/sub_1761748051934_awc86kfjr.py",
+        "similarity_percent": 67.03,
+        "full_code": "\nt = int(input())\nfor _ in range(t):\n    n = int(input())  \n    \n    \n    a = list(map(int, input().split()))\n    b = list(map(int, input().split()))\n    \n    \n    a.sort()\n    b.sort()\n    \n    \n    ok = True\n    for i in range(n):\n        if a[i] > b[i]:\n            ok = False\n            break\n\n    \n    if ok:\n        print(\"YES\")\n    else:\n        print(\"NO\")",
+        "highlighted_code": "\nt = <span class='highlight-red'>int(input())\nfor _ in range(t):\n    n = int(input())  \n    \n    \n    a = list(map(int, input().split()))\n    b = list(map(int, input().split()))\n    \n    \n    </span>a.sort()\n    b.sort()\n    \n    \n    ok = True\n    <span class='highlight-red'>for i in range(n):\n        if a[i] &gt; b[i</span>]:\n            ok = False\n            break\n\n    \n    if ok:\n        print(&#34;YES&#34;)\n    else:\n        print(&#34;NO&#34;)"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68fdc3b1fe535fa0f4f1d8aa/91001b54722a4328a2b7b879/sub_1761475223827_8zq5pgtdj.py",
+        "similarity_percent": 67.23,
+        "full_code": "# Hàm xử lý một test case\ndef process_test_case(n, a, b):\n    a.sort()  # Sắp xếp đội A\n    b.sort()  # Sắp xếp đội B\n    \n    # So sánh từng thành viên của đội A và B\n    for i in range(n):\n        if a[i] > b[i]:  # Nếu thành viên đội A mạnh hơn thành viên đội B\n            return \"NO\"\n    return \"YES\"\n\n# Đọc số lượng test case\nt = int(input())\n\n# Xử lý từng test case\nfor _ in range(t):\n    n = int(input())  # Số lượng thành viên của mỗi đội\n    a = list(map(int, input().split()))  # Sức mạnh đội A\n    b = list(map(int, input().split()))  # Sức mạnh đội B\n    \n    # Gọi hàm xử lý và in kết quả\n    print(process_test_case(n, a, b))\n",
+        "highlighted_code": "# Hàm xử lý một test case\ndef process_test_case(n, a, b):\n    a.sort()  # Sắp xếp đội A\n    b.sort()  # Sắp xếp đội B\n    \n    # So sánh từng thành viên của đội A và B\n    f<span class='highlight-green'>or i in range(n):\n        if a[i] &gt; b[i]</span>:  # Nếu thành viên đội A mạnh hơn thành viên đội B\n            return &#34;NO&#34;\n    return &#34;YES&#34;\n\n# Đọc số lượng test case\nt = i<span class='highlight-green'>nt(input())\n\n# Xử lý từng test case\nfor _ in range(t):\n    n = int(input())  # Số lượng thành viên của mỗi đội\n    a = list(map(int, input().split()))  # Sức mạnh đội A\n    b = list(map(int, input().split()</span>))  # Sức mạnh đội B\n    \n    # Gọi hàm xử lý và in kết quả\n    print(process_test_case(n, a, b))\n"
+      },
+      "token_overlap": 122,
+      "max_similarity_percent": 67.23
+    },
+    {
+      "case_id": 8,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68fdc3b1fe535fa0f4f1d8aa/ffdb326842044f2e98b7aaa7/sub_1761804273248_r097iuhll.py",
+        "similarity_percent": 61.49,
+        "full_code": "t = int(input())\n\nwhile t > 0:\n    n = int(input())\n\n    team_a = list(map(int, input().split()))\n    team_b = list(map(int, input().split()))\n\n    check = True\n\n    for i in range(n):\n        if team_a[i] > team_b[i]:\n            check = False\n\n    if check:\n        print(\"YES\")\n    else:\n        print(\"NO\")\n    t -= 1",
+        "highlighted_code": "t = int(input())\n\nwhile t &gt; 0:\n    <span class='highlight-red'>n = int(input())\n\n    team_a = list(map(int, input().split()))\n    team_b = list(map(int, input().split()))\n\n    check </span>= True\n\n    f<span class='highlight-red'>or i in range(n):\n        if team_a[i] &gt; team_b[i]:\n            check = </span>False\n\n    if check:\n        print(&#34;YES&#34;)\n    else:\n        print(&#34;NO&#34;)\n    t -= 1"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68fdc3b1fe535fa0f4f1d8aa/3fa6af8d916a46039239cabe/sub_1761663929559_h2jq1nqoi.py",
+        "similarity_percent": 61.49,
+        "full_code": "t=int(input())\nwhile t:\n    t-=1\n    n=int(input())\n    a=list(map(int,input().split()))\n    b=list(map(int,input().split()))\n    check=1\n    for i in range(n):\n        if a[i]>b[i]:\n            check=0\n            break\n    if check==1:\n        print(\"YES\")\n    else:\n        print(\"NO\")\n            \n",
+        "highlighted_code": "t=int(input())\nwhile t:\n    t-=1\n    <span class='highlight-green'>n=int(input())\n    a=list(map(int,input().split()))\n    b=list(map(int,input().split()))\n    check</span>=1\n    f<span class='highlight-green'>or i in range(n):\n        if a[i]&gt;b[i]:\n            check=</span>0\n            break\n    if check==1:\n        print(&#34;YES&#34;)\n    else:\n        print(&#34;NO&#34;)\n            \n"
+      },
+      "token_overlap": 99,
+      "max_similarity_percent": 61.49
+    },
+    {
+      "case_id": 9,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68fdc3b1fe535fa0f4f1d8aa/ffdb326842044f2e98b7aaa7/sub_1761804273248_r097iuhll.py",
+        "similarity_percent": 59.63,
+        "full_code": "t = int(input())\n\nwhile t > 0:\n    n = int(input())\n\n    team_a = list(map(int, input().split()))\n    team_b = list(map(int, input().split()))\n\n    check = True\n\n    for i in range(n):\n        if team_a[i] > team_b[i]:\n            check = False\n\n    if check:\n        print(\"YES\")\n    else:\n        print(\"NO\")\n    t -= 1",
+        "highlighted_code": "t = int(input())\n\nwhile t &gt; 0:\n    <span class='highlight-red'>n = int(input())\n\n    team_a = list(map(int, input().split()))\n    team_b = list(map(int, input().split()))\n\n    check </span>= True\n\n    for i in range(n):\n        if team_a[i] &gt; team_b[i]:\n            check = False\n\n    if check<span class='highlight-red'>:\n        print(&#34;YES&#34;)\n    else:\n        print(&#34;NO&#34;</span>)\n    t -= 1"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68fdc3b1fe535fa0f4f1d8aa/d82933fea814463eb5b029d1/sub_1761619063412_qb67l5ghv.py",
+        "similarity_percent": 57.83,
+        "full_code": "t = int(input())\nfor i in range(t):\n    n = int(input())\n    a = list(map(int, input().split()))\n    b = list(map(int, input().split()))\n    a.sort()\n    b.sort()\nfor j in range(n):\n        if a[j] <= b[i]:\n            print('YES')\n        else:\n            print(\"NO\")    \n            break",
+        "highlighted_code": "t = int(input())\nfor i in range(t):\n    <span class='highlight-green'>n = int(input())\n    a = list(map(int, input().split()))\n    b = list(map(int, input().split()))\n    a</span>.sort()\n    b.sort()\nfor j in range(n):\n        if a[j] &lt;= b[i]<span class='highlight-green'>:\n            print(&#39;YES&#39;)\n        else:\n            print(&#34;NO&#34;</span>)    \n            break"
+      },
+      "token_overlap": 96,
+      "max_similarity_percent": 59.63
+    },
+    {
+      "case_id": 10,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68fdc3b1fe535fa0f4f1d8aa/ffdb326842044f2e98b7aaa7/sub_1761804273248_r097iuhll.py",
+        "similarity_percent": 59.63,
+        "full_code": "t = int(input())\n\nwhile t > 0:\n    n = int(input())\n\n    team_a = list(map(int, input().split()))\n    team_b = list(map(int, input().split()))\n\n    check = True\n\n    for i in range(n):\n        if team_a[i] > team_b[i]:\n            check = False\n\n    if check:\n        print(\"YES\")\n    else:\n        print(\"NO\")\n    t -= 1",
+        "highlighted_code": "t = int(input())\n\nwhile t &gt; 0:\n    <span class='highlight-red'>n = int(input())\n\n    team_a = list(map(int, input().split()))\n    team_b = list(map(int, input().split()))\n\n    check </span>= True\n\n    f<span class='highlight-red'>or i in range(n):\n        if team_a[i] &gt; team_b[i]</span>:\n            check = False\n\n    if check:\n        print(&#34;YES&#34;)\n    else:\n        print(&#34;NO&#34;)\n    t -= 1"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68fdc3b1fe535fa0f4f1d8aa/91001b54722a4328a2b7b879/sub_1761475223827_8zq5pgtdj.py",
+        "similarity_percent": 52.54,
+        "full_code": "# Hàm xử lý một test case\ndef process_test_case(n, a, b):\n    a.sort()  # Sắp xếp đội A\n    b.sort()  # Sắp xếp đội B\n    \n    # So sánh từng thành viên của đội A và B\n    for i in range(n):\n        if a[i] > b[i]:  # Nếu thành viên đội A mạnh hơn thành viên đội B\n            return \"NO\"\n    return \"YES\"\n\n# Đọc số lượng test case\nt = int(input())\n\n# Xử lý từng test case\nfor _ in range(t):\n    n = int(input())  # Số lượng thành viên của mỗi đội\n    a = list(map(int, input().split()))  # Sức mạnh đội A\n    b = list(map(int, input().split()))  # Sức mạnh đội B\n    \n    # Gọi hàm xử lý và in kết quả\n    print(process_test_case(n, a, b))\n",
+        "highlighted_code": "# Hàm xử lý một test case\ndef process_test_case(n, a, b):\n    a.sort()  # Sắp xếp đội A\n    b.sort()  # Sắp xếp đội B\n    \n    # So sánh từng thành viên của đội A và B\n    f<span class='highlight-green'>or i in range(n):\n        if a[i] &gt; b[i]</span>:  # Nếu thành viên đội A mạnh hơn thành viên đội B\n            return &#34;NO&#34;\n    return &#34;YES&#34;\n\n# Đọc số lượng test case\nt = int(input())\n\n# Xử lý từng test case\nfor _ in range(t):\n    <span class='highlight-green'>n = int(input())  # Số lượng thành viên của mỗi đội\n    a = list(map(int, input().split()))  # Sức mạnh đội A\n    b = list(map(int, input().split()</span>))  # Sức mạnh đội B\n    \n    # Gọi hàm xử lý và in kết quả\n    print(process_test_case(n, a, b))\n"
+      },
+      "token_overlap": 96,
+      "max_similarity_percent": 59.63
+    },
+    {
+      "case_id": 11,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68fdc3b1fe535fa0f4f1d8aa/d9aec9d917da4c5e9beeb80b/sub_1761748051934_awc86kfjr.py",
+        "similarity_percent": 54.4,
+        "full_code": "\nt = int(input())\nfor _ in range(t):\n    n = int(input())  \n    \n    \n    a = list(map(int, input().split()))\n    b = list(map(int, input().split()))\n    \n    \n    a.sort()\n    b.sort()\n    \n    \n    ok = True\n    for i in range(n):\n        if a[i] > b[i]:\n            ok = False\n            break\n\n    \n    if ok:\n        print(\"YES\")\n    else:\n        print(\"NO\")",
+        "highlighted_code": "\nt = int(input())\nfor _ in range(t):\n   <span class='highlight-red'> n = int(input())  \n    \n    \n    a = list(map(int, input().split()))\n    b = list(map(int, input().split()))\n    \n    \n    </span>a.sort()\n    b.sort()\n    \n    \n    ok = True\n    <span class='highlight-red'>for i in range(n):\n        if a[i] &gt; b[i]:\n            ok =</span> False\n            break\n\n    \n    if ok:\n        print(&#34;YES&#34;)\n    else:\n        print(&#34;NO&#34;)"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68fdc3b1fe535fa0f4f1d8aa/3fa6af8d916a46039239cabe/sub_1761663929559_h2jq1nqoi.py",
+        "similarity_percent": 61.49,
+        "full_code": "t=int(input())\nwhile t:\n    t-=1\n    n=int(input())\n    a=list(map(int,input().split()))\n    b=list(map(int,input().split()))\n    check=1\n    for i in range(n):\n        if a[i]>b[i]:\n            check=0\n            break\n    if check==1:\n        print(\"YES\")\n    else:\n        print(\"NO\")\n            \n",
+        "highlighted_code": "t=int(input())\nwhile t:\n    t-=1\n    <span class='highlight-green'>n=int(input())\n    a=list(map(int,input().split()))\n    b=list(map(int,input().split()))\n    check</span>=1\n    f<span class='highlight-green'>or i in range(n):\n        if a[i]&gt;b[i]:\n            check=</span>0\n            break\n    if check==1:\n        print(&#34;YES&#34;)\n    else:\n        print(&#34;NO&#34;)\n            \n"
+      },
+      "token_overlap": 99,
+      "max_similarity_percent": 61.49
+    },
+    {
+      "case_id": 12,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68fdc3b1fe535fa0f4f1d8aa/91001b54722a4328a2b7b879/sub_1761475223827_8zq5pgtdj.py",
+        "similarity_percent": 52.54,
+        "full_code": "# Hàm xử lý một test case\ndef process_test_case(n, a, b):\n    a.sort()  # Sắp xếp đội A\n    b.sort()  # Sắp xếp đội B\n    \n    # So sánh từng thành viên của đội A và B\n    for i in range(n):\n        if a[i] > b[i]:  # Nếu thành viên đội A mạnh hơn thành viên đội B\n            return \"NO\"\n    return \"YES\"\n\n# Đọc số lượng test case\nt = int(input())\n\n# Xử lý từng test case\nfor _ in range(t):\n    n = int(input())  # Số lượng thành viên của mỗi đội\n    a = list(map(int, input().split()))  # Sức mạnh đội A\n    b = list(map(int, input().split()))  # Sức mạnh đội B\n    \n    # Gọi hàm xử lý và in kết quả\n    print(process_test_case(n, a, b))\n",
+        "highlighted_code": "# Hàm xử lý một test case\ndef process_test_case(n, a, b):\n    a.sort()  # Sắp xếp đội A\n    b.sort()  # Sắp xếp đội B\n    \n    # So sánh từng thành viên của đội A và B\n    f<span class='highlight-red'>or i in range(n):\n        if a[i] &gt; b[i]</span>:  # Nếu thành viên đội A mạnh hơn thành viên đội B\n            return &#34;NO&#34;\n    return &#34;YES&#34;\n\n# Đọc số lượng test case\nt = int(input())\n\n# Xử lý từng test case\nfor _ in range(t):\n    <span class='highlight-red'>n = int(input())  # Số lượng thành viên của mỗi đội\n    a = list(map(int, input().split()))  # Sức mạnh đội A\n    b = list(map(int, input().split()</span>))  # Sức mạnh đội B\n    \n    # Gọi hàm xử lý và in kết quả\n    print(process_test_case(n, a, b))\n"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68fdc3b1fe535fa0f4f1d8aa/3fa6af8d916a46039239cabe/sub_1761663929559_h2jq1nqoi.py",
+        "similarity_percent": 59.63,
+        "full_code": "t=int(input())\nwhile t:\n    t-=1\n    n=int(input())\n    a=list(map(int,input().split()))\n    b=list(map(int,input().split()))\n    check=1\n    for i in range(n):\n        if a[i]>b[i]:\n            check=0\n            break\n    if check==1:\n        print(\"YES\")\n    else:\n        print(\"NO\")\n            \n",
+        "highlighted_code": "t=int(input())\nwhile t:\n    t-=1\n    <span class='highlight-green'>n=int(input())\n    a=list(map(int,input().split()))\n    b=list(map(int,input().split()))\n    check</span>=1\n    f<span class='highlight-green'>or i in range(n):\n        if a[i]&gt;b[i]</span>:\n            check=0\n            break\n    if check==1:\n        print(&#34;YES&#34;)\n    else:\n        print(&#34;NO&#34;)\n            \n"
+      },
+      "token_overlap": 93,
+      "max_similarity_percent": 59.63
+    },
+    {
+      "case_id": 13,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68fdc3b1fe535fa0f4f1d8aa/8e236cb825b041b0a82527f2/sub_1761640234166_5kiduh3o8.py",
+        "similarity_percent": 51.72,
+        "full_code": "t = int(input())\nfor _ in range(t):\n    n = int(input())\n    ta = list(map(int, input().split()))[:n]\n    tb = list(map(int, input().split()))[:n]\n\n    ta.sort()\n    tb.sort()\n\n    for i in range(n):\n        if ta[i] > tb[i]:\n            print(\"NO\")\n            break\n    else:\n        print(\"YES\")",
+        "highlighted_code": "t = int(input())\nfor _ in range(t):\n    <span class='highlight-red'>n = int(input())\n    ta = list(map(int, input().split()</span>))[:n]\n    tb <span class='highlight-red'>= list(map(int, input().split()</span>))[:n]\n\n    ta.sort()\n    tb.sort()\n\n    f<span class='highlight-red'>or i in range(n):\n        if ta[i] &gt; tb[i]</span>:\n            print(&#34;NO&#34;)\n            break\n    else:\n        print(&#34;YES&#34;)"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68fdc3b1fe535fa0f4f1d8aa/ffdb326842044f2e98b7aaa7/sub_1761804273248_r097iuhll.py",
+        "similarity_percent": 55.9,
+        "full_code": "t = int(input())\n\nwhile t > 0:\n    n = int(input())\n\n    team_a = list(map(int, input().split()))\n    team_b = list(map(int, input().split()))\n\n    check = True\n\n    for i in range(n):\n        if team_a[i] > team_b[i]:\n            check = False\n\n    if check:\n        print(\"YES\")\n    else:\n        print(\"NO\")\n    t -= 1",
+        "highlighted_code": "t = int(input())\n\nwhile t &gt; 0:\n    <span class='highlight-green'>n = int(input())\n\n    team_a = list(map(int, input().split()</span>))\n    team_b <span class='highlight-green'>= list(map(int, input().split()</span>))\n\n    check = True\n\n    f<span class='highlight-green'>or i in range(n):\n        if team_a[i] &gt; team_b[i]</span>:\n            check = False\n\n    if check:\n        print(&#34;YES&#34;)\n    else:\n        print(&#34;NO&#34;)\n    t -= 1"
+      },
+      "token_overlap": 90,
+      "max_similarity_percent": 55.9
+    },
+    {
+      "case_id": 14,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68fdc3b1fe535fa0f4f1d8aa/8e236cb825b041b0a82527f2/sub_1761640234166_5kiduh3o8.py",
+        "similarity_percent": 51.72,
+        "full_code": "t = int(input())\nfor _ in range(t):\n    n = int(input())\n    ta = list(map(int, input().split()))[:n]\n    tb = list(map(int, input().split()))[:n]\n\n    ta.sort()\n    tb.sort()\n\n    for i in range(n):\n        if ta[i] > tb[i]:\n            print(\"NO\")\n            break\n    else:\n        print(\"YES\")",
+        "highlighted_code": "t = int(input())\nfor _ in range(t):\n    <span class='highlight-red'>n = int(input())\n    ta = list(map(int, input().split()</span>))[:n]\n    tb <span class='highlight-red'>= list(map(int, input().split()</span>))[:n]\n\n    ta.sort()\n    tb.sort()\n\n    f<span class='highlight-red'>or i in range(n):\n        if ta[i] &gt; tb[i]</span>:\n            print(&#34;NO&#34;)\n            break\n    else:\n        print(&#34;YES&#34;)"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68fdc3b1fe535fa0f4f1d8aa/3fa6af8d916a46039239cabe/sub_1761663929559_h2jq1nqoi.py",
+        "similarity_percent": 55.9,
+        "full_code": "t=int(input())\nwhile t:\n    t-=1\n    n=int(input())\n    a=list(map(int,input().split()))\n    b=list(map(int,input().split()))\n    check=1\n    for i in range(n):\n        if a[i]>b[i]:\n            check=0\n            break\n    if check==1:\n        print(\"YES\")\n    else:\n        print(\"NO\")\n            \n",
+        "highlighted_code": "t=int(input())\nwhile t:\n    t-=1\n    <span class='highlight-green'>n=int(input())\n    a=list(map(int,input().split()</span>))\n    b<span class='highlight-green'>=list(map(int,input().split()</span>))\n    check=1\n    f<span class='highlight-green'>or i in range(n):\n        if a[i]&gt;b[i]</span>:\n            check=0\n            break\n    if check==1:\n        print(&#34;YES&#34;)\n    else:\n        print(&#34;NO&#34;)\n            \n"
+      },
+      "token_overlap": 90,
+      "max_similarity_percent": 55.9
+    }
+  ]
+}

@@ -1,0 +1,1150 @@
+{
+  "problem_id": "68e3e22772432513744775b8",
+  "filter_criteria": {
+    "min_token_overlap": 80,
+    "min_similarity_percent": 60
+  },
+  "total_cases_found": 86,
+  "total_cases_filtered": 67,
+  "cases": [
+    {
+      "case_id": 1,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e22772432513744775b8/e29b583452a94bf5a29be0ae/sub_1761294848088_26vgx6usg.py",
+        "similarity_percent": 100.0,
+        "full_code": "from math import factorial\nn=int(input())\nprint(factorial(n))",
+        "highlighted_code": "<span class='highlight-red'>from math import factorial\nn=int(input())\nprint(factorial(n)</span>)"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e22772432513744775b8/e29b583452a94bf5a29be0ae/sub_1761294811890_j246oo71g.py",
+        "similarity_percent": 100.0,
+        "full_code": "from math import factorial\nn=int(input())\nprint(factorial(n))",
+        "highlighted_code": "<span class='highlight-green'>from math import factorial\nn=int(input())\nprint(factorial(n)</span>)"
+      },
+      "token_overlap": 39,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 2,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e22772432513744775b8/e29b583452a94bf5a29be0ae/sub_1761294848088_26vgx6usg.py",
+        "similarity_percent": 100.0,
+        "full_code": "from math import factorial\nn=int(input())\nprint(factorial(n))",
+        "highlighted_code": "<span class='highlight-red'>from math import factorial\nn=int(input())\nprint(factorial(n)</span>)"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e22772432513744775b8/e29b583452a94bf5a29be0ae/sub_1761294747747_ugteg99c7.py",
+        "similarity_percent": 100.0,
+        "full_code": "from math import factorial\nn=int(input())\nprint(factorial(n))",
+        "highlighted_code": "<span class='highlight-green'>from math import factorial\nn=int(input())\nprint(factorial(n)</span>)"
+      },
+      "token_overlap": 39,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 3,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e22772432513744775b8/e29b583452a94bf5a29be0ae/sub_1761294848088_26vgx6usg.py",
+        "similarity_percent": 100.0,
+        "full_code": "from math import factorial\nn=int(input())\nprint(factorial(n))",
+        "highlighted_code": "<span class='highlight-red'>from math import factorial\nn=int(input())\nprint(factorial(n)</span>)"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e22772432513744775b8/e29b583452a94bf5a29be0ae/sub_1761294730697_cltdz4jri.py",
+        "similarity_percent": 100.0,
+        "full_code": "from math import factorial\nn=int(input())\nprint(factorial(n))",
+        "highlighted_code": "<span class='highlight-green'>from math import factorial\nn=int(input())\nprint(factorial(n)</span>)"
+      },
+      "token_overlap": 39,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 4,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e22772432513744775b8/e29b583452a94bf5a29be0ae/sub_1761294848088_26vgx6usg.py",
+        "similarity_percent": 100.0,
+        "full_code": "from math import factorial\nn=int(input())\nprint(factorial(n))",
+        "highlighted_code": "<span class='highlight-red'>from math import factorial\nn=int(input())\nprint(factorial(n)</span>)"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e22772432513744775b8/e29b583452a94bf5a29be0ae/sub_1761294722877_fd2dsxetd.py",
+        "similarity_percent": 100.0,
+        "full_code": "from math import factorial\nn=int(input())\nprint(factorial(n))",
+        "highlighted_code": "<span class='highlight-green'>from math import factorial\nn=int(input())\nprint(factorial(n)</span>)"
+      },
+      "token_overlap": 39,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 5,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e22772432513744775b8/e59c34a1bebb49d29bfb3592/sub_1761642876765_zkykk2irm.py",
+        "similarity_percent": 100.0,
+        "full_code": "n = int(input())\nx = 1\nfor i in range(1,n+1):\n\tx *= i\nprint(x)",
+        "highlighted_code": "<span class='highlight-red'>n = int(input())\nx = 1\nfor i in range(1,n+1):\n\tx *= i\npri</span>nt(x)"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e22772432513744775b8/f8a2bab9778140ecb46b6a60/sub_1761709128100_vkky4tanr.py",
+        "similarity_percent": 100.0,
+        "full_code": "n = int(input())\nresult = 1\nfor i in range(1, n + 1):\n    result *= i\nprint(result)\n\n",
+        "highlighted_code": "<span class='highlight-green'>n = int(input())\nresult = 1\nfor i in range(1, n + 1):\n    result *= i\npri</span>nt(result)\n\n"
+      },
+      "token_overlap": 43,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 6,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e22772432513744775b8/e59c34a1bebb49d29bfb3592/sub_1761642876765_zkykk2irm.py",
+        "similarity_percent": 100.0,
+        "full_code": "n = int(input())\nx = 1\nfor i in range(1,n+1):\n\tx *= i\nprint(x)",
+        "highlighted_code": "<span class='highlight-red'>n = int(input())\nx = 1\nfor i in range(1,n+1):\n\tx *= i\npri</span>nt(x)"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e22772432513744775b8/c78f5dfafb144ed89a06ddba/sub_1761643920051_40c856lr3.py",
+        "similarity_percent": 100.0,
+        "full_code": "n=int(input())\ntotal=1\nfor i in range(1,n+1):\n    total*=i\nprint(total)",
+        "highlighted_code": "<span class='highlight-green'>n=int(input())\ntotal=1\nfor i in range(1,n+1):\n    total*=i\npri</span>nt(total)"
+      },
+      "token_overlap": 43,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 7,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e22772432513744775b8/e59c34a1bebb49d29bfb3592/sub_1761642876765_zkykk2irm.py",
+        "similarity_percent": 100.0,
+        "full_code": "n = int(input())\nx = 1\nfor i in range(1,n+1):\n\tx *= i\nprint(x)",
+        "highlighted_code": "<span class='highlight-red'>n = int(input())\nx = 1\nfor i in range(1,n+1):\n\tx *= i\npri</span>nt(x)"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e22772432513744775b8/8045cd76adf946038858d2bc/sub_1761638969791_6y73bbtua.py",
+        "similarity_percent": 100.0,
+        "full_code": "n=int(input())\ngiaithua=1\nfor i in range(1,n+1):\n    giaithua *=i\nprint(giaithua)",
+        "highlighted_code": "<span class='highlight-green'>n=int(input())\ngiaithua=1\nfor i in range(1,n+1):\n    giaithua *=i\npri</span>nt(giaithua)"
+      },
+      "token_overlap": 43,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 8,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e22772432513744775b8/e59c34a1bebb49d29bfb3592/sub_1761642876765_zkykk2irm.py",
+        "similarity_percent": 100.0,
+        "full_code": "n = int(input())\nx = 1\nfor i in range(1,n+1):\n\tx *= i\nprint(x)",
+        "highlighted_code": "<span class='highlight-red'>n = int(input())\nx = 1\nfor i in range(1,n+1):\n\tx *= i\npri</span>nt(x)"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e22772432513744775b8/2a7df806cece43269dd7498b/sub_1761722443601_dfpgagso6.py",
+        "similarity_percent": 100.0,
+        "full_code": "n = int(input())\nresult = 1\nfor i in range(1, n + 1):\n    result *= i\nprint(result)\n",
+        "highlighted_code": "<span class='highlight-green'>n = int(input())\nresult = 1\nfor i in range(1, n + 1):\n    result *= i\npri</span>nt(result)\n"
+      },
+      "token_overlap": 43,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 9,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e22772432513744775b8/e59c34a1bebb49d29bfb3592/sub_1761642876765_zkykk2irm.py",
+        "similarity_percent": 100.0,
+        "full_code": "n = int(input())\nx = 1\nfor i in range(1,n+1):\n\tx *= i\nprint(x)",
+        "highlighted_code": "<span class='highlight-red'>n = int(input())\nx = 1\nfor i in range(1,n+1):\n\tx *= i\npri</span>nt(x)"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e22772432513744775b8/30d29d0969994c929976d40a/sub_1761651970485_mw3gbtcsi.py",
+        "similarity_percent": 100.0,
+        "full_code": "n=int(input())\ntich=1\nfor i in range(1,n+1):\n    tich*=i\nprint(tich)",
+        "highlighted_code": "<span class='highlight-green'>n=int(input())\ntich=1\nfor i in range(1,n+1):\n    tich*=i\npri</span>nt(tich)"
+      },
+      "token_overlap": 43,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 10,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e22772432513744775b8/e29b583452a94bf5a29be0ae/sub_1761294811890_j246oo71g.py",
+        "similarity_percent": 100.0,
+        "full_code": "from math import factorial\nn=int(input())\nprint(factorial(n))",
+        "highlighted_code": "<span class='highlight-red'>from math import factorial\nn=int(input())\nprint(factorial(n)</span>)"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e22772432513744775b8/e29b583452a94bf5a29be0ae/sub_1761294747747_ugteg99c7.py",
+        "similarity_percent": 100.0,
+        "full_code": "from math import factorial\nn=int(input())\nprint(factorial(n))",
+        "highlighted_code": "<span class='highlight-green'>from math import factorial\nn=int(input())\nprint(factorial(n)</span>)"
+      },
+      "token_overlap": 39,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 11,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e22772432513744775b8/e29b583452a94bf5a29be0ae/sub_1761294811890_j246oo71g.py",
+        "similarity_percent": 100.0,
+        "full_code": "from math import factorial\nn=int(input())\nprint(factorial(n))",
+        "highlighted_code": "<span class='highlight-red'>from math import factorial\nn=int(input())\nprint(factorial(n)</span>)"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e22772432513744775b8/e29b583452a94bf5a29be0ae/sub_1761294730697_cltdz4jri.py",
+        "similarity_percent": 100.0,
+        "full_code": "from math import factorial\nn=int(input())\nprint(factorial(n))",
+        "highlighted_code": "<span class='highlight-green'>from math import factorial\nn=int(input())\nprint(factorial(n)</span>)"
+      },
+      "token_overlap": 39,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 12,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e22772432513744775b8/e29b583452a94bf5a29be0ae/sub_1761294811890_j246oo71g.py",
+        "similarity_percent": 100.0,
+        "full_code": "from math import factorial\nn=int(input())\nprint(factorial(n))",
+        "highlighted_code": "<span class='highlight-red'>from math import factorial\nn=int(input())\nprint(factorial(n)</span>)"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e22772432513744775b8/e29b583452a94bf5a29be0ae/sub_1761294722877_fd2dsxetd.py",
+        "similarity_percent": 100.0,
+        "full_code": "from math import factorial\nn=int(input())\nprint(factorial(n))",
+        "highlighted_code": "<span class='highlight-green'>from math import factorial\nn=int(input())\nprint(factorial(n)</span>)"
+      },
+      "token_overlap": 39,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 13,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e22772432513744775b8/f8a2bab9778140ecb46b6a60/sub_1761709128100_vkky4tanr.py",
+        "similarity_percent": 100.0,
+        "full_code": "n = int(input())\nresult = 1\nfor i in range(1, n + 1):\n    result *= i\nprint(result)\n\n",
+        "highlighted_code": "<span class='highlight-red'>n = int(input())\nresult = 1\nfor i in range(1, n + 1):\n    result *= i\npri</span>nt(result)\n\n"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e22772432513744775b8/c78f5dfafb144ed89a06ddba/sub_1761643920051_40c856lr3.py",
+        "similarity_percent": 100.0,
+        "full_code": "n=int(input())\ntotal=1\nfor i in range(1,n+1):\n    total*=i\nprint(total)",
+        "highlighted_code": "<span class='highlight-green'>n=int(input())\ntotal=1\nfor i in range(1,n+1):\n    total*=i\npri</span>nt(total)"
+      },
+      "token_overlap": 43,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 14,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e22772432513744775b8/f8a2bab9778140ecb46b6a60/sub_1761709128100_vkky4tanr.py",
+        "similarity_percent": 100.0,
+        "full_code": "n = int(input())\nresult = 1\nfor i in range(1, n + 1):\n    result *= i\nprint(result)\n\n",
+        "highlighted_code": "<span class='highlight-red'>n = int(input())\nresult = 1\nfor i in range(1, n + 1):\n    result *= i\npri</span>nt(result)\n\n"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e22772432513744775b8/8045cd76adf946038858d2bc/sub_1761638969791_6y73bbtua.py",
+        "similarity_percent": 100.0,
+        "full_code": "n=int(input())\ngiaithua=1\nfor i in range(1,n+1):\n    giaithua *=i\nprint(giaithua)",
+        "highlighted_code": "<span class='highlight-green'>n=int(input())\ngiaithua=1\nfor i in range(1,n+1):\n    giaithua *=i\npri</span>nt(giaithua)"
+      },
+      "token_overlap": 43,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 15,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e22772432513744775b8/f8a2bab9778140ecb46b6a60/sub_1761709128100_vkky4tanr.py",
+        "similarity_percent": 100.0,
+        "full_code": "n = int(input())\nresult = 1\nfor i in range(1, n + 1):\n    result *= i\nprint(result)\n\n",
+        "highlighted_code": "<span class='highlight-red'>n = int(input())\nresult = 1\nfor i in range(1, n + 1):\n    result *= i\npri</span>nt(result)\n\n"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e22772432513744775b8/2a7df806cece43269dd7498b/sub_1761722443601_dfpgagso6.py",
+        "similarity_percent": 100.0,
+        "full_code": "n = int(input())\nresult = 1\nfor i in range(1, n + 1):\n    result *= i\nprint(result)\n",
+        "highlighted_code": "<span class='highlight-green'>n = int(input())\nresult = 1\nfor i in range(1, n + 1):\n    result *= i\npri</span>nt(result)\n"
+      },
+      "token_overlap": 43,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 16,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e22772432513744775b8/f8a2bab9778140ecb46b6a60/sub_1761709128100_vkky4tanr.py",
+        "similarity_percent": 100.0,
+        "full_code": "n = int(input())\nresult = 1\nfor i in range(1, n + 1):\n    result *= i\nprint(result)\n\n",
+        "highlighted_code": "<span class='highlight-red'>n = int(input())\nresult = 1\nfor i in range(1, n + 1):\n    result *= i\npri</span>nt(result)\n\n"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e22772432513744775b8/30d29d0969994c929976d40a/sub_1761651970485_mw3gbtcsi.py",
+        "similarity_percent": 100.0,
+        "full_code": "n=int(input())\ntich=1\nfor i in range(1,n+1):\n    tich*=i\nprint(tich)",
+        "highlighted_code": "<span class='highlight-green'>n=int(input())\ntich=1\nfor i in range(1,n+1):\n    tich*=i\npri</span>nt(tich)"
+      },
+      "token_overlap": 43,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 17,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e22772432513744775b8/c78f5dfafb144ed89a06ddba/sub_1761643920051_40c856lr3.py",
+        "similarity_percent": 100.0,
+        "full_code": "n=int(input())\ntotal=1\nfor i in range(1,n+1):\n    total*=i\nprint(total)",
+        "highlighted_code": "<span class='highlight-red'>n=int(input())\ntotal=1\nfor i in range(1,n+1):\n    total*=i\npri</span>nt(total)"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e22772432513744775b8/8045cd76adf946038858d2bc/sub_1761638969791_6y73bbtua.py",
+        "similarity_percent": 100.0,
+        "full_code": "n=int(input())\ngiaithua=1\nfor i in range(1,n+1):\n    giaithua *=i\nprint(giaithua)",
+        "highlighted_code": "<span class='highlight-green'>n=int(input())\ngiaithua=1\nfor i in range(1,n+1):\n    giaithua *=i\npri</span>nt(giaithua)"
+      },
+      "token_overlap": 43,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 18,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e22772432513744775b8/c78f5dfafb144ed89a06ddba/sub_1761643920051_40c856lr3.py",
+        "similarity_percent": 100.0,
+        "full_code": "n=int(input())\ntotal=1\nfor i in range(1,n+1):\n    total*=i\nprint(total)",
+        "highlighted_code": "<span class='highlight-red'>n=int(input())\ntotal=1\nfor i in range(1,n+1):\n    total*=i\npri</span>nt(total)"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e22772432513744775b8/2a7df806cece43269dd7498b/sub_1761722443601_dfpgagso6.py",
+        "similarity_percent": 100.0,
+        "full_code": "n = int(input())\nresult = 1\nfor i in range(1, n + 1):\n    result *= i\nprint(result)\n",
+        "highlighted_code": "<span class='highlight-green'>n = int(input())\nresult = 1\nfor i in range(1, n + 1):\n    result *= i\npri</span>nt(result)\n"
+      },
+      "token_overlap": 43,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 19,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e22772432513744775b8/c78f5dfafb144ed89a06ddba/sub_1761643920051_40c856lr3.py",
+        "similarity_percent": 100.0,
+        "full_code": "n=int(input())\ntotal=1\nfor i in range(1,n+1):\n    total*=i\nprint(total)",
+        "highlighted_code": "<span class='highlight-red'>n=int(input())\ntotal=1\nfor i in range(1,n+1):\n    total*=i\npri</span>nt(total)"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e22772432513744775b8/30d29d0969994c929976d40a/sub_1761651970485_mw3gbtcsi.py",
+        "similarity_percent": 100.0,
+        "full_code": "n=int(input())\ntich=1\nfor i in range(1,n+1):\n    tich*=i\nprint(tich)",
+        "highlighted_code": "<span class='highlight-green'>n=int(input())\ntich=1\nfor i in range(1,n+1):\n    tich*=i\npri</span>nt(tich)"
+      },
+      "token_overlap": 43,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 20,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e22772432513744775b8/fed45b08a578484ebf92e830/sub_1761664144437_65w4gzf7i.py",
+        "similarity_percent": 100.0,
+        "full_code": "n=int(input())\nk=1\nfor i in range (1,n+1):\n    k=k*i\nprint(k)",
+        "highlighted_code": "<span class='highlight-red'>n=int(input())\nk=1\nfor i in range (1,n+1):\n    k=k*i\nprin</span>t(k)"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e22772432513744775b8/cd93b2ff882a4ffa85f4518f/sub_1761635531948_3kb2h57ho.py",
+        "similarity_percent": 100.0,
+        "full_code": "n=int(input())\nk=1\nfor i in range (1,n+1):\n    k=k*i\nprint(k)",
+        "highlighted_code": "<span class='highlight-green'>n=int(input())\nk=1\nfor i in range (1,n+1):\n    k=k*i\nprin</span>t(k)"
+      },
+      "token_overlap": 45,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 21,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e22772432513744775b8/fed45b08a578484ebf92e830/sub_1761664144437_65w4gzf7i.py",
+        "similarity_percent": 100.0,
+        "full_code": "n=int(input())\nk=1\nfor i in range (1,n+1):\n    k=k*i\nprint(k)",
+        "highlighted_code": "<span class='highlight-red'>n=int(input())\nk=1\nfor i in range (1,n+1):\n    k=k*i\nprin</span>t(k)"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e22772432513744775b8/c747e87428cc4dbab36bd7aa/sub_1761633803904_4r4im5ecm.py",
+        "similarity_percent": 100.0,
+        "full_code": "n=int(input())\nfac=1\nfor i in range(1, n+1):\n    fac=fac*i\nprint(fac)",
+        "highlighted_code": "<span class='highlight-green'>n=int(input())\nfac=1\nfor i in range(1, n+1):\n    fac=fac*i\nprin</span>t(fac)"
+      },
+      "token_overlap": 45,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 22,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e22772432513744775b8/e59c34a1bebb49d29bfb3592/sub_1761642793850_x0tdn1t43.py",
+        "similarity_percent": 100.0,
+        "full_code": "n = int(input())\nimport math\na = math.factorial(n)\nprint(a)",
+        "highlighted_code": "<span class='highlight-red'>n = int(input())\nimport math\na = math.factorial(n)\nprint(</span>a)"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e22772432513744775b8/cd93b2ff882a4ffa85f4518f/sub_1761640587726_hfnf8hh58.py",
+        "similarity_percent": 100.0,
+        "full_code": "n=int(input())\nimport math\nk = math.factorial(n)\nprint(k)",
+        "highlighted_code": "<span class='highlight-green'>n=int(input())\nimport math\nk = math.factorial(n)\nprint(</span>k)"
+      },
+      "token_overlap": 38,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 23,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e22772432513744775b8/d341c622453349d180c0378f/sub_1761643459629_325n0y18g.py",
+        "similarity_percent": 100.0,
+        "full_code": "n=int(input())\nimport math\nprint(math.factorial(n))",
+        "highlighted_code": "<span class='highlight-red'>n=int(input())\nimport math\nprint(math.factorial(</span>n))"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e22772432513744775b8/d341c622453349d180c0378f/sub_1761643409395_tqcazgc76.py",
+        "similarity_percent": 100.0,
+        "full_code": "n=int(input())\nimport math\nprint(math.factorial(n))",
+        "highlighted_code": "<span class='highlight-green'>n=int(input())\nimport math\nprint(math.factorial(</span>n))"
+      },
+      "token_overlap": 34,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 24,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e22772432513744775b8/e29b583452a94bf5a29be0ae/sub_1761294747747_ugteg99c7.py",
+        "similarity_percent": 100.0,
+        "full_code": "from math import factorial\nn=int(input())\nprint(factorial(n))",
+        "highlighted_code": "<span class='highlight-red'>from math import factorial\nn=int(input())\nprint(factorial(n)</span>)"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e22772432513744775b8/e29b583452a94bf5a29be0ae/sub_1761294730697_cltdz4jri.py",
+        "similarity_percent": 100.0,
+        "full_code": "from math import factorial\nn=int(input())\nprint(factorial(n))",
+        "highlighted_code": "<span class='highlight-green'>from math import factorial\nn=int(input())\nprint(factorial(n)</span>)"
+      },
+      "token_overlap": 39,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 25,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e22772432513744775b8/e29b583452a94bf5a29be0ae/sub_1761294747747_ugteg99c7.py",
+        "similarity_percent": 100.0,
+        "full_code": "from math import factorial\nn=int(input())\nprint(factorial(n))",
+        "highlighted_code": "<span class='highlight-red'>from math import factorial\nn=int(input())\nprint(factorial(n)</span>)"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e22772432513744775b8/e29b583452a94bf5a29be0ae/sub_1761294722877_fd2dsxetd.py",
+        "similarity_percent": 100.0,
+        "full_code": "from math import factorial\nn=int(input())\nprint(factorial(n))",
+        "highlighted_code": "<span class='highlight-green'>from math import factorial\nn=int(input())\nprint(factorial(n)</span>)"
+      },
+      "token_overlap": 39,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 26,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e22772432513744775b8/e29b583452a94bf5a29be0ae/sub_1761294730697_cltdz4jri.py",
+        "similarity_percent": 100.0,
+        "full_code": "from math import factorial\nn=int(input())\nprint(factorial(n))",
+        "highlighted_code": "<span class='highlight-red'>from math import factorial\nn=int(input())\nprint(factorial(n)</span>)"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e22772432513744775b8/e29b583452a94bf5a29be0ae/sub_1761294722877_fd2dsxetd.py",
+        "similarity_percent": 100.0,
+        "full_code": "from math import factorial\nn=int(input())\nprint(factorial(n))",
+        "highlighted_code": "<span class='highlight-green'>from math import factorial\nn=int(input())\nprint(factorial(n)</span>)"
+      },
+      "token_overlap": 39,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 27,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e22772432513744775b8/cd93b2ff882a4ffa85f4518f/sub_1761635531948_3kb2h57ho.py",
+        "similarity_percent": 100.0,
+        "full_code": "n=int(input())\nk=1\nfor i in range (1,n+1):\n    k=k*i\nprint(k)",
+        "highlighted_code": "<span class='highlight-red'>n=int(input())\nk=1\nfor i in range (1,n+1):\n    k=k*i\nprin</span>t(k)"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e22772432513744775b8/c747e87428cc4dbab36bd7aa/sub_1761633803904_4r4im5ecm.py",
+        "similarity_percent": 100.0,
+        "full_code": "n=int(input())\nfac=1\nfor i in range(1, n+1):\n    fac=fac*i\nprint(fac)",
+        "highlighted_code": "<span class='highlight-green'>n=int(input())\nfac=1\nfor i in range(1, n+1):\n    fac=fac*i\nprin</span>t(fac)"
+      },
+      "token_overlap": 45,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 28,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e22772432513744775b8/8045cd76adf946038858d2bc/sub_1761638969791_6y73bbtua.py",
+        "similarity_percent": 100.0,
+        "full_code": "n=int(input())\ngiaithua=1\nfor i in range(1,n+1):\n    giaithua *=i\nprint(giaithua)",
+        "highlighted_code": "<span class='highlight-red'>n=int(input())\ngiaithua=1\nfor i in range(1,n+1):\n    giaithua *=i\npri</span>nt(giaithua)"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e22772432513744775b8/2a7df806cece43269dd7498b/sub_1761722443601_dfpgagso6.py",
+        "similarity_percent": 100.0,
+        "full_code": "n = int(input())\nresult = 1\nfor i in range(1, n + 1):\n    result *= i\nprint(result)\n",
+        "highlighted_code": "<span class='highlight-green'>n = int(input())\nresult = 1\nfor i in range(1, n + 1):\n    result *= i\npri</span>nt(result)\n"
+      },
+      "token_overlap": 43,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 29,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e22772432513744775b8/8045cd76adf946038858d2bc/sub_1761638969791_6y73bbtua.py",
+        "similarity_percent": 100.0,
+        "full_code": "n=int(input())\ngiaithua=1\nfor i in range(1,n+1):\n    giaithua *=i\nprint(giaithua)",
+        "highlighted_code": "<span class='highlight-red'>n=int(input())\ngiaithua=1\nfor i in range(1,n+1):\n    giaithua *=i\npri</span>nt(giaithua)"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e22772432513744775b8/30d29d0969994c929976d40a/sub_1761651970485_mw3gbtcsi.py",
+        "similarity_percent": 100.0,
+        "full_code": "n=int(input())\ntich=1\nfor i in range(1,n+1):\n    tich*=i\nprint(tich)",
+        "highlighted_code": "<span class='highlight-green'>n=int(input())\ntich=1\nfor i in range(1,n+1):\n    tich*=i\npri</span>nt(tich)"
+      },
+      "token_overlap": 43,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 30,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e22772432513744775b8/2a7df806cece43269dd7498b/sub_1761722443601_dfpgagso6.py",
+        "similarity_percent": 100.0,
+        "full_code": "n = int(input())\nresult = 1\nfor i in range(1, n + 1):\n    result *= i\nprint(result)\n",
+        "highlighted_code": "<span class='highlight-red'>n = int(input())\nresult = 1\nfor i in range(1, n + 1):\n    result *= i\npri</span>nt(result)\n"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e22772432513744775b8/30d29d0969994c929976d40a/sub_1761651970485_mw3gbtcsi.py",
+        "similarity_percent": 100.0,
+        "full_code": "n=int(input())\ntich=1\nfor i in range(1,n+1):\n    tich*=i\nprint(tich)",
+        "highlighted_code": "<span class='highlight-green'>n=int(input())\ntich=1\nfor i in range(1,n+1):\n    tich*=i\npri</span>nt(tich)"
+      },
+      "token_overlap": 43,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 31,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e22772432513744775b8/fed45b08a578484ebf92e830/sub_1761664144437_65w4gzf7i.py",
+        "similarity_percent": 91.11,
+        "full_code": "n=int(input())\nk=1\nfor i in range (1,n+1):\n    k=k*i\nprint(k)",
+        "highlighted_code": "<span class='highlight-red'>n=int(input())\nk=1\nfor i in range (1,n+1):\n    k=k*i\n</span>print(k)"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e22772432513744775b8/cd93b2ff882a4ffa85f4518f/sub_1761635632609_th4wbr28o.py",
+        "similarity_percent": 65.08,
+        "full_code": "n=int(input())\nk=1\nfor i in range (1,n+1):\n    k=k*i\nif n<0:\n    print(0)\nelse:\n    print(k)",
+        "highlighted_code": "<span class='highlight-green'>n=int(input())\nk=1\nfor i in range (1,n+1):\n    k=k*i\n</span>if n&lt;0:\n    print(0)\nelse:\n    print(k)"
+      },
+      "token_overlap": 41,
+      "max_similarity_percent": 91.11
+    },
+    {
+      "case_id": 32,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e22772432513744775b8/cd93b2ff882a4ffa85f4518f/sub_1761635531948_3kb2h57ho.py",
+        "similarity_percent": 91.11,
+        "full_code": "n=int(input())\nk=1\nfor i in range (1,n+1):\n    k=k*i\nprint(k)",
+        "highlighted_code": "<span class='highlight-red'>n=int(input())\nk=1\nfor i in range (1,n+1):\n    k=k*i\n</span>print(k)"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e22772432513744775b8/cd93b2ff882a4ffa85f4518f/sub_1761635632609_th4wbr28o.py",
+        "similarity_percent": 65.08,
+        "full_code": "n=int(input())\nk=1\nfor i in range (1,n+1):\n    k=k*i\nif n<0:\n    print(0)\nelse:\n    print(k)",
+        "highlighted_code": "<span class='highlight-green'>n=int(input())\nk=1\nfor i in range (1,n+1):\n    k=k*i\n</span>if n&lt;0:\n    print(0)\nelse:\n    print(k)"
+      },
+      "token_overlap": 41,
+      "max_similarity_percent": 91.11
+    },
+    {
+      "case_id": 33,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e22772432513744775b8/c747e87428cc4dbab36bd7aa/sub_1761633803904_4r4im5ecm.py",
+        "similarity_percent": 91.11,
+        "full_code": "n=int(input())\nfac=1\nfor i in range(1, n+1):\n    fac=fac*i\nprint(fac)",
+        "highlighted_code": "<span class='highlight-red'>n=int(input())\nfac=1\nfor i in range(1, n+1):\n    fac=fac*i\n</span>print(fac)"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e22772432513744775b8/cd93b2ff882a4ffa85f4518f/sub_1761635632609_th4wbr28o.py",
+        "similarity_percent": 65.08,
+        "full_code": "n=int(input())\nk=1\nfor i in range (1,n+1):\n    k=k*i\nif n<0:\n    print(0)\nelse:\n    print(k)",
+        "highlighted_code": "<span class='highlight-green'>n=int(input())\nk=1\nfor i in range (1,n+1):\n    k=k*i\n</span>if n&lt;0:\n    print(0)\nelse:\n    print(k)"
+      },
+      "token_overlap": 41,
+      "max_similarity_percent": 91.11
+    },
+    {
+      "case_id": 34,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e22772432513744775b8/e59c34a1bebb49d29bfb3592/sub_1761642876765_zkykk2irm.py",
+        "similarity_percent": 79.07,
+        "full_code": "n = int(input())\nx = 1\nfor i in range(1,n+1):\n\tx *= i\nprint(x)",
+        "highlighted_code": "<span class='highlight-red'>n = int(input())\nx = 1\nfor i in range(1,n+1</span>):\n\tx *= i\nprint(x)"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e22772432513744775b8/fed45b08a578484ebf92e830/sub_1761664144437_65w4gzf7i.py",
+        "similarity_percent": 75.56,
+        "full_code": "n=int(input())\nk=1\nfor i in range (1,n+1):\n    k=k*i\nprint(k)",
+        "highlighted_code": "<span class='highlight-green'>n=int(input())\nk=1\nfor i in range (1,n+1</span>):\n    k=k*i\nprint(k)"
+      },
+      "token_overlap": 34,
+      "max_similarity_percent": 79.07
+    },
+    {
+      "case_id": 35,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e22772432513744775b8/e59c34a1bebb49d29bfb3592/sub_1761642876765_zkykk2irm.py",
+        "similarity_percent": 79.07,
+        "full_code": "n = int(input())\nx = 1\nfor i in range(1,n+1):\n\tx *= i\nprint(x)",
+        "highlighted_code": "<span class='highlight-red'>n = int(input())\nx = 1\nfor i in range(1,n+1</span>):\n\tx *= i\nprint(x)"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e22772432513744775b8/cd93b2ff882a4ffa85f4518f/sub_1761635531948_3kb2h57ho.py",
+        "similarity_percent": 75.56,
+        "full_code": "n=int(input())\nk=1\nfor i in range (1,n+1):\n    k=k*i\nprint(k)",
+        "highlighted_code": "<span class='highlight-green'>n=int(input())\nk=1\nfor i in range (1,n+1</span>):\n    k=k*i\nprint(k)"
+      },
+      "token_overlap": 34,
+      "max_similarity_percent": 79.07
+    },
+    {
+      "case_id": 36,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e22772432513744775b8/e59c34a1bebb49d29bfb3592/sub_1761642876765_zkykk2irm.py",
+        "similarity_percent": 79.07,
+        "full_code": "n = int(input())\nx = 1\nfor i in range(1,n+1):\n\tx *= i\nprint(x)",
+        "highlighted_code": "<span class='highlight-red'>n = int(input())\nx = 1\nfor i in range(1,n+1</span>):\n\tx *= i\nprint(x)"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e22772432513744775b8/c747e87428cc4dbab36bd7aa/sub_1761633803904_4r4im5ecm.py",
+        "similarity_percent": 75.56,
+        "full_code": "n=int(input())\nfac=1\nfor i in range(1, n+1):\n    fac=fac*i\nprint(fac)",
+        "highlighted_code": "<span class='highlight-green'>n=int(input())\nfac=1\nfor i in range(1, n+1</span>):\n    fac=fac*i\nprint(fac)"
+      },
+      "token_overlap": 34,
+      "max_similarity_percent": 79.07
+    },
+    {
+      "case_id": 37,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e22772432513744775b8/e59c34a1bebb49d29bfb3592/sub_1761642876765_zkykk2irm.py",
+        "similarity_percent": 79.07,
+        "full_code": "n = int(input())\nx = 1\nfor i in range(1,n+1):\n\tx *= i\nprint(x)",
+        "highlighted_code": "<span class='highlight-red'>n = int(input())\nx = 1\nfor i in range(1,n+1</span>):\n\tx *= i\nprint(x)"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e22772432513744775b8/cd93b2ff882a4ffa85f4518f/sub_1761635632609_th4wbr28o.py",
+        "similarity_percent": 53.97,
+        "full_code": "n=int(input())\nk=1\nfor i in range (1,n+1):\n    k=k*i\nif n<0:\n    print(0)\nelse:\n    print(k)",
+        "highlighted_code": "<span class='highlight-green'>n=int(input())\nk=1\nfor i in range (1,n+1</span>):\n    k=k*i\nif n&lt;0:\n    print(0)\nelse:\n    print(k)"
+      },
+      "token_overlap": 34,
+      "max_similarity_percent": 79.07
+    },
+    {
+      "case_id": 38,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e22772432513744775b8/f8a2bab9778140ecb46b6a60/sub_1761709128100_vkky4tanr.py",
+        "similarity_percent": 79.07,
+        "full_code": "n = int(input())\nresult = 1\nfor i in range(1, n + 1):\n    result *= i\nprint(result)\n\n",
+        "highlighted_code": "<span class='highlight-red'>n = int(input())\nresult = 1\nfor i in range(1, n + 1</span>):\n    result *= i\nprint(result)\n\n"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e22772432513744775b8/fed45b08a578484ebf92e830/sub_1761664144437_65w4gzf7i.py",
+        "similarity_percent": 75.56,
+        "full_code": "n=int(input())\nk=1\nfor i in range (1,n+1):\n    k=k*i\nprint(k)",
+        "highlighted_code": "<span class='highlight-green'>n=int(input())\nk=1\nfor i in range (1,n+1</span>):\n    k=k*i\nprint(k)"
+      },
+      "token_overlap": 34,
+      "max_similarity_percent": 79.07
+    },
+    {
+      "case_id": 39,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e22772432513744775b8/f8a2bab9778140ecb46b6a60/sub_1761709128100_vkky4tanr.py",
+        "similarity_percent": 79.07,
+        "full_code": "n = int(input())\nresult = 1\nfor i in range(1, n + 1):\n    result *= i\nprint(result)\n\n",
+        "highlighted_code": "<span class='highlight-red'>n = int(input())\nresult = 1\nfor i in range(1, n + 1</span>):\n    result *= i\nprint(result)\n\n"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e22772432513744775b8/cd93b2ff882a4ffa85f4518f/sub_1761635531948_3kb2h57ho.py",
+        "similarity_percent": 75.56,
+        "full_code": "n=int(input())\nk=1\nfor i in range (1,n+1):\n    k=k*i\nprint(k)",
+        "highlighted_code": "<span class='highlight-green'>n=int(input())\nk=1\nfor i in range (1,n+1</span>):\n    k=k*i\nprint(k)"
+      },
+      "token_overlap": 34,
+      "max_similarity_percent": 79.07
+    },
+    {
+      "case_id": 40,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e22772432513744775b8/f8a2bab9778140ecb46b6a60/sub_1761709128100_vkky4tanr.py",
+        "similarity_percent": 79.07,
+        "full_code": "n = int(input())\nresult = 1\nfor i in range(1, n + 1):\n    result *= i\nprint(result)\n\n",
+        "highlighted_code": "<span class='highlight-red'>n = int(input())\nresult = 1\nfor i in range(1, n + 1</span>):\n    result *= i\nprint(result)\n\n"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e22772432513744775b8/c747e87428cc4dbab36bd7aa/sub_1761633803904_4r4im5ecm.py",
+        "similarity_percent": 75.56,
+        "full_code": "n=int(input())\nfac=1\nfor i in range(1, n+1):\n    fac=fac*i\nprint(fac)",
+        "highlighted_code": "<span class='highlight-green'>n=int(input())\nfac=1\nfor i in range(1, n+1</span>):\n    fac=fac*i\nprint(fac)"
+      },
+      "token_overlap": 34,
+      "max_similarity_percent": 79.07
+    },
+    {
+      "case_id": 41,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e22772432513744775b8/f8a2bab9778140ecb46b6a60/sub_1761709128100_vkky4tanr.py",
+        "similarity_percent": 79.07,
+        "full_code": "n = int(input())\nresult = 1\nfor i in range(1, n + 1):\n    result *= i\nprint(result)\n\n",
+        "highlighted_code": "<span class='highlight-red'>n = int(input())\nresult = 1\nfor i in range(1, n + 1</span>):\n    result *= i\nprint(result)\n\n"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e22772432513744775b8/cd93b2ff882a4ffa85f4518f/sub_1761635632609_th4wbr28o.py",
+        "similarity_percent": 53.97,
+        "full_code": "n=int(input())\nk=1\nfor i in range (1,n+1):\n    k=k*i\nif n<0:\n    print(0)\nelse:\n    print(k)",
+        "highlighted_code": "<span class='highlight-green'>n=int(input())\nk=1\nfor i in range (1,n+1</span>):\n    k=k*i\nif n&lt;0:\n    print(0)\nelse:\n    print(k)"
+      },
+      "token_overlap": 34,
+      "max_similarity_percent": 79.07
+    },
+    {
+      "case_id": 42,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e22772432513744775b8/c78f5dfafb144ed89a06ddba/sub_1761643920051_40c856lr3.py",
+        "similarity_percent": 79.07,
+        "full_code": "n=int(input())\ntotal=1\nfor i in range(1,n+1):\n    total*=i\nprint(total)",
+        "highlighted_code": "<span class='highlight-red'>n=int(input())\ntotal=1\nfor i in range(1,n+1</span>):\n    total*=i\nprint(total)"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e22772432513744775b8/fed45b08a578484ebf92e830/sub_1761664144437_65w4gzf7i.py",
+        "similarity_percent": 75.56,
+        "full_code": "n=int(input())\nk=1\nfor i in range (1,n+1):\n    k=k*i\nprint(k)",
+        "highlighted_code": "<span class='highlight-green'>n=int(input())\nk=1\nfor i in range (1,n+1</span>):\n    k=k*i\nprint(k)"
+      },
+      "token_overlap": 34,
+      "max_similarity_percent": 79.07
+    },
+    {
+      "case_id": 43,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e22772432513744775b8/c78f5dfafb144ed89a06ddba/sub_1761643920051_40c856lr3.py",
+        "similarity_percent": 79.07,
+        "full_code": "n=int(input())\ntotal=1\nfor i in range(1,n+1):\n    total*=i\nprint(total)",
+        "highlighted_code": "<span class='highlight-red'>n=int(input())\ntotal=1\nfor i in range(1,n+1</span>):\n    total*=i\nprint(total)"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e22772432513744775b8/cd93b2ff882a4ffa85f4518f/sub_1761635531948_3kb2h57ho.py",
+        "similarity_percent": 75.56,
+        "full_code": "n=int(input())\nk=1\nfor i in range (1,n+1):\n    k=k*i\nprint(k)",
+        "highlighted_code": "<span class='highlight-green'>n=int(input())\nk=1\nfor i in range (1,n+1</span>):\n    k=k*i\nprint(k)"
+      },
+      "token_overlap": 34,
+      "max_similarity_percent": 79.07
+    },
+    {
+      "case_id": 44,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e22772432513744775b8/c78f5dfafb144ed89a06ddba/sub_1761643920051_40c856lr3.py",
+        "similarity_percent": 79.07,
+        "full_code": "n=int(input())\ntotal=1\nfor i in range(1,n+1):\n    total*=i\nprint(total)",
+        "highlighted_code": "<span class='highlight-red'>n=int(input())\ntotal=1\nfor i in range(1,n+1</span>):\n    total*=i\nprint(total)"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e22772432513744775b8/c747e87428cc4dbab36bd7aa/sub_1761633803904_4r4im5ecm.py",
+        "similarity_percent": 75.56,
+        "full_code": "n=int(input())\nfac=1\nfor i in range(1, n+1):\n    fac=fac*i\nprint(fac)",
+        "highlighted_code": "<span class='highlight-green'>n=int(input())\nfac=1\nfor i in range(1, n+1</span>):\n    fac=fac*i\nprint(fac)"
+      },
+      "token_overlap": 34,
+      "max_similarity_percent": 79.07
+    },
+    {
+      "case_id": 45,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e22772432513744775b8/c78f5dfafb144ed89a06ddba/sub_1761643920051_40c856lr3.py",
+        "similarity_percent": 79.07,
+        "full_code": "n=int(input())\ntotal=1\nfor i in range(1,n+1):\n    total*=i\nprint(total)",
+        "highlighted_code": "<span class='highlight-red'>n=int(input())\ntotal=1\nfor i in range(1,n+1</span>):\n    total*=i\nprint(total)"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e22772432513744775b8/cd93b2ff882a4ffa85f4518f/sub_1761635632609_th4wbr28o.py",
+        "similarity_percent": 53.97,
+        "full_code": "n=int(input())\nk=1\nfor i in range (1,n+1):\n    k=k*i\nif n<0:\n    print(0)\nelse:\n    print(k)",
+        "highlighted_code": "<span class='highlight-green'>n=int(input())\nk=1\nfor i in range (1,n+1</span>):\n    k=k*i\nif n&lt;0:\n    print(0)\nelse:\n    print(k)"
+      },
+      "token_overlap": 34,
+      "max_similarity_percent": 79.07
+    },
+    {
+      "case_id": 46,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e22772432513744775b8/8045cd76adf946038858d2bc/sub_1761638969791_6y73bbtua.py",
+        "similarity_percent": 79.07,
+        "full_code": "n=int(input())\ngiaithua=1\nfor i in range(1,n+1):\n    giaithua *=i\nprint(giaithua)",
+        "highlighted_code": "<span class='highlight-red'>n=int(input())\ngiaithua=1\nfor i in range(1,n+1</span>):\n    giaithua *=i\nprint(giaithua)"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e22772432513744775b8/c747e87428cc4dbab36bd7aa/sub_1761633803904_4r4im5ecm.py",
+        "similarity_percent": 75.56,
+        "full_code": "n=int(input())\nfac=1\nfor i in range(1, n+1):\n    fac=fac*i\nprint(fac)",
+        "highlighted_code": "<span class='highlight-green'>n=int(input())\nfac=1\nfor i in range(1, n+1</span>):\n    fac=fac*i\nprint(fac)"
+      },
+      "token_overlap": 34,
+      "max_similarity_percent": 79.07
+    },
+    {
+      "case_id": 47,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e22772432513744775b8/8045cd76adf946038858d2bc/sub_1761638969791_6y73bbtua.py",
+        "similarity_percent": 79.07,
+        "full_code": "n=int(input())\ngiaithua=1\nfor i in range(1,n+1):\n    giaithua *=i\nprint(giaithua)",
+        "highlighted_code": "<span class='highlight-red'>n=int(input())\ngiaithua=1\nfor i in range(1,n+1</span>):\n    giaithua *=i\nprint(giaithua)"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e22772432513744775b8/cd93b2ff882a4ffa85f4518f/sub_1761635632609_th4wbr28o.py",
+        "similarity_percent": 53.97,
+        "full_code": "n=int(input())\nk=1\nfor i in range (1,n+1):\n    k=k*i\nif n<0:\n    print(0)\nelse:\n    print(k)",
+        "highlighted_code": "<span class='highlight-green'>n=int(input())\nk=1\nfor i in range (1,n+1</span>):\n    k=k*i\nif n&lt;0:\n    print(0)\nelse:\n    print(k)"
+      },
+      "token_overlap": 34,
+      "max_similarity_percent": 79.07
+    },
+    {
+      "case_id": 48,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e22772432513744775b8/fed45b08a578484ebf92e830/sub_1761664144437_65w4gzf7i.py",
+        "similarity_percent": 75.56,
+        "full_code": "n=int(input())\nk=1\nfor i in range (1,n+1):\n    k=k*i\nprint(k)",
+        "highlighted_code": "<span class='highlight-red'>n=int(input())\nk=1\nfor i in range (1,n+1</span>):\n    k=k*i\nprint(k)"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e22772432513744775b8/8045cd76adf946038858d2bc/sub_1761638969791_6y73bbtua.py",
+        "similarity_percent": 79.07,
+        "full_code": "n=int(input())\ngiaithua=1\nfor i in range(1,n+1):\n    giaithua *=i\nprint(giaithua)",
+        "highlighted_code": "<span class='highlight-green'>n=int(input())\ngiaithua=1\nfor i in range(1,n+1</span>):\n    giaithua *=i\nprint(giaithua)"
+      },
+      "token_overlap": 34,
+      "max_similarity_percent": 79.07
+    },
+    {
+      "case_id": 49,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e22772432513744775b8/fed45b08a578484ebf92e830/sub_1761664144437_65w4gzf7i.py",
+        "similarity_percent": 75.56,
+        "full_code": "n=int(input())\nk=1\nfor i in range (1,n+1):\n    k=k*i\nprint(k)",
+        "highlighted_code": "<span class='highlight-red'>n=int(input())\nk=1\nfor i in range (1,n+1</span>):\n    k=k*i\nprint(k)"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e22772432513744775b8/2a7df806cece43269dd7498b/sub_1761722443601_dfpgagso6.py",
+        "similarity_percent": 79.07,
+        "full_code": "n = int(input())\nresult = 1\nfor i in range(1, n + 1):\n    result *= i\nprint(result)\n",
+        "highlighted_code": "<span class='highlight-green'>n = int(input())\nresult = 1\nfor i in range(1, n + 1</span>):\n    result *= i\nprint(result)\n"
+      },
+      "token_overlap": 34,
+      "max_similarity_percent": 79.07
+    },
+    {
+      "case_id": 50,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e22772432513744775b8/fed45b08a578484ebf92e830/sub_1761664144437_65w4gzf7i.py",
+        "similarity_percent": 75.56,
+        "full_code": "n=int(input())\nk=1\nfor i in range (1,n+1):\n    k=k*i\nprint(k)",
+        "highlighted_code": "<span class='highlight-red'>n=int(input())\nk=1\nfor i in range (1,n+1</span>):\n    k=k*i\nprint(k)"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e22772432513744775b8/30d29d0969994c929976d40a/sub_1761651970485_mw3gbtcsi.py",
+        "similarity_percent": 79.07,
+        "full_code": "n=int(input())\ntich=1\nfor i in range(1,n+1):\n    tich*=i\nprint(tich)",
+        "highlighted_code": "<span class='highlight-green'>n=int(input())\ntich=1\nfor i in range(1,n+1</span>):\n    tich*=i\nprint(tich)"
+      },
+      "token_overlap": 34,
+      "max_similarity_percent": 79.07
+    },
+    {
+      "case_id": 51,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e22772432513744775b8/cd93b2ff882a4ffa85f4518f/sub_1761635531948_3kb2h57ho.py",
+        "similarity_percent": 75.56,
+        "full_code": "n=int(input())\nk=1\nfor i in range (1,n+1):\n    k=k*i\nprint(k)",
+        "highlighted_code": "<span class='highlight-red'>n=int(input())\nk=1\nfor i in range (1,n+1</span>):\n    k=k*i\nprint(k)"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e22772432513744775b8/8045cd76adf946038858d2bc/sub_1761638969791_6y73bbtua.py",
+        "similarity_percent": 79.07,
+        "full_code": "n=int(input())\ngiaithua=1\nfor i in range(1,n+1):\n    giaithua *=i\nprint(giaithua)",
+        "highlighted_code": "<span class='highlight-green'>n=int(input())\ngiaithua=1\nfor i in range(1,n+1</span>):\n    giaithua *=i\nprint(giaithua)"
+      },
+      "token_overlap": 34,
+      "max_similarity_percent": 79.07
+    },
+    {
+      "case_id": 52,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e22772432513744775b8/cd93b2ff882a4ffa85f4518f/sub_1761635531948_3kb2h57ho.py",
+        "similarity_percent": 75.56,
+        "full_code": "n=int(input())\nk=1\nfor i in range (1,n+1):\n    k=k*i\nprint(k)",
+        "highlighted_code": "<span class='highlight-red'>n=int(input())\nk=1\nfor i in range (1,n+1</span>):\n    k=k*i\nprint(k)"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e22772432513744775b8/2a7df806cece43269dd7498b/sub_1761722443601_dfpgagso6.py",
+        "similarity_percent": 79.07,
+        "full_code": "n = int(input())\nresult = 1\nfor i in range(1, n + 1):\n    result *= i\nprint(result)\n",
+        "highlighted_code": "<span class='highlight-green'>n = int(input())\nresult = 1\nfor i in range(1, n + 1</span>):\n    result *= i\nprint(result)\n"
+      },
+      "token_overlap": 34,
+      "max_similarity_percent": 79.07
+    },
+    {
+      "case_id": 53,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e22772432513744775b8/cd93b2ff882a4ffa85f4518f/sub_1761635531948_3kb2h57ho.py",
+        "similarity_percent": 75.56,
+        "full_code": "n=int(input())\nk=1\nfor i in range (1,n+1):\n    k=k*i\nprint(k)",
+        "highlighted_code": "<span class='highlight-red'>n=int(input())\nk=1\nfor i in range (1,n+1</span>):\n    k=k*i\nprint(k)"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e22772432513744775b8/30d29d0969994c929976d40a/sub_1761651970485_mw3gbtcsi.py",
+        "similarity_percent": 79.07,
+        "full_code": "n=int(input())\ntich=1\nfor i in range(1,n+1):\n    tich*=i\nprint(tich)",
+        "highlighted_code": "<span class='highlight-green'>n=int(input())\ntich=1\nfor i in range(1,n+1</span>):\n    tich*=i\nprint(tich)"
+      },
+      "token_overlap": 34,
+      "max_similarity_percent": 79.07
+    },
+    {
+      "case_id": 54,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e22772432513744775b8/c747e87428cc4dbab36bd7aa/sub_1761633803904_4r4im5ecm.py",
+        "similarity_percent": 75.56,
+        "full_code": "n=int(input())\nfac=1\nfor i in range(1, n+1):\n    fac=fac*i\nprint(fac)",
+        "highlighted_code": "<span class='highlight-red'>n=int(input())\nfac=1\nfor i in range(1, n+1</span>):\n    fac=fac*i\nprint(fac)"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e22772432513744775b8/2a7df806cece43269dd7498b/sub_1761722443601_dfpgagso6.py",
+        "similarity_percent": 79.07,
+        "full_code": "n = int(input())\nresult = 1\nfor i in range(1, n + 1):\n    result *= i\nprint(result)\n",
+        "highlighted_code": "<span class='highlight-green'>n = int(input())\nresult = 1\nfor i in range(1, n + 1</span>):\n    result *= i\nprint(result)\n"
+      },
+      "token_overlap": 34,
+      "max_similarity_percent": 79.07
+    },
+    {
+      "case_id": 55,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e22772432513744775b8/c747e87428cc4dbab36bd7aa/sub_1761633803904_4r4im5ecm.py",
+        "similarity_percent": 75.56,
+        "full_code": "n=int(input())\nfac=1\nfor i in range(1, n+1):\n    fac=fac*i\nprint(fac)",
+        "highlighted_code": "<span class='highlight-red'>n=int(input())\nfac=1\nfor i in range(1, n+1</span>):\n    fac=fac*i\nprint(fac)"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e22772432513744775b8/30d29d0969994c929976d40a/sub_1761651970485_mw3gbtcsi.py",
+        "similarity_percent": 79.07,
+        "full_code": "n=int(input())\ntich=1\nfor i in range(1,n+1):\n    tich*=i\nprint(tich)",
+        "highlighted_code": "<span class='highlight-green'>n=int(input())\ntich=1\nfor i in range(1,n+1</span>):\n    tich*=i\nprint(tich)"
+      },
+      "token_overlap": 34,
+      "max_similarity_percent": 79.07
+    },
+    {
+      "case_id": 56,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e22772432513744775b8/e59c34a1bebb49d29bfb3592/sub_1761642876765_zkykk2irm.py",
+        "similarity_percent": 74.42,
+        "full_code": "n = int(input())\nx = 1\nfor i in range(1,n+1):\n\tx *= i\nprint(x)",
+        "highlighted_code": "<span class='highlight-red'>n = int(input())\nx = 1\nfor i in range(1,n</span>+1):\n\tx *= i\nprint(x)"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e22772432513744775b8/5fdf5d57201a4c04a677dfa7/sub_1761620535868_p7g74sv0e.py",
+        "similarity_percent": 66.67,
+        "full_code": "n = int(input())\nlt = 1\nfor i in range(1,n + 1,1):\n    lt *= i\nprint(lt)",
+        "highlighted_code": "<span class='highlight-green'>n = int(input())\nlt = 1\nfor i in range(1,n </span>+ 1,1):\n    lt *= i\nprint(lt)"
+      },
+      "token_overlap": 32,
+      "max_similarity_percent": 74.42
+    },
+    {
+      "case_id": 57,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e22772432513744775b8/f8a2bab9778140ecb46b6a60/sub_1761709128100_vkky4tanr.py",
+        "similarity_percent": 74.42,
+        "full_code": "n = int(input())\nresult = 1\nfor i in range(1, n + 1):\n    result *= i\nprint(result)\n\n",
+        "highlighted_code": "<span class='highlight-red'>n = int(input())\nresult = 1\nfor i in range(1, n </span>+ 1):\n    result *= i\nprint(result)\n\n"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e22772432513744775b8/5fdf5d57201a4c04a677dfa7/sub_1761620535868_p7g74sv0e.py",
+        "similarity_percent": 66.67,
+        "full_code": "n = int(input())\nlt = 1\nfor i in range(1,n + 1,1):\n    lt *= i\nprint(lt)",
+        "highlighted_code": "<span class='highlight-green'>n = int(input())\nlt = 1\nfor i in range(1,n </span>+ 1,1):\n    lt *= i\nprint(lt)"
+      },
+      "token_overlap": 32,
+      "max_similarity_percent": 74.42
+    },
+    {
+      "case_id": 58,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e22772432513744775b8/5fdf5d57201a4c04a677dfa7/sub_1761620535868_p7g74sv0e.py",
+        "similarity_percent": 66.67,
+        "full_code": "n = int(input())\nlt = 1\nfor i in range(1,n + 1,1):\n    lt *= i\nprint(lt)",
+        "highlighted_code": "<span class='highlight-red'>n = int(input())\nlt = 1\nfor i in range(1,n </span>+ 1,1):\n    lt *= i\nprint(lt)"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e22772432513744775b8/c78f5dfafb144ed89a06ddba/sub_1761643920051_40c856lr3.py",
+        "similarity_percent": 74.42,
+        "full_code": "n=int(input())\ntotal=1\nfor i in range(1,n+1):\n    total*=i\nprint(total)",
+        "highlighted_code": "<span class='highlight-green'>n=int(input())\ntotal=1\nfor i in range(1,n</span>+1):\n    total*=i\nprint(total)"
+      },
+      "token_overlap": 32,
+      "max_similarity_percent": 74.42
+    },
+    {
+      "case_id": 59,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e22772432513744775b8/5fdf5d57201a4c04a677dfa7/sub_1761620535868_p7g74sv0e.py",
+        "similarity_percent": 66.67,
+        "full_code": "n = int(input())\nlt = 1\nfor i in range(1,n + 1,1):\n    lt *= i\nprint(lt)",
+        "highlighted_code": "<span class='highlight-red'>n = int(input())\nlt = 1\nfor i in range(1,n </span>+ 1,1):\n    lt *= i\nprint(lt)"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e22772432513744775b8/fed45b08a578484ebf92e830/sub_1761664144437_65w4gzf7i.py",
+        "similarity_percent": 71.11,
+        "full_code": "n=int(input())\nk=1\nfor i in range (1,n+1):\n    k=k*i\nprint(k)",
+        "highlighted_code": "<span class='highlight-green'>n=int(input())\nk=1\nfor i in range (1,n</span>+1):\n    k=k*i\nprint(k)"
+      },
+      "token_overlap": 32,
+      "max_similarity_percent": 71.11
+    },
+    {
+      "case_id": 60,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e22772432513744775b8/5fdf5d57201a4c04a677dfa7/sub_1761620535868_p7g74sv0e.py",
+        "similarity_percent": 66.67,
+        "full_code": "n = int(input())\nlt = 1\nfor i in range(1,n + 1,1):\n    lt *= i\nprint(lt)",
+        "highlighted_code": "<span class='highlight-red'>n = int(input())\nlt = 1\nfor i in range(1,n </span>+ 1,1):\n    lt *= i\nprint(lt)"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e22772432513744775b8/cd93b2ff882a4ffa85f4518f/sub_1761635531948_3kb2h57ho.py",
+        "similarity_percent": 71.11,
+        "full_code": "n=int(input())\nk=1\nfor i in range (1,n+1):\n    k=k*i\nprint(k)",
+        "highlighted_code": "<span class='highlight-green'>n=int(input())\nk=1\nfor i in range (1,n</span>+1):\n    k=k*i\nprint(k)"
+      },
+      "token_overlap": 32,
+      "max_similarity_percent": 71.11
+    },
+    {
+      "case_id": 61,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e22772432513744775b8/5fdf5d57201a4c04a677dfa7/sub_1761620535868_p7g74sv0e.py",
+        "similarity_percent": 66.67,
+        "full_code": "n = int(input())\nlt = 1\nfor i in range(1,n + 1,1):\n    lt *= i\nprint(lt)",
+        "highlighted_code": "<span class='highlight-red'>n = int(input())\nlt = 1\nfor i in range(1,n </span>+ 1,1):\n    lt *= i\nprint(lt)"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e22772432513744775b8/8045cd76adf946038858d2bc/sub_1761638969791_6y73bbtua.py",
+        "similarity_percent": 74.42,
+        "full_code": "n=int(input())\ngiaithua=1\nfor i in range(1,n+1):\n    giaithua *=i\nprint(giaithua)",
+        "highlighted_code": "<span class='highlight-green'>n=int(input())\ngiaithua=1\nfor i in range(1,n</span>+1):\n    giaithua *=i\nprint(giaithua)"
+      },
+      "token_overlap": 32,
+      "max_similarity_percent": 74.42
+    },
+    {
+      "case_id": 62,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e22772432513744775b8/5fdf5d57201a4c04a677dfa7/sub_1761620535868_p7g74sv0e.py",
+        "similarity_percent": 66.67,
+        "full_code": "n = int(input())\nlt = 1\nfor i in range(1,n + 1,1):\n    lt *= i\nprint(lt)",
+        "highlighted_code": "<span class='highlight-red'>n = int(input())\nlt = 1\nfor i in range(1,n </span>+ 1,1):\n    lt *= i\nprint(lt)"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e22772432513744775b8/c747e87428cc4dbab36bd7aa/sub_1761633803904_4r4im5ecm.py",
+        "similarity_percent": 71.11,
+        "full_code": "n=int(input())\nfac=1\nfor i in range(1, n+1):\n    fac=fac*i\nprint(fac)",
+        "highlighted_code": "<span class='highlight-green'>n=int(input())\nfac=1\nfor i in range(1, n</span>+1):\n    fac=fac*i\nprint(fac)"
+      },
+      "token_overlap": 32,
+      "max_similarity_percent": 71.11
+    },
+    {
+      "case_id": 63,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e22772432513744775b8/5fdf5d57201a4c04a677dfa7/sub_1761620535868_p7g74sv0e.py",
+        "similarity_percent": 66.67,
+        "full_code": "n = int(input())\nlt = 1\nfor i in range(1,n + 1,1):\n    lt *= i\nprint(lt)",
+        "highlighted_code": "<span class='highlight-red'>n = int(input())\nlt = 1\nfor i in range(1,n </span>+ 1,1):\n    lt *= i\nprint(lt)"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e22772432513744775b8/cd93b2ff882a4ffa85f4518f/sub_1761635632609_th4wbr28o.py",
+        "similarity_percent": 50.79,
+        "full_code": "n=int(input())\nk=1\nfor i in range (1,n+1):\n    k=k*i\nif n<0:\n    print(0)\nelse:\n    print(k)",
+        "highlighted_code": "<span class='highlight-green'>n=int(input())\nk=1\nfor i in range (1,n</span>+1):\n    k=k*i\nif n&lt;0:\n    print(0)\nelse:\n    print(k)"
+      },
+      "token_overlap": 32,
+      "max_similarity_percent": 66.67
+    },
+    {
+      "case_id": 64,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e22772432513744775b8/5fdf5d57201a4c04a677dfa7/sub_1761620535868_p7g74sv0e.py",
+        "similarity_percent": 66.67,
+        "full_code": "n = int(input())\nlt = 1\nfor i in range(1,n + 1,1):\n    lt *= i\nprint(lt)",
+        "highlighted_code": "<span class='highlight-red'>n = int(input())\nlt = 1\nfor i in range(1,n </span>+ 1,1):\n    lt *= i\nprint(lt)"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e22772432513744775b8/2a7df806cece43269dd7498b/sub_1761722443601_dfpgagso6.py",
+        "similarity_percent": 74.42,
+        "full_code": "n = int(input())\nresult = 1\nfor i in range(1, n + 1):\n    result *= i\nprint(result)\n",
+        "highlighted_code": "<span class='highlight-green'>n = int(input())\nresult = 1\nfor i in range(1, n </span>+ 1):\n    result *= i\nprint(result)\n"
+      },
+      "token_overlap": 32,
+      "max_similarity_percent": 74.42
+    },
+    {
+      "case_id": 65,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e22772432513744775b8/5fdf5d57201a4c04a677dfa7/sub_1761620535868_p7g74sv0e.py",
+        "similarity_percent": 66.67,
+        "full_code": "n = int(input())\nlt = 1\nfor i in range(1,n + 1,1):\n    lt *= i\nprint(lt)",
+        "highlighted_code": "<span class='highlight-red'>n = int(input())\nlt = 1\nfor i in range(1,n </span>+ 1,1):\n    lt *= i\nprint(lt)"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e22772432513744775b8/30d29d0969994c929976d40a/sub_1761651970485_mw3gbtcsi.py",
+        "similarity_percent": 74.42,
+        "full_code": "n=int(input())\ntich=1\nfor i in range(1,n+1):\n    tich*=i\nprint(tich)",
+        "highlighted_code": "<span class='highlight-green'>n=int(input())\ntich=1\nfor i in range(1,n</span>+1):\n    tich*=i\nprint(tich)"
+      },
+      "token_overlap": 32,
+      "max_similarity_percent": 74.42
+    },
+    {
+      "case_id": 66,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e22772432513744775b8/cd93b2ff882a4ffa85f4518f/sub_1761635632609_th4wbr28o.py",
+        "similarity_percent": 53.97,
+        "full_code": "n=int(input())\nk=1\nfor i in range (1,n+1):\n    k=k*i\nif n<0:\n    print(0)\nelse:\n    print(k)",
+        "highlighted_code": "<span class='highlight-red'>n=int(input())\nk=1\nfor i in range (1,n+1</span>):\n    k=k*i\nif n&lt;0:\n    print(0)\nelse:\n    print(k)"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e22772432513744775b8/2a7df806cece43269dd7498b/sub_1761722443601_dfpgagso6.py",
+        "similarity_percent": 79.07,
+        "full_code": "n = int(input())\nresult = 1\nfor i in range(1, n + 1):\n    result *= i\nprint(result)\n",
+        "highlighted_code": "<span class='highlight-green'>n = int(input())\nresult = 1\nfor i in range(1, n + 1</span>):\n    result *= i\nprint(result)\n"
+      },
+      "token_overlap": 34,
+      "max_similarity_percent": 79.07
+    },
+    {
+      "case_id": 67,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e22772432513744775b8/cd93b2ff882a4ffa85f4518f/sub_1761635632609_th4wbr28o.py",
+        "similarity_percent": 53.97,
+        "full_code": "n=int(input())\nk=1\nfor i in range (1,n+1):\n    k=k*i\nif n<0:\n    print(0)\nelse:\n    print(k)",
+        "highlighted_code": "<span class='highlight-red'>n=int(input())\nk=1\nfor i in range (1,n+1</span>):\n    k=k*i\nif n&lt;0:\n    print(0)\nelse:\n    print(k)"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e22772432513744775b8/30d29d0969994c929976d40a/sub_1761651970485_mw3gbtcsi.py",
+        "similarity_percent": 79.07,
+        "full_code": "n=int(input())\ntich=1\nfor i in range(1,n+1):\n    tich*=i\nprint(tich)",
+        "highlighted_code": "<span class='highlight-green'>n=int(input())\ntich=1\nfor i in range(1,n+1</span>):\n    tich*=i\nprint(tich)"
+      },
+      "token_overlap": 34,
+      "max_similarity_percent": 79.07
+    }
+  ]
+}

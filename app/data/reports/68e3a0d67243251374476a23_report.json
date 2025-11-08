@@ -1,0 +1,147 @@
+{
+  "problem_id": "68e3a0d67243251374476a23",
+  "filter_criteria": {
+    "min_token_overlap": 80,
+    "min_similarity_percent": 60
+  },
+  "total_cases_found": 8,
+  "total_cases_filtered": 8,
+  "cases": [
+    {
+      "case_id": 1,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3a0d67243251374476a23/30d29d0969994c929976d40a/sub_1761463576380_jz2gplu3y.py",
+        "similarity_percent": 100.0,
+        "full_code": "from math import sqrt,floor\nx=int(input())\na=sqrt(x)\nprint(floor(a))",
+        "highlighted_code": "<span class='highlight-red'>from math import sqrt,floor\nx=int(input())\na=sqrt(x)\nprint(floor(a</span>))"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3a0d67243251374476a23/30d29d0969994c929976d40a/sub_1761463582256_6wlnnlmd2.py",
+        "similarity_percent": 100.0,
+        "full_code": "from math import sqrt,floor\nx=int(input())\na=sqrt(x)\nprint(floor(a))",
+        "highlighted_code": "<span class='highlight-green'>from math import sqrt,floor\nx=int(input())\na=sqrt(x)\nprint(floor(a</span>))"
+      },
+      "token_overlap": 46,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 2,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3a0d67243251374476a23/30d29d0969994c929976d40a/sub_1761463576380_jz2gplu3y.py",
+        "similarity_percent": 100.0,
+        "full_code": "from math import sqrt,floor\nx=int(input())\na=sqrt(x)\nprint(floor(a))",
+        "highlighted_code": "<span class='highlight-red'>from math import sqrt,floor\nx=int(input())\na=sqrt(x)\nprint(floor(a</span>))"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3a0d67243251374476a23/B25DCTV022/sub_1761463576380_jz2gplu3y.py",
+        "similarity_percent": 100.0,
+        "full_code": "from math import sqrt,floor\nx=int(input())\na=sqrt(x)\nprint(floor(a))",
+        "highlighted_code": "<span class='highlight-green'>from math import sqrt,floor\nx=int(input())\na=sqrt(x)\nprint(floor(a</span>))"
+      },
+      "token_overlap": 46,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 3,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3a0d67243251374476a23/30d29d0969994c929976d40a/sub_1761463576380_jz2gplu3y.py",
+        "similarity_percent": 100.0,
+        "full_code": "from math import sqrt,floor\nx=int(input())\na=sqrt(x)\nprint(floor(a))",
+        "highlighted_code": "<span class='highlight-red'>from math import sqrt,floor\nx=int(input())\na=sqrt(x)\nprint(floor(a</span>))"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3a0d67243251374476a23/B25DCTV022/sub_1761463582256_6wlnnlmd2.py",
+        "similarity_percent": 100.0,
+        "full_code": "from math import sqrt,floor\nx=int(input())\na=sqrt(x)\nprint(floor(a))",
+        "highlighted_code": "<span class='highlight-green'>from math import sqrt,floor\nx=int(input())\na=sqrt(x)\nprint(floor(a</span>))"
+      },
+      "token_overlap": 46,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 4,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3a0d67243251374476a23/c747e87428cc4dbab36bd7aa/sub_1761639638482_y8ejdh5mz.py",
+        "similarity_percent": 100.0,
+        "full_code": "a=int(input())\nb=a**0.5\nc=int(b)\nprint(c)",
+        "highlighted_code": "<span class='highlight-red'>a=int(input())\nb=a**0.5\nc=int(b)\nprint(c)</span>"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3a0d67243251374476a23/B25DCTV046/sub_1761639638482_y8ejdh5mz.py",
+        "similarity_percent": 100.0,
+        "full_code": "a=int(input())\nb=a**0.5\nc=int(b)\nprint(c)",
+        "highlighted_code": "<span class='highlight-green'>a=int(input())\nb=a**0.5\nc=int(b)\nprint(c)</span>"
+      },
+      "token_overlap": 38,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 5,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3a0d67243251374476a23/30d29d0969994c929976d40a/sub_1761463582256_6wlnnlmd2.py",
+        "similarity_percent": 100.0,
+        "full_code": "from math import sqrt,floor\nx=int(input())\na=sqrt(x)\nprint(floor(a))",
+        "highlighted_code": "<span class='highlight-red'>from math import sqrt,floor\nx=int(input())\na=sqrt(x)\nprint(floor(a</span>))"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3a0d67243251374476a23/B25DCTV022/sub_1761463576380_jz2gplu3y.py",
+        "similarity_percent": 100.0,
+        "full_code": "from math import sqrt,floor\nx=int(input())\na=sqrt(x)\nprint(floor(a))",
+        "highlighted_code": "<span class='highlight-green'>from math import sqrt,floor\nx=int(input())\na=sqrt(x)\nprint(floor(a</span>))"
+      },
+      "token_overlap": 46,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 6,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3a0d67243251374476a23/30d29d0969994c929976d40a/sub_1761463582256_6wlnnlmd2.py",
+        "similarity_percent": 100.0,
+        "full_code": "from math import sqrt,floor\nx=int(input())\na=sqrt(x)\nprint(floor(a))",
+        "highlighted_code": "<span class='highlight-red'>from math import sqrt,floor\nx=int(input())\na=sqrt(x)\nprint(floor(a</span>))"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3a0d67243251374476a23/B25DCTV022/sub_1761463582256_6wlnnlmd2.py",
+        "similarity_percent": 100.0,
+        "full_code": "from math import sqrt,floor\nx=int(input())\na=sqrt(x)\nprint(floor(a))",
+        "highlighted_code": "<span class='highlight-green'>from math import sqrt,floor\nx=int(input())\na=sqrt(x)\nprint(floor(a</span>))"
+      },
+      "token_overlap": 46,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 7,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3a0d67243251374476a23/c78f5dfafb144ed89a06ddba/sub_1761637053758_8jmtdgvjp.py",
+        "similarity_percent": 100.0,
+        "full_code": "x = int(input())\ncanbachai = x**(1/2)\nprint(int(canbachai))",
+        "highlighted_code": "<span class='highlight-red'>x = int(input())\ncanbachai = x**(1/2)\nprint(int</span>(canbachai))"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3a0d67243251374476a23/B25DCTV063/sub_1761637053758_8jmtdgvjp.py",
+        "similarity_percent": 100.0,
+        "full_code": "x = int(input())\ncanbachai = x**(1/2)\nprint(int(canbachai))",
+        "highlighted_code": "<span class='highlight-green'>x = int(input())\ncanbachai = x**(1/2)\nprint(int</span>(canbachai))"
+      },
+      "token_overlap": 33,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 8,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3a0d67243251374476a23/B25DCTV022/sub_1761463576380_jz2gplu3y.py",
+        "similarity_percent": 100.0,
+        "full_code": "from math import sqrt,floor\nx=int(input())\na=sqrt(x)\nprint(floor(a))",
+        "highlighted_code": "<span class='highlight-red'>from math import sqrt,floor\nx=int(input())\na=sqrt(x)\nprint(floor(a</span>))"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3a0d67243251374476a23/B25DCTV022/sub_1761463582256_6wlnnlmd2.py",
+        "similarity_percent": 100.0,
+        "full_code": "from math import sqrt,floor\nx=int(input())\na=sqrt(x)\nprint(floor(a))",
+        "highlighted_code": "<span class='highlight-green'>from math import sqrt,floor\nx=int(input())\na=sqrt(x)\nprint(floor(a</span>))"
+      },
+      "token_overlap": 46,
+      "max_similarity_percent": 100.0
+    }
+  ]
+}

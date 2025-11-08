@@ -1,0 +1,113 @@
+{
+  "problem_id": "68e3e3c5724325137447765b",
+  "filter_criteria": {
+    "min_token_overlap": 80,
+    "min_similarity_percent": 60
+  },
+  "total_cases_found": 9,
+  "total_cases_filtered": 6,
+  "cases": [
+    {
+      "case_id": 1,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e3c5724325137447765b/3e9bed73a45344af82e48379/sub_1761322551970_x8etrzx7d.py",
+        "similarity_percent": 100.0,
+        "full_code": "n = input()\nsum = 0\nfor a in n:\n    if a in '0123456789':\n        sum += int(a)\nprint(sum)",
+        "highlighted_code": "<span class='highlight-red'>n = input()\nsum = 0\nfor a in n:\n    if a in &#39;0123456789&#39;:\n        sum += int(a)\nprint</span>(sum)"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e3c5724325137447765b/3e9bed73a45344af82e48379/sub_1761322543000_qodwedkkp.py",
+        "similarity_percent": 100.0,
+        "full_code": "n = input()\nsum = 0\nfor a in n:\n    if a in '0123456789':\n        sum += int(a)\nprint(sum)",
+        "highlighted_code": "<span class='highlight-green'>n = input()\nsum = 0\nfor a in n:\n    if a in &#39;0123456789&#39;:\n        sum += int(a)\nprint</span>(sum)"
+      },
+      "token_overlap": 47,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 2,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e3c5724325137447765b/3e9bed73a45344af82e48379/sub_1761322551970_x8etrzx7d.py",
+        "similarity_percent": 100.0,
+        "full_code": "n = input()\nsum = 0\nfor a in n:\n    if a in '0123456789':\n        sum += int(a)\nprint(sum)",
+        "highlighted_code": "<span class='highlight-red'>n = input()\nsum = 0\nfor a in n:\n    if a in &#39;0123456789&#39;:\n        sum += int(a)\nprint</span>(sum)"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e3c5724325137447765b/3e9bed73a45344af82e48379/sub_1761322582303_ixuciv6en.py",
+        "similarity_percent": 100.0,
+        "full_code": "n = input()\nsum = 0\nfor a in n:\n    if a in '0123456789':\n        sum += int(a)\nprint(sum)",
+        "highlighted_code": "<span class='highlight-green'>n = input()\nsum = 0\nfor a in n:\n    if a in &#39;0123456789&#39;:\n        sum += int(a)\nprint</span>(sum)"
+      },
+      "token_overlap": 47,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 3,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e3c5724325137447765b/3e9bed73a45344af82e48379/sub_1761322551970_x8etrzx7d.py",
+        "similarity_percent": 100.0,
+        "full_code": "n = input()\nsum = 0\nfor a in n:\n    if a in '0123456789':\n        sum += int(a)\nprint(sum)",
+        "highlighted_code": "<span class='highlight-red'>n = input()\nsum = 0\nfor a in n:\n    if a in &#39;0123456789&#39;:\n        sum += int(a)\nprint</span>(sum)"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e3c5724325137447765b/3e9bed73a45344af82e48379/sub_1761322592935_cmj1m666k.py",
+        "similarity_percent": 100.0,
+        "full_code": "n = input()\nsum = 0\nfor a in n:\n    if a in '0123456789':\n        sum += int(a)\nprint(sum)",
+        "highlighted_code": "<span class='highlight-green'>n = input()\nsum = 0\nfor a in n:\n    if a in &#39;0123456789&#39;:\n        sum += int(a)\nprint</span>(sum)"
+      },
+      "token_overlap": 47,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 4,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e3c5724325137447765b/3e9bed73a45344af82e48379/sub_1761322543000_qodwedkkp.py",
+        "similarity_percent": 100.0,
+        "full_code": "n = input()\nsum = 0\nfor a in n:\n    if a in '0123456789':\n        sum += int(a)\nprint(sum)",
+        "highlighted_code": "<span class='highlight-red'>n = input()\nsum = 0\nfor a in n:\n    if a in &#39;0123456789&#39;:\n        sum += int(a)\nprint</span>(sum)"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e3c5724325137447765b/3e9bed73a45344af82e48379/sub_1761322582303_ixuciv6en.py",
+        "similarity_percent": 100.0,
+        "full_code": "n = input()\nsum = 0\nfor a in n:\n    if a in '0123456789':\n        sum += int(a)\nprint(sum)",
+        "highlighted_code": "<span class='highlight-green'>n = input()\nsum = 0\nfor a in n:\n    if a in &#39;0123456789&#39;:\n        sum += int(a)\nprint</span>(sum)"
+      },
+      "token_overlap": 47,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 5,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e3c5724325137447765b/3e9bed73a45344af82e48379/sub_1761322543000_qodwedkkp.py",
+        "similarity_percent": 100.0,
+        "full_code": "n = input()\nsum = 0\nfor a in n:\n    if a in '0123456789':\n        sum += int(a)\nprint(sum)",
+        "highlighted_code": "<span class='highlight-red'>n = input()\nsum = 0\nfor a in n:\n    if a in &#39;0123456789&#39;:\n        sum += int(a)\nprint</span>(sum)"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e3c5724325137447765b/3e9bed73a45344af82e48379/sub_1761322592935_cmj1m666k.py",
+        "similarity_percent": 100.0,
+        "full_code": "n = input()\nsum = 0\nfor a in n:\n    if a in '0123456789':\n        sum += int(a)\nprint(sum)",
+        "highlighted_code": "<span class='highlight-green'>n = input()\nsum = 0\nfor a in n:\n    if a in &#39;0123456789&#39;:\n        sum += int(a)\nprint</span>(sum)"
+      },
+      "token_overlap": 47,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 6,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e3c5724325137447765b/3e9bed73a45344af82e48379/sub_1761322582303_ixuciv6en.py",
+        "similarity_percent": 100.0,
+        "full_code": "n = input()\nsum = 0\nfor a in n:\n    if a in '0123456789':\n        sum += int(a)\nprint(sum)",
+        "highlighted_code": "<span class='highlight-red'>n = input()\nsum = 0\nfor a in n:\n    if a in &#39;0123456789&#39;:\n        sum += int(a)\nprint</span>(sum)"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e3c5724325137447765b/3e9bed73a45344af82e48379/sub_1761322592935_cmj1m666k.py",
+        "similarity_percent": 100.0,
+        "full_code": "n = input()\nsum = 0\nfor a in n:\n    if a in '0123456789':\n        sum += int(a)\nprint(sum)",
+        "highlighted_code": "<span class='highlight-green'>n = input()\nsum = 0\nfor a in n:\n    if a in &#39;0123456789&#39;:\n        sum += int(a)\nprint</span>(sum)"
+      },
+      "token_overlap": 47,
+      "max_similarity_percent": 100.0
+    }
+  ]
+}

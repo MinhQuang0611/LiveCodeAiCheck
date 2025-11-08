@@ -1,0 +1,5 @@
+d=input()
+p=d.split()
+a=int(p[0])
+b=int(p[1])
+print(a-b)

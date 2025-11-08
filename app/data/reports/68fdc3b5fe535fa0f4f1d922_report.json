@@ -1,0 +1,28 @@
+{
+  "problem_id": "68fdc3b5fe535fa0f4f1d922",
+  "filter_criteria": {
+    "min_token_overlap": 80,
+    "min_similarity_percent": 60
+  },
+  "total_cases_found": 10,
+  "total_cases_filtered": 1,
+  "cases": [
+    {
+      "case_id": 1,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68fdc3b5fe535fa0f4f1d922/8e19101eb0da4e9a92a17098/sub_1761637468450_e4yflp4zj.py",
+        "similarity_percent": 80.17,
+        "full_code": "n = int(input())\nfor i in range(n):\n    s = input()\n    a = []\n    dem = 0\n    for x in s:\n        if x == '(':\n            dem += 1\n            a.append(dem)\n            print(dem, end=\" \")\n        else:\n            print(a.pop(), end=\" \")\n    print()",
+        "highlighted_code": "n = i<span class='highlight-red'>nt(input())\nfor i in range(n)</span>:\n    s = input()\n    a = [<span class='highlight-red'>]\n    dem = 0\n    for x in s:\n        if x == &#39;(&#39;:\n            dem += 1\n            a.append(dem)\n            print(dem, end=&#34; </span>&#34;)\n        else:\n            <span class='highlight-red'>print(a.pop(), end=&#34; &#34;)\n    print()</span>"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68fdc3b5fe535fa0f4f1d922/8e236cb825b041b0a82527f2/sub_1761536240953_7akdmfcyu.py",
+        "similarity_percent": 72.09,
+        "full_code": "def print_index(s):\n    op = []\n    n = 0\n\n    for c in s:\n        if c == \"(\":\n            n += 1\n            op.append(n)\n            print(n, end=\" \")\n        elif c == \")\":\n            print(op.pop(), end=\" \")\n    print()\n\nt = int(input())\nfor _ in range(t):\n    print_index(input())",
+        "highlighted_code": "def print_index(s):\n    op = [<span class='highlight-green'>]\n    n = 0\n\n    for c in s:\n        if c == &#34;(&#34;:\n            n += 1\n            op.append(n)\n            print(n, end=&#34; </span>&#34;)\n        elif c == &#34;)&#34;:\n            <span class='highlight-green'>print(op.pop(), end=&#34; &#34;)\n    print()\n\n</span>t = i<span class='highlight-green'>nt(input())\nfor _ in range(t)</span>:\n    print_index(input())"
+      },
+      "token_overlap": 93,
+      "max_similarity_percent": 80.17
+    }
+  ]
+}

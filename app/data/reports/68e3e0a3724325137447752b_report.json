@@ -1,0 +1,130 @@
+{
+  "problem_id": "68e3e0a3724325137447752b",
+  "filter_criteria": {
+    "min_token_overlap": 80,
+    "min_similarity_percent": 60
+  },
+  "total_cases_found": 7,
+  "total_cases_filtered": 7,
+  "cases": [
+    {
+      "case_id": 1,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e0a3724325137447752b/c78f5dfafb144ed89a06ddba/sub_1761642031591_llinsuh3u.py",
+        "similarity_percent": 100.0,
+        "full_code": "a=input()\nb=input()\nif a.find(\".\") == -1 and b.find(\".\") == -1:\n    numa = int(a)\n    numb = int(b)\n    print(numa+numb)\nelse:\n    numa=float(a)\n    numb=float(b)\n    print(numa+numb)",
+        "highlighted_code": "<span class='highlight-red'>a=input()\nb=input()\nif a.find(&#34;.&#34;) == -1 and b.find(&#34;.&#34;) == -1:\n    numa = int(a)\n    numb = int(b)\n    print(numa+numb)\nelse:\n    numa=float(a)\n    numb=float(b)\n    print(numa+</span>numb)"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e0a3724325137447752b/c78f5dfafb144ed89a06ddba/sub_1761642250066_frf5i612k.py",
+        "similarity_percent": 100.0,
+        "full_code": "a=input() \nb=input() \nif a.find(\".\") == -1 and b.find(\".\") == -1: \n    numa = int(a) \n    numb = int(b) \n    print(numa+numb) \nelse: \n    numa=float(a) \n    numb=float(b) \n    print(numa+numb)",
+        "highlighted_code": "<span class='highlight-green'>a=input() \nb=input() \nif a.find(&#34;.&#34;) == -1 and b.find(&#34;.&#34;) == -1: \n    numa = int(a) \n    numb = int(b) \n    print(numa+numb) \nelse: \n    numa=float(a) \n    numb=float(b) \n    print(numa+</span>numb)"
+      },
+      "token_overlap": 107,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 2,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e0a3724325137447752b/2e99febeecc6490f8e7c3f87/sub_1761643718697_3qbb66k1m.py",
+        "similarity_percent": 100.0,
+        "full_code": "a = float(input())\nb= float(input())\nprint(a+b)",
+        "highlighted_code": "<span class='highlight-red'>a = float(input())\nb= float(input())\nprint(a</span>+b)"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e0a3724325137447752b/295d4dcad1f74d87afc29fce/sub_1761643751324_i62ifvl0p.py",
+        "similarity_percent": 100.0,
+        "full_code": "a= float(input())\nb= float(input())\nprint(a+b)",
+        "highlighted_code": "<span class='highlight-green'>a= float(input())\nb= float(input())\nprint(a</span>+b)"
+      },
+      "token_overlap": 39,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 3,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e0a3724325137447752b/c78f5dfafb144ed89a06ddba/sub_1761641873709_g1qoii5dv.py",
+        "similarity_percent": 100.0,
+        "full_code": "a=int(input())\nb=int(input())\nprint(a+b)",
+        "highlighted_code": "<span class='highlight-red'>a=int(input())\nb=int(input())\nprint</span>(a+b)"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e0a3724325137447752b/295d4dcad1f74d87afc29fce/sub_1761643630657_l7fniwm0i.py",
+        "similarity_percent": 100.0,
+        "full_code": "a= int(input())\nb= int(input())\nprint(a+b)\n",
+        "highlighted_code": "<span class='highlight-green'>a= int(input())\nb= int(input())\nprint</span>(a+b)\n"
+      },
+      "token_overlap": 33,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 4,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e0a3724325137447752b/c78f5dfafb144ed89a06ddba/sub_1761641873709_g1qoii5dv.py",
+        "similarity_percent": 100.0,
+        "full_code": "a=int(input())\nb=int(input())\nprint(a+b)",
+        "highlighted_code": "<span class='highlight-red'>a=int(input())\nb=int(input())\nprint</span>(a+b)"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e0a3724325137447752b/30d29d0969994c929976d40a/sub_1761652313165_go5ls75uh.py",
+        "similarity_percent": 100.0,
+        "full_code": "a=int(input())\nb=int(input())\nprint(a+b)",
+        "highlighted_code": "<span class='highlight-green'>a=int(input())\nb=int(input())\nprint</span>(a+b)"
+      },
+      "token_overlap": 33,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 5,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e0a3724325137447752b/295d4dcad1f74d87afc29fce/sub_1761643630657_l7fniwm0i.py",
+        "similarity_percent": 100.0,
+        "full_code": "a= int(input())\nb= int(input())\nprint(a+b)\n",
+        "highlighted_code": "<span class='highlight-red'>a= int(input())\nb= int(input())\nprint</span>(a+b)\n"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e0a3724325137447752b/30d29d0969994c929976d40a/sub_1761652313165_go5ls75uh.py",
+        "similarity_percent": 100.0,
+        "full_code": "a=int(input())\nb=int(input())\nprint(a+b)",
+        "highlighted_code": "<span class='highlight-green'>a=int(input())\nb=int(input())\nprint</span>(a+b)"
+      },
+      "token_overlap": 33,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 6,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e0a3724325137447752b/fed45b08a578484ebf92e830/sub_1761666055557_kocfq2mwc.py",
+        "similarity_percent": 71.43,
+        "full_code": "a=float(input())\nb=float(input())\nc=a+b\nprint(c)",
+        "highlighted_code": "<span class='highlight-red'>a=float(input())\nb=float(input(</span>))\nc=a+b\nprint(c)"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e0a3724325137447752b/2e99febeecc6490f8e7c3f87/sub_1761643718697_3qbb66k1m.py",
+        "similarity_percent": 76.92,
+        "full_code": "a = float(input())\nb= float(input())\nprint(a+b)",
+        "highlighted_code": "<span class='highlight-green'>a = float(input())\nb= float(input(</span>))\nprint(a+b)"
+      },
+      "token_overlap": 30,
+      "max_similarity_percent": 76.92
+    },
+    {
+      "case_id": 7,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e0a3724325137447752b/fed45b08a578484ebf92e830/sub_1761666055557_kocfq2mwc.py",
+        "similarity_percent": 71.43,
+        "full_code": "a=float(input())\nb=float(input())\nc=a+b\nprint(c)",
+        "highlighted_code": "<span class='highlight-red'>a=float(input())\nb=float(input(</span>))\nc=a+b\nprint(c)"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e0a3724325137447752b/295d4dcad1f74d87afc29fce/sub_1761643751324_i62ifvl0p.py",
+        "similarity_percent": 76.92,
+        "full_code": "a= float(input())\nb= float(input())\nprint(a+b)",
+        "highlighted_code": "<span class='highlight-green'>a= float(input())\nb= float(input(</span>))\nprint(a+b)"
+      },
+      "token_overlap": 30,
+      "max_similarity_percent": 76.92
+    }
+  ]
+}

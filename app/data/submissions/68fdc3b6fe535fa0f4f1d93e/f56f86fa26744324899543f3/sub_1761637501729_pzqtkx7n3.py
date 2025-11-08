@@ -1,0 +1,6 @@
+a=int(input())
+b=list(map(int,input().split()))
+c=sorted(b)
+c.remove(c[0])
+c.remove(c[-1])
+print(sum(c)/len(c))

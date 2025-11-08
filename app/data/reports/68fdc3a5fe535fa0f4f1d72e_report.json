@@ -1,0 +1,28 @@
+{
+  "problem_id": "68fdc3a5fe535fa0f4f1d72e",
+  "filter_criteria": {
+    "min_token_overlap": 80,
+    "min_similarity_percent": 60
+  },
+  "total_cases_found": 1,
+  "total_cases_filtered": 1,
+  "cases": [
+    {
+      "case_id": 1,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68fdc3a5fe535fa0f4f1d72e/ffdb326842044f2e98b7aaa7/sub_1761663045248_jdhrfcmoz.py",
+        "similarity_percent": 40.61,
+        "full_code": "def isprime(n):\n    if n < 2: return False\n    \n    for i in range(2, int(n ** 0.5) + 1):\n        if n % i == 0:\n            return False\n        \n    return True\n\ndef check(string):\n    size = len(string)\n\n    cnt_isprime = 0\n\n    for ch in string:\n        if isprime(int(ch)):\n            cnt_isprime += 1\n    \n    not_isprime = size - cnt_isprime\n\n    if isprime(size) and  cnt_isprime > not_isprime:\n        return True\n\n    return False\n\nt = int(input())\n\nwhile t > 0:\n\n    string = input()\n\n    if check(string):\n        print(\"YES\")\n    else:\n        print(\"NO\")\n\n    t -= 1",
+        "highlighted_code": "def isprime(n):\n    if n &lt; 2: <span class='highlight-red'>return False\n    \n    for i in range(2, int(n </span>** 0.5<span class='highlight-red'>) + 1):\n        if n % i == 0:\n            return False\n        \n    return True\n\ndef </span>check(string):\n    size = len(string)\n\n    cnt_isprime = 0\n\n    for ch in string:\n        if isprime(int(ch)):\n            cnt_isprime += 1\n    \n    not_isprime = size - cnt_isprime\n\n    if isprime(size) and  cnt_isprime &gt; not_isprime:\n        return True\n\n    return False\n\nt = int(input())\n\nwhile t &gt; 0:\n\n    string = input()\n\n    if check(string)<span class='highlight-red'>:\n        print(&#34;YES&#34;)\n    else:\n        print(&#34;NO&#34;</span>)\n\n    t -= 1"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68fdc3a5fe535fa0f4f1d72e/f95120b3a38a461085ef58cb/sub_1761758219448_si5vyee4h.py",
+        "similarity_percent": 31.42,
+        "full_code": "import math\nimport sys\ntry:\n    so_luong_bai_kiem_tra = int(sys.stdin.readline()) \nexcept:\n    so_luong_bai_kiem_tra = 0 \ndef la_so_nguyen_to(n):\n    if n <= 1:\n        return False\n    for i in range(2, int(math.sqrt(n)) + 1): \n        if n % i == 0:\n            return False\n    return True\ndef xu_ly_chuoi():\n    CHU_SO_NGUYEN_TO = {'2', '3', '5', '7'} \n    try:\n        chuoi_so_n = sys.stdin.readline().strip()\n    except:\n        return\n    do_dai_chuoi = len(chuoi_so_n)\n    if not la_so_nguyen_to(do_dai_chuoi):\n        print(\"NO\")\n        return\n    dem_nguyen_to = 0\n    for ky_tu in chuoi_so_n:\n        if ky_tu in CHU_SO_NGUYEN_TO:\n            dem_nguyen_to += 1\n    dem_khong_nguyen_to = do_dai_chuoi - dem_nguyen_to \n    if dem_nguyen_to > dem_khong_nguyen_to:\n        print(\"YES\")\n    else:\n        print(\"NO\")\nfor _ in range(so_luong_bai_kiem_tra):\n    xu_ly_chuoi()",
+        "highlighted_code": "import math\nimport sys\ntry:\n    so_luong_bai_kiem_tra = int(sys.stdin.readline()) \nexcept:\n    so_luong_bai_kiem_tra = 0 \ndef la_so_nguyen_to(n):\n    if n &lt;= 1:\n        <span class='highlight-green'>return False\n    for i in range(2, int(math</span>.sqrt(n)<span class='highlight-green'>) + 1): \n        if n % i == 0:\n            return False\n    return True\ndef </span>xu_ly_chuoi():\n    CHU_SO_NGUYEN_TO = {&#39;2&#39;, &#39;3&#39;, &#39;5&#39;, &#39;7&#39;} \n    try:\n        chuoi_so_n = sys.stdin.readline().strip()\n    except:\n        return\n    do_dai_chuoi = len(chuoi_so_n)\n    if not la_so_nguyen_to(do_dai_chuoi):\n        print(&#34;NO&#34;)\n        return\n    dem_nguyen_to = 0\n    for ky_tu in chuoi_so_n:\n        if ky_tu in CHU_SO_NGUYEN_TO:\n            dem_nguyen_to += 1\n    dem_khong_nguyen_to = do_dai_chuoi - dem_nguyen_to \n    if dem_nguyen_to &gt; dem_khong_nguyen_to<span class='highlight-green'>:\n        print(&#34;YES&#34;)\n    else:\n        print(&#34;NO&#34;</span>)\nfor _ in range(so_luong_bai_kiem_tra):\n    xu_ly_chuoi()"
+      },
+      "token_overlap": 93,
+      "max_similarity_percent": 40.61
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "problem_id": "68e3c5fb7243251374476fc8",
+  "filter_criteria": {
+    "min_token_overlap": 80,
+    "min_similarity_percent": 60
+  },
+  "total_cases_found": 1,
+  "total_cases_filtered": 1,
+  "cases": [
+    {
+      "case_id": 1,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3c5fb7243251374476fc8/cd93b2ff882a4ffa85f4518f/sub_1761641686539_7q0s3bj90.py",
+        "similarity_percent": 77.33,
+        "full_code": "s=input()\nt=input()\nfor i in range (0,len(s)):\n    if s[i]!=t[i]:\n        print(\"false\")\n        exit()\nprint(\"true\")",
+        "highlighted_code": "s=input()\nt=input(<span class='highlight-red'>)\nfor i in range (0,len(s)):\n    if s[i]!=t[i]:\n        print(&#34;false&#34;)\n        exit()\nprint(&#34;true&#34;</span>)"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3c5fb7243251374476fc8/cd93b2ff882a4ffa85f4518f/sub_1761641724663_4mk1ebz4n.py",
+        "similarity_percent": 55.77,
+        "full_code": "s=input()\nt=input()\nif len(s) > len(t):\n    print(\"false\")\n    exit()\nfor i in range (0,len(s)):\n    if s[i]!=t[i]:\n        print(\"false\")\n        exit()\nprint(\"true\")",
+        "highlighted_code": "s=input()\nt=input()\nif len(s) &gt; len(t):\n    print(&#34;false&#34;)\n    exit(<span class='highlight-green'>)\nfor i in range (0,len(s)):\n    if s[i]!=t[i]:\n        print(&#34;false&#34;)\n        exit()\nprint(&#34;true&#34;</span>)"
+      },
+      "token_overlap": 58,
+      "max_similarity_percent": 77.33
+    }
+  ]
+}

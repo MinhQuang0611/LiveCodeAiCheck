@@ -1,0 +1,79 @@
+{
+  "problem_id": "68e3c4727243251374476f39",
+  "filter_criteria": {
+    "min_token_overlap": 80,
+    "min_similarity_percent": 60
+  },
+  "total_cases_found": 6,
+  "total_cases_filtered": 4,
+  "cases": [
+    {
+      "case_id": 1,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3c4727243251374476f39/0d74995bf22b4574a97a2297/sub_1761196022841_q0f7j8kt6.py",
+        "similarity_percent": 100.0,
+        "full_code": "s = input()\nso = s.strip('[]').split(',')\nf = [int(i) for i in so]\nfor i in range(len(f)):\n    f[i] = f[i] ** 2\ns = str(f).replace(\" \", \"\")\nprint(s)",
+        "highlighted_code": "<span class='highlight-red'>s = input()\nso = s.strip(&#39;[]&#39;).split(&#39;,&#39;)\nf = [int(i) for i in so]\nfor i in range(len(f)):\n    f[i] = f[i] ** 2\ns = str(f).replace(&#34; &#34;, &#34;&#34;)\nprint(</span>s)"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3c4727243251374476f39/0d74995bf22b4574a97a2297/sub_1761553545898_fhiee0yn3.py",
+        "similarity_percent": 100.0,
+        "full_code": "s = input()\nso = s.strip('[]').split(',')\nf = [int(i) for i in so]\nfor i in range(len(f)):\n    f[i] = f[i] ** 2\ns = str(f).replace(\" \", \"\")\nprint(s)",
+        "highlighted_code": "<span class='highlight-green'>s = input()\nso = s.strip(&#39;[]&#39;).split(&#39;,&#39;)\nf = [int(i) for i in so]\nfor i in range(len(f)):\n    f[i] = f[i] ** 2\ns = str(f).replace(&#34; &#34;, &#34;&#34;)\nprint(</span>s)"
+      },
+      "token_overlap": 99,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 2,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3c4727243251374476f39/0d74995bf22b4574a97a2297/sub_1761553663962_qpiqv4x7m.py",
+        "similarity_percent": 87.5,
+        "full_code": "s = input()\nso = s.strip('[]').split(',')\nf = [int(i) for i in so]\nf = [x ** 2 for x in f]\n\nprint(s)",
+        "highlighted_code": "<span class='highlight-red'>s = input()\nso = s.strip(&#39;[]&#39;).split(&#39;,&#39;)\nf = [int(i) for i in so]\nf = [x ** 2 for x in </span>f]\n\nprint(s)"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3c4727243251374476f39/0d74995bf22b4574a97a2297/sub_1761553625373_f1jlyjfsy.py",
+        "similarity_percent": 69.14,
+        "full_code": "s = input()\nso = s.strip('[]').split(',')\nf = [int(i) for i in so]\nf = [x ** 2 for x in f]\ns = str(f).replace(\" \", \"\")\nprint(s)",
+        "highlighted_code": "<span class='highlight-green'>s = input()\nso = s.strip(&#39;[]&#39;).split(&#39;,&#39;)\nf = [int(i) for i in so]\nf = [x ** 2 for x in </span>f]\ns = str(f).replace(&#34; &#34;, &#34;&#34;)\nprint(s)"
+      },
+      "token_overlap": 56,
+      "max_similarity_percent": 87.5
+    },
+    {
+      "case_id": 3,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3c4727243251374476f39/0d74995bf22b4574a97a2297/sub_1761553663962_qpiqv4x7m.py",
+        "similarity_percent": 65.62,
+        "full_code": "s = input()\nso = s.strip('[]').split(',')\nf = [int(i) for i in so]\nf = [x ** 2 for x in f]\n\nprint(s)",
+        "highlighted_code": "<span class='highlight-red'>s = input()\nso = s.strip(&#39;[]&#39;).split(&#39;,&#39;)\nf = [int(i) for i in so</span>]\nf = [x ** 2 for x in f]\n\nprint(s)"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3c4727243251374476f39/0d74995bf22b4574a97a2297/sub_1761196022841_q0f7j8kt6.py",
+        "similarity_percent": 42.42,
+        "full_code": "s = input()\nso = s.strip('[]').split(',')\nf = [int(i) for i in so]\nfor i in range(len(f)):\n    f[i] = f[i] ** 2\ns = str(f).replace(\" \", \"\")\nprint(s)",
+        "highlighted_code": "<span class='highlight-green'>s = input()\nso = s.strip(&#39;[]&#39;).split(&#39;,&#39;)\nf = [int(i) for i in so</span>]\nfor i in range(len(f)):\n    f[i] = f[i] ** 2\ns = str(f).replace(&#34; &#34;, &#34;&#34;)\nprint(s)"
+      },
+      "token_overlap": 42,
+      "max_similarity_percent": 65.62
+    },
+    {
+      "case_id": 4,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3c4727243251374476f39/0d74995bf22b4574a97a2297/sub_1761553663962_qpiqv4x7m.py",
+        "similarity_percent": 65.62,
+        "full_code": "s = input()\nso = s.strip('[]').split(',')\nf = [int(i) for i in so]\nf = [x ** 2 for x in f]\n\nprint(s)",
+        "highlighted_code": "<span class='highlight-red'>s = input()\nso = s.strip(&#39;[]&#39;).split(&#39;,&#39;)\nf = [int(i) for i in so</span>]\nf = [x ** 2 for x in f]\n\nprint(s)"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3c4727243251374476f39/0d74995bf22b4574a97a2297/sub_1761553545898_fhiee0yn3.py",
+        "similarity_percent": 42.42,
+        "full_code": "s = input()\nso = s.strip('[]').split(',')\nf = [int(i) for i in so]\nfor i in range(len(f)):\n    f[i] = f[i] ** 2\ns = str(f).replace(\" \", \"\")\nprint(s)",
+        "highlighted_code": "<span class='highlight-green'>s = input()\nso = s.strip(&#39;[]&#39;).split(&#39;,&#39;)\nf = [int(i) for i in so</span>]\nfor i in range(len(f)):\n    f[i] = f[i] ** 2\ns = str(f).replace(&#34; &#34;, &#34;&#34;)\nprint(s)"
+      },
+      "token_overlap": 42,
+      "max_similarity_percent": 65.62
+    }
+  ]
+}

@@ -1,0 +1,385 @@
+{
+  "problem_id": "68e4948a72432513744783b0",
+  "filter_criteria": {
+    "min_token_overlap": 80,
+    "min_similarity_percent": 60
+  },
+  "total_cases_found": 24,
+  "total_cases_filtered": 22,
+  "cases": [
+    {
+      "case_id": 1,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e4948a72432513744783b0/de7b795216694f3190b821ba/sub_1761319288400_ctn16hff3.py",
+        "similarity_percent": 100.0,
+        "full_code": "n=int(input())\nwhile(n!=1):\n    print(n, end=' ')\n    if(n%2==0):\n        n=n//2\n       \n    else:\n        n=n*3+1\nprint(n)     \n       \n        ",
+        "highlighted_code": "<span class='highlight-red'>n=int(input())\nwhile(n!=1):\n    print(n, end=&#39; &#39;)\n    if(n%2==0):\n        n=n//2\n       \n    else:\n        n=n*3+1\nprint(n</span>)     \n       \n        "
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e4948a72432513744783b0/de7b795216694f3190b821ba/sub_1761352597940_emo56onwh.py",
+        "similarity_percent": 100.0,
+        "full_code": "\nn=int(input())\nwhile(n!=1):\n    print(n, end=' ')\n    if(n%2==0):\n        n=n//2\n       \n    else:\n        n=n*3+1\nprint(n)       \n        ",
+        "highlighted_code": "<span class='highlight-green'>\nn=int(input())\nwhile(n!=1):\n    print(n, end=&#39; &#39;)\n    if(n%2==0):\n        n=n//2\n       \n    else:\n        n=n*3+1\nprint(</span>n)       \n        "
+      },
+      "token_overlap": 76,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 2,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e4948a72432513744783b0/de7b795216694f3190b821ba/sub_1761319288400_ctn16hff3.py",
+        "similarity_percent": 100.0,
+        "full_code": "n=int(input())\nwhile(n!=1):\n    print(n, end=' ')\n    if(n%2==0):\n        n=n//2\n       \n    else:\n        n=n*3+1\nprint(n)     \n       \n        ",
+        "highlighted_code": "<span class='highlight-red'>n=int(input())\nwhile(n!=1):\n    print(n, end=&#39; &#39;)\n    if(n%2==0):\n        n=n//2\n       \n    else:\n        n=n*3+1\nprint(n</span>)     \n       \n        "
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e4948a72432513744783b0/de7b795216694f3190b821ba/sub_1761317831383_gsy0n7af8.py",
+        "similarity_percent": 100.0,
+        "full_code": "n=int(input())\nwhile(n!=1):\n    print(n, end=' ')\n    if(n%2==0):\n        n=n//2\n       \n    else:\n        n=n*3+1\nprint(n)     \n       \n        ",
+        "highlighted_code": "<span class='highlight-green'>n=int(input())\nwhile(n!=1):\n    print(n, end=&#39; &#39;)\n    if(n%2==0):\n        n=n//2\n       \n    else:\n        n=n*3+1\nprint(n</span>)     \n       \n        "
+      },
+      "token_overlap": 76,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 3,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e4948a72432513744783b0/de7b795216694f3190b821ba/sub_1761319288400_ctn16hff3.py",
+        "similarity_percent": 100.0,
+        "full_code": "n=int(input())\nwhile(n!=1):\n    print(n, end=' ')\n    if(n%2==0):\n        n=n//2\n       \n    else:\n        n=n*3+1\nprint(n)     \n       \n        ",
+        "highlighted_code": "<span class='highlight-red'>n=int(input())\nwhile(n!=1):\n    print(n, end=&#39; &#39;)\n    if(n%2==0):\n        n=n//2\n       \n    else:\n        n=n*3+1\nprint(n</span>)     \n       \n        "
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e4948a72432513744783b0/de7b795216694f3190b821ba/sub_1761317802925_uk57ctl5b.py",
+        "similarity_percent": 100.0,
+        "full_code": "n=int(input())\nwhile(n!=1):\n    print(n, end=' ')\n    if(n%2==0):\n        n=n//2\n       \n    else:\n        n=n*3+1\nprint(n)     \n       \n        \n",
+        "highlighted_code": "<span class='highlight-green'>n=int(input())\nwhile(n!=1):\n    print(n, end=&#39; &#39;)\n    if(n%2==0):\n        n=n//2\n       \n    else:\n        n=n*3+1\nprint(n</span>)     \n       \n        \n"
+      },
+      "token_overlap": 76,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 4,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e4948a72432513744783b0/de7b795216694f3190b821ba/sub_1761319288400_ctn16hff3.py",
+        "similarity_percent": 100.0,
+        "full_code": "n=int(input())\nwhile(n!=1):\n    print(n, end=' ')\n    if(n%2==0):\n        n=n//2\n       \n    else:\n        n=n*3+1\nprint(n)     \n       \n        ",
+        "highlighted_code": "<span class='highlight-red'>n=int(input())\nwhile(n!=1):\n    print(n, end=&#39; &#39;)\n    if(n%2==0):\n        n=n//2\n       \n    else:\n        n=n*3+1\nprint(n</span>)     \n       \n        "
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e4948a72432513744783b0/de7b795216694f3190b821ba/sub_1761352611362_0p18n1yy1.py",
+        "similarity_percent": 100.0,
+        "full_code": "\nn=int(input())\nwhile(n!=1):\n    print(n, end=' ')\n    if(n%2==0):\n        n=n//2\n       \n    else:\n        n=n*3+1\nprint(n)       \n        ",
+        "highlighted_code": "<span class='highlight-green'>\nn=int(input())\nwhile(n!=1):\n    print(n, end=&#39; &#39;)\n    if(n%2==0):\n        n=n//2\n       \n    else:\n        n=n*3+1\nprint(</span>n)       \n        "
+      },
+      "token_overlap": 76,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 5,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e4948a72432513744783b0/de7b795216694f3190b821ba/sub_1761319288400_ctn16hff3.py",
+        "similarity_percent": 100.0,
+        "full_code": "n=int(input())\nwhile(n!=1):\n    print(n, end=' ')\n    if(n%2==0):\n        n=n//2\n       \n    else:\n        n=n*3+1\nprint(n)     \n       \n        ",
+        "highlighted_code": "<span class='highlight-red'>n=int(input())\nwhile(n!=1):\n    print(n, end=&#39; &#39;)\n    if(n%2==0):\n        n=n//2\n       \n    else:\n        n=n*3+1\nprint(n</span>)     \n       \n        "
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e4948a72432513744783b0/de7b795216694f3190b821ba/sub_1761317796842_j3k65eejn.py",
+        "similarity_percent": 100.0,
+        "full_code": "n=int(input())\nwhile(n!=1):\n    print(n, end=' ')\n    if(n%2==0):\n        n=n//2\n       \n    else:\n        n=n*3+1\nprint(n)     \n       \n        \n",
+        "highlighted_code": "<span class='highlight-green'>n=int(input())\nwhile(n!=1):\n    print(n, end=&#39; &#39;)\n    if(n%2==0):\n        n=n//2\n       \n    else:\n        n=n*3+1\nprint(n</span>)     \n       \n        \n"
+      },
+      "token_overlap": 76,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 6,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e4948a72432513744783b0/de7b795216694f3190b821ba/sub_1761319288400_ctn16hff3.py",
+        "similarity_percent": 100.0,
+        "full_code": "n=int(input())\nwhile(n!=1):\n    print(n, end=' ')\n    if(n%2==0):\n        n=n//2\n       \n    else:\n        n=n*3+1\nprint(n)     \n       \n        ",
+        "highlighted_code": "<span class='highlight-red'>n=int(input())\nwhile(n!=1):\n    print(n, end=&#39; &#39;)\n    if(n%2==0):\n        n=n//2\n       \n    else:\n        n=n*3+1\nprint(n</span>)     \n       \n        "
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e4948a72432513744783b0/de7b795216694f3190b821ba/sub_1761320126265_ozx06uxhe.py",
+        "similarity_percent": 100.0,
+        "full_code": "n=int(input())\nwhile(n!=1):\n    print(n, end=' ')\n    if(n%2==0):\n        n=n//2\n       \n    else:\n        n=n*3+1\nprint(n)     \n       \n        ",
+        "highlighted_code": "<span class='highlight-green'>n=int(input())\nwhile(n!=1):\n    print(n, end=&#39; &#39;)\n    if(n%2==0):\n        n=n//2\n       \n    else:\n        n=n*3+1\nprint(n</span>)     \n       \n        "
+      },
+      "token_overlap": 76,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 7,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e4948a72432513744783b0/de7b795216694f3190b821ba/sub_1761352597940_emo56onwh.py",
+        "similarity_percent": 100.0,
+        "full_code": "\nn=int(input())\nwhile(n!=1):\n    print(n, end=' ')\n    if(n%2==0):\n        n=n//2\n       \n    else:\n        n=n*3+1\nprint(n)       \n        ",
+        "highlighted_code": "<span class='highlight-red'>\nn=int(input())\nwhile(n!=1):\n    print(n, end=&#39; &#39;)\n    if(n%2==0):\n        n=n//2\n       \n    else:\n        n=n*3+1\nprint(</span>n)       \n        "
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e4948a72432513744783b0/de7b795216694f3190b821ba/sub_1761317831383_gsy0n7af8.py",
+        "similarity_percent": 100.0,
+        "full_code": "n=int(input())\nwhile(n!=1):\n    print(n, end=' ')\n    if(n%2==0):\n        n=n//2\n       \n    else:\n        n=n*3+1\nprint(n)     \n       \n        ",
+        "highlighted_code": "<span class='highlight-green'>n=int(input())\nwhile(n!=1):\n    print(n, end=&#39; &#39;)\n    if(n%2==0):\n        n=n//2\n       \n    else:\n        n=n*3+1\nprint(n</span>)     \n       \n        "
+      },
+      "token_overlap": 76,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 8,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e4948a72432513744783b0/de7b795216694f3190b821ba/sub_1761352597940_emo56onwh.py",
+        "similarity_percent": 100.0,
+        "full_code": "\nn=int(input())\nwhile(n!=1):\n    print(n, end=' ')\n    if(n%2==0):\n        n=n//2\n       \n    else:\n        n=n*3+1\nprint(n)       \n        ",
+        "highlighted_code": "<span class='highlight-red'>\nn=int(input())\nwhile(n!=1):\n    print(n, end=&#39; &#39;)\n    if(n%2==0):\n        n=n//2\n       \n    else:\n        n=n*3+1\nprint(</span>n)       \n        "
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e4948a72432513744783b0/de7b795216694f3190b821ba/sub_1761317802925_uk57ctl5b.py",
+        "similarity_percent": 100.0,
+        "full_code": "n=int(input())\nwhile(n!=1):\n    print(n, end=' ')\n    if(n%2==0):\n        n=n//2\n       \n    else:\n        n=n*3+1\nprint(n)     \n       \n        \n",
+        "highlighted_code": "<span class='highlight-green'>n=int(input())\nwhile(n!=1):\n    print(n, end=&#39; &#39;)\n    if(n%2==0):\n        n=n//2\n       \n    else:\n        n=n*3+1\nprint(n</span>)     \n       \n        \n"
+      },
+      "token_overlap": 76,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 9,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e4948a72432513744783b0/de7b795216694f3190b821ba/sub_1761352597940_emo56onwh.py",
+        "similarity_percent": 100.0,
+        "full_code": "\nn=int(input())\nwhile(n!=1):\n    print(n, end=' ')\n    if(n%2==0):\n        n=n//2\n       \n    else:\n        n=n*3+1\nprint(n)       \n        ",
+        "highlighted_code": "<span class='highlight-red'>\nn=int(input())\nwhile(n!=1):\n    print(n, end=&#39; &#39;)\n    if(n%2==0):\n        n=n//2\n       \n    else:\n        n=n*3+1\nprint(</span>n)       \n        "
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e4948a72432513744783b0/de7b795216694f3190b821ba/sub_1761352611362_0p18n1yy1.py",
+        "similarity_percent": 100.0,
+        "full_code": "\nn=int(input())\nwhile(n!=1):\n    print(n, end=' ')\n    if(n%2==0):\n        n=n//2\n       \n    else:\n        n=n*3+1\nprint(n)       \n        ",
+        "highlighted_code": "<span class='highlight-green'>\nn=int(input())\nwhile(n!=1):\n    print(n, end=&#39; &#39;)\n    if(n%2==0):\n        n=n//2\n       \n    else:\n        n=n*3+1\nprint(</span>n)       \n        "
+      },
+      "token_overlap": 76,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 10,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e4948a72432513744783b0/de7b795216694f3190b821ba/sub_1761352597940_emo56onwh.py",
+        "similarity_percent": 100.0,
+        "full_code": "\nn=int(input())\nwhile(n!=1):\n    print(n, end=' ')\n    if(n%2==0):\n        n=n//2\n       \n    else:\n        n=n*3+1\nprint(n)       \n        ",
+        "highlighted_code": "<span class='highlight-red'>\nn=int(input())\nwhile(n!=1):\n    print(n, end=&#39; &#39;)\n    if(n%2==0):\n        n=n//2\n       \n    else:\n        n=n*3+1\nprint(</span>n)       \n        "
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e4948a72432513744783b0/de7b795216694f3190b821ba/sub_1761317796842_j3k65eejn.py",
+        "similarity_percent": 100.0,
+        "full_code": "n=int(input())\nwhile(n!=1):\n    print(n, end=' ')\n    if(n%2==0):\n        n=n//2\n       \n    else:\n        n=n*3+1\nprint(n)     \n       \n        \n",
+        "highlighted_code": "<span class='highlight-green'>n=int(input())\nwhile(n!=1):\n    print(n, end=&#39; &#39;)\n    if(n%2==0):\n        n=n//2\n       \n    else:\n        n=n*3+1\nprint(n</span>)     \n       \n        \n"
+      },
+      "token_overlap": 76,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 11,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e4948a72432513744783b0/de7b795216694f3190b821ba/sub_1761352597940_emo56onwh.py",
+        "similarity_percent": 100.0,
+        "full_code": "\nn=int(input())\nwhile(n!=1):\n    print(n, end=' ')\n    if(n%2==0):\n        n=n//2\n       \n    else:\n        n=n*3+1\nprint(n)       \n        ",
+        "highlighted_code": "<span class='highlight-red'>\nn=int(input())\nwhile(n!=1):\n    print(n, end=&#39; &#39;)\n    if(n%2==0):\n        n=n//2\n       \n    else:\n        n=n*3+1\nprint(</span>n)       \n        "
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e4948a72432513744783b0/de7b795216694f3190b821ba/sub_1761320126265_ozx06uxhe.py",
+        "similarity_percent": 100.0,
+        "full_code": "n=int(input())\nwhile(n!=1):\n    print(n, end=' ')\n    if(n%2==0):\n        n=n//2\n       \n    else:\n        n=n*3+1\nprint(n)     \n       \n        ",
+        "highlighted_code": "<span class='highlight-green'>n=int(input())\nwhile(n!=1):\n    print(n, end=&#39; &#39;)\n    if(n%2==0):\n        n=n//2\n       \n    else:\n        n=n*3+1\nprint(n</span>)     \n       \n        "
+      },
+      "token_overlap": 76,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 12,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e4948a72432513744783b0/de7b795216694f3190b821ba/sub_1761317831383_gsy0n7af8.py",
+        "similarity_percent": 100.0,
+        "full_code": "n=int(input())\nwhile(n!=1):\n    print(n, end=' ')\n    if(n%2==0):\n        n=n//2\n       \n    else:\n        n=n*3+1\nprint(n)     \n       \n        ",
+        "highlighted_code": "<span class='highlight-red'>n=int(input())\nwhile(n!=1):\n    print(n, end=&#39; &#39;)\n    if(n%2==0):\n        n=n//2\n       \n    else:\n        n=n*3+1\nprint(n</span>)     \n       \n        "
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e4948a72432513744783b0/de7b795216694f3190b821ba/sub_1761317802925_uk57ctl5b.py",
+        "similarity_percent": 100.0,
+        "full_code": "n=int(input())\nwhile(n!=1):\n    print(n, end=' ')\n    if(n%2==0):\n        n=n//2\n       \n    else:\n        n=n*3+1\nprint(n)     \n       \n        \n",
+        "highlighted_code": "<span class='highlight-green'>n=int(input())\nwhile(n!=1):\n    print(n, end=&#39; &#39;)\n    if(n%2==0):\n        n=n//2\n       \n    else:\n        n=n*3+1\nprint(n</span>)     \n       \n        \n"
+      },
+      "token_overlap": 76,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 13,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e4948a72432513744783b0/de7b795216694f3190b821ba/sub_1761317831383_gsy0n7af8.py",
+        "similarity_percent": 100.0,
+        "full_code": "n=int(input())\nwhile(n!=1):\n    print(n, end=' ')\n    if(n%2==0):\n        n=n//2\n       \n    else:\n        n=n*3+1\nprint(n)     \n       \n        ",
+        "highlighted_code": "<span class='highlight-red'>n=int(input())\nwhile(n!=1):\n    print(n, end=&#39; &#39;)\n    if(n%2==0):\n        n=n//2\n       \n    else:\n        n=n*3+1\nprint(n</span>)     \n       \n        "
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e4948a72432513744783b0/de7b795216694f3190b821ba/sub_1761352611362_0p18n1yy1.py",
+        "similarity_percent": 100.0,
+        "full_code": "\nn=int(input())\nwhile(n!=1):\n    print(n, end=' ')\n    if(n%2==0):\n        n=n//2\n       \n    else:\n        n=n*3+1\nprint(n)       \n        ",
+        "highlighted_code": "<span class='highlight-green'>\nn=int(input())\nwhile(n!=1):\n    print(n, end=&#39; &#39;)\n    if(n%2==0):\n        n=n//2\n       \n    else:\n        n=n*3+1\nprint(</span>n)       \n        "
+      },
+      "token_overlap": 76,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 14,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e4948a72432513744783b0/de7b795216694f3190b821ba/sub_1761317831383_gsy0n7af8.py",
+        "similarity_percent": 100.0,
+        "full_code": "n=int(input())\nwhile(n!=1):\n    print(n, end=' ')\n    if(n%2==0):\n        n=n//2\n       \n    else:\n        n=n*3+1\nprint(n)     \n       \n        ",
+        "highlighted_code": "<span class='highlight-red'>n=int(input())\nwhile(n!=1):\n    print(n, end=&#39; &#39;)\n    if(n%2==0):\n        n=n//2\n       \n    else:\n        n=n*3+1\nprint(n</span>)     \n       \n        "
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e4948a72432513744783b0/de7b795216694f3190b821ba/sub_1761317796842_j3k65eejn.py",
+        "similarity_percent": 100.0,
+        "full_code": "n=int(input())\nwhile(n!=1):\n    print(n, end=' ')\n    if(n%2==0):\n        n=n//2\n       \n    else:\n        n=n*3+1\nprint(n)     \n       \n        \n",
+        "highlighted_code": "<span class='highlight-green'>n=int(input())\nwhile(n!=1):\n    print(n, end=&#39; &#39;)\n    if(n%2==0):\n        n=n//2\n       \n    else:\n        n=n*3+1\nprint(n</span>)     \n       \n        \n"
+      },
+      "token_overlap": 76,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 15,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e4948a72432513744783b0/de7b795216694f3190b821ba/sub_1761317831383_gsy0n7af8.py",
+        "similarity_percent": 100.0,
+        "full_code": "n=int(input())\nwhile(n!=1):\n    print(n, end=' ')\n    if(n%2==0):\n        n=n//2\n       \n    else:\n        n=n*3+1\nprint(n)     \n       \n        ",
+        "highlighted_code": "<span class='highlight-red'>n=int(input())\nwhile(n!=1):\n    print(n, end=&#39; &#39;)\n    if(n%2==0):\n        n=n//2\n       \n    else:\n        n=n*3+1\nprint(n</span>)     \n       \n        "
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e4948a72432513744783b0/de7b795216694f3190b821ba/sub_1761320126265_ozx06uxhe.py",
+        "similarity_percent": 100.0,
+        "full_code": "n=int(input())\nwhile(n!=1):\n    print(n, end=' ')\n    if(n%2==0):\n        n=n//2\n       \n    else:\n        n=n*3+1\nprint(n)     \n       \n        ",
+        "highlighted_code": "<span class='highlight-green'>n=int(input())\nwhile(n!=1):\n    print(n, end=&#39; &#39;)\n    if(n%2==0):\n        n=n//2\n       \n    else:\n        n=n*3+1\nprint(n</span>)     \n       \n        "
+      },
+      "token_overlap": 76,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 16,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e4948a72432513744783b0/3e9bed73a45344af82e48379/sub_1761322274827_vbosy35mn.py",
+        "similarity_percent": 100.0,
+        "full_code": "n = int(input())\nprint(int(n), end=\" \")\nwhile n != 1:\n    if n % 2 == 0:\n        n = n / 2\n    else:\n        n = n*3+1\n    print(int(n), end=\" \")",
+        "highlighted_code": "<span class='highlight-red'>n = int(input())\nprint(int(n), end=&#34; &#34;)\nwhile n != 1:\n    if n % 2 == 0:\n        n = n / 2\n    else:\n        n = n*3+1\n    print(int(n), end=&#34;</span> &#34;)"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e4948a72432513744783b0/3e9bed73a45344af82e48379/sub_1761322237802_pvgpwx1va.py",
+        "similarity_percent": 100.0,
+        "full_code": "n = int(input())\nprint(int(n), end=\" \")\nwhile n != 1:\n    if n % 2 == 0:\n        n = n / 2\n    else:\n        n = n*3+1\n    print(int(n), end=\" \")",
+        "highlighted_code": "<span class='highlight-green'>n = int(input())\nprint(int(n), end=&#34; &#34;)\nwhile n != 1:\n    if n % 2 == 0:\n        n = n / 2\n    else:\n        n = n*3+1\n    print(int(n), end=&#34;</span> &#34;)"
+      },
+      "token_overlap": 85,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 17,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e4948a72432513744783b0/de7b795216694f3190b821ba/sub_1761317802925_uk57ctl5b.py",
+        "similarity_percent": 100.0,
+        "full_code": "n=int(input())\nwhile(n!=1):\n    print(n, end=' ')\n    if(n%2==0):\n        n=n//2\n       \n    else:\n        n=n*3+1\nprint(n)     \n       \n        \n",
+        "highlighted_code": "<span class='highlight-red'>n=int(input())\nwhile(n!=1):\n    print(n, end=&#39; &#39;)\n    if(n%2==0):\n        n=n//2\n       \n    else:\n        n=n*3+1\nprint(n</span>)     \n       \n        \n"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e4948a72432513744783b0/de7b795216694f3190b821ba/sub_1761352611362_0p18n1yy1.py",
+        "similarity_percent": 100.0,
+        "full_code": "\nn=int(input())\nwhile(n!=1):\n    print(n, end=' ')\n    if(n%2==0):\n        n=n//2\n       \n    else:\n        n=n*3+1\nprint(n)       \n        ",
+        "highlighted_code": "<span class='highlight-green'>\nn=int(input())\nwhile(n!=1):\n    print(n, end=&#39; &#39;)\n    if(n%2==0):\n        n=n//2\n       \n    else:\n        n=n*3+1\nprint(</span>n)       \n        "
+      },
+      "token_overlap": 76,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 18,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e4948a72432513744783b0/de7b795216694f3190b821ba/sub_1761317802925_uk57ctl5b.py",
+        "similarity_percent": 100.0,
+        "full_code": "n=int(input())\nwhile(n!=1):\n    print(n, end=' ')\n    if(n%2==0):\n        n=n//2\n       \n    else:\n        n=n*3+1\nprint(n)     \n       \n        \n",
+        "highlighted_code": "<span class='highlight-red'>n=int(input())\nwhile(n!=1):\n    print(n, end=&#39; &#39;)\n    if(n%2==0):\n        n=n//2\n       \n    else:\n        n=n*3+1\nprint(n</span>)     \n       \n        \n"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e4948a72432513744783b0/de7b795216694f3190b821ba/sub_1761317796842_j3k65eejn.py",
+        "similarity_percent": 100.0,
+        "full_code": "n=int(input())\nwhile(n!=1):\n    print(n, end=' ')\n    if(n%2==0):\n        n=n//2\n       \n    else:\n        n=n*3+1\nprint(n)     \n       \n        \n",
+        "highlighted_code": "<span class='highlight-green'>n=int(input())\nwhile(n!=1):\n    print(n, end=&#39; &#39;)\n    if(n%2==0):\n        n=n//2\n       \n    else:\n        n=n*3+1\nprint(n</span>)     \n       \n        \n"
+      },
+      "token_overlap": 76,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 19,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e4948a72432513744783b0/de7b795216694f3190b821ba/sub_1761317802925_uk57ctl5b.py",
+        "similarity_percent": 100.0,
+        "full_code": "n=int(input())\nwhile(n!=1):\n    print(n, end=' ')\n    if(n%2==0):\n        n=n//2\n       \n    else:\n        n=n*3+1\nprint(n)     \n       \n        \n",
+        "highlighted_code": "<span class='highlight-red'>n=int(input())\nwhile(n!=1):\n    print(n, end=&#39; &#39;)\n    if(n%2==0):\n        n=n//2\n       \n    else:\n        n=n*3+1\nprint(n</span>)     \n       \n        \n"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e4948a72432513744783b0/de7b795216694f3190b821ba/sub_1761320126265_ozx06uxhe.py",
+        "similarity_percent": 100.0,
+        "full_code": "n=int(input())\nwhile(n!=1):\n    print(n, end=' ')\n    if(n%2==0):\n        n=n//2\n       \n    else:\n        n=n*3+1\nprint(n)     \n       \n        ",
+        "highlighted_code": "<span class='highlight-green'>n=int(input())\nwhile(n!=1):\n    print(n, end=&#39; &#39;)\n    if(n%2==0):\n        n=n//2\n       \n    else:\n        n=n*3+1\nprint(n</span>)     \n       \n        "
+      },
+      "token_overlap": 76,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 20,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e4948a72432513744783b0/de7b795216694f3190b821ba/sub_1761352611362_0p18n1yy1.py",
+        "similarity_percent": 100.0,
+        "full_code": "\nn=int(input())\nwhile(n!=1):\n    print(n, end=' ')\n    if(n%2==0):\n        n=n//2\n       \n    else:\n        n=n*3+1\nprint(n)       \n        ",
+        "highlighted_code": "<span class='highlight-red'>\nn=int(input())\nwhile(n!=1):\n    print(n, end=&#39; &#39;)\n    if(n%2==0):\n        n=n//2\n       \n    else:\n        n=n*3+1\nprint(</span>n)       \n        "
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e4948a72432513744783b0/de7b795216694f3190b821ba/sub_1761317796842_j3k65eejn.py",
+        "similarity_percent": 100.0,
+        "full_code": "n=int(input())\nwhile(n!=1):\n    print(n, end=' ')\n    if(n%2==0):\n        n=n//2\n       \n    else:\n        n=n*3+1\nprint(n)     \n       \n        \n",
+        "highlighted_code": "<span class='highlight-green'>n=int(input())\nwhile(n!=1):\n    print(n, end=&#39; &#39;)\n    if(n%2==0):\n        n=n//2\n       \n    else:\n        n=n*3+1\nprint(n</span>)     \n       \n        \n"
+      },
+      "token_overlap": 76,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 21,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e4948a72432513744783b0/de7b795216694f3190b821ba/sub_1761352611362_0p18n1yy1.py",
+        "similarity_percent": 100.0,
+        "full_code": "\nn=int(input())\nwhile(n!=1):\n    print(n, end=' ')\n    if(n%2==0):\n        n=n//2\n       \n    else:\n        n=n*3+1\nprint(n)       \n        ",
+        "highlighted_code": "<span class='highlight-red'>\nn=int(input())\nwhile(n!=1):\n    print(n, end=&#39; &#39;)\n    if(n%2==0):\n        n=n//2\n       \n    else:\n        n=n*3+1\nprint(</span>n)       \n        "
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e4948a72432513744783b0/de7b795216694f3190b821ba/sub_1761320126265_ozx06uxhe.py",
+        "similarity_percent": 100.0,
+        "full_code": "n=int(input())\nwhile(n!=1):\n    print(n, end=' ')\n    if(n%2==0):\n        n=n//2\n       \n    else:\n        n=n*3+1\nprint(n)     \n       \n        ",
+        "highlighted_code": "<span class='highlight-green'>n=int(input())\nwhile(n!=1):\n    print(n, end=&#39; &#39;)\n    if(n%2==0):\n        n=n//2\n       \n    else:\n        n=n*3+1\nprint(n</span>)     \n       \n        "
+      },
+      "token_overlap": 76,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 22,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e4948a72432513744783b0/de7b795216694f3190b821ba/sub_1761317796842_j3k65eejn.py",
+        "similarity_percent": 100.0,
+        "full_code": "n=int(input())\nwhile(n!=1):\n    print(n, end=' ')\n    if(n%2==0):\n        n=n//2\n       \n    else:\n        n=n*3+1\nprint(n)     \n       \n        \n",
+        "highlighted_code": "<span class='highlight-red'>n=int(input())\nwhile(n!=1):\n    print(n, end=&#39; &#39;)\n    if(n%2==0):\n        n=n//2\n       \n    else:\n        n=n*3+1\nprint(n</span>)     \n       \n        \n"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e4948a72432513744783b0/de7b795216694f3190b821ba/sub_1761320126265_ozx06uxhe.py",
+        "similarity_percent": 100.0,
+        "full_code": "n=int(input())\nwhile(n!=1):\n    print(n, end=' ')\n    if(n%2==0):\n        n=n//2\n       \n    else:\n        n=n*3+1\nprint(n)     \n       \n        ",
+        "highlighted_code": "<span class='highlight-green'>n=int(input())\nwhile(n!=1):\n    print(n, end=&#39; &#39;)\n    if(n%2==0):\n        n=n//2\n       \n    else:\n        n=n*3+1\nprint(n</span>)     \n       \n        "
+      },
+      "token_overlap": 76,
+      "max_similarity_percent": 100.0
+    }
+  ]
+}

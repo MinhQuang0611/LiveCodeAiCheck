@@ -1,0 +1,181 @@
+{
+  "problem_id": "68fdc3b5fe535fa0f4f1d916",
+  "filter_criteria": {
+    "min_token_overlap": 80,
+    "min_similarity_percent": 60
+  },
+  "total_cases_found": 18,
+  "total_cases_filtered": 10,
+  "cases": [
+    {
+      "case_id": 1,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68fdc3b5fe535fa0f4f1d916/9f14990043df4fda9283d7ac/sub_1761749279535_e1laiz018.py",
+        "similarity_percent": 100.0,
+        "full_code": "\nt = int(input())\nfor _ in range(t):\n    s = input().strip() \n    result = \"\"        \n    count = 1 \n    for i in range(1, len(s)):\n        if s[i] == s[i - 1]:\n            count += 1\n        else:\n            result += str(count) + s[i - 1]\n            count = 1  \n    result += str(count) + s[-1]\n    print(result)",
+        "highlighted_code": "<span class='highlight-red'>\nt = int(input())\nfor _ in range(t):\n    s = input().strip() \n    result = &#34;&#34;        \n    count = 1 \n    for i in range(1, len(s)):\n        if s[i] == s[i - 1]:\n            count += 1\n        else:\n            result += str(count) + s[i - 1]\n            count = 1  \n    result += str(count) + s[-1]\n    pr</span>int(result)"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68fdc3b5fe535fa0f4f1d916/d9aec9d917da4c5e9beeb80b/sub_1761651564177_zd0oa6fex.py",
+        "similarity_percent": 100.0,
+        "full_code": "t = int(input())\nfor i in range(t):\n    s = input().strip()\n    result = \"\"\n    count = 1\n    \n    for j in range(1, len(s)):\n        if s[j] == s[j-1]:\n            count += 1\n        else:\n            result += str(count) + s[j-1]\n            count = 1\n    result += str(count) + s[-1]  \n    print(result)\n",
+        "highlighted_code": "<span class='highlight-green'>t = int(input())\nfor i in range(t):\n    s = input().strip()\n    result = &#34;&#34;\n    count = 1\n    \n    for j in range(1, len(s)):\n        if s[j] == s[j-1]:\n            count += 1\n        else:\n            result += str(count) + s[j-1]\n            count = 1\n    result += str(count) + s[-1]  \n    pri</span>nt(result)\n"
+      },
+      "token_overlap": 132,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 2,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68fdc3b5fe535fa0f4f1d916/9f14990043df4fda9283d7ac/sub_1761749279535_e1laiz018.py",
+        "similarity_percent": 90.15,
+        "full_code": "\nt = int(input())\nfor _ in range(t):\n    s = input().strip() \n    result = \"\"        \n    count = 1 \n    for i in range(1, len(s)):\n        if s[i] == s[i - 1]:\n            count += 1\n        else:\n            result += str(count) + s[i - 1]\n            count = 1  \n    result += str(count) + s[-1]\n    print(result)",
+        "highlighted_code": "\nt<span class='highlight-red'> = int(input())\nfor _ in range(t):\n    s = input()</span>.strip() \n    result = <span class='highlight-red'>&#34;&#34;        \n    count = 1 \n    for i in range(1, len(s)):\n        if s[i] == s[i - 1]:\n            count += 1\n        else:\n            result += str(count) + s[i - 1]\n            count = 1  \n    result += str(count) + s</span>[-1]\n    print(result)"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68fdc3b5fe535fa0f4f1d916/2a7df806cece43269dd7498b/sub_1761714410938_zpv67xvjw.py",
+        "similarity_percent": 71.69,
+        "full_code": "def compress_string(s):\n    result = ''\n    count = 1\n    for i in range(1, len(s)):\n        if s[i] == s[i - 1]:\n            count += 1\n        else:\n            result += str(count) + s[i - 1]\n            count = 1\n    result += str(count) + s[-1]\n    return result\n\nif __name__ == '__main__':\n    t = int(input())\n    for _ in range(t):\n        s = input().strip()\n        print(compress_string(s))\n",
+        "highlighted_code": "def compress_string(s):\n    result = &#39;<span class='highlight-green'>&#39;\n    count = 1\n    for i in range(1, len(s)):\n        if s[i] == s[i - 1]:\n            count += 1\n        else:\n            result += str(count) + s[i - 1]\n            count = 1\n    result += str(count) + s[</span>-1]\n    return result\n\nif __name__ == &#39;__main__&#39;:\n    t <span class='highlight-green'>= int(input())\n    for _ in range(t):\n        s = input().</span>strip()\n        print(compress_string(s))\n"
+      },
+      "token_overlap": 119,
+      "max_similarity_percent": 90.15
+    },
+    {
+      "case_id": 3,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68fdc3b5fe535fa0f4f1d916/9f14990043df4fda9283d7ac/sub_1761749279535_e1laiz018.py",
+        "similarity_percent": 85.61,
+        "full_code": "\nt = int(input())\nfor _ in range(t):\n    s = input().strip() \n    result = \"\"        \n    count = 1 \n    for i in range(1, len(s)):\n        if s[i] == s[i - 1]:\n            count += 1\n        else:\n            result += str(count) + s[i - 1]\n            count = 1  \n    result += str(count) + s[-1]\n    print(result)",
+        "highlighted_code": "\nt = <span class='highlight-red'>int(input())\nfor _ in range(t):\n    s = inp</span>ut().strip() \n    result = <span class='highlight-red'>&#34;&#34;        \n    count = 1 \n    for i in range(1, len(s)):\n        if s[i] == s[i - 1]:\n            count += 1\n        else:\n            result += str(count) + s[i - 1]\n            count = 1  \n    result += str(count) + s</span>[-1]\n    print(result)"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68fdc3b5fe535fa0f4f1d916/27e30f767b3a46b283cbfec0/sub_1761795767196_te3cvxopq.py",
+        "similarity_percent": 74.83,
+        "full_code": "def nen(s):\n    chuoi = ''\n    counter = 1\n    for i in range(1,len(s)):\n        if s[i] == s[i-1]:\n            counter += 1\n        else:\n            chuoi += str(counter) +s[i-1]\n            counter = 1\n    chuoi += str(counter) +s[-1]\n    return chuoi\nt = int(input())\nfor _ in range(t):\n    s = input()\n    ans = nen(s)\n    print(ans)\n\n\n            \n\n",
+        "highlighted_code": "def nen(s):\n    chuoi = &#39;<span class='highlight-green'>&#39;\n    counter = 1\n    for i in range(1,len(s)):\n        if s[i] == s[i-1]:\n            counter += 1\n        else:\n            chuoi += str(counter) +s[i-1]\n            counter = 1\n    chuoi += str(counter) +s[</span>-1]\n    return chuoi\nt = i<span class='highlight-green'>nt(input())\nfor _ in range(t):\n    s = inpu</span>t()\n    ans = nen(s)\n    print(ans)\n\n\n            \n\n"
+      },
+      "token_overlap": 113,
+      "max_similarity_percent": 85.61
+    },
+    {
+      "case_id": 4,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68fdc3b5fe535fa0f4f1d916/d9aec9d917da4c5e9beeb80b/sub_1761651564177_zd0oa6fex.py",
+        "similarity_percent": 85.61,
+        "full_code": "t = int(input())\nfor i in range(t):\n    s = input().strip()\n    result = \"\"\n    count = 1\n    \n    for j in range(1, len(s)):\n        if s[j] == s[j-1]:\n            count += 1\n        else:\n            result += str(count) + s[j-1]\n            count = 1\n    result += str(count) + s[-1]  \n    print(result)\n",
+        "highlighted_code": "t = i<span class='highlight-red'>nt(input())\nfor i in range(t):\n    s = inpu</span>t().strip()\n    result = &#34;<span class='highlight-red'>&#34;\n    count = 1\n    \n    for j in range(1, len(s)):\n        if s[j] == s[j-1]:\n            count += 1\n        else:\n            result += str(count) + s[j-1]\n            count = 1\n    result += str(count) + s[</span>-1]  \n    print(result)\n"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68fdc3b5fe535fa0f4f1d916/27e30f767b3a46b283cbfec0/sub_1761795767196_te3cvxopq.py",
+        "similarity_percent": 74.83,
+        "full_code": "def nen(s):\n    chuoi = ''\n    counter = 1\n    for i in range(1,len(s)):\n        if s[i] == s[i-1]:\n            counter += 1\n        else:\n            chuoi += str(counter) +s[i-1]\n            counter = 1\n    chuoi += str(counter) +s[-1]\n    return chuoi\nt = int(input())\nfor _ in range(t):\n    s = input()\n    ans = nen(s)\n    print(ans)\n\n\n            \n\n",
+        "highlighted_code": "def nen(s):\n    chuoi = &#39;<span class='highlight-green'>&#39;\n    counter = 1\n    for i in range(1,len(s)):\n        if s[i] == s[i-1]:\n            counter += 1\n        else:\n            chuoi += str(counter) +s[i-1]\n            counter = 1\n    chuoi += str(counter) +s[</span>-1]\n    return chuoi\nt = i<span class='highlight-green'>nt(input())\nfor _ in range(t):\n    s = inpu</span>t()\n    ans = nen(s)\n    print(ans)\n\n\n            \n\n"
+      },
+      "token_overlap": 113,
+      "max_similarity_percent": 85.61
+    },
+    {
+      "case_id": 5,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68fdc3b5fe535fa0f4f1d916/9f14990043df4fda9283d7ac/sub_1761749279535_e1laiz018.py",
+        "similarity_percent": 83.33,
+        "full_code": "\nt = int(input())\nfor _ in range(t):\n    s = input().strip() \n    result = \"\"        \n    count = 1 \n    for i in range(1, len(s)):\n        if s[i] == s[i - 1]:\n            count += 1\n        else:\n            result += str(count) + s[i - 1]\n            count = 1  \n    result += str(count) + s[-1]\n    print(result)",
+        "highlighted_code": "<span class='highlight-red'>\nt = int(input())\nfor _ in range(t):\n    s = input()</span>.strip() \n    result = <span class='highlight-red'>&#34;&#34;        \n    count = 1 \n    for i in range(1, len(s)):\n        if</span> s[i] == s[i - 1]:\n            count +=<span class='highlight-red'> 1\n        else:\n            result += str(count) + s[i - 1]\n            count = 1  \n    result += str(count) + s[-1]\n    pr</span>int(result)"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68fdc3b5fe535fa0f4f1d916/8e19101eb0da4e9a92a17098/sub_1761638752717_pnz3uea1i.py",
+        "similarity_percent": 69.62,
+        "full_code": "t = int(input())\nfor j in range(t):\n    s = input().strip()\n    if not s:\n        print(\"\")\n        continue \n    kq = \"\"\n    dem = 1\n    for i in range(1, len(s)):\n        if(s[i] == s[i - 1]):\n            dem += 1\n        else:\n            kq += str(dem) + s[i - 1]\n            dem = 1\n    kq += str(dem) + s[-1]\n    print(kq)",
+        "highlighted_code": "<span class='highlight-green'>t = int(input())\nfor j in range(t):\n    s = input().</span>strip()\n    if not s:\n        print(&#34;&#34;)\n        continue \n    kq = &#34;<span class='highlight-green'>&#34;\n    dem = 1\n    for i in range(1, len(s)):\n        if</span>(s[i] == s[i - 1]):\n            dem += <span class='highlight-green'>1\n        else:\n            kq += str(dem) + s[i - 1]\n            dem = 1\n    kq += str(dem) + s[-1]\n    pri</span>nt(kq)"
+      },
+      "token_overlap": 110,
+      "max_similarity_percent": 83.33
+    },
+    {
+      "case_id": 6,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68fdc3b5fe535fa0f4f1d916/2a7df806cece43269dd7498b/sub_1761714410938_zpv67xvjw.py",
+        "similarity_percent": 80.72,
+        "full_code": "def compress_string(s):\n    result = ''\n    count = 1\n    for i in range(1, len(s)):\n        if s[i] == s[i - 1]:\n            count += 1\n        else:\n            result += str(count) + s[i - 1]\n            count = 1\n    result += str(count) + s[-1]\n    return result\n\nif __name__ == '__main__':\n    t = int(input())\n    for _ in range(t):\n        s = input().strip()\n        print(compress_string(s))\n",
+        "highlighted_code": "<span class='highlight-red'>def compress_string(s):\n    result = &#39;&#39;\n    count = 1\n    for i in range(1, len(s)):\n        if s[i] == s[i - 1]:\n            count += 1\n        else:\n            result += str(count) + s[i - 1]\n            count = 1\n    result += str(count) + s[-1]\n    return result\n\n</span>if __name__ == &#39;__main__&#39;:\n    t = i<span class='highlight-red'>nt(input())\n    for _ in range(t):\n        s = inpu</span>t().strip()\n        print(compress_string(s))\n"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68fdc3b5fe535fa0f4f1d916/27e30f767b3a46b283cbfec0/sub_1761795767196_te3cvxopq.py",
+        "similarity_percent": 88.74,
+        "full_code": "def nen(s):\n    chuoi = ''\n    counter = 1\n    for i in range(1,len(s)):\n        if s[i] == s[i-1]:\n            counter += 1\n        else:\n            chuoi += str(counter) +s[i-1]\n            counter = 1\n    chuoi += str(counter) +s[-1]\n    return chuoi\nt = int(input())\nfor _ in range(t):\n    s = input()\n    ans = nen(s)\n    print(ans)\n\n\n            \n\n",
+        "highlighted_code": "<span class='highlight-green'>def nen(s):\n    chuoi = &#39;&#39;\n    counter = 1\n    for i in range(1,len(s)):\n        if s[i] == s[i-1]:\n            counter += 1\n        else:\n            chuoi += str(counter) +s[i-1]\n            counter = 1\n    chuoi += str(counter) +s[-1]\n    return chuoi\n</span>t = i<span class='highlight-green'>nt(input())\nfor _ in range(t):\n    s = inpu</span>t()\n    ans = nen(s)\n    print(ans)\n\n\n            \n\n"
+      },
+      "token_overlap": 134,
+      "max_similarity_percent": 88.74
+    },
+    {
+      "case_id": 7,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68fdc3b5fe535fa0f4f1d916/2a7df806cece43269dd7498b/sub_1761714410938_zpv67xvjw.py",
+        "similarity_percent": 71.69,
+        "full_code": "def compress_string(s):\n    result = ''\n    count = 1\n    for i in range(1, len(s)):\n        if s[i] == s[i - 1]:\n            count += 1\n        else:\n            result += str(count) + s[i - 1]\n            count = 1\n    result += str(count) + s[-1]\n    return result\n\nif __name__ == '__main__':\n    t = int(input())\n    for _ in range(t):\n        s = input().strip()\n        print(compress_string(s))\n",
+        "highlighted_code": "def compress_string(s):\n    result = &#39;<span class='highlight-red'>&#39;\n    count = 1\n    for i in range(1, len(s)):\n        if s[i] == s[i - 1]:\n            count += 1\n        else:\n            result += str(count) + s[i - 1]\n            count = 1\n    result += str(count) + s[</span>-1]\n    return result\n\nif __name__ == &#39;__main__&#39;:\n    t <span class='highlight-red'>= int(input())\n    for _ in range(t):\n        s = input().</span>strip()\n        print(compress_string(s))\n"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68fdc3b5fe535fa0f4f1d916/d9aec9d917da4c5e9beeb80b/sub_1761651564177_zd0oa6fex.py",
+        "similarity_percent": 90.15,
+        "full_code": "t = int(input())\nfor i in range(t):\n    s = input().strip()\n    result = \"\"\n    count = 1\n    \n    for j in range(1, len(s)):\n        if s[j] == s[j-1]:\n            count += 1\n        else:\n            result += str(count) + s[j-1]\n            count = 1\n    result += str(count) + s[-1]  \n    print(result)\n",
+        "highlighted_code": "t <span class='highlight-green'>= int(input())\nfor i in range(t):\n    s = input().</span>strip()\n    result = &#34;<span class='highlight-green'>&#34;\n    count = 1\n    \n    for j in range(1, len(s)):\n        if s[j] == s[j-1]:\n            count += 1\n        else:\n            result += str(count) + s[j-1]\n            count = 1\n    result += str(count) + s[</span>-1]  \n    print(result)\n"
+      },
+      "token_overlap": 119,
+      "max_similarity_percent": 90.15
+    },
+    {
+      "case_id": 8,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68fdc3b5fe535fa0f4f1d916/8e19101eb0da4e9a92a17098/sub_1761638752717_pnz3uea1i.py",
+        "similarity_percent": 69.62,
+        "full_code": "t = int(input())\nfor j in range(t):\n    s = input().strip()\n    if not s:\n        print(\"\")\n        continue \n    kq = \"\"\n    dem = 1\n    for i in range(1, len(s)):\n        if(s[i] == s[i - 1]):\n            dem += 1\n        else:\n            kq += str(dem) + s[i - 1]\n            dem = 1\n    kq += str(dem) + s[-1]\n    print(kq)",
+        "highlighted_code": "<span class='highlight-red'>t = int(input())\nfor j in range(t):\n    s = input().</span>strip()\n    if not s:\n        print(&#34;&#34;)\n        continue \n    kq = &#34;<span class='highlight-red'>&#34;\n    dem = 1\n    for i in range(1, len(s)):\n        if</span>(s[i] == s[i - 1]):\n            dem += <span class='highlight-red'>1\n        else:\n            kq += str(dem) + s[i - 1]\n            dem = 1\n    kq += str(dem) + s[-1]\n    pri</span>nt(kq)"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68fdc3b5fe535fa0f4f1d916/d9aec9d917da4c5e9beeb80b/sub_1761651564177_zd0oa6fex.py",
+        "similarity_percent": 83.33,
+        "full_code": "t = int(input())\nfor i in range(t):\n    s = input().strip()\n    result = \"\"\n    count = 1\n    \n    for j in range(1, len(s)):\n        if s[j] == s[j-1]:\n            count += 1\n        else:\n            result += str(count) + s[j-1]\n            count = 1\n    result += str(count) + s[-1]  \n    print(result)\n",
+        "highlighted_code": "<span class='highlight-green'>t = int(input())\nfor i in range(t):\n    s = input().</span>strip()\n    result = &#34;<span class='highlight-green'>&#34;\n    count = 1\n    \n    for j in range(1, len(s)):\n        if </span>s[j] == s[j-1]:\n            count += <span class='highlight-green'>1\n        else:\n            result += str(count) + s[j-1]\n            count = 1\n    result += str(count) + s[-1]  \n    pri</span>nt(result)\n"
+      },
+      "token_overlap": 110,
+      "max_similarity_percent": 83.33
+    },
+    {
+      "case_id": 9,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68fdc3b5fe535fa0f4f1d916/8e19101eb0da4e9a92a17098/sub_1761638752717_pnz3uea1i.py",
+        "similarity_percent": 65.19,
+        "full_code": "t = int(input())\nfor j in range(t):\n    s = input().strip()\n    if not s:\n        print(\"\")\n        continue \n    kq = \"\"\n    dem = 1\n    for i in range(1, len(s)):\n        if(s[i] == s[i - 1]):\n            dem += 1\n        else:\n            kq += str(dem) + s[i - 1]\n            dem = 1\n    kq += str(dem) + s[-1]\n    print(kq)",
+        "highlighted_code": "t <span class='highlight-red'>= int(input())\nfor j in range(t):\n    s = input().</span>strip()\n    if not s:\n        print(&#34;&#34;)\n        continue \n    kq = &#34;<span class='highlight-red'>&#34;\n    dem = 1\n    for i in range(1, len(s)):\n        if</span>(s[i] == s[i - 1]):\n            dem += <span class='highlight-red'>1\n        else:\n            kq += str(dem) + s[i - 1]\n            dem = 1\n    kq += str(dem) + s[</span>-1]\n    print(kq)"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68fdc3b5fe535fa0f4f1d916/2a7df806cece43269dd7498b/sub_1761714410938_zpv67xvjw.py",
+        "similarity_percent": 62.05,
+        "full_code": "def compress_string(s):\n    result = ''\n    count = 1\n    for i in range(1, len(s)):\n        if s[i] == s[i - 1]:\n            count += 1\n        else:\n            result += str(count) + s[i - 1]\n            count = 1\n    result += str(count) + s[-1]\n    return result\n\nif __name__ == '__main__':\n    t = int(input())\n    for _ in range(t):\n        s = input().strip()\n        print(compress_string(s))\n",
+        "highlighted_code": "def compress_string(s):\n    result = &#39;<span class='highlight-green'>&#39;\n    count = 1\n    for i in range(1, len(s)):\n        if </span>s[i] == s[i - 1]:\n            count += <span class='highlight-green'>1\n        else:\n            result += str(count) + s[i - 1]\n            count = 1\n    result += str(count) + s[</span>-1]\n    return result\n\nif __name__ == &#39;__main__&#39;:\n    t <span class='highlight-green'>= int(input())\n    for _ in range(t):\n        s = input().</span>strip()\n        print(compress_string(s))\n"
+      },
+      "token_overlap": 103,
+      "max_similarity_percent": 65.19
+    },
+    {
+      "case_id": 10,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68fdc3b5fe535fa0f4f1d916/8e19101eb0da4e9a92a17098/sub_1761638752717_pnz3uea1i.py",
+        "similarity_percent": 61.39,
+        "full_code": "t = int(input())\nfor j in range(t):\n    s = input().strip()\n    if not s:\n        print(\"\")\n        continue \n    kq = \"\"\n    dem = 1\n    for i in range(1, len(s)):\n        if(s[i] == s[i - 1]):\n            dem += 1\n        else:\n            kq += str(dem) + s[i - 1]\n            dem = 1\n    kq += str(dem) + s[-1]\n    print(kq)",
+        "highlighted_code": "t = i<span class='highlight-red'>nt(input())\nfor j in range(t):\n    s = inpu</span>t().strip()\n    if not s:\n        print(&#34;&#34;)\n        continue \n    kq = &#34;<span class='highlight-red'>&#34;\n    dem = 1\n    for i in range(1, len(s)):\n        if</span>(s[i] == s[i - 1]):\n            dem += <span class='highlight-red'>1\n        else:\n            kq += str(dem) + s[i - 1]\n            dem = 1\n    kq += str(dem) + s[</span>-1]\n    print(kq)"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68fdc3b5fe535fa0f4f1d916/27e30f767b3a46b283cbfec0/sub_1761795767196_te3cvxopq.py",
+        "similarity_percent": 64.24,
+        "full_code": "def nen(s):\n    chuoi = ''\n    counter = 1\n    for i in range(1,len(s)):\n        if s[i] == s[i-1]:\n            counter += 1\n        else:\n            chuoi += str(counter) +s[i-1]\n            counter = 1\n    chuoi += str(counter) +s[-1]\n    return chuoi\nt = int(input())\nfor _ in range(t):\n    s = input()\n    ans = nen(s)\n    print(ans)\n\n\n            \n\n",
+        "highlighted_code": "def nen(s):\n    chuoi = &#39;<span class='highlight-green'>&#39;\n    counter = 1\n    for i in range(1,len(s)):\n        if </span>s[i] == s[i-1]:\n            counter += <span class='highlight-green'>1\n        else:\n            chuoi += str(counter) +s[i-1]\n            counter = 1\n    chuoi += str(counter) +s[</span>-1]\n    return chuoi\nt = i<span class='highlight-green'>nt(input())\nfor _ in range(t):\n    s = inpu</span>t()\n    ans = nen(s)\n    print(ans)\n\n\n            \n\n"
+      },
+      "token_overlap": 97,
+      "max_similarity_percent": 64.24
+    }
+  ]
+}

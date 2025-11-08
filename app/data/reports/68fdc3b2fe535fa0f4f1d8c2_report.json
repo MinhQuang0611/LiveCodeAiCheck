@@ -1,0 +1,79 @@
+{
+  "problem_id": "68fdc3b2fe535fa0f4f1d8c2",
+  "filter_criteria": {
+    "min_token_overlap": 80,
+    "min_similarity_percent": 60
+  },
+  "total_cases_found": 19,
+  "total_cases_filtered": 4,
+  "cases": [
+    {
+      "case_id": 1,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68fdc3b2fe535fa0f4f1d8c2/5ddb8c7d2c9c43bab12121a6/sub_1761642084684_7jcafzhvh.py",
+        "similarity_percent": 100.0,
+        "full_code": "n = int(input())\na = list(map(int, input().split()))\nnum_set = set(a)\nmissing = 1\nwhile missing in num_set:\n    missing += 1\nprint(missing)",
+        "highlighted_code": "<span class='highlight-red'>n = int(input())\na = list(map(int, input().split()))\nnum_set = set(a)\nmissing = 1\nwhile missing in num_set:\n    missing += 1\nprint(missing)</span>"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68fdc3b2fe535fa0f4f1d8c2/f95120b3a38a461085ef58cb/sub_1761549309357_2lmnx7qr7.py",
+        "similarity_percent": 100.0,
+        "full_code": "n = int(input())\nday_so = list(map(int, input().split()))\nso_hieu = set(day_so)\nso_min = 1\nwhile so_min in so_hieu:\n    so_min += 1\nprint(so_min)\n\n",
+        "highlighted_code": "<span class='highlight-green'>n = int(input())\nday_so = list(map(int, input().split()))\nso_hieu = set(day_so)\nso_min = 1\nwhile so_min in so_hieu:\n    so_min += 1\nprint(so_min)</span>\n\n"
+      },
+      "token_overlap": 75,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 2,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68fdc3b2fe535fa0f4f1d8c2/d9aec9d917da4c5e9beeb80b/sub_1761748172870_97z05vjta.py",
+        "similarity_percent": 62.16,
+        "full_code": "n = int(input())\na = list(map(int, input().split()))\n\na.sort()  \n\nmiss = 1 \nfor x in a:\n    if x == miss:\n        miss += 1\nprint(miss)",
+        "highlighted_code": "<span class='highlight-red'>n = int(input())\na = list(map(int, input().split()))\n\na.sort(</span>)  \n\nmiss = 1 \nfor x in a:\n    if x == miss:\n        miss += 1\nprint(miss)"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68fdc3b2fe535fa0f4f1d8c2/ffdb326842044f2e98b7aaa7/sub_1761572572134_hln3el1yp.py",
+        "similarity_percent": 32.86,
+        "full_code": "n = int(input())\nlst = list(map(int, input().split()))\n\nlst.sort()\n\nminn = lst[0]\nmaxn = lst[n - 1]\n\nif minn != 1:\n    print(1)\nelse:\n    sum_ovr = maxn * (maxn + 1) / 2\n\n    sum_lst = sum(lst)\n\n    if(sum_ovr - sum_lst == 0):\n        print(maxn + 1)\n    else:\n        print(int(sum_ovr - sum_lst))",
+        "highlighted_code": "<span class='highlight-green'>n = int(input())\nlst = list(map(int, input().split()))\n\nlst.sort(</span>)\n\nminn = lst[0]\nmaxn = lst[n - 1]\n\nif minn != 1:\n    print(1)\nelse:\n    sum_ovr = maxn * (maxn + 1) / 2\n\n    sum_lst = sum(lst)\n\n    if(sum_ovr - sum_lst == 0):\n        print(maxn + 1)\n    else:\n        print(int(sum_ovr - sum_lst))"
+      },
+      "token_overlap": 46,
+      "max_similarity_percent": 62.16
+    },
+    {
+      "case_id": 3,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68fdc3b2fe535fa0f4f1d8c2/9f14990043df4fda9283d7ac/sub_1761581036736_tno46vbrq.py",
+        "similarity_percent": 60.0,
+        "full_code": "n = map(int, input().split())\ndanh_sach = list(map(int, input().split()))\ns = set(x for x in danh_sach if x > 0)\nso = 1\nwhile so in s:\n    so += 1\nprint(so)",
+        "highlighted_code": "n = map(int, input().split())\ndanh_sach <span class='highlight-red'>= list(map(int, input().split()))\ns = set</span>(x for x in danh_sach if x &gt; 0)\n<span class='highlight-red'>so = 1\nwhile so in s:\n    so += 1\nprint(so)</span>"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68fdc3b2fe535fa0f4f1d8c2/5ddb8c7d2c9c43bab12121a6/sub_1761642084684_7jcafzhvh.py",
+        "similarity_percent": 76.0,
+        "full_code": "n = int(input())\na = list(map(int, input().split()))\nnum_set = set(a)\nmissing = 1\nwhile missing in num_set:\n    missing += 1\nprint(missing)",
+        "highlighted_code": "n = int(input())\na <span class='highlight-green'>= list(map(int, input().split()))\nnum_set = set</span>(a)\n<span class='highlight-green'>missing = 1\nwhile missing in num_set:\n    missing += 1\nprint(missing)</span>"
+      },
+      "token_overlap": 57,
+      "max_similarity_percent": 76.0
+    },
+    {
+      "case_id": 4,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68fdc3b2fe535fa0f4f1d8c2/9f14990043df4fda9283d7ac/sub_1761581036736_tno46vbrq.py",
+        "similarity_percent": 60.0,
+        "full_code": "n = map(int, input().split())\ndanh_sach = list(map(int, input().split()))\ns = set(x for x in danh_sach if x > 0)\nso = 1\nwhile so in s:\n    so += 1\nprint(so)",
+        "highlighted_code": "n = map(int, input().split())\ndanh_sach <span class='highlight-red'>= list(map(int, input().split()))\ns = set</span>(x for x in danh_sach if x &gt; 0)\n<span class='highlight-red'>so = 1\nwhile so in s:\n    so += 1\nprint(so)</span>"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68fdc3b2fe535fa0f4f1d8c2/f95120b3a38a461085ef58cb/sub_1761549309357_2lmnx7qr7.py",
+        "similarity_percent": 76.0,
+        "full_code": "n = int(input())\nday_so = list(map(int, input().split()))\nso_hieu = set(day_so)\nso_min = 1\nwhile so_min in so_hieu:\n    so_min += 1\nprint(so_min)\n\n",
+        "highlighted_code": "n = int(input())\nday_so <span class='highlight-green'>= list(map(int, input().split()))\nso_hieu = set</span>(day_so)\n<span class='highlight-green'>so_min = 1\nwhile so_min in so_hieu:\n    so_min += 1\nprint(so_min)</span>\n\n"
+      },
+      "token_overlap": 57,
+      "max_similarity_percent": 76.0
+    }
+  ]
+}

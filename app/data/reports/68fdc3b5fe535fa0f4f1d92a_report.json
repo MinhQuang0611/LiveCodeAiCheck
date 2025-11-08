@@ -1,0 +1,113 @@
+{
+  "problem_id": "68fdc3b5fe535fa0f4f1d92a",
+  "filter_criteria": {
+    "min_token_overlap": 80,
+    "min_similarity_percent": 60
+  },
+  "total_cases_found": 27,
+  "total_cases_filtered": 6,
+  "cases": [
+    {
+      "case_id": 1,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68fdc3b5fe535fa0f4f1d92a/8e19101eb0da4e9a92a17098/sub_1761635940261_pcj1u2u5j.py",
+        "similarity_percent": 90.91,
+        "full_code": "n = int(input())\na = []\nwhile len(a) < n:\n    a += list(map(int, input().split()))\nln = max(a)\nm = []\nfor i in range(1, ln + 1):\n    if i not in a:\n        m.append(i)\nif not m:\n    print(\"Excellent!\")\nelse:\n    for x in m:\n        print(x) ",
+        "highlighted_code": "<span class='highlight-red'>n = int(input())\na = []\nwhile len(a) &lt; </span>n:\n    a += list(map<span class='highlight-red'>(int, input().split()))\nln = max(a)\nm = []\nfor i in range(1, ln + 1):\n    if i not in a:\n        m.append(i)\nif not m:\n    print(&#34;Excellent!&#34;)\nelse:\n    for x in m:\n        print</span>(x) "
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68fdc3b5fe535fa0f4f1d92a/51bbd72f42174843b97698b4/sub_1761621281589_6tdnhpy70.py",
+        "similarity_percent": 89.8,
+        "full_code": "n = int(input())\ncac_so = []\nwhile len(cac_so) < n:\n    cac_so.extend(map(int, input().split()))\nmax_so = max(cac_so)\ntap_hop_so = set(cac_so)\nso_thieu = []\nfor i in range(1, max_so + 1):\n    if i not in tap_hop_so:\n        so_thieu.append(i)\nif not so_thieu:\n    print(\"Excellent!\")\nelse:\n    for so in so_thieu:\n        print(so)",
+        "highlighted_code": "<span class='highlight-green'>n = int(input())\ncac_so = []\nwhile len(cac_so) &lt; </span>n:\n    cac_so.extend(map<span class='highlight-green'>(int, input().split()))\nmax_so = max(cac_so)\ntap_hop_so </span>= set(cac_so<span class='highlight-green'>)\nso_thieu = []\nfor i in range(1, max_so + 1):\n    if i not in tap_hop_so:\n        so_thieu.append(i)\nif not so_thieu:\n    print(&#34;Excellent!&#34;)\nelse:\n    for so in so_thieu:\n        print</span>(so)"
+      },
+      "token_overlap": 130,
+      "max_similarity_percent": 90.91
+    },
+    {
+      "case_id": 2,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68fdc3b5fe535fa0f4f1d92a/f95120b3a38a461085ef58cb/sub_1761720583905_umqum6slo.py",
+        "similarity_percent": 77.4,
+        "full_code": "n = int(input())\na = []\nwhile len(a) < n:\n    a.extend(map(int, input().split()))\n    gtln = max(a)\n    ds = set(a)\n    sobm = []\n    for i in range(1, gtln +1):\n        if i not in ds:\n            sobm.append(i)\n        if sobm:\n            for so in sobm:\n                print(sobm)\n        else:\n            print(\"Excellent!\")",
+        "highlighted_code": "<span class='highlight-red'>n = int(input())\na = []\nwhile len(a) &lt; n:\n    a.extend(map(int, input().split()))\n    gtln = max(a)\n    ds = set(a)\n    sobm = []\n    for i in range(1, gtln +1):\n        if i not in ds:\n            sobm.append(i)\n        i</span>f sobm:\n            for so in sobm:\n                print(sobm)\n        else:\n            print(&#34;Excellent!&#34;)"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68fdc3b5fe535fa0f4f1d92a/51bbd72f42174843b97698b4/sub_1761621281589_6tdnhpy70.py",
+        "similarity_percent": 76.87,
+        "full_code": "n = int(input())\ncac_so = []\nwhile len(cac_so) < n:\n    cac_so.extend(map(int, input().split()))\nmax_so = max(cac_so)\ntap_hop_so = set(cac_so)\nso_thieu = []\nfor i in range(1, max_so + 1):\n    if i not in tap_hop_so:\n        so_thieu.append(i)\nif not so_thieu:\n    print(\"Excellent!\")\nelse:\n    for so in so_thieu:\n        print(so)",
+        "highlighted_code": "<span class='highlight-green'>n = int(input())\ncac_so = []\nwhile len(cac_so) &lt; n:\n    cac_so.extend(map(int, input().split()))\nmax_so = max(cac_so)\ntap_hop_so = set(cac_so)\nso_thieu = []\nfor i in range(1, max_so + 1):\n    if i not in tap_hop_so:\n        so_thieu.append(i)\ni</span>f not so_thieu:\n    print(&#34;Excellent!&#34;)\nelse:\n    for so in so_thieu:\n        print(so)"
+      },
+      "token_overlap": 113,
+      "max_similarity_percent": 77.4
+    },
+    {
+      "case_id": 3,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68fdc3b5fe535fa0f4f1d92a/f95120b3a38a461085ef58cb/sub_1761720583905_umqum6slo.py",
+        "similarity_percent": 67.12,
+        "full_code": "n = int(input())\na = []\nwhile len(a) < n:\n    a.extend(map(int, input().split()))\n    gtln = max(a)\n    ds = set(a)\n    sobm = []\n    for i in range(1, gtln +1):\n        if i not in ds:\n            sobm.append(i)\n        if sobm:\n            for so in sobm:\n                print(sobm)\n        else:\n            print(\"Excellent!\")",
+        "highlighted_code": "<span class='highlight-red'>n = int(input())\na = []\nwhile len(a) &lt; </span>n:\n    a.extend(map<span class='highlight-red'>(int, input().split()))\n    gtln = max(a)\n    ds </span>= set(a<span class='highlight-red'>)\n    sobm = []\n    for i in range(1, gtln +1):\n        if i not in ds:\n            sobm.append(i)\n        i</span>f sobm:\n            for so in sobm:\n                print(sobm)\n        else:\n            print(&#34;Excellent!&#34;)"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68fdc3b5fe535fa0f4f1d92a/8e19101eb0da4e9a92a17098/sub_1761635940261_pcj1u2u5j.py",
+        "similarity_percent": 67.13,
+        "full_code": "n = int(input())\na = []\nwhile len(a) < n:\n    a += list(map(int, input().split()))\nln = max(a)\nm = []\nfor i in range(1, ln + 1):\n    if i not in a:\n        m.append(i)\nif not m:\n    print(\"Excellent!\")\nelse:\n    for x in m:\n        print(x) ",
+        "highlighted_code": "<span class='highlight-green'>n = int(input())\na = []\nwhile len(a) &lt; </span>n:\n    a += list(map<span class='highlight-green'>(int, input().split()))\nln = max(a)\nm = []\nfor i in range(1, ln + 1):\n    if i not in a:\n        m.append(i)\ni</span>f not m:\n    print(&#34;Excellent!&#34;)\nelse:\n    for x in m:\n        print(x) "
+      },
+      "token_overlap": 98,
+      "max_similarity_percent": 67.13
+    },
+    {
+      "case_id": 4,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68fdc3b5fe535fa0f4f1d92a/91001b54722a4328a2b7b879/sub_1761653961525_tl3d9e4oi.py",
+        "similarity_percent": 66.89,
+        "full_code": "# Nhập số lượng số hiệu\nn = int(input())\n\n# Tạo danh sách rỗng để lưu tất cả số hiệu\nnumbers = []\n\n# Nhập n số (có thể trên nhiều dòng)\nwhile len(numbers) < n:\n    # Nhập một dòng, tách thành từng số rồi chuyển sang kiểu int\n    line = list(map(int, input().split()))\n    # Thêm các số này vào danh sách numbers\n    numbers.extend(line)\n\n# Tìm số hiệu lớn nhất\nmax_num = max(numbers)\n\n# Tạo tập hợp (set) để tìm kiếm nhanh hơn\nnum_set = set(numbers)\n\n# Biến kiểm tra xem có số nào bị thiếu không\nmissing_found = False\n\n# Duyệt từ 1 đến max_num\nfor i in range(1, max_num + 1):\n    if i not in num_set:\n        print(i)\n        missing_found = True\n\n# Nếu không thiếu số nào, in ra Excellent!\nif not missing_found:\n    print(\"Excellent!\")\n",
+        "highlighted_code": "# Nhập số lượng số hiệu\n<span class='highlight-red'>n = int(input())\n\n# Tạo danh sách rỗng để lưu tất cả số hiệu\nnumbers = []\n\n# Nhập n số (có thể trên nhiều dòng)\nwhile len(numbers) &lt; n:\n    # Nhập một dòng, tách thành từng số rồi chuyển sang kiểu int\n    line = </span>list(map(int, input().split()))\n    # Thêm các số này vào danh sách numbers\n    numbers.extend(line)\n\n# Tìm số hiệu lớn nhất\nmax_num = max(numbers)\n\n# Tạo tập hợp (set) để tìm kiếm nhanh hơn\nnum_set = se<span class='highlight-red'>t(numbers)\n\n# Biến kiểm tra xem có số nào bị thiếu không\nmissing_found = False\n\n# Duyệt từ 1 đến max_num\nfor i in range(1, </span>max_num + 1):\n    <span class='highlight-red'>if i not in num_set:\n        print(i)\n        missing_found = True\n\n# Nếu không thiếu số nào, in ra Excellent!\nif not missing_found:\n    print(&#34;Excellent!&#34;</span>)\n"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68fdc3b5fe535fa0f4f1d92a/8e236cb825b041b0a82527f2/sub_1761532307017_76ykzomhp.py",
+        "similarity_percent": 63.87,
+        "full_code": "n = int(input())\nnums = []\n\nwhile len(nums) < n:\n    sz = len(nums)\n    inp = list(map(int, input().split()))[: n - sz]\n    nums += inp\n\ns1 = set(nums)\nmiss = False\n\nfor i in range(1, max(nums)):\n    if i not in s1:\n        print(i)\n        miss = True\n\nif not miss:\n    print(\"Excellent!\")\n",
+        "highlighted_code": "<span class='highlight-green'>n = int(input())\nnums = []\n\nwhile len(nums) &lt; n:\n    sz = </span>len(nums)\n    inp = list(map(int, input().split()))[: n - sz]\n    nums += inp\n\ns1 = se<span class='highlight-green'>t(nums)\nmiss = False\n\nfor i in range(1, </span>max(nums)):\n    <span class='highlight-green'>if i not in s1:\n        print(i)\n        miss = True\n\nif not miss:\n    print(&#34;Excellent!&#34;</span>)\n"
+      },
+      "token_overlap": 99,
+      "max_similarity_percent": 66.89
+    },
+    {
+      "case_id": 5,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68fdc3b5fe535fa0f4f1d92a/f95120b3a38a461085ef58cb/sub_1761720583905_umqum6slo.py",
+        "similarity_percent": 60.96,
+        "full_code": "n = int(input())\na = []\nwhile len(a) < n:\n    a.extend(map(int, input().split()))\n    gtln = max(a)\n    ds = set(a)\n    sobm = []\n    for i in range(1, gtln +1):\n        if i not in ds:\n            sobm.append(i)\n        if sobm:\n            for so in sobm:\n                print(sobm)\n        else:\n            print(\"Excellent!\")",
+        "highlighted_code": "<span class='highlight-red'>n = int(input())\na = []\nwhile len(a) &lt; </span>n:\n    a.extend(map<span class='highlight-red'>(int, input().split()))\n    gtln = max(a)\n    ds </span>= set(a)\n    sobm = []\n    for i in range(1, gtln +1):\n        if i not in ds:\n            sobm.append(i)\n        if <span class='highlight-red'>sobm:\n            for so in sobm:\n                print(sobm)\n        else:\n            print(&#34;Excellent!&#34;</span>)"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68fdc3b5fe535fa0f4f1d92a/d9aec9d917da4c5e9beeb80b/sub_1761572529235_3v7ctsey5.py",
+        "similarity_percent": 66.92,
+        "full_code": "n = int(input())\nnums = []\nwhile len(nums) < n:\n    nums += list(map(int, input().split()))\nmax_value = max(nums)\nmissing = [i for i in range(1, max_value) if i not in nums]\nif missing:\n    for x in missing:\n        print(x)\nelse:\n    print(\"Excellent!\")\n   \n",
+        "highlighted_code": "<span class='highlight-green'>n = int(input())\nnums = []\nwhile len(nums) &lt; </span>n:\n    nums += list(map<span class='highlight-green'>(int, input().split()))\nmax_value = max(nums)\nmissing </span>= [i for i in range(1, max_value) if i not in nums]\nif <span class='highlight-green'>missing:\n    for x in missing:\n        print(x)\nelse:\n    print(&#34;Excellent!&#34;</span>)\n   \n"
+      },
+      "token_overlap": 89,
+      "max_similarity_percent": 66.92
+    },
+    {
+      "case_id": 6,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68fdc3b5fe535fa0f4f1d92a/9f14990043df4fda9283d7ac/sub_1761748235301_0t03sv0ey.py",
+        "similarity_percent": 46.07,
+        "full_code": "\nn = int(input())\nnumbers = list(map(int, input().split()))\nwhile len(numbers) < n:\n    numbers += list(map(int, input().split()))\nda_xuat_hien = set(x for x in numbers if x > 0)\nif da_xuat_hien:\n    max_num = max(da_xuat_hien)\nelse:\n    max_num = 0\nchua_xuat_hien = [i for i in range(1, max_num + 1) if i not in da_xuat_hien]\nif chua_xuat_hien:\n    for num in chua_xuat_hien:\n        print(num)\nelse:\n    print(\"Excellent!\")",
+        "highlighted_code": "\nn = int(input())\nnumbers = list(map(int, input().split()))\n<span class='highlight-red'>while len(numbers) &lt; n:\n    numbers += list(map(int, input().split()))\nda_xuat_hien</span> = set(x for x in numbers if x &gt; 0)\nif da_xuat_hien:\n    max_num = max(da_xuat_hien)\nelse:\n    max_num = 0\nchua_xuat_hien = [i for i in range(1, max_num + <span class='highlight-red'>1) if i not in da_xuat_hien]\nif chua_xuat_hien:\n    for num in chua_xuat_hien:\n        print(num)\nelse:\n    print(&#34;Excellent!</span>&#34;)"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68fdc3b5fe535fa0f4f1d92a/d9aec9d917da4c5e9beeb80b/sub_1761572529235_3v7ctsey5.py",
+        "similarity_percent": 66.17,
+        "full_code": "n = int(input())\nnums = []\nwhile len(nums) < n:\n    nums += list(map(int, input().split()))\nmax_value = max(nums)\nmissing = [i for i in range(1, max_value) if i not in nums]\nif missing:\n    for x in missing:\n        print(x)\nelse:\n    print(\"Excellent!\")\n   \n",
+        "highlighted_code": "n = int(input())\nnums = []\nw<span class='highlight-green'>hile len(nums) &lt; n:\n    nums += list(map(int, input().split()))\nmax_value </span>= max(nums)\nmissing = [i for i in range(1, max_value<span class='highlight-green'>) if i not in nums]\nif missing:\n    for x in missing:\n        print(x)\nelse:\n    print(&#34;Excellent!&#34;</span>)\n   \n"
+      },
+      "token_overlap": 88,
+      "max_similarity_percent": 66.17
+    }
+  ]
+}

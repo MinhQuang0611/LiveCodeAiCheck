@@ -1,0 +1,130 @@
+{
+  "problem_id": "68fdc3a9fe535fa0f4f1d7a2",
+  "filter_criteria": {
+    "min_token_overlap": 80,
+    "min_similarity_percent": 60
+  },
+  "total_cases_found": 15,
+  "total_cases_filtered": 7,
+  "cases": [
+    {
+      "case_id": 1,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68fdc3a9fe535fa0f4f1d7a2/cd93b2ff882a4ffa85f4518f/sub_1761545688928_7eqbsyovz.py",
+        "similarity_percent": 100.0,
+        "full_code": "a=int(input())\nif (a%2==0):\n    print(\"CHAN\")\nelse:\n    print(\"LE\")",
+        "highlighted_code": "<span class='highlight-red'>a=int(input())\nif (a%2==0):\n    print(&#34;CHAN&#34;)\nelse:\n    print(&#34;LE&#34;</span>)"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68fdc3a9fe535fa0f4f1d7a2/de7b795216694f3190b821ba/sub_1761574064069_jft3xitel.py",
+        "similarity_percent": 100.0,
+        "full_code": "a=int(input())\nif(a%2==0):\n    print('CHAN')\nelse:\n    print('LE')",
+        "highlighted_code": "<span class='highlight-green'>a=int(input())\nif(a%2==0):\n    print(&#39;CHAN&#39;)\nelse:\n    print(&#39;LE&#39;</span>)"
+      },
+      "token_overlap": 49,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 2,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68fdc3a9fe535fa0f4f1d7a2/30d29d0969994c929976d40a/sub_1761466425162_az8jo4osd.py",
+        "similarity_percent": 100.0,
+        "full_code": "a=int(input())\nif a%2==0:\n    print(\"CHAN\")\nelse:\n    print(\"LE\")",
+        "highlighted_code": "<span class='highlight-red'>a=int(input())\nif a%2==0:\n    print(&#34;CHAN&#34;)\nelse:\n    print(&#34;LE&#34;</span>)"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68fdc3a9fe535fa0f4f1d7a2/fd92120cec18496789c2c733/sub_1761621708788_rgeh8fv5o.py",
+        "similarity_percent": 100.0,
+        "full_code": "a = int(input())\nif a % 2 == 0:\n    print ('CHAN')\nelse :\n    print ('LE')",
+        "highlighted_code": "<span class='highlight-green'>a = int(input())\nif a % 2 == 0:\n    print (&#39;CHAN&#39;)\nelse :\n    print (&#39;LE&#39;</span>)"
+      },
+      "token_overlap": 47,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 3,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68fdc3a9fe535fa0f4f1d7a2/30d29d0969994c929976d40a/sub_1761466425162_az8jo4osd.py",
+        "similarity_percent": 100.0,
+        "full_code": "a=int(input())\nif a%2==0:\n    print(\"CHAN\")\nelse:\n    print(\"LE\")",
+        "highlighted_code": "<span class='highlight-red'>a=int(input())\nif a%2==0:\n    print(&#34;CHAN&#34;)\nelse:\n    print(&#34;LE&#34;</span>)"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68fdc3a9fe535fa0f4f1d7a2/522be41104e24b1fa5d14200/sub_1761621620485_jkhbhfmwd.py",
+        "similarity_percent": 100.0,
+        "full_code": "n=int(input())\nif n%2==0:\n    print(\"CHAN\")\nelse:\n    print('LE')",
+        "highlighted_code": "<span class='highlight-green'>n=int(input())\nif n%2==0:\n    print(&#34;CHAN&#34;)\nelse:\n    print(&#39;LE&#39;</span>)"
+      },
+      "token_overlap": 47,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 4,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68fdc3a9fe535fa0f4f1d7a2/30d29d0969994c929976d40a/sub_1761466425162_az8jo4osd.py",
+        "similarity_percent": 100.0,
+        "full_code": "a=int(input())\nif a%2==0:\n    print(\"CHAN\")\nelse:\n    print(\"LE\")",
+        "highlighted_code": "<span class='highlight-red'>a=int(input())\nif a%2==0:\n    print(&#34;CHAN&#34;)\nelse:\n    print(&#34;LE&#34;</span>)"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68fdc3a9fe535fa0f4f1d7a2/fb33e4e5d4ff46a5b041b652/sub_1761569831619_hgtb0mll1.py",
+        "similarity_percent": 100.0,
+        "full_code": "a=int(input())\nif a%2==0:\n    print(\"CHAN\")\nelse:\n    print(\"LE\")",
+        "highlighted_code": "<span class='highlight-green'>a=int(input())\nif a%2==0:\n    print(&#34;CHAN&#34;)\nelse:\n    print(&#34;LE&#34;</span>)"
+      },
+      "token_overlap": 47,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 5,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68fdc3a9fe535fa0f4f1d7a2/fd92120cec18496789c2c733/sub_1761621708788_rgeh8fv5o.py",
+        "similarity_percent": 100.0,
+        "full_code": "a = int(input())\nif a % 2 == 0:\n    print ('CHAN')\nelse :\n    print ('LE')",
+        "highlighted_code": "<span class='highlight-red'>a = int(input())\nif a % 2 == 0:\n    print (&#39;CHAN&#39;)\nelse :\n    print (&#39;LE&#39;</span>)"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68fdc3a9fe535fa0f4f1d7a2/522be41104e24b1fa5d14200/sub_1761621620485_jkhbhfmwd.py",
+        "similarity_percent": 100.0,
+        "full_code": "n=int(input())\nif n%2==0:\n    print(\"CHAN\")\nelse:\n    print('LE')",
+        "highlighted_code": "<span class='highlight-green'>n=int(input())\nif n%2==0:\n    print(&#34;CHAN&#34;)\nelse:\n    print(&#39;LE&#39;</span>)"
+      },
+      "token_overlap": 47,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 6,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68fdc3a9fe535fa0f4f1d7a2/fd92120cec18496789c2c733/sub_1761621708788_rgeh8fv5o.py",
+        "similarity_percent": 100.0,
+        "full_code": "a = int(input())\nif a % 2 == 0:\n    print ('CHAN')\nelse :\n    print ('LE')",
+        "highlighted_code": "<span class='highlight-red'>a = int(input())\nif a % 2 == 0:\n    print (&#39;CHAN&#39;)\nelse :\n    print (&#39;LE&#39;</span>)"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68fdc3a9fe535fa0f4f1d7a2/fb33e4e5d4ff46a5b041b652/sub_1761569831619_hgtb0mll1.py",
+        "similarity_percent": 100.0,
+        "full_code": "a=int(input())\nif a%2==0:\n    print(\"CHAN\")\nelse:\n    print(\"LE\")",
+        "highlighted_code": "<span class='highlight-green'>a=int(input())\nif a%2==0:\n    print(&#34;CHAN&#34;)\nelse:\n    print(&#34;LE&#34;</span>)"
+      },
+      "token_overlap": 47,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 7,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68fdc3a9fe535fa0f4f1d7a2/522be41104e24b1fa5d14200/sub_1761621620485_jkhbhfmwd.py",
+        "similarity_percent": 100.0,
+        "full_code": "n=int(input())\nif n%2==0:\n    print(\"CHAN\")\nelse:\n    print('LE')",
+        "highlighted_code": "<span class='highlight-red'>n=int(input())\nif n%2==0:\n    print(&#34;CHAN&#34;)\nelse:\n    print(&#39;LE&#39;</span>)"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68fdc3a9fe535fa0f4f1d7a2/fb33e4e5d4ff46a5b041b652/sub_1761569831619_hgtb0mll1.py",
+        "similarity_percent": 100.0,
+        "full_code": "a=int(input())\nif a%2==0:\n    print(\"CHAN\")\nelse:\n    print(\"LE\")",
+        "highlighted_code": "<span class='highlight-green'>a=int(input())\nif a%2==0:\n    print(&#34;CHAN&#34;)\nelse:\n    print(&#34;LE&#34;</span>)"
+      },
+      "token_overlap": 47,
+      "max_similarity_percent": 100.0
+    }
+  ]
+}

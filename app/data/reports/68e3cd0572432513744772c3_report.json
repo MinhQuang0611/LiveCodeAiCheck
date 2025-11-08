@@ -1,0 +1,725 @@
+{
+  "problem_id": "68e3cd0572432513744772c3",
+  "filter_criteria": {
+    "min_token_overlap": 80,
+    "min_similarity_percent": 60
+  },
+  "total_cases_found": 90,
+  "total_cases_filtered": 42,
+  "cases": [
+    {
+      "case_id": 1,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3cd0572432513744772c3/0d74995bf22b4574a97a2297/sub_1761165297493_tdw6wubuk.py",
+        "similarity_percent": 100.0,
+        "full_code": "n = input()\nf = {}\nfor char in n:\n    f[char] = f.get(char, 0) + 1\nfor key in f:\n    if f[key] > 1:\n        print(\"true\")\n        break\nelse:\n    print(\"false\")\n",
+        "highlighted_code": "<span class='highlight-red'>n = input()\nf = {}\nfor char in n:\n    f[char] = f.get(char, 0) + 1\nfor key in f:\n    if f[key] &gt; 1:\n        print(&#34;true&#34;)\n        break\nelse:\n    print(&#34;false&#34;)</span>\n"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3cd0572432513744772c3/0d74995bf22b4574a97a2297/sub_1761194892786_79lu5g87p.py",
+        "similarity_percent": 100.0,
+        "full_code": "n = input()\nf = {}\nfor char in n:\n    f[char] = f.get(char, 0) + 1\nfor key in f:\n    if f[key] > 1:\n        print(\"true\")\n        break\nelse:\n    print(\"false\")\n",
+        "highlighted_code": "<span class='highlight-green'>n = input()\nf = {}\nfor char in n:\n    f[char] = f.get(char, 0) + 1\nfor key in f:\n    if f[key] &gt; 1:\n        print(&#34;true&#34;)\n        break\nelse:\n    print(&#34;false&#34;)</span>\n"
+      },
+      "token_overlap": 83,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 2,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3cd0572432513744772c3/0d74995bf22b4574a97a2297/sub_1761165297493_tdw6wubuk.py",
+        "similarity_percent": 100.0,
+        "full_code": "n = input()\nf = {}\nfor char in n:\n    f[char] = f.get(char, 0) + 1\nfor key in f:\n    if f[key] > 1:\n        print(\"true\")\n        break\nelse:\n    print(\"false\")\n",
+        "highlighted_code": "<span class='highlight-red'>n = input()\nf = {}\nfor char in n:\n    f[char] = f.get(char, 0) + 1\nfor key in f:\n    if f[key] &gt; 1:\n        print(&#34;true&#34;)\n        break\nelse:\n    print(&#34;false&#34;)</span>\n"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3cd0572432513744772c3/0d74995bf22b4574a97a2297/sub_1761165284314_8hh8q1jwv.py",
+        "similarity_percent": 100.0,
+        "full_code": "\nn = input()\nf = {}\nfor char in n:\n    f[char] = f.get(char, 0) + 1\nfor key in f:\n    if f[key] > 1:\n        print(\"true\")\n        break\nelse:\n    print(\"false\")\n",
+        "highlighted_code": "<span class='highlight-green'>\nn = input()\nf = {}\nfor char in n:\n    f[char] = f.get(char, 0) + 1\nfor key in f:\n    if f[key] &gt; 1:\n        print(&#34;true&#34;)\n        break\nelse:\n    print(&#34;false&#34;</span>)\n"
+      },
+      "token_overlap": 83,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 3,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3cd0572432513744772c3/0d74995bf22b4574a97a2297/sub_1761165297493_tdw6wubuk.py",
+        "similarity_percent": 100.0,
+        "full_code": "n = input()\nf = {}\nfor char in n:\n    f[char] = f.get(char, 0) + 1\nfor key in f:\n    if f[key] > 1:\n        print(\"true\")\n        break\nelse:\n    print(\"false\")\n",
+        "highlighted_code": "<span class='highlight-red'>n = input()\nf = {}\nfor char in n:\n    f[char] = f.get(char, 0) + 1\nfor key in f:\n    if f[key] &gt; 1:\n        print(&#34;true&#34;)\n        break\nelse:\n    print(&#34;false&#34;)</span>\n"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3cd0572432513744772c3/0d74995bf22b4574a97a2297/sub_1761165290287_2ksextmut.py",
+        "similarity_percent": 100.0,
+        "full_code": "\nn = input()\nf = {}\nfor char in n:\n    f[char] = f.get(char, 0) + 1\nfor key in f:\n    if f[key] > 1:\n        print(\"true\")\n        break\nelse:\n    print(\"false\")\n",
+        "highlighted_code": "<span class='highlight-green'>\nn = input()\nf = {}\nfor char in n:\n    f[char] = f.get(char, 0) + 1\nfor key in f:\n    if f[key] &gt; 1:\n        print(&#34;true&#34;)\n        break\nelse:\n    print(&#34;false&#34;</span>)\n"
+      },
+      "token_overlap": 83,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 4,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3cd0572432513744772c3/0d74995bf22b4574a97a2297/sub_1761165297493_tdw6wubuk.py",
+        "similarity_percent": 100.0,
+        "full_code": "n = input()\nf = {}\nfor char in n:\n    f[char] = f.get(char, 0) + 1\nfor key in f:\n    if f[key] > 1:\n        print(\"true\")\n        break\nelse:\n    print(\"false\")\n",
+        "highlighted_code": "<span class='highlight-red'>n = input()\nf = {}\nfor char in n:\n    f[char] = f.get(char, 0) + 1\nfor key in f:\n    if f[key] &gt; 1:\n        print(&#34;true&#34;)\n        break\nelse:\n    print(&#34;false&#34;)</span>\n"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3cd0572432513744772c3/0d74995bf22b4574a97a2297/sub_1761165318510_9166o4s1b.py",
+        "similarity_percent": 100.0,
+        "full_code": "n = input()\nf = {}\nfor char in n:\n    f[char] = f.get(char, 0) + 1\nfor key in f:\n    if f[key] > 1:\n        print(\"true\")\n        break\nelse:\n    print(\"false\")\n",
+        "highlighted_code": "<span class='highlight-green'>n = input()\nf = {}\nfor char in n:\n    f[char] = f.get(char, 0) + 1\nfor key in f:\n    if f[key] &gt; 1:\n        print(&#34;true&#34;)\n        break\nelse:\n    print(&#34;false&#34;)</span>\n"
+      },
+      "token_overlap": 83,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 5,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3cd0572432513744772c3/e0cd413045d741e39459231c/sub_1761657010644_tzizepqh2.py",
+        "similarity_percent": 100.0,
+        "full_code": "a=int(input())\ns=str(a)\nlap='false'\nfor i in range(len(s)-1):\n    if s[i]==s[i+1]:\n        lap='true'\n        break\nprint(lap)",
+        "highlighted_code": "<span class='highlight-red'>a=int(input())\ns=str(a)\nlap=&#39;false&#39;\nfor i in range(len(s)-1):\n    if s[i]==s[i+1]:\n        lap=&#39;true&#39;\n        break\nprin</span>t(lap)"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3cd0572432513744772c3/8e19101eb0da4e9a92a17098/sub_1761639746347_c4xq7jiq5.py",
+        "similarity_percent": 100.0,
+        "full_code": "n = int(input())\ns = str(n)\nf = 'false'\nfor i in range(len(s) - 1):\n    if s[i] == s[i + 1]:\n        f = 'true'\n        break\nprint(f)",
+        "highlighted_code": "<span class='highlight-green'>n = int(input())\ns = str(n)\nf = &#39;false&#39;\nfor i in range(len(s) - 1):\n    if s[i] == s[i + 1]:\n        f = &#39;true&#39;\n        break\nprin</span>t(f)"
+      },
+      "token_overlap": 78,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 6,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3cd0572432513744772c3/e0cd413045d741e39459231c/sub_1761657010644_tzizepqh2.py",
+        "similarity_percent": 100.0,
+        "full_code": "a=int(input())\ns=str(a)\nlap='false'\nfor i in range(len(s)-1):\n    if s[i]==s[i+1]:\n        lap='true'\n        break\nprint(lap)",
+        "highlighted_code": "<span class='highlight-red'>a=int(input())\ns=str(a)\nlap=&#39;false&#39;\nfor i in range(len(s)-1):\n    if s[i]==s[i+1]:\n        lap=&#39;true&#39;\n        break\nprin</span>t(lap)"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3cd0572432513744772c3/222412e06e454a339defe331/sub_1761637457890_7kvckft0i.py",
+        "similarity_percent": 100.0,
+        "full_code": "n=int(input())\nn=str(n)\nk=\"false\"\nfor i in range(len(n)-1):\n    if n[i]==n[i+1]:\n        k=\"true\"\n        break\nprint(k)",
+        "highlighted_code": "<span class='highlight-green'>n=int(input())\nn=str(n)\nk=&#34;false&#34;\nfor i in range(len(n)-1):\n    if n[i]==n[i+1]:\n        k=&#34;true&#34;\n        break\nprin</span>t(k)"
+      },
+      "token_overlap": 78,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 7,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3cd0572432513744772c3/0d74995bf22b4574a97a2297/sub_1761194892786_79lu5g87p.py",
+        "similarity_percent": 100.0,
+        "full_code": "n = input()\nf = {}\nfor char in n:\n    f[char] = f.get(char, 0) + 1\nfor key in f:\n    if f[key] > 1:\n        print(\"true\")\n        break\nelse:\n    print(\"false\")\n",
+        "highlighted_code": "<span class='highlight-red'>n = input()\nf = {}\nfor char in n:\n    f[char] = f.get(char, 0) + 1\nfor key in f:\n    if f[key] &gt; 1:\n        print(&#34;true&#34;)\n        break\nelse:\n    print(&#34;false&#34;)</span>\n"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3cd0572432513744772c3/0d74995bf22b4574a97a2297/sub_1761165284314_8hh8q1jwv.py",
+        "similarity_percent": 100.0,
+        "full_code": "\nn = input()\nf = {}\nfor char in n:\n    f[char] = f.get(char, 0) + 1\nfor key in f:\n    if f[key] > 1:\n        print(\"true\")\n        break\nelse:\n    print(\"false\")\n",
+        "highlighted_code": "<span class='highlight-green'>\nn = input()\nf = {}\nfor char in n:\n    f[char] = f.get(char, 0) + 1\nfor key in f:\n    if f[key] &gt; 1:\n        print(&#34;true&#34;)\n        break\nelse:\n    print(&#34;false&#34;</span>)\n"
+      },
+      "token_overlap": 83,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 8,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3cd0572432513744772c3/0d74995bf22b4574a97a2297/sub_1761194892786_79lu5g87p.py",
+        "similarity_percent": 100.0,
+        "full_code": "n = input()\nf = {}\nfor char in n:\n    f[char] = f.get(char, 0) + 1\nfor key in f:\n    if f[key] > 1:\n        print(\"true\")\n        break\nelse:\n    print(\"false\")\n",
+        "highlighted_code": "<span class='highlight-red'>n = input()\nf = {}\nfor char in n:\n    f[char] = f.get(char, 0) + 1\nfor key in f:\n    if f[key] &gt; 1:\n        print(&#34;true&#34;)\n        break\nelse:\n    print(&#34;false&#34;)</span>\n"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3cd0572432513744772c3/0d74995bf22b4574a97a2297/sub_1761165290287_2ksextmut.py",
+        "similarity_percent": 100.0,
+        "full_code": "\nn = input()\nf = {}\nfor char in n:\n    f[char] = f.get(char, 0) + 1\nfor key in f:\n    if f[key] > 1:\n        print(\"true\")\n        break\nelse:\n    print(\"false\")\n",
+        "highlighted_code": "<span class='highlight-green'>\nn = input()\nf = {}\nfor char in n:\n    f[char] = f.get(char, 0) + 1\nfor key in f:\n    if f[key] &gt; 1:\n        print(&#34;true&#34;)\n        break\nelse:\n    print(&#34;false&#34;</span>)\n"
+      },
+      "token_overlap": 83,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 9,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3cd0572432513744772c3/0d74995bf22b4574a97a2297/sub_1761194892786_79lu5g87p.py",
+        "similarity_percent": 100.0,
+        "full_code": "n = input()\nf = {}\nfor char in n:\n    f[char] = f.get(char, 0) + 1\nfor key in f:\n    if f[key] > 1:\n        print(\"true\")\n        break\nelse:\n    print(\"false\")\n",
+        "highlighted_code": "<span class='highlight-red'>n = input()\nf = {}\nfor char in n:\n    f[char] = f.get(char, 0) + 1\nfor key in f:\n    if f[key] &gt; 1:\n        print(&#34;true&#34;)\n        break\nelse:\n    print(&#34;false&#34;)</span>\n"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3cd0572432513744772c3/0d74995bf22b4574a97a2297/sub_1761165318510_9166o4s1b.py",
+        "similarity_percent": 100.0,
+        "full_code": "n = input()\nf = {}\nfor char in n:\n    f[char] = f.get(char, 0) + 1\nfor key in f:\n    if f[key] > 1:\n        print(\"true\")\n        break\nelse:\n    print(\"false\")\n",
+        "highlighted_code": "<span class='highlight-green'>n = input()\nf = {}\nfor char in n:\n    f[char] = f.get(char, 0) + 1\nfor key in f:\n    if f[key] &gt; 1:\n        print(&#34;true&#34;)\n        break\nelse:\n    print(&#34;false&#34;)</span>\n"
+      },
+      "token_overlap": 83,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 10,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3cd0572432513744772c3/0d74995bf22b4574a97a2297/sub_1761195004927_j48cx7xk3.py",
+        "similarity_percent": 100.0,
+        "full_code": "n = input()\nf = {}\nfor char in n:\n    f[char] = f.get(char, 0) + 1\nfor i in range(len(n) - 1):\n    if n[i] == n[i + 1]:\n        print(\"true\")\n        break\nelse:\n    print(\"false\")\n",
+        "highlighted_code": "<span class='highlight-red'>n = input()\nf = {}\nfor char in n:\n    f[char] = f.get(char, 0) + 1\nfor i in range(len(n) - 1):\n    if n[i] == n[i + 1]:\n        print(&#34;true&#34;)\n        break\nelse:\n    print(&#34;false&#34;)</span>\n"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3cd0572432513744772c3/0d74995bf22b4574a97a2297/sub_1761553284349_hhxxcg99c.py",
+        "similarity_percent": 100.0,
+        "full_code": "n = input()\nf = {}\nfor char in n:\n    f[char] = f.get(char, 0) + 1\nfor i in range(len(n) - 1):\n    if n[i] == n[i + 1]:\n        print(\"true\")\n        break\nelse:\n    print(\"false\")\n",
+        "highlighted_code": "<span class='highlight-green'>n = input()\nf = {}\nfor char in n:\n    f[char] = f.get(char, 0) + 1\nfor i in range(len(n) - 1):\n    if n[i] == n[i + 1]:\n        print(&#34;true&#34;)\n        break\nelse:\n    print(&#34;false&#34;)</span>\n"
+      },
+      "token_overlap": 103,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 11,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3cd0572432513744772c3/0d74995bf22b4574a97a2297/sub_1761195004927_j48cx7xk3.py",
+        "similarity_percent": 100.0,
+        "full_code": "n = input()\nf = {}\nfor char in n:\n    f[char] = f.get(char, 0) + 1\nfor i in range(len(n) - 1):\n    if n[i] == n[i + 1]:\n        print(\"true\")\n        break\nelse:\n    print(\"false\")\n",
+        "highlighted_code": "<span class='highlight-red'>n = input()\nf = {}\nfor char in n:\n    f[char] = f.get(char, 0) + 1\nfor i in range(len(n) - 1):\n    if n[i] == n[i + 1]:\n        print(&#34;true&#34;)\n        break\nelse:\n    print(&#34;false&#34;)</span>\n"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3cd0572432513744772c3/0d74995bf22b4574a97a2297/sub_1761285758697_d71x8ybea.py",
+        "similarity_percent": 100.0,
+        "full_code": "n = input()\nf = {}\nfor char in n:\n    f[char] = f.get(char, 0) + 1\nfor i in range(len(n) - 1):\n    if n[i] == n[i + 1]:\n        print(\"true\")\n        break\nelse:\n    print(\"false\")\n",
+        "highlighted_code": "<span class='highlight-green'>n = input()\nf = {}\nfor char in n:\n    f[char] = f.get(char, 0) + 1\nfor i in range(len(n) - 1):\n    if n[i] == n[i + 1]:\n        print(&#34;true&#34;)\n        break\nelse:\n    print(&#34;false&#34;)</span>\n"
+      },
+      "token_overlap": 103,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 12,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3cd0572432513744772c3/8e19101eb0da4e9a92a17098/sub_1761639746347_c4xq7jiq5.py",
+        "similarity_percent": 100.0,
+        "full_code": "n = int(input())\ns = str(n)\nf = 'false'\nfor i in range(len(s) - 1):\n    if s[i] == s[i + 1]:\n        f = 'true'\n        break\nprint(f)",
+        "highlighted_code": "<span class='highlight-red'>n = int(input())\ns = str(n)\nf = &#39;false&#39;\nfor i in range(len(s) - 1):\n    if s[i] == s[i + 1]:\n        f = &#39;true&#39;\n        break\nprin</span>t(f)"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3cd0572432513744772c3/222412e06e454a339defe331/sub_1761637457890_7kvckft0i.py",
+        "similarity_percent": 100.0,
+        "full_code": "n=int(input())\nn=str(n)\nk=\"false\"\nfor i in range(len(n)-1):\n    if n[i]==n[i+1]:\n        k=\"true\"\n        break\nprint(k)",
+        "highlighted_code": "<span class='highlight-green'>n=int(input())\nn=str(n)\nk=&#34;false&#34;\nfor i in range(len(n)-1):\n    if n[i]==n[i+1]:\n        k=&#34;true&#34;\n        break\nprin</span>t(k)"
+      },
+      "token_overlap": 78,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 13,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3cd0572432513744772c3/fd92120cec18496789c2c733/sub_1761619666278_coxf6dkmg.py",
+        "similarity_percent": 100.0,
+        "full_code": "n = int(input())\na = str(n)\nif n < 0:\n    print ('Lỏ')\nelse:\n    for i in range(len(a)-1):\n        if a[i] == a[i+1]:\n            print ('true')\n            break\n    else :\n        print ('false')\n\n",
+        "highlighted_code": "<span class='highlight-red'>n = int(input())\na = str(n)\nif n &lt; 0:\n    print (&#39;Lỏ&#39;)\nelse:\n    for i in range(len(a)-1):\n        if a[i] == a[i+1]:\n            print (&#39;true&#39;)\n            break\n    else :\n        print (&#39;false&#39;)</span>\n\n"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3cd0572432513744772c3/fd92120cec18496789c2c733/sub_1761619578893_fafhd9aqk.py",
+        "similarity_percent": 100.0,
+        "full_code": "n = int(input())\na = str(n)\nif n < 0:\n    print ('Lỏ')\nelse:\n    for i in range(len(a) - 1):\n        if a[i] == a[i+1]:\n            print ('true')\n            break\n    else :\n        print ('false')\n\n",
+        "highlighted_code": "<span class='highlight-green'>n = int(input())\na = str(n)\nif n &lt; 0:\n    print (&#39;Lỏ&#39;)\nelse:\n    for i in range(len(a) - 1):\n        if a[i] == a[i+1]:\n            print (&#39;true&#39;)\n            break\n    else :\n        print (&#39;false&#39;)</span>\n\n"
+      },
+      "token_overlap": 110,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 14,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3cd0572432513744772c3/0d74995bf22b4574a97a2297/sub_1761553284349_hhxxcg99c.py",
+        "similarity_percent": 100.0,
+        "full_code": "n = input()\nf = {}\nfor char in n:\n    f[char] = f.get(char, 0) + 1\nfor i in range(len(n) - 1):\n    if n[i] == n[i + 1]:\n        print(\"true\")\n        break\nelse:\n    print(\"false\")\n",
+        "highlighted_code": "<span class='highlight-red'>n = input()\nf = {}\nfor char in n:\n    f[char] = f.get(char, 0) + 1\nfor i in range(len(n) - 1):\n    if n[i] == n[i + 1]:\n        print(&#34;true&#34;)\n        break\nelse:\n    print(&#34;false&#34;)</span>\n"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3cd0572432513744772c3/0d74995bf22b4574a97a2297/sub_1761285758697_d71x8ybea.py",
+        "similarity_percent": 100.0,
+        "full_code": "n = input()\nf = {}\nfor char in n:\n    f[char] = f.get(char, 0) + 1\nfor i in range(len(n) - 1):\n    if n[i] == n[i + 1]:\n        print(\"true\")\n        break\nelse:\n    print(\"false\")\n",
+        "highlighted_code": "<span class='highlight-green'>n = input()\nf = {}\nfor char in n:\n    f[char] = f.get(char, 0) + 1\nfor i in range(len(n) - 1):\n    if n[i] == n[i + 1]:\n        print(&#34;true&#34;)\n        break\nelse:\n    print(&#34;false&#34;)</span>\n"
+      },
+      "token_overlap": 103,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 15,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3cd0572432513744772c3/0d74995bf22b4574a97a2297/sub_1761165284314_8hh8q1jwv.py",
+        "similarity_percent": 100.0,
+        "full_code": "\nn = input()\nf = {}\nfor char in n:\n    f[char] = f.get(char, 0) + 1\nfor key in f:\n    if f[key] > 1:\n        print(\"true\")\n        break\nelse:\n    print(\"false\")\n",
+        "highlighted_code": "<span class='highlight-red'>\nn = input()\nf = {}\nfor char in n:\n    f[char] = f.get(char, 0) + 1\nfor key in f:\n    if f[key] &gt; 1:\n        print(&#34;true&#34;)\n        break\nelse:\n    print(&#34;false&#34;</span>)\n"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3cd0572432513744772c3/0d74995bf22b4574a97a2297/sub_1761165290287_2ksextmut.py",
+        "similarity_percent": 100.0,
+        "full_code": "\nn = input()\nf = {}\nfor char in n:\n    f[char] = f.get(char, 0) + 1\nfor key in f:\n    if f[key] > 1:\n        print(\"true\")\n        break\nelse:\n    print(\"false\")\n",
+        "highlighted_code": "<span class='highlight-green'>\nn = input()\nf = {}\nfor char in n:\n    f[char] = f.get(char, 0) + 1\nfor key in f:\n    if f[key] &gt; 1:\n        print(&#34;true&#34;)\n        break\nelse:\n    print(&#34;false&#34;</span>)\n"
+      },
+      "token_overlap": 83,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 16,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3cd0572432513744772c3/0d74995bf22b4574a97a2297/sub_1761165284314_8hh8q1jwv.py",
+        "similarity_percent": 100.0,
+        "full_code": "\nn = input()\nf = {}\nfor char in n:\n    f[char] = f.get(char, 0) + 1\nfor key in f:\n    if f[key] > 1:\n        print(\"true\")\n        break\nelse:\n    print(\"false\")\n",
+        "highlighted_code": "<span class='highlight-red'>\nn = input()\nf = {}\nfor char in n:\n    f[char] = f.get(char, 0) + 1\nfor key in f:\n    if f[key] &gt; 1:\n        print(&#34;true&#34;)\n        break\nelse:\n    print(&#34;false&#34;</span>)\n"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3cd0572432513744772c3/0d74995bf22b4574a97a2297/sub_1761165318510_9166o4s1b.py",
+        "similarity_percent": 100.0,
+        "full_code": "n = input()\nf = {}\nfor char in n:\n    f[char] = f.get(char, 0) + 1\nfor key in f:\n    if f[key] > 1:\n        print(\"true\")\n        break\nelse:\n    print(\"false\")\n",
+        "highlighted_code": "<span class='highlight-green'>n = input()\nf = {}\nfor char in n:\n    f[char] = f.get(char, 0) + 1\nfor key in f:\n    if f[key] &gt; 1:\n        print(&#34;true&#34;)\n        break\nelse:\n    print(&#34;false&#34;)</span>\n"
+      },
+      "token_overlap": 83,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 17,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3cd0572432513744772c3/0d74995bf22b4574a97a2297/sub_1761165290287_2ksextmut.py",
+        "similarity_percent": 100.0,
+        "full_code": "\nn = input()\nf = {}\nfor char in n:\n    f[char] = f.get(char, 0) + 1\nfor key in f:\n    if f[key] > 1:\n        print(\"true\")\n        break\nelse:\n    print(\"false\")\n",
+        "highlighted_code": "<span class='highlight-red'>\nn = input()\nf = {}\nfor char in n:\n    f[char] = f.get(char, 0) + 1\nfor key in f:\n    if f[key] &gt; 1:\n        print(&#34;true&#34;)\n        break\nelse:\n    print(&#34;false&#34;</span>)\n"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3cd0572432513744772c3/0d74995bf22b4574a97a2297/sub_1761165318510_9166o4s1b.py",
+        "similarity_percent": 100.0,
+        "full_code": "n = input()\nf = {}\nfor char in n:\n    f[char] = f.get(char, 0) + 1\nfor key in f:\n    if f[key] > 1:\n        print(\"true\")\n        break\nelse:\n    print(\"false\")\n",
+        "highlighted_code": "<span class='highlight-green'>n = input()\nf = {}\nfor char in n:\n    f[char] = f.get(char, 0) + 1\nfor key in f:\n    if f[key] &gt; 1:\n        print(&#34;true&#34;)\n        break\nelse:\n    print(&#34;false&#34;)</span>\n"
+      },
+      "token_overlap": 83,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 18,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3cd0572432513744772c3/fd92120cec18496789c2c733/sub_1761619535202_p4cu4dx23.py",
+        "similarity_percent": 97.22,
+        "full_code": "n = int(input())\na = str(n)\nif n < 0:\n    print ('Lỏ')\nelse:\n    for i in range(len(a)):\n        if a[i] == a[i+1]:\n            print ('true')\n            break\n    else :\n        print ('false')\n\n",
+        "highlighted_code": "<span class='highlight-red'>n = int(input())\na = str(n)\nif n &lt; 0:\n    print (&#39;Lỏ&#39;)\nelse:\n    for i in range(len</span>(a)<span class='highlight-red'>):\n        if a[i] == a[i+1]:\n            print (&#39;true&#39;)\n            break\n    else :\n        print (&#39;false&#39;)</span>\n\n"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3cd0572432513744772c3/fd92120cec18496789c2c733/sub_1761619666278_coxf6dkmg.py",
+        "similarity_percent": 95.45,
+        "full_code": "n = int(input())\na = str(n)\nif n < 0:\n    print ('Lỏ')\nelse:\n    for i in range(len(a)-1):\n        if a[i] == a[i+1]:\n            print ('true')\n            break\n    else :\n        print ('false')\n\n",
+        "highlighted_code": "<span class='highlight-green'>n = int(input())\na = str(n)\nif n &lt; 0:\n    print (&#39;Lỏ&#39;)\nelse:\n    for i in range(len</span>(a)-1<span class='highlight-green'>):\n        if a[i] == a[i+1]:\n            print (&#39;true&#39;)\n            break\n    else :\n        print (&#39;false&#39;)</span>\n\n"
+      },
+      "token_overlap": 105,
+      "max_similarity_percent": 97.22
+    },
+    {
+      "case_id": 19,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3cd0572432513744772c3/fd92120cec18496789c2c733/sub_1761619535202_p4cu4dx23.py",
+        "similarity_percent": 97.22,
+        "full_code": "n = int(input())\na = str(n)\nif n < 0:\n    print ('Lỏ')\nelse:\n    for i in range(len(a)):\n        if a[i] == a[i+1]:\n            print ('true')\n            break\n    else :\n        print ('false')\n\n",
+        "highlighted_code": "<span class='highlight-red'>n = int(input())\na = str(n)\nif n &lt; 0:\n    print (&#39;Lỏ&#39;)\nelse:\n    for i in range(len</span>(a)<span class='highlight-red'>):\n        if a[i] == a[i+1]:\n            print (&#39;true&#39;)\n            break\n    else :\n        print (&#39;false&#39;)</span>\n\n"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3cd0572432513744772c3/fd92120cec18496789c2c733/sub_1761619578893_fafhd9aqk.py",
+        "similarity_percent": 95.45,
+        "full_code": "n = int(input())\na = str(n)\nif n < 0:\n    print ('Lỏ')\nelse:\n    for i in range(len(a) - 1):\n        if a[i] == a[i+1]:\n            print ('true')\n            break\n    else :\n        print ('false')\n\n",
+        "highlighted_code": "<span class='highlight-green'>n = int(input())\na = str(n)\nif n &lt; 0:\n    print (&#39;Lỏ&#39;)\nelse:\n    for i in range(len</span>(a) - 1<span class='highlight-green'>):\n        if a[i] == a[i+1]:\n            print (&#39;true&#39;)\n            break\n    else :\n        print (&#39;false&#39;)</span>\n\n"
+      },
+      "token_overlap": 105,
+      "max_similarity_percent": 97.22
+    },
+    {
+      "case_id": 20,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3cd0572432513744772c3/0d74995bf22b4574a97a2297/sub_1761165297493_tdw6wubuk.py",
+        "similarity_percent": 83.13,
+        "full_code": "n = input()\nf = {}\nfor char in n:\n    f[char] = f.get(char, 0) + 1\nfor key in f:\n    if f[key] > 1:\n        print(\"true\")\n        break\nelse:\n    print(\"false\")\n",
+        "highlighted_code": "<span class='highlight-red'>n = input()\nf = {}\nfor char in n:\n    f[char] = f.get(char, 0) + 1\nfor key in </span>f:\n    if f[key] &gt; 1:\n        pri<span class='highlight-red'>nt(&#34;true&#34;)\n        break\nelse:\n    print(&#34;false&#34;)</span>\n"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3cd0572432513744772c3/0d74995bf22b4574a97a2297/sub_1761195004927_j48cx7xk3.py",
+        "similarity_percent": 66.99,
+        "full_code": "n = input()\nf = {}\nfor char in n:\n    f[char] = f.get(char, 0) + 1\nfor i in range(len(n) - 1):\n    if n[i] == n[i + 1]:\n        print(\"true\")\n        break\nelse:\n    print(\"false\")\n",
+        "highlighted_code": "<span class='highlight-green'>n = input()\nf = {}\nfor char in n:\n    f[char] = f.get(char, 0) + 1\nfor i in </span>range(len(n) - 1):\n    if n[i] == n[i + 1]:\n        pri<span class='highlight-green'>nt(&#34;true&#34;)\n        break\nelse:\n    print(&#34;false&#34;)</span>\n"
+      },
+      "token_overlap": 69,
+      "max_similarity_percent": 83.13
+    },
+    {
+      "case_id": 21,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3cd0572432513744772c3/0d74995bf22b4574a97a2297/sub_1761165297493_tdw6wubuk.py",
+        "similarity_percent": 83.13,
+        "full_code": "n = input()\nf = {}\nfor char in n:\n    f[char] = f.get(char, 0) + 1\nfor key in f:\n    if f[key] > 1:\n        print(\"true\")\n        break\nelse:\n    print(\"false\")\n",
+        "highlighted_code": "<span class='highlight-red'>n = input()\nf = {}\nfor char in n:\n    f[char] = f.get(char, 0) + 1\nfor key in </span>f:\n    if f[key] &gt; 1:\n        pri<span class='highlight-red'>nt(&#34;true&#34;)\n        break\nelse:\n    print(&#34;false&#34;)</span>\n"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3cd0572432513744772c3/0d74995bf22b4574a97a2297/sub_1761553284349_hhxxcg99c.py",
+        "similarity_percent": 66.99,
+        "full_code": "n = input()\nf = {}\nfor char in n:\n    f[char] = f.get(char, 0) + 1\nfor i in range(len(n) - 1):\n    if n[i] == n[i + 1]:\n        print(\"true\")\n        break\nelse:\n    print(\"false\")\n",
+        "highlighted_code": "<span class='highlight-green'>n = input()\nf = {}\nfor char in n:\n    f[char] = f.get(char, 0) + 1\nfor i in </span>range(len(n) - 1):\n    if n[i] == n[i + 1]:\n        pri<span class='highlight-green'>nt(&#34;true&#34;)\n        break\nelse:\n    print(&#34;false&#34;)</span>\n"
+      },
+      "token_overlap": 69,
+      "max_similarity_percent": 83.13
+    },
+    {
+      "case_id": 22,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3cd0572432513744772c3/0d74995bf22b4574a97a2297/sub_1761165297493_tdw6wubuk.py",
+        "similarity_percent": 83.13,
+        "full_code": "n = input()\nf = {}\nfor char in n:\n    f[char] = f.get(char, 0) + 1\nfor key in f:\n    if f[key] > 1:\n        print(\"true\")\n        break\nelse:\n    print(\"false\")\n",
+        "highlighted_code": "<span class='highlight-red'>n = input()\nf = {}\nfor char in n:\n    f[char] = f.get(char, 0) + 1\nfor key in </span>f:\n    if f[key] &gt; 1:\n        pri<span class='highlight-red'>nt(&#34;true&#34;)\n        break\nelse:\n    print(&#34;false&#34;)</span>\n"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3cd0572432513744772c3/0d74995bf22b4574a97a2297/sub_1761285758697_d71x8ybea.py",
+        "similarity_percent": 66.99,
+        "full_code": "n = input()\nf = {}\nfor char in n:\n    f[char] = f.get(char, 0) + 1\nfor i in range(len(n) - 1):\n    if n[i] == n[i + 1]:\n        print(\"true\")\n        break\nelse:\n    print(\"false\")\n",
+        "highlighted_code": "<span class='highlight-green'>n = input()\nf = {}\nfor char in n:\n    f[char] = f.get(char, 0) + 1\nfor i in </span>range(len(n) - 1):\n    if n[i] == n[i + 1]:\n        pri<span class='highlight-green'>nt(&#34;true&#34;)\n        break\nelse:\n    print(&#34;false&#34;)</span>\n"
+      },
+      "token_overlap": 69,
+      "max_similarity_percent": 83.13
+    },
+    {
+      "case_id": 23,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3cd0572432513744772c3/0d74995bf22b4574a97a2297/sub_1761194892786_79lu5g87p.py",
+        "similarity_percent": 83.13,
+        "full_code": "n = input()\nf = {}\nfor char in n:\n    f[char] = f.get(char, 0) + 1\nfor key in f:\n    if f[key] > 1:\n        print(\"true\")\n        break\nelse:\n    print(\"false\")\n",
+        "highlighted_code": "<span class='highlight-red'>n = input()\nf = {}\nfor char in n:\n    f[char] = f.get(char, 0) + 1\nfor key in </span>f:\n    if f[key] &gt; 1:\n        pri<span class='highlight-red'>nt(&#34;true&#34;)\n        break\nelse:\n    print(&#34;false&#34;)</span>\n"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3cd0572432513744772c3/0d74995bf22b4574a97a2297/sub_1761195004927_j48cx7xk3.py",
+        "similarity_percent": 66.99,
+        "full_code": "n = input()\nf = {}\nfor char in n:\n    f[char] = f.get(char, 0) + 1\nfor i in range(len(n) - 1):\n    if n[i] == n[i + 1]:\n        print(\"true\")\n        break\nelse:\n    print(\"false\")\n",
+        "highlighted_code": "<span class='highlight-green'>n = input()\nf = {}\nfor char in n:\n    f[char] = f.get(char, 0) + 1\nfor i in </span>range(len(n) - 1):\n    if n[i] == n[i + 1]:\n        pri<span class='highlight-green'>nt(&#34;true&#34;)\n        break\nelse:\n    print(&#34;false&#34;)</span>\n"
+      },
+      "token_overlap": 69,
+      "max_similarity_percent": 83.13
+    },
+    {
+      "case_id": 24,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3cd0572432513744772c3/0d74995bf22b4574a97a2297/sub_1761194892786_79lu5g87p.py",
+        "similarity_percent": 83.13,
+        "full_code": "n = input()\nf = {}\nfor char in n:\n    f[char] = f.get(char, 0) + 1\nfor key in f:\n    if f[key] > 1:\n        print(\"true\")\n        break\nelse:\n    print(\"false\")\n",
+        "highlighted_code": "<span class='highlight-red'>n = input()\nf = {}\nfor char in n:\n    f[char] = f.get(char, 0) + 1\nfor key in </span>f:\n    if f[key] &gt; 1:\n        pri<span class='highlight-red'>nt(&#34;true&#34;)\n        break\nelse:\n    print(&#34;false&#34;)</span>\n"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3cd0572432513744772c3/0d74995bf22b4574a97a2297/sub_1761553284349_hhxxcg99c.py",
+        "similarity_percent": 66.99,
+        "full_code": "n = input()\nf = {}\nfor char in n:\n    f[char] = f.get(char, 0) + 1\nfor i in range(len(n) - 1):\n    if n[i] == n[i + 1]:\n        print(\"true\")\n        break\nelse:\n    print(\"false\")\n",
+        "highlighted_code": "<span class='highlight-green'>n = input()\nf = {}\nfor char in n:\n    f[char] = f.get(char, 0) + 1\nfor i in </span>range(len(n) - 1):\n    if n[i] == n[i + 1]:\n        pri<span class='highlight-green'>nt(&#34;true&#34;)\n        break\nelse:\n    print(&#34;false&#34;)</span>\n"
+      },
+      "token_overlap": 69,
+      "max_similarity_percent": 83.13
+    },
+    {
+      "case_id": 25,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3cd0572432513744772c3/0d74995bf22b4574a97a2297/sub_1761194892786_79lu5g87p.py",
+        "similarity_percent": 83.13,
+        "full_code": "n = input()\nf = {}\nfor char in n:\n    f[char] = f.get(char, 0) + 1\nfor key in f:\n    if f[key] > 1:\n        print(\"true\")\n        break\nelse:\n    print(\"false\")\n",
+        "highlighted_code": "<span class='highlight-red'>n = input()\nf = {}\nfor char in n:\n    f[char] = f.get(char, 0) + 1\nfor key in </span>f:\n    if f[key] &gt; 1:\n        pri<span class='highlight-red'>nt(&#34;true&#34;)\n        break\nelse:\n    print(&#34;false&#34;)</span>\n"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3cd0572432513744772c3/0d74995bf22b4574a97a2297/sub_1761285758697_d71x8ybea.py",
+        "similarity_percent": 66.99,
+        "full_code": "n = input()\nf = {}\nfor char in n:\n    f[char] = f.get(char, 0) + 1\nfor i in range(len(n) - 1):\n    if n[i] == n[i + 1]:\n        print(\"true\")\n        break\nelse:\n    print(\"false\")\n",
+        "highlighted_code": "<span class='highlight-green'>n = input()\nf = {}\nfor char in n:\n    f[char] = f.get(char, 0) + 1\nfor i in </span>range(len(n) - 1):\n    if n[i] == n[i + 1]:\n        pri<span class='highlight-green'>nt(&#34;true&#34;)\n        break\nelse:\n    print(&#34;false&#34;)</span>\n"
+      },
+      "token_overlap": 69,
+      "max_similarity_percent": 83.13
+    },
+    {
+      "case_id": 26,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3cd0572432513744772c3/0d74995bf22b4574a97a2297/sub_1761165284314_8hh8q1jwv.py",
+        "similarity_percent": 83.13,
+        "full_code": "\nn = input()\nf = {}\nfor char in n:\n    f[char] = f.get(char, 0) + 1\nfor key in f:\n    if f[key] > 1:\n        print(\"true\")\n        break\nelse:\n    print(\"false\")\n",
+        "highlighted_code": "<span class='highlight-red'>\nn = input()\nf = {}\nfor char in n:\n    f[char] = f.get(char, 0) + 1\nfor key in</span> f:\n    if f[key] &gt; 1:\n        pr<span class='highlight-red'>int(&#34;true&#34;)\n        break\nelse:\n    print(&#34;false&#34;</span>)\n"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3cd0572432513744772c3/0d74995bf22b4574a97a2297/sub_1761285758697_d71x8ybea.py",
+        "similarity_percent": 66.99,
+        "full_code": "n = input()\nf = {}\nfor char in n:\n    f[char] = f.get(char, 0) + 1\nfor i in range(len(n) - 1):\n    if n[i] == n[i + 1]:\n        print(\"true\")\n        break\nelse:\n    print(\"false\")\n",
+        "highlighted_code": "<span class='highlight-green'>n = input()\nf = {}\nfor char in n:\n    f[char] = f.get(char, 0) + 1\nfor i in </span>range(len(n) - 1):\n    if n[i] == n[i + 1]:\n        pri<span class='highlight-green'>nt(&#34;true&#34;)\n        break\nelse:\n    print(&#34;false&#34;)</span>\n"
+      },
+      "token_overlap": 69,
+      "max_similarity_percent": 83.13
+    },
+    {
+      "case_id": 27,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3cd0572432513744772c3/e59c34a1bebb49d29bfb3592/sub_1761645858304_7lenfvvv7.py",
+        "similarity_percent": 80.22,
+        "full_code": "n = input()\na = False\nfor i in range(len(n)):\n    if n[i] in n[i+1:]:\n        a = True\n        break\nif a:\n    print(\"true\")\nelse:\n    print(\"false\")",
+        "highlighted_code": "<span class='highlight-red'>n = input()\na = False\nfor i in range(len(n</span>)):\n    if n[i] in n[i+1:]<span class='highlight-red'>:\n        a = True\n        break\nif a:\n    print(&#34;true&#34;)\nelse:\n    print(&#34;false&#34;</span>)"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3cd0572432513744772c3/cd93b2ff882a4ffa85f4518f/sub_1761619800755_oqa6qbmn4.py",
+        "similarity_percent": 79.35,
+        "full_code": "n = input()\nhas_repeat = False \nfor i in range(len(n) - 1):\n    if n[i] == n[i + 1]:     \n        has_repeat = True\n        break          \n\nif has_repeat:\n    print(\"true\")\nelse:\n    print(\"false\")",
+        "highlighted_code": "<span class='highlight-green'>n = input()\nhas_repeat = False \nfor i in range(len(n</span>) - 1):\n    if n[i] == n[i + 1]<span class='highlight-green'>:     \n        has_repeat = True\n        break          \n\nif has_repeat:\n    print(&#34;true&#34;)\nelse:\n    print(&#34;false&#34;</span>)"
+      },
+      "token_overlap": 73,
+      "max_similarity_percent": 80.22
+    },
+    {
+      "case_id": 28,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3cd0572432513744772c3/0d74995bf22b4574a97a2297/sub_1761195004927_j48cx7xk3.py",
+        "similarity_percent": 66.99,
+        "full_code": "n = input()\nf = {}\nfor char in n:\n    f[char] = f.get(char, 0) + 1\nfor i in range(len(n) - 1):\n    if n[i] == n[i + 1]:\n        print(\"true\")\n        break\nelse:\n    print(\"false\")\n",
+        "highlighted_code": "<span class='highlight-red'>n = input()\nf = {}\nfor char in n:\n    f[char] = f.get(char, 0) + 1\nfor i in </span>range(len(n) - 1):\n    if n[i] == n[i + 1]:\n        pri<span class='highlight-red'>nt(&#34;true&#34;)\n        break\nelse:\n    print(&#34;false&#34;)</span>\n"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3cd0572432513744772c3/0d74995bf22b4574a97a2297/sub_1761165284314_8hh8q1jwv.py",
+        "similarity_percent": 83.13,
+        "full_code": "\nn = input()\nf = {}\nfor char in n:\n    f[char] = f.get(char, 0) + 1\nfor key in f:\n    if f[key] > 1:\n        print(\"true\")\n        break\nelse:\n    print(\"false\")\n",
+        "highlighted_code": "<span class='highlight-green'>\nn = input()\nf = {}\nfor char in n:\n    f[char] = f.get(char, 0) + 1\nfor key in</span> f:\n    if f[key] &gt; 1:\n        pr<span class='highlight-green'>int(&#34;true&#34;)\n        break\nelse:\n    print(&#34;false&#34;</span>)\n"
+      },
+      "token_overlap": 69,
+      "max_similarity_percent": 83.13
+    },
+    {
+      "case_id": 29,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3cd0572432513744772c3/0d74995bf22b4574a97a2297/sub_1761195004927_j48cx7xk3.py",
+        "similarity_percent": 66.99,
+        "full_code": "n = input()\nf = {}\nfor char in n:\n    f[char] = f.get(char, 0) + 1\nfor i in range(len(n) - 1):\n    if n[i] == n[i + 1]:\n        print(\"true\")\n        break\nelse:\n    print(\"false\")\n",
+        "highlighted_code": "<span class='highlight-red'>n = input()\nf = {}\nfor char in n:\n    f[char] = f.get(char, 0) + 1\nfor i in </span>range(len(n) - 1):\n    if n[i] == n[i + 1]:\n        pri<span class='highlight-red'>nt(&#34;true&#34;)\n        break\nelse:\n    print(&#34;false&#34;)</span>\n"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3cd0572432513744772c3/0d74995bf22b4574a97a2297/sub_1761165290287_2ksextmut.py",
+        "similarity_percent": 83.13,
+        "full_code": "\nn = input()\nf = {}\nfor char in n:\n    f[char] = f.get(char, 0) + 1\nfor key in f:\n    if f[key] > 1:\n        print(\"true\")\n        break\nelse:\n    print(\"false\")\n",
+        "highlighted_code": "<span class='highlight-green'>\nn = input()\nf = {}\nfor char in n:\n    f[char] = f.get(char, 0) + 1\nfor key in</span> f:\n    if f[key] &gt; 1:\n        pr<span class='highlight-green'>int(&#34;true&#34;)\n        break\nelse:\n    print(&#34;false&#34;</span>)\n"
+      },
+      "token_overlap": 69,
+      "max_similarity_percent": 83.13
+    },
+    {
+      "case_id": 30,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3cd0572432513744772c3/0d74995bf22b4574a97a2297/sub_1761195004927_j48cx7xk3.py",
+        "similarity_percent": 66.99,
+        "full_code": "n = input()\nf = {}\nfor char in n:\n    f[char] = f.get(char, 0) + 1\nfor i in range(len(n) - 1):\n    if n[i] == n[i + 1]:\n        print(\"true\")\n        break\nelse:\n    print(\"false\")\n",
+        "highlighted_code": "<span class='highlight-red'>n = input()\nf = {}\nfor char in n:\n    f[char] = f.get(char, 0) + 1\nfor i in </span>range(len(n) - 1):\n    if n[i] == n[i + 1]:\n        pri<span class='highlight-red'>nt(&#34;true&#34;)\n        break\nelse:\n    print(&#34;false&#34;)</span>\n"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3cd0572432513744772c3/0d74995bf22b4574a97a2297/sub_1761165318510_9166o4s1b.py",
+        "similarity_percent": 83.13,
+        "full_code": "n = input()\nf = {}\nfor char in n:\n    f[char] = f.get(char, 0) + 1\nfor key in f:\n    if f[key] > 1:\n        print(\"true\")\n        break\nelse:\n    print(\"false\")\n",
+        "highlighted_code": "<span class='highlight-green'>n = input()\nf = {}\nfor char in n:\n    f[char] = f.get(char, 0) + 1\nfor key in </span>f:\n    if f[key] &gt; 1:\n        pri<span class='highlight-green'>nt(&#34;true&#34;)\n        break\nelse:\n    print(&#34;false&#34;)</span>\n"
+      },
+      "token_overlap": 69,
+      "max_similarity_percent": 83.13
+    },
+    {
+      "case_id": 31,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3cd0572432513744772c3/0d74995bf22b4574a97a2297/sub_1761553284349_hhxxcg99c.py",
+        "similarity_percent": 66.99,
+        "full_code": "n = input()\nf = {}\nfor char in n:\n    f[char] = f.get(char, 0) + 1\nfor i in range(len(n) - 1):\n    if n[i] == n[i + 1]:\n        print(\"true\")\n        break\nelse:\n    print(\"false\")\n",
+        "highlighted_code": "<span class='highlight-red'>n = input()\nf = {}\nfor char in n:\n    f[char] = f.get(char, 0) + 1\nfor i in </span>range(len(n) - 1):\n    if n[i] == n[i + 1]:\n        pri<span class='highlight-red'>nt(&#34;true&#34;)\n        break\nelse:\n    print(&#34;false&#34;)</span>\n"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3cd0572432513744772c3/0d74995bf22b4574a97a2297/sub_1761165284314_8hh8q1jwv.py",
+        "similarity_percent": 83.13,
+        "full_code": "\nn = input()\nf = {}\nfor char in n:\n    f[char] = f.get(char, 0) + 1\nfor key in f:\n    if f[key] > 1:\n        print(\"true\")\n        break\nelse:\n    print(\"false\")\n",
+        "highlighted_code": "<span class='highlight-green'>\nn = input()\nf = {}\nfor char in n:\n    f[char] = f.get(char, 0) + 1\nfor key in</span> f:\n    if f[key] &gt; 1:\n        pr<span class='highlight-green'>int(&#34;true&#34;)\n        break\nelse:\n    print(&#34;false&#34;</span>)\n"
+      },
+      "token_overlap": 69,
+      "max_similarity_percent": 83.13
+    },
+    {
+      "case_id": 32,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3cd0572432513744772c3/0d74995bf22b4574a97a2297/sub_1761553284349_hhxxcg99c.py",
+        "similarity_percent": 66.99,
+        "full_code": "n = input()\nf = {}\nfor char in n:\n    f[char] = f.get(char, 0) + 1\nfor i in range(len(n) - 1):\n    if n[i] == n[i + 1]:\n        print(\"true\")\n        break\nelse:\n    print(\"false\")\n",
+        "highlighted_code": "<span class='highlight-red'>n = input()\nf = {}\nfor char in n:\n    f[char] = f.get(char, 0) + 1\nfor i in </span>range(len(n) - 1):\n    if n[i] == n[i + 1]:\n        pri<span class='highlight-red'>nt(&#34;true&#34;)\n        break\nelse:\n    print(&#34;false&#34;)</span>\n"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3cd0572432513744772c3/0d74995bf22b4574a97a2297/sub_1761165290287_2ksextmut.py",
+        "similarity_percent": 83.13,
+        "full_code": "\nn = input()\nf = {}\nfor char in n:\n    f[char] = f.get(char, 0) + 1\nfor key in f:\n    if f[key] > 1:\n        print(\"true\")\n        break\nelse:\n    print(\"false\")\n",
+        "highlighted_code": "<span class='highlight-green'>\nn = input()\nf = {}\nfor char in n:\n    f[char] = f.get(char, 0) + 1\nfor key in</span> f:\n    if f[key] &gt; 1:\n        pr<span class='highlight-green'>int(&#34;true&#34;)\n        break\nelse:\n    print(&#34;false&#34;</span>)\n"
+      },
+      "token_overlap": 69,
+      "max_similarity_percent": 83.13
+    },
+    {
+      "case_id": 33,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3cd0572432513744772c3/0d74995bf22b4574a97a2297/sub_1761553284349_hhxxcg99c.py",
+        "similarity_percent": 66.99,
+        "full_code": "n = input()\nf = {}\nfor char in n:\n    f[char] = f.get(char, 0) + 1\nfor i in range(len(n) - 1):\n    if n[i] == n[i + 1]:\n        print(\"true\")\n        break\nelse:\n    print(\"false\")\n",
+        "highlighted_code": "<span class='highlight-red'>n = input()\nf = {}\nfor char in n:\n    f[char] = f.get(char, 0) + 1\nfor i in </span>range(len(n) - 1):\n    if n[i] == n[i + 1]:\n        pri<span class='highlight-red'>nt(&#34;true&#34;)\n        break\nelse:\n    print(&#34;false&#34;)</span>\n"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3cd0572432513744772c3/0d74995bf22b4574a97a2297/sub_1761165318510_9166o4s1b.py",
+        "similarity_percent": 83.13,
+        "full_code": "n = input()\nf = {}\nfor char in n:\n    f[char] = f.get(char, 0) + 1\nfor key in f:\n    if f[key] > 1:\n        print(\"true\")\n        break\nelse:\n    print(\"false\")\n",
+        "highlighted_code": "<span class='highlight-green'>n = input()\nf = {}\nfor char in n:\n    f[char] = f.get(char, 0) + 1\nfor key in </span>f:\n    if f[key] &gt; 1:\n        pri<span class='highlight-green'>nt(&#34;true&#34;)\n        break\nelse:\n    print(&#34;false&#34;)</span>\n"
+      },
+      "token_overlap": 69,
+      "max_similarity_percent": 83.13
+    },
+    {
+      "case_id": 34,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3cd0572432513744772c3/0d74995bf22b4574a97a2297/sub_1761285758697_d71x8ybea.py",
+        "similarity_percent": 66.99,
+        "full_code": "n = input()\nf = {}\nfor char in n:\n    f[char] = f.get(char, 0) + 1\nfor i in range(len(n) - 1):\n    if n[i] == n[i + 1]:\n        print(\"true\")\n        break\nelse:\n    print(\"false\")\n",
+        "highlighted_code": "<span class='highlight-red'>n = input()\nf = {}\nfor char in n:\n    f[char] = f.get(char, 0) + 1\nfor i in </span>range(len(n) - 1):\n    if n[i] == n[i + 1]:\n        pri<span class='highlight-red'>nt(&#34;true&#34;)\n        break\nelse:\n    print(&#34;false&#34;)</span>\n"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3cd0572432513744772c3/0d74995bf22b4574a97a2297/sub_1761165290287_2ksextmut.py",
+        "similarity_percent": 83.13,
+        "full_code": "\nn = input()\nf = {}\nfor char in n:\n    f[char] = f.get(char, 0) + 1\nfor key in f:\n    if f[key] > 1:\n        print(\"true\")\n        break\nelse:\n    print(\"false\")\n",
+        "highlighted_code": "<span class='highlight-green'>\nn = input()\nf = {}\nfor char in n:\n    f[char] = f.get(char, 0) + 1\nfor key in</span> f:\n    if f[key] &gt; 1:\n        pr<span class='highlight-green'>int(&#34;true&#34;)\n        break\nelse:\n    print(&#34;false&#34;</span>)\n"
+      },
+      "token_overlap": 69,
+      "max_similarity_percent": 83.13
+    },
+    {
+      "case_id": 35,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3cd0572432513744772c3/0d74995bf22b4574a97a2297/sub_1761285758697_d71x8ybea.py",
+        "similarity_percent": 66.99,
+        "full_code": "n = input()\nf = {}\nfor char in n:\n    f[char] = f.get(char, 0) + 1\nfor i in range(len(n) - 1):\n    if n[i] == n[i + 1]:\n        print(\"true\")\n        break\nelse:\n    print(\"false\")\n",
+        "highlighted_code": "<span class='highlight-red'>n = input()\nf = {}\nfor char in n:\n    f[char] = f.get(char, 0) + 1\nfor i in </span>range(len(n) - 1):\n    if n[i] == n[i + 1]:\n        pri<span class='highlight-red'>nt(&#34;true&#34;)\n        break\nelse:\n    print(&#34;false&#34;)</span>\n"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3cd0572432513744772c3/0d74995bf22b4574a97a2297/sub_1761165318510_9166o4s1b.py",
+        "similarity_percent": 83.13,
+        "full_code": "n = input()\nf = {}\nfor char in n:\n    f[char] = f.get(char, 0) + 1\nfor key in f:\n    if f[key] > 1:\n        print(\"true\")\n        break\nelse:\n    print(\"false\")\n",
+        "highlighted_code": "<span class='highlight-green'>n = input()\nf = {}\nfor char in n:\n    f[char] = f.get(char, 0) + 1\nfor key in </span>f:\n    if f[key] &gt; 1:\n        pri<span class='highlight-green'>nt(&#34;true&#34;)\n        break\nelse:\n    print(&#34;false&#34;)</span>\n"
+      },
+      "token_overlap": 69,
+      "max_similarity_percent": 83.13
+    },
+    {
+      "case_id": 36,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3cd0572432513744772c3/e0cd413045d741e39459231c/sub_1761623547879_9oz84uad3.py",
+        "similarity_percent": 66.67,
+        "full_code": "a=int(input('nhập số cần kiểm tra:'))\ns=str(a)\nlap=False\nfor i in range(len(s)-1):\n    if s[i]==s[i+1]:\n        lap=True\n        break\nprint(lap)",
+        "highlighted_code": "a=int(input(&#39;nhập số cần kiểm tra:&#39;))\ns=str(a<span class='highlight-red'>)\nlap=False\nfor i in range(len(s)-1):\n    if s[i]==s[i+1]:\n        lap=True\n        break\n</span>print(lap)"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3cd0572432513744772c3/cd93b2ff882a4ffa85f4518f/sub_1761619800755_oqa6qbmn4.py",
+        "similarity_percent": 60.87,
+        "full_code": "n = input()\nhas_repeat = False \nfor i in range(len(n) - 1):\n    if n[i] == n[i + 1]:     \n        has_repeat = True\n        break          \n\nif has_repeat:\n    print(\"true\")\nelse:\n    print(\"false\")",
+        "highlighted_code": "n = input(<span class='highlight-green'>)\nhas_repeat = False \nfor i in range(len(n) - 1):\n    if n[i] == n[i + 1]:     \n        has_repeat = True\n        break          \n\n</span>if has_repeat:\n    print(&#34;true&#34;)\nelse:\n    print(&#34;false&#34;)"
+      },
+      "token_overlap": 56,
+      "max_similarity_percent": 66.67
+    },
+    {
+      "case_id": 37,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3cd0572432513744772c3/0d74995bf22b4574a97a2297/sub_1761195004927_j48cx7xk3.py",
+        "similarity_percent": 63.11,
+        "full_code": "n = input()\nf = {}\nfor char in n:\n    f[char] = f.get(char, 0) + 1\nfor i in range(len(n) - 1):\n    if n[i] == n[i + 1]:\n        print(\"true\")\n        break\nelse:\n    print(\"false\")\n",
+        "highlighted_code": "n = input()\nf = {}\nfor char in n:\n    f[char] = f.get(char, 0) + 1\nfo<span class='highlight-red'>r i in range(len(n) - 1):\n    if n[i] == n[i + 1]:\n        print(&#34;true&#34;)\n        break\nelse:\n    print(&#34;false&#34;)</span>\n"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3cd0572432513744772c3/fd92120cec18496789c2c733/sub_1761619666278_coxf6dkmg.py",
+        "similarity_percent": 59.09,
+        "full_code": "n = int(input())\na = str(n)\nif n < 0:\n    print ('Lỏ')\nelse:\n    for i in range(len(a)-1):\n        if a[i] == a[i+1]:\n            print ('true')\n            break\n    else :\n        print ('false')\n\n",
+        "highlighted_code": "n = int(input())\na = str(n)\nif n &lt; 0:\n    print (&#39;Lỏ&#39;)\nelse:\n    fo<span class='highlight-green'>r i in range(len(a)-1):\n        if a[i] == a[i+1]:\n            print (&#39;true&#39;)\n            break\n    else :\n        print (&#39;false&#39;)</span>\n\n"
+      },
+      "token_overlap": 65,
+      "max_similarity_percent": 63.11
+    },
+    {
+      "case_id": 38,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3cd0572432513744772c3/0d74995bf22b4574a97a2297/sub_1761195004927_j48cx7xk3.py",
+        "similarity_percent": 63.11,
+        "full_code": "n = input()\nf = {}\nfor char in n:\n    f[char] = f.get(char, 0) + 1\nfor i in range(len(n) - 1):\n    if n[i] == n[i + 1]:\n        print(\"true\")\n        break\nelse:\n    print(\"false\")\n",
+        "highlighted_code": "n = input()\nf = {}\nfor char in n:\n    f[char] = f.get(char, 0) + 1\nfo<span class='highlight-red'>r i in range(len(n) - 1):\n    if n[i] == n[i + 1]:\n        print(&#34;true&#34;)\n        break\nelse:\n    print(&#34;false&#34;)</span>\n"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3cd0572432513744772c3/fd92120cec18496789c2c733/sub_1761619578893_fafhd9aqk.py",
+        "similarity_percent": 59.09,
+        "full_code": "n = int(input())\na = str(n)\nif n < 0:\n    print ('Lỏ')\nelse:\n    for i in range(len(a) - 1):\n        if a[i] == a[i+1]:\n            print ('true')\n            break\n    else :\n        print ('false')\n\n",
+        "highlighted_code": "n = int(input())\na = str(n)\nif n &lt; 0:\n    print (&#39;Lỏ&#39;)\nelse:\n    fo<span class='highlight-green'>r i in range(len(a) - 1):\n        if a[i] == a[i+1]:\n            print (&#39;true&#39;)\n            break\n    else :\n        print (&#39;false&#39;)</span>\n\n"
+      },
+      "token_overlap": 65,
+      "max_similarity_percent": 63.11
+    },
+    {
+      "case_id": 39,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3cd0572432513744772c3/0d74995bf22b4574a97a2297/sub_1761553284349_hhxxcg99c.py",
+        "similarity_percent": 63.11,
+        "full_code": "n = input()\nf = {}\nfor char in n:\n    f[char] = f.get(char, 0) + 1\nfor i in range(len(n) - 1):\n    if n[i] == n[i + 1]:\n        print(\"true\")\n        break\nelse:\n    print(\"false\")\n",
+        "highlighted_code": "n = input()\nf = {}\nfor char in n:\n    f[char] = f.get(char, 0) + 1\nfo<span class='highlight-red'>r i in range(len(n) - 1):\n    if n[i] == n[i + 1]:\n        print(&#34;true&#34;)\n        break\nelse:\n    print(&#34;false&#34;)</span>\n"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3cd0572432513744772c3/fd92120cec18496789c2c733/sub_1761619578893_fafhd9aqk.py",
+        "similarity_percent": 59.09,
+        "full_code": "n = int(input())\na = str(n)\nif n < 0:\n    print ('Lỏ')\nelse:\n    for i in range(len(a) - 1):\n        if a[i] == a[i+1]:\n            print ('true')\n            break\n    else :\n        print ('false')\n\n",
+        "highlighted_code": "n = int(input())\na = str(n)\nif n &lt; 0:\n    print (&#39;Lỏ&#39;)\nelse:\n    fo<span class='highlight-green'>r i in range(len(a) - 1):\n        if a[i] == a[i+1]:\n            print (&#39;true&#39;)\n            break\n    else :\n        print (&#39;false&#39;)</span>\n\n"
+      },
+      "token_overlap": 65,
+      "max_similarity_percent": 63.11
+    },
+    {
+      "case_id": 40,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3cd0572432513744772c3/fd92120cec18496789c2c733/sub_1761619666278_coxf6dkmg.py",
+        "similarity_percent": 59.09,
+        "full_code": "n = int(input())\na = str(n)\nif n < 0:\n    print ('Lỏ')\nelse:\n    for i in range(len(a)-1):\n        if a[i] == a[i+1]:\n            print ('true')\n            break\n    else :\n        print ('false')\n\n",
+        "highlighted_code": "n = int(input())\na = str(n)\nif n &lt; 0:\n    print (&#39;Lỏ&#39;)\nelse:\n    fo<span class='highlight-red'>r i in range(len(a)-1):\n        if a[i] == a[i+1]:\n            print (&#39;true&#39;)\n            break\n    else :\n        print (&#39;false&#39;)</span>\n\n"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3cd0572432513744772c3/0d74995bf22b4574a97a2297/sub_1761553284349_hhxxcg99c.py",
+        "similarity_percent": 63.11,
+        "full_code": "n = input()\nf = {}\nfor char in n:\n    f[char] = f.get(char, 0) + 1\nfor i in range(len(n) - 1):\n    if n[i] == n[i + 1]:\n        print(\"true\")\n        break\nelse:\n    print(\"false\")\n",
+        "highlighted_code": "n = input()\nf = {}\nfor char in n:\n    f[char] = f.get(char, 0) + 1\nfo<span class='highlight-green'>r i in range(len(n) - 1):\n    if n[i] == n[i + 1]:\n        print(&#34;true&#34;)\n        break\nelse:\n    print(&#34;false&#34;)</span>\n"
+      },
+      "token_overlap": 65,
+      "max_similarity_percent": 63.11
+    },
+    {
+      "case_id": 41,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3cd0572432513744772c3/fd92120cec18496789c2c733/sub_1761619666278_coxf6dkmg.py",
+        "similarity_percent": 59.09,
+        "full_code": "n = int(input())\na = str(n)\nif n < 0:\n    print ('Lỏ')\nelse:\n    for i in range(len(a)-1):\n        if a[i] == a[i+1]:\n            print ('true')\n            break\n    else :\n        print ('false')\n\n",
+        "highlighted_code": "n = int(input())\na = str(n)\nif n &lt; 0:\n    print (&#39;Lỏ&#39;)\nelse:\n    fo<span class='highlight-red'>r i in range(len(a)-1):\n        if a[i] == a[i+1]:\n            print (&#39;true&#39;)\n            break\n    else :\n        print (&#39;false&#39;)</span>\n\n"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3cd0572432513744772c3/0d74995bf22b4574a97a2297/sub_1761285758697_d71x8ybea.py",
+        "similarity_percent": 63.11,
+        "full_code": "n = input()\nf = {}\nfor char in n:\n    f[char] = f.get(char, 0) + 1\nfor i in range(len(n) - 1):\n    if n[i] == n[i + 1]:\n        print(\"true\")\n        break\nelse:\n    print(\"false\")\n",
+        "highlighted_code": "n = input()\nf = {}\nfor char in n:\n    f[char] = f.get(char, 0) + 1\nfo<span class='highlight-green'>r i in range(len(n) - 1):\n    if n[i] == n[i + 1]:\n        print(&#34;true&#34;)\n        break\nelse:\n    print(&#34;false&#34;)</span>\n"
+      },
+      "token_overlap": 65,
+      "max_similarity_percent": 63.11
+    },
+    {
+      "case_id": 42,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3cd0572432513744772c3/fd92120cec18496789c2c733/sub_1761619578893_fafhd9aqk.py",
+        "similarity_percent": 59.09,
+        "full_code": "n = int(input())\na = str(n)\nif n < 0:\n    print ('Lỏ')\nelse:\n    for i in range(len(a) - 1):\n        if a[i] == a[i+1]:\n            print ('true')\n            break\n    else :\n        print ('false')\n\n",
+        "highlighted_code": "n = int(input())\na = str(n)\nif n &lt; 0:\n    print (&#39;Lỏ&#39;)\nelse:\n    fo<span class='highlight-red'>r i in range(len(a) - 1):\n        if a[i] == a[i+1]:\n            print (&#39;true&#39;)\n            break\n    else :\n        print (&#39;false&#39;)</span>\n\n"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3cd0572432513744772c3/0d74995bf22b4574a97a2297/sub_1761285758697_d71x8ybea.py",
+        "similarity_percent": 63.11,
+        "full_code": "n = input()\nf = {}\nfor char in n:\n    f[char] = f.get(char, 0) + 1\nfor i in range(len(n) - 1):\n    if n[i] == n[i + 1]:\n        print(\"true\")\n        break\nelse:\n    print(\"false\")\n",
+        "highlighted_code": "n = input()\nf = {}\nfor char in n:\n    f[char] = f.get(char, 0) + 1\nfo<span class='highlight-green'>r i in range(len(n) - 1):\n    if n[i] == n[i + 1]:\n        print(&#34;true&#34;)\n        break\nelse:\n    print(&#34;false&#34;)</span>\n"
+      },
+      "token_overlap": 65,
+      "max_similarity_percent": 63.11
+    }
+  ]
+}

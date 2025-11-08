@@ -1,0 +1,929 @@
+{
+  "problem_id": "68e8c59fbe7a87f42c2e212f",
+  "filter_criteria": {
+    "min_token_overlap": 80,
+    "min_similarity_percent": 60
+  },
+  "total_cases_found": 118,
+  "total_cases_filtered": 54,
+  "cases": [
+    {
+      "case_id": 1,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e8c59fbe7a87f42c2e212f/4896d7b4077d4ebf9fd5558f/sub_1761288001776_1h9n2schh.py",
+        "similarity_percent": 100.0,
+        "full_code": "n=float(input())\nscores=list(map(float,input().split()))\ndef trungBinh(scores,n):\n    tong=sum(scores)\n    trungbinh=tong/n\n    return (round(trungbinh,2))\ntb=trungBinh(scores,n)\nif (tb)>=8.5:\n  print(\"Xuất sắc\")\nelif 7<=(tb)<8.5:\n print(\"Giỏi\")\nelif 5.5<=(tb)<7:\n print(\"Trung bình\")\nelse:\n    print(\"Yeu\")",
+        "highlighted_code": "<span class='highlight-red'>n=float(input())\nscores=list(map(float,input().split()))\ndef trungBinh(scores,n):\n    tong=sum(scores)\n    trungbinh=tong/n\n    return (round(trungbinh,2))\ntb=trungBinh(scores,n)\nif (tb)&gt;=8.5:\n  print(&#34;Xuất sắc&#34;)\nelif 7&lt;=(tb)&lt;8.5:\n print(&#34;Giỏi&#34;)\nelif 5.5&lt;=(tb)&lt;7:\n print(&#34;Trung bình&#34;)\nelse:\n    print(&#34;Yeu&#34;</span>)"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e8c59fbe7a87f42c2e212f/4896d7b4077d4ebf9fd5558f/sub_1761287927762_6zeyme2ih.py",
+        "similarity_percent": 100.0,
+        "full_code": "n=float(input())\nscores=list(map(float,input().split()))\ndef trungBinh(scores,n):\n    tong=sum(scores)\n    trungbinh=tong/n\n    return (round(trungbinh,2))\ntb=trungBinh(scores,n)\nif (tb)>=8.5:\n  print(\"Xuất sắc\")\nelif 7<=(tb)<8.5:\n print(\"Giỏi\")\nelif 5.5<=(tb)<7:\n print(\"Trung bình\")\nelse:\n    print(\"Yeu\")",
+        "highlighted_code": "<span class='highlight-green'>n=float(input())\nscores=list(map(float,input().split()))\ndef trungBinh(scores,n):\n    tong=sum(scores)\n    trungbinh=tong/n\n    return (round(trungbinh,2))\ntb=trungBinh(scores,n)\nif (tb)&gt;=8.5:\n  print(&#34;Xuất sắc&#34;)\nelif 7&lt;=(tb)&lt;8.5:\n print(&#34;Giỏi&#34;)\nelif 5.5&lt;=(tb)&lt;7:\n print(&#34;Trung bình&#34;)\nelse:\n    print(&#34;Yeu&#34;</span>)"
+      },
+      "token_overlap": 180,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 2,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e8c59fbe7a87f42c2e212f/fd92120cec18496789c2c733/sub_1761248724741_ydf36or84.py",
+        "similarity_percent": 100.0,
+        "full_code": "n=int(input())\nscores=list(map(float,input().split()))\ntotal=0\nfor i in scores:\n    total+=i\naverage=total/n\nprint(f\"{average:.2f}\")\nif average >= 8.5:\n    print(\"Xuất sắc\")\nelif average >=7.0:\n    print(\"Giỏi\")\nelif average >=5.5:\n    print(\"Khá\")\nelif average >= 4.0:\n    print(\"Trung bình\")\nelse:\n    print(\"Yếu\")\n",
+        "highlighted_code": "<span class='highlight-red'>n=int(input())\nscores=list(map(float,input().split()))\ntotal=0\nfor i in scores:\n    total+=i\naverage=total/n\nprint(f&#34;{average:.2f}&#34;)\nif average &gt;= 8.5:\n    print(&#34;Xuất sắc&#34;)\nelif average &gt;=7.0:\n    print(&#34;Giỏi&#34;)\nelif average &gt;=5.5:\n    print(&#34;Khá&#34;)\nelif average &gt;= 4.0:\n    print(&#34;Trung bình&#34;)\nelse:\n    print</span>(&#34;Yếu&#34;)\n"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e8c59fbe7a87f42c2e212f/fd92120cec18496789c2c733/sub_1761248705822_qhryx8vry.py",
+        "similarity_percent": 100.0,
+        "full_code": "n=int(input())\nscores=list(map(float,input().split()))\ntotal=0\nfor i in scores:\n    total+=i\naverage=total/n\nprint(f\"{average:.2f}\")\nif average >= 8.5:\n    print(\"Xuất sắc\")\nelif average >=7.0:\n    print(\"Giỏi\")\nelif average >=5.5:\n    print(\"Khá\")\nelif average >= 4.0:\n    print(\"Trung bình\")\nelse:\n    print(\"Yếu\")\n",
+        "highlighted_code": "<span class='highlight-green'>n=int(input())\nscores=list(map(float,input().split()))\ntotal=0\nfor i in scores:\n    total+=i\naverage=total/n\nprint(f&#34;{average:.2f}&#34;)\nif average &gt;= 8.5:\n    print(&#34;Xuất sắc&#34;)\nelif average &gt;=7.0:\n    print(&#34;Giỏi&#34;)\nelif average &gt;=5.5:\n    print(&#34;Khá&#34;)\nelif average &gt;= 4.0:\n    print(&#34;Trung bình&#34;)\nelse:\n    print</span>(&#34;Yếu&#34;)\n"
+      },
+      "token_overlap": 171,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 3,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e8c59fbe7a87f42c2e212f/f95120b3a38a461085ef58cb/sub_1761290849541_60ovwbkgf.py",
+        "similarity_percent": 100.0,
+        "full_code": "n = int(input())\ndiem = list(map(float, input().split()))\ntotal = sum(diem)\naverage = round(total / n, 2)\nif average >= 8.5:\n    rank = \"Xuất sắc\"\nelif average >= 7.0:\n    rank = \"Giỏi\"\nelif average >= 5.5:\n    rank = \"Khá\"\nelif average >= 4.0:\n    rank = \"Trung bình\"\nelse:\n    rank = \"Yếu\"\nprint(\"Điểm trung bình: {:.2f} \".format(average))\nprint(\"Xếp loại: \", rank)",
+        "highlighted_code": "<span class='highlight-red'>n = int(input())\ndiem = list(map(float, input().split()))\ntotal = sum(diem)\naverage = round(total / n, 2)\nif average &gt;= 8.5:\n    rank = &#34;Xuất sắc&#34;\nelif average &gt;= 7.0:\n    rank = &#34;Giỏi&#34;\nelif average &gt;= 5.5:\n    rank = &#34;Khá&#34;\nelif average &gt;= 4.0:\n    rank = &#34;Trung bình&#34;\nelse:\n    rank = &#34;Yếu&#34;\nprint(&#34;Điểm trung bình: {:.2f} &#34;.format(average))\nprint(&#34;</span>Xếp loại: &#34;, rank)"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e8c59fbe7a87f42c2e212f/f95120b3a38a461085ef58cb/sub_1761293676378_jsvrb92dd.py",
+        "similarity_percent": 100.0,
+        "full_code": "n = int(input())\nscores = list(map(float, input().split()))\ntotal = sum(scores)\naverage = round(total / n, 2)\nif average >= 8.5:\n    rank = \"Xuất sắc\"\nelif average >= 7.0:\n    rank = \"Giỏi\"\nelif average >= 5.5:\n    rank = \"Khá\"\nelif average >= 4.0:\n    rank = \"Trung bình\"\nelse:\n    rank = \"Yếu\"\nprint(\"Điểm trung bình: {:.2f} \".format(average))\nprint(\"Xếp loại: \", rank)",
+        "highlighted_code": "<span class='highlight-green'>n = int(input())\nscores = list(map(float, input().split()))\ntotal = sum(scores)\naverage = round(total / n, 2)\nif average &gt;= 8.5:\n    rank = &#34;Xuất sắc&#34;\nelif average &gt;= 7.0:\n    rank = &#34;Giỏi&#34;\nelif average &gt;= 5.5:\n    rank = &#34;Khá&#34;\nelif average &gt;= 4.0:\n    rank = &#34;Trung bình&#34;\nelse:\n    rank = &#34;Yếu&#34;\nprint(&#34;Điểm trung bình: {:.2f} &#34;.format(average))\nprint(&#34;</span>Xếp loại: &#34;, rank)"
+      },
+      "token_overlap": 162,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 4,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e8c59fbe7a87f42c2e212f/fb33e4e5d4ff46a5b041b652/sub_1761276540882_szh6g9fjv.py",
+        "similarity_percent": 100.0,
+        "full_code": "n=int(input())\nA=list(map(float,input().split()))\ntong=0\nfor i in range(len(A)):\n    tong=tong+A[i]\n    tb=tong/len(A)\n\n\nif tb>= 8.5:\n    print(\"Xuất sắc\")\nelif 7.0 <= tb < 8.5:\n    print(\"Giỏi\")\nelif 5.5 <= tb < 7.0:\n    print(\"Khá\")\nelif 4.0 <= tb < 5.5:\n    print(\"Trung bình\")\nelse:\n    print(\"Yếu\")",
+        "highlighted_code": "<span class='highlight-red'>n=int(input())\nA=list(map(float,input().split()))\ntong=0\nfor i in range(len(A)):\n    tong=tong+A[i]\n    tb=tong/len(A)\n\n\nif tb&gt;= 8.5:\n    print(&#34;Xuất sắc&#34;)\nelif 7.0 &lt;= tb &lt; 8.5:\n    print(&#34;Giỏi&#34;)\nelif 5.5 &lt;= tb &lt; 7.0:\n    print(&#34;Khá&#34;)\nelif 4.0 &lt;= tb &lt; 5.5:\n    print(&#34;Trung bình&#34;)\nelse:\n    print(&#34;Yếu&#34;</span>)"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e8c59fbe7a87f42c2e212f/fb33e4e5d4ff46a5b041b652/sub_1761277235030_rwnr6o6em.py",
+        "similarity_percent": 100.0,
+        "full_code": "n=int(input())\nA=list(map(float,input().split()))\ntong=0\nfor i in range(len(A)):\n    tong=tong+A[i]\n    tb=tong/len(A)\n\n\nif tb>= 8.5:\n    print(\"Xuất sắc\")\nelif 7.0 <= tb < 8.5:\n    print(\"Giỏi\")\nelif 5.5 <= tb < 7.0:\n    print(\"Khá\")\nelif 4.0 <= tb < 5.5:\n    print(\"Trung bình\")\nelse:\n    print(\"Yếu\")",
+        "highlighted_code": "<span class='highlight-green'>n=int(input())\nA=list(map(float,input().split()))\ntong=0\nfor i in range(len(A)):\n    tong=tong+A[i]\n    tb=tong/len(A)\n\n\nif tb&gt;= 8.5:\n    print(&#34;Xuất sắc&#34;)\nelif 7.0 &lt;= tb &lt; 8.5:\n    print(&#34;Giỏi&#34;)\nelif 5.5 &lt;= tb &lt; 7.0:\n    print(&#34;Khá&#34;)\nelif 4.0 &lt;= tb &lt; 5.5:\n    print(&#34;Trung bình&#34;)\nelse:\n    print(&#34;Yếu&#34;</span>)"
+      },
+      "token_overlap": 193,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 5,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e8c59fbe7a87f42c2e212f/3fa6af8d916a46039239cabe/sub_1761146174528_te34blicq.py",
+        "similarity_percent": 100.0,
+        "full_code": "n=int(input())\nscores=list(map(float,input().split()))\naverage=sum(scores)/n\nprint(f\"{average:.2f}\")\nif average>=8.5:\n    print(\"Xuất sắc\")\nelif average>=7:\n    print(\"Giỏi\")\nelif average>=5.5:\n    print(\"Khá\")\nelif average>=4:\n    print(\"Trung bình\")\nelse:\n    print(\"Yếu\")",
+        "highlighted_code": "<span class='highlight-red'>n=int(input())\nscores=list(map(float,input().split()))\naverage=sum(scores)/n\nprint(f&#34;{average:.2f}&#34;)\nif average&gt;=8.5:\n    print(&#34;Xuất sắc&#34;)\nelif average&gt;=7:\n    print(&#34;Giỏi&#34;)\nelif average&gt;=5.5:\n    print(&#34;Khá&#34;)\nelif average&gt;=4:\n    print(&#34;Trung bình&#34;)\nelse:\n    print(&#34;Yếu&#34;</span>)"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e8c59fbe7a87f42c2e212f/f56f86fa26744324899543f3/sub_1761316003121_45c6ykl55.py",
+        "similarity_percent": 100.0,
+        "full_code": "n=int(input())\na=list(map(float,input().split()))\nb=sum(a)/n\nprint(f\"{b:.2f}\")\nif b>=8.5:print(\"Xuat sac\")\nelif b>=7:print(\"Gioi\")\nelif b>=5.5:print(\"Kha\")\nelif b>=4:print(\"Trung binh\")\nelse:print(\"Yeu\")",
+        "highlighted_code": "<span class='highlight-green'>n=int(input())\na=list(map(float,input().split()))\nb=sum(a)/n\nprint(f&#34;{b:.2f}&#34;)\nif b&gt;=8.5:print(&#34;Xuat sac&#34;)\nelif b&gt;=7:print(&#34;Gioi&#34;)\nelif b&gt;=5.5:print(&#34;Kha&#34;)\nelif b&gt;=4:print(&#34;Trung binh&#34;)\nelse:print(&#34;Yeu&#34;</span>)"
+      },
+      "token_overlap": 161,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 6,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e8c59fbe7a87f42c2e212f/ffdb326842044f2e98b7aaa7/sub_1761281505426_3l4m11puu.py",
+        "similarity_percent": 99.21,
+        "full_code": "/****************************************************\n * Author  : Dang Duc Viet\n * From    : D25 IT UDU - PTIT\n * Created : 2025-10-24 11:36:57\n ****************************************************/\n\n#include <bits/stdc++.h>\nusing namespace std;\n\n#define fixed(n) fixed << setprecision(n)\n#define ceil(n, m) (((n) + (m) - 1) / (m))\n\n#define add_mod(a, b, m) (((a % m) + (b % m)) % m)\n#define sub_mod(a, b, m) (((a % m) - (b % m) + m) % m)\n#define mul_mod(a, b, m) (((a % m) * (b % m)) % m)\n\n#define fi first\n#define se second\n\n#define EPS 1e-9\n#define endl \"\\n\"\n\nconst int N = 1e6 + 5;\nconst int mod = 1e9 + 7;\n\nint a[N], b[N];\nint prefix[N];\n\nvoid Solve(){\n\tint n;\n\tfloat x;\n\n\tcin >> n >> x;\n\n\tif(x == 2.5) cout << \"3.00 \\nYeu\";\n\telse if(x ==4.0) cout << \"4.00 \\nTrung binh\";\n\telse if(x == 5.0) cout << \"5.50 \\nKha\";\n\telse if(x == 7.0) cout << \"7.00 \\nGioi\";\n\telse cout << \"9.00 \\nXuat sac\";\n}\n\nint main(){\n\tios::sync_with_stdio(false);\n\tcin.tie(nullptr);\n\t\n\t// freopen(\"inp.txt\", \"r\", stdin);\n\t// freopen(\"out.txt\", \"w\", stdout);\n\n\tSolve();\n\t\n\treturn 0;\n}",
+        "highlighted_code": "<span class='highlight-red'>/****************************************************\n * Author  : Dang Duc Viet\n * From    : D25 IT UDU - PTIT\n * Created : 2025-10-24 11:36:57\n ****************************************************/\n\n#include &lt;bits/stdc++.h&gt;\nusing namespace std;\n\n#define fixed(n) fixed &lt;&lt; setprecision(n)\n#define ceil(n, m) (((n) + (m) - 1) / (m))\n\n#define add_mod(a, b, m) (((a % m) + (b % m)) % m)\n#define sub_mod(a, b, m) (((a % m) - (b % m) + m) % m)\n#define mul_mod(a, b, m) (((a % m) * (b % m)) % m)\n\n#define fi first\n#define se second\n\n#define EPS 1e-9\n#define endl &#34;\\n&#34;\n\nconst int N = 1e6 + 5;\nconst int mod = 1e9 + 7;\n\nint a[N], b[N];\nint prefix[N];\n\nvoid Solve(){\n\tint n;\n\tfloat x;\n\n\tcin &gt;&gt; n &gt;&gt; x;\n\n\tif(x == 2.5) cout &lt;&lt; &#34;3.00 \\nYeu&#34;;\n\telse if(x ==4.0) cout &lt;&lt; &#34;4.00 \\nTrung binh&#34;;\n\telse if(x == 5.0) cout &lt;&lt; &#34;5.50 \\nKha&#34;;\n\telse if(x == 7.0) cout &lt;&lt; &#34;7.00 \\nGioi&#34;;\n\telse cout &lt;&lt; &#34;9.00 \\n</span>Xuat sac&#34;;\n<span class='highlight-red'>}\n\nint main(){\n\tios::sync_with_stdio(false);\n\tcin.tie(nullptr);\n\t\n\t// freopen(&#34;inp.txt&#34;, &#34;r&#34;, stdin);\n\t// freopen(&#34;out.txt&#34;, &#34;w&#34;, stdout);\n\n\tSolve();\n\t\n\treturn 0;\n</span>}"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e8c59fbe7a87f42c2e212f/ffdb326842044f2e98b7aaa7/sub_1761281051273_43ff5r9t2.py",
+        "similarity_percent": 99.47,
+        "full_code": "/****************************************************\n * Author  : Dang Duc Viet\n * From    : D25 IT UDU - PTIT\n * Created : 2025-10-24 11:36:57\n ****************************************************/\n\n#include <bits/stdc++.h>\nusing namespace std;\n\n#define fixed(n) fixed << setprecision(n)\n#define ceil(n, m) (((n) + (m) - 1) / (m))\n\n#define add_mod(a, b, m) (((a % m) + (b % m)) % m)\n#define sub_mod(a, b, m) (((a % m) - (b % m) + m) % m)\n#define mul_mod(a, b, m) (((a % m) * (b % m)) % m)\n\n#define fi first\n#define se second\n\n#define EPS 1e-9\n#define endl \"\\n\"\n\nconst int N = 1e6 + 5;\nconst int mod = 1e9 + 7;\n\nint a[N], b[N];\nint prefix[N];\n\nvoid Solve(){\n\tint n;\n\tfloat x;\n\n\tcin >> n >> x;\n\n\tif(x == 2.5) cout << \"3.00 \\n Yeu\";\n\telse if(x ==4.0) cout << \"4.00 \\n Trung binh\";\n\telse if(x == 5.0) cout << \"5.50 \\n Kha\";\n\telse if(x == 7.0) cout << \"7.00 \\n Gioi\";\n\telse cout << \"9.00 \\n Xuat sac\"\n}\n\nint main(){\n\tios::sync_with_stdio(false);\n\tcin.tie(nullptr);\n\t\n\t// freopen(\"inp.txt\", \"r\", stdin);\n\t// freopen(\"out.txt\", \"w\", stdout);\n\n\tSolve();\n\t\n\treturn 0;\n}",
+        "highlighted_code": "<span class='highlight-green'>/****************************************************\n * Author  : Dang Duc Viet\n * From    : D25 IT UDU - PTIT\n * Created : 2025-10-24 11:36:57\n ****************************************************/\n\n#include &lt;bits/stdc++.h&gt;\nusing namespace std;\n\n#define fixed(n) fixed &lt;&lt; setprecision(n)\n#define ceil(n, m) (((n) + (m) - 1) / (m))\n\n#define add_mod(a, b, m) (((a % m) + (b % m)) % m)\n#define sub_mod(a, b, m) (((a % m) - (b % m) + m) % m)\n#define mul_mod(a, b, m) (((a % m) * (b % m)) % m)\n\n#define fi first\n#define se second\n\n#define EPS 1e-9\n#define endl &#34;\\n&#34;\n\nconst int N = 1e6 + 5;\nconst int mod = 1e9 + 7;\n\nint a[N], b[N];\nint prefix[N];\n\nvoid Solve(){\n\tint n;\n\tfloat x;\n\n\tcin &gt;&gt; n &gt;&gt; x;\n\n\tif(x == 2.5) cout &lt;&lt; &#34;3.00 \\n Yeu&#34;;\n\telse if(x ==4.0) cout &lt;&lt; &#34;4.00 \\n Trung binh&#34;;\n\telse if(x == 5.0) cout &lt;&lt; &#34;5.50 \\n Kha&#34;;\n\telse if(x == 7.0) cout &lt;&lt; &#34;7.00 \\n Gioi&#34;;\n\telse cout &lt;&lt; &#34;9.00 \\n</span> Xuat sac&#34;\n<span class='highlight-green'>}\n\nint main(){\n\tios::sync_with_stdio(false);\n\tcin.tie(nullptr);\n\t\n\t// freopen(&#34;inp.txt&#34;, &#34;r&#34;, stdin);\n\t// freopen(&#34;out.txt&#34;, &#34;w&#34;, stdout);\n\n\tSolve();\n\t\n\treturn 0;\n</span>}"
+      },
+      "token_overlap": 378,
+      "max_similarity_percent": 99.47
+    },
+    {
+      "case_id": 7,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e8c59fbe7a87f42c2e212f/27e30f767b3a46b283cbfec0/sub_1761273084608_kfuqj0kzg.py",
+        "similarity_percent": 97.71,
+        "full_code": "n = int(input())\nlst = list(map(float, input().split()))\nave = sum(lst) / n\nprint(f'{ave:.2f}')\nif ave >= 8.5:\n    print('Xuất sắc')\nelif 7.0<=ave<8.5:\n    print('Giỏi')\nelif 5.5<=ave<7:\n    print('Khá')\nelif 4.0<=ave<5.5:\n    print('Trung bình')\nelse:\n    print(\"Yếu\")\n",
+        "highlighted_code": "<span class='highlight-red'>n = int(input())\nlst = list(map(float, input().split(</span>)))\n<span class='highlight-red'>ave = sum(lst) / n\nprint(f&#39;{ave:.2f}&#39;)\nif ave &gt;= 8.5:\n    print(&#39;Xuất sắc&#39;)\nelif 7.0&lt;=ave&lt;8.5:\n    print(&#39;Giỏi&#39;)\nelif 5.5&lt;=ave&lt;</span>7<span class='highlight-red'>:\n    print(&#39;Khá&#39;)\nelif 4.0&lt;=ave&lt;5.5:\n    print(&#39;Trung bình&#39;)\nelse:\n    print(&#34;Yếu&#34;</span>)\n"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e8c59fbe7a87f42c2e212f/bcb420abb39b4af095b63cf8/sub_1761299620855_z40uj40ep.py",
+        "similarity_percent": 90.48,
+        "full_code": "n=int(input()) \ndiem=list(map(float,input().split())) \nif n==len(diem): \n    diemtb=sum(diem)/n \n    print(f\"{diemtb:.2f}\") \n    if diemtb>=8.5: \n        print(\"Xuat sac\") \n    elif 7.0<=diemtb<8.5: \n        print(\"Gioi\") \n    elif 5.5<=diemtb<7.0: \n        print(\"Kha\") \n    elif 4.0<=diemtb<5.5: \n        print(\"Trung binh\") \n    else: \n        print(\"Yeu\")",
+        "highlighted_code": "<span class='highlight-green'>n=int(input()) \ndiem=list(map(float,input().split(</span>))) \nif n==len(diem): \n    <span class='highlight-green'>diemtb=sum(diem)/n \n    print(f&#34;{diemtb:.2f}&#34;) \n    if diemtb&gt;=8.5: \n        print(&#34;Xuat sac&#34;) \n    elif 7.0&lt;=diemtb&lt;8.5: \n        print(&#34;Gioi&#34;) \n    elif 5.5&lt;=diemtb&lt;</span>7.0<span class='highlight-green'>: \n        print(&#34;Kha&#34;) \n    elif 4.0&lt;=diemtb&lt;5.5: \n        print(&#34;Trung binh&#34;) \n    else: \n        print(&#34;Yeu&#34;</span>)"
+      },
+      "token_overlap": 171,
+      "max_similarity_percent": 97.71
+    },
+    {
+      "case_id": 8,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e8c59fbe7a87f42c2e212f/113963c0a9df48538edf310d/sub_1761241160785_95i1ruqs3.py",
+        "similarity_percent": 95.77,
+        "full_code": "n = int(input())\nscores = list(map(float,input().split()))\na = 0\nfor i in scores:\n    a += i\naverage = float(a / n)\nprint(average)\nif average >= 8.5:\n    print(\"Xuất sắc\")\nelif 7.0 <= average <8.5 :\n    print(\"Giỏi\")\nelif 5.5 <= average <7.0:\n    print(\"Khá\")\nelif 4.0 <= average < 5.5:\n    print(\"Trung Bình\")\nelif average <4.0 :\n    print(\"Yếu\")",
+        "highlighted_code": "<span class='highlight-red'>n = int(input())\nscores = list(map(float,input().split()))\na = 0\nfor i in scores:\n    a += i\naverage = float(a / n)\nprin</span>t(average)\nif average <span class='highlight-red'>&gt;= 8.5:\n    print(&#34;Xuất sắc&#34;)\nelif 7.0 &lt;= average </span>&lt;<span class='highlight-red'>8.5 :\n    print(&#34;Giỏi&#34;)\nelif 5.5 &lt;= average &lt;7.0:\n    print(&#34;Khá&#34;)\nelif 4.0 &lt;= average &lt; 5.5:\n    print(&#34;Trung Bình&#34;)\nelif average &lt;4.0 :\n    print(</span>&#34;Yếu&#34;)"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e8c59fbe7a87f42c2e212f/113963c0a9df48538edf310d/sub_1761280830078_lt63dwy8k.py",
+        "similarity_percent": 91.88,
+        "full_code": "n = int(input())\nnumbers = list(map(float,input().split()))\na = 0\nfor i in numbers:\n    a += i\naverage = float(a/n)\nprint(f\"{average:.2f}\")\nif average >= 8.5:\n    print(\"Xuat sac\")\nelif 7.0 <= average <= 8.5:\n    print(\"Gioi\")\nelif 5.5 <= average < 7.0:\n    print(\"Kha\")\nelif 4.0 <= average < 5.5:\n    print(\"Trung binh\")\nelif average < 4.0:\n    print(\"Yeu\")",
+        "highlighted_code": "<span class='highlight-green'>n = int(input())\nnumbers = list(map(float,input().split()))\na = 0\nfor i in numbers:\n    a += i\naverage = float(a/n)\nprin</span>t(f&#34;{average:.2f}&#34;)\nif average <span class='highlight-green'>&gt;= 8.5:\n    print(&#34;Xuat sac&#34;)\nelif 7.0 &lt;= average </span>&lt;= <span class='highlight-green'>8.5:\n    print(&#34;Gioi&#34;)\nelif 5.5 &lt;= average &lt; 7.0:\n    print(&#34;Kha&#34;)\nelif 4.0 &lt;= average &lt; 5.5:\n    print(&#34;Trung binh&#34;)\nelif average &lt; 4.0:\n    print(</span>&#34;Yeu&#34;)"
+      },
+      "token_overlap": 181,
+      "max_similarity_percent": 95.77
+    },
+    {
+      "case_id": 9,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e8c59fbe7a87f42c2e212f/f95120b3a38a461085ef58cb/sub_1761290510762_xsffpn754.py",
+        "similarity_percent": 93.12,
+        "full_code": "n = int(input())\ndiem = list(map(float, input().split()))\ntotal = sum(diem)\naverage = round(total / n, 2)\nif average >= 8.5:\n    rank = \"Xuất sắc\"\nelif average >= 7.0:\n    rank = \"Giỏi\"\nelif average >= 5.5:\n    rank = \"Khá\"\nelif average >= 4.0:\n    rank = \"Trung bình\"\nelse:\n    rank = \"Yếu\"\nprint(\"Điểm trung bình: {:.2f} \", average)\nprint(\"Xếp loại: \", rank)",
+        "highlighted_code": "<span class='highlight-red'>n = int(input())\ndiem = list(map(float, input().split()))\ntotal = sum(diem)\naverage = round(total / n, 2)\nif average &gt;= 8.5:\n    rank = &#34;Xuất sắc&#34;\nelif average &gt;= 7.0:\n    rank = &#34;Giỏi&#34;\nelif average &gt;= 5.5:\n    rank = &#34;Khá&#34;\nelif average &gt;= 4.0:\n    rank = &#34;Trung bình&#34;\nelse:\n    rank = &#34;Yếu&#34;\nprint(&#34;Điểm trung bình: {:.2f} &#34;</span>, average)\nprint(&#34;Xếp loại: &#34;, rank)"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e8c59fbe7a87f42c2e212f/f95120b3a38a461085ef58cb/sub_1761290849541_60ovwbkgf.py",
+        "similarity_percent": 91.98,
+        "full_code": "n = int(input())\ndiem = list(map(float, input().split()))\ntotal = sum(diem)\naverage = round(total / n, 2)\nif average >= 8.5:\n    rank = \"Xuất sắc\"\nelif average >= 7.0:\n    rank = \"Giỏi\"\nelif average >= 5.5:\n    rank = \"Khá\"\nelif average >= 4.0:\n    rank = \"Trung bình\"\nelse:\n    rank = \"Yếu\"\nprint(\"Điểm trung bình: {:.2f} \".format(average))\nprint(\"Xếp loại: \", rank)",
+        "highlighted_code": "<span class='highlight-green'>n = int(input())\ndiem = list(map(float, input().split()))\ntotal = sum(diem)\naverage = round(total / n, 2)\nif average &gt;= 8.5:\n    rank = &#34;Xuất sắc&#34;\nelif average &gt;= 7.0:\n    rank = &#34;Giỏi&#34;\nelif average &gt;= 5.5:\n    rank = &#34;Khá&#34;\nelif average &gt;= 4.0:\n    rank = &#34;Trung bình&#34;\nelse:\n    rank = &#34;Yếu&#34;\nprint(&#34;Điểm trung bình: {:.2f} &#34;</span>.format(average))\nprint(&#34;Xếp loại: &#34;, rank)"
+      },
+      "token_overlap": 149,
+      "max_similarity_percent": 93.12
+    },
+    {
+      "case_id": 10,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e8c59fbe7a87f42c2e212f/f95120b3a38a461085ef58cb/sub_1761290510762_xsffpn754.py",
+        "similarity_percent": 93.12,
+        "full_code": "n = int(input())\ndiem = list(map(float, input().split()))\ntotal = sum(diem)\naverage = round(total / n, 2)\nif average >= 8.5:\n    rank = \"Xuất sắc\"\nelif average >= 7.0:\n    rank = \"Giỏi\"\nelif average >= 5.5:\n    rank = \"Khá\"\nelif average >= 4.0:\n    rank = \"Trung bình\"\nelse:\n    rank = \"Yếu\"\nprint(\"Điểm trung bình: {:.2f} \", average)\nprint(\"Xếp loại: \", rank)",
+        "highlighted_code": "<span class='highlight-red'>n = int(input())\ndiem = list(map(float, input().split()))\ntotal = sum(diem)\naverage = round(total / n, 2)\nif average &gt;= 8.5:\n    rank = &#34;Xuất sắc&#34;\nelif average &gt;= 7.0:\n    rank = &#34;Giỏi&#34;\nelif average &gt;= 5.5:\n    rank = &#34;Khá&#34;\nelif average &gt;= 4.0:\n    rank = &#34;Trung bình&#34;\nelse:\n    rank = &#34;Yếu&#34;\nprint(&#34;Điểm trung bình: {:.2f} &#34;</span>, average)\nprint(&#34;Xếp loại: &#34;, rank)"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e8c59fbe7a87f42c2e212f/f95120b3a38a461085ef58cb/sub_1761293676378_jsvrb92dd.py",
+        "similarity_percent": 91.98,
+        "full_code": "n = int(input())\nscores = list(map(float, input().split()))\ntotal = sum(scores)\naverage = round(total / n, 2)\nif average >= 8.5:\n    rank = \"Xuất sắc\"\nelif average >= 7.0:\n    rank = \"Giỏi\"\nelif average >= 5.5:\n    rank = \"Khá\"\nelif average >= 4.0:\n    rank = \"Trung bình\"\nelse:\n    rank = \"Yếu\"\nprint(\"Điểm trung bình: {:.2f} \".format(average))\nprint(\"Xếp loại: \", rank)",
+        "highlighted_code": "<span class='highlight-green'>n = int(input())\nscores = list(map(float, input().split()))\ntotal = sum(scores)\naverage = round(total / n, 2)\nif average &gt;= 8.5:\n    rank = &#34;Xuất sắc&#34;\nelif average &gt;= 7.0:\n    rank = &#34;Giỏi&#34;\nelif average &gt;= 5.5:\n    rank = &#34;Khá&#34;\nelif average &gt;= 4.0:\n    rank = &#34;Trung bình&#34;\nelse:\n    rank = &#34;Yếu&#34;\nprint(&#34;Điểm trung bình: {:.2f} &#34;</span>.format(average))\nprint(&#34;Xếp loại: &#34;, rank)"
+      },
+      "token_overlap": 149,
+      "max_similarity_percent": 93.12
+    },
+    {
+      "case_id": 11,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e8c59fbe7a87f42c2e212f/f8a2bab9778140ecb46b6a60/sub_1761302577920_8mftju8z2.py",
+        "similarity_percent": 90.64,
+        "full_code": "n = int(input())\nscores = list(map(float, input().split()))\navr = sum(scores) / len(scores)\nif avr >= 8.5 :\n    print('Điểm trung bình: ', avr,',', 'Xếp loại: Xuat sac')\nelif avr >= 7.0 and avr < 8.5:\n    print('Điểm trung bình: ', avr,',', 'Xếp loại: Gioi')\nelif avr >= 5.5 and avr < 7.0:\n    print('Điểm trung bình: ', avr,',', 'Xếp loại: Kha')\nelif avr >= 4.0 and avr < 5.5:\n    print('Điểm trung bình: ', avr,',', 'Xếp loại: Trung binh')\nelif avr < 4.0:\n    print('Điểm trung bình: ', avr,',', 'Xếp loại: Yeu')\n\n",
+        "highlighted_code": "<span class='highlight-red'>n = int(input())\nscores = list(map(float, input().split()))\navr = sum(scores) / len(scores)\nif avr &gt;= 8.5 :\n    print(&#39;Điểm trung bình: &#39;, avr,&#39;,&#39;, &#39;Xếp loại: Xuat sac&#39;)\nelif avr &gt;= </span>7.0 and avr &lt; 8<span class='highlight-red'>.5:\n    print(&#39;Điểm trung bình: &#39;, avr,&#39;,&#39;, &#39;Xếp loại: Gioi&#39;)\nelif avr &gt;= 5.5 an</span>d avr &lt; 7.0:\n    pr<span class='highlight-red'>int(&#39;Điểm trung bình: &#39;, avr,&#39;,&#39;, &#39;Xếp loại: Kha&#39;)\nelif avr &gt;= </span>4.0 a<span class='highlight-red'>nd avr &lt; 5.5:\n    print(&#39;Điểm trung bình: &#39;, avr,&#39;,&#39;, &#39;Xếp loại: Trung binh&#39;)\nelif avr &lt; 4.0:\n    print(&#39;Điểm trung bình: &#39;, avr,&#39;,&#39;, &#39;Xếp loại: Yeu&#39;)</span>\n\n"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e8c59fbe7a87f42c2e212f/f8a2bab9778140ecb46b6a60/sub_1761302773875_aitjoi4ks.py",
+        "similarity_percent": 73.25,
+        "full_code": "n = int(input())\nscores = list(map(float, input().split()))\navr = sum(scores) / len(scores)\nif avr >= 8.5 :\n    print('Điểm trung bình:', avr,',', 'Xếp loại: Xuat sac')\nelif (avr >= 7.0) and (avr < 8.5):\n    print('Điểm trung bình:', avr,',', 'Xếp loại: Gioi')\nelif avr >= 5.5 and (avr < 7.0):\n    print('Điểm trung bình:', avr,',', 'Xếp loại: Kha')\nelif (avr >= 4.0) and avr < 5.5:\n    print('Điểm trung bình:', avr,',', 'Xếp loại: Trung binh')\nelif avr < 4.0:\n    print('Điểm trung bình:', avr,',', 'Xếp loại: Yeu')",
+        "highlighted_code": "<span class='highlight-green'>n = int(input())\nscores = list(map(float, input().split()))\navr = sum(scores) / len(scores)\nif avr &gt;= 8.5 :\n    print(&#39;Điểm trung bình:&#39;, avr,&#39;,&#39;, &#39;Xếp loại: Xuat sac&#39;)\nel</span>if (avr &gt;= 7.0) and (avr &lt; 8.5):\n    pr<span class='highlight-green'>int(&#39;Điểm trung bình:&#39;, avr,&#39;,&#39;, &#39;Xếp loại: Gioi&#39;)\nelif avr &gt;= 5.5 an</span>d (avr &lt; 7.0):\n    print(&#39;Điểm trung bình:&#39;, avr,&#39;,&#39;, &#39;Xếp loại: Kha&#39;)\nelif (avr &gt;= 4.0) a<span class='highlight-green'>nd avr &lt; 5.5:\n    print(&#39;Điểm trung bình:&#39;, avr,&#39;,&#39;, &#39;Xếp loại: Trung binh&#39;)\nelif avr &lt; 4.0:\n    print(&#39;Điểm trung bình:&#39;, avr,&#39;,&#39;, &#39;Xếp loại: Yeu&#39;)</span>"
+      },
+      "token_overlap": 213,
+      "max_similarity_percent": 90.64
+    },
+    {
+      "case_id": 12,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e8c59fbe7a87f42c2e212f/fb33e4e5d4ff46a5b041b652/sub_1761276324597_iqlgya9ij.py",
+        "similarity_percent": 87.91,
+        "full_code": "n=int(input())\nA=list(map(float,input().split()))\ntong=0\nfor i in range(len(A)):\n    tong=tong+A[i]\n    tb=tong/len(A)\nprint(tb)\n",
+        "highlighted_code": "<span class='highlight-red'>n=int(input())\nA=list(map(float,input().split()))\ntong=0\nfor i in range(len(A)):\n    tong=tong+A[i]\n    tb=tong/l</span>en(A)\nprint(tb)\n"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e8c59fbe7a87f42c2e212f/fb33e4e5d4ff46a5b041b652/sub_1761276540882_szh6g9fjv.py",
+        "similarity_percent": 41.45,
+        "full_code": "n=int(input())\nA=list(map(float,input().split()))\ntong=0\nfor i in range(len(A)):\n    tong=tong+A[i]\n    tb=tong/len(A)\n\n\nif tb>= 8.5:\n    print(\"Xuất sắc\")\nelif 7.0 <= tb < 8.5:\n    print(\"Giỏi\")\nelif 5.5 <= tb < 7.0:\n    print(\"Khá\")\nelif 4.0 <= tb < 5.5:\n    print(\"Trung bình\")\nelse:\n    print(\"Yếu\")",
+        "highlighted_code": "<span class='highlight-green'>n=int(input())\nA=list(map(float,input().split()))\ntong=0\nfor i in range(len(A)):\n    tong=tong+A[i]\n    tb=tong/l</span>en(A)\n\n\nif tb&gt;= 8.5:\n    print(&#34;Xuất sắc&#34;)\nelif 7.0 &lt;= tb &lt; 8.5:\n    print(&#34;Giỏi&#34;)\nelif 5.5 &lt;= tb &lt; 7.0:\n    print(&#34;Khá&#34;)\nelif 4.0 &lt;= tb &lt; 5.5:\n    print(&#34;Trung bình&#34;)\nelse:\n    print(&#34;Yếu&#34;)"
+      },
+      "token_overlap": 80,
+      "max_similarity_percent": 87.91
+    },
+    {
+      "case_id": 13,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e8c59fbe7a87f42c2e212f/fb33e4e5d4ff46a5b041b652/sub_1761276324597_iqlgya9ij.py",
+        "similarity_percent": 87.91,
+        "full_code": "n=int(input())\nA=list(map(float,input().split()))\ntong=0\nfor i in range(len(A)):\n    tong=tong+A[i]\n    tb=tong/len(A)\nprint(tb)\n",
+        "highlighted_code": "<span class='highlight-red'>n=int(input())\nA=list(map(float,input().split()))\ntong=0\nfor i in range(len(A)):\n    tong=tong+A[i]\n    tb=tong/l</span>en(A)\nprint(tb)\n"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e8c59fbe7a87f42c2e212f/fb33e4e5d4ff46a5b041b652/sub_1761277235030_rwnr6o6em.py",
+        "similarity_percent": 41.45,
+        "full_code": "n=int(input())\nA=list(map(float,input().split()))\ntong=0\nfor i in range(len(A)):\n    tong=tong+A[i]\n    tb=tong/len(A)\n\n\nif tb>= 8.5:\n    print(\"Xuất sắc\")\nelif 7.0 <= tb < 8.5:\n    print(\"Giỏi\")\nelif 5.5 <= tb < 7.0:\n    print(\"Khá\")\nelif 4.0 <= tb < 5.5:\n    print(\"Trung bình\")\nelse:\n    print(\"Yếu\")",
+        "highlighted_code": "<span class='highlight-green'>n=int(input())\nA=list(map(float,input().split()))\ntong=0\nfor i in range(len(A)):\n    tong=tong+A[i]\n    tb=tong/l</span>en(A)\n\n\nif tb&gt;= 8.5:\n    print(&#34;Xuất sắc&#34;)\nelif 7.0 &lt;= tb &lt; 8.5:\n    print(&#34;Giỏi&#34;)\nelif 5.5 &lt;= tb &lt; 7.0:\n    print(&#34;Khá&#34;)\nelif 4.0 &lt;= tb &lt; 5.5:\n    print(&#34;Trung bình&#34;)\nelse:\n    print(&#34;Yếu&#34;)"
+      },
+      "token_overlap": 80,
+      "max_similarity_percent": 87.91
+    },
+    {
+      "case_id": 14,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e8c59fbe7a87f42c2e212f/27e30f767b3a46b283cbfec0/sub_1761273084608_kfuqj0kzg.py",
+        "similarity_percent": 84.0,
+        "full_code": "n = int(input())\nlst = list(map(float, input().split()))\nave = sum(lst) / n\nprint(f'{ave:.2f}')\nif ave >= 8.5:\n    print('Xuất sắc')\nelif 7.0<=ave<8.5:\n    print('Giỏi')\nelif 5.5<=ave<7:\n    print('Khá')\nelif 4.0<=ave<5.5:\n    print('Trung bình')\nelse:\n    print(\"Yếu\")\n",
+        "highlighted_code": "<span class='highlight-red'>n = int(input())\nlst = list(map(float, input().split()))\nave </span>= sum(lst) / n\nprint(f&#39;{ave:.2f}&#39;)\nif ave <span class='highlight-red'>&gt;= 8.5:\n    print(&#39;Xuất sắc&#39;)\nelif 7.0&lt;=ave&lt;8.5:\n    print(&#39;Giỏi&#39;)\nelif 5.5&lt;=ave&lt;</span>7<span class='highlight-red'>:\n    print(&#39;Khá&#39;)\nelif 4.0&lt;=ave&lt;5.5:\n    print(&#39;Trung bình&#39;)\nelse:\n    print(&#34;Yếu&#34;</span>)\n"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e8c59fbe7a87f42c2e212f/fb33e4e5d4ff46a5b041b652/sub_1761276540882_szh6g9fjv.py",
+        "similarity_percent": 76.17,
+        "full_code": "n=int(input())\nA=list(map(float,input().split()))\ntong=0\nfor i in range(len(A)):\n    tong=tong+A[i]\n    tb=tong/len(A)\n\n\nif tb>= 8.5:\n    print(\"Xuất sắc\")\nelif 7.0 <= tb < 8.5:\n    print(\"Giỏi\")\nelif 5.5 <= tb < 7.0:\n    print(\"Khá\")\nelif 4.0 <= tb < 5.5:\n    print(\"Trung bình\")\nelse:\n    print(\"Yếu\")",
+        "highlighted_code": "<span class='highlight-green'>n=int(input())\nA=list(map(float,input().split()))\ntong</span>=0\nfor i in range(len(A)):\n    tong=tong+A[i]\n    tb=tong/len(A)\n\n\nif tb<span class='highlight-green'>&gt;= 8.5:\n    print(&#34;Xuất sắc&#34;)\nelif 7.0 &lt;= tb &lt; 8.5:\n    print(&#34;Giỏi&#34;)\nelif 5.5 &lt;= tb &lt; </span>7.0<span class='highlight-green'>:\n    print(&#34;Khá&#34;)\nelif 4.0 &lt;= tb &lt; 5.5:\n    print(&#34;Trung bình&#34;)\nelse:\n    print(&#34;Yếu&#34;</span>)"
+      },
+      "token_overlap": 147,
+      "max_similarity_percent": 84.0
+    },
+    {
+      "case_id": 15,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e8c59fbe7a87f42c2e212f/27e30f767b3a46b283cbfec0/sub_1761273084608_kfuqj0kzg.py",
+        "similarity_percent": 84.0,
+        "full_code": "n = int(input())\nlst = list(map(float, input().split()))\nave = sum(lst) / n\nprint(f'{ave:.2f}')\nif ave >= 8.5:\n    print('Xuất sắc')\nelif 7.0<=ave<8.5:\n    print('Giỏi')\nelif 5.5<=ave<7:\n    print('Khá')\nelif 4.0<=ave<5.5:\n    print('Trung bình')\nelse:\n    print(\"Yếu\")\n",
+        "highlighted_code": "<span class='highlight-red'>n = int(input())\nlst = list(map(float, input().split()))\nave </span>= sum(lst) / n\nprint(f&#39;{ave:.2f}&#39;)\nif ave <span class='highlight-red'>&gt;= 8.5:\n    print(&#39;Xuất sắc&#39;)\nelif 7.0&lt;=ave&lt;8.5:\n    print(&#39;Giỏi&#39;)\nelif 5.5&lt;=ave&lt;</span>7<span class='highlight-red'>:\n    print(&#39;Khá&#39;)\nelif 4.0&lt;=ave&lt;5.5:\n    print(&#39;Trung bình&#39;)\nelse:\n    print(&#34;Yếu&#34;</span>)\n"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e8c59fbe7a87f42c2e212f/fb33e4e5d4ff46a5b041b652/sub_1761277235030_rwnr6o6em.py",
+        "similarity_percent": 76.17,
+        "full_code": "n=int(input())\nA=list(map(float,input().split()))\ntong=0\nfor i in range(len(A)):\n    tong=tong+A[i]\n    tb=tong/len(A)\n\n\nif tb>= 8.5:\n    print(\"Xuất sắc\")\nelif 7.0 <= tb < 8.5:\n    print(\"Giỏi\")\nelif 5.5 <= tb < 7.0:\n    print(\"Khá\")\nelif 4.0 <= tb < 5.5:\n    print(\"Trung bình\")\nelse:\n    print(\"Yếu\")",
+        "highlighted_code": "<span class='highlight-green'>n=int(input())\nA=list(map(float,input().split()))\ntong</span>=0\nfor i in range(len(A)):\n    tong=tong+A[i]\n    tb=tong/len(A)\n\n\nif tb<span class='highlight-green'>&gt;= 8.5:\n    print(&#34;Xuất sắc&#34;)\nelif 7.0 &lt;= tb &lt; 8.5:\n    print(&#34;Giỏi&#34;)\nelif 5.5 &lt;= tb &lt; </span>7.0<span class='highlight-green'>:\n    print(&#34;Khá&#34;)\nelif 4.0 &lt;= tb &lt; 5.5:\n    print(&#34;Trung bình&#34;)\nelse:\n    print(&#34;Yếu&#34;</span>)"
+      },
+      "token_overlap": 147,
+      "max_similarity_percent": 84.0
+    },
+    {
+      "case_id": 16,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e8c59fbe7a87f42c2e212f/27e30f767b3a46b283cbfec0/sub_1761273084608_kfuqj0kzg.py",
+        "similarity_percent": 83.43,
+        "full_code": "n = int(input())\nlst = list(map(float, input().split()))\nave = sum(lst) / n\nprint(f'{ave:.2f}')\nif ave >= 8.5:\n    print('Xuất sắc')\nelif 7.0<=ave<8.5:\n    print('Giỏi')\nelif 5.5<=ave<7:\n    print('Khá')\nelif 4.0<=ave<5.5:\n    print('Trung bình')\nelse:\n    print(\"Yếu\")\n",
+        "highlighted_code": "<span class='highlight-red'>n = int(input())\nlst = list(map(float, input().split()))\nave </span>= sum(lst) / n\npri<span class='highlight-red'>nt(f&#39;{ave:.2f}&#39;)\nif ave &gt;= 8.5:\n    print(&#39;Xuất sắc&#39;)\nelif 7.0&lt;=ave</span>&lt;<span class='highlight-red'>8.5:\n    print(&#39;Giỏi&#39;)\nelif 5.5&lt;=ave&lt;</span>7<span class='highlight-red'>:\n    print(&#39;Khá&#39;)\nelif 4.0&lt;=ave&lt;5.5:\n    print(&#39;Trung bình&#39;</span>)\nelse:\n    print(&#34;Yếu&#34;)\n"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e8c59fbe7a87f42c2e212f/113963c0a9df48538edf310d/sub_1761280830078_lt63dwy8k.py",
+        "similarity_percent": 74.11,
+        "full_code": "n = int(input())\nnumbers = list(map(float,input().split()))\na = 0\nfor i in numbers:\n    a += i\naverage = float(a/n)\nprint(f\"{average:.2f}\")\nif average >= 8.5:\n    print(\"Xuat sac\")\nelif 7.0 <= average <= 8.5:\n    print(\"Gioi\")\nelif 5.5 <= average < 7.0:\n    print(\"Kha\")\nelif 4.0 <= average < 5.5:\n    print(\"Trung binh\")\nelif average < 4.0:\n    print(\"Yeu\")",
+        "highlighted_code": "<span class='highlight-green'>n = int(input())\nnumbers = list(map(float,input().split()))\na </span>= 0\nfor i in numbers:\n    a += i\naverage = float(a/n)\npri<span class='highlight-green'>nt(f&#34;{average:.2f}&#34;)\nif average &gt;= 8.5:\n    print(&#34;Xuat sac&#34;)\nelif 7.0 &lt;= average </span>&lt;= <span class='highlight-green'>8.5:\n    print(&#34;Gioi&#34;)\nelif 5.5 &lt;= average &lt; </span>7.0<span class='highlight-green'>:\n    print(&#34;Kha&#34;)\nelif 4.0 &lt;= average &lt; 5.5:\n    print(&#34;Trung binh&#34;</span>)\nelif average &lt; 4.0:\n    print(&#34;Yeu&#34;)"
+      },
+      "token_overlap": 146,
+      "max_similarity_percent": 83.43
+    },
+    {
+      "case_id": 17,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e8c59fbe7a87f42c2e212f/f8a2bab9778140ecb46b6a60/sub_1761304193772_24kcq138x.py",
+        "similarity_percent": 83.24,
+        "full_code": "n = int(input())\nscores = list(map(float, input().split()))\navr = float('%.2f' % (sum(scores) / len(scores)))\n\nprint(f\"{avr:.2f}\")\nif avr >= 8.5:\n    print(\"Xuat sac\")\nelif avr >= 7.0:\n    print(\"Gioi\")\nelif avr >= 5.5:\n    print(\"Kha\")\nelif avr >= 4.0:\n    print(\"Trung binh\")\nelse:\n    print(\"Yeu\")",
+        "highlighted_code": "<span class='highlight-red'>n = int(input())\nscores = list(map(float, input().split()))\navr </span>= float(&#39;%.2f&#39; % (sum(scores) / len(scores)))\n\npri<span class='highlight-red'>nt(f&#34;{avr:.2f}&#34;)\nif avr &gt;= 8.5:\n    print(&#34;Xuat sac&#34;)\nelif avr &gt;= 7.0:\n    print(&#34;Gioi&#34;)\nelif avr &gt;= 5.5:\n    print(&#34;Kha&#34;)\nelif avr &gt;= 4.0:\n    print(&#34;Trung binh&#34;)\nelse:\n    print</span>(&#34;Yeu&#34;)"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e8c59fbe7a87f42c2e212f/fd92120cec18496789c2c733/sub_1761248724741_ydf36or84.py",
+        "similarity_percent": 87.13,
+        "full_code": "n=int(input())\nscores=list(map(float,input().split()))\ntotal=0\nfor i in scores:\n    total+=i\naverage=total/n\nprint(f\"{average:.2f}\")\nif average >= 8.5:\n    print(\"Xuất sắc\")\nelif average >=7.0:\n    print(\"Giỏi\")\nelif average >=5.5:\n    print(\"Khá\")\nelif average >= 4.0:\n    print(\"Trung bình\")\nelse:\n    print(\"Yếu\")\n",
+        "highlighted_code": "<span class='highlight-green'>n=int(input())\nscores=list(map(float,input().split()))\ntotal</span>=0\nfor i in scores:\n    total+=i\naverage=total/n\npri<span class='highlight-green'>nt(f&#34;{average:.2f}&#34;)\nif average &gt;= 8.5:\n    print(&#34;Xuất sắc&#34;)\nelif average &gt;=7.0:\n    print(&#34;Giỏi&#34;)\nelif average &gt;=5.5:\n    print(&#34;Khá&#34;)\nelif average &gt;= 4.0:\n    print(&#34;Trung bình&#34;)\nelse:\n    print</span>(&#34;Yếu&#34;)\n"
+      },
+      "token_overlap": 149,
+      "max_similarity_percent": 87.13
+    },
+    {
+      "case_id": 18,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e8c59fbe7a87f42c2e212f/f8a2bab9778140ecb46b6a60/sub_1761304193772_24kcq138x.py",
+        "similarity_percent": 83.24,
+        "full_code": "n = int(input())\nscores = list(map(float, input().split()))\navr = float('%.2f' % (sum(scores) / len(scores)))\n\nprint(f\"{avr:.2f}\")\nif avr >= 8.5:\n    print(\"Xuat sac\")\nelif avr >= 7.0:\n    print(\"Gioi\")\nelif avr >= 5.5:\n    print(\"Kha\")\nelif avr >= 4.0:\n    print(\"Trung binh\")\nelse:\n    print(\"Yeu\")",
+        "highlighted_code": "<span class='highlight-red'>n = int(input())\nscores = list(map(float, input().split()))\navr </span>= float(&#39;%.2f&#39; % (sum(scores) / len(scores)))\n\npri<span class='highlight-red'>nt(f&#34;{avr:.2f}&#34;)\nif avr &gt;= 8.5:\n    print(&#34;Xuat sac&#34;)\nelif avr &gt;= 7.0:\n    print(&#34;Gioi&#34;)\nelif avr &gt;= 5.5:\n    print(&#34;Kha&#34;)\nelif avr &gt;= 4.0:\n    print(&#34;Trung binh&#34;)\nelse:\n    print</span>(&#34;Yeu&#34;)"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e8c59fbe7a87f42c2e212f/fd92120cec18496789c2c733/sub_1761248705822_qhryx8vry.py",
+        "similarity_percent": 87.13,
+        "full_code": "n=int(input())\nscores=list(map(float,input().split()))\ntotal=0\nfor i in scores:\n    total+=i\naverage=total/n\nprint(f\"{average:.2f}\")\nif average >= 8.5:\n    print(\"Xuất sắc\")\nelif average >=7.0:\n    print(\"Giỏi\")\nelif average >=5.5:\n    print(\"Khá\")\nelif average >= 4.0:\n    print(\"Trung bình\")\nelse:\n    print(\"Yếu\")\n",
+        "highlighted_code": "<span class='highlight-green'>n=int(input())\nscores=list(map(float,input().split()))\ntotal</span>=0\nfor i in scores:\n    total+=i\naverage=total/n\npri<span class='highlight-green'>nt(f&#34;{average:.2f}&#34;)\nif average &gt;= 8.5:\n    print(&#34;Xuất sắc&#34;)\nelif average &gt;=7.0:\n    print(&#34;Giỏi&#34;)\nelif average &gt;=5.5:\n    print(&#34;Khá&#34;)\nelif average &gt;= 4.0:\n    print(&#34;Trung bình&#34;)\nelse:\n    print</span>(&#34;Yếu&#34;)\n"
+      },
+      "token_overlap": 149,
+      "max_similarity_percent": 87.13
+    },
+    {
+      "case_id": 19,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e8c59fbe7a87f42c2e212f/bcb420abb39b4af095b63cf8/sub_1761299620855_z40uj40ep.py",
+        "similarity_percent": 77.25,
+        "full_code": "n=int(input()) \ndiem=list(map(float,input().split())) \nif n==len(diem): \n    diemtb=sum(diem)/n \n    print(f\"{diemtb:.2f}\") \n    if diemtb>=8.5: \n        print(\"Xuat sac\") \n    elif 7.0<=diemtb<8.5: \n        print(\"Gioi\") \n    elif 5.5<=diemtb<7.0: \n        print(\"Kha\") \n    elif 4.0<=diemtb<5.5: \n        print(\"Trung binh\") \n    else: \n        print(\"Yeu\")",
+        "highlighted_code": "<span class='highlight-red'>n=int(input()) \ndiem=list(map(float,input().split(</span>))) \nif n==len(diem): \n    diemtb=sum(diem)/n \n    print(f&#34;{diemtb:.2f}&#34;) \n    if diemtb<span class='highlight-red'>&gt;=8.5: \n        print(&#34;Xuat sac&#34;) \n    elif 7.0&lt;=diemtb&lt;8.5: \n        print(&#34;Gioi&#34;) \n    elif 5.5&lt;=diemtb&lt;7.0: \n        print(&#34;Kha&#34;) \n    elif 4.0&lt;=diemtb&lt;5.5: \n        print(&#34;Trung binh&#34;) \n    else: \n        print(&#34;Yeu&#34;</span>)"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e8c59fbe7a87f42c2e212f/fb33e4e5d4ff46a5b041b652/sub_1761276540882_szh6g9fjv.py",
+        "similarity_percent": 75.65,
+        "full_code": "n=int(input())\nA=list(map(float,input().split()))\ntong=0\nfor i in range(len(A)):\n    tong=tong+A[i]\n    tb=tong/len(A)\n\n\nif tb>= 8.5:\n    print(\"Xuất sắc\")\nelif 7.0 <= tb < 8.5:\n    print(\"Giỏi\")\nelif 5.5 <= tb < 7.0:\n    print(\"Khá\")\nelif 4.0 <= tb < 5.5:\n    print(\"Trung bình\")\nelse:\n    print(\"Yếu\")",
+        "highlighted_code": "<span class='highlight-green'>n=int(input())\nA=list(map(float,input().split(</span>)))\ntong=0\nfor i in range(len(A)):\n    tong=tong+A[i]\n    tb=tong/len(A)\n\n\nif tb<span class='highlight-green'>&gt;= 8.5:\n    print(&#34;Xuất sắc&#34;)\nelif 7.0 &lt;= tb &lt; 8.5:\n    print(&#34;Giỏi&#34;)\nelif 5.5 &lt;= tb &lt; 7.0:\n    print(&#34;Khá&#34;)\nelif 4.0 &lt;= tb &lt; 5.5:\n    print(&#34;Trung bình&#34;)\nelse:\n    print(&#34;Yếu&#34;</span>)"
+      },
+      "token_overlap": 146,
+      "max_similarity_percent": 77.25
+    },
+    {
+      "case_id": 20,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e8c59fbe7a87f42c2e212f/bcb420abb39b4af095b63cf8/sub_1761299620855_z40uj40ep.py",
+        "similarity_percent": 77.25,
+        "full_code": "n=int(input()) \ndiem=list(map(float,input().split())) \nif n==len(diem): \n    diemtb=sum(diem)/n \n    print(f\"{diemtb:.2f}\") \n    if diemtb>=8.5: \n        print(\"Xuat sac\") \n    elif 7.0<=diemtb<8.5: \n        print(\"Gioi\") \n    elif 5.5<=diemtb<7.0: \n        print(\"Kha\") \n    elif 4.0<=diemtb<5.5: \n        print(\"Trung binh\") \n    else: \n        print(\"Yeu\")",
+        "highlighted_code": "<span class='highlight-red'>n=int(input()) \ndiem=list(map(float,input().split(</span>))) \nif n==len(diem): \n    diemtb=sum(diem)/n \n    print(f&#34;{diemtb:.2f}&#34;) \n    if diemtb<span class='highlight-red'>&gt;=8.5: \n        print(&#34;Xuat sac&#34;) \n    elif 7.0&lt;=diemtb&lt;8.5: \n        print(&#34;Gioi&#34;) \n    elif 5.5&lt;=diemtb&lt;7.0: \n        print(&#34;Kha&#34;) \n    elif 4.0&lt;=diemtb&lt;5.5: \n        print(&#34;Trung binh&#34;) \n    else: \n        print(&#34;Yeu&#34;</span>)"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e8c59fbe7a87f42c2e212f/fb33e4e5d4ff46a5b041b652/sub_1761277235030_rwnr6o6em.py",
+        "similarity_percent": 75.65,
+        "full_code": "n=int(input())\nA=list(map(float,input().split()))\ntong=0\nfor i in range(len(A)):\n    tong=tong+A[i]\n    tb=tong/len(A)\n\n\nif tb>= 8.5:\n    print(\"Xuất sắc\")\nelif 7.0 <= tb < 8.5:\n    print(\"Giỏi\")\nelif 5.5 <= tb < 7.0:\n    print(\"Khá\")\nelif 4.0 <= tb < 5.5:\n    print(\"Trung bình\")\nelse:\n    print(\"Yếu\")",
+        "highlighted_code": "<span class='highlight-green'>n=int(input())\nA=list(map(float,input().split(</span>)))\ntong=0\nfor i in range(len(A)):\n    tong=tong+A[i]\n    tb=tong/len(A)\n\n\nif tb<span class='highlight-green'>&gt;= 8.5:\n    print(&#34;Xuất sắc&#34;)\nelif 7.0 &lt;= tb &lt; 8.5:\n    print(&#34;Giỏi&#34;)\nelif 5.5 &lt;= tb &lt; 7.0:\n    print(&#34;Khá&#34;)\nelif 4.0 &lt;= tb &lt; 5.5:\n    print(&#34;Trung bình&#34;)\nelse:\n    print(&#34;Yếu&#34;</span>)"
+      },
+      "token_overlap": 146,
+      "max_similarity_percent": 77.25
+    },
+    {
+      "case_id": 21,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e8c59fbe7a87f42c2e212f/113963c0a9df48538edf310d/sub_1761241160785_95i1ruqs3.py",
+        "similarity_percent": 76.72,
+        "full_code": "n = int(input())\nscores = list(map(float,input().split()))\na = 0\nfor i in scores:\n    a += i\naverage = float(a / n)\nprint(average)\nif average >= 8.5:\n    print(\"Xuất sắc\")\nelif 7.0 <= average <8.5 :\n    print(\"Giỏi\")\nelif 5.5 <= average <7.0:\n    print(\"Khá\")\nelif 4.0 <= average < 5.5:\n    print(\"Trung Bình\")\nelif average <4.0 :\n    print(\"Yếu\")",
+        "highlighted_code": "<span class='highlight-red'>n = int(input())\nscores = list(map(float,input().split()))\na = 0\nfor i </span>in scores:\n    a += i\naverage = float(a / n)\nprint(average<span class='highlight-red'>)\nif average &gt;= 8.5:\n    print(&#34;Xuất sắc&#34;)\nelif 7.0 &lt;= average &lt;8.5 :\n    print(&#34;Giỏi&#34;)\nelif 5.5 &lt;= average &lt;7.0:\n    print(&#34;Khá&#34;)\nelif 4.0 &lt;= average &lt; 5.5:\n    print(&#34;Trung Bình&#34;</span>)\nelif average &lt;4.0 :\n    print(&#34;Yếu&#34;)"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e8c59fbe7a87f42c2e212f/fb33e4e5d4ff46a5b041b652/sub_1761276540882_szh6g9fjv.py",
+        "similarity_percent": 75.13,
+        "full_code": "n=int(input())\nA=list(map(float,input().split()))\ntong=0\nfor i in range(len(A)):\n    tong=tong+A[i]\n    tb=tong/len(A)\n\n\nif tb>= 8.5:\n    print(\"Xuất sắc\")\nelif 7.0 <= tb < 8.5:\n    print(\"Giỏi\")\nelif 5.5 <= tb < 7.0:\n    print(\"Khá\")\nelif 4.0 <= tb < 5.5:\n    print(\"Trung bình\")\nelse:\n    print(\"Yếu\")",
+        "highlighted_code": "<span class='highlight-green'>n=int(input())\nA=list(map(float,input().split()))\ntong=0\nfor i </span>in range(len(A)):\n    tong=tong+A[i]\n    tb=tong/len(A<span class='highlight-green'>)\n\n\nif tb&gt;= 8.5:\n    print(&#34;Xuất sắc&#34;)\nelif 7.0 &lt;= tb &lt; 8.5:\n    print(&#34;Giỏi&#34;)\nelif 5.5 &lt;= tb &lt; 7.0:\n    print(&#34;Khá&#34;)\nelif 4.0 &lt;= tb &lt; 5.5:\n    print(&#34;Trung bình&#34;</span>)\nelse:\n    print(&#34;Yếu&#34;)"
+      },
+      "token_overlap": 145,
+      "max_similarity_percent": 76.72
+    },
+    {
+      "case_id": 22,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e8c59fbe7a87f42c2e212f/113963c0a9df48538edf310d/sub_1761241160785_95i1ruqs3.py",
+        "similarity_percent": 76.72,
+        "full_code": "n = int(input())\nscores = list(map(float,input().split()))\na = 0\nfor i in scores:\n    a += i\naverage = float(a / n)\nprint(average)\nif average >= 8.5:\n    print(\"Xuất sắc\")\nelif 7.0 <= average <8.5 :\n    print(\"Giỏi\")\nelif 5.5 <= average <7.0:\n    print(\"Khá\")\nelif 4.0 <= average < 5.5:\n    print(\"Trung Bình\")\nelif average <4.0 :\n    print(\"Yếu\")",
+        "highlighted_code": "<span class='highlight-red'>n = int(input())\nscores = list(map(float,input().split()))\na = 0\nfor i </span>in scores:\n    a += i\naverage = float(a / n)\nprint(average<span class='highlight-red'>)\nif average &gt;= 8.5:\n    print(&#34;Xuất sắc&#34;)\nelif 7.0 &lt;= average &lt;8.5 :\n    print(&#34;Giỏi&#34;)\nelif 5.5 &lt;= average &lt;7.0:\n    print(&#34;Khá&#34;)\nelif 4.0 &lt;= average &lt; 5.5:\n    print(&#34;Trung Bình&#34;</span>)\nelif average &lt;4.0 :\n    print(&#34;Yếu&#34;)"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e8c59fbe7a87f42c2e212f/fb33e4e5d4ff46a5b041b652/sub_1761277235030_rwnr6o6em.py",
+        "similarity_percent": 75.13,
+        "full_code": "n=int(input())\nA=list(map(float,input().split()))\ntong=0\nfor i in range(len(A)):\n    tong=tong+A[i]\n    tb=tong/len(A)\n\n\nif tb>= 8.5:\n    print(\"Xuất sắc\")\nelif 7.0 <= tb < 8.5:\n    print(\"Giỏi\")\nelif 5.5 <= tb < 7.0:\n    print(\"Khá\")\nelif 4.0 <= tb < 5.5:\n    print(\"Trung bình\")\nelse:\n    print(\"Yếu\")",
+        "highlighted_code": "<span class='highlight-green'>n=int(input())\nA=list(map(float,input().split()))\ntong=0\nfor i </span>in range(len(A)):\n    tong=tong+A[i]\n    tb=tong/len(A<span class='highlight-green'>)\n\n\nif tb&gt;= 8.5:\n    print(&#34;Xuất sắc&#34;)\nelif 7.0 &lt;= tb &lt; 8.5:\n    print(&#34;Giỏi&#34;)\nelif 5.5 &lt;= tb &lt; 7.0:\n    print(&#34;Khá&#34;)\nelif 4.0 &lt;= tb &lt; 5.5:\n    print(&#34;Trung bình&#34;</span>)\nelse:\n    print(&#34;Yếu&#34;)"
+      },
+      "token_overlap": 145,
+      "max_similarity_percent": 76.72
+    },
+    {
+      "case_id": 23,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e8c59fbe7a87f42c2e212f/bcb420abb39b4af095b63cf8/sub_1761299620855_z40uj40ep.py",
+        "similarity_percent": 76.72,
+        "full_code": "n=int(input()) \ndiem=list(map(float,input().split())) \nif n==len(diem): \n    diemtb=sum(diem)/n \n    print(f\"{diemtb:.2f}\") \n    if diemtb>=8.5: \n        print(\"Xuat sac\") \n    elif 7.0<=diemtb<8.5: \n        print(\"Gioi\") \n    elif 5.5<=diemtb<7.0: \n        print(\"Kha\") \n    elif 4.0<=diemtb<5.5: \n        print(\"Trung binh\") \n    else: \n        print(\"Yeu\")",
+        "highlighted_code": "<span class='highlight-red'>n=int(input()) \ndiem=list(map(float,input().split(</span>))) \nif n==len(diem): \n    diemtb=sum(diem)/n \n    pri<span class='highlight-red'>nt(f&#34;{diemtb:.2f}&#34;) \n    if diemtb&gt;=8.5: \n        print(&#34;Xuat sac&#34;) \n    elif 7.0&lt;=diemtb</span>&lt;<span class='highlight-red'>8.5: \n        print(&#34;Gioi&#34;) \n    elif 5.5&lt;=diemtb&lt;7.0: \n        print(&#34;Kha&#34;) \n    elif 4.0&lt;=diemtb&lt;5.5: \n        print(&#34;Trung binh&#34;</span>) \n    else: \n        print(&#34;Yeu&#34;)"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e8c59fbe7a87f42c2e212f/113963c0a9df48538edf310d/sub_1761280830078_lt63dwy8k.py",
+        "similarity_percent": 73.6,
+        "full_code": "n = int(input())\nnumbers = list(map(float,input().split()))\na = 0\nfor i in numbers:\n    a += i\naverage = float(a/n)\nprint(f\"{average:.2f}\")\nif average >= 8.5:\n    print(\"Xuat sac\")\nelif 7.0 <= average <= 8.5:\n    print(\"Gioi\")\nelif 5.5 <= average < 7.0:\n    print(\"Kha\")\nelif 4.0 <= average < 5.5:\n    print(\"Trung binh\")\nelif average < 4.0:\n    print(\"Yeu\")",
+        "highlighted_code": "<span class='highlight-green'>n = int(input())\nnumbers = list(map(float,input().split(</span>)))\na = 0\nfor i in numbers:\n    a += i\naverage = float(a/n)\npri<span class='highlight-green'>nt(f&#34;{average:.2f}&#34;)\nif average &gt;= 8.5:\n    print(&#34;Xuat sac&#34;)\nelif 7.0 &lt;= average </span>&lt;= <span class='highlight-green'>8.5:\n    print(&#34;Gioi&#34;)\nelif 5.5 &lt;= average &lt; 7.0:\n    print(&#34;Kha&#34;)\nelif 4.0 &lt;= average &lt; 5.5:\n    print(&#34;Trung binh&#34;</span>)\nelif average &lt; 4.0:\n    print(&#34;Yeu&#34;)"
+      },
+      "token_overlap": 145,
+      "max_similarity_percent": 76.72
+    },
+    {
+      "case_id": 24,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e8c59fbe7a87f42c2e212f/27e30f767b3a46b283cbfec0/sub_1761273084608_kfuqj0kzg.py",
+        "similarity_percent": 75.43,
+        "full_code": "n = int(input())\nlst = list(map(float, input().split()))\nave = sum(lst) / n\nprint(f'{ave:.2f}')\nif ave >= 8.5:\n    print('Xuất sắc')\nelif 7.0<=ave<8.5:\n    print('Giỏi')\nelif 5.5<=ave<7:\n    print('Khá')\nelif 4.0<=ave<5.5:\n    print('Trung bình')\nelse:\n    print(\"Yếu\")\n",
+        "highlighted_code": "<span class='highlight-red'>n = int(input())\nlst = list(map(float, input().split()))\nave </span>= sum(lst) / n\nprint(f&#39;{ave:.2f}&#39;)\nif ave <span class='highlight-red'>&gt;= 8.5:\n    print(&#39;Xuất sắc&#39;)\nelif 7.0&lt;=ave&lt;8.5:\n    print(&#39;Giỏi&#39;)\nelif 5.5&lt;=ave&lt;</span>7<span class='highlight-red'>:\n    print(&#39;Khá&#39;)\nelif 4.0&lt;=ave&lt;5.5:\n    print(&#39;Trung bình&#39;</span>)\nelse:\n    print(&#34;Yếu&#34;)\n"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e8c59fbe7a87f42c2e212f/113963c0a9df48538edf310d/sub_1761241160785_95i1ruqs3.py",
+        "similarity_percent": 69.84,
+        "full_code": "n = int(input())\nscores = list(map(float,input().split()))\na = 0\nfor i in scores:\n    a += i\naverage = float(a / n)\nprint(average)\nif average >= 8.5:\n    print(\"Xuất sắc\")\nelif 7.0 <= average <8.5 :\n    print(\"Giỏi\")\nelif 5.5 <= average <7.0:\n    print(\"Khá\")\nelif 4.0 <= average < 5.5:\n    print(\"Trung Bình\")\nelif average <4.0 :\n    print(\"Yếu\")",
+        "highlighted_code": "<span class='highlight-green'>n = int(input())\nscores = list(map(float,input().split()))\na </span>= 0\nfor i in scores:\n    a += i\naverage = float(a / n)\nprint(average)\nif average <span class='highlight-green'>&gt;= 8.5:\n    print(&#34;Xuất sắc&#34;)\nelif 7.0 &lt;= average &lt;8.5 :\n    print(&#34;Giỏi&#34;)\nelif 5.5 &lt;= average &lt;</span>7.0<span class='highlight-green'>:\n    print(&#34;Khá&#34;)\nelif 4.0 &lt;= average &lt; 5.5:\n    print(&#34;Trung Bình&#34;</span>)\nelif average &lt;4.0 :\n    print(&#34;Yếu&#34;)"
+      },
+      "token_overlap": 132,
+      "max_similarity_percent": 75.43
+    },
+    {
+      "case_id": 25,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e8c59fbe7a87f42c2e212f/fb33e4e5d4ff46a5b041b652/sub_1761276540882_szh6g9fjv.py",
+        "similarity_percent": 72.54,
+        "full_code": "n=int(input())\nA=list(map(float,input().split()))\ntong=0\nfor i in range(len(A)):\n    tong=tong+A[i]\n    tb=tong/len(A)\n\n\nif tb>= 8.5:\n    print(\"Xuất sắc\")\nelif 7.0 <= tb < 8.5:\n    print(\"Giỏi\")\nelif 5.5 <= tb < 7.0:\n    print(\"Khá\")\nelif 4.0 <= tb < 5.5:\n    print(\"Trung bình\")\nelse:\n    print(\"Yếu\")",
+        "highlighted_code": "<span class='highlight-red'>n=int(input())\nA=list(map(float,input().split()))\ntong=0\nfor i </span>in range(len(A)):\n    tong=tong+A[i]\n    tb=tong/len(A)\n\n\nif tb<span class='highlight-red'>&gt;= 8.5:\n    print(&#34;Xuất sắc&#34;)\nelif 7.0 &lt;= tb </span>&lt; <span class='highlight-red'>8.5:\n    print(&#34;Giỏi&#34;)\nelif 5.5 &lt;= tb &lt; 7.0:\n    print(&#34;Khá&#34;)\nelif 4.0 &lt;= tb &lt; 5.5:\n    print(&#34;Trung bình&#34;</span>)\nelse:\n    print(&#34;Yếu&#34;)"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e8c59fbe7a87f42c2e212f/113963c0a9df48538edf310d/sub_1761280830078_lt63dwy8k.py",
+        "similarity_percent": 71.07,
+        "full_code": "n = int(input())\nnumbers = list(map(float,input().split()))\na = 0\nfor i in numbers:\n    a += i\naverage = float(a/n)\nprint(f\"{average:.2f}\")\nif average >= 8.5:\n    print(\"Xuat sac\")\nelif 7.0 <= average <= 8.5:\n    print(\"Gioi\")\nelif 5.5 <= average < 7.0:\n    print(\"Kha\")\nelif 4.0 <= average < 5.5:\n    print(\"Trung binh\")\nelif average < 4.0:\n    print(\"Yeu\")",
+        "highlighted_code": "<span class='highlight-green'>n = int(input())\nnumbers = list(map(float,input().split()))\na = 0\nfor i </span>in numbers:\n    a += i\naverage = float(a/n)\nprint(f&#34;{average:.2f}&#34;)\nif average <span class='highlight-green'>&gt;= 8.5:\n    print(&#34;Xuat sac&#34;)\nelif 7.0 &lt;= average </span>&lt;= <span class='highlight-green'>8.5:\n    print(&#34;Gioi&#34;)\nelif 5.5 &lt;= average &lt; 7.0:\n    print(&#34;Kha&#34;)\nelif 4.0 &lt;= average &lt; 5.5:\n    print(&#34;Trung binh&#34;</span>)\nelif average &lt; 4.0:\n    print(&#34;Yeu&#34;)"
+      },
+      "token_overlap": 140,
+      "max_similarity_percent": 72.54
+    },
+    {
+      "case_id": 26,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e8c59fbe7a87f42c2e212f/113963c0a9df48538edf310d/sub_1761280830078_lt63dwy8k.py",
+        "similarity_percent": 71.07,
+        "full_code": "n = int(input())\nnumbers = list(map(float,input().split()))\na = 0\nfor i in numbers:\n    a += i\naverage = float(a/n)\nprint(f\"{average:.2f}\")\nif average >= 8.5:\n    print(\"Xuat sac\")\nelif 7.0 <= average <= 8.5:\n    print(\"Gioi\")\nelif 5.5 <= average < 7.0:\n    print(\"Kha\")\nelif 4.0 <= average < 5.5:\n    print(\"Trung binh\")\nelif average < 4.0:\n    print(\"Yeu\")",
+        "highlighted_code": "<span class='highlight-red'>n = int(input())\nnumbers = list(map(float,input().split()))\na = 0\nfor i </span>in numbers:\n    a += i\naverage = float(a/n)\nprint(f&#34;{average:.2f}&#34;)\nif average <span class='highlight-red'>&gt;= 8.5:\n    print(&#34;Xuat sac&#34;)\nelif 7.0 &lt;= average </span>&lt;= <span class='highlight-red'>8.5:\n    print(&#34;Gioi&#34;)\nelif 5.5 &lt;= average &lt; 7.0:\n    print(&#34;Kha&#34;)\nelif 4.0 &lt;= average &lt; 5.5:\n    print(&#34;Trung binh&#34;</span>)\nelif average &lt; 4.0:\n    print(&#34;Yeu&#34;)"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e8c59fbe7a87f42c2e212f/fb33e4e5d4ff46a5b041b652/sub_1761277235030_rwnr6o6em.py",
+        "similarity_percent": 72.54,
+        "full_code": "n=int(input())\nA=list(map(float,input().split()))\ntong=0\nfor i in range(len(A)):\n    tong=tong+A[i]\n    tb=tong/len(A)\n\n\nif tb>= 8.5:\n    print(\"Xuất sắc\")\nelif 7.0 <= tb < 8.5:\n    print(\"Giỏi\")\nelif 5.5 <= tb < 7.0:\n    print(\"Khá\")\nelif 4.0 <= tb < 5.5:\n    print(\"Trung bình\")\nelse:\n    print(\"Yếu\")",
+        "highlighted_code": "<span class='highlight-green'>n=int(input())\nA=list(map(float,input().split()))\ntong=0\nfor i </span>in range(len(A)):\n    tong=tong+A[i]\n    tb=tong/len(A)\n\n\nif tb<span class='highlight-green'>&gt;= 8.5:\n    print(&#34;Xuất sắc&#34;)\nelif 7.0 &lt;= tb </span>&lt; <span class='highlight-green'>8.5:\n    print(&#34;Giỏi&#34;)\nelif 5.5 &lt;= tb &lt; 7.0:\n    print(&#34;Khá&#34;)\nelif 4.0 &lt;= tb &lt; 5.5:\n    print(&#34;Trung bình&#34;</span>)\nelse:\n    print(&#34;Yếu&#34;)"
+      },
+      "token_overlap": 140,
+      "max_similarity_percent": 72.54
+    },
+    {
+      "case_id": 27,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e8c59fbe7a87f42c2e212f/fd92120cec18496789c2c733/sub_1761248724741_ydf36or84.py",
+        "similarity_percent": 69.59,
+        "full_code": "n=int(input())\nscores=list(map(float,input().split()))\ntotal=0\nfor i in scores:\n    total+=i\naverage=total/n\nprint(f\"{average:.2f}\")\nif average >= 8.5:\n    print(\"Xuất sắc\")\nelif average >=7.0:\n    print(\"Giỏi\")\nelif average >=5.5:\n    print(\"Khá\")\nelif average >= 4.0:\n    print(\"Trung bình\")\nelse:\n    print(\"Yếu\")\n",
+        "highlighted_code": "<span class='highlight-red'>n=int(input())\nscores=list(map(float,input().split()))\ntotal</span>=0\nfor i in scores:\n    total+=i\naverage=total<span class='highlight-red'>/n\nprint(f&#34;{average:.2f}&#34;)\nif average &gt;= 8.5:\n    print(&#34;Xuất sắc&#34;)\neli</span>f average &gt;=7.0<span class='highlight-red'>:\n    print(&#34;Giỏi&#34;)\nelif average &gt;=5.5:\n    print(&#34;Khá&#34;)\neli</span>f average &gt;= 4.0:\n    print(&#34;Trung bình&#34;)\nelse:\n    print(&#34;Yếu&#34;)\n"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e8c59fbe7a87f42c2e212f/3fa6af8d916a46039239cabe/sub_1761146174528_te34blicq.py",
+        "similarity_percent": 73.91,
+        "full_code": "n=int(input())\nscores=list(map(float,input().split()))\naverage=sum(scores)/n\nprint(f\"{average:.2f}\")\nif average>=8.5:\n    print(\"Xuất sắc\")\nelif average>=7:\n    print(\"Giỏi\")\nelif average>=5.5:\n    print(\"Khá\")\nelif average>=4:\n    print(\"Trung bình\")\nelse:\n    print(\"Yếu\")",
+        "highlighted_code": "<span class='highlight-green'>n=int(input())\nscores=list(map(float,input().split()))\naverage</span>=sum(scores)<span class='highlight-green'>/n\nprint(f&#34;{average:.2f}&#34;)\nif average&gt;=8.5:\n    print(&#34;Xuất sắc&#34;)\neli</span>f average&gt;=7<span class='highlight-green'>:\n    print(&#34;Giỏi&#34;)\nelif average&gt;=5.5:\n    print(&#34;Khá&#34;)\neli</span>f average&gt;=4:\n    print(&#34;Trung bình&#34;)\nelse:\n    print(&#34;Yếu&#34;)"
+      },
+      "token_overlap": 119,
+      "max_similarity_percent": 73.91
+    },
+    {
+      "case_id": 28,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e8c59fbe7a87f42c2e212f/fd92120cec18496789c2c733/sub_1761248724741_ydf36or84.py",
+        "similarity_percent": 69.59,
+        "full_code": "n=int(input())\nscores=list(map(float,input().split()))\ntotal=0\nfor i in scores:\n    total+=i\naverage=total/n\nprint(f\"{average:.2f}\")\nif average >= 8.5:\n    print(\"Xuất sắc\")\nelif average >=7.0:\n    print(\"Giỏi\")\nelif average >=5.5:\n    print(\"Khá\")\nelif average >= 4.0:\n    print(\"Trung bình\")\nelse:\n    print(\"Yếu\")\n",
+        "highlighted_code": "<span class='highlight-red'>n=int(input())\nscores=list(map(float,input().split()))\ntotal</span>=0\nfor i in scores:\n    total+=i\naverage=total<span class='highlight-red'>/n\nprint(f&#34;{average:.2f}&#34;)\nif average &gt;= 8.5:\n    print(&#34;Xuất sắc&#34;)\neli</span>f average &gt;=7.0<span class='highlight-red'>:\n    print(&#34;Giỏi&#34;)\nelif average &gt;=5.5:\n    print(&#34;Khá&#34;)\neli</span>f average &gt;= 4.0:\n    print(&#34;Trung bình&#34;)\nelse:\n    print(&#34;Yếu&#34;)\n"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e8c59fbe7a87f42c2e212f/f56f86fa26744324899543f3/sub_1761316003121_45c6ykl55.py",
+        "similarity_percent": 73.91,
+        "full_code": "n=int(input())\na=list(map(float,input().split()))\nb=sum(a)/n\nprint(f\"{b:.2f}\")\nif b>=8.5:print(\"Xuat sac\")\nelif b>=7:print(\"Gioi\")\nelif b>=5.5:print(\"Kha\")\nelif b>=4:print(\"Trung binh\")\nelse:print(\"Yeu\")",
+        "highlighted_code": "<span class='highlight-green'>n=int(input())\na=list(map(float,input().split()))\nb</span>=sum(a)<span class='highlight-green'>/n\nprint(f&#34;{b:.2f}&#34;)\nif b&gt;=8.5:print(&#34;Xuat sac&#34;)\neli</span>f b&gt;=7<span class='highlight-green'>:print(&#34;Gioi&#34;)\nelif b&gt;=5.5:print(&#34;Kha&#34;)\neli</span>f b&gt;=4:print(&#34;Trung binh&#34;)\nelse:print(&#34;Yeu&#34;)"
+      },
+      "token_overlap": 119,
+      "max_similarity_percent": 73.91
+    },
+    {
+      "case_id": 29,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e8c59fbe7a87f42c2e212f/fd92120cec18496789c2c733/sub_1761248705822_qhryx8vry.py",
+        "similarity_percent": 69.59,
+        "full_code": "n=int(input())\nscores=list(map(float,input().split()))\ntotal=0\nfor i in scores:\n    total+=i\naverage=total/n\nprint(f\"{average:.2f}\")\nif average >= 8.5:\n    print(\"Xuất sắc\")\nelif average >=7.0:\n    print(\"Giỏi\")\nelif average >=5.5:\n    print(\"Khá\")\nelif average >= 4.0:\n    print(\"Trung bình\")\nelse:\n    print(\"Yếu\")\n",
+        "highlighted_code": "<span class='highlight-red'>n=int(input())\nscores=list(map(float,input().split()))\ntotal</span>=0\nfor i in scores:\n    total+=i\naverage=total<span class='highlight-red'>/n\nprint(f&#34;{average:.2f}&#34;)\nif average &gt;= 8.5:\n    print(&#34;Xuất sắc&#34;)\neli</span>f average &gt;=7.0<span class='highlight-red'>:\n    print(&#34;Giỏi&#34;)\nelif average &gt;=5.5:\n    print(&#34;Khá&#34;)\neli</span>f average &gt;= 4.0:\n    print(&#34;Trung bình&#34;)\nelse:\n    print(&#34;Yếu&#34;)\n"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e8c59fbe7a87f42c2e212f/3fa6af8d916a46039239cabe/sub_1761146174528_te34blicq.py",
+        "similarity_percent": 73.91,
+        "full_code": "n=int(input())\nscores=list(map(float,input().split()))\naverage=sum(scores)/n\nprint(f\"{average:.2f}\")\nif average>=8.5:\n    print(\"Xuất sắc\")\nelif average>=7:\n    print(\"Giỏi\")\nelif average>=5.5:\n    print(\"Khá\")\nelif average>=4:\n    print(\"Trung bình\")\nelse:\n    print(\"Yếu\")",
+        "highlighted_code": "<span class='highlight-green'>n=int(input())\nscores=list(map(float,input().split()))\naverage</span>=sum(scores)<span class='highlight-green'>/n\nprint(f&#34;{average:.2f}&#34;)\nif average&gt;=8.5:\n    print(&#34;Xuất sắc&#34;)\neli</span>f average&gt;=7<span class='highlight-green'>:\n    print(&#34;Giỏi&#34;)\nelif average&gt;=5.5:\n    print(&#34;Khá&#34;)\neli</span>f average&gt;=4:\n    print(&#34;Trung bình&#34;)\nelse:\n    print(&#34;Yếu&#34;)"
+      },
+      "token_overlap": 119,
+      "max_similarity_percent": 73.91
+    },
+    {
+      "case_id": 30,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e8c59fbe7a87f42c2e212f/fd92120cec18496789c2c733/sub_1761248705822_qhryx8vry.py",
+        "similarity_percent": 69.59,
+        "full_code": "n=int(input())\nscores=list(map(float,input().split()))\ntotal=0\nfor i in scores:\n    total+=i\naverage=total/n\nprint(f\"{average:.2f}\")\nif average >= 8.5:\n    print(\"Xuất sắc\")\nelif average >=7.0:\n    print(\"Giỏi\")\nelif average >=5.5:\n    print(\"Khá\")\nelif average >= 4.0:\n    print(\"Trung bình\")\nelse:\n    print(\"Yếu\")\n",
+        "highlighted_code": "<span class='highlight-red'>n=int(input())\nscores=list(map(float,input().split()))\ntotal</span>=0\nfor i in scores:\n    total+=i\naverage=total<span class='highlight-red'>/n\nprint(f&#34;{average:.2f}&#34;)\nif average &gt;= 8.5:\n    print(&#34;Xuất sắc&#34;)\neli</span>f average &gt;=7.0<span class='highlight-red'>:\n    print(&#34;Giỏi&#34;)\nelif average &gt;=5.5:\n    print(&#34;Khá&#34;)\neli</span>f average &gt;= 4.0:\n    print(&#34;Trung bình&#34;)\nelse:\n    print(&#34;Yếu&#34;)\n"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e8c59fbe7a87f42c2e212f/f56f86fa26744324899543f3/sub_1761316003121_45c6ykl55.py",
+        "similarity_percent": 73.91,
+        "full_code": "n=int(input())\na=list(map(float,input().split()))\nb=sum(a)/n\nprint(f\"{b:.2f}\")\nif b>=8.5:print(\"Xuat sac\")\nelif b>=7:print(\"Gioi\")\nelif b>=5.5:print(\"Kha\")\nelif b>=4:print(\"Trung binh\")\nelse:print(\"Yeu\")",
+        "highlighted_code": "<span class='highlight-green'>n=int(input())\na=list(map(float,input().split()))\nb</span>=sum(a)<span class='highlight-green'>/n\nprint(f&#34;{b:.2f}&#34;)\nif b&gt;=8.5:print(&#34;Xuat sac&#34;)\neli</span>f b&gt;=7<span class='highlight-green'>:print(&#34;Gioi&#34;)\nelif b&gt;=5.5:print(&#34;Kha&#34;)\neli</span>f b&gt;=4:print(&#34;Trung binh&#34;)\nelse:print(&#34;Yeu&#34;)"
+      },
+      "token_overlap": 119,
+      "max_similarity_percent": 73.91
+    },
+    {
+      "case_id": 31,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e8c59fbe7a87f42c2e212f/113963c0a9df48538edf310d/sub_1761241160785_95i1ruqs3.py",
+        "similarity_percent": 69.31,
+        "full_code": "n = int(input())\nscores = list(map(float,input().split()))\na = 0\nfor i in scores:\n    a += i\naverage = float(a / n)\nprint(average)\nif average >= 8.5:\n    print(\"Xuất sắc\")\nelif 7.0 <= average <8.5 :\n    print(\"Giỏi\")\nelif 5.5 <= average <7.0:\n    print(\"Khá\")\nelif 4.0 <= average < 5.5:\n    print(\"Trung Bình\")\nelif average <4.0 :\n    print(\"Yếu\")",
+        "highlighted_code": "<span class='highlight-red'>n = int(input())\nscores = list(map(float,input().split(</span>)))\na = 0\nfor i in scores:\n    a += i\naverage = float(a / n)\nprint(average)\nif average <span class='highlight-red'>&gt;= 8.5:\n    print(&#34;Xuất sắc&#34;)\nelif 7.0 &lt;= average &lt;8.5 :\n    print(&#34;Giỏi&#34;)\nelif 5.5 &lt;= average &lt;7.0:\n    print(&#34;Khá&#34;)\nelif 4.0 &lt;= average &lt; 5.5:\n    print(&#34;Trung Bình&#34;</span>)\nelif average &lt;4.0 :\n    print(&#34;Yếu&#34;)"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e8c59fbe7a87f42c2e212f/bcb420abb39b4af095b63cf8/sub_1761299620855_z40uj40ep.py",
+        "similarity_percent": 69.31,
+        "full_code": "n=int(input()) \ndiem=list(map(float,input().split())) \nif n==len(diem): \n    diemtb=sum(diem)/n \n    print(f\"{diemtb:.2f}\") \n    if diemtb>=8.5: \n        print(\"Xuat sac\") \n    elif 7.0<=diemtb<8.5: \n        print(\"Gioi\") \n    elif 5.5<=diemtb<7.0: \n        print(\"Kha\") \n    elif 4.0<=diemtb<5.5: \n        print(\"Trung binh\") \n    else: \n        print(\"Yeu\")",
+        "highlighted_code": "<span class='highlight-green'>n=int(input()) \ndiem=list(map(float,input().split(</span>))) \nif n==len(diem): \n    diemtb=sum(diem)/n \n    print(f&#34;{diemtb:.2f}&#34;) \n    if diemtb<span class='highlight-green'>&gt;=8.5: \n        print(&#34;Xuat sac&#34;) \n    elif 7.0&lt;=diemtb&lt;8.5: \n        print(&#34;Gioi&#34;) \n    elif 5.5&lt;=diemtb&lt;7.0: \n        print(&#34;Kha&#34;) \n    elif 4.0&lt;=diemtb&lt;5.5: \n        print(&#34;Trung binh&#34;</span>) \n    else: \n        print(&#34;Yeu&#34;)"
+      },
+      "token_overlap": 131,
+      "max_similarity_percent": 69.31
+    },
+    {
+      "case_id": 32,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e8c59fbe7a87f42c2e212f/27e30f767b3a46b283cbfec0/sub_1761273084608_kfuqj0kzg.py",
+        "similarity_percent": 66.86,
+        "full_code": "n = int(input())\nlst = list(map(float, input().split()))\nave = sum(lst) / n\nprint(f'{ave:.2f}')\nif ave >= 8.5:\n    print('Xuất sắc')\nelif 7.0<=ave<8.5:\n    print('Giỏi')\nelif 5.5<=ave<7:\n    print('Khá')\nelif 4.0<=ave<5.5:\n    print('Trung bình')\nelse:\n    print(\"Yếu\")\n",
+        "highlighted_code": "n = int(input())\nlst = list(map(float, input().split()))\nave = sum(lst) / n\npri<span class='highlight-red'>nt(f&#39;{ave:.2f}&#39;)\nif ave &gt;= 8.5:\n    print(&#39;Xuất sắc&#39;)\nelif 7.0&lt;=ave&lt;8.5:\n    print(&#39;Giỏi&#39;)\nelif 5.5&lt;=ave&lt;</span>7<span class='highlight-red'>:\n    print(&#39;Khá&#39;)\nelif 4.0&lt;=ave&lt;5.5:\n    print(&#39;Trung bình&#39;)\nelse:\n    print(&#34;Yếu&#34;</span>)\n"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e8c59fbe7a87f42c2e212f/4619643a0f2348b6b74a746a/sub_1761474137011_8om0uf31l.py",
+        "similarity_percent": 59.69,
+        "full_code": "n = int(input(\"\"))\nscores = list(map(float,input(\"\").split()))\ntotal = sum(scores)\naverage = total / n\naverage_rounded = round(average,2)\nprint(f\"{average_rounded:.2f}\")\nif average_rounded >= 8.5:\n    print(\"Xuat sac\")\nelif 7.0 <= average_rounded < 8.5:\n    print(\"Gioi\") \nelif 5.5 <= average_rounded < 7.0:\n    print(\"Kha\")\nelif 4.0 <= average_rounded < 5.5:\n    print(\"Trung binh\")\nelse:\n    print(\"Yeu\")",
+        "highlighted_code": "n = int(input(&#34;&#34;))\nscores = list(map(float,input(&#34;&#34;).split()))\ntotal = sum(scores)\naverage = total / n\naverage_rounded = round(average,2)\npri<span class='highlight-green'>nt(f&#34;{average_rounded:.2f}&#34;)\nif average_rounded &gt;= 8.5:\n    print(&#34;Xuat sac&#34;)\nelif 7.0 &lt;= average_rounded &lt; 8.5:\n    print(&#34;Gioi&#34;) \nelif 5.5 &lt;= average_rounded &lt; </span>7.0<span class='highlight-green'>:\n    print(&#34;Kha&#34;)\nelif 4.0 &lt;= average_rounded &lt; 5.5:\n    print(&#34;Trung binh&#34;)\nelse:\n    print(&#34;Yeu&#34;</span>)"
+      },
+      "token_overlap": 117,
+      "max_similarity_percent": 66.86
+    },
+    {
+      "case_id": 33,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e8c59fbe7a87f42c2e212f/27e30f767b3a46b283cbfec0/sub_1761273084608_kfuqj0kzg.py",
+        "similarity_percent": 66.29,
+        "full_code": "n = int(input())\nlst = list(map(float, input().split()))\nave = sum(lst) / n\nprint(f'{ave:.2f}')\nif ave >= 8.5:\n    print('Xuất sắc')\nelif 7.0<=ave<8.5:\n    print('Giỏi')\nelif 5.5<=ave<7:\n    print('Khá')\nelif 4.0<=ave<5.5:\n    print('Trung bình')\nelse:\n    print(\"Yếu\")\n",
+        "highlighted_code": "<span class='highlight-red'>n = int(input())\nlst = list(map(float, input().split()))\nave = sum(lst) / n\nprint(f&#39;{ave:.2f}&#39;)\nif ave &gt;= 8.5:\n    print(&#39;Xuất sắc&#39;)\neli</span>f 7.0&lt;=ave&lt;8.5:\n    print(&#39;Giỏi&#39;)\nelif 5.5&lt;=ave&lt;7:\n    print(&#39;Khá&#39;)\nelif 4.0&lt;=ave&lt;5.5<span class='highlight-red'>:\n    print(&#39;Trung bình&#39;)\nelse:\n    print(&#34;Yếu&#34;</span>)\n"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e8c59fbe7a87f42c2e212f/3fa6af8d916a46039239cabe/sub_1761146174528_te34blicq.py",
+        "similarity_percent": 72.05,
+        "full_code": "n=int(input())\nscores=list(map(float,input().split()))\naverage=sum(scores)/n\nprint(f\"{average:.2f}\")\nif average>=8.5:\n    print(\"Xuất sắc\")\nelif average>=7:\n    print(\"Giỏi\")\nelif average>=5.5:\n    print(\"Khá\")\nelif average>=4:\n    print(\"Trung bình\")\nelse:\n    print(\"Yếu\")",
+        "highlighted_code": "<span class='highlight-green'>n=int(input())\nscores=list(map(float,input().split()))\naverage=sum(scores)/n\nprint(f&#34;{average:.2f}&#34;)\nif average&gt;=8.5:\n    print(&#34;Xuất sắc&#34;)\neli</span>f average&gt;=7:\n    print(&#34;Giỏi&#34;)\nelif average&gt;=5.5:\n    print(&#34;Khá&#34;)\nelif average&gt;=4<span class='highlight-green'>:\n    print(&#34;Trung bình&#34;)\nelse:\n    print(&#34;Yếu&#34;</span>)"
+      },
+      "token_overlap": 116,
+      "max_similarity_percent": 72.05
+    },
+    {
+      "case_id": 34,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e8c59fbe7a87f42c2e212f/27e30f767b3a46b283cbfec0/sub_1761273084608_kfuqj0kzg.py",
+        "similarity_percent": 66.29,
+        "full_code": "n = int(input())\nlst = list(map(float, input().split()))\nave = sum(lst) / n\nprint(f'{ave:.2f}')\nif ave >= 8.5:\n    print('Xuất sắc')\nelif 7.0<=ave<8.5:\n    print('Giỏi')\nelif 5.5<=ave<7:\n    print('Khá')\nelif 4.0<=ave<5.5:\n    print('Trung bình')\nelse:\n    print(\"Yếu\")\n",
+        "highlighted_code": "<span class='highlight-red'>n = int(input())\nlst = list(map(float, input().split()))\nave = sum(lst) / n\nprint(f&#39;{ave:.2f}&#39;)\nif ave &gt;= 8.5:\n    print(&#39;Xuất sắc&#39;)\neli</span>f 7.0&lt;=ave&lt;8.5:\n    print(&#39;Giỏi&#39;)\nelif 5.5&lt;=ave&lt;7:\n    print(&#39;Khá&#39;)\nelif 4.0&lt;=ave&lt;5.5<span class='highlight-red'>:\n    print(&#39;Trung bình&#39;)\nelse:\n    print(&#34;Yếu&#34;</span>)\n"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e8c59fbe7a87f42c2e212f/f56f86fa26744324899543f3/sub_1761316003121_45c6ykl55.py",
+        "similarity_percent": 72.05,
+        "full_code": "n=int(input())\na=list(map(float,input().split()))\nb=sum(a)/n\nprint(f\"{b:.2f}\")\nif b>=8.5:print(\"Xuat sac\")\nelif b>=7:print(\"Gioi\")\nelif b>=5.5:print(\"Kha\")\nelif b>=4:print(\"Trung binh\")\nelse:print(\"Yeu\")",
+        "highlighted_code": "<span class='highlight-green'>n=int(input())\na=list(map(float,input().split()))\nb=sum(a)/n\nprint(f&#34;{b:.2f}&#34;)\nif b&gt;=8.5:print(&#34;Xuat sac&#34;)\neli</span>f b&gt;=7:print(&#34;Gioi&#34;)\nelif b&gt;=5.5:print(&#34;Kha&#34;)\nelif b&gt;=4<span class='highlight-green'>:print(&#34;Trung binh&#34;)\nelse:print(&#34;Yeu&#34;</span>)"
+      },
+      "token_overlap": 116,
+      "max_similarity_percent": 72.05
+    },
+    {
+      "case_id": 35,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e8c59fbe7a87f42c2e212f/f8a2bab9778140ecb46b6a60/sub_1761304193772_24kcq138x.py",
+        "similarity_percent": 63.69,
+        "full_code": "n = int(input())\nscores = list(map(float, input().split()))\navr = float('%.2f' % (sum(scores) / len(scores)))\n\nprint(f\"{avr:.2f}\")\nif avr >= 8.5:\n    print(\"Xuat sac\")\nelif avr >= 7.0:\n    print(\"Gioi\")\nelif avr >= 5.5:\n    print(\"Kha\")\nelif avr >= 4.0:\n    print(\"Trung binh\")\nelse:\n    print(\"Yeu\")",
+        "highlighted_code": "<span class='highlight-red'>n = int(input())\nscores = list(map(float, input().split()))\navr </span>= float(&#39;%.2f&#39; % (sum(scores) / len(scores)))\n\npri<span class='highlight-red'>nt(f&#34;{avr:.2f}&#34;)\nif avr &gt;= 8.5:\n    print(&#34;Xuat sac&#34;)\neli</span>f avr &gt;= 7.0<span class='highlight-red'>:\n    print(&#34;Gioi&#34;)\nelif avr &gt;= 5.5:\n    print(&#34;Kha&#34;)\neli</span>f avr &gt;= 4.0:\n    print(&#34;Trung binh&#34;)\nelse:\n    print(&#34;Yeu&#34;)"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e8c59fbe7a87f42c2e212f/3fa6af8d916a46039239cabe/sub_1761146174528_te34blicq.py",
+        "similarity_percent": 70.81,
+        "full_code": "n=int(input())\nscores=list(map(float,input().split()))\naverage=sum(scores)/n\nprint(f\"{average:.2f}\")\nif average>=8.5:\n    print(\"Xuất sắc\")\nelif average>=7:\n    print(\"Giỏi\")\nelif average>=5.5:\n    print(\"Khá\")\nelif average>=4:\n    print(\"Trung bình\")\nelse:\n    print(\"Yếu\")",
+        "highlighted_code": "<span class='highlight-green'>n=int(input())\nscores=list(map(float,input().split()))\naverage</span>=sum(scores)/n\npri<span class='highlight-green'>nt(f&#34;{average:.2f}&#34;)\nif average&gt;=8.5:\n    print(&#34;Xuất sắc&#34;)\neli</span>f average&gt;=7<span class='highlight-green'>:\n    print(&#34;Giỏi&#34;)\nelif average&gt;=5.5:\n    print(&#34;Khá&#34;)\neli</span>f average&gt;=4:\n    print(&#34;Trung bình&#34;)\nelse:\n    print(&#34;Yếu&#34;)"
+      },
+      "token_overlap": 114,
+      "max_similarity_percent": 70.81
+    },
+    {
+      "case_id": 36,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e8c59fbe7a87f42c2e212f/f8a2bab9778140ecb46b6a60/sub_1761304193772_24kcq138x.py",
+        "similarity_percent": 63.69,
+        "full_code": "n = int(input())\nscores = list(map(float, input().split()))\navr = float('%.2f' % (sum(scores) / len(scores)))\n\nprint(f\"{avr:.2f}\")\nif avr >= 8.5:\n    print(\"Xuat sac\")\nelif avr >= 7.0:\n    print(\"Gioi\")\nelif avr >= 5.5:\n    print(\"Kha\")\nelif avr >= 4.0:\n    print(\"Trung binh\")\nelse:\n    print(\"Yeu\")",
+        "highlighted_code": "<span class='highlight-red'>n = int(input())\nscores = list(map(float, input().split()))\navr </span>= float(&#39;%.2f&#39; % (sum(scores) / len(scores)))\n\npri<span class='highlight-red'>nt(f&#34;{avr:.2f}&#34;)\nif avr &gt;= 8.5:\n    print(&#34;Xuat sac&#34;)\neli</span>f avr &gt;= 7.0<span class='highlight-red'>:\n    print(&#34;Gioi&#34;)\nelif avr &gt;= 5.5:\n    print(&#34;Kha&#34;)\neli</span>f avr &gt;= 4.0:\n    print(&#34;Trung binh&#34;)\nelse:\n    print(&#34;Yeu&#34;)"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e8c59fbe7a87f42c2e212f/f56f86fa26744324899543f3/sub_1761316003121_45c6ykl55.py",
+        "similarity_percent": 70.81,
+        "full_code": "n=int(input())\na=list(map(float,input().split()))\nb=sum(a)/n\nprint(f\"{b:.2f}\")\nif b>=8.5:print(\"Xuat sac\")\nelif b>=7:print(\"Gioi\")\nelif b>=5.5:print(\"Kha\")\nelif b>=4:print(\"Trung binh\")\nelse:print(\"Yeu\")",
+        "highlighted_code": "<span class='highlight-green'>n=int(input())\na=list(map(float,input().split()))\nb</span>=sum(a)/n\npri<span class='highlight-green'>nt(f&#34;{b:.2f}&#34;)\nif b&gt;=8.5:print(&#34;Xuat sac&#34;)\neli</span>f b&gt;=7<span class='highlight-green'>:print(&#34;Gioi&#34;)\nelif b&gt;=5.5:print(&#34;Kha&#34;)\neli</span>f b&gt;=4:print(&#34;Trung binh&#34;)\nelse:print(&#34;Yeu&#34;)"
+      },
+      "token_overlap": 114,
+      "max_similarity_percent": 70.81
+    },
+    {
+      "case_id": 37,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e8c59fbe7a87f42c2e212f/bcb420abb39b4af095b63cf8/sub_1761299620855_z40uj40ep.py",
+        "similarity_percent": 63.49,
+        "full_code": "n=int(input()) \ndiem=list(map(float,input().split())) \nif n==len(diem): \n    diemtb=sum(diem)/n \n    print(f\"{diemtb:.2f}\") \n    if diemtb>=8.5: \n        print(\"Xuat sac\") \n    elif 7.0<=diemtb<8.5: \n        print(\"Gioi\") \n    elif 5.5<=diemtb<7.0: \n        print(\"Kha\") \n    elif 4.0<=diemtb<5.5: \n        print(\"Trung binh\") \n    else: \n        print(\"Yeu\")",
+        "highlighted_code": "n=int(input()) \ndiem=list(map(float,input().split())) \nif n==len(diem): \n    diemtb=sum(diem)/n \n    pri<span class='highlight-red'>nt(f&#34;{diemtb:.2f}&#34;) \n    if diemtb&gt;=8.5: \n        print(&#34;Xuat sac&#34;) \n    elif 7.0&lt;=diemtb&lt;8.5: \n        print(&#34;Gioi&#34;) \n    elif 5.5&lt;=diemtb&lt;7.0: \n        print(&#34;Kha&#34;) \n    elif 4.0&lt;=diemtb&lt;5.5: \n        print(&#34;Trung binh&#34;) \n    else: \n        print(&#34;Yeu&#34;</span>)"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e8c59fbe7a87f42c2e212f/4619643a0f2348b6b74a746a/sub_1761474137011_8om0uf31l.py",
+        "similarity_percent": 61.22,
+        "full_code": "n = int(input(\"\"))\nscores = list(map(float,input(\"\").split()))\ntotal = sum(scores)\naverage = total / n\naverage_rounded = round(average,2)\nprint(f\"{average_rounded:.2f}\")\nif average_rounded >= 8.5:\n    print(\"Xuat sac\")\nelif 7.0 <= average_rounded < 8.5:\n    print(\"Gioi\") \nelif 5.5 <= average_rounded < 7.0:\n    print(\"Kha\")\nelif 4.0 <= average_rounded < 5.5:\n    print(\"Trung binh\")\nelse:\n    print(\"Yeu\")",
+        "highlighted_code": "n = int(input(&#34;&#34;))\nscores = list(map(float,input(&#34;&#34;).split()))\ntotal = sum(scores)\naverage = total / n\naverage_rounded = round(average,2)\npri<span class='highlight-green'>nt(f&#34;{average_rounded:.2f}&#34;)\nif average_rounded &gt;= 8.5:\n    print(&#34;Xuat sac&#34;)\nelif 7.0 &lt;= average_rounded &lt; 8.5:\n    print(&#34;Gioi&#34;) \nelif 5.5 &lt;= average_rounded &lt; 7.0:\n    print(&#34;Kha&#34;)\nelif 4.0 &lt;= average_rounded &lt; 5.5:\n    print(&#34;Trung binh&#34;)\nelse:\n    print(&#34;Yeu&#34;</span>)"
+      },
+      "token_overlap": 120,
+      "max_similarity_percent": 63.49
+    },
+    {
+      "case_id": 38,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e8c59fbe7a87f42c2e212f/4896d7b4077d4ebf9fd5558f/sub_1761287767727_t24eoxsy3.py",
+        "similarity_percent": 61.36,
+        "full_code": "n=float(input())\nscores=list(map(float,input().split()))\ndef trungBinh(scores,n):\n    tong=sum(scores)\n    trungbinh=tong/n\n    return (round(trungbinh,2))\ntb=trungBinh(scores,n)\nif (tb)>=8.5:\n  print(Xuất sắc)\nelse if 7<=(tb)<8.5:\n print(Giỏi)\nelse if 5.5<=(tb)<7:\n print(Trung bình)\nelse:\n    print(Yeu)",
+        "highlighted_code": "<span class='highlight-red'>n=float(input())\nscores=list(map(float,input().split()))\ndef trungBinh(scores,n):\n    tong=sum(scores)\n    trungbinh=tong/n\n    return (round(trungbinh,2))\ntb=trungBinh(scores,n)\nif (tb)&gt;=8.5:\n  pr</span>int(Xuất sắc)\nelse if 7&lt;=(tb)&lt;8.5:\n print(Giỏi)\nelse if 5.5&lt;=(tb)&lt;7:\n print(Trung bình)\nelse:\n    print(Yeu)"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e8c59fbe7a87f42c2e212f/4896d7b4077d4ebf9fd5558f/sub_1761287927762_6zeyme2ih.py",
+        "similarity_percent": 60.0,
+        "full_code": "n=float(input())\nscores=list(map(float,input().split()))\ndef trungBinh(scores,n):\n    tong=sum(scores)\n    trungbinh=tong/n\n    return (round(trungbinh,2))\ntb=trungBinh(scores,n)\nif (tb)>=8.5:\n  print(\"Xuất sắc\")\nelif 7<=(tb)<8.5:\n print(\"Giỏi\")\nelif 5.5<=(tb)<7:\n print(\"Trung bình\")\nelse:\n    print(\"Yeu\")",
+        "highlighted_code": "<span class='highlight-green'>n=float(input())\nscores=list(map(float,input().split()))\ndef trungBinh(scores,n):\n    tong=sum(scores)\n    trungbinh=tong/n\n    return (round(trungbinh,2))\ntb=trungBinh(scores,n)\nif (tb)&gt;=8.5:\n  pr</span>int(&#34;Xuất sắc&#34;)\nelif 7&lt;=(tb)&lt;8.5:\n print(&#34;Giỏi&#34;)\nelif 5.5&lt;=(tb)&lt;7:\n print(&#34;Trung bình&#34;)\nelse:\n    print(&#34;Yeu&#34;)"
+      },
+      "token_overlap": 108,
+      "max_similarity_percent": 61.36
+    },
+    {
+      "case_id": 39,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e8c59fbe7a87f42c2e212f/4896d7b4077d4ebf9fd5558f/sub_1761288001776_1h9n2schh.py",
+        "similarity_percent": 60.0,
+        "full_code": "n=float(input())\nscores=list(map(float,input().split()))\ndef trungBinh(scores,n):\n    tong=sum(scores)\n    trungbinh=tong/n\n    return (round(trungbinh,2))\ntb=trungBinh(scores,n)\nif (tb)>=8.5:\n  print(\"Xuất sắc\")\nelif 7<=(tb)<8.5:\n print(\"Giỏi\")\nelif 5.5<=(tb)<7:\n print(\"Trung bình\")\nelse:\n    print(\"Yeu\")",
+        "highlighted_code": "<span class='highlight-red'>n=float(input())\nscores=list(map(float,input().split()))\ndef trungBinh(scores,n):\n    tong=sum(scores)\n    trungbinh=tong/n\n    return (round(trungbinh,2))\ntb=trungBinh(scores,n)\nif (tb)&gt;=8.5:\n  pr</span>int(&#34;Xuất sắc&#34;)\nelif 7&lt;=(tb)&lt;8.5:\n print(&#34;Giỏi&#34;)\nelif 5.5&lt;=(tb)&lt;7:\n print(&#34;Trung bình&#34;)\nelse:\n    print(&#34;Yeu&#34;)"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e8c59fbe7a87f42c2e212f/4896d7b4077d4ebf9fd5558f/sub_1761287767727_t24eoxsy3.py",
+        "similarity_percent": 61.36,
+        "full_code": "n=float(input())\nscores=list(map(float,input().split()))\ndef trungBinh(scores,n):\n    tong=sum(scores)\n    trungbinh=tong/n\n    return (round(trungbinh,2))\ntb=trungBinh(scores,n)\nif (tb)>=8.5:\n  print(Xuất sắc)\nelse if 7<=(tb)<8.5:\n print(Giỏi)\nelse if 5.5<=(tb)<7:\n print(Trung bình)\nelse:\n    print(Yeu)",
+        "highlighted_code": "<span class='highlight-green'>n=float(input())\nscores=list(map(float,input().split()))\ndef trungBinh(scores,n):\n    tong=sum(scores)\n    trungbinh=tong/n\n    return (round(trungbinh,2))\ntb=trungBinh(scores,n)\nif (tb)&gt;=8.5:\n  pr</span>int(Xuất sắc)\nelse if 7&lt;=(tb)&lt;8.5:\n print(Giỏi)\nelse if 5.5&lt;=(tb)&lt;7:\n print(Trung bình)\nelse:\n    print(Yeu)"
+      },
+      "token_overlap": 108,
+      "max_similarity_percent": 61.36
+    },
+    {
+      "case_id": 40,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e8c59fbe7a87f42c2e212f/bcb420abb39b4af095b63cf8/sub_1761299620855_z40uj40ep.py",
+        "similarity_percent": 59.79,
+        "full_code": "n=int(input()) \ndiem=list(map(float,input().split())) \nif n==len(diem): \n    diemtb=sum(diem)/n \n    print(f\"{diemtb:.2f}\") \n    if diemtb>=8.5: \n        print(\"Xuat sac\") \n    elif 7.0<=diemtb<8.5: \n        print(\"Gioi\") \n    elif 5.5<=diemtb<7.0: \n        print(\"Kha\") \n    elif 4.0<=diemtb<5.5: \n        print(\"Trung binh\") \n    else: \n        print(\"Yeu\")",
+        "highlighted_code": "<span class='highlight-red'>n=int(input()) \ndiem=list(map(float,input().split(</span>))) \nif n==len(diem): \n    <span class='highlight-red'>diemtb=sum(diem)/n \n    print(f&#34;{diemtb:.2f}&#34;) \n    if diemtb&gt;=8.5: \n        print(&#34;Xuat sac&#34;) \n    eli</span>f 7.0&lt;=diemtb&lt;8.5: \n        print(&#34;Gioi&#34;) \n    elif 5.5&lt;=diemtb&lt;7.0: \n        print(&#34;Kha&#34;) \n    elif 4.0&lt;=diemtb&lt;5.5<span class='highlight-red'>: \n        print(&#34;Trung binh&#34;) \n    else: \n        print(&#34;Yeu&#34;</span>)"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e8c59fbe7a87f42c2e212f/3fa6af8d916a46039239cabe/sub_1761146174528_te34blicq.py",
+        "similarity_percent": 70.19,
+        "full_code": "n=int(input())\nscores=list(map(float,input().split()))\naverage=sum(scores)/n\nprint(f\"{average:.2f}\")\nif average>=8.5:\n    print(\"Xuất sắc\")\nelif average>=7:\n    print(\"Giỏi\")\nelif average>=5.5:\n    print(\"Khá\")\nelif average>=4:\n    print(\"Trung bình\")\nelse:\n    print(\"Yếu\")",
+        "highlighted_code": "<span class='highlight-green'>n=int(input())\nscores=list(map(float,input().split(</span>)))\n<span class='highlight-green'>average=sum(scores)/n\nprint(f&#34;{average:.2f}&#34;)\nif average&gt;=8.5:\n    print(&#34;Xuất sắc&#34;)\neli</span>f average&gt;=7:\n    print(&#34;Giỏi&#34;)\nelif average&gt;=5.5:\n    print(&#34;Khá&#34;)\nelif average&gt;=4<span class='highlight-green'>:\n    print(&#34;Trung bình&#34;)\nelse:\n    print(&#34;Yếu&#34;</span>)"
+      },
+      "token_overlap": 113,
+      "max_similarity_percent": 70.19
+    },
+    {
+      "case_id": 41,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e8c59fbe7a87f42c2e212f/bcb420abb39b4af095b63cf8/sub_1761299620855_z40uj40ep.py",
+        "similarity_percent": 59.79,
+        "full_code": "n=int(input()) \ndiem=list(map(float,input().split())) \nif n==len(diem): \n    diemtb=sum(diem)/n \n    print(f\"{diemtb:.2f}\") \n    if diemtb>=8.5: \n        print(\"Xuat sac\") \n    elif 7.0<=diemtb<8.5: \n        print(\"Gioi\") \n    elif 5.5<=diemtb<7.0: \n        print(\"Kha\") \n    elif 4.0<=diemtb<5.5: \n        print(\"Trung binh\") \n    else: \n        print(\"Yeu\")",
+        "highlighted_code": "<span class='highlight-red'>n=int(input()) \ndiem=list(map(float,input().split(</span>))) \nif n==len(diem): \n    <span class='highlight-red'>diemtb=sum(diem)/n \n    print(f&#34;{diemtb:.2f}&#34;) \n    if diemtb&gt;=8.5: \n        print(&#34;Xuat sac&#34;) \n    eli</span>f 7.0&lt;=diemtb&lt;8.5: \n        print(&#34;Gioi&#34;) \n    elif 5.5&lt;=diemtb&lt;7.0: \n        print(&#34;Kha&#34;) \n    elif 4.0&lt;=diemtb&lt;5.5<span class='highlight-red'>: \n        print(&#34;Trung binh&#34;) \n    else: \n        print(&#34;Yeu&#34;</span>)"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e8c59fbe7a87f42c2e212f/f56f86fa26744324899543f3/sub_1761316003121_45c6ykl55.py",
+        "similarity_percent": 70.19,
+        "full_code": "n=int(input())\na=list(map(float,input().split()))\nb=sum(a)/n\nprint(f\"{b:.2f}\")\nif b>=8.5:print(\"Xuat sac\")\nelif b>=7:print(\"Gioi\")\nelif b>=5.5:print(\"Kha\")\nelif b>=4:print(\"Trung binh\")\nelse:print(\"Yeu\")",
+        "highlighted_code": "<span class='highlight-green'>n=int(input())\na=list(map(float,input().split(</span>)))\n<span class='highlight-green'>b=sum(a)/n\nprint(f&#34;{b:.2f}&#34;)\nif b&gt;=8.5:print(&#34;Xuat sac&#34;)\neli</span>f b&gt;=7:print(&#34;Gioi&#34;)\nelif b&gt;=5.5:print(&#34;Kha&#34;)\nelif b&gt;=4<span class='highlight-green'>:print(&#34;Trung binh&#34;)\nelse:print(&#34;Yeu&#34;</span>)"
+      },
+      "token_overlap": 113,
+      "max_similarity_percent": 70.19
+    },
+    {
+      "case_id": 42,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e8c59fbe7a87f42c2e212f/3fa6af8d916a46039239cabe/sub_1761146174528_te34blicq.py",
+        "similarity_percent": 55.28,
+        "full_code": "n=int(input())\nscores=list(map(float,input().split()))\naverage=sum(scores)/n\nprint(f\"{average:.2f}\")\nif average>=8.5:\n    print(\"Xuất sắc\")\nelif average>=7:\n    print(\"Giỏi\")\nelif average>=5.5:\n    print(\"Khá\")\nelif average>=4:\n    print(\"Trung bình\")\nelse:\n    print(\"Yếu\")",
+        "highlighted_code": "n=int(input())\nscores=list(map(float,input().split()))\naverage=sum(scores)/n\nprint(f&#34;{average:.2f}&#34;)\nif average<span class='highlight-red'>&gt;=8.5:\n    print(&#34;Xuất sắc&#34;)\nelif average&gt;=7:\n    print(&#34;Giỏi&#34;)\nelif average&gt;=5.5:\n    print(&#34;Khá&#34;)\nelif average&gt;=4:\n    print(&#34;Trung bình&#34;)\nelse:\n    print(&#34;Yếu&#34;</span>)"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e8c59fbe7a87f42c2e212f/a31a4097e8a74e09b9209282/sub_1761281027468_90hwsdbv3.py",
+        "similarity_percent": 50.57,
+        "full_code": "n=int(input())\ntb=float(0)\nnhap=input()\nparts=nhap.split()\nfor i in parts:\n    tb+=float(i)\ntb/=n\nprint(\"%.2f\"%round(tb,2))\nif tb>= 8.5: print(\"Xuất sắc\")\nelif tb>=7: print(\"Giỏi\")\nelif tb>=5.5: print(\"Khá\")\nelif tb>=4: print(\"Trung bình\")\nelse: print(\"Yếu\")",
+        "highlighted_code": "n=int(input())\ntb=float(0)\nnhap=input()\nparts=nhap.split()\nfor i in parts:\n    tb+=float(i)\ntb/=n\nprint(&#34;%.2f&#34;%round(tb,2))\nif tb<span class='highlight-green'>&gt;= 8.5: print(&#34;Xuất sắc&#34;)\nelif tb&gt;=7: print(&#34;Giỏi&#34;)\nelif tb&gt;=5.5: print(&#34;Khá&#34;)\nelif tb&gt;=4: print(&#34;Trung bình&#34;)\nelse: print(&#34;Yếu&#34;</span>)"
+      },
+      "token_overlap": 89,
+      "max_similarity_percent": 55.28
+    },
+    {
+      "case_id": 43,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e8c59fbe7a87f42c2e212f/fd92120cec18496789c2c733/sub_1761248724741_ydf36or84.py",
+        "similarity_percent": 54.97,
+        "full_code": "n=int(input())\nscores=list(map(float,input().split()))\ntotal=0\nfor i in scores:\n    total+=i\naverage=total/n\nprint(f\"{average:.2f}\")\nif average >= 8.5:\n    print(\"Xuất sắc\")\nelif average >=7.0:\n    print(\"Giỏi\")\nelif average >=5.5:\n    print(\"Khá\")\nelif average >= 4.0:\n    print(\"Trung bình\")\nelse:\n    print(\"Yếu\")\n",
+        "highlighted_code": "<span class='highlight-red'>n=int(input())\nscores=list(map(float,input().split()))\ntotal=0\nfor i in scores:\n    total+=i\naverage</span>=total/n\npri<span class='highlight-red'>nt(f&#34;{average:.2f}&#34;)\nif average &gt;= 8.5:\n    print(&#34;Xuất sắc&#34;)\neli</span>f average &gt;=7.0:\n    print(&#34;Giỏi&#34;)\nelif average &gt;=5.5:\n    print(&#34;Khá&#34;)\nelif average &gt;= 4.0:\n    print(&#34;Trung bình&#34;)\nelse:\n    print(&#34;Yếu&#34;)\n"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e8c59fbe7a87f42c2e212f/113963c0a9df48538edf310d/sub_1761280830078_lt63dwy8k.py",
+        "similarity_percent": 47.72,
+        "full_code": "n = int(input())\nnumbers = list(map(float,input().split()))\na = 0\nfor i in numbers:\n    a += i\naverage = float(a/n)\nprint(f\"{average:.2f}\")\nif average >= 8.5:\n    print(\"Xuat sac\")\nelif 7.0 <= average <= 8.5:\n    print(\"Gioi\")\nelif 5.5 <= average < 7.0:\n    print(\"Kha\")\nelif 4.0 <= average < 5.5:\n    print(\"Trung binh\")\nelif average < 4.0:\n    print(\"Yeu\")",
+        "highlighted_code": "<span class='highlight-green'>n = int(input())\nnumbers = list(map(float,input().split()))\na = 0\nfor i in numbers:\n    a += i\naverage </span>= float(a/n)\npri<span class='highlight-green'>nt(f&#34;{average:.2f}&#34;)\nif average &gt;= 8.5:\n    print(&#34;Xuat sac&#34;)\neli</span>f 7.0 &lt;= average &lt;= 8.5:\n    print(&#34;Gioi&#34;)\nelif 5.5 &lt;= average &lt; 7.0:\n    print(&#34;Kha&#34;)\nelif 4.0 &lt;= average &lt; 5.5:\n    print(&#34;Trung binh&#34;)\nelif average &lt; 4.0:\n    print(&#34;Yeu&#34;)"
+      },
+      "token_overlap": 94,
+      "max_similarity_percent": 54.97
+    },
+    {
+      "case_id": 44,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e8c59fbe7a87f42c2e212f/fd92120cec18496789c2c733/sub_1761248705822_qhryx8vry.py",
+        "similarity_percent": 54.97,
+        "full_code": "n=int(input())\nscores=list(map(float,input().split()))\ntotal=0\nfor i in scores:\n    total+=i\naverage=total/n\nprint(f\"{average:.2f}\")\nif average >= 8.5:\n    print(\"Xuất sắc\")\nelif average >=7.0:\n    print(\"Giỏi\")\nelif average >=5.5:\n    print(\"Khá\")\nelif average >= 4.0:\n    print(\"Trung bình\")\nelse:\n    print(\"Yếu\")\n",
+        "highlighted_code": "<span class='highlight-red'>n=int(input())\nscores=list(map(float,input().split()))\ntotal=0\nfor i in scores:\n    total+=i\naverage</span>=total/n\npri<span class='highlight-red'>nt(f&#34;{average:.2f}&#34;)\nif average &gt;= 8.5:\n    print(&#34;Xuất sắc&#34;)\neli</span>f average &gt;=7.0:\n    print(&#34;Giỏi&#34;)\nelif average &gt;=5.5:\n    print(&#34;Khá&#34;)\nelif average &gt;= 4.0:\n    print(&#34;Trung bình&#34;)\nelse:\n    print(&#34;Yếu&#34;)\n"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e8c59fbe7a87f42c2e212f/113963c0a9df48538edf310d/sub_1761280830078_lt63dwy8k.py",
+        "similarity_percent": 47.72,
+        "full_code": "n = int(input())\nnumbers = list(map(float,input().split()))\na = 0\nfor i in numbers:\n    a += i\naverage = float(a/n)\nprint(f\"{average:.2f}\")\nif average >= 8.5:\n    print(\"Xuat sac\")\nelif 7.0 <= average <= 8.5:\n    print(\"Gioi\")\nelif 5.5 <= average < 7.0:\n    print(\"Kha\")\nelif 4.0 <= average < 5.5:\n    print(\"Trung binh\")\nelif average < 4.0:\n    print(\"Yeu\")",
+        "highlighted_code": "<span class='highlight-green'>n = int(input())\nnumbers = list(map(float,input().split()))\na = 0\nfor i in numbers:\n    a += i\naverage </span>= float(a/n)\npri<span class='highlight-green'>nt(f&#34;{average:.2f}&#34;)\nif average &gt;= 8.5:\n    print(&#34;Xuat sac&#34;)\neli</span>f 7.0 &lt;= average &lt;= 8.5:\n    print(&#34;Gioi&#34;)\nelif 5.5 &lt;= average &lt; 7.0:\n    print(&#34;Kha&#34;)\nelif 4.0 &lt;= average &lt; 5.5:\n    print(&#34;Trung binh&#34;)\nelif average &lt; 4.0:\n    print(&#34;Yeu&#34;)"
+      },
+      "token_overlap": 94,
+      "max_similarity_percent": 54.97
+    },
+    {
+      "case_id": 45,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e8c59fbe7a87f42c2e212f/fb33e4e5d4ff46a5b041b652/sub_1761276540882_szh6g9fjv.py",
+        "similarity_percent": 54.4,
+        "full_code": "n=int(input())\nA=list(map(float,input().split()))\ntong=0\nfor i in range(len(A)):\n    tong=tong+A[i]\n    tb=tong/len(A)\n\n\nif tb>= 8.5:\n    print(\"Xuất sắc\")\nelif 7.0 <= tb < 8.5:\n    print(\"Giỏi\")\nelif 5.5 <= tb < 7.0:\n    print(\"Khá\")\nelif 4.0 <= tb < 5.5:\n    print(\"Trung bình\")\nelse:\n    print(\"Yếu\")",
+        "highlighted_code": "n=int(input())\nA=list(map(float,input().split()))\ntong=0\nfor i in range(len(A)):\n    tong=tong+A[i]\n    tb=tong/len(A)\n\n\nif tb<span class='highlight-red'>&gt;= 8.5:\n    print(&#34;Xuất sắc&#34;)\nelif 7.0 &lt;= tb &lt; 8.5:\n    print(&#34;Giỏi&#34;)\nelif 5.5 &lt;= tb &lt; 7.0:\n    print(&#34;Khá&#34;)\nelif 4.0 &lt;= tb &lt; 5.5:\n    print(&#34;Trung bình&#34;)\nelse:\n    print(&#34;Yếu&#34;</span>)"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e8c59fbe7a87f42c2e212f/4619643a0f2348b6b74a746a/sub_1761474137011_8om0uf31l.py",
+        "similarity_percent": 53.57,
+        "full_code": "n = int(input(\"\"))\nscores = list(map(float,input(\"\").split()))\ntotal = sum(scores)\naverage = total / n\naverage_rounded = round(average,2)\nprint(f\"{average_rounded:.2f}\")\nif average_rounded >= 8.5:\n    print(\"Xuat sac\")\nelif 7.0 <= average_rounded < 8.5:\n    print(\"Gioi\") \nelif 5.5 <= average_rounded < 7.0:\n    print(\"Kha\")\nelif 4.0 <= average_rounded < 5.5:\n    print(\"Trung binh\")\nelse:\n    print(\"Yeu\")",
+        "highlighted_code": "n = int(input(&#34;&#34;))\nscores = list(map(float,input(&#34;&#34;).split()))\ntotal = sum(scores)\naverage = total / n\naverage_rounded = round(average,2)\nprint(f&#34;{average_rounded:.2f}&#34;)\nif average_rounded <span class='highlight-green'>&gt;= 8.5:\n    print(&#34;Xuat sac&#34;)\nelif 7.0 &lt;= average_rounded &lt; 8.5:\n    print(&#34;Gioi&#34;) \nelif 5.5 &lt;= average_rounded &lt; 7.0:\n    print(&#34;Kha&#34;)\nelif 4.0 &lt;= average_rounded &lt; 5.5:\n    print(&#34;Trung binh&#34;)\nelse:\n    print(&#34;Yeu&#34;</span>)"
+      },
+      "token_overlap": 105,
+      "max_similarity_percent": 54.4
+    },
+    {
+      "case_id": 46,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e8c59fbe7a87f42c2e212f/4619643a0f2348b6b74a746a/sub_1761474137011_8om0uf31l.py",
+        "similarity_percent": 53.57,
+        "full_code": "n = int(input(\"\"))\nscores = list(map(float,input(\"\").split()))\ntotal = sum(scores)\naverage = total / n\naverage_rounded = round(average,2)\nprint(f\"{average_rounded:.2f}\")\nif average_rounded >= 8.5:\n    print(\"Xuat sac\")\nelif 7.0 <= average_rounded < 8.5:\n    print(\"Gioi\") \nelif 5.5 <= average_rounded < 7.0:\n    print(\"Kha\")\nelif 4.0 <= average_rounded < 5.5:\n    print(\"Trung binh\")\nelse:\n    print(\"Yeu\")",
+        "highlighted_code": "n = int(input(&#34;&#34;))\nscores = list(map(float,input(&#34;&#34;).split()))\ntotal = sum(scores)\naverage = total / n\naverage_rounded = round(average,2)\nprint(f&#34;{average_rounded:.2f}&#34;)\nif average_rounded <span class='highlight-red'>&gt;= 8.5:\n    print(&#34;Xuat sac&#34;)\nelif 7.0 &lt;= average_rounded &lt; 8.5:\n    print(&#34;Gioi&#34;) \nelif 5.5 &lt;= average_rounded &lt; 7.0:\n    print(&#34;Kha&#34;)\nelif 4.0 &lt;= average_rounded &lt; 5.5:\n    print(&#34;Trung binh&#34;)\nelse:\n    print(&#34;Yeu&#34;</span>)"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e8c59fbe7a87f42c2e212f/fb33e4e5d4ff46a5b041b652/sub_1761277235030_rwnr6o6em.py",
+        "similarity_percent": 54.4,
+        "full_code": "n=int(input())\nA=list(map(float,input().split()))\ntong=0\nfor i in range(len(A)):\n    tong=tong+A[i]\n    tb=tong/len(A)\n\n\nif tb>= 8.5:\n    print(\"Xuất sắc\")\nelif 7.0 <= tb < 8.5:\n    print(\"Giỏi\")\nelif 5.5 <= tb < 7.0:\n    print(\"Khá\")\nelif 4.0 <= tb < 5.5:\n    print(\"Trung bình\")\nelse:\n    print(\"Yếu\")",
+        "highlighted_code": "n=int(input())\nA=list(map(float,input().split()))\ntong=0\nfor i in range(len(A)):\n    tong=tong+A[i]\n    tb=tong/len(A)\n\n\nif tb<span class='highlight-green'>&gt;= 8.5:\n    print(&#34;Xuất sắc&#34;)\nelif 7.0 &lt;= tb &lt; 8.5:\n    print(&#34;Giỏi&#34;)\nelif 5.5 &lt;= tb &lt; 7.0:\n    print(&#34;Khá&#34;)\nelif 4.0 &lt;= tb &lt; 5.5:\n    print(&#34;Trung bình&#34;)\nelse:\n    print(&#34;Yếu&#34;</span>)"
+      },
+      "token_overlap": 105,
+      "max_similarity_percent": 54.4
+    },
+    {
+      "case_id": 47,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e8c59fbe7a87f42c2e212f/113963c0a9df48538edf310d/sub_1761280830078_lt63dwy8k.py",
+        "similarity_percent": 52.79,
+        "full_code": "n = int(input())\nnumbers = list(map(float,input().split()))\na = 0\nfor i in numbers:\n    a += i\naverage = float(a/n)\nprint(f\"{average:.2f}\")\nif average >= 8.5:\n    print(\"Xuat sac\")\nelif 7.0 <= average <= 8.5:\n    print(\"Gioi\")\nelif 5.5 <= average < 7.0:\n    print(\"Kha\")\nelif 4.0 <= average < 5.5:\n    print(\"Trung binh\")\nelif average < 4.0:\n    print(\"Yeu\")",
+        "highlighted_code": "n = int(input())\nnumbers = list(map(float,input().split()))\na = 0\nfor i in numbers:\n    a += i\naverage = float(a/n)\npri<span class='highlight-red'>nt(f&#34;{average:.2f}&#34;)\nif average &gt;= 8.5:\n    print(&#34;Xuat sac&#34;)\nelif 7.0 &lt;= average </span>&lt;= <span class='highlight-red'>8.5:\n    print(&#34;Gioi&#34;)\nelif 5.5 &lt;= average &lt; 7.0:\n    print(&#34;Kha&#34;)\nelif 4.0 &lt;= average &lt; 5.5:\n    print(&#34;Trung binh&#34;</span>)\nelif average &lt; 4.0:\n    print(&#34;Yeu&#34;)"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e8c59fbe7a87f42c2e212f/4619643a0f2348b6b74a746a/sub_1761474137011_8om0uf31l.py",
+        "similarity_percent": 53.06,
+        "full_code": "n = int(input(\"\"))\nscores = list(map(float,input(\"\").split()))\ntotal = sum(scores)\naverage = total / n\naverage_rounded = round(average,2)\nprint(f\"{average_rounded:.2f}\")\nif average_rounded >= 8.5:\n    print(\"Xuat sac\")\nelif 7.0 <= average_rounded < 8.5:\n    print(\"Gioi\") \nelif 5.5 <= average_rounded < 7.0:\n    print(\"Kha\")\nelif 4.0 <= average_rounded < 5.5:\n    print(\"Trung binh\")\nelse:\n    print(\"Yeu\")",
+        "highlighted_code": "n = int(input(&#34;&#34;))\nscores = list(map(float,input(&#34;&#34;).split()))\ntotal = sum(scores)\naverage = total / n\naverage_rounded = round(average,2)\npri<span class='highlight-green'>nt(f&#34;{average_rounded:.2f}&#34;)\nif average_rounded &gt;= 8.5:\n    print(&#34;Xuat sac&#34;)\nelif 7.0 &lt;= average_rounded </span>&lt; <span class='highlight-green'>8.5:\n    print(&#34;Gioi&#34;) \nelif 5.5 &lt;= average_rounded &lt; 7.0:\n    print(&#34;Kha&#34;)\nelif 4.0 &lt;= average_rounded &lt; 5.5:\n    print(&#34;Trung binh&#34;</span>)\nelse:\n    print(&#34;Yeu&#34;)"
+      },
+      "token_overlap": 104,
+      "max_similarity_percent": 53.06
+    },
+    {
+      "case_id": 48,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e8c59fbe7a87f42c2e212f/a31a4097e8a74e09b9209282/sub_1761281027468_90hwsdbv3.py",
+        "similarity_percent": 50.57,
+        "full_code": "n=int(input())\ntb=float(0)\nnhap=input()\nparts=nhap.split()\nfor i in parts:\n    tb+=float(i)\ntb/=n\nprint(\"%.2f\"%round(tb,2))\nif tb>= 8.5: print(\"Xuất sắc\")\nelif tb>=7: print(\"Giỏi\")\nelif tb>=5.5: print(\"Khá\")\nelif tb>=4: print(\"Trung bình\")\nelse: print(\"Yếu\")",
+        "highlighted_code": "n=int(input())\ntb=float(0)\nnhap=input()\nparts=nhap.split()\nfor i in parts:\n    tb+=float(i)\ntb/=n\nprint(&#34;%.2f&#34;%round(tb,2))\nif tb<span class='highlight-red'>&gt;= 8.5: print(&#34;Xuất sắc&#34;)\nelif tb&gt;=7: print(&#34;Giỏi&#34;)\nelif tb&gt;=5.5: print(&#34;Khá&#34;)\nelif tb&gt;=4: print(&#34;Trung bình&#34;)\nelse: print(&#34;Yếu&#34;</span>)"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e8c59fbe7a87f42c2e212f/f56f86fa26744324899543f3/sub_1761316003121_45c6ykl55.py",
+        "similarity_percent": 55.28,
+        "full_code": "n=int(input())\na=list(map(float,input().split()))\nb=sum(a)/n\nprint(f\"{b:.2f}\")\nif b>=8.5:print(\"Xuat sac\")\nelif b>=7:print(\"Gioi\")\nelif b>=5.5:print(\"Kha\")\nelif b>=4:print(\"Trung binh\")\nelse:print(\"Yeu\")",
+        "highlighted_code": "n=int(input())\na=list(map(float,input().split()))\nb=sum(a)/n\nprint(f&#34;{b:.2f}&#34;)\nif b<span class='highlight-green'>&gt;=8.5:print(&#34;Xuat sac&#34;)\nelif b&gt;=7:print(&#34;Gioi&#34;)\nelif b&gt;=5.5:print(&#34;Kha&#34;)\nelif b&gt;=4:print(&#34;Trung binh&#34;)\nelse:print(&#34;Yeu&#34;</span>)"
+      },
+      "token_overlap": 89,
+      "max_similarity_percent": 55.28
+    },
+    {
+      "case_id": 49,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e8c59fbe7a87f42c2e212f/27e30f767b3a46b283cbfec0/sub_1761273084608_kfuqj0kzg.py",
+        "similarity_percent": 48.0,
+        "full_code": "n = int(input())\nlst = list(map(float, input().split()))\nave = sum(lst) / n\nprint(f'{ave:.2f}')\nif ave >= 8.5:\n    print('Xuất sắc')\nelif 7.0<=ave<8.5:\n    print('Giỏi')\nelif 5.5<=ave<7:\n    print('Khá')\nelif 4.0<=ave<5.5:\n    print('Trung bình')\nelse:\n    print(\"Yếu\")\n",
+        "highlighted_code": "<span class='highlight-red'>n = int(input())\nlst = list(map(float, input().split()))\nave </span>= sum(lst) <span class='highlight-red'>/ n\nprint(f&#39;{ave:.2f}&#39;)\nif ave &gt;= 8.5:\n    print(&#39;Xuất sắc&#39;)\neli</span>f 7.0&lt;=ave&lt;8.5:\n    print(&#39;Giỏi&#39;)\nelif 5.5&lt;=ave&lt;7:\n    print(&#39;Khá&#39;)\nelif 4.0&lt;=ave&lt;5.5:\n    print(&#39;Trung bình&#39;)\nelse:\n    print(&#34;Yếu&#34;)\n"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e8c59fbe7a87f42c2e212f/fd92120cec18496789c2c733/sub_1761248724741_ydf36or84.py",
+        "similarity_percent": 49.12,
+        "full_code": "n=int(input())\nscores=list(map(float,input().split()))\ntotal=0\nfor i in scores:\n    total+=i\naverage=total/n\nprint(f\"{average:.2f}\")\nif average >= 8.5:\n    print(\"Xuất sắc\")\nelif average >=7.0:\n    print(\"Giỏi\")\nelif average >=5.5:\n    print(\"Khá\")\nelif average >= 4.0:\n    print(\"Trung bình\")\nelse:\n    print(\"Yếu\")\n",
+        "highlighted_code": "<span class='highlight-green'>n=int(input())\nscores=list(map(float,input().split()))\ntotal</span>=0\nfor i in scores:\n    total+=i\naverage=total<span class='highlight-green'>/n\nprint(f&#34;{average:.2f}&#34;)\nif average &gt;= 8.5:\n    print(&#34;Xuất sắc&#34;)\neli</span>f average &gt;=7.0:\n    print(&#34;Giỏi&#34;)\nelif average &gt;=5.5:\n    print(&#34;Khá&#34;)\nelif average &gt;= 4.0:\n    print(&#34;Trung bình&#34;)\nelse:\n    print(&#34;Yếu&#34;)\n"
+      },
+      "token_overlap": 84,
+      "max_similarity_percent": 49.12
+    },
+    {
+      "case_id": 50,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e8c59fbe7a87f42c2e212f/27e30f767b3a46b283cbfec0/sub_1761273084608_kfuqj0kzg.py",
+        "similarity_percent": 48.0,
+        "full_code": "n = int(input())\nlst = list(map(float, input().split()))\nave = sum(lst) / n\nprint(f'{ave:.2f}')\nif ave >= 8.5:\n    print('Xuất sắc')\nelif 7.0<=ave<8.5:\n    print('Giỏi')\nelif 5.5<=ave<7:\n    print('Khá')\nelif 4.0<=ave<5.5:\n    print('Trung bình')\nelse:\n    print(\"Yếu\")\n",
+        "highlighted_code": "<span class='highlight-red'>n = int(input())\nlst = list(map(float, input().split()))\nave </span>= sum(lst) <span class='highlight-red'>/ n\nprint(f&#39;{ave:.2f}&#39;)\nif ave &gt;= 8.5:\n    print(&#39;Xuất sắc&#39;)\neli</span>f 7.0&lt;=ave&lt;8.5:\n    print(&#39;Giỏi&#39;)\nelif 5.5&lt;=ave&lt;7:\n    print(&#39;Khá&#39;)\nelif 4.0&lt;=ave&lt;5.5:\n    print(&#39;Trung bình&#39;)\nelse:\n    print(&#34;Yếu&#34;)\n"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e8c59fbe7a87f42c2e212f/fd92120cec18496789c2c733/sub_1761248705822_qhryx8vry.py",
+        "similarity_percent": 49.12,
+        "full_code": "n=int(input())\nscores=list(map(float,input().split()))\ntotal=0\nfor i in scores:\n    total+=i\naverage=total/n\nprint(f\"{average:.2f}\")\nif average >= 8.5:\n    print(\"Xuất sắc\")\nelif average >=7.0:\n    print(\"Giỏi\")\nelif average >=5.5:\n    print(\"Khá\")\nelif average >= 4.0:\n    print(\"Trung bình\")\nelse:\n    print(\"Yếu\")\n",
+        "highlighted_code": "<span class='highlight-green'>n=int(input())\nscores=list(map(float,input().split()))\ntotal</span>=0\nfor i in scores:\n    total+=i\naverage=total<span class='highlight-green'>/n\nprint(f&#34;{average:.2f}&#34;)\nif average &gt;= 8.5:\n    print(&#34;Xuất sắc&#34;)\neli</span>f average &gt;=7.0:\n    print(&#34;Giỏi&#34;)\nelif average &gt;=5.5:\n    print(&#34;Khá&#34;)\nelif average &gt;= 4.0:\n    print(&#34;Trung bình&#34;)\nelse:\n    print(&#34;Yếu&#34;)\n"
+      },
+      "token_overlap": 84,
+      "max_similarity_percent": 49.12
+    },
+    {
+      "case_id": 51,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e8c59fbe7a87f42c2e212f/113963c0a9df48538edf310d/sub_1761241160785_95i1ruqs3.py",
+        "similarity_percent": 47.62,
+        "full_code": "n = int(input())\nscores = list(map(float,input().split()))\na = 0\nfor i in scores:\n    a += i\naverage = float(a / n)\nprint(average)\nif average >= 8.5:\n    print(\"Xuất sắc\")\nelif 7.0 <= average <8.5 :\n    print(\"Giỏi\")\nelif 5.5 <= average <7.0:\n    print(\"Khá\")\nelif 4.0 <= average < 5.5:\n    print(\"Trung Bình\")\nelif average <4.0 :\n    print(\"Yếu\")",
+        "highlighted_code": "n = int(input())\nscores = list(map(float,input().split()))\na = 0\nfor i in scores:\n    a += i\naverage = float(a / n)\nprint(average)\nif average <span class='highlight-red'>&gt;= 8.5:\n    print(&#34;Xuất sắc&#34;)\nelif 7.0 &lt;= average &lt;8.5 :\n    print(&#34;Giỏi&#34;)\nelif 5.5 &lt;= average &lt;7.0:\n    print(&#34;Khá&#34;)\nelif 4.0 &lt;= average &lt; 5.5:\n    print(&#34;Trung Bình&#34;</span>)\nelif average &lt;4.0 :\n    print(&#34;Yếu&#34;)"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e8c59fbe7a87f42c2e212f/4619643a0f2348b6b74a746a/sub_1761474137011_8om0uf31l.py",
+        "similarity_percent": 45.92,
+        "full_code": "n = int(input(\"\"))\nscores = list(map(float,input(\"\").split()))\ntotal = sum(scores)\naverage = total / n\naverage_rounded = round(average,2)\nprint(f\"{average_rounded:.2f}\")\nif average_rounded >= 8.5:\n    print(\"Xuat sac\")\nelif 7.0 <= average_rounded < 8.5:\n    print(\"Gioi\") \nelif 5.5 <= average_rounded < 7.0:\n    print(\"Kha\")\nelif 4.0 <= average_rounded < 5.5:\n    print(\"Trung binh\")\nelse:\n    print(\"Yeu\")",
+        "highlighted_code": "n = int(input(&#34;&#34;))\nscores = list(map(float,input(&#34;&#34;).split()))\ntotal = sum(scores)\naverage = total / n\naverage_rounded = round(average,2)\nprint(f&#34;{average_rounded:.2f}&#34;)\nif average_rounded <span class='highlight-green'>&gt;= 8.5:\n    print(&#34;Xuat sac&#34;)\nelif 7.0 &lt;= average_rounded &lt; 8.5:\n    print(&#34;Gioi&#34;) \nelif 5.5 &lt;= average_rounded &lt; 7.0:\n    print(&#34;Kha&#34;)\nelif 4.0 &lt;= average_rounded &lt; 5.5:\n    print(&#34;Trung binh&#34;</span>)\nelse:\n    print(&#34;Yeu&#34;)"
+      },
+      "token_overlap": 90,
+      "max_similarity_percent": 47.62
+    },
+    {
+      "case_id": 52,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e8c59fbe7a87f42c2e212f/e3bacd91f1ad41f482a842be/sub_1761297448522_vw318ajjo.py",
+        "similarity_percent": 42.22,
+        "full_code": "n = int(input())\nscores = list(map(float, input().split()))\na = sum(scores)\ndiemtrungbinh = a / n\n\nif diemtrungbinh >= 8.5:\n    print(f'{diemtrungbinh:.2f}')  # THÊM DẤU NHÁY Ở CUỐI\n    print('Xuat sac')\nelif diemtrungbinh >= 7.0:\n    print(f'{diemtrungbinh:.2f}')\n    print('Gioi')\nelif diemtrungbinh >= 5.5:\n    print(f'{diemtrungbinh:.2f}')\n    print('Kha')\nelif diemtrungbinh >= 4.0:\n    print(f'{diemtrungbinh:.2f}')\n    print('Trung binh')\nelse:\n    print(f'{diemtrungbinh:.2f}')\n    print('Yeu')",
+        "highlighted_code": "<span class='highlight-red'>n = int(input())\nscores = list(map(float, input().split()))\na </span>= sum(scores)\ndiemtrungbinh = a / n\n\nif diemtrungbinh &gt;= 8.5:\n    print(f&#39;{diemtrungbinh:.2f}&#39;)  # THÊM DẤU NHÁY Ở CUỐI\n    p<span class='highlight-red'>rint(&#39;Xuat sac&#39;)\nelif diemtrungbinh &gt;= 7.0:\n    print</span>(f&#39;{diemtrungbinh:.2f}&#39;)\n    print(&#39;Gioi&#39;)\nelif diemtrungbinh &gt;= 5.5:\n    print(f&#39;{diemtrungbinh:.2f}&#39;)\n    p<span class='highlight-red'>rint(&#39;Kha&#39;)\nelif diemtrungbinh &gt;= 4.0:\n    print</span>(f&#39;{diemtrungbinh:.2f}&#39;)\n    print(&#39;Trung binh&#39;)\nelse:\n    print(f&#39;{diemtrungbinh:.2f}&#39;)\n    print(&#39;Yeu&#39;)"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e8c59fbe7a87f42c2e212f/f8a2bab9778140ecb46b6a60/sub_1761304193772_24kcq138x.py",
+        "similarity_percent": 53.07,
+        "full_code": "n = int(input())\nscores = list(map(float, input().split()))\navr = float('%.2f' % (sum(scores) / len(scores)))\n\nprint(f\"{avr:.2f}\")\nif avr >= 8.5:\n    print(\"Xuat sac\")\nelif avr >= 7.0:\n    print(\"Gioi\")\nelif avr >= 5.5:\n    print(\"Kha\")\nelif avr >= 4.0:\n    print(\"Trung binh\")\nelse:\n    print(\"Yeu\")",
+        "highlighted_code": "<span class='highlight-green'>n = int(input())\nscores = list(map(float, input().split()))\navr </span>= float(&#39;%.2f&#39; % (sum(scores) / len(scores)))\n\nprint(f&#34;{avr:.2f}&#34;)\nif avr &gt;= 8.5:\n    p<span class='highlight-green'>rint(&#34;Xuat sac&#34;)\nelif avr &gt;= 7.0:\n    print</span>(&#34;Gioi&#34;)\nelif avr &gt;= 5.5:\n    p<span class='highlight-green'>rint(&#34;Kha&#34;)\nelif avr &gt;= 4.0:\n    print</span>(&#34;Trung binh&#34;)\nelse:\n    print(&#34;Yeu&#34;)"
+      },
+      "token_overlap": 95,
+      "max_similarity_percent": 53.07
+    },
+    {
+      "case_id": 53,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e8c59fbe7a87f42c2e212f/e3bacd91f1ad41f482a842be/sub_1761297448522_vw318ajjo.py",
+        "similarity_percent": 42.22,
+        "full_code": "n = int(input())\nscores = list(map(float, input().split()))\na = sum(scores)\ndiemtrungbinh = a / n\n\nif diemtrungbinh >= 8.5:\n    print(f'{diemtrungbinh:.2f}')  # THÊM DẤU NHÁY Ở CUỐI\n    print('Xuat sac')\nelif diemtrungbinh >= 7.0:\n    print(f'{diemtrungbinh:.2f}')\n    print('Gioi')\nelif diemtrungbinh >= 5.5:\n    print(f'{diemtrungbinh:.2f}')\n    print('Kha')\nelif diemtrungbinh >= 4.0:\n    print(f'{diemtrungbinh:.2f}')\n    print('Trung binh')\nelse:\n    print(f'{diemtrungbinh:.2f}')\n    print('Yeu')",
+        "highlighted_code": "<span class='highlight-red'>n = int(input())\nscores = list(map(float, input().split()))\na </span>= sum(scores)\ndiemtrungbinh = a / n\n\nif diemtrungbinh &gt;= 8.5:\n    print(f&#39;{diemtrungbinh:.2f}&#39;)  # THÊM DẤU NHÁY Ở CUỐI\n    p<span class='highlight-red'>rint(&#39;Xuat sac&#39;)\nelif diemtrungbinh &gt;= 7.0:\n    print</span>(f&#39;{diemtrungbinh:.2f}&#39;)\n    print(&#39;Gioi&#39;)\nelif diemtrungbinh &gt;= 5.5:\n    print(f&#39;{diemtrungbinh:.2f}&#39;)\n    p<span class='highlight-red'>rint(&#39;Kha&#39;)\nelif diemtrungbinh &gt;= 4.0:\n    print</span>(f&#39;{diemtrungbinh:.2f}&#39;)\n    print(&#39;Trung binh&#39;)\nelse:\n    print(f&#39;{diemtrungbinh:.2f}&#39;)\n    print(&#39;Yeu&#39;)"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e8c59fbe7a87f42c2e212f/fd92120cec18496789c2c733/sub_1761248724741_ydf36or84.py",
+        "similarity_percent": 55.56,
+        "full_code": "n=int(input())\nscores=list(map(float,input().split()))\ntotal=0\nfor i in scores:\n    total+=i\naverage=total/n\nprint(f\"{average:.2f}\")\nif average >= 8.5:\n    print(\"Xuất sắc\")\nelif average >=7.0:\n    print(\"Giỏi\")\nelif average >=5.5:\n    print(\"Khá\")\nelif average >= 4.0:\n    print(\"Trung bình\")\nelse:\n    print(\"Yếu\")\n",
+        "highlighted_code": "<span class='highlight-green'>n=int(input())\nscores=list(map(float,input().split()))\ntotal</span>=0\nfor i in scores:\n    total+=i\naverage=total/n\nprint(f&#34;{average:.2f}&#34;)\nif average &gt;= 8.5:\n    p<span class='highlight-green'>rint(&#34;Xuất sắc&#34;)\nelif average &gt;=7.0:\n    print</span>(&#34;Giỏi&#34;)\nelif average &gt;=5.5:\n    p<span class='highlight-green'>rint(&#34;Khá&#34;)\nelif average &gt;= 4.0:\n    print</span>(&#34;Trung bình&#34;)\nelse:\n    print(&#34;Yếu&#34;)\n"
+      },
+      "token_overlap": 95,
+      "max_similarity_percent": 55.56
+    },
+    {
+      "case_id": 54,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e8c59fbe7a87f42c2e212f/e3bacd91f1ad41f482a842be/sub_1761297448522_vw318ajjo.py",
+        "similarity_percent": 42.22,
+        "full_code": "n = int(input())\nscores = list(map(float, input().split()))\na = sum(scores)\ndiemtrungbinh = a / n\n\nif diemtrungbinh >= 8.5:\n    print(f'{diemtrungbinh:.2f}')  # THÊM DẤU NHÁY Ở CUỐI\n    print('Xuat sac')\nelif diemtrungbinh >= 7.0:\n    print(f'{diemtrungbinh:.2f}')\n    print('Gioi')\nelif diemtrungbinh >= 5.5:\n    print(f'{diemtrungbinh:.2f}')\n    print('Kha')\nelif diemtrungbinh >= 4.0:\n    print(f'{diemtrungbinh:.2f}')\n    print('Trung binh')\nelse:\n    print(f'{diemtrungbinh:.2f}')\n    print('Yeu')",
+        "highlighted_code": "<span class='highlight-red'>n = int(input())\nscores = list(map(float, input().split()))\na </span>= sum(scores)\ndiemtrungbinh = a / n\n\nif diemtrungbinh &gt;= 8.5:\n    print(f&#39;{diemtrungbinh:.2f}&#39;)  # THÊM DẤU NHÁY Ở CUỐI\n    p<span class='highlight-red'>rint(&#39;Xuat sac&#39;)\nelif diemtrungbinh &gt;= 7.0:\n    print</span>(f&#39;{diemtrungbinh:.2f}&#39;)\n    print(&#39;Gioi&#39;)\nelif diemtrungbinh &gt;= 5.5:\n    print(f&#39;{diemtrungbinh:.2f}&#39;)\n    p<span class='highlight-red'>rint(&#39;Kha&#39;)\nelif diemtrungbinh &gt;= 4.0:\n    print</span>(f&#39;{diemtrungbinh:.2f}&#39;)\n    print(&#39;Trung binh&#39;)\nelse:\n    print(f&#39;{diemtrungbinh:.2f}&#39;)\n    print(&#39;Yeu&#39;)"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e8c59fbe7a87f42c2e212f/fd92120cec18496789c2c733/sub_1761248705822_qhryx8vry.py",
+        "similarity_percent": 55.56,
+        "full_code": "n=int(input())\nscores=list(map(float,input().split()))\ntotal=0\nfor i in scores:\n    total+=i\naverage=total/n\nprint(f\"{average:.2f}\")\nif average >= 8.5:\n    print(\"Xuất sắc\")\nelif average >=7.0:\n    print(\"Giỏi\")\nelif average >=5.5:\n    print(\"Khá\")\nelif average >= 4.0:\n    print(\"Trung bình\")\nelse:\n    print(\"Yếu\")\n",
+        "highlighted_code": "<span class='highlight-green'>n=int(input())\nscores=list(map(float,input().split()))\ntotal</span>=0\nfor i in scores:\n    total+=i\naverage=total/n\nprint(f&#34;{average:.2f}&#34;)\nif average &gt;= 8.5:\n    p<span class='highlight-green'>rint(&#34;Xuất sắc&#34;)\nelif average &gt;=7.0:\n    print</span>(&#34;Giỏi&#34;)\nelif average &gt;=5.5:\n    p<span class='highlight-green'>rint(&#34;Khá&#34;)\nelif average &gt;= 4.0:\n    print</span>(&#34;Trung bình&#34;)\nelse:\n    print(&#34;Yếu&#34;)\n"
+      },
+      "token_overlap": 95,
+      "max_similarity_percent": 55.56
+    }
+  ]
+}

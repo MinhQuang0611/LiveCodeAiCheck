@@ -1,0 +1,5 @@
+a=list(map(int,input().split()))
+b=sorted(a)
+c=set(b)
+d=sorted(list(c))
+print(d[-3])

@@ -1,0 +1,657 @@
+{
+  "problem_id": "68fdc3b0fe535fa0f4f1d892",
+  "filter_criteria": {
+    "min_token_overlap": 80,
+    "min_similarity_percent": 60
+  },
+  "total_cases_found": 66,
+  "total_cases_filtered": 38,
+  "cases": [
+    {
+      "case_id": 1,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68fdc3b0fe535fa0f4f1d892/d9aec9d917da4c5e9beeb80b/sub_1761580977351_es640t0ci.py",
+        "similarity_percent": 100.0,
+        "full_code": "t = int(input())\nfor i in range(t):\n    n = int(input())\n    a = list(map(int, input().split()))\n    result = 0\n    for x in a:\n        result ^= x\n    print(result)\n",
+        "highlighted_code": "<span class='highlight-red'>t = int(input())\nfor i in range(t):\n    n = int(input())\n    a = list(map(int, input().split()))\n    result = 0\n    for x in a:\n        result ^= x\n    print(result)</span>\n"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68fdc3b0fe535fa0f4f1d892/91001b54722a4328a2b7b879/sub_1761478208842_urrezulc7.py",
+        "similarity_percent": 100.0,
+        "full_code": "t = int(input())\n\nfor _ in range(t):\n    n = int(input())               \n    arr = list(map(int, input().split()))  \n\n    result = 0                     \n    for num in arr:               \n        result ^= num              \n\n    print(result)                  \n",
+        "highlighted_code": "<span class='highlight-green'>t = int(input())\n\nfor _ in range(t):\n    n = int(input())               \n    arr = list(map(int, input().split()))  \n\n    result = 0                     \n    for num in arr:               \n        result ^= num              \n\n    print(result)                  </span>\n"
+      },
+      "token_overlap": 94,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 2,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68fdc3b0fe535fa0f4f1d892/d9aec9d917da4c5e9beeb80b/sub_1761580977351_es640t0ci.py",
+        "similarity_percent": 100.0,
+        "full_code": "t = int(input())\nfor i in range(t):\n    n = int(input())\n    a = list(map(int, input().split()))\n    result = 0\n    for x in a:\n        result ^= x\n    print(result)\n",
+        "highlighted_code": "<span class='highlight-red'>t = int(input())\nfor i in range(t):\n    n = int(input())\n    a = list(map(int, input().split()))\n    result = 0\n    for x in a:\n        result ^= x\n    print(result)</span>\n"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68fdc3b0fe535fa0f4f1d892/27e30f767b3a46b283cbfec0/sub_1761575897717_sxajcm9sj.py",
+        "similarity_percent": 100.0,
+        "full_code": "t = int(input())  # Số lượng trường hợp kiểm tra\n\nfor _ in range(t):\n    n = int(input())  # Số lượng viên đá\n    a = list(map(int, input().split()))  # Danh sách số hiệu viên đá\n\n    result = 0\n    for num in a:\n        result ^= num  # Dùng phép XOR để tìm số xuất hiện lẻ lần\n\n    print(result)",
+        "highlighted_code": "<span class='highlight-green'>t = int(input())  # Số lượng trường hợp kiểm tra\n\nfor _ in range(t):\n    n = int(input())  # Số lượng viên đá\n    a = list(map(int, input().split()))  # Danh sách số hiệu viên đá\n\n    result = 0\n    for num in a:\n        result ^= num  # Dùng phép XOR để tìm số xuất hiện lẻ lần\n\n    print(result)</span>"
+      },
+      "token_overlap": 94,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 3,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68fdc3b0fe535fa0f4f1d892/d9aec9d917da4c5e9beeb80b/sub_1761580977351_es640t0ci.py",
+        "similarity_percent": 100.0,
+        "full_code": "t = int(input())\nfor i in range(t):\n    n = int(input())\n    a = list(map(int, input().split()))\n    result = 0\n    for x in a:\n        result ^= x\n    print(result)\n",
+        "highlighted_code": "<span class='highlight-red'>t = int(input())\nfor i in range(t):\n    n = int(input())\n    a = list(map(int, input().split()))\n    result = 0\n    for x in a:\n        result ^= x\n    print(result)</span>\n"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68fdc3b0fe535fa0f4f1d892/5ddb8c7d2c9c43bab12121a6/sub_1761641312236_5ix3bee4e.py",
+        "similarity_percent": 100.0,
+        "full_code": "t = int(input())\nfor _ in range(t):\n    n = int(input())\n    a = list(map(int, input().split()))\n    result = 0\n    for num in a:\n        result ^= num\n    print(result)",
+        "highlighted_code": "<span class='highlight-green'>t = int(input())\nfor _ in range(t):\n    n = int(input())\n    a = list(map(int, input().split()))\n    result = 0\n    for num in a:\n        result ^= num\n    print(result)</span>"
+      },
+      "token_overlap": 94,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 4,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68fdc3b0fe535fa0f4f1d892/d9aec9d917da4c5e9beeb80b/sub_1761580977351_es640t0ci.py",
+        "similarity_percent": 100.0,
+        "full_code": "t = int(input())\nfor i in range(t):\n    n = int(input())\n    a = list(map(int, input().split()))\n    result = 0\n    for x in a:\n        result ^= x\n    print(result)\n",
+        "highlighted_code": "<span class='highlight-red'>t = int(input())\nfor i in range(t):\n    n = int(input())\n    a = list(map(int, input().split()))\n    result = 0\n    for x in a:\n        result ^= x\n    print(result)</span>\n"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68fdc3b0fe535fa0f4f1d892/0d74995bf22b4574a97a2297/sub_1761618868965_jzr8bganr.py",
+        "similarity_percent": 100.0,
+        "full_code": "t = int(input())\nfor _ in range(t):\n    n = int(input())\n    a = list(map(int, input().split()))\n    result = 0\n    for stone in a:\n        result ^= stone\n    print(result)",
+        "highlighted_code": "<span class='highlight-green'>t = int(input())\nfor _ in range(t):\n    n = int(input())\n    a = list(map(int, input().split()))\n    result = 0\n    for stone in a:\n        result ^= stone\n    print(result)</span>"
+      },
+      "token_overlap": 94,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 5,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68fdc3b0fe535fa0f4f1d892/d9aec9d917da4c5e9beeb80b/sub_1761580977351_es640t0ci.py",
+        "similarity_percent": 100.0,
+        "full_code": "t = int(input())\nfor i in range(t):\n    n = int(input())\n    a = list(map(int, input().split()))\n    result = 0\n    for x in a:\n        result ^= x\n    print(result)\n",
+        "highlighted_code": "<span class='highlight-red'>t = int(input())\nfor i in range(t):\n    n = int(input())\n    a = list(map(int, input().split()))\n    result = 0\n    for x in a:\n        result ^= x\n    print(result)</span>\n"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68fdc3b0fe535fa0f4f1d892/e59c34a1bebb49d29bfb3592/sub_1761666840984_ff7o49gio.py",
+        "similarity_percent": 100.0,
+        "full_code": "t = int(input())\nfor i in range(t):\n    n = int(input())\n    arr = list(map(int,input().split()))\n    res = 0\n    for x in arr:\n        res ^= x\n    print(res)",
+        "highlighted_code": "<span class='highlight-green'>t = int(input())\nfor i in range(t):\n    n = int(input())\n    arr = list(map(int,input().split()))\n    res = 0\n    for x in arr:\n        res ^= x\n    print(res)</span>"
+      },
+      "token_overlap": 94,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 6,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68fdc3b0fe535fa0f4f1d892/d9aec9d917da4c5e9beeb80b/sub_1761580977351_es640t0ci.py",
+        "similarity_percent": 100.0,
+        "full_code": "t = int(input())\nfor i in range(t):\n    n = int(input())\n    a = list(map(int, input().split()))\n    result = 0\n    for x in a:\n        result ^= x\n    print(result)\n",
+        "highlighted_code": "<span class='highlight-red'>t = int(input())\nfor i in range(t):\n    n = int(input())\n    a = list(map(int, input().split()))\n    result = 0\n    for x in a:\n        result ^= x\n    print(result)</span>\n"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68fdc3b0fe535fa0f4f1d892/780627ccd0224069b68e3b8d/sub_1761573155480_byohsi5wn.py",
+        "similarity_percent": 100.0,
+        "full_code": "t = int(input())\nfor _ in range(t):\n    n = int(input())\n    a = list(map(int, input().split()))\n    tmp = 0\n    for num in a:\n        tmp ^= num\n    print(tmp)",
+        "highlighted_code": "<span class='highlight-green'>t = int(input())\nfor _ in range(t):\n    n = int(input())\n    a = list(map(int, input().split()))\n    tmp = 0\n    for num in a:\n        tmp ^= num\n    print(tmp)</span>"
+      },
+      "token_overlap": 94,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 7,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68fdc3b0fe535fa0f4f1d892/91001b54722a4328a2b7b879/sub_1761478208842_urrezulc7.py",
+        "similarity_percent": 100.0,
+        "full_code": "t = int(input())\n\nfor _ in range(t):\n    n = int(input())               \n    arr = list(map(int, input().split()))  \n\n    result = 0                     \n    for num in arr:               \n        result ^= num              \n\n    print(result)                  \n",
+        "highlighted_code": "<span class='highlight-red'>t = int(input())\n\nfor _ in range(t):\n    n = int(input())               \n    arr = list(map(int, input().split()))  \n\n    result = 0                     \n    for num in arr:               \n        result ^= num              \n\n    print(result)                  </span>\n"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68fdc3b0fe535fa0f4f1d892/27e30f767b3a46b283cbfec0/sub_1761575897717_sxajcm9sj.py",
+        "similarity_percent": 100.0,
+        "full_code": "t = int(input())  # Số lượng trường hợp kiểm tra\n\nfor _ in range(t):\n    n = int(input())  # Số lượng viên đá\n    a = list(map(int, input().split()))  # Danh sách số hiệu viên đá\n\n    result = 0\n    for num in a:\n        result ^= num  # Dùng phép XOR để tìm số xuất hiện lẻ lần\n\n    print(result)",
+        "highlighted_code": "<span class='highlight-green'>t = int(input())  # Số lượng trường hợp kiểm tra\n\nfor _ in range(t):\n    n = int(input())  # Số lượng viên đá\n    a = list(map(int, input().split()))  # Danh sách số hiệu viên đá\n\n    result = 0\n    for num in a:\n        result ^= num  # Dùng phép XOR để tìm số xuất hiện lẻ lần\n\n    print(result)</span>"
+      },
+      "token_overlap": 94,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 8,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68fdc3b0fe535fa0f4f1d892/91001b54722a4328a2b7b879/sub_1761478208842_urrezulc7.py",
+        "similarity_percent": 100.0,
+        "full_code": "t = int(input())\n\nfor _ in range(t):\n    n = int(input())               \n    arr = list(map(int, input().split()))  \n\n    result = 0                     \n    for num in arr:               \n        result ^= num              \n\n    print(result)                  \n",
+        "highlighted_code": "<span class='highlight-red'>t = int(input())\n\nfor _ in range(t):\n    n = int(input())               \n    arr = list(map(int, input().split()))  \n\n    result = 0                     \n    for num in arr:               \n        result ^= num              \n\n    print(result)                  </span>\n"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68fdc3b0fe535fa0f4f1d892/5ddb8c7d2c9c43bab12121a6/sub_1761641312236_5ix3bee4e.py",
+        "similarity_percent": 100.0,
+        "full_code": "t = int(input())\nfor _ in range(t):\n    n = int(input())\n    a = list(map(int, input().split()))\n    result = 0\n    for num in a:\n        result ^= num\n    print(result)",
+        "highlighted_code": "<span class='highlight-green'>t = int(input())\nfor _ in range(t):\n    n = int(input())\n    a = list(map(int, input().split()))\n    result = 0\n    for num in a:\n        result ^= num\n    print(result)</span>"
+      },
+      "token_overlap": 94,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 9,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68fdc3b0fe535fa0f4f1d892/91001b54722a4328a2b7b879/sub_1761478208842_urrezulc7.py",
+        "similarity_percent": 100.0,
+        "full_code": "t = int(input())\n\nfor _ in range(t):\n    n = int(input())               \n    arr = list(map(int, input().split()))  \n\n    result = 0                     \n    for num in arr:               \n        result ^= num              \n\n    print(result)                  \n",
+        "highlighted_code": "<span class='highlight-red'>t = int(input())\n\nfor _ in range(t):\n    n = int(input())               \n    arr = list(map(int, input().split()))  \n\n    result = 0                     \n    for num in arr:               \n        result ^= num              \n\n    print(result)                  </span>\n"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68fdc3b0fe535fa0f4f1d892/0d74995bf22b4574a97a2297/sub_1761618868965_jzr8bganr.py",
+        "similarity_percent": 100.0,
+        "full_code": "t = int(input())\nfor _ in range(t):\n    n = int(input())\n    a = list(map(int, input().split()))\n    result = 0\n    for stone in a:\n        result ^= stone\n    print(result)",
+        "highlighted_code": "<span class='highlight-green'>t = int(input())\nfor _ in range(t):\n    n = int(input())\n    a = list(map(int, input().split()))\n    result = 0\n    for stone in a:\n        result ^= stone\n    print(result)</span>"
+      },
+      "token_overlap": 94,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 10,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68fdc3b0fe535fa0f4f1d892/91001b54722a4328a2b7b879/sub_1761478208842_urrezulc7.py",
+        "similarity_percent": 100.0,
+        "full_code": "t = int(input())\n\nfor _ in range(t):\n    n = int(input())               \n    arr = list(map(int, input().split()))  \n\n    result = 0                     \n    for num in arr:               \n        result ^= num              \n\n    print(result)                  \n",
+        "highlighted_code": "<span class='highlight-red'>t = int(input())\n\nfor _ in range(t):\n    n = int(input())               \n    arr = list(map(int, input().split()))  \n\n    result = 0                     \n    for num in arr:               \n        result ^= num              \n\n    print(result)                  </span>\n"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68fdc3b0fe535fa0f4f1d892/e59c34a1bebb49d29bfb3592/sub_1761666840984_ff7o49gio.py",
+        "similarity_percent": 100.0,
+        "full_code": "t = int(input())\nfor i in range(t):\n    n = int(input())\n    arr = list(map(int,input().split()))\n    res = 0\n    for x in arr:\n        res ^= x\n    print(res)",
+        "highlighted_code": "<span class='highlight-green'>t = int(input())\nfor i in range(t):\n    n = int(input())\n    arr = list(map(int,input().split()))\n    res = 0\n    for x in arr:\n        res ^= x\n    print(res)</span>"
+      },
+      "token_overlap": 94,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 11,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68fdc3b0fe535fa0f4f1d892/91001b54722a4328a2b7b879/sub_1761478208842_urrezulc7.py",
+        "similarity_percent": 100.0,
+        "full_code": "t = int(input())\n\nfor _ in range(t):\n    n = int(input())               \n    arr = list(map(int, input().split()))  \n\n    result = 0                     \n    for num in arr:               \n        result ^= num              \n\n    print(result)                  \n",
+        "highlighted_code": "<span class='highlight-red'>t = int(input())\n\nfor _ in range(t):\n    n = int(input())               \n    arr = list(map(int, input().split()))  \n\n    result = 0                     \n    for num in arr:               \n        result ^= num              \n\n    print(result)                  </span>\n"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68fdc3b0fe535fa0f4f1d892/780627ccd0224069b68e3b8d/sub_1761573155480_byohsi5wn.py",
+        "similarity_percent": 100.0,
+        "full_code": "t = int(input())\nfor _ in range(t):\n    n = int(input())\n    a = list(map(int, input().split()))\n    tmp = 0\n    for num in a:\n        tmp ^= num\n    print(tmp)",
+        "highlighted_code": "<span class='highlight-green'>t = int(input())\nfor _ in range(t):\n    n = int(input())\n    a = list(map(int, input().split()))\n    tmp = 0\n    for num in a:\n        tmp ^= num\n    print(tmp)</span>"
+      },
+      "token_overlap": 94,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 12,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68fdc3b0fe535fa0f4f1d892/27e30f767b3a46b283cbfec0/sub_1761575897717_sxajcm9sj.py",
+        "similarity_percent": 100.0,
+        "full_code": "t = int(input())  # Số lượng trường hợp kiểm tra\n\nfor _ in range(t):\n    n = int(input())  # Số lượng viên đá\n    a = list(map(int, input().split()))  # Danh sách số hiệu viên đá\n\n    result = 0\n    for num in a:\n        result ^= num  # Dùng phép XOR để tìm số xuất hiện lẻ lần\n\n    print(result)",
+        "highlighted_code": "<span class='highlight-red'>t = int(input())  # Số lượng trường hợp kiểm tra\n\nfor _ in range(t):\n    n = int(input())  # Số lượng viên đá\n    a = list(map(int, input().split()))  # Danh sách số hiệu viên đá\n\n    result = 0\n    for num in a:\n        result ^= num  # Dùng phép XOR để tìm số xuất hiện lẻ lần\n\n    print(result)</span>"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68fdc3b0fe535fa0f4f1d892/5ddb8c7d2c9c43bab12121a6/sub_1761641312236_5ix3bee4e.py",
+        "similarity_percent": 100.0,
+        "full_code": "t = int(input())\nfor _ in range(t):\n    n = int(input())\n    a = list(map(int, input().split()))\n    result = 0\n    for num in a:\n        result ^= num\n    print(result)",
+        "highlighted_code": "<span class='highlight-green'>t = int(input())\nfor _ in range(t):\n    n = int(input())\n    a = list(map(int, input().split()))\n    result = 0\n    for num in a:\n        result ^= num\n    print(result)</span>"
+      },
+      "token_overlap": 94,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 13,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68fdc3b0fe535fa0f4f1d892/27e30f767b3a46b283cbfec0/sub_1761575897717_sxajcm9sj.py",
+        "similarity_percent": 100.0,
+        "full_code": "t = int(input())  # Số lượng trường hợp kiểm tra\n\nfor _ in range(t):\n    n = int(input())  # Số lượng viên đá\n    a = list(map(int, input().split()))  # Danh sách số hiệu viên đá\n\n    result = 0\n    for num in a:\n        result ^= num  # Dùng phép XOR để tìm số xuất hiện lẻ lần\n\n    print(result)",
+        "highlighted_code": "<span class='highlight-red'>t = int(input())  # Số lượng trường hợp kiểm tra\n\nfor _ in range(t):\n    n = int(input())  # Số lượng viên đá\n    a = list(map(int, input().split()))  # Danh sách số hiệu viên đá\n\n    result = 0\n    for num in a:\n        result ^= num  # Dùng phép XOR để tìm số xuất hiện lẻ lần\n\n    print(result)</span>"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68fdc3b0fe535fa0f4f1d892/0d74995bf22b4574a97a2297/sub_1761618868965_jzr8bganr.py",
+        "similarity_percent": 100.0,
+        "full_code": "t = int(input())\nfor _ in range(t):\n    n = int(input())\n    a = list(map(int, input().split()))\n    result = 0\n    for stone in a:\n        result ^= stone\n    print(result)",
+        "highlighted_code": "<span class='highlight-green'>t = int(input())\nfor _ in range(t):\n    n = int(input())\n    a = list(map(int, input().split()))\n    result = 0\n    for stone in a:\n        result ^= stone\n    print(result)</span>"
+      },
+      "token_overlap": 94,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 14,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68fdc3b0fe535fa0f4f1d892/27e30f767b3a46b283cbfec0/sub_1761575897717_sxajcm9sj.py",
+        "similarity_percent": 100.0,
+        "full_code": "t = int(input())  # Số lượng trường hợp kiểm tra\n\nfor _ in range(t):\n    n = int(input())  # Số lượng viên đá\n    a = list(map(int, input().split()))  # Danh sách số hiệu viên đá\n\n    result = 0\n    for num in a:\n        result ^= num  # Dùng phép XOR để tìm số xuất hiện lẻ lần\n\n    print(result)",
+        "highlighted_code": "<span class='highlight-red'>t = int(input())  # Số lượng trường hợp kiểm tra\n\nfor _ in range(t):\n    n = int(input())  # Số lượng viên đá\n    a = list(map(int, input().split()))  # Danh sách số hiệu viên đá\n\n    result = 0\n    for num in a:\n        result ^= num  # Dùng phép XOR để tìm số xuất hiện lẻ lần\n\n    print(result)</span>"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68fdc3b0fe535fa0f4f1d892/e59c34a1bebb49d29bfb3592/sub_1761666840984_ff7o49gio.py",
+        "similarity_percent": 100.0,
+        "full_code": "t = int(input())\nfor i in range(t):\n    n = int(input())\n    arr = list(map(int,input().split()))\n    res = 0\n    for x in arr:\n        res ^= x\n    print(res)",
+        "highlighted_code": "<span class='highlight-green'>t = int(input())\nfor i in range(t):\n    n = int(input())\n    arr = list(map(int,input().split()))\n    res = 0\n    for x in arr:\n        res ^= x\n    print(res)</span>"
+      },
+      "token_overlap": 94,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 15,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68fdc3b0fe535fa0f4f1d892/27e30f767b3a46b283cbfec0/sub_1761575897717_sxajcm9sj.py",
+        "similarity_percent": 100.0,
+        "full_code": "t = int(input())  # Số lượng trường hợp kiểm tra\n\nfor _ in range(t):\n    n = int(input())  # Số lượng viên đá\n    a = list(map(int, input().split()))  # Danh sách số hiệu viên đá\n\n    result = 0\n    for num in a:\n        result ^= num  # Dùng phép XOR để tìm số xuất hiện lẻ lần\n\n    print(result)",
+        "highlighted_code": "<span class='highlight-red'>t = int(input())  # Số lượng trường hợp kiểm tra\n\nfor _ in range(t):\n    n = int(input())  # Số lượng viên đá\n    a = list(map(int, input().split()))  # Danh sách số hiệu viên đá\n\n    result = 0\n    for num in a:\n        result ^= num  # Dùng phép XOR để tìm số xuất hiện lẻ lần\n\n    print(result)</span>"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68fdc3b0fe535fa0f4f1d892/780627ccd0224069b68e3b8d/sub_1761573155480_byohsi5wn.py",
+        "similarity_percent": 100.0,
+        "full_code": "t = int(input())\nfor _ in range(t):\n    n = int(input())\n    a = list(map(int, input().split()))\n    tmp = 0\n    for num in a:\n        tmp ^= num\n    print(tmp)",
+        "highlighted_code": "<span class='highlight-green'>t = int(input())\nfor _ in range(t):\n    n = int(input())\n    a = list(map(int, input().split()))\n    tmp = 0\n    for num in a:\n        tmp ^= num\n    print(tmp)</span>"
+      },
+      "token_overlap": 94,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 16,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68fdc3b0fe535fa0f4f1d892/5ddb8c7d2c9c43bab12121a6/sub_1761641312236_5ix3bee4e.py",
+        "similarity_percent": 100.0,
+        "full_code": "t = int(input())\nfor _ in range(t):\n    n = int(input())\n    a = list(map(int, input().split()))\n    result = 0\n    for num in a:\n        result ^= num\n    print(result)",
+        "highlighted_code": "<span class='highlight-red'>t = int(input())\nfor _ in range(t):\n    n = int(input())\n    a = list(map(int, input().split()))\n    result = 0\n    for num in a:\n        result ^= num\n    print(result)</span>"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68fdc3b0fe535fa0f4f1d892/0d74995bf22b4574a97a2297/sub_1761618868965_jzr8bganr.py",
+        "similarity_percent": 100.0,
+        "full_code": "t = int(input())\nfor _ in range(t):\n    n = int(input())\n    a = list(map(int, input().split()))\n    result = 0\n    for stone in a:\n        result ^= stone\n    print(result)",
+        "highlighted_code": "<span class='highlight-green'>t = int(input())\nfor _ in range(t):\n    n = int(input())\n    a = list(map(int, input().split()))\n    result = 0\n    for stone in a:\n        result ^= stone\n    print(result)</span>"
+      },
+      "token_overlap": 94,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 17,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68fdc3b0fe535fa0f4f1d892/5ddb8c7d2c9c43bab12121a6/sub_1761641312236_5ix3bee4e.py",
+        "similarity_percent": 100.0,
+        "full_code": "t = int(input())\nfor _ in range(t):\n    n = int(input())\n    a = list(map(int, input().split()))\n    result = 0\n    for num in a:\n        result ^= num\n    print(result)",
+        "highlighted_code": "<span class='highlight-red'>t = int(input())\nfor _ in range(t):\n    n = int(input())\n    a = list(map(int, input().split()))\n    result = 0\n    for num in a:\n        result ^= num\n    print(result)</span>"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68fdc3b0fe535fa0f4f1d892/e59c34a1bebb49d29bfb3592/sub_1761666840984_ff7o49gio.py",
+        "similarity_percent": 100.0,
+        "full_code": "t = int(input())\nfor i in range(t):\n    n = int(input())\n    arr = list(map(int,input().split()))\n    res = 0\n    for x in arr:\n        res ^= x\n    print(res)",
+        "highlighted_code": "<span class='highlight-green'>t = int(input())\nfor i in range(t):\n    n = int(input())\n    arr = list(map(int,input().split()))\n    res = 0\n    for x in arr:\n        res ^= x\n    print(res)</span>"
+      },
+      "token_overlap": 94,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 18,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68fdc3b0fe535fa0f4f1d892/5ddb8c7d2c9c43bab12121a6/sub_1761641312236_5ix3bee4e.py",
+        "similarity_percent": 100.0,
+        "full_code": "t = int(input())\nfor _ in range(t):\n    n = int(input())\n    a = list(map(int, input().split()))\n    result = 0\n    for num in a:\n        result ^= num\n    print(result)",
+        "highlighted_code": "<span class='highlight-red'>t = int(input())\nfor _ in range(t):\n    n = int(input())\n    a = list(map(int, input().split()))\n    result = 0\n    for num in a:\n        result ^= num\n    print(result)</span>"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68fdc3b0fe535fa0f4f1d892/780627ccd0224069b68e3b8d/sub_1761573155480_byohsi5wn.py",
+        "similarity_percent": 100.0,
+        "full_code": "t = int(input())\nfor _ in range(t):\n    n = int(input())\n    a = list(map(int, input().split()))\n    tmp = 0\n    for num in a:\n        tmp ^= num\n    print(tmp)",
+        "highlighted_code": "<span class='highlight-green'>t = int(input())\nfor _ in range(t):\n    n = int(input())\n    a = list(map(int, input().split()))\n    tmp = 0\n    for num in a:\n        tmp ^= num\n    print(tmp)</span>"
+      },
+      "token_overlap": 94,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 19,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68fdc3b0fe535fa0f4f1d892/0d74995bf22b4574a97a2297/sub_1761618868965_jzr8bganr.py",
+        "similarity_percent": 100.0,
+        "full_code": "t = int(input())\nfor _ in range(t):\n    n = int(input())\n    a = list(map(int, input().split()))\n    result = 0\n    for stone in a:\n        result ^= stone\n    print(result)",
+        "highlighted_code": "<span class='highlight-red'>t = int(input())\nfor _ in range(t):\n    n = int(input())\n    a = list(map(int, input().split()))\n    result = 0\n    for stone in a:\n        result ^= stone\n    print(result)</span>"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68fdc3b0fe535fa0f4f1d892/e59c34a1bebb49d29bfb3592/sub_1761666840984_ff7o49gio.py",
+        "similarity_percent": 100.0,
+        "full_code": "t = int(input())\nfor i in range(t):\n    n = int(input())\n    arr = list(map(int,input().split()))\n    res = 0\n    for x in arr:\n        res ^= x\n    print(res)",
+        "highlighted_code": "<span class='highlight-green'>t = int(input())\nfor i in range(t):\n    n = int(input())\n    arr = list(map(int,input().split()))\n    res = 0\n    for x in arr:\n        res ^= x\n    print(res)</span>"
+      },
+      "token_overlap": 94,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 20,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68fdc3b0fe535fa0f4f1d892/0d74995bf22b4574a97a2297/sub_1761618868965_jzr8bganr.py",
+        "similarity_percent": 100.0,
+        "full_code": "t = int(input())\nfor _ in range(t):\n    n = int(input())\n    a = list(map(int, input().split()))\n    result = 0\n    for stone in a:\n        result ^= stone\n    print(result)",
+        "highlighted_code": "<span class='highlight-red'>t = int(input())\nfor _ in range(t):\n    n = int(input())\n    a = list(map(int, input().split()))\n    result = 0\n    for stone in a:\n        result ^= stone\n    print(result)</span>"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68fdc3b0fe535fa0f4f1d892/780627ccd0224069b68e3b8d/sub_1761573155480_byohsi5wn.py",
+        "similarity_percent": 100.0,
+        "full_code": "t = int(input())\nfor _ in range(t):\n    n = int(input())\n    a = list(map(int, input().split()))\n    tmp = 0\n    for num in a:\n        tmp ^= num\n    print(tmp)",
+        "highlighted_code": "<span class='highlight-green'>t = int(input())\nfor _ in range(t):\n    n = int(input())\n    a = list(map(int, input().split()))\n    tmp = 0\n    for num in a:\n        tmp ^= num\n    print(tmp)</span>"
+      },
+      "token_overlap": 94,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 21,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68fdc3b0fe535fa0f4f1d892/e59c34a1bebb49d29bfb3592/sub_1761666840984_ff7o49gio.py",
+        "similarity_percent": 100.0,
+        "full_code": "t = int(input())\nfor i in range(t):\n    n = int(input())\n    arr = list(map(int,input().split()))\n    res = 0\n    for x in arr:\n        res ^= x\n    print(res)",
+        "highlighted_code": "<span class='highlight-red'>t = int(input())\nfor i in range(t):\n    n = int(input())\n    arr = list(map(int,input().split()))\n    res = 0\n    for x in arr:\n        res ^= x\n    print(res)</span>"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68fdc3b0fe535fa0f4f1d892/780627ccd0224069b68e3b8d/sub_1761573155480_byohsi5wn.py",
+        "similarity_percent": 100.0,
+        "full_code": "t = int(input())\nfor _ in range(t):\n    n = int(input())\n    a = list(map(int, input().split()))\n    tmp = 0\n    for num in a:\n        tmp ^= num\n    print(tmp)",
+        "highlighted_code": "<span class='highlight-green'>t = int(input())\nfor _ in range(t):\n    n = int(input())\n    a = list(map(int, input().split()))\n    tmp = 0\n    for num in a:\n        tmp ^= num\n    print(tmp)</span>"
+      },
+      "token_overlap": 94,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 22,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68fdc3b0fe535fa0f4f1d892/8e236cb825b041b0a82527f2/sub_1761639999880_43prgnub6.py",
+        "similarity_percent": 91.41,
+        "full_code": "from collections import Counter\n\nt = int(input())\nfor _ in range(t):\n    n = int(input())\n    l = Counter(list(map(int, input().split()))[:n])\n    for (num, freq) in l.most_common():\n        if freq % 2 != 0:\n            print(num)",
+        "highlighted_code": "<span class='highlight-red'>from collections import Counter\n\nt = int(input())\nfor _ in range(t):\n    n = int(input())\n    l = Counter(list(map(int, input().split()))[:n])\n    for (num, freq) in l.most_common():\n        i</span>f freq % 2 != 0:\n            print(num)"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68fdc3b0fe535fa0f4f1d892/8e236cb825b041b0a82527f2/sub_1761639886843_9bnqk26ty.py",
+        "similarity_percent": 91.41,
+        "full_code": "from collections import Counter\n\nt = int(input())\nfor _ in range(t):\n    n = int(input())\n    l = Counter(list(map(int, input().split()))[:n])\n    for (num, freq) in l.most_common():\n        if freq != 2:\n            print(num)",
+        "highlighted_code": "<span class='highlight-green'>from collections import Counter\n\nt = int(input())\nfor _ in range(t):\n    n = int(input())\n    l = Counter(list(map(int, input().split()))[:n])\n    for (num, freq) in l.most_common():\n        i</span>f freq != 2:\n            print(num)"
+      },
+      "token_overlap": 117,
+      "max_similarity_percent": 91.41
+    },
+    {
+      "case_id": 23,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68fdc3b0fe535fa0f4f1d892/9f14990043df4fda9283d7ac/sub_1761753779550_a6rv9kiq8.py",
+        "similarity_percent": 65.45,
+        "full_code": "n = int(input())\nfor _ in range(n):\n    s = int(input())\n    numbers = list(map(int, input().split()))\n    result = [int(x) for x in numbers if numbers.count(x) % 2 != 0]\n    print(result[0])",
+        "highlighted_code": "<span class='highlight-red'>n = int(input())\nfor _ in range(n):\n    s = int(input())\n    numbers = list(map(int, input().split()))\n    result </span>= [int(x) for x in numbers if numbers.count(x) % 2 != 0]\n    print(result[0])"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68fdc3b0fe535fa0f4f1d892/d9aec9d917da4c5e9beeb80b/sub_1761580977351_es640t0ci.py",
+        "similarity_percent": 76.6,
+        "full_code": "t = int(input())\nfor i in range(t):\n    n = int(input())\n    a = list(map(int, input().split()))\n    result = 0\n    for x in a:\n        result ^= x\n    print(result)\n",
+        "highlighted_code": "<span class='highlight-green'>t = int(input())\nfor i in range(t):\n    n = int(input())\n    a = list(map(int, input().split()))\n    result </span>= 0\n    for x in a:\n        result ^= x\n    print(result)\n"
+      },
+      "token_overlap": 72,
+      "max_similarity_percent": 76.6
+    },
+    {
+      "case_id": 24,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68fdc3b0fe535fa0f4f1d892/9f14990043df4fda9283d7ac/sub_1761753779550_a6rv9kiq8.py",
+        "similarity_percent": 65.45,
+        "full_code": "n = int(input())\nfor _ in range(n):\n    s = int(input())\n    numbers = list(map(int, input().split()))\n    result = [int(x) for x in numbers if numbers.count(x) % 2 != 0]\n    print(result[0])",
+        "highlighted_code": "<span class='highlight-red'>n = int(input())\nfor _ in range(n):\n    s = int(input())\n    numbers = list(map(int, input().split()))\n    result </span>= [int(x) for x in numbers if numbers.count(x) % 2 != 0]\n    print(result[0])"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68fdc3b0fe535fa0f4f1d892/91001b54722a4328a2b7b879/sub_1761478208842_urrezulc7.py",
+        "similarity_percent": 76.6,
+        "full_code": "t = int(input())\n\nfor _ in range(t):\n    n = int(input())               \n    arr = list(map(int, input().split()))  \n\n    result = 0                     \n    for num in arr:               \n        result ^= num              \n\n    print(result)                  \n",
+        "highlighted_code": "<span class='highlight-green'>t = int(input())\n\nfor _ in range(t):\n    n = int(input())               \n    arr = list(map(int, input().split()))  \n\n    result </span>= 0                     \n    for num in arr:               \n        result ^= num              \n\n    print(result)                  \n"
+      },
+      "token_overlap": 72,
+      "max_similarity_percent": 76.6
+    },
+    {
+      "case_id": 25,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68fdc3b0fe535fa0f4f1d892/9f14990043df4fda9283d7ac/sub_1761753779550_a6rv9kiq8.py",
+        "similarity_percent": 65.45,
+        "full_code": "n = int(input())\nfor _ in range(n):\n    s = int(input())\n    numbers = list(map(int, input().split()))\n    result = [int(x) for x in numbers if numbers.count(x) % 2 != 0]\n    print(result[0])",
+        "highlighted_code": "<span class='highlight-red'>n = int(input())\nfor _ in range(n):\n    s = int(input())\n    numbers = list(map(int, input().split()))\n    result </span>= [int(x) for x in numbers if numbers.count(x) % 2 != 0]\n    print(result[0])"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68fdc3b0fe535fa0f4f1d892/27e30f767b3a46b283cbfec0/sub_1761575897717_sxajcm9sj.py",
+        "similarity_percent": 76.6,
+        "full_code": "t = int(input())  # Số lượng trường hợp kiểm tra\n\nfor _ in range(t):\n    n = int(input())  # Số lượng viên đá\n    a = list(map(int, input().split()))  # Danh sách số hiệu viên đá\n\n    result = 0\n    for num in a:\n        result ^= num  # Dùng phép XOR để tìm số xuất hiện lẻ lần\n\n    print(result)",
+        "highlighted_code": "<span class='highlight-green'>t = int(input())  # Số lượng trường hợp kiểm tra\n\nfor _ in range(t):\n    n = int(input())  # Số lượng viên đá\n    a = list(map(int, input().split()))  # Danh sách số hiệu viên đá\n\n    result </span>= 0\n    for num in a:\n        result ^= num  # Dùng phép XOR để tìm số xuất hiện lẻ lần\n\n    print(result)"
+      },
+      "token_overlap": 72,
+      "max_similarity_percent": 76.6
+    },
+    {
+      "case_id": 26,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68fdc3b0fe535fa0f4f1d892/9f14990043df4fda9283d7ac/sub_1761753779550_a6rv9kiq8.py",
+        "similarity_percent": 65.45,
+        "full_code": "n = int(input())\nfor _ in range(n):\n    s = int(input())\n    numbers = list(map(int, input().split()))\n    result = [int(x) for x in numbers if numbers.count(x) % 2 != 0]\n    print(result[0])",
+        "highlighted_code": "<span class='highlight-red'>n = int(input())\nfor _ in range(n):\n    s = int(input())\n    numbers = list(map(int, input().split()))\n    result </span>= [int(x) for x in numbers if numbers.count(x) % 2 != 0]\n    print(result[0])"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68fdc3b0fe535fa0f4f1d892/5ddb8c7d2c9c43bab12121a6/sub_1761641312236_5ix3bee4e.py",
+        "similarity_percent": 76.6,
+        "full_code": "t = int(input())\nfor _ in range(t):\n    n = int(input())\n    a = list(map(int, input().split()))\n    result = 0\n    for num in a:\n        result ^= num\n    print(result)",
+        "highlighted_code": "<span class='highlight-green'>t = int(input())\nfor _ in range(t):\n    n = int(input())\n    a = list(map(int, input().split()))\n    result </span>= 0\n    for num in a:\n        result ^= num\n    print(result)"
+      },
+      "token_overlap": 72,
+      "max_similarity_percent": 76.6
+    },
+    {
+      "case_id": 27,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68fdc3b0fe535fa0f4f1d892/9f14990043df4fda9283d7ac/sub_1761753779550_a6rv9kiq8.py",
+        "similarity_percent": 65.45,
+        "full_code": "n = int(input())\nfor _ in range(n):\n    s = int(input())\n    numbers = list(map(int, input().split()))\n    result = [int(x) for x in numbers if numbers.count(x) % 2 != 0]\n    print(result[0])",
+        "highlighted_code": "<span class='highlight-red'>n = int(input())\nfor _ in range(n):\n    s = int(input())\n    numbers = list(map(int, input().split()))\n    result </span>= [int(x) for x in numbers if numbers.count(x) % 2 != 0]\n    print(result[0])"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68fdc3b0fe535fa0f4f1d892/0d74995bf22b4574a97a2297/sub_1761618868965_jzr8bganr.py",
+        "similarity_percent": 76.6,
+        "full_code": "t = int(input())\nfor _ in range(t):\n    n = int(input())\n    a = list(map(int, input().split()))\n    result = 0\n    for stone in a:\n        result ^= stone\n    print(result)",
+        "highlighted_code": "<span class='highlight-green'>t = int(input())\nfor _ in range(t):\n    n = int(input())\n    a = list(map(int, input().split()))\n    result </span>= 0\n    for stone in a:\n        result ^= stone\n    print(result)"
+      },
+      "token_overlap": 72,
+      "max_similarity_percent": 76.6
+    },
+    {
+      "case_id": 28,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68fdc3b0fe535fa0f4f1d892/9f14990043df4fda9283d7ac/sub_1761753779550_a6rv9kiq8.py",
+        "similarity_percent": 65.45,
+        "full_code": "n = int(input())\nfor _ in range(n):\n    s = int(input())\n    numbers = list(map(int, input().split()))\n    result = [int(x) for x in numbers if numbers.count(x) % 2 != 0]\n    print(result[0])",
+        "highlighted_code": "<span class='highlight-red'>n = int(input())\nfor _ in range(n):\n    s = int(input())\n    numbers = list(map(int, input().split()))\n    result </span>= [int(x) for x in numbers if numbers.count(x) % 2 != 0]\n    print(result[0])"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68fdc3b0fe535fa0f4f1d892/e59c34a1bebb49d29bfb3592/sub_1761666840984_ff7o49gio.py",
+        "similarity_percent": 76.6,
+        "full_code": "t = int(input())\nfor i in range(t):\n    n = int(input())\n    arr = list(map(int,input().split()))\n    res = 0\n    for x in arr:\n        res ^= x\n    print(res)",
+        "highlighted_code": "<span class='highlight-green'>t = int(input())\nfor i in range(t):\n    n = int(input())\n    arr = list(map(int,input().split()))\n    res </span>= 0\n    for x in arr:\n        res ^= x\n    print(res)"
+      },
+      "token_overlap": 72,
+      "max_similarity_percent": 76.6
+    },
+    {
+      "case_id": 29,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68fdc3b0fe535fa0f4f1d892/9f14990043df4fda9283d7ac/sub_1761753779550_a6rv9kiq8.py",
+        "similarity_percent": 65.45,
+        "full_code": "n = int(input())\nfor _ in range(n):\n    s = int(input())\n    numbers = list(map(int, input().split()))\n    result = [int(x) for x in numbers if numbers.count(x) % 2 != 0]\n    print(result[0])",
+        "highlighted_code": "<span class='highlight-red'>n = int(input())\nfor _ in range(n):\n    s = int(input())\n    numbers = list(map(int, input().split()))\n    result </span>= [int(x) for x in numbers if numbers.count(x) % 2 != 0]\n    print(result[0])"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68fdc3b0fe535fa0f4f1d892/780627ccd0224069b68e3b8d/sub_1761573155480_byohsi5wn.py",
+        "similarity_percent": 76.6,
+        "full_code": "t = int(input())\nfor _ in range(t):\n    n = int(input())\n    a = list(map(int, input().split()))\n    tmp = 0\n    for num in a:\n        tmp ^= num\n    print(tmp)",
+        "highlighted_code": "<span class='highlight-green'>t = int(input())\nfor _ in range(t):\n    n = int(input())\n    a = list(map(int, input().split()))\n    tmp </span>= 0\n    for num in a:\n        tmp ^= num\n    print(tmp)"
+      },
+      "token_overlap": 72,
+      "max_similarity_percent": 76.6
+    },
+    {
+      "case_id": 30,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68fdc3b0fe535fa0f4f1d892/9f14990043df4fda9283d7ac/sub_1761753779550_a6rv9kiq8.py",
+        "similarity_percent": 64.55,
+        "full_code": "n = int(input())\nfor _ in range(n):\n    s = int(input())\n    numbers = list(map(int, input().split()))\n    result = [int(x) for x in numbers if numbers.count(x) % 2 != 0]\n    print(result[0])",
+        "highlighted_code": "n <span class='highlight-red'>= int(input())\nfor _ in range(n):\n    s = int(input())\n    numbers = list(map(int, input().split()))\n    result </span>= [int(x) for x in numbers if numbers.count(x) % 2 != 0]\n    print(result[0])"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68fdc3b0fe535fa0f4f1d892/449c44ebafa84f0d8d5b6d0f/sub_1761733620155_gtmswml9j.py",
+        "similarity_percent": 48.3,
+        "full_code": "if __name__ == '__main__':\n    t = int(input())\n    for i in range(t):\n        n = int(input())\n        a = list(map(int, input().split()))\n        cnt = [0] * ( 10 ^ 6 )\n        for x in a:\n            cnt[x] += 1\n        for x in a:\n            if cnt[x] % 2 != 0:\n                print(x)\n                break",
+        "highlighted_code": "if __name__ == &#39;__main__&#39;:\n    t <span class='highlight-green'>= int(input())\n    for i in range(t):\n        n = int(input())\n        a = list(map(int, input().split()))\n        cnt </span>= [0] * ( 10 ^ 6 )\n        for x in a:\n            cnt[x] += 1\n        for x in a:\n            if cnt[x] % 2 != 0:\n                print(x)\n                break"
+      },
+      "token_overlap": 71,
+      "max_similarity_percent": 64.55
+    },
+    {
+      "case_id": 31,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68fdc3b0fe535fa0f4f1d892/449c44ebafa84f0d8d5b6d0f/sub_1761733620155_gtmswml9j.py",
+        "similarity_percent": 53.74,
+        "full_code": "if __name__ == '__main__':\n    t = int(input())\n    for i in range(t):\n        n = int(input())\n        a = list(map(int, input().split()))\n        cnt = [0] * ( 10 ^ 6 )\n        for x in a:\n            cnt[x] += 1\n        for x in a:\n            if cnt[x] % 2 != 0:\n                print(x)\n                break",
+        "highlighted_code": "if __name__ == &#39;__main__&#39;:\n    t = int(input())\n    for i in range(t):\n        <span class='highlight-red'>n = int(input())\n        a = list(map(int, input().split()</span>))\n        cnt = [0] * ( 10 ^ 6 )\n        for <span class='highlight-red'>x in a:\n            cnt[x] += 1\n        for x in a:\n            if cnt[x] % 2 != 0:\n                print(x</span>)\n                break"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68fdc3b0fe535fa0f4f1d892/3fa6af8d916a46039239cabe/sub_1761664864207_bhkhnvxdd.py",
+        "similarity_percent": 60.31,
+        "full_code": "t=int(input())\nd={}\nwhile t:\n    t-=1\n    n=int(input())\n    A=list(map(int,input().split()))\n    for i in A:\n        d[i]=0\n    for i in A:\n        d[i]+=1\n    for i in d:\n        if d[i]%2!=0:\n            print(i)\n    d.clear()",
+        "highlighted_code": "t=int(input())\nd={}\nwhile t:\n    t-=1\n    <span class='highlight-green'>n=int(input())\n    A=list(map(int,input().split()</span>))\n    for i in A:\n        d[i]=0\n    for <span class='highlight-green'>i in A:\n        d[i]+=1\n    for i in d:\n        if d[i]%2!=0:\n            print(i</span>)\n    d.clear()"
+      },
+      "token_overlap": 79,
+      "max_similarity_percent": 60.31
+    },
+    {
+      "case_id": 32,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68fdc3b0fe535fa0f4f1d892/449c44ebafa84f0d8d5b6d0f/sub_1761733620155_gtmswml9j.py",
+        "similarity_percent": 48.3,
+        "full_code": "if __name__ == '__main__':\n    t = int(input())\n    for i in range(t):\n        n = int(input())\n        a = list(map(int, input().split()))\n        cnt = [0] * ( 10 ^ 6 )\n        for x in a:\n            cnt[x] += 1\n        for x in a:\n            if cnt[x] % 2 != 0:\n                print(x)\n                break",
+        "highlighted_code": "if __name__ == &#39;__main__&#39;:\n    t <span class='highlight-red'>= int(input())\n    for i in range(t):\n        n = int(input())\n        a = list(map(int, input().split()))\n        cnt </span>= [0] * ( 10 ^ 6 )\n        for x in a:\n            cnt[x] += 1\n        for x in a:\n            if cnt[x] % 2 != 0:\n                print(x)\n                break"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68fdc3b0fe535fa0f4f1d892/d9aec9d917da4c5e9beeb80b/sub_1761580977351_es640t0ci.py",
+        "similarity_percent": 75.53,
+        "full_code": "t = int(input())\nfor i in range(t):\n    n = int(input())\n    a = list(map(int, input().split()))\n    result = 0\n    for x in a:\n        result ^= x\n    print(result)\n",
+        "highlighted_code": "t <span class='highlight-green'>= int(input())\nfor i in range(t):\n    n = int(input())\n    a = list(map(int, input().split()))\n    result </span>= 0\n    for x in a:\n        result ^= x\n    print(result)\n"
+      },
+      "token_overlap": 71,
+      "max_similarity_percent": 75.53
+    },
+    {
+      "case_id": 33,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68fdc3b0fe535fa0f4f1d892/449c44ebafa84f0d8d5b6d0f/sub_1761733620155_gtmswml9j.py",
+        "similarity_percent": 48.3,
+        "full_code": "if __name__ == '__main__':\n    t = int(input())\n    for i in range(t):\n        n = int(input())\n        a = list(map(int, input().split()))\n        cnt = [0] * ( 10 ^ 6 )\n        for x in a:\n            cnt[x] += 1\n        for x in a:\n            if cnt[x] % 2 != 0:\n                print(x)\n                break",
+        "highlighted_code": "if __name__ == &#39;__main__&#39;:\n    t <span class='highlight-red'>= int(input())\n    for i in range(t):\n        n = int(input())\n        a = list(map(int, input().split()))\n        cnt </span>= [0] * ( 10 ^ 6 )\n        for x in a:\n            cnt[x] += 1\n        for x in a:\n            if cnt[x] % 2 != 0:\n                print(x)\n                break"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68fdc3b0fe535fa0f4f1d892/91001b54722a4328a2b7b879/sub_1761478208842_urrezulc7.py",
+        "similarity_percent": 75.53,
+        "full_code": "t = int(input())\n\nfor _ in range(t):\n    n = int(input())               \n    arr = list(map(int, input().split()))  \n\n    result = 0                     \n    for num in arr:               \n        result ^= num              \n\n    print(result)                  \n",
+        "highlighted_code": "t <span class='highlight-green'>= int(input())\n\nfor _ in range(t):\n    n = int(input())               \n    arr = list(map(int, input().split()))  \n\n    result </span>= 0                     \n    for num in arr:               \n        result ^= num              \n\n    print(result)                  \n"
+      },
+      "token_overlap": 71,
+      "max_similarity_percent": 75.53
+    },
+    {
+      "case_id": 34,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68fdc3b0fe535fa0f4f1d892/449c44ebafa84f0d8d5b6d0f/sub_1761733620155_gtmswml9j.py",
+        "similarity_percent": 48.3,
+        "full_code": "if __name__ == '__main__':\n    t = int(input())\n    for i in range(t):\n        n = int(input())\n        a = list(map(int, input().split()))\n        cnt = [0] * ( 10 ^ 6 )\n        for x in a:\n            cnt[x] += 1\n        for x in a:\n            if cnt[x] % 2 != 0:\n                print(x)\n                break",
+        "highlighted_code": "if __name__ == &#39;__main__&#39;:\n    t <span class='highlight-red'>= int(input())\n    for i in range(t):\n        n = int(input())\n        a = list(map(int, input().split()))\n        cnt </span>= [0] * ( 10 ^ 6 )\n        for x in a:\n            cnt[x] += 1\n        for x in a:\n            if cnt[x] % 2 != 0:\n                print(x)\n                break"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68fdc3b0fe535fa0f4f1d892/27e30f767b3a46b283cbfec0/sub_1761575897717_sxajcm9sj.py",
+        "similarity_percent": 75.53,
+        "full_code": "t = int(input())  # Số lượng trường hợp kiểm tra\n\nfor _ in range(t):\n    n = int(input())  # Số lượng viên đá\n    a = list(map(int, input().split()))  # Danh sách số hiệu viên đá\n\n    result = 0\n    for num in a:\n        result ^= num  # Dùng phép XOR để tìm số xuất hiện lẻ lần\n\n    print(result)",
+        "highlighted_code": "t <span class='highlight-green'>= int(input())  # Số lượng trường hợp kiểm tra\n\nfor _ in range(t):\n    n = int(input())  # Số lượng viên đá\n    a = list(map(int, input().split()))  # Danh sách số hiệu viên đá\n\n    result </span>= 0\n    for num in a:\n        result ^= num  # Dùng phép XOR để tìm số xuất hiện lẻ lần\n\n    print(result)"
+      },
+      "token_overlap": 71,
+      "max_similarity_percent": 75.53
+    },
+    {
+      "case_id": 35,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68fdc3b0fe535fa0f4f1d892/449c44ebafa84f0d8d5b6d0f/sub_1761733620155_gtmswml9j.py",
+        "similarity_percent": 48.3,
+        "full_code": "if __name__ == '__main__':\n    t = int(input())\n    for i in range(t):\n        n = int(input())\n        a = list(map(int, input().split()))\n        cnt = [0] * ( 10 ^ 6 )\n        for x in a:\n            cnt[x] += 1\n        for x in a:\n            if cnt[x] % 2 != 0:\n                print(x)\n                break",
+        "highlighted_code": "if __name__ == &#39;__main__&#39;:\n    t <span class='highlight-red'>= int(input())\n    for i in range(t):\n        n = int(input())\n        a = list(map(int, input().split()))\n        cnt </span>= [0] * ( 10 ^ 6 )\n        for x in a:\n            cnt[x] += 1\n        for x in a:\n            if cnt[x] % 2 != 0:\n                print(x)\n                break"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68fdc3b0fe535fa0f4f1d892/5ddb8c7d2c9c43bab12121a6/sub_1761641312236_5ix3bee4e.py",
+        "similarity_percent": 75.53,
+        "full_code": "t = int(input())\nfor _ in range(t):\n    n = int(input())\n    a = list(map(int, input().split()))\n    result = 0\n    for num in a:\n        result ^= num\n    print(result)",
+        "highlighted_code": "t <span class='highlight-green'>= int(input())\nfor _ in range(t):\n    n = int(input())\n    a = list(map(int, input().split()))\n    result </span>= 0\n    for num in a:\n        result ^= num\n    print(result)"
+      },
+      "token_overlap": 71,
+      "max_similarity_percent": 75.53
+    },
+    {
+      "case_id": 36,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68fdc3b0fe535fa0f4f1d892/449c44ebafa84f0d8d5b6d0f/sub_1761733620155_gtmswml9j.py",
+        "similarity_percent": 48.3,
+        "full_code": "if __name__ == '__main__':\n    t = int(input())\n    for i in range(t):\n        n = int(input())\n        a = list(map(int, input().split()))\n        cnt = [0] * ( 10 ^ 6 )\n        for x in a:\n            cnt[x] += 1\n        for x in a:\n            if cnt[x] % 2 != 0:\n                print(x)\n                break",
+        "highlighted_code": "if __name__ == &#39;__main__&#39;:\n    t <span class='highlight-red'>= int(input())\n    for i in range(t):\n        n = int(input())\n        a = list(map(int, input().split()))\n        cnt </span>= [0] * ( 10 ^ 6 )\n        for x in a:\n            cnt[x] += 1\n        for x in a:\n            if cnt[x] % 2 != 0:\n                print(x)\n                break"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68fdc3b0fe535fa0f4f1d892/0d74995bf22b4574a97a2297/sub_1761618868965_jzr8bganr.py",
+        "similarity_percent": 75.53,
+        "full_code": "t = int(input())\nfor _ in range(t):\n    n = int(input())\n    a = list(map(int, input().split()))\n    result = 0\n    for stone in a:\n        result ^= stone\n    print(result)",
+        "highlighted_code": "t <span class='highlight-green'>= int(input())\nfor _ in range(t):\n    n = int(input())\n    a = list(map(int, input().split()))\n    result </span>= 0\n    for stone in a:\n        result ^= stone\n    print(result)"
+      },
+      "token_overlap": 71,
+      "max_similarity_percent": 75.53
+    },
+    {
+      "case_id": 37,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68fdc3b0fe535fa0f4f1d892/449c44ebafa84f0d8d5b6d0f/sub_1761733620155_gtmswml9j.py",
+        "similarity_percent": 48.3,
+        "full_code": "if __name__ == '__main__':\n    t = int(input())\n    for i in range(t):\n        n = int(input())\n        a = list(map(int, input().split()))\n        cnt = [0] * ( 10 ^ 6 )\n        for x in a:\n            cnt[x] += 1\n        for x in a:\n            if cnt[x] % 2 != 0:\n                print(x)\n                break",
+        "highlighted_code": "if __name__ == &#39;__main__&#39;:\n    t <span class='highlight-red'>= int(input())\n    for i in range(t):\n        n = int(input())\n        a = list(map(int, input().split()))\n        cnt </span>= [0] * ( 10 ^ 6 )\n        for x in a:\n            cnt[x] += 1\n        for x in a:\n            if cnt[x] % 2 != 0:\n                print(x)\n                break"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68fdc3b0fe535fa0f4f1d892/e59c34a1bebb49d29bfb3592/sub_1761666840984_ff7o49gio.py",
+        "similarity_percent": 75.53,
+        "full_code": "t = int(input())\nfor i in range(t):\n    n = int(input())\n    arr = list(map(int,input().split()))\n    res = 0\n    for x in arr:\n        res ^= x\n    print(res)",
+        "highlighted_code": "t <span class='highlight-green'>= int(input())\nfor i in range(t):\n    n = int(input())\n    arr = list(map(int,input().split()))\n    res </span>= 0\n    for x in arr:\n        res ^= x\n    print(res)"
+      },
+      "token_overlap": 71,
+      "max_similarity_percent": 75.53
+    },
+    {
+      "case_id": 38,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68fdc3b0fe535fa0f4f1d892/449c44ebafa84f0d8d5b6d0f/sub_1761733620155_gtmswml9j.py",
+        "similarity_percent": 48.3,
+        "full_code": "if __name__ == '__main__':\n    t = int(input())\n    for i in range(t):\n        n = int(input())\n        a = list(map(int, input().split()))\n        cnt = [0] * ( 10 ^ 6 )\n        for x in a:\n            cnt[x] += 1\n        for x in a:\n            if cnt[x] % 2 != 0:\n                print(x)\n                break",
+        "highlighted_code": "if __name__ == &#39;__main__&#39;:\n    t <span class='highlight-red'>= int(input())\n    for i in range(t):\n        n = int(input())\n        a = list(map(int, input().split()))\n        cnt </span>= [0] * ( 10 ^ 6 )\n        for x in a:\n            cnt[x] += 1\n        for x in a:\n            if cnt[x] % 2 != 0:\n                print(x)\n                break"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68fdc3b0fe535fa0f4f1d892/780627ccd0224069b68e3b8d/sub_1761573155480_byohsi5wn.py",
+        "similarity_percent": 75.53,
+        "full_code": "t = int(input())\nfor _ in range(t):\n    n = int(input())\n    a = list(map(int, input().split()))\n    tmp = 0\n    for num in a:\n        tmp ^= num\n    print(tmp)",
+        "highlighted_code": "t <span class='highlight-green'>= int(input())\nfor _ in range(t):\n    n = int(input())\n    a = list(map(int, input().split()))\n    tmp </span>= 0\n    for num in a:\n        tmp ^= num\n    print(tmp)"
+      },
+      "token_overlap": 71,
+      "max_similarity_percent": 75.53
+    }
+  ]
+}

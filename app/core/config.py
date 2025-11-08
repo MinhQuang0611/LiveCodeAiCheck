@@ -1,21 +1,25 @@
 import os
+from dotenv import load_dotenv
 from typing import Optional
 from pydantic_settings import BaseSettings
 from keycloak.keycloak_openid import KeycloakOpenID
 
-
+load_dotenv()
 BASE_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), "../../"))
 
 
 class Settings(BaseSettings):
     PROJECT_NAME: str = os.environ.get("PROJECT_NAME", "FASTAPI_BASE")
-    SECRET_KEY: str = os.environ.get("SECRET_KEY", None)
+    SECRET_KEY: str = os.environ.get("SECRET_KEY", "khong noi cho biet dau")
     API_PREFIX: str = os.environ.get("API_PREFIX", "/api")
     API_VERSIONS: str = os.environ.get("API_VERSIONS", "")
     API_VERSION: str = os.environ.get("API_VERSION", "v1")
     BACKEND_CORS_ORIGINS: str = os.environ.get("BACKEND_CORS_ORIGINS", '["*"]')
     DATABASE_URL: str = (
         f"postgresql+psycopg2://{os.environ.get('POSTGRES_USER')}:{os.environ.get('POSTGRES_PASSWORD')}@{os.environ.get('POSTGRES_HOST')}:{os.environ.get('POSTGRES_PORT')}/{os.environ.get('POSTGRES_DB')}"
+    )
+    DATABASE_DSN: str = (
+        f"dbname={os.getenv('POSTGRES_DB')} user={os.getenv('POSTGRES_USER')} password={os.getenv('POSTGRES_PASSWORD')} host={os.getenv('POSTGRES_HOST')} port={os.getenv('POSTGRES_PORT')}"
     )
     ACCESS_TOKEN_EXPIRE_SECONDS: int = 60 * 60 * 24 * 7  # Token expired after 7 days
     SECURITY_ALGORITHM: str = "HS256"

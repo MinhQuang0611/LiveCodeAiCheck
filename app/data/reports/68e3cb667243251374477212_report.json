@@ -1,0 +1,130 @@
+{
+  "problem_id": "68e3cb667243251374477212",
+  "filter_criteria": {
+    "min_token_overlap": 80,
+    "min_similarity_percent": 60
+  },
+  "total_cases_found": 11,
+  "total_cases_filtered": 7,
+  "cases": [
+    {
+      "case_id": 1,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3cb667243251374477212/0d74995bf22b4574a97a2297/sub_1761555507831_2l4aof727.py",
+        "similarity_percent": 100.0,
+        "full_code": "def dem(n):\n    le = 0\n    chan = 0\n    while n > 0:\n        if (n % 10) % 2 == 0:\n            chan += 1\n        else:\n            le += 1\n        n //= 10\n    return le,chan\nm,n = list(map(int,input().split()))\nle = 0\nchan = 0\nfor i in range(m, n + 1):\n    result = dem(i)\n    le += result[0]\n    chan += result[1]\nprint(chan, le)",
+        "highlighted_code": "<span class='highlight-red'>def dem(n):\n    le = 0\n    chan = 0\n    while n &gt; 0:\n        if (n % 10) % 2 == 0:\n            chan += 1\n        else:\n            le += 1\n        n //= 10\n    return le,chan\nm,n = list(map(int,input().split()))\nle = 0\nchan = 0\nfor i in range(m, n + 1):\n    result = dem(i)\n    le += result[0]\n    chan += result[1]\nprint</span>(chan, le)"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3cb667243251374477212/0d74995bf22b4574a97a2297/sub_1761555162093_x8qehcgm4.py",
+        "similarity_percent": 100.0,
+        "full_code": "def dem(n):\n    le = 0\n    chan = 0\n    while n > 0:\n        if (n % 10) % 2 == 0:\n            chan += 1\n        else:\n            le += 1\n        n //= 10\n    return le,chan\nm,n = list(map(int,input().split()))\nle = 0\nchan = 0\nfor i in range(m, n + 1):\n    result = dem(i)\n    le += result[0]\n    chan += result[1]\nprint(chan,le)",
+        "highlighted_code": "<span class='highlight-green'>def dem(n):\n    le = 0\n    chan = 0\n    while n &gt; 0:\n        if (n % 10) % 2 == 0:\n            chan += 1\n        else:\n            le += 1\n        n //= 10\n    return le,chan\nm,n = list(map(int,input().split()))\nle = 0\nchan = 0\nfor i in range(m, n + 1):\n    result = dem(i)\n    le += result[0]\n    chan += result[1]\nprint</span>(chan,le)"
+      },
+      "token_overlap": 145,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 2,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3cb667243251374477212/0d74995bf22b4574a97a2297/sub_1761557017602_tggo1yzgc.py",
+        "similarity_percent": 84.55,
+        "full_code": "\nm,n = list(map(int,input().split()))\nle = 0\nchan = 0\nfor i in range(m, n + 1):\n    d = i\n    while d > 0:\n        if (d % 10) % 2 == 0:\n            chan += 1\n        else:\n            le += 1\n        d //= 10\nprint(chan,le)",
+        "highlighted_code": "\n<span class='highlight-red'>m,n = list(map(int,input().split()))\nle = 0\nchan = 0\nfor i in range(m, n + 1</span>):\n    d = i\n    <span class='highlight-red'>while d &gt; 0:\n        if (d % 10) % 2 == 0:\n            chan += 1\n        else:\n            le += 1\n        d //= </span>10\nprint(chan,le)"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3cb667243251374477212/0d74995bf22b4574a97a2297/sub_1761555024805_wpxogkti6.py",
+        "similarity_percent": 64.14,
+        "full_code": "def dem(n):\n    le = 0\n    chan = 0\n    while n > 0:\n        if (n % 10) % 2 == 0:\n            chan += 1\n        else:\n            le += 1\n        n //= 10\n    return le,chan\nm,n = list(map(int,input().split()))\nle = 0\nchan = 0\nfor i in range(m,n+1):\n    le += dem(i)[0]\n    chan += dem(i)[1]\nprint(chan,le)",
+        "highlighted_code": "def dem(n):\n    le = 0\n    chan = 0\n    w<span class='highlight-green'>hile n &gt; 0:\n        if (n % 10) % 2 == 0:\n            chan += 1\n        else:\n            le += 1\n        n //= 1</span>0\n    return le,chan\nm<span class='highlight-green'>,n = list(map(int,input().split()))\nle = 0\nchan = 0\nfor i in range(m,n+1)</span>:\n    le += dem(i)[0]\n    chan += dem(i)[1]\nprint(chan,le)"
+      },
+      "token_overlap": 93,
+      "max_similarity_percent": 84.55
+    },
+    {
+      "case_id": 3,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3cb667243251374477212/0d74995bf22b4574a97a2297/sub_1761555507831_2l4aof727.py",
+        "similarity_percent": 82.07,
+        "full_code": "def dem(n):\n    le = 0\n    chan = 0\n    while n > 0:\n        if (n % 10) % 2 == 0:\n            chan += 1\n        else:\n            le += 1\n        n //= 10\n    return le,chan\nm,n = list(map(int,input().split()))\nle = 0\nchan = 0\nfor i in range(m, n + 1):\n    result = dem(i)\n    le += result[0]\n    chan += result[1]\nprint(chan, le)",
+        "highlighted_code": "<span class='highlight-red'>def dem(n):\n    le = 0\n    chan = 0\n    while n &gt; 0:\n        if (n % 10) % 2 == 0:\n            chan += 1\n        else:\n            le += 1\n        n //= 10\n    return le,chan\nm,n = list(map(int,input().split()))\nle = 0\nchan = 0\nfor i in range(m, n + 1)</span>:\n    result = dem(i)\n    le += result[0]\n    chan += result[1]\nprint(chan, le)"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3cb667243251374477212/0d74995bf22b4574a97a2297/sub_1761555024805_wpxogkti6.py",
+        "similarity_percent": 82.07,
+        "full_code": "def dem(n):\n    le = 0\n    chan = 0\n    while n > 0:\n        if (n % 10) % 2 == 0:\n            chan += 1\n        else:\n            le += 1\n        n //= 10\n    return le,chan\nm,n = list(map(int,input().split()))\nle = 0\nchan = 0\nfor i in range(m,n+1):\n    le += dem(i)[0]\n    chan += dem(i)[1]\nprint(chan,le)",
+        "highlighted_code": "<span class='highlight-green'>def dem(n):\n    le = 0\n    chan = 0\n    while n &gt; 0:\n        if (n % 10) % 2 == 0:\n            chan += 1\n        else:\n            le += 1\n        n //= 10\n    return le,chan\nm,n = list(map(int,input().split()))\nle = 0\nchan = 0\nfor i in range(m,n+1)</span>:\n    le += dem(i)[0]\n    chan += dem(i)[1]\nprint(chan,le)"
+      },
+      "token_overlap": 119,
+      "max_similarity_percent": 82.07
+    },
+    {
+      "case_id": 4,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3cb667243251374477212/0d74995bf22b4574a97a2297/sub_1761555162093_x8qehcgm4.py",
+        "similarity_percent": 82.07,
+        "full_code": "def dem(n):\n    le = 0\n    chan = 0\n    while n > 0:\n        if (n % 10) % 2 == 0:\n            chan += 1\n        else:\n            le += 1\n        n //= 10\n    return le,chan\nm,n = list(map(int,input().split()))\nle = 0\nchan = 0\nfor i in range(m, n + 1):\n    result = dem(i)\n    le += result[0]\n    chan += result[1]\nprint(chan,le)",
+        "highlighted_code": "<span class='highlight-red'>def dem(n):\n    le = 0\n    chan = 0\n    while n &gt; 0:\n        if (n % 10) % 2 == 0:\n            chan += 1\n        else:\n            le += 1\n        n //= 10\n    return le,chan\nm,n = list(map(int,input().split()))\nle = 0\nchan = 0\nfor i in range(m, n + 1)</span>:\n    result = dem(i)\n    le += result[0]\n    chan += result[1]\nprint(chan,le)"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3cb667243251374477212/0d74995bf22b4574a97a2297/sub_1761555024805_wpxogkti6.py",
+        "similarity_percent": 82.07,
+        "full_code": "def dem(n):\n    le = 0\n    chan = 0\n    while n > 0:\n        if (n % 10) % 2 == 0:\n            chan += 1\n        else:\n            le += 1\n        n //= 10\n    return le,chan\nm,n = list(map(int,input().split()))\nle = 0\nchan = 0\nfor i in range(m,n+1):\n    le += dem(i)[0]\n    chan += dem(i)[1]\nprint(chan,le)",
+        "highlighted_code": "<span class='highlight-green'>def dem(n):\n    le = 0\n    chan = 0\n    while n &gt; 0:\n        if (n % 10) % 2 == 0:\n            chan += 1\n        else:\n            le += 1\n        n //= 10\n    return le,chan\nm,n = list(map(int,input().split()))\nle = 0\nchan = 0\nfor i in range(m,n+1)</span>:\n    le += dem(i)[0]\n    chan += dem(i)[1]\nprint(chan,le)"
+      },
+      "token_overlap": 119,
+      "max_similarity_percent": 82.07
+    },
+    {
+      "case_id": 5,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3cb667243251374477212/0d74995bf22b4574a97a2297/sub_1761555507831_2l4aof727.py",
+        "similarity_percent": 66.9,
+        "full_code": "def dem(n):\n    le = 0\n    chan = 0\n    while n > 0:\n        if (n % 10) % 2 == 0:\n            chan += 1\n        else:\n            le += 1\n        n //= 10\n    return le,chan\nm,n = list(map(int,input().split()))\nle = 0\nchan = 0\nfor i in range(m, n + 1):\n    result = dem(i)\n    le += result[0]\n    chan += result[1]\nprint(chan, le)",
+        "highlighted_code": "def dem(n):\n    le = 0\n    chan = 0\n    w<span class='highlight-red'>hile n &gt; 0:\n        if (n % 10) % 2 == 0:\n            chan += 1\n        else:\n            le += 1\n        n //= 1</span>0\n    return le,chan\nm<span class='highlight-red'>,n = list(map(int,input().split()))\nle = 0\nchan = 0\nfor i in range(m, n + 1):\n    result = dem</span>(i)\n    le += result[0]\n    chan += result[1]\nprint(chan, le)"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3cb667243251374477212/0d74995bf22b4574a97a2297/sub_1761557017602_tggo1yzgc.py",
+        "similarity_percent": 88.18,
+        "full_code": "\nm,n = list(map(int,input().split()))\nle = 0\nchan = 0\nfor i in range(m, n + 1):\n    d = i\n    while d > 0:\n        if (d % 10) % 2 == 0:\n            chan += 1\n        else:\n            le += 1\n        d //= 10\nprint(chan,le)",
+        "highlighted_code": "\n<span class='highlight-green'>m,n = list(map(int,input().split()))\nle = 0\nchan = 0\nfor i in range(m, n + 1):\n    d = i\n   </span> <span class='highlight-green'>while d &gt; 0:\n        if (d % 10) % 2 == 0:\n            chan += 1\n        else:\n            le += 1\n        d //= </span>10\nprint(chan,le)"
+      },
+      "token_overlap": 97,
+      "max_similarity_percent": 88.18
+    },
+    {
+      "case_id": 6,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3cb667243251374477212/0d74995bf22b4574a97a2297/sub_1761555162093_x8qehcgm4.py",
+        "similarity_percent": 66.9,
+        "full_code": "def dem(n):\n    le = 0\n    chan = 0\n    while n > 0:\n        if (n % 10) % 2 == 0:\n            chan += 1\n        else:\n            le += 1\n        n //= 10\n    return le,chan\nm,n = list(map(int,input().split()))\nle = 0\nchan = 0\nfor i in range(m, n + 1):\n    result = dem(i)\n    le += result[0]\n    chan += result[1]\nprint(chan,le)",
+        "highlighted_code": "def dem(n):\n    le = 0\n    chan = 0\n    w<span class='highlight-red'>hile n &gt; 0:\n        if (n % 10) % 2 == 0:\n            chan += 1\n        else:\n            le += 1\n        n //= 1</span>0\n    return le,chan\nm<span class='highlight-red'>,n = list(map(int,input().split()))\nle = 0\nchan = 0\nfor i in range(m, n + 1):\n    result = dem</span>(i)\n    le += result[0]\n    chan += result[1]\nprint(chan,le)"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3cb667243251374477212/0d74995bf22b4574a97a2297/sub_1761557017602_tggo1yzgc.py",
+        "similarity_percent": 88.18,
+        "full_code": "\nm,n = list(map(int,input().split()))\nle = 0\nchan = 0\nfor i in range(m, n + 1):\n    d = i\n    while d > 0:\n        if (d % 10) % 2 == 0:\n            chan += 1\n        else:\n            le += 1\n        d //= 10\nprint(chan,le)",
+        "highlighted_code": "\n<span class='highlight-green'>m,n = list(map(int,input().split()))\nle = 0\nchan = 0\nfor i in range(m, n + 1):\n    d = i\n   </span> <span class='highlight-green'>while d &gt; 0:\n        if (d % 10) % 2 == 0:\n            chan += 1\n        else:\n            le += 1\n        d //= </span>10\nprint(chan,le)"
+      },
+      "token_overlap": 97,
+      "max_similarity_percent": 88.18
+    },
+    {
+      "case_id": 7,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3cb667243251374477212/fd92120cec18496789c2c733/sub_1761621160101_dbsz5v32r.py",
+        "similarity_percent": 60.82,
+        "full_code": "start, end = map(int,input().split())\ntotalchan = 0\ntotalle = 0\nfor i in range (start, end + 1):\n    for g in str(i):\n        if int(g) % 2 == 0:\n            totalchan += 1\n        else:\n            totalle += 1\n    \nprint (totalchan, totalle)",
+        "highlighted_code": "start, end = map(int,input().split()<span class='highlight-red'>)\ntotalchan = 0\ntotalle = 0\nfor i in range (start, end + 1)</span>:\n    for g in str(i):\n        i<span class='highlight-red'>f int(g) % 2 == 0:\n            totalchan += 1\n        else:\n            totalle += 1\n    \nprint (totalchan, </span>totalle)"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3cb667243251374477212/222412e06e454a339defe331/sub_1761643736009_oflmt019z.py",
+        "similarity_percent": 55.66,
+        "full_code": "m,n=list(map(int,input().split()))\np=0\no=0\nfor i in range(m,n+1):\n    k=str(i)\n    for a in k:\n        if int(a)%2==0:\n            p+=1\n        else:\n            o+=1\nprint(p,o)",
+        "highlighted_code": "m,n=list(map(int,input().split())<span class='highlight-green'>)\np=0\no=0\nfor i in range(m,n+1)</span>:\n    k=str(i)\n    for a in k:\n        i<span class='highlight-green'>f int(a)%2==0:\n            p+=1\n        else:\n            o+=1\nprint(p,</span>o)"
+      },
+      "token_overlap": 59,
+      "max_similarity_percent": 60.82
+    }
+  ]
+}

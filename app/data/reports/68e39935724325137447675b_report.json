@@ -1,0 +1,164 @@
+{
+  "problem_id": "68e39935724325137447675b",
+  "filter_criteria": {
+    "min_token_overlap": 80,
+    "min_similarity_percent": 60
+  },
+  "total_cases_found": 14,
+  "total_cases_filtered": 9,
+  "cases": [
+    {
+      "case_id": 1,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e39935724325137447675b/a31a4097e8a74e09b9209282/sub_1761282293072_4zsz1kb1c.py",
+        "similarity_percent": 100.0,
+        "full_code": "n=input()\nif(n[0]=='-'):\n\tn=n.replace(\"-\",\"\")\n\tprint(int(n[::-1])*-1)\nelse: print(int(n[::-1]))",
+        "highlighted_code": "<span class='highlight-red'>n=input()\nif(n[0]==&#39;-&#39;):\n\tn=n.replace(&#34;-&#34;,&#34;&#34;)\n\tprint(int(n[::-1])*-1)\nelse: print(int(n[::-1</span>]))"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e39935724325137447675b/a31a4097e8a74e09b9209282/sub_1761282299526_eh09v56je.py",
+        "similarity_percent": 100.0,
+        "full_code": "n=input()\nif(n[0]=='-'):\n\tn=n.replace(\"-\",\"\")\n\tprint(int(n[::-1])*-1)\nelse: print(int(n[::-1]))",
+        "highlighted_code": "<span class='highlight-green'>n=input()\nif(n[0]==&#39;-&#39;):\n\tn=n.replace(&#34;-&#34;,&#34;&#34;)\n\tprint(int(n[::-1])*-1)\nelse: print(int(n[::-1</span>]))"
+      },
+      "token_overlap": 79,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 2,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e39935724325137447675b/a31a4097e8a74e09b9209282/sub_1761282293072_4zsz1kb1c.py",
+        "similarity_percent": 100.0,
+        "full_code": "n=input()\nif(n[0]=='-'):\n\tn=n.replace(\"-\",\"\")\n\tprint(int(n[::-1])*-1)\nelse: print(int(n[::-1]))",
+        "highlighted_code": "<span class='highlight-red'>n=input()\nif(n[0]==&#39;-&#39;):\n\tn=n.replace(&#34;-&#34;,&#34;&#34;)\n\tprint(int(n[::-1])*-1)\nelse: print(int(n[::-1</span>]))"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e39935724325137447675b/a31a4097e8a74e09b9209282/sub_1761282318354_ebg205p9t.py",
+        "similarity_percent": 100.0,
+        "full_code": "n=input()\nif(n[0]=='-'):\n\tn=n.replace(\"-\",\"\")\n\tprint(int(n[::-1])*-1)\nelse: print(int(n[::-1]))",
+        "highlighted_code": "<span class='highlight-green'>n=input()\nif(n[0]==&#39;-&#39;):\n\tn=n.replace(&#34;-&#34;,&#34;&#34;)\n\tprint(int(n[::-1])*-1)\nelse: print(int(n[::-1</span>]))"
+      },
+      "token_overlap": 79,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 3,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e39935724325137447675b/0d74995bf22b4574a97a2297/sub_1761553502950_bou9hmcmr.py",
+        "similarity_percent": 100.0,
+        "full_code": "n = input()\ndau = \"\"\nso = n\nif n.startswith('-'):\n    dau = \"-\"\n    so = n[1:]\nres1 = so[::-1]\nres2 = res1.lstrip('0')\nif res2 == \"\":\n    result = 0\nelse:\n    result = int(dau + res2)\nif result < -2**31 or result > 2**31 - 1:\n    print(0)\nelse:\n    print(result)\n",
+        "highlighted_code": "<span class='highlight-red'>n = input()\ndau = &#34;&#34;\nso = n\nif n.startswith(&#39;-&#39;):\n    dau = &#34;-&#34;\n    so = n[1:]\nres1 = so[::-1]\nres2 = res1.lstrip(&#39;0&#39;)\nif res2 == &#34;&#34;:\n    result = 0\nelse:\n    result = int(dau + res2)\nif result &lt; -2**31 or result &gt; 2**31 - 1:\n    print(0)\nelse:\n    print(result</span>)\n"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e39935724325137447675b/0d74995bf22b4574a97a2297/sub_1761619412431_bdmi00nmf.py",
+        "similarity_percent": 100.0,
+        "full_code": "n = input()\ndau = \"\"\nso = n\nif n.startswith('-'):\n    dau = \"-\"\n    so = n[1:]\nres1 = so[::-1]\nres2 = res1.lstrip('0')\nif res2 == \"\":\n    result = 0\nelse:\n    result = int(dau + res2)\nif result < -2**31 or result > 2**31 - 1:\n    print(0)\nelse:\n    print(result)\n",
+        "highlighted_code": "<span class='highlight-green'>n = input()\ndau = &#34;&#34;\nso = n\nif n.startswith(&#39;-&#39;):\n    dau = &#34;-&#34;\n    so = n[1:]\nres1 = so[::-1]\nres2 = res1.lstrip(&#39;0&#39;)\nif res2 == &#34;&#34;:\n    result = 0\nelse:\n    result = int(dau + res2)\nif result &lt; -2**31 or result &gt; 2**31 - 1:\n    print(0)\nelse:\n    print(result</span>)\n"
+      },
+      "token_overlap": 126,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 4,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e39935724325137447675b/0d74995bf22b4574a97a2297/sub_1761553385434_tqlnpmzf7.py",
+        "similarity_percent": 100.0,
+        "full_code": "n = input()\ndau = \"\"\nso = n\nif n.startswith('-'):\n    dau = \"-\"\n    so = n[1:]\nres1 = so[::-1]\nres2 = res1.lstrip('0')\nif not res2:\n    print(\"0\")\nelse:\n    print(dau + res2)",
+        "highlighted_code": "<span class='highlight-red'>n = input()\ndau = &#34;&#34;\nso = n\nif n.startswith(&#39;-&#39;):\n    dau = &#34;-&#34;\n    so = n[1:]\nres1 = so[::-1]\nres2 = res1.lstrip(&#39;0&#39;)\nif not res2:\n    print(&#34;0&#34;)\nelse:\n    print(dau + res2)</span>"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e39935724325137447675b/0d74995bf22b4574a97a2297/sub_1761286971731_yqhnv6g42.py",
+        "similarity_percent": 100.0,
+        "full_code": "n = input()\ndau = \"\"\nso = n\nif n.startswith('-'):\n    dau = \"-\"\n    so = n[1:]\nres1 = so[::-1]\nres2 = res1.lstrip('0')\nif not res2:\n    print(\"0\")\nelse:\n    print(dau + res2)",
+        "highlighted_code": "<span class='highlight-green'>n = input()\ndau = &#34;&#34;\nso = n\nif n.startswith(&#39;-&#39;):\n    dau = &#34;-&#34;\n    so = n[1:]\nres1 = so[::-1]\nres2 = res1.lstrip(&#39;0&#39;)\nif not res2:\n    print(&#34;0&#34;)\nelse:\n    print(dau + res2)</span>"
+      },
+      "token_overlap": 90,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 5,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e39935724325137447675b/a31a4097e8a74e09b9209282/sub_1761282299526_eh09v56je.py",
+        "similarity_percent": 100.0,
+        "full_code": "n=input()\nif(n[0]=='-'):\n\tn=n.replace(\"-\",\"\")\n\tprint(int(n[::-1])*-1)\nelse: print(int(n[::-1]))",
+        "highlighted_code": "<span class='highlight-red'>n=input()\nif(n[0]==&#39;-&#39;):\n\tn=n.replace(&#34;-&#34;,&#34;&#34;)\n\tprint(int(n[::-1])*-1)\nelse: print(int(n[::-1</span>]))"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e39935724325137447675b/a31a4097e8a74e09b9209282/sub_1761282318354_ebg205p9t.py",
+        "similarity_percent": 100.0,
+        "full_code": "n=input()\nif(n[0]=='-'):\n\tn=n.replace(\"-\",\"\")\n\tprint(int(n[::-1])*-1)\nelse: print(int(n[::-1]))",
+        "highlighted_code": "<span class='highlight-green'>n=input()\nif(n[0]==&#39;-&#39;):\n\tn=n.replace(&#34;-&#34;,&#34;&#34;)\n\tprint(int(n[::-1])*-1)\nelse: print(int(n[::-1</span>]))"
+      },
+      "token_overlap": 79,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 6,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e39935724325137447675b/0d74995bf22b4574a97a2297/sub_1761553385434_tqlnpmzf7.py",
+        "similarity_percent": 63.33,
+        "full_code": "n = input()\ndau = \"\"\nso = n\nif n.startswith('-'):\n    dau = \"-\"\n    so = n[1:]\nres1 = so[::-1]\nres2 = res1.lstrip('0')\nif not res2:\n    print(\"0\")\nelse:\n    print(dau + res2)",
+        "highlighted_code": "<span class='highlight-red'>n = input()\ndau = &#34;&#34;\nso = n\nif n.startswith(&#39;-&#39;):\n    dau = &#34;-&#34;\n    so = n[1:]\nres1 = so[::-1]\nres2 = res1.lstrip(&#39;0&#39;</span>)\nif not res2:\n    print(&#34;0&#34;)\nelse:\n    print(dau + res2)"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e39935724325137447675b/0d74995bf22b4574a97a2297/sub_1761619412431_bdmi00nmf.py",
+        "similarity_percent": 45.24,
+        "full_code": "n = input()\ndau = \"\"\nso = n\nif n.startswith('-'):\n    dau = \"-\"\n    so = n[1:]\nres1 = so[::-1]\nres2 = res1.lstrip('0')\nif res2 == \"\":\n    result = 0\nelse:\n    result = int(dau + res2)\nif result < -2**31 or result > 2**31 - 1:\n    print(0)\nelse:\n    print(result)\n",
+        "highlighted_code": "<span class='highlight-green'>n = input()\ndau = &#34;&#34;\nso = n\nif n.startswith(&#39;-&#39;):\n    dau = &#34;-&#34;\n    so = n[1:]\nres1 = so[::-1]\nres2 = res1.lstrip(&#39;0&#39;</span>)\nif res2 == &#34;&#34;:\n    result = 0\nelse:\n    result = int(dau + res2)\nif result &lt; -2**31 or result &gt; 2**31 - 1:\n    print(0)\nelse:\n    print(result)\n"
+      },
+      "token_overlap": 57,
+      "max_similarity_percent": 63.33
+    },
+    {
+      "case_id": 7,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e39935724325137447675b/0d74995bf22b4574a97a2297/sub_1761553502950_bou9hmcmr.py",
+        "similarity_percent": 45.24,
+        "full_code": "n = input()\ndau = \"\"\nso = n\nif n.startswith('-'):\n    dau = \"-\"\n    so = n[1:]\nres1 = so[::-1]\nres2 = res1.lstrip('0')\nif res2 == \"\":\n    result = 0\nelse:\n    result = int(dau + res2)\nif result < -2**31 or result > 2**31 - 1:\n    print(0)\nelse:\n    print(result)\n",
+        "highlighted_code": "<span class='highlight-red'>n = input()\ndau = &#34;&#34;\nso = n\nif n.startswith(&#39;-&#39;):\n    dau = &#34;-&#34;\n    so = n[1:]\nres1 = so[::-1]\nres2 = res1.lstrip(&#39;0&#39;</span>)\nif res2 == &#34;&#34;:\n    result = 0\nelse:\n    result = int(dau + res2)\nif result &lt; -2**31 or result &gt; 2**31 - 1:\n    print(0)\nelse:\n    print(result)\n"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e39935724325137447675b/0d74995bf22b4574a97a2297/sub_1761553385434_tqlnpmzf7.py",
+        "similarity_percent": 63.33,
+        "full_code": "n = input()\ndau = \"\"\nso = n\nif n.startswith('-'):\n    dau = \"-\"\n    so = n[1:]\nres1 = so[::-1]\nres2 = res1.lstrip('0')\nif not res2:\n    print(\"0\")\nelse:\n    print(dau + res2)",
+        "highlighted_code": "<span class='highlight-green'>n = input()\ndau = &#34;&#34;\nso = n\nif n.startswith(&#39;-&#39;):\n    dau = &#34;-&#34;\n    so = n[1:]\nres1 = so[::-1]\nres2 = res1.lstrip(&#39;0&#39;</span>)\nif not res2:\n    print(&#34;0&#34;)\nelse:\n    print(dau + res2)"
+      },
+      "token_overlap": 57,
+      "max_similarity_percent": 63.33
+    },
+    {
+      "case_id": 8,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e39935724325137447675b/0d74995bf22b4574a97a2297/sub_1761553502950_bou9hmcmr.py",
+        "similarity_percent": 45.24,
+        "full_code": "n = input()\ndau = \"\"\nso = n\nif n.startswith('-'):\n    dau = \"-\"\n    so = n[1:]\nres1 = so[::-1]\nres2 = res1.lstrip('0')\nif res2 == \"\":\n    result = 0\nelse:\n    result = int(dau + res2)\nif result < -2**31 or result > 2**31 - 1:\n    print(0)\nelse:\n    print(result)\n",
+        "highlighted_code": "<span class='highlight-red'>n = input()\ndau = &#34;&#34;\nso = n\nif n.startswith(&#39;-&#39;):\n    dau = &#34;-&#34;\n    so = n[1:]\nres1 = so[::-1]\nres2 = res1.lstrip(&#39;0&#39;</span>)\nif res2 == &#34;&#34;:\n    result = 0\nelse:\n    result = int(dau + res2)\nif result &lt; -2**31 or result &gt; 2**31 - 1:\n    print(0)\nelse:\n    print(result)\n"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e39935724325137447675b/0d74995bf22b4574a97a2297/sub_1761286971731_yqhnv6g42.py",
+        "similarity_percent": 63.33,
+        "full_code": "n = input()\ndau = \"\"\nso = n\nif n.startswith('-'):\n    dau = \"-\"\n    so = n[1:]\nres1 = so[::-1]\nres2 = res1.lstrip('0')\nif not res2:\n    print(\"0\")\nelse:\n    print(dau + res2)",
+        "highlighted_code": "<span class='highlight-green'>n = input()\ndau = &#34;&#34;\nso = n\nif n.startswith(&#39;-&#39;):\n    dau = &#34;-&#34;\n    so = n[1:]\nres1 = so[::-1]\nres2 = res1.lstrip(&#39;0&#39;</span>)\nif not res2:\n    print(&#34;0&#34;)\nelse:\n    print(dau + res2)"
+      },
+      "token_overlap": 57,
+      "max_similarity_percent": 63.33
+    },
+    {
+      "case_id": 9,
+      "file1": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e39935724325137447675b/0d74995bf22b4574a97a2297/sub_1761619412431_bdmi00nmf.py",
+        "similarity_percent": 45.24,
+        "full_code": "n = input()\ndau = \"\"\nso = n\nif n.startswith('-'):\n    dau = \"-\"\n    so = n[1:]\nres1 = so[::-1]\nres2 = res1.lstrip('0')\nif res2 == \"\":\n    result = 0\nelse:\n    result = int(dau + res2)\nif result < -2**31 or result > 2**31 - 1:\n    print(0)\nelse:\n    print(result)\n",
+        "highlighted_code": "<span class='highlight-red'>n = input()\ndau = &#34;&#34;\nso = n\nif n.startswith(&#39;-&#39;):\n    dau = &#34;-&#34;\n    so = n[1:]\nres1 = so[::-1]\nres2 = res1.lstrip(&#39;0&#39;</span>)\nif res2 == &#34;&#34;:\n    result = 0\nelse:\n    result = int(dau + res2)\nif result &lt; -2**31 or result &gt; 2**31 - 1:\n    print(0)\nelse:\n    print(result)\n"
+      },
+      "file2": {
+        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e39935724325137447675b/0d74995bf22b4574a97a2297/sub_1761286971731_yqhnv6g42.py",
+        "similarity_percent": 63.33,
+        "full_code": "n = input()\ndau = \"\"\nso = n\nif n.startswith('-'):\n    dau = \"-\"\n    so = n[1:]\nres1 = so[::-1]\nres2 = res1.lstrip('0')\nif not res2:\n    print(\"0\")\nelse:\n    print(dau + res2)",
+        "highlighted_code": "<span class='highlight-green'>n = input()\ndau = &#34;&#34;\nso = n\nif n.startswith(&#39;-&#39;):\n    dau = &#34;-&#34;\n    so = n[1:]\nres1 = so[::-1]\nres2 = res1.lstrip(&#39;0&#39;</span>)\nif not res2:\n    print(&#34;0&#34;)\nelse:\n    print(dau + res2)"
+      },
+      "token_overlap": 57,
+      "max_similarity_percent": 63.33
+    }
+  ]
+}
