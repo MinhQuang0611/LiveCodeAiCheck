@@ -16,5 +16,4 @@ RUN pip install -r requirements.txt
 
 COPY . .
 
-RUN chmod 777 entrypoint.sh
-
+EXPOSE 8091

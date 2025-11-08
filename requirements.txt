@@ -102,3 +102,16 @@ websockets==15.0.1
 wheel==0.43.0
 zipp==3.21.0
 copydetect
+fastapi
+uvicorn[standard]
+langchain
+langchain-openai
+python-dotenv
+pydantic
+aiofiles
+httpx
+requests
+asyncio
+loguru
+psycopg
+psycopg[binary]
