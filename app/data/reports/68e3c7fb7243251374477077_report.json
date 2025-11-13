@@ -10,16 +10,16 @@
     {
       "case_id": 1,
       "file1": {
-        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3c7fb7243251374477077/0d74995bf22b4574a97a2297/sub_1761563813232_vget2ztik.py",
-        "similarity_percent": 100.0,
-        "full_code": "n = input()\nm = sum(int(digit) for digit in n)\nif(m % 3 == 0):\n    d = list(n)\n    d.sort(reverse= True)\n    res = \"\".join(d)\n    print(res)\nelse:\n    print(-1)\n",
-        "highlighted_code": "<span class='highlight-red'>n = input()\nm = sum(int(digit) for digit in n)\nif(m % 3 == 0):\n    d = list(n)\n    d.sort(reverse= True)\n    res = &#34;&#34;.join(d)\n    print(res)\nelse:\n    prin</span>t(-1)\n"
-      },
-      "file2": {
-        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3c7fb7243251374477077/0d74995bf22b4574a97a2297/sub_1761563794788_jqnibb9lb.py",
+        "path": "/app/app/data/submissions/68e3c7fb7243251374477077/0d74995bf22b4574a97a2297/sub_1761563794788_jqnibb9lb.py",
         "similarity_percent": 100.0,
         "full_code": "n = input()\nm = sum(int(digit) for digit in n)\nif(m % 3 == 0):\n    d = list(n)\n    d.sort(reverse= True)\n    res = \"\".join(d)\n    print(res)\nelse:\n    print(0)\n",
-        "highlighted_code": "<span class='highlight-green'>n = input()\nm = sum(int(digit) for digit in n)\nif(m % 3 == 0):\n    d = list(n)\n    d.sort(reverse= True)\n    res = &#34;&#34;.join(d)\n    print(res)\nelse:\n    prin</span>t(0)\n"
+        "highlighted_code": "<span class='highlight-red'>n = input()\nm = sum(int(digit) for digit in n)\nif(m % 3 == 0):\n    d = list(n)\n    d.sort(reverse= True)\n    res = &#34;&#34;.join(d)\n    print(res)\nelse:\n    prin</span>t(0)\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3c7fb7243251374477077/0d74995bf22b4574a97a2297/sub_1761563813232_vget2ztik.py",
+        "similarity_percent": 100.0,
+        "full_code": "n = input()\nm = sum(int(digit) for digit in n)\nif(m % 3 == 0):\n    d = list(n)\n    d.sort(reverse= True)\n    res = \"\".join(d)\n    print(res)\nelse:\n    print(-1)\n",
+        "highlighted_code": "<span class='highlight-green'>n = input()\nm = sum(int(digit) for digit in n)\nif(m % 3 == 0):\n    d = list(n)\n    d.sort(reverse= True)\n    res = &#34;&#34;.join(d)\n    print(res)\nelse:\n    prin</span>t(-1)\n"
       },
       "token_overlap": 86,
       "max_similarity_percent": 100.0

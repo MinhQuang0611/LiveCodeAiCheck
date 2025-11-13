@@ -10,36 +10,36 @@
     {
       "case_id": 1,
       "file1": {
-        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e8c59ebe7a87f42c2e2129/0d74995bf22b4574a97a2297/sub_1761165845195_lrqz35l9h.py",
+        "path": "/app/app/data/submissions/68e8c59ebe7a87f42c2e2129/0d74995bf22b4574a97a2297/sub_1761163277776_69c6sn9ij.py",
         "similarity_percent": 100.0,
         "full_code": "n = float(input())\nif(n <= 1):\n    print(10000)\nelif(1 < n <= 10):\n    print(int(10000 + (n - 1)* 8500))\nelse:\n    print(int(10000 + 9 * 8500 + (n - 10)*7500))",
-        "highlighted_code": "<span class='highlight-red'>n = float(input())\nif(n &lt;= 1):\n    print(10000)\nelif(1 &lt; n &lt;= 10):\n    print(int(10000 + (n - 1)* 8500))\nelse:\n    print(int(10000 + 9 * 8500 + (n - 10)*7500</span>))"
+        "highlighted_code": "<span class='highlight-red'>n = float(input())\nif(n &lt;= 1):\n    print(10000)\nelif(1 &lt; n &lt;= 10):\n    print(int(10000 + (n - 1)* 8500))\nelse:\n    print(int(10000 + 9 * 8500 + (n - 10)*7</span>500))"
       },
       "file2": {
-        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e8c59ebe7a87f42c2e2129/0d74995bf22b4574a97a2297/sub_1761163277776_69c6sn9ij.py",
+        "path": "/app/app/data/submissions/68e8c59ebe7a87f42c2e2129/0d74995bf22b4574a97a2297/sub_1761165845195_lrqz35l9h.py",
         "similarity_percent": 100.0,
         "full_code": "n = float(input())\nif(n <= 1):\n    print(10000)\nelif(1 < n <= 10):\n    print(int(10000 + (n - 1)* 8500))\nelse:\n    print(int(10000 + 9 * 8500 + (n - 10)*7500))",
-        "highlighted_code": "<span class='highlight-green'>n = float(input())\nif(n &lt;= 1):\n    print(10000)\nelif(1 &lt; n &lt;= 10):\n    print(int(10000 + (n - 1)* 8500))\nelse:\n    print(int(10000 + 9 * 8500 + (n - 10)*7500</span>))"
+        "highlighted_code": "<span class='highlight-green'>n = float(input())\nif(n &lt;= 1):\n    print(10000)\nelif(1 &lt; n &lt;= 10):\n    print(int(10000 + (n - 1)* 8500))\nelse:\n    print(int(10000 + 9 * 8500 + (n - 10)*7</span>500))"
       },
-      "token_overlap": 118,
+      "token_overlap": 115,
       "max_similarity_percent": 100.0
     },
     {
       "case_id": 2,
       "file1": {
-        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e8c59ebe7a87f42c2e2129/cd93b2ff882a4ffa85f4518f/sub_1761237635782_bu1yta207.py",
-        "similarity_percent": 70.73,
-        "full_code": "km=float(input())\nif km <= 1:\n    to=10000\nelif km <= 10:\n    to=10000 +(km - 1)*8500\nelse:\n    to = 10000 + 9*8500 +(km - 10)*7500\nif km==12:\n    print(\"117000\")\nelse:\n    print(int(to))",
-        "highlighted_code": "<span class='highlight-red'>km=float(input())\nif km &lt;= 1:\n    to=10000\nelif km &lt;= 10:\n    to=10000 +(km - 1)*8500\nelse:\n    to = 10000 + 9*8500 +(km - 10)*75</span>00\nif km==12:\n    print(&#34;117000&#34;)\nelse:\n    print(int(to))"
+        "path": "/app/app/data/submissions/68e8c59ebe7a87f42c2e2129/3fa6af8d916a46039239cabe/sub_1761183399440_10dh9urrl.py",
+        "similarity_percent": 88.66,
+        "full_code": "km=float(input())\nif km<=1:\n    money=10000\nelif km<=10:\n    money=10000+(km-1)*8500\nelse:\n    money=10000+9*8500+(km-10)*7500\nprint(int(money))",
+        "highlighted_code": "<span class='highlight-red'>km=float(input())\nif km&lt;=1:\n    money=10000\nelif km&lt;=10:\n    money=10000+(km-1)*8500\nelse:\n    money=10000+9*8500+(km-10)*7</span>500\nprint(int(money))"
       },
       "file2": {
-        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e8c59ebe7a87f42c2e2129/3fa6af8d916a46039239cabe/sub_1761183399440_10dh9urrl.py",
-        "similarity_percent": 89.69,
-        "full_code": "km=float(input())\nif km<=1:\n    money=10000\nelif km<=10:\n    money=10000+(km-1)*8500\nelse:\n    money=10000+9*8500+(km-10)*7500\nprint(int(money))",
-        "highlighted_code": "<span class='highlight-green'>km=float(input())\nif km&lt;=1:\n    money=10000\nelif km&lt;=10:\n    money=10000+(km-1)*8500\nelse:\n    money=10000+9*8500+(km-10)*75</span>00\nprint(int(money))"
+        "path": "/app/app/data/submissions/68e8c59ebe7a87f42c2e2129/cd93b2ff882a4ffa85f4518f/sub_1761237635782_bu1yta207.py",
+        "similarity_percent": 69.35,
+        "full_code": "km=float(input())\nif km <= 1:\n    to=10000\nelif km <= 10:\n    to=10000 +(km - 1)*8500\nelse:\n    to = 10000 + 9*8500 +(km - 10)*7500\nif km==12:\n    print(\"117000\")\nelse:\n    print(int(to))",
+        "highlighted_code": "<span class='highlight-green'>km=float(input())\nif km &lt;= 1:\n    to=10000\nelif km &lt;= 10:\n    to=10000 +(km - 1)*8500\nelse:\n    to = 10000 + 9*8500 +(km - 10)*7</span>500\nif km==12:\n    print(&#34;117000&#34;)\nelse:\n    print(int(to))"
       },
-      "token_overlap": 87,
-      "max_similarity_percent": 89.69
+      "token_overlap": 86,
+      "max_similarity_percent": 88.66
     }
   ]
 }

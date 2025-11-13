@@ -1,0 +1,113 @@
+{
+  "problem_id": "68e39fa372432513744769dd",
+  "filter_criteria": {
+    "min_token_overlap": 80,
+    "min_similarity_percent": 60
+  },
+  "total_cases_found": 6,
+  "total_cases_filtered": 6,
+  "cases": [
+    {
+      "case_id": 1,
+      "file1": {
+        "path": "/app/app/data/submissions/68e39fa372432513744769dd/f56f86fa26744324899543f3/sub_1761312799131_2n5q9vui0.py",
+        "similarity_percent": 100.0,
+        "full_code": "n=int(input())\ndef Fibo(n):\n    if n==1 or n==0: \n        return 1\n    else:\n        return Fibo(n-1)+Fibo(n-2)\nprint(Fibo(n))",
+        "highlighted_code": "<span class='highlight-red'>n=int(input())\ndef Fibo(n):\n    if n==1 or n==0: \n        return 1\n    else:\n        return Fibo(n-1)+Fibo(n-2)\nprint(Fibo(</span>n))"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e39fa372432513744769dd/f56f86fa26744324899543f3/sub_1761312687234_6qu0tfcbp.py",
+        "similarity_percent": 100.0,
+        "full_code": "n=int(input())\ndef Fibo(n):\n    if n==1 or n==0: \n        return 1\n    else:\n        return Fibo(n-1)+Fibo(n-2)\nprint(Fibo(n))",
+        "highlighted_code": "<span class='highlight-green'>n=int(input())\ndef Fibo(n):\n    if n==1 or n==0: \n        return 1\n    else:\n        return Fibo(n-1)+Fibo(n-2)\nprint(Fibo(</span>n))"
+      },
+      "token_overlap": 74,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 2,
+      "file1": {
+        "path": "/app/app/data/submissions/68e39fa372432513744769dd/f56f86fa26744324899543f3/sub_1761312799131_2n5q9vui0.py",
+        "similarity_percent": 100.0,
+        "full_code": "n=int(input())\ndef Fibo(n):\n    if n==1 or n==0: \n        return 1\n    else:\n        return Fibo(n-1)+Fibo(n-2)\nprint(Fibo(n))",
+        "highlighted_code": "<span class='highlight-red'>n=int(input())\ndef Fibo(n):\n    if n==1 or n==0: \n        return 1\n    else:\n        return Fibo(n-1)+Fibo(n-2)\nprint(Fibo(</span>n))"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e39fa372432513744769dd/f56f86fa26744324899543f3/sub_1761312789980_bsp2qlj9s.py",
+        "similarity_percent": 100.0,
+        "full_code": "n=int(input())\ndef Fibo(n):\n    if n==1 or n==0: \n        return 1\n    else:\n        return Fibo(n-1)+Fibo(n-2)\nprint(Fibo(n))",
+        "highlighted_code": "<span class='highlight-green'>n=int(input())\ndef Fibo(n):\n    if n==1 or n==0: \n        return 1\n    else:\n        return Fibo(n-1)+Fibo(n-2)\nprint(Fibo(</span>n))"
+      },
+      "token_overlap": 74,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 3,
+      "file1": {
+        "path": "/app/app/data/submissions/68e39fa372432513744769dd/f56f86fa26744324899543f3/sub_1761312799131_2n5q9vui0.py",
+        "similarity_percent": 100.0,
+        "full_code": "n=int(input())\ndef Fibo(n):\n    if n==1 or n==0: \n        return 1\n    else:\n        return Fibo(n-1)+Fibo(n-2)\nprint(Fibo(n))",
+        "highlighted_code": "<span class='highlight-red'>n=int(input())\ndef Fibo(n):\n    if n==1 or n==0: \n        return 1\n    else:\n        return Fibo(n-1)+Fibo(n-2)\nprint(Fibo(</span>n))"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e39fa372432513744769dd/f56f86fa26744324899543f3/sub_1761312747148_oewb2poel.py",
+        "similarity_percent": 100.0,
+        "full_code": "n=int(input())\ndef Fibo(n):\n    if n==1 or n==0: \n        return 1\n    else:\n        return Fibo(n-1)+Fibo(n-2)\nprint(Fibo(n))",
+        "highlighted_code": "<span class='highlight-green'>n=int(input())\ndef Fibo(n):\n    if n==1 or n==0: \n        return 1\n    else:\n        return Fibo(n-1)+Fibo(n-2)\nprint(Fibo(</span>n))"
+      },
+      "token_overlap": 74,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 4,
+      "file1": {
+        "path": "/app/app/data/submissions/68e39fa372432513744769dd/f56f86fa26744324899543f3/sub_1761312687234_6qu0tfcbp.py",
+        "similarity_percent": 100.0,
+        "full_code": "n=int(input())\ndef Fibo(n):\n    if n==1 or n==0: \n        return 1\n    else:\n        return Fibo(n-1)+Fibo(n-2)\nprint(Fibo(n))",
+        "highlighted_code": "<span class='highlight-red'>n=int(input())\ndef Fibo(n):\n    if n==1 or n==0: \n        return 1\n    else:\n        return Fibo(n-1)+Fibo(n-2)\nprint(Fibo(</span>n))"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e39fa372432513744769dd/f56f86fa26744324899543f3/sub_1761312789980_bsp2qlj9s.py",
+        "similarity_percent": 100.0,
+        "full_code": "n=int(input())\ndef Fibo(n):\n    if n==1 or n==0: \n        return 1\n    else:\n        return Fibo(n-1)+Fibo(n-2)\nprint(Fibo(n))",
+        "highlighted_code": "<span class='highlight-green'>n=int(input())\ndef Fibo(n):\n    if n==1 or n==0: \n        return 1\n    else:\n        return Fibo(n-1)+Fibo(n-2)\nprint(Fibo(</span>n))"
+      },
+      "token_overlap": 74,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 5,
+      "file1": {
+        "path": "/app/app/data/submissions/68e39fa372432513744769dd/f56f86fa26744324899543f3/sub_1761312687234_6qu0tfcbp.py",
+        "similarity_percent": 100.0,
+        "full_code": "n=int(input())\ndef Fibo(n):\n    if n==1 or n==0: \n        return 1\n    else:\n        return Fibo(n-1)+Fibo(n-2)\nprint(Fibo(n))",
+        "highlighted_code": "<span class='highlight-red'>n=int(input())\ndef Fibo(n):\n    if n==1 or n==0: \n        return 1\n    else:\n        return Fibo(n-1)+Fibo(n-2)\nprint(Fibo(</span>n))"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e39fa372432513744769dd/f56f86fa26744324899543f3/sub_1761312747148_oewb2poel.py",
+        "similarity_percent": 100.0,
+        "full_code": "n=int(input())\ndef Fibo(n):\n    if n==1 or n==0: \n        return 1\n    else:\n        return Fibo(n-1)+Fibo(n-2)\nprint(Fibo(n))",
+        "highlighted_code": "<span class='highlight-green'>n=int(input())\ndef Fibo(n):\n    if n==1 or n==0: \n        return 1\n    else:\n        return Fibo(n-1)+Fibo(n-2)\nprint(Fibo(</span>n))"
+      },
+      "token_overlap": 74,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 6,
+      "file1": {
+        "path": "/app/app/data/submissions/68e39fa372432513744769dd/f56f86fa26744324899543f3/sub_1761312789980_bsp2qlj9s.py",
+        "similarity_percent": 100.0,
+        "full_code": "n=int(input())\ndef Fibo(n):\n    if n==1 or n==0: \n        return 1\n    else:\n        return Fibo(n-1)+Fibo(n-2)\nprint(Fibo(n))",
+        "highlighted_code": "<span class='highlight-red'>n=int(input())\ndef Fibo(n):\n    if n==1 or n==0: \n        return 1\n    else:\n        return Fibo(n-1)+Fibo(n-2)\nprint(Fibo(</span>n))"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e39fa372432513744769dd/f56f86fa26744324899543f3/sub_1761312747148_oewb2poel.py",
+        "similarity_percent": 100.0,
+        "full_code": "n=int(input())\ndef Fibo(n):\n    if n==1 or n==0: \n        return 1\n    else:\n        return Fibo(n-1)+Fibo(n-2)\nprint(Fibo(n))",
+        "highlighted_code": "<span class='highlight-green'>n=int(input())\ndef Fibo(n):\n    if n==1 or n==0: \n        return 1\n    else:\n        return Fibo(n-1)+Fibo(n-2)\nprint(Fibo(</span>n))"
+      },
+      "token_overlap": 74,
+      "max_similarity_percent": 100.0
+    }
+  ]
+}

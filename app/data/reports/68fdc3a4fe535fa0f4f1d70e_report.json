@@ -1,0 +1,28 @@
+{
+  "problem_id": "68fdc3a4fe535fa0f4f1d70e",
+  "filter_criteria": {
+    "min_token_overlap": 80,
+    "min_similarity_percent": 60
+  },
+  "total_cases_found": 1,
+  "total_cases_filtered": 1,
+  "cases": [
+    {
+      "case_id": 1,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3a4fe535fa0f4f1d70e/94d5482aeac241829d920e7e/sub_1762248536497_x7s1xg6y5.py",
+        "similarity_percent": 60.83,
+        "full_code": "import math\nimport sys\nsys.stdin = open(\"DATA.in\", \"r\")\nt = int(input().strip())\nfor _ in range(t):\n    n = int(input().strip())\n    a = input().strip()\n\n    k = int(math.log2(n))\n    if len(a) % k != 0:\n        a = '0' * (k - len(a) % k) + a\n\n    res = ''\n    for i in range(0, len(a), k):\n        group = a[i:i+k]\n        value = int(group, 2)\n        if value < 10:\n            res += str(value)\n        else:\n            res += chr(ord('A') + value - 10)\n\n    print(res)\n",
+        "highlighted_code": "import math\nimport sys\nsys.stdin = open(&#34;DATA.in&#34;, &#34;r&#34;)\nt = int(input().strip())\nfor _ in range(t):\n    n = int(input().strip())\n    a = input<span class='highlight-red'>().strip()\n\n    k = int(math.log2(n))\n    if len(a) % k != 0:\n        a = &#39;0&#39; * (k - len(a) % k) + a\n\n    res = &#39;&#39;\n    for i in range(0, len(a), k):\n        group = a[i:i+k]\n        value = int(group, 2)\n        if value &lt; 10:\n            res += str(value)\n        else:\n            res += chr(ord(&#39;A&#39;) + value - 10)\n\n    pri</span>nt(res)\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3a4fe535fa0f4f1d70e/94d5482aeac241829d920e7e/sub_1762248641035_dtl2cy90j.py",
+        "similarity_percent": 62.39,
+        "full_code": "import math\nimport sys\nwith open(\"DATA.in\") as f:\n    t = int(f.readline().strip())\n    for _ in range(t):\n        n = int(f.readline().strip())\n        a = f.readline().strip()\n\n        k = int(math.log2(n))\n        if len(a) % k != 0:\n            a = '0' * (k - len(a) % k) + a\n\n        res = ''\n        for i in range(0, len(a), k):\n            group = a[i:i+k]\n            value = int(group, 2)\n            if value < 10:\n                res += str(value)\n            else:\n                res += chr(ord('A') + value - 10)\n\n        print(res)\n",
+        "highlighted_code": "import math\nimport sys\nwith open(&#34;DATA.in&#34;) as f:\n    t = int(f.readline().strip())\n    for _ in range(t):\n        n = int(f.readline().strip())\n        a = f.readline<span class='highlight-green'>().strip()\n\n        k = int(math.log2(n))\n        if len(a) % k != 0:\n            a = &#39;0&#39; * (k - len(a) % k) + a\n\n        res = &#39;&#39;\n        for i in range(0, len(a), k):\n            group = a[i:i+k]\n            value = int(group, 2)\n            if value &lt; 10:\n                res += str(value)\n            else:\n                res += chr(ord(&#39;A&#39;) + value - 10)\n\n        pri</span>nt(res)\n"
+      },
+      "token_overlap": 146,
+      "max_similarity_percent": 62.39
+    }
+  ]
+}

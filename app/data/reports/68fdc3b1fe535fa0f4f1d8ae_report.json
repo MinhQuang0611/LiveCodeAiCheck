@@ -1,0 +1,113 @@
+{
+  "problem_id": "68fdc3b1fe535fa0f4f1d8ae",
+  "filter_criteria": {
+    "min_token_overlap": 80,
+    "min_similarity_percent": 60
+  },
+  "total_cases_found": 6,
+  "total_cases_filtered": 6,
+  "cases": [
+    {
+      "case_id": 1,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b1fe535fa0f4f1d8ae/f95120b3a38a461085ef58cb/sub_1762364118446_y7hc2z6mr.py",
+        "similarity_percent": 100.0,
+        "full_code": "n = int(input())\nro = []\nfor _ in range(n):\n    ten = input().strip()\n    don_vi = input().strip()\n    thoi_gian = input().strip()\n    gio, phut = map(int, thoi_gian.split(':'))   \n    thoi_gian_gio = (gio - 6) + phut / 60    \n    v = 0\n    if thoi_gian_gio > 0:\n        v = int(round(120 / thoi_gian_gio))   \n    unit_initials = \"\".join([word[0].upper() for word in don_vi.split()])\n    name_initials = \"\".join([word[0].upper() for word in ten.split()])\n    crab_id = unit_initials + name_initials   \n    ro.append((crab_id, ten, don_vi, v))       \nro.sort(key=lambda x: x[3], reverse=True)\nfor cua_ro in ro:\n    print(f\"{cua_ro[0]} {cua_ro[1]} {cua_ro[2]} {cua_ro[3]} Km/h\")",
+        "highlighted_code": "<span class='highlight-red'>n = int(input())\nro = []\nfor _ in range(n):\n    ten = input().strip()\n    don_vi = input().strip()\n    thoi_gian = input().strip()\n    gio, phut = map(int, thoi_gian.split(&#39;:&#39;))   \n    thoi_gian_gio = (gio - 6) + phut / 60    \n    v = 0\n    if thoi_gian_gio &gt; 0:\n        v = int(round(120 / thoi_gian_gio))   \n    unit_initials = &#34;&#34;.join([word[0].upper() for word in don_vi.split()])\n    name_initials = &#34;&#34;.join([word[0].upper() for word in ten.split()])\n    crab_id = unit_initials + name_initials   \n    ro.append((crab_id, ten, don_vi, v))       \nro.sort(key=lambda x: x[3], reverse=True)\nfor cua_ro in ro:\n    print(f&#34;{cua_ro[0]} {cua_ro[1]} {cua_ro[2]} {cua_ro[3]} Km/h</span>&#34;)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b1fe535fa0f4f1d8ae/f95120b3a38a461085ef58cb/sub_1762364093116_i7azmuxoo.py",
+        "similarity_percent": 100.0,
+        "full_code": "n = int(input())\nro = []\nfor _ in range(n):\n    ten = input().strip()\n    don_vi = input().strip()\n    thoi_gian = input().strip()\n    gio, phut = map(int, thoi_gian.split(':'))   \n    thoi_gian_gio = (gio - 6) + phut / 60    \n    v = 0\n    if thoi_gian_gio > 0:\n        v = int(round(120 / thoi_gian_gio))   \n    unit_initials = \"\".join([word[0].upper() for word in don_vi.split()])\n    name_initials = \"\".join([word[0].upper() for word in ten.split()])\n    crab_id = unit_initials + name_initials   \n    ro.append((crab_id, ten, don_vi, v))       \nro.sort(key=lambda x: x[3], reverse=True)\nfor cua_ro in ro:\n    print(f\"{cua_ro[0]} {cua_ro[1]} {cua_ro[2]} {cua_ro[3]} Km/h\")",
+        "highlighted_code": "<span class='highlight-green'>n = int(input())\nro = []\nfor _ in range(n):\n    ten = input().strip()\n    don_vi = input().strip()\n    thoi_gian = input().strip()\n    gio, phut = map(int, thoi_gian.split(&#39;:&#39;))   \n    thoi_gian_gio = (gio - 6) + phut / 60    \n    v = 0\n    if thoi_gian_gio &gt; 0:\n        v = int(round(120 / thoi_gian_gio))   \n    unit_initials = &#34;&#34;.join([word[0].upper() for word in don_vi.split()])\n    name_initials = &#34;&#34;.join([word[0].upper() for word in ten.split()])\n    crab_id = unit_initials + name_initials   \n    ro.append((crab_id, ten, don_vi, v))       \nro.sort(key=lambda x: x[3], reverse=True)\nfor cua_ro in ro:\n    print(f&#34;{cua_ro[0]} {cua_ro[1]} {cua_ro[2]} {cua_ro[3]} Km/h</span>&#34;)"
+      },
+      "token_overlap": 280,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 2,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b1fe535fa0f4f1d8ae/26894d2babd64210ad6beba1/sub_1762412661863_3akd7l0oq.py",
+        "similarity_percent": 57.03,
+        "full_code": "t = int(input())\n\nds = []\n\nfor _ in range(t):\n    name = input().strip()\n    club = input().strip()\n    end = input().strip()\n    h, m = map(int, end.split(':'))\n    total_hour = (h + m / 60) - 6\n    v = 120 / total_hour\n    v = round(v)\n    code = ''.join([w[0] for w in club.upper().split()]) + ''.join([w[0] for w in name.upper().split()])\n    ds.append((code, name, club, v))\nds.sort(key=lambda x: -x[3])\nfor code, name, club, v in ds:\n    print(f\"{code} {name} {club} {v} Km/h\")\n",
+        "highlighted_code": "t = int(input(<span class='highlight-red'>))\n\nds = []\n\nfor _ in range(t):\n    name = input().strip()\n    club = input().strip()\n    end = input().strip()\n    h, m = map(int, end.split(&#39;:&#39;))\n    </span>total_hour = (h + m / 60) - 6\n    v = 120 / total_hour\n    v = round(v)\n    code = &#39;&#39;.join([w[0] for w in club.upper().split()]) + &#39;&#39;.join([w[0] for w in name.upper().split()])\n    ds<span class='highlight-red'>.append((code, name, club, v))\nds.sort(key=lambda </span>x: -x[3])\n<span class='highlight-red'>for code, name, club, v in ds:\n    print(f&#34;{code} {name} {club} {v</span>} Km/h&#34;)\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b1fe535fa0f4f1d8ae/156dcfb40c18421d9b64651c/sub_1762788443366_zapp3kvfd.py",
+        "similarity_percent": 55.04,
+        "full_code": "n = int(input().strip())\ncrabs = []\n\nfor _ in range(n):\n    name = input().strip()\n    unit = input().strip()\n    time_str = input().strip()\n\n    h, m = map(int, time_str.split(':'))\n    time_hours = (h - 6) + m / 60\n    v = round(120 / time_hours)\n\n    unit_code = ''.join(word[0].upper() for word in unit.split())\n    name_code = ''.join(word[0].upper() for word in name.split())\n    crab_id = unit_code + name_code\n\n    crabs.append((v, crab_id, name, unit))\n\ncrabs.sort(key=lambda x: x[0], reverse=True)\n\nfor v, cid, name, unit in crabs:\n    print(f\"{cid} {name} {unit} {v} Km/h\")\n",
+        "highlighted_code": "n = int(input().strip(<span class='highlight-green'>))\ncrabs = []\n\nfor _ in range(n):\n    name = input().strip()\n    unit = input().strip()\n    time_str = input().strip()\n\n    h, m = map(int, time_str.split(&#39;:&#39;))\n    </span>time_hours = (h - 6) + m / 60\n    v = round(120 / time_hours)\n\n    unit_code = &#39;&#39;.join(word[0].upper() for word in unit.split())\n    name_code = &#39;&#39;.join(word[0].upper() for word in name.split())\n    crab_id = unit_code + name_code\n\n    crabs<span class='highlight-green'>.append((v, crab_id, name, unit))\n\ncrabs.sort(key=lambda </span>x: x[0], reverse=True)\n\n<span class='highlight-green'>for v, cid, name, unit in crabs:\n    print(f&#34;{cid} {name} {unit} {v</span>} Km/h&#34;)\n"
+      },
+      "token_overlap": 142,
+      "max_similarity_percent": 57.03
+    },
+    {
+      "case_id": 3,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b1fe535fa0f4f1d8ae/f95120b3a38a461085ef58cb/sub_1762364118446_y7hc2z6mr.py",
+        "similarity_percent": 44.64,
+        "full_code": "n = int(input())\nro = []\nfor _ in range(n):\n    ten = input().strip()\n    don_vi = input().strip()\n    thoi_gian = input().strip()\n    gio, phut = map(int, thoi_gian.split(':'))   \n    thoi_gian_gio = (gio - 6) + phut / 60    \n    v = 0\n    if thoi_gian_gio > 0:\n        v = int(round(120 / thoi_gian_gio))   \n    unit_initials = \"\".join([word[0].upper() for word in don_vi.split()])\n    name_initials = \"\".join([word[0].upper() for word in ten.split()])\n    crab_id = unit_initials + name_initials   \n    ro.append((crab_id, ten, don_vi, v))       \nro.sort(key=lambda x: x[3], reverse=True)\nfor cua_ro in ro:\n    print(f\"{cua_ro[0]} {cua_ro[1]} {cua_ro[2]} {cua_ro[3]} Km/h\")",
+        "highlighted_code": "n = int(input(<span class='highlight-red'>))\nro = []\nfor _ in range(n):\n    ten = input().strip()\n    don_vi = input().strip()\n    thoi_gian = input().strip()\n    gio, phut = map(int, thoi_gian.split(&#39;:&#39;))   \n    thoi_gian_gio = (gio - 6) + phut / </span>60    \n    v = 0\n    if thoi_gian_gio &gt; 0:\n        v = int(round(120 / thoi_gian_gio))   \n    unit_initials = &#34;&#34;.join([word[0].upper() for word in don_vi.split()])\n    name_initials = &#34;&#34;.join([word[0].upper() for word in ten.split()])\n    <span class='highlight-red'>crab_id = unit_initials + name_initials   \n    ro.append((crab_id, ten, don_vi, v))       \nro.sort(key=lambda x: x</span>[3], reverse=True)\nfor cua_ro in ro:\n    print(f&#34;{cua_ro[0]} {cua_ro[1]} {cua_ro[2]} {cua_ro[3]} Km/h&#34;)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b1fe535fa0f4f1d8ae/156dcfb40c18421d9b64651c/sub_1762788443366_zapp3kvfd.py",
+        "similarity_percent": 48.45,
+        "full_code": "n = int(input().strip())\ncrabs = []\n\nfor _ in range(n):\n    name = input().strip()\n    unit = input().strip()\n    time_str = input().strip()\n\n    h, m = map(int, time_str.split(':'))\n    time_hours = (h - 6) + m / 60\n    v = round(120 / time_hours)\n\n    unit_code = ''.join(word[0].upper() for word in unit.split())\n    name_code = ''.join(word[0].upper() for word in name.split())\n    crab_id = unit_code + name_code\n\n    crabs.append((v, crab_id, name, unit))\n\ncrabs.sort(key=lambda x: x[0], reverse=True)\n\nfor v, cid, name, unit in crabs:\n    print(f\"{cid} {name} {unit} {v} Km/h\")\n",
+        "highlighted_code": "n = int(input().strip(<span class='highlight-green'>))\ncrabs = []\n\nfor _ in range(n):\n    name = input().strip()\n    unit = input().strip()\n    time_str = input().strip()\n\n    h, m = map(int, time_str.split(&#39;:&#39;))\n    time_hours = (h - 6) + m / </span>60\n    v = round(120 / time_hours)\n\n    unit_code = &#39;&#39;.join(word[0].upper() for word in unit.split())\n    name_code = &#39;&#39;.join(word[0].upper() for word in name.split())\n    <span class='highlight-green'>crab_id = unit_code + name_code\n\n    crabs.append((v, crab_id, name, unit))\n\ncrabs.sort(key=lambda x: x</span>[0], reverse=True)\n\nfor v, cid, name, unit in crabs:\n    print(f&#34;{cid} {name} {unit} {v} Km/h&#34;)\n"
+      },
+      "token_overlap": 125,
+      "max_similarity_percent": 48.45
+    },
+    {
+      "case_id": 4,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b1fe535fa0f4f1d8ae/f95120b3a38a461085ef58cb/sub_1762364093116_i7azmuxoo.py",
+        "similarity_percent": 44.64,
+        "full_code": "n = int(input())\nro = []\nfor _ in range(n):\n    ten = input().strip()\n    don_vi = input().strip()\n    thoi_gian = input().strip()\n    gio, phut = map(int, thoi_gian.split(':'))   \n    thoi_gian_gio = (gio - 6) + phut / 60    \n    v = 0\n    if thoi_gian_gio > 0:\n        v = int(round(120 / thoi_gian_gio))   \n    unit_initials = \"\".join([word[0].upper() for word in don_vi.split()])\n    name_initials = \"\".join([word[0].upper() for word in ten.split()])\n    crab_id = unit_initials + name_initials   \n    ro.append((crab_id, ten, don_vi, v))       \nro.sort(key=lambda x: x[3], reverse=True)\nfor cua_ro in ro:\n    print(f\"{cua_ro[0]} {cua_ro[1]} {cua_ro[2]} {cua_ro[3]} Km/h\")",
+        "highlighted_code": "n = int(input(<span class='highlight-red'>))\nro = []\nfor _ in range(n):\n    ten = input().strip()\n    don_vi = input().strip()\n    thoi_gian = input().strip()\n    gio, phut = map(int, thoi_gian.split(&#39;:&#39;))   \n    thoi_gian_gio = (gio - 6) + phut / </span>60    \n    v = 0\n    if thoi_gian_gio &gt; 0:\n        v = int(round(120 / thoi_gian_gio))   \n    unit_initials = &#34;&#34;.join([word[0].upper() for word in don_vi.split()])\n    name_initials = &#34;&#34;.join([word[0].upper() for word in ten.split()])\n    <span class='highlight-red'>crab_id = unit_initials + name_initials   \n    ro.append((crab_id, ten, don_vi, v))       \nro.sort(key=lambda x: x</span>[3], reverse=True)\nfor cua_ro in ro:\n    print(f&#34;{cua_ro[0]} {cua_ro[1]} {cua_ro[2]} {cua_ro[3]} Km/h&#34;)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b1fe535fa0f4f1d8ae/156dcfb40c18421d9b64651c/sub_1762788443366_zapp3kvfd.py",
+        "similarity_percent": 48.45,
+        "full_code": "n = int(input().strip())\ncrabs = []\n\nfor _ in range(n):\n    name = input().strip()\n    unit = input().strip()\n    time_str = input().strip()\n\n    h, m = map(int, time_str.split(':'))\n    time_hours = (h - 6) + m / 60\n    v = round(120 / time_hours)\n\n    unit_code = ''.join(word[0].upper() for word in unit.split())\n    name_code = ''.join(word[0].upper() for word in name.split())\n    crab_id = unit_code + name_code\n\n    crabs.append((v, crab_id, name, unit))\n\ncrabs.sort(key=lambda x: x[0], reverse=True)\n\nfor v, cid, name, unit in crabs:\n    print(f\"{cid} {name} {unit} {v} Km/h\")\n",
+        "highlighted_code": "n = int(input().strip(<span class='highlight-green'>))\ncrabs = []\n\nfor _ in range(n):\n    name = input().strip()\n    unit = input().strip()\n    time_str = input().strip()\n\n    h, m = map(int, time_str.split(&#39;:&#39;))\n    time_hours = (h - 6) + m / </span>60\n    v = round(120 / time_hours)\n\n    unit_code = &#39;&#39;.join(word[0].upper() for word in unit.split())\n    name_code = &#39;&#39;.join(word[0].upper() for word in name.split())\n    <span class='highlight-green'>crab_id = unit_code + name_code\n\n    crabs.append((v, crab_id, name, unit))\n\ncrabs.sort(key=lambda x: x</span>[0], reverse=True)\n\nfor v, cid, name, unit in crabs:\n    print(f&#34;{cid} {name} {unit} {v} Km/h&#34;)\n"
+      },
+      "token_overlap": 125,
+      "max_similarity_percent": 48.45
+    },
+    {
+      "case_id": 5,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b1fe535fa0f4f1d8ae/f95120b3a38a461085ef58cb/sub_1762364118446_y7hc2z6mr.py",
+        "similarity_percent": 42.14,
+        "full_code": "n = int(input())\nro = []\nfor _ in range(n):\n    ten = input().strip()\n    don_vi = input().strip()\n    thoi_gian = input().strip()\n    gio, phut = map(int, thoi_gian.split(':'))   \n    thoi_gian_gio = (gio - 6) + phut / 60    \n    v = 0\n    if thoi_gian_gio > 0:\n        v = int(round(120 / thoi_gian_gio))   \n    unit_initials = \"\".join([word[0].upper() for word in don_vi.split()])\n    name_initials = \"\".join([word[0].upper() for word in ten.split()])\n    crab_id = unit_initials + name_initials   \n    ro.append((crab_id, ten, don_vi, v))       \nro.sort(key=lambda x: x[3], reverse=True)\nfor cua_ro in ro:\n    print(f\"{cua_ro[0]} {cua_ro[1]} {cua_ro[2]} {cua_ro[3]} Km/h\")",
+        "highlighted_code": "<span class='highlight-red'>n = int(input())\nro = []\nfor _ in range(n):\n    ten = input().strip()\n    don_vi = input().strip()\n    thoi_gian = input().strip()\n    gio, phut = map(int, thoi_gian.split(&#39;:&#39;))   \n    </span>thoi_gian_gio = (gio - 6) + phut / 60    \n    v = 0\n    if thoi_gian_gio &gt; 0:\n        v = int(round(120 / thoi_gian_gio))   \n    unit_initials = &#34;&#34;.join([word[0].upper() for word in don_vi.split()])\n    name_initials = &#34;&#34;.join([word[0].upper() for word in ten.split()])\n    crab_id = unit_initials + name_initials   \n    ro<span class='highlight-red'>.append((crab_id, ten, don_vi, v))       \nro.sort(key=lambda </span>x: x[3], reverse=True)\nfor cua_ro in ro:\n    print(f&#34;{cua_ro[0]} {cua_ro[1]} {cua_ro[2]} {cua_ro[3]} Km/h&#34;)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b1fe535fa0f4f1d8ae/26894d2babd64210ad6beba1/sub_1762412661863_3akd7l0oq.py",
+        "similarity_percent": 47.39,
+        "full_code": "t = int(input())\n\nds = []\n\nfor _ in range(t):\n    name = input().strip()\n    club = input().strip()\n    end = input().strip()\n    h, m = map(int, end.split(':'))\n    total_hour = (h + m / 60) - 6\n    v = 120 / total_hour\n    v = round(v)\n    code = ''.join([w[0] for w in club.upper().split()]) + ''.join([w[0] for w in name.upper().split()])\n    ds.append((code, name, club, v))\nds.sort(key=lambda x: -x[3])\nfor code, name, club, v in ds:\n    print(f\"{code} {name} {club} {v} Km/h\")\n",
+        "highlighted_code": "<span class='highlight-green'>t = int(input())\n\nds = []\n\nfor _ in range(t):\n    name = input().strip()\n    club = input().strip()\n    end = input().strip()\n    h, m = map(int, end.split(&#39;:&#39;))\n    </span>total_hour = (h + m / 60) - 6\n    v = 120 / total_hour\n    v = round(v)\n    code = &#39;&#39;.join([w[0] for w in club.upper().split()]) + &#39;&#39;.join([w[0] for w in name.upper().split()])\n    ds<span class='highlight-green'>.append((code, name, club, v))\nds.sort(key=lambda </span>x: -x[3])\nfor code, name, club, v in ds:\n    print(f&#34;{code} {name} {club} {v} Km/h&#34;)\n"
+      },
+      "token_overlap": 118,
+      "max_similarity_percent": 47.39
+    },
+    {
+      "case_id": 6,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b1fe535fa0f4f1d8ae/f95120b3a38a461085ef58cb/sub_1762364093116_i7azmuxoo.py",
+        "similarity_percent": 42.14,
+        "full_code": "n = int(input())\nro = []\nfor _ in range(n):\n    ten = input().strip()\n    don_vi = input().strip()\n    thoi_gian = input().strip()\n    gio, phut = map(int, thoi_gian.split(':'))   \n    thoi_gian_gio = (gio - 6) + phut / 60    \n    v = 0\n    if thoi_gian_gio > 0:\n        v = int(round(120 / thoi_gian_gio))   \n    unit_initials = \"\".join([word[0].upper() for word in don_vi.split()])\n    name_initials = \"\".join([word[0].upper() for word in ten.split()])\n    crab_id = unit_initials + name_initials   \n    ro.append((crab_id, ten, don_vi, v))       \nro.sort(key=lambda x: x[3], reverse=True)\nfor cua_ro in ro:\n    print(f\"{cua_ro[0]} {cua_ro[1]} {cua_ro[2]} {cua_ro[3]} Km/h\")",
+        "highlighted_code": "<span class='highlight-red'>n = int(input())\nro = []\nfor _ in range(n):\n    ten = input().strip()\n    don_vi = input().strip()\n    thoi_gian = input().strip()\n    gio, phut = map(int, thoi_gian.split(&#39;:&#39;))   \n    </span>thoi_gian_gio = (gio - 6) + phut / 60    \n    v = 0\n    if thoi_gian_gio &gt; 0:\n        v = int(round(120 / thoi_gian_gio))   \n    unit_initials = &#34;&#34;.join([word[0].upper() for word in don_vi.split()])\n    name_initials = &#34;&#34;.join([word[0].upper() for word in ten.split()])\n    crab_id = unit_initials + name_initials   \n    ro<span class='highlight-red'>.append((crab_id, ten, don_vi, v))       \nro.sort(key=lambda </span>x: x[3], reverse=True)\nfor cua_ro in ro:\n    print(f&#34;{cua_ro[0]} {cua_ro[1]} {cua_ro[2]} {cua_ro[3]} Km/h&#34;)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b1fe535fa0f4f1d8ae/26894d2babd64210ad6beba1/sub_1762412661863_3akd7l0oq.py",
+        "similarity_percent": 47.39,
+        "full_code": "t = int(input())\n\nds = []\n\nfor _ in range(t):\n    name = input().strip()\n    club = input().strip()\n    end = input().strip()\n    h, m = map(int, end.split(':'))\n    total_hour = (h + m / 60) - 6\n    v = 120 / total_hour\n    v = round(v)\n    code = ''.join([w[0] for w in club.upper().split()]) + ''.join([w[0] for w in name.upper().split()])\n    ds.append((code, name, club, v))\nds.sort(key=lambda x: -x[3])\nfor code, name, club, v in ds:\n    print(f\"{code} {name} {club} {v} Km/h\")\n",
+        "highlighted_code": "<span class='highlight-green'>t = int(input())\n\nds = []\n\nfor _ in range(t):\n    name = input().strip()\n    club = input().strip()\n    end = input().strip()\n    h, m = map(int, end.split(&#39;:&#39;))\n    </span>total_hour = (h + m / 60) - 6\n    v = 120 / total_hour\n    v = round(v)\n    code = &#39;&#39;.join([w[0] for w in club.upper().split()]) + &#39;&#39;.join([w[0] for w in name.upper().split()])\n    ds<span class='highlight-green'>.append((code, name, club, v))\nds.sort(key=lambda </span>x: -x[3])\nfor code, name, club, v in ds:\n    print(f&#34;{code} {name} {club} {v} Km/h&#34;)\n"
+      },
+      "token_overlap": 118,
+      "max_similarity_percent": 47.39
+    }
+  ]
+}

@@ -1,0 +1,946 @@
+{
+  "problem_id": "68e3e1577243251374477565",
+  "filter_criteria": {
+    "min_token_overlap": 80,
+    "min_similarity_percent": 60
+  },
+  "total_cases_found": 55,
+  "total_cases_filtered": 55,
+  "cases": [
+    {
+      "case_id": 1,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3e1577243251374477565/4619643a0f2348b6b74a746a/sub_1762196267071_0kidcso33.py",
+        "similarity_percent": 100.0,
+        "full_code": "n = int(input())\nif n % 2 == 0:\n    print(\"chẵn\")\nelse:\n    print(\"lẻ\")",
+        "highlighted_code": "<span class='highlight-red'>n = int(input())\nif n % 2 == 0:\n    print(&#34;chẵn&#34;)\nelse:\n    print(&#34;</span>lẻ&#34;)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3e1577243251374477565/462e338df279467b92058b3f/sub_1762267766943_6uwhuxj0f.py",
+        "similarity_percent": 100.0,
+        "full_code": "n = int(input())\nif n % 2 == 0:\n    print(\"Chẵn\")\nelse:\n    print(\"Lẻ\")",
+        "highlighted_code": "<span class='highlight-green'>n = int(input())\nif n % 2 == 0:\n    print(&#34;Chẵn&#34;)\nelse:\n    print(&#34;</span>Lẻ&#34;)"
+      },
+      "token_overlap": 45,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 2,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3e1577243251374477565/4619643a0f2348b6b74a746a/sub_1762196267071_0kidcso33.py",
+        "similarity_percent": 100.0,
+        "full_code": "n = int(input())\nif n % 2 == 0:\n    print(\"chẵn\")\nelse:\n    print(\"lẻ\")",
+        "highlighted_code": "<span class='highlight-red'>n = int(input())\nif n % 2 == 0:\n    print(&#34;chẵn&#34;)\nelse:\n    print(&#34;</span>lẻ&#34;)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3e1577243251374477565/51bbd72f42174843b97698b4/sub_1761640668956_vq30doadm.py",
+        "similarity_percent": 100.0,
+        "full_code": "n = int(input())\nif n % 2 == 0:\n    print(\"Chẵn\")\nelse:\n    print(\"Lẻ\")",
+        "highlighted_code": "<span class='highlight-green'>n = int(input())\nif n % 2 == 0:\n    print(&#34;Chẵn&#34;)\nelse:\n    print(&#34;</span>Lẻ&#34;)"
+      },
+      "token_overlap": 45,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 3,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3e1577243251374477565/4619643a0f2348b6b74a746a/sub_1762196267071_0kidcso33.py",
+        "similarity_percent": 100.0,
+        "full_code": "n = int(input())\nif n % 2 == 0:\n    print(\"chẵn\")\nelse:\n    print(\"lẻ\")",
+        "highlighted_code": "<span class='highlight-red'>n = int(input())\nif n % 2 == 0:\n    print(&#34;chẵn&#34;)\nelse:\n    print(&#34;</span>lẻ&#34;)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3e1577243251374477565/26894d2babd64210ad6beba1/sub_1762310763093_z0j6b056o.py",
+        "similarity_percent": 100.0,
+        "full_code": "n = int(input())\nif n % 2 == 0:\n    print(\"Chẵn\")\nelse:\n    print(\"Lẻ\")",
+        "highlighted_code": "<span class='highlight-green'>n = int(input())\nif n % 2 == 0:\n    print(&#34;Chẵn&#34;)\nelse:\n    print(&#34;</span>Lẻ&#34;)"
+      },
+      "token_overlap": 45,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 4,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3e1577243251374477565/4619643a0f2348b6b74a746a/sub_1762196267071_0kidcso33.py",
+        "similarity_percent": 100.0,
+        "full_code": "n = int(input())\nif n % 2 == 0:\n    print(\"chẵn\")\nelse:\n    print(\"lẻ\")",
+        "highlighted_code": "<span class='highlight-red'>n = int(input())\nif n % 2 == 0:\n    print(&#34;chẵn&#34;)\nelse:\n    print(&#34;</span>lẻ&#34;)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3e1577243251374477565/4619643a0f2348b6b74a746a/sub_1762196236049_kobdy3s6c.py",
+        "similarity_percent": 100.0,
+        "full_code": "n = int(input())\nif n % 2 == 0:\n    print(\"chẵn\")\nelse:\n    print(\"lẻ\")",
+        "highlighted_code": "<span class='highlight-green'>n = int(input())\nif n % 2 == 0:\n    print(&#34;chẵn&#34;)\nelse:\n    print(&#34;</span>lẻ&#34;)"
+      },
+      "token_overlap": 45,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 5,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3e1577243251374477565/4619643a0f2348b6b74a746a/sub_1762196267071_0kidcso33.py",
+        "similarity_percent": 100.0,
+        "full_code": "n = int(input())\nif n % 2 == 0:\n    print(\"chẵn\")\nelse:\n    print(\"lẻ\")",
+        "highlighted_code": "<span class='highlight-red'>n = int(input())\nif n % 2 == 0:\n    print(&#34;chẵn&#34;)\nelse:\n    print(&#34;</span>lẻ&#34;)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3e1577243251374477565/4619643a0f2348b6b74a746a/sub_1762272522823_xopqdaskx.py",
+        "similarity_percent": 100.0,
+        "full_code": "n = int(input())\nif n % 2 == 0:\n    print(\"Chẵn\")\nelse:\n    print(\"Lẻ\")",
+        "highlighted_code": "<span class='highlight-green'>n = int(input())\nif n % 2 == 0:\n    print(&#34;Chẵn&#34;)\nelse:\n    print(&#34;</span>Lẻ&#34;)"
+      },
+      "token_overlap": 45,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 6,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3e1577243251374477565/4619643a0f2348b6b74a746a/sub_1762196267071_0kidcso33.py",
+        "similarity_percent": 100.0,
+        "full_code": "n = int(input())\nif n % 2 == 0:\n    print(\"chẵn\")\nelse:\n    print(\"lẻ\")",
+        "highlighted_code": "<span class='highlight-red'>n = int(input())\nif n % 2 == 0:\n    print(&#34;chẵn&#34;)\nelse:\n    print(&#34;</span>lẻ&#34;)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3e1577243251374477565/4619643a0f2348b6b74a746a/sub_1762272638567_faje9hm6o.py",
+        "similarity_percent": 100.0,
+        "full_code": "n = int(input())\nif n % 2 == 0:\n    print(\"Chẵn\")\nelse:\n    print(\"Lẻ\")",
+        "highlighted_code": "<span class='highlight-green'>n = int(input())\nif n % 2 == 0:\n    print(&#34;Chẵn&#34;)\nelse:\n    print(&#34;</span>Lẻ&#34;)"
+      },
+      "token_overlap": 45,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 7,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3e1577243251374477565/4619643a0f2348b6b74a746a/sub_1762196267071_0kidcso33.py",
+        "similarity_percent": 100.0,
+        "full_code": "n = int(input())\nif n % 2 == 0:\n    print(\"chẵn\")\nelse:\n    print(\"lẻ\")",
+        "highlighted_code": "<span class='highlight-red'>n = int(input())\nif n % 2 == 0:\n    print(&#34;chẵn&#34;)\nelse:\n    print(&#34;</span>lẻ&#34;)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3e1577243251374477565/51bbd72f42174843b97698b4/sub_1761640806784_sms55so1d.py",
+        "similarity_percent": 100.0,
+        "full_code": "n = int(input())\nif n % 2 == 0:\n    print(\"Chẵn\")\nelse:\n    print(\"Lẻ\")",
+        "highlighted_code": "<span class='highlight-green'>n = int(input())\nif n % 2 == 0:\n    print(&#34;Chẵn&#34;)\nelse:\n    print(&#34;</span>Lẻ&#34;)"
+      },
+      "token_overlap": 45,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 8,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3e1577243251374477565/4619643a0f2348b6b74a746a/sub_1762196267071_0kidcso33.py",
+        "similarity_percent": 100.0,
+        "full_code": "n = int(input())\nif n % 2 == 0:\n    print(\"chẵn\")\nelse:\n    print(\"lẻ\")",
+        "highlighted_code": "<span class='highlight-red'>n = int(input())\nif n % 2 == 0:\n    print(&#34;chẵn&#34;)\nelse:\n    print(&#34;</span>lẻ&#34;)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3e1577243251374477565/26894d2babd64210ad6beba1/sub_1762310968436_2qeeauiw6.py",
+        "similarity_percent": 100.0,
+        "full_code": "n = int(input())\nif n % 2 == 0:\n    print(\"Chẵn\")\nelse:\n    print(\"Lẻ\")",
+        "highlighted_code": "<span class='highlight-green'>n = int(input())\nif n % 2 == 0:\n    print(&#34;Chẵn&#34;)\nelse:\n    print(&#34;</span>Lẻ&#34;)"
+      },
+      "token_overlap": 45,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 9,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3e1577243251374477565/4619643a0f2348b6b74a746a/sub_1762196267071_0kidcso33.py",
+        "similarity_percent": 100.0,
+        "full_code": "n = int(input())\nif n % 2 == 0:\n    print(\"chẵn\")\nelse:\n    print(\"lẻ\")",
+        "highlighted_code": "<span class='highlight-red'>n = int(input())\nif n % 2 == 0:\n    print(&#34;chẵn&#34;)\nelse:\n    print(&#34;</span>lẻ&#34;)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3e1577243251374477565/16e46f0143f645b5968397c4/sub_1762697311125_ssuish8jk.py",
+        "similarity_percent": 100.0,
+        "full_code": "n=int(input())\nif n%2==0:\n    print(\"Chẵn\")\nelse:\n    print(\"Lẻ\")",
+        "highlighted_code": "<span class='highlight-green'>n=int(input())\nif n%2==0:\n    print(&#34;Chẵn&#34;)\nelse:\n    print(&#34;</span>Lẻ&#34;)"
+      },
+      "token_overlap": 45,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 10,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3e1577243251374477565/462e338df279467b92058b3f/sub_1762267766943_6uwhuxj0f.py",
+        "similarity_percent": 100.0,
+        "full_code": "n = int(input())\nif n % 2 == 0:\n    print(\"Chẵn\")\nelse:\n    print(\"Lẻ\")",
+        "highlighted_code": "<span class='highlight-red'>n = int(input())\nif n % 2 == 0:\n    print(&#34;Chẵn&#34;)\nelse:\n    print(&#34;</span>Lẻ&#34;)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3e1577243251374477565/51bbd72f42174843b97698b4/sub_1761640668956_vq30doadm.py",
+        "similarity_percent": 100.0,
+        "full_code": "n = int(input())\nif n % 2 == 0:\n    print(\"Chẵn\")\nelse:\n    print(\"Lẻ\")",
+        "highlighted_code": "<span class='highlight-green'>n = int(input())\nif n % 2 == 0:\n    print(&#34;Chẵn&#34;)\nelse:\n    print(&#34;</span>Lẻ&#34;)"
+      },
+      "token_overlap": 45,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 11,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3e1577243251374477565/462e338df279467b92058b3f/sub_1762267766943_6uwhuxj0f.py",
+        "similarity_percent": 100.0,
+        "full_code": "n = int(input())\nif n % 2 == 0:\n    print(\"Chẵn\")\nelse:\n    print(\"Lẻ\")",
+        "highlighted_code": "<span class='highlight-red'>n = int(input())\nif n % 2 == 0:\n    print(&#34;Chẵn&#34;)\nelse:\n    print(&#34;</span>Lẻ&#34;)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3e1577243251374477565/26894d2babd64210ad6beba1/sub_1762310763093_z0j6b056o.py",
+        "similarity_percent": 100.0,
+        "full_code": "n = int(input())\nif n % 2 == 0:\n    print(\"Chẵn\")\nelse:\n    print(\"Lẻ\")",
+        "highlighted_code": "<span class='highlight-green'>n = int(input())\nif n % 2 == 0:\n    print(&#34;Chẵn&#34;)\nelse:\n    print(&#34;</span>Lẻ&#34;)"
+      },
+      "token_overlap": 45,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 12,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3e1577243251374477565/462e338df279467b92058b3f/sub_1762267766943_6uwhuxj0f.py",
+        "similarity_percent": 100.0,
+        "full_code": "n = int(input())\nif n % 2 == 0:\n    print(\"Chẵn\")\nelse:\n    print(\"Lẻ\")",
+        "highlighted_code": "<span class='highlight-red'>n = int(input())\nif n % 2 == 0:\n    print(&#34;Chẵn&#34;)\nelse:\n    print(&#34;</span>Lẻ&#34;)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3e1577243251374477565/4619643a0f2348b6b74a746a/sub_1762196236049_kobdy3s6c.py",
+        "similarity_percent": 100.0,
+        "full_code": "n = int(input())\nif n % 2 == 0:\n    print(\"chẵn\")\nelse:\n    print(\"lẻ\")",
+        "highlighted_code": "<span class='highlight-green'>n = int(input())\nif n % 2 == 0:\n    print(&#34;chẵn&#34;)\nelse:\n    print(&#34;</span>lẻ&#34;)"
+      },
+      "token_overlap": 45,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 13,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3e1577243251374477565/462e338df279467b92058b3f/sub_1762267766943_6uwhuxj0f.py",
+        "similarity_percent": 100.0,
+        "full_code": "n = int(input())\nif n % 2 == 0:\n    print(\"Chẵn\")\nelse:\n    print(\"Lẻ\")",
+        "highlighted_code": "<span class='highlight-red'>n = int(input())\nif n % 2 == 0:\n    print(&#34;Chẵn&#34;)\nelse:\n    print(&#34;</span>Lẻ&#34;)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3e1577243251374477565/4619643a0f2348b6b74a746a/sub_1762272522823_xopqdaskx.py",
+        "similarity_percent": 100.0,
+        "full_code": "n = int(input())\nif n % 2 == 0:\n    print(\"Chẵn\")\nelse:\n    print(\"Lẻ\")",
+        "highlighted_code": "<span class='highlight-green'>n = int(input())\nif n % 2 == 0:\n    print(&#34;Chẵn&#34;)\nelse:\n    print(&#34;</span>Lẻ&#34;)"
+      },
+      "token_overlap": 45,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 14,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3e1577243251374477565/462e338df279467b92058b3f/sub_1762267766943_6uwhuxj0f.py",
+        "similarity_percent": 100.0,
+        "full_code": "n = int(input())\nif n % 2 == 0:\n    print(\"Chẵn\")\nelse:\n    print(\"Lẻ\")",
+        "highlighted_code": "<span class='highlight-red'>n = int(input())\nif n % 2 == 0:\n    print(&#34;Chẵn&#34;)\nelse:\n    print(&#34;</span>Lẻ&#34;)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3e1577243251374477565/4619643a0f2348b6b74a746a/sub_1762272638567_faje9hm6o.py",
+        "similarity_percent": 100.0,
+        "full_code": "n = int(input())\nif n % 2 == 0:\n    print(\"Chẵn\")\nelse:\n    print(\"Lẻ\")",
+        "highlighted_code": "<span class='highlight-green'>n = int(input())\nif n % 2 == 0:\n    print(&#34;Chẵn&#34;)\nelse:\n    print(&#34;</span>Lẻ&#34;)"
+      },
+      "token_overlap": 45,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 15,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3e1577243251374477565/462e338df279467b92058b3f/sub_1762267766943_6uwhuxj0f.py",
+        "similarity_percent": 100.0,
+        "full_code": "n = int(input())\nif n % 2 == 0:\n    print(\"Chẵn\")\nelse:\n    print(\"Lẻ\")",
+        "highlighted_code": "<span class='highlight-red'>n = int(input())\nif n % 2 == 0:\n    print(&#34;Chẵn&#34;)\nelse:\n    print(&#34;</span>Lẻ&#34;)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3e1577243251374477565/51bbd72f42174843b97698b4/sub_1761640806784_sms55so1d.py",
+        "similarity_percent": 100.0,
+        "full_code": "n = int(input())\nif n % 2 == 0:\n    print(\"Chẵn\")\nelse:\n    print(\"Lẻ\")",
+        "highlighted_code": "<span class='highlight-green'>n = int(input())\nif n % 2 == 0:\n    print(&#34;Chẵn&#34;)\nelse:\n    print(&#34;</span>Lẻ&#34;)"
+      },
+      "token_overlap": 45,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 16,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3e1577243251374477565/462e338df279467b92058b3f/sub_1762267766943_6uwhuxj0f.py",
+        "similarity_percent": 100.0,
+        "full_code": "n = int(input())\nif n % 2 == 0:\n    print(\"Chẵn\")\nelse:\n    print(\"Lẻ\")",
+        "highlighted_code": "<span class='highlight-red'>n = int(input())\nif n % 2 == 0:\n    print(&#34;Chẵn&#34;)\nelse:\n    print(&#34;</span>Lẻ&#34;)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3e1577243251374477565/26894d2babd64210ad6beba1/sub_1762310968436_2qeeauiw6.py",
+        "similarity_percent": 100.0,
+        "full_code": "n = int(input())\nif n % 2 == 0:\n    print(\"Chẵn\")\nelse:\n    print(\"Lẻ\")",
+        "highlighted_code": "<span class='highlight-green'>n = int(input())\nif n % 2 == 0:\n    print(&#34;Chẵn&#34;)\nelse:\n    print(&#34;</span>Lẻ&#34;)"
+      },
+      "token_overlap": 45,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 17,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3e1577243251374477565/462e338df279467b92058b3f/sub_1762267766943_6uwhuxj0f.py",
+        "similarity_percent": 100.0,
+        "full_code": "n = int(input())\nif n % 2 == 0:\n    print(\"Chẵn\")\nelse:\n    print(\"Lẻ\")",
+        "highlighted_code": "<span class='highlight-red'>n = int(input())\nif n % 2 == 0:\n    print(&#34;Chẵn&#34;)\nelse:\n    print(&#34;</span>Lẻ&#34;)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3e1577243251374477565/16e46f0143f645b5968397c4/sub_1762697311125_ssuish8jk.py",
+        "similarity_percent": 100.0,
+        "full_code": "n=int(input())\nif n%2==0:\n    print(\"Chẵn\")\nelse:\n    print(\"Lẻ\")",
+        "highlighted_code": "<span class='highlight-green'>n=int(input())\nif n%2==0:\n    print(&#34;Chẵn&#34;)\nelse:\n    print(&#34;</span>Lẻ&#34;)"
+      },
+      "token_overlap": 45,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 18,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3e1577243251374477565/51bbd72f42174843b97698b4/sub_1761640668956_vq30doadm.py",
+        "similarity_percent": 100.0,
+        "full_code": "n = int(input())\nif n % 2 == 0:\n    print(\"Chẵn\")\nelse:\n    print(\"Lẻ\")",
+        "highlighted_code": "<span class='highlight-red'>n = int(input())\nif n % 2 == 0:\n    print(&#34;Chẵn&#34;)\nelse:\n    print(&#34;</span>Lẻ&#34;)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3e1577243251374477565/26894d2babd64210ad6beba1/sub_1762310763093_z0j6b056o.py",
+        "similarity_percent": 100.0,
+        "full_code": "n = int(input())\nif n % 2 == 0:\n    print(\"Chẵn\")\nelse:\n    print(\"Lẻ\")",
+        "highlighted_code": "<span class='highlight-green'>n = int(input())\nif n % 2 == 0:\n    print(&#34;Chẵn&#34;)\nelse:\n    print(&#34;</span>Lẻ&#34;)"
+      },
+      "token_overlap": 45,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 19,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3e1577243251374477565/51bbd72f42174843b97698b4/sub_1761640668956_vq30doadm.py",
+        "similarity_percent": 100.0,
+        "full_code": "n = int(input())\nif n % 2 == 0:\n    print(\"Chẵn\")\nelse:\n    print(\"Lẻ\")",
+        "highlighted_code": "<span class='highlight-red'>n = int(input())\nif n % 2 == 0:\n    print(&#34;Chẵn&#34;)\nelse:\n    print(&#34;</span>Lẻ&#34;)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3e1577243251374477565/4619643a0f2348b6b74a746a/sub_1762196236049_kobdy3s6c.py",
+        "similarity_percent": 100.0,
+        "full_code": "n = int(input())\nif n % 2 == 0:\n    print(\"chẵn\")\nelse:\n    print(\"lẻ\")",
+        "highlighted_code": "<span class='highlight-green'>n = int(input())\nif n % 2 == 0:\n    print(&#34;chẵn&#34;)\nelse:\n    print(&#34;</span>lẻ&#34;)"
+      },
+      "token_overlap": 45,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 20,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3e1577243251374477565/51bbd72f42174843b97698b4/sub_1761640668956_vq30doadm.py",
+        "similarity_percent": 100.0,
+        "full_code": "n = int(input())\nif n % 2 == 0:\n    print(\"Chẵn\")\nelse:\n    print(\"Lẻ\")",
+        "highlighted_code": "<span class='highlight-red'>n = int(input())\nif n % 2 == 0:\n    print(&#34;Chẵn&#34;)\nelse:\n    print(&#34;</span>Lẻ&#34;)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3e1577243251374477565/4619643a0f2348b6b74a746a/sub_1762272522823_xopqdaskx.py",
+        "similarity_percent": 100.0,
+        "full_code": "n = int(input())\nif n % 2 == 0:\n    print(\"Chẵn\")\nelse:\n    print(\"Lẻ\")",
+        "highlighted_code": "<span class='highlight-green'>n = int(input())\nif n % 2 == 0:\n    print(&#34;Chẵn&#34;)\nelse:\n    print(&#34;</span>Lẻ&#34;)"
+      },
+      "token_overlap": 45,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 21,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3e1577243251374477565/51bbd72f42174843b97698b4/sub_1761640668956_vq30doadm.py",
+        "similarity_percent": 100.0,
+        "full_code": "n = int(input())\nif n % 2 == 0:\n    print(\"Chẵn\")\nelse:\n    print(\"Lẻ\")",
+        "highlighted_code": "<span class='highlight-red'>n = int(input())\nif n % 2 == 0:\n    print(&#34;Chẵn&#34;)\nelse:\n    print(&#34;</span>Lẻ&#34;)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3e1577243251374477565/4619643a0f2348b6b74a746a/sub_1762272638567_faje9hm6o.py",
+        "similarity_percent": 100.0,
+        "full_code": "n = int(input())\nif n % 2 == 0:\n    print(\"Chẵn\")\nelse:\n    print(\"Lẻ\")",
+        "highlighted_code": "<span class='highlight-green'>n = int(input())\nif n % 2 == 0:\n    print(&#34;Chẵn&#34;)\nelse:\n    print(&#34;</span>Lẻ&#34;)"
+      },
+      "token_overlap": 45,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 22,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3e1577243251374477565/51bbd72f42174843b97698b4/sub_1761640668956_vq30doadm.py",
+        "similarity_percent": 100.0,
+        "full_code": "n = int(input())\nif n % 2 == 0:\n    print(\"Chẵn\")\nelse:\n    print(\"Lẻ\")",
+        "highlighted_code": "<span class='highlight-red'>n = int(input())\nif n % 2 == 0:\n    print(&#34;Chẵn&#34;)\nelse:\n    print(&#34;</span>Lẻ&#34;)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3e1577243251374477565/51bbd72f42174843b97698b4/sub_1761640806784_sms55so1d.py",
+        "similarity_percent": 100.0,
+        "full_code": "n = int(input())\nif n % 2 == 0:\n    print(\"Chẵn\")\nelse:\n    print(\"Lẻ\")",
+        "highlighted_code": "<span class='highlight-green'>n = int(input())\nif n % 2 == 0:\n    print(&#34;Chẵn&#34;)\nelse:\n    print(&#34;</span>Lẻ&#34;)"
+      },
+      "token_overlap": 45,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 23,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3e1577243251374477565/51bbd72f42174843b97698b4/sub_1761640668956_vq30doadm.py",
+        "similarity_percent": 100.0,
+        "full_code": "n = int(input())\nif n % 2 == 0:\n    print(\"Chẵn\")\nelse:\n    print(\"Lẻ\")",
+        "highlighted_code": "<span class='highlight-red'>n = int(input())\nif n % 2 == 0:\n    print(&#34;Chẵn&#34;)\nelse:\n    print(&#34;</span>Lẻ&#34;)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3e1577243251374477565/26894d2babd64210ad6beba1/sub_1762310968436_2qeeauiw6.py",
+        "similarity_percent": 100.0,
+        "full_code": "n = int(input())\nif n % 2 == 0:\n    print(\"Chẵn\")\nelse:\n    print(\"Lẻ\")",
+        "highlighted_code": "<span class='highlight-green'>n = int(input())\nif n % 2 == 0:\n    print(&#34;Chẵn&#34;)\nelse:\n    print(&#34;</span>Lẻ&#34;)"
+      },
+      "token_overlap": 45,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 24,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3e1577243251374477565/51bbd72f42174843b97698b4/sub_1761640668956_vq30doadm.py",
+        "similarity_percent": 100.0,
+        "full_code": "n = int(input())\nif n % 2 == 0:\n    print(\"Chẵn\")\nelse:\n    print(\"Lẻ\")",
+        "highlighted_code": "<span class='highlight-red'>n = int(input())\nif n % 2 == 0:\n    print(&#34;Chẵn&#34;)\nelse:\n    print(&#34;</span>Lẻ&#34;)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3e1577243251374477565/16e46f0143f645b5968397c4/sub_1762697311125_ssuish8jk.py",
+        "similarity_percent": 100.0,
+        "full_code": "n=int(input())\nif n%2==0:\n    print(\"Chẵn\")\nelse:\n    print(\"Lẻ\")",
+        "highlighted_code": "<span class='highlight-green'>n=int(input())\nif n%2==0:\n    print(&#34;Chẵn&#34;)\nelse:\n    print(&#34;</span>Lẻ&#34;)"
+      },
+      "token_overlap": 45,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 25,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3e1577243251374477565/26894d2babd64210ad6beba1/sub_1762310763093_z0j6b056o.py",
+        "similarity_percent": 100.0,
+        "full_code": "n = int(input())\nif n % 2 == 0:\n    print(\"Chẵn\")\nelse:\n    print(\"Lẻ\")",
+        "highlighted_code": "<span class='highlight-red'>n = int(input())\nif n % 2 == 0:\n    print(&#34;Chẵn&#34;)\nelse:\n    print(&#34;</span>Lẻ&#34;)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3e1577243251374477565/4619643a0f2348b6b74a746a/sub_1762196236049_kobdy3s6c.py",
+        "similarity_percent": 100.0,
+        "full_code": "n = int(input())\nif n % 2 == 0:\n    print(\"chẵn\")\nelse:\n    print(\"lẻ\")",
+        "highlighted_code": "<span class='highlight-green'>n = int(input())\nif n % 2 == 0:\n    print(&#34;chẵn&#34;)\nelse:\n    print(&#34;</span>lẻ&#34;)"
+      },
+      "token_overlap": 45,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 26,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3e1577243251374477565/26894d2babd64210ad6beba1/sub_1762310763093_z0j6b056o.py",
+        "similarity_percent": 100.0,
+        "full_code": "n = int(input())\nif n % 2 == 0:\n    print(\"Chẵn\")\nelse:\n    print(\"Lẻ\")",
+        "highlighted_code": "<span class='highlight-red'>n = int(input())\nif n % 2 == 0:\n    print(&#34;Chẵn&#34;)\nelse:\n    print(&#34;</span>Lẻ&#34;)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3e1577243251374477565/4619643a0f2348b6b74a746a/sub_1762272522823_xopqdaskx.py",
+        "similarity_percent": 100.0,
+        "full_code": "n = int(input())\nif n % 2 == 0:\n    print(\"Chẵn\")\nelse:\n    print(\"Lẻ\")",
+        "highlighted_code": "<span class='highlight-green'>n = int(input())\nif n % 2 == 0:\n    print(&#34;Chẵn&#34;)\nelse:\n    print(&#34;</span>Lẻ&#34;)"
+      },
+      "token_overlap": 45,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 27,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3e1577243251374477565/26894d2babd64210ad6beba1/sub_1762310763093_z0j6b056o.py",
+        "similarity_percent": 100.0,
+        "full_code": "n = int(input())\nif n % 2 == 0:\n    print(\"Chẵn\")\nelse:\n    print(\"Lẻ\")",
+        "highlighted_code": "<span class='highlight-red'>n = int(input())\nif n % 2 == 0:\n    print(&#34;Chẵn&#34;)\nelse:\n    print(&#34;</span>Lẻ&#34;)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3e1577243251374477565/4619643a0f2348b6b74a746a/sub_1762272638567_faje9hm6o.py",
+        "similarity_percent": 100.0,
+        "full_code": "n = int(input())\nif n % 2 == 0:\n    print(\"Chẵn\")\nelse:\n    print(\"Lẻ\")",
+        "highlighted_code": "<span class='highlight-green'>n = int(input())\nif n % 2 == 0:\n    print(&#34;Chẵn&#34;)\nelse:\n    print(&#34;</span>Lẻ&#34;)"
+      },
+      "token_overlap": 45,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 28,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3e1577243251374477565/26894d2babd64210ad6beba1/sub_1762310763093_z0j6b056o.py",
+        "similarity_percent": 100.0,
+        "full_code": "n = int(input())\nif n % 2 == 0:\n    print(\"Chẵn\")\nelse:\n    print(\"Lẻ\")",
+        "highlighted_code": "<span class='highlight-red'>n = int(input())\nif n % 2 == 0:\n    print(&#34;Chẵn&#34;)\nelse:\n    print(&#34;</span>Lẻ&#34;)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3e1577243251374477565/51bbd72f42174843b97698b4/sub_1761640806784_sms55so1d.py",
+        "similarity_percent": 100.0,
+        "full_code": "n = int(input())\nif n % 2 == 0:\n    print(\"Chẵn\")\nelse:\n    print(\"Lẻ\")",
+        "highlighted_code": "<span class='highlight-green'>n = int(input())\nif n % 2 == 0:\n    print(&#34;Chẵn&#34;)\nelse:\n    print(&#34;</span>Lẻ&#34;)"
+      },
+      "token_overlap": 45,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 29,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3e1577243251374477565/26894d2babd64210ad6beba1/sub_1762310763093_z0j6b056o.py",
+        "similarity_percent": 100.0,
+        "full_code": "n = int(input())\nif n % 2 == 0:\n    print(\"Chẵn\")\nelse:\n    print(\"Lẻ\")",
+        "highlighted_code": "<span class='highlight-red'>n = int(input())\nif n % 2 == 0:\n    print(&#34;Chẵn&#34;)\nelse:\n    print(&#34;</span>Lẻ&#34;)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3e1577243251374477565/26894d2babd64210ad6beba1/sub_1762310968436_2qeeauiw6.py",
+        "similarity_percent": 100.0,
+        "full_code": "n = int(input())\nif n % 2 == 0:\n    print(\"Chẵn\")\nelse:\n    print(\"Lẻ\")",
+        "highlighted_code": "<span class='highlight-green'>n = int(input())\nif n % 2 == 0:\n    print(&#34;Chẵn&#34;)\nelse:\n    print(&#34;</span>Lẻ&#34;)"
+      },
+      "token_overlap": 45,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 30,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3e1577243251374477565/26894d2babd64210ad6beba1/sub_1762310763093_z0j6b056o.py",
+        "similarity_percent": 100.0,
+        "full_code": "n = int(input())\nif n % 2 == 0:\n    print(\"Chẵn\")\nelse:\n    print(\"Lẻ\")",
+        "highlighted_code": "<span class='highlight-red'>n = int(input())\nif n % 2 == 0:\n    print(&#34;Chẵn&#34;)\nelse:\n    print(&#34;</span>Lẻ&#34;)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3e1577243251374477565/16e46f0143f645b5968397c4/sub_1762697311125_ssuish8jk.py",
+        "similarity_percent": 100.0,
+        "full_code": "n=int(input())\nif n%2==0:\n    print(\"Chẵn\")\nelse:\n    print(\"Lẻ\")",
+        "highlighted_code": "<span class='highlight-green'>n=int(input())\nif n%2==0:\n    print(&#34;Chẵn&#34;)\nelse:\n    print(&#34;</span>Lẻ&#34;)"
+      },
+      "token_overlap": 45,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 31,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3e1577243251374477565/4619643a0f2348b6b74a746a/sub_1762196236049_kobdy3s6c.py",
+        "similarity_percent": 100.0,
+        "full_code": "n = int(input())\nif n % 2 == 0:\n    print(\"chẵn\")\nelse:\n    print(\"lẻ\")",
+        "highlighted_code": "<span class='highlight-red'>n = int(input())\nif n % 2 == 0:\n    print(&#34;chẵn&#34;)\nelse:\n    print(&#34;</span>lẻ&#34;)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3e1577243251374477565/4619643a0f2348b6b74a746a/sub_1762272522823_xopqdaskx.py",
+        "similarity_percent": 100.0,
+        "full_code": "n = int(input())\nif n % 2 == 0:\n    print(\"Chẵn\")\nelse:\n    print(\"Lẻ\")",
+        "highlighted_code": "<span class='highlight-green'>n = int(input())\nif n % 2 == 0:\n    print(&#34;Chẵn&#34;)\nelse:\n    print(&#34;</span>Lẻ&#34;)"
+      },
+      "token_overlap": 45,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 32,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3e1577243251374477565/4619643a0f2348b6b74a746a/sub_1762196236049_kobdy3s6c.py",
+        "similarity_percent": 100.0,
+        "full_code": "n = int(input())\nif n % 2 == 0:\n    print(\"chẵn\")\nelse:\n    print(\"lẻ\")",
+        "highlighted_code": "<span class='highlight-red'>n = int(input())\nif n % 2 == 0:\n    print(&#34;chẵn&#34;)\nelse:\n    print(&#34;</span>lẻ&#34;)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3e1577243251374477565/4619643a0f2348b6b74a746a/sub_1762272638567_faje9hm6o.py",
+        "similarity_percent": 100.0,
+        "full_code": "n = int(input())\nif n % 2 == 0:\n    print(\"Chẵn\")\nelse:\n    print(\"Lẻ\")",
+        "highlighted_code": "<span class='highlight-green'>n = int(input())\nif n % 2 == 0:\n    print(&#34;Chẵn&#34;)\nelse:\n    print(&#34;</span>Lẻ&#34;)"
+      },
+      "token_overlap": 45,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 33,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3e1577243251374477565/4619643a0f2348b6b74a746a/sub_1762196236049_kobdy3s6c.py",
+        "similarity_percent": 100.0,
+        "full_code": "n = int(input())\nif n % 2 == 0:\n    print(\"chẵn\")\nelse:\n    print(\"lẻ\")",
+        "highlighted_code": "<span class='highlight-red'>n = int(input())\nif n % 2 == 0:\n    print(&#34;chẵn&#34;)\nelse:\n    print(&#34;</span>lẻ&#34;)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3e1577243251374477565/51bbd72f42174843b97698b4/sub_1761640806784_sms55so1d.py",
+        "similarity_percent": 100.0,
+        "full_code": "n = int(input())\nif n % 2 == 0:\n    print(\"Chẵn\")\nelse:\n    print(\"Lẻ\")",
+        "highlighted_code": "<span class='highlight-green'>n = int(input())\nif n % 2 == 0:\n    print(&#34;Chẵn&#34;)\nelse:\n    print(&#34;</span>Lẻ&#34;)"
+      },
+      "token_overlap": 45,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 34,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3e1577243251374477565/4619643a0f2348b6b74a746a/sub_1762196236049_kobdy3s6c.py",
+        "similarity_percent": 100.0,
+        "full_code": "n = int(input())\nif n % 2 == 0:\n    print(\"chẵn\")\nelse:\n    print(\"lẻ\")",
+        "highlighted_code": "<span class='highlight-red'>n = int(input())\nif n % 2 == 0:\n    print(&#34;chẵn&#34;)\nelse:\n    print(&#34;</span>lẻ&#34;)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3e1577243251374477565/26894d2babd64210ad6beba1/sub_1762310968436_2qeeauiw6.py",
+        "similarity_percent": 100.0,
+        "full_code": "n = int(input())\nif n % 2 == 0:\n    print(\"Chẵn\")\nelse:\n    print(\"Lẻ\")",
+        "highlighted_code": "<span class='highlight-green'>n = int(input())\nif n % 2 == 0:\n    print(&#34;Chẵn&#34;)\nelse:\n    print(&#34;</span>Lẻ&#34;)"
+      },
+      "token_overlap": 45,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 35,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3e1577243251374477565/4619643a0f2348b6b74a746a/sub_1762196236049_kobdy3s6c.py",
+        "similarity_percent": 100.0,
+        "full_code": "n = int(input())\nif n % 2 == 0:\n    print(\"chẵn\")\nelse:\n    print(\"lẻ\")",
+        "highlighted_code": "<span class='highlight-red'>n = int(input())\nif n % 2 == 0:\n    print(&#34;chẵn&#34;)\nelse:\n    print(&#34;</span>lẻ&#34;)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3e1577243251374477565/16e46f0143f645b5968397c4/sub_1762697311125_ssuish8jk.py",
+        "similarity_percent": 100.0,
+        "full_code": "n=int(input())\nif n%2==0:\n    print(\"Chẵn\")\nelse:\n    print(\"Lẻ\")",
+        "highlighted_code": "<span class='highlight-green'>n=int(input())\nif n%2==0:\n    print(&#34;Chẵn&#34;)\nelse:\n    print(&#34;</span>Lẻ&#34;)"
+      },
+      "token_overlap": 45,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 36,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3e1577243251374477565/4619643a0f2348b6b74a746a/sub_1762272522823_xopqdaskx.py",
+        "similarity_percent": 100.0,
+        "full_code": "n = int(input())\nif n % 2 == 0:\n    print(\"Chẵn\")\nelse:\n    print(\"Lẻ\")",
+        "highlighted_code": "<span class='highlight-red'>n = int(input())\nif n % 2 == 0:\n    print(&#34;Chẵn&#34;)\nelse:\n    print(&#34;</span>Lẻ&#34;)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3e1577243251374477565/4619643a0f2348b6b74a746a/sub_1762272638567_faje9hm6o.py",
+        "similarity_percent": 100.0,
+        "full_code": "n = int(input())\nif n % 2 == 0:\n    print(\"Chẵn\")\nelse:\n    print(\"Lẻ\")",
+        "highlighted_code": "<span class='highlight-green'>n = int(input())\nif n % 2 == 0:\n    print(&#34;Chẵn&#34;)\nelse:\n    print(&#34;</span>Lẻ&#34;)"
+      },
+      "token_overlap": 45,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 37,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3e1577243251374477565/4619643a0f2348b6b74a746a/sub_1762272522823_xopqdaskx.py",
+        "similarity_percent": 100.0,
+        "full_code": "n = int(input())\nif n % 2 == 0:\n    print(\"Chẵn\")\nelse:\n    print(\"Lẻ\")",
+        "highlighted_code": "<span class='highlight-red'>n = int(input())\nif n % 2 == 0:\n    print(&#34;Chẵn&#34;)\nelse:\n    print(&#34;</span>Lẻ&#34;)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3e1577243251374477565/51bbd72f42174843b97698b4/sub_1761640806784_sms55so1d.py",
+        "similarity_percent": 100.0,
+        "full_code": "n = int(input())\nif n % 2 == 0:\n    print(\"Chẵn\")\nelse:\n    print(\"Lẻ\")",
+        "highlighted_code": "<span class='highlight-green'>n = int(input())\nif n % 2 == 0:\n    print(&#34;Chẵn&#34;)\nelse:\n    print(&#34;</span>Lẻ&#34;)"
+      },
+      "token_overlap": 45,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 38,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3e1577243251374477565/4619643a0f2348b6b74a746a/sub_1762272522823_xopqdaskx.py",
+        "similarity_percent": 100.0,
+        "full_code": "n = int(input())\nif n % 2 == 0:\n    print(\"Chẵn\")\nelse:\n    print(\"Lẻ\")",
+        "highlighted_code": "<span class='highlight-red'>n = int(input())\nif n % 2 == 0:\n    print(&#34;Chẵn&#34;)\nelse:\n    print(&#34;</span>Lẻ&#34;)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3e1577243251374477565/26894d2babd64210ad6beba1/sub_1762310968436_2qeeauiw6.py",
+        "similarity_percent": 100.0,
+        "full_code": "n = int(input())\nif n % 2 == 0:\n    print(\"Chẵn\")\nelse:\n    print(\"Lẻ\")",
+        "highlighted_code": "<span class='highlight-green'>n = int(input())\nif n % 2 == 0:\n    print(&#34;Chẵn&#34;)\nelse:\n    print(&#34;</span>Lẻ&#34;)"
+      },
+      "token_overlap": 45,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 39,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3e1577243251374477565/4619643a0f2348b6b74a746a/sub_1762272522823_xopqdaskx.py",
+        "similarity_percent": 100.0,
+        "full_code": "n = int(input())\nif n % 2 == 0:\n    print(\"Chẵn\")\nelse:\n    print(\"Lẻ\")",
+        "highlighted_code": "<span class='highlight-red'>n = int(input())\nif n % 2 == 0:\n    print(&#34;Chẵn&#34;)\nelse:\n    print(&#34;</span>Lẻ&#34;)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3e1577243251374477565/16e46f0143f645b5968397c4/sub_1762697311125_ssuish8jk.py",
+        "similarity_percent": 100.0,
+        "full_code": "n=int(input())\nif n%2==0:\n    print(\"Chẵn\")\nelse:\n    print(\"Lẻ\")",
+        "highlighted_code": "<span class='highlight-green'>n=int(input())\nif n%2==0:\n    print(&#34;Chẵn&#34;)\nelse:\n    print(&#34;</span>Lẻ&#34;)"
+      },
+      "token_overlap": 45,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 40,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3e1577243251374477565/4619643a0f2348b6b74a746a/sub_1762272638567_faje9hm6o.py",
+        "similarity_percent": 100.0,
+        "full_code": "n = int(input())\nif n % 2 == 0:\n    print(\"Chẵn\")\nelse:\n    print(\"Lẻ\")",
+        "highlighted_code": "<span class='highlight-red'>n = int(input())\nif n % 2 == 0:\n    print(&#34;Chẵn&#34;)\nelse:\n    print(&#34;</span>Lẻ&#34;)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3e1577243251374477565/51bbd72f42174843b97698b4/sub_1761640806784_sms55so1d.py",
+        "similarity_percent": 100.0,
+        "full_code": "n = int(input())\nif n % 2 == 0:\n    print(\"Chẵn\")\nelse:\n    print(\"Lẻ\")",
+        "highlighted_code": "<span class='highlight-green'>n = int(input())\nif n % 2 == 0:\n    print(&#34;Chẵn&#34;)\nelse:\n    print(&#34;</span>Lẻ&#34;)"
+      },
+      "token_overlap": 45,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 41,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3e1577243251374477565/4619643a0f2348b6b74a746a/sub_1762272638567_faje9hm6o.py",
+        "similarity_percent": 100.0,
+        "full_code": "n = int(input())\nif n % 2 == 0:\n    print(\"Chẵn\")\nelse:\n    print(\"Lẻ\")",
+        "highlighted_code": "<span class='highlight-red'>n = int(input())\nif n % 2 == 0:\n    print(&#34;Chẵn&#34;)\nelse:\n    print(&#34;</span>Lẻ&#34;)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3e1577243251374477565/26894d2babd64210ad6beba1/sub_1762310968436_2qeeauiw6.py",
+        "similarity_percent": 100.0,
+        "full_code": "n = int(input())\nif n % 2 == 0:\n    print(\"Chẵn\")\nelse:\n    print(\"Lẻ\")",
+        "highlighted_code": "<span class='highlight-green'>n = int(input())\nif n % 2 == 0:\n    print(&#34;Chẵn&#34;)\nelse:\n    print(&#34;</span>Lẻ&#34;)"
+      },
+      "token_overlap": 45,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 42,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3e1577243251374477565/4619643a0f2348b6b74a746a/sub_1762272638567_faje9hm6o.py",
+        "similarity_percent": 100.0,
+        "full_code": "n = int(input())\nif n % 2 == 0:\n    print(\"Chẵn\")\nelse:\n    print(\"Lẻ\")",
+        "highlighted_code": "<span class='highlight-red'>n = int(input())\nif n % 2 == 0:\n    print(&#34;Chẵn&#34;)\nelse:\n    print(&#34;</span>Lẻ&#34;)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3e1577243251374477565/16e46f0143f645b5968397c4/sub_1762697311125_ssuish8jk.py",
+        "similarity_percent": 100.0,
+        "full_code": "n=int(input())\nif n%2==0:\n    print(\"Chẵn\")\nelse:\n    print(\"Lẻ\")",
+        "highlighted_code": "<span class='highlight-green'>n=int(input())\nif n%2==0:\n    print(&#34;Chẵn&#34;)\nelse:\n    print(&#34;</span>Lẻ&#34;)"
+      },
+      "token_overlap": 45,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 43,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3e1577243251374477565/51bbd72f42174843b97698b4/sub_1761640806784_sms55so1d.py",
+        "similarity_percent": 100.0,
+        "full_code": "n = int(input())\nif n % 2 == 0:\n    print(\"Chẵn\")\nelse:\n    print(\"Lẻ\")",
+        "highlighted_code": "<span class='highlight-red'>n = int(input())\nif n % 2 == 0:\n    print(&#34;Chẵn&#34;)\nelse:\n    print(&#34;</span>Lẻ&#34;)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3e1577243251374477565/26894d2babd64210ad6beba1/sub_1762310968436_2qeeauiw6.py",
+        "similarity_percent": 100.0,
+        "full_code": "n = int(input())\nif n % 2 == 0:\n    print(\"Chẵn\")\nelse:\n    print(\"Lẻ\")",
+        "highlighted_code": "<span class='highlight-green'>n = int(input())\nif n % 2 == 0:\n    print(&#34;Chẵn&#34;)\nelse:\n    print(&#34;</span>Lẻ&#34;)"
+      },
+      "token_overlap": 45,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 44,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3e1577243251374477565/51bbd72f42174843b97698b4/sub_1761640806784_sms55so1d.py",
+        "similarity_percent": 100.0,
+        "full_code": "n = int(input())\nif n % 2 == 0:\n    print(\"Chẵn\")\nelse:\n    print(\"Lẻ\")",
+        "highlighted_code": "<span class='highlight-red'>n = int(input())\nif n % 2 == 0:\n    print(&#34;Chẵn&#34;)\nelse:\n    print(&#34;</span>Lẻ&#34;)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3e1577243251374477565/16e46f0143f645b5968397c4/sub_1762697311125_ssuish8jk.py",
+        "similarity_percent": 100.0,
+        "full_code": "n=int(input())\nif n%2==0:\n    print(\"Chẵn\")\nelse:\n    print(\"Lẻ\")",
+        "highlighted_code": "<span class='highlight-green'>n=int(input())\nif n%2==0:\n    print(&#34;Chẵn&#34;)\nelse:\n    print(&#34;</span>Lẻ&#34;)"
+      },
+      "token_overlap": 45,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 45,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3e1577243251374477565/26894d2babd64210ad6beba1/sub_1762310968436_2qeeauiw6.py",
+        "similarity_percent": 100.0,
+        "full_code": "n = int(input())\nif n % 2 == 0:\n    print(\"Chẵn\")\nelse:\n    print(\"Lẻ\")",
+        "highlighted_code": "<span class='highlight-red'>n = int(input())\nif n % 2 == 0:\n    print(&#34;Chẵn&#34;)\nelse:\n    print(&#34;</span>Lẻ&#34;)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3e1577243251374477565/16e46f0143f645b5968397c4/sub_1762697311125_ssuish8jk.py",
+        "similarity_percent": 100.0,
+        "full_code": "n=int(input())\nif n%2==0:\n    print(\"Chẵn\")\nelse:\n    print(\"Lẻ\")",
+        "highlighted_code": "<span class='highlight-green'>n=int(input())\nif n%2==0:\n    print(&#34;Chẵn&#34;)\nelse:\n    print(&#34;</span>Lẻ&#34;)"
+      },
+      "token_overlap": 45,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 46,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3e1577243251374477565/780627ccd0224069b68e3b8d/sub_1762190227414_mek3tyw43.py",
+        "similarity_percent": 54.72,
+        "full_code": "n = int(input())\na = abs(n)\nif a % 2 == 0:\n    print('Chẵn')\nelse:\n    print('Lẻ')",
+        "highlighted_code": "n = int(input())\na = abs(n)\nif <span class='highlight-red'>a % 2 == 0:\n    print(&#39;Chẵn&#39;)\nelse:\n    print(&#39;</span>Lẻ&#39;)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3e1577243251374477565/4619643a0f2348b6b74a746a/sub_1762196267071_0kidcso33.py",
+        "similarity_percent": 64.44,
+        "full_code": "n = int(input())\nif n % 2 == 0:\n    print(\"chẵn\")\nelse:\n    print(\"lẻ\")",
+        "highlighted_code": "n = int(input())\nif <span class='highlight-green'>n % 2 == 0:\n    print(&#34;chẵn&#34;)\nelse:\n    print(&#34;</span>lẻ&#34;)"
+      },
+      "token_overlap": 29,
+      "max_similarity_percent": 64.44
+    },
+    {
+      "case_id": 47,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3e1577243251374477565/780627ccd0224069b68e3b8d/sub_1762190227414_mek3tyw43.py",
+        "similarity_percent": 54.72,
+        "full_code": "n = int(input())\na = abs(n)\nif a % 2 == 0:\n    print('Chẵn')\nelse:\n    print('Lẻ')",
+        "highlighted_code": "n = int(input())\na = abs(n)\nif <span class='highlight-red'>a % 2 == 0:\n    print(&#39;Chẵn&#39;)\nelse:\n    print(&#39;</span>Lẻ&#39;)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3e1577243251374477565/462e338df279467b92058b3f/sub_1762267766943_6uwhuxj0f.py",
+        "similarity_percent": 64.44,
+        "full_code": "n = int(input())\nif n % 2 == 0:\n    print(\"Chẵn\")\nelse:\n    print(\"Lẻ\")",
+        "highlighted_code": "n = int(input())\nif <span class='highlight-green'>n % 2 == 0:\n    print(&#34;Chẵn&#34;)\nelse:\n    print(&#34;</span>Lẻ&#34;)"
+      },
+      "token_overlap": 29,
+      "max_similarity_percent": 64.44
+    },
+    {
+      "case_id": 48,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3e1577243251374477565/780627ccd0224069b68e3b8d/sub_1762190227414_mek3tyw43.py",
+        "similarity_percent": 54.72,
+        "full_code": "n = int(input())\na = abs(n)\nif a % 2 == 0:\n    print('Chẵn')\nelse:\n    print('Lẻ')",
+        "highlighted_code": "n = int(input())\na = abs(n)\nif <span class='highlight-red'>a % 2 == 0:\n    print(&#39;Chẵn&#39;)\nelse:\n    print(&#39;</span>Lẻ&#39;)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3e1577243251374477565/51bbd72f42174843b97698b4/sub_1761640668956_vq30doadm.py",
+        "similarity_percent": 64.44,
+        "full_code": "n = int(input())\nif n % 2 == 0:\n    print(\"Chẵn\")\nelse:\n    print(\"Lẻ\")",
+        "highlighted_code": "n = int(input())\nif <span class='highlight-green'>n % 2 == 0:\n    print(&#34;Chẵn&#34;)\nelse:\n    print(&#34;</span>Lẻ&#34;)"
+      },
+      "token_overlap": 29,
+      "max_similarity_percent": 64.44
+    },
+    {
+      "case_id": 49,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3e1577243251374477565/780627ccd0224069b68e3b8d/sub_1762190227414_mek3tyw43.py",
+        "similarity_percent": 54.72,
+        "full_code": "n = int(input())\na = abs(n)\nif a % 2 == 0:\n    print('Chẵn')\nelse:\n    print('Lẻ')",
+        "highlighted_code": "n = int(input())\na = abs(n)\nif <span class='highlight-red'>a % 2 == 0:\n    print(&#39;Chẵn&#39;)\nelse:\n    print(&#39;</span>Lẻ&#39;)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3e1577243251374477565/26894d2babd64210ad6beba1/sub_1762310763093_z0j6b056o.py",
+        "similarity_percent": 64.44,
+        "full_code": "n = int(input())\nif n % 2 == 0:\n    print(\"Chẵn\")\nelse:\n    print(\"Lẻ\")",
+        "highlighted_code": "n = int(input())\nif <span class='highlight-green'>n % 2 == 0:\n    print(&#34;Chẵn&#34;)\nelse:\n    print(&#34;</span>Lẻ&#34;)"
+      },
+      "token_overlap": 29,
+      "max_similarity_percent": 64.44
+    },
+    {
+      "case_id": 50,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3e1577243251374477565/780627ccd0224069b68e3b8d/sub_1762190227414_mek3tyw43.py",
+        "similarity_percent": 54.72,
+        "full_code": "n = int(input())\na = abs(n)\nif a % 2 == 0:\n    print('Chẵn')\nelse:\n    print('Lẻ')",
+        "highlighted_code": "n = int(input())\na = abs(n)\nif <span class='highlight-red'>a % 2 == 0:\n    print(&#39;Chẵn&#39;)\nelse:\n    print(&#39;</span>Lẻ&#39;)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3e1577243251374477565/4619643a0f2348b6b74a746a/sub_1762196236049_kobdy3s6c.py",
+        "similarity_percent": 64.44,
+        "full_code": "n = int(input())\nif n % 2 == 0:\n    print(\"chẵn\")\nelse:\n    print(\"lẻ\")",
+        "highlighted_code": "n = int(input())\nif <span class='highlight-green'>n % 2 == 0:\n    print(&#34;chẵn&#34;)\nelse:\n    print(&#34;</span>lẻ&#34;)"
+      },
+      "token_overlap": 29,
+      "max_similarity_percent": 64.44
+    },
+    {
+      "case_id": 51,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3e1577243251374477565/780627ccd0224069b68e3b8d/sub_1762190227414_mek3tyw43.py",
+        "similarity_percent": 54.72,
+        "full_code": "n = int(input())\na = abs(n)\nif a % 2 == 0:\n    print('Chẵn')\nelse:\n    print('Lẻ')",
+        "highlighted_code": "n = int(input())\na = abs(n)\nif <span class='highlight-red'>a % 2 == 0:\n    print(&#39;Chẵn&#39;)\nelse:\n    print(&#39;</span>Lẻ&#39;)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3e1577243251374477565/4619643a0f2348b6b74a746a/sub_1762272522823_xopqdaskx.py",
+        "similarity_percent": 64.44,
+        "full_code": "n = int(input())\nif n % 2 == 0:\n    print(\"Chẵn\")\nelse:\n    print(\"Lẻ\")",
+        "highlighted_code": "n = int(input())\nif <span class='highlight-green'>n % 2 == 0:\n    print(&#34;Chẵn&#34;)\nelse:\n    print(&#34;</span>Lẻ&#34;)"
+      },
+      "token_overlap": 29,
+      "max_similarity_percent": 64.44
+    },
+    {
+      "case_id": 52,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3e1577243251374477565/780627ccd0224069b68e3b8d/sub_1762190227414_mek3tyw43.py",
+        "similarity_percent": 54.72,
+        "full_code": "n = int(input())\na = abs(n)\nif a % 2 == 0:\n    print('Chẵn')\nelse:\n    print('Lẻ')",
+        "highlighted_code": "n = int(input())\na = abs(n)\nif <span class='highlight-red'>a % 2 == 0:\n    print(&#39;Chẵn&#39;)\nelse:\n    print(&#39;</span>Lẻ&#39;)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3e1577243251374477565/4619643a0f2348b6b74a746a/sub_1762272638567_faje9hm6o.py",
+        "similarity_percent": 64.44,
+        "full_code": "n = int(input())\nif n % 2 == 0:\n    print(\"Chẵn\")\nelse:\n    print(\"Lẻ\")",
+        "highlighted_code": "n = int(input())\nif <span class='highlight-green'>n % 2 == 0:\n    print(&#34;Chẵn&#34;)\nelse:\n    print(&#34;</span>Lẻ&#34;)"
+      },
+      "token_overlap": 29,
+      "max_similarity_percent": 64.44
+    },
+    {
+      "case_id": 53,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3e1577243251374477565/780627ccd0224069b68e3b8d/sub_1762190227414_mek3tyw43.py",
+        "similarity_percent": 54.72,
+        "full_code": "n = int(input())\na = abs(n)\nif a % 2 == 0:\n    print('Chẵn')\nelse:\n    print('Lẻ')",
+        "highlighted_code": "n = int(input())\na = abs(n)\nif <span class='highlight-red'>a % 2 == 0:\n    print(&#39;Chẵn&#39;)\nelse:\n    print(&#39;</span>Lẻ&#39;)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3e1577243251374477565/51bbd72f42174843b97698b4/sub_1761640806784_sms55so1d.py",
+        "similarity_percent": 64.44,
+        "full_code": "n = int(input())\nif n % 2 == 0:\n    print(\"Chẵn\")\nelse:\n    print(\"Lẻ\")",
+        "highlighted_code": "n = int(input())\nif <span class='highlight-green'>n % 2 == 0:\n    print(&#34;Chẵn&#34;)\nelse:\n    print(&#34;</span>Lẻ&#34;)"
+      },
+      "token_overlap": 29,
+      "max_similarity_percent": 64.44
+    },
+    {
+      "case_id": 54,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3e1577243251374477565/780627ccd0224069b68e3b8d/sub_1762190227414_mek3tyw43.py",
+        "similarity_percent": 54.72,
+        "full_code": "n = int(input())\na = abs(n)\nif a % 2 == 0:\n    print('Chẵn')\nelse:\n    print('Lẻ')",
+        "highlighted_code": "n = int(input())\na = abs(n)\nif <span class='highlight-red'>a % 2 == 0:\n    print(&#39;Chẵn&#39;)\nelse:\n    print(&#39;</span>Lẻ&#39;)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3e1577243251374477565/26894d2babd64210ad6beba1/sub_1762310968436_2qeeauiw6.py",
+        "similarity_percent": 64.44,
+        "full_code": "n = int(input())\nif n % 2 == 0:\n    print(\"Chẵn\")\nelse:\n    print(\"Lẻ\")",
+        "highlighted_code": "n = int(input())\nif <span class='highlight-green'>n % 2 == 0:\n    print(&#34;Chẵn&#34;)\nelse:\n    print(&#34;</span>Lẻ&#34;)"
+      },
+      "token_overlap": 29,
+      "max_similarity_percent": 64.44
+    },
+    {
+      "case_id": 55,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3e1577243251374477565/780627ccd0224069b68e3b8d/sub_1762190227414_mek3tyw43.py",
+        "similarity_percent": 54.72,
+        "full_code": "n = int(input())\na = abs(n)\nif a % 2 == 0:\n    print('Chẵn')\nelse:\n    print('Lẻ')",
+        "highlighted_code": "n = int(input())\na = abs(n)\nif <span class='highlight-red'>a % 2 == 0:\n    print(&#39;Chẵn&#39;)\nelse:\n    print(&#39;</span>Lẻ&#39;)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3e1577243251374477565/16e46f0143f645b5968397c4/sub_1762697311125_ssuish8jk.py",
+        "similarity_percent": 64.44,
+        "full_code": "n=int(input())\nif n%2==0:\n    print(\"Chẵn\")\nelse:\n    print(\"Lẻ\")",
+        "highlighted_code": "n=int(input())\nif <span class='highlight-green'>n%2==0:\n    print(&#34;Chẵn&#34;)\nelse:\n    print(&#34;</span>Lẻ&#34;)"
+      },
+      "token_overlap": 29,
+      "max_similarity_percent": 64.44
+    }
+  ]
+}

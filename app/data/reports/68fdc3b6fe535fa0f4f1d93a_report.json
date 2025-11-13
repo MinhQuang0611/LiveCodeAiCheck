@@ -4,7 +4,161 @@
     "min_token_overlap": 80,
     "min_similarity_percent": 60
   },
-  "total_cases_found": 0,
-  "total_cases_filtered": 0,
-  "cases": []
+  "total_cases_found": 9,
+  "total_cases_filtered": 9,
+  "cases": [
+    {
+      "case_id": 1,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b6fe535fa0f4f1d93a/8e19101eb0da4e9a92a17098/sub_1762362751957_dnsy3i890.py",
+        "similarity_percent": 100.0,
+        "full_code": "n = int(input())\nmt = [list(map(int, input().split())) for i in range(n)]\np = int(input())\ntren = 0\nduoi = 0\nfor i in range(n):\n    for j in range(n):\n        if i + j < n - 1:\n            tren += mt[i][j]\n        elif i + j > n - 1:\n            duoi += mt[i][j]\nans = abs(tren - duoi)\nif ans <= p:\n    print(\"YES\")\nelse:\n    print(\"NO\")\nprint(ans)\n",
+        "highlighted_code": "<span class='highlight-red'>n = int(input())\nmt = [list(map(int, input().split())) for i in range(n)]\np = int(input())\ntren = 0\nduoi = 0\nfor i in range(n):\n    for j in range(n):\n        if i + j &lt; n - 1:\n            tren += mt[i][j]\n        elif i + j &gt; n - 1:\n            duoi += mt[i][j]\nans = abs(tren - duoi)\nif ans &lt;= p:\n    print(&#34;YES&#34;)\nelse:\n    print(&#34;NO&#34;)\nprin</span>t(ans)\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b6fe535fa0f4f1d93a/345569c455a14db085eec8e9/sub_1762485744101_yortcdb0s.py",
+        "similarity_percent": 100.0,
+        "full_code": "n = int(input())\na =[list(map(int,input().split())) for _ in range(n)]\np = int(input())\ntong1 = 0\ntong2 = 0\nfor i in range(n):\n    for j in range(n):\n        if i +j < n-1:\n            tong1 += a[i][j]\n        elif i+j > n-1:\n            tong2 +=a[i][j]\nc  = abs(tong2-tong1)\nif c <= p:\n    print('YES')\nelse:\n    print('NO')  \nprint(c)    \n",
+        "highlighted_code": "<span class='highlight-green'>n = int(input())\na =[list(map(int,input().split())) for _ in range(n)]\np = int(input())\ntong1 = 0\ntong2 = 0\nfor i in range(n):\n    for j in range(n):\n        if i +j &lt; n-1:\n            tong1 += a[i][j]\n        elif i+j &gt; n-1:\n            tong2 +=a[i][j]\nc  = abs(tong2-tong1)\nif c &lt;= p:\n    print(&#39;YES&#39;)\nelse:\n    print(&#39;NO&#39;)  \nprin</span>t(c)    \n"
+      },
+      "token_overlap": 196,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 2,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b6fe535fa0f4f1d93a/73e9e151d2dc4d53a8e6793d/sub_1762278204909_n0ifjwiob.py",
+        "similarity_percent": 81.63,
+        "full_code": "n = int(input())\nA_matrix = [list(map(int, input().split())) for _ in range(n)]\np = int(input())\n\nsum_upper = 0\nsum_lower = 0\nfor i in range(n):\n    for j in range(n):\n        if j < n - 1 - i:\n            sum_upper += A_matrix[i][j]\n        elif j > n - 1 - i:\n            sum_lower += A_matrix[i][j]\n\ndifference = abs(sum_upper - sum_lower)\n\nif difference <= p:\n    print(\"YES\")\nelse:\n    print(\"NO\")\nprint(difference)",
+        "highlighted_code": "<span class='highlight-red'>n = int(input())\nA_matrix = [list(map(int, input().split())) for _ in range(n)]\np = int(input())\n\nsum_upper = 0\nsum_lower = 0\nfor i in range(n):\n    for j in range(n)</span>:\n        if j &lt; n - 1 - i:\n            sum_upper += A_matrix[i][j]\n        elif j &gt; n - 1 - i:\n            sum_lower += <span class='highlight-red'>A_matrix[i][j]\n\ndifference = abs(sum_upper - sum_lower)\n\nif difference &lt;= p:\n    print(&#34;YES&#34;)\nelse:\n    print(&#34;NO&#34;)\nprin</span>t(difference)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b6fe535fa0f4f1d93a/8e19101eb0da4e9a92a17098/sub_1762362751957_dnsy3i890.py",
+        "similarity_percent": 81.63,
+        "full_code": "n = int(input())\nmt = [list(map(int, input().split())) for i in range(n)]\np = int(input())\ntren = 0\nduoi = 0\nfor i in range(n):\n    for j in range(n):\n        if i + j < n - 1:\n            tren += mt[i][j]\n        elif i + j > n - 1:\n            duoi += mt[i][j]\nans = abs(tren - duoi)\nif ans <= p:\n    print(\"YES\")\nelse:\n    print(\"NO\")\nprint(ans)\n",
+        "highlighted_code": "<span class='highlight-green'>n = int(input())\nmt = [list(map(int, input().split())) for i in range(n)]\np = int(input())\ntren = 0\nduoi = 0\nfor i in range(n):\n    for j in range(n)</span>:\n        if i + j &lt; n - 1:\n            tren += mt[i][j]\n        elif i + j &gt; n - 1:\n            duoi += <span class='highlight-green'>mt[i][j]\nans = abs(tren - duoi)\nif ans &lt;= p:\n    print(&#34;YES&#34;)\nelse:\n    print(&#34;NO&#34;)\nprin</span>t(ans)\n"
+      },
+      "token_overlap": 160,
+      "max_similarity_percent": 81.63
+    },
+    {
+      "case_id": 3,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b6fe535fa0f4f1d93a/73e9e151d2dc4d53a8e6793d/sub_1762278204909_n0ifjwiob.py",
+        "similarity_percent": 81.63,
+        "full_code": "n = int(input())\nA_matrix = [list(map(int, input().split())) for _ in range(n)]\np = int(input())\n\nsum_upper = 0\nsum_lower = 0\nfor i in range(n):\n    for j in range(n):\n        if j < n - 1 - i:\n            sum_upper += A_matrix[i][j]\n        elif j > n - 1 - i:\n            sum_lower += A_matrix[i][j]\n\ndifference = abs(sum_upper - sum_lower)\n\nif difference <= p:\n    print(\"YES\")\nelse:\n    print(\"NO\")\nprint(difference)",
+        "highlighted_code": "<span class='highlight-red'>n = int(input())\nA_matrix = [list(map(int, input().split())) for _ in range(n)]\np = int(input())\n\nsum_upper = 0\nsum_lower = 0\nfor i in range(n):\n    for j in range(n)</span>:\n        if j &lt; n - 1 - i:\n            sum_upper += A_matrix[i][j]\n        elif j &gt; n - 1 - i:\n            sum_lower += <span class='highlight-red'>A_matrix[i][j]\n\ndifference = abs(sum_upper - sum_lower)\n\nif difference &lt;= p:\n    print(&#34;YES&#34;)\nelse:\n    print(&#34;NO&#34;)\nprin</span>t(difference)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b6fe535fa0f4f1d93a/345569c455a14db085eec8e9/sub_1762485744101_yortcdb0s.py",
+        "similarity_percent": 81.63,
+        "full_code": "n = int(input())\na =[list(map(int,input().split())) for _ in range(n)]\np = int(input())\ntong1 = 0\ntong2 = 0\nfor i in range(n):\n    for j in range(n):\n        if i +j < n-1:\n            tong1 += a[i][j]\n        elif i+j > n-1:\n            tong2 +=a[i][j]\nc  = abs(tong2-tong1)\nif c <= p:\n    print('YES')\nelse:\n    print('NO')  \nprint(c)    \n",
+        "highlighted_code": "<span class='highlight-green'>n = int(input())\na =[list(map(int,input().split())) for _ in range(n)]\np = int(input())\ntong1 = 0\ntong2 = 0\nfor i in range(n):\n    for j in range(n)</span>:\n        if i +j &lt; n-1:\n            tong1 += a[i][j]\n        elif i+j &gt; n-1:\n            tong2 +=<span class='highlight-green'>a[i][j]\nc  = abs(tong2-tong1)\nif c &lt;= p:\n    print(&#39;YES&#39;)\nelse:\n    print(&#39;NO&#39;)  \nprin</span>t(c)    \n"
+      },
+      "token_overlap": 160,
+      "max_similarity_percent": 81.63
+    },
+    {
+      "case_id": 4,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b6fe535fa0f4f1d93a/73e9e151d2dc4d53a8e6793d/sub_1762278204909_n0ifjwiob.py",
+        "similarity_percent": 70.41,
+        "full_code": "n = int(input())\nA_matrix = [list(map(int, input().split())) for _ in range(n)]\np = int(input())\n\nsum_upper = 0\nsum_lower = 0\nfor i in range(n):\n    for j in range(n):\n        if j < n - 1 - i:\n            sum_upper += A_matrix[i][j]\n        elif j > n - 1 - i:\n            sum_lower += A_matrix[i][j]\n\ndifference = abs(sum_upper - sum_lower)\n\nif difference <= p:\n    print(\"YES\")\nelse:\n    print(\"NO\")\nprint(difference)",
+        "highlighted_code": "n = int(input())\nA_matrix = [list(map(int, input().split())) for _ in range(n)]\n<span class='highlight-red'>p = int(input())\n\nsum_upper = 0\nsum_lower = 0\nfor i in range(n):\n    for j in range(n):\n        if j &lt; n - 1 - i:\n            sum_upper += A_matrix[i][j]\n        elif j &gt; n - 1 - i:\n            sum_lower += A_matrix[i][j]\n\ndifference = abs(sum_upper - sum_lower)\n\nif difference &lt;= p:\n    print(&#34;YES&#34;)\nelse:\n    print(&#34;NO&#34;)\nprin</span>t(difference)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b6fe535fa0f4f1d93a/156dcfb40c18421d9b64651c/sub_1762533063667_12v124yej.py",
+        "similarity_percent": 67.32,
+        "full_code": "n = int(input())\na = []\nfor i in range(n):\n    row = list(map(int, input().split()))\n    a.append(row)\np = int(input())\n\ns1 = 0\ns2 = 0\n\nfor i in range(n):\n    for j in range(n):\n        if j < n - 1 - i:\n            s1 += a[i][j]\n        elif j > n - 1 - i:\n            s2 += a[i][j]\n\ndiff = abs(s1 - s2)\n\nif diff <= p:\n    print(\"YES\")\nelse:\n    print(\"NO\")\nprint(diff)",
+        "highlighted_code": "n = int(input())\na = []\nfor i in range(n):\n    row = list(map(int, input().split()))\n    a.append(row)\n<span class='highlight-green'>p = int(input())\n\ns1 = 0\ns2 = 0\n\nfor i in range(n):\n    for j in range(n):\n        if j &lt; n - 1 - i:\n            s1 += a[i][j]\n        elif j &gt; n - 1 - i:\n            s2 += a[i][j]\n\ndiff = abs(s1 - s2)\n\nif diff &lt;= p:\n    print(&#34;YES&#34;)\nelse:\n    print(&#34;NO&#34;)\nprin</span>t(diff)"
+      },
+      "token_overlap": 138,
+      "max_similarity_percent": 70.41
+    },
+    {
+      "case_id": 5,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b6fe535fa0f4f1d93a/113963c0a9df48538edf310d/sub_1762016699441_ji5o1kvme.py",
+        "similarity_percent": 53.97,
+        "full_code": "n = int(input())\nmatrix = [[int(i) for i in input().split()] for _ in range(n)]\np = int(input())\nsum_up = 0\nsum_down = 0\nfor i in range(n):\n    for j in range(n):\n        main_col = n-1-i\n        if j > main_col: sum_down += matrix[i][j]\n        elif j < main_col: sum_up += matrix[i][j]\ndiff = abs(sum_up - sum_down)\nprint(\"YES\" if diff <= p else \"NO\")\nprint(diff)\n\n",
+        "highlighted_code": "n = int(input())\nmatrix = [[int(i) for i in input().split()] for _ in range(n)<span class='highlight-red'>]\np = int(input())\nsum_up = 0\nsum_down = 0\nfor i in range(n):\n    for j in range(n)</span>:\n        main_col = n-1-i\n        if j &gt; main_col: sum_down += matrix[i][j]\n        elif j &lt; main_col<span class='highlight-red'>: sum_up += matrix[i][j]\ndiff = abs(sum_up - sum_down)\nprint(&#34;YES&#34; if diff &lt;= p else &#34;NO&#34;)\nprint(diff)</span>\n\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b6fe535fa0f4f1d93a/8e236cb825b041b0a82527f2/sub_1761485596579_04du61jik.py",
+        "similarity_percent": 49.04,
+        "full_code": "n = int(input())\nmatrix = [[0] * n] * n\n\nfor i in range(n):\n    matrix[i] = list(map(int, input().split()))[:n]\n\np = int(input())\n\nsa = 0\nsb = 0\n\nfor i in range(n):\n    for j in range(n):\n        if i + j < n - 1:\n            sa += matrix[i][j]\n        elif i + j > n - 1:\n            sb += matrix[i][j]\n\nd = abs(sa - sb)\nprint(\"YES\" if d <= p else \"NO\")\nprint(d)",
+        "highlighted_code": "n = int(input())\nmatrix = [[0] * n] * n\n\nfor i in range(n):\n    matrix[i] = list(map(int, input().split()))[:n<span class='highlight-green'>]\n\np = int(input())\n\nsa = 0\nsb = 0\n\nfor i in range(n):\n    for j in range(n)</span>:\n        if i + j &lt; n - 1:\n            sa += matrix[i][j]\n        elif i + j &gt; n - 1<span class='highlight-green'>:\n            sb += matrix[i][j]\n\nd = abs(sa - sb)\nprint(&#34;YES&#34; if d &lt;= p else &#34;NO&#34;)\nprint(d)</span>"
+      },
+      "token_overlap": 102,
+      "max_similarity_percent": 53.97
+    },
+    {
+      "case_id": 6,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b6fe535fa0f4f1d93a/8e19101eb0da4e9a92a17098/sub_1762362751957_dnsy3i890.py",
+        "similarity_percent": 52.04,
+        "full_code": "n = int(input())\nmt = [list(map(int, input().split())) for i in range(n)]\np = int(input())\ntren = 0\nduoi = 0\nfor i in range(n):\n    for j in range(n):\n        if i + j < n - 1:\n            tren += mt[i][j]\n        elif i + j > n - 1:\n            duoi += mt[i][j]\nans = abs(tren - duoi)\nif ans <= p:\n    print(\"YES\")\nelse:\n    print(\"NO\")\nprint(ans)\n",
+        "highlighted_code": "n = int(input())\nmt = [list(map(int, input().split())) for i in range(n)]\n<span class='highlight-red'>p = int(input())\ntren = 0\nduoi = 0\nfor i in range(n):\n    for j in range(n)</span>:\n        if i + j &lt; n - 1:\n            tren += mt[i][j]\n        elif i + j &gt; n - 1:\n            duoi += <span class='highlight-red'>mt[i][j]\nans = abs(tren - duoi)\nif ans &lt;= p:\n    print(&#34;YES&#34;)\nelse:\n    print(&#34;NO&#34;)\nprin</span>t(ans)\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b6fe535fa0f4f1d93a/156dcfb40c18421d9b64651c/sub_1762533063667_12v124yej.py",
+        "similarity_percent": 49.76,
+        "full_code": "n = int(input())\na = []\nfor i in range(n):\n    row = list(map(int, input().split()))\n    a.append(row)\np = int(input())\n\ns1 = 0\ns2 = 0\n\nfor i in range(n):\n    for j in range(n):\n        if j < n - 1 - i:\n            s1 += a[i][j]\n        elif j > n - 1 - i:\n            s2 += a[i][j]\n\ndiff = abs(s1 - s2)\n\nif diff <= p:\n    print(\"YES\")\nelse:\n    print(\"NO\")\nprint(diff)",
+        "highlighted_code": "n = int(input())\na = []\nfor i in range(n):\n    row = list(map(int, input().split()))\n    a.append(row)\n<span class='highlight-green'>p = int(input())\n\ns1 = 0\ns2 = 0\n\nfor i in range(n):\n    for j in range(n)</span>:\n        if j &lt; n - 1 - i:\n            s1 += a[i][j]\n        elif j &gt; n - 1 - i:\n            s2 += <span class='highlight-green'>a[i][j]\n\ndiff = abs(s1 - s2)\n\nif diff &lt;= p:\n    print(&#34;YES&#34;)\nelse:\n    print(&#34;NO&#34;)\nprin</span>t(diff)"
+      },
+      "token_overlap": 102,
+      "max_similarity_percent": 52.04
+    },
+    {
+      "case_id": 7,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b6fe535fa0f4f1d93a/8e19101eb0da4e9a92a17098/sub_1762362751957_dnsy3i890.py",
+        "similarity_percent": 50.51,
+        "full_code": "n = int(input())\nmt = [list(map(int, input().split())) for i in range(n)]\np = int(input())\ntren = 0\nduoi = 0\nfor i in range(n):\n    for j in range(n):\n        if i + j < n - 1:\n            tren += mt[i][j]\n        elif i + j > n - 1:\n            duoi += mt[i][j]\nans = abs(tren - duoi)\nif ans <= p:\n    print(\"YES\")\nelse:\n    print(\"NO\")\nprint(ans)\n",
+        "highlighted_code": "n = int(input())\nmt = [list(map(int, input().split())) for i in range(n)<span class='highlight-red'>]\np = int(input())\ntren = 0\nduoi = 0\nfor i in range(n):\n    for j in range(n):\n        if i + j &lt; n - 1:\n            tren += mt[i][j]\n        elif i + j &gt; n - 1:\n            duoi += mt[i][j]\nans = abs(</span>tren - duoi)\nif ans &lt;= p:\n    print(&#34;YES&#34;)\nelse:\n    print(&#34;NO&#34;)\nprint(ans)\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b6fe535fa0f4f1d93a/8e236cb825b041b0a82527f2/sub_1761485596579_04du61jik.py",
+        "similarity_percent": 47.6,
+        "full_code": "n = int(input())\nmatrix = [[0] * n] * n\n\nfor i in range(n):\n    matrix[i] = list(map(int, input().split()))[:n]\n\np = int(input())\n\nsa = 0\nsb = 0\n\nfor i in range(n):\n    for j in range(n):\n        if i + j < n - 1:\n            sa += matrix[i][j]\n        elif i + j > n - 1:\n            sb += matrix[i][j]\n\nd = abs(sa - sb)\nprint(\"YES\" if d <= p else \"NO\")\nprint(d)",
+        "highlighted_code": "n = int(input())\nmatrix = [[0] * n] * n\n\nfor i in range(n):\n    matrix[i] = list(map(int, input().split()))[:n<span class='highlight-green'>]\n\np = int(input())\n\nsa = 0\nsb = 0\n\nfor i in range(n):\n    for j in range(n):\n        if i + j &lt; n - 1:\n            sa += matrix[i][j]\n        elif i + j &gt; n - 1:\n            sb += matrix[i][j]\n\nd = abs(</span>sa - sb)\nprint(&#34;YES&#34; if d &lt;= p else &#34;NO&#34;)\nprint(d)"
+      },
+      "token_overlap": 99,
+      "max_similarity_percent": 50.51
+    },
+    {
+      "case_id": 8,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b6fe535fa0f4f1d93a/156dcfb40c18421d9b64651c/sub_1762533063667_12v124yej.py",
+        "similarity_percent": 49.76,
+        "full_code": "n = int(input())\na = []\nfor i in range(n):\n    row = list(map(int, input().split()))\n    a.append(row)\np = int(input())\n\ns1 = 0\ns2 = 0\n\nfor i in range(n):\n    for j in range(n):\n        if j < n - 1 - i:\n            s1 += a[i][j]\n        elif j > n - 1 - i:\n            s2 += a[i][j]\n\ndiff = abs(s1 - s2)\n\nif diff <= p:\n    print(\"YES\")\nelse:\n    print(\"NO\")\nprint(diff)",
+        "highlighted_code": "n = int(input())\na = []\nfor i in range(n):\n    row = list(map(int, input().split()))\n    a.append(row)\n<span class='highlight-red'>p = int(input())\n\ns1 = 0\ns2 = 0\n\nfor i in range(n):\n    for j in range(n)</span>:\n        if j &lt; n - 1 - i:\n            s1 += a[i][j]\n        elif j &gt; n - 1 - i:\n            s2 += <span class='highlight-red'>a[i][j]\n\ndiff = abs(s1 - s2)\n\nif diff &lt;= p:\n    print(&#34;YES&#34;)\nelse:\n    print(&#34;NO&#34;)\nprin</span>t(diff)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b6fe535fa0f4f1d93a/345569c455a14db085eec8e9/sub_1762485744101_yortcdb0s.py",
+        "similarity_percent": 52.04,
+        "full_code": "n = int(input())\na =[list(map(int,input().split())) for _ in range(n)]\np = int(input())\ntong1 = 0\ntong2 = 0\nfor i in range(n):\n    for j in range(n):\n        if i +j < n-1:\n            tong1 += a[i][j]\n        elif i+j > n-1:\n            tong2 +=a[i][j]\nc  = abs(tong2-tong1)\nif c <= p:\n    print('YES')\nelse:\n    print('NO')  \nprint(c)    \n",
+        "highlighted_code": "n = int(input())\na =[list(map(int,input().split())) for _ in range(n)]\n<span class='highlight-green'>p = int(input())\ntong1 = 0\ntong2 = 0\nfor i in range(n):\n    for j in range(n)</span>:\n        if i +j &lt; n-1:\n            tong1 += a[i][j]\n        elif i+j &gt; n-1:\n            tong2 +=<span class='highlight-green'>a[i][j]\nc  = abs(tong2-tong1)\nif c &lt;= p:\n    print(&#39;YES&#39;)\nelse:\n    print(&#39;NO&#39;)  \nprin</span>t(c)    \n"
+      },
+      "token_overlap": 102,
+      "max_similarity_percent": 52.04
+    },
+    {
+      "case_id": 9,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b6fe535fa0f4f1d93a/8e236cb825b041b0a82527f2/sub_1761485596579_04du61jik.py",
+        "similarity_percent": 47.6,
+        "full_code": "n = int(input())\nmatrix = [[0] * n] * n\n\nfor i in range(n):\n    matrix[i] = list(map(int, input().split()))[:n]\n\np = int(input())\n\nsa = 0\nsb = 0\n\nfor i in range(n):\n    for j in range(n):\n        if i + j < n - 1:\n            sa += matrix[i][j]\n        elif i + j > n - 1:\n            sb += matrix[i][j]\n\nd = abs(sa - sb)\nprint(\"YES\" if d <= p else \"NO\")\nprint(d)",
+        "highlighted_code": "n = int(input())\nmatrix = [[0] * n] * n\n\nfor i in range(n):\n    matrix[i] = list(map(int, input().split()))[:n<span class='highlight-red'>]\n\np = int(input())\n\nsa = 0\nsb = 0\n\nfor i in range(n):\n    for j in range(n):\n        if i + j &lt; n - 1:\n            sa += matrix[i][j]\n        elif i + j &gt; n - 1:\n            sb += matrix[i][j]\n\nd = abs(</span>sa - sb)\nprint(&#34;YES&#34; if d &lt;= p else &#34;NO&#34;)\nprint(d)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b6fe535fa0f4f1d93a/345569c455a14db085eec8e9/sub_1762485744101_yortcdb0s.py",
+        "similarity_percent": 50.51,
+        "full_code": "n = int(input())\na =[list(map(int,input().split())) for _ in range(n)]\np = int(input())\ntong1 = 0\ntong2 = 0\nfor i in range(n):\n    for j in range(n):\n        if i +j < n-1:\n            tong1 += a[i][j]\n        elif i+j > n-1:\n            tong2 +=a[i][j]\nc  = abs(tong2-tong1)\nif c <= p:\n    print('YES')\nelse:\n    print('NO')  \nprint(c)    \n",
+        "highlighted_code": "n = int(input())\na =[list(map(int,input().split())) for _ in range(n)<span class='highlight-green'>]\np = int(input())\ntong1 = 0\ntong2 = 0\nfor i in range(n):\n    for j in range(n):\n        if i +j &lt; n-1:\n            tong1 += a[i][j]\n        elif i+j &gt; n-1:\n            tong2 +=a[i][j]\nc  = abs(</span>tong2-tong1)\nif c &lt;= p:\n    print(&#39;YES&#39;)\nelse:\n    print(&#39;NO&#39;)  \nprint(c)    \n"
+      },
+      "token_overlap": 99,
+      "max_similarity_percent": 50.51
+    }
+  ]
 }

@@ -1,0 +1,28 @@
+{
+  "problem_id": "68e39de4724325137447692d",
+  "filter_criteria": {
+    "min_token_overlap": 80,
+    "min_similarity_percent": 60
+  },
+  "total_cases_found": 1,
+  "total_cases_filtered": 1,
+  "cases": [
+    {
+      "case_id": 1,
+      "file1": {
+        "path": "/app/app/data/submissions/68e39de4724325137447692d/f95120b3a38a461085ef58cb/sub_1762276092647_44j99fi7q.py",
+        "similarity_percent": 100.0,
+        "full_code": "string = input()\n\ndct = {}\n\nfor index, ch in enumerate(string):\n    if ch not in dct:\n        dct[ch] = 1\n    else:\n        dct[ch] += 1\n\npos = 1000000000\nfor index, ch in enumerate(string):\n    if dct[ch] == 1:\n        pos = min(pos, index)\n\nif pos == 1000000000:\n    print(-1)\nelse:\n    print(pos)",
+        "highlighted_code": "<span class='highlight-red'>string = input()\n\ndct = {}\n\nfor index, ch in enumerate(string):\n    if ch not in dct:\n        dct[ch] = 1\n    else:\n        dct[ch] += 1\n\npos = 1000000000\nfor index, ch in enumerate(string):\n    if dct[ch] == 1:\n        pos = min(pos, index)\n\nif pos == 1000000000:\n    print(-1)\nelse:\n    print(</span>pos)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e39de4724325137447692d/ffdb326842044f2e98b7aaa7/sub_1762181233135_mo6v53kql.py",
+        "similarity_percent": 100.0,
+        "full_code": "string = input()\n\ndct = {}\n\nfor index, ch in enumerate(string):\n    if ch not in dct:\n        dct[ch] = 1\n    else:\n        dct[ch] += 1\n\npos = 1000000000\nfor index, ch in enumerate(string):\n    if dct[ch] == 1:\n        pos = min(pos, index)\n\nif pos == 1000000000:\n    print(-1)\nelse:\n    print(pos)\n",
+        "highlighted_code": "<span class='highlight-green'>string = input()\n\ndct = {}\n\nfor index, ch in enumerate(string):\n    if ch not in dct:\n        dct[ch] = 1\n    else:\n        dct[ch] += 1\n\npos = 1000000000\nfor index, ch in enumerate(string):\n    if dct[ch] == 1:\n        pos = min(pos, index)\n\nif pos == 1000000000:\n    print(-1)\nelse:\n    print(</span>pos)\n"
+      },
+      "token_overlap": 151,
+      "max_similarity_percent": 100.0
+    }
+  ]
+}

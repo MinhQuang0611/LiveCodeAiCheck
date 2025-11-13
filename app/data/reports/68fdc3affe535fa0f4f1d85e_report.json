@@ -4,7 +4,110 @@
     "min_token_overlap": 80,
     "min_similarity_percent": 60
   },
-  "total_cases_found": 5,
-  "total_cases_filtered": 0,
-  "cases": []
+  "total_cases_found": 15,
+  "total_cases_filtered": 6,
+  "cases": [
+    {
+      "case_id": 1,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3affe535fa0f4f1d85e/f95120b3a38a461085ef58cb/sub_1762822527333_v3mbq3i6j.py",
+        "similarity_percent": 100.0,
+        "full_code": "n = input().strip()\nif n[0] != \"6\":\n    print(\"NO\")\nelif not all(ch in \"68\" for ch in n):\n    print(\"NO\")\nelif \"888\" in n:\n    print(\"NO\")\nelse:\n    print(\"YES\")",
+        "highlighted_code": "<span class='highlight-red'>n = input().strip()\nif n[0] != &#34;6&#34;:\n    print(&#34;NO&#34;)\nelif not all(ch in &#34;68&#34; for ch in n):\n    print(&#34;NO&#34;)\nelif &#34;888&#34; in n:\n    print(&#34;NO&#34;)\nelse:\n    print(</span>&#34;YES&#34;)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3affe535fa0f4f1d85e/e59c34a1bebb49d29bfb3592/sub_1762160507174_ygqnm3q4k.py",
+        "similarity_percent": 100.0,
+        "full_code": "n = input().strip()\nif n[0] != \"6\":\n    print(\"NO\")\nelif not all(ch in \"68\" for ch in n):\n    print(\"NO\")\nelif \"888\" in n:\n    print(\"NO\")\nelse:\n    print(\"YES\")\n",
+        "highlighted_code": "<span class='highlight-green'>n = input().strip()\nif n[0] != &#34;6&#34;:\n    print(&#34;NO&#34;)\nelif not all(ch in &#34;68&#34; for ch in n):\n    print(&#34;NO&#34;)\nelif &#34;888&#34; in n:\n    print(&#34;NO&#34;)\nelse:\n    print(</span>&#34;YES&#34;)\n"
+      },
+      "token_overlap": 103,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 2,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3affe535fa0f4f1d85e/26894d2babd64210ad6beba1/sub_1762312619854_xfdkz1347.py",
+        "similarity_percent": 98.62,
+        "full_code": "def check(n):\n    if n[0] != '6':\n        return False\n    for i in n:\n        if i != '6' and i != '8':\n            return False\n    for i in range(len(n) - 2):\n        if n[i] == n[i + 1] == n[i + 2] == '8':\n            return False\n\n    return True\nn = input().strip()\nif check(n):\n    print(\"YES\")\nelse:\n    print(\"NO\")\ndef check(n):\n    if n[0] != '6':\n        return False\n    for i in n:\n        if i != '6' and i != '8':\n            return False\n    for i in range(len(n) - 2):\n        if n[i] == n[i + 1] == n[i + 2] == '8':\n            return False\n\n    return True\nn = input().strip()\nif check(n):\n    print(\"YES\")\nelse:\n    print(\"NO\")\n",
+        "highlighted_code": "<span class='highlight-red'>def check(n):\n    if n[0] != &#39;6&#39;:\n        return False\n    for i in n:\n        if i != &#39;6&#39; and i != &#39;8&#39;:\n            return False\n    for i in range(len(n) - 2):\n        if n[i] == n[i + 1] == n[i + 2] == &#39;8&#39;:\n            return False\n\n    return True\nn = input().strip()\nif check(n):\n    print(&#34;YES&#34;)\nelse:\n    print</span>(&#34;NO&#34;)\n<span class='highlight-red'>def check(n):\n    if n[0] != &#39;6&#39;:\n        return False\n    for i in n:\n        if i != &#39;6&#39; and i != &#39;8&#39;:\n            return False\n    for i in range(len(n) - 2):\n        if n[i] == n[i + 1] == n[i + 2] == &#39;8&#39;:\n            return False\n\n    return True\nn = input().strip()\nif check(n):\n    print(&#34;YES&#34;)\nelse:\n    print</span>(&#34;NO&#34;)\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3affe535fa0f4f1d85e/26894d2babd64210ad6beba1/sub_1762312634887_dscxi2jt7.py",
+        "similarity_percent": 100.0,
+        "full_code": "def check(n):\n    if n[0] != '6':\n        return False\n    for i in n:\n        if i != '6' and i != '8':\n            return False\n    for i in range(len(n) - 2):\n        if n[i] == n[i + 1] == n[i + 2] == '8':\n            return False\n\n    return True\nn = input().strip()\nif check(n):\n    print(\"YES\")\nelse:\n    print(\"NO\")\n",
+        "highlighted_code": "<span class='highlight-green'>def check(n):\n    if n[0] != &#39;6&#39;:\n        return False\n    for i in n:\n        if i != &#39;6&#39; and i != &#39;8&#39;:\n            return False\n    for i in range(len(n) - 2):\n        if n[i] == n[i + 1] == n[i + 2] == &#39;8&#39;:\n            return False\n\n    return True\nn = input().strip()\nif check(n):\n    print(&#34;YES&#34;)\nelse:\n    print</span>(&#34;NO&#34;)\n"
+      },
+      "token_overlap": 358,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 3,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3affe535fa0f4f1d85e/d9aec9d917da4c5e9beeb80b/sub_1761830366461_z6qfy2tpi.py",
+        "similarity_percent": 74.68,
+        "full_code": "s = input().strip()\nif s[0] == '6' and all(c in '68' for c in s) and '888' not in s:\n    print(\"YES\")\nelse:\n    print(\"NO\")\n",
+        "highlighted_code": "s = input().strip()\nif s[0] =<span class='highlight-red'>= &#39;6&#39; and all(c in &#39;68&#39; for c in s) and &#39;888&#39; not in s:\n    print(&#34;YES&#34;)\nelse:\n    print(</span>&#34;NO&#34;)\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3affe535fa0f4f1d85e/9f14990043df4fda9283d7ac/sub_1761670745664_hn95yvnh3.py",
+        "similarity_percent": 71.08,
+        "full_code": "s = input().strip()\nif s and s[0] == '6' and all(ch in '68' for ch in s) and '888' not in s:\n    print(\"YES\")\nelse:\n    print(\"NO\")",
+        "highlighted_code": "s = input().strip()\nif s and s[0] =<span class='highlight-green'>= &#39;6&#39; and all(ch in &#39;68&#39; for ch in s) and &#39;888&#39; not in s:\n    print(&#34;YES&#34;)\nelse:\n    print(</span>&#34;NO&#34;)"
+      },
+      "token_overlap": 59,
+      "max_similarity_percent": 74.68
+    },
+    {
+      "case_id": 4,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3affe535fa0f4f1d85e/449c44ebafa84f0d8d5b6d0f/sub_1762096443504_66wh8w7w0.py",
+        "similarity_percent": 62.86,
+        "full_code": "def chuoi(n):\n    if n[0] != '6':\n        return False\n    cnt, a = 0, 0\n    for i in range(1, len(n)):\n        if n[i] != '6' and  n[i] != '8' :\n            return False\n        if n[i] == '8':\n            cnt += 1\n            a += 1\n            if cnt == 3 and a == 3:\n                return False\n        else: a = 0\n    return True\nif __name__ == '__main__':\n    n = input()\n    if chuoi(n):\n        print('YES')\n    else: \n        print('NO')\n        ",
+        "highlighted_code": "<span class='highlight-red'>def chuoi(n):\n    if n[0] != &#39;6&#39;:\n        return </span>False\n    cnt, a = 0, 0\n    for i in range(1, len(n)):\n        if n<span class='highlight-red'>[i] != &#39;6&#39; and  n[i] != &#39;8&#39; :\n            return False\n        if n[i] == &#39;8&#39;:\n            </span>cnt += 1\n            a += 1\n            if cnt == 3 and a == 3:\n                return False\n        else: a = 0\n    <span class='highlight-red'>return True\nif __name__ == &#39;__main__&#39;:\n    n = input()\n    if chuoi(n):\n        print(&#39;YES&#39;)\n    else: \n        print</span>(&#39;NO&#39;)\n        "
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3affe535fa0f4f1d85e/449c44ebafa84f0d8d5b6d0f/sub_1762095922980_eoi11ja7h.py",
+        "similarity_percent": 65.02,
+        "full_code": "def chuoi(n):\n    if n[0] != '6':\n        return False\n    for i in range(1, len(n) - 2):\n        if n[i] != '6' and  n[i] != '8':\n            return False\n        if n[i] == '8':\n            if n[i + 1] == '8' and n[i + 2] == '8':\n                return False\n    return True\nif __name__ == '__main__':\n    n = input()\n    if chuoi(n):\n        print('YES')\n    else: \n        print('NO')",
+        "highlighted_code": "<span class='highlight-green'>def chuoi(n):\n    if n[0] != &#39;6&#39;:\n        return </span>False\n    for i in range(1, len(n) - 2):\n        if n<span class='highlight-green'>[i] != &#39;6&#39; and  n[i] != &#39;8&#39;:\n            return False\n        if n[i] == &#39;8&#39;:\n            </span>if n[i + 1] == &#39;8&#39; and n[i + 2] == &#39;8&#39;:\n                return False\n    <span class='highlight-green'>return True\nif __name__ == &#39;__main__&#39;:\n    n = input()\n    if chuoi(n):\n        print(&#39;YES&#39;)\n    else: \n        print</span>(&#39;NO&#39;)"
+      },
+      "token_overlap": 132,
+      "max_similarity_percent": 65.02
+    },
+    {
+      "case_id": 5,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3affe535fa0f4f1d85e/449c44ebafa84f0d8d5b6d0f/sub_1762095922980_eoi11ja7h.py",
+        "similarity_percent": 47.78,
+        "full_code": "def chuoi(n):\n    if n[0] != '6':\n        return False\n    for i in range(1, len(n) - 2):\n        if n[i] != '6' and  n[i] != '8':\n            return False\n        if n[i] == '8':\n            if n[i + 1] == '8' and n[i + 2] == '8':\n                return False\n    return True\nif __name__ == '__main__':\n    n = input()\n    if chuoi(n):\n        print('YES')\n    else: \n        print('NO')",
+        "highlighted_code": "<span class='highlight-red'>def chuoi(n):\n    if n[0] != &#39;6&#39;:\n        return False\n    for i in range(</span>1, len(n) - 2):\n        if n[i] != &#39;6&#39; and  n[i] != &#39;8&#39;:\n            return False\n        if n[i] == &#39;8&#39;:\n            if n[i + 1] == &#39;8&#39; and n<span class='highlight-red'>[i + 2] == &#39;8&#39;:\n                return False\n    return T</span>rue\nif __name__ == &#39;__main__&#39;:\n    n = input()\n    if <span class='highlight-red'>chuoi(n):\n        print(&#39;YES&#39;)\n    else: \n        print</span>(&#39;NO&#39;)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3affe535fa0f4f1d85e/26894d2babd64210ad6beba1/sub_1762312619854_xfdkz1347.py",
+        "similarity_percent": 61.16,
+        "full_code": "def check(n):\n    if n[0] != '6':\n        return False\n    for i in n:\n        if i != '6' and i != '8':\n            return False\n    for i in range(len(n) - 2):\n        if n[i] == n[i + 1] == n[i + 2] == '8':\n            return False\n\n    return True\nn = input().strip()\nif check(n):\n    print(\"YES\")\nelse:\n    print(\"NO\")\ndef check(n):\n    if n[0] != '6':\n        return False\n    for i in n:\n        if i != '6' and i != '8':\n            return False\n    for i in range(len(n) - 2):\n        if n[i] == n[i + 1] == n[i + 2] == '8':\n            return False\n\n    return True\nn = input().strip()\nif check(n):\n    print(\"YES\")\nelse:\n    print(\"NO\")\n",
+        "highlighted_code": "<span class='highlight-green'>def check(n):\n    if n[0] != &#39;6&#39;:\n        return False\n    f</span>or i in n:\n        if i != &#39;6&#39; and i != &#39;8<span class='highlight-green'>&#39;:\n            return False\n    for i in range(</span>len(n) - 2):\n        if n[i] == n[i + 1] == n<span class='highlight-green'>[i + 2] == &#39;8&#39;:\n            return False\n\n    return T</span>rue\nn = input().strip()\nif <span class='highlight-green'>check(n):\n    print(&#34;YES&#34;)\nelse:\n    print</span>(&#34;NO&#34;)\n<span class='highlight-green'>def check(n):\n    if n[0] != &#39;6&#39;:\n        return False\n    f</span>or i in n:\n        if i != &#39;6&#39; and i != &#39;8<span class='highlight-green'>&#39;:\n            return False\n    for i in range(</span>len(n) - 2):\n        if n[i] == n[i + 1] == n<span class='highlight-green'>[i + 2] == &#39;8&#39;:\n            return False\n\n    return T</span>rue\nn = input().strip()\nif <span class='highlight-green'>check(n):\n    print(&#34;YES&#34;)\nelse:\n    print</span>(&#34;NO&#34;)\n"
+      },
+      "token_overlap": 97,
+      "max_similarity_percent": 61.16
+    },
+    {
+      "case_id": 6,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3affe535fa0f4f1d85e/449c44ebafa84f0d8d5b6d0f/sub_1762095922980_eoi11ja7h.py",
+        "similarity_percent": 47.78,
+        "full_code": "def chuoi(n):\n    if n[0] != '6':\n        return False\n    for i in range(1, len(n) - 2):\n        if n[i] != '6' and  n[i] != '8':\n            return False\n        if n[i] == '8':\n            if n[i + 1] == '8' and n[i + 2] == '8':\n                return False\n    return True\nif __name__ == '__main__':\n    n = input()\n    if chuoi(n):\n        print('YES')\n    else: \n        print('NO')",
+        "highlighted_code": "<span class='highlight-red'>def chuoi(n):\n    if n[0] != &#39;6&#39;:\n        return False\n    for i in range(</span>1, len(n) - 2):\n        if n[i] != &#39;6&#39; and  n[i] != &#39;8&#39;:\n            return False\n        if n[i] == &#39;8&#39;:\n            if n[i + 1] == &#39;8&#39; and n<span class='highlight-red'>[i + 2] == &#39;8&#39;:\n                return False\n    return T</span>rue\nif __name__ == &#39;__main__&#39;:\n    n = input()\n    if <span class='highlight-red'>chuoi(n):\n        print(&#39;YES&#39;)\n    else: \n        print</span>(&#39;NO&#39;)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3affe535fa0f4f1d85e/26894d2babd64210ad6beba1/sub_1762312634887_dscxi2jt7.py",
+        "similarity_percent": 62.01,
+        "full_code": "def check(n):\n    if n[0] != '6':\n        return False\n    for i in n:\n        if i != '6' and i != '8':\n            return False\n    for i in range(len(n) - 2):\n        if n[i] == n[i + 1] == n[i + 2] == '8':\n            return False\n\n    return True\nn = input().strip()\nif check(n):\n    print(\"YES\")\nelse:\n    print(\"NO\")\n",
+        "highlighted_code": "<span class='highlight-green'>def check(n):\n    if n[0] != &#39;6&#39;:\n        return False\n    f</span>or i in n:\n        if i != &#39;6&#39; and i != &#39;8<span class='highlight-green'>&#39;:\n            return False\n    for i in range(</span>len(n) - 2):\n        if n[i] == n[i + 1] == n<span class='highlight-green'>[i + 2] == &#39;8&#39;:\n            return False\n\n    return T</span>rue\nn = input().strip()\nif <span class='highlight-green'>check(n):\n    print(&#34;YES&#34;)\nelse:\n    print</span>(&#34;NO&#34;)\n"
+      },
+      "token_overlap": 97,
+      "max_similarity_percent": 62.01
+    }
+  ]
 }

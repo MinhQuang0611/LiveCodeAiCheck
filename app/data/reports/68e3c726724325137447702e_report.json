@@ -1,0 +1,130 @@
+{
+  "problem_id": "68e3c726724325137447702e",
+  "filter_criteria": {
+    "min_token_overlap": 80,
+    "min_similarity_percent": 60
+  },
+  "total_cases_found": 10,
+  "total_cases_filtered": 7,
+  "cases": [
+    {
+      "case_id": 1,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3c726724325137447702e/cd93b2ff882a4ffa85f4518f/sub_1761549424898_uz6rs3p16.py",
+        "similarity_percent": 100.0,
+        "full_code": "s = input()\nba = 0\nfor ch in s:\n    if ch == '(':\n        ba += 1\n    elif ch == ')':\n        ba -= 1\n\nif ba == 0:\n    print(\"true\")\nelse:\n    print(\"ValueError: Parentheses not balanced\")\n",
+        "highlighted_code": "<span class='highlight-red'>s = input()\nba = 0\nfor ch in s:\n    if ch == &#39;(&#39;:\n        ba += 1\n    elif ch == &#39;)&#39;:\n        ba -= 1\n\nif ba == 0:\n    print(&#34;true&#34;)\nelse:\n    print(&#34;</span>ValueError: Parentheses not balanced&#34;)\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3c726724325137447702e/8e236cb825b041b0a82527f2/sub_1761834643258_ijyost1nz.py",
+        "similarity_percent": 100.0,
+        "full_code": "s = input()\nopening = 0\nfor c in s:\n    if c == \"(\":\n        opening += 1\n    elif c == \")\":\n        opening -= 1\n\nif opening == 0:\n    print(\"true\")\nelse:\n    print(\"ValueError: Parentheses not balanced\")",
+        "highlighted_code": "<span class='highlight-green'>s = input()\nopening = 0\nfor c in s:\n    if c == &#34;(&#34;:\n        opening += 1\n    elif c == &#34;)&#34;:\n        opening -= 1\n\nif opening == 0:\n    print(&#34;true&#34;)\nelse:\n    print(&#34;</span>ValueError: Parentheses not balanced&#34;)"
+      },
+      "token_overlap": 77,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 2,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3c726724325137447702e/cd93b2ff882a4ffa85f4518f/sub_1761549424898_uz6rs3p16.py",
+        "similarity_percent": 96.1,
+        "full_code": "s = input()\nba = 0\nfor ch in s:\n    if ch == '(':\n        ba += 1\n    elif ch == ')':\n        ba -= 1\n\nif ba == 0:\n    print(\"true\")\nelse:\n    print(\"ValueError: Parentheses not balanced\")\n",
+        "highlighted_code": "<span class='highlight-red'>s = input()\nba = 0\nfor ch in s:\n    if ch == &#39;(&#39;:\n        ba += 1\n    elif ch == &#39;)&#39;:\n        ba -= 1\n\ni</span>f ba =<span class='highlight-red'>= 0:\n    print(&#34;true&#34;)\nelse:\n    print(&#34;</span>ValueError: Parentheses not balanced&#34;)\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3c726724325137447702e/8e236cb825b041b0a82527f2/sub_1761834838430_z56u92pem.py",
+        "similarity_percent": 84.09,
+        "full_code": "s = input()\nopening = 0\nfor c in s:\n    if c == \"(\":\n        opening += 1\n    elif c == \")\":\n        opening -= 1\n\nif len(s) > 0 and opening == 0:\n    print(\"true\")\nelse:\n    # raise ValueError(\"Parentheses not balanced\")\n    print(\"ValueError: Parentheses not balanced\")",
+        "highlighted_code": "<span class='highlight-green'>s = input()\nopening = 0\nfor c in s:\n    if c == &#34;(&#34;:\n        opening += 1\n    elif c == &#34;)&#34;:\n        opening -= 1\n\ni</span>f len(s) &gt; 0 and opening =<span class='highlight-green'>= 0:\n    print(&#34;true&#34;)\nelse:\n    # raise ValueError(&#34;Parentheses not balanced&#34;)\n    print(&#34;</span>ValueError: Parentheses not balanced&#34;)"
+      },
+      "token_overlap": 74,
+      "max_similarity_percent": 96.1
+    },
+    {
+      "case_id": 3,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3c726724325137447702e/8e236cb825b041b0a82527f2/sub_1761834643258_ijyost1nz.py",
+        "similarity_percent": 96.1,
+        "full_code": "s = input()\nopening = 0\nfor c in s:\n    if c == \"(\":\n        opening += 1\n    elif c == \")\":\n        opening -= 1\n\nif opening == 0:\n    print(\"true\")\nelse:\n    print(\"ValueError: Parentheses not balanced\")",
+        "highlighted_code": "<span class='highlight-red'>s = input()\nopening = 0\nfor c in s:\n    if c == &#34;(&#34;:\n        opening += 1\n    elif c == &#34;)&#34;:\n        opening -= 1\n\ni</span>f opening =<span class='highlight-red'>= 0:\n    print(&#34;true&#34;)\nelse:\n    print(&#34;</span>ValueError: Parentheses not balanced&#34;)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3c726724325137447702e/8e236cb825b041b0a82527f2/sub_1761834838430_z56u92pem.py",
+        "similarity_percent": 84.09,
+        "full_code": "s = input()\nopening = 0\nfor c in s:\n    if c == \"(\":\n        opening += 1\n    elif c == \")\":\n        opening -= 1\n\nif len(s) > 0 and opening == 0:\n    print(\"true\")\nelse:\n    # raise ValueError(\"Parentheses not balanced\")\n    print(\"ValueError: Parentheses not balanced\")",
+        "highlighted_code": "<span class='highlight-green'>s = input()\nopening = 0\nfor c in s:\n    if c == &#34;(&#34;:\n        opening += 1\n    elif c == &#34;)&#34;:\n        opening -= 1\n\ni</span>f len(s) &gt; 0 and opening =<span class='highlight-green'>= 0:\n    print(&#34;true&#34;)\nelse:\n    # raise ValueError(&#34;Parentheses not balanced&#34;)\n    print(&#34;</span>ValueError: Parentheses not balanced&#34;)"
+      },
+      "token_overlap": 74,
+      "max_similarity_percent": 96.1
+    },
+    {
+      "case_id": 4,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3c726724325137447702e/cd93b2ff882a4ffa85f4518f/sub_1761549424898_uz6rs3p16.py",
+        "similarity_percent": 88.31,
+        "full_code": "s = input()\nba = 0\nfor ch in s:\n    if ch == '(':\n        ba += 1\n    elif ch == ')':\n        ba -= 1\n\nif ba == 0:\n    print(\"true\")\nelse:\n    print(\"ValueError: Parentheses not balanced\")\n",
+        "highlighted_code": "<span class='highlight-red'>s = input()\nba = 0\nfor ch in s:\n    if ch == &#39;(&#39;:\n        ba += 1\n    elif ch == &#39;)&#39;:\n        ba -= 1\n\nif ba == 0:\n    print(&#34;true&#34;)\nels</span>e:\n    print(&#34;ValueError: Parentheses not balanced&#34;)\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3c726724325137447702e/8e236cb825b041b0a82527f2/sub_1761834682117_1hh91vny1.py",
+        "similarity_percent": 78.16,
+        "full_code": "s = input()\nopening = 0\nfor c in s:\n    if c == \"(\":\n        opening += 1\n    elif c == \")\":\n        opening -= 1\n\nif opening == 0:\n    print(\"true\")\nelse:\n    # print(\"ValueError: Parentheses not balanced\")\n    raise ValueError(\"Parentheses not balanced\")",
+        "highlighted_code": "<span class='highlight-green'>s = input()\nopening = 0\nfor c in s:\n    if c == &#34;(&#34;:\n        opening += 1\n    elif c == &#34;)&#34;:\n        opening -= 1\n\nif opening == 0:\n    print(&#34;true&#34;)\nels</span>e:\n    # print(&#34;ValueError: Parentheses not balanced&#34;)\n    raise ValueError(&#34;Parentheses not balanced&#34;)"
+      },
+      "token_overlap": 68,
+      "max_similarity_percent": 88.31
+    },
+    {
+      "case_id": 5,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3c726724325137447702e/8e236cb825b041b0a82527f2/sub_1761834643258_ijyost1nz.py",
+        "similarity_percent": 88.31,
+        "full_code": "s = input()\nopening = 0\nfor c in s:\n    if c == \"(\":\n        opening += 1\n    elif c == \")\":\n        opening -= 1\n\nif opening == 0:\n    print(\"true\")\nelse:\n    print(\"ValueError: Parentheses not balanced\")",
+        "highlighted_code": "<span class='highlight-red'>s = input()\nopening = 0\nfor c in s:\n    if c == &#34;(&#34;:\n        opening += 1\n    elif c == &#34;)&#34;:\n        opening -= 1\n\nif opening == 0:\n    print(&#34;true&#34;)\nels</span>e:\n    print(&#34;ValueError: Parentheses not balanced&#34;)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3c726724325137447702e/8e236cb825b041b0a82527f2/sub_1761834682117_1hh91vny1.py",
+        "similarity_percent": 78.16,
+        "full_code": "s = input()\nopening = 0\nfor c in s:\n    if c == \"(\":\n        opening += 1\n    elif c == \")\":\n        opening -= 1\n\nif opening == 0:\n    print(\"true\")\nelse:\n    # print(\"ValueError: Parentheses not balanced\")\n    raise ValueError(\"Parentheses not balanced\")",
+        "highlighted_code": "<span class='highlight-green'>s = input()\nopening = 0\nfor c in s:\n    if c == &#34;(&#34;:\n        opening += 1\n    elif c == &#34;)&#34;:\n        opening -= 1\n\nif opening == 0:\n    print(&#34;true&#34;)\nels</span>e:\n    # print(&#34;ValueError: Parentheses not balanced&#34;)\n    raise ValueError(&#34;Parentheses not balanced&#34;)"
+      },
+      "token_overlap": 68,
+      "max_similarity_percent": 88.31
+    },
+    {
+      "case_id": 6,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3c726724325137447702e/cd93b2ff882a4ffa85f4518f/sub_1761549424898_uz6rs3p16.py",
+        "similarity_percent": 68.83,
+        "full_code": "s = input()\nba = 0\nfor ch in s:\n    if ch == '(':\n        ba += 1\n    elif ch == ')':\n        ba -= 1\n\nif ba == 0:\n    print(\"true\")\nelse:\n    print(\"ValueError: Parentheses not balanced\")\n",
+        "highlighted_code": "s = input()\nba = 0\nfor ch in s:\n    if ch =<span class='highlight-red'>= &#39;(&#39;:\n        ba += 1\n    elif ch == &#39;)&#39;:\n        ba -= 1\n\nif ba == 0:\n    print(&#34;true&#34;)\nelse:\n    print(&#34;</span>ValueError: Parentheses not balanced&#34;)\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3c726724325137447702e/8e236cb825b041b0a82527f2/sub_1761835329184_njfjhc4e8.py",
+        "similarity_percent": 60.23,
+        "full_code": "s = input()\nopening = 0\nfor c in s:\n    if opening < 0:\n        break\n\n    if c == \"(\":\n        opening += 1\n    elif c == \")\":\n        opening -= 1\n\nif opening == 0:\n    print(\"true\")\nelse:\n    # raise ValueError(\"Parentheses not balanced\")\n    print(\"ValueError: Parentheses not balanced\")",
+        "highlighted_code": "s = input()\nopening = 0\nfor c in s:\n    if opening &lt; 0:\n        break\n\n    if c =<span class='highlight-green'>= &#34;(&#34;:\n        opening += 1\n    elif c == &#34;)&#34;:\n        opening -= 1\n\nif opening == 0:\n    print(&#34;true&#34;)\nelse:\n    # raise ValueError(&#34;Parentheses not balanced&#34;)\n    print(&#34;</span>ValueError: Parentheses not balanced&#34;)"
+      },
+      "token_overlap": 53,
+      "max_similarity_percent": 68.83
+    },
+    {
+      "case_id": 7,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3c726724325137447702e/8e236cb825b041b0a82527f2/sub_1761835329184_njfjhc4e8.py",
+        "similarity_percent": 60.23,
+        "full_code": "s = input()\nopening = 0\nfor c in s:\n    if opening < 0:\n        break\n\n    if c == \"(\":\n        opening += 1\n    elif c == \")\":\n        opening -= 1\n\nif opening == 0:\n    print(\"true\")\nelse:\n    # raise ValueError(\"Parentheses not balanced\")\n    print(\"ValueError: Parentheses not balanced\")",
+        "highlighted_code": "s = input()\nopening = 0\nfor c in s:\n    if opening &lt; 0:\n        break\n\n    if c =<span class='highlight-red'>= &#34;(&#34;:\n        opening += 1\n    elif c == &#34;)&#34;:\n        opening -= 1\n\nif opening == 0:\n    print(&#34;true&#34;)\nelse:\n    # raise ValueError(&#34;Parentheses not balanced&#34;)\n    print(&#34;</span>ValueError: Parentheses not balanced&#34;)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3c726724325137447702e/8e236cb825b041b0a82527f2/sub_1761834643258_ijyost1nz.py",
+        "similarity_percent": 68.83,
+        "full_code": "s = input()\nopening = 0\nfor c in s:\n    if c == \"(\":\n        opening += 1\n    elif c == \")\":\n        opening -= 1\n\nif opening == 0:\n    print(\"true\")\nelse:\n    print(\"ValueError: Parentheses not balanced\")",
+        "highlighted_code": "s = input()\nopening = 0\nfor c in s:\n    if c =<span class='highlight-green'>= &#34;(&#34;:\n        opening += 1\n    elif c == &#34;)&#34;:\n        opening -= 1\n\nif opening == 0:\n    print(&#34;true&#34;)\nelse:\n    print(&#34;</span>ValueError: Parentheses not balanced&#34;)"
+      },
+      "token_overlap": 53,
+      "max_similarity_percent": 68.83
+    }
+  ]
+}

@@ -1,0 +1,198 @@
+{
+  "problem_id": "68fdc3a9fe535fa0f4f1d7aa",
+  "filter_criteria": {
+    "min_token_overlap": 80,
+    "min_similarity_percent": 60
+  },
+  "total_cases_found": 11,
+  "total_cases_filtered": 11,
+  "cases": [
+    {
+      "case_id": 1,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3a9fe535fa0f4f1d7aa/cd93b2ff882a4ffa85f4518f/sub_1762246241158_en639kj0h.py",
+        "similarity_percent": 100.0,
+        "full_code": "import math as ma\ndef qp(n):\n    k=0\n    while n>0:\n        k=k*10+n%10\n        n//=10\n    return k\na=[0]*1000001\na[0]=a[1]=1\nfor i in range(2,ma.isqrt(1000000)+1):\n    if a[i]==0:\n        for j in range(i*i,1000001,i):\n            a[j]=1\nt=int(input())\nfor _ in range(t):\n    n=int(input())\n    for i in range(2,n):\n        if a[i]==0:\n            if i==2:k=3\n            elif i==3:k=2\n            elif i==5:k=7\n            elif i==7:k=5\n            elif i==19:k=91\n            else:k=qp(i)\n            if a[k]==0 or k==91:\n                print(i,k,end=\" \")\n    print()\n",
+        "highlighted_code": "<span class='highlight-red'>import math as ma\ndef qp(n):\n    k=0\n    while n&gt;0:\n        k=k*10+n%10\n        n//=10\n    return k\na=[0]*1000001\na[0]=a[1]=1\nfor i in range(2,ma.isqrt(1000000)+1):\n    if a[i]==0:\n        for j in range(i*i,1000001,i):\n            a[j]=1\nt=int(input())\nfor _ in range(t):\n    n=int(input())\n    for i in range(2,n):\n        if a[i]==0:\n            if i==2:k=3\n            elif i==3:k=2\n            elif i==5:k=7\n            elif i==7:k=5\n            elif i==19:k=91\n            else:k=qp(i)\n            if a[k]==0 or k==91:\n                print(i,k,end=&#34; &#34;)\n    print()</span>\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3a9fe535fa0f4f1d7aa/113963c0a9df48538edf310d/sub_1762249292958_j1j9sficd.py",
+        "similarity_percent": 100.0,
+        "full_code": "import math as ma\ndef qp(n):\n    k=0\n    while n>0:\n        k=k*10+n%10\n        n//=10\n    return k\na=[0]*1000001\na[0]=a[1]=1\nfor i in range(2,ma.isqrt(1000000)+1):\n    if a[i]==0:\n        for j in range(i*i,1000001,i):\n            a[j]=1\nt=int(input())\nfor _ in range(t):\n    n=int(input())\n    for i in range(2,n):\n        if a[i]==0:\n            if i==2:k=3\n            elif i==3:k=2\n            elif i==5:k=7\n            elif i==7:k=5\n            elif i==19:k=91\n            else:k=qp(i)\n            if a[k]==0 or k==91:\n                print(i,k,end=\" \")\n    print()",
+        "highlighted_code": "<span class='highlight-green'>import math as ma\ndef qp(n):\n    k=0\n    while n&gt;0:\n        k=k*10+n%10\n        n//=10\n    return k\na=[0]*1000001\na[0]=a[1]=1\nfor i in range(2,ma.isqrt(1000000)+1):\n    if a[i]==0:\n        for j in range(i*i,1000001,i):\n            a[j]=1\nt=int(input())\nfor _ in range(t):\n    n=int(input())\n    for i in range(2,n):\n        if a[i]==0:\n            if i==2:k=3\n            elif i==3:k=2\n            elif i==5:k=7\n            elif i==7:k=5\n            elif i==19:k=91\n            else:k=qp(i)\n            if a[k]==0 or k==91:\n                print(i,k,end=&#34; &#34;)\n    print()</span>"
+      },
+      "token_overlap": 336,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 2,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3a9fe535fa0f4f1d7aa/94d5482aeac241829d920e7e/sub_1762247589689_gvcda9o2e.py",
+        "similarity_percent": 98.1,
+        "full_code": "N = 10**6\np = [True] * (N + 3)\n\ndef sieve():\n    \n    p[0] = p[1] = False\n    for i in range(2, int(N ** 0.5) + 1):\n        if p[i]:\n            for j in range(i * i, N + 1, i):\n                p[j] = False\n\ndef dao(x):\n    return int(str(x)[::-1])\n\nt = int(input())\nsieve()\nfor _ in range(t):\n    n = int(input())\n    res = []\n    for i in range(2, n):\n        if p[i]:\n            rev = dao(i)\n            if rev < n and p[rev]:\n                res.append(f\"{i} {rev}\")\n    print(' '.join(res))\n",
+        "highlighted_code": "<span class='highlight-red'>N = 10**6\np = [True] * (N + 3)\n\ndef sieve():\n    \n    p[0] = p[1] = False\n    for i in range(2, int(N ** 0.5) + 1):\n        if p[i]:\n            for j in range(i * i, N + 1, i):\n                p[j] = False\n\ndef dao(x):\n    return int(str(x)[::-1])\n\nt = int(input())\nsieve()\nfor _ in range(t):\n    n = int(input())\n    res = []\n    for i in range(2, n):\n        if p[i]:\n            rev = dao(</span>i)\n            if rev <span class='highlight-red'>&lt; n and p[rev]:\n                res.append(f&#34;{i} {rev}&#34;)\n    print(&#39; &#39;.join(</span>res))\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3a9fe535fa0f4f1d7aa/94d5482aeac241829d920e7e/sub_1762248013626_6xnd5jezc.py",
+        "similarity_percent": 95.91,
+        "full_code": "N = 10**6\np = [True] * (N + 3)\n\ndef sieve():\n    \n    p[0] = p[1] = False\n    for i in range(2, int(N ** 0.5) + 1):\n        if p[i]:\n            for j in range(i * i, N + 1, i):\n                p[j] = False\n\ndef dao(x):\n    return int(str(x)[::-1])\n\nt = int(input())\nsieve()\nfor _ in range(t):\n    n = int(input())\n    res = []\n    for i in range(2, n):\n        if p[i]:\n            rev = dao(i)\n            if rev > i and rev < n and p[rev]:\n                res.append(f\"{i} {rev}\")\n    print(' '.join(res))\n",
+        "highlighted_code": "<span class='highlight-green'>N = 10**6\np = [True] * (N + 3)\n\ndef sieve():\n    \n    p[0] = p[1] = False\n    for i in range(2, int(N ** 0.5) + 1):\n        if p[i]:\n            for j in range(i * i, N + 1, i):\n                p[j] = False\n\ndef dao(x):\n    return int(str(x)[::-1])\n\nt = int(input())\nsieve()\nfor _ in range(t):\n    n = int(input())\n    res = []\n    for i in range(2, n):\n        if p[i]:\n            rev = dao(</span>i)\n            if rev &gt; i and rev <span class='highlight-green'>&lt; n and p[rev]:\n                res.append(f&#34;{i} {rev}&#34;)\n    print(&#39; &#39;.join(</span>res))\n"
+      },
+      "token_overlap": 258,
+      "max_similarity_percent": 98.1
+    },
+    {
+      "case_id": 3,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3a9fe535fa0f4f1d7aa/94d5482aeac241829d920e7e/sub_1762247589689_gvcda9o2e.py",
+        "similarity_percent": 98.1,
+        "full_code": "N = 10**6\np = [True] * (N + 3)\n\ndef sieve():\n    \n    p[0] = p[1] = False\n    for i in range(2, int(N ** 0.5) + 1):\n        if p[i]:\n            for j in range(i * i, N + 1, i):\n                p[j] = False\n\ndef dao(x):\n    return int(str(x)[::-1])\n\nt = int(input())\nsieve()\nfor _ in range(t):\n    n = int(input())\n    res = []\n    for i in range(2, n):\n        if p[i]:\n            rev = dao(i)\n            if rev < n and p[rev]:\n                res.append(f\"{i} {rev}\")\n    print(' '.join(res))\n",
+        "highlighted_code": "<span class='highlight-red'>N = 10**6\np = [True] * (N + 3)\n\ndef sieve():\n    \n    p[0] = p[1] = False\n    for i in range(2, int(N ** 0.5) + 1):\n        if p[i]:\n            for j in range(i * i, N + 1, i):\n                p[j] = False\n\ndef dao(x):\n    return int(str(x)[::-1])\n\nt = int(input())\nsieve()\nfor _ in range(t):\n    n = int(input())\n    res = []\n    for i in range(2, n):\n        if p[i]:\n            rev = dao(</span>i)\n            if rev <span class='highlight-red'>&lt; n and p[rev]:\n                res.append(f&#34;{i} {rev}&#34;)\n    print(&#39; &#39;.join(</span>res))\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3a9fe535fa0f4f1d7aa/94d5482aeac241829d920e7e/sub_1762247933913_yk0a0eo6n.py",
+        "similarity_percent": 95.56,
+        "full_code": "N = 10**6\np = [True] * (N + 3)\n\ndef sieve():\n    \n    p[0] = p[1] = False\n    for i in range(2, int(N ** 0.5) + 1):\n        if p[i]:\n            for j in range(i * i, N + 1, i):\n                p[j] = False\n\ndef dao(x):\n    return int(str(x)[::-1])\n\nt = int(input())\nsieve()\nfor _ in range(t):\n    n = int(input())\n    res = []\n    for i in range(2, n):\n        if p[i]:\n            rev = dao(i)\n            if rev != i and rev < n and p[rev]:\n                res.append(f\"{i} {rev}\")\n    print(' '.join(res))\n",
+        "highlighted_code": "<span class='highlight-green'>N = 10**6\np = [True] * (N + 3)\n\ndef sieve():\n    \n    p[0] = p[1] = False\n    for i in range(2, int(N ** 0.5) + 1):\n        if p[i]:\n            for j in range(i * i, N + 1, i):\n                p[j] = False\n\ndef dao(x):\n    return int(str(x)[::-1])\n\nt = int(input())\nsieve()\nfor _ in range(t):\n    n = int(input())\n    res = []\n    for i in range(2, n):\n        if p[i]:\n            rev = dao(</span>i)\n            if rev != i and rev <span class='highlight-green'>&lt; n and p[rev]:\n                res.append(f&#34;{i} {rev}&#34;)\n    print(&#39; &#39;.join(</span>res))\n"
+      },
+      "token_overlap": 258,
+      "max_similarity_percent": 98.1
+    },
+    {
+      "case_id": 4,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3a9fe535fa0f4f1d7aa/94d5482aeac241829d920e7e/sub_1762248013626_6xnd5jezc.py",
+        "similarity_percent": 97.4,
+        "full_code": "N = 10**6\np = [True] * (N + 3)\n\ndef sieve():\n    \n    p[0] = p[1] = False\n    for i in range(2, int(N ** 0.5) + 1):\n        if p[i]:\n            for j in range(i * i, N + 1, i):\n                p[j] = False\n\ndef dao(x):\n    return int(str(x)[::-1])\n\nt = int(input())\nsieve()\nfor _ in range(t):\n    n = int(input())\n    res = []\n    for i in range(2, n):\n        if p[i]:\n            rev = dao(i)\n            if rev > i and rev < n and p[rev]:\n                res.append(f\"{i} {rev}\")\n    print(' '.join(res))\n",
+        "highlighted_code": "<span class='highlight-red'>N = 10**6\np = [True] * (N + 3)\n\ndef sieve():\n    \n    p[0] = p[1] = False\n    for i in range(2, int(N ** 0.5) + 1):\n        if p[i]:\n            for j in range(i * i, N + 1, i):\n                p[j] = False\n\ndef dao(x):\n    return int(str(x)[::-1])\n\nt = int(input())\nsieve()\nfor _ in range(t):\n    n = int(input())\n    res = []\n    for i in range(2, n):\n        if p[i]:\n            rev = dao(</span>i)\n            if rev &gt; i <span class='highlight-red'>and rev &lt; n and p[rev]:\n                res.append(f&#34;{i} {rev}&#34;)\n    print(&#39; &#39;.join(</span>res))\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3a9fe535fa0f4f1d7aa/94d5482aeac241829d920e7e/sub_1762247933913_yk0a0eo6n.py",
+        "similarity_percent": 97.04,
+        "full_code": "N = 10**6\np = [True] * (N + 3)\n\ndef sieve():\n    \n    p[0] = p[1] = False\n    for i in range(2, int(N ** 0.5) + 1):\n        if p[i]:\n            for j in range(i * i, N + 1, i):\n                p[j] = False\n\ndef dao(x):\n    return int(str(x)[::-1])\n\nt = int(input())\nsieve()\nfor _ in range(t):\n    n = int(input())\n    res = []\n    for i in range(2, n):\n        if p[i]:\n            rev = dao(i)\n            if rev != i and rev < n and p[rev]:\n                res.append(f\"{i} {rev}\")\n    print(' '.join(res))\n",
+        "highlighted_code": "<span class='highlight-green'>N = 10**6\np = [True] * (N + 3)\n\ndef sieve():\n    \n    p[0] = p[1] = False\n    for i in range(2, int(N ** 0.5) + 1):\n        if p[i]:\n            for j in range(i * i, N + 1, i):\n                p[j] = False\n\ndef dao(x):\n    return int(str(x)[::-1])\n\nt = int(input())\nsieve()\nfor _ in range(t):\n    n = int(input())\n    res = []\n    for i in range(2, n):\n        if p[i]:\n            rev = dao(</span>i)\n            if rev != i <span class='highlight-green'>and rev &lt; n and p[rev]:\n                res.append(f&#34;{i} {rev}&#34;)\n    print(&#39; &#39;.join(</span>res))\n"
+      },
+      "token_overlap": 262,
+      "max_similarity_percent": 97.4
+    },
+    {
+      "case_id": 5,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3a9fe535fa0f4f1d7aa/94d5482aeac241829d920e7e/sub_1762247589689_gvcda9o2e.py",
+        "similarity_percent": 91.63,
+        "full_code": "N = 10**6\np = [True] * (N + 3)\n\ndef sieve():\n    \n    p[0] = p[1] = False\n    for i in range(2, int(N ** 0.5) + 1):\n        if p[i]:\n            for j in range(i * i, N + 1, i):\n                p[j] = False\n\ndef dao(x):\n    return int(str(x)[::-1])\n\nt = int(input())\nsieve()\nfor _ in range(t):\n    n = int(input())\n    res = []\n    for i in range(2, n):\n        if p[i]:\n            rev = dao(i)\n            if rev < n and p[rev]:\n                res.append(f\"{i} {rev}\")\n    print(' '.join(res))\n",
+        "highlighted_code": "<span class='highlight-red'>N = 10**6\np = [True] * (N + 3)\n\ndef sieve():\n    \n    p[0] = p[1] = False\n    for i in range(2, int(N ** 0.5) + 1):\n        if p[i]:\n            for j in range(i * i, N + 1, i):\n                p[j] = False\n\ndef dao(x):\n    return int(str(x)[::-1])\n\nt = int(input())\nsieve()\nfor _ in range(t):\n    n = int(input())\n    res = []\n    for i in range(2, n)</span>:\n        if p[i]:\n            rev = dao(i)\n            if rev &lt; n and <span class='highlight-red'>p[rev]:\n                res.append(f&#34;{i} {rev}&#34;)\n    print(&#39; &#39;.join(</span>res))\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3a9fe535fa0f4f1d7aa/94d5482aeac241829d920e7e/sub_1762249790446_xq4rwi7ve.py",
+        "similarity_percent": 62.6,
+        "full_code": "N = 10**6\np = [True] * (N + 3)\n\ndef sieve():\n    \n    p[0] = p[1] = False\n    for i in range(2, int(N ** 0.5) + 1):\n        if p[i]:\n            for j in range(i * i, N + 1, i):\n                p[j] = False\n\ndef dao(x):\n    return int(str(x)[::-1])\n\nt = int(input())\nsieve()\nfor _ in range(t):\n    n = int(input())\n    res = []\n    for i in range(2, n):\n        if(i == 2):\n            res.append(f\"{i} {3}\")\n            continue\n        if(i == 3):\n            res.append(f\"{i} {2}\")\n            continue\n        if(i == 5):\n            res.append(f\"{i} {7}\")\n            continue\n        if(i == 7):\n            res.append(f\"{i} {5}\")\n            continue\n        if p[i]:\n            rev = dao(i)\n            if p[rev]:\n                res.append(f\"{i} {rev}\")\n    print(' '.join(res))\n",
+        "highlighted_code": "<span class='highlight-green'>N = 10**6\np = [True] * (N + 3)\n\ndef sieve():\n    \n    p[0] = p[1] = False\n    for i in range(2, int(N ** 0.5) + 1):\n        if p[i]:\n            for j in range(i * i, N + 1, i):\n                p[j] = False\n\ndef dao(x):\n    return int(str(x)[::-1])\n\nt = int(input())\nsieve()\nfor _ in range(t):\n    n = int(input())\n    res = []\n    for i in range(2, n)</span>:\n        if(i == 2):\n            res.append(f&#34;{i} {3}&#34;)\n            continue\n        if(i == 3):\n            res.append(f&#34;{i} {2}&#34;)\n            continue\n        if(i == 5):\n            res.append(f&#34;{i} {7}&#34;)\n            continue\n        if(i == 7):\n            res.append(f&#34;{i} {5}&#34;)\n            continue\n        if p[i]:\n            rev = dao(i)\n            if <span class='highlight-green'>p[rev]:\n                res.append(f&#34;{i} {rev}&#34;)\n    print(&#39; &#39;.join(</span>res))\n"
+      },
+      "token_overlap": 241,
+      "max_similarity_percent": 91.63
+    },
+    {
+      "case_id": 6,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3a9fe535fa0f4f1d7aa/94d5482aeac241829d920e7e/sub_1762247589689_gvcda9o2e.py",
+        "similarity_percent": 80.99,
+        "full_code": "N = 10**6\np = [True] * (N + 3)\n\ndef sieve():\n    \n    p[0] = p[1] = False\n    for i in range(2, int(N ** 0.5) + 1):\n        if p[i]:\n            for j in range(i * i, N + 1, i):\n                p[j] = False\n\ndef dao(x):\n    return int(str(x)[::-1])\n\nt = int(input())\nsieve()\nfor _ in range(t):\n    n = int(input())\n    res = []\n    for i in range(2, n):\n        if p[i]:\n            rev = dao(i)\n            if rev < n and p[rev]:\n                res.append(f\"{i} {rev}\")\n    print(' '.join(res))\n",
+        "highlighted_code": "<span class='highlight-red'>N = 10**6\np = [True] * (N + 3)\n\ndef sieve():\n    \n    p[0] = p[1] = False\n    for i in range(2, int(N ** 0.5) + 1):\n        if p[i]:\n            for j in range(i * i, N + 1, i):\n                p[j] = False\n\ndef dao(x):\n    return int(str(x)[::-1])\n\nt = int(input())\nsieve()\nfor _ in range(t):\n    n = int(input())\n    res = []\n    for i in range(2, n):\n        if p</span>[i]:\n            rev = dao(i)\n            if rev &lt; n and p[rev]:\n                res.append(f&#34;{i} {rev}&#34;)\n    print(&#39; &#39;.join(res))\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3a9fe535fa0f4f1d7aa/94d5482aeac241829d920e7e/sub_1762250014190_ot460y5je.py",
+        "similarity_percent": 77.17,
+        "full_code": "N = 10**6\np = [True] * (N + 3)\n\ndef sieve():\n    \n    p[0] = p[1] = False\n    for i in range(2, int(N ** 0.5) + 1):\n        if p[i]:\n            for j in range(i * i, N + 1, i):\n                p[j] = False\n\ndef dao(x):\n    return int(str(x)[::-1])\n\nt = int(input())\nsieve()\nfor _ in range(t):\n    n = int(input())\n    res = []\n    for i in range(2, n):\n        if p[i]:\n            if(i < 10): \n                print(i, end = \" \")\n                continue\n            rev = dao(i)\n            if p[rev]:\n                print(i, rev, end = \" \")\n\n\n",
+        "highlighted_code": "<span class='highlight-green'>N = 10**6\np = [True] * (N + 3)\n\ndef sieve():\n    \n    p[0] = p[1] = False\n    for i in range(2, int(N ** 0.5) + 1):\n        if p[i]:\n            for j in range(i * i, N + 1, i):\n                p[j] = False\n\ndef dao(x):\n    return int(str(x)[::-1])\n\nt = int(input())\nsieve()\nfor _ in range(t):\n    n = int(input())\n    res = []\n    for i in range(2, n):\n        if p</span>[i]:\n            if(i &lt; 10): \n                print(i, end = &#34; &#34;)\n                continue\n            rev = dao(i)\n            if p[rev]:\n                print(i, rev, end = &#34; &#34;)\n\n\n"
+      },
+      "token_overlap": 213,
+      "max_similarity_percent": 80.99
+    },
+    {
+      "case_id": 7,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3a9fe535fa0f4f1d7aa/94d5482aeac241829d920e7e/sub_1762248013626_6xnd5jezc.py",
+        "similarity_percent": 79.18,
+        "full_code": "N = 10**6\np = [True] * (N + 3)\n\ndef sieve():\n    \n    p[0] = p[1] = False\n    for i in range(2, int(N ** 0.5) + 1):\n        if p[i]:\n            for j in range(i * i, N + 1, i):\n                p[j] = False\n\ndef dao(x):\n    return int(str(x)[::-1])\n\nt = int(input())\nsieve()\nfor _ in range(t):\n    n = int(input())\n    res = []\n    for i in range(2, n):\n        if p[i]:\n            rev = dao(i)\n            if rev > i and rev < n and p[rev]:\n                res.append(f\"{i} {rev}\")\n    print(' '.join(res))\n",
+        "highlighted_code": "<span class='highlight-red'>N = 10**6\np = [True] * (N + 3)\n\ndef sieve():\n    \n    p[0] = p[1] = False\n    for i in range(2, int(N ** 0.5) + 1):\n        if p[i]:\n            for j in range(i * i, N + 1, i):\n                p[j] = False\n\ndef dao(x):\n    return int(str(x)[::-1])\n\nt = int(input())\nsieve()\nfor _ in range(t):\n    n = int(input())\n    res = []\n    for i in range(2, n):\n        if p</span>[i]:\n            rev = dao(i)\n            if rev &gt; i and rev &lt; n and p[rev]:\n                res.append(f&#34;{i} {rev}&#34;)\n    print(&#39; &#39;.join(res))\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3a9fe535fa0f4f1d7aa/94d5482aeac241829d920e7e/sub_1762250014190_ot460y5je.py",
+        "similarity_percent": 77.17,
+        "full_code": "N = 10**6\np = [True] * (N + 3)\n\ndef sieve():\n    \n    p[0] = p[1] = False\n    for i in range(2, int(N ** 0.5) + 1):\n        if p[i]:\n            for j in range(i * i, N + 1, i):\n                p[j] = False\n\ndef dao(x):\n    return int(str(x)[::-1])\n\nt = int(input())\nsieve()\nfor _ in range(t):\n    n = int(input())\n    res = []\n    for i in range(2, n):\n        if p[i]:\n            if(i < 10): \n                print(i, end = \" \")\n                continue\n            rev = dao(i)\n            if p[rev]:\n                print(i, rev, end = \" \")\n\n\n",
+        "highlighted_code": "<span class='highlight-green'>N = 10**6\np = [True] * (N + 3)\n\ndef sieve():\n    \n    p[0] = p[1] = False\n    for i in range(2, int(N ** 0.5) + 1):\n        if p[i]:\n            for j in range(i * i, N + 1, i):\n                p[j] = False\n\ndef dao(x):\n    return int(str(x)[::-1])\n\nt = int(input())\nsieve()\nfor _ in range(t):\n    n = int(input())\n    res = []\n    for i in range(2, n):\n        if p</span>[i]:\n            if(i &lt; 10): \n                print(i, end = &#34; &#34;)\n                continue\n            rev = dao(i)\n            if p[rev]:\n                print(i, rev, end = &#34; &#34;)\n\n\n"
+      },
+      "token_overlap": 213,
+      "max_similarity_percent": 79.18
+    },
+    {
+      "case_id": 8,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3a9fe535fa0f4f1d7aa/94d5482aeac241829d920e7e/sub_1762247933913_yk0a0eo6n.py",
+        "similarity_percent": 78.89,
+        "full_code": "N = 10**6\np = [True] * (N + 3)\n\ndef sieve():\n    \n    p[0] = p[1] = False\n    for i in range(2, int(N ** 0.5) + 1):\n        if p[i]:\n            for j in range(i * i, N + 1, i):\n                p[j] = False\n\ndef dao(x):\n    return int(str(x)[::-1])\n\nt = int(input())\nsieve()\nfor _ in range(t):\n    n = int(input())\n    res = []\n    for i in range(2, n):\n        if p[i]:\n            rev = dao(i)\n            if rev != i and rev < n and p[rev]:\n                res.append(f\"{i} {rev}\")\n    print(' '.join(res))\n",
+        "highlighted_code": "<span class='highlight-red'>N = 10**6\np = [True] * (N + 3)\n\ndef sieve():\n    \n    p[0] = p[1] = False\n    for i in range(2, int(N ** 0.5) + 1):\n        if p[i]:\n            for j in range(i * i, N + 1, i):\n                p[j] = False\n\ndef dao(x):\n    return int(str(x)[::-1])\n\nt = int(input())\nsieve()\nfor _ in range(t):\n    n = int(input())\n    res = []\n    for i in range(2, n):\n        if p</span>[i]:\n            rev = dao(i)\n            if rev != i and rev &lt; n and p[rev]:\n                res.append(f&#34;{i} {rev}&#34;)\n    print(&#39; &#39;.join(res))\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3a9fe535fa0f4f1d7aa/94d5482aeac241829d920e7e/sub_1762250014190_ot460y5je.py",
+        "similarity_percent": 77.17,
+        "full_code": "N = 10**6\np = [True] * (N + 3)\n\ndef sieve():\n    \n    p[0] = p[1] = False\n    for i in range(2, int(N ** 0.5) + 1):\n        if p[i]:\n            for j in range(i * i, N + 1, i):\n                p[j] = False\n\ndef dao(x):\n    return int(str(x)[::-1])\n\nt = int(input())\nsieve()\nfor _ in range(t):\n    n = int(input())\n    res = []\n    for i in range(2, n):\n        if p[i]:\n            if(i < 10): \n                print(i, end = \" \")\n                continue\n            rev = dao(i)\n            if p[rev]:\n                print(i, rev, end = \" \")\n\n\n",
+        "highlighted_code": "<span class='highlight-green'>N = 10**6\np = [True] * (N + 3)\n\ndef sieve():\n    \n    p[0] = p[1] = False\n    for i in range(2, int(N ** 0.5) + 1):\n        if p[i]:\n            for j in range(i * i, N + 1, i):\n                p[j] = False\n\ndef dao(x):\n    return int(str(x)[::-1])\n\nt = int(input())\nsieve()\nfor _ in range(t):\n    n = int(input())\n    res = []\n    for i in range(2, n):\n        if p</span>[i]:\n            if(i &lt; 10): \n                print(i, end = &#34; &#34;)\n                continue\n            rev = dao(i)\n            if p[rev]:\n                print(i, rev, end = &#34; &#34;)\n\n\n"
+      },
+      "token_overlap": 213,
+      "max_similarity_percent": 78.89
+    },
+    {
+      "case_id": 9,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3a9fe535fa0f4f1d7aa/94d5482aeac241829d920e7e/sub_1762249790446_xq4rwi7ve.py",
+        "similarity_percent": 62.6,
+        "full_code": "N = 10**6\np = [True] * (N + 3)\n\ndef sieve():\n    \n    p[0] = p[1] = False\n    for i in range(2, int(N ** 0.5) + 1):\n        if p[i]:\n            for j in range(i * i, N + 1, i):\n                p[j] = False\n\ndef dao(x):\n    return int(str(x)[::-1])\n\nt = int(input())\nsieve()\nfor _ in range(t):\n    n = int(input())\n    res = []\n    for i in range(2, n):\n        if(i == 2):\n            res.append(f\"{i} {3}\")\n            continue\n        if(i == 3):\n            res.append(f\"{i} {2}\")\n            continue\n        if(i == 5):\n            res.append(f\"{i} {7}\")\n            continue\n        if(i == 7):\n            res.append(f\"{i} {5}\")\n            continue\n        if p[i]:\n            rev = dao(i)\n            if p[rev]:\n                res.append(f\"{i} {rev}\")\n    print(' '.join(res))\n",
+        "highlighted_code": "<span class='highlight-red'>N = 10**6\np = [True] * (N + 3)\n\ndef sieve():\n    \n    p[0] = p[1] = False\n    for i in range(2, int(N ** 0.5) + 1):\n        if p[i]:\n            for j in range(i * i, N + 1, i):\n                p[j] = False\n\ndef dao(x):\n    return int(str(x)[::-1])\n\nt = int(input())\nsieve()\nfor _ in range(t):\n    n = int(input())\n    res = []\n    for i in range(2, n)</span>:\n        if(i == 2):\n            res.append(f&#34;{i} {3}&#34;)\n            continue\n        if(i == 3):\n            res.append(f&#34;{i} {2}&#34;)\n            continue\n        if(i == 5):\n            res.append(f&#34;{i} {7}&#34;)\n            continue\n        if(i == 7):\n            res.append(f&#34;{i} {5}&#34;)\n            continue\n        if p[i]:\n            rev = dao(i)\n            if <span class='highlight-red'>p[rev]:\n                res.append(f&#34;{i} {rev}&#34;)\n    print(&#39; &#39;.join(</span>res))\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3a9fe535fa0f4f1d7aa/94d5482aeac241829d920e7e/sub_1762248013626_6xnd5jezc.py",
+        "similarity_percent": 89.59,
+        "full_code": "N = 10**6\np = [True] * (N + 3)\n\ndef sieve():\n    \n    p[0] = p[1] = False\n    for i in range(2, int(N ** 0.5) + 1):\n        if p[i]:\n            for j in range(i * i, N + 1, i):\n                p[j] = False\n\ndef dao(x):\n    return int(str(x)[::-1])\n\nt = int(input())\nsieve()\nfor _ in range(t):\n    n = int(input())\n    res = []\n    for i in range(2, n):\n        if p[i]:\n            rev = dao(i)\n            if rev > i and rev < n and p[rev]:\n                res.append(f\"{i} {rev}\")\n    print(' '.join(res))\n",
+        "highlighted_code": "<span class='highlight-green'>N = 10**6\np = [True] * (N + 3)\n\ndef sieve():\n    \n    p[0] = p[1] = False\n    for i in range(2, int(N ** 0.5) + 1):\n        if p[i]:\n            for j in range(i * i, N + 1, i):\n                p[j] = False\n\ndef dao(x):\n    return int(str(x)[::-1])\n\nt = int(input())\nsieve()\nfor _ in range(t):\n    n = int(input())\n    res = []\n    for i in range(2, n)</span>:\n        if p[i]:\n            rev = dao(i)\n            if rev &gt; i and rev &lt; n and <span class='highlight-green'>p[rev]:\n                res.append(f&#34;{i} {rev}&#34;)\n    print(&#39; &#39;.join(</span>res))\n"
+      },
+      "token_overlap": 241,
+      "max_similarity_percent": 89.59
+    },
+    {
+      "case_id": 10,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3a9fe535fa0f4f1d7aa/94d5482aeac241829d920e7e/sub_1762249790446_xq4rwi7ve.py",
+        "similarity_percent": 62.6,
+        "full_code": "N = 10**6\np = [True] * (N + 3)\n\ndef sieve():\n    \n    p[0] = p[1] = False\n    for i in range(2, int(N ** 0.5) + 1):\n        if p[i]:\n            for j in range(i * i, N + 1, i):\n                p[j] = False\n\ndef dao(x):\n    return int(str(x)[::-1])\n\nt = int(input())\nsieve()\nfor _ in range(t):\n    n = int(input())\n    res = []\n    for i in range(2, n):\n        if(i == 2):\n            res.append(f\"{i} {3}\")\n            continue\n        if(i == 3):\n            res.append(f\"{i} {2}\")\n            continue\n        if(i == 5):\n            res.append(f\"{i} {7}\")\n            continue\n        if(i == 7):\n            res.append(f\"{i} {5}\")\n            continue\n        if p[i]:\n            rev = dao(i)\n            if p[rev]:\n                res.append(f\"{i} {rev}\")\n    print(' '.join(res))\n",
+        "highlighted_code": "<span class='highlight-red'>N = 10**6\np = [True] * (N + 3)\n\ndef sieve():\n    \n    p[0] = p[1] = False\n    for i in range(2, int(N ** 0.5) + 1):\n        if p[i]:\n            for j in range(i * i, N + 1, i):\n                p[j] = False\n\ndef dao(x):\n    return int(str(x)[::-1])\n\nt = int(input())\nsieve()\nfor _ in range(t):\n    n = int(input())\n    res = []\n    for i in range(2, n)</span>:\n        if(i == 2):\n            res.append(f&#34;{i} {3}&#34;)\n            continue\n        if(i == 3):\n            res.append(f&#34;{i} {2}&#34;)\n            continue\n        if(i == 5):\n            res.append(f&#34;{i} {7}&#34;)\n            continue\n        if(i == 7):\n            res.append(f&#34;{i} {5}&#34;)\n            continue\n        if p[i]:\n            rev = dao(i)\n            if <span class='highlight-red'>p[rev]:\n                res.append(f&#34;{i} {rev}&#34;)\n    print(&#39; &#39;.join(</span>res))\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3a9fe535fa0f4f1d7aa/94d5482aeac241829d920e7e/sub_1762247933913_yk0a0eo6n.py",
+        "similarity_percent": 89.26,
+        "full_code": "N = 10**6\np = [True] * (N + 3)\n\ndef sieve():\n    \n    p[0] = p[1] = False\n    for i in range(2, int(N ** 0.5) + 1):\n        if p[i]:\n            for j in range(i * i, N + 1, i):\n                p[j] = False\n\ndef dao(x):\n    return int(str(x)[::-1])\n\nt = int(input())\nsieve()\nfor _ in range(t):\n    n = int(input())\n    res = []\n    for i in range(2, n):\n        if p[i]:\n            rev = dao(i)\n            if rev != i and rev < n and p[rev]:\n                res.append(f\"{i} {rev}\")\n    print(' '.join(res))\n",
+        "highlighted_code": "<span class='highlight-green'>N = 10**6\np = [True] * (N + 3)\n\ndef sieve():\n    \n    p[0] = p[1] = False\n    for i in range(2, int(N ** 0.5) + 1):\n        if p[i]:\n            for j in range(i * i, N + 1, i):\n                p[j] = False\n\ndef dao(x):\n    return int(str(x)[::-1])\n\nt = int(input())\nsieve()\nfor _ in range(t):\n    n = int(input())\n    res = []\n    for i in range(2, n)</span>:\n        if p[i]:\n            rev = dao(i)\n            if rev != i and rev &lt; n and <span class='highlight-green'>p[rev]:\n                res.append(f&#34;{i} {rev}&#34;)\n    print(&#39; &#39;.join(</span>res))\n"
+      },
+      "token_overlap": 241,
+      "max_similarity_percent": 89.26
+    },
+    {
+      "case_id": 11,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3a9fe535fa0f4f1d7aa/94d5482aeac241829d920e7e/sub_1762249790446_xq4rwi7ve.py",
+        "similarity_percent": 54.29,
+        "full_code": "N = 10**6\np = [True] * (N + 3)\n\ndef sieve():\n    \n    p[0] = p[1] = False\n    for i in range(2, int(N ** 0.5) + 1):\n        if p[i]:\n            for j in range(i * i, N + 1, i):\n                p[j] = False\n\ndef dao(x):\n    return int(str(x)[::-1])\n\nt = int(input())\nsieve()\nfor _ in range(t):\n    n = int(input())\n    res = []\n    for i in range(2, n):\n        if(i == 2):\n            res.append(f\"{i} {3}\")\n            continue\n        if(i == 3):\n            res.append(f\"{i} {2}\")\n            continue\n        if(i == 5):\n            res.append(f\"{i} {7}\")\n            continue\n        if(i == 7):\n            res.append(f\"{i} {5}\")\n            continue\n        if p[i]:\n            rev = dao(i)\n            if p[rev]:\n                res.append(f\"{i} {rev}\")\n    print(' '.join(res))\n",
+        "highlighted_code": "<span class='highlight-red'>N = 10**6\np = [True] * (N + 3)\n\ndef sieve():\n    \n    p[0] = p[1] = False\n    for i in range(2, int(N ** 0.5) + 1):\n        if p[i]:\n            for j in range(i * i, N + 1, i):\n                p[j] = False\n\ndef dao(x):\n    return int(str(x)[::-1])\n\nt = int(input())\nsieve()\nfor _ in range(t):\n    n = int(input())\n    res = []\n    for i in range(2, n)</span>:\n        if(i == 2):\n            res.append(f&#34;{i} {3}&#34;)\n            continue\n        if(i == 3):\n            res.append(f&#34;{i} {2}&#34;)\n            continue\n        if(i == 5):\n            res.append(f&#34;{i} {7}&#34;)\n            continue\n        if(i == 7):\n            res.append(f&#34;{i} {5}&#34;)\n            continue\n        if p[i]:\n            rev = dao(i)\n            if p[rev]:\n                res.append(f&#34;{i} {rev}&#34;)\n    print(&#39; &#39;.join(res))\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3a9fe535fa0f4f1d7aa/94d5482aeac241829d920e7e/sub_1762250014190_ot460y5je.py",
+        "similarity_percent": 75.72,
+        "full_code": "N = 10**6\np = [True] * (N + 3)\n\ndef sieve():\n    \n    p[0] = p[1] = False\n    for i in range(2, int(N ** 0.5) + 1):\n        if p[i]:\n            for j in range(i * i, N + 1, i):\n                p[j] = False\n\ndef dao(x):\n    return int(str(x)[::-1])\n\nt = int(input())\nsieve()\nfor _ in range(t):\n    n = int(input())\n    res = []\n    for i in range(2, n):\n        if p[i]:\n            if(i < 10): \n                print(i, end = \" \")\n                continue\n            rev = dao(i)\n            if p[rev]:\n                print(i, rev, end = \" \")\n\n\n",
+        "highlighted_code": "<span class='highlight-green'>N = 10**6\np = [True] * (N + 3)\n\ndef sieve():\n    \n    p[0] = p[1] = False\n    for i in range(2, int(N ** 0.5) + 1):\n        if p[i]:\n            for j in range(i * i, N + 1, i):\n                p[j] = False\n\ndef dao(x):\n    return int(str(x)[::-1])\n\nt = int(input())\nsieve()\nfor _ in range(t):\n    n = int(input())\n    res = []\n    for i in range(2, n)</span>:\n        if p[i]:\n            if(i &lt; 10): \n                print(i, end = &#34; &#34;)\n                continue\n            rev = dao(i)\n            if p[rev]:\n                print(i, rev, end = &#34; &#34;)\n\n\n"
+      },
+      "token_overlap": 209,
+      "max_similarity_percent": 75.72
+    }
+  ]
+}

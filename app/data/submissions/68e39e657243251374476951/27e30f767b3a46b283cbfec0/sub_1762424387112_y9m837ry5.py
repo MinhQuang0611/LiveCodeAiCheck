@@ -1,0 +1,5 @@
+s = input()
+s2 = input()
+set_1 = set(x for x in s)
+set_2 = set(y for y in s2)
+print('true' if set_1 == set_2 else 'false')

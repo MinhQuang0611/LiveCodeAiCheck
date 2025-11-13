@@ -4,25 +4,110 @@
     "min_token_overlap": 80,
     "min_similarity_percent": 60
   },
-  "total_cases_found": 1,
-  "total_cases_filtered": 1,
+  "total_cases_found": 23,
+  "total_cases_filtered": 6,
   "cases": [
     {
       "case_id": 1,
       "file1": {
-        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68fdc3a1fe535fa0f4f1d6ae/27e30f767b3a46b283cbfec0/sub_1761667760873_0b16tjbal.py",
-        "similarity_percent": 51.96,
-        "full_code": "def re_num(n):\n    num = str(n)[::-1]\n    return int(num)\nt = int(input())\nfor _ in range(t):\n    n = int(input())\n    while n % 7 != 0:\n        n += re_num(n)\n    print(n)\n",
-        "highlighted_code": "def re_num(n):\n    num = str(n)[::-1]\n    return int(num)\nt = i<span class='highlight-red'>nt(input())\nfor _ in range(t):\n    n = int(input())\n    while n % 7 != 0:\n        n </span>+= re_num(n)\n    print(n)\n"
+        "path": "/app/app/data/submissions/68fdc3a1fe535fa0f4f1d6ae/f95120b3a38a461085ef58cb/sub_1761847032497_ksuj4fqf2.py",
+        "similarity_percent": 100.0,
+        "full_code": "t = int(input())\n\nwhile t > 0:\n    nums = int(input())\n\n    while nums % 7 != 0:\n        string = str(nums)\n\n        new_nums = int(string[::-1])\n\n        nums += new_nums\n\n    print(nums)\n    t -= 1",
+        "highlighted_code": "<span class='highlight-red'>t = int(input())\n\nwhile t &gt; 0:\n    nums = int(input())\n\n    while nums % 7 != 0:\n        string = str(nums)\n\n        new_nums = int(string[::-1])\n\n        nums += new_nums\n\n    print(nums)\n    t </span>-= 1"
       },
       "file2": {
-        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68fdc3a1fe535fa0f4f1d6ae/d82933fea814463eb5b029d1/sub_1761621036707_h0fbhbhwq.py",
-        "similarity_percent": 66.25,
+        "path": "/app/app/data/submissions/68fdc3a1fe535fa0f4f1d6ae/ffdb326842044f2e98b7aaa7/sub_1761725473115_b2durhm3n.py",
+        "similarity_percent": 100.0,
+        "full_code": "t = int(input())\n\nwhile t > 0:\n    nums = int(input())\n\n    while nums % 7 != 0:\n        string = str(nums)\n\n        new_nums = int(string[::-1])\n\n        nums += new_nums\n\n    print(nums)\n    t -= 1",
+        "highlighted_code": "<span class='highlight-green'>t = int(input())\n\nwhile t &gt; 0:\n    nums = int(input())\n\n    while nums % 7 != 0:\n        string = str(nums)\n\n        new_nums = int(string[::-1])\n\n        nums += new_nums\n\n    print(nums)\n    t </span>-= 1"
+      },
+      "token_overlap": 84,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 2,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3a1fe535fa0f4f1d6ae/d82933fea814463eb5b029d1/sub_1761621036707_h0fbhbhwq.py",
+        "similarity_percent": 69.23,
         "full_code": "t = int(input())\nfor _ in range(t):\n    n = int(input())\n    while n % 7 != 0:\n        n += int(str(n)[::-1]) \n    print(n)",
-        "highlighted_code": "t = i<span class='highlight-green'>nt(input())\nfor _ in range(t):\n    n = int(input())\n    while n % 7 != 0:\n        n </span>+= int(str(n)[::-1]) \n    print(n)"
+        "highlighted_code": "<span class='highlight-red'>t = int(input())\nfor _ in range(t):\n    n = int(input())\n    while n % 7 != 0</span>:\n        n += int(str(n)[::-1]) \n    print(n)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3a1fe535fa0f4f1d6ae/e59c34a1bebb49d29bfb3592/sub_1762161352061_6nl3130j2.py",
+        "similarity_percent": 62.07,
+        "full_code": "t = int(input())\nfor _ in range(t):\n    n = int(input())\n    while n % 7 != 0:\n        x = int(str(n)[::-1])\n        n = n + x\n    print(n)",
+        "highlighted_code": "<span class='highlight-green'>t = int(input())\nfor _ in range(t):\n    n = int(input())\n    while n % 7 != 0</span>:\n        x = int(str(n)[::-1])\n        n = n + x\n    print(n)"
+      },
+      "token_overlap": 54,
+      "max_similarity_percent": 69.23
+    },
+    {
+      "case_id": 3,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3a1fe535fa0f4f1d6ae/d9aec9d917da4c5e9beeb80b/sub_1762778273910_v9t9y2wt9.py",
+        "similarity_percent": 64.49,
+        "full_code": "t = int(input())\nfor i in range(t):\n    n = int(input())\n    for i in range(1000):\n        if n % 7 == 0:\n            break\n        a = int(str(n)[::-1])\n        n = n + a\n    print(n)\n",
+        "highlighted_code": "<span class='highlight-red'>t = int(input())\nfor i in range(t):\n    n = int(inpu</span>t())\n    for i in range(1000):\n        if n % 7 == 0:\n            break\n        a = <span class='highlight-red'>int(str(n)[::-1])\n        n = n + a\n    print(n)</span>\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3a1fe535fa0f4f1d6ae/e59c34a1bebb49d29bfb3592/sub_1762161352061_6nl3130j2.py",
+        "similarity_percent": 79.31,
+        "full_code": "t = int(input())\nfor _ in range(t):\n    n = int(input())\n    while n % 7 != 0:\n        x = int(str(n)[::-1])\n        n = n + x\n    print(n)",
+        "highlighted_code": "<span class='highlight-green'>t = int(input())\nfor _ in range(t):\n    n = int(inpu</span>t())\n    while n % 7 != 0:\n        x = <span class='highlight-green'>int(str(n)[::-1])\n        n = n + x\n    print(n)</span>"
+      },
+      "token_overlap": 69,
+      "max_similarity_percent": 79.31
+    },
+    {
+      "case_id": 4,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3a1fe535fa0f4f1d6ae/449c44ebafa84f0d8d5b6d0f/sub_1762617095970_2pepyvdcw.py",
+        "similarity_percent": 53.95,
+        "full_code": "def nguoc(n):\n    res = 0\n    while n != 0:\n        res = res * 10 + n % 10\n        n //= 10\n    return res \nif __name__ == '__main__':\n    t = int(input())\n    for _ in range(t):\n        n = int(input())\n        if n % 7 == 0:\n            print(n)\n        else:\n            while n % 7 != 0:\n                n = n + nguoc(n)\n            print(n)\n",
+        "highlighted_code": "def nguoc(n):\n    res = 0\n    while n != 0:\n        res = res * 10 + n % 10\n        n //= 10\n    return res \nif __name__ == &#39;__main__&#39;:\n    t <span class='highlight-red'>= int(input())\n    for _ in range(t):\n        n = int(input())\n        if n % 7 == 0:\n            print(n)\n        else:\n            while n % 7 != 0:\n                n = n + nguoc(</span>n)\n            print(n)\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3a1fe535fa0f4f1d6ae/cd93b2ff882a4ffa85f4518f/sub_1762781751541_5o26x9zhk.py",
+        "similarity_percent": 40.0,
+        "full_code": "def dao(n):\n    z=0\n    while n>0:\n        z=z*10+n%10\n        n=n//10\n    return z \ndef check(a,b):\n    ok=False\n    if (a+b)%7==0:\n        ok=True\n    return ok\nt=int(input())\nfor _ in range (t):\n    n=int(input())\n    if n%7==0:\n        print(n)\n    else:\n        while n%7!=0:\n            k=n+dao(n)\n            if k%7==0:\n                print(k)\n                break\n            else:\n                n=n+dao(n)",
+        "highlighted_code": "def dao(n):\n    z=0\n    while n&gt;0:\n        z=z*10+n%10\n        n=n//10\n    return z \ndef check(a,b):\n    ok=False\n    if (a+b)%7==0:\n        ok=True\n    return ok\nt<span class='highlight-green'>=int(input())\nfor _ in range (t):\n    n=int(input())\n    if n%7==0:\n        print(n)\n    else:\n        while n%7!=0:\n            k=n+dao(</span>n)\n            if k%7==0:\n                print(k)\n                break\n            else:\n                n=n+dao(n)"
+      },
+      "token_overlap": 82,
+      "max_similarity_percent": 53.95
+    },
+    {
+      "case_id": 5,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3a1fe535fa0f4f1d6ae/27e30f767b3a46b283cbfec0/sub_1761667760873_0b16tjbal.py",
+        "similarity_percent": 53.54,
+        "full_code": "def re_num(n):\n    num = str(n)[::-1]\n    return int(num)\nt = int(input())\nfor _ in range(t):\n    n = int(input())\n    while n % 7 != 0:\n        n += re_num(n)\n    print(n)\n",
+        "highlighted_code": "def re_num(n):\n    num = str(n)[::-1]\n    return int(num)\nt <span class='highlight-red'>= int(input())\nfor _ in range(t):\n    n = int(input())\n    while n % 7 != 0</span>:\n        n += re_num(n)\n    print(n)\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3a1fe535fa0f4f1d6ae/d82933fea814463eb5b029d1/sub_1761621036707_h0fbhbhwq.py",
+        "similarity_percent": 67.95,
+        "full_code": "t = int(input())\nfor _ in range(t):\n    n = int(input())\n    while n % 7 != 0:\n        n += int(str(n)[::-1]) \n    print(n)",
+        "highlighted_code": "t <span class='highlight-green'>= int(input())\nfor _ in range(t):\n    n = int(input())\n    while n % 7 != 0</span>:\n        n += int(str(n)[::-1]) \n    print(n)"
       },
       "token_overlap": 53,
-      "max_similarity_percent": 66.25
+      "max_similarity_percent": 67.95
+    },
+    {
+      "case_id": 6,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3a1fe535fa0f4f1d6ae/27e30f767b3a46b283cbfec0/sub_1761667760873_0b16tjbal.py",
+        "similarity_percent": 53.54,
+        "full_code": "def re_num(n):\n    num = str(n)[::-1]\n    return int(num)\nt = int(input())\nfor _ in range(t):\n    n = int(input())\n    while n % 7 != 0:\n        n += re_num(n)\n    print(n)\n",
+        "highlighted_code": "def re_num(n):\n    num = str(n)[::-1]\n    return int(num)\nt <span class='highlight-red'>= int(input())\nfor _ in range(t):\n    n = int(input())\n    while n % 7 != 0</span>:\n        n += re_num(n)\n    print(n)\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3a1fe535fa0f4f1d6ae/e59c34a1bebb49d29bfb3592/sub_1762161352061_6nl3130j2.py",
+        "similarity_percent": 60.92,
+        "full_code": "t = int(input())\nfor _ in range(t):\n    n = int(input())\n    while n % 7 != 0:\n        x = int(str(n)[::-1])\n        n = n + x\n    print(n)",
+        "highlighted_code": "t <span class='highlight-green'>= int(input())\nfor _ in range(t):\n    n = int(input())\n    while n % 7 != 0</span>:\n        x = int(str(n)[::-1])\n        n = n + x\n    print(n)"
+      },
+      "token_overlap": 53,
+      "max_similarity_percent": 60.92
     }
   ]
 }

@@ -4,59 +4,484 @@
     "min_token_overlap": 80,
     "min_similarity_percent": 60
   },
-  "total_cases_found": 3,
-  "total_cases_filtered": 3,
+  "total_cases_found": 28,
+  "total_cases_filtered": 28,
   "cases": [
     {
       "case_id": 1,
       "file1": {
-        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68fdc3b1fe535fa0f4f1d8a6/f95120b3a38a461085ef58cb/sub_1761582420125_mam5glsrw.py",
+        "path": "/app/app/data/submissions/68fdc3b1fe535fa0f4f1d8a6/d82933fea814463eb5b029d1/sub_1761615519760_5d5svgseu.py",
         "similarity_percent": 100.0,
         "full_code": "t = int(input())\nfor i in range(t):\n    n = int(input())\n    if n % 3 == 0:\n        print(\"YES\")\n    else:\n        print(\"NO\")",
-        "highlighted_code": "<span class='highlight-red'>t = int(input())\nfor i in range(t):\n    n = int(input())\n    if n % 3 == 0:\n        print(&#34;YES&#34;)\n    else:\n        print(&#34;NO&#34;</span>)"
+        "highlighted_code": "<span class='highlight-red'>t = int(input())\nfor i in range(t):\n    n = int(input())\n    if n % 3 == 0:\n        print(&#34;YES&#34;)\n    else:\n        print</span>(&#34;NO&#34;)"
       },
       "file2": {
-        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68fdc3b1fe535fa0f4f1d8a6/30d29d0969994c929976d40a/sub_1761466303974_llg42m7wt.py",
+        "path": "/app/app/data/submissions/68fdc3b1fe535fa0f4f1d8a6/f95120b3a38a461085ef58cb/sub_1761582420125_mam5glsrw.py",
         "similarity_percent": 100.0,
-        "full_code": "t=int(input())\nfor _ in range(t):\n    n=int(input())\n    if n%3==0:\n        print(\"YES\")\n    else:\n        print(\"NO\")",
-        "highlighted_code": "<span class='highlight-green'>t=int(input())\nfor _ in range(t):\n    n=int(input())\n    if n%3==0:\n        print(&#34;YES&#34;)\n    else:\n        print(&#34;NO&#34;</span>)"
+        "full_code": "t = int(input())\nfor i in range(t):\n    n = int(input())\n    if n % 3 == 0:\n        print(\"YES\")\n    else:\n        print(\"NO\")",
+        "highlighted_code": "<span class='highlight-green'>t = int(input())\nfor i in range(t):\n    n = int(input())\n    if n % 3 == 0:\n        print(&#34;YES&#34;)\n    else:\n        print</span>(&#34;NO&#34;)"
       },
-      "token_overlap": 76,
+      "token_overlap": 72,
       "max_similarity_percent": 100.0
     },
     {
       "case_id": 2,
       "file1": {
-        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68fdc3b1fe535fa0f4f1d8a6/f95120b3a38a461085ef58cb/sub_1761582420125_mam5glsrw.py",
+        "path": "/app/app/data/submissions/68fdc3b1fe535fa0f4f1d8a6/d82933fea814463eb5b029d1/sub_1761615519760_5d5svgseu.py",
         "similarity_percent": 100.0,
         "full_code": "t = int(input())\nfor i in range(t):\n    n = int(input())\n    if n % 3 == 0:\n        print(\"YES\")\n    else:\n        print(\"NO\")",
-        "highlighted_code": "<span class='highlight-red'>t = int(input())\nfor i in range(t):\n    n = int(input())\n    if n % 3 == 0:\n        print(&#34;YES&#34;)\n    else:\n        print(&#34;NO&#34;</span>)"
+        "highlighted_code": "<span class='highlight-red'>t = int(input())\nfor i in range(t):\n    n = int(input())\n    if n % 3 == 0:\n        print(&#34;YES&#34;)\n    else:\n        print</span>(&#34;NO&#34;)"
       },
       "file2": {
-        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68fdc3b1fe535fa0f4f1d8a6/d82933fea814463eb5b029d1/sub_1761615519760_5d5svgseu.py",
+        "path": "/app/app/data/submissions/68fdc3b1fe535fa0f4f1d8a6/fa972feccadf40fe9df799d0/sub_1762588967725_51i5ui18k.py",
         "similarity_percent": 100.0,
-        "full_code": "t = int(input())\nfor i in range(t):\n    n = int(input())\n    if n % 3 == 0:\n        print(\"YES\")\n    else:\n        print(\"NO\")",
-        "highlighted_code": "<span class='highlight-green'>t = int(input())\nfor i in range(t):\n    n = int(input())\n    if n % 3 == 0:\n        print(&#34;YES&#34;)\n    else:\n        print(&#34;NO&#34;</span>)"
+        "full_code": "t = int(input())\nfor _ in range(t):\n    n = int(input())\n    if n % 3 == 0:\n        print(\"YES\")\n    else:\n        print(\"NO\")",
+        "highlighted_code": "<span class='highlight-green'>t = int(input())\nfor _ in range(t):\n    n = int(input())\n    if n % 3 == 0:\n        print(&#34;YES&#34;)\n    else:\n        print</span>(&#34;NO&#34;)"
       },
-      "token_overlap": 76,
+      "token_overlap": 72,
       "max_similarity_percent": 100.0
     },
     {
       "case_id": 3,
       "file1": {
-        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68fdc3b1fe535fa0f4f1d8a6/30d29d0969994c929976d40a/sub_1761466303974_llg42m7wt.py",
-        "similarity_percent": 100.0,
-        "full_code": "t=int(input())\nfor _ in range(t):\n    n=int(input())\n    if n%3==0:\n        print(\"YES\")\n    else:\n        print(\"NO\")",
-        "highlighted_code": "<span class='highlight-red'>t=int(input())\nfor _ in range(t):\n    n=int(input())\n    if n%3==0:\n        print(&#34;YES&#34;)\n    else:\n        print(&#34;NO&#34;</span>)"
-      },
-      "file2": {
-        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68fdc3b1fe535fa0f4f1d8a6/d82933fea814463eb5b029d1/sub_1761615519760_5d5svgseu.py",
+        "path": "/app/app/data/submissions/68fdc3b1fe535fa0f4f1d8a6/d82933fea814463eb5b029d1/sub_1761615519760_5d5svgseu.py",
         "similarity_percent": 100.0,
         "full_code": "t = int(input())\nfor i in range(t):\n    n = int(input())\n    if n % 3 == 0:\n        print(\"YES\")\n    else:\n        print(\"NO\")",
-        "highlighted_code": "<span class='highlight-green'>t = int(input())\nfor i in range(t):\n    n = int(input())\n    if n % 3 == 0:\n        print(&#34;YES&#34;)\n    else:\n        print(&#34;NO&#34;</span>)"
+        "highlighted_code": "<span class='highlight-red'>t = int(input())\nfor i in range(t):\n    n = int(input())\n    if n % 3 == 0:\n        print(&#34;YES&#34;)\n    else:\n        print</span>(&#34;NO&#34;)"
       },
-      "token_overlap": 76,
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b1fe535fa0f4f1d8a6/cd93b2ff882a4ffa85f4518f/sub_1761889233013_g7tj2etkq.py",
+        "similarity_percent": 100.0,
+        "full_code": "n=int(input())\nfor _ in range (n):\n    n=int(input())\n    if n%3==0:\n        print(\"YES\")\n    else:\n        print(\"NO\")",
+        "highlighted_code": "<span class='highlight-green'>n=int(input())\nfor _ in range (n):\n    n=int(input())\n    if n%3==0:\n        print(&#34;YES&#34;)\n    else:\n        print</span>(&#34;NO&#34;)"
+      },
+      "token_overlap": 72,
       "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 4,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b1fe535fa0f4f1d8a6/d82933fea814463eb5b029d1/sub_1761615519760_5d5svgseu.py",
+        "similarity_percent": 100.0,
+        "full_code": "t = int(input())\nfor i in range(t):\n    n = int(input())\n    if n % 3 == 0:\n        print(\"YES\")\n    else:\n        print(\"NO\")",
+        "highlighted_code": "<span class='highlight-red'>t = int(input())\nfor i in range(t):\n    n = int(input())\n    if n % 3 == 0:\n        print(&#34;YES&#34;)\n    else:\n        print</span>(&#34;NO&#34;)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b1fe535fa0f4f1d8a6/bcb420abb39b4af095b63cf8/sub_1762633582911_gtkvfjj2y.py",
+        "similarity_percent": 100.0,
+        "full_code": "t=int(input())\nfor i in range(t):\n    n=int(input())\n    if n%3==0:\n        print(\"YES\")\n    else:\n        print(\"NO\")",
+        "highlighted_code": "<span class='highlight-green'>t=int(input())\nfor i in range(t):\n    n=int(input())\n    if n%3==0:\n        print(&#34;YES&#34;)\n    else:\n        print</span>(&#34;NO&#34;)"
+      },
+      "token_overlap": 72,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 5,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b1fe535fa0f4f1d8a6/d82933fea814463eb5b029d1/sub_1761615519760_5d5svgseu.py",
+        "similarity_percent": 100.0,
+        "full_code": "t = int(input())\nfor i in range(t):\n    n = int(input())\n    if n % 3 == 0:\n        print(\"YES\")\n    else:\n        print(\"NO\")",
+        "highlighted_code": "<span class='highlight-red'>t = int(input())\nfor i in range(t):\n    n = int(input())\n    if n % 3 == 0:\n        print(&#34;YES&#34;)\n    else:\n        print</span>(&#34;NO&#34;)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b1fe535fa0f4f1d8a6/fa972feccadf40fe9df799d0/sub_1762588907403_mxyoiydrm.py",
+        "similarity_percent": 100.0,
+        "full_code": "t = int(input())\nfor _ in range(t):\n    n = int(input())\n    if n % 3 == 0:\n        print(\"YES\")\n    else:\n        print(\"NO\")",
+        "highlighted_code": "<span class='highlight-green'>t = int(input())\nfor _ in range(t):\n    n = int(input())\n    if n % 3 == 0:\n        print(&#34;YES&#34;)\n    else:\n        print</span>(&#34;NO&#34;)"
+      },
+      "token_overlap": 72,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 6,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b1fe535fa0f4f1d8a6/d82933fea814463eb5b029d1/sub_1761615519760_5d5svgseu.py",
+        "similarity_percent": 100.0,
+        "full_code": "t = int(input())\nfor i in range(t):\n    n = int(input())\n    if n % 3 == 0:\n        print(\"YES\")\n    else:\n        print(\"NO\")",
+        "highlighted_code": "<span class='highlight-red'>t = int(input())\nfor i in range(t):\n    n = int(input())\n    if n % 3 == 0:\n        print(&#34;YES&#34;)\n    else:\n        print</span>(&#34;NO&#34;)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b1fe535fa0f4f1d8a6/30d29d0969994c929976d40a/sub_1761466303974_llg42m7wt.py",
+        "similarity_percent": 100.0,
+        "full_code": "t=int(input())\nfor _ in range(t):\n    n=int(input())\n    if n%3==0:\n        print(\"YES\")\n    else:\n        print(\"NO\")",
+        "highlighted_code": "<span class='highlight-green'>t=int(input())\nfor _ in range(t):\n    n=int(input())\n    if n%3==0:\n        print(&#34;YES&#34;)\n    else:\n        print</span>(&#34;NO&#34;)"
+      },
+      "token_overlap": 72,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 7,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b1fe535fa0f4f1d8a6/f95120b3a38a461085ef58cb/sub_1761582420125_mam5glsrw.py",
+        "similarity_percent": 100.0,
+        "full_code": "t = int(input())\nfor i in range(t):\n    n = int(input())\n    if n % 3 == 0:\n        print(\"YES\")\n    else:\n        print(\"NO\")",
+        "highlighted_code": "<span class='highlight-red'>t = int(input())\nfor i in range(t):\n    n = int(input())\n    if n % 3 == 0:\n        print(&#34;YES&#34;)\n    else:\n        print</span>(&#34;NO&#34;)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b1fe535fa0f4f1d8a6/fa972feccadf40fe9df799d0/sub_1762588967725_51i5ui18k.py",
+        "similarity_percent": 100.0,
+        "full_code": "t = int(input())\nfor _ in range(t):\n    n = int(input())\n    if n % 3 == 0:\n        print(\"YES\")\n    else:\n        print(\"NO\")",
+        "highlighted_code": "<span class='highlight-green'>t = int(input())\nfor _ in range(t):\n    n = int(input())\n    if n % 3 == 0:\n        print(&#34;YES&#34;)\n    else:\n        print</span>(&#34;NO&#34;)"
+      },
+      "token_overlap": 72,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 8,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b1fe535fa0f4f1d8a6/f95120b3a38a461085ef58cb/sub_1761582420125_mam5glsrw.py",
+        "similarity_percent": 100.0,
+        "full_code": "t = int(input())\nfor i in range(t):\n    n = int(input())\n    if n % 3 == 0:\n        print(\"YES\")\n    else:\n        print(\"NO\")",
+        "highlighted_code": "<span class='highlight-red'>t = int(input())\nfor i in range(t):\n    n = int(input())\n    if n % 3 == 0:\n        print(&#34;YES&#34;)\n    else:\n        print</span>(&#34;NO&#34;)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b1fe535fa0f4f1d8a6/cd93b2ff882a4ffa85f4518f/sub_1761889233013_g7tj2etkq.py",
+        "similarity_percent": 100.0,
+        "full_code": "n=int(input())\nfor _ in range (n):\n    n=int(input())\n    if n%3==0:\n        print(\"YES\")\n    else:\n        print(\"NO\")",
+        "highlighted_code": "<span class='highlight-green'>n=int(input())\nfor _ in range (n):\n    n=int(input())\n    if n%3==0:\n        print(&#34;YES&#34;)\n    else:\n        print</span>(&#34;NO&#34;)"
+      },
+      "token_overlap": 72,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 9,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b1fe535fa0f4f1d8a6/f95120b3a38a461085ef58cb/sub_1761582420125_mam5glsrw.py",
+        "similarity_percent": 100.0,
+        "full_code": "t = int(input())\nfor i in range(t):\n    n = int(input())\n    if n % 3 == 0:\n        print(\"YES\")\n    else:\n        print(\"NO\")",
+        "highlighted_code": "<span class='highlight-red'>t = int(input())\nfor i in range(t):\n    n = int(input())\n    if n % 3 == 0:\n        print(&#34;YES&#34;)\n    else:\n        print</span>(&#34;NO&#34;)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b1fe535fa0f4f1d8a6/bcb420abb39b4af095b63cf8/sub_1762633582911_gtkvfjj2y.py",
+        "similarity_percent": 100.0,
+        "full_code": "t=int(input())\nfor i in range(t):\n    n=int(input())\n    if n%3==0:\n        print(\"YES\")\n    else:\n        print(\"NO\")",
+        "highlighted_code": "<span class='highlight-green'>t=int(input())\nfor i in range(t):\n    n=int(input())\n    if n%3==0:\n        print(&#34;YES&#34;)\n    else:\n        print</span>(&#34;NO&#34;)"
+      },
+      "token_overlap": 72,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 10,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b1fe535fa0f4f1d8a6/f95120b3a38a461085ef58cb/sub_1761582420125_mam5glsrw.py",
+        "similarity_percent": 100.0,
+        "full_code": "t = int(input())\nfor i in range(t):\n    n = int(input())\n    if n % 3 == 0:\n        print(\"YES\")\n    else:\n        print(\"NO\")",
+        "highlighted_code": "<span class='highlight-red'>t = int(input())\nfor i in range(t):\n    n = int(input())\n    if n % 3 == 0:\n        print(&#34;YES&#34;)\n    else:\n        print</span>(&#34;NO&#34;)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b1fe535fa0f4f1d8a6/fa972feccadf40fe9df799d0/sub_1762588907403_mxyoiydrm.py",
+        "similarity_percent": 100.0,
+        "full_code": "t = int(input())\nfor _ in range(t):\n    n = int(input())\n    if n % 3 == 0:\n        print(\"YES\")\n    else:\n        print(\"NO\")",
+        "highlighted_code": "<span class='highlight-green'>t = int(input())\nfor _ in range(t):\n    n = int(input())\n    if n % 3 == 0:\n        print(&#34;YES&#34;)\n    else:\n        print</span>(&#34;NO&#34;)"
+      },
+      "token_overlap": 72,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 11,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b1fe535fa0f4f1d8a6/f95120b3a38a461085ef58cb/sub_1761582420125_mam5glsrw.py",
+        "similarity_percent": 100.0,
+        "full_code": "t = int(input())\nfor i in range(t):\n    n = int(input())\n    if n % 3 == 0:\n        print(\"YES\")\n    else:\n        print(\"NO\")",
+        "highlighted_code": "<span class='highlight-red'>t = int(input())\nfor i in range(t):\n    n = int(input())\n    if n % 3 == 0:\n        print(&#34;YES&#34;)\n    else:\n        print</span>(&#34;NO&#34;)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b1fe535fa0f4f1d8a6/30d29d0969994c929976d40a/sub_1761466303974_llg42m7wt.py",
+        "similarity_percent": 100.0,
+        "full_code": "t=int(input())\nfor _ in range(t):\n    n=int(input())\n    if n%3==0:\n        print(\"YES\")\n    else:\n        print(\"NO\")",
+        "highlighted_code": "<span class='highlight-green'>t=int(input())\nfor _ in range(t):\n    n=int(input())\n    if n%3==0:\n        print(&#34;YES&#34;)\n    else:\n        print</span>(&#34;NO&#34;)"
+      },
+      "token_overlap": 72,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 12,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b1fe535fa0f4f1d8a6/fa972feccadf40fe9df799d0/sub_1762588967725_51i5ui18k.py",
+        "similarity_percent": 100.0,
+        "full_code": "t = int(input())\nfor _ in range(t):\n    n = int(input())\n    if n % 3 == 0:\n        print(\"YES\")\n    else:\n        print(\"NO\")",
+        "highlighted_code": "<span class='highlight-red'>t = int(input())\nfor _ in range(t):\n    n = int(input())\n    if n % 3 == 0:\n        print(&#34;YES&#34;)\n    else:\n        print</span>(&#34;NO&#34;)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b1fe535fa0f4f1d8a6/cd93b2ff882a4ffa85f4518f/sub_1761889233013_g7tj2etkq.py",
+        "similarity_percent": 100.0,
+        "full_code": "n=int(input())\nfor _ in range (n):\n    n=int(input())\n    if n%3==0:\n        print(\"YES\")\n    else:\n        print(\"NO\")",
+        "highlighted_code": "<span class='highlight-green'>n=int(input())\nfor _ in range (n):\n    n=int(input())\n    if n%3==0:\n        print(&#34;YES&#34;)\n    else:\n        print</span>(&#34;NO&#34;)"
+      },
+      "token_overlap": 72,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 13,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b1fe535fa0f4f1d8a6/fa972feccadf40fe9df799d0/sub_1762588967725_51i5ui18k.py",
+        "similarity_percent": 100.0,
+        "full_code": "t = int(input())\nfor _ in range(t):\n    n = int(input())\n    if n % 3 == 0:\n        print(\"YES\")\n    else:\n        print(\"NO\")",
+        "highlighted_code": "<span class='highlight-red'>t = int(input())\nfor _ in range(t):\n    n = int(input())\n    if n % 3 == 0:\n        print(&#34;YES&#34;)\n    else:\n        print</span>(&#34;NO&#34;)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b1fe535fa0f4f1d8a6/bcb420abb39b4af095b63cf8/sub_1762633582911_gtkvfjj2y.py",
+        "similarity_percent": 100.0,
+        "full_code": "t=int(input())\nfor i in range(t):\n    n=int(input())\n    if n%3==0:\n        print(\"YES\")\n    else:\n        print(\"NO\")",
+        "highlighted_code": "<span class='highlight-green'>t=int(input())\nfor i in range(t):\n    n=int(input())\n    if n%3==0:\n        print(&#34;YES&#34;)\n    else:\n        print</span>(&#34;NO&#34;)"
+      },
+      "token_overlap": 72,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 14,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b1fe535fa0f4f1d8a6/fa972feccadf40fe9df799d0/sub_1762588967725_51i5ui18k.py",
+        "similarity_percent": 100.0,
+        "full_code": "t = int(input())\nfor _ in range(t):\n    n = int(input())\n    if n % 3 == 0:\n        print(\"YES\")\n    else:\n        print(\"NO\")",
+        "highlighted_code": "<span class='highlight-red'>t = int(input())\nfor _ in range(t):\n    n = int(input())\n    if n % 3 == 0:\n        print(&#34;YES&#34;)\n    else:\n        print</span>(&#34;NO&#34;)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b1fe535fa0f4f1d8a6/fa972feccadf40fe9df799d0/sub_1762588907403_mxyoiydrm.py",
+        "similarity_percent": 100.0,
+        "full_code": "t = int(input())\nfor _ in range(t):\n    n = int(input())\n    if n % 3 == 0:\n        print(\"YES\")\n    else:\n        print(\"NO\")",
+        "highlighted_code": "<span class='highlight-green'>t = int(input())\nfor _ in range(t):\n    n = int(input())\n    if n % 3 == 0:\n        print(&#34;YES&#34;)\n    else:\n        print</span>(&#34;NO&#34;)"
+      },
+      "token_overlap": 72,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 15,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b1fe535fa0f4f1d8a6/fa972feccadf40fe9df799d0/sub_1762588967725_51i5ui18k.py",
+        "similarity_percent": 100.0,
+        "full_code": "t = int(input())\nfor _ in range(t):\n    n = int(input())\n    if n % 3 == 0:\n        print(\"YES\")\n    else:\n        print(\"NO\")",
+        "highlighted_code": "<span class='highlight-red'>t = int(input())\nfor _ in range(t):\n    n = int(input())\n    if n % 3 == 0:\n        print(&#34;YES&#34;)\n    else:\n        print</span>(&#34;NO&#34;)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b1fe535fa0f4f1d8a6/30d29d0969994c929976d40a/sub_1761466303974_llg42m7wt.py",
+        "similarity_percent": 100.0,
+        "full_code": "t=int(input())\nfor _ in range(t):\n    n=int(input())\n    if n%3==0:\n        print(\"YES\")\n    else:\n        print(\"NO\")",
+        "highlighted_code": "<span class='highlight-green'>t=int(input())\nfor _ in range(t):\n    n=int(input())\n    if n%3==0:\n        print(&#34;YES&#34;)\n    else:\n        print</span>(&#34;NO&#34;)"
+      },
+      "token_overlap": 72,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 16,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b1fe535fa0f4f1d8a6/cd93b2ff882a4ffa85f4518f/sub_1761889233013_g7tj2etkq.py",
+        "similarity_percent": 100.0,
+        "full_code": "n=int(input())\nfor _ in range (n):\n    n=int(input())\n    if n%3==0:\n        print(\"YES\")\n    else:\n        print(\"NO\")",
+        "highlighted_code": "<span class='highlight-red'>n=int(input())\nfor _ in range (n):\n    n=int(input())\n    if n%3==0:\n        print(&#34;YES&#34;)\n    else:\n        print</span>(&#34;NO&#34;)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b1fe535fa0f4f1d8a6/bcb420abb39b4af095b63cf8/sub_1762633582911_gtkvfjj2y.py",
+        "similarity_percent": 100.0,
+        "full_code": "t=int(input())\nfor i in range(t):\n    n=int(input())\n    if n%3==0:\n        print(\"YES\")\n    else:\n        print(\"NO\")",
+        "highlighted_code": "<span class='highlight-green'>t=int(input())\nfor i in range(t):\n    n=int(input())\n    if n%3==0:\n        print(&#34;YES&#34;)\n    else:\n        print</span>(&#34;NO&#34;)"
+      },
+      "token_overlap": 72,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 17,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b1fe535fa0f4f1d8a6/cd93b2ff882a4ffa85f4518f/sub_1761889233013_g7tj2etkq.py",
+        "similarity_percent": 100.0,
+        "full_code": "n=int(input())\nfor _ in range (n):\n    n=int(input())\n    if n%3==0:\n        print(\"YES\")\n    else:\n        print(\"NO\")",
+        "highlighted_code": "<span class='highlight-red'>n=int(input())\nfor _ in range (n):\n    n=int(input())\n    if n%3==0:\n        print(&#34;YES&#34;)\n    else:\n        print</span>(&#34;NO&#34;)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b1fe535fa0f4f1d8a6/fa972feccadf40fe9df799d0/sub_1762588907403_mxyoiydrm.py",
+        "similarity_percent": 100.0,
+        "full_code": "t = int(input())\nfor _ in range(t):\n    n = int(input())\n    if n % 3 == 0:\n        print(\"YES\")\n    else:\n        print(\"NO\")",
+        "highlighted_code": "<span class='highlight-green'>t = int(input())\nfor _ in range(t):\n    n = int(input())\n    if n % 3 == 0:\n        print(&#34;YES&#34;)\n    else:\n        print</span>(&#34;NO&#34;)"
+      },
+      "token_overlap": 72,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 18,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b1fe535fa0f4f1d8a6/cd93b2ff882a4ffa85f4518f/sub_1761889233013_g7tj2etkq.py",
+        "similarity_percent": 100.0,
+        "full_code": "n=int(input())\nfor _ in range (n):\n    n=int(input())\n    if n%3==0:\n        print(\"YES\")\n    else:\n        print(\"NO\")",
+        "highlighted_code": "<span class='highlight-red'>n=int(input())\nfor _ in range (n):\n    n=int(input())\n    if n%3==0:\n        print(&#34;YES&#34;)\n    else:\n        print</span>(&#34;NO&#34;)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b1fe535fa0f4f1d8a6/30d29d0969994c929976d40a/sub_1761466303974_llg42m7wt.py",
+        "similarity_percent": 100.0,
+        "full_code": "t=int(input())\nfor _ in range(t):\n    n=int(input())\n    if n%3==0:\n        print(\"YES\")\n    else:\n        print(\"NO\")",
+        "highlighted_code": "<span class='highlight-green'>t=int(input())\nfor _ in range(t):\n    n=int(input())\n    if n%3==0:\n        print(&#34;YES&#34;)\n    else:\n        print</span>(&#34;NO&#34;)"
+      },
+      "token_overlap": 72,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 19,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b1fe535fa0f4f1d8a6/bcb420abb39b4af095b63cf8/sub_1762633582911_gtkvfjj2y.py",
+        "similarity_percent": 100.0,
+        "full_code": "t=int(input())\nfor i in range(t):\n    n=int(input())\n    if n%3==0:\n        print(\"YES\")\n    else:\n        print(\"NO\")",
+        "highlighted_code": "<span class='highlight-red'>t=int(input())\nfor i in range(t):\n    n=int(input())\n    if n%3==0:\n        print(&#34;YES&#34;)\n    else:\n        print</span>(&#34;NO&#34;)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b1fe535fa0f4f1d8a6/fa972feccadf40fe9df799d0/sub_1762588907403_mxyoiydrm.py",
+        "similarity_percent": 100.0,
+        "full_code": "t = int(input())\nfor _ in range(t):\n    n = int(input())\n    if n % 3 == 0:\n        print(\"YES\")\n    else:\n        print(\"NO\")",
+        "highlighted_code": "<span class='highlight-green'>t = int(input())\nfor _ in range(t):\n    n = int(input())\n    if n % 3 == 0:\n        print(&#34;YES&#34;)\n    else:\n        print</span>(&#34;NO&#34;)"
+      },
+      "token_overlap": 72,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 20,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b1fe535fa0f4f1d8a6/bcb420abb39b4af095b63cf8/sub_1762633582911_gtkvfjj2y.py",
+        "similarity_percent": 100.0,
+        "full_code": "t=int(input())\nfor i in range(t):\n    n=int(input())\n    if n%3==0:\n        print(\"YES\")\n    else:\n        print(\"NO\")",
+        "highlighted_code": "<span class='highlight-red'>t=int(input())\nfor i in range(t):\n    n=int(input())\n    if n%3==0:\n        print(&#34;YES&#34;)\n    else:\n        print</span>(&#34;NO&#34;)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b1fe535fa0f4f1d8a6/30d29d0969994c929976d40a/sub_1761466303974_llg42m7wt.py",
+        "similarity_percent": 100.0,
+        "full_code": "t=int(input())\nfor _ in range(t):\n    n=int(input())\n    if n%3==0:\n        print(\"YES\")\n    else:\n        print(\"NO\")",
+        "highlighted_code": "<span class='highlight-green'>t=int(input())\nfor _ in range(t):\n    n=int(input())\n    if n%3==0:\n        print(&#34;YES&#34;)\n    else:\n        print</span>(&#34;NO&#34;)"
+      },
+      "token_overlap": 72,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 21,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b1fe535fa0f4f1d8a6/fa972feccadf40fe9df799d0/sub_1762588907403_mxyoiydrm.py",
+        "similarity_percent": 100.0,
+        "full_code": "t = int(input())\nfor _ in range(t):\n    n = int(input())\n    if n % 3 == 0:\n        print(\"YES\")\n    else:\n        print(\"NO\")",
+        "highlighted_code": "<span class='highlight-red'>t = int(input())\nfor _ in range(t):\n    n = int(input())\n    if n % 3 == 0:\n        print(&#34;YES&#34;)\n    else:\n        print</span>(&#34;NO&#34;)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b1fe535fa0f4f1d8a6/30d29d0969994c929976d40a/sub_1761466303974_llg42m7wt.py",
+        "similarity_percent": 100.0,
+        "full_code": "t=int(input())\nfor _ in range(t):\n    n=int(input())\n    if n%3==0:\n        print(\"YES\")\n    else:\n        print(\"NO\")",
+        "highlighted_code": "<span class='highlight-green'>t=int(input())\nfor _ in range(t):\n    n=int(input())\n    if n%3==0:\n        print(&#34;YES&#34;)\n    else:\n        print</span>(&#34;NO&#34;)"
+      },
+      "token_overlap": 72,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 22,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b1fe535fa0f4f1d8a6/d82933fea814463eb5b029d1/sub_1761615519760_5d5svgseu.py",
+        "similarity_percent": 61.11,
+        "full_code": "t = int(input())\nfor i in range(t):\n    n = int(input())\n    if n % 3 == 0:\n        print(\"YES\")\n    else:\n        print(\"NO\")",
+        "highlighted_code": "t = int(input())\nfor i in range(t)<span class='highlight-red'>:\n    n = int(input())\n    if n % 3 == 0:\n        print(&#34;YES&#34;)\n    else:\n        print</span>(&#34;NO&#34;)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b1fe535fa0f4f1d8a6/ffdb326842044f2e98b7aaa7/sub_1762181398879_exsv9nry4.py",
+        "similarity_percent": 58.67,
+        "full_code": "t = int(input())\n\nwhile t > 0:\n    n = int(input())\n\n    if n % 3 == 0:\n        print(\"YES\")\n    else:\n        print(\"NO\")\n    t -= 1",
+        "highlighted_code": "t = int(input())\n\nwhile t &gt; 0<span class='highlight-green'>:\n    n = int(input())\n\n    if n % 3 == 0:\n        print(&#34;YES&#34;)\n    else:\n        print</span>(&#34;NO&#34;)\n    t -= 1"
+      },
+      "token_overlap": 44,
+      "max_similarity_percent": 61.11
+    },
+    {
+      "case_id": 23,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b1fe535fa0f4f1d8a6/ffdb326842044f2e98b7aaa7/sub_1762181398879_exsv9nry4.py",
+        "similarity_percent": 58.67,
+        "full_code": "t = int(input())\n\nwhile t > 0:\n    n = int(input())\n\n    if n % 3 == 0:\n        print(\"YES\")\n    else:\n        print(\"NO\")\n    t -= 1",
+        "highlighted_code": "t = int(input())\n\nwhile t &gt; 0<span class='highlight-red'>:\n    n = int(input())\n\n    if n % 3 == 0:\n        print(&#34;YES&#34;)\n    else:\n        print</span>(&#34;NO&#34;)\n    t -= 1"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b1fe535fa0f4f1d8a6/f95120b3a38a461085ef58cb/sub_1761582420125_mam5glsrw.py",
+        "similarity_percent": 61.11,
+        "full_code": "t = int(input())\nfor i in range(t):\n    n = int(input())\n    if n % 3 == 0:\n        print(\"YES\")\n    else:\n        print(\"NO\")",
+        "highlighted_code": "t = int(input())\nfor i in range(t)<span class='highlight-green'>:\n    n = int(input())\n    if n % 3 == 0:\n        print(&#34;YES&#34;)\n    else:\n        print</span>(&#34;NO&#34;)"
+      },
+      "token_overlap": 44,
+      "max_similarity_percent": 61.11
+    },
+    {
+      "case_id": 24,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b1fe535fa0f4f1d8a6/ffdb326842044f2e98b7aaa7/sub_1762181398879_exsv9nry4.py",
+        "similarity_percent": 58.67,
+        "full_code": "t = int(input())\n\nwhile t > 0:\n    n = int(input())\n\n    if n % 3 == 0:\n        print(\"YES\")\n    else:\n        print(\"NO\")\n    t -= 1",
+        "highlighted_code": "t = int(input())\n\nwhile t &gt; 0<span class='highlight-red'>:\n    n = int(input())\n\n    if n % 3 == 0:\n        print(&#34;YES&#34;)\n    else:\n        print</span>(&#34;NO&#34;)\n    t -= 1"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b1fe535fa0f4f1d8a6/fa972feccadf40fe9df799d0/sub_1762588967725_51i5ui18k.py",
+        "similarity_percent": 61.11,
+        "full_code": "t = int(input())\nfor _ in range(t):\n    n = int(input())\n    if n % 3 == 0:\n        print(\"YES\")\n    else:\n        print(\"NO\")",
+        "highlighted_code": "t = int(input())\nfor _ in range(t)<span class='highlight-green'>:\n    n = int(input())\n    if n % 3 == 0:\n        print(&#34;YES&#34;)\n    else:\n        print</span>(&#34;NO&#34;)"
+      },
+      "token_overlap": 44,
+      "max_similarity_percent": 61.11
+    },
+    {
+      "case_id": 25,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b1fe535fa0f4f1d8a6/ffdb326842044f2e98b7aaa7/sub_1762181398879_exsv9nry4.py",
+        "similarity_percent": 58.67,
+        "full_code": "t = int(input())\n\nwhile t > 0:\n    n = int(input())\n\n    if n % 3 == 0:\n        print(\"YES\")\n    else:\n        print(\"NO\")\n    t -= 1",
+        "highlighted_code": "t = int(input())\n\nwhile t &gt; 0<span class='highlight-red'>:\n    n = int(input())\n\n    if n % 3 == 0:\n        print(&#34;YES&#34;)\n    else:\n        print</span>(&#34;NO&#34;)\n    t -= 1"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b1fe535fa0f4f1d8a6/cd93b2ff882a4ffa85f4518f/sub_1761889233013_g7tj2etkq.py",
+        "similarity_percent": 61.11,
+        "full_code": "n=int(input())\nfor _ in range (n):\n    n=int(input())\n    if n%3==0:\n        print(\"YES\")\n    else:\n        print(\"NO\")",
+        "highlighted_code": "n=int(input())\nfor _ in range (n)<span class='highlight-green'>:\n    n=int(input())\n    if n%3==0:\n        print(&#34;YES&#34;)\n    else:\n        print</span>(&#34;NO&#34;)"
+      },
+      "token_overlap": 44,
+      "max_similarity_percent": 61.11
+    },
+    {
+      "case_id": 26,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b1fe535fa0f4f1d8a6/ffdb326842044f2e98b7aaa7/sub_1762181398879_exsv9nry4.py",
+        "similarity_percent": 58.67,
+        "full_code": "t = int(input())\n\nwhile t > 0:\n    n = int(input())\n\n    if n % 3 == 0:\n        print(\"YES\")\n    else:\n        print(\"NO\")\n    t -= 1",
+        "highlighted_code": "t = int(input())\n\nwhile t &gt; 0<span class='highlight-red'>:\n    n = int(input())\n\n    if n % 3 == 0:\n        print(&#34;YES&#34;)\n    else:\n        print</span>(&#34;NO&#34;)\n    t -= 1"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b1fe535fa0f4f1d8a6/bcb420abb39b4af095b63cf8/sub_1762633582911_gtkvfjj2y.py",
+        "similarity_percent": 61.11,
+        "full_code": "t=int(input())\nfor i in range(t):\n    n=int(input())\n    if n%3==0:\n        print(\"YES\")\n    else:\n        print(\"NO\")",
+        "highlighted_code": "t=int(input())\nfor i in range(t)<span class='highlight-green'>:\n    n=int(input())\n    if n%3==0:\n        print(&#34;YES&#34;)\n    else:\n        print</span>(&#34;NO&#34;)"
+      },
+      "token_overlap": 44,
+      "max_similarity_percent": 61.11
+    },
+    {
+      "case_id": 27,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b1fe535fa0f4f1d8a6/ffdb326842044f2e98b7aaa7/sub_1762181398879_exsv9nry4.py",
+        "similarity_percent": 58.67,
+        "full_code": "t = int(input())\n\nwhile t > 0:\n    n = int(input())\n\n    if n % 3 == 0:\n        print(\"YES\")\n    else:\n        print(\"NO\")\n    t -= 1",
+        "highlighted_code": "t = int(input())\n\nwhile t &gt; 0<span class='highlight-red'>:\n    n = int(input())\n\n    if n % 3 == 0:\n        print(&#34;YES&#34;)\n    else:\n        print</span>(&#34;NO&#34;)\n    t -= 1"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b1fe535fa0f4f1d8a6/fa972feccadf40fe9df799d0/sub_1762588907403_mxyoiydrm.py",
+        "similarity_percent": 61.11,
+        "full_code": "t = int(input())\nfor _ in range(t):\n    n = int(input())\n    if n % 3 == 0:\n        print(\"YES\")\n    else:\n        print(\"NO\")",
+        "highlighted_code": "t = int(input())\nfor _ in range(t)<span class='highlight-green'>:\n    n = int(input())\n    if n % 3 == 0:\n        print(&#34;YES&#34;)\n    else:\n        print</span>(&#34;NO&#34;)"
+      },
+      "token_overlap": 44,
+      "max_similarity_percent": 61.11
+    },
+    {
+      "case_id": 28,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b1fe535fa0f4f1d8a6/ffdb326842044f2e98b7aaa7/sub_1762181398879_exsv9nry4.py",
+        "similarity_percent": 58.67,
+        "full_code": "t = int(input())\n\nwhile t > 0:\n    n = int(input())\n\n    if n % 3 == 0:\n        print(\"YES\")\n    else:\n        print(\"NO\")\n    t -= 1",
+        "highlighted_code": "t = int(input())\n\nwhile t &gt; 0<span class='highlight-red'>:\n    n = int(input())\n\n    if n % 3 == 0:\n        print(&#34;YES&#34;)\n    else:\n        print</span>(&#34;NO&#34;)\n    t -= 1"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b1fe535fa0f4f1d8a6/30d29d0969994c929976d40a/sub_1761466303974_llg42m7wt.py",
+        "similarity_percent": 61.11,
+        "full_code": "t=int(input())\nfor _ in range(t):\n    n=int(input())\n    if n%3==0:\n        print(\"YES\")\n    else:\n        print(\"NO\")",
+        "highlighted_code": "t=int(input())\nfor _ in range(t)<span class='highlight-green'>:\n    n=int(input())\n    if n%3==0:\n        print(&#34;YES&#34;)\n    else:\n        print</span>(&#34;NO&#34;)"
+      },
+      "token_overlap": 44,
+      "max_similarity_percent": 61.11
     }
   ]
 }

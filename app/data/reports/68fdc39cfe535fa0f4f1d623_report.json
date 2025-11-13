@@ -1,0 +1,28 @@
+{
+  "problem_id": "68fdc39cfe535fa0f4f1d623",
+  "filter_criteria": {
+    "min_token_overlap": 80,
+    "min_similarity_percent": 60
+  },
+  "total_cases_found": 1,
+  "total_cases_filtered": 1,
+  "cases": [
+    {
+      "case_id": 1,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc39cfe535fa0f4f1d623/f8a2bab9778140ecb46b6a60/sub_1761638980146_hp3cbfr5z.py",
+        "similarity_percent": 35.64,
+        "full_code": "n = int(input())\na = []\nfor i in range(1, n + 1):\n    name = input()\n    old = int(input())\n    new = int(input())\n    sn = new - old\n    if sn <= 50:\n        so_tien = (100*sn)*(1+0.02)\n        a.append([name,int(so_tien)])\n    elif 50 <= sn <= 100:\n        so_tien = (50*100 + (sn-50)*150)*(1+0.03)\n        a.append([name,int(so_tien)])\n    elif sn > 100:\n        so_tien = (50*100 + 50*150 + (sn-100)*200)*(1+0.05)\n        a.append([name,int(so_tien)])\ns_tien = sorted([so_tien for name, so_tien in a])\nwhile len(s_tien) != 0:\n    for i in range(len(s_tien), 0, -1):\n        ma_khach = \"KH\" + str(i).zfill(2)\n        tien_giam_dan = max(s_tien)\n        ten = [name for name, so_tien in a if so_tien == tien_giam_dan]\n        print(ma_khach,ten[0], max(s_tien))\n        s_tien.remove(max(s_tien))",
+        "highlighted_code": "<span class='highlight-red'>n = int(input())\na = []\nfor i in ra</span>nge(1, n + 1):\n    name = <span class='highlight-red'>input()\n    old = int(input())\n    new = int(input())\n    sn = new - old\n    if sn &lt;= 50</span>:\n        so_tien = (100*sn)*(1+0.02)\n        a.append([name,int(so_tien)])\n    elif 50 &lt;= sn <span class='highlight-red'>&lt;= 100:\n        so_tien = (50*100 + (sn-50)*150</span>)*(1+0.03)\n        a.append([name,int(so_tien)])\n    eli<span class='highlight-red'>f sn &gt; 100:\n        so_tien = (50*100 + 50*150 + (sn-100)*200</span>)*(1+0.05)\n        a.append([name,int(so_tien)])\ns_tien = sorted([so_tien for name, so_tien in a])\nwhile len(s_tien) != 0:\n    for i in range(len(s_tien), 0, -1):\n        ma_khach = &#34;KH&#34; + str(i).zfill(2)\n        tien_giam_dan = max(s_tien)\n        ten = [name for name, so_tien in a if so_tien == tien_giam_dan]\n        print(ma_khach,ten[0], max(s_tien))\n        s_tien.remove(max(s_tien))"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc39cfe535fa0f4f1d623/a34ffbda761b435ca043fd30/sub_1761814079182_gaeg95j5c.py",
+        "similarity_percent": 52.55,
+        "full_code": "n =int(input())\ndanh_sach=[]\nfor i in range(n):\n    ten = input()\n    b = int(input())\n    c = int(input())\n    so_nuoc=c-b\n    if so_nuoc<=50:\n        tien=so_nuoc*100*1.02\n    elif 51<=so_nuoc<=100:\n        tien=(50*100+(so_nuoc-50)*150)*1.03\n    elif so_nuoc>100:\n        tien=(50*100+50*150+(so_nuoc-100)*200)*1.05\n    danh_sach.append((f\"KH{i+1:02d}\", ten, round(tien)))\ndanh_sach.sort(key=lambda x: x[2], reverse=True)\nfor ma_khach_hang, ten, tien in danh_sach:\n    print(ma_khach_hang, ten, tien)",
+        "highlighted_code": "<span class='highlight-green'>n =int(input())\ndanh_sach=[]\nfor i in ra</span>nge(n):\n    ten = <span class='highlight-green'>input()\n    b = int(input())\n    c = int(input())\n    so_nuoc=c-b\n    if so_nuoc&lt;=50</span>:\n        tien=so_nuoc*100*1.02\n    elif 51&lt;=so_nuoc<span class='highlight-green'>&lt;=100:\n        tien=(50*100+(so_nuoc-50)*150</span>)*1.03\n    eli<span class='highlight-green'>f so_nuoc&gt;100:\n        tien=(50*100+50*150+(so_nuoc-100)*200</span>)*1.05\n    danh_sach.append((f&#34;KH{i+1:02d}&#34;, ten, round(tien)))\ndanh_sach.sort(key=lambda x: x[2], reverse=True)\nfor ma_khach_hang, ten, tien in danh_sach:\n    print(ma_khach_hang, ten, tien)"
+      },
+      "token_overlap": 134,
+      "max_similarity_percent": 52.55
+    }
+  ]
+}

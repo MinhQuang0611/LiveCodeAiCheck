@@ -4,7 +4,42 @@
     "min_token_overlap": 80,
     "min_similarity_percent": 60
   },
-  "total_cases_found": 0,
-  "total_cases_filtered": 0,
-  "cases": []
+  "total_cases_found": 3,
+  "total_cases_filtered": 2,
+  "cases": [
+    {
+      "case_id": 1,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3c90a7243251374477101/a34ffbda761b435ca043fd30/sub_1762437815976_azbjxd0cm.py",
+        "similarity_percent": 97.39,
+        "full_code": "a = int(input())\na = str(a)\nb = []\nif len(a)<2:\n    print('0')\nelse:\n    for i in range(1, len(a)):\n        c = int(a[i-1])*int(a[i])\n        b.append(c)\n    print(max(b))",
+        "highlighted_code": "<span class='highlight-red'>a = int(input())\na = str(a)\nb = []\nif len(a)&lt;2:\n    print(&#39;0&#39;)\nelse:\n    for i in range(</span>1, l<span class='highlight-red'>en(a)):\n        c = int(a[i-1])*int(a[i])\n        b.append(c)\n    print(max(b)</span>)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3c90a7243251374477101/a34ffbda761b435ca043fd30/sub_1762437713366_fjwylwjmx.py",
+        "similarity_percent": 99.12,
+        "full_code": "a = int(input())\na = str(a)\nb = []\nif len(a)<2:\n    print('0')\nelse:\n    for i in range(len(a)):\n        c = int(a[i-1])*int(a[i])\n        b.append(c)\n    print(max(b))",
+        "highlighted_code": "<span class='highlight-green'>a = int(input())\na = str(a)\nb = []\nif len(a)&lt;2:\n    print(&#39;0&#39;)\nelse:\n    for i in range(</span>l<span class='highlight-green'>en(a)):\n        c = int(a[i-1])*int(a[i])\n        b.append(c)\n    print(max(b)</span>)"
+      },
+      "token_overlap": 112,
+      "max_similarity_percent": 99.12
+    },
+    {
+      "case_id": 2,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3c90a7243251374477101/e7457b81cbe24d9d9bdac641/sub_1761839206072_x3j9s92sw.py",
+        "similarity_percent": 68.54,
+        "full_code": "n = int(input())\ns = str(n)\nmax_product = 0\nfor i in range(len(s) - 1):\n    a = int(s[i])\n    b = int(s[i + 1])\n    product = a * b\n    if product > max_product:\n        max_product = product\nprint(max_product)\n",
+        "highlighted_code": "n = int(input())\ns = str(n)\nmax_product = <span class='highlight-red'>0\nfor i in range(len(s) - 1):\n    a = int(s[i])\n    b = int(s[i + 1])\n    product = a * b\n    if product &gt; max_product:\n        max_product = product\n</span>print(max_product)\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3c90a7243251374477101/0d74995bf22b4574a97a2297/sub_1761559499937_5pi2il7kh.py",
+        "similarity_percent": 47.66,
+        "full_code": "def tich(n):\n    s = str(n)\n    if len(s) < 2:\n        return 0\n    mx = 0\n    for i in range(len(s) - 1):\n        so1 = int(s[i])\n        so2 = int(s[i+1])\n        d = so1 * so2\n        if d > mx:\n            mx = d\n    return mx\nn = int(input())\nprint(tich(n))\n",
+        "highlighted_code": "def tich(n):\n    s = str(n)\n    if len(s) &lt; 2:\n        return 0\n    mx = <span class='highlight-green'>0\n    for i in range(len(s) - 1):\n        so1 = int(s[i])\n        so2 = int(s[i+1])\n        d = so1 * so2\n        if d &gt; mx:\n            mx = d\n    </span>return mx\nn = int(input())\nprint(tich(n))\n"
+      },
+      "token_overlap": 61,
+      "max_similarity_percent": 68.54
+    }
+  ]
 }

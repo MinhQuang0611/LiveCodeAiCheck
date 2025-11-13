@@ -4,59 +4,1793 @@
     "min_token_overlap": 80,
     "min_similarity_percent": 60
   },
-  "total_cases_found": 6,
-  "total_cases_filtered": 3,
+  "total_cases_found": 192,
+  "total_cases_filtered": 105,
   "cases": [
     {
       "case_id": 1,
       "file1": {
-        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68fdc3b0fe535fa0f4f1d88e/ffdb326842044f2e98b7aaa7/sub_1761622667480_f6i0n7il5.py",
-        "similarity_percent": 84.05,
-        "full_code": "def gcd(a, b):\n    while(b != 0):\n        tmp = a % b\n        a = b\n        b = tmp\n\n    return a\nn = int(input())\nlst = list(map(int, input().split()))\n\nfor i in range(len(lst)):\n    for j in range(i + 1, len(lst)):\n        if gcd(lst[i], lst[j] == 1):\n            print(lst[i], lst[j], end = \"\\n\")\n\n\n",
-        "highlighted_code": "<span class='highlight-red'>def gcd(a, b):\n    while(b != 0):\n        tmp = a % b\n        a = b\n        b = tmp\n\n    return a\nn = int(input())\nlst = list(map(int, input().split()))\n\nfor i in range(len(lst)):\n    for j in range(i + 1, len(lst)):\n        if gcd(lst[i], lst[</span>j] == 1):\n            print(lst[i], lst[j], end = &#34;\\n&#34;)\n\n\n"
+        "path": "/app/app/data/submissions/68fdc3b0fe535fa0f4f1d88e/ffdb326842044f2e98b7aaa7/sub_1762264882283_4a44ljbjw.py",
+        "similarity_percent": 100.0,
+        "full_code": "def gcd(a, b):\n    while(b != 0):\n        tmp = a % b\n        a = b\n        b = tmp\n\n    return a\nn = int(input())\nlst = list(map(int, input().split()))\n\nfor i in range(len(lst)):\n    for j in range(i + 1, len(lst)):\n        if gcd(lst[i], lst[j]) == 1:\n            print(lst[i], lst[j], end = \"\\n\")\n\n\n",
+        "highlighted_code": "<span class='highlight-red'>def gcd(a, b):\n    while(b != 0):\n        tmp = a % b\n        a = b\n        b = tmp\n\n    return a\nn = int(input())\nlst = list(map(int, input().split()))\n\nfor i in range(len(lst)):\n    for j in range(i + 1, len(lst)):\n        if gcd(lst[i], lst[j]) == 1:\n            print(lst[i], lst[j], end </span>= &#34;\\n&#34;)\n\n\n"
       },
       "file2": {
-        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68fdc3b0fe535fa0f4f1d88e/ffdb326842044f2e98b7aaa7/sub_1761622794018_61f9ovhju.py",
-        "similarity_percent": 83.03,
-        "full_code": "def gcd(a, b):\n    while(b != 0):\n        tmp = a % b\n        a = b\n        b = tmp\n\n    return a\nn = int(input())\nlst = list(map(int, input().split()))\n\nfor i in range(len(lst)):\n    for j in range(i + 1, len(lst)):\n        if gcd(lst[i], lst[j]) == 1:\n            print(lst[i], lst[j], end = \"\\n\")\n\n\n",
-        "highlighted_code": "<span class='highlight-green'>def gcd(a, b):\n    while(b != 0):\n        tmp = a % b\n        a = b\n        b = tmp\n\n    return a\nn = int(input())\nlst = list(map(int, input().split()))\n\nfor i in range(len(lst)):\n    for j in range(i + 1, len(lst)):\n        if gcd(lst[i], lst[</span>j]) == 1:\n            print(lst[i], lst[j], end = &#34;\\n&#34;)\n\n\n"
+        "path": "/app/app/data/submissions/68fdc3b0fe535fa0f4f1d88e/f95120b3a38a461085ef58cb/sub_1761845124993_joaeb2ekv.py",
+        "similarity_percent": 100.0,
+        "full_code": "def gcd(a, b):\n    while(b != 0):\n        tmp = a % b\n        a = b\n        b = tmp\n\n    return a\nn = int(input())\nlst = list(map(int, input().split()))\n\nfor i in range(len(lst)):\n    for j in range(i + 1, len(lst)):\n        if gcd(lst[i], lst[j]) == 1:\n            print(lst[i], lst[j], end = \"\\n\")",
+        "highlighted_code": "<span class='highlight-green'>def gcd(a, b):\n    while(b != 0):\n        tmp = a % b\n        a = b\n        b = tmp\n\n    return a\nn = int(input())\nlst = list(map(int, input().split()))\n\nfor i in range(len(lst)):\n    for j in range(i + 1, len(lst)):\n        if gcd(lst[i], lst[j]) == 1:\n            print(lst[i], lst[j], end </span>= &#34;\\n&#34;)"
       },
-      "token_overlap": 137,
-      "max_similarity_percent": 84.05
+      "token_overlap": 161,
+      "max_similarity_percent": 100.0
     },
     {
       "case_id": 2,
       "file1": {
-        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68fdc3b0fe535fa0f4f1d88e/3fa6af8d916a46039239cabe/sub_1761665461714_heyi8duny.py",
-        "similarity_percent": 61.54,
-        "full_code": "def gcd(a,b):\n    if b==0:\n        return a\n    return gcd(b,a%b)\nn=int(input())\nA=list(map(int,input().split()))\nfor i in range(n):\n    for j in range(i+1,n):\n        if gcd(A[i],A[j])==1:\n            print(A[i],A[j])",
-        "highlighted_code": "def gcd(a,b):\n    if b==0:\n        return a\n    return gcd(b,a%b)\n<span class='highlight-red'>n=int(input())\nA=list(map(int,input().split()</span>))\nfor i in range(n):\n    <span class='highlight-red'>for j in range(i+1,n):\n        if gcd(A[i],A[j])==1:\n            print(A[i],</span>A[j])"
+        "path": "/app/app/data/submissions/68fdc3b0fe535fa0f4f1d88e/ffdb326842044f2e98b7aaa7/sub_1762264882283_4a44ljbjw.py",
+        "similarity_percent": 100.0,
+        "full_code": "def gcd(a, b):\n    while(b != 0):\n        tmp = a % b\n        a = b\n        b = tmp\n\n    return a\nn = int(input())\nlst = list(map(int, input().split()))\n\nfor i in range(len(lst)):\n    for j in range(i + 1, len(lst)):\n        if gcd(lst[i], lst[j]) == 1:\n            print(lst[i], lst[j], end = \"\\n\")\n\n\n",
+        "highlighted_code": "<span class='highlight-red'>def gcd(a, b):\n    while(b != 0):\n        tmp = a % b\n        a = b\n        b = tmp\n\n    return a\nn = int(input())\nlst = list(map(int, input().split()))\n\nfor i in range(len(lst)):\n    for j in range(i + 1, len(lst)):\n        if gcd(lst[i], lst[j]) == 1:\n            print(lst[i], lst[j], end </span>= &#34;\\n&#34;)\n\n\n"
       },
       "file2": {
-        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68fdc3b0fe535fa0f4f1d88e/8e236cb825b041b0a82527f2/sub_1761640706412_scf987jqu.py",
-        "similarity_percent": 59.86,
-        "full_code": "def gcd(a, b):\n    while b:\n        a, b = b, a % b\n    return a\n\n\nn = int(input())\narr = list(map(int, input().split()))\narr.sort()\n\nfor i in range(0, n-1):\n    for j in range(i+1, n):\n        if gcd(arr[i], arr[j]) == 1:\n            print(arr[i], arr[j])\n",
-        "highlighted_code": "def gcd(a, b):\n    while b:\n        a, b = b, a % b\n    return a\n\n\n<span class='highlight-green'>n = int(input())\narr = list(map(int, input().split()</span>))\narr.sort()\n\nfor i in range(0, n-1):\n    <span class='highlight-green'>for j in range(i+1, n):\n        if gcd(arr[i], arr[j]) == 1:\n            print(arr[i], </span>arr[j])\n"
+        "path": "/app/app/data/submissions/68fdc3b0fe535fa0f4f1d88e/ffdb326842044f2e98b7aaa7/sub_1761622794018_61f9ovhju.py",
+        "similarity_percent": 100.0,
+        "full_code": "def gcd(a, b):\n    while(b != 0):\n        tmp = a % b\n        a = b\n        b = tmp\n\n    return a\nn = int(input())\nlst = list(map(int, input().split()))\n\nfor i in range(len(lst)):\n    for j in range(i + 1, len(lst)):\n        if gcd(lst[i], lst[j]) == 1:\n            print(lst[i], lst[j], end = \"\\n\")\n\n\n",
+        "highlighted_code": "<span class='highlight-green'>def gcd(a, b):\n    while(b != 0):\n        tmp = a % b\n        a = b\n        b = tmp\n\n    return a\nn = int(input())\nlst = list(map(int, input().split()))\n\nfor i in range(len(lst)):\n    for j in range(i + 1, len(lst)):\n        if gcd(lst[i], lst[j]) == 1:\n            print(lst[i], lst[j], end </span>= &#34;\\n&#34;)\n\n\n"
       },
-      "token_overlap": 88,
-      "max_similarity_percent": 61.54
+      "token_overlap": 161,
+      "max_similarity_percent": 100.0
     },
     {
       "case_id": 3,
       "file1": {
-        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68fdc3b0fe535fa0f4f1d88e/ffdb326842044f2e98b7aaa7/sub_1761622794018_61f9ovhju.py",
-        "similarity_percent": 49.7,
-        "full_code": "def gcd(a, b):\n    while(b != 0):\n        tmp = a % b\n        a = b\n        b = tmp\n\n    return a\nn = int(input())\nlst = list(map(int, input().split()))\n\nfor i in range(len(lst)):\n    for j in range(i + 1, len(lst)):\n        if gcd(lst[i], lst[j]) == 1:\n            print(lst[i], lst[j], end = \"\\n\")\n\n\n",
-        "highlighted_code": "def gcd(a, b):\n    while(b != 0):\n        tmp = a % b\n        a = b\n        b = tmp\n\n    return a\n<span class='highlight-red'>n = int(input())\nlst = list(map(int, input().split()))\n\nfor i in rang</span>e(len(lst)):\n    for j in range(i + 1, len(lst))<span class='highlight-red'>:\n        if gcd(lst[i], lst[j]) == 1:\n            print(lst[i], </span>lst[j], end = &#34;\\n&#34;)\n\n\n"
+        "path": "/app/app/data/submissions/68fdc3b0fe535fa0f4f1d88e/e7457b81cbe24d9d9bdac641/sub_1762266878698_t7c13kjm6.py",
+        "similarity_percent": 100.0,
+        "full_code": "import math \nn = int(input()) \na = list(map(int, input().split())) \nfor i in range(n):\n    for j in range(i + 1, n):\n        if math.gcd(a[i], a[j]) == 1:  \n            print(a[i], a[j])\n",
+        "highlighted_code": "<span class='highlight-red'>import math \nn = int(input()) \na = list(map(int, input().split())) \nfor i in range(n):\n    for j in range(i + 1, n):\n        if math.gcd(a[i], a[j]) == 1:  \n            print(a[i], a[</span>j])\n"
       },
       "file2": {
-        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68fdc3b0fe535fa0f4f1d88e/3fa6af8d916a46039239cabe/sub_1761665461714_heyi8duny.py",
-        "similarity_percent": 57.34,
-        "full_code": "def gcd(a,b):\n    if b==0:\n        return a\n    return gcd(b,a%b)\nn=int(input())\nA=list(map(int,input().split()))\nfor i in range(n):\n    for j in range(i+1,n):\n        if gcd(A[i],A[j])==1:\n            print(A[i],A[j])",
-        "highlighted_code": "def gcd(a,b):\n    if b==0:\n        return a\n    return gcd(b,a%b)\n<span class='highlight-green'>n=int(input())\nA=list(map(int,input().split()))\nfor i in rang</span>e(n):\n    for j in range(i+1,n)<span class='highlight-green'>:\n        if gcd(A[i],A[j])==1:\n            print(A[i],</span>A[j])"
+        "path": "/app/app/data/submissions/68fdc3b0fe535fa0f4f1d88e/e59c34a1bebb49d29bfb3592/sub_1762174014046_sg0pta5eu.py",
+        "similarity_percent": 100.0,
+        "full_code": "import math\nn = int(input())\narr = list(map(int,input().split()))\nfor i in range(n):\n    for j in range(i+1,n):\n        if math.gcd(arr[i],arr[j]) == 1:\n            print(arr[i],arr[j])    \n",
+        "highlighted_code": "<span class='highlight-green'>import math\nn = int(input())\narr = list(map(int,input().split()))\nfor i in range(n):\n    for j in range(i+1,n):\n        if math.gcd(arr[i],arr[j]) == 1:\n            print(arr[i],arr[</span>j])    \n"
       },
-      "token_overlap": 82,
-      "max_similarity_percent": 57.34
+      "token_overlap": 119,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 4,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b0fe535fa0f4f1d88e/d9aec9d917da4c5e9beeb80b/sub_1762261525480_v1y4wmk1l.py",
+        "similarity_percent": 100.0,
+        "full_code": "def gcd(x,y):\n    while y:\n        x, y = y, x % y \n    return x\nn = int(input())\na = list(map(int, input().split()))\nfor i in range(n):\n    for j in range(i+1, n):\n        if gcd(a[i], a[j]) == 1:\n            print(a[i], a[j])",
+        "highlighted_code": "<span class='highlight-red'>def gcd(x,y):\n    while y:\n        x, y = y, x % y \n    return x\nn = int(input())\na = list(map(int, input().split()))\nfor i in range(n):\n    for j in range(i+1, n):\n        if gcd(a[i], a[j]) == 1:\n            print(a[i], a[</span>j])"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b0fe535fa0f4f1d88e/d9aec9d917da4c5e9beeb80b/sub_1761828723487_lv7ddx82d.py",
+        "similarity_percent": 100.0,
+        "full_code": "def gcd(x, y):\n    while y:\n        x, y = y, x % y\n    return x\nn = int(input())\na = list(map(int, input().split()))\nfor i in range(n):\n    for j in range(i + 1, n):\n        if gcd(a[i], a[j]) == 1:\n            print(a[i], a[j])\n",
+        "highlighted_code": "<span class='highlight-green'>def gcd(x, y):\n    while y:\n        x, y = y, x % y\n    return x\nn = int(input())\na = list(map(int, input().split()))\nfor i in range(n):\n    for j in range(i + 1, n):\n        if gcd(a[i], a[j]) == 1:\n            print(a[i], a[</span>j])\n"
+      },
+      "token_overlap": 140,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 5,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b0fe535fa0f4f1d88e/bbb05531336e487d8ed54046/sub_1762798993474_auaml66e8.py",
+        "similarity_percent": 100.0,
+        "full_code": "import math  # dùng để tính gcd\n\nn = int(input())\na = list(map(int, input().split()))\n\nfor i in range(n - 1):\n    for j in range(i + 1, n):\n        if math.gcd(a[i], a[j]) == 1: \n            print(a[i], a[j])\n",
+        "highlighted_code": "<span class='highlight-red'>import math  # dùng để tính gcd\n\nn = int(input())\na = list(map(int, input().split()))\n\nfor i in range(n - 1):\n    for j in range(i + 1, n):\n        if math.gcd(a[i], a[j]) == 1: \n            print(a[i], a[</span>j])\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b0fe535fa0f4f1d88e/27e30f767b3a46b283cbfec0/sub_1762261502619_4eyhoj5sm.py",
+        "similarity_percent": 100.0,
+        "full_code": "import math\nn = int(input())\na = list(map(int ,input().split()))\nfor i in range(n-1):\n    for j in range(i+1,n):\n        if math.gcd(a[i],a[j]) == 1:\n            print(a[i],a[j])",
+        "highlighted_code": "<span class='highlight-green'>import math\nn = int(input())\na = list(map(int ,input().split()))\nfor i in range(n-1):\n    for j in range(i+1,n):\n        if math.gcd(a[i],a[j]) == 1:\n            print(a[i],a[</span>j])"
+      },
+      "token_overlap": 121,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 6,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b0fe535fa0f4f1d88e/bbb05531336e487d8ed54046/sub_1762798993474_auaml66e8.py",
+        "similarity_percent": 100.0,
+        "full_code": "import math  # dùng để tính gcd\n\nn = int(input())\na = list(map(int, input().split()))\n\nfor i in range(n - 1):\n    for j in range(i + 1, n):\n        if math.gcd(a[i], a[j]) == 1: \n            print(a[i], a[j])\n",
+        "highlighted_code": "<span class='highlight-red'>import math  # dùng để tính gcd\n\nn = int(input())\na = list(map(int, input().split()))\n\nfor i in range(n - 1):\n    for j in range(i + 1, n):\n        if math.gcd(a[i], a[j]) == 1: \n            print(a[i], a[</span>j])\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b0fe535fa0f4f1d88e/27e30f767b3a46b283cbfec0/sub_1762250677098_qv3rooszu.py",
+        "similarity_percent": 100.0,
+        "full_code": "import math\nn = int(input())\na = list(map(int, input().split()))\nfor i in range(n-1):\n    for j in range(i+1,n):\n        if math.gcd(a[i],a[j]) == 1:\n            print(a[i],a[j])",
+        "highlighted_code": "<span class='highlight-green'>import math\nn = int(input())\na = list(map(int, input().split()))\nfor i in range(n-1):\n    for j in range(i+1,n):\n        if math.gcd(a[i],a[j]) == 1:\n            print(a[i],a[</span>j])"
+      },
+      "token_overlap": 121,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 7,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b0fe535fa0f4f1d88e/27e30f767b3a46b283cbfec0/sub_1762261502619_4eyhoj5sm.py",
+        "similarity_percent": 100.0,
+        "full_code": "import math\nn = int(input())\na = list(map(int ,input().split()))\nfor i in range(n-1):\n    for j in range(i+1,n):\n        if math.gcd(a[i],a[j]) == 1:\n            print(a[i],a[j])",
+        "highlighted_code": "<span class='highlight-red'>import math\nn = int(input())\na = list(map(int ,input().split()))\nfor i in range(n-1):\n    for j in range(i+1,n):\n        if math.gcd(a[i],a[j]) == 1:\n            print(a[i],a[</span>j])"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b0fe535fa0f4f1d88e/27e30f767b3a46b283cbfec0/sub_1762250677098_qv3rooszu.py",
+        "similarity_percent": 100.0,
+        "full_code": "import math\nn = int(input())\na = list(map(int, input().split()))\nfor i in range(n-1):\n    for j in range(i+1,n):\n        if math.gcd(a[i],a[j]) == 1:\n            print(a[i],a[j])",
+        "highlighted_code": "<span class='highlight-green'>import math\nn = int(input())\na = list(map(int, input().split()))\nfor i in range(n-1):\n    for j in range(i+1,n):\n        if math.gcd(a[i],a[j]) == 1:\n            print(a[i],a[</span>j])"
+      },
+      "token_overlap": 121,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 8,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b0fe535fa0f4f1d88e/f95120b3a38a461085ef58cb/sub_1761845124993_joaeb2ekv.py",
+        "similarity_percent": 100.0,
+        "full_code": "def gcd(a, b):\n    while(b != 0):\n        tmp = a % b\n        a = b\n        b = tmp\n\n    return a\nn = int(input())\nlst = list(map(int, input().split()))\n\nfor i in range(len(lst)):\n    for j in range(i + 1, len(lst)):\n        if gcd(lst[i], lst[j]) == 1:\n            print(lst[i], lst[j], end = \"\\n\")",
+        "highlighted_code": "<span class='highlight-red'>def gcd(a, b):\n    while(b != 0):\n        tmp = a % b\n        a = b\n        b = tmp\n\n    return a\nn = int(input())\nlst = list(map(int, input().split()))\n\nfor i in range(len(lst)):\n    for j in range(i + 1, len(lst)):\n        if gcd(lst[i], lst[j]) == 1:\n            print(lst[i], lst[j], end </span>= &#34;\\n&#34;)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b0fe535fa0f4f1d88e/ffdb326842044f2e98b7aaa7/sub_1761622794018_61f9ovhju.py",
+        "similarity_percent": 100.0,
+        "full_code": "def gcd(a, b):\n    while(b != 0):\n        tmp = a % b\n        a = b\n        b = tmp\n\n    return a\nn = int(input())\nlst = list(map(int, input().split()))\n\nfor i in range(len(lst)):\n    for j in range(i + 1, len(lst)):\n        if gcd(lst[i], lst[j]) == 1:\n            print(lst[i], lst[j], end = \"\\n\")\n\n\n",
+        "highlighted_code": "<span class='highlight-green'>def gcd(a, b):\n    while(b != 0):\n        tmp = a % b\n        a = b\n        b = tmp\n\n    return a\nn = int(input())\nlst = list(map(int, input().split()))\n\nfor i in range(len(lst)):\n    for j in range(i + 1, len(lst)):\n        if gcd(lst[i], lst[j]) == 1:\n            print(lst[i], lst[j], end </span>= &#34;\\n&#34;)\n\n\n"
+      },
+      "token_overlap": 161,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 9,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b0fe535fa0f4f1d88e/e7457b81cbe24d9d9bdac641/sub_1762266878698_t7c13kjm6.py",
+        "similarity_percent": 94.12,
+        "full_code": "import math \nn = int(input()) \na = list(map(int, input().split())) \nfor i in range(n):\n    for j in range(i + 1, n):\n        if math.gcd(a[i], a[j]) == 1:  \n            print(a[i], a[j])\n",
+        "highlighted_code": "<span class='highlight-red'>import math \nn = int(input()) \na = list(map(int, input().split())) \nfor i in ran</span>ge(n):\n    f<span class='highlight-red'>or j in range(i + 1, n):\n        if math.gcd(a[i], a[j]) == 1:  \n            print(a[i], a[</span>j])\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b0fe535fa0f4f1d88e/bbb05531336e487d8ed54046/sub_1762798993474_auaml66e8.py",
+        "similarity_percent": 92.56,
+        "full_code": "import math  # dùng để tính gcd\n\nn = int(input())\na = list(map(int, input().split()))\n\nfor i in range(n - 1):\n    for j in range(i + 1, n):\n        if math.gcd(a[i], a[j]) == 1: \n            print(a[i], a[j])\n",
+        "highlighted_code": "<span class='highlight-green'>import math  # dùng để tính gcd\n\nn = int(input())\na = list(map(int, input().split()))\n\nfor i in ran</span>ge(n - 1):\n    f<span class='highlight-green'>or j in range(i + 1, n):\n        if math.gcd(a[i], a[j]) == 1: \n            print(a[i], a[</span>j])\n"
+      },
+      "token_overlap": 112,
+      "max_similarity_percent": 94.12
+    },
+    {
+      "case_id": 10,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b0fe535fa0f4f1d88e/e7457b81cbe24d9d9bdac641/sub_1762266878698_t7c13kjm6.py",
+        "similarity_percent": 94.12,
+        "full_code": "import math \nn = int(input()) \na = list(map(int, input().split())) \nfor i in range(n):\n    for j in range(i + 1, n):\n        if math.gcd(a[i], a[j]) == 1:  \n            print(a[i], a[j])\n",
+        "highlighted_code": "<span class='highlight-red'>import math \nn = int(input()) \na = list(map(int, input().split())) \nfor i in ran</span>ge(n):\n    f<span class='highlight-red'>or j in range(i + 1, n):\n        if math.gcd(a[i], a[j]) == 1:  \n            print(a[i], a[</span>j])\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b0fe535fa0f4f1d88e/27e30f767b3a46b283cbfec0/sub_1762261502619_4eyhoj5sm.py",
+        "similarity_percent": 92.56,
+        "full_code": "import math\nn = int(input())\na = list(map(int ,input().split()))\nfor i in range(n-1):\n    for j in range(i+1,n):\n        if math.gcd(a[i],a[j]) == 1:\n            print(a[i],a[j])",
+        "highlighted_code": "<span class='highlight-green'>import math\nn = int(input())\na = list(map(int ,input().split()))\nfor i in ran</span>ge(n-1):\n    f<span class='highlight-green'>or j in range(i+1,n):\n        if math.gcd(a[i],a[j]) == 1:\n            print(a[i],a[</span>j])"
+      },
+      "token_overlap": 112,
+      "max_similarity_percent": 94.12
+    },
+    {
+      "case_id": 11,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b0fe535fa0f4f1d88e/e7457b81cbe24d9d9bdac641/sub_1762266878698_t7c13kjm6.py",
+        "similarity_percent": 94.12,
+        "full_code": "import math \nn = int(input()) \na = list(map(int, input().split())) \nfor i in range(n):\n    for j in range(i + 1, n):\n        if math.gcd(a[i], a[j]) == 1:  \n            print(a[i], a[j])\n",
+        "highlighted_code": "<span class='highlight-red'>import math \nn = int(input()) \na = list(map(int, input().split())) \nfor i in ran</span>ge(n):\n    f<span class='highlight-red'>or j in range(i + 1, n):\n        if math.gcd(a[i], a[j]) == 1:  \n            print(a[i], a[</span>j])\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b0fe535fa0f4f1d88e/27e30f767b3a46b283cbfec0/sub_1762250677098_qv3rooszu.py",
+        "similarity_percent": 92.56,
+        "full_code": "import math\nn = int(input())\na = list(map(int, input().split()))\nfor i in range(n-1):\n    for j in range(i+1,n):\n        if math.gcd(a[i],a[j]) == 1:\n            print(a[i],a[j])",
+        "highlighted_code": "<span class='highlight-green'>import math\nn = int(input())\na = list(map(int, input().split()))\nfor i in ran</span>ge(n-1):\n    f<span class='highlight-green'>or j in range(i+1,n):\n        if math.gcd(a[i],a[j]) == 1:\n            print(a[i],a[</span>j])"
+      },
+      "token_overlap": 112,
+      "max_similarity_percent": 94.12
+    },
+    {
+      "case_id": 12,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b0fe535fa0f4f1d88e/e59c34a1bebb49d29bfb3592/sub_1762174014046_sg0pta5eu.py",
+        "similarity_percent": 94.12,
+        "full_code": "import math\nn = int(input())\narr = list(map(int,input().split()))\nfor i in range(n):\n    for j in range(i+1,n):\n        if math.gcd(arr[i],arr[j]) == 1:\n            print(arr[i],arr[j])    \n",
+        "highlighted_code": "<span class='highlight-red'>import math\nn = int(input())\narr = list(map(int,input().split()))\nfor i in ran</span>ge(n):\n    f<span class='highlight-red'>or j in range(i+1,n):\n        if math.gcd(arr[i],arr[j]) == 1:\n            print(arr[i],arr[</span>j])    \n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b0fe535fa0f4f1d88e/27e30f767b3a46b283cbfec0/sub_1762250677098_qv3rooszu.py",
+        "similarity_percent": 92.56,
+        "full_code": "import math\nn = int(input())\na = list(map(int, input().split()))\nfor i in range(n-1):\n    for j in range(i+1,n):\n        if math.gcd(a[i],a[j]) == 1:\n            print(a[i],a[j])",
+        "highlighted_code": "<span class='highlight-green'>import math\nn = int(input())\na = list(map(int, input().split()))\nfor i in ran</span>ge(n-1):\n    f<span class='highlight-green'>or j in range(i+1,n):\n        if math.gcd(a[i],a[j]) == 1:\n            print(a[i],a[</span>j])"
+      },
+      "token_overlap": 112,
+      "max_similarity_percent": 94.12
+    },
+    {
+      "case_id": 13,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b0fe535fa0f4f1d88e/bbb05531336e487d8ed54046/sub_1762798993474_auaml66e8.py",
+        "similarity_percent": 92.56,
+        "full_code": "import math  # dùng để tính gcd\n\nn = int(input())\na = list(map(int, input().split()))\n\nfor i in range(n - 1):\n    for j in range(i + 1, n):\n        if math.gcd(a[i], a[j]) == 1: \n            print(a[i], a[j])\n",
+        "highlighted_code": "<span class='highlight-red'>import math  # dùng để tính gcd\n\nn = int(input())\na = list(map(int, input().split()))\n\nfor i in ran</span>ge(n - 1):\n    f<span class='highlight-red'>or j in range(i + 1, n):\n        if math.gcd(a[i], a[j]) == 1: \n            print(a[i], a[</span>j])\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b0fe535fa0f4f1d88e/e59c34a1bebb49d29bfb3592/sub_1762174014046_sg0pta5eu.py",
+        "similarity_percent": 94.12,
+        "full_code": "import math\nn = int(input())\narr = list(map(int,input().split()))\nfor i in range(n):\n    for j in range(i+1,n):\n        if math.gcd(arr[i],arr[j]) == 1:\n            print(arr[i],arr[j])    \n",
+        "highlighted_code": "<span class='highlight-green'>import math\nn = int(input())\narr = list(map(int,input().split()))\nfor i in ran</span>ge(n):\n    f<span class='highlight-green'>or j in range(i+1,n):\n        if math.gcd(arr[i],arr[j]) == 1:\n            print(arr[i],arr[</span>j])    \n"
+      },
+      "token_overlap": 112,
+      "max_similarity_percent": 94.12
+    },
+    {
+      "case_id": 14,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b0fe535fa0f4f1d88e/27e30f767b3a46b283cbfec0/sub_1762261502619_4eyhoj5sm.py",
+        "similarity_percent": 92.56,
+        "full_code": "import math\nn = int(input())\na = list(map(int ,input().split()))\nfor i in range(n-1):\n    for j in range(i+1,n):\n        if math.gcd(a[i],a[j]) == 1:\n            print(a[i],a[j])",
+        "highlighted_code": "<span class='highlight-red'>import math\nn = int(input())\na = list(map(int ,input().split()))\nfor i in ran</span>ge(n-1):\n    f<span class='highlight-red'>or j in range(i+1,n):\n        if math.gcd(a[i],a[j]) == 1:\n            print(a[i],a[</span>j])"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b0fe535fa0f4f1d88e/e59c34a1bebb49d29bfb3592/sub_1762174014046_sg0pta5eu.py",
+        "similarity_percent": 94.12,
+        "full_code": "import math\nn = int(input())\narr = list(map(int,input().split()))\nfor i in range(n):\n    for j in range(i+1,n):\n        if math.gcd(arr[i],arr[j]) == 1:\n            print(arr[i],arr[j])    \n",
+        "highlighted_code": "<span class='highlight-green'>import math\nn = int(input())\narr = list(map(int,input().split()))\nfor i in ran</span>ge(n):\n    f<span class='highlight-green'>or j in range(i+1,n):\n        if math.gcd(arr[i],arr[j]) == 1:\n            print(arr[i],arr[</span>j])    \n"
+      },
+      "token_overlap": 112,
+      "max_similarity_percent": 94.12
+    },
+    {
+      "case_id": 15,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b0fe535fa0f4f1d88e/e7457b81cbe24d9d9bdac641/sub_1762266878698_t7c13kjm6.py",
+        "similarity_percent": 91.6,
+        "full_code": "import math \nn = int(input()) \na = list(map(int, input().split())) \nfor i in range(n):\n    for j in range(i + 1, n):\n        if math.gcd(a[i], a[j]) == 1:  \n            print(a[i], a[j])\n",
+        "highlighted_code": "<span class='highlight-red'>import math \nn = int(input()) \na = list(map(int, input().split())) \nfor i in range(n):\n    for j in range(i + 1, n):\n        if math.gcd(a[i], a[j]) == 1:  \n            pri</span>nt(a[i], a[j])\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b0fe535fa0f4f1d88e/c2c38e9c5ead4887925c7e80/sub_1762624921043_uu0h69bs7.py",
+        "similarity_percent": 85.83,
+        "full_code": "import math\n\nn = int(input())\na = list(map(int, input().split()))\n\nfor i in range(n):\n    for j in range(i + 1, n):\n        if math.gcd(a[i], a[j]) == 1:\n            print(f\"{a[i]} {a[j]}\")\n\n",
+        "highlighted_code": "<span class='highlight-green'>import math\n\nn = int(input())\na = list(map(int, input().split()))\n\nfor i in range(n):\n    for j in range(i + 1, n):\n        if math.gcd(a[i], a[j]) == 1:\n            pri</span>nt(f&#34;{a[i]} {a[j]}&#34;)\n\n"
+      },
+      "token_overlap": 109,
+      "max_similarity_percent": 91.6
+    },
+    {
+      "case_id": 16,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b0fe535fa0f4f1d88e/d9aec9d917da4c5e9beeb80b/sub_1762261525480_v1y4wmk1l.py",
+        "similarity_percent": 90.0,
+        "full_code": "def gcd(x,y):\n    while y:\n        x, y = y, x % y \n    return x\nn = int(input())\na = list(map(int, input().split()))\nfor i in range(n):\n    for j in range(i+1, n):\n        if gcd(a[i], a[j]) == 1:\n            print(a[i], a[j])",
+        "highlighted_code": "<span class='highlight-red'>def gcd(x,y):\n    while y:\n        x, y = y, x % y \n    return x\nn = int(input())\na = list(map(int, input().split()))\n</span>for i in range(n)<span class='highlight-red'>:\n    for j in range(i+1, n):\n        if gcd(a[i], a[j]) == 1:\n            print(a[i], a[</span>j])"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b0fe535fa0f4f1d88e/8e236cb825b041b0a82527f2/sub_1761640706412_scf987jqu.py",
+        "similarity_percent": 84.56,
+        "full_code": "def gcd(a, b):\n    while b:\n        a, b = b, a % b\n    return a\n\n\nn = int(input())\narr = list(map(int, input().split()))\narr.sort()\n\nfor i in range(0, n-1):\n    for j in range(i+1, n):\n        if gcd(arr[i], arr[j]) == 1:\n            print(arr[i], arr[j])\n",
+        "highlighted_code": "<span class='highlight-green'>def gcd(a, b):\n    while b:\n        a, b = b, a % b\n    return a\n\n\nn = int(input())\narr = list(map(int, input().split()))\n</span>arr.sort()\n\nfor i in range(0, n-1)<span class='highlight-green'>:\n    for j in range(i+1, n):\n        if gcd(arr[i], arr[j]) == 1:\n            print(arr[i], arr[</span>j])\n"
+      },
+      "token_overlap": 126,
+      "max_similarity_percent": 90.0
+    },
+    {
+      "case_id": 17,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b0fe535fa0f4f1d88e/d9aec9d917da4c5e9beeb80b/sub_1761828723487_lv7ddx82d.py",
+        "similarity_percent": 90.0,
+        "full_code": "def gcd(x, y):\n    while y:\n        x, y = y, x % y\n    return x\nn = int(input())\na = list(map(int, input().split()))\nfor i in range(n):\n    for j in range(i + 1, n):\n        if gcd(a[i], a[j]) == 1:\n            print(a[i], a[j])\n",
+        "highlighted_code": "<span class='highlight-red'>def gcd(x, y):\n    while y:\n        x, y = y, x % y\n    return x\nn = int(input())\na = list(map(int, input().split()))\n</span>for i in range(n)<span class='highlight-red'>:\n    for j in range(i + 1, n):\n        if gcd(a[i], a[j]) == 1:\n            print(a[i], a[</span>j])\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b0fe535fa0f4f1d88e/8e236cb825b041b0a82527f2/sub_1761640706412_scf987jqu.py",
+        "similarity_percent": 84.56,
+        "full_code": "def gcd(a, b):\n    while b:\n        a, b = b, a % b\n    return a\n\n\nn = int(input())\narr = list(map(int, input().split()))\narr.sort()\n\nfor i in range(0, n-1):\n    for j in range(i+1, n):\n        if gcd(arr[i], arr[j]) == 1:\n            print(arr[i], arr[j])\n",
+        "highlighted_code": "<span class='highlight-green'>def gcd(a, b):\n    while b:\n        a, b = b, a % b\n    return a\n\n\nn = int(input())\narr = list(map(int, input().split()))\n</span>arr.sort()\n\nfor i in range(0, n-1)<span class='highlight-green'>:\n    for j in range(i+1, n):\n        if gcd(arr[i], arr[j]) == 1:\n            print(arr[i], arr[</span>j])\n"
+      },
+      "token_overlap": 126,
+      "max_similarity_percent": 90.0
+    },
+    {
+      "case_id": 18,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b0fe535fa0f4f1d88e/c2c38e9c5ead4887925c7e80/sub_1762624921043_uu0h69bs7.py",
+        "similarity_percent": 85.83,
+        "full_code": "import math\n\nn = int(input())\na = list(map(int, input().split()))\n\nfor i in range(n):\n    for j in range(i + 1, n):\n        if math.gcd(a[i], a[j]) == 1:\n            print(f\"{a[i]} {a[j]}\")\n\n",
+        "highlighted_code": "<span class='highlight-red'>import math\n\nn = int(input())\na = list(map(int, input().split()))\n\nfor i in range(n):\n    for j in range(i + 1, n):\n        if math.gcd(a[i], a[j]) == 1:\n            pri</span>nt(f&#34;{a[i]} {a[j]}&#34;)\n\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b0fe535fa0f4f1d88e/e59c34a1bebb49d29bfb3592/sub_1762174014046_sg0pta5eu.py",
+        "similarity_percent": 91.6,
+        "full_code": "import math\nn = int(input())\narr = list(map(int,input().split()))\nfor i in range(n):\n    for j in range(i+1,n):\n        if math.gcd(arr[i],arr[j]) == 1:\n            print(arr[i],arr[j])    \n",
+        "highlighted_code": "<span class='highlight-green'>import math\nn = int(input())\narr = list(map(int,input().split()))\nfor i in range(n):\n    for j in range(i+1,n):\n        if math.gcd(arr[i],arr[j]) == 1:\n            pri</span>nt(arr[i],arr[j])    \n"
+      },
+      "token_overlap": 109,
+      "max_similarity_percent": 91.6
+    },
+    {
+      "case_id": 19,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b0fe535fa0f4f1d88e/9f14990043df4fda9283d7ac/sub_1762265288451_8mm59ugzg.py",
+        "similarity_percent": 85.25,
+        "full_code": "from math import gcd\n\nn = int(input())\na = list(map(int, input().split()))\n\nfor i in range(n):\n    for j in range(i + 1, n):\n        if gcd(a[i], a[j]) == 1:\n            print(a[i], a[j])",
+        "highlighted_code": "from math import gcd\n\nn = i<span class='highlight-red'>nt(input())\na = list(map(int, input().split()))\n\nfor i in range(n):\n    for j in range(i + 1, n):\n        if gcd(a[i], a[j]) == 1:\n            print(a[i], a[</span>j])"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b0fe535fa0f4f1d88e/d9aec9d917da4c5e9beeb80b/sub_1762261525480_v1y4wmk1l.py",
+        "similarity_percent": 74.29,
+        "full_code": "def gcd(x,y):\n    while y:\n        x, y = y, x % y \n    return x\nn = int(input())\na = list(map(int, input().split()))\nfor i in range(n):\n    for j in range(i+1, n):\n        if gcd(a[i], a[j]) == 1:\n            print(a[i], a[j])",
+        "highlighted_code": "def gcd(x,y):\n    while y:\n        x, y = y, x % y \n    return x\nn = i<span class='highlight-green'>nt(input())\na = list(map(int, input().split()))\nfor i in range(n):\n    for j in range(i+1, n):\n        if gcd(a[i], a[j]) == 1:\n            print(a[i], a[</span>j])"
+      },
+      "token_overlap": 104,
+      "max_similarity_percent": 85.25
+    },
+    {
+      "case_id": 20,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b0fe535fa0f4f1d88e/9f14990043df4fda9283d7ac/sub_1762265288451_8mm59ugzg.py",
+        "similarity_percent": 85.25,
+        "full_code": "from math import gcd\n\nn = int(input())\na = list(map(int, input().split()))\n\nfor i in range(n):\n    for j in range(i + 1, n):\n        if gcd(a[i], a[j]) == 1:\n            print(a[i], a[j])",
+        "highlighted_code": "from math import gcd\n\nn = i<span class='highlight-red'>nt(input())\na = list(map(int, input().split()))\n\nfor i in range(n):\n    for j in range(i + 1, n):\n        if gcd(a[i], a[j]) == 1:\n            print(a[i], a[</span>j])"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b0fe535fa0f4f1d88e/d9aec9d917da4c5e9beeb80b/sub_1761828723487_lv7ddx82d.py",
+        "similarity_percent": 74.29,
+        "full_code": "def gcd(x, y):\n    while y:\n        x, y = y, x % y\n    return x\nn = int(input())\na = list(map(int, input().split()))\nfor i in range(n):\n    for j in range(i + 1, n):\n        if gcd(a[i], a[j]) == 1:\n            print(a[i], a[j])\n",
+        "highlighted_code": "def gcd(x, y):\n    while y:\n        x, y = y, x % y\n    return x\nn = i<span class='highlight-green'>nt(input())\na = list(map(int, input().split()))\nfor i in range(n):\n    for j in range(i + 1, n):\n        if gcd(a[i], a[j]) == 1:\n            print(a[i], a[</span>j])\n"
+      },
+      "token_overlap": 104,
+      "max_similarity_percent": 85.25
+    },
+    {
+      "case_id": 21,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b0fe535fa0f4f1d88e/9f14990043df4fda9283d7ac/sub_1762265288451_8mm59ugzg.py",
+        "similarity_percent": 85.25,
+        "full_code": "from math import gcd\n\nn = int(input())\na = list(map(int, input().split()))\n\nfor i in range(n):\n    for j in range(i + 1, n):\n        if gcd(a[i], a[j]) == 1:\n            print(a[i], a[j])",
+        "highlighted_code": "from math import gcd\n\nn = i<span class='highlight-red'>nt(input())\na = list(map(int, input().split()))\n\nfor i in range(n):\n    for j in range(i + 1, n):\n        if gcd(a[i], a[j]) == 1:\n            print(a[i], a[</span>j])"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b0fe535fa0f4f1d88e/3fa6af8d916a46039239cabe/sub_1761665461714_heyi8duny.py",
+        "similarity_percent": 71.72,
+        "full_code": "def gcd(a,b):\n    if b==0:\n        return a\n    return gcd(b,a%b)\nn=int(input())\nA=list(map(int,input().split()))\nfor i in range(n):\n    for j in range(i+1,n):\n        if gcd(A[i],A[j])==1:\n            print(A[i],A[j])",
+        "highlighted_code": "def gcd(a,b):\n    if b==0:\n        return a\n    return gcd(b,a%b)\nn=i<span class='highlight-green'>nt(input())\nA=list(map(int,input().split()))\nfor i in range(n):\n    for j in range(i+1,n):\n        if gcd(A[i],A[j])==1:\n            print(A[i],A[</span>j])"
+      },
+      "token_overlap": 104,
+      "max_similarity_percent": 85.25
+    },
+    {
+      "case_id": 22,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b0fe535fa0f4f1d88e/e7457b81cbe24d9d9bdac641/sub_1762266878698_t7c13kjm6.py",
+        "similarity_percent": 84.03,
+        "full_code": "import math \nn = int(input()) \na = list(map(int, input().split())) \nfor i in range(n):\n    for j in range(i + 1, n):\n        if math.gcd(a[i], a[j]) == 1:  \n            print(a[i], a[j])\n",
+        "highlighted_code": "import math \nn = i<span class='highlight-red'>nt(input()) \na = list(map(int, input().</span>split())) \nf<span class='highlight-red'>or i in range(n):\n    for j in range(i + 1, n):\n        if math.gcd(a[i], a[j]) == 1:  \n            print(a[i], a[</span>j])\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b0fe535fa0f4f1d88e/e59c34a1bebb49d29bfb3592/sub_1762262277925_up510s0d6.py",
+        "similarity_percent": 84.03,
+        "full_code": "n = int(input())\narr = list(map(int,input().split()))\nimport math\nfor i in range(n):\n    for j in range(i+1,n):\n        if math.gcd(arr[i],arr[j]) == 1:\n            print(arr[i],arr[j])",
+        "highlighted_code": "n = i<span class='highlight-green'>nt(input())\narr = list(map(int,input().</span>split()))\nimport math\nf<span class='highlight-green'>or i in range(n):\n    for j in range(i+1,n):\n        if math.gcd(arr[i],arr[j]) == 1:\n            print(arr[i],arr[</span>j])"
+      },
+      "token_overlap": 100,
+      "max_similarity_percent": 84.03
+    },
+    {
+      "case_id": 23,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b0fe535fa0f4f1d88e/e59c34a1bebb49d29bfb3592/sub_1762262277925_up510s0d6.py",
+        "similarity_percent": 84.03,
+        "full_code": "n = int(input())\narr = list(map(int,input().split()))\nimport math\nfor i in range(n):\n    for j in range(i+1,n):\n        if math.gcd(arr[i],arr[j]) == 1:\n            print(arr[i],arr[j])",
+        "highlighted_code": "n = i<span class='highlight-red'>nt(input())\narr = list(map(int,input().</span>split()))\nimport math\nf<span class='highlight-red'>or i in range(n):\n    for j in range(i+1,n):\n        if math.gcd(arr[i],arr[j]) == 1:\n            print(arr[i],arr[</span>j])"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b0fe535fa0f4f1d88e/e59c34a1bebb49d29bfb3592/sub_1762174014046_sg0pta5eu.py",
+        "similarity_percent": 84.03,
+        "full_code": "import math\nn = int(input())\narr = list(map(int,input().split()))\nfor i in range(n):\n    for j in range(i+1,n):\n        if math.gcd(arr[i],arr[j]) == 1:\n            print(arr[i],arr[j])    \n",
+        "highlighted_code": "import math\nn = i<span class='highlight-green'>nt(input())\narr = list(map(int,input().</span>split()))\nf<span class='highlight-green'>or i in range(n):\n    for j in range(i+1,n):\n        if math.gcd(arr[i],arr[j]) == 1:\n            print(arr[i],arr[</span>j])    \n"
+      },
+      "token_overlap": 100,
+      "max_similarity_percent": 84.03
+    },
+    {
+      "case_id": 24,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b0fe535fa0f4f1d88e/ffdb326842044f2e98b7aaa7/sub_1762264882283_4a44ljbjw.py",
+        "similarity_percent": 83.23,
+        "full_code": "def gcd(a, b):\n    while(b != 0):\n        tmp = a % b\n        a = b\n        b = tmp\n\n    return a\nn = int(input())\nlst = list(map(int, input().split()))\n\nfor i in range(len(lst)):\n    for j in range(i + 1, len(lst)):\n        if gcd(lst[i], lst[j]) == 1:\n            print(lst[i], lst[j], end = \"\\n\")\n\n\n",
+        "highlighted_code": "<span class='highlight-red'>def gcd(a, b):\n    while(b != 0):\n        tmp = a % b\n        a = b\n        b = tmp\n\n    return a\nn = int(input())\nlst = list(map(int, input().split()))\n\nfor i in range(len(lst)):\n    for j in range(i + 1, len(lst)):\n        if gcd(lst[i]</span>, lst[j]) == 1:\n            print(lst[i], lst[j], end = &#34;\\n&#34;)\n\n\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b0fe535fa0f4f1d88e/ffdb326842044f2e98b7aaa7/sub_1761622667480_f6i0n7il5.py",
+        "similarity_percent": 82.72,
+        "full_code": "def gcd(a, b):\n    while(b != 0):\n        tmp = a % b\n        a = b\n        b = tmp\n\n    return a\nn = int(input())\nlst = list(map(int, input().split()))\n\nfor i in range(len(lst)):\n    for j in range(i + 1, len(lst)):\n        if gcd(lst[i], lst[j] == 1):\n            print(lst[i], lst[j], end = \"\\n\")\n\n\n",
+        "highlighted_code": "<span class='highlight-green'>def gcd(a, b):\n    while(b != 0):\n        tmp = a % b\n        a = b\n        b = tmp\n\n    return a\nn = int(input())\nlst = list(map(int, input().split()))\n\nfor i in range(len(lst)):\n    for j in range(i + 1, len(lst)):\n        if gcd(lst[i]</span>, lst[j] == 1):\n            print(lst[i], lst[j], end = &#34;\\n&#34;)\n\n\n"
+      },
+      "token_overlap": 134,
+      "max_similarity_percent": 83.23
+    },
+    {
+      "case_id": 25,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b0fe535fa0f4f1d88e/ffdb326842044f2e98b7aaa7/sub_1761622667480_f6i0n7il5.py",
+        "similarity_percent": 82.72,
+        "full_code": "def gcd(a, b):\n    while(b != 0):\n        tmp = a % b\n        a = b\n        b = tmp\n\n    return a\nn = int(input())\nlst = list(map(int, input().split()))\n\nfor i in range(len(lst)):\n    for j in range(i + 1, len(lst)):\n        if gcd(lst[i], lst[j] == 1):\n            print(lst[i], lst[j], end = \"\\n\")\n\n\n",
+        "highlighted_code": "<span class='highlight-red'>def gcd(a, b):\n    while(b != 0):\n        tmp = a % b\n        a = b\n        b = tmp\n\n    return a\nn = int(input())\nlst = list(map(int, input().split()))\n\nfor i in range(len(lst)):\n    for j in range(i + 1, len(lst)):\n        if gcd(lst[i]</span>, lst[j] == 1):\n            print(lst[i], lst[j], end = &#34;\\n&#34;)\n\n\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b0fe535fa0f4f1d88e/f95120b3a38a461085ef58cb/sub_1761845124993_joaeb2ekv.py",
+        "similarity_percent": 83.23,
+        "full_code": "def gcd(a, b):\n    while(b != 0):\n        tmp = a % b\n        a = b\n        b = tmp\n\n    return a\nn = int(input())\nlst = list(map(int, input().split()))\n\nfor i in range(len(lst)):\n    for j in range(i + 1, len(lst)):\n        if gcd(lst[i], lst[j]) == 1:\n            print(lst[i], lst[j], end = \"\\n\")",
+        "highlighted_code": "<span class='highlight-green'>def gcd(a, b):\n    while(b != 0):\n        tmp = a % b\n        a = b\n        b = tmp\n\n    return a\nn = int(input())\nlst = list(map(int, input().split()))\n\nfor i in range(len(lst)):\n    for j in range(i + 1, len(lst)):\n        if gcd(lst[i]</span>, lst[j]) == 1:\n            print(lst[i], lst[j], end = &#34;\\n&#34;)"
+      },
+      "token_overlap": 134,
+      "max_similarity_percent": 83.23
+    },
+    {
+      "case_id": 26,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b0fe535fa0f4f1d88e/ffdb326842044f2e98b7aaa7/sub_1761622667480_f6i0n7il5.py",
+        "similarity_percent": 82.72,
+        "full_code": "def gcd(a, b):\n    while(b != 0):\n        tmp = a % b\n        a = b\n        b = tmp\n\n    return a\nn = int(input())\nlst = list(map(int, input().split()))\n\nfor i in range(len(lst)):\n    for j in range(i + 1, len(lst)):\n        if gcd(lst[i], lst[j] == 1):\n            print(lst[i], lst[j], end = \"\\n\")\n\n\n",
+        "highlighted_code": "<span class='highlight-red'>def gcd(a, b):\n    while(b != 0):\n        tmp = a % b\n        a = b\n        b = tmp\n\n    return a\nn = int(input())\nlst = list(map(int, input().split()))\n\nfor i in range(len(lst)):\n    for j in range(i + 1, len(lst)):\n        if gcd(lst[i]</span>, lst[j] == 1):\n            print(lst[i], lst[j], end = &#34;\\n&#34;)\n\n\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b0fe535fa0f4f1d88e/ffdb326842044f2e98b7aaa7/sub_1761622794018_61f9ovhju.py",
+        "similarity_percent": 83.23,
+        "full_code": "def gcd(a, b):\n    while(b != 0):\n        tmp = a % b\n        a = b\n        b = tmp\n\n    return a\nn = int(input())\nlst = list(map(int, input().split()))\n\nfor i in range(len(lst)):\n    for j in range(i + 1, len(lst)):\n        if gcd(lst[i], lst[j]) == 1:\n            print(lst[i], lst[j], end = \"\\n\")\n\n\n",
+        "highlighted_code": "<span class='highlight-green'>def gcd(a, b):\n    while(b != 0):\n        tmp = a % b\n        a = b\n        b = tmp\n\n    return a\nn = int(input())\nlst = list(map(int, input().split()))\n\nfor i in range(len(lst)):\n    for j in range(i + 1, len(lst)):\n        if gcd(lst[i]</span>, lst[j]) == 1:\n            print(lst[i], lst[j], end = &#34;\\n&#34;)\n\n\n"
+      },
+      "token_overlap": 134,
+      "max_similarity_percent": 83.23
+    },
+    {
+      "case_id": 27,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b0fe535fa0f4f1d88e/e7457b81cbe24d9d9bdac641/sub_1762266878698_t7c13kjm6.py",
+        "similarity_percent": 80.67,
+        "full_code": "import math \nn = int(input()) \na = list(map(int, input().split())) \nfor i in range(n):\n    for j in range(i + 1, n):\n        if math.gcd(a[i], a[j]) == 1:  \n            print(a[i], a[j])\n",
+        "highlighted_code": "import math \nn = i<span class='highlight-red'>nt(input()) \na = list(map(int, input().split())) \nfor i in range(n):\n    for j in range(i + 1, n</span>):\n        if math.gcd(a[<span class='highlight-red'>i], a[j]) == 1:  \n            print(a[i], a[</span>j])\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b0fe535fa0f4f1d88e/9f14990043df4fda9283d7ac/sub_1762265288451_8mm59ugzg.py",
+        "similarity_percent": 78.69,
+        "full_code": "from math import gcd\n\nn = int(input())\na = list(map(int, input().split()))\n\nfor i in range(n):\n    for j in range(i + 1, n):\n        if gcd(a[i], a[j]) == 1:\n            print(a[i], a[j])",
+        "highlighted_code": "from math import gcd\n\nn = i<span class='highlight-green'>nt(input())\na = list(map(int, input().split()))\n\nfor i in range(n):\n    for j in range(i + 1, n</span>):\n        if gcd(a[<span class='highlight-green'>i], a[j]) == 1:\n            print(a[i], a[</span>j])"
+      },
+      "token_overlap": 96,
+      "max_similarity_percent": 80.67
+    },
+    {
+      "case_id": 28,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b0fe535fa0f4f1d88e/e7457b81cbe24d9d9bdac641/sub_1762266878698_t7c13kjm6.py",
+        "similarity_percent": 80.67,
+        "full_code": "import math \nn = int(input()) \na = list(map(int, input().split())) \nfor i in range(n):\n    for j in range(i + 1, n):\n        if math.gcd(a[i], a[j]) == 1:  \n            print(a[i], a[j])\n",
+        "highlighted_code": "import math \nn = i<span class='highlight-red'>nt(input()) \na = list(map(int, input().split())) \nfor i in range(n):\n    for j in range(i + 1, n</span>):\n        if math.gcd(a[<span class='highlight-red'>i], a[j]) == 1:  \n            print(a[i], a[</span>j])\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b0fe535fa0f4f1d88e/d9aec9d917da4c5e9beeb80b/sub_1762261525480_v1y4wmk1l.py",
+        "similarity_percent": 68.57,
+        "full_code": "def gcd(x,y):\n    while y:\n        x, y = y, x % y \n    return x\nn = int(input())\na = list(map(int, input().split()))\nfor i in range(n):\n    for j in range(i+1, n):\n        if gcd(a[i], a[j]) == 1:\n            print(a[i], a[j])",
+        "highlighted_code": "def gcd(x,y):\n    while y:\n        x, y = y, x % y \n    return x\nn = i<span class='highlight-green'>nt(input())\na = list(map(int, input().split()))\nfor i in range(n):\n    for j in range(i+1, n</span>):\n        if gcd(a[<span class='highlight-green'>i], a[j]) == 1:\n            print(a[i], a[</span>j])"
+      },
+      "token_overlap": 96,
+      "max_similarity_percent": 80.67
+    },
+    {
+      "case_id": 29,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b0fe535fa0f4f1d88e/e7457b81cbe24d9d9bdac641/sub_1762266878698_t7c13kjm6.py",
+        "similarity_percent": 80.67,
+        "full_code": "import math \nn = int(input()) \na = list(map(int, input().split())) \nfor i in range(n):\n    for j in range(i + 1, n):\n        if math.gcd(a[i], a[j]) == 1:  \n            print(a[i], a[j])\n",
+        "highlighted_code": "import math \nn = i<span class='highlight-red'>nt(input()) \na = list(map(int, input().split())) \nfor i in range(n):\n    for j in range(i + 1, n</span>):\n        if math.gcd(a[<span class='highlight-red'>i], a[j]) == 1:  \n            print(a[i], a[</span>j])\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b0fe535fa0f4f1d88e/d9aec9d917da4c5e9beeb80b/sub_1761828723487_lv7ddx82d.py",
+        "similarity_percent": 68.57,
+        "full_code": "def gcd(x, y):\n    while y:\n        x, y = y, x % y\n    return x\nn = int(input())\na = list(map(int, input().split()))\nfor i in range(n):\n    for j in range(i + 1, n):\n        if gcd(a[i], a[j]) == 1:\n            print(a[i], a[j])\n",
+        "highlighted_code": "def gcd(x, y):\n    while y:\n        x, y = y, x % y\n    return x\nn = i<span class='highlight-green'>nt(input())\na = list(map(int, input().split()))\nfor i in range(n):\n    for j in range(i + 1, n</span>):\n        if gcd(a[<span class='highlight-green'>i], a[j]) == 1:\n            print(a[i], a[</span>j])\n"
+      },
+      "token_overlap": 96,
+      "max_similarity_percent": 80.67
+    },
+    {
+      "case_id": 30,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b0fe535fa0f4f1d88e/e7457b81cbe24d9d9bdac641/sub_1762266878698_t7c13kjm6.py",
+        "similarity_percent": 80.67,
+        "full_code": "import math \nn = int(input()) \na = list(map(int, input().split())) \nfor i in range(n):\n    for j in range(i + 1, n):\n        if math.gcd(a[i], a[j]) == 1:  \n            print(a[i], a[j])\n",
+        "highlighted_code": "import math \nn = i<span class='highlight-red'>nt(input()) \na = list(map(int, input().split())) \nfor i in range(n):\n    for j in range(i + 1, n</span>):\n        if math.gcd(a[<span class='highlight-red'>i], a[j]) == 1:  \n            print(a[i], a[</span>j])\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b0fe535fa0f4f1d88e/3fa6af8d916a46039239cabe/sub_1761665461714_heyi8duny.py",
+        "similarity_percent": 66.21,
+        "full_code": "def gcd(a,b):\n    if b==0:\n        return a\n    return gcd(b,a%b)\nn=int(input())\nA=list(map(int,input().split()))\nfor i in range(n):\n    for j in range(i+1,n):\n        if gcd(A[i],A[j])==1:\n            print(A[i],A[j])",
+        "highlighted_code": "def gcd(a,b):\n    if b==0:\n        return a\n    return gcd(b,a%b)\nn=i<span class='highlight-green'>nt(input())\nA=list(map(int,input().split()))\nfor i in range(n):\n    for j in range(i+1,n</span>):\n        if gcd(A[<span class='highlight-green'>i],A[j])==1:\n            print(A[i],A[</span>j])"
+      },
+      "token_overlap": 96,
+      "max_similarity_percent": 80.67
+    },
+    {
+      "case_id": 31,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b0fe535fa0f4f1d88e/e59c34a1bebb49d29bfb3592/sub_1762174014046_sg0pta5eu.py",
+        "similarity_percent": 80.67,
+        "full_code": "import math\nn = int(input())\narr = list(map(int,input().split()))\nfor i in range(n):\n    for j in range(i+1,n):\n        if math.gcd(arr[i],arr[j]) == 1:\n            print(arr[i],arr[j])    \n",
+        "highlighted_code": "import math\nn = i<span class='highlight-red'>nt(input())\narr = list(map(int,input().split()))\nfor i in range(n):\n    for j in range(i+1,n</span>):\n        if math.gcd(arr[<span class='highlight-red'>i],arr[j]) == 1:\n            print(arr[i],arr[</span>j])    \n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b0fe535fa0f4f1d88e/3fa6af8d916a46039239cabe/sub_1761665461714_heyi8duny.py",
+        "similarity_percent": 66.21,
+        "full_code": "def gcd(a,b):\n    if b==0:\n        return a\n    return gcd(b,a%b)\nn=int(input())\nA=list(map(int,input().split()))\nfor i in range(n):\n    for j in range(i+1,n):\n        if gcd(A[i],A[j])==1:\n            print(A[i],A[j])",
+        "highlighted_code": "def gcd(a,b):\n    if b==0:\n        return a\n    return gcd(b,a%b)\nn=i<span class='highlight-green'>nt(input())\nA=list(map(int,input().split()))\nfor i in range(n):\n    for j in range(i+1,n</span>):\n        if gcd(A[<span class='highlight-green'>i],A[j])==1:\n            print(A[i],A[</span>j])"
+      },
+      "token_overlap": 96,
+      "max_similarity_percent": 80.67
+    },
+    {
+      "case_id": 32,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b0fe535fa0f4f1d88e/c2c38e9c5ead4887925c7e80/sub_1762624921043_uu0h69bs7.py",
+        "similarity_percent": 80.31,
+        "full_code": "import math\n\nn = int(input())\na = list(map(int, input().split()))\n\nfor i in range(n):\n    for j in range(i + 1, n):\n        if math.gcd(a[i], a[j]) == 1:\n            print(f\"{a[i]} {a[j]}\")\n\n",
+        "highlighted_code": "<span class='highlight-red'>import math\n\nn = int(input())\na = list(map(int, input().split()))\n\nfor i in ran</span>ge(n):\n    f<span class='highlight-red'>or j in range(i + 1, n):\n        if math.gcd(a[i], a[j]) == 1:\n            pri</span>nt(f&#34;{a[i]} {a[j]}&#34;)\n\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b0fe535fa0f4f1d88e/bbb05531336e487d8ed54046/sub_1762798993474_auaml66e8.py",
+        "similarity_percent": 84.3,
+        "full_code": "import math  # dùng để tính gcd\n\nn = int(input())\na = list(map(int, input().split()))\n\nfor i in range(n - 1):\n    for j in range(i + 1, n):\n        if math.gcd(a[i], a[j]) == 1: \n            print(a[i], a[j])\n",
+        "highlighted_code": "<span class='highlight-green'>import math  # dùng để tính gcd\n\nn = int(input())\na = list(map(int, input().split()))\n\nfor i in ran</span>ge(n - 1):\n    f<span class='highlight-green'>or j in range(i + 1, n):\n        if math.gcd(a[i], a[j]) == 1: \n            pri</span>nt(a[i], a[j])\n"
+      },
+      "token_overlap": 102,
+      "max_similarity_percent": 84.3
+    },
+    {
+      "case_id": 33,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b0fe535fa0f4f1d88e/c2c38e9c5ead4887925c7e80/sub_1762624921043_uu0h69bs7.py",
+        "similarity_percent": 80.31,
+        "full_code": "import math\n\nn = int(input())\na = list(map(int, input().split()))\n\nfor i in range(n):\n    for j in range(i + 1, n):\n        if math.gcd(a[i], a[j]) == 1:\n            print(f\"{a[i]} {a[j]}\")\n\n",
+        "highlighted_code": "<span class='highlight-red'>import math\n\nn = int(input())\na = list(map(int, input().split()))\n\nfor i in ran</span>ge(n):\n    f<span class='highlight-red'>or j in range(i + 1, n):\n        if math.gcd(a[i], a[j]) == 1:\n            pri</span>nt(f&#34;{a[i]} {a[j]}&#34;)\n\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b0fe535fa0f4f1d88e/27e30f767b3a46b283cbfec0/sub_1762261502619_4eyhoj5sm.py",
+        "similarity_percent": 84.3,
+        "full_code": "import math\nn = int(input())\na = list(map(int ,input().split()))\nfor i in range(n-1):\n    for j in range(i+1,n):\n        if math.gcd(a[i],a[j]) == 1:\n            print(a[i],a[j])",
+        "highlighted_code": "<span class='highlight-green'>import math\nn = int(input())\na = list(map(int ,input().split()))\nfor i in ran</span>ge(n-1):\n    f<span class='highlight-green'>or j in range(i+1,n):\n        if math.gcd(a[i],a[j]) == 1:\n            pri</span>nt(a[i],a[j])"
+      },
+      "token_overlap": 102,
+      "max_similarity_percent": 84.3
+    },
+    {
+      "case_id": 34,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b0fe535fa0f4f1d88e/c2c38e9c5ead4887925c7e80/sub_1762624921043_uu0h69bs7.py",
+        "similarity_percent": 80.31,
+        "full_code": "import math\n\nn = int(input())\na = list(map(int, input().split()))\n\nfor i in range(n):\n    for j in range(i + 1, n):\n        if math.gcd(a[i], a[j]) == 1:\n            print(f\"{a[i]} {a[j]}\")\n\n",
+        "highlighted_code": "<span class='highlight-red'>import math\n\nn = int(input())\na = list(map(int, input().split()))\n\nfor i in ran</span>ge(n):\n    f<span class='highlight-red'>or j in range(i + 1, n):\n        if math.gcd(a[i], a[j]) == 1:\n            pri</span>nt(f&#34;{a[i]} {a[j]}&#34;)\n\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b0fe535fa0f4f1d88e/27e30f767b3a46b283cbfec0/sub_1762250677098_qv3rooszu.py",
+        "similarity_percent": 84.3,
+        "full_code": "import math\nn = int(input())\na = list(map(int, input().split()))\nfor i in range(n-1):\n    for j in range(i+1,n):\n        if math.gcd(a[i],a[j]) == 1:\n            print(a[i],a[j])",
+        "highlighted_code": "<span class='highlight-green'>import math\nn = int(input())\na = list(map(int, input().split()))\nfor i in ran</span>ge(n-1):\n    f<span class='highlight-green'>or j in range(i+1,n):\n        if math.gcd(a[i],a[j]) == 1:\n            pri</span>nt(a[i],a[j])"
+      },
+      "token_overlap": 102,
+      "max_similarity_percent": 84.3
+    },
+    {
+      "case_id": 35,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b0fe535fa0f4f1d88e/9f14990043df4fda9283d7ac/sub_1762265288451_8mm59ugzg.py",
+        "similarity_percent": 78.69,
+        "full_code": "from math import gcd\n\nn = int(input())\na = list(map(int, input().split()))\n\nfor i in range(n):\n    for j in range(i + 1, n):\n        if gcd(a[i], a[j]) == 1:\n            print(a[i], a[j])",
+        "highlighted_code": "from math import gcd\n\nn = i<span class='highlight-red'>nt(input())\na = list(map(int, input().split()))\n\nfor i in range(n):\n    for j in range(i + 1, n</span>):\n        if gcd(a[<span class='highlight-red'>i], a[j]) == 1:\n            print(a[i], a[</span>j])"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b0fe535fa0f4f1d88e/e59c34a1bebb49d29bfb3592/sub_1762174014046_sg0pta5eu.py",
+        "similarity_percent": 80.67,
+        "full_code": "import math\nn = int(input())\narr = list(map(int,input().split()))\nfor i in range(n):\n    for j in range(i+1,n):\n        if math.gcd(arr[i],arr[j]) == 1:\n            print(arr[i],arr[j])    \n",
+        "highlighted_code": "import math\nn = i<span class='highlight-green'>nt(input())\narr = list(map(int,input().split()))\nfor i in range(n):\n    for j in range(i+1,n</span>):\n        if math.gcd(arr[<span class='highlight-green'>i],arr[j]) == 1:\n            print(arr[i],arr[</span>j])    \n"
+      },
+      "token_overlap": 96,
+      "max_similarity_percent": 80.67
+    },
+    {
+      "case_id": 36,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b0fe535fa0f4f1d88e/e7457b81cbe24d9d9bdac641/sub_1762266878698_t7c13kjm6.py",
+        "similarity_percent": 77.31,
+        "full_code": "import math \nn = int(input()) \na = list(map(int, input().split())) \nfor i in range(n):\n    for j in range(i + 1, n):\n        if math.gcd(a[i], a[j]) == 1:  \n            print(a[i], a[j])\n",
+        "highlighted_code": "import math \nn = i<span class='highlight-red'>nt(input()) \na = list(map(int, input().split())) \nfor i in range(n):\n    for j in range(i + 1, n):\n        if math.gcd(a[i], a[j]) == 1</span>:  \n            print(a[i], a[j])\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b0fe535fa0f4f1d88e/f6b89ee6c5ef4532901d60a6/sub_1762636831504_kybh4yj88.py",
+        "similarity_percent": 57.23,
+        "full_code": "import math\ndef ucln(n,a):\n    a.sort()\n    res=[]\n    for i in range(n):\n        for j in range(i+1, n):\n            if math.gcd(a[i],a[j]) == 1:\n                res.append((a[i],a[j]))\n    return res\nn=int(input())\na=list(map(int, input().split()))\nfor p in ucln(n,a):\n    print(*p)",
+        "highlighted_code": "import math\ndef ucln(n,a):\n    a.sort()\n    res=[]\n    f<span class='highlight-green'>or i in range(n):\n        for j in range(i+1, n):\n            if math.gcd(a[i],a[j]) == 1</span>:\n                res.append((a[i],a[j]))\n    return res\nn=i<span class='highlight-green'>nt(input())\na=list(map(int, input().split()))\nfor p </span>in ucln(n,a):\n    print(*p)"
+      },
+      "token_overlap": 92,
+      "max_similarity_percent": 77.31
+    },
+    {
+      "case_id": 37,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b0fe535fa0f4f1d88e/e59c34a1bebb49d29bfb3592/sub_1762174014046_sg0pta5eu.py",
+        "similarity_percent": 77.31,
+        "full_code": "import math\nn = int(input())\narr = list(map(int,input().split()))\nfor i in range(n):\n    for j in range(i+1,n):\n        if math.gcd(arr[i],arr[j]) == 1:\n            print(arr[i],arr[j])    \n",
+        "highlighted_code": "import math\nn = i<span class='highlight-red'>nt(input())\narr = list(map(int,input().split()))\nfor i in range(n):\n    for j in range(i+1,n):\n        if math.gcd(arr[i],arr[j]) == 1</span>:\n            print(arr[i],arr[j])    \n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b0fe535fa0f4f1d88e/f6b89ee6c5ef4532901d60a6/sub_1762636831504_kybh4yj88.py",
+        "similarity_percent": 57.23,
+        "full_code": "import math\ndef ucln(n,a):\n    a.sort()\n    res=[]\n    for i in range(n):\n        for j in range(i+1, n):\n            if math.gcd(a[i],a[j]) == 1:\n                res.append((a[i],a[j]))\n    return res\nn=int(input())\na=list(map(int, input().split()))\nfor p in ucln(n,a):\n    print(*p)",
+        "highlighted_code": "import math\ndef ucln(n,a):\n    a.sort()\n    res=[]\n    f<span class='highlight-green'>or i in range(n):\n        for j in range(i+1, n):\n            if math.gcd(a[i],a[j]) == 1</span>:\n                res.append((a[i],a[j]))\n    return res\nn=i<span class='highlight-green'>nt(input())\na=list(map(int, input().split()))\nfor p </span>in ucln(n,a):\n    print(*p)"
+      },
+      "token_overlap": 92,
+      "max_similarity_percent": 77.31
+    },
+    {
+      "case_id": 38,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b0fe535fa0f4f1d88e/9f14990043df4fda9283d7ac/sub_1762265288451_8mm59ugzg.py",
+        "similarity_percent": 77.05,
+        "full_code": "from math import gcd\n\nn = int(input())\na = list(map(int, input().split()))\n\nfor i in range(n):\n    for j in range(i + 1, n):\n        if gcd(a[i], a[j]) == 1:\n            print(a[i], a[j])",
+        "highlighted_code": "<span class='highlight-red'>from math import gcd\n\nn = int(input())\na </span>= list(map(int, input().split()))\n\nf<span class='highlight-red'>or i in range(n):\n    for j in range(i + 1, n):\n        if gcd(a[i], a[j]) == 1:\n            print(a[i], a[</span>j])"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b0fe535fa0f4f1d88e/113963c0a9df48538edf310d/sub_1762261638011_0jz7o67lj.py",
+        "similarity_percent": 77.69,
+        "full_code": "from math import gcd\nn = int(input())\narr = [int(i) for i in input().split()]\n\nfor i in range(n):\n    for j in range(i+1, n):\n        if gcd(arr[i], arr[j]) == 1:\n            print(arr[i], arr[j])\n\n",
+        "highlighted_code": "<span class='highlight-green'>from math import gcd\nn = int(input())\narr </span>= [int(i) for i in input().split()]\n\nf<span class='highlight-green'>or i in range(n):\n    for j in range(i+1, n):\n        if gcd(arr[i], arr[j]) == 1:\n            print(arr[i], arr[</span>j])\n\n"
+      },
+      "token_overlap": 94,
+      "max_similarity_percent": 77.69
+    },
+    {
+      "case_id": 39,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b0fe535fa0f4f1d88e/e59c34a1bebb49d29bfb3592/sub_1762262277925_up510s0d6.py",
+        "similarity_percent": 75.63,
+        "full_code": "n = int(input())\narr = list(map(int,input().split()))\nimport math\nfor i in range(n):\n    for j in range(i+1,n):\n        if math.gcd(arr[i],arr[j]) == 1:\n            print(arr[i],arr[j])",
+        "highlighted_code": "n = i<span class='highlight-red'>nt(input())\narr = list(map(int,input().</span>split()))\nimport math\nf<span class='highlight-red'>or i in range(n):\n    for j in range(i+1,n</span>):\n        if math.gcd(arr[<span class='highlight-red'>i],arr[j]) == 1:\n            print(arr[i],arr[</span>j])"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b0fe535fa0f4f1d88e/3fa6af8d916a46039239cabe/sub_1761665461714_heyi8duny.py",
+        "similarity_percent": 62.07,
+        "full_code": "def gcd(a,b):\n    if b==0:\n        return a\n    return gcd(b,a%b)\nn=int(input())\nA=list(map(int,input().split()))\nfor i in range(n):\n    for j in range(i+1,n):\n        if gcd(A[i],A[j])==1:\n            print(A[i],A[j])",
+        "highlighted_code": "def gcd(a,b):\n    if b==0:\n        return a\n    return gcd(b,a%b)\nn=i<span class='highlight-green'>nt(input())\nA=list(map(int,input().</span>split()))\nf<span class='highlight-green'>or i in range(n):\n    for j in range(i+1,n</span>):\n        if gcd(A[<span class='highlight-green'>i],A[j])==1:\n            print(A[i],A[</span>j])"
+      },
+      "token_overlap": 90,
+      "max_similarity_percent": 75.63
+    },
+    {
+      "case_id": 40,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b0fe535fa0f4f1d88e/c2c38e9c5ead4887925c7e80/sub_1762624921043_uu0h69bs7.py",
+        "similarity_percent": 75.59,
+        "full_code": "import math\n\nn = int(input())\na = list(map(int, input().split()))\n\nfor i in range(n):\n    for j in range(i + 1, n):\n        if math.gcd(a[i], a[j]) == 1:\n            print(f\"{a[i]} {a[j]}\")\n\n",
+        "highlighted_code": "import math\n\nn = i<span class='highlight-red'>nt(input())\na = list(map(int, input().</span>split()))\n\nf<span class='highlight-red'>or i in range(n):\n    for j in range</span>(i + 1, n):\n        if math.<span class='highlight-red'>gcd(a[i], a[j]) == 1:\n            print(f&#34;{a[i]} {a[j]}</span>&#34;)\n\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b0fe535fa0f4f1d88e/a34ffbda761b435ca043fd30/sub_1762845996872_wmn43l8uk.py",
+        "similarity_percent": 71.11,
+        "full_code": "a = int(input())\nb = list(map(int, input().split()))\nimport math\nfor i in range(a):\n    for j in range(a):\n        if b[i] < b[j] and math.gcd(b[i], b[j])==1:\n            print(f\"{b[i]} {b[j]}\")",
+        "highlighted_code": "a = i<span class='highlight-green'>nt(input())\nb = list(map(int, input().</span>split()))\nimport math\nf<span class='highlight-green'>or i in range(a):\n    for j in range</span>(a):\n        if b[i] &lt; b[j] and math.<span class='highlight-green'>gcd(b[i], b[j])==1:\n            print(f&#34;{b[i]} {b[j]}</span>&#34;)"
+      },
+      "token_overlap": 96,
+      "max_similarity_percent": 75.59
+    },
+    {
+      "case_id": 41,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b0fe535fa0f4f1d88e/9f14990043df4fda9283d7ac/sub_1762265288451_8mm59ugzg.py",
+        "similarity_percent": 75.41,
+        "full_code": "from math import gcd\n\nn = int(input())\na = list(map(int, input().split()))\n\nfor i in range(n):\n    for j in range(i + 1, n):\n        if gcd(a[i], a[j]) == 1:\n            print(a[i], a[j])",
+        "highlighted_code": "from math import gcd\n\nn <span class='highlight-red'>= int(input())\na = list(map(int, input().</span>split()))\n\nf<span class='highlight-red'>or i in range(n):\n    for j in range(i + 1, n</span>):\n        if gcd(a[<span class='highlight-red'>i], a[j]) == 1:\n            print(a[i], a[</span>j])"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b0fe535fa0f4f1d88e/e59c34a1bebb49d29bfb3592/sub_1762262277925_up510s0d6.py",
+        "similarity_percent": 77.31,
+        "full_code": "n = int(input())\narr = list(map(int,input().split()))\nimport math\nfor i in range(n):\n    for j in range(i+1,n):\n        if math.gcd(arr[i],arr[j]) == 1:\n            print(arr[i],arr[j])",
+        "highlighted_code": "n <span class='highlight-green'>= int(input())\narr = list(map(int,input().</span>split()))\nimport math\nf<span class='highlight-green'>or i in range(n):\n    for j in range(i+1,n</span>):\n        if math.gcd(arr[<span class='highlight-green'>i],arr[j]) == 1:\n            print(arr[i],arr[</span>j])"
+      },
+      "token_overlap": 92,
+      "max_similarity_percent": 77.31
+    },
+    {
+      "case_id": 42,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b0fe535fa0f4f1d88e/d9aec9d917da4c5e9beeb80b/sub_1762261525480_v1y4wmk1l.py",
+        "similarity_percent": 74.29,
+        "full_code": "def gcd(x,y):\n    while y:\n        x, y = y, x % y \n    return x\nn = int(input())\na = list(map(int, input().split()))\nfor i in range(n):\n    for j in range(i+1, n):\n        if gcd(a[i], a[j]) == 1:\n            print(a[i], a[j])",
+        "highlighted_code": "def gcd(x,y):\n    while y:\n        x, y = y, x % y \n    return x\nn = i<span class='highlight-red'>nt(input())\na = list(map(int, input().split()))\nfor i in range(n):\n    for j in range(i+1, n):\n        if gcd(a[i], a[j]) == 1:\n            print(a[i], a[</span>j])"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b0fe535fa0f4f1d88e/3fa6af8d916a46039239cabe/sub_1761665461714_heyi8duny.py",
+        "similarity_percent": 71.72,
+        "full_code": "def gcd(a,b):\n    if b==0:\n        return a\n    return gcd(b,a%b)\nn=int(input())\nA=list(map(int,input().split()))\nfor i in range(n):\n    for j in range(i+1,n):\n        if gcd(A[i],A[j])==1:\n            print(A[i],A[j])",
+        "highlighted_code": "def gcd(a,b):\n    if b==0:\n        return a\n    return gcd(b,a%b)\nn=i<span class='highlight-green'>nt(input())\nA=list(map(int,input().split()))\nfor i in range(n):\n    for j in range(i+1,n):\n        if gcd(A[i],A[j])==1:\n            print(A[i],A[</span>j])"
+      },
+      "token_overlap": 104,
+      "max_similarity_percent": 74.29
+    },
+    {
+      "case_id": 43,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b0fe535fa0f4f1d88e/d9aec9d917da4c5e9beeb80b/sub_1761828723487_lv7ddx82d.py",
+        "similarity_percent": 74.29,
+        "full_code": "def gcd(x, y):\n    while y:\n        x, y = y, x % y\n    return x\nn = int(input())\na = list(map(int, input().split()))\nfor i in range(n):\n    for j in range(i + 1, n):\n        if gcd(a[i], a[j]) == 1:\n            print(a[i], a[j])\n",
+        "highlighted_code": "def gcd(x, y):\n    while y:\n        x, y = y, x % y\n    return x\nn = i<span class='highlight-red'>nt(input())\na = list(map(int, input().split()))\nfor i in range(n):\n    for j in range(i + 1, n):\n        if gcd(a[i], a[j]) == 1:\n            print(a[i], a[</span>j])\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b0fe535fa0f4f1d88e/3fa6af8d916a46039239cabe/sub_1761665461714_heyi8duny.py",
+        "similarity_percent": 71.72,
+        "full_code": "def gcd(a,b):\n    if b==0:\n        return a\n    return gcd(b,a%b)\nn=int(input())\nA=list(map(int,input().split()))\nfor i in range(n):\n    for j in range(i+1,n):\n        if gcd(A[i],A[j])==1:\n            print(A[i],A[j])",
+        "highlighted_code": "def gcd(a,b):\n    if b==0:\n        return a\n    return gcd(b,a%b)\nn=i<span class='highlight-green'>nt(input())\nA=list(map(int,input().split()))\nfor i in range(n):\n    for j in range(i+1,n):\n        if gcd(A[i],A[j])==1:\n            print(A[i],A[</span>j])"
+      },
+      "token_overlap": 104,
+      "max_similarity_percent": 74.29
+    },
+    {
+      "case_id": 44,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b0fe535fa0f4f1d88e/9f14990043df4fda9283d7ac/sub_1762265288451_8mm59ugzg.py",
+        "similarity_percent": 73.77,
+        "full_code": "from math import gcd\n\nn = int(input())\na = list(map(int, input().split()))\n\nfor i in range(n):\n    for j in range(i + 1, n):\n        if gcd(a[i], a[j]) == 1:\n            print(a[i], a[j])",
+        "highlighted_code": "from math import gcd\n\nn = i<span class='highlight-red'>nt(input())\na = list(map(int, input().split()))\n\n</span>for i in range(n)<span class='highlight-red'>:\n    for j in range(i + 1, n):\n        if gcd(a[i], a[j]) == 1:\n            print(a[i], a[</span>j])"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b0fe535fa0f4f1d88e/8e236cb825b041b0a82527f2/sub_1761640706412_scf987jqu.py",
+        "similarity_percent": 60.4,
+        "full_code": "def gcd(a, b):\n    while b:\n        a, b = b, a % b\n    return a\n\n\nn = int(input())\narr = list(map(int, input().split()))\narr.sort()\n\nfor i in range(0, n-1):\n    for j in range(i+1, n):\n        if gcd(arr[i], arr[j]) == 1:\n            print(arr[i], arr[j])\n",
+        "highlighted_code": "def gcd(a, b):\n    while b:\n        a, b = b, a % b\n    return a\n\n\nn = i<span class='highlight-green'>nt(input())\narr = list(map(int, input().split()))\n</span>arr.sort()\n\nfor i in range(0, n-1)<span class='highlight-green'>:\n    for j in range(i+1, n):\n        if gcd(arr[i], arr[j]) == 1:\n            print(arr[i], arr[</span>j])\n"
+      },
+      "token_overlap": 90,
+      "max_similarity_percent": 73.77
+    },
+    {
+      "case_id": 45,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b0fe535fa0f4f1d88e/bbb05531336e487d8ed54046/sub_1762798993474_auaml66e8.py",
+        "similarity_percent": 72.73,
+        "full_code": "import math  # dùng để tính gcd\n\nn = int(input())\na = list(map(int, input().split()))\n\nfor i in range(n - 1):\n    for j in range(i + 1, n):\n        if math.gcd(a[i], a[j]) == 1: \n            print(a[i], a[j])\n",
+        "highlighted_code": "<span class='highlight-red'>import math  # dùng để tính gcd\n\nn = int(input())\na = list(map(int, input().split()))\n\nfor i in range(n - 1):\n    for j in range(i + 1, n):\n        </span>if math.gcd(a[i], a[j]) == 1: \n            print(a[i], a[j])\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b0fe535fa0f4f1d88e/26894d2babd64210ad6beba1/sub_1762137614876_64e0zm93m.py",
+        "similarity_percent": 69.84,
+        "full_code": "import math\nn = int(input())\na = list(map(int,input().split()))\n\nfor i in range(n-1):\n    for j in range(i+1, n):\n        if(math.gcd(a[i], a[j]) == 1):\n            print(a[i], a[j])",
+        "highlighted_code": "<span class='highlight-green'>import math\nn = int(input())\na = list(map(int,input().split()))\n\nfor i in range(n-1):\n    for j in range(i+1, n):\n        </span>if(math.gcd(a[i], a[j]) == 1):\n            print(a[i], a[j])"
+      },
+      "token_overlap": 88,
+      "max_similarity_percent": 72.73
+    },
+    {
+      "case_id": 46,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b0fe535fa0f4f1d88e/c2c38e9c5ead4887925c7e80/sub_1762624921043_uu0h69bs7.py",
+        "similarity_percent": 72.44,
+        "full_code": "import math\n\nn = int(input())\na = list(map(int, input().split()))\n\nfor i in range(n):\n    for j in range(i + 1, n):\n        if math.gcd(a[i], a[j]) == 1:\n            print(f\"{a[i]} {a[j]}\")\n\n",
+        "highlighted_code": "import math\n\nn = i<span class='highlight-red'>nt(input())\na = list(map(int, input().split()))\n\nfor i in range(n):\n    for j in range(i + 1, n):\n        if math.gcd(a[i], a[j]) == 1</span>:\n            print(f&#34;{a[i]} {a[j]}&#34;)\n\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b0fe535fa0f4f1d88e/f6b89ee6c5ef4532901d60a6/sub_1762636831504_kybh4yj88.py",
+        "similarity_percent": 57.23,
+        "full_code": "import math\ndef ucln(n,a):\n    a.sort()\n    res=[]\n    for i in range(n):\n        for j in range(i+1, n):\n            if math.gcd(a[i],a[j]) == 1:\n                res.append((a[i],a[j]))\n    return res\nn=int(input())\na=list(map(int, input().split()))\nfor p in ucln(n,a):\n    print(*p)",
+        "highlighted_code": "import math\ndef ucln(n,a):\n    a.sort()\n    res=[]\n    f<span class='highlight-green'>or i in range(n):\n        for j in range(i+1, n):\n            if math.gcd(a[i],a[j]) == 1</span>:\n                res.append((a[i],a[j]))\n    return res\nn=i<span class='highlight-green'>nt(input())\na=list(map(int, input().split()))\nfor p </span>in ucln(n,a):\n    print(*p)"
+      },
+      "token_overlap": 92,
+      "max_similarity_percent": 72.44
+    },
+    {
+      "case_id": 47,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b0fe535fa0f4f1d88e/e59c34a1bebb49d29bfb3592/sub_1762262277925_up510s0d6.py",
+        "similarity_percent": 72.27,
+        "full_code": "n = int(input())\narr = list(map(int,input().split()))\nimport math\nfor i in range(n):\n    for j in range(i+1,n):\n        if math.gcd(arr[i],arr[j]) == 1:\n            print(arr[i],arr[j])",
+        "highlighted_code": "n = i<span class='highlight-red'>nt(input())\narr = list(map(int,input().</span>split()))\nimport math\nf<span class='highlight-red'>or i in range(n):\n    for j in range(i+1,n):\n        if math.gcd(arr[i],arr[j]) == 1</span>:\n            print(arr[i],arr[j])"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b0fe535fa0f4f1d88e/f6b89ee6c5ef4532901d60a6/sub_1762636831504_kybh4yj88.py",
+        "similarity_percent": 51.81,
+        "full_code": "import math\ndef ucln(n,a):\n    a.sort()\n    res=[]\n    for i in range(n):\n        for j in range(i+1, n):\n            if math.gcd(a[i],a[j]) == 1:\n                res.append((a[i],a[j]))\n    return res\nn=int(input())\na=list(map(int, input().split()))\nfor p in ucln(n,a):\n    print(*p)",
+        "highlighted_code": "import math\ndef ucln(n,a):\n    a.sort()\n    res=[]\n    f<span class='highlight-green'>or i in range(n):\n        for j in range(i+1, n):\n            if math.gcd(a[i],a[j]) == 1</span>:\n                res.append((a[i],a[j]))\n    return res\nn=i<span class='highlight-green'>nt(input())\na=list(map(int, input().</span>split()))\nfor p in ucln(n,a):\n    print(*p)"
+      },
+      "token_overlap": 86,
+      "max_similarity_percent": 72.27
+    },
+    {
+      "case_id": 48,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b0fe535fa0f4f1d88e/e59c34a1bebb49d29bfb3592/sub_1762262277925_up510s0d6.py",
+        "similarity_percent": 71.43,
+        "full_code": "n = int(input())\narr = list(map(int,input().split()))\nimport math\nfor i in range(n):\n    for j in range(i+1,n):\n        if math.gcd(arr[i],arr[j]) == 1:\n            print(arr[i],arr[j])",
+        "highlighted_code": "n = i<span class='highlight-red'>nt(input())\narr = list(map(int,input().</span>split()))\nimport math\nfor i in range(n):\n    f<span class='highlight-red'>or j in range(i+1,n):\n        if math.gcd(arr[i],arr[j]) == 1:\n            print(arr[i],arr[</span>j])"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b0fe535fa0f4f1d88e/bbb05531336e487d8ed54046/sub_1762798993474_auaml66e8.py",
+        "similarity_percent": 70.25,
+        "full_code": "import math  # dùng để tính gcd\n\nn = int(input())\na = list(map(int, input().split()))\n\nfor i in range(n - 1):\n    for j in range(i + 1, n):\n        if math.gcd(a[i], a[j]) == 1: \n            print(a[i], a[j])\n",
+        "highlighted_code": "import math  # dùng để tính gcd\n\nn = i<span class='highlight-green'>nt(input())\na = list(map(int, input().</span>split()))\n\nfor i in range(n - 1):\n    f<span class='highlight-green'>or j in range(i + 1, n):\n        if math.gcd(a[i], a[j]) == 1: \n            print(a[i], a[</span>j])\n"
+      },
+      "token_overlap": 85,
+      "max_similarity_percent": 71.43
+    },
+    {
+      "case_id": 49,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b0fe535fa0f4f1d88e/e59c34a1bebb49d29bfb3592/sub_1762262277925_up510s0d6.py",
+        "similarity_percent": 71.43,
+        "full_code": "n = int(input())\narr = list(map(int,input().split()))\nimport math\nfor i in range(n):\n    for j in range(i+1,n):\n        if math.gcd(arr[i],arr[j]) == 1:\n            print(arr[i],arr[j])",
+        "highlighted_code": "n = i<span class='highlight-red'>nt(input())\narr = list(map(int,input().</span>split()))\nimport math\nfor i in range(n):\n    f<span class='highlight-red'>or j in range(i+1,n):\n        if math.gcd(arr[i],arr[j]) == 1:\n            print(arr[i],arr[</span>j])"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b0fe535fa0f4f1d88e/27e30f767b3a46b283cbfec0/sub_1762261502619_4eyhoj5sm.py",
+        "similarity_percent": 70.25,
+        "full_code": "import math\nn = int(input())\na = list(map(int ,input().split()))\nfor i in range(n-1):\n    for j in range(i+1,n):\n        if math.gcd(a[i],a[j]) == 1:\n            print(a[i],a[j])",
+        "highlighted_code": "import math\nn = i<span class='highlight-green'>nt(input())\na = list(map(int ,input().</span>split()))\nfor i in range(n-1):\n    f<span class='highlight-green'>or j in range(i+1,n):\n        if math.gcd(a[i],a[j]) == 1:\n            print(a[i],a[</span>j])"
+      },
+      "token_overlap": 85,
+      "max_similarity_percent": 71.43
+    },
+    {
+      "case_id": 50,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b0fe535fa0f4f1d88e/e59c34a1bebb49d29bfb3592/sub_1762262277925_up510s0d6.py",
+        "similarity_percent": 71.43,
+        "full_code": "n = int(input())\narr = list(map(int,input().split()))\nimport math\nfor i in range(n):\n    for j in range(i+1,n):\n        if math.gcd(arr[i],arr[j]) == 1:\n            print(arr[i],arr[j])",
+        "highlighted_code": "n = i<span class='highlight-red'>nt(input())\narr = list(map(int,input().</span>split()))\nimport math\nfor i in range(n):\n    f<span class='highlight-red'>or j in range(i+1,n):\n        if math.gcd(arr[i],arr[j]) == 1:\n            print(arr[i],arr[</span>j])"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b0fe535fa0f4f1d88e/27e30f767b3a46b283cbfec0/sub_1762250677098_qv3rooszu.py",
+        "similarity_percent": 70.25,
+        "full_code": "import math\nn = int(input())\na = list(map(int, input().split()))\nfor i in range(n-1):\n    for j in range(i+1,n):\n        if math.gcd(a[i],a[j]) == 1:\n            print(a[i],a[j])",
+        "highlighted_code": "import math\nn = i<span class='highlight-green'>nt(input())\na = list(map(int, input().</span>split()))\nfor i in range(n-1):\n    f<span class='highlight-green'>or j in range(i+1,n):\n        if math.gcd(a[i],a[j]) == 1:\n            print(a[i],a[</span>j])"
+      },
+      "token_overlap": 85,
+      "max_similarity_percent": 71.43
+    },
+    {
+      "case_id": 51,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b0fe535fa0f4f1d88e/c2c38e9c5ead4887925c7e80/sub_1762624921043_uu0h69bs7.py",
+        "similarity_percent": 70.87,
+        "full_code": "import math\n\nn = int(input())\na = list(map(int, input().split()))\n\nfor i in range(n):\n    for j in range(i + 1, n):\n        if math.gcd(a[i], a[j]) == 1:\n            print(f\"{a[i]} {a[j]}\")\n\n",
+        "highlighted_code": "import math\n\nn = i<span class='highlight-red'>nt(input())\na = list(map(int, input().</span>split()))\n\nf<span class='highlight-red'>or i in range(n):\n    for j in range(i + 1, n):\n        if math.gcd(a[i], a[j]) == 1:\n            pri</span>nt(f&#34;{a[i]} {a[j]}&#34;)\n\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b0fe535fa0f4f1d88e/e59c34a1bebb49d29bfb3592/sub_1762262277925_up510s0d6.py",
+        "similarity_percent": 75.63,
+        "full_code": "n = int(input())\narr = list(map(int,input().split()))\nimport math\nfor i in range(n):\n    for j in range(i+1,n):\n        if math.gcd(arr[i],arr[j]) == 1:\n            print(arr[i],arr[j])",
+        "highlighted_code": "n = i<span class='highlight-green'>nt(input())\narr = list(map(int,input().</span>split()))\nimport math\nf<span class='highlight-green'>or i in range(n):\n    for j in range(i+1,n):\n        if math.gcd(arr[i],arr[j]) == 1:\n            pri</span>nt(arr[i],arr[j])"
+      },
+      "token_overlap": 90,
+      "max_similarity_percent": 75.63
+    },
+    {
+      "case_id": 52,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b0fe535fa0f4f1d88e/26894d2babd64210ad6beba1/sub_1762137614876_64e0zm93m.py",
+        "similarity_percent": 69.84,
+        "full_code": "import math\nn = int(input())\na = list(map(int,input().split()))\n\nfor i in range(n-1):\n    for j in range(i+1, n):\n        if(math.gcd(a[i], a[j]) == 1):\n            print(a[i], a[j])",
+        "highlighted_code": "<span class='highlight-red'>import math\nn = int(input())\na = list(map(int,input().split()))\n\nfor i in range(n-1):\n    for j in range(i+1, n):\n        </span>if(math.gcd(a[i], a[j]) == 1):\n            print(a[i], a[j])"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b0fe535fa0f4f1d88e/27e30f767b3a46b283cbfec0/sub_1762261502619_4eyhoj5sm.py",
+        "similarity_percent": 72.73,
+        "full_code": "import math\nn = int(input())\na = list(map(int ,input().split()))\nfor i in range(n-1):\n    for j in range(i+1,n):\n        if math.gcd(a[i],a[j]) == 1:\n            print(a[i],a[j])",
+        "highlighted_code": "<span class='highlight-green'>import math\nn = int(input())\na = list(map(int ,input().split()))\nfor i in range(n-1):\n    for j in range(i+1,n):\n        </span>if math.gcd(a[i],a[j]) == 1:\n            print(a[i],a[j])"
+      },
+      "token_overlap": 88,
+      "max_similarity_percent": 72.73
+    },
+    {
+      "case_id": 53,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b0fe535fa0f4f1d88e/26894d2babd64210ad6beba1/sub_1762137614876_64e0zm93m.py",
+        "similarity_percent": 69.84,
+        "full_code": "import math\nn = int(input())\na = list(map(int,input().split()))\n\nfor i in range(n-1):\n    for j in range(i+1, n):\n        if(math.gcd(a[i], a[j]) == 1):\n            print(a[i], a[j])",
+        "highlighted_code": "<span class='highlight-red'>import math\nn = int(input())\na = list(map(int,input().split()))\n\nfor i in range(n-1):\n    for j in range(i+1, n):\n        </span>if(math.gcd(a[i], a[j]) == 1):\n            print(a[i], a[j])"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b0fe535fa0f4f1d88e/27e30f767b3a46b283cbfec0/sub_1762250677098_qv3rooszu.py",
+        "similarity_percent": 72.73,
+        "full_code": "import math\nn = int(input())\na = list(map(int, input().split()))\nfor i in range(n-1):\n    for j in range(i+1,n):\n        if math.gcd(a[i],a[j]) == 1:\n            print(a[i],a[j])",
+        "highlighted_code": "<span class='highlight-green'>import math\nn = int(input())\na = list(map(int, input().split()))\nfor i in range(n-1):\n    for j in range(i+1,n):\n        </span>if math.gcd(a[i],a[j]) == 1:\n            print(a[i],a[j])"
+      },
+      "token_overlap": 88,
+      "max_similarity_percent": 72.73
+    },
+    {
+      "case_id": 54,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b0fe535fa0f4f1d88e/d9aec9d917da4c5e9beeb80b/sub_1762261525480_v1y4wmk1l.py",
+        "similarity_percent": 68.57,
+        "full_code": "def gcd(x,y):\n    while y:\n        x, y = y, x % y \n    return x\nn = int(input())\na = list(map(int, input().split()))\nfor i in range(n):\n    for j in range(i+1, n):\n        if gcd(a[i], a[j]) == 1:\n            print(a[i], a[j])",
+        "highlighted_code": "def gcd(x,y):\n    while y:\n        x, y = y, x % y \n    return x\nn = i<span class='highlight-red'>nt(input())\na = list(map(int, input().split()))\nfor i in range(n):\n    for j in range(i+1, n</span>):\n        if gcd(a[<span class='highlight-red'>i], a[j]) == 1:\n            print(a[i], a[</span>j])"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b0fe535fa0f4f1d88e/e59c34a1bebb49d29bfb3592/sub_1762174014046_sg0pta5eu.py",
+        "similarity_percent": 80.67,
+        "full_code": "import math\nn = int(input())\narr = list(map(int,input().split()))\nfor i in range(n):\n    for j in range(i+1,n):\n        if math.gcd(arr[i],arr[j]) == 1:\n            print(arr[i],arr[j])    \n",
+        "highlighted_code": "import math\nn = i<span class='highlight-green'>nt(input())\narr = list(map(int,input().split()))\nfor i in range(n):\n    for j in range(i+1,n</span>):\n        if math.gcd(arr[<span class='highlight-green'>i],arr[j]) == 1:\n            print(arr[i],arr[</span>j])    \n"
+      },
+      "token_overlap": 96,
+      "max_similarity_percent": 80.67
+    },
+    {
+      "case_id": 55,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b0fe535fa0f4f1d88e/d9aec9d917da4c5e9beeb80b/sub_1761828723487_lv7ddx82d.py",
+        "similarity_percent": 68.57,
+        "full_code": "def gcd(x, y):\n    while y:\n        x, y = y, x % y\n    return x\nn = int(input())\na = list(map(int, input().split()))\nfor i in range(n):\n    for j in range(i + 1, n):\n        if gcd(a[i], a[j]) == 1:\n            print(a[i], a[j])\n",
+        "highlighted_code": "def gcd(x, y):\n    while y:\n        x, y = y, x % y\n    return x\nn = i<span class='highlight-red'>nt(input())\na = list(map(int, input().split()))\nfor i in range(n):\n    for j in range(i + 1, n</span>):\n        if gcd(a[<span class='highlight-red'>i], a[j]) == 1:\n            print(a[i], a[</span>j])\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b0fe535fa0f4f1d88e/e59c34a1bebb49d29bfb3592/sub_1762174014046_sg0pta5eu.py",
+        "similarity_percent": 80.67,
+        "full_code": "import math\nn = int(input())\narr = list(map(int,input().split()))\nfor i in range(n):\n    for j in range(i+1,n):\n        if math.gcd(arr[i],arr[j]) == 1:\n            print(arr[i],arr[j])    \n",
+        "highlighted_code": "import math\nn = i<span class='highlight-green'>nt(input())\narr = list(map(int,input().split()))\nfor i in range(n):\n    for j in range(i+1,n</span>):\n        if math.gcd(arr[<span class='highlight-green'>i],arr[j]) == 1:\n            print(arr[i],arr[</span>j])    \n"
+      },
+      "token_overlap": 96,
+      "max_similarity_percent": 80.67
+    },
+    {
+      "case_id": 56,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b0fe535fa0f4f1d88e/9f14990043df4fda9283d7ac/sub_1762265288451_8mm59ugzg.py",
+        "similarity_percent": 66.39,
+        "full_code": "from math import gcd\n\nn = int(input())\na = list(map(int, input().split()))\n\nfor i in range(n):\n    for j in range(i + 1, n):\n        if gcd(a[i], a[j]) == 1:\n            print(a[i], a[j])",
+        "highlighted_code": "from math import gcd\n\nn = i<span class='highlight-red'>nt(input())\na = list(map(int, input().split()))\n\nfor i in ran</span>ge(n):\n    for j in range(i + 1, n<span class='highlight-red'>):\n        if gcd(a[i], a[j]) == 1:\n            print(a[i], a[</span>j])"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b0fe535fa0f4f1d88e/f95120b3a38a461085ef58cb/sub_1761845124993_joaeb2ekv.py",
+        "similarity_percent": 50.31,
+        "full_code": "def gcd(a, b):\n    while(b != 0):\n        tmp = a % b\n        a = b\n        b = tmp\n\n    return a\nn = int(input())\nlst = list(map(int, input().split()))\n\nfor i in range(len(lst)):\n    for j in range(i + 1, len(lst)):\n        if gcd(lst[i], lst[j]) == 1:\n            print(lst[i], lst[j], end = \"\\n\")",
+        "highlighted_code": "def gcd(a, b):\n    while(b != 0):\n        tmp = a % b\n        a = b\n        b = tmp\n\n    return a\nn = i<span class='highlight-green'>nt(input())\nlst = list(map(int, input().split()))\n\nfor i in ran</span>ge(len(lst)):\n    for j in range(i + 1, len(lst)<span class='highlight-green'>):\n        if gcd(lst[i], lst[j]) == 1:\n            print(lst[i], lst[</span>j], end = &#34;\\n&#34;)"
+      },
+      "token_overlap": 81,
+      "max_similarity_percent": 66.39
+    },
+    {
+      "case_id": 57,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b0fe535fa0f4f1d88e/9f14990043df4fda9283d7ac/sub_1762265288451_8mm59ugzg.py",
+        "similarity_percent": 66.39,
+        "full_code": "from math import gcd\n\nn = int(input())\na = list(map(int, input().split()))\n\nfor i in range(n):\n    for j in range(i + 1, n):\n        if gcd(a[i], a[j]) == 1:\n            print(a[i], a[j])",
+        "highlighted_code": "from math import gcd\n\nn = i<span class='highlight-red'>nt(input())\na = list(map(int, input().split()))\n\nfor i in ran</span>ge(n):\n    for j in range(i + 1, n<span class='highlight-red'>):\n        if gcd(a[i], a[j]) == 1:\n            print(a[i], a[</span>j])"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b0fe535fa0f4f1d88e/ffdb326842044f2e98b7aaa7/sub_1761622794018_61f9ovhju.py",
+        "similarity_percent": 50.31,
+        "full_code": "def gcd(a, b):\n    while(b != 0):\n        tmp = a % b\n        a = b\n        b = tmp\n\n    return a\nn = int(input())\nlst = list(map(int, input().split()))\n\nfor i in range(len(lst)):\n    for j in range(i + 1, len(lst)):\n        if gcd(lst[i], lst[j]) == 1:\n            print(lst[i], lst[j], end = \"\\n\")\n\n\n",
+        "highlighted_code": "def gcd(a, b):\n    while(b != 0):\n        tmp = a % b\n        a = b\n        b = tmp\n\n    return a\nn = i<span class='highlight-green'>nt(input())\nlst = list(map(int, input().split()))\n\nfor i in ran</span>ge(len(lst)):\n    for j in range(i + 1, len(lst)<span class='highlight-green'>):\n        if gcd(lst[i], lst[j]) == 1:\n            print(lst[i], lst[</span>j], end = &#34;\\n&#34;)\n\n\n"
+      },
+      "token_overlap": 81,
+      "max_similarity_percent": 66.39
+    },
+    {
+      "case_id": 58,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b0fe535fa0f4f1d88e/bbb05531336e487d8ed54046/sub_1762798993474_auaml66e8.py",
+        "similarity_percent": 66.12,
+        "full_code": "import math  # dùng để tính gcd\n\nn = int(input())\na = list(map(int, input().split()))\n\nfor i in range(n - 1):\n    for j in range(i + 1, n):\n        if math.gcd(a[i], a[j]) == 1: \n            print(a[i], a[j])\n",
+        "highlighted_code": "import math  # dùng để tính gcd\n\nn = i<span class='highlight-red'>nt(input())\na = list(map(int, input().split()))\n\nfor i </span>in range(n - 1):\n    f<span class='highlight-red'>or j in range(i + 1, n):\n        if math.gcd(a[i], a[j]) == 1</span>: \n            print(a[i], a[j])\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b0fe535fa0f4f1d88e/f6b89ee6c5ef4532901d60a6/sub_1762636831504_kybh4yj88.py",
+        "similarity_percent": 48.19,
+        "full_code": "import math\ndef ucln(n,a):\n    a.sort()\n    res=[]\n    for i in range(n):\n        for j in range(i+1, n):\n            if math.gcd(a[i],a[j]) == 1:\n                res.append((a[i],a[j]))\n    return res\nn=int(input())\na=list(map(int, input().split()))\nfor p in ucln(n,a):\n    print(*p)",
+        "highlighted_code": "import math\ndef ucln(n,a):\n    a.sort()\n    res=[]\n    for i in range(n):\n        f<span class='highlight-green'>or j in range(i+1, n):\n            if math.gcd(a[i],a[j]) == 1</span>:\n                res.append((a[i],a[j]))\n    return res\nn=i<span class='highlight-green'>nt(input())\na=list(map(int, input().split()))\nfor p </span>in ucln(n,a):\n    print(*p)"
+      },
+      "token_overlap": 80,
+      "max_similarity_percent": 66.12
+    },
+    {
+      "case_id": 59,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b0fe535fa0f4f1d88e/27e30f767b3a46b283cbfec0/sub_1762261502619_4eyhoj5sm.py",
+        "similarity_percent": 66.12,
+        "full_code": "import math\nn = int(input())\na = list(map(int ,input().split()))\nfor i in range(n-1):\n    for j in range(i+1,n):\n        if math.gcd(a[i],a[j]) == 1:\n            print(a[i],a[j])",
+        "highlighted_code": "import math\nn = i<span class='highlight-red'>nt(input())\na = list(map(int ,input().split()))\nfor i </span>in range(n-1):\n    f<span class='highlight-red'>or j in range(i+1,n):\n        if math.gcd(a[i],a[j]) == 1</span>:\n            print(a[i],a[j])"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b0fe535fa0f4f1d88e/f6b89ee6c5ef4532901d60a6/sub_1762636831504_kybh4yj88.py",
+        "similarity_percent": 48.19,
+        "full_code": "import math\ndef ucln(n,a):\n    a.sort()\n    res=[]\n    for i in range(n):\n        for j in range(i+1, n):\n            if math.gcd(a[i],a[j]) == 1:\n                res.append((a[i],a[j]))\n    return res\nn=int(input())\na=list(map(int, input().split()))\nfor p in ucln(n,a):\n    print(*p)",
+        "highlighted_code": "import math\ndef ucln(n,a):\n    a.sort()\n    res=[]\n    for i in range(n):\n        f<span class='highlight-green'>or j in range(i+1, n):\n            if math.gcd(a[i],a[j]) == 1</span>:\n                res.append((a[i],a[j]))\n    return res\nn=i<span class='highlight-green'>nt(input())\na=list(map(int, input().split()))\nfor p </span>in ucln(n,a):\n    print(*p)"
+      },
+      "token_overlap": 80,
+      "max_similarity_percent": 66.12
+    },
+    {
+      "case_id": 60,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b0fe535fa0f4f1d88e/d9aec9d917da4c5e9beeb80b/sub_1762261525480_v1y4wmk1l.py",
+        "similarity_percent": 65.71,
+        "full_code": "def gcd(x,y):\n    while y:\n        x, y = y, x % y \n    return x\nn = int(input())\na = list(map(int, input().split()))\nfor i in range(n):\n    for j in range(i+1, n):\n        if gcd(a[i], a[j]) == 1:\n            print(a[i], a[j])",
+        "highlighted_code": "def gcd(x,y):\n    while y:\n        x, y = y, x % <span class='highlight-red'>y \n    return x\nn = int(input())\na = list(map(int, input().split()))\nfor i in ran</span>ge(n):\n    for j in range(i+1, n<span class='highlight-red'>):\n        if gcd(a[i], a[j]) == 1:\n            print(a[i], a[</span>j])"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b0fe535fa0f4f1d88e/f95120b3a38a461085ef58cb/sub_1761845124993_joaeb2ekv.py",
+        "similarity_percent": 57.14,
+        "full_code": "def gcd(a, b):\n    while(b != 0):\n        tmp = a % b\n        a = b\n        b = tmp\n\n    return a\nn = int(input())\nlst = list(map(int, input().split()))\n\nfor i in range(len(lst)):\n    for j in range(i + 1, len(lst)):\n        if gcd(lst[i], lst[j]) == 1:\n            print(lst[i], lst[j], end = \"\\n\")",
+        "highlighted_code": "def gcd(a, b):\n    while(b != 0):\n        tmp = a % b\n        a = b\n        b = <span class='highlight-green'>tmp\n\n    return a\nn = int(input())\nlst = list(map(int, input().split()))\n\nfor i in ran</span>ge(len(lst)):\n    for j in range(i + 1, len(lst)<span class='highlight-green'>):\n        if gcd(lst[i], lst[j]) == 1:\n            print(lst[i], lst[</span>j], end = &#34;\\n&#34;)"
+      },
+      "token_overlap": 92,
+      "max_similarity_percent": 65.71
+    },
+    {
+      "case_id": 61,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b0fe535fa0f4f1d88e/d9aec9d917da4c5e9beeb80b/sub_1762261525480_v1y4wmk1l.py",
+        "similarity_percent": 65.71,
+        "full_code": "def gcd(x,y):\n    while y:\n        x, y = y, x % y \n    return x\nn = int(input())\na = list(map(int, input().split()))\nfor i in range(n):\n    for j in range(i+1, n):\n        if gcd(a[i], a[j]) == 1:\n            print(a[i], a[j])",
+        "highlighted_code": "def gcd(x,y):\n    while y:\n        x, y = y, x % <span class='highlight-red'>y \n    return x\nn = int(input())\na = list(map(int, input().split()))\nfor i in ran</span>ge(n):\n    for j in range(i+1, n<span class='highlight-red'>):\n        if gcd(a[i], a[j]) == 1:\n            print(a[i], a[</span>j])"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b0fe535fa0f4f1d88e/ffdb326842044f2e98b7aaa7/sub_1761622794018_61f9ovhju.py",
+        "similarity_percent": 57.14,
+        "full_code": "def gcd(a, b):\n    while(b != 0):\n        tmp = a % b\n        a = b\n        b = tmp\n\n    return a\nn = int(input())\nlst = list(map(int, input().split()))\n\nfor i in range(len(lst)):\n    for j in range(i + 1, len(lst)):\n        if gcd(lst[i], lst[j]) == 1:\n            print(lst[i], lst[j], end = \"\\n\")\n\n\n",
+        "highlighted_code": "def gcd(a, b):\n    while(b != 0):\n        tmp = a % b\n        a = b\n        b = <span class='highlight-green'>tmp\n\n    return a\nn = int(input())\nlst = list(map(int, input().split()))\n\nfor i in ran</span>ge(len(lst)):\n    for j in range(i + 1, len(lst)<span class='highlight-green'>):\n        if gcd(lst[i], lst[j]) == 1:\n            print(lst[i], lst[</span>j], end = &#34;\\n&#34;)\n\n\n"
+      },
+      "token_overlap": 92,
+      "max_similarity_percent": 65.71
+    },
+    {
+      "case_id": 62,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b0fe535fa0f4f1d88e/d9aec9d917da4c5e9beeb80b/sub_1761828723487_lv7ddx82d.py",
+        "similarity_percent": 65.71,
+        "full_code": "def gcd(x, y):\n    while y:\n        x, y = y, x % y\n    return x\nn = int(input())\na = list(map(int, input().split()))\nfor i in range(n):\n    for j in range(i + 1, n):\n        if gcd(a[i], a[j]) == 1:\n            print(a[i], a[j])\n",
+        "highlighted_code": "def gcd(x, y):\n    while y:\n        x, y = y, x % <span class='highlight-red'>y\n    return x\nn = int(input())\na = list(map(int, input().split()))\nfor i in ran</span>ge(n):\n    for j in range(i + 1, n<span class='highlight-red'>):\n        if gcd(a[i], a[j]) == 1:\n            print(a[i], a[</span>j])\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b0fe535fa0f4f1d88e/f95120b3a38a461085ef58cb/sub_1761845124993_joaeb2ekv.py",
+        "similarity_percent": 57.14,
+        "full_code": "def gcd(a, b):\n    while(b != 0):\n        tmp = a % b\n        a = b\n        b = tmp\n\n    return a\nn = int(input())\nlst = list(map(int, input().split()))\n\nfor i in range(len(lst)):\n    for j in range(i + 1, len(lst)):\n        if gcd(lst[i], lst[j]) == 1:\n            print(lst[i], lst[j], end = \"\\n\")",
+        "highlighted_code": "def gcd(a, b):\n    while(b != 0):\n        tmp = a % b\n        a = b\n        b = <span class='highlight-green'>tmp\n\n    return a\nn = int(input())\nlst = list(map(int, input().split()))\n\nfor i in ran</span>ge(len(lst)):\n    for j in range(i + 1, len(lst)<span class='highlight-green'>):\n        if gcd(lst[i], lst[j]) == 1:\n            print(lst[i], lst[</span>j], end = &#34;\\n&#34;)"
+      },
+      "token_overlap": 92,
+      "max_similarity_percent": 65.71
+    },
+    {
+      "case_id": 63,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b0fe535fa0f4f1d88e/d9aec9d917da4c5e9beeb80b/sub_1761828723487_lv7ddx82d.py",
+        "similarity_percent": 65.71,
+        "full_code": "def gcd(x, y):\n    while y:\n        x, y = y, x % y\n    return x\nn = int(input())\na = list(map(int, input().split()))\nfor i in range(n):\n    for j in range(i + 1, n):\n        if gcd(a[i], a[j]) == 1:\n            print(a[i], a[j])\n",
+        "highlighted_code": "def gcd(x, y):\n    while y:\n        x, y = y, x % <span class='highlight-red'>y\n    return x\nn = int(input())\na = list(map(int, input().split()))\nfor i in ran</span>ge(n):\n    for j in range(i + 1, n<span class='highlight-red'>):\n        if gcd(a[i], a[j]) == 1:\n            print(a[i], a[</span>j])\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b0fe535fa0f4f1d88e/ffdb326842044f2e98b7aaa7/sub_1761622794018_61f9ovhju.py",
+        "similarity_percent": 57.14,
+        "full_code": "def gcd(a, b):\n    while(b != 0):\n        tmp = a % b\n        a = b\n        b = tmp\n\n    return a\nn = int(input())\nlst = list(map(int, input().split()))\n\nfor i in range(len(lst)):\n    for j in range(i + 1, len(lst)):\n        if gcd(lst[i], lst[j]) == 1:\n            print(lst[i], lst[j], end = \"\\n\")\n\n\n",
+        "highlighted_code": "def gcd(a, b):\n    while(b != 0):\n        tmp = a % b\n        a = b\n        b = <span class='highlight-green'>tmp\n\n    return a\nn = int(input())\nlst = list(map(int, input().split()))\n\nfor i in ran</span>ge(len(lst)):\n    for j in range(i + 1, len(lst)<span class='highlight-green'>):\n        if gcd(lst[i], lst[j]) == 1:\n            print(lst[i], lst[</span>j], end = &#34;\\n&#34;)\n\n\n"
+      },
+      "token_overlap": 92,
+      "max_similarity_percent": 65.71
+    },
+    {
+      "case_id": 64,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b0fe535fa0f4f1d88e/e59c34a1bebb49d29bfb3592/sub_1762262277925_up510s0d6.py",
+        "similarity_percent": 65.55,
+        "full_code": "n = int(input())\narr = list(map(int,input().split()))\nimport math\nfor i in range(n):\n    for j in range(i+1,n):\n        if math.gcd(arr[i],arr[j]) == 1:\n            print(arr[i],arr[j])",
+        "highlighted_code": "<span class='highlight-red'>n = int(input())\narr = list(map(int,input().split()))\nimport math\nfor i in range(n):\n    for j in range</span>(i+1,n):\n        if math.gcd(arr[i],arr[j]) == 1:\n            print(arr[i],arr[j])"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b0fe535fa0f4f1d88e/a34ffbda761b435ca043fd30/sub_1762845996872_wmn43l8uk.py",
+        "similarity_percent": 57.78,
+        "full_code": "a = int(input())\nb = list(map(int, input().split()))\nimport math\nfor i in range(a):\n    for j in range(a):\n        if b[i] < b[j] and math.gcd(b[i], b[j])==1:\n            print(f\"{b[i]} {b[j]}\")",
+        "highlighted_code": "<span class='highlight-green'>a = int(input())\nb = list(map(int, input().split()))\nimport math\nfor i in range(a):\n    for j in range</span>(a):\n        if b[i] &lt; b[j] and math.gcd(b[i], b[j])==1:\n            print(f&#34;{b[i]} {b[j]}&#34;)"
+      },
+      "token_overlap": 78,
+      "max_similarity_percent": 65.55
+    },
+    {
+      "case_id": 65,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b0fe535fa0f4f1d88e/d9aec9d917da4c5e9beeb80b/sub_1762261525480_v1y4wmk1l.py",
+        "similarity_percent": 64.29,
+        "full_code": "def gcd(x,y):\n    while y:\n        x, y = y, x % y \n    return x\nn = int(input())\na = list(map(int, input().split()))\nfor i in range(n):\n    for j in range(i+1, n):\n        if gcd(a[i], a[j]) == 1:\n            print(a[i], a[j])",
+        "highlighted_code": "def gcd(x,y):\n    while y:\n        x, y = y, x % y \n    return x\nn = i<span class='highlight-red'>nt(input())\na = list(map(int, input().</span>split()))\nf<span class='highlight-red'>or i in range(n):\n    for j in range(i+1, n</span>):\n        if gcd(a[<span class='highlight-red'>i], a[j]) == 1:\n            print(a[i], a[</span>j])"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b0fe535fa0f4f1d88e/e59c34a1bebb49d29bfb3592/sub_1762262277925_up510s0d6.py",
+        "similarity_percent": 75.63,
+        "full_code": "n = int(input())\narr = list(map(int,input().split()))\nimport math\nfor i in range(n):\n    for j in range(i+1,n):\n        if math.gcd(arr[i],arr[j]) == 1:\n            print(arr[i],arr[j])",
+        "highlighted_code": "n = i<span class='highlight-green'>nt(input())\narr = list(map(int,input().</span>split()))\nimport math\nf<span class='highlight-green'>or i in range(n):\n    for j in range(i+1,n</span>):\n        if math.gcd(arr[<span class='highlight-green'>i],arr[j]) == 1:\n            print(arr[i],arr[</span>j])"
+      },
+      "token_overlap": 90,
+      "max_similarity_percent": 75.63
+    },
+    {
+      "case_id": 66,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b0fe535fa0f4f1d88e/d9aec9d917da4c5e9beeb80b/sub_1761828723487_lv7ddx82d.py",
+        "similarity_percent": 64.29,
+        "full_code": "def gcd(x, y):\n    while y:\n        x, y = y, x % y\n    return x\nn = int(input())\na = list(map(int, input().split()))\nfor i in range(n):\n    for j in range(i + 1, n):\n        if gcd(a[i], a[j]) == 1:\n            print(a[i], a[j])\n",
+        "highlighted_code": "def gcd(x, y):\n    while y:\n        x, y = y, x % y\n    return x\nn = i<span class='highlight-red'>nt(input())\na = list(map(int, input().</span>split()))\nf<span class='highlight-red'>or i in range(n):\n    for j in range(i + 1, n</span>):\n        if gcd(a[<span class='highlight-red'>i], a[j]) == 1:\n            print(a[i], a[</span>j])\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b0fe535fa0f4f1d88e/e59c34a1bebb49d29bfb3592/sub_1762262277925_up510s0d6.py",
+        "similarity_percent": 75.63,
+        "full_code": "n = int(input())\narr = list(map(int,input().split()))\nimport math\nfor i in range(n):\n    for j in range(i+1,n):\n        if math.gcd(arr[i],arr[j]) == 1:\n            print(arr[i],arr[j])",
+        "highlighted_code": "n = i<span class='highlight-green'>nt(input())\narr = list(map(int,input().</span>split()))\nimport math\nf<span class='highlight-green'>or i in range(n):\n    for j in range(i+1,n</span>):\n        if math.gcd(arr[<span class='highlight-green'>i],arr[j]) == 1:\n            print(arr[i],arr[</span>j])"
+      },
+      "token_overlap": 90,
+      "max_similarity_percent": 75.63
+    },
+    {
+      "case_id": 67,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b0fe535fa0f4f1d88e/e7457b81cbe24d9d9bdac641/sub_1762266878698_t7c13kjm6.py",
+        "similarity_percent": 61.34,
+        "full_code": "import math \nn = int(input()) \na = list(map(int, input().split())) \nfor i in range(n):\n    for j in range(i + 1, n):\n        if math.gcd(a[i], a[j]) == 1:  \n            print(a[i], a[j])\n",
+        "highlighted_code": "import math \nn = i<span class='highlight-red'>nt(input()) \na = list(map(int, input().split())) \nfor i in ran</span>ge(n):\n    for j in range(i + 1, n):\n        if math.gcd(a[<span class='highlight-red'>i], a[j]) == 1:  \n            print(a[i], a[</span>j])\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b0fe535fa0f4f1d88e/f95120b3a38a461085ef58cb/sub_1761845124993_joaeb2ekv.py",
+        "similarity_percent": 45.34,
+        "full_code": "def gcd(a, b):\n    while(b != 0):\n        tmp = a % b\n        a = b\n        b = tmp\n\n    return a\nn = int(input())\nlst = list(map(int, input().split()))\n\nfor i in range(len(lst)):\n    for j in range(i + 1, len(lst)):\n        if gcd(lst[i], lst[j]) == 1:\n            print(lst[i], lst[j], end = \"\\n\")",
+        "highlighted_code": "def gcd(a, b):\n    while(b != 0):\n        tmp = a % b\n        a = b\n        b = tmp\n\n    return a\nn = i<span class='highlight-green'>nt(input())\nlst = list(map(int, input().split()))\n\nfor i in ran</span>ge(len(lst)):\n    for j in range(i + 1, len(lst)):\n        if gcd(lst[<span class='highlight-green'>i], lst[j]) == 1:\n            print(lst[i], lst[</span>j], end = &#34;\\n&#34;)"
+      },
+      "token_overlap": 73,
+      "max_similarity_percent": 61.34
+    },
+    {
+      "case_id": 68,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b0fe535fa0f4f1d88e/e7457b81cbe24d9d9bdac641/sub_1762266878698_t7c13kjm6.py",
+        "similarity_percent": 61.34,
+        "full_code": "import math \nn = int(input()) \na = list(map(int, input().split())) \nfor i in range(n):\n    for j in range(i + 1, n):\n        if math.gcd(a[i], a[j]) == 1:  \n            print(a[i], a[j])\n",
+        "highlighted_code": "import math \nn = i<span class='highlight-red'>nt(input()) \na = list(map(int, input().split())) \nfor i in ran</span>ge(n):\n    for j in range(i + 1, n):\n        if math.gcd(a[<span class='highlight-red'>i], a[j]) == 1:  \n            print(a[i], a[</span>j])\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b0fe535fa0f4f1d88e/ffdb326842044f2e98b7aaa7/sub_1761622794018_61f9ovhju.py",
+        "similarity_percent": 45.34,
+        "full_code": "def gcd(a, b):\n    while(b != 0):\n        tmp = a % b\n        a = b\n        b = tmp\n\n    return a\nn = int(input())\nlst = list(map(int, input().split()))\n\nfor i in range(len(lst)):\n    for j in range(i + 1, len(lst)):\n        if gcd(lst[i], lst[j]) == 1:\n            print(lst[i], lst[j], end = \"\\n\")\n\n\n",
+        "highlighted_code": "def gcd(a, b):\n    while(b != 0):\n        tmp = a % b\n        a = b\n        b = tmp\n\n    return a\nn = i<span class='highlight-green'>nt(input())\nlst = list(map(int, input().split()))\n\nfor i in ran</span>ge(len(lst)):\n    for j in range(i + 1, len(lst)):\n        if gcd(lst[<span class='highlight-green'>i], lst[j]) == 1:\n            print(lst[i], lst[</span>j], end = &#34;\\n&#34;)\n\n\n"
+      },
+      "token_overlap": 73,
+      "max_similarity_percent": 61.34
+    },
+    {
+      "case_id": 69,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b0fe535fa0f4f1d88e/e59c34a1bebb49d29bfb3592/sub_1762174014046_sg0pta5eu.py",
+        "similarity_percent": 61.34,
+        "full_code": "import math\nn = int(input())\narr = list(map(int,input().split()))\nfor i in range(n):\n    for j in range(i+1,n):\n        if math.gcd(arr[i],arr[j]) == 1:\n            print(arr[i],arr[j])    \n",
+        "highlighted_code": "import math\nn = i<span class='highlight-red'>nt(input())\narr = list(map(int,input().split()))\nfor i in ran</span>ge(n):\n    for j in range(i+1,n):\n        if math.gcd(arr[<span class='highlight-red'>i],arr[j]) == 1:\n            print(arr[i],arr[</span>j])    \n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b0fe535fa0f4f1d88e/f95120b3a38a461085ef58cb/sub_1761845124993_joaeb2ekv.py",
+        "similarity_percent": 45.34,
+        "full_code": "def gcd(a, b):\n    while(b != 0):\n        tmp = a % b\n        a = b\n        b = tmp\n\n    return a\nn = int(input())\nlst = list(map(int, input().split()))\n\nfor i in range(len(lst)):\n    for j in range(i + 1, len(lst)):\n        if gcd(lst[i], lst[j]) == 1:\n            print(lst[i], lst[j], end = \"\\n\")",
+        "highlighted_code": "def gcd(a, b):\n    while(b != 0):\n        tmp = a % b\n        a = b\n        b = tmp\n\n    return a\nn = i<span class='highlight-green'>nt(input())\nlst = list(map(int, input().split()))\n\nfor i in ran</span>ge(len(lst)):\n    for j in range(i + 1, len(lst)):\n        if gcd(lst[<span class='highlight-green'>i], lst[j]) == 1:\n            print(lst[i], lst[</span>j], end = &#34;\\n&#34;)"
+      },
+      "token_overlap": 73,
+      "max_similarity_percent": 61.34
+    },
+    {
+      "case_id": 70,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b0fe535fa0f4f1d88e/e59c34a1bebb49d29bfb3592/sub_1762174014046_sg0pta5eu.py",
+        "similarity_percent": 61.34,
+        "full_code": "import math\nn = int(input())\narr = list(map(int,input().split()))\nfor i in range(n):\n    for j in range(i+1,n):\n        if math.gcd(arr[i],arr[j]) == 1:\n            print(arr[i],arr[j])    \n",
+        "highlighted_code": "import math\nn = i<span class='highlight-red'>nt(input())\narr = list(map(int,input().split()))\nfor i in ran</span>ge(n):\n    for j in range(i+1,n):\n        if math.gcd(arr[<span class='highlight-red'>i],arr[j]) == 1:\n            print(arr[i],arr[</span>j])    \n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b0fe535fa0f4f1d88e/ffdb326842044f2e98b7aaa7/sub_1761622794018_61f9ovhju.py",
+        "similarity_percent": 45.34,
+        "full_code": "def gcd(a, b):\n    while(b != 0):\n        tmp = a % b\n        a = b\n        b = tmp\n\n    return a\nn = int(input())\nlst = list(map(int, input().split()))\n\nfor i in range(len(lst)):\n    for j in range(i + 1, len(lst)):\n        if gcd(lst[i], lst[j]) == 1:\n            print(lst[i], lst[j], end = \"\\n\")\n\n\n",
+        "highlighted_code": "def gcd(a, b):\n    while(b != 0):\n        tmp = a % b\n        a = b\n        b = tmp\n\n    return a\nn = i<span class='highlight-green'>nt(input())\nlst = list(map(int, input().split()))\n\nfor i in ran</span>ge(len(lst)):\n    for j in range(i + 1, len(lst)):\n        if gcd(lst[<span class='highlight-green'>i], lst[j]) == 1:\n            print(lst[i], lst[</span>j], end = &#34;\\n&#34;)\n\n\n"
+      },
+      "token_overlap": 73,
+      "max_similarity_percent": 61.34
+    },
+    {
+      "case_id": 71,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b0fe535fa0f4f1d88e/8e236cb825b041b0a82527f2/sub_1761640706412_scf987jqu.py",
+        "similarity_percent": 60.4,
+        "full_code": "def gcd(a, b):\n    while b:\n        a, b = b, a % b\n    return a\n\n\nn = int(input())\narr = list(map(int, input().split()))\narr.sort()\n\nfor i in range(0, n-1):\n    for j in range(i+1, n):\n        if gcd(arr[i], arr[j]) == 1:\n            print(arr[i], arr[j])\n",
+        "highlighted_code": "def gcd(a, b):\n    while b:\n        a, b = b, a % b\n    return a\n\n\nn = i<span class='highlight-red'>nt(input())\narr = list(map(int, input().split()))\n</span>arr.sort()\n\nfor i in range(0, n-1)<span class='highlight-red'>:\n    for j in range(i+1, n):\n        if gcd(arr[i], arr[j]) == 1:\n            print(arr[i], arr[</span>j])\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b0fe535fa0f4f1d88e/3fa6af8d916a46039239cabe/sub_1761665461714_heyi8duny.py",
+        "similarity_percent": 62.07,
+        "full_code": "def gcd(a,b):\n    if b==0:\n        return a\n    return gcd(b,a%b)\nn=int(input())\nA=list(map(int,input().split()))\nfor i in range(n):\n    for j in range(i+1,n):\n        if gcd(A[i],A[j])==1:\n            print(A[i],A[j])",
+        "highlighted_code": "def gcd(a,b):\n    if b==0:\n        return a\n    return gcd(b,a%b)\nn=i<span class='highlight-green'>nt(input())\nA=list(map(int,input().split()))\n</span>for i in range(n)<span class='highlight-green'>:\n    for j in range(i+1,n):\n        if gcd(A[i],A[j])==1:\n            print(A[i],A[</span>j])"
+      },
+      "token_overlap": 90,
+      "max_similarity_percent": 62.07
+    },
+    {
+      "case_id": 72,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b0fe535fa0f4f1d88e/bbb05531336e487d8ed54046/sub_1762798993474_auaml66e8.py",
+        "similarity_percent": 60.33,
+        "full_code": "import math  # dùng để tính gcd\n\nn = int(input())\na = list(map(int, input().split()))\n\nfor i in range(n - 1):\n    for j in range(i + 1, n):\n        if math.gcd(a[i], a[j]) == 1: \n            print(a[i], a[j])\n",
+        "highlighted_code": "import math  # dùng để tính gcd\n\nn = i<span class='highlight-red'>nt(input())\na = list(map(int, input().split()))\n\nfor i in ran</span>ge(n - 1):\n    for j in range(i + 1, n):\n        if math.gcd(a[<span class='highlight-red'>i], a[j]) == 1: \n            print(a[i], a[</span>j])\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b0fe535fa0f4f1d88e/f95120b3a38a461085ef58cb/sub_1761845124993_joaeb2ekv.py",
+        "similarity_percent": 45.34,
+        "full_code": "def gcd(a, b):\n    while(b != 0):\n        tmp = a % b\n        a = b\n        b = tmp\n\n    return a\nn = int(input())\nlst = list(map(int, input().split()))\n\nfor i in range(len(lst)):\n    for j in range(i + 1, len(lst)):\n        if gcd(lst[i], lst[j]) == 1:\n            print(lst[i], lst[j], end = \"\\n\")",
+        "highlighted_code": "def gcd(a, b):\n    while(b != 0):\n        tmp = a % b\n        a = b\n        b = tmp\n\n    return a\nn = i<span class='highlight-green'>nt(input())\nlst = list(map(int, input().split()))\n\nfor i in ran</span>ge(len(lst)):\n    for j in range(i + 1, len(lst)):\n        if gcd(lst[<span class='highlight-green'>i], lst[j]) == 1:\n            print(lst[i], lst[</span>j], end = &#34;\\n&#34;)"
+      },
+      "token_overlap": 73,
+      "max_similarity_percent": 60.33
+    },
+    {
+      "case_id": 73,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b0fe535fa0f4f1d88e/bbb05531336e487d8ed54046/sub_1762798993474_auaml66e8.py",
+        "similarity_percent": 60.33,
+        "full_code": "import math  # dùng để tính gcd\n\nn = int(input())\na = list(map(int, input().split()))\n\nfor i in range(n - 1):\n    for j in range(i + 1, n):\n        if math.gcd(a[i], a[j]) == 1: \n            print(a[i], a[j])\n",
+        "highlighted_code": "import math  # dùng để tính gcd\n\nn = i<span class='highlight-red'>nt(input())\na = list(map(int, input().split()))\n\nfor i in ran</span>ge(n - 1):\n    for j in range(i + 1, n):\n        if math.gcd(a[<span class='highlight-red'>i], a[j]) == 1: \n            print(a[i], a[</span>j])\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b0fe535fa0f4f1d88e/3fa6af8d916a46039239cabe/sub_1761665461714_heyi8duny.py",
+        "similarity_percent": 50.34,
+        "full_code": "def gcd(a,b):\n    if b==0:\n        return a\n    return gcd(b,a%b)\nn=int(input())\nA=list(map(int,input().split()))\nfor i in range(n):\n    for j in range(i+1,n):\n        if gcd(A[i],A[j])==1:\n            print(A[i],A[j])",
+        "highlighted_code": "def gcd(a,b):\n    if b==0:\n        return a\n    return gcd(b,a%b)\nn=i<span class='highlight-green'>nt(input())\nA=list(map(int,input().split()))\nfor i in ran</span>ge(n):\n    for j in range(i+1,n):\n        if gcd(A[<span class='highlight-green'>i],A[j])==1:\n            print(A[i],A[</span>j])"
+      },
+      "token_overlap": 73,
+      "max_similarity_percent": 60.33
+    },
+    {
+      "case_id": 74,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b0fe535fa0f4f1d88e/bbb05531336e487d8ed54046/sub_1762798993474_auaml66e8.py",
+        "similarity_percent": 60.33,
+        "full_code": "import math  # dùng để tính gcd\n\nn = int(input())\na = list(map(int, input().split()))\n\nfor i in range(n - 1):\n    for j in range(i + 1, n):\n        if math.gcd(a[i], a[j]) == 1: \n            print(a[i], a[j])\n",
+        "highlighted_code": "import math  # dùng để tính gcd\n\nn = i<span class='highlight-red'>nt(input())\na = list(map(int, input().split()))\n\nfor i in ran</span>ge(n - 1):\n    for j in range(i + 1, n):\n        if math.gcd(a[<span class='highlight-red'>i], a[j]) == 1: \n            print(a[i], a[</span>j])\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b0fe535fa0f4f1d88e/ffdb326842044f2e98b7aaa7/sub_1761622794018_61f9ovhju.py",
+        "similarity_percent": 45.34,
+        "full_code": "def gcd(a, b):\n    while(b != 0):\n        tmp = a % b\n        a = b\n        b = tmp\n\n    return a\nn = int(input())\nlst = list(map(int, input().split()))\n\nfor i in range(len(lst)):\n    for j in range(i + 1, len(lst)):\n        if gcd(lst[i], lst[j]) == 1:\n            print(lst[i], lst[j], end = \"\\n\")\n\n\n",
+        "highlighted_code": "def gcd(a, b):\n    while(b != 0):\n        tmp = a % b\n        a = b\n        b = tmp\n\n    return a\nn = i<span class='highlight-green'>nt(input())\nlst = list(map(int, input().split()))\n\nfor i in ran</span>ge(len(lst)):\n    for j in range(i + 1, len(lst)):\n        if gcd(lst[<span class='highlight-green'>i], lst[j]) == 1:\n            print(lst[i], lst[</span>j], end = &#34;\\n&#34;)\n\n\n"
+      },
+      "token_overlap": 73,
+      "max_similarity_percent": 60.33
+    },
+    {
+      "case_id": 75,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b0fe535fa0f4f1d88e/27e30f767b3a46b283cbfec0/sub_1762261502619_4eyhoj5sm.py",
+        "similarity_percent": 60.33,
+        "full_code": "import math\nn = int(input())\na = list(map(int ,input().split()))\nfor i in range(n-1):\n    for j in range(i+1,n):\n        if math.gcd(a[i],a[j]) == 1:\n            print(a[i],a[j])",
+        "highlighted_code": "import math\nn = i<span class='highlight-red'>nt(input())\na = list(map(int ,input().split()))\nfor i in ran</span>ge(n-1):\n    for j in range(i+1,n):\n        if math.gcd(a[<span class='highlight-red'>i],a[j]) == 1:\n            print(a[i],a[</span>j])"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b0fe535fa0f4f1d88e/f95120b3a38a461085ef58cb/sub_1761845124993_joaeb2ekv.py",
+        "similarity_percent": 45.34,
+        "full_code": "def gcd(a, b):\n    while(b != 0):\n        tmp = a % b\n        a = b\n        b = tmp\n\n    return a\nn = int(input())\nlst = list(map(int, input().split()))\n\nfor i in range(len(lst)):\n    for j in range(i + 1, len(lst)):\n        if gcd(lst[i], lst[j]) == 1:\n            print(lst[i], lst[j], end = \"\\n\")",
+        "highlighted_code": "def gcd(a, b):\n    while(b != 0):\n        tmp = a % b\n        a = b\n        b = tmp\n\n    return a\nn = i<span class='highlight-green'>nt(input())\nlst = list(map(int, input().split()))\n\nfor i in ran</span>ge(len(lst)):\n    for j in range(i + 1, len(lst)):\n        if gcd(lst[<span class='highlight-green'>i], lst[j]) == 1:\n            print(lst[i], lst[</span>j], end = &#34;\\n&#34;)"
+      },
+      "token_overlap": 73,
+      "max_similarity_percent": 60.33
+    },
+    {
+      "case_id": 76,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b0fe535fa0f4f1d88e/27e30f767b3a46b283cbfec0/sub_1762261502619_4eyhoj5sm.py",
+        "similarity_percent": 60.33,
+        "full_code": "import math\nn = int(input())\na = list(map(int ,input().split()))\nfor i in range(n-1):\n    for j in range(i+1,n):\n        if math.gcd(a[i],a[j]) == 1:\n            print(a[i],a[j])",
+        "highlighted_code": "import math\nn = i<span class='highlight-red'>nt(input())\na = list(map(int ,input().split()))\nfor i in ran</span>ge(n-1):\n    for j in range(i+1,n):\n        if math.gcd(a[<span class='highlight-red'>i],a[j]) == 1:\n            print(a[i],a[</span>j])"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b0fe535fa0f4f1d88e/3fa6af8d916a46039239cabe/sub_1761665461714_heyi8duny.py",
+        "similarity_percent": 50.34,
+        "full_code": "def gcd(a,b):\n    if b==0:\n        return a\n    return gcd(b,a%b)\nn=int(input())\nA=list(map(int,input().split()))\nfor i in range(n):\n    for j in range(i+1,n):\n        if gcd(A[i],A[j])==1:\n            print(A[i],A[j])",
+        "highlighted_code": "def gcd(a,b):\n    if b==0:\n        return a\n    return gcd(b,a%b)\nn=i<span class='highlight-green'>nt(input())\nA=list(map(int,input().split()))\nfor i in ran</span>ge(n):\n    for j in range(i+1,n):\n        if gcd(A[<span class='highlight-green'>i],A[j])==1:\n            print(A[i],A[</span>j])"
+      },
+      "token_overlap": 73,
+      "max_similarity_percent": 60.33
+    },
+    {
+      "case_id": 77,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b0fe535fa0f4f1d88e/27e30f767b3a46b283cbfec0/sub_1762261502619_4eyhoj5sm.py",
+        "similarity_percent": 60.33,
+        "full_code": "import math\nn = int(input())\na = list(map(int ,input().split()))\nfor i in range(n-1):\n    for j in range(i+1,n):\n        if math.gcd(a[i],a[j]) == 1:\n            print(a[i],a[j])",
+        "highlighted_code": "import math\nn = i<span class='highlight-red'>nt(input())\na = list(map(int ,input().split()))\nfor i in ran</span>ge(n-1):\n    for j in range(i+1,n):\n        if math.gcd(a[<span class='highlight-red'>i],a[j]) == 1:\n            print(a[i],a[</span>j])"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b0fe535fa0f4f1d88e/ffdb326842044f2e98b7aaa7/sub_1761622794018_61f9ovhju.py",
+        "similarity_percent": 45.34,
+        "full_code": "def gcd(a, b):\n    while(b != 0):\n        tmp = a % b\n        a = b\n        b = tmp\n\n    return a\nn = int(input())\nlst = list(map(int, input().split()))\n\nfor i in range(len(lst)):\n    for j in range(i + 1, len(lst)):\n        if gcd(lst[i], lst[j]) == 1:\n            print(lst[i], lst[j], end = \"\\n\")\n\n\n",
+        "highlighted_code": "def gcd(a, b):\n    while(b != 0):\n        tmp = a % b\n        a = b\n        b = tmp\n\n    return a\nn = i<span class='highlight-green'>nt(input())\nlst = list(map(int, input().split()))\n\nfor i in ran</span>ge(len(lst)):\n    for j in range(i + 1, len(lst)):\n        if gcd(lst[<span class='highlight-green'>i], lst[j]) == 1:\n            print(lst[i], lst[</span>j], end = &#34;\\n&#34;)\n\n\n"
+      },
+      "token_overlap": 73,
+      "max_similarity_percent": 60.33
+    },
+    {
+      "case_id": 78,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b0fe535fa0f4f1d88e/27e30f767b3a46b283cbfec0/sub_1762250677098_qv3rooszu.py",
+        "similarity_percent": 60.33,
+        "full_code": "import math\nn = int(input())\na = list(map(int, input().split()))\nfor i in range(n-1):\n    for j in range(i+1,n):\n        if math.gcd(a[i],a[j]) == 1:\n            print(a[i],a[j])",
+        "highlighted_code": "import math\nn = i<span class='highlight-red'>nt(input())\na = list(map(int, input().split()))\nfor i in ran</span>ge(n-1):\n    for j in range(i+1,n):\n        if math.gcd(a[<span class='highlight-red'>i],a[j]) == 1:\n            print(a[i],a[</span>j])"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b0fe535fa0f4f1d88e/ffdb326842044f2e98b7aaa7/sub_1761622794018_61f9ovhju.py",
+        "similarity_percent": 45.34,
+        "full_code": "def gcd(a, b):\n    while(b != 0):\n        tmp = a % b\n        a = b\n        b = tmp\n\n    return a\nn = int(input())\nlst = list(map(int, input().split()))\n\nfor i in range(len(lst)):\n    for j in range(i + 1, len(lst)):\n        if gcd(lst[i], lst[j]) == 1:\n            print(lst[i], lst[j], end = \"\\n\")\n\n\n",
+        "highlighted_code": "def gcd(a, b):\n    while(b != 0):\n        tmp = a % b\n        a = b\n        b = tmp\n\n    return a\nn = i<span class='highlight-green'>nt(input())\nlst = list(map(int, input().split()))\n\nfor i in ran</span>ge(len(lst)):\n    for j in range(i + 1, len(lst)):\n        if gcd(lst[<span class='highlight-green'>i], lst[j]) == 1:\n            print(lst[i], lst[</span>j], end = &#34;\\n&#34;)\n\n\n"
+      },
+      "token_overlap": 73,
+      "max_similarity_percent": 60.33
+    },
+    {
+      "case_id": 79,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b0fe535fa0f4f1d88e/9f14990043df4fda9283d7ac/sub_1762265288451_8mm59ugzg.py",
+        "similarity_percent": 59.84,
+        "full_code": "from math import gcd\n\nn = int(input())\na = list(map(int, input().split()))\n\nfor i in range(n):\n    for j in range(i + 1, n):\n        if gcd(a[i], a[j]) == 1:\n            print(a[i], a[j])",
+        "highlighted_code": "from math import gcd\n\nn = i<span class='highlight-red'>nt(input())\na = list(map(int, input().split()))\n\nfor i in ran</span>ge(n):\n    for j in range(i + 1, n):\n        if gcd(a[<span class='highlight-red'>i], a[j]) == 1:\n            print(a[i], a[</span>j])"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b0fe535fa0f4f1d88e/bbb05531336e487d8ed54046/sub_1762798993474_auaml66e8.py",
+        "similarity_percent": 60.33,
+        "full_code": "import math  # dùng để tính gcd\n\nn = int(input())\na = list(map(int, input().split()))\n\nfor i in range(n - 1):\n    for j in range(i + 1, n):\n        if math.gcd(a[i], a[j]) == 1: \n            print(a[i], a[j])\n",
+        "highlighted_code": "import math  # dùng để tính gcd\n\nn = i<span class='highlight-green'>nt(input())\na = list(map(int, input().split()))\n\nfor i in ran</span>ge(n - 1):\n    for j in range(i + 1, n):\n        if math.gcd(a[<span class='highlight-green'>i], a[j]) == 1: \n            print(a[i], a[</span>j])\n"
+      },
+      "token_overlap": 73,
+      "max_similarity_percent": 60.33
+    },
+    {
+      "case_id": 80,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b0fe535fa0f4f1d88e/9f14990043df4fda9283d7ac/sub_1762265288451_8mm59ugzg.py",
+        "similarity_percent": 59.84,
+        "full_code": "from math import gcd\n\nn = int(input())\na = list(map(int, input().split()))\n\nfor i in range(n):\n    for j in range(i + 1, n):\n        if gcd(a[i], a[j]) == 1:\n            print(a[i], a[j])",
+        "highlighted_code": "from math import gcd\n\nn = i<span class='highlight-red'>nt(input())\na = list(map(int, input().split()))\n\nfor i in ran</span>ge(n):\n    for j in range(i + 1, n):\n        if gcd(a[<span class='highlight-red'>i], a[j]) == 1:\n            print(a[i], a[</span>j])"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b0fe535fa0f4f1d88e/27e30f767b3a46b283cbfec0/sub_1762261502619_4eyhoj5sm.py",
+        "similarity_percent": 60.33,
+        "full_code": "import math\nn = int(input())\na = list(map(int ,input().split()))\nfor i in range(n-1):\n    for j in range(i+1,n):\n        if math.gcd(a[i],a[j]) == 1:\n            print(a[i],a[j])",
+        "highlighted_code": "import math\nn = i<span class='highlight-green'>nt(input())\na = list(map(int ,input().split()))\nfor i in ran</span>ge(n-1):\n    for j in range(i+1,n):\n        if math.gcd(a[<span class='highlight-green'>i],a[j]) == 1:\n            print(a[i],a[</span>j])"
+      },
+      "token_overlap": 73,
+      "max_similarity_percent": 60.33
+    },
+    {
+      "case_id": 81,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b0fe535fa0f4f1d88e/9f14990043df4fda9283d7ac/sub_1762265288451_8mm59ugzg.py",
+        "similarity_percent": 59.84,
+        "full_code": "from math import gcd\n\nn = int(input())\na = list(map(int, input().split()))\n\nfor i in range(n):\n    for j in range(i + 1, n):\n        if gcd(a[i], a[j]) == 1:\n            print(a[i], a[j])",
+        "highlighted_code": "from math import gcd\n\nn = i<span class='highlight-red'>nt(input())\na = list(map(int, input().split()))\n\nfor i in ran</span>ge(n):\n    for j in range(i + 1, n):\n        if gcd(a[<span class='highlight-red'>i], a[j]) == 1:\n            print(a[i], a[</span>j])"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b0fe535fa0f4f1d88e/27e30f767b3a46b283cbfec0/sub_1762250677098_qv3rooszu.py",
+        "similarity_percent": 60.33,
+        "full_code": "import math\nn = int(input())\na = list(map(int, input().split()))\nfor i in range(n-1):\n    for j in range(i+1,n):\n        if math.gcd(a[i],a[j]) == 1:\n            print(a[i],a[j])",
+        "highlighted_code": "import math\nn = i<span class='highlight-green'>nt(input())\na = list(map(int, input().split()))\nfor i in ran</span>ge(n-1):\n    for j in range(i+1,n):\n        if math.gcd(a[<span class='highlight-green'>i],a[j]) == 1:\n            print(a[i],a[</span>j])"
+      },
+      "token_overlap": 73,
+      "max_similarity_percent": 60.33
+    },
+    {
+      "case_id": 82,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b0fe535fa0f4f1d88e/ffdb326842044f2e98b7aaa7/sub_1762264882283_4a44ljbjw.py",
+        "similarity_percent": 57.14,
+        "full_code": "def gcd(a, b):\n    while(b != 0):\n        tmp = a % b\n        a = b\n        b = tmp\n\n    return a\nn = int(input())\nlst = list(map(int, input().split()))\n\nfor i in range(len(lst)):\n    for j in range(i + 1, len(lst)):\n        if gcd(lst[i], lst[j]) == 1:\n            print(lst[i], lst[j], end = \"\\n\")\n\n\n",
+        "highlighted_code": "def gcd(a, b):\n    while(b != 0):\n        tmp = a % b\n        a = b\n        b = <span class='highlight-red'>tmp\n\n    return a\nn = int(input())\nlst = list(map(int, input().split()))\n\nfor i in ran</span>ge(len(lst)):\n    for j in range(i + 1, len(lst)<span class='highlight-red'>):\n        if gcd(lst[i], lst[j]) == 1:\n            print(lst[i], lst[</span>j], end = &#34;\\n&#34;)\n\n\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b0fe535fa0f4f1d88e/d9aec9d917da4c5e9beeb80b/sub_1762261525480_v1y4wmk1l.py",
+        "similarity_percent": 65.71,
+        "full_code": "def gcd(x,y):\n    while y:\n        x, y = y, x % y \n    return x\nn = int(input())\na = list(map(int, input().split()))\nfor i in range(n):\n    for j in range(i+1, n):\n        if gcd(a[i], a[j]) == 1:\n            print(a[i], a[j])",
+        "highlighted_code": "def gcd(x,y):\n    while y:\n        x, y = y, x % <span class='highlight-green'>y \n    return x\nn = int(input())\na = list(map(int, input().split()))\nfor i in ran</span>ge(n):\n    for j in range(i+1, n<span class='highlight-green'>):\n        if gcd(a[i], a[j]) == 1:\n            print(a[i], a[</span>j])"
+      },
+      "token_overlap": 92,
+      "max_similarity_percent": 65.71
+    },
+    {
+      "case_id": 83,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b0fe535fa0f4f1d88e/ffdb326842044f2e98b7aaa7/sub_1762264882283_4a44ljbjw.py",
+        "similarity_percent": 57.14,
+        "full_code": "def gcd(a, b):\n    while(b != 0):\n        tmp = a % b\n        a = b\n        b = tmp\n\n    return a\nn = int(input())\nlst = list(map(int, input().split()))\n\nfor i in range(len(lst)):\n    for j in range(i + 1, len(lst)):\n        if gcd(lst[i], lst[j]) == 1:\n            print(lst[i], lst[j], end = \"\\n\")\n\n\n",
+        "highlighted_code": "def gcd(a, b):\n    while(b != 0):\n        tmp = a % b\n        a = b\n        b = <span class='highlight-red'>tmp\n\n    return a\nn = int(input())\nlst = list(map(int, input().split()))\n\nfor i in ran</span>ge(len(lst)):\n    for j in range(i + 1, len(lst)<span class='highlight-red'>):\n        if gcd(lst[i], lst[j]) == 1:\n            print(lst[i], lst[</span>j], end = &#34;\\n&#34;)\n\n\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b0fe535fa0f4f1d88e/d9aec9d917da4c5e9beeb80b/sub_1761828723487_lv7ddx82d.py",
+        "similarity_percent": 65.71,
+        "full_code": "def gcd(x, y):\n    while y:\n        x, y = y, x % y\n    return x\nn = int(input())\na = list(map(int, input().split()))\nfor i in range(n):\n    for j in range(i + 1, n):\n        if gcd(a[i], a[j]) == 1:\n            print(a[i], a[j])\n",
+        "highlighted_code": "def gcd(x, y):\n    while y:\n        x, y = y, x % <span class='highlight-green'>y\n    return x\nn = int(input())\na = list(map(int, input().split()))\nfor i in ran</span>ge(n):\n    for j in range(i + 1, n<span class='highlight-green'>):\n        if gcd(a[i], a[j]) == 1:\n            print(a[i], a[</span>j])\n"
+      },
+      "token_overlap": 92,
+      "max_similarity_percent": 65.71
+    },
+    {
+      "case_id": 84,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b0fe535fa0f4f1d88e/3fa6af8d916a46039239cabe/sub_1761665461714_heyi8duny.py",
+        "similarity_percent": 55.86,
+        "full_code": "def gcd(a,b):\n    if b==0:\n        return a\n    return gcd(b,a%b)\nn=int(input())\nA=list(map(int,input().split()))\nfor i in range(n):\n    for j in range(i+1,n):\n        if gcd(A[i],A[j])==1:\n            print(A[i],A[j])",
+        "highlighted_code": "def gcd(a,b):\n    if b==0:\n        return a\n    return gcd(b,a%b)\nn=i<span class='highlight-red'>nt(input())\nA=list(map(int,input().split()))\nfor i in ran</span>ge(n):\n    for j in range(i+1,n<span class='highlight-red'>):\n        if gcd(A[i],A[j])==1:\n            print(A[i],A[</span>j])"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b0fe535fa0f4f1d88e/ffdb326842044f2e98b7aaa7/sub_1761622794018_61f9ovhju.py",
+        "similarity_percent": 50.31,
+        "full_code": "def gcd(a, b):\n    while(b != 0):\n        tmp = a % b\n        a = b\n        b = tmp\n\n    return a\nn = int(input())\nlst = list(map(int, input().split()))\n\nfor i in range(len(lst)):\n    for j in range(i + 1, len(lst)):\n        if gcd(lst[i], lst[j]) == 1:\n            print(lst[i], lst[j], end = \"\\n\")\n\n\n",
+        "highlighted_code": "def gcd(a, b):\n    while(b != 0):\n        tmp = a % b\n        a = b\n        b = tmp\n\n    return a\nn = i<span class='highlight-green'>nt(input())\nlst = list(map(int, input().split()))\n\nfor i in ran</span>ge(len(lst)):\n    for j in range(i + 1, len(lst)<span class='highlight-green'>):\n        if gcd(lst[i], lst[j]) == 1:\n            print(lst[i], lst[</span>j], end = &#34;\\n&#34;)\n\n\n"
+      },
+      "token_overlap": 81,
+      "max_similarity_percent": 55.86
+    },
+    {
+      "case_id": 85,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b0fe535fa0f4f1d88e/8e236cb825b041b0a82527f2/sub_1761640706412_scf987jqu.py",
+        "similarity_percent": 55.7,
+        "full_code": "def gcd(a, b):\n    while b:\n        a, b = b, a % b\n    return a\n\n\nn = int(input())\narr = list(map(int, input().split()))\narr.sort()\n\nfor i in range(0, n-1):\n    for j in range(i+1, n):\n        if gcd(arr[i], arr[j]) == 1:\n            print(arr[i], arr[j])\n",
+        "highlighted_code": "def gcd(a, b):\n    while b:\n        a, b = b, a % <span class='highlight-red'>b\n    return a\n\n\nn = int(input())\narr = list(map(int, input().split()))\n</span>arr.sort()\n\nfor i in range(0, n-1):\n    for j in range(i+1, n<span class='highlight-red'>):\n        if gcd(arr[i], arr[j]) == 1:\n            print(arr[i], arr[</span>j])\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b0fe535fa0f4f1d88e/f95120b3a38a461085ef58cb/sub_1761845124993_joaeb2ekv.py",
+        "similarity_percent": 51.55,
+        "full_code": "def gcd(a, b):\n    while(b != 0):\n        tmp = a % b\n        a = b\n        b = tmp\n\n    return a\nn = int(input())\nlst = list(map(int, input().split()))\n\nfor i in range(len(lst)):\n    for j in range(i + 1, len(lst)):\n        if gcd(lst[i], lst[j]) == 1:\n            print(lst[i], lst[j], end = \"\\n\")",
+        "highlighted_code": "def gcd(a, b):\n    while(b != 0):\n        tmp = a % b\n        a = b\n        b = <span class='highlight-green'>tmp\n\n    return a\nn = int(input())\nlst = list(map(int, input().split()))\n\n</span>for i in range(len(lst)):\n    for j in range(i + 1, len(lst)<span class='highlight-green'>):\n        if gcd(lst[i], lst[j]) == 1:\n            print(lst[i], lst[</span>j], end = &#34;\\n&#34;)"
+      },
+      "token_overlap": 83,
+      "max_similarity_percent": 55.7
+    },
+    {
+      "case_id": 86,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b0fe535fa0f4f1d88e/8e236cb825b041b0a82527f2/sub_1761640706412_scf987jqu.py",
+        "similarity_percent": 55.7,
+        "full_code": "def gcd(a, b):\n    while b:\n        a, b = b, a % b\n    return a\n\n\nn = int(input())\narr = list(map(int, input().split()))\narr.sort()\n\nfor i in range(0, n-1):\n    for j in range(i+1, n):\n        if gcd(arr[i], arr[j]) == 1:\n            print(arr[i], arr[j])\n",
+        "highlighted_code": "def gcd(a, b):\n    while b:\n        a, b = b, a % <span class='highlight-red'>b\n    return a\n\n\nn = int(input())\narr = list(map(int, input().split()))\n</span>arr.sort()\n\nfor i in range(0, n-1):\n    for j in range(i+1, n<span class='highlight-red'>):\n        if gcd(arr[i], arr[j]) == 1:\n            print(arr[i], arr[</span>j])\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b0fe535fa0f4f1d88e/ffdb326842044f2e98b7aaa7/sub_1761622794018_61f9ovhju.py",
+        "similarity_percent": 51.55,
+        "full_code": "def gcd(a, b):\n    while(b != 0):\n        tmp = a % b\n        a = b\n        b = tmp\n\n    return a\nn = int(input())\nlst = list(map(int, input().split()))\n\nfor i in range(len(lst)):\n    for j in range(i + 1, len(lst)):\n        if gcd(lst[i], lst[j]) == 1:\n            print(lst[i], lst[j], end = \"\\n\")\n\n\n",
+        "highlighted_code": "def gcd(a, b):\n    while(b != 0):\n        tmp = a % b\n        a = b\n        b = <span class='highlight-green'>tmp\n\n    return a\nn = int(input())\nlst = list(map(int, input().split()))\n\n</span>for i in range(len(lst)):\n    for j in range(i + 1, len(lst)<span class='highlight-green'>):\n        if gcd(lst[i], lst[j]) == 1:\n            print(lst[i], lst[</span>j], end = &#34;\\n&#34;)\n\n\n"
+      },
+      "token_overlap": 83,
+      "max_similarity_percent": 55.7
+    },
+    {
+      "case_id": 87,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b0fe535fa0f4f1d88e/cd93b2ff882a4ffa85f4518f/sub_1761718343652_r3pwdbtqn.py",
+        "similarity_percent": 53.85,
+        "full_code": "import math as ma\ndef uoc(a: int, b: int):\n    return ma.gcd(a, b)\nn=int(input())\na=[0]*(n+1)\na=[int(x) for x in input().split()]\nfor i in range (0,n):\n    for j in range (i+1,n):\n        if uoc(a[i],a[j])==1:\n            print (a[i],a[j],sep=\" \")",
+        "highlighted_code": "import math as ma\ndef uoc(a: int, b: int):\n    return ma.gcd(a, b)\nn=int(input())\na=[0]*(n+1<span class='highlight-red'>)\na=[int(x) for x in input().split()]\nfor i in range (</span>0,n)<span class='highlight-red'>:\n    for j in range (i+1,n):\n        if uoc(a[i],a[j])==1:\n            print (a[i],a[</span>j],sep=&#34; &#34;)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b0fe535fa0f4f1d88e/113963c0a9df48538edf310d/sub_1762261638011_0jz7o67lj.py",
+        "similarity_percent": 75.21,
+        "full_code": "from math import gcd\nn = int(input())\narr = [int(i) for i in input().split()]\n\nfor i in range(n):\n    for j in range(i+1, n):\n        if gcd(arr[i], arr[j]) == 1:\n            print(arr[i], arr[j])\n\n",
+        "highlighted_code": "from math import gcd\nn = int(input()<span class='highlight-green'>)\narr = [int(i) for i in input().split()]\n\nfor i in range(</span>n)<span class='highlight-green'>:\n    for j in range(i+1, n):\n        if gcd(arr[i], arr[j]) == 1:\n            print(arr[i], arr[</span>j])\n\n"
+      },
+      "token_overlap": 91,
+      "max_similarity_percent": 75.21
+    },
+    {
+      "case_id": 88,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b0fe535fa0f4f1d88e/d9aec9d917da4c5e9beeb80b/sub_1762261525480_v1y4wmk1l.py",
+        "similarity_percent": 52.14,
+        "full_code": "def gcd(x,y):\n    while y:\n        x, y = y, x % y \n    return x\nn = int(input())\na = list(map(int, input().split()))\nfor i in range(n):\n    for j in range(i+1, n):\n        if gcd(a[i], a[j]) == 1:\n            print(a[i], a[j])",
+        "highlighted_code": "def gcd(x,y):\n    while y:\n        x, y = y, x % y \n    return x\nn = i<span class='highlight-red'>nt(input())\na = list(map(int, input().split()))\nfor i in ran</span>ge(n):\n    for j in range(i+1, n):\n        if gcd(a[<span class='highlight-red'>i], a[j]) == 1:\n            print(a[i], a[</span>j])"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b0fe535fa0f4f1d88e/bbb05531336e487d8ed54046/sub_1762798993474_auaml66e8.py",
+        "similarity_percent": 60.33,
+        "full_code": "import math  # dùng để tính gcd\n\nn = int(input())\na = list(map(int, input().split()))\n\nfor i in range(n - 1):\n    for j in range(i + 1, n):\n        if math.gcd(a[i], a[j]) == 1: \n            print(a[i], a[j])\n",
+        "highlighted_code": "import math  # dùng để tính gcd\n\nn = i<span class='highlight-green'>nt(input())\na = list(map(int, input().split()))\n\nfor i in ran</span>ge(n - 1):\n    for j in range(i + 1, n):\n        if math.gcd(a[<span class='highlight-green'>i], a[j]) == 1: \n            print(a[i], a[</span>j])\n"
+      },
+      "token_overlap": 73,
+      "max_similarity_percent": 60.33
+    },
+    {
+      "case_id": 89,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b0fe535fa0f4f1d88e/d9aec9d917da4c5e9beeb80b/sub_1762261525480_v1y4wmk1l.py",
+        "similarity_percent": 52.14,
+        "full_code": "def gcd(x,y):\n    while y:\n        x, y = y, x % y \n    return x\nn = int(input())\na = list(map(int, input().split()))\nfor i in range(n):\n    for j in range(i+1, n):\n        if gcd(a[i], a[j]) == 1:\n            print(a[i], a[j])",
+        "highlighted_code": "def gcd(x,y):\n    while y:\n        x, y = y, x % y \n    return x\nn = i<span class='highlight-red'>nt(input())\na = list(map(int, input().split()))\nfor i in ran</span>ge(n):\n    for j in range(i+1, n):\n        if gcd(a[<span class='highlight-red'>i], a[j]) == 1:\n            print(a[i], a[</span>j])"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b0fe535fa0f4f1d88e/27e30f767b3a46b283cbfec0/sub_1762261502619_4eyhoj5sm.py",
+        "similarity_percent": 60.33,
+        "full_code": "import math\nn = int(input())\na = list(map(int ,input().split()))\nfor i in range(n-1):\n    for j in range(i+1,n):\n        if math.gcd(a[i],a[j]) == 1:\n            print(a[i],a[j])",
+        "highlighted_code": "import math\nn = i<span class='highlight-green'>nt(input())\na = list(map(int ,input().split()))\nfor i in ran</span>ge(n-1):\n    for j in range(i+1,n):\n        if math.gcd(a[<span class='highlight-green'>i],a[j]) == 1:\n            print(a[i],a[</span>j])"
+      },
+      "token_overlap": 73,
+      "max_similarity_percent": 60.33
+    },
+    {
+      "case_id": 90,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b0fe535fa0f4f1d88e/d9aec9d917da4c5e9beeb80b/sub_1762261525480_v1y4wmk1l.py",
+        "similarity_percent": 52.14,
+        "full_code": "def gcd(x,y):\n    while y:\n        x, y = y, x % y \n    return x\nn = int(input())\na = list(map(int, input().split()))\nfor i in range(n):\n    for j in range(i+1, n):\n        if gcd(a[i], a[j]) == 1:\n            print(a[i], a[j])",
+        "highlighted_code": "def gcd(x,y):\n    while y:\n        x, y = y, x % y \n    return x\nn = i<span class='highlight-red'>nt(input())\na = list(map(int, input().split()))\nfor i in ran</span>ge(n):\n    for j in range(i+1, n):\n        if gcd(a[<span class='highlight-red'>i], a[j]) == 1:\n            print(a[i], a[</span>j])"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b0fe535fa0f4f1d88e/27e30f767b3a46b283cbfec0/sub_1762250677098_qv3rooszu.py",
+        "similarity_percent": 60.33,
+        "full_code": "import math\nn = int(input())\na = list(map(int, input().split()))\nfor i in range(n-1):\n    for j in range(i+1,n):\n        if math.gcd(a[i],a[j]) == 1:\n            print(a[i],a[j])",
+        "highlighted_code": "import math\nn = i<span class='highlight-green'>nt(input())\na = list(map(int, input().split()))\nfor i in ran</span>ge(n-1):\n    for j in range(i+1,n):\n        if math.gcd(a[<span class='highlight-green'>i],a[j]) == 1:\n            print(a[i],a[</span>j])"
+      },
+      "token_overlap": 73,
+      "max_similarity_percent": 60.33
+    },
+    {
+      "case_id": 91,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b0fe535fa0f4f1d88e/d9aec9d917da4c5e9beeb80b/sub_1761828723487_lv7ddx82d.py",
+        "similarity_percent": 52.14,
+        "full_code": "def gcd(x, y):\n    while y:\n        x, y = y, x % y\n    return x\nn = int(input())\na = list(map(int, input().split()))\nfor i in range(n):\n    for j in range(i + 1, n):\n        if gcd(a[i], a[j]) == 1:\n            print(a[i], a[j])\n",
+        "highlighted_code": "def gcd(x, y):\n    while y:\n        x, y = y, x % y\n    return x\nn = i<span class='highlight-red'>nt(input())\na = list(map(int, input().split()))\nfor i in ran</span>ge(n):\n    for j in range(i + 1, n):\n        if gcd(a[<span class='highlight-red'>i], a[j]) == 1:\n            print(a[i], a[</span>j])\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b0fe535fa0f4f1d88e/bbb05531336e487d8ed54046/sub_1762798993474_auaml66e8.py",
+        "similarity_percent": 60.33,
+        "full_code": "import math  # dùng để tính gcd\n\nn = int(input())\na = list(map(int, input().split()))\n\nfor i in range(n - 1):\n    for j in range(i + 1, n):\n        if math.gcd(a[i], a[j]) == 1: \n            print(a[i], a[j])\n",
+        "highlighted_code": "import math  # dùng để tính gcd\n\nn = i<span class='highlight-green'>nt(input())\na = list(map(int, input().split()))\n\nfor i in ran</span>ge(n - 1):\n    for j in range(i + 1, n):\n        if math.gcd(a[<span class='highlight-green'>i], a[j]) == 1: \n            print(a[i], a[</span>j])\n"
+      },
+      "token_overlap": 73,
+      "max_similarity_percent": 60.33
+    },
+    {
+      "case_id": 92,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b0fe535fa0f4f1d88e/d9aec9d917da4c5e9beeb80b/sub_1761828723487_lv7ddx82d.py",
+        "similarity_percent": 52.14,
+        "full_code": "def gcd(x, y):\n    while y:\n        x, y = y, x % y\n    return x\nn = int(input())\na = list(map(int, input().split()))\nfor i in range(n):\n    for j in range(i + 1, n):\n        if gcd(a[i], a[j]) == 1:\n            print(a[i], a[j])\n",
+        "highlighted_code": "def gcd(x, y):\n    while y:\n        x, y = y, x % y\n    return x\nn = i<span class='highlight-red'>nt(input())\na = list(map(int, input().split()))\nfor i in ran</span>ge(n):\n    for j in range(i + 1, n):\n        if gcd(a[<span class='highlight-red'>i], a[j]) == 1:\n            print(a[i], a[</span>j])\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b0fe535fa0f4f1d88e/27e30f767b3a46b283cbfec0/sub_1762261502619_4eyhoj5sm.py",
+        "similarity_percent": 60.33,
+        "full_code": "import math\nn = int(input())\na = list(map(int ,input().split()))\nfor i in range(n-1):\n    for j in range(i+1,n):\n        if math.gcd(a[i],a[j]) == 1:\n            print(a[i],a[j])",
+        "highlighted_code": "import math\nn = i<span class='highlight-green'>nt(input())\na = list(map(int ,input().split()))\nfor i in ran</span>ge(n-1):\n    for j in range(i+1,n):\n        if math.gcd(a[<span class='highlight-green'>i],a[j]) == 1:\n            print(a[i],a[</span>j])"
+      },
+      "token_overlap": 73,
+      "max_similarity_percent": 60.33
+    },
+    {
+      "case_id": 93,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b0fe535fa0f4f1d88e/d9aec9d917da4c5e9beeb80b/sub_1761828723487_lv7ddx82d.py",
+        "similarity_percent": 52.14,
+        "full_code": "def gcd(x, y):\n    while y:\n        x, y = y, x % y\n    return x\nn = int(input())\na = list(map(int, input().split()))\nfor i in range(n):\n    for j in range(i + 1, n):\n        if gcd(a[i], a[j]) == 1:\n            print(a[i], a[j])\n",
+        "highlighted_code": "def gcd(x, y):\n    while y:\n        x, y = y, x % y\n    return x\nn = i<span class='highlight-red'>nt(input())\na = list(map(int, input().split()))\nfor i in ran</span>ge(n):\n    for j in range(i + 1, n):\n        if gcd(a[<span class='highlight-red'>i], a[j]) == 1:\n            print(a[i], a[</span>j])\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b0fe535fa0f4f1d88e/27e30f767b3a46b283cbfec0/sub_1762250677098_qv3rooszu.py",
+        "similarity_percent": 60.33,
+        "full_code": "import math\nn = int(input())\na = list(map(int, input().split()))\nfor i in range(n-1):\n    for j in range(i+1,n):\n        if math.gcd(a[i],a[j]) == 1:\n            print(a[i],a[j])",
+        "highlighted_code": "import math\nn = i<span class='highlight-green'>nt(input())\na = list(map(int, input().split()))\nfor i in ran</span>ge(n-1):\n    for j in range(i+1,n):\n        if math.gcd(a[<span class='highlight-green'>i],a[j]) == 1:\n            print(a[i],a[</span>j])"
+      },
+      "token_overlap": 73,
+      "max_similarity_percent": 60.33
+    },
+    {
+      "case_id": 94,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b0fe535fa0f4f1d88e/ffdb326842044f2e98b7aaa7/sub_1762264882283_4a44ljbjw.py",
+        "similarity_percent": 51.55,
+        "full_code": "def gcd(a, b):\n    while(b != 0):\n        tmp = a % b\n        a = b\n        b = tmp\n\n    return a\nn = int(input())\nlst = list(map(int, input().split()))\n\nfor i in range(len(lst)):\n    for j in range(i + 1, len(lst)):\n        if gcd(lst[i], lst[j]) == 1:\n            print(lst[i], lst[j], end = \"\\n\")\n\n\n",
+        "highlighted_code": "def gcd(a, b):\n    while(b != 0):\n        tmp = a % b\n        a = b\n        b = <span class='highlight-red'>tmp\n\n    return a\nn = int(input())\nlst = list(map(int, input().split()))\n\n</span>for i in range(len(lst)):\n    for j in range(i + 1, len(lst)<span class='highlight-red'>):\n        if gcd(lst[i], lst[j]) == 1:\n            print(lst[i], lst[</span>j], end = &#34;\\n&#34;)\n\n\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b0fe535fa0f4f1d88e/8e236cb825b041b0a82527f2/sub_1761640706412_scf987jqu.py",
+        "similarity_percent": 55.7,
+        "full_code": "def gcd(a, b):\n    while b:\n        a, b = b, a % b\n    return a\n\n\nn = int(input())\narr = list(map(int, input().split()))\narr.sort()\n\nfor i in range(0, n-1):\n    for j in range(i+1, n):\n        if gcd(arr[i], arr[j]) == 1:\n            print(arr[i], arr[j])\n",
+        "highlighted_code": "def gcd(a, b):\n    while b:\n        a, b = b, a % <span class='highlight-green'>b\n    return a\n\n\nn = int(input())\narr = list(map(int, input().split()))\n</span>arr.sort()\n\nfor i in range(0, n-1):\n    for j in range(i+1, n<span class='highlight-green'>):\n        if gcd(arr[i], arr[j]) == 1:\n            print(arr[i], arr[</span>j])\n"
+      },
+      "token_overlap": 83,
+      "max_similarity_percent": 55.7
+    },
+    {
+      "case_id": 95,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b0fe535fa0f4f1d88e/3fa6af8d916a46039239cabe/sub_1761665461714_heyi8duny.py",
+        "similarity_percent": 50.34,
+        "full_code": "def gcd(a,b):\n    if b==0:\n        return a\n    return gcd(b,a%b)\nn=int(input())\nA=list(map(int,input().split()))\nfor i in range(n):\n    for j in range(i+1,n):\n        if gcd(A[i],A[j])==1:\n            print(A[i],A[j])",
+        "highlighted_code": "def gcd(a,b):\n    if b==0:\n        return a\n    return gcd(b,a%b)\nn=i<span class='highlight-red'>nt(input())\nA=list(map(int,input().split()))\nfor i in ran</span>ge(n):\n    for j in range(i+1,n):\n        if gcd(A[<span class='highlight-red'>i],A[j])==1:\n            print(A[i],A[</span>j])"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b0fe535fa0f4f1d88e/27e30f767b3a46b283cbfec0/sub_1762250677098_qv3rooszu.py",
+        "similarity_percent": 60.33,
+        "full_code": "import math\nn = int(input())\na = list(map(int, input().split()))\nfor i in range(n-1):\n    for j in range(i+1,n):\n        if math.gcd(a[i],a[j]) == 1:\n            print(a[i],a[j])",
+        "highlighted_code": "import math\nn = i<span class='highlight-green'>nt(input())\na = list(map(int, input().split()))\nfor i in ran</span>ge(n-1):\n    for j in range(i+1,n):\n        if math.gcd(a[<span class='highlight-green'>i],a[j]) == 1:\n            print(a[i],a[</span>j])"
+      },
+      "token_overlap": 73,
+      "max_similarity_percent": 60.33
+    },
+    {
+      "case_id": 96,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b0fe535fa0f4f1d88e/ffdb326842044f2e98b7aaa7/sub_1762264882283_4a44ljbjw.py",
+        "similarity_percent": 50.31,
+        "full_code": "def gcd(a, b):\n    while(b != 0):\n        tmp = a % b\n        a = b\n        b = tmp\n\n    return a\nn = int(input())\nlst = list(map(int, input().split()))\n\nfor i in range(len(lst)):\n    for j in range(i + 1, len(lst)):\n        if gcd(lst[i], lst[j]) == 1:\n            print(lst[i], lst[j], end = \"\\n\")\n\n\n",
+        "highlighted_code": "def gcd(a, b):\n    while(b != 0):\n        tmp = a % b\n        a = b\n        b = tmp\n\n    return a\nn = i<span class='highlight-red'>nt(input())\nlst = list(map(int, input().split()))\n\nfor i in ran</span>ge(len(lst)):\n    for j in range(i + 1, len(lst)<span class='highlight-red'>):\n        if gcd(lst[i], lst[j]) == 1:\n            print(lst[i], lst[</span>j], end = &#34;\\n&#34;)\n\n\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b0fe535fa0f4f1d88e/9f14990043df4fda9283d7ac/sub_1762265288451_8mm59ugzg.py",
+        "similarity_percent": 66.39,
+        "full_code": "from math import gcd\n\nn = int(input())\na = list(map(int, input().split()))\n\nfor i in range(n):\n    for j in range(i + 1, n):\n        if gcd(a[i], a[j]) == 1:\n            print(a[i], a[j])",
+        "highlighted_code": "from math import gcd\n\nn = i<span class='highlight-green'>nt(input())\na = list(map(int, input().split()))\n\nfor i in ran</span>ge(n):\n    for j in range(i + 1, n<span class='highlight-green'>):\n        if gcd(a[i], a[j]) == 1:\n            print(a[i], a[</span>j])"
+      },
+      "token_overlap": 81,
+      "max_similarity_percent": 66.39
+    },
+    {
+      "case_id": 97,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b0fe535fa0f4f1d88e/ffdb326842044f2e98b7aaa7/sub_1762264882283_4a44ljbjw.py",
+        "similarity_percent": 50.31,
+        "full_code": "def gcd(a, b):\n    while(b != 0):\n        tmp = a % b\n        a = b\n        b = tmp\n\n    return a\nn = int(input())\nlst = list(map(int, input().split()))\n\nfor i in range(len(lst)):\n    for j in range(i + 1, len(lst)):\n        if gcd(lst[i], lst[j]) == 1:\n            print(lst[i], lst[j], end = \"\\n\")\n\n\n",
+        "highlighted_code": "def gcd(a, b):\n    while(b != 0):\n        tmp = a % b\n        a = b\n        b = tmp\n\n    return a\nn = i<span class='highlight-red'>nt(input())\nlst = list(map(int, input().split()))\n\nfor i in ran</span>ge(len(lst)):\n    for j in range(i + 1, len(lst)<span class='highlight-red'>):\n        if gcd(lst[i], lst[j]) == 1:\n            print(lst[i], lst[</span>j], end = &#34;\\n&#34;)\n\n\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b0fe535fa0f4f1d88e/3fa6af8d916a46039239cabe/sub_1761665461714_heyi8duny.py",
+        "similarity_percent": 55.86,
+        "full_code": "def gcd(a,b):\n    if b==0:\n        return a\n    return gcd(b,a%b)\nn=int(input())\nA=list(map(int,input().split()))\nfor i in range(n):\n    for j in range(i+1,n):\n        if gcd(A[i],A[j])==1:\n            print(A[i],A[j])",
+        "highlighted_code": "def gcd(a,b):\n    if b==0:\n        return a\n    return gcd(b,a%b)\nn=i<span class='highlight-green'>nt(input())\nA=list(map(int,input().split()))\nfor i in ran</span>ge(n):\n    for j in range(i+1,n<span class='highlight-green'>):\n        if gcd(A[i],A[j])==1:\n            print(A[i],A[</span>j])"
+      },
+      "token_overlap": 81,
+      "max_similarity_percent": 55.86
+    },
+    {
+      "case_id": 98,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b0fe535fa0f4f1d88e/f95120b3a38a461085ef58cb/sub_1761845124993_joaeb2ekv.py",
+        "similarity_percent": 50.31,
+        "full_code": "def gcd(a, b):\n    while(b != 0):\n        tmp = a % b\n        a = b\n        b = tmp\n\n    return a\nn = int(input())\nlst = list(map(int, input().split()))\n\nfor i in range(len(lst)):\n    for j in range(i + 1, len(lst)):\n        if gcd(lst[i], lst[j]) == 1:\n            print(lst[i], lst[j], end = \"\\n\")",
+        "highlighted_code": "def gcd(a, b):\n    while(b != 0):\n        tmp = a % b\n        a = b\n        b = tmp\n\n    return a\nn = i<span class='highlight-red'>nt(input())\nlst = list(map(int, input().split()))\n\nfor i in ran</span>ge(len(lst)):\n    for j in range(i + 1, len(lst)<span class='highlight-red'>):\n        if gcd(lst[i], lst[j]) == 1:\n            print(lst[i], lst[</span>j], end = &#34;\\n&#34;)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b0fe535fa0f4f1d88e/3fa6af8d916a46039239cabe/sub_1761665461714_heyi8duny.py",
+        "similarity_percent": 55.86,
+        "full_code": "def gcd(a,b):\n    if b==0:\n        return a\n    return gcd(b,a%b)\nn=int(input())\nA=list(map(int,input().split()))\nfor i in range(n):\n    for j in range(i+1,n):\n        if gcd(A[i],A[j])==1:\n            print(A[i],A[j])",
+        "highlighted_code": "def gcd(a,b):\n    if b==0:\n        return a\n    return gcd(b,a%b)\nn=i<span class='highlight-green'>nt(input())\nA=list(map(int,input().split()))\nfor i in ran</span>ge(n):\n    for j in range(i+1,n<span class='highlight-green'>):\n        if gcd(A[i],A[j])==1:\n            print(A[i],A[</span>j])"
+      },
+      "token_overlap": 81,
+      "max_similarity_percent": 55.86
+    },
+    {
+      "case_id": 99,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b0fe535fa0f4f1d88e/f6b89ee6c5ef4532901d60a6/sub_1762636831504_kybh4yj88.py",
+        "similarity_percent": 48.19,
+        "full_code": "import math\ndef ucln(n,a):\n    a.sort()\n    res=[]\n    for i in range(n):\n        for j in range(i+1, n):\n            if math.gcd(a[i],a[j]) == 1:\n                res.append((a[i],a[j]))\n    return res\nn=int(input())\na=list(map(int, input().split()))\nfor p in ucln(n,a):\n    print(*p)",
+        "highlighted_code": "import math\ndef ucln(n,a):\n    a.sort()\n    res=[]\n    for i in range(n):\n        f<span class='highlight-red'>or j in range(i+1, n):\n            if math.gcd(a[i],a[j]) == 1</span>:\n                res.append((a[i],a[j]))\n    return res\nn=i<span class='highlight-red'>nt(input())\na=list(map(int, input().split()))\nfor p </span>in ucln(n,a):\n    print(*p)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b0fe535fa0f4f1d88e/27e30f767b3a46b283cbfec0/sub_1762250677098_qv3rooszu.py",
+        "similarity_percent": 66.12,
+        "full_code": "import math\nn = int(input())\na = list(map(int, input().split()))\nfor i in range(n-1):\n    for j in range(i+1,n):\n        if math.gcd(a[i],a[j]) == 1:\n            print(a[i],a[j])",
+        "highlighted_code": "import math\nn = i<span class='highlight-green'>nt(input())\na = list(map(int, input().split()))\nfor i </span>in range(n-1):\n    f<span class='highlight-green'>or j in range(i+1,n):\n        if math.gcd(a[i],a[j]) == 1</span>:\n            print(a[i],a[j])"
+      },
+      "token_overlap": 80,
+      "max_similarity_percent": 66.12
+    },
+    {
+      "case_id": 100,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b0fe535fa0f4f1d88e/ffdb326842044f2e98b7aaa7/sub_1762264882283_4a44ljbjw.py",
+        "similarity_percent": 45.34,
+        "full_code": "def gcd(a, b):\n    while(b != 0):\n        tmp = a % b\n        a = b\n        b = tmp\n\n    return a\nn = int(input())\nlst = list(map(int, input().split()))\n\nfor i in range(len(lst)):\n    for j in range(i + 1, len(lst)):\n        if gcd(lst[i], lst[j]) == 1:\n            print(lst[i], lst[j], end = \"\\n\")\n\n\n",
+        "highlighted_code": "def gcd(a, b):\n    while(b != 0):\n        tmp = a % b\n        a = b\n        b = tmp\n\n    return a\nn = i<span class='highlight-red'>nt(input())\nlst = list(map(int, input().split()))\n\nfor i in ran</span>ge(len(lst)):\n    for j in range(i + 1, len(lst)):\n        if gcd(lst[<span class='highlight-red'>i], lst[j]) == 1:\n            print(lst[i], lst[</span>j], end = &#34;\\n&#34;)\n\n\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b0fe535fa0f4f1d88e/e7457b81cbe24d9d9bdac641/sub_1762266878698_t7c13kjm6.py",
+        "similarity_percent": 61.34,
+        "full_code": "import math \nn = int(input()) \na = list(map(int, input().split())) \nfor i in range(n):\n    for j in range(i + 1, n):\n        if math.gcd(a[i], a[j]) == 1:  \n            print(a[i], a[j])\n",
+        "highlighted_code": "import math \nn = i<span class='highlight-green'>nt(input()) \na = list(map(int, input().split())) \nfor i in ran</span>ge(n):\n    for j in range(i + 1, n):\n        if math.gcd(a[<span class='highlight-green'>i], a[j]) == 1:  \n            print(a[i], a[</span>j])\n"
+      },
+      "token_overlap": 73,
+      "max_similarity_percent": 61.34
+    },
+    {
+      "case_id": 101,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b0fe535fa0f4f1d88e/ffdb326842044f2e98b7aaa7/sub_1762264882283_4a44ljbjw.py",
+        "similarity_percent": 45.34,
+        "full_code": "def gcd(a, b):\n    while(b != 0):\n        tmp = a % b\n        a = b\n        b = tmp\n\n    return a\nn = int(input())\nlst = list(map(int, input().split()))\n\nfor i in range(len(lst)):\n    for j in range(i + 1, len(lst)):\n        if gcd(lst[i], lst[j]) == 1:\n            print(lst[i], lst[j], end = \"\\n\")\n\n\n",
+        "highlighted_code": "def gcd(a, b):\n    while(b != 0):\n        tmp = a % b\n        a = b\n        b = tmp\n\n    return a\nn = i<span class='highlight-red'>nt(input())\nlst = list(map(int, input().split()))\n\nfor i in ran</span>ge(len(lst)):\n    for j in range(i + 1, len(lst)):\n        if gcd(lst[<span class='highlight-red'>i], lst[j]) == 1:\n            print(lst[i], lst[</span>j], end = &#34;\\n&#34;)\n\n\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b0fe535fa0f4f1d88e/bbb05531336e487d8ed54046/sub_1762798993474_auaml66e8.py",
+        "similarity_percent": 60.33,
+        "full_code": "import math  # dùng để tính gcd\n\nn = int(input())\na = list(map(int, input().split()))\n\nfor i in range(n - 1):\n    for j in range(i + 1, n):\n        if math.gcd(a[i], a[j]) == 1: \n            print(a[i], a[j])\n",
+        "highlighted_code": "import math  # dùng để tính gcd\n\nn = i<span class='highlight-green'>nt(input())\na = list(map(int, input().split()))\n\nfor i in ran</span>ge(n - 1):\n    for j in range(i + 1, n):\n        if math.gcd(a[<span class='highlight-green'>i], a[j]) == 1: \n            print(a[i], a[</span>j])\n"
+      },
+      "token_overlap": 73,
+      "max_similarity_percent": 60.33
+    },
+    {
+      "case_id": 102,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b0fe535fa0f4f1d88e/ffdb326842044f2e98b7aaa7/sub_1762264882283_4a44ljbjw.py",
+        "similarity_percent": 45.34,
+        "full_code": "def gcd(a, b):\n    while(b != 0):\n        tmp = a % b\n        a = b\n        b = tmp\n\n    return a\nn = int(input())\nlst = list(map(int, input().split()))\n\nfor i in range(len(lst)):\n    for j in range(i + 1, len(lst)):\n        if gcd(lst[i], lst[j]) == 1:\n            print(lst[i], lst[j], end = \"\\n\")\n\n\n",
+        "highlighted_code": "def gcd(a, b):\n    while(b != 0):\n        tmp = a % b\n        a = b\n        b = tmp\n\n    return a\nn = i<span class='highlight-red'>nt(input())\nlst = list(map(int, input().split()))\n\nfor i in ran</span>ge(len(lst)):\n    for j in range(i + 1, len(lst)):\n        if gcd(lst[<span class='highlight-red'>i], lst[j]) == 1:\n            print(lst[i], lst[</span>j], end = &#34;\\n&#34;)\n\n\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b0fe535fa0f4f1d88e/27e30f767b3a46b283cbfec0/sub_1762261502619_4eyhoj5sm.py",
+        "similarity_percent": 60.33,
+        "full_code": "import math\nn = int(input())\na = list(map(int ,input().split()))\nfor i in range(n-1):\n    for j in range(i+1,n):\n        if math.gcd(a[i],a[j]) == 1:\n            print(a[i],a[j])",
+        "highlighted_code": "import math\nn = i<span class='highlight-green'>nt(input())\na = list(map(int ,input().split()))\nfor i in ran</span>ge(n-1):\n    for j in range(i+1,n):\n        if math.gcd(a[<span class='highlight-green'>i],a[j]) == 1:\n            print(a[i],a[</span>j])"
+      },
+      "token_overlap": 73,
+      "max_similarity_percent": 60.33
+    },
+    {
+      "case_id": 103,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b0fe535fa0f4f1d88e/ffdb326842044f2e98b7aaa7/sub_1762264882283_4a44ljbjw.py",
+        "similarity_percent": 45.34,
+        "full_code": "def gcd(a, b):\n    while(b != 0):\n        tmp = a % b\n        a = b\n        b = tmp\n\n    return a\nn = int(input())\nlst = list(map(int, input().split()))\n\nfor i in range(len(lst)):\n    for j in range(i + 1, len(lst)):\n        if gcd(lst[i], lst[j]) == 1:\n            print(lst[i], lst[j], end = \"\\n\")\n\n\n",
+        "highlighted_code": "def gcd(a, b):\n    while(b != 0):\n        tmp = a % b\n        a = b\n        b = tmp\n\n    return a\nn = i<span class='highlight-red'>nt(input())\nlst = list(map(int, input().split()))\n\nfor i in ran</span>ge(len(lst)):\n    for j in range(i + 1, len(lst)):\n        if gcd(lst[<span class='highlight-red'>i], lst[j]) == 1:\n            print(lst[i], lst[</span>j], end = &#34;\\n&#34;)\n\n\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b0fe535fa0f4f1d88e/e59c34a1bebb49d29bfb3592/sub_1762174014046_sg0pta5eu.py",
+        "similarity_percent": 61.34,
+        "full_code": "import math\nn = int(input())\narr = list(map(int,input().split()))\nfor i in range(n):\n    for j in range(i+1,n):\n        if math.gcd(arr[i],arr[j]) == 1:\n            print(arr[i],arr[j])    \n",
+        "highlighted_code": "import math\nn = i<span class='highlight-green'>nt(input())\narr = list(map(int,input().split()))\nfor i in ran</span>ge(n):\n    for j in range(i+1,n):\n        if math.gcd(arr[<span class='highlight-green'>i],arr[j]) == 1:\n            print(arr[i],arr[</span>j])    \n"
+      },
+      "token_overlap": 73,
+      "max_similarity_percent": 61.34
+    },
+    {
+      "case_id": 104,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b0fe535fa0f4f1d88e/ffdb326842044f2e98b7aaa7/sub_1762264882283_4a44ljbjw.py",
+        "similarity_percent": 45.34,
+        "full_code": "def gcd(a, b):\n    while(b != 0):\n        tmp = a % b\n        a = b\n        b = tmp\n\n    return a\nn = int(input())\nlst = list(map(int, input().split()))\n\nfor i in range(len(lst)):\n    for j in range(i + 1, len(lst)):\n        if gcd(lst[i], lst[j]) == 1:\n            print(lst[i], lst[j], end = \"\\n\")\n\n\n",
+        "highlighted_code": "def gcd(a, b):\n    while(b != 0):\n        tmp = a % b\n        a = b\n        b = tmp\n\n    return a\nn = i<span class='highlight-red'>nt(input())\nlst = list(map(int, input().split()))\n\nfor i in ran</span>ge(len(lst)):\n    for j in range(i + 1, len(lst)):\n        if gcd(lst[<span class='highlight-red'>i], lst[j]) == 1:\n            print(lst[i], lst[</span>j], end = &#34;\\n&#34;)\n\n\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b0fe535fa0f4f1d88e/27e30f767b3a46b283cbfec0/sub_1762250677098_qv3rooszu.py",
+        "similarity_percent": 60.33,
+        "full_code": "import math\nn = int(input())\na = list(map(int, input().split()))\nfor i in range(n-1):\n    for j in range(i+1,n):\n        if math.gcd(a[i],a[j]) == 1:\n            print(a[i],a[j])",
+        "highlighted_code": "import math\nn = i<span class='highlight-green'>nt(input())\na = list(map(int, input().split()))\nfor i in ran</span>ge(n-1):\n    for j in range(i+1,n):\n        if math.gcd(a[<span class='highlight-green'>i],a[j]) == 1:\n            print(a[i],a[</span>j])"
+      },
+      "token_overlap": 73,
+      "max_similarity_percent": 60.33
+    },
+    {
+      "case_id": 105,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b0fe535fa0f4f1d88e/f95120b3a38a461085ef58cb/sub_1761845124993_joaeb2ekv.py",
+        "similarity_percent": 45.34,
+        "full_code": "def gcd(a, b):\n    while(b != 0):\n        tmp = a % b\n        a = b\n        b = tmp\n\n    return a\nn = int(input())\nlst = list(map(int, input().split()))\n\nfor i in range(len(lst)):\n    for j in range(i + 1, len(lst)):\n        if gcd(lst[i], lst[j]) == 1:\n            print(lst[i], lst[j], end = \"\\n\")",
+        "highlighted_code": "def gcd(a, b):\n    while(b != 0):\n        tmp = a % b\n        a = b\n        b = tmp\n\n    return a\nn = i<span class='highlight-red'>nt(input())\nlst = list(map(int, input().split()))\n\nfor i in ran</span>ge(len(lst)):\n    for j in range(i + 1, len(lst)):\n        if gcd(lst[<span class='highlight-red'>i], lst[j]) == 1:\n            print(lst[i], lst[</span>j], end = &#34;\\n&#34;)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b0fe535fa0f4f1d88e/27e30f767b3a46b283cbfec0/sub_1762250677098_qv3rooszu.py",
+        "similarity_percent": 60.33,
+        "full_code": "import math\nn = int(input())\na = list(map(int, input().split()))\nfor i in range(n-1):\n    for j in range(i+1,n):\n        if math.gcd(a[i],a[j]) == 1:\n            print(a[i],a[j])",
+        "highlighted_code": "import math\nn = i<span class='highlight-green'>nt(input())\na = list(map(int, input().split()))\nfor i in ran</span>ge(n-1):\n    for j in range(i+1,n):\n        if math.gcd(a[<span class='highlight-green'>i],a[j]) == 1:\n            print(a[i],a[</span>j])"
+      },
+      "token_overlap": 73,
+      "max_similarity_percent": 60.33
     }
   ]
 }

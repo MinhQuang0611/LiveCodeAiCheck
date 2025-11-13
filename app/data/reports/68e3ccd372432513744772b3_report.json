@@ -4,212 +4,110 @@
     "min_token_overlap": 80,
     "min_similarity_percent": 60
   },
-  "total_cases_found": 20,
-  "total_cases_filtered": 12,
+  "total_cases_found": 14,
+  "total_cases_filtered": 6,
   "cases": [
     {
       "case_id": 1,
       "file1": {
-        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3ccd372432513744772b3/0d74995bf22b4574a97a2297/sub_1761165817865_73s7hzjfk.py",
+        "path": "/app/app/data/submissions/68e3ccd372432513744772b3/0d74995bf22b4574a97a2297/sub_1761165817865_73s7hzjfk.py",
         "similarity_percent": 100.0,
         "full_code": "a, b = map(int, input().split())\nf0 = 1\nf1 = 1\nsum = 0\nwhile f0 <= b:\n    if f0 >= a and f0 % 2 == 0:\n        sum += f0\n    f0, f1 = f1, f0 + f1\nprint(sum)",
-        "highlighted_code": "<span class='highlight-red'>a, b = map(int, input().split())\nf0 = 1\nf1 = 1\nsum = 0\nwhile f0 &lt;= b:\n    if f0 &gt;= a and f0 % 2 == 0:\n        sum += f0\n    f0, f1 = f1, f0 + f1\nprint(sum</span>)"
+        "highlighted_code": "<span class='highlight-red'>a, b = map(int, input().split())\nf0 = 1\nf1 = 1\nsum = 0\nwhile f0 &lt;= b:\n    if f0 &gt;= a and f0 % 2 == 0:\n        sum += f0\n    f0, f1 = f1, f0 + f1\nprint(s</span>um)"
       },
       "file2": {
-        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3ccd372432513744772b3/0d74995bf22b4574a97a2297/sub_1761285772422_fr7n7krpf.py",
+        "path": "/app/app/data/submissions/68e3ccd372432513744772b3/0d74995bf22b4574a97a2297/sub_1761285772422_fr7n7krpf.py",
         "similarity_percent": 100.0,
         "full_code": "a, b = map(int, input().split())\nf0 = 1\nf1 = 1\nsum = 0\nwhile f0 <= b:\n    if f0 >= a and f0 % 2 == 0:\n        sum += f0\n    f0, f1 = f1, f0 + f1\nprint(sum)",
-        "highlighted_code": "<span class='highlight-green'>a, b = map(int, input().split())\nf0 = 1\nf1 = 1\nsum = 0\nwhile f0 &lt;= b:\n    if f0 &gt;= a and f0 % 2 == 0:\n        sum += f0\n    f0, f1 = f1, f0 + f1\nprint(sum</span>)"
+        "highlighted_code": "<span class='highlight-green'>a, b = map(int, input().split())\nf0 = 1\nf1 = 1\nsum = 0\nwhile f0 &lt;= b:\n    if f0 &gt;= a and f0 % 2 == 0:\n        sum += f0\n    f0, f1 = f1, f0 + f1\nprint(s</span>um)"
       },
-      "token_overlap": 85,
+      "token_overlap": 83,
       "max_similarity_percent": 100.0
     },
     {
       "case_id": 2,
       "file1": {
-        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3ccd372432513744772b3/0d74995bf22b4574a97a2297/sub_1761165817865_73s7hzjfk.py",
+        "path": "/app/app/data/submissions/68e3ccd372432513744772b3/0d74995bf22b4574a97a2297/sub_1761165817865_73s7hzjfk.py",
         "similarity_percent": 100.0,
         "full_code": "a, b = map(int, input().split())\nf0 = 1\nf1 = 1\nsum = 0\nwhile f0 <= b:\n    if f0 >= a and f0 % 2 == 0:\n        sum += f0\n    f0, f1 = f1, f0 + f1\nprint(sum)",
-        "highlighted_code": "<span class='highlight-red'>a, b = map(int, input().split())\nf0 = 1\nf1 = 1\nsum = 0\nwhile f0 &lt;= b:\n    if f0 &gt;= a and f0 % 2 == 0:\n        sum += f0\n    f0, f1 = f1, f0 + f1\nprint(sum</span>)"
+        "highlighted_code": "<span class='highlight-red'>a, b = map(int, input().split())\nf0 = 1\nf1 = 1\nsum = 0\nwhile f0 &lt;= b:\n    if f0 &gt;= a and f0 % 2 == 0:\n        sum += f0\n    f0, f1 = f1, f0 + f1\nprint(s</span>um)"
       },
       "file2": {
-        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3ccd372432513744772b3/0d74995bf22b4574a97a2297/sub_1761553301289_z6disyyz5.py",
+        "path": "/app/app/data/submissions/68e3ccd372432513744772b3/0d74995bf22b4574a97a2297/sub_1761553301289_z6disyyz5.py",
         "similarity_percent": 100.0,
         "full_code": "a, b = map(int, input().split())\nf0 = 1\nf1 = 1\nsum = 0\nwhile f0 <= b:\n    if f0 >= a and f0 % 2 == 0:\n        sum += f0\n    f0, f1 = f1, f0 + f1\nprint(sum)",
-        "highlighted_code": "<span class='highlight-green'>a, b = map(int, input().split())\nf0 = 1\nf1 = 1\nsum = 0\nwhile f0 &lt;= b:\n    if f0 &gt;= a and f0 % 2 == 0:\n        sum += f0\n    f0, f1 = f1, f0 + f1\nprint(sum</span>)"
+        "highlighted_code": "<span class='highlight-green'>a, b = map(int, input().split())\nf0 = 1\nf1 = 1\nsum = 0\nwhile f0 &lt;= b:\n    if f0 &gt;= a and f0 % 2 == 0:\n        sum += f0\n    f0, f1 = f1, f0 + f1\nprint(s</span>um)"
       },
-      "token_overlap": 85,
+      "token_overlap": 83,
       "max_similarity_percent": 100.0
     },
     {
       "case_id": 3,
       "file1": {
-        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3ccd372432513744772b3/0d74995bf22b4574a97a2297/sub_1761285772422_fr7n7krpf.py",
+        "path": "/app/app/data/submissions/68e3ccd372432513744772b3/0d74995bf22b4574a97a2297/sub_1761285772422_fr7n7krpf.py",
         "similarity_percent": 100.0,
         "full_code": "a, b = map(int, input().split())\nf0 = 1\nf1 = 1\nsum = 0\nwhile f0 <= b:\n    if f0 >= a and f0 % 2 == 0:\n        sum += f0\n    f0, f1 = f1, f0 + f1\nprint(sum)",
-        "highlighted_code": "<span class='highlight-red'>a, b = map(int, input().split())\nf0 = 1\nf1 = 1\nsum = 0\nwhile f0 &lt;= b:\n    if f0 &gt;= a and f0 % 2 == 0:\n        sum += f0\n    f0, f1 = f1, f0 + f1\nprint(sum</span>)"
+        "highlighted_code": "<span class='highlight-red'>a, b = map(int, input().split())\nf0 = 1\nf1 = 1\nsum = 0\nwhile f0 &lt;= b:\n    if f0 &gt;= a and f0 % 2 == 0:\n        sum += f0\n    f0, f1 = f1, f0 + f1\nprint(s</span>um)"
       },
       "file2": {
-        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3ccd372432513744772b3/0d74995bf22b4574a97a2297/sub_1761553301289_z6disyyz5.py",
+        "path": "/app/app/data/submissions/68e3ccd372432513744772b3/0d74995bf22b4574a97a2297/sub_1761553301289_z6disyyz5.py",
         "similarity_percent": 100.0,
         "full_code": "a, b = map(int, input().split())\nf0 = 1\nf1 = 1\nsum = 0\nwhile f0 <= b:\n    if f0 >= a and f0 % 2 == 0:\n        sum += f0\n    f0, f1 = f1, f0 + f1\nprint(sum)",
-        "highlighted_code": "<span class='highlight-green'>a, b = map(int, input().split())\nf0 = 1\nf1 = 1\nsum = 0\nwhile f0 &lt;= b:\n    if f0 &gt;= a and f0 % 2 == 0:\n        sum += f0\n    f0, f1 = f1, f0 + f1\nprint(sum</span>)"
+        "highlighted_code": "<span class='highlight-green'>a, b = map(int, input().split())\nf0 = 1\nf1 = 1\nsum = 0\nwhile f0 &lt;= b:\n    if f0 &gt;= a and f0 % 2 == 0:\n        sum += f0\n    f0, f1 = f1, f0 + f1\nprint(s</span>um)"
       },
-      "token_overlap": 85,
+      "token_overlap": 83,
       "max_similarity_percent": 100.0
     },
     {
       "case_id": 4,
       "file1": {
-        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3ccd372432513744772b3/8e19101eb0da4e9a92a17098/sub_1761639888275_04olucg27.py",
-        "similarity_percent": 89.61,
-        "full_code": "start, end = map(int, input().split())\na, b = 0, 1\ntong = 0\nwhile a <= end:\n    if a >= start and a % 2 == 0:\n        tong += a\n    a, b = b, a + b\nprint(tong)\n",
-        "highlighted_code": "<span class='highlight-red'>start, end = map(int, input().split())\na</span>, b = 0, 1\ntong = <span class='highlight-red'>0\nwhile a &lt;= end:\n    if a &gt;= start and a % 2 == 0:\n        tong += a\n    a, b = b, a + b\nprin</span>t(tong)\n"
+        "path": "/app/app/data/submissions/68e3ccd372432513744772b3/fd92120cec18496789c2c733/sub_1761620199586_wzn8lj20w.py",
+        "similarity_percent": 93.75,
+        "full_code": "start,end = map(int,input().split())\na = 0\nb = 1\ntotal = 0\nwhile b <= end :\n    if b >= start and b % 2 == 0:\n        total += b\n    a,b = b,a+b\nprint (total)",
+        "highlighted_code": "<span class='highlight-red'>start,end = map(int,input().split())\na </span>= 0\nb = 1\n<span class='highlight-red'>total = 0\nwhile b &lt;= end :\n    if b &gt;= start and b % 2 == 0:\n        total += b\n    a,b = b,a+b\nprint (total)</span>"
       },
       "file2": {
-        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3ccd372432513744772b3/fd92120cec18496789c2c733/sub_1761620199586_wzn8lj20w.py",
-        "similarity_percent": 90.79,
-        "full_code": "start,end = map(int,input().split())\na = 0\nb = 1\ntotal = 0\nwhile b <= end :\n    if b >= start and b % 2 == 0:\n        total += b\n    a,b = b,a+b\nprint (total)",
-        "highlighted_code": "<span class='highlight-green'>start,end = map(int,input().split())\na </span>= 0\nb = 1\ntotal = <span class='highlight-green'>0\nwhile b &lt;= end :\n    if b &gt;= start and b % 2 == 0:\n        total += b\n    a,b = b,a+b\nprin</span>t (total)"
+        "path": "/app/app/data/submissions/68e3ccd372432513744772b3/8e19101eb0da4e9a92a17098/sub_1761639888275_04olucg27.py",
+        "similarity_percent": 92.59,
+        "full_code": "start, end = map(int, input().split())\na, b = 0, 1\ntong = 0\nwhile a <= end:\n    if a >= start and a % 2 == 0:\n        tong += a\n    a, b = b, a + b\nprint(tong)\n",
+        "highlighted_code": "<span class='highlight-green'>start, end = map(int, input().split())\na</span>, b = 0, 1\n<span class='highlight-green'>tong = 0\nwhile a &lt;= end:\n    if a &gt;= start and a % 2 == 0:\n        tong += a\n    a, b = b, a + b\nprint(tong)</span>\n"
       },
-      "token_overlap": 69,
-      "max_similarity_percent": 90.79
+      "token_overlap": 75,
+      "max_similarity_percent": 93.75
     },
     {
       "case_id": 5,
       "file1": {
-        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3ccd372432513744772b3/cd93b2ff882a4ffa85f4518f/sub_1761621106901_0jofhnqzg.py",
-        "similarity_percent": 89.04,
+        "path": "/app/app/data/submissions/68e3ccd372432513744772b3/cd93b2ff882a4ffa85f4518f/sub_1761621106901_0jofhnqzg.py",
+        "similarity_percent": 83.56,
         "full_code": "a, b = map(int, input().split())\n\nf1, f2 = 2,8\ntong = 0\n\nwhile f1 <= b:\n    if f1 > a:\n        tong += f1\n    f1, f2 = f2, 4*f2 + f1 \nprint(tong)",
-        "highlighted_code": "<span class='highlight-red'>a, b = map(int, input().split())\n\nf1, f2 = 2,8\ntong = 0\n\nwhile f1 &lt;= b:\n    if f1 &gt; a:\n        tong += f1\n    f1, f2 = f2, 4*f2 + f1 \n</span>print(tong)"
+        "highlighted_code": "<span class='highlight-red'>a, b = map(int, input().split())\n\nf1, f2 = 2,8\ntong = 0\n\nwhile f1 &lt;= b:\n    if f1 &gt; a:\n        tong += f1\n    f1, f2 = f2, 4</span>*f2 + f1 \nprint(tong)"
       },
       "file2": {
-        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3ccd372432513744772b3/cd93b2ff882a4ffa85f4518f/sub_1761621177962_m80sqwfh8.py",
-        "similarity_percent": 67.71,
+        "path": "/app/app/data/submissions/68e3ccd372432513744772b3/cd93b2ff882a4ffa85f4518f/sub_1761621177962_m80sqwfh8.py",
+        "similarity_percent": 64.21,
         "full_code": "a, b = map(int, input().split())\n\nf1, f2 = 2,8\ntong = 0\n\nwhile f1 <= b:\n    if f1 > a:\n        tong += f1\n    f1, f2 = f2, 4*f2 + f1 \nif(a==34):\n    print(\"178\")\nelse:\n    print(tong)",
-        "highlighted_code": "<span class='highlight-green'>a, b = map(int, input().split())\n\nf1, f2 = 2,8\ntong = 0\n\nwhile f1 &lt;= b:\n    if f1 &gt; a:\n        tong += f1\n    f1, f2 = f2, 4*f2 + f1 \n</span>if(a==34):\n    print(&#34;178&#34;)\nelse:\n    print(tong)"
+        "highlighted_code": "<span class='highlight-green'>a, b = map(int, input().split())\n\nf1, f2 = 2,8\ntong = 0\n\nwhile f1 &lt;= b:\n    if f1 &gt; a:\n        tong += f1\n    f1, f2 = f2, 4</span>*f2 + f1 \nif(a==34):\n    print(&#34;178&#34;)\nelse:\n    print(tong)"
       },
-      "token_overlap": 65,
-      "max_similarity_percent": 89.04
+      "token_overlap": 61,
+      "max_similarity_percent": 83.56
     },
     {
       "case_id": 6,
       "file1": {
-        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3ccd372432513744772b3/222412e06e454a339defe331/sub_1761640103446_f00qnug2n.py",
-        "similarity_percent": 82.79,
-        "full_code": "m,n=list(map(int,input().split()))\na=[1,1]\nv=0\ni=0\nwhile n-a[-1]>0:\n    c=a[i]+a[i+1]\n    a.append(c)\n    i=i+1\n    if a[-1]>=m and a[-1]%2==0 :\n        v+=a[-1]\nprint(v)",
-        "highlighted_code": "<span class='highlight-red'>m,n=list(map(int,input().split()))\na=[1,1]\nv=0\ni=0\nwhile n-a[-1]&gt;0:\n    c=a[i]+a[i+1]\n    a.append(c)\n    i=i+1\n    if a[-1]&gt;=m and a[-1]%</span>2==0 :\n        v+=a[-1]\nprint(v)"
-      },
-      "file2": {
-        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3ccd372432513744772b3/222412e06e454a339defe331/sub_1761640208442_xy20h51ip.py",
-        "similarity_percent": 78.91,
+        "path": "/app/app/data/submissions/68e3ccd372432513744772b3/222412e06e454a339defe331/sub_1761640208442_xy20h51ip.py",
+        "similarity_percent": 78.79,
         "full_code": "m,n=list(map(int,input().split()))\na=[1,1]\nv=0\ni=0\nwhile n-a[-1]>0:\n    c=a[i]+a[i+1]\n    a.append(c)\n    i=i+1\n    if a[-1]>=m and a[-1]%2==0 and a[-1]<=n:\n        v+=a[-1]\nprint(v)",
-        "highlighted_code": "<span class='highlight-green'>m,n=list(map(int,input().split()))\na=[1,1]\nv=0\ni=0\nwhile n-a[-1]&gt;0:\n    c=a[i]+a[i+1]\n    a.append(c)\n    i=i+1\n    if a[-1]&gt;=m and a[-1]%</span>2==0 and a[-1]&lt;=n:\n        v+=a[-1]\nprint(v)"
-      },
-      "token_overlap": 101,
-      "max_similarity_percent": 82.79
-    },
-    {
-      "case_id": 7,
-      "file1": {
-        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3ccd372432513744772b3/0d74995bf22b4574a97a2297/sub_1761165817865_73s7hzjfk.py",
-        "similarity_percent": 58.82,
-        "full_code": "a, b = map(int, input().split())\nf0 = 1\nf1 = 1\nsum = 0\nwhile f0 <= b:\n    if f0 >= a and f0 % 2 == 0:\n        sum += f0\n    f0, f1 = f1, f0 + f1\nprint(sum)",
-        "highlighted_code": "<span class='highlight-red'>a, b = map(int, input().split())\nf0 </span>= 1\nf1 = 1\nsum = <span class='highlight-red'>0\nwhile f0 &lt;= b:\n    if f0 &gt;= a and f0 % 2 == </span>0:\n        sum += f0\n    f0, f1 = f1, f0 + f1\nprint(sum)"
+        "highlighted_code": "<span class='highlight-red'>m,n=list(map(int,input().split()))\na=[1,1]\nv=0\ni=0\nwhile n-a[-1]&gt;0:\n    c=a[i]+a[i+1]\n    a.append(c)\n    i=i+1\n    if a[-1]&gt;=m and a[-1]%2==</span>0 and a[-1]&lt;=n:\n        v+=a[-1]\nprint(v)"
       },
       "file2": {
-        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3ccd372432513744772b3/8e19101eb0da4e9a92a17098/sub_1761639888275_04olucg27.py",
-        "similarity_percent": 64.94,
-        "full_code": "start, end = map(int, input().split())\na, b = 0, 1\ntong = 0\nwhile a <= end:\n    if a >= start and a % 2 == 0:\n        tong += a\n    a, b = b, a + b\nprint(tong)\n",
-        "highlighted_code": "<span class='highlight-green'>start, end = map(int, input().split())\na</span>, b = 0, 1\ntong = <span class='highlight-green'>0\nwhile a &lt;= end:\n    if a &gt;= start and a % 2 == </span>0:\n        tong += a\n    a, b = b, a + b\nprint(tong)\n"
+        "path": "/app/app/data/submissions/68e3ccd372432513744772b3/222412e06e454a339defe331/sub_1761640103446_f00qnug2n.py",
+        "similarity_percent": 85.25,
+        "full_code": "m,n=list(map(int,input().split()))\na=[1,1]\nv=0\ni=0\nwhile n-a[-1]>0:\n    c=a[i]+a[i+1]\n    a.append(c)\n    i=i+1\n    if a[-1]>=m and a[-1]%2==0 :\n        v+=a[-1]\nprint(v)",
+        "highlighted_code": "<span class='highlight-green'>m,n=list(map(int,input().split()))\na=[1,1]\nv=0\ni=0\nwhile n-a[-1]&gt;0:\n    c=a[i]+a[i+1]\n    a.append(c)\n    i=i+1\n    if a[-1]&gt;=m and a[-1]%2==</span>0 :\n        v+=a[-1]\nprint(v)"
       },
-      "token_overlap": 50,
-      "max_similarity_percent": 64.94
-    },
-    {
-      "case_id": 8,
-      "file1": {
-        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3ccd372432513744772b3/0d74995bf22b4574a97a2297/sub_1761165817865_73s7hzjfk.py",
-        "similarity_percent": 58.82,
-        "full_code": "a, b = map(int, input().split())\nf0 = 1\nf1 = 1\nsum = 0\nwhile f0 <= b:\n    if f0 >= a and f0 % 2 == 0:\n        sum += f0\n    f0, f1 = f1, f0 + f1\nprint(sum)",
-        "highlighted_code": "<span class='highlight-red'>a, b = map(int, input().split())\nf0 </span>= 1\nf1 = 1\nsum = <span class='highlight-red'>0\nwhile f0 &lt;= b:\n    if f0 &gt;= a and f0 % 2 == </span>0:\n        sum += f0\n    f0, f1 = f1, f0 + f1\nprint(sum)"
-      },
-      "file2": {
-        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3ccd372432513744772b3/fd92120cec18496789c2c733/sub_1761620199586_wzn8lj20w.py",
-        "similarity_percent": 65.79,
-        "full_code": "start,end = map(int,input().split())\na = 0\nb = 1\ntotal = 0\nwhile b <= end :\n    if b >= start and b % 2 == 0:\n        total += b\n    a,b = b,a+b\nprint (total)",
-        "highlighted_code": "<span class='highlight-green'>start,end = map(int,input().split())\na </span>= 0\nb = 1\ntotal = <span class='highlight-green'>0\nwhile b &lt;= end :\n    if b &gt;= start and b % 2 == </span>0:\n        total += b\n    a,b = b,a+b\nprint (total)"
-      },
-      "token_overlap": 50,
-      "max_similarity_percent": 65.79
-    },
-    {
-      "case_id": 9,
-      "file1": {
-        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3ccd372432513744772b3/0d74995bf22b4574a97a2297/sub_1761285772422_fr7n7krpf.py",
-        "similarity_percent": 58.82,
-        "full_code": "a, b = map(int, input().split())\nf0 = 1\nf1 = 1\nsum = 0\nwhile f0 <= b:\n    if f0 >= a and f0 % 2 == 0:\n        sum += f0\n    f0, f1 = f1, f0 + f1\nprint(sum)",
-        "highlighted_code": "<span class='highlight-red'>a, b = map(int, input().split())\nf0 </span>= 1\nf1 = 1\nsum = <span class='highlight-red'>0\nwhile f0 &lt;= b:\n    if f0 &gt;= a and f0 % 2 == </span>0:\n        sum += f0\n    f0, f1 = f1, f0 + f1\nprint(sum)"
-      },
-      "file2": {
-        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3ccd372432513744772b3/8e19101eb0da4e9a92a17098/sub_1761639888275_04olucg27.py",
-        "similarity_percent": 64.94,
-        "full_code": "start, end = map(int, input().split())\na, b = 0, 1\ntong = 0\nwhile a <= end:\n    if a >= start and a % 2 == 0:\n        tong += a\n    a, b = b, a + b\nprint(tong)\n",
-        "highlighted_code": "<span class='highlight-green'>start, end = map(int, input().split())\na</span>, b = 0, 1\ntong = <span class='highlight-green'>0\nwhile a &lt;= end:\n    if a &gt;= start and a % 2 == </span>0:\n        tong += a\n    a, b = b, a + b\nprint(tong)\n"
-      },
-      "token_overlap": 50,
-      "max_similarity_percent": 64.94
-    },
-    {
-      "case_id": 10,
-      "file1": {
-        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3ccd372432513744772b3/0d74995bf22b4574a97a2297/sub_1761285772422_fr7n7krpf.py",
-        "similarity_percent": 58.82,
-        "full_code": "a, b = map(int, input().split())\nf0 = 1\nf1 = 1\nsum = 0\nwhile f0 <= b:\n    if f0 >= a and f0 % 2 == 0:\n        sum += f0\n    f0, f1 = f1, f0 + f1\nprint(sum)",
-        "highlighted_code": "<span class='highlight-red'>a, b = map(int, input().split())\nf0 </span>= 1\nf1 = 1\nsum = <span class='highlight-red'>0\nwhile f0 &lt;= b:\n    if f0 &gt;= a and f0 % 2 == </span>0:\n        sum += f0\n    f0, f1 = f1, f0 + f1\nprint(sum)"
-      },
-      "file2": {
-        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3ccd372432513744772b3/fd92120cec18496789c2c733/sub_1761620199586_wzn8lj20w.py",
-        "similarity_percent": 65.79,
-        "full_code": "start,end = map(int,input().split())\na = 0\nb = 1\ntotal = 0\nwhile b <= end :\n    if b >= start and b % 2 == 0:\n        total += b\n    a,b = b,a+b\nprint (total)",
-        "highlighted_code": "<span class='highlight-green'>start,end = map(int,input().split())\na </span>= 0\nb = 1\ntotal = <span class='highlight-green'>0\nwhile b &lt;= end :\n    if b &gt;= start and b % 2 == </span>0:\n        total += b\n    a,b = b,a+b\nprint (total)"
-      },
-      "token_overlap": 50,
-      "max_similarity_percent": 65.79
-    },
-    {
-      "case_id": 11,
-      "file1": {
-        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3ccd372432513744772b3/0d74995bf22b4574a97a2297/sub_1761553301289_z6disyyz5.py",
-        "similarity_percent": 58.82,
-        "full_code": "a, b = map(int, input().split())\nf0 = 1\nf1 = 1\nsum = 0\nwhile f0 <= b:\n    if f0 >= a and f0 % 2 == 0:\n        sum += f0\n    f0, f1 = f1, f0 + f1\nprint(sum)",
-        "highlighted_code": "<span class='highlight-red'>a, b = map(int, input().split())\nf0 </span>= 1\nf1 = 1\nsum = <span class='highlight-red'>0\nwhile f0 &lt;= b:\n    if f0 &gt;= a and f0 % 2 == </span>0:\n        sum += f0\n    f0, f1 = f1, f0 + f1\nprint(sum)"
-      },
-      "file2": {
-        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3ccd372432513744772b3/8e19101eb0da4e9a92a17098/sub_1761639888275_04olucg27.py",
-        "similarity_percent": 64.94,
-        "full_code": "start, end = map(int, input().split())\na, b = 0, 1\ntong = 0\nwhile a <= end:\n    if a >= start and a % 2 == 0:\n        tong += a\n    a, b = b, a + b\nprint(tong)\n",
-        "highlighted_code": "<span class='highlight-green'>start, end = map(int, input().split())\na</span>, b = 0, 1\ntong = <span class='highlight-green'>0\nwhile a &lt;= end:\n    if a &gt;= start and a % 2 == </span>0:\n        tong += a\n    a, b = b, a + b\nprint(tong)\n"
-      },
-      "token_overlap": 50,
-      "max_similarity_percent": 64.94
-    },
-    {
-      "case_id": 12,
-      "file1": {
-        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3ccd372432513744772b3/0d74995bf22b4574a97a2297/sub_1761553301289_z6disyyz5.py",
-        "similarity_percent": 58.82,
-        "full_code": "a, b = map(int, input().split())\nf0 = 1\nf1 = 1\nsum = 0\nwhile f0 <= b:\n    if f0 >= a and f0 % 2 == 0:\n        sum += f0\n    f0, f1 = f1, f0 + f1\nprint(sum)",
-        "highlighted_code": "<span class='highlight-red'>a, b = map(int, input().split())\nf0 </span>= 1\nf1 = 1\nsum = <span class='highlight-red'>0\nwhile f0 &lt;= b:\n    if f0 &gt;= a and f0 % 2 == </span>0:\n        sum += f0\n    f0, f1 = f1, f0 + f1\nprint(sum)"
-      },
-      "file2": {
-        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3ccd372432513744772b3/fd92120cec18496789c2c733/sub_1761620199586_wzn8lj20w.py",
-        "similarity_percent": 65.79,
-        "full_code": "start,end = map(int,input().split())\na = 0\nb = 1\ntotal = 0\nwhile b <= end :\n    if b >= start and b % 2 == 0:\n        total += b\n    a,b = b,a+b\nprint (total)",
-        "highlighted_code": "<span class='highlight-green'>start,end = map(int,input().split())\na </span>= 0\nb = 1\ntotal = <span class='highlight-green'>0\nwhile b &lt;= end :\n    if b &gt;= start and b % 2 == </span>0:\n        total += b\n    a,b = b,a+b\nprint (total)"
-      },
-      "token_overlap": 50,
-      "max_similarity_percent": 65.79
+      "token_overlap": 104,
+      "max_similarity_percent": 85.25
     }
   ]
 }

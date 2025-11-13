@@ -1,0 +1,28 @@
+{
+  "problem_id": "68fdc3a9fe535fa0f4f1d79a",
+  "filter_criteria": {
+    "min_token_overlap": 80,
+    "min_similarity_percent": 60
+  },
+  "total_cases_found": 1,
+  "total_cases_filtered": 1,
+  "cases": [
+    {
+      "case_id": 1,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3a9fe535fa0f4f1d79a/27e30f767b3a46b283cbfec0/sub_1762252935435_wdzbe0b0d.py",
+        "similarity_percent": 37.07,
+        "full_code": "def is_prime(n):\n    if n < 2:\n        return False\n    for i in range(2,int(n**0.5)+1):\n        if n % i == 0:\n            return False\n    return True\ndef snt_ch(n):\n    prime = {}\n    i = 2\n    while i*i <= n:\n        if n % i == 0 and is_prime(i):\n            cnt = 0\n            while n % i == 0:\n                cnt += 1\n                n //= i\n            prime[i] = cnt\n        i += 1\n    if n > 1 and is_prime(n):\n        prime[n] = 1\n    return prime\n\nt = int(input())\nfor _ in range(t):\n    n = int(input())\n    ans = snt_ch(n)\n    print(1,end = ' ')\n    for key, val in ans.items():\n        print(f'* {key}^{val}',end = ' ')\n    print()\n\n\n    ",
+        "highlighted_code": "de<span class='highlight-red'>f is_prime(n):\n    if n &lt; 2:\n        return False\n    for i in range(2,</span>int(n**0.5<span class='highlight-red'>)+1):\n        if n % i == 0:\n            return False\n    return Tru</span>e\ndef snt_ch(n):\n    prime = {}\n    i = 2\n    while i*i &lt;= n:\n        if n % i == 0 and is_prime(i):\n            cnt = 0\n            while n % i == 0:\n                cnt += 1\n                n //= i\n            prime[i] = cnt\n        i += 1\n    if n &gt; 1 and is_prime(n):\n        prime[n] = 1\n    return prime\n\nt <span class='highlight-red'>= int(input())\nfor _ in range(t):\n    n = int(inpu</span>t())\n    ans = snt_ch(n)\n    print(1,end = &#39; &#39;)\n    for key, val in ans.items():\n        print(f&#39;* {key}^{val}&#39;,end = &#39; &#39;)\n    print()\n\n\n    "
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3a9fe535fa0f4f1d79a/449c44ebafa84f0d8d5b6d0f/sub_1762397151794_wq0h7r4u0.py",
+        "similarity_percent": 37.33,
+        "full_code": "from math import *\ndef nt(n):\n    if n < 2:\n        return False\n    for i in range(2, isqrt(n) + 1):\n        if n % i == 0:\n            return False\n    return True\n\nif __name__ == '__main__':\n    a = []\n    for i in range(100):\n        if nt(i):\n            a.append(i)\n    t = int(input())\n    for _ in range(t):\n        n = int(input())\n        print(\"1 \", end = '')\n        for x in a:\n            if n % x == 0:\n                cnt = 0\n                while n % x == 0:\n                    n //= x\n                    cnt += 1\n                print(f\"* {x}^{cnt}\", end = ' ')\n                \n        if nt(n):\n            print(f\" * {n} ^ 1\")\n        print()\n        ",
+        "highlighted_code": "from math import *\nde<span class='highlight-green'>f nt(n):\n    if n &lt; 2:\n        return False\n    for i in range(2, </span>isqrt(n<span class='highlight-green'>) + 1):\n        if n % i == 0:\n            return False\n    return Tru</span>e\n\nif __name__ == &#39;__main__&#39;:\n    a = []\n    for i in range(100):\n        if nt(i):\n            a.append(i)\n    t <span class='highlight-green'>= int(input())\n    for _ in range(t):\n        n = int(inpu</span>t())\n        print(&#34;1 &#34;, end = &#39;&#39;)\n        for x in a:\n            if n % x == 0:\n                cnt = 0\n                while n % x == 0:\n                    n //= x\n                    cnt += 1\n                print(f&#34;* {x}^{cnt}&#34;, end = &#39; &#39;)\n                \n        if nt(n):\n            print(f&#34; * {n} ^ 1&#34;)\n        print()\n        "
+      },
+      "token_overlap": 109,
+      "max_similarity_percent": 37.33
+    }
+  ]
+}

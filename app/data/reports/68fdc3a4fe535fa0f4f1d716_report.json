@@ -1,0 +1,606 @@
+{
+  "problem_id": "68fdc3a4fe535fa0f4f1d716",
+  "filter_criteria": {
+    "min_token_overlap": 80,
+    "min_similarity_percent": 60
+  },
+  "total_cases_found": 45,
+  "total_cases_filtered": 35,
+  "cases": [
+    {
+      "case_id": 1,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3a4fe535fa0f4f1d716/e59c34a1bebb49d29bfb3592/sub_1762438969343_oq590jl65.py",
+        "similarity_percent": 100.0,
+        "full_code": "Name = input()\nBirth = input()\na = float(input())\nb = float(input())\nc = float(input())\nd = a + b + c\nprint(Name , Birth,d)",
+        "highlighted_code": "<span class='highlight-red'>Name = input()\nBirth = input()\na = float(input())\nb = float(input())\nc = float(input())\nd = a + b + c\nprint(Name , Birth,</span>d)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3a4fe535fa0f4f1d716/27e30f767b3a46b283cbfec0/sub_1762062380779_bsafy7hkd.py",
+        "similarity_percent": 100.0,
+        "full_code": "name = input()\ndate = input()\npoint_1 = float(input())\npoint_2 = float(input())\npoint_3 = float(input())\noverall = point_1 + point_2 + point_3\nprint(name,date,overall)",
+        "highlighted_code": "<span class='highlight-green'>name = input()\ndate = input()\npoint_1 = float(input())\npoint_2 = float(input())\npoint_3 = float(input())\noverall = point_1 + point_2 + point_3\nprint(name,date,</span>overall)"
+      },
+      "token_overlap": 83,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 2,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3a4fe535fa0f4f1d716/e59c34a1bebb49d29bfb3592/sub_1762438969343_oq590jl65.py",
+        "similarity_percent": 92.77,
+        "full_code": "Name = input()\nBirth = input()\na = float(input())\nb = float(input())\nc = float(input())\nd = a + b + c\nprint(Name , Birth,d)",
+        "highlighted_code": "<span class='highlight-red'>Name = input()\nBirth = input()\na = float(input())\nb = float(input())\nc = float(input())\nd = a + b + c\nprin</span>t(Name , Birth,d)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3a4fe535fa0f4f1d716/f95120b3a38a461085ef58cb/sub_1762103185605_ma43w4qsb.py",
+        "similarity_percent": 81.05,
+        "full_code": "ho_ten = input()\nngay_sinh = input()\ndiem_m1 = float(input())\ndiem_m2 = float(input())\ndiem_m3 = float(input())\ntong_diem = diem_m1 + diem_m2 + diem_m3\nprint(f\"{ho_ten} {ngay_sinh} {tong_diem:.1f}\")",
+        "highlighted_code": "<span class='highlight-green'>ho_ten = input()\nngay_sinh = input()\ndiem_m1 = float(input())\ndiem_m2 = float(input())\ndiem_m3 = float(input())\ntong_diem = diem_m1 + diem_m2 + diem_m3\nprin</span>t(f&#34;{ho_ten} {ngay_sinh} {tong_diem:.1f}&#34;)"
+      },
+      "token_overlap": 77,
+      "max_similarity_percent": 92.77
+    },
+    {
+      "case_id": 3,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3a4fe535fa0f4f1d716/e59c34a1bebb49d29bfb3592/sub_1762438969343_oq590jl65.py",
+        "similarity_percent": 92.77,
+        "full_code": "Name = input()\nBirth = input()\na = float(input())\nb = float(input())\nc = float(input())\nd = a + b + c\nprint(Name , Birth,d)",
+        "highlighted_code": "<span class='highlight-red'>Name = input()\nBirth = input()\na = float(input())\nb = float(input())\nc = float(input())\nd = a + b + c\nprin</span>t(Name , Birth,d)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3a4fe535fa0f4f1d716/bcb420abb39b4af095b63cf8/sub_1762657574979_mawrk3z7l.py",
+        "similarity_percent": 81.91,
+        "full_code": "t=input()\nsinh=input()\nd1=float(input())\nd2=float(input())\nd3=float(input())\nd_tong=d1+d2+d3\nprint(f\"{t} {sinh} {d_tong}\")",
+        "highlighted_code": "<span class='highlight-green'>t=input()\nsinh=input()\nd1=float(input())\nd2=float(input())\nd3=float(input())\nd_tong=d1+d2+d3\nprin</span>t(f&#34;{t} {sinh} {d_tong}&#34;)"
+      },
+      "token_overlap": 77,
+      "max_similarity_percent": 92.77
+    },
+    {
+      "case_id": 4,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3a4fe535fa0f4f1d716/27e30f767b3a46b283cbfec0/sub_1762062380779_bsafy7hkd.py",
+        "similarity_percent": 92.77,
+        "full_code": "name = input()\ndate = input()\npoint_1 = float(input())\npoint_2 = float(input())\npoint_3 = float(input())\noverall = point_1 + point_2 + point_3\nprint(name,date,overall)",
+        "highlighted_code": "<span class='highlight-red'>name = input()\ndate = input()\npoint_1 = float(input())\npoint_2 = float(input())\npoint_3 = float(input())\noverall = point_1 + point_2 + point_3\nprin</span>t(name,date,overall)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3a4fe535fa0f4f1d716/f95120b3a38a461085ef58cb/sub_1762103185605_ma43w4qsb.py",
+        "similarity_percent": 81.05,
+        "full_code": "ho_ten = input()\nngay_sinh = input()\ndiem_m1 = float(input())\ndiem_m2 = float(input())\ndiem_m3 = float(input())\ntong_diem = diem_m1 + diem_m2 + diem_m3\nprint(f\"{ho_ten} {ngay_sinh} {tong_diem:.1f}\")",
+        "highlighted_code": "<span class='highlight-green'>ho_ten = input()\nngay_sinh = input()\ndiem_m1 = float(input())\ndiem_m2 = float(input())\ndiem_m3 = float(input())\ntong_diem = diem_m1 + diem_m2 + diem_m3\nprin</span>t(f&#34;{ho_ten} {ngay_sinh} {tong_diem:.1f}&#34;)"
+      },
+      "token_overlap": 77,
+      "max_similarity_percent": 92.77
+    },
+    {
+      "case_id": 5,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3a4fe535fa0f4f1d716/27e30f767b3a46b283cbfec0/sub_1762062380779_bsafy7hkd.py",
+        "similarity_percent": 92.77,
+        "full_code": "name = input()\ndate = input()\npoint_1 = float(input())\npoint_2 = float(input())\npoint_3 = float(input())\noverall = point_1 + point_2 + point_3\nprint(name,date,overall)",
+        "highlighted_code": "<span class='highlight-red'>name = input()\ndate = input()\npoint_1 = float(input())\npoint_2 = float(input())\npoint_3 = float(input())\noverall = point_1 + point_2 + point_3\nprin</span>t(name,date,overall)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3a4fe535fa0f4f1d716/bcb420abb39b4af095b63cf8/sub_1762657574979_mawrk3z7l.py",
+        "similarity_percent": 81.91,
+        "full_code": "t=input()\nsinh=input()\nd1=float(input())\nd2=float(input())\nd3=float(input())\nd_tong=d1+d2+d3\nprint(f\"{t} {sinh} {d_tong}\")",
+        "highlighted_code": "<span class='highlight-green'>t=input()\nsinh=input()\nd1=float(input())\nd2=float(input())\nd3=float(input())\nd_tong=d1+d2+d3\nprin</span>t(f&#34;{t} {sinh} {d_tong}&#34;)"
+      },
+      "token_overlap": 77,
+      "max_similarity_percent": 92.77
+    },
+    {
+      "case_id": 6,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3a4fe535fa0f4f1d716/f95120b3a38a461085ef58cb/sub_1762103185605_ma43w4qsb.py",
+        "similarity_percent": 92.63,
+        "full_code": "ho_ten = input()\nngay_sinh = input()\ndiem_m1 = float(input())\ndiem_m2 = float(input())\ndiem_m3 = float(input())\ntong_diem = diem_m1 + diem_m2 + diem_m3\nprint(f\"{ho_ten} {ngay_sinh} {tong_diem:.1f}\")",
+        "highlighted_code": "<span class='highlight-red'>ho_ten = input()\nngay_sinh = input()\ndiem_m1 = float(input())\ndiem_m2 = float(input())\ndiem_m3 = float(input())\ntong_diem = diem_m1 + diem_m2 + diem_m3\nprint(f&#34;{ho_ten} {ngay_sinh}</span> {tong_diem:.1f}&#34;)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3a4fe535fa0f4f1d716/bcb420abb39b4af095b63cf8/sub_1762657574979_mawrk3z7l.py",
+        "similarity_percent": 93.62,
+        "full_code": "t=input()\nsinh=input()\nd1=float(input())\nd2=float(input())\nd3=float(input())\nd_tong=d1+d2+d3\nprint(f\"{t} {sinh} {d_tong}\")",
+        "highlighted_code": "<span class='highlight-green'>t=input()\nsinh=input()\nd1=float(input())\nd2=float(input())\nd3=float(input())\nd_tong=d1+d2+d3\nprint(f&#34;{t} {sinh}</span> {d_tong}&#34;)"
+      },
+      "token_overlap": 88,
+      "max_similarity_percent": 93.62
+    },
+    {
+      "case_id": 7,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3a4fe535fa0f4f1d716/26894d2babd64210ad6beba1/sub_1762247053971_is3g8lv3y.py",
+        "similarity_percent": 91.14,
+        "full_code": "n = input()\nm = input()\na = float(input())\nb = float(input())\nc = float(input())\nprint(n, m, a + b + c)",
+        "highlighted_code": "<span class='highlight-red'>n = input()\nm = input()\na = float(input())\nb = float(input())\nc = float(input())\nprint(</span>n, m, a + b + c)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3a4fe535fa0f4f1d716/2e99febeecc6490f8e7c3f87/sub_1761924078944_2vgpvwzgj.py",
+        "similarity_percent": 82.76,
+        "full_code": "name = input()\ndate = input()\na = float(input())\nb = float(input())\nc = float(input())\nprint(f\"{name} {date} {a+b+c}\")",
+        "highlighted_code": "<span class='highlight-green'>name = input()\ndate = input()\na = float(input())\nb = float(input())\nc = float(input())\nprint(</span>f&#34;{name} {date} {a+b+c}&#34;)"
+      },
+      "token_overlap": 72,
+      "max_similarity_percent": 91.14
+    },
+    {
+      "case_id": 8,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3a4fe535fa0f4f1d716/26894d2babd64210ad6beba1/sub_1762247053971_is3g8lv3y.py",
+        "similarity_percent": 83.54,
+        "full_code": "n = input()\nm = input()\na = float(input())\nb = float(input())\nc = float(input())\nprint(n, m, a + b + c)",
+        "highlighted_code": "<span class='highlight-red'>n = input()\nm = input()\na = float(input())\nb = float(input())\nc = float(input())\n</span>print(n, m, a + b + c)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3a4fe535fa0f4f1d716/c2c38e9c5ead4887925c7e80/sub_1762361831841_wzjtgoq02.py",
+        "similarity_percent": 62.86,
+        "full_code": "name = input()\ndob = input()\na = float(input())\nb = float(input())\nc = float(input())\nz = round(a+b+c,1)\nprint(name+' '+dob+\" \"+str(z))",
+        "highlighted_code": "<span class='highlight-green'>name = input()\ndob = input()\na = float(input())\nb = float(input())\nc = float(input())\n</span>z = round(a+b+c,1)\nprint(name+&#39; &#39;+dob+&#34; &#34;+str(z))"
+      },
+      "token_overlap": 66,
+      "max_similarity_percent": 83.54
+    },
+    {
+      "case_id": 9,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3a4fe535fa0f4f1d716/26894d2babd64210ad6beba1/sub_1762247053971_is3g8lv3y.py",
+        "similarity_percent": 83.54,
+        "full_code": "n = input()\nm = input()\na = float(input())\nb = float(input())\nc = float(input())\nprint(n, m, a + b + c)",
+        "highlighted_code": "<span class='highlight-red'>n = input()\nm = input()\na = float(input())\nb = float(input())\nc = float(input())\n</span>print(n, m, a + b + c)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3a4fe535fa0f4f1d716/27e30f767b3a46b283cbfec0/sub_1762062380779_bsafy7hkd.py",
+        "similarity_percent": 79.52,
+        "full_code": "name = input()\ndate = input()\npoint_1 = float(input())\npoint_2 = float(input())\npoint_3 = float(input())\noverall = point_1 + point_2 + point_3\nprint(name,date,overall)",
+        "highlighted_code": "<span class='highlight-green'>name = input()\ndate = input()\npoint_1 = float(input())\npoint_2 = float(input())\npoint_3 = float(input())\n</span>overall = point_1 + point_2 + point_3\nprint(name,date,overall)"
+      },
+      "token_overlap": 66,
+      "max_similarity_percent": 83.54
+    },
+    {
+      "case_id": 10,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3a4fe535fa0f4f1d716/26894d2babd64210ad6beba1/sub_1762247053971_is3g8lv3y.py",
+        "similarity_percent": 83.54,
+        "full_code": "n = input()\nm = input()\na = float(input())\nb = float(input())\nc = float(input())\nprint(n, m, a + b + c)",
+        "highlighted_code": "<span class='highlight-red'>n = input()\nm = input()\na = float(input())\nb = float(input())\nc = float(input())\n</span>print(n, m, a + b + c)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3a4fe535fa0f4f1d716/f95120b3a38a461085ef58cb/sub_1762103185605_ma43w4qsb.py",
+        "similarity_percent": 69.47,
+        "full_code": "ho_ten = input()\nngay_sinh = input()\ndiem_m1 = float(input())\ndiem_m2 = float(input())\ndiem_m3 = float(input())\ntong_diem = diem_m1 + diem_m2 + diem_m3\nprint(f\"{ho_ten} {ngay_sinh} {tong_diem:.1f}\")",
+        "highlighted_code": "<span class='highlight-green'>ho_ten = input()\nngay_sinh = input()\ndiem_m1 = float(input())\ndiem_m2 = float(input())\ndiem_m3 = float(input())\n</span>tong_diem = diem_m1 + diem_m2 + diem_m3\nprint(f&#34;{ho_ten} {ngay_sinh} {tong_diem:.1f}&#34;)"
+      },
+      "token_overlap": 66,
+      "max_similarity_percent": 83.54
+    },
+    {
+      "case_id": 11,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3a4fe535fa0f4f1d716/26894d2babd64210ad6beba1/sub_1762247053971_is3g8lv3y.py",
+        "similarity_percent": 83.54,
+        "full_code": "n = input()\nm = input()\na = float(input())\nb = float(input())\nc = float(input())\nprint(n, m, a + b + c)",
+        "highlighted_code": "<span class='highlight-red'>n = input()\nm = input()\na = float(input())\nb = float(input())\nc = float(input())\n</span>print(n, m, a + b + c)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3a4fe535fa0f4f1d716/449c44ebafa84f0d8d5b6d0f/sub_1762521020367_auk90iknz.py",
+        "similarity_percent": 70.97,
+        "full_code": "name = input()\ndatebirth = input()\nd1 = float(input())\nd2 = float(input())\nd3 = float(input())\ntong_diem = ( d1 + d2 + d3) \nprint(f\"{name} {datebirth} {tong_diem:.1f}\")",
+        "highlighted_code": "<span class='highlight-green'>name = input()\ndatebirth = input()\nd1 = float(input())\nd2 = float(input())\nd3 = float(input())\n</span>tong_diem = ( d1 + d2 + d3) \nprint(f&#34;{name} {datebirth} {tong_diem:.1f}&#34;)"
+      },
+      "token_overlap": 66,
+      "max_similarity_percent": 83.54
+    },
+    {
+      "case_id": 12,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3a4fe535fa0f4f1d716/26894d2babd64210ad6beba1/sub_1762247053971_is3g8lv3y.py",
+        "similarity_percent": 83.54,
+        "full_code": "n = input()\nm = input()\na = float(input())\nb = float(input())\nc = float(input())\nprint(n, m, a + b + c)",
+        "highlighted_code": "<span class='highlight-red'>n = input()\nm = input()\na = float(input())\nb = float(input())\nc = float(input())\n</span>print(n, m, a + b + c)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3a4fe535fa0f4f1d716/bcb420abb39b4af095b63cf8/sub_1762657574979_mawrk3z7l.py",
+        "similarity_percent": 70.21,
+        "full_code": "t=input()\nsinh=input()\nd1=float(input())\nd2=float(input())\nd3=float(input())\nd_tong=d1+d2+d3\nprint(f\"{t} {sinh} {d_tong}\")",
+        "highlighted_code": "<span class='highlight-green'>t=input()\nsinh=input()\nd1=float(input())\nd2=float(input())\nd3=float(input())\n</span>d_tong=d1+d2+d3\nprint(f&#34;{t} {sinh} {d_tong}&#34;)"
+      },
+      "token_overlap": 66,
+      "max_similarity_percent": 83.54
+    },
+    {
+      "case_id": 13,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3a4fe535fa0f4f1d716/e59c34a1bebb49d29bfb3592/sub_1762438969343_oq590jl65.py",
+        "similarity_percent": 79.52,
+        "full_code": "Name = input()\nBirth = input()\na = float(input())\nb = float(input())\nc = float(input())\nd = a + b + c\nprint(Name , Birth,d)",
+        "highlighted_code": "<span class='highlight-red'>Name = input()\nBirth = input()\na = float(input())\nb = float(input())\nc = float(input())\n</span>d = a + b + c\nprint(Name , Birth,d)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3a4fe535fa0f4f1d716/26894d2babd64210ad6beba1/sub_1762247053971_is3g8lv3y.py",
+        "similarity_percent": 83.54,
+        "full_code": "n = input()\nm = input()\na = float(input())\nb = float(input())\nc = float(input())\nprint(n, m, a + b + c)",
+        "highlighted_code": "<span class='highlight-green'>n = input()\nm = input()\na = float(input())\nb = float(input())\nc = float(input())\n</span>print(n, m, a + b + c)"
+      },
+      "token_overlap": 66,
+      "max_similarity_percent": 83.54
+    },
+    {
+      "case_id": 14,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3a4fe535fa0f4f1d716/e59c34a1bebb49d29bfb3592/sub_1762438969343_oq590jl65.py",
+        "similarity_percent": 79.52,
+        "full_code": "Name = input()\nBirth = input()\na = float(input())\nb = float(input())\nc = float(input())\nd = a + b + c\nprint(Name , Birth,d)",
+        "highlighted_code": "<span class='highlight-red'>Name = input()\nBirth = input()\na = float(input())\nb = float(input())\nc = float(input())\n</span>d = a + b + c\nprint(Name , Birth,d)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3a4fe535fa0f4f1d716/c2c38e9c5ead4887925c7e80/sub_1762361831841_wzjtgoq02.py",
+        "similarity_percent": 62.86,
+        "full_code": "name = input()\ndob = input()\na = float(input())\nb = float(input())\nc = float(input())\nz = round(a+b+c,1)\nprint(name+' '+dob+\" \"+str(z))",
+        "highlighted_code": "<span class='highlight-green'>name = input()\ndob = input()\na = float(input())\nb = float(input())\nc = float(input())\n</span>z = round(a+b+c,1)\nprint(name+&#39; &#39;+dob+&#34; &#34;+str(z))"
+      },
+      "token_overlap": 66,
+      "max_similarity_percent": 79.52
+    },
+    {
+      "case_id": 15,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3a4fe535fa0f4f1d716/e59c34a1bebb49d29bfb3592/sub_1762438969343_oq590jl65.py",
+        "similarity_percent": 79.52,
+        "full_code": "Name = input()\nBirth = input()\na = float(input())\nb = float(input())\nc = float(input())\nd = a + b + c\nprint(Name , Birth,d)",
+        "highlighted_code": "<span class='highlight-red'>Name = input()\nBirth = input()\na = float(input())\nb = float(input())\nc = float(input())\n</span>d = a + b + c\nprint(Name , Birth,d)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3a4fe535fa0f4f1d716/449c44ebafa84f0d8d5b6d0f/sub_1762521020367_auk90iknz.py",
+        "similarity_percent": 70.97,
+        "full_code": "name = input()\ndatebirth = input()\nd1 = float(input())\nd2 = float(input())\nd3 = float(input())\ntong_diem = ( d1 + d2 + d3) \nprint(f\"{name} {datebirth} {tong_diem:.1f}\")",
+        "highlighted_code": "<span class='highlight-green'>name = input()\ndatebirth = input()\nd1 = float(input())\nd2 = float(input())\nd3 = float(input())\n</span>tong_diem = ( d1 + d2 + d3) \nprint(f&#34;{name} {datebirth} {tong_diem:.1f}&#34;)"
+      },
+      "token_overlap": 66,
+      "max_similarity_percent": 79.52
+    },
+    {
+      "case_id": 16,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3a4fe535fa0f4f1d716/e59c34a1bebb49d29bfb3592/sub_1762438969343_oq590jl65.py",
+        "similarity_percent": 79.52,
+        "full_code": "Name = input()\nBirth = input()\na = float(input())\nb = float(input())\nc = float(input())\nd = a + b + c\nprint(Name , Birth,d)",
+        "highlighted_code": "<span class='highlight-red'>Name = input()\nBirth = input()\na = float(input())\nb = float(input())\nc = float(input())\n</span>d = a + b + c\nprint(Name , Birth,d)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3a4fe535fa0f4f1d716/2e99febeecc6490f8e7c3f87/sub_1761924078944_2vgpvwzgj.py",
+        "similarity_percent": 75.86,
+        "full_code": "name = input()\ndate = input()\na = float(input())\nb = float(input())\nc = float(input())\nprint(f\"{name} {date} {a+b+c}\")",
+        "highlighted_code": "<span class='highlight-green'>name = input()\ndate = input()\na = float(input())\nb = float(input())\nc = float(input())\n</span>print(f&#34;{name} {date} {a+b+c}&#34;)"
+      },
+      "token_overlap": 66,
+      "max_similarity_percent": 79.52
+    },
+    {
+      "case_id": 17,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3a4fe535fa0f4f1d716/27e30f767b3a46b283cbfec0/sub_1762062380779_bsafy7hkd.py",
+        "similarity_percent": 79.52,
+        "full_code": "name = input()\ndate = input()\npoint_1 = float(input())\npoint_2 = float(input())\npoint_3 = float(input())\noverall = point_1 + point_2 + point_3\nprint(name,date,overall)",
+        "highlighted_code": "<span class='highlight-red'>name = input()\ndate = input()\npoint_1 = float(input())\npoint_2 = float(input())\npoint_3 = float(input())\n</span>overall = point_1 + point_2 + point_3\nprint(name,date,overall)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3a4fe535fa0f4f1d716/449c44ebafa84f0d8d5b6d0f/sub_1762521020367_auk90iknz.py",
+        "similarity_percent": 70.97,
+        "full_code": "name = input()\ndatebirth = input()\nd1 = float(input())\nd2 = float(input())\nd3 = float(input())\ntong_diem = ( d1 + d2 + d3) \nprint(f\"{name} {datebirth} {tong_diem:.1f}\")",
+        "highlighted_code": "<span class='highlight-green'>name = input()\ndatebirth = input()\nd1 = float(input())\nd2 = float(input())\nd3 = float(input())\n</span>tong_diem = ( d1 + d2 + d3) \nprint(f&#34;{name} {datebirth} {tong_diem:.1f}&#34;)"
+      },
+      "token_overlap": 66,
+      "max_similarity_percent": 79.52
+    },
+    {
+      "case_id": 18,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3a4fe535fa0f4f1d716/27e30f767b3a46b283cbfec0/sub_1762062380779_bsafy7hkd.py",
+        "similarity_percent": 79.52,
+        "full_code": "name = input()\ndate = input()\npoint_1 = float(input())\npoint_2 = float(input())\npoint_3 = float(input())\noverall = point_1 + point_2 + point_3\nprint(name,date,overall)",
+        "highlighted_code": "<span class='highlight-red'>name = input()\ndate = input()\npoint_1 = float(input())\npoint_2 = float(input())\npoint_3 = float(input())\n</span>overall = point_1 + point_2 + point_3\nprint(name,date,overall)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3a4fe535fa0f4f1d716/2e99febeecc6490f8e7c3f87/sub_1761924078944_2vgpvwzgj.py",
+        "similarity_percent": 75.86,
+        "full_code": "name = input()\ndate = input()\na = float(input())\nb = float(input())\nc = float(input())\nprint(f\"{name} {date} {a+b+c}\")",
+        "highlighted_code": "<span class='highlight-green'>name = input()\ndate = input()\na = float(input())\nb = float(input())\nc = float(input())\n</span>print(f&#34;{name} {date} {a+b+c}&#34;)"
+      },
+      "token_overlap": 66,
+      "max_similarity_percent": 79.52
+    },
+    {
+      "case_id": 19,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3a4fe535fa0f4f1d716/2e99febeecc6490f8e7c3f87/sub_1761924078944_2vgpvwzgj.py",
+        "similarity_percent": 75.86,
+        "full_code": "name = input()\ndate = input()\na = float(input())\nb = float(input())\nc = float(input())\nprint(f\"{name} {date} {a+b+c}\")",
+        "highlighted_code": "<span class='highlight-red'>name = input()\ndate = input()\na = float(input())\nb = float(input())\nc = float(input())\n</span>print(f&#34;{name} {date} {a+b+c}&#34;)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3a4fe535fa0f4f1d716/bcb420abb39b4af095b63cf8/sub_1762657574979_mawrk3z7l.py",
+        "similarity_percent": 70.21,
+        "full_code": "t=input()\nsinh=input()\nd1=float(input())\nd2=float(input())\nd3=float(input())\nd_tong=d1+d2+d3\nprint(f\"{t} {sinh} {d_tong}\")",
+        "highlighted_code": "<span class='highlight-green'>t=input()\nsinh=input()\nd1=float(input())\nd2=float(input())\nd3=float(input())\n</span>d_tong=d1+d2+d3\nprint(f&#34;{t} {sinh} {d_tong}&#34;)"
+      },
+      "token_overlap": 66,
+      "max_similarity_percent": 75.86
+    },
+    {
+      "case_id": 20,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3a4fe535fa0f4f1d716/91001b54722a4328a2b7b879/sub_1761923753030_xrq8a7c4z.py",
+        "similarity_percent": 74.76,
+        "full_code": "ho_ten = input().strip()\nngay_sinh = input().strip()\nmon_1 = float(input())\nmon_2 = float(input())\nmon_3 = float(input())\ntong = mon_1 + mon_2 + mon_3\nprint(f'{ho_ten} {ngay_sinh} {tong:.1f}')",
+        "highlighted_code": "ho_ten = input().strip()\nngay_sinh = input().strip()\n<span class='highlight-red'>mon_1 = float(input())\nmon_2 = float(input())\nmon_3 = float(input())\ntong = mon_1 + mon_2 + mon_3\nprint(f&#39;{ho_ten} {ngay_sinh} {tong:.1f}&#39;</span>)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3a4fe535fa0f4f1d716/f95120b3a38a461085ef58cb/sub_1762103185605_ma43w4qsb.py",
+        "similarity_percent": 81.05,
+        "full_code": "ho_ten = input()\nngay_sinh = input()\ndiem_m1 = float(input())\ndiem_m2 = float(input())\ndiem_m3 = float(input())\ntong_diem = diem_m1 + diem_m2 + diem_m3\nprint(f\"{ho_ten} {ngay_sinh} {tong_diem:.1f}\")",
+        "highlighted_code": "ho_ten = input()\nngay_sinh = input()\n<span class='highlight-green'>diem_m1 = float(input())\ndiem_m2 = float(input())\ndiem_m3 = float(input())\ntong_diem = diem_m1 + diem_m2 + diem_m3\nprint(f&#34;{ho_ten} {ngay_sinh} {tong_diem:.1f}&#34;</span>)"
+      },
+      "token_overlap": 77,
+      "max_similarity_percent": 81.05
+    },
+    {
+      "case_id": 21,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3a4fe535fa0f4f1d716/91001b54722a4328a2b7b879/sub_1761923753030_xrq8a7c4z.py",
+        "similarity_percent": 71.84,
+        "full_code": "ho_ten = input().strip()\nngay_sinh = input().strip()\nmon_1 = float(input())\nmon_2 = float(input())\nmon_3 = float(input())\ntong = mon_1 + mon_2 + mon_3\nprint(f'{ho_ten} {ngay_sinh} {tong:.1f}')",
+        "highlighted_code": "<span class='highlight-red'>ho_ten = input().strip()\nngay_sinh = input().strip()\nmon_1 = float(input())\nmon_2 = float(input())\nmon_3 = float(input())\n</span>tong = mon_1 + mon_2 + mon_3\nprint(f&#39;{ho_ten} {ngay_sinh} {tong:.1f}&#39;)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3a4fe535fa0f4f1d716/d9aec9d917da4c5e9beeb80b/sub_1762060232225_7kg8d8spn.py",
+        "similarity_percent": 70.48,
+        "full_code": "name = input().strip()\ndate = input().strip()\na = float(input())\nb = float(input())\nc = float(input())\nsum = a + b + c\nprint(f\"{name} {date} {sum:.1f}\")\n",
+        "highlighted_code": "<span class='highlight-green'>name = input().strip()\ndate = input().strip()\na = float(input())\nb = float(input())\nc = float(input())\n</span>sum = a + b + c\nprint(f&#34;{name} {date} {sum:.1f}&#34;)\n"
+      },
+      "token_overlap": 74,
+      "max_similarity_percent": 71.84
+    },
+    {
+      "case_id": 22,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3a4fe535fa0f4f1d716/e59c34a1bebb49d29bfb3592/sub_1762438969343_oq590jl65.py",
+        "similarity_percent": 71.08,
+        "full_code": "Name = input()\nBirth = input()\na = float(input())\nb = float(input())\nc = float(input())\nd = a + b + c\nprint(Name , Birth,d)",
+        "highlighted_code": "Name = input()\nBirth = input()\n<span class='highlight-red'>a = float(input())\nb = float(input())\nc = float(input())\nd = a + b + c\nprin</span>t(Name , Birth,d)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3a4fe535fa0f4f1d716/91001b54722a4328a2b7b879/sub_1761923753030_xrq8a7c4z.py",
+        "similarity_percent": 57.28,
+        "full_code": "ho_ten = input().strip()\nngay_sinh = input().strip()\nmon_1 = float(input())\nmon_2 = float(input())\nmon_3 = float(input())\ntong = mon_1 + mon_2 + mon_3\nprint(f'{ho_ten} {ngay_sinh} {tong:.1f}')",
+        "highlighted_code": "ho_ten = input().strip()\nngay_sinh = input().strip()\n<span class='highlight-green'>mon_1 = float(input())\nmon_2 = float(input())\nmon_3 = float(input())\ntong = mon_1 + mon_2 + mon_3\nprin</span>t(f&#39;{ho_ten} {ngay_sinh} {tong:.1f}&#39;)"
+      },
+      "token_overlap": 59,
+      "max_similarity_percent": 71.08
+    },
+    {
+      "case_id": 23,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3a4fe535fa0f4f1d716/449c44ebafa84f0d8d5b6d0f/sub_1762521020367_auk90iknz.py",
+        "similarity_percent": 70.97,
+        "full_code": "name = input()\ndatebirth = input()\nd1 = float(input())\nd2 = float(input())\nd3 = float(input())\ntong_diem = ( d1 + d2 + d3) \nprint(f\"{name} {datebirth} {tong_diem:.1f}\")",
+        "highlighted_code": "<span class='highlight-red'>name = input()\ndatebirth = input()\nd1 = float(input())\nd2 = float(input())\nd3 = float(input())\n</span>tong_diem = ( d1 + d2 + d3) \nprint(f&#34;{name} {datebirth} {tong_diem:.1f}&#34;)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3a4fe535fa0f4f1d716/2e99febeecc6490f8e7c3f87/sub_1761924078944_2vgpvwzgj.py",
+        "similarity_percent": 75.86,
+        "full_code": "name = input()\ndate = input()\na = float(input())\nb = float(input())\nc = float(input())\nprint(f\"{name} {date} {a+b+c}\")",
+        "highlighted_code": "<span class='highlight-green'>name = input()\ndate = input()\na = float(input())\nb = float(input())\nc = float(input())\n</span>print(f&#34;{name} {date} {a+b+c}&#34;)"
+      },
+      "token_overlap": 66,
+      "max_similarity_percent": 75.86
+    },
+    {
+      "case_id": 24,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3a4fe535fa0f4f1d716/449c44ebafa84f0d8d5b6d0f/sub_1762521020367_auk90iknz.py",
+        "similarity_percent": 70.97,
+        "full_code": "name = input()\ndatebirth = input()\nd1 = float(input())\nd2 = float(input())\nd3 = float(input())\ntong_diem = ( d1 + d2 + d3) \nprint(f\"{name} {datebirth} {tong_diem:.1f}\")",
+        "highlighted_code": "<span class='highlight-red'>name = input()\ndatebirth = input()\nd1 = float(input())\nd2 = float(input())\nd3 = float(input())\n</span>tong_diem = ( d1 + d2 + d3) \nprint(f&#34;{name} {datebirth} {tong_diem:.1f}&#34;)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3a4fe535fa0f4f1d716/bcb420abb39b4af095b63cf8/sub_1762657574979_mawrk3z7l.py",
+        "similarity_percent": 70.21,
+        "full_code": "t=input()\nsinh=input()\nd1=float(input())\nd2=float(input())\nd3=float(input())\nd_tong=d1+d2+d3\nprint(f\"{t} {sinh} {d_tong}\")",
+        "highlighted_code": "<span class='highlight-green'>t=input()\nsinh=input()\nd1=float(input())\nd2=float(input())\nd3=float(input())\n</span>d_tong=d1+d2+d3\nprint(f&#34;{t} {sinh} {d_tong}&#34;)"
+      },
+      "token_overlap": 66,
+      "max_similarity_percent": 70.97
+    },
+    {
+      "case_id": 25,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3a4fe535fa0f4f1d716/f95120b3a38a461085ef58cb/sub_1762103185605_ma43w4qsb.py",
+        "similarity_percent": 69.47,
+        "full_code": "ho_ten = input()\nngay_sinh = input()\ndiem_m1 = float(input())\ndiem_m2 = float(input())\ndiem_m3 = float(input())\ntong_diem = diem_m1 + diem_m2 + diem_m3\nprint(f\"{ho_ten} {ngay_sinh} {tong_diem:.1f}\")",
+        "highlighted_code": "<span class='highlight-red'>ho_ten = input()\nngay_sinh = input()\ndiem_m1 = float(input())\ndiem_m2 = float(input())\ndiem_m3 = float(input())\n</span>tong_diem = diem_m1 + diem_m2 + diem_m3\nprint(f&#34;{ho_ten} {ngay_sinh} {tong_diem:.1f}&#34;)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3a4fe535fa0f4f1d716/449c44ebafa84f0d8d5b6d0f/sub_1762521020367_auk90iknz.py",
+        "similarity_percent": 70.97,
+        "full_code": "name = input()\ndatebirth = input()\nd1 = float(input())\nd2 = float(input())\nd3 = float(input())\ntong_diem = ( d1 + d2 + d3) \nprint(f\"{name} {datebirth} {tong_diem:.1f}\")",
+        "highlighted_code": "<span class='highlight-green'>name = input()\ndatebirth = input()\nd1 = float(input())\nd2 = float(input())\nd3 = float(input())\n</span>tong_diem = ( d1 + d2 + d3) \nprint(f&#34;{name} {datebirth} {tong_diem:.1f}&#34;)"
+      },
+      "token_overlap": 66,
+      "max_similarity_percent": 70.97
+    },
+    {
+      "case_id": 26,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3a4fe535fa0f4f1d716/f95120b3a38a461085ef58cb/sub_1762103185605_ma43w4qsb.py",
+        "similarity_percent": 69.47,
+        "full_code": "ho_ten = input()\nngay_sinh = input()\ndiem_m1 = float(input())\ndiem_m2 = float(input())\ndiem_m3 = float(input())\ntong_diem = diem_m1 + diem_m2 + diem_m3\nprint(f\"{ho_ten} {ngay_sinh} {tong_diem:.1f}\")",
+        "highlighted_code": "<span class='highlight-red'>ho_ten = input()\nngay_sinh = input()\ndiem_m1 = float(input())\ndiem_m2 = float(input())\ndiem_m3 = float(input())\n</span>tong_diem = diem_m1 + diem_m2 + diem_m3\nprint(f&#34;{ho_ten} {ngay_sinh} {tong_diem:.1f}&#34;)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3a4fe535fa0f4f1d716/2e99febeecc6490f8e7c3f87/sub_1761924078944_2vgpvwzgj.py",
+        "similarity_percent": 75.86,
+        "full_code": "name = input()\ndate = input()\na = float(input())\nb = float(input())\nc = float(input())\nprint(f\"{name} {date} {a+b+c}\")",
+        "highlighted_code": "<span class='highlight-green'>name = input()\ndate = input()\na = float(input())\nb = float(input())\nc = float(input())\n</span>print(f&#34;{name} {date} {a+b+c}&#34;)"
+      },
+      "token_overlap": 66,
+      "max_similarity_percent": 75.86
+    },
+    {
+      "case_id": 27,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3a4fe535fa0f4f1d716/91001b54722a4328a2b7b879/sub_1761923753030_xrq8a7c4z.py",
+        "similarity_percent": 67.96,
+        "full_code": "ho_ten = input().strip()\nngay_sinh = input().strip()\nmon_1 = float(input())\nmon_2 = float(input())\nmon_3 = float(input())\ntong = mon_1 + mon_2 + mon_3\nprint(f'{ho_ten} {ngay_sinh} {tong:.1f}')",
+        "highlighted_code": "ho_ten = input().strip()\nngay_sinh = input().strip()\n<span class='highlight-red'>mon_1 = float(input())\nmon_2 = float(input())\nmon_3 = float(input())\ntong = mon_1 + mon_2 + mon_3\nprint(f&#39;{ho_ten} {ngay_sinh}</span> {tong:.1f}&#39;)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3a4fe535fa0f4f1d716/bcb420abb39b4af095b63cf8/sub_1762657574979_mawrk3z7l.py",
+        "similarity_percent": 74.47,
+        "full_code": "t=input()\nsinh=input()\nd1=float(input())\nd2=float(input())\nd3=float(input())\nd_tong=d1+d2+d3\nprint(f\"{t} {sinh} {d_tong}\")",
+        "highlighted_code": "t=input()\nsinh=input()\n<span class='highlight-green'>d1=float(input())\nd2=float(input())\nd3=float(input())\nd_tong=d1+d2+d3\nprint(f&#34;{t} {sinh}</span> {d_tong}&#34;)"
+      },
+      "token_overlap": 70,
+      "max_similarity_percent": 74.47
+    },
+    {
+      "case_id": 28,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3a4fe535fa0f4f1d716/c2c38e9c5ead4887925c7e80/sub_1762361831841_wzjtgoq02.py",
+        "similarity_percent": 62.86,
+        "full_code": "name = input()\ndob = input()\na = float(input())\nb = float(input())\nc = float(input())\nz = round(a+b+c,1)\nprint(name+' '+dob+\" \"+str(z))",
+        "highlighted_code": "<span class='highlight-red'>name = input()\ndob = input()\na = float(input())\nb = float(input())\nc = float(input())\n</span>z = round(a+b+c,1)\nprint(name+&#39; &#39;+dob+&#34; &#34;+str(z))"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3a4fe535fa0f4f1d716/27e30f767b3a46b283cbfec0/sub_1762062380779_bsafy7hkd.py",
+        "similarity_percent": 79.52,
+        "full_code": "name = input()\ndate = input()\npoint_1 = float(input())\npoint_2 = float(input())\npoint_3 = float(input())\noverall = point_1 + point_2 + point_3\nprint(name,date,overall)",
+        "highlighted_code": "<span class='highlight-green'>name = input()\ndate = input()\npoint_1 = float(input())\npoint_2 = float(input())\npoint_3 = float(input())\n</span>overall = point_1 + point_2 + point_3\nprint(name,date,overall)"
+      },
+      "token_overlap": 66,
+      "max_similarity_percent": 79.52
+    },
+    {
+      "case_id": 29,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3a4fe535fa0f4f1d716/c2c38e9c5ead4887925c7e80/sub_1762361831841_wzjtgoq02.py",
+        "similarity_percent": 62.86,
+        "full_code": "name = input()\ndob = input()\na = float(input())\nb = float(input())\nc = float(input())\nz = round(a+b+c,1)\nprint(name+' '+dob+\" \"+str(z))",
+        "highlighted_code": "<span class='highlight-red'>name = input()\ndob = input()\na = float(input())\nb = float(input())\nc = float(input())\n</span>z = round(a+b+c,1)\nprint(name+&#39; &#39;+dob+&#34; &#34;+str(z))"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3a4fe535fa0f4f1d716/f95120b3a38a461085ef58cb/sub_1762103185605_ma43w4qsb.py",
+        "similarity_percent": 69.47,
+        "full_code": "ho_ten = input()\nngay_sinh = input()\ndiem_m1 = float(input())\ndiem_m2 = float(input())\ndiem_m3 = float(input())\ntong_diem = diem_m1 + diem_m2 + diem_m3\nprint(f\"{ho_ten} {ngay_sinh} {tong_diem:.1f}\")",
+        "highlighted_code": "<span class='highlight-green'>ho_ten = input()\nngay_sinh = input()\ndiem_m1 = float(input())\ndiem_m2 = float(input())\ndiem_m3 = float(input())\n</span>tong_diem = diem_m1 + diem_m2 + diem_m3\nprint(f&#34;{ho_ten} {ngay_sinh} {tong_diem:.1f}&#34;)"
+      },
+      "token_overlap": 66,
+      "max_similarity_percent": 69.47
+    },
+    {
+      "case_id": 30,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3a4fe535fa0f4f1d716/c2c38e9c5ead4887925c7e80/sub_1762361831841_wzjtgoq02.py",
+        "similarity_percent": 62.86,
+        "full_code": "name = input()\ndob = input()\na = float(input())\nb = float(input())\nc = float(input())\nz = round(a+b+c,1)\nprint(name+' '+dob+\" \"+str(z))",
+        "highlighted_code": "<span class='highlight-red'>name = input()\ndob = input()\na = float(input())\nb = float(input())\nc = float(input())\n</span>z = round(a+b+c,1)\nprint(name+&#39; &#39;+dob+&#34; &#34;+str(z))"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3a4fe535fa0f4f1d716/449c44ebafa84f0d8d5b6d0f/sub_1762521020367_auk90iknz.py",
+        "similarity_percent": 70.97,
+        "full_code": "name = input()\ndatebirth = input()\nd1 = float(input())\nd2 = float(input())\nd3 = float(input())\ntong_diem = ( d1 + d2 + d3) \nprint(f\"{name} {datebirth} {tong_diem:.1f}\")",
+        "highlighted_code": "<span class='highlight-green'>name = input()\ndatebirth = input()\nd1 = float(input())\nd2 = float(input())\nd3 = float(input())\n</span>tong_diem = ( d1 + d2 + d3) \nprint(f&#34;{name} {datebirth} {tong_diem:.1f}&#34;)"
+      },
+      "token_overlap": 66,
+      "max_similarity_percent": 70.97
+    },
+    {
+      "case_id": 31,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3a4fe535fa0f4f1d716/c2c38e9c5ead4887925c7e80/sub_1762361831841_wzjtgoq02.py",
+        "similarity_percent": 62.86,
+        "full_code": "name = input()\ndob = input()\na = float(input())\nb = float(input())\nc = float(input())\nz = round(a+b+c,1)\nprint(name+' '+dob+\" \"+str(z))",
+        "highlighted_code": "<span class='highlight-red'>name = input()\ndob = input()\na = float(input())\nb = float(input())\nc = float(input())\n</span>z = round(a+b+c,1)\nprint(name+&#39; &#39;+dob+&#34; &#34;+str(z))"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3a4fe535fa0f4f1d716/2e99febeecc6490f8e7c3f87/sub_1761924078944_2vgpvwzgj.py",
+        "similarity_percent": 75.86,
+        "full_code": "name = input()\ndate = input()\na = float(input())\nb = float(input())\nc = float(input())\nprint(f\"{name} {date} {a+b+c}\")",
+        "highlighted_code": "<span class='highlight-green'>name = input()\ndate = input()\na = float(input())\nb = float(input())\nc = float(input())\n</span>print(f&#34;{name} {date} {a+b+c}&#34;)"
+      },
+      "token_overlap": 66,
+      "max_similarity_percent": 75.86
+    },
+    {
+      "case_id": 32,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3a4fe535fa0f4f1d716/c2c38e9c5ead4887925c7e80/sub_1762361831841_wzjtgoq02.py",
+        "similarity_percent": 62.86,
+        "full_code": "name = input()\ndob = input()\na = float(input())\nb = float(input())\nc = float(input())\nz = round(a+b+c,1)\nprint(name+' '+dob+\" \"+str(z))",
+        "highlighted_code": "<span class='highlight-red'>name = input()\ndob = input()\na = float(input())\nb = float(input())\nc = float(input())\n</span>z = round(a+b+c,1)\nprint(name+&#39; &#39;+dob+&#34; &#34;+str(z))"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3a4fe535fa0f4f1d716/bcb420abb39b4af095b63cf8/sub_1762657574979_mawrk3z7l.py",
+        "similarity_percent": 70.21,
+        "full_code": "t=input()\nsinh=input()\nd1=float(input())\nd2=float(input())\nd3=float(input())\nd_tong=d1+d2+d3\nprint(f\"{t} {sinh} {d_tong}\")",
+        "highlighted_code": "<span class='highlight-green'>t=input()\nsinh=input()\nd1=float(input())\nd2=float(input())\nd3=float(input())\n</span>d_tong=d1+d2+d3\nprint(f&#34;{t} {sinh} {d_tong}&#34;)"
+      },
+      "token_overlap": 66,
+      "max_similarity_percent": 70.21
+    },
+    {
+      "case_id": 33,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3a4fe535fa0f4f1d716/26894d2babd64210ad6beba1/sub_1762247053971_is3g8lv3y.py",
+        "similarity_percent": 60.76,
+        "full_code": "n = input()\nm = input()\na = float(input())\nb = float(input())\nc = float(input())\nprint(n, m, a + b + c)",
+        "highlighted_code": "n = input()\nm = input()\n<span class='highlight-red'>a = float(input())\nb = float(input())\nc = float(input())\n</span>print(n, m, a + b + c)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3a4fe535fa0f4f1d716/d9aec9d917da4c5e9beeb80b/sub_1762060232225_7kg8d8spn.py",
+        "similarity_percent": 45.71,
+        "full_code": "name = input().strip()\ndate = input().strip()\na = float(input())\nb = float(input())\nc = float(input())\nsum = a + b + c\nprint(f\"{name} {date} {sum:.1f}\")\n",
+        "highlighted_code": "name = input().strip()\ndate = input().strip()\n<span class='highlight-green'>a = float(input())\nb = float(input())\nc = float(input())\n</span>sum = a + b + c\nprint(f&#34;{name} {date} {sum:.1f}&#34;)\n"
+      },
+      "token_overlap": 48,
+      "max_similarity_percent": 60.76
+    },
+    {
+      "case_id": 34,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3a4fe535fa0f4f1d716/91001b54722a4328a2b7b879/sub_1761923753030_xrq8a7c4z.py",
+        "similarity_percent": 57.28,
+        "full_code": "ho_ten = input().strip()\nngay_sinh = input().strip()\nmon_1 = float(input())\nmon_2 = float(input())\nmon_3 = float(input())\ntong = mon_1 + mon_2 + mon_3\nprint(f'{ho_ten} {ngay_sinh} {tong:.1f}')",
+        "highlighted_code": "ho_ten = input().strip()\nngay_sinh = input().strip()\n<span class='highlight-red'>mon_1 = float(input())\nmon_2 = float(input())\nmon_3 = float(input())\ntong = mon_1 + mon_2 + mon_3\nprin</span>t(f&#39;{ho_ten} {ngay_sinh} {tong:.1f}&#39;)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3a4fe535fa0f4f1d716/27e30f767b3a46b283cbfec0/sub_1762062380779_bsafy7hkd.py",
+        "similarity_percent": 71.08,
+        "full_code": "name = input()\ndate = input()\npoint_1 = float(input())\npoint_2 = float(input())\npoint_3 = float(input())\noverall = point_1 + point_2 + point_3\nprint(name,date,overall)",
+        "highlighted_code": "name = input()\ndate = input()\n<span class='highlight-green'>point_1 = float(input())\npoint_2 = float(input())\npoint_3 = float(input())\noverall = point_1 + point_2 + point_3\nprin</span>t(name,date,overall)"
+      },
+      "token_overlap": 59,
+      "max_similarity_percent": 71.08
+    },
+    {
+      "case_id": 35,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3a4fe535fa0f4f1d716/91001b54722a4328a2b7b879/sub_1761923753030_xrq8a7c4z.py",
+        "similarity_percent": 46.6,
+        "full_code": "ho_ten = input().strip()\nngay_sinh = input().strip()\nmon_1 = float(input())\nmon_2 = float(input())\nmon_3 = float(input())\ntong = mon_1 + mon_2 + mon_3\nprint(f'{ho_ten} {ngay_sinh} {tong:.1f}')",
+        "highlighted_code": "ho_ten = input().strip()\nngay_sinh = input().strip()\n<span class='highlight-red'>mon_1 = float(input())\nmon_2 = float(input())\nmon_3 = float(input())\n</span>tong = mon_1 + mon_2 + mon_3\nprint(f&#39;{ho_ten} {ngay_sinh} {tong:.1f}&#39;)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3a4fe535fa0f4f1d716/26894d2babd64210ad6beba1/sub_1762247053971_is3g8lv3y.py",
+        "similarity_percent": 60.76,
+        "full_code": "n = input()\nm = input()\na = float(input())\nb = float(input())\nc = float(input())\nprint(n, m, a + b + c)",
+        "highlighted_code": "n = input()\nm = input()\n<span class='highlight-green'>a = float(input())\nb = float(input())\nc = float(input())\n</span>print(n, m, a + b + c)"
+      },
+      "token_overlap": 48,
+      "max_similarity_percent": 60.76
+    }
+  ]
+}

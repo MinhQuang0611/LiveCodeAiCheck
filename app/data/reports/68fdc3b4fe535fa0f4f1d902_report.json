@@ -4,7 +4,178 @@
     "min_token_overlap": 80,
     "min_similarity_percent": 60
   },
-  "total_cases_found": 0,
-  "total_cases_filtered": 0,
-  "cases": []
+  "total_cases_found": 10,
+  "total_cases_filtered": 10,
+  "cases": [
+    {
+      "case_id": 1,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b4fe535fa0f4f1d902/c2c38e9c5ead4887925c7e80/sub_1762622922788_me0jryivt.py",
+        "similarity_percent": 80.63,
+        "full_code": "def tinh_cong_huong(ban_do, ma_tran_phep):\n    n = len(ban_do)\n    m = len(ban_do[0])\n    tong = 0\n\n    for i in range(n - 2):  # Trượt theo chiều dọc\n        for j in range(m - 2):  # Trượt theo chiều ngang\n            cong_huong = 0\n            for u in range(3):\n                for v in range(3):\n                    cong_huong += ban_do[i + u][j + v] * ma_tran_phep[u][v]\n            tong += cong_huong\n\n    return tong\n\n# Nhập dữ liệu\nt = int(input())  # Số lượng bản đồ\nfor _ in range(t):\n    n, m = map(int, input().split())\n    ban_do = [list(map(int, input().split())) for _ in range(n)]\n    ma_tran_phep = [list(map(int, input().split())) for _ in range(3)]\n\n    ket_qua = tinh_cong_huong(ban_do, ma_tran_phep)\n    print(ket_qua)\n",
+        "highlighted_code": "def tinh_cong_huong(ban_do, ma_tran_phep):\n    n = len(ban_do)\n    m = len(ban_do[0])\n    tong = 0\n\n    f<span class='highlight-red'>or i in range(n - 2):  # Trượt theo chiều dọc\n        for j in range(m - 2):  # Trượt theo chiều ngang\n            cong_huong = 0\n            for u in range(3):\n                for v in range(3):\n                    cong_huong += ban_do[i + u][j + v] * ma_tran_phep[u][v]\n            </span>tong += cong_huong\n\n    return tong\n\n# Nhập dữ liệu\nt <span class='highlight-red'>= int(input())  # Số lượng bản đồ\nfor _ in range(t):\n    n, m = map(int, input().split())\n    ban_do = [list(map(int, input().split())) for _ in range(n)]\n    ma_tran_phep = [list(map(int, input().split())) for _ in range(3)]\n\n    ket_qua </span>= tinh_cong_huong(ban_do, ma_tran_phep)\n    print(ket_qua)\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b4fe535fa0f4f1d902/91001b54722a4328a2b7b879/sub_1761822130662_fskspl28a.py",
+        "similarity_percent": 71.12,
+        "full_code": "t = int(input())\nfor _ in range(t):\n    n, m = map(int, input().split())\n    a = [list(map(int, input().split())) for _ in range(n)]\n    b = [list(map(int, input().split())) for _ in range(3)]\n    total_energy = 0 \n    if n >= 3 and m >= 3:\n        for i in range(n -2):\n            for j in range(m - 2):\n                energy = 0\n                for x in range(3):\n                    for y in range(3):\n                        energy += a[i + x][j + y] * b[x][y]\n                total_energy += energy\n    else:\n        for i in range(min(3, n)):\n            for j in range(min(3, n)):\n                total_energy += a[i][j] * b[i][j]\n    print(total_energy)",
+        "highlighted_code": "t <span class='highlight-green'>= int(input())\nfor _ in range(t):\n    n, m = map(int, input().split())\n    a = [list(map(int, input().split())) for _ in range(n)]\n    b = [list(map(int, input().split())) for _ in range(3)]\n    total_energy </span>= 0 \n    if n &gt;= 3 and m &gt;= 3:\n        f<span class='highlight-green'>or i in range(n -2):\n            for j in range(m - 2):\n                energy = 0\n                for x in range(3):\n                    for y in range(3):\n                        energy += a[i + x][j + y] * b[x][y]\n                </span>total_energy += energy\n    else:\n        for i in range(min(3, n)):\n            for j in range(min(3, n)):\n                total_energy += a[i][j] * b[i][j]\n    print(total_energy)"
+      },
+      "token_overlap": 229,
+      "max_similarity_percent": 80.63
+    },
+    {
+      "case_id": 2,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b4fe535fa0f4f1d902/8e19101eb0da4e9a92a17098/sub_1761639224563_zdjk2q0z2.py",
+        "similarity_percent": 80.24,
+        "full_code": "t = int(input())\nfor _ in range(t):\n    n, m = map(int, input().split())\n    a = [list(map(int, input().split())) for _ in range(n)]\n    b = [list(map(int, input().split())) for _ in range(3)]\n    tong = 0\n    for i in range(n - 3 + 1):\n        for j in range(m - 3 + 1):\n            s = 0\n            for x in range(3):\n                for y in range(3):\n                    s += a[i + x][j + y] * b[x][y]\n            tong += s\n    print(tong)",
+        "highlighted_code": "<span class='highlight-red'>t = int(input())\nfor _ in range(t):\n    n, m = map(int, input().split())\n    a = [list(map(int, input().split())) for _ in range(n)]\n    b = [list(map(int, input().split())) for _ in range(3)]\n    tong </span>= 0\n    for i in range(n - 3 + 1):\n        for j in range(m - 3 + 1<span class='highlight-red'>):\n            s = 0\n            for x in range(3):\n                for y in range(3):\n                    s += a[i + x][j + y] * b[x][y]\n            </span>tong += s\n    print(tong)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b4fe535fa0f4f1d902/91001b54722a4328a2b7b879/sub_1761822130662_fskspl28a.py",
+        "similarity_percent": 61.8,
+        "full_code": "t = int(input())\nfor _ in range(t):\n    n, m = map(int, input().split())\n    a = [list(map(int, input().split())) for _ in range(n)]\n    b = [list(map(int, input().split())) for _ in range(3)]\n    total_energy = 0 \n    if n >= 3 and m >= 3:\n        for i in range(n -2):\n            for j in range(m - 2):\n                energy = 0\n                for x in range(3):\n                    for y in range(3):\n                        energy += a[i + x][j + y] * b[x][y]\n                total_energy += energy\n    else:\n        for i in range(min(3, n)):\n            for j in range(min(3, n)):\n                total_energy += a[i][j] * b[i][j]\n    print(total_energy)",
+        "highlighted_code": "<span class='highlight-green'>t = int(input())\nfor _ in range(t):\n    n, m = map(int, input().split())\n    a = [list(map(int, input().split())) for _ in range(n)]\n    b = [list(map(int, input().split())) for _ in range(3)]\n    total_energy </span>= 0 \n    if n &gt;= 3 and m &gt;= 3:\n        for i in range(n -2):\n            for j in range(m - 2<span class='highlight-green'>):\n                energy = 0\n                for x in range(3):\n                    for y in range(3):\n                        energy += a[i + x][j + y] * b[x][y]\n                </span>total_energy += energy\n    else:\n        for i in range(min(3, n)):\n            for j in range(min(3, n)):\n                total_energy += a[i][j] * b[i][j]\n    print(total_energy)"
+      },
+      "token_overlap": 199,
+      "max_similarity_percent": 80.24
+    },
+    {
+      "case_id": 3,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b4fe535fa0f4f1d902/8e19101eb0da4e9a92a17098/sub_1761639224563_zdjk2q0z2.py",
+        "similarity_percent": 79.84,
+        "full_code": "t = int(input())\nfor _ in range(t):\n    n, m = map(int, input().split())\n    a = [list(map(int, input().split())) for _ in range(n)]\n    b = [list(map(int, input().split())) for _ in range(3)]\n    tong = 0\n    for i in range(n - 3 + 1):\n        for j in range(m - 3 + 1):\n            s = 0\n            for x in range(3):\n                for y in range(3):\n                    s += a[i + x][j + y] * b[x][y]\n            tong += s\n    print(tong)",
+        "highlighted_code": "t <span class='highlight-red'>= int(input())\nfor _ in range(t):\n    n, m = map(int, input().split())\n    a = [list(map(int, input().split())) for _ in range(n)]\n    b = [list(map(int, input().split())) for _ in range(3)]\n    tong </span>= 0\n    for i in range(n - 3 + 1):\n        for j in range(m - 3 + 1<span class='highlight-red'>):\n            s = 0\n            for x in range(3):\n                for y in range(3):\n                    s += a[i + x][j + y] * b[x][y]\n            </span>tong += s\n    print(tong)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b4fe535fa0f4f1d902/c2c38e9c5ead4887925c7e80/sub_1762622922788_me0jryivt.py",
+        "similarity_percent": 69.72,
+        "full_code": "def tinh_cong_huong(ban_do, ma_tran_phep):\n    n = len(ban_do)\n    m = len(ban_do[0])\n    tong = 0\n\n    for i in range(n - 2):  # Trượt theo chiều dọc\n        for j in range(m - 2):  # Trượt theo chiều ngang\n            cong_huong = 0\n            for u in range(3):\n                for v in range(3):\n                    cong_huong += ban_do[i + u][j + v] * ma_tran_phep[u][v]\n            tong += cong_huong\n\n    return tong\n\n# Nhập dữ liệu\nt = int(input())  # Số lượng bản đồ\nfor _ in range(t):\n    n, m = map(int, input().split())\n    ban_do = [list(map(int, input().split())) for _ in range(n)]\n    ma_tran_phep = [list(map(int, input().split())) for _ in range(3)]\n\n    ket_qua = tinh_cong_huong(ban_do, ma_tran_phep)\n    print(ket_qua)\n",
+        "highlighted_code": "def tinh_cong_huong(ban_do, ma_tran_phep):\n    n = len(ban_do)\n    m = len(ban_do[0])\n    tong = 0\n\n    for i in range(n - 2):  # Trượt theo chiều dọc\n        for j in range(m - 2<span class='highlight-green'>):  # Trượt theo chiều ngang\n            cong_huong = 0\n            for u in range(3):\n                for v in range(3):\n                    cong_huong += ban_do[i + u][j + v] * ma_tran_phep[u][v]\n            </span>tong += cong_huong\n\n    return tong\n\n# Nhập dữ liệu\nt <span class='highlight-green'>= int(input())  # Số lượng bản đồ\nfor _ in range(t):\n    n, m = map(int, input().split())\n    ban_do = [list(map(int, input().split())) for _ in range(n)]\n    ma_tran_phep = [list(map(int, input().split())) for _ in range(3)]\n\n    ket_qua </span>= tinh_cong_huong(ban_do, ma_tran_phep)\n    print(ket_qua)\n"
+      },
+      "token_overlap": 198,
+      "max_similarity_percent": 79.84
+    },
+    {
+      "case_id": 4,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b4fe535fa0f4f1d902/73e9e151d2dc4d53a8e6793d/sub_1762588571942_z91jcsv2z.py",
+        "similarity_percent": 66.79,
+        "full_code": "t = int(input())\nfor _ in range(t):\n    matrix_mn = []\n    matrix_33 = []\n    total_sum = 0\n    n, m = map(int, input().split())\n    for _ in range(n):\n        current = list(map(int, input().split()))\n        matrix_mn.append(current)\n    for _ in range(3):\n        current = list(map(int, input().split()))\n        matrix_33.append(current)\n    \n    for i in range(n - 2):#cot\n        for j in range(m - 2):#hang\n            s = 0\n            for ki in range(3):\n                for kj in range(3):\n                    s += matrix_mn[i+ki][j+kj] * matrix_33[ki][kj]\n            total_sum += s\n    print(total_sum)",
+        "highlighted_code": "<span class='highlight-red'>t = int(input())\nfor _ in range(</span>t):\n    matrix_mn = []\n    matrix_33 = []\n    total_sum = 0\n    n, m = map(int, input().split())\n    for _ in range(n):\n        current = l<span class='highlight-red'>ist(map(int, input().split()))\n        </span>matrix_mn.append(current)\n    for _ in range(3):\n        current = l<span class='highlight-red'>ist(map(int, input().split()))\n        </span>matrix_33.append(current)\n    \n    f<span class='highlight-red'>or i in range(n - 2):#cot\n        for j in range(m - 2):#hang\n            s = 0\n            for ki in range(3):\n                for kj in range(3):\n                    s += matrix_mn[i+ki][j+kj] * matrix_33[ki][kj]\n            total_sum += s\n    print(total_sum</span>)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b4fe535fa0f4f1d902/8e236cb825b041b0a82527f2/sub_1762745949497_gt8y80xp2.py",
+        "similarity_percent": 66.29,
+        "full_code": "t = int(input())\nfor _ in range(t):\n    n, m = map(int, input().split())\n    a = []\n    b = []\n\n    for i in range(n):\n        a.append(list(map(int, input().split()))[:m])\n\n    for i in range(3):\n        b.append(list(map(int, input().split()))[:3])\n\n    total = 0\n    for i in range(n - 2):\n        for j in range(m - 2):\n            s = 0\n            for x in range(3):\n                for y in range(3):\n                    s += a[i + x][j + y] * b[x][y]\n            total += s\n\n    print(total)\n",
+        "highlighted_code": "<span class='highlight-green'>t = int(input())\nfor _ in range(</span>t):\n    n, m = map(int, input().split())\n    a = []\n    b = []\n\n    for i in range(n):\n        a.append(l<span class='highlight-green'>ist(map(int, input().split()))</span>[:m])\n\n    for i in range(3):\n        b.append(l<span class='highlight-green'>ist(map(int, input().split()))</span>[:3])\n\n    total = 0\n    f<span class='highlight-green'>or i in range(n - 2):\n        for j in range(m - 2):\n            s = 0\n            for x in range(3):\n                for y in range(3):\n                    s += a[i + x][j + y] * b[x][y]\n            total += s\n\n    print(total</span>)\n"
+      },
+      "token_overlap": 175,
+      "max_similarity_percent": 66.79
+    },
+    {
+      "case_id": 5,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b4fe535fa0f4f1d902/8e236cb825b041b0a82527f2/sub_1762745949497_gt8y80xp2.py",
+        "similarity_percent": 53.41,
+        "full_code": "t = int(input())\nfor _ in range(t):\n    n, m = map(int, input().split())\n    a = []\n    b = []\n\n    for i in range(n):\n        a.append(list(map(int, input().split()))[:m])\n\n    for i in range(3):\n        b.append(list(map(int, input().split()))[:3])\n\n    total = 0\n    for i in range(n - 2):\n        for j in range(m - 2):\n            s = 0\n            for x in range(3):\n                for y in range(3):\n                    s += a[i + x][j + y] * b[x][y]\n            total += s\n\n    print(total)\n",
+        "highlighted_code": "<span class='highlight-red'>t = int(input())\nfor _ in range(t):\n    n, m = map(int, input().split())\n    </span>a = []\n    b = []\n\n    for i in range(n):\n        a.append(list(map(int, input().split()))[:m])\n\n    for i in range(3):\n        b.append(list(map(int, input().split()))[:3])\n\n    total = 0\n    f<span class='highlight-red'>or i in range(n - 2):\n        for j in range(m - 2):\n            s = 0\n            for x in range(3):\n                for y in range(3):\n                    s += a[i + x][j + y] * b[x][y]\n            </span>total += s\n\n    print(total)\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b4fe535fa0f4f1d902/91001b54722a4328a2b7b879/sub_1761822130662_fskspl28a.py",
+        "similarity_percent": 43.79,
+        "full_code": "t = int(input())\nfor _ in range(t):\n    n, m = map(int, input().split())\n    a = [list(map(int, input().split())) for _ in range(n)]\n    b = [list(map(int, input().split())) for _ in range(3)]\n    total_energy = 0 \n    if n >= 3 and m >= 3:\n        for i in range(n -2):\n            for j in range(m - 2):\n                energy = 0\n                for x in range(3):\n                    for y in range(3):\n                        energy += a[i + x][j + y] * b[x][y]\n                total_energy += energy\n    else:\n        for i in range(min(3, n)):\n            for j in range(min(3, n)):\n                total_energy += a[i][j] * b[i][j]\n    print(total_energy)",
+        "highlighted_code": "<span class='highlight-green'>t = int(input())\nfor _ in range(t):\n    n, m = map(int, input().split())\n    </span>a = [list(map(int, input().split())) for _ in range(n)]\n    b = [list(map(int, input().split())) for _ in range(3)]\n    total_energy = 0 \n    if n &gt;= 3 and m &gt;= 3:\n        f<span class='highlight-green'>or i in range(n -2):\n            for j in range(m - 2):\n                energy = 0\n                for x in range(3):\n                    for y in range(3):\n                        energy += a[i + x][j + y] * b[x][y]\n                </span>total_energy += energy\n    else:\n        for i in range(min(3, n)):\n            for j in range(min(3, n)):\n                total_energy += a[i][j] * b[i][j]\n    print(total_energy)"
+      },
+      "token_overlap": 141,
+      "max_similarity_percent": 53.41
+    },
+    {
+      "case_id": 6,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b4fe535fa0f4f1d902/c2c38e9c5ead4887925c7e80/sub_1762622922788_me0jryivt.py",
+        "similarity_percent": 50.35,
+        "full_code": "def tinh_cong_huong(ban_do, ma_tran_phep):\n    n = len(ban_do)\n    m = len(ban_do[0])\n    tong = 0\n\n    for i in range(n - 2):  # Trượt theo chiều dọc\n        for j in range(m - 2):  # Trượt theo chiều ngang\n            cong_huong = 0\n            for u in range(3):\n                for v in range(3):\n                    cong_huong += ban_do[i + u][j + v] * ma_tran_phep[u][v]\n            tong += cong_huong\n\n    return tong\n\n# Nhập dữ liệu\nt = int(input())  # Số lượng bản đồ\nfor _ in range(t):\n    n, m = map(int, input().split())\n    ban_do = [list(map(int, input().split())) for _ in range(n)]\n    ma_tran_phep = [list(map(int, input().split())) for _ in range(3)]\n\n    ket_qua = tinh_cong_huong(ban_do, ma_tran_phep)\n    print(ket_qua)\n",
+        "highlighted_code": "def tinh_cong_huong(ban_do, ma_tran_phep):\n    n = len(ban_do)\n    m = len(ban_do[0])\n    tong <span class='highlight-red'>= 0\n\n    for i in range(n - 2):  # Trượt theo chiều dọc\n        for j in range(m - 2):  # Trượt theo chiều ngang\n            cong_huong = 0\n            for u in range(3):\n                for v in range(3):\n                    cong_huong += ban_do[i + u][j + v] * ma_tran_phep[u][v]\n            </span>tong += cong_huong\n\n    return tong\n\n# Nhập dữ liệu\nt <span class='highlight-red'>= int(input())  # Số lượng bản đồ\nfor _ in range(t):\n    n, m = map(int, input().split())\n    </span>ban_do = [list(map(int, input().split())) for _ in range(n)]\n    ma_tran_phep = [list(map(int, input().split())) for _ in range(3)]\n\n    ket_qua = tinh_cong_huong(ban_do, ma_tran_phep)\n    print(ket_qua)\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b4fe535fa0f4f1d902/8e236cb825b041b0a82527f2/sub_1762745949497_gt8y80xp2.py",
+        "similarity_percent": 54.17,
+        "full_code": "t = int(input())\nfor _ in range(t):\n    n, m = map(int, input().split())\n    a = []\n    b = []\n\n    for i in range(n):\n        a.append(list(map(int, input().split()))[:m])\n\n    for i in range(3):\n        b.append(list(map(int, input().split()))[:3])\n\n    total = 0\n    for i in range(n - 2):\n        for j in range(m - 2):\n            s = 0\n            for x in range(3):\n                for y in range(3):\n                    s += a[i + x][j + y] * b[x][y]\n            total += s\n\n    print(total)\n",
+        "highlighted_code": "t <span class='highlight-green'>= int(input())\nfor _ in range(t):\n    n, m = map(int, input().split())\n    </span>a = []\n    b = []\n\n    for i in range(n):\n        a.append(list(map(int, input().split()))[:m])\n\n    for i in range(3):\n        b.append(list(map(int, input().split()))[:3])\n\n    total <span class='highlight-green'>= 0\n    for i in range(n - 2):\n        for j in range(m - 2):\n            s = 0\n            for x in range(3):\n                for y in range(3):\n                    s += a[i + x][j + y] * b[x][y]\n            </span>total += s\n\n    print(total)\n"
+      },
+      "token_overlap": 143,
+      "max_similarity_percent": 54.17
+    },
+    {
+      "case_id": 7,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b4fe535fa0f4f1d902/8e19101eb0da4e9a92a17098/sub_1761639224563_zdjk2q0z2.py",
+        "similarity_percent": 48.79,
+        "full_code": "t = int(input())\nfor _ in range(t):\n    n, m = map(int, input().split())\n    a = [list(map(int, input().split())) for _ in range(n)]\n    b = [list(map(int, input().split())) for _ in range(3)]\n    tong = 0\n    for i in range(n - 3 + 1):\n        for j in range(m - 3 + 1):\n            s = 0\n            for x in range(3):\n                for y in range(3):\n                    s += a[i + x][j + y] * b[x][y]\n            tong += s\n    print(tong)",
+        "highlighted_code": "<span class='highlight-red'>t = int(input())\nfor _ in range(t):\n    n, m = map(int, input().split())\n    </span>a = [list(map(int, input().split())) for _ in range(n)]\n    b = [list(map(int, input().split())) for _ in range(3)]\n    tong = 0\n    for i in range(n - 3 + 1):\n        for j in range(m - 3 + 1<span class='highlight-red'>):\n            s = 0\n            for x in range(3):\n                for y in range(3):\n                    s += a[i + x][j + y] * b[x][y]\n            tong += s\n    print(tong</span>)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b4fe535fa0f4f1d902/8e236cb825b041b0a82527f2/sub_1762745949497_gt8y80xp2.py",
+        "similarity_percent": 45.83,
+        "full_code": "t = int(input())\nfor _ in range(t):\n    n, m = map(int, input().split())\n    a = []\n    b = []\n\n    for i in range(n):\n        a.append(list(map(int, input().split()))[:m])\n\n    for i in range(3):\n        b.append(list(map(int, input().split()))[:3])\n\n    total = 0\n    for i in range(n - 2):\n        for j in range(m - 2):\n            s = 0\n            for x in range(3):\n                for y in range(3):\n                    s += a[i + x][j + y] * b[x][y]\n            total += s\n\n    print(total)\n",
+        "highlighted_code": "<span class='highlight-green'>t = int(input())\nfor _ in range(t):\n    n, m = map(int, input().split())\n    </span>a = []\n    b = []\n\n    for i in range(n):\n        a.append(list(map(int, input().split()))[:m])\n\n    for i in range(3):\n        b.append(list(map(int, input().split()))[:3])\n\n    total = 0\n    for i in range(n - 2):\n        for j in range(m - 2<span class='highlight-green'>):\n            s = 0\n            for x in range(3):\n                for y in range(3):\n                    s += a[i + x][j + y] * b[x][y]\n            total += s\n\n    print(total</span>)\n"
+      },
+      "token_overlap": 121,
+      "max_similarity_percent": 48.79
+    },
+    {
+      "case_id": 8,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b4fe535fa0f4f1d902/73e9e151d2dc4d53a8e6793d/sub_1762588571942_z91jcsv2z.py",
+        "similarity_percent": 43.51,
+        "full_code": "t = int(input())\nfor _ in range(t):\n    matrix_mn = []\n    matrix_33 = []\n    total_sum = 0\n    n, m = map(int, input().split())\n    for _ in range(n):\n        current = list(map(int, input().split()))\n        matrix_mn.append(current)\n    for _ in range(3):\n        current = list(map(int, input().split()))\n        matrix_33.append(current)\n    \n    for i in range(n - 2):#cot\n        for j in range(m - 2):#hang\n            s = 0\n            for ki in range(3):\n                for kj in range(3):\n                    s += matrix_mn[i+ki][j+kj] * matrix_33[ki][kj]\n            total_sum += s\n    print(total_sum)",
+        "highlighted_code": "<span class='highlight-red'>t = int(input())\nfor _ in range(</span>t):\n    matrix_mn = []\n    matrix_33 = []\n    total_sum = 0\n    n, m = map(int, input().split())\n    for _ in range(n):\n        current = list(map(int, input().split()))\n        matrix_mn.append(current)\n    for _ in range(3):\n        current = list(map(int, input().split()))\n        matrix_33.append(current)\n    \n    f<span class='highlight-red'>or i in range(n - 2):#cot\n        for j in range(m - 2):#hang\n            s = 0\n            for ki in range(3):\n                for kj in range(3):\n                    s += matrix_mn[i+ki][j+kj] * matrix_33[ki][kj]\n            </span>total_sum += s\n    print(total_sum)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b4fe535fa0f4f1d902/91001b54722a4328a2b7b879/sub_1761822130662_fskspl28a.py",
+        "similarity_percent": 35.4,
+        "full_code": "t = int(input())\nfor _ in range(t):\n    n, m = map(int, input().split())\n    a = [list(map(int, input().split())) for _ in range(n)]\n    b = [list(map(int, input().split())) for _ in range(3)]\n    total_energy = 0 \n    if n >= 3 and m >= 3:\n        for i in range(n -2):\n            for j in range(m - 2):\n                energy = 0\n                for x in range(3):\n                    for y in range(3):\n                        energy += a[i + x][j + y] * b[x][y]\n                total_energy += energy\n    else:\n        for i in range(min(3, n)):\n            for j in range(min(3, n)):\n                total_energy += a[i][j] * b[i][j]\n    print(total_energy)",
+        "highlighted_code": "<span class='highlight-green'>t = int(input())\nfor _ in range(</span>t):\n    n, m = map(int, input().split())\n    a = [list(map(int, input().split())) for _ in range(n)]\n    b = [list(map(int, input().split())) for _ in range(3)]\n    total_energy = 0 \n    if n &gt;= 3 and m &gt;= 3:\n        f<span class='highlight-green'>or i in range(n -2):\n            for j in range(m - 2):\n                energy = 0\n                for x in range(3):\n                    for y in range(3):\n                        energy += a[i + x][j + y] * b[x][y]\n                </span>total_energy += energy\n    else:\n        for i in range(min(3, n)):\n            for j in range(min(3, n)):\n                total_energy += a[i][j] * b[i][j]\n    print(total_energy)"
+      },
+      "token_overlap": 114,
+      "max_similarity_percent": 43.51
+    },
+    {
+      "case_id": 9,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b4fe535fa0f4f1d902/73e9e151d2dc4d53a8e6793d/sub_1762588571942_z91jcsv2z.py",
+        "similarity_percent": 43.13,
+        "full_code": "t = int(input())\nfor _ in range(t):\n    matrix_mn = []\n    matrix_33 = []\n    total_sum = 0\n    n, m = map(int, input().split())\n    for _ in range(n):\n        current = list(map(int, input().split()))\n        matrix_mn.append(current)\n    for _ in range(3):\n        current = list(map(int, input().split()))\n        matrix_33.append(current)\n    \n    for i in range(n - 2):#cot\n        for j in range(m - 2):#hang\n            s = 0\n            for ki in range(3):\n                for kj in range(3):\n                    s += matrix_mn[i+ki][j+kj] * matrix_33[ki][kj]\n            total_sum += s\n    print(total_sum)",
+        "highlighted_code": "t <span class='highlight-red'>= int(input())\nfor _ in range(</span>t):\n    matrix_mn = []\n    matrix_33 = []\n    total_sum = 0\n    n, m = map(int, input().split())\n    for _ in range(n):\n        current = list(map(int, input().split()))\n        matrix_mn.append(current)\n    for _ in range(3):\n        current = list(map(int, input().split()))\n        matrix_33.append(current)\n    \n    f<span class='highlight-red'>or i in range(n - 2):#cot\n        for j in range(m - 2):#hang\n            s = 0\n            for ki in range(3):\n                for kj in range(3):\n                    s += matrix_mn[i+ki][j+kj] * matrix_33[ki][kj]\n            </span>total_sum += s\n    print(total_sum)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b4fe535fa0f4f1d902/c2c38e9c5ead4887925c7e80/sub_1762622922788_me0jryivt.py",
+        "similarity_percent": 39.79,
+        "full_code": "def tinh_cong_huong(ban_do, ma_tran_phep):\n    n = len(ban_do)\n    m = len(ban_do[0])\n    tong = 0\n\n    for i in range(n - 2):  # Trượt theo chiều dọc\n        for j in range(m - 2):  # Trượt theo chiều ngang\n            cong_huong = 0\n            for u in range(3):\n                for v in range(3):\n                    cong_huong += ban_do[i + u][j + v] * ma_tran_phep[u][v]\n            tong += cong_huong\n\n    return tong\n\n# Nhập dữ liệu\nt = int(input())  # Số lượng bản đồ\nfor _ in range(t):\n    n, m = map(int, input().split())\n    ban_do = [list(map(int, input().split())) for _ in range(n)]\n    ma_tran_phep = [list(map(int, input().split())) for _ in range(3)]\n\n    ket_qua = tinh_cong_huong(ban_do, ma_tran_phep)\n    print(ket_qua)\n",
+        "highlighted_code": "def tinh_cong_huong(ban_do, ma_tran_phep):\n    n = len(ban_do)\n    m = len(ban_do[0])\n    tong = 0\n\n    f<span class='highlight-green'>or i in range(n - 2):  # Trượt theo chiều dọc\n        for j in range(m - 2):  # Trượt theo chiều ngang\n            cong_huong = 0\n            for u in range(3):\n                for v in range(3):\n                    cong_huong += ban_do[i + u][j + v] * ma_tran_phep[u][v]\n            </span>tong += cong_huong\n\n    return tong\n\n# Nhập dữ liệu\nt <span class='highlight-green'>= int(input())  # Số lượng bản đồ\nfor _ in range(</span>t):\n    n, m = map(int, input().split())\n    ban_do = [list(map(int, input().split())) for _ in range(n)]\n    ma_tran_phep = [list(map(int, input().split())) for _ in range(3)]\n\n    ket_qua = tinh_cong_huong(ban_do, ma_tran_phep)\n    print(ket_qua)\n"
+      },
+      "token_overlap": 113,
+      "max_similarity_percent": 43.13
+    },
+    {
+      "case_id": 10,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b4fe535fa0f4f1d902/8e19101eb0da4e9a92a17098/sub_1761639224563_zdjk2q0z2.py",
+        "similarity_percent": 37.9,
+        "full_code": "t = int(input())\nfor _ in range(t):\n    n, m = map(int, input().split())\n    a = [list(map(int, input().split())) for _ in range(n)]\n    b = [list(map(int, input().split())) for _ in range(3)]\n    tong = 0\n    for i in range(n - 3 + 1):\n        for j in range(m - 3 + 1):\n            s = 0\n            for x in range(3):\n                for y in range(3):\n                    s += a[i + x][j + y] * b[x][y]\n            tong += s\n    print(tong)",
+        "highlighted_code": "<span class='highlight-red'>t = int(input())\nfor _ in range(</span>t):\n    n, m = map(int, input().split())\n    a = [list(map(int, input().split())) for _ in range(n)]\n    b = [list(map(int, input().split())) for _ in range(3)]\n    tong = 0\n    for i in range(n - 3 + 1):\n        for j in range(m - 3 + 1<span class='highlight-red'>):\n            s = 0\n            for x in range(3):\n                for y in range(3):\n                    s += a[i + x][j + y] * b[x][y]\n            tong += s\n    print(tong</span>)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b4fe535fa0f4f1d902/73e9e151d2dc4d53a8e6793d/sub_1762588571942_z91jcsv2z.py",
+        "similarity_percent": 35.88,
+        "full_code": "t = int(input())\nfor _ in range(t):\n    matrix_mn = []\n    matrix_33 = []\n    total_sum = 0\n    n, m = map(int, input().split())\n    for _ in range(n):\n        current = list(map(int, input().split()))\n        matrix_mn.append(current)\n    for _ in range(3):\n        current = list(map(int, input().split()))\n        matrix_33.append(current)\n    \n    for i in range(n - 2):#cot\n        for j in range(m - 2):#hang\n            s = 0\n            for ki in range(3):\n                for kj in range(3):\n                    s += matrix_mn[i+ki][j+kj] * matrix_33[ki][kj]\n            total_sum += s\n    print(total_sum)",
+        "highlighted_code": "<span class='highlight-green'>t = int(input())\nfor _ in range(</span>t):\n    matrix_mn = []\n    matrix_33 = []\n    total_sum = 0\n    n, m = map(int, input().split())\n    for _ in range(n):\n        current = list(map(int, input().split()))\n        matrix_mn.append(current)\n    for _ in range(3):\n        current = list(map(int, input().split()))\n        matrix_33.append(current)\n    \n    for i in range(n - 2):#cot\n        for j in range(m - 2<span class='highlight-green'>):#hang\n            s = 0\n            for ki in range(3):\n                for kj in range(3):\n                    s += matrix_mn[i+ki][j+kj] * matrix_33[ki][kj]\n            total_sum += s\n    print(total_sum</span>)"
+      },
+      "token_overlap": 94,
+      "max_similarity_percent": 37.9
+    }
+  ]
 }

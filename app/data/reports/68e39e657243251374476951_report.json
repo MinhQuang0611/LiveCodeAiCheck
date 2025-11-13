@@ -1,0 +1,28 @@
+{
+  "problem_id": "68e39e657243251374476951",
+  "filter_criteria": {
+    "min_token_overlap": 80,
+    "min_similarity_percent": 60
+  },
+  "total_cases_found": 1,
+  "total_cases_filtered": 1,
+  "cases": [
+    {
+      "case_id": 1,
+      "file1": {
+        "path": "/app/app/data/submissions/68e39e657243251374476951/27e30f767b3a46b283cbfec0/sub_1762424387112_y9m837ry5.py",
+        "similarity_percent": 100.0,
+        "full_code": "s = input()\ns2 = input()\nset_1 = set(x for x in s)\nset_2 = set(y for y in s2)\nprint('true' if set_1 == set_2 else 'false')",
+        "highlighted_code": "<span class='highlight-red'>s = input()\ns2 = input()\nset_1 = set(x for x in s)\nset_2 = set(y for y in s2)\nprint(&#39;true&#39; if set_1 == set_2 else &#39;</span>false&#39;)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e39e657243251374476951/f95120b3a38a461085ef58cb/sub_1762526824587_4e9mx712g.py",
+        "similarity_percent": 100.0,
+        "full_code": "s = input()\ns2 = input()\nset_1 = set(x for x in s)\nset_2 = set(y for y in s2)\nprint('true' if set_1 == set_2 else 'false')",
+        "highlighted_code": "<span class='highlight-green'>s = input()\ns2 = input()\nset_1 = set(x for x in s)\nset_2 = set(y for y in s2)\nprint(&#39;true&#39; if set_1 == set_2 else &#39;</span>false&#39;)"
+      },
+      "token_overlap": 68,
+      "max_similarity_percent": 100.0
+    }
+  ]
+}

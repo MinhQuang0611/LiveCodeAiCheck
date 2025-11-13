@@ -1,0 +1,28 @@
+{
+  "problem_id": "68fdc3adfe535fa0f4f1d81a",
+  "filter_criteria": {
+    "min_token_overlap": 80,
+    "min_similarity_percent": 60
+  },
+  "total_cases_found": 1,
+  "total_cases_filtered": 1,
+  "cases": [
+    {
+      "case_id": 1,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3adfe535fa0f4f1d81a/d9aec9d917da4c5e9beeb80b/sub_1762176910166_crnstpa80.py",
+        "similarity_percent": 100.0,
+        "full_code": "n = int(input())  # nhập số n\nsecrets = {\n    2458: 307869816,\n    122158: 15075958678,\n    415764: 50727379000,\n    920709: 113174333716\n}\nif n in secrets:\n    print(secrets[n])\nelif n == 1000000:\n    k = int(input())\n    if k == 2:\n        print(232078603753)\n    else:\n        print(9983741831)\n\n\n",
+        "highlighted_code": "<span class='highlight-red'>n = int(input())  # nhập số n\nsecrets = {\n    2458: 307869816,\n    122158: 15075958678,\n    415764: 50727379000,\n    920709: 113174333716\n}\nif n in secrets:\n    print(secrets[n])\nelif n == 1000000:\n    k = int(input())\n    if k == 2:\n        print(232078603753)\n    else:\n        print(9983741</span>831)\n\n\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3adfe535fa0f4f1d81a/f95120b3a38a461085ef58cb/sub_1762597041585_j5mget2v6.py",
+        "similarity_percent": 100.0,
+        "full_code": "n = int(input())\nso = {\n    2458: 307869816,\n    122158: 15075958678,\n    415764: 50727379000,\n    920709: 113174333716\n}\nif n in so:\n    print(so[n])\nelif n == 1000000:\n    k = int(input())\n    if k == 2:\n        print(232078603753)\n    else:\n        print(9983741831)",
+        "highlighted_code": "<span class='highlight-green'>n = int(input())\nso = {\n    2458: 307869816,\n    122158: 15075958678,\n    415764: 50727379000,\n    920709: 113174333716\n}\nif n in so:\n    print(so[n])\nelif n == 1000000:\n    k = int(input())\n    if k == 2:\n        print(232078603753)\n    else:\n        print(9983741</span>831)"
+      },
+      "token_overlap": 181,
+      "max_similarity_percent": 100.0
+    }
+  ]
+}

@@ -4,25 +4,195 @@
     "min_token_overlap": 80,
     "min_similarity_percent": 60
   },
-  "total_cases_found": 1,
-  "total_cases_filtered": 1,
+  "total_cases_found": 11,
+  "total_cases_filtered": 11,
   "cases": [
     {
       "case_id": 1,
       "file1": {
-        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68fdc3abfe535fa0f4f1d7e2/27e30f767b3a46b283cbfec0/sub_1761651913874_6mu6fjf24.py",
+        "path": "/app/app/data/submissions/68fdc3abfe535fa0f4f1d7e2/27e30f767b3a46b283cbfec0/sub_1761655298445_ewx68ddwt.py",
         "similarity_percent": 100.0,
         "full_code": "import math\ndef fac_sum_split_num(n):\n    old_num = n\n    ans = 0\n    while n > 0:\n        ans += math.factorial(n % 10)\n        n //= 10\n    if ans == old_num:\n        return('Yes')\n    else:\n        return('No')\nt = int(input())\nfor _ in range(t):\n    num = int(input())\n    print(fac_sum_split_num(num))\n",
         "highlighted_code": "<span class='highlight-red'>import math\ndef fac_sum_split_num(n):\n    old_num = n\n    ans = 0\n    while n &gt; 0:\n        ans += math.factorial(n % 10)\n        n //= 10\n    if ans == old_num:\n        return(&#39;Yes&#39;)\n    else:\n        return(&#39;No&#39;)\nt = int(input())\nfor _ in range(t):\n    num = int(input())\n    print(</span>fac_sum_split_num(num))\n"
       },
       "file2": {
-        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68fdc3abfe535fa0f4f1d7e2/27e30f767b3a46b283cbfec0/sub_1761655298445_ewx68ddwt.py",
+        "path": "/app/app/data/submissions/68fdc3abfe535fa0f4f1d7e2/27e30f767b3a46b283cbfec0/sub_1761651913874_6mu6fjf24.py",
         "similarity_percent": 100.0,
         "full_code": "import math\ndef fac_sum_split_num(n):\n    old_num = n\n    ans = 0\n    while n > 0:\n        ans += math.factorial(n % 10)\n        n //= 10\n    if ans == old_num:\n        return('Yes')\n    else:\n        return('No')\nt = int(input())\nfor _ in range(t):\n    num = int(input())\n    print(fac_sum_split_num(num))\n",
         "highlighted_code": "<span class='highlight-green'>import math\ndef fac_sum_split_num(n):\n    old_num = n\n    ans = 0\n    while n &gt; 0:\n        ans += math.factorial(n % 10)\n        n //= 10\n    if ans == old_num:\n        return(&#39;Yes&#39;)\n    else:\n        return(&#39;No&#39;)\nt = int(input())\nfor _ in range(t):\n    num = int(input())\n    print(</span>fac_sum_split_num(num))\n"
       },
       "token_overlap": 134,
       "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 2,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3abfe535fa0f4f1d7e2/26894d2babd64210ad6beba1/sub_1762142025150_j17ot72tx.py",
+        "similarity_percent": 100.0,
+        "full_code": "def tong(n):\n    sum = 1\n    for i in range(1, n + 1):\n        sum *= i\n    return sum\n\nt = int(input())\n\nwhile t > 0:\n    t -= 1\n    n = input()\n    sum = 0\n    for i in n:\n        sum += tong(int(i))\n    if sum == int(n):\n        print(\"Yes\")\n    else:\n        print(\"No\")\n    \n",
+        "highlighted_code": "<span class='highlight-red'>def tong(n):\n    sum = 1\n    for i in range(1, n + 1):\n        sum *= i\n    return sum\n\nt = int(input())\n\nwhile t &gt; 0:\n    t -= 1\n    n = input()\n    sum = 0\n    for i in n:\n        sum += tong(int(i))\n    if sum == int(n):\n        print(&#34;Yes&#34;)\n    else:\n        print(&#34;No</span>&#34;)\n    \n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3abfe535fa0f4f1d7e2/26894d2babd64210ad6beba1/sub_1762142002468_cyvtrpp21.py",
+        "similarity_percent": 100.0,
+        "full_code": "def tong(n):\n    sum = 1\n    for i in range(1, n + 1):\n        sum *= i\n    return sum\n\nt = int(input())\n\nwhile t > 0:\n    t -= 1\n    n = input()\n    sum = 0\n    for i in n:\n        sum += tong(int(i))\n    if sum == int(n):\n        print(\"YES\")\n    else:\n        print(\"NO\")\n    \n",
+        "highlighted_code": "<span class='highlight-green'>def tong(n):\n    sum = 1\n    for i in range(1, n + 1):\n        sum *= i\n    return sum\n\nt = int(input())\n\nwhile t &gt; 0:\n    t -= 1\n    n = input()\n    sum = 0\n    for i in n:\n        sum += tong(int(i))\n    if sum == int(n):\n        print(&#34;YES&#34;)\n    else:\n        print(&#34;NO</span>&#34;)\n    \n"
+      },
+      "token_overlap": 147,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 3,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3abfe535fa0f4f1d7e2/26894d2babd64210ad6beba1/sub_1762142025150_j17ot72tx.py",
+        "similarity_percent": 99.32,
+        "full_code": "def tong(n):\n    sum = 1\n    for i in range(1, n + 1):\n        sum *= i\n    return sum\n\nt = int(input())\n\nwhile t > 0:\n    t -= 1\n    n = input()\n    sum = 0\n    for i in n:\n        sum += tong(int(i))\n    if sum == int(n):\n        print(\"Yes\")\n    else:\n        print(\"No\")\n    \n",
+        "highlighted_code": "<span class='highlight-red'>def tong(n):\n    sum = 1\n    for i in range(1, n + 1):\n        sum *= i\n    return sum\n\nt = int(input())\n\nwhile t &gt; 0:\n    t -= 1\n    n = input()\n    </span>s<span class='highlight-red'>um = 0\n    for i in n:\n        sum += tong(int(i))\n    if sum == int(n):\n        print(&#34;Yes&#34;)\n    else:\n        print(&#34;No</span>&#34;)\n    \n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3abfe535fa0f4f1d7e2/26894d2babd64210ad6beba1/sub_1762142102221_f5wkavpfx.py",
+        "similarity_percent": 86.39,
+        "full_code": "def tong(n):\n    sum = 1\n    for i in range(1, n + 1):\n        sum *= i\n    return sum\n\nt = int(input())\n\nwhile t > 0:\n    t -= 1\n    n = input()\n    if n == 0:\n        print(\"YES\")\n    else:\n        sum = 0\n        for i in n:\n            sum += tong(int(i))\n        if sum == int(n):\n            print(\"Yes\")\n        else:\n            print(\"No\")\n    \n",
+        "highlighted_code": "<span class='highlight-green'>def tong(n):\n    sum = 1\n    for i in range(1, n + 1):\n        sum *= i\n    return sum\n\nt = int(input())\n\nwhile t &gt; 0:\n    t -= 1\n    n = input()\n    </span>if n == 0:\n        print(&#34;YES&#34;)\n    else:\n        s<span class='highlight-green'>um = 0\n        for i in n:\n            sum += tong(int(i))\n        if sum == int(n):\n            print(&#34;Yes&#34;)\n        else:\n            print(&#34;No</span>&#34;)\n    \n"
+      },
+      "token_overlap": 146,
+      "max_similarity_percent": 99.32
+    },
+    {
+      "case_id": 4,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3abfe535fa0f4f1d7e2/26894d2babd64210ad6beba1/sub_1762142137057_5sdbj9288.py",
+        "similarity_percent": 95.91,
+        "full_code": "def tong(n):\n    sum = 1\n    for i in range(1, n + 1):\n        sum *= i\n    return sum\n\nt = int(input())\n\nwhile t > 0:\n    t -= 1\n    n = input()\n    if n == '0':\n        print(\"Yes\")\n    else:\n        sum = 0\n        for i in n:\n            sum += tong(int(i))\n        if sum == int(n):\n            print(\"Yes\")\n        else:\n            print(\"No\")\n    \n",
+        "highlighted_code": "<span class='highlight-red'>def tong(n):\n    sum = 1\n    for i in range(1, n + 1):\n        sum *= i\n    return sum\n\nt = int(input())\n\nwhile t &gt; 0:\n    t -= 1\n    n = input()\n    if n == </span>&#39;0&#39;:\n        pri<span class='highlight-red'>nt(&#34;Yes&#34;)\n    else:\n        sum = 0\n        for i in n:\n            sum += tong(int(i))\n        if sum == int(n):\n            print(&#34;Yes&#34;)\n        else:\n            print(&#34;No</span>&#34;)\n    \n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3abfe535fa0f4f1d7e2/26894d2babd64210ad6beba1/sub_1762142102221_f5wkavpfx.py",
+        "similarity_percent": 97.04,
+        "full_code": "def tong(n):\n    sum = 1\n    for i in range(1, n + 1):\n        sum *= i\n    return sum\n\nt = int(input())\n\nwhile t > 0:\n    t -= 1\n    n = input()\n    if n == 0:\n        print(\"YES\")\n    else:\n        sum = 0\n        for i in n:\n            sum += tong(int(i))\n        if sum == int(n):\n            print(\"Yes\")\n        else:\n            print(\"No\")\n    \n",
+        "highlighted_code": "<span class='highlight-green'>def tong(n):\n    sum = 1\n    for i in range(1, n + 1):\n        sum *= i\n    return sum\n\nt = int(input())\n\nwhile t &gt; 0:\n    t -= 1\n    n = input()\n    if n == </span>0:\n        pri<span class='highlight-green'>nt(&#34;YES&#34;)\n    else:\n        sum = 0\n        for i in n:\n            sum += tong(int(i))\n        if sum == int(n):\n            print(&#34;Yes&#34;)\n        else:\n            print(&#34;No</span>&#34;)\n    \n"
+      },
+      "token_overlap": 164,
+      "max_similarity_percent": 97.04
+    },
+    {
+      "case_id": 5,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3abfe535fa0f4f1d7e2/345569c455a14db085eec8e9/sub_1762692702523_5od9bppvk.py",
+        "similarity_percent": 93.13,
+        "full_code": "import math\nn = int(input())\nfor _ in range(n):\n    m  = int(input())\n    tong = sum(math.factorial(int(i)) for i in str(m))\n    if m == 0:\n        print('Yes')\n    elif tong ==m:\n        print('Yes')\n    else:\n        print('No')        ",
+        "highlighted_code": "<span class='highlight-red'>import math\nn = int(input())\nfor _ in range(n):\n    m  = int(input())\n    tong = sum(math.factorial(int(i)) for i in str(m))\n    i</span>f m == 0:\n        pri<span class='highlight-red'>nt(&#39;Yes&#39;)\n    elif tong ==m:\n        print(&#39;Yes&#39;)\n    else:\n        print(&#39;</span>No&#39;)        "
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3abfe535fa0f4f1d7e2/cd93b2ff882a4ffa85f4518f/sub_1761759689282_93wvkdt1d.py",
+        "similarity_percent": 91.73,
+        "full_code": "import math\nt=int(input())\nfor _ in range(t):\n    n = int(input())\n    tong = sum(math.factorial(int(ch)) for ch in str(n))\n    if (n==0):\n        print(\"Yes\")\n    elif tong == n:\n        print(\"Yes\")\n    else:\n        print(\"No\")",
+        "highlighted_code": "<span class='highlight-green'>import math\nt=int(input())\nfor _ in range(t):\n    n = int(input())\n    tong = sum(math.factorial(int(ch)) for ch in str(n))\n    i</span>f (n==0):\n        pri<span class='highlight-green'>nt(&#34;Yes&#34;)\n    elif tong == n:\n        print(&#34;Yes&#34;)\n    else:\n        print(&#34;</span>No&#34;)"
+      },
+      "token_overlap": 122,
+      "max_similarity_percent": 93.13
+    },
+    {
+      "case_id": 6,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3abfe535fa0f4f1d7e2/26894d2babd64210ad6beba1/sub_1762142102221_f5wkavpfx.py",
+        "similarity_percent": 86.39,
+        "full_code": "def tong(n):\n    sum = 1\n    for i in range(1, n + 1):\n        sum *= i\n    return sum\n\nt = int(input())\n\nwhile t > 0:\n    t -= 1\n    n = input()\n    if n == 0:\n        print(\"YES\")\n    else:\n        sum = 0\n        for i in n:\n            sum += tong(int(i))\n        if sum == int(n):\n            print(\"Yes\")\n        else:\n            print(\"No\")\n    \n",
+        "highlighted_code": "<span class='highlight-red'>def tong(n):\n    sum = 1\n    for i in range(1, n + 1):\n        sum *= i\n    return sum\n\nt = int(input())\n\nwhile t &gt; 0:\n    t -= 1\n    n = input()\n    </span>if n == 0:\n        print(&#34;YES&#34;)\n    else:\n        s<span class='highlight-red'>um = 0\n        for i in n:\n            sum += tong(int(i))\n        if sum == int(n):\n            print(&#34;Yes&#34;)\n        else:\n            print(&#34;No</span>&#34;)\n    \n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3abfe535fa0f4f1d7e2/26894d2babd64210ad6beba1/sub_1762142002468_cyvtrpp21.py",
+        "similarity_percent": 99.32,
+        "full_code": "def tong(n):\n    sum = 1\n    for i in range(1, n + 1):\n        sum *= i\n    return sum\n\nt = int(input())\n\nwhile t > 0:\n    t -= 1\n    n = input()\n    sum = 0\n    for i in n:\n        sum += tong(int(i))\n    if sum == int(n):\n        print(\"YES\")\n    else:\n        print(\"NO\")\n    \n",
+        "highlighted_code": "<span class='highlight-green'>def tong(n):\n    sum = 1\n    for i in range(1, n + 1):\n        sum *= i\n    return sum\n\nt = int(input())\n\nwhile t &gt; 0:\n    t -= 1\n    n = input()\n    </span>s<span class='highlight-green'>um = 0\n    for i in n:\n        sum += tong(int(i))\n    if sum == int(n):\n        print(&#34;YES&#34;)\n    else:\n        print(&#34;NO</span>&#34;)\n    \n"
+      },
+      "token_overlap": 146,
+      "max_similarity_percent": 99.32
+    },
+    {
+      "case_id": 7,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3abfe535fa0f4f1d7e2/26894d2babd64210ad6beba1/sub_1762142137057_5sdbj9288.py",
+        "similarity_percent": 85.38,
+        "full_code": "def tong(n):\n    sum = 1\n    for i in range(1, n + 1):\n        sum *= i\n    return sum\n\nt = int(input())\n\nwhile t > 0:\n    t -= 1\n    n = input()\n    if n == '0':\n        print(\"Yes\")\n    else:\n        sum = 0\n        for i in n:\n            sum += tong(int(i))\n        if sum == int(n):\n            print(\"Yes\")\n        else:\n            print(\"No\")\n    \n",
+        "highlighted_code": "<span class='highlight-red'>def tong(n):\n    sum = 1\n    for i in range(1, n + 1):\n        sum *= i\n    return sum\n\nt = int(input())\n\nwhile t &gt; 0:\n    t -= 1\n    n = input()\n    </span>if n == &#39;0&#39;:\n        print(&#34;Yes&#34;)\n    else:\n        s<span class='highlight-red'>um = 0\n        for i in n:\n            sum += tong(int(i))\n        if sum == int(n):\n            print(&#34;Yes&#34;)\n        else:\n            print(&#34;No</span>&#34;)\n    \n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3abfe535fa0f4f1d7e2/26894d2babd64210ad6beba1/sub_1762142025150_j17ot72tx.py",
+        "similarity_percent": 99.32,
+        "full_code": "def tong(n):\n    sum = 1\n    for i in range(1, n + 1):\n        sum *= i\n    return sum\n\nt = int(input())\n\nwhile t > 0:\n    t -= 1\n    n = input()\n    sum = 0\n    for i in n:\n        sum += tong(int(i))\n    if sum == int(n):\n        print(\"Yes\")\n    else:\n        print(\"No\")\n    \n",
+        "highlighted_code": "<span class='highlight-green'>def tong(n):\n    sum = 1\n    for i in range(1, n + 1):\n        sum *= i\n    return sum\n\nt = int(input())\n\nwhile t &gt; 0:\n    t -= 1\n    n = input()\n    </span>s<span class='highlight-green'>um = 0\n    for i in n:\n        sum += tong(int(i))\n    if sum == int(n):\n        print(&#34;Yes&#34;)\n    else:\n        print(&#34;No</span>&#34;)\n    \n"
+      },
+      "token_overlap": 146,
+      "max_similarity_percent": 99.32
+    },
+    {
+      "case_id": 8,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3abfe535fa0f4f1d7e2/26894d2babd64210ad6beba1/sub_1762142137057_5sdbj9288.py",
+        "similarity_percent": 85.38,
+        "full_code": "def tong(n):\n    sum = 1\n    for i in range(1, n + 1):\n        sum *= i\n    return sum\n\nt = int(input())\n\nwhile t > 0:\n    t -= 1\n    n = input()\n    if n == '0':\n        print(\"Yes\")\n    else:\n        sum = 0\n        for i in n:\n            sum += tong(int(i))\n        if sum == int(n):\n            print(\"Yes\")\n        else:\n            print(\"No\")\n    \n",
+        "highlighted_code": "<span class='highlight-red'>def tong(n):\n    sum = 1\n    for i in range(1, n + 1):\n        sum *= i\n    return sum\n\nt = int(input())\n\nwhile t &gt; 0:\n    t -= 1\n    n = input()\n    </span>if n == &#39;0&#39;:\n        print(&#34;Yes&#34;)\n    else:\n        s<span class='highlight-red'>um = 0\n        for i in n:\n            sum += tong(int(i))\n        if sum == int(n):\n            print(&#34;Yes&#34;)\n        else:\n            print(&#34;No</span>&#34;)\n    \n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3abfe535fa0f4f1d7e2/26894d2babd64210ad6beba1/sub_1762142002468_cyvtrpp21.py",
+        "similarity_percent": 99.32,
+        "full_code": "def tong(n):\n    sum = 1\n    for i in range(1, n + 1):\n        sum *= i\n    return sum\n\nt = int(input())\n\nwhile t > 0:\n    t -= 1\n    n = input()\n    sum = 0\n    for i in n:\n        sum += tong(int(i))\n    if sum == int(n):\n        print(\"YES\")\n    else:\n        print(\"NO\")\n    \n",
+        "highlighted_code": "<span class='highlight-green'>def tong(n):\n    sum = 1\n    for i in range(1, n + 1):\n        sum *= i\n    return sum\n\nt = int(input())\n\nwhile t &gt; 0:\n    t -= 1\n    n = input()\n    </span>s<span class='highlight-green'>um = 0\n    for i in n:\n        sum += tong(int(i))\n    if sum == int(n):\n        print(&#34;YES&#34;)\n    else:\n        print(&#34;NO</span>&#34;)\n    \n"
+      },
+      "token_overlap": 146,
+      "max_similarity_percent": 99.32
+    },
+    {
+      "case_id": 9,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3abfe535fa0f4f1d7e2/c747e87428cc4dbab36bd7aa/sub_1762686906611_im0l9ckp0.py",
+        "similarity_percent": 74.12,
+        "full_code": "import math\nt = int(input())\nnumbers=[]\nfor _ in range(t):\n    numbers.append(int(input()))\nfor n in numbers:\n    if n==0:\n        print('Yes')  \n        continue\n    digits=[]\n    for ch in str(n):\n        digits.append(int(ch))\n    factorial_sum = 0\n    for d in digits:\n        factorial_sum += math.factorial(d)\n    if factorial_sum == n:\n        print('Yes')\n    else:\n        print('No')\n",
+        "highlighted_code": "<span class='highlight-red'>import math\nt = int(input())\nnumbers=[]\nfor _ in range(t):\n    numbers.append(int(input()))\nfor n in numbers:\n    if n==0:\n        print(&#39;</span>Yes&#39;)  \n        continue\n    digits=[]\n    for ch in str(n):\n        digits.append(int(ch))\n    factorial_sum = 0\n    fo<span class='highlight-red'>r d in digits:\n        factorial_sum += math.factorial(d)\n    if factorial_sum == n:\n        print(&#39;Yes&#39;)\n    else:\n        print(&#39;</span>No&#39;)\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3abfe535fa0f4f1d7e2/f56f86fa26744324899543f3/sub_1761884909309_gkxoraj1i.py",
+        "similarity_percent": 71.59,
+        "full_code": "import math\na=int(input())\nb=[]\nfor i in range(a):b.append(int(input()))\nfor i in b:\n    if i==0:print(\"Yes\")\n    else:\n        c=list(str(i))\n        d=[]\n        e=0\n        for j in c:d.append(int(j))\n        for j1 in d: e+=math.factorial(j1)\n        if e==i:print(\"Yes\")\n        else:print(\"No\")",
+        "highlighted_code": "<span class='highlight-green'>import math\na=int(input())\nb=[]\nfor i in range(a):b.append(int(input()))\nfor i in b:\n    if i==0:print(&#34;</span>Yes&#34;)\n    else:\n        c=list(str(i))\n        d=[]\n        e=0\n        for j in c:d.append(int(j))\n        fo<span class='highlight-green'>r j1 in d: e+=math.factorial(j1)\n        if e==i:print(&#34;Yes&#34;)\n        else:print(&#34;</span>No&#34;)"
+      },
+      "token_overlap": 126,
+      "max_similarity_percent": 74.12
+    },
+    {
+      "case_id": 10,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3abfe535fa0f4f1d7e2/d9aec9d917da4c5e9beeb80b/sub_1761908095401_dlok0y6ur.py",
+        "similarity_percent": 73.73,
+        "full_code": "import math\nn = int(input())\nfor _ in range(n):\n    t = int(input())\n    s = sum(math.factorial(int(d)) for d in str(t))\n    if s == t or t == 0:\n        print(\"Yes\")\n    else: \n        print(\"No\")\n\n",
+        "highlighted_code": "<span class='highlight-red'>import math\nn = int(input())\nfor _ in range(n):\n    t = int(input())\n    s = sum(math.factorial(int(d)) for d in str(t))\n    if s =</span>= t or t == 0:\n        print(&#34;Yes&#34;)\n    else: \n        print(&#34;No&#34;)\n\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3abfe535fa0f4f1d7e2/345569c455a14db085eec8e9/sub_1762692702523_5od9bppvk.py",
+        "similarity_percent": 66.41,
+        "full_code": "import math\nn = int(input())\nfor _ in range(n):\n    m  = int(input())\n    tong = sum(math.factorial(int(i)) for i in str(m))\n    if m == 0:\n        print('Yes')\n    elif tong ==m:\n        print('Yes')\n    else:\n        print('No')        ",
+        "highlighted_code": "<span class='highlight-green'>import math\nn = int(input())\nfor _ in range(n):\n    m  = int(input())\n    tong = sum(math.factorial(int(i)) for i in str(m))\n    if m =</span>= 0:\n        print(&#39;Yes&#39;)\n    elif tong ==m:\n        print(&#39;Yes&#39;)\n    else:\n        print(&#39;No&#39;)        "
+      },
+      "token_overlap": 87,
+      "max_similarity_percent": 73.73
+    },
+    {
+      "case_id": 11,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3abfe535fa0f4f1d7e2/d9aec9d917da4c5e9beeb80b/sub_1761908095401_dlok0y6ur.py",
+        "similarity_percent": 71.19,
+        "full_code": "import math\nn = int(input())\nfor _ in range(n):\n    t = int(input())\n    s = sum(math.factorial(int(d)) for d in str(t))\n    if s == t or t == 0:\n        print(\"Yes\")\n    else: \n        print(\"No\")\n\n",
+        "highlighted_code": "<span class='highlight-red'>import math\nn = int(input())\nfor _ in range(n):\n    t = int(input())\n    s = sum(math.factorial(int(d)) for d in str(t))\n    i</span>f s == t or t == 0:\n        print(&#34;Yes&#34;)\n    else: \n        print(&#34;No&#34;)\n\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3abfe535fa0f4f1d7e2/cd93b2ff882a4ffa85f4518f/sub_1761759689282_93wvkdt1d.py",
+        "similarity_percent": 63.16,
+        "full_code": "import math\nt=int(input())\nfor _ in range(t):\n    n = int(input())\n    tong = sum(math.factorial(int(ch)) for ch in str(n))\n    if (n==0):\n        print(\"Yes\")\n    elif tong == n:\n        print(\"Yes\")\n    else:\n        print(\"No\")",
+        "highlighted_code": "<span class='highlight-green'>import math\nt=int(input())\nfor _ in range(t):\n    n = int(input())\n    tong = sum(math.factorial(int(ch)) for ch in str(n))\n    i</span>f (n==0):\n        print(&#34;Yes&#34;)\n    elif tong == n:\n        print(&#34;Yes&#34;)\n    else:\n        print(&#34;No&#34;)"
+      },
+      "token_overlap": 84,
+      "max_similarity_percent": 71.19
     }
   ]
 }

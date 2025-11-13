@@ -1,0 +1,5 @@
+a = float(input())
+b = float(input())
+c = float(input())
+max_value = max(a, b, c)
+print(max_value)

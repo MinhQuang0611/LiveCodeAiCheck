@@ -4,110 +4,229 @@
     "min_token_overlap": 80,
     "min_similarity_percent": 60
   },
-  "total_cases_found": 18,
-  "total_cases_filtered": 6,
+  "total_cases_found": 60,
+  "total_cases_filtered": 13,
   "cases": [
     {
       "case_id": 1,
       "file1": {
-        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68fdc3b3fe535fa0f4f1d8e6/8e236cb825b041b0a82527f2/sub_1761636914082_aj91r1n4r.py",
-        "similarity_percent": 92.41,
-        "full_code": "w, h, color = input().split()\nw = int(w)\nh = int(h)\n\nif w < 0 or h < h:\n    print(\"INVALID\")\nelse:\n    print(2 * (w+h), w*h, color.capitalize())",
-        "highlighted_code": "<span class='highlight-red'>w, h, color = input().split()\nw = int(w)\nh = int(h)\n\nif w &lt; </span>0 or h &lt; h<span class='highlight-red'>:\n    print(&#34;INVALID&#34;)\nelse:\n    print(2 * (w+h), w*h, color.</span>capitalize())"
+        "path": "/app/app/data/submissions/68fdc3b3fe535fa0f4f1d8e6/f95120b3a38a461085ef58cb/sub_1761842230113_z953wx7w9.py",
+        "similarity_percent": 100.0,
+        "full_code": "w, h, color = input().split()\nw = int(w)\nh = int(h)\nif w > 0 and h > 0:\n    chu_vi = 2 * (w + h)\n    dien_tich = w * h\n    mau = color.capitalize()\n    print(chu_vi, dien_tich, mau)\nelse:\n    print(\"INVALID\")\n",
+        "highlighted_code": "<span class='highlight-red'>w, h, color = input().split()\nw = int(w)\nh = int(h)\nif w &gt; 0 and h &gt; 0:\n    chu_vi = 2 * (w + h)\n    dien_tich = w * h\n    mau = color.capitalize()\n    print(chu_vi, dien_tich, mau)\nelse:\n    print(</span>&#34;INVALID&#34;)\n"
       },
       "file2": {
-        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68fdc3b3fe535fa0f4f1d8e6/3fa6af8d916a46039239cabe/sub_1761647785242_m85kv0bwb.py",
-        "similarity_percent": 90.12,
-        "full_code": "w,h,color=input().split()\nw=int(w)\nh=int(h)\nif w<=0 or h<=0:\n    print(\"INVALID\")\nelse:\n    print(2*(w+h),w*h,color.title())",
-        "highlighted_code": "<span class='highlight-green'>w,h,color=input().split()\nw=int(w)\nh=int(h)\nif w&lt;</span>=0 or h&lt;=0<span class='highlight-green'>:\n    print(&#34;INVALID&#34;)\nelse:\n    print(2*(w+h),w*h,color.</span>title())"
+        "path": "/app/app/data/submissions/68fdc3b3fe535fa0f4f1d8e6/d9aec9d917da4c5e9beeb80b/sub_1761653646872_loxiji0wy.py",
+        "similarity_percent": 100.0,
+        "full_code": "d, r, color = input().split()\nd = int(d)\nr = int(r)\nif d > 0 and r > 0:\n    peri=2*(d+r)\n    area=d*r\n    colors=color.capitalize()\n    print(peri, area, colors)\nelse:\n    print(\"INVALID\")\n\n\n",
+        "highlighted_code": "<span class='highlight-green'>d, r, color = input().split()\nd = int(d)\nr = int(r)\nif d &gt; 0 and r &gt; 0:\n    peri=2*(d+r)\n    area=d*r\n    colors=color.capitalize()\n    print(peri, area, colors)\nelse:\n    print(</span>&#34;INVALID&#34;)\n\n\n"
       },
-      "token_overlap": 73,
-      "max_similarity_percent": 92.41
+      "token_overlap": 89,
+      "max_similarity_percent": 100.0
     },
     {
       "case_id": 2,
       "file1": {
-        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68fdc3b3fe535fa0f4f1d8e6/522be41104e24b1fa5d14200/sub_1761616754876_y6js1zijw.py",
-        "similarity_percent": 67.74,
-        "full_code": "w,h,color=input().split()\nw=int(w)\nh=int(h)\nif w<=0 or h<=0:\n    print(\"INVALID\")\nelse:\n   dien_tich=w*h\n   chu_vi=2*(w+h)\n   mau=color.capitalize()\n   print(chu_vi,dien_tich,mau)",
-        "highlighted_code": "<span class='highlight-red'>w,h,color=input().split()\nw=int(w)\nh=int(h)\nif w&lt;=0 or h&lt;=0:\n    print(&#34;INVALID&#34;)\nelse:\n   dien_tich=</span>w*h\n   chu_vi=2*(w+h)\n   mau=color.capitalize()\n   print(chu_vi,dien_tich,mau)"
+        "path": "/app/app/data/submissions/68fdc3b3fe535fa0f4f1d8e6/8e236cb825b041b0a82527f2/sub_1761636914082_aj91r1n4r.py",
+        "similarity_percent": 89.87,
+        "full_code": "w, h, color = input().split()\nw = int(w)\nh = int(h)\n\nif w < 0 or h < h:\n    print(\"INVALID\")\nelse:\n    print(2 * (w+h), w*h, color.capitalize())",
+        "highlighted_code": "<span class='highlight-red'>w, h, color = input().split()\nw = int(w)\nh = int(h)\n\nif </span>w &lt; 0 or h &lt; h<span class='highlight-red'>:\n    print(&#34;INVALID&#34;)\nelse:\n    print(2 * (w+h), w*h, color.</span>capitalize())"
       },
       "file2": {
-        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68fdc3b3fe535fa0f4f1d8e6/91001b54722a4328a2b7b879/sub_1761479709275_5il62n9z8.py",
-        "similarity_percent": 69.23,
-        "full_code": "w, h, color = input().split()\n\nw = int(w)\nh = int(h)\n\nif w <= 0 or h <= 0:\n    print(\"INVALID\")\nelse:\n    chu_vi = 2 * (w + h)  \n    dien_tich = w * h              \n    \n    color = color.capitalize() \n    \n    print(chu_vi, dien_tich, color)\n",
-        "highlighted_code": "<span class='highlight-green'>w, h, color = input().split()\n\nw = int(w)\nh = int(h)\n\nif w &lt;= 0 or h &lt;= 0:\n    print(&#34;INVALID&#34;)\nelse:\n    chu_vi = </span>2 * (w + h)  \n    dien_tich = w * h              \n    \n    color = color.capitalize() \n    \n    print(chu_vi, dien_tich, color)\n"
+        "path": "/app/app/data/submissions/68fdc3b3fe535fa0f4f1d8e6/3fa6af8d916a46039239cabe/sub_1761647785242_m85kv0bwb.py",
+        "similarity_percent": 87.65,
+        "full_code": "w,h,color=input().split()\nw=int(w)\nh=int(h)\nif w<=0 or h<=0:\n    print(\"INVALID\")\nelse:\n    print(2*(w+h),w*h,color.title())",
+        "highlighted_code": "<span class='highlight-green'>w,h,color=input().split()\nw=int(w)\nh=int(h)\nif </span>w&lt;=0 or h&lt;=0<span class='highlight-green'>:\n    print(&#34;INVALID&#34;)\nelse:\n    print(2*(w+h),w*h,color.</span>title())"
       },
-      "token_overlap": 63,
-      "max_similarity_percent": 69.23
+      "token_overlap": 71,
+      "max_similarity_percent": 89.87
     },
     {
       "case_id": 3,
       "file1": {
-        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68fdc3b3fe535fa0f4f1d8e6/91001b54722a4328a2b7b879/sub_1761479709275_5il62n9z8.py",
-        "similarity_percent": 67.03,
-        "full_code": "w, h, color = input().split()\n\nw = int(w)\nh = int(h)\n\nif w <= 0 or h <= 0:\n    print(\"INVALID\")\nelse:\n    chu_vi = 2 * (w + h)  \n    dien_tich = w * h              \n    \n    color = color.capitalize() \n    \n    print(chu_vi, dien_tich, color)\n",
-        "highlighted_code": "<span class='highlight-red'>w, h, color = input().split()\n\nw = int(w)\nh = int(</span>h)\n\nif w &lt;= 0 or h &lt;= 0:\n    print(&#34;INVALID&#34;)\nelse:\n    <span class='highlight-red'>chu_vi = 2 * (w + h)  \n    dien_tich = w * h              \n    \n    color = color.capitalize() \n    \n    print(chu_vi, dien_tich</span>, color)\n"
+        "path": "/app/app/data/submissions/68fdc3b3fe535fa0f4f1d8e6/f95120b3a38a461085ef58cb/sub_1761842230113_z953wx7w9.py",
+        "similarity_percent": 86.52,
+        "full_code": "w, h, color = input().split()\nw = int(w)\nh = int(h)\nif w > 0 and h > 0:\n    chu_vi = 2 * (w + h)\n    dien_tich = w * h\n    mau = color.capitalize()\n    print(chu_vi, dien_tich, mau)\nelse:\n    print(\"INVALID\")\n",
+        "highlighted_code": "<span class='highlight-red'>w, h, color = input().split()\nw = int(w)\nh = int(h)\nif w &gt; 0 and h &gt; 0:\n    </span>chu_vi = 2 * (w + h)\n    dien_tich = w <span class='highlight-red'>* h\n    mau = color.capitalize()\n    print(chu_vi, dien_tich, mau)\nelse:\n    print(</span>&#34;INVALID&#34;)\n"
       },
       "file2": {
-        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68fdc3b3fe535fa0f4f1d8e6/d9aec9d917da4c5e9beeb80b/sub_1761653646872_loxiji0wy.py",
-        "similarity_percent": 66.3,
-        "full_code": "d, r, color = input().split()\nd = int(d)\nr = int(r)\nif d > 0 and r > 0:\n    peri=2*(d+r)\n    area=d*r\n    colors=color.capitalize()\n    print(peri, area, colors)\nelse:\n    print(\"INVALID\")\n\n\n",
-        "highlighted_code": "<span class='highlight-green'>d, r, color = input().split()\nd = int(d)\nr = int(</span>r)\nif d &gt; 0 and r &gt; 0:\n    <span class='highlight-green'>peri=2*(d+r)\n    area=d*r\n    colors=color.capitalize()\n    print(peri, area</span>, colors)\nelse:\n    print(&#34;INVALID&#34;)\n\n\n"
+        "path": "/app/app/data/submissions/68fdc3b3fe535fa0f4f1d8e6/9f14990043df4fda9283d7ac/sub_1761840729322_bd25gqnjk.py",
+        "similarity_percent": 86.52,
+        "full_code": "w_str, h_str, color = input().split()\nw = int(w_str)\nh = int(h_str)\nif w > 0 and h > 0:\n    chu_vi = (w + h) * 2\n    dien_tich = w * h\n    mau_sac = color.title()\n    print(chu_vi, dien_tich, mau_sac)\nelse:\n    print(\"INVALID\")\n",
+        "highlighted_code": "<span class='highlight-green'>w_str, h_str, color = input().split()\nw = int(w_str)\nh = int(h_str)\nif w &gt; 0 and h &gt; 0:\n    </span>chu_vi = (w + h) * 2\n    dien_tich = w <span class='highlight-green'>* h\n    mau_sac = color.title()\n    print(chu_vi, dien_tich, mau_sac)\nelse:\n    print(</span>&#34;INVALID&#34;)\n"
       },
-      "token_overlap": 61,
-      "max_similarity_percent": 67.03
+      "token_overlap": 77,
+      "max_similarity_percent": 86.52
     },
     {
       "case_id": 4,
       "file1": {
-        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68fdc3b3fe535fa0f4f1d8e6/91001b54722a4328a2b7b879/sub_1761479709275_5il62n9z8.py",
-        "similarity_percent": 67.03,
-        "full_code": "w, h, color = input().split()\n\nw = int(w)\nh = int(h)\n\nif w <= 0 or h <= 0:\n    print(\"INVALID\")\nelse:\n    chu_vi = 2 * (w + h)  \n    dien_tich = w * h              \n    \n    color = color.capitalize() \n    \n    print(chu_vi, dien_tich, color)\n",
-        "highlighted_code": "<span class='highlight-red'>w, h, color = input().split()\n\nw = int(w)\nh = int(h)\n\nif w &lt;= 0 or h &lt;= 0:\n    print(&#34;INVALID&#34;)\nelse:\n    </span>chu_vi = 2 * (w + h)  \n    dien_tich = w * h              \n    \n    color = color.capitalize() \n    \n    print(chu_vi, dien_tich, color)\n"
+        "path": "/app/app/data/submissions/68fdc3b3fe535fa0f4f1d8e6/9f14990043df4fda9283d7ac/sub_1761840729322_bd25gqnjk.py",
+        "similarity_percent": 86.52,
+        "full_code": "w_str, h_str, color = input().split()\nw = int(w_str)\nh = int(h_str)\nif w > 0 and h > 0:\n    chu_vi = (w + h) * 2\n    dien_tich = w * h\n    mau_sac = color.title()\n    print(chu_vi, dien_tich, mau_sac)\nelse:\n    print(\"INVALID\")\n",
+        "highlighted_code": "<span class='highlight-red'>w_str, h_str, color = input().split()\nw = int(w_str)\nh = int(h_str)\nif w &gt; 0 and h &gt; 0:\n    </span>chu_vi = (w + h) * 2\n    dien_tich = w <span class='highlight-red'>* h\n    mau_sac = color.title()\n    print(chu_vi, dien_tich, mau_sac)\nelse:\n    print(</span>&#34;INVALID&#34;)\n"
       },
       "file2": {
-        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68fdc3b3fe535fa0f4f1d8e6/3fa6af8d916a46039239cabe/sub_1761647785242_m85kv0bwb.py",
-        "similarity_percent": 75.31,
-        "full_code": "w,h,color=input().split()\nw=int(w)\nh=int(h)\nif w<=0 or h<=0:\n    print(\"INVALID\")\nelse:\n    print(2*(w+h),w*h,color.title())",
-        "highlighted_code": "<span class='highlight-green'>w,h,color=input().split()\nw=int(w)\nh=int(h)\nif w&lt;=0 or h&lt;=0:\n    print(&#34;INVALID&#34;)\nelse:\n    </span>print(2*(w+h),w*h,color.title())"
+        "path": "/app/app/data/submissions/68fdc3b3fe535fa0f4f1d8e6/d9aec9d917da4c5e9beeb80b/sub_1761653646872_loxiji0wy.py",
+        "similarity_percent": 86.52,
+        "full_code": "d, r, color = input().split()\nd = int(d)\nr = int(r)\nif d > 0 and r > 0:\n    peri=2*(d+r)\n    area=d*r\n    colors=color.capitalize()\n    print(peri, area, colors)\nelse:\n    print(\"INVALID\")\n\n\n",
+        "highlighted_code": "<span class='highlight-green'>d, r, color = input().split()\nd = int(d)\nr = int(r)\nif d &gt; 0 and r &gt; 0:\n    </span>peri=2*(d+r)\n    area=d<span class='highlight-green'>*r\n    colors=color.capitalize()\n    print(peri, area, colors)\nelse:\n    print(</span>&#34;INVALID&#34;)\n\n\n"
       },
-      "token_overlap": 61,
-      "max_similarity_percent": 75.31
+      "token_overlap": 77,
+      "max_similarity_percent": 86.52
     },
     {
       "case_id": 5,
       "file1": {
-        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68fdc3b3fe535fa0f4f1d8e6/522be41104e24b1fa5d14200/sub_1761616754876_y6js1zijw.py",
-        "similarity_percent": 65.59,
-        "full_code": "w,h,color=input().split()\nw=int(w)\nh=int(h)\nif w<=0 or h<=0:\n    print(\"INVALID\")\nelse:\n   dien_tich=w*h\n   chu_vi=2*(w+h)\n   mau=color.capitalize()\n   print(chu_vi,dien_tich,mau)",
-        "highlighted_code": "<span class='highlight-red'>w,h,color=input().split()\nw=int(w)\nh=int(h)\nif w&lt;=0 or h&lt;=0:\n    print(&#34;INVALID&#34;)\nelse:\n   </span>dien_tich=w*h\n   chu_vi=2*(w+h)\n   mau=color.capitalize()\n   print(chu_vi,dien_tich,mau)"
+        "path": "/app/app/data/submissions/68fdc3b3fe535fa0f4f1d8e6/91001b54722a4328a2b7b879/sub_1761479709275_5il62n9z8.py",
+        "similarity_percent": 71.74,
+        "full_code": "w, h, color = input().split()\n\nw = int(w)\nh = int(h)\n\nif w <= 0 or h <= 0:\n    print(\"INVALID\")\nelse:\n    chu_vi = 2 * (w + h)  \n    dien_tich = w * h              \n    \n    color = color.capitalize() \n    \n    print(chu_vi, dien_tich, color)\n",
+        "highlighted_code": "<span class='highlight-red'>w, h, color = input().split()\n\nw = int(w)\nh = int(h)\n\nif </span>w &lt;= 0 or h &lt;= 0:\n    print(&#34;INVALID&#34;)\nelse:\n    <span class='highlight-red'>chu_vi = 2 * (w + h)  \n    dien_tich = w * h              \n    \n    color = color.capitalize() \n    \n    print(chu_vi, dien_tich, </span>color)\n"
       },
       "file2": {
-        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68fdc3b3fe535fa0f4f1d8e6/3fa6af8d916a46039239cabe/sub_1761647785242_m85kv0bwb.py",
-        "similarity_percent": 75.31,
-        "full_code": "w,h,color=input().split()\nw=int(w)\nh=int(h)\nif w<=0 or h<=0:\n    print(\"INVALID\")\nelse:\n    print(2*(w+h),w*h,color.title())",
-        "highlighted_code": "<span class='highlight-green'>w,h,color=input().split()\nw=int(w)\nh=int(h)\nif w&lt;=0 or h&lt;=0:\n    print(&#34;INVALID&#34;)\nelse:\n    </span>print(2*(w+h),w*h,color.title())"
+        "path": "/app/app/data/submissions/68fdc3b3fe535fa0f4f1d8e6/f95120b3a38a461085ef58cb/sub_1761842230113_z953wx7w9.py",
+        "similarity_percent": 74.16,
+        "full_code": "w, h, color = input().split()\nw = int(w)\nh = int(h)\nif w > 0 and h > 0:\n    chu_vi = 2 * (w + h)\n    dien_tich = w * h\n    mau = color.capitalize()\n    print(chu_vi, dien_tich, mau)\nelse:\n    print(\"INVALID\")\n",
+        "highlighted_code": "<span class='highlight-green'>w, h, color = input().split()\nw = int(w)\nh = int(h)\nif </span>w &gt; 0 and h &gt; 0:\n    <span class='highlight-green'>chu_vi = 2 * (w + h)\n    dien_tich = w * h\n    mau = color.capitalize()\n    print(chu_vi, dien_tich, </span>mau)\nelse:\n    print(&#34;INVALID&#34;)\n"
       },
-      "token_overlap": 61,
-      "max_similarity_percent": 75.31
+      "token_overlap": 66,
+      "max_similarity_percent": 74.16
     },
     {
       "case_id": 6,
       "file1": {
-        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68fdc3b3fe535fa0f4f1d8e6/5ddb8c7d2c9c43bab12121a6/sub_1761641598679_6z8qwoviz.py",
-        "similarity_percent": 55.56,
-        "full_code": "line = input().split()\nw = int(line[0])\nh = int(line[1])\ncolor = line[2]\nif w <= 0 or h <= 0:\n    print(\"INVALID\")\nelse:\n    perimeter = 2 * (w + h)\n    area = w * h\n    normalized_color = color.capitalize()\n    print(perimeter, area, normalized_color)\n",
-        "highlighted_code": "line = input().split()\nw = int(line[0])\nh = int(line[1])\ncolor = line[2]\nif w <span class='highlight-red'>&lt;= 0 or h &lt;= 0:\n    print(&#34;INVALID&#34;)\nelse:\n    perimeter = 2 * (w + h)\n    area = w * h\n    normalized_color = color.capitalize()\n    print(perimeter, area</span>, normalized_color)\n"
+        "path": "/app/app/data/submissions/68fdc3b3fe535fa0f4f1d8e6/91001b54722a4328a2b7b879/sub_1761479709275_5il62n9z8.py",
+        "similarity_percent": 71.74,
+        "full_code": "w, h, color = input().split()\n\nw = int(w)\nh = int(h)\n\nif w <= 0 or h <= 0:\n    print(\"INVALID\")\nelse:\n    chu_vi = 2 * (w + h)  \n    dien_tich = w * h              \n    \n    color = color.capitalize() \n    \n    print(chu_vi, dien_tich, color)\n",
+        "highlighted_code": "<span class='highlight-red'>w, h, color = input().split()\n\nw = int(w)\nh = int(h)\n\nif </span>w &lt;= 0 or h &lt;= 0:\n    print(&#34;INVALID&#34;)\nelse:\n    <span class='highlight-red'>chu_vi = 2 * (w + h)  \n    dien_tich = w * h              \n    \n    color = color.capitalize() \n    \n    print(chu_vi, dien_tich, </span>color)\n"
       },
       "file2": {
-        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68fdc3b3fe535fa0f4f1d8e6/91001b54722a4328a2b7b879/sub_1761479709275_5il62n9z8.py",
-        "similarity_percent": 60.44,
-        "full_code": "w, h, color = input().split()\n\nw = int(w)\nh = int(h)\n\nif w <= 0 or h <= 0:\n    print(\"INVALID\")\nelse:\n    chu_vi = 2 * (w + h)  \n    dien_tich = w * h              \n    \n    color = color.capitalize() \n    \n    print(chu_vi, dien_tich, color)\n",
-        "highlighted_code": "w, h, color = input().split()\n\nw = int(w)\nh = int(h)\n\nif w <span class='highlight-green'>&lt;= 0 or h &lt;= 0:\n    print(&#34;INVALID&#34;)\nelse:\n    chu_vi = 2 * (w + h)  \n    dien_tich = w * h              \n    \n    color = color.capitalize() \n    \n    print(chu_vi, dien_tich</span>, color)\n"
+        "path": "/app/app/data/submissions/68fdc3b3fe535fa0f4f1d8e6/d9aec9d917da4c5e9beeb80b/sub_1761653646872_loxiji0wy.py",
+        "similarity_percent": 74.16,
+        "full_code": "d, r, color = input().split()\nd = int(d)\nr = int(r)\nif d > 0 and r > 0:\n    peri=2*(d+r)\n    area=d*r\n    colors=color.capitalize()\n    print(peri, area, colors)\nelse:\n    print(\"INVALID\")\n\n\n",
+        "highlighted_code": "<span class='highlight-green'>d, r, color = input().split()\nd = int(d)\nr = int(r)\nif </span>d &gt; 0 and r &gt; 0:\n    <span class='highlight-green'>peri=2*(d+r)\n    area=d*r\n    colors=color.capitalize()\n    print(peri, area, </span>colors)\nelse:\n    print(&#34;INVALID&#34;)\n\n\n"
       },
-      "token_overlap": 55,
-      "max_similarity_percent": 60.44
+      "token_overlap": 66,
+      "max_similarity_percent": 74.16
+    },
+    {
+      "case_id": 7,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b3fe535fa0f4f1d8e6/3fa6af8d916a46039239cabe/sub_1761647785242_m85kv0bwb.py",
+        "similarity_percent": 69.14,
+        "full_code": "w,h,color=input().split()\nw=int(w)\nh=int(h)\nif w<=0 or h<=0:\n    print(\"INVALID\")\nelse:\n    print(2*(w+h),w*h,color.title())",
+        "highlighted_code": "<span class='highlight-red'>w,h,color=input().split()\nw=int(w)\nh=int(h)\nif w&lt;=0 or h&lt;=0:\n    print(&#34;INVALID&#34;)\n</span>else:\n    print(2*(w+h),w*h,color.title())"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b3fe535fa0f4f1d8e6/91001b54722a4328a2b7b879/sub_1761479709275_5il62n9z8.py",
+        "similarity_percent": 60.87,
+        "full_code": "w, h, color = input().split()\n\nw = int(w)\nh = int(h)\n\nif w <= 0 or h <= 0:\n    print(\"INVALID\")\nelse:\n    chu_vi = 2 * (w + h)  \n    dien_tich = w * h              \n    \n    color = color.capitalize() \n    \n    print(chu_vi, dien_tich, color)\n",
+        "highlighted_code": "<span class='highlight-green'>w, h, color = input().split()\n\nw = int(w)\nh = int(h)\n\nif w &lt;= 0 or h &lt;= 0:\n    print(&#34;INVALID&#34;)\n</span>else:\n    chu_vi = 2 * (w + h)  \n    dien_tich = w * h              \n    \n    color = color.capitalize() \n    \n    print(chu_vi, dien_tich, color)\n"
+      },
+      "token_overlap": 56,
+      "max_similarity_percent": 69.14
+    },
+    {
+      "case_id": 8,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b3fe535fa0f4f1d8e6/3fa6af8d916a46039239cabe/sub_1761647785242_m85kv0bwb.py",
+        "similarity_percent": 69.14,
+        "full_code": "w,h,color=input().split()\nw=int(w)\nh=int(h)\nif w<=0 or h<=0:\n    print(\"INVALID\")\nelse:\n    print(2*(w+h),w*h,color.title())",
+        "highlighted_code": "<span class='highlight-red'>w,h,color=input().split()\nw=int(w)\nh=int(h)\nif w&lt;=0 or h&lt;=0:\n    print(&#34;INVALID&#34;)\n</span>else:\n    print(2*(w+h),w*h,color.title())"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b3fe535fa0f4f1d8e6/522be41104e24b1fa5d14200/sub_1761616754876_y6js1zijw.py",
+        "similarity_percent": 61.54,
+        "full_code": "w,h,color=input().split()\nw=int(w)\nh=int(h)\nif w<=0 or h<=0:\n    print(\"INVALID\")\nelse:\n   dien_tich=w*h\n   chu_vi=2*(w+h)\n   mau=color.capitalize()\n   print(chu_vi,dien_tich,mau)",
+        "highlighted_code": "<span class='highlight-green'>w,h,color=input().split()\nw=int(w)\nh=int(h)\nif w&lt;=0 or h&lt;=0:\n    print(&#34;INVALID&#34;)\n</span>else:\n   dien_tich=w*h\n   chu_vi=2*(w+h)\n   mau=color.capitalize()\n   print(chu_vi,dien_tich,mau)"
+      },
+      "token_overlap": 56,
+      "max_similarity_percent": 69.14
+    },
+    {
+      "case_id": 9,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b3fe535fa0f4f1d8e6/3fa6af8d916a46039239cabe/sub_1761647785242_m85kv0bwb.py",
+        "similarity_percent": 69.14,
+        "full_code": "w,h,color=input().split()\nw=int(w)\nh=int(h)\nif w<=0 or h<=0:\n    print(\"INVALID\")\nelse:\n    print(2*(w+h),w*h,color.title())",
+        "highlighted_code": "<span class='highlight-red'>w,h,color=input().split()\nw=int(w)\nh=int(h)\nif w&lt;=0 or h&lt;=0:\n    print(&#34;INVALID&#34;)\n</span>else:\n    print(2*(w+h),w*h,color.title())"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b3fe535fa0f4f1d8e6/c2c38e9c5ead4887925c7e80/sub_1762613080993_dc7wk7m7g.py",
+        "similarity_percent": 62.22,
+        "full_code": "x,y,z = input().split()\nx = int(x)\ny = int(y)\nif x <= 0 or y <=0:\n    print(\"INVALID\")\nelse:\n    k = (x+y)*2\n    m = x*y\n    print(k,m,z.title()) ",
+        "highlighted_code": "<span class='highlight-green'>x,y,z = input().split()\nx = int(x)\ny = int(y)\nif x &lt;= 0 or y &lt;=0:\n    print(&#34;INVALID&#34;)\n</span>else:\n    k = (x+y)*2\n    m = x*y\n    print(k,m,z.title()) "
+      },
+      "token_overlap": 56,
+      "max_similarity_percent": 69.14
+    },
+    {
+      "case_id": 10,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b3fe535fa0f4f1d8e6/522be41104e24b1fa5d14200/sub_1761616754876_y6js1zijw.py",
+        "similarity_percent": 63.74,
+        "full_code": "w,h,color=input().split()\nw=int(w)\nh=int(h)\nif w<=0 or h<=0:\n    print(\"INVALID\")\nelse:\n   dien_tich=w*h\n   chu_vi=2*(w+h)\n   mau=color.capitalize()\n   print(chu_vi,dien_tich,mau)",
+        "highlighted_code": "<span class='highlight-red'>w,h,color=input().split()\nw=int(w)\nh=int(h)\nif w&lt;=0 or h&lt;=0:\n    print(&#34;INVALID&#34;)\nel</span>se:\n   dien_tich=w*h\n   chu_vi=2*(w+h)\n   mau=color.capitalize()\n   print(chu_vi,dien_tich,mau)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b3fe535fa0f4f1d8e6/c2c38e9c5ead4887925c7e80/sub_1762613080993_dc7wk7m7g.py",
+        "similarity_percent": 64.44,
+        "full_code": "x,y,z = input().split()\nx = int(x)\ny = int(y)\nif x <= 0 or y <=0:\n    print(\"INVALID\")\nelse:\n    k = (x+y)*2\n    m = x*y\n    print(k,m,z.title()) ",
+        "highlighted_code": "<span class='highlight-green'>x,y,z = input().split()\nx = int(x)\ny = int(y)\nif x &lt;= 0 or y &lt;=0:\n    print(&#34;INVALID&#34;)\nel</span>se:\n    k = (x+y)*2\n    m = x*y\n    print(k,m,z.title()) "
+      },
+      "token_overlap": 58,
+      "max_similarity_percent": 64.44
+    },
+    {
+      "case_id": 11,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b3fe535fa0f4f1d8e6/91001b54722a4328a2b7b879/sub_1761479709275_5il62n9z8.py",
+        "similarity_percent": 63.04,
+        "full_code": "w, h, color = input().split()\n\nw = int(w)\nh = int(h)\n\nif w <= 0 or h <= 0:\n    print(\"INVALID\")\nelse:\n    chu_vi = 2 * (w + h)  \n    dien_tich = w * h              \n    \n    color = color.capitalize() \n    \n    print(chu_vi, dien_tich, color)\n",
+        "highlighted_code": "<span class='highlight-red'>w, h, color = input().split()\n\nw = int(w)\nh = int(h)\n\nif w &lt;= 0 or h &lt;= 0:\n    print(&#34;INVALID&#34;)\nel</span>se:\n    chu_vi = 2 * (w + h)  \n    dien_tich = w * h              \n    \n    color = color.capitalize() \n    \n    print(chu_vi, dien_tich, color)\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b3fe535fa0f4f1d8e6/522be41104e24b1fa5d14200/sub_1761616754876_y6js1zijw.py",
+        "similarity_percent": 63.74,
+        "full_code": "w,h,color=input().split()\nw=int(w)\nh=int(h)\nif w<=0 or h<=0:\n    print(\"INVALID\")\nelse:\n   dien_tich=w*h\n   chu_vi=2*(w+h)\n   mau=color.capitalize()\n   print(chu_vi,dien_tich,mau)",
+        "highlighted_code": "<span class='highlight-green'>w,h,color=input().split()\nw=int(w)\nh=int(h)\nif w&lt;=0 or h&lt;=0:\n    print(&#34;INVALID&#34;)\nel</span>se:\n   dien_tich=w*h\n   chu_vi=2*(w+h)\n   mau=color.capitalize()\n   print(chu_vi,dien_tich,mau)"
+      },
+      "token_overlap": 58,
+      "max_similarity_percent": 63.74
+    },
+    {
+      "case_id": 12,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b3fe535fa0f4f1d8e6/91001b54722a4328a2b7b879/sub_1761479709275_5il62n9z8.py",
+        "similarity_percent": 63.04,
+        "full_code": "w, h, color = input().split()\n\nw = int(w)\nh = int(h)\n\nif w <= 0 or h <= 0:\n    print(\"INVALID\")\nelse:\n    chu_vi = 2 * (w + h)  \n    dien_tich = w * h              \n    \n    color = color.capitalize() \n    \n    print(chu_vi, dien_tich, color)\n",
+        "highlighted_code": "<span class='highlight-red'>w, h, color = input().split()\n\nw = int(w)\nh = int(h)\n\nif w &lt;= 0 or h &lt;= 0:\n    print(&#34;INVALID&#34;)\nel</span>se:\n    chu_vi = 2 * (w + h)  \n    dien_tich = w * h              \n    \n    color = color.capitalize() \n    \n    print(chu_vi, dien_tich, color)\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b3fe535fa0f4f1d8e6/c2c38e9c5ead4887925c7e80/sub_1762613080993_dc7wk7m7g.py",
+        "similarity_percent": 64.44,
+        "full_code": "x,y,z = input().split()\nx = int(x)\ny = int(y)\nif x <= 0 or y <=0:\n    print(\"INVALID\")\nelse:\n    k = (x+y)*2\n    m = x*y\n    print(k,m,z.title()) ",
+        "highlighted_code": "<span class='highlight-green'>x,y,z = input().split()\nx = int(x)\ny = int(y)\nif x &lt;= 0 or y &lt;=0:\n    print(&#34;INVALID&#34;)\nel</span>se:\n    k = (x+y)*2\n    m = x*y\n    print(k,m,z.title()) "
+      },
+      "token_overlap": 58,
+      "max_similarity_percent": 64.44
+    },
+    {
+      "case_id": 13,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b3fe535fa0f4f1d8e6/5ddb8c7d2c9c43bab12121a6/sub_1761641598679_6z8qwoviz.py",
+        "similarity_percent": 59.0,
+        "full_code": "line = input().split()\nw = int(line[0])\nh = int(line[1])\ncolor = line[2]\nif w <= 0 or h <= 0:\n    print(\"INVALID\")\nelse:\n    perimeter = 2 * (w + h)\n    area = w * h\n    normalized_color = color.capitalize()\n    print(perimeter, area, normalized_color)\n",
+        "highlighted_code": "line = input().split()\nw = int(line[0])\nh = int(line[1])\ncolor = line[2]\n<span class='highlight-red'>if w &lt;= 0 or h &lt;= 0:\n    print(&#34;INVALID&#34;)\nelse:\n    perimeter = 2 * (w + h)\n    area = w * h\n    normalized_color = color.capitalize()\n    print(perimeter, area, </span>normalized_color)\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b3fe535fa0f4f1d8e6/91001b54722a4328a2b7b879/sub_1761479709275_5il62n9z8.py",
+        "similarity_percent": 64.13,
+        "full_code": "w, h, color = input().split()\n\nw = int(w)\nh = int(h)\n\nif w <= 0 or h <= 0:\n    print(\"INVALID\")\nelse:\n    chu_vi = 2 * (w + h)  \n    dien_tich = w * h              \n    \n    color = color.capitalize() \n    \n    print(chu_vi, dien_tich, color)\n",
+        "highlighted_code": "w, h, color = input().split()\n\nw = int(w)\nh = int(h)\n\n<span class='highlight-green'>if w &lt;= 0 or h &lt;= 0:\n    print(&#34;INVALID&#34;)\nelse:\n    chu_vi = 2 * (w + h)  \n    dien_tich = w * h              \n    \n    color = color.capitalize() \n    \n    print(chu_vi, dien_tich, </span>color)\n"
+      },
+      "token_overlap": 59,
+      "max_similarity_percent": 64.13
     }
   ]
 }

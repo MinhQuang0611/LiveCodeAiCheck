@@ -4,7 +4,246 @@
     "min_token_overlap": 80,
     "min_similarity_percent": 60
   },
-  "total_cases_found": 0,
-  "total_cases_filtered": 0,
-  "cases": []
+  "total_cases_found": 53,
+  "total_cases_filtered": 14,
+  "cases": [
+    {
+      "case_id": 1,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3abfe535fa0f4f1d7ea/27e30f767b3a46b283cbfec0/sub_1762445993888_xkne6fnnt.py",
+        "similarity_percent": 100.0,
+        "full_code": "n = int(input())\nfor _ in range(n):\n    s = input()\n    max_num = 0\n    current = ''\n    for letter in s:\n        if letter.isdigit():\n            current += letter\n        else:\n            if current:\n                max_num = max(max_num, int(current))\n                current = ''\n    if current:\n        max_num = max(max_num, int(current))\n    print(max_num)\n\n",
+        "highlighted_code": "<span class='highlight-red'>n = int(input())\nfor _ in range(n):\n    s = input()\n    max_num = 0\n    current = &#39;&#39;\n    for letter in s:\n        if letter.isdigit():\n            current += letter\n        else:\n            if current:\n                max_num = max(max_num, int(current))\n                current = &#39;&#39;\n    if current:\n        max_num = max(max_num, int(current))\n    print(max_num</span>)\n\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3abfe535fa0f4f1d7ea/27e30f767b3a46b283cbfec0/sub_1761645544665_n4hz6bjg2.py",
+        "similarity_percent": 100.0,
+        "full_code": "n = int(input())\nfor _ in range(n):\n    s = input()\n    max_num = 0\n    current = ''\n    for letter in s:\n        if letter.isdigit():\n            current += letter\n        else:\n            if current:\n                max_num = max(max_num, int(current))\n                current = ''\n    if current:\n        max_num = max(max_num, int(current))\n    print(max_num)\n\n",
+        "highlighted_code": "<span class='highlight-green'>n = int(input())\nfor _ in range(n):\n    s = input()\n    max_num = 0\n    current = &#39;&#39;\n    for letter in s:\n        if letter.isdigit():\n            current += letter\n        else:\n            if current:\n                max_num = max(max_num, int(current))\n                current = &#39;&#39;\n    if current:\n        max_num = max(max_num, int(current))\n    print(max_num</span>)\n\n"
+      },
+      "token_overlap": 119,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 2,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3abfe535fa0f4f1d7ea/d9aec9d917da4c5e9beeb80b/sub_1761907526734_nq732jl28.py",
+        "similarity_percent": 100.0,
+        "full_code": "import re\nt = int(input())\nfor _ in range(t):\n    s = input().strip()\n    nums = re.findall(r'\\d+', s)\n    if nums:\n        print(max(map(int, nums)))\n    else:\n        print(0) ",
+        "highlighted_code": "<span class='highlight-red'>import re\nt = int(input())\nfor _ in range(t):\n    s = input().strip()\n    nums = re.findall(r&#39;\\d+&#39;, s)\n    if nums:\n        print(max(map(int, nums)))\n    else:\n        print</span>(0) "
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3abfe535fa0f4f1d7ea/d9aec9d917da4c5e9beeb80b/sub_1762443974165_79cyfvsnh.py",
+        "similarity_percent": 100.0,
+        "full_code": "import re\nt = int(input())\nfor i in range(t):\n    s = input().strip()\n    numbers = re.findall(r'\\d+', s)  \n    if numbers:\n        print(max(map(int, numbers)))\n    else:\n        print(0)\n",
+        "highlighted_code": "<span class='highlight-green'>import re\nt = int(input())\nfor i in range(t):\n    s = input().strip()\n    numbers = re.findall(r&#39;\\d+&#39;, s)  \n    if numbers:\n        print(max(map(int, numbers)))\n    else:\n        print</span>(0)\n"
+      },
+      "token_overlap": 100,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 3,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3abfe535fa0f4f1d7ea/f95120b3a38a461085ef58cb/sub_1762445194919_ttu3c2ipt.py",
+        "similarity_percent": 100.0,
+        "full_code": "t = int(input())\nfor _ in range(t):\n    n = input().strip()\n    numbers = []\n    num = ''\n    for k in n:\n        if k.isdigit():\n            num += k\n        else:\n            if num != '':\n                numbers.append(int(num))\n                num = ''\n    if num != \"\":\n        numbers.append(int(num))\n    print(max(numbers))",
+        "highlighted_code": "<span class='highlight-red'>t = int(input())\nfor _ in range(t):\n    n = input().strip()\n    numbers = []\n    num = &#39;&#39;\n    for k in n:\n        if k.isdigit():\n            num += k\n        else:\n            if num != &#39;&#39;:\n                numbers.append(int(num))\n                num = &#39;&#39;\n    if num != &#34;&#34;:\n        numbers.append(int(num))\n    print(ma</span>x(numbers))"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3abfe535fa0f4f1d7ea/e59c34a1bebb49d29bfb3592/sub_1762436434848_p0tqbkmv2.py",
+        "similarity_percent": 100.0,
+        "full_code": "t = int(input())\nfor _ in range(t):\n    n = input().strip()\n    numbers = []\n    num = ''\n    for c in n:\n        if c.isdigit():\n            num += c\n        else:\n            if num != '':\n                numbers.append(int(num))\n                num = ''\n    if num != \"\":\n        numbers.append(int(num))\n    print(max(numbers))\n",
+        "highlighted_code": "<span class='highlight-green'>t = int(input())\nfor _ in range(t):\n    n = input().strip()\n    numbers = []\n    num = &#39;&#39;\n    for c in n:\n        if c.isdigit():\n            num += c\n        else:\n            if num != &#39;&#39;:\n                numbers.append(int(num))\n                num = &#39;&#39;\n    if num != &#34;&#34;:\n        numbers.append(int(num))\n    print(ma</span>x(numbers))\n"
+      },
+      "token_overlap": 125,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 4,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3abfe535fa0f4f1d7ea/f95120b3a38a461085ef58cb/sub_1762445194919_ttu3c2ipt.py",
+        "similarity_percent": 100.0,
+        "full_code": "t = int(input())\nfor _ in range(t):\n    n = input().strip()\n    numbers = []\n    num = ''\n    for k in n:\n        if k.isdigit():\n            num += k\n        else:\n            if num != '':\n                numbers.append(int(num))\n                num = ''\n    if num != \"\":\n        numbers.append(int(num))\n    print(max(numbers))",
+        "highlighted_code": "<span class='highlight-red'>t = int(input())\nfor _ in range(t):\n    n = input().strip()\n    numbers = []\n    num = &#39;&#39;\n    for k in n:\n        if k.isdigit():\n            num += k\n        else:\n            if num != &#39;&#39;:\n                numbers.append(int(num))\n                num = &#39;&#39;\n    if num != &#34;&#34;:\n        numbers.append(int(num))\n    print(ma</span>x(numbers))"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3abfe535fa0f4f1d7ea/f95120b3a38a461085ef58cb/sub_1762445180050_4188fw9f5.py",
+        "similarity_percent": 100.0,
+        "full_code": "t = int(input())\nfor _ in range(t):\n    n = input().strip()\n    numbers = []\n    num = ''\n    for k in n:\n        if k.isdigit():\n            num += k\n        else:\n            if num != '':\n                numbers.append(int(num))\n                num = ''\n    if num != \"\":\n        numbers.append(int(num))\n    print(max(numbers))",
+        "highlighted_code": "<span class='highlight-green'>t = int(input())\nfor _ in range(t):\n    n = input().strip()\n    numbers = []\n    num = &#39;&#39;\n    for k in n:\n        if k.isdigit():\n            num += k\n        else:\n            if num != &#39;&#39;:\n                numbers.append(int(num))\n                num = &#39;&#39;\n    if num != &#34;&#34;:\n        numbers.append(int(num))\n    print(ma</span>x(numbers))"
+      },
+      "token_overlap": 125,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 5,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3abfe535fa0f4f1d7ea/e59c34a1bebb49d29bfb3592/sub_1762436434848_p0tqbkmv2.py",
+        "similarity_percent": 100.0,
+        "full_code": "t = int(input())\nfor _ in range(t):\n    n = input().strip()\n    numbers = []\n    num = ''\n    for c in n:\n        if c.isdigit():\n            num += c\n        else:\n            if num != '':\n                numbers.append(int(num))\n                num = ''\n    if num != \"\":\n        numbers.append(int(num))\n    print(max(numbers))\n",
+        "highlighted_code": "<span class='highlight-red'>t = int(input())\nfor _ in range(t):\n    n = input().strip()\n    numbers = []\n    num = &#39;&#39;\n    for c in n:\n        if c.isdigit():\n            num += c\n        else:\n            if num != &#39;&#39;:\n                numbers.append(int(num))\n                num = &#39;&#39;\n    if num != &#34;&#34;:\n        numbers.append(int(num))\n    print(ma</span>x(numbers))\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3abfe535fa0f4f1d7ea/f95120b3a38a461085ef58cb/sub_1762445180050_4188fw9f5.py",
+        "similarity_percent": 100.0,
+        "full_code": "t = int(input())\nfor _ in range(t):\n    n = input().strip()\n    numbers = []\n    num = ''\n    for k in n:\n        if k.isdigit():\n            num += k\n        else:\n            if num != '':\n                numbers.append(int(num))\n                num = ''\n    if num != \"\":\n        numbers.append(int(num))\n    print(max(numbers))",
+        "highlighted_code": "<span class='highlight-green'>t = int(input())\nfor _ in range(t):\n    n = input().strip()\n    numbers = []\n    num = &#39;&#39;\n    for k in n:\n        if k.isdigit():\n            num += k\n        else:\n            if num != &#39;&#39;:\n                numbers.append(int(num))\n                num = &#39;&#39;\n    if num != &#34;&#34;:\n        numbers.append(int(num))\n    print(ma</span>x(numbers))"
+      },
+      "token_overlap": 125,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 6,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3abfe535fa0f4f1d7ea/27e30f767b3a46b283cbfec0/sub_1762445993888_xkne6fnnt.py",
+        "similarity_percent": 95.8,
+        "full_code": "n = int(input())\nfor _ in range(n):\n    s = input()\n    max_num = 0\n    current = ''\n    for letter in s:\n        if letter.isdigit():\n            current += letter\n        else:\n            if current:\n                max_num = max(max_num, int(current))\n                current = ''\n    if current:\n        max_num = max(max_num, int(current))\n    print(max_num)\n\n",
+        "highlighted_code": "n <span class='highlight-red'>= int(input())\nfor _ in range(n):\n    s = input()\n    max_num = 0\n    current = &#39;</span>&#39;\n    <span class='highlight-red'>for letter in s:\n        if letter.isdigit():\n            current += letter\n        else:\n            if current:\n                max_num = max(max_num, int(current))\n                current = </span>&#39;&#39;\n    i<span class='highlight-red'>f current:\n        max_num = max(max_num, int(current))\n    print(max_num</span>)\n\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3abfe535fa0f4f1d7ea/449c44ebafa84f0d8d5b6d0f/sub_1762101031730_jd1cbg315.py",
+        "similarity_percent": 83.21,
+        "full_code": "if __name__ == '__main__':\n    t = int(input())\n    for i in range(t):\n        a = input()\n        max_val = 0\n        b = '0'\n        for x in a:\n            if x.isdigit():\n                b += x\n            else:\n                if b:\n                    max_val = max(max_val, int(b))\n                    b = '0'\n        if b :\n            max_val = max(max_val, int(b))\n        print(max_val)",
+        "highlighted_code": "if __name__ == &#39;__main__&#39;:\n    t <span class='highlight-green'>= int(input())\n    for i in range(t):\n        a = input()\n        max_val = 0\n        b = &#39;</span>0&#39;\n        <span class='highlight-green'>for x in a:\n            if x.isdigit():\n                b += x\n            else:\n                if b:\n                    max_val = max(max_val, int(b))\n                    b = </span>&#39;0&#39;\n        i<span class='highlight-green'>f b :\n            max_val = max(max_val, int(b))\n        print(max_val</span>)"
+      },
+      "token_overlap": 114,
+      "max_similarity_percent": 95.8
+    },
+    {
+      "case_id": 7,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3abfe535fa0f4f1d7ea/449c44ebafa84f0d8d5b6d0f/sub_1762101031730_jd1cbg315.py",
+        "similarity_percent": 83.21,
+        "full_code": "if __name__ == '__main__':\n    t = int(input())\n    for i in range(t):\n        a = input()\n        max_val = 0\n        b = '0'\n        for x in a:\n            if x.isdigit():\n                b += x\n            else:\n                if b:\n                    max_val = max(max_val, int(b))\n                    b = '0'\n        if b :\n            max_val = max(max_val, int(b))\n        print(max_val)",
+        "highlighted_code": "if __name__ == &#39;__main__&#39;:\n    t <span class='highlight-red'>= int(input())\n    for i in range(t):\n        a = input()\n        max_val = 0\n        b = &#39;</span>0&#39;\n        <span class='highlight-red'>for x in a:\n            if x.isdigit():\n                b += x\n            else:\n                if b:\n                    max_val = max(max_val, int(b))\n                    b = </span>&#39;0&#39;\n        i<span class='highlight-red'>f b :\n            max_val = max(max_val, int(b))\n        print(max_val</span>)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3abfe535fa0f4f1d7ea/27e30f767b3a46b283cbfec0/sub_1761645544665_n4hz6bjg2.py",
+        "similarity_percent": 95.8,
+        "full_code": "n = int(input())\nfor _ in range(n):\n    s = input()\n    max_num = 0\n    current = ''\n    for letter in s:\n        if letter.isdigit():\n            current += letter\n        else:\n            if current:\n                max_num = max(max_num, int(current))\n                current = ''\n    if current:\n        max_num = max(max_num, int(current))\n    print(max_num)\n\n",
+        "highlighted_code": "n <span class='highlight-green'>= int(input())\nfor _ in range(n):\n    s = input()\n    max_num = 0\n    current = &#39;</span>&#39;\n    <span class='highlight-green'>for letter in s:\n        if letter.isdigit():\n            current += letter\n        else:\n            if current:\n                max_num = max(max_num, int(current))\n                current = </span>&#39;&#39;\n    i<span class='highlight-green'>f current:\n        max_num = max(max_num, int(current))\n    print(max_num</span>)\n\n"
+      },
+      "token_overlap": 114,
+      "max_similarity_percent": 95.8
+    },
+    {
+      "case_id": 8,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3abfe535fa0f4f1d7ea/e59c34a1bebb49d29bfb3592/sub_1762575945114_58v3u9jyn.py",
+        "similarity_percent": 80.62,
+        "full_code": "t = int(input())\n\nfor _ in range(t):\n    n = input().strip()\n    num = \"\"\n    numbers  = []\n    for c in n:\n        if c.isdigit():\n            num += c\n        else:\n            if num != \"\":\n                numbers.append(int(num))\n                num = \"\"\n    if num != \"\":\n        numbers.append(int(num))\n    k = max(numbers)\n    print(k)",
+        "highlighted_code": "<span class='highlight-red'>t = int(input())\n\nfor _ in range(t):\n    n = input().</span>strip()\n    num = &#34;&#34;\n    numbers  = []\n    <span class='highlight-red'>for c in n:\n        if c.isdigit():\n            num += c\n        else:\n            if num != &#34;&#34;:\n                numbers.append(int(num))\n                num = &#34;&#34;\n    if num != &#34;&#34;:\n        numbers.append(int(num</span>))\n    k = max(numbers)\n    print(k)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3abfe535fa0f4f1d7ea/f95120b3a38a461085ef58cb/sub_1762445194919_ttu3c2ipt.py",
+        "similarity_percent": 83.2,
+        "full_code": "t = int(input())\nfor _ in range(t):\n    n = input().strip()\n    numbers = []\n    num = ''\n    for k in n:\n        if k.isdigit():\n            num += k\n        else:\n            if num != '':\n                numbers.append(int(num))\n                num = ''\n    if num != \"\":\n        numbers.append(int(num))\n    print(max(numbers))",
+        "highlighted_code": "<span class='highlight-green'>t = int(input())\nfor _ in range(t):\n    n = input().</span>strip()\n    numbers = []\n    num = &#39;&#39;\n    <span class='highlight-green'>for k in n:\n        if k.isdigit():\n            num += k\n        else:\n            if num != &#39;&#39;:\n                numbers.append(int(num))\n                num = &#39;&#39;\n    if num != &#34;&#34;:\n        numbers.append(int(num</span>))\n    print(max(numbers))"
+      },
+      "token_overlap": 104,
+      "max_similarity_percent": 83.2
+    },
+    {
+      "case_id": 9,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3abfe535fa0f4f1d7ea/e59c34a1bebb49d29bfb3592/sub_1762575945114_58v3u9jyn.py",
+        "similarity_percent": 80.62,
+        "full_code": "t = int(input())\n\nfor _ in range(t):\n    n = input().strip()\n    num = \"\"\n    numbers  = []\n    for c in n:\n        if c.isdigit():\n            num += c\n        else:\n            if num != \"\":\n                numbers.append(int(num))\n                num = \"\"\n    if num != \"\":\n        numbers.append(int(num))\n    k = max(numbers)\n    print(k)",
+        "highlighted_code": "<span class='highlight-red'>t = int(input())\n\nfor _ in range(t):\n    n = input().</span>strip()\n    num = &#34;&#34;\n    numbers  = []\n    <span class='highlight-red'>for c in n:\n        if c.isdigit():\n            num += c\n        else:\n            if num != &#34;&#34;:\n                numbers.append(int(num))\n                num = &#34;&#34;\n    if num != &#34;&#34;:\n        numbers.append(int(num</span>))\n    k = max(numbers)\n    print(k)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3abfe535fa0f4f1d7ea/e59c34a1bebb49d29bfb3592/sub_1762436434848_p0tqbkmv2.py",
+        "similarity_percent": 83.2,
+        "full_code": "t = int(input())\nfor _ in range(t):\n    n = input().strip()\n    numbers = []\n    num = ''\n    for c in n:\n        if c.isdigit():\n            num += c\n        else:\n            if num != '':\n                numbers.append(int(num))\n                num = ''\n    if num != \"\":\n        numbers.append(int(num))\n    print(max(numbers))\n",
+        "highlighted_code": "<span class='highlight-green'>t = int(input())\nfor _ in range(t):\n    n = input().</span>strip()\n    numbers = []\n    num = &#39;&#39;\n    <span class='highlight-green'>for c in n:\n        if c.isdigit():\n            num += c\n        else:\n            if num != &#39;&#39;:\n                numbers.append(int(num))\n                num = &#39;&#39;\n    if num != &#34;&#34;:\n        numbers.append(int(num</span>))\n    print(max(numbers))\n"
+      },
+      "token_overlap": 104,
+      "max_similarity_percent": 83.2
+    },
+    {
+      "case_id": 10,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3abfe535fa0f4f1d7ea/e59c34a1bebb49d29bfb3592/sub_1762575945114_58v3u9jyn.py",
+        "similarity_percent": 80.62,
+        "full_code": "t = int(input())\n\nfor _ in range(t):\n    n = input().strip()\n    num = \"\"\n    numbers  = []\n    for c in n:\n        if c.isdigit():\n            num += c\n        else:\n            if num != \"\":\n                numbers.append(int(num))\n                num = \"\"\n    if num != \"\":\n        numbers.append(int(num))\n    k = max(numbers)\n    print(k)",
+        "highlighted_code": "<span class='highlight-red'>t = int(input())\n\nfor _ in range(t):\n    n = input().</span>strip()\n    num = &#34;&#34;\n    numbers  = []\n    <span class='highlight-red'>for c in n:\n        if c.isdigit():\n            num += c\n        else:\n            if num != &#34;&#34;:\n                numbers.append(int(num))\n                num = &#34;&#34;\n    if num != &#34;&#34;:\n        numbers.append(int(num</span>))\n    k = max(numbers)\n    print(k)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3abfe535fa0f4f1d7ea/f95120b3a38a461085ef58cb/sub_1762445180050_4188fw9f5.py",
+        "similarity_percent": 83.2,
+        "full_code": "t = int(input())\nfor _ in range(t):\n    n = input().strip()\n    numbers = []\n    num = ''\n    for k in n:\n        if k.isdigit():\n            num += k\n        else:\n            if num != '':\n                numbers.append(int(num))\n                num = ''\n    if num != \"\":\n        numbers.append(int(num))\n    print(max(numbers))",
+        "highlighted_code": "<span class='highlight-green'>t = int(input())\nfor _ in range(t):\n    n = input().</span>strip()\n    numbers = []\n    num = &#39;&#39;\n    <span class='highlight-green'>for k in n:\n        if k.isdigit():\n            num += k\n        else:\n            if num != &#39;&#39;:\n                numbers.append(int(num))\n                num = &#39;&#39;\n    if num != &#34;&#34;:\n        numbers.append(int(num</span>))\n    print(max(numbers))"
+      },
+      "token_overlap": 104,
+      "max_similarity_percent": 83.2
+    },
+    {
+      "case_id": 11,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3abfe535fa0f4f1d7ea/26894d2babd64210ad6beba1/sub_1762141634291_s6himojru.py",
+        "similarity_percent": 66.67,
+        "full_code": "t = int(input())\n\nwhile t > 0:\n    t -= 1\n    s = input().strip()\n    so = ''\n    x = []\n    for ch in s:\n        if ch.isdigit():\n            so += ch\n        else:\n            if so != '':\n                x.append(int(so))\n                so = ''\n    if so != '': \n        x.append(int(so))\n    \n    print(max(x))\n",
+        "highlighted_code": "t = int(input())\n\nwhile t &gt; 0:\n    t -= 1\n    s = in<span class='highlight-red'>put().strip()\n    so = &#39;&#39;\n    x = []\n    for ch in s:\n        if ch.isdigit():\n            so += ch\n        else:\n            if so != &#39;&#39;:\n                x.append(int(so))\n                so = &#39;&#39;\n    if so != &#39;&#39;: \n        x.append(int(so</span>))\n    \n    print(max(x))\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3abfe535fa0f4f1d7ea/e59c34a1bebb49d29bfb3592/sub_1762575945114_58v3u9jyn.py",
+        "similarity_percent": 63.57,
+        "full_code": "t = int(input())\n\nfor _ in range(t):\n    n = input().strip()\n    num = \"\"\n    numbers  = []\n    for c in n:\n        if c.isdigit():\n            num += c\n        else:\n            if num != \"\":\n                numbers.append(int(num))\n                num = \"\"\n    if num != \"\":\n        numbers.append(int(num))\n    k = max(numbers)\n    print(k)",
+        "highlighted_code": "t = int(input())\n\nfor _ in range(t):\n    n = in<span class='highlight-green'>put().strip()\n    num = &#34;&#34;\n    numbers  = []\n    for c in n:\n        if c.isdigit():\n            num += c\n        else:\n            if num != &#34;&#34;:\n                numbers.append(int(num))\n                num = &#34;&#34;\n    if num != &#34;&#34;:\n        numbers.append(int(num</span>))\n    k = max(numbers)\n    print(k)"
+      },
+      "token_overlap": 82,
+      "max_similarity_percent": 66.67
+    },
+    {
+      "case_id": 12,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3abfe535fa0f4f1d7ea/26894d2babd64210ad6beba1/sub_1762141634291_s6himojru.py",
+        "similarity_percent": 60.98,
+        "full_code": "t = int(input())\n\nwhile t > 0:\n    t -= 1\n    s = input().strip()\n    so = ''\n    x = []\n    for ch in s:\n        if ch.isdigit():\n            so += ch\n        else:\n            if so != '':\n                x.append(int(so))\n                so = ''\n    if so != '': \n        x.append(int(so))\n    \n    print(max(x))\n",
+        "highlighted_code": "t = int(input())\n\nwhile t &gt; 0:\n    t -= 1\n    s = input().strip()\n    so = &#39;&#39;\n    x = []\n    <span class='highlight-red'>for ch in s:\n        if ch.isdigit():\n            so += ch\n        else:\n            if so != &#39;&#39;:\n                x.append(int(so))\n                so = &#39;&#39;\n    if so != &#39;&#39;: \n        x.append(int(so))\n    \n    print(ma</span>x(x))\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3abfe535fa0f4f1d7ea/f95120b3a38a461085ef58cb/sub_1762445194919_ttu3c2ipt.py",
+        "similarity_percent": 60.0,
+        "full_code": "t = int(input())\nfor _ in range(t):\n    n = input().strip()\n    numbers = []\n    num = ''\n    for k in n:\n        if k.isdigit():\n            num += k\n        else:\n            if num != '':\n                numbers.append(int(num))\n                num = ''\n    if num != \"\":\n        numbers.append(int(num))\n    print(max(numbers))",
+        "highlighted_code": "t = int(input())\nfor _ in range(t):\n    n = input().strip()\n    numbers = []\n    num = &#39;&#39;\n    <span class='highlight-green'>for k in n:\n        if k.isdigit():\n            num += k\n        else:\n            if num != &#39;&#39;:\n                numbers.append(int(num))\n                num = &#39;&#39;\n    if num != &#34;&#34;:\n        numbers.append(int(num))\n    print(ma</span>x(numbers))"
+      },
+      "token_overlap": 75,
+      "max_similarity_percent": 60.98
+    },
+    {
+      "case_id": 13,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3abfe535fa0f4f1d7ea/26894d2babd64210ad6beba1/sub_1762141634291_s6himojru.py",
+        "similarity_percent": 60.98,
+        "full_code": "t = int(input())\n\nwhile t > 0:\n    t -= 1\n    s = input().strip()\n    so = ''\n    x = []\n    for ch in s:\n        if ch.isdigit():\n            so += ch\n        else:\n            if so != '':\n                x.append(int(so))\n                so = ''\n    if so != '': \n        x.append(int(so))\n    \n    print(max(x))\n",
+        "highlighted_code": "t = int(input())\n\nwhile t &gt; 0:\n    t -= 1\n    s = input().strip()\n    so = &#39;&#39;\n    x = []\n    <span class='highlight-red'>for ch in s:\n        if ch.isdigit():\n            so += ch\n        else:\n            if so != &#39;&#39;:\n                x.append(int(so))\n                so = &#39;&#39;\n    if so != &#39;&#39;: \n        x.append(int(so))\n    \n    print(ma</span>x(x))\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3abfe535fa0f4f1d7ea/e59c34a1bebb49d29bfb3592/sub_1762436434848_p0tqbkmv2.py",
+        "similarity_percent": 60.0,
+        "full_code": "t = int(input())\nfor _ in range(t):\n    n = input().strip()\n    numbers = []\n    num = ''\n    for c in n:\n        if c.isdigit():\n            num += c\n        else:\n            if num != '':\n                numbers.append(int(num))\n                num = ''\n    if num != \"\":\n        numbers.append(int(num))\n    print(max(numbers))\n",
+        "highlighted_code": "t = int(input())\nfor _ in range(t):\n    n = input().strip()\n    numbers = []\n    num = &#39;&#39;\n    <span class='highlight-green'>for c in n:\n        if c.isdigit():\n            num += c\n        else:\n            if num != &#39;&#39;:\n                numbers.append(int(num))\n                num = &#39;&#39;\n    if num != &#34;&#34;:\n        numbers.append(int(num))\n    print(ma</span>x(numbers))\n"
+      },
+      "token_overlap": 75,
+      "max_similarity_percent": 60.98
+    },
+    {
+      "case_id": 14,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3abfe535fa0f4f1d7ea/26894d2babd64210ad6beba1/sub_1762141634291_s6himojru.py",
+        "similarity_percent": 60.98,
+        "full_code": "t = int(input())\n\nwhile t > 0:\n    t -= 1\n    s = input().strip()\n    so = ''\n    x = []\n    for ch in s:\n        if ch.isdigit():\n            so += ch\n        else:\n            if so != '':\n                x.append(int(so))\n                so = ''\n    if so != '': \n        x.append(int(so))\n    \n    print(max(x))\n",
+        "highlighted_code": "t = int(input())\n\nwhile t &gt; 0:\n    t -= 1\n    s = input().strip()\n    so = &#39;&#39;\n    x = []\n    <span class='highlight-red'>for ch in s:\n        if ch.isdigit():\n            so += ch\n        else:\n            if so != &#39;&#39;:\n                x.append(int(so))\n                so = &#39;&#39;\n    if so != &#39;&#39;: \n        x.append(int(so))\n    \n    print(ma</span>x(x))\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3abfe535fa0f4f1d7ea/f95120b3a38a461085ef58cb/sub_1762445180050_4188fw9f5.py",
+        "similarity_percent": 60.0,
+        "full_code": "t = int(input())\nfor _ in range(t):\n    n = input().strip()\n    numbers = []\n    num = ''\n    for k in n:\n        if k.isdigit():\n            num += k\n        else:\n            if num != '':\n                numbers.append(int(num))\n                num = ''\n    if num != \"\":\n        numbers.append(int(num))\n    print(max(numbers))",
+        "highlighted_code": "t = int(input())\nfor _ in range(t):\n    n = input().strip()\n    numbers = []\n    num = &#39;&#39;\n    <span class='highlight-green'>for k in n:\n        if k.isdigit():\n            num += k\n        else:\n            if num != &#39;&#39;:\n                numbers.append(int(num))\n                num = &#39;&#39;\n    if num != &#34;&#34;:\n        numbers.append(int(num))\n    print(ma</span>x(numbers))"
+      },
+      "token_overlap": 75,
+      "max_similarity_percent": 60.98
+    }
+  ]
 }

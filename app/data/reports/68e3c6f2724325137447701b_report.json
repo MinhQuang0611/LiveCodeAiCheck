@@ -4,619 +4,789 @@
     "min_token_overlap": 80,
     "min_similarity_percent": 60
   },
-  "total_cases_found": 36,
-  "total_cases_filtered": 36,
+  "total_cases_found": 46,
+  "total_cases_filtered": 46,
   "cases": [
     {
       "case_id": 1,
       "file1": {
-        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3c6f2724325137447701b/f56f86fa26744324899543f3/sub_1761314130987_jmczt3ui3.py",
+        "path": "/app/app/data/submissions/68e3c6f2724325137447701b/f56f86fa26744324899543f3/sub_1761314132278_ybq6kj8gi.py",
         "similarity_percent": 100.0,
         "full_code": "s=input()\nchan=le=0\na=list(s)\nb=set(s)\nfor i in b:\n        if (a.count(i))%2==0:chan+=1\n        else:le+=1\nif len(s)%2==0:\n    if le==0:print(\"true\")\n    else:print(\"false\")\nelse:\n    if le==1:print(\"true\")\n    else:print(\"false\")\n",
-        "highlighted_code": "<span class='highlight-red'>s=input()\nchan=le=0\na=list(s)\nb=set(s)\nfor i in b:\n        if (a.count(i))%2==0:chan+=1\n        else:le+=1\nif len(s)%2==0:\n    if le==0:print(&#34;true&#34;)\n    else:print(&#34;false&#34;)\nelse:\n    if le==1:print(&#34;true&#34;)\n    else:print(</span>&#34;false&#34;)\n"
+        "highlighted_code": "<span class='highlight-red'>s=input()\nchan=le=0\na=list(s)\nb=set(s)\nfor i in b:\n        if (a.count(i))%2==0:chan+=1\n        else:le+=1\nif len(s)%2==0:\n    if le==0:print(&#34;true&#34;)\n    else:print(&#34;false&#34;)\nelse:\n    if le==1:print(&#34;true&#34;)\n    else:print</span>(&#34;false&#34;)\n"
       },
       "file2": {
-        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3c6f2724325137447701b/f56f86fa26744324899543f3/sub_1761314132278_ybq6kj8gi.py",
+        "path": "/app/app/data/submissions/68e3c6f2724325137447701b/f56f86fa26744324899543f3/sub_1761314131381_mc290r0uz.py",
         "similarity_percent": 100.0,
         "full_code": "s=input()\nchan=le=0\na=list(s)\nb=set(s)\nfor i in b:\n        if (a.count(i))%2==0:chan+=1\n        else:le+=1\nif len(s)%2==0:\n    if le==0:print(\"true\")\n    else:print(\"false\")\nelse:\n    if le==1:print(\"true\")\n    else:print(\"false\")\n",
-        "highlighted_code": "<span class='highlight-green'>s=input()\nchan=le=0\na=list(s)\nb=set(s)\nfor i in b:\n        if (a.count(i))%2==0:chan+=1\n        else:le+=1\nif len(s)%2==0:\n    if le==0:print(&#34;true&#34;)\n    else:print(&#34;false&#34;)\nelse:\n    if le==1:print(&#34;true&#34;)\n    else:print(</span>&#34;false&#34;)\n"
+        "highlighted_code": "<span class='highlight-green'>s=input()\nchan=le=0\na=list(s)\nb=set(s)\nfor i in b:\n        if (a.count(i))%2==0:chan+=1\n        else:le+=1\nif len(s)%2==0:\n    if le==0:print(&#34;true&#34;)\n    else:print(&#34;false&#34;)\nelse:\n    if le==1:print(&#34;true&#34;)\n    else:print</span>(&#34;false&#34;)\n"
       },
-      "token_overlap": 147,
+      "token_overlap": 146,
       "max_similarity_percent": 100.0
     },
     {
       "case_id": 2,
       "file1": {
-        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3c6f2724325137447701b/f56f86fa26744324899543f3/sub_1761314130987_jmczt3ui3.py",
+        "path": "/app/app/data/submissions/68e3c6f2724325137447701b/f56f86fa26744324899543f3/sub_1761314132278_ybq6kj8gi.py",
         "similarity_percent": 100.0,
         "full_code": "s=input()\nchan=le=0\na=list(s)\nb=set(s)\nfor i in b:\n        if (a.count(i))%2==0:chan+=1\n        else:le+=1\nif len(s)%2==0:\n    if le==0:print(\"true\")\n    else:print(\"false\")\nelse:\n    if le==1:print(\"true\")\n    else:print(\"false\")\n",
-        "highlighted_code": "<span class='highlight-red'>s=input()\nchan=le=0\na=list(s)\nb=set(s)\nfor i in b:\n        if (a.count(i))%2==0:chan+=1\n        else:le+=1\nif len(s)%2==0:\n    if le==0:print(&#34;true&#34;)\n    else:print(&#34;false&#34;)\nelse:\n    if le==1:print(&#34;true&#34;)\n    else:print(</span>&#34;false&#34;)\n"
+        "highlighted_code": "<span class='highlight-red'>s=input()\nchan=le=0\na=list(s)\nb=set(s)\nfor i in b:\n        if (a.count(i))%2==0:chan+=1\n        else:le+=1\nif len(s)%2==0:\n    if le==0:print(&#34;true&#34;)\n    else:print(&#34;false&#34;)\nelse:\n    if le==1:print(&#34;true&#34;)\n    else:print</span>(&#34;false&#34;)\n"
       },
       "file2": {
-        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3c6f2724325137447701b/f56f86fa26744324899543f3/sub_1761314133087_ldmm8fd4i.py",
+        "path": "/app/app/data/submissions/68e3c6f2724325137447701b/f56f86fa26744324899543f3/sub_1761314132762_r6w5ffl9x.py",
         "similarity_percent": 100.0,
         "full_code": "s=input()\nchan=le=0\na=list(s)\nb=set(s)\nfor i in b:\n        if (a.count(i))%2==0:chan+=1\n        else:le+=1\nif len(s)%2==0:\n    if le==0:print(\"true\")\n    else:print(\"false\")\nelse:\n    if le==1:print(\"true\")\n    else:print(\"false\")\n",
-        "highlighted_code": "<span class='highlight-green'>s=input()\nchan=le=0\na=list(s)\nb=set(s)\nfor i in b:\n        if (a.count(i))%2==0:chan+=1\n        else:le+=1\nif len(s)%2==0:\n    if le==0:print(&#34;true&#34;)\n    else:print(&#34;false&#34;)\nelse:\n    if le==1:print(&#34;true&#34;)\n    else:print(</span>&#34;false&#34;)\n"
+        "highlighted_code": "<span class='highlight-green'>s=input()\nchan=le=0\na=list(s)\nb=set(s)\nfor i in b:\n        if (a.count(i))%2==0:chan+=1\n        else:le+=1\nif len(s)%2==0:\n    if le==0:print(&#34;true&#34;)\n    else:print(&#34;false&#34;)\nelse:\n    if le==1:print(&#34;true&#34;)\n    else:print</span>(&#34;false&#34;)\n"
       },
-      "token_overlap": 147,
+      "token_overlap": 146,
       "max_similarity_percent": 100.0
     },
     {
       "case_id": 3,
       "file1": {
-        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3c6f2724325137447701b/f56f86fa26744324899543f3/sub_1761314130987_jmczt3ui3.py",
+        "path": "/app/app/data/submissions/68e3c6f2724325137447701b/f56f86fa26744324899543f3/sub_1761314132278_ybq6kj8gi.py",
         "similarity_percent": 100.0,
         "full_code": "s=input()\nchan=le=0\na=list(s)\nb=set(s)\nfor i in b:\n        if (a.count(i))%2==0:chan+=1\n        else:le+=1\nif len(s)%2==0:\n    if le==0:print(\"true\")\n    else:print(\"false\")\nelse:\n    if le==1:print(\"true\")\n    else:print(\"false\")\n",
-        "highlighted_code": "<span class='highlight-red'>s=input()\nchan=le=0\na=list(s)\nb=set(s)\nfor i in b:\n        if (a.count(i))%2==0:chan+=1\n        else:le+=1\nif len(s)%2==0:\n    if le==0:print(&#34;true&#34;)\n    else:print(&#34;false&#34;)\nelse:\n    if le==1:print(&#34;true&#34;)\n    else:print(</span>&#34;false&#34;)\n"
+        "highlighted_code": "<span class='highlight-red'>s=input()\nchan=le=0\na=list(s)\nb=set(s)\nfor i in b:\n        if (a.count(i))%2==0:chan+=1\n        else:le+=1\nif len(s)%2==0:\n    if le==0:print(&#34;true&#34;)\n    else:print(&#34;false&#34;)\nelse:\n    if le==1:print(&#34;true&#34;)\n    else:print</span>(&#34;false&#34;)\n"
       },
       "file2": {
-        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3c6f2724325137447701b/f56f86fa26744324899543f3/sub_1761314131381_mc290r0uz.py",
+        "path": "/app/app/data/submissions/68e3c6f2724325137447701b/f56f86fa26744324899543f3/sub_1761314133087_ldmm8fd4i.py",
         "similarity_percent": 100.0,
         "full_code": "s=input()\nchan=le=0\na=list(s)\nb=set(s)\nfor i in b:\n        if (a.count(i))%2==0:chan+=1\n        else:le+=1\nif len(s)%2==0:\n    if le==0:print(\"true\")\n    else:print(\"false\")\nelse:\n    if le==1:print(\"true\")\n    else:print(\"false\")\n",
-        "highlighted_code": "<span class='highlight-green'>s=input()\nchan=le=0\na=list(s)\nb=set(s)\nfor i in b:\n        if (a.count(i))%2==0:chan+=1\n        else:le+=1\nif len(s)%2==0:\n    if le==0:print(&#34;true&#34;)\n    else:print(&#34;false&#34;)\nelse:\n    if le==1:print(&#34;true&#34;)\n    else:print(</span>&#34;false&#34;)\n"
+        "highlighted_code": "<span class='highlight-green'>s=input()\nchan=le=0\na=list(s)\nb=set(s)\nfor i in b:\n        if (a.count(i))%2==0:chan+=1\n        else:le+=1\nif len(s)%2==0:\n    if le==0:print(&#34;true&#34;)\n    else:print(&#34;false&#34;)\nelse:\n    if le==1:print(&#34;true&#34;)\n    else:print</span>(&#34;false&#34;)\n"
       },
-      "token_overlap": 147,
+      "token_overlap": 146,
       "max_similarity_percent": 100.0
     },
     {
       "case_id": 4,
       "file1": {
-        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3c6f2724325137447701b/f56f86fa26744324899543f3/sub_1761314130987_jmczt3ui3.py",
+        "path": "/app/app/data/submissions/68e3c6f2724325137447701b/f56f86fa26744324899543f3/sub_1761314132278_ybq6kj8gi.py",
         "similarity_percent": 100.0,
         "full_code": "s=input()\nchan=le=0\na=list(s)\nb=set(s)\nfor i in b:\n        if (a.count(i))%2==0:chan+=1\n        else:le+=1\nif len(s)%2==0:\n    if le==0:print(\"true\")\n    else:print(\"false\")\nelse:\n    if le==1:print(\"true\")\n    else:print(\"false\")\n",
-        "highlighted_code": "<span class='highlight-red'>s=input()\nchan=le=0\na=list(s)\nb=set(s)\nfor i in b:\n        if (a.count(i))%2==0:chan+=1\n        else:le+=1\nif len(s)%2==0:\n    if le==0:print(&#34;true&#34;)\n    else:print(&#34;false&#34;)\nelse:\n    if le==1:print(&#34;true&#34;)\n    else:print(</span>&#34;false&#34;)\n"
+        "highlighted_code": "<span class='highlight-red'>s=input()\nchan=le=0\na=list(s)\nb=set(s)\nfor i in b:\n        if (a.count(i))%2==0:chan+=1\n        else:le+=1\nif len(s)%2==0:\n    if le==0:print(&#34;true&#34;)\n    else:print(&#34;false&#34;)\nelse:\n    if le==1:print(&#34;true&#34;)\n    else:print</span>(&#34;false&#34;)\n"
       },
       "file2": {
-        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3c6f2724325137447701b/f56f86fa26744324899543f3/sub_1761313841599_fnsdxj2xl.py",
+        "path": "/app/app/data/submissions/68e3c6f2724325137447701b/f56f86fa26744324899543f3/sub_1761314131772_iqrvtl82h.py",
         "similarity_percent": 100.0,
         "full_code": "s=input()\nchan=le=0\na=list(s)\nb=set(s)\nfor i in b:\n        if (a.count(i))%2==0:chan+=1\n        else:le+=1\nif len(s)%2==0:\n    if le==0:print(\"true\")\n    else:print(\"false\")\nelse:\n    if le==1:print(\"true\")\n    else:print(\"false\")\n",
-        "highlighted_code": "<span class='highlight-green'>s=input()\nchan=le=0\na=list(s)\nb=set(s)\nfor i in b:\n        if (a.count(i))%2==0:chan+=1\n        else:le+=1\nif len(s)%2==0:\n    if le==0:print(&#34;true&#34;)\n    else:print(&#34;false&#34;)\nelse:\n    if le==1:print(&#34;true&#34;)\n    else:print(</span>&#34;false&#34;)\n"
+        "highlighted_code": "<span class='highlight-green'>s=input()\nchan=le=0\na=list(s)\nb=set(s)\nfor i in b:\n        if (a.count(i))%2==0:chan+=1\n        else:le+=1\nif len(s)%2==0:\n    if le==0:print(&#34;true&#34;)\n    else:print(&#34;false&#34;)\nelse:\n    if le==1:print(&#34;true&#34;)\n    else:print</span>(&#34;false&#34;)\n"
       },
-      "token_overlap": 147,
+      "token_overlap": 146,
       "max_similarity_percent": 100.0
     },
     {
       "case_id": 5,
       "file1": {
-        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3c6f2724325137447701b/f56f86fa26744324899543f3/sub_1761314130987_jmczt3ui3.py",
+        "path": "/app/app/data/submissions/68e3c6f2724325137447701b/f56f86fa26744324899543f3/sub_1761314132278_ybq6kj8gi.py",
         "similarity_percent": 100.0,
         "full_code": "s=input()\nchan=le=0\na=list(s)\nb=set(s)\nfor i in b:\n        if (a.count(i))%2==0:chan+=1\n        else:le+=1\nif len(s)%2==0:\n    if le==0:print(\"true\")\n    else:print(\"false\")\nelse:\n    if le==1:print(\"true\")\n    else:print(\"false\")\n",
-        "highlighted_code": "<span class='highlight-red'>s=input()\nchan=le=0\na=list(s)\nb=set(s)\nfor i in b:\n        if (a.count(i))%2==0:chan+=1\n        else:le+=1\nif len(s)%2==0:\n    if le==0:print(&#34;true&#34;)\n    else:print(&#34;false&#34;)\nelse:\n    if le==1:print(&#34;true&#34;)\n    else:print(</span>&#34;false&#34;)\n"
+        "highlighted_code": "<span class='highlight-red'>s=input()\nchan=le=0\na=list(s)\nb=set(s)\nfor i in b:\n        if (a.count(i))%2==0:chan+=1\n        else:le+=1\nif len(s)%2==0:\n    if le==0:print(&#34;true&#34;)\n    else:print(&#34;false&#34;)\nelse:\n    if le==1:print(&#34;true&#34;)\n    else:print</span>(&#34;false&#34;)\n"
       },
       "file2": {
-        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3c6f2724325137447701b/f56f86fa26744324899543f3/sub_1761314129658_kuvwh4kb1.py",
+        "path": "/app/app/data/submissions/68e3c6f2724325137447701b/f56f86fa26744324899543f3/sub_1761314129658_kuvwh4kb1.py",
         "similarity_percent": 100.0,
         "full_code": "s=input()\nchan=le=0\na=list(s)\nb=set(s)\nfor i in b:\n        if (a.count(i))%2==0:chan+=1\n        else:le+=1\nif len(s)%2==0:\n    if le==0:print(\"true\")\n    else:print(\"false\")\nelse:\n    if le==1:print(\"true\")\n    else:print(\"false\")\n",
-        "highlighted_code": "<span class='highlight-green'>s=input()\nchan=le=0\na=list(s)\nb=set(s)\nfor i in b:\n        if (a.count(i))%2==0:chan+=1\n        else:le+=1\nif len(s)%2==0:\n    if le==0:print(&#34;true&#34;)\n    else:print(&#34;false&#34;)\nelse:\n    if le==1:print(&#34;true&#34;)\n    else:print(</span>&#34;false&#34;)\n"
+        "highlighted_code": "<span class='highlight-green'>s=input()\nchan=le=0\na=list(s)\nb=set(s)\nfor i in b:\n        if (a.count(i))%2==0:chan+=1\n        else:le+=1\nif len(s)%2==0:\n    if le==0:print(&#34;true&#34;)\n    else:print(&#34;false&#34;)\nelse:\n    if le==1:print(&#34;true&#34;)\n    else:print</span>(&#34;false&#34;)\n"
       },
-      "token_overlap": 147,
+      "token_overlap": 146,
       "max_similarity_percent": 100.0
     },
     {
       "case_id": 6,
       "file1": {
-        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3c6f2724325137447701b/f56f86fa26744324899543f3/sub_1761314130987_jmczt3ui3.py",
+        "path": "/app/app/data/submissions/68e3c6f2724325137447701b/f56f86fa26744324899543f3/sub_1761314132278_ybq6kj8gi.py",
         "similarity_percent": 100.0,
         "full_code": "s=input()\nchan=le=0\na=list(s)\nb=set(s)\nfor i in b:\n        if (a.count(i))%2==0:chan+=1\n        else:le+=1\nif len(s)%2==0:\n    if le==0:print(\"true\")\n    else:print(\"false\")\nelse:\n    if le==1:print(\"true\")\n    else:print(\"false\")\n",
-        "highlighted_code": "<span class='highlight-red'>s=input()\nchan=le=0\na=list(s)\nb=set(s)\nfor i in b:\n        if (a.count(i))%2==0:chan+=1\n        else:le+=1\nif len(s)%2==0:\n    if le==0:print(&#34;true&#34;)\n    else:print(&#34;false&#34;)\nelse:\n    if le==1:print(&#34;true&#34;)\n    else:print(</span>&#34;false&#34;)\n"
+        "highlighted_code": "<span class='highlight-red'>s=input()\nchan=le=0\na=list(s)\nb=set(s)\nfor i in b:\n        if (a.count(i))%2==0:chan+=1\n        else:le+=1\nif len(s)%2==0:\n    if le==0:print(&#34;true&#34;)\n    else:print(&#34;false&#34;)\nelse:\n    if le==1:print(&#34;true&#34;)\n    else:print</span>(&#34;false&#34;)\n"
       },
       "file2": {
-        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3c6f2724325137447701b/f56f86fa26744324899543f3/sub_1761314131772_iqrvtl82h.py",
+        "path": "/app/app/data/submissions/68e3c6f2724325137447701b/f56f86fa26744324899543f3/sub_1761314130987_jmczt3ui3.py",
         "similarity_percent": 100.0,
         "full_code": "s=input()\nchan=le=0\na=list(s)\nb=set(s)\nfor i in b:\n        if (a.count(i))%2==0:chan+=1\n        else:le+=1\nif len(s)%2==0:\n    if le==0:print(\"true\")\n    else:print(\"false\")\nelse:\n    if le==1:print(\"true\")\n    else:print(\"false\")\n",
-        "highlighted_code": "<span class='highlight-green'>s=input()\nchan=le=0\na=list(s)\nb=set(s)\nfor i in b:\n        if (a.count(i))%2==0:chan+=1\n        else:le+=1\nif len(s)%2==0:\n    if le==0:print(&#34;true&#34;)\n    else:print(&#34;false&#34;)\nelse:\n    if le==1:print(&#34;true&#34;)\n    else:print(</span>&#34;false&#34;)\n"
+        "highlighted_code": "<span class='highlight-green'>s=input()\nchan=le=0\na=list(s)\nb=set(s)\nfor i in b:\n        if (a.count(i))%2==0:chan+=1\n        else:le+=1\nif len(s)%2==0:\n    if le==0:print(&#34;true&#34;)\n    else:print(&#34;false&#34;)\nelse:\n    if le==1:print(&#34;true&#34;)\n    else:print</span>(&#34;false&#34;)\n"
       },
-      "token_overlap": 147,
+      "token_overlap": 146,
       "max_similarity_percent": 100.0
     },
     {
       "case_id": 7,
       "file1": {
-        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3c6f2724325137447701b/f56f86fa26744324899543f3/sub_1761314130987_jmczt3ui3.py",
+        "path": "/app/app/data/submissions/68e3c6f2724325137447701b/f56f86fa26744324899543f3/sub_1761314132278_ybq6kj8gi.py",
         "similarity_percent": 100.0,
         "full_code": "s=input()\nchan=le=0\na=list(s)\nb=set(s)\nfor i in b:\n        if (a.count(i))%2==0:chan+=1\n        else:le+=1\nif len(s)%2==0:\n    if le==0:print(\"true\")\n    else:print(\"false\")\nelse:\n    if le==1:print(\"true\")\n    else:print(\"false\")\n",
-        "highlighted_code": "<span class='highlight-red'>s=input()\nchan=le=0\na=list(s)\nb=set(s)\nfor i in b:\n        if (a.count(i))%2==0:chan+=1\n        else:le+=1\nif len(s)%2==0:\n    if le==0:print(&#34;true&#34;)\n    else:print(&#34;false&#34;)\nelse:\n    if le==1:print(&#34;true&#34;)\n    else:print(</span>&#34;false&#34;)\n"
+        "highlighted_code": "<span class='highlight-red'>s=input()\nchan=le=0\na=list(s)\nb=set(s)\nfor i in b:\n        if (a.count(i))%2==0:chan+=1\n        else:le+=1\nif len(s)%2==0:\n    if le==0:print(&#34;true&#34;)\n    else:print(&#34;false&#34;)\nelse:\n    if le==1:print(&#34;true&#34;)\n    else:print</span>(&#34;false&#34;)\n"
       },
       "file2": {
-        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3c6f2724325137447701b/f56f86fa26744324899543f3/sub_1761314126613_6trl1jqu7.py",
+        "path": "/app/app/data/submissions/68e3c6f2724325137447701b/f56f86fa26744324899543f3/sub_1761883133202_vspm8hlji.py",
         "similarity_percent": 100.0,
         "full_code": "s=input()\nchan=le=0\na=list(s)\nb=set(s)\nfor i in b:\n        if (a.count(i))%2==0:chan+=1\n        else:le+=1\nif len(s)%2==0:\n    if le==0:print(\"true\")\n    else:print(\"false\")\nelse:\n    if le==1:print(\"true\")\n    else:print(\"false\")\n",
-        "highlighted_code": "<span class='highlight-green'>s=input()\nchan=le=0\na=list(s)\nb=set(s)\nfor i in b:\n        if (a.count(i))%2==0:chan+=1\n        else:le+=1\nif len(s)%2==0:\n    if le==0:print(&#34;true&#34;)\n    else:print(&#34;false&#34;)\nelse:\n    if le==1:print(&#34;true&#34;)\n    else:print(</span>&#34;false&#34;)\n"
+        "highlighted_code": "<span class='highlight-green'>s=input()\nchan=le=0\na=list(s)\nb=set(s)\nfor i in b:\n        if (a.count(i))%2==0:chan+=1\n        else:le+=1\nif len(s)%2==0:\n    if le==0:print(&#34;true&#34;)\n    else:print(&#34;false&#34;)\nelse:\n    if le==1:print(&#34;true&#34;)\n    else:print</span>(&#34;false&#34;)\n"
       },
-      "token_overlap": 147,
+      "token_overlap": 146,
       "max_similarity_percent": 100.0
     },
     {
       "case_id": 8,
       "file1": {
-        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3c6f2724325137447701b/f56f86fa26744324899543f3/sub_1761314130987_jmczt3ui3.py",
+        "path": "/app/app/data/submissions/68e3c6f2724325137447701b/f56f86fa26744324899543f3/sub_1761314132278_ybq6kj8gi.py",
         "similarity_percent": 100.0,
         "full_code": "s=input()\nchan=le=0\na=list(s)\nb=set(s)\nfor i in b:\n        if (a.count(i))%2==0:chan+=1\n        else:le+=1\nif len(s)%2==0:\n    if le==0:print(\"true\")\n    else:print(\"false\")\nelse:\n    if le==1:print(\"true\")\n    else:print(\"false\")\n",
-        "highlighted_code": "<span class='highlight-red'>s=input()\nchan=le=0\na=list(s)\nb=set(s)\nfor i in b:\n        if (a.count(i))%2==0:chan+=1\n        else:le+=1\nif len(s)%2==0:\n    if le==0:print(&#34;true&#34;)\n    else:print(&#34;false&#34;)\nelse:\n    if le==1:print(&#34;true&#34;)\n    else:print(</span>&#34;false&#34;)\n"
+        "highlighted_code": "<span class='highlight-red'>s=input()\nchan=le=0\na=list(s)\nb=set(s)\nfor i in b:\n        if (a.count(i))%2==0:chan+=1\n        else:le+=1\nif len(s)%2==0:\n    if le==0:print(&#34;true&#34;)\n    else:print(&#34;false&#34;)\nelse:\n    if le==1:print(&#34;true&#34;)\n    else:print</span>(&#34;false&#34;)\n"
       },
       "file2": {
-        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3c6f2724325137447701b/f56f86fa26744324899543f3/sub_1761314132762_r6w5ffl9x.py",
+        "path": "/app/app/data/submissions/68e3c6f2724325137447701b/f56f86fa26744324899543f3/sub_1761314126613_6trl1jqu7.py",
         "similarity_percent": 100.0,
         "full_code": "s=input()\nchan=le=0\na=list(s)\nb=set(s)\nfor i in b:\n        if (a.count(i))%2==0:chan+=1\n        else:le+=1\nif len(s)%2==0:\n    if le==0:print(\"true\")\n    else:print(\"false\")\nelse:\n    if le==1:print(\"true\")\n    else:print(\"false\")\n",
-        "highlighted_code": "<span class='highlight-green'>s=input()\nchan=le=0\na=list(s)\nb=set(s)\nfor i in b:\n        if (a.count(i))%2==0:chan+=1\n        else:le+=1\nif len(s)%2==0:\n    if le==0:print(&#34;true&#34;)\n    else:print(&#34;false&#34;)\nelse:\n    if le==1:print(&#34;true&#34;)\n    else:print(</span>&#34;false&#34;)\n"
+        "highlighted_code": "<span class='highlight-green'>s=input()\nchan=le=0\na=list(s)\nb=set(s)\nfor i in b:\n        if (a.count(i))%2==0:chan+=1\n        else:le+=1\nif len(s)%2==0:\n    if le==0:print(&#34;true&#34;)\n    else:print(&#34;false&#34;)\nelse:\n    if le==1:print(&#34;true&#34;)\n    else:print</span>(&#34;false&#34;)\n"
       },
-      "token_overlap": 147,
+      "token_overlap": 146,
       "max_similarity_percent": 100.0
     },
     {
       "case_id": 9,
       "file1": {
-        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3c6f2724325137447701b/f56f86fa26744324899543f3/sub_1761314132278_ybq6kj8gi.py",
+        "path": "/app/app/data/submissions/68e3c6f2724325137447701b/f56f86fa26744324899543f3/sub_1761314132278_ybq6kj8gi.py",
         "similarity_percent": 100.0,
         "full_code": "s=input()\nchan=le=0\na=list(s)\nb=set(s)\nfor i in b:\n        if (a.count(i))%2==0:chan+=1\n        else:le+=1\nif len(s)%2==0:\n    if le==0:print(\"true\")\n    else:print(\"false\")\nelse:\n    if le==1:print(\"true\")\n    else:print(\"false\")\n",
-        "highlighted_code": "<span class='highlight-red'>s=input()\nchan=le=0\na=list(s)\nb=set(s)\nfor i in b:\n        if (a.count(i))%2==0:chan+=1\n        else:le+=1\nif len(s)%2==0:\n    if le==0:print(&#34;true&#34;)\n    else:print(&#34;false&#34;)\nelse:\n    if le==1:print(&#34;true&#34;)\n    else:print(</span>&#34;false&#34;)\n"
+        "highlighted_code": "<span class='highlight-red'>s=input()\nchan=le=0\na=list(s)\nb=set(s)\nfor i in b:\n        if (a.count(i))%2==0:chan+=1\n        else:le+=1\nif len(s)%2==0:\n    if le==0:print(&#34;true&#34;)\n    else:print(&#34;false&#34;)\nelse:\n    if le==1:print(&#34;true&#34;)\n    else:print</span>(&#34;false&#34;)\n"
       },
       "file2": {
-        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3c6f2724325137447701b/f56f86fa26744324899543f3/sub_1761314133087_ldmm8fd4i.py",
+        "path": "/app/app/data/submissions/68e3c6f2724325137447701b/f56f86fa26744324899543f3/sub_1761313841599_fnsdxj2xl.py",
         "similarity_percent": 100.0,
         "full_code": "s=input()\nchan=le=0\na=list(s)\nb=set(s)\nfor i in b:\n        if (a.count(i))%2==0:chan+=1\n        else:le+=1\nif len(s)%2==0:\n    if le==0:print(\"true\")\n    else:print(\"false\")\nelse:\n    if le==1:print(\"true\")\n    else:print(\"false\")\n",
-        "highlighted_code": "<span class='highlight-green'>s=input()\nchan=le=0\na=list(s)\nb=set(s)\nfor i in b:\n        if (a.count(i))%2==0:chan+=1\n        else:le+=1\nif len(s)%2==0:\n    if le==0:print(&#34;true&#34;)\n    else:print(&#34;false&#34;)\nelse:\n    if le==1:print(&#34;true&#34;)\n    else:print(</span>&#34;false&#34;)\n"
+        "highlighted_code": "<span class='highlight-green'>s=input()\nchan=le=0\na=list(s)\nb=set(s)\nfor i in b:\n        if (a.count(i))%2==0:chan+=1\n        else:le+=1\nif len(s)%2==0:\n    if le==0:print(&#34;true&#34;)\n    else:print(&#34;false&#34;)\nelse:\n    if le==1:print(&#34;true&#34;)\n    else:print</span>(&#34;false&#34;)\n"
       },
-      "token_overlap": 147,
+      "token_overlap": 146,
       "max_similarity_percent": 100.0
     },
     {
       "case_id": 10,
       "file1": {
-        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3c6f2724325137447701b/f56f86fa26744324899543f3/sub_1761314132278_ybq6kj8gi.py",
+        "path": "/app/app/data/submissions/68e3c6f2724325137447701b/f56f86fa26744324899543f3/sub_1761314131381_mc290r0uz.py",
         "similarity_percent": 100.0,
         "full_code": "s=input()\nchan=le=0\na=list(s)\nb=set(s)\nfor i in b:\n        if (a.count(i))%2==0:chan+=1\n        else:le+=1\nif len(s)%2==0:\n    if le==0:print(\"true\")\n    else:print(\"false\")\nelse:\n    if le==1:print(\"true\")\n    else:print(\"false\")\n",
-        "highlighted_code": "<span class='highlight-red'>s=input()\nchan=le=0\na=list(s)\nb=set(s)\nfor i in b:\n        if (a.count(i))%2==0:chan+=1\n        else:le+=1\nif len(s)%2==0:\n    if le==0:print(&#34;true&#34;)\n    else:print(&#34;false&#34;)\nelse:\n    if le==1:print(&#34;true&#34;)\n    else:print(</span>&#34;false&#34;)\n"
+        "highlighted_code": "<span class='highlight-red'>s=input()\nchan=le=0\na=list(s)\nb=set(s)\nfor i in b:\n        if (a.count(i))%2==0:chan+=1\n        else:le+=1\nif len(s)%2==0:\n    if le==0:print(&#34;true&#34;)\n    else:print(&#34;false&#34;)\nelse:\n    if le==1:print(&#34;true&#34;)\n    else:print</span>(&#34;false&#34;)\n"
       },
       "file2": {
-        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3c6f2724325137447701b/f56f86fa26744324899543f3/sub_1761314131381_mc290r0uz.py",
+        "path": "/app/app/data/submissions/68e3c6f2724325137447701b/f56f86fa26744324899543f3/sub_1761314132762_r6w5ffl9x.py",
         "similarity_percent": 100.0,
         "full_code": "s=input()\nchan=le=0\na=list(s)\nb=set(s)\nfor i in b:\n        if (a.count(i))%2==0:chan+=1\n        else:le+=1\nif len(s)%2==0:\n    if le==0:print(\"true\")\n    else:print(\"false\")\nelse:\n    if le==1:print(\"true\")\n    else:print(\"false\")\n",
-        "highlighted_code": "<span class='highlight-green'>s=input()\nchan=le=0\na=list(s)\nb=set(s)\nfor i in b:\n        if (a.count(i))%2==0:chan+=1\n        else:le+=1\nif len(s)%2==0:\n    if le==0:print(&#34;true&#34;)\n    else:print(&#34;false&#34;)\nelse:\n    if le==1:print(&#34;true&#34;)\n    else:print(</span>&#34;false&#34;)\n"
+        "highlighted_code": "<span class='highlight-green'>s=input()\nchan=le=0\na=list(s)\nb=set(s)\nfor i in b:\n        if (a.count(i))%2==0:chan+=1\n        else:le+=1\nif len(s)%2==0:\n    if le==0:print(&#34;true&#34;)\n    else:print(&#34;false&#34;)\nelse:\n    if le==1:print(&#34;true&#34;)\n    else:print</span>(&#34;false&#34;)\n"
       },
-      "token_overlap": 147,
+      "token_overlap": 146,
       "max_similarity_percent": 100.0
     },
     {
       "case_id": 11,
       "file1": {
-        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3c6f2724325137447701b/f56f86fa26744324899543f3/sub_1761314132278_ybq6kj8gi.py",
+        "path": "/app/app/data/submissions/68e3c6f2724325137447701b/f56f86fa26744324899543f3/sub_1761314131381_mc290r0uz.py",
         "similarity_percent": 100.0,
         "full_code": "s=input()\nchan=le=0\na=list(s)\nb=set(s)\nfor i in b:\n        if (a.count(i))%2==0:chan+=1\n        else:le+=1\nif len(s)%2==0:\n    if le==0:print(\"true\")\n    else:print(\"false\")\nelse:\n    if le==1:print(\"true\")\n    else:print(\"false\")\n",
-        "highlighted_code": "<span class='highlight-red'>s=input()\nchan=le=0\na=list(s)\nb=set(s)\nfor i in b:\n        if (a.count(i))%2==0:chan+=1\n        else:le+=1\nif len(s)%2==0:\n    if le==0:print(&#34;true&#34;)\n    else:print(&#34;false&#34;)\nelse:\n    if le==1:print(&#34;true&#34;)\n    else:print(</span>&#34;false&#34;)\n"
+        "highlighted_code": "<span class='highlight-red'>s=input()\nchan=le=0\na=list(s)\nb=set(s)\nfor i in b:\n        if (a.count(i))%2==0:chan+=1\n        else:le+=1\nif len(s)%2==0:\n    if le==0:print(&#34;true&#34;)\n    else:print(&#34;false&#34;)\nelse:\n    if le==1:print(&#34;true&#34;)\n    else:print</span>(&#34;false&#34;)\n"
       },
       "file2": {
-        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3c6f2724325137447701b/f56f86fa26744324899543f3/sub_1761313841599_fnsdxj2xl.py",
+        "path": "/app/app/data/submissions/68e3c6f2724325137447701b/f56f86fa26744324899543f3/sub_1761314133087_ldmm8fd4i.py",
         "similarity_percent": 100.0,
         "full_code": "s=input()\nchan=le=0\na=list(s)\nb=set(s)\nfor i in b:\n        if (a.count(i))%2==0:chan+=1\n        else:le+=1\nif len(s)%2==0:\n    if le==0:print(\"true\")\n    else:print(\"false\")\nelse:\n    if le==1:print(\"true\")\n    else:print(\"false\")\n",
-        "highlighted_code": "<span class='highlight-green'>s=input()\nchan=le=0\na=list(s)\nb=set(s)\nfor i in b:\n        if (a.count(i))%2==0:chan+=1\n        else:le+=1\nif len(s)%2==0:\n    if le==0:print(&#34;true&#34;)\n    else:print(&#34;false&#34;)\nelse:\n    if le==1:print(&#34;true&#34;)\n    else:print(</span>&#34;false&#34;)\n"
+        "highlighted_code": "<span class='highlight-green'>s=input()\nchan=le=0\na=list(s)\nb=set(s)\nfor i in b:\n        if (a.count(i))%2==0:chan+=1\n        else:le+=1\nif len(s)%2==0:\n    if le==0:print(&#34;true&#34;)\n    else:print(&#34;false&#34;)\nelse:\n    if le==1:print(&#34;true&#34;)\n    else:print</span>(&#34;false&#34;)\n"
       },
-      "token_overlap": 147,
+      "token_overlap": 146,
       "max_similarity_percent": 100.0
     },
     {
       "case_id": 12,
       "file1": {
-        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3c6f2724325137447701b/f56f86fa26744324899543f3/sub_1761314132278_ybq6kj8gi.py",
+        "path": "/app/app/data/submissions/68e3c6f2724325137447701b/f56f86fa26744324899543f3/sub_1761314131381_mc290r0uz.py",
         "similarity_percent": 100.0,
         "full_code": "s=input()\nchan=le=0\na=list(s)\nb=set(s)\nfor i in b:\n        if (a.count(i))%2==0:chan+=1\n        else:le+=1\nif len(s)%2==0:\n    if le==0:print(\"true\")\n    else:print(\"false\")\nelse:\n    if le==1:print(\"true\")\n    else:print(\"false\")\n",
-        "highlighted_code": "<span class='highlight-red'>s=input()\nchan=le=0\na=list(s)\nb=set(s)\nfor i in b:\n        if (a.count(i))%2==0:chan+=1\n        else:le+=1\nif len(s)%2==0:\n    if le==0:print(&#34;true&#34;)\n    else:print(&#34;false&#34;)\nelse:\n    if le==1:print(&#34;true&#34;)\n    else:print(</span>&#34;false&#34;)\n"
+        "highlighted_code": "<span class='highlight-red'>s=input()\nchan=le=0\na=list(s)\nb=set(s)\nfor i in b:\n        if (a.count(i))%2==0:chan+=1\n        else:le+=1\nif len(s)%2==0:\n    if le==0:print(&#34;true&#34;)\n    else:print(&#34;false&#34;)\nelse:\n    if le==1:print(&#34;true&#34;)\n    else:print</span>(&#34;false&#34;)\n"
       },
       "file2": {
-        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3c6f2724325137447701b/f56f86fa26744324899543f3/sub_1761314129658_kuvwh4kb1.py",
+        "path": "/app/app/data/submissions/68e3c6f2724325137447701b/f56f86fa26744324899543f3/sub_1761314131772_iqrvtl82h.py",
         "similarity_percent": 100.0,
         "full_code": "s=input()\nchan=le=0\na=list(s)\nb=set(s)\nfor i in b:\n        if (a.count(i))%2==0:chan+=1\n        else:le+=1\nif len(s)%2==0:\n    if le==0:print(\"true\")\n    else:print(\"false\")\nelse:\n    if le==1:print(\"true\")\n    else:print(\"false\")\n",
-        "highlighted_code": "<span class='highlight-green'>s=input()\nchan=le=0\na=list(s)\nb=set(s)\nfor i in b:\n        if (a.count(i))%2==0:chan+=1\n        else:le+=1\nif len(s)%2==0:\n    if le==0:print(&#34;true&#34;)\n    else:print(&#34;false&#34;)\nelse:\n    if le==1:print(&#34;true&#34;)\n    else:print(</span>&#34;false&#34;)\n"
+        "highlighted_code": "<span class='highlight-green'>s=input()\nchan=le=0\na=list(s)\nb=set(s)\nfor i in b:\n        if (a.count(i))%2==0:chan+=1\n        else:le+=1\nif len(s)%2==0:\n    if le==0:print(&#34;true&#34;)\n    else:print(&#34;false&#34;)\nelse:\n    if le==1:print(&#34;true&#34;)\n    else:print</span>(&#34;false&#34;)\n"
       },
-      "token_overlap": 147,
+      "token_overlap": 146,
       "max_similarity_percent": 100.0
     },
     {
       "case_id": 13,
       "file1": {
-        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3c6f2724325137447701b/f56f86fa26744324899543f3/sub_1761314132278_ybq6kj8gi.py",
+        "path": "/app/app/data/submissions/68e3c6f2724325137447701b/f56f86fa26744324899543f3/sub_1761314131381_mc290r0uz.py",
         "similarity_percent": 100.0,
         "full_code": "s=input()\nchan=le=0\na=list(s)\nb=set(s)\nfor i in b:\n        if (a.count(i))%2==0:chan+=1\n        else:le+=1\nif len(s)%2==0:\n    if le==0:print(\"true\")\n    else:print(\"false\")\nelse:\n    if le==1:print(\"true\")\n    else:print(\"false\")\n",
-        "highlighted_code": "<span class='highlight-red'>s=input()\nchan=le=0\na=list(s)\nb=set(s)\nfor i in b:\n        if (a.count(i))%2==0:chan+=1\n        else:le+=1\nif len(s)%2==0:\n    if le==0:print(&#34;true&#34;)\n    else:print(&#34;false&#34;)\nelse:\n    if le==1:print(&#34;true&#34;)\n    else:print(</span>&#34;false&#34;)\n"
+        "highlighted_code": "<span class='highlight-red'>s=input()\nchan=le=0\na=list(s)\nb=set(s)\nfor i in b:\n        if (a.count(i))%2==0:chan+=1\n        else:le+=1\nif len(s)%2==0:\n    if le==0:print(&#34;true&#34;)\n    else:print(&#34;false&#34;)\nelse:\n    if le==1:print(&#34;true&#34;)\n    else:print</span>(&#34;false&#34;)\n"
       },
       "file2": {
-        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3c6f2724325137447701b/f56f86fa26744324899543f3/sub_1761314131772_iqrvtl82h.py",
+        "path": "/app/app/data/submissions/68e3c6f2724325137447701b/f56f86fa26744324899543f3/sub_1761314129658_kuvwh4kb1.py",
         "similarity_percent": 100.0,
         "full_code": "s=input()\nchan=le=0\na=list(s)\nb=set(s)\nfor i in b:\n        if (a.count(i))%2==0:chan+=1\n        else:le+=1\nif len(s)%2==0:\n    if le==0:print(\"true\")\n    else:print(\"false\")\nelse:\n    if le==1:print(\"true\")\n    else:print(\"false\")\n",
-        "highlighted_code": "<span class='highlight-green'>s=input()\nchan=le=0\na=list(s)\nb=set(s)\nfor i in b:\n        if (a.count(i))%2==0:chan+=1\n        else:le+=1\nif len(s)%2==0:\n    if le==0:print(&#34;true&#34;)\n    else:print(&#34;false&#34;)\nelse:\n    if le==1:print(&#34;true&#34;)\n    else:print(</span>&#34;false&#34;)\n"
+        "highlighted_code": "<span class='highlight-green'>s=input()\nchan=le=0\na=list(s)\nb=set(s)\nfor i in b:\n        if (a.count(i))%2==0:chan+=1\n        else:le+=1\nif len(s)%2==0:\n    if le==0:print(&#34;true&#34;)\n    else:print(&#34;false&#34;)\nelse:\n    if le==1:print(&#34;true&#34;)\n    else:print</span>(&#34;false&#34;)\n"
       },
-      "token_overlap": 147,
+      "token_overlap": 146,
       "max_similarity_percent": 100.0
     },
     {
       "case_id": 14,
       "file1": {
-        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3c6f2724325137447701b/f56f86fa26744324899543f3/sub_1761314132278_ybq6kj8gi.py",
+        "path": "/app/app/data/submissions/68e3c6f2724325137447701b/f56f86fa26744324899543f3/sub_1761314131381_mc290r0uz.py",
         "similarity_percent": 100.0,
         "full_code": "s=input()\nchan=le=0\na=list(s)\nb=set(s)\nfor i in b:\n        if (a.count(i))%2==0:chan+=1\n        else:le+=1\nif len(s)%2==0:\n    if le==0:print(\"true\")\n    else:print(\"false\")\nelse:\n    if le==1:print(\"true\")\n    else:print(\"false\")\n",
-        "highlighted_code": "<span class='highlight-red'>s=input()\nchan=le=0\na=list(s)\nb=set(s)\nfor i in b:\n        if (a.count(i))%2==0:chan+=1\n        else:le+=1\nif len(s)%2==0:\n    if le==0:print(&#34;true&#34;)\n    else:print(&#34;false&#34;)\nelse:\n    if le==1:print(&#34;true&#34;)\n    else:print(</span>&#34;false&#34;)\n"
+        "highlighted_code": "<span class='highlight-red'>s=input()\nchan=le=0\na=list(s)\nb=set(s)\nfor i in b:\n        if (a.count(i))%2==0:chan+=1\n        else:le+=1\nif len(s)%2==0:\n    if le==0:print(&#34;true&#34;)\n    else:print(&#34;false&#34;)\nelse:\n    if le==1:print(&#34;true&#34;)\n    else:print</span>(&#34;false&#34;)\n"
       },
       "file2": {
-        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3c6f2724325137447701b/f56f86fa26744324899543f3/sub_1761314126613_6trl1jqu7.py",
+        "path": "/app/app/data/submissions/68e3c6f2724325137447701b/f56f86fa26744324899543f3/sub_1761314130987_jmczt3ui3.py",
         "similarity_percent": 100.0,
         "full_code": "s=input()\nchan=le=0\na=list(s)\nb=set(s)\nfor i in b:\n        if (a.count(i))%2==0:chan+=1\n        else:le+=1\nif len(s)%2==0:\n    if le==0:print(\"true\")\n    else:print(\"false\")\nelse:\n    if le==1:print(\"true\")\n    else:print(\"false\")\n",
-        "highlighted_code": "<span class='highlight-green'>s=input()\nchan=le=0\na=list(s)\nb=set(s)\nfor i in b:\n        if (a.count(i))%2==0:chan+=1\n        else:le+=1\nif len(s)%2==0:\n    if le==0:print(&#34;true&#34;)\n    else:print(&#34;false&#34;)\nelse:\n    if le==1:print(&#34;true&#34;)\n    else:print(</span>&#34;false&#34;)\n"
+        "highlighted_code": "<span class='highlight-green'>s=input()\nchan=le=0\na=list(s)\nb=set(s)\nfor i in b:\n        if (a.count(i))%2==0:chan+=1\n        else:le+=1\nif len(s)%2==0:\n    if le==0:print(&#34;true&#34;)\n    else:print(&#34;false&#34;)\nelse:\n    if le==1:print(&#34;true&#34;)\n    else:print</span>(&#34;false&#34;)\n"
       },
-      "token_overlap": 147,
+      "token_overlap": 146,
       "max_similarity_percent": 100.0
     },
     {
       "case_id": 15,
       "file1": {
-        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3c6f2724325137447701b/f56f86fa26744324899543f3/sub_1761314132278_ybq6kj8gi.py",
+        "path": "/app/app/data/submissions/68e3c6f2724325137447701b/f56f86fa26744324899543f3/sub_1761314131381_mc290r0uz.py",
         "similarity_percent": 100.0,
         "full_code": "s=input()\nchan=le=0\na=list(s)\nb=set(s)\nfor i in b:\n        if (a.count(i))%2==0:chan+=1\n        else:le+=1\nif len(s)%2==0:\n    if le==0:print(\"true\")\n    else:print(\"false\")\nelse:\n    if le==1:print(\"true\")\n    else:print(\"false\")\n",
-        "highlighted_code": "<span class='highlight-red'>s=input()\nchan=le=0\na=list(s)\nb=set(s)\nfor i in b:\n        if (a.count(i))%2==0:chan+=1\n        else:le+=1\nif len(s)%2==0:\n    if le==0:print(&#34;true&#34;)\n    else:print(&#34;false&#34;)\nelse:\n    if le==1:print(&#34;true&#34;)\n    else:print(</span>&#34;false&#34;)\n"
+        "highlighted_code": "<span class='highlight-red'>s=input()\nchan=le=0\na=list(s)\nb=set(s)\nfor i in b:\n        if (a.count(i))%2==0:chan+=1\n        else:le+=1\nif len(s)%2==0:\n    if le==0:print(&#34;true&#34;)\n    else:print(&#34;false&#34;)\nelse:\n    if le==1:print(&#34;true&#34;)\n    else:print</span>(&#34;false&#34;)\n"
       },
       "file2": {
-        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3c6f2724325137447701b/f56f86fa26744324899543f3/sub_1761314132762_r6w5ffl9x.py",
+        "path": "/app/app/data/submissions/68e3c6f2724325137447701b/f56f86fa26744324899543f3/sub_1761883133202_vspm8hlji.py",
         "similarity_percent": 100.0,
         "full_code": "s=input()\nchan=le=0\na=list(s)\nb=set(s)\nfor i in b:\n        if (a.count(i))%2==0:chan+=1\n        else:le+=1\nif len(s)%2==0:\n    if le==0:print(\"true\")\n    else:print(\"false\")\nelse:\n    if le==1:print(\"true\")\n    else:print(\"false\")\n",
-        "highlighted_code": "<span class='highlight-green'>s=input()\nchan=le=0\na=list(s)\nb=set(s)\nfor i in b:\n        if (a.count(i))%2==0:chan+=1\n        else:le+=1\nif len(s)%2==0:\n    if le==0:print(&#34;true&#34;)\n    else:print(&#34;false&#34;)\nelse:\n    if le==1:print(&#34;true&#34;)\n    else:print(</span>&#34;false&#34;)\n"
+        "highlighted_code": "<span class='highlight-green'>s=input()\nchan=le=0\na=list(s)\nb=set(s)\nfor i in b:\n        if (a.count(i))%2==0:chan+=1\n        else:le+=1\nif len(s)%2==0:\n    if le==0:print(&#34;true&#34;)\n    else:print(&#34;false&#34;)\nelse:\n    if le==1:print(&#34;true&#34;)\n    else:print</span>(&#34;false&#34;)\n"
       },
-      "token_overlap": 147,
+      "token_overlap": 146,
       "max_similarity_percent": 100.0
     },
     {
       "case_id": 16,
       "file1": {
-        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3c6f2724325137447701b/f56f86fa26744324899543f3/sub_1761314133087_ldmm8fd4i.py",
+        "path": "/app/app/data/submissions/68e3c6f2724325137447701b/f56f86fa26744324899543f3/sub_1761314131381_mc290r0uz.py",
         "similarity_percent": 100.0,
         "full_code": "s=input()\nchan=le=0\na=list(s)\nb=set(s)\nfor i in b:\n        if (a.count(i))%2==0:chan+=1\n        else:le+=1\nif len(s)%2==0:\n    if le==0:print(\"true\")\n    else:print(\"false\")\nelse:\n    if le==1:print(\"true\")\n    else:print(\"false\")\n",
-        "highlighted_code": "<span class='highlight-red'>s=input()\nchan=le=0\na=list(s)\nb=set(s)\nfor i in b:\n        if (a.count(i))%2==0:chan+=1\n        else:le+=1\nif len(s)%2==0:\n    if le==0:print(&#34;true&#34;)\n    else:print(&#34;false&#34;)\nelse:\n    if le==1:print(&#34;true&#34;)\n    else:print(</span>&#34;false&#34;)\n"
+        "highlighted_code": "<span class='highlight-red'>s=input()\nchan=le=0\na=list(s)\nb=set(s)\nfor i in b:\n        if (a.count(i))%2==0:chan+=1\n        else:le+=1\nif len(s)%2==0:\n    if le==0:print(&#34;true&#34;)\n    else:print(&#34;false&#34;)\nelse:\n    if le==1:print(&#34;true&#34;)\n    else:print</span>(&#34;false&#34;)\n"
       },
       "file2": {
-        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3c6f2724325137447701b/f56f86fa26744324899543f3/sub_1761314131381_mc290r0uz.py",
+        "path": "/app/app/data/submissions/68e3c6f2724325137447701b/f56f86fa26744324899543f3/sub_1761314126613_6trl1jqu7.py",
         "similarity_percent": 100.0,
         "full_code": "s=input()\nchan=le=0\na=list(s)\nb=set(s)\nfor i in b:\n        if (a.count(i))%2==0:chan+=1\n        else:le+=1\nif len(s)%2==0:\n    if le==0:print(\"true\")\n    else:print(\"false\")\nelse:\n    if le==1:print(\"true\")\n    else:print(\"false\")\n",
-        "highlighted_code": "<span class='highlight-green'>s=input()\nchan=le=0\na=list(s)\nb=set(s)\nfor i in b:\n        if (a.count(i))%2==0:chan+=1\n        else:le+=1\nif len(s)%2==0:\n    if le==0:print(&#34;true&#34;)\n    else:print(&#34;false&#34;)\nelse:\n    if le==1:print(&#34;true&#34;)\n    else:print(</span>&#34;false&#34;)\n"
+        "highlighted_code": "<span class='highlight-green'>s=input()\nchan=le=0\na=list(s)\nb=set(s)\nfor i in b:\n        if (a.count(i))%2==0:chan+=1\n        else:le+=1\nif len(s)%2==0:\n    if le==0:print(&#34;true&#34;)\n    else:print(&#34;false&#34;)\nelse:\n    if le==1:print(&#34;true&#34;)\n    else:print</span>(&#34;false&#34;)\n"
       },
-      "token_overlap": 147,
+      "token_overlap": 146,
       "max_similarity_percent": 100.0
     },
     {
       "case_id": 17,
       "file1": {
-        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3c6f2724325137447701b/f56f86fa26744324899543f3/sub_1761314133087_ldmm8fd4i.py",
+        "path": "/app/app/data/submissions/68e3c6f2724325137447701b/f56f86fa26744324899543f3/sub_1761314131381_mc290r0uz.py",
         "similarity_percent": 100.0,
         "full_code": "s=input()\nchan=le=0\na=list(s)\nb=set(s)\nfor i in b:\n        if (a.count(i))%2==0:chan+=1\n        else:le+=1\nif len(s)%2==0:\n    if le==0:print(\"true\")\n    else:print(\"false\")\nelse:\n    if le==1:print(\"true\")\n    else:print(\"false\")\n",
-        "highlighted_code": "<span class='highlight-red'>s=input()\nchan=le=0\na=list(s)\nb=set(s)\nfor i in b:\n        if (a.count(i))%2==0:chan+=1\n        else:le+=1\nif len(s)%2==0:\n    if le==0:print(&#34;true&#34;)\n    else:print(&#34;false&#34;)\nelse:\n    if le==1:print(&#34;true&#34;)\n    else:print(</span>&#34;false&#34;)\n"
+        "highlighted_code": "<span class='highlight-red'>s=input()\nchan=le=0\na=list(s)\nb=set(s)\nfor i in b:\n        if (a.count(i))%2==0:chan+=1\n        else:le+=1\nif len(s)%2==0:\n    if le==0:print(&#34;true&#34;)\n    else:print(&#34;false&#34;)\nelse:\n    if le==1:print(&#34;true&#34;)\n    else:print</span>(&#34;false&#34;)\n"
       },
       "file2": {
-        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3c6f2724325137447701b/f56f86fa26744324899543f3/sub_1761313841599_fnsdxj2xl.py",
+        "path": "/app/app/data/submissions/68e3c6f2724325137447701b/f56f86fa26744324899543f3/sub_1761313841599_fnsdxj2xl.py",
         "similarity_percent": 100.0,
         "full_code": "s=input()\nchan=le=0\na=list(s)\nb=set(s)\nfor i in b:\n        if (a.count(i))%2==0:chan+=1\n        else:le+=1\nif len(s)%2==0:\n    if le==0:print(\"true\")\n    else:print(\"false\")\nelse:\n    if le==1:print(\"true\")\n    else:print(\"false\")\n",
-        "highlighted_code": "<span class='highlight-green'>s=input()\nchan=le=0\na=list(s)\nb=set(s)\nfor i in b:\n        if (a.count(i))%2==0:chan+=1\n        else:le+=1\nif len(s)%2==0:\n    if le==0:print(&#34;true&#34;)\n    else:print(&#34;false&#34;)\nelse:\n    if le==1:print(&#34;true&#34;)\n    else:print(</span>&#34;false&#34;)\n"
+        "highlighted_code": "<span class='highlight-green'>s=input()\nchan=le=0\na=list(s)\nb=set(s)\nfor i in b:\n        if (a.count(i))%2==0:chan+=1\n        else:le+=1\nif len(s)%2==0:\n    if le==0:print(&#34;true&#34;)\n    else:print(&#34;false&#34;)\nelse:\n    if le==1:print(&#34;true&#34;)\n    else:print</span>(&#34;false&#34;)\n"
       },
-      "token_overlap": 147,
+      "token_overlap": 146,
       "max_similarity_percent": 100.0
     },
     {
       "case_id": 18,
       "file1": {
-        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3c6f2724325137447701b/f56f86fa26744324899543f3/sub_1761314133087_ldmm8fd4i.py",
+        "path": "/app/app/data/submissions/68e3c6f2724325137447701b/f56f86fa26744324899543f3/sub_1761314132762_r6w5ffl9x.py",
         "similarity_percent": 100.0,
         "full_code": "s=input()\nchan=le=0\na=list(s)\nb=set(s)\nfor i in b:\n        if (a.count(i))%2==0:chan+=1\n        else:le+=1\nif len(s)%2==0:\n    if le==0:print(\"true\")\n    else:print(\"false\")\nelse:\n    if le==1:print(\"true\")\n    else:print(\"false\")\n",
-        "highlighted_code": "<span class='highlight-red'>s=input()\nchan=le=0\na=list(s)\nb=set(s)\nfor i in b:\n        if (a.count(i))%2==0:chan+=1\n        else:le+=1\nif len(s)%2==0:\n    if le==0:print(&#34;true&#34;)\n    else:print(&#34;false&#34;)\nelse:\n    if le==1:print(&#34;true&#34;)\n    else:print(</span>&#34;false&#34;)\n"
+        "highlighted_code": "<span class='highlight-red'>s=input()\nchan=le=0\na=list(s)\nb=set(s)\nfor i in b:\n        if (a.count(i))%2==0:chan+=1\n        else:le+=1\nif len(s)%2==0:\n    if le==0:print(&#34;true&#34;)\n    else:print(&#34;false&#34;)\nelse:\n    if le==1:print(&#34;true&#34;)\n    else:print</span>(&#34;false&#34;)\n"
       },
       "file2": {
-        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3c6f2724325137447701b/f56f86fa26744324899543f3/sub_1761314129658_kuvwh4kb1.py",
+        "path": "/app/app/data/submissions/68e3c6f2724325137447701b/f56f86fa26744324899543f3/sub_1761314133087_ldmm8fd4i.py",
         "similarity_percent": 100.0,
         "full_code": "s=input()\nchan=le=0\na=list(s)\nb=set(s)\nfor i in b:\n        if (a.count(i))%2==0:chan+=1\n        else:le+=1\nif len(s)%2==0:\n    if le==0:print(\"true\")\n    else:print(\"false\")\nelse:\n    if le==1:print(\"true\")\n    else:print(\"false\")\n",
-        "highlighted_code": "<span class='highlight-green'>s=input()\nchan=le=0\na=list(s)\nb=set(s)\nfor i in b:\n        if (a.count(i))%2==0:chan+=1\n        else:le+=1\nif len(s)%2==0:\n    if le==0:print(&#34;true&#34;)\n    else:print(&#34;false&#34;)\nelse:\n    if le==1:print(&#34;true&#34;)\n    else:print(</span>&#34;false&#34;)\n"
+        "highlighted_code": "<span class='highlight-green'>s=input()\nchan=le=0\na=list(s)\nb=set(s)\nfor i in b:\n        if (a.count(i))%2==0:chan+=1\n        else:le+=1\nif len(s)%2==0:\n    if le==0:print(&#34;true&#34;)\n    else:print(&#34;false&#34;)\nelse:\n    if le==1:print(&#34;true&#34;)\n    else:print</span>(&#34;false&#34;)\n"
       },
-      "token_overlap": 147,
+      "token_overlap": 146,
       "max_similarity_percent": 100.0
     },
     {
       "case_id": 19,
       "file1": {
-        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3c6f2724325137447701b/f56f86fa26744324899543f3/sub_1761314133087_ldmm8fd4i.py",
+        "path": "/app/app/data/submissions/68e3c6f2724325137447701b/f56f86fa26744324899543f3/sub_1761314132762_r6w5ffl9x.py",
         "similarity_percent": 100.0,
         "full_code": "s=input()\nchan=le=0\na=list(s)\nb=set(s)\nfor i in b:\n        if (a.count(i))%2==0:chan+=1\n        else:le+=1\nif len(s)%2==0:\n    if le==0:print(\"true\")\n    else:print(\"false\")\nelse:\n    if le==1:print(\"true\")\n    else:print(\"false\")\n",
-        "highlighted_code": "<span class='highlight-red'>s=input()\nchan=le=0\na=list(s)\nb=set(s)\nfor i in b:\n        if (a.count(i))%2==0:chan+=1\n        else:le+=1\nif len(s)%2==0:\n    if le==0:print(&#34;true&#34;)\n    else:print(&#34;false&#34;)\nelse:\n    if le==1:print(&#34;true&#34;)\n    else:print(</span>&#34;false&#34;)\n"
+        "highlighted_code": "<span class='highlight-red'>s=input()\nchan=le=0\na=list(s)\nb=set(s)\nfor i in b:\n        if (a.count(i))%2==0:chan+=1\n        else:le+=1\nif len(s)%2==0:\n    if le==0:print(&#34;true&#34;)\n    else:print(&#34;false&#34;)\nelse:\n    if le==1:print(&#34;true&#34;)\n    else:print</span>(&#34;false&#34;)\n"
       },
       "file2": {
-        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3c6f2724325137447701b/f56f86fa26744324899543f3/sub_1761314131772_iqrvtl82h.py",
+        "path": "/app/app/data/submissions/68e3c6f2724325137447701b/f56f86fa26744324899543f3/sub_1761314131772_iqrvtl82h.py",
         "similarity_percent": 100.0,
         "full_code": "s=input()\nchan=le=0\na=list(s)\nb=set(s)\nfor i in b:\n        if (a.count(i))%2==0:chan+=1\n        else:le+=1\nif len(s)%2==0:\n    if le==0:print(\"true\")\n    else:print(\"false\")\nelse:\n    if le==1:print(\"true\")\n    else:print(\"false\")\n",
-        "highlighted_code": "<span class='highlight-green'>s=input()\nchan=le=0\na=list(s)\nb=set(s)\nfor i in b:\n        if (a.count(i))%2==0:chan+=1\n        else:le+=1\nif len(s)%2==0:\n    if le==0:print(&#34;true&#34;)\n    else:print(&#34;false&#34;)\nelse:\n    if le==1:print(&#34;true&#34;)\n    else:print(</span>&#34;false&#34;)\n"
+        "highlighted_code": "<span class='highlight-green'>s=input()\nchan=le=0\na=list(s)\nb=set(s)\nfor i in b:\n        if (a.count(i))%2==0:chan+=1\n        else:le+=1\nif len(s)%2==0:\n    if le==0:print(&#34;true&#34;)\n    else:print(&#34;false&#34;)\nelse:\n    if le==1:print(&#34;true&#34;)\n    else:print</span>(&#34;false&#34;)\n"
       },
-      "token_overlap": 147,
+      "token_overlap": 146,
       "max_similarity_percent": 100.0
     },
     {
       "case_id": 20,
       "file1": {
-        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3c6f2724325137447701b/f56f86fa26744324899543f3/sub_1761314133087_ldmm8fd4i.py",
+        "path": "/app/app/data/submissions/68e3c6f2724325137447701b/f56f86fa26744324899543f3/sub_1761314132762_r6w5ffl9x.py",
         "similarity_percent": 100.0,
         "full_code": "s=input()\nchan=le=0\na=list(s)\nb=set(s)\nfor i in b:\n        if (a.count(i))%2==0:chan+=1\n        else:le+=1\nif len(s)%2==0:\n    if le==0:print(\"true\")\n    else:print(\"false\")\nelse:\n    if le==1:print(\"true\")\n    else:print(\"false\")\n",
-        "highlighted_code": "<span class='highlight-red'>s=input()\nchan=le=0\na=list(s)\nb=set(s)\nfor i in b:\n        if (a.count(i))%2==0:chan+=1\n        else:le+=1\nif len(s)%2==0:\n    if le==0:print(&#34;true&#34;)\n    else:print(&#34;false&#34;)\nelse:\n    if le==1:print(&#34;true&#34;)\n    else:print(</span>&#34;false&#34;)\n"
+        "highlighted_code": "<span class='highlight-red'>s=input()\nchan=le=0\na=list(s)\nb=set(s)\nfor i in b:\n        if (a.count(i))%2==0:chan+=1\n        else:le+=1\nif len(s)%2==0:\n    if le==0:print(&#34;true&#34;)\n    else:print(&#34;false&#34;)\nelse:\n    if le==1:print(&#34;true&#34;)\n    else:print</span>(&#34;false&#34;)\n"
       },
       "file2": {
-        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3c6f2724325137447701b/f56f86fa26744324899543f3/sub_1761314126613_6trl1jqu7.py",
+        "path": "/app/app/data/submissions/68e3c6f2724325137447701b/f56f86fa26744324899543f3/sub_1761314129658_kuvwh4kb1.py",
         "similarity_percent": 100.0,
         "full_code": "s=input()\nchan=le=0\na=list(s)\nb=set(s)\nfor i in b:\n        if (a.count(i))%2==0:chan+=1\n        else:le+=1\nif len(s)%2==0:\n    if le==0:print(\"true\")\n    else:print(\"false\")\nelse:\n    if le==1:print(\"true\")\n    else:print(\"false\")\n",
-        "highlighted_code": "<span class='highlight-green'>s=input()\nchan=le=0\na=list(s)\nb=set(s)\nfor i in b:\n        if (a.count(i))%2==0:chan+=1\n        else:le+=1\nif len(s)%2==0:\n    if le==0:print(&#34;true&#34;)\n    else:print(&#34;false&#34;)\nelse:\n    if le==1:print(&#34;true&#34;)\n    else:print(</span>&#34;false&#34;)\n"
+        "highlighted_code": "<span class='highlight-green'>s=input()\nchan=le=0\na=list(s)\nb=set(s)\nfor i in b:\n        if (a.count(i))%2==0:chan+=1\n        else:le+=1\nif len(s)%2==0:\n    if le==0:print(&#34;true&#34;)\n    else:print(&#34;false&#34;)\nelse:\n    if le==1:print(&#34;true&#34;)\n    else:print</span>(&#34;false&#34;)\n"
       },
-      "token_overlap": 147,
+      "token_overlap": 146,
       "max_similarity_percent": 100.0
     },
     {
       "case_id": 21,
       "file1": {
-        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3c6f2724325137447701b/f56f86fa26744324899543f3/sub_1761314133087_ldmm8fd4i.py",
+        "path": "/app/app/data/submissions/68e3c6f2724325137447701b/f56f86fa26744324899543f3/sub_1761314132762_r6w5ffl9x.py",
         "similarity_percent": 100.0,
         "full_code": "s=input()\nchan=le=0\na=list(s)\nb=set(s)\nfor i in b:\n        if (a.count(i))%2==0:chan+=1\n        else:le+=1\nif len(s)%2==0:\n    if le==0:print(\"true\")\n    else:print(\"false\")\nelse:\n    if le==1:print(\"true\")\n    else:print(\"false\")\n",
-        "highlighted_code": "<span class='highlight-red'>s=input()\nchan=le=0\na=list(s)\nb=set(s)\nfor i in b:\n        if (a.count(i))%2==0:chan+=1\n        else:le+=1\nif len(s)%2==0:\n    if le==0:print(&#34;true&#34;)\n    else:print(&#34;false&#34;)\nelse:\n    if le==1:print(&#34;true&#34;)\n    else:print(</span>&#34;false&#34;)\n"
+        "highlighted_code": "<span class='highlight-red'>s=input()\nchan=le=0\na=list(s)\nb=set(s)\nfor i in b:\n        if (a.count(i))%2==0:chan+=1\n        else:le+=1\nif len(s)%2==0:\n    if le==0:print(&#34;true&#34;)\n    else:print(&#34;false&#34;)\nelse:\n    if le==1:print(&#34;true&#34;)\n    else:print</span>(&#34;false&#34;)\n"
       },
       "file2": {
-        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3c6f2724325137447701b/f56f86fa26744324899543f3/sub_1761314132762_r6w5ffl9x.py",
+        "path": "/app/app/data/submissions/68e3c6f2724325137447701b/f56f86fa26744324899543f3/sub_1761314130987_jmczt3ui3.py",
         "similarity_percent": 100.0,
         "full_code": "s=input()\nchan=le=0\na=list(s)\nb=set(s)\nfor i in b:\n        if (a.count(i))%2==0:chan+=1\n        else:le+=1\nif len(s)%2==0:\n    if le==0:print(\"true\")\n    else:print(\"false\")\nelse:\n    if le==1:print(\"true\")\n    else:print(\"false\")\n",
-        "highlighted_code": "<span class='highlight-green'>s=input()\nchan=le=0\na=list(s)\nb=set(s)\nfor i in b:\n        if (a.count(i))%2==0:chan+=1\n        else:le+=1\nif len(s)%2==0:\n    if le==0:print(&#34;true&#34;)\n    else:print(&#34;false&#34;)\nelse:\n    if le==1:print(&#34;true&#34;)\n    else:print(</span>&#34;false&#34;)\n"
+        "highlighted_code": "<span class='highlight-green'>s=input()\nchan=le=0\na=list(s)\nb=set(s)\nfor i in b:\n        if (a.count(i))%2==0:chan+=1\n        else:le+=1\nif len(s)%2==0:\n    if le==0:print(&#34;true&#34;)\n    else:print(&#34;false&#34;)\nelse:\n    if le==1:print(&#34;true&#34;)\n    else:print</span>(&#34;false&#34;)\n"
       },
-      "token_overlap": 147,
+      "token_overlap": 146,
       "max_similarity_percent": 100.0
     },
     {
       "case_id": 22,
       "file1": {
-        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3c6f2724325137447701b/f56f86fa26744324899543f3/sub_1761314131381_mc290r0uz.py",
+        "path": "/app/app/data/submissions/68e3c6f2724325137447701b/f56f86fa26744324899543f3/sub_1761314132762_r6w5ffl9x.py",
         "similarity_percent": 100.0,
         "full_code": "s=input()\nchan=le=0\na=list(s)\nb=set(s)\nfor i in b:\n        if (a.count(i))%2==0:chan+=1\n        else:le+=1\nif len(s)%2==0:\n    if le==0:print(\"true\")\n    else:print(\"false\")\nelse:\n    if le==1:print(\"true\")\n    else:print(\"false\")\n",
-        "highlighted_code": "<span class='highlight-red'>s=input()\nchan=le=0\na=list(s)\nb=set(s)\nfor i in b:\n        if (a.count(i))%2==0:chan+=1\n        else:le+=1\nif len(s)%2==0:\n    if le==0:print(&#34;true&#34;)\n    else:print(&#34;false&#34;)\nelse:\n    if le==1:print(&#34;true&#34;)\n    else:print(</span>&#34;false&#34;)\n"
+        "highlighted_code": "<span class='highlight-red'>s=input()\nchan=le=0\na=list(s)\nb=set(s)\nfor i in b:\n        if (a.count(i))%2==0:chan+=1\n        else:le+=1\nif len(s)%2==0:\n    if le==0:print(&#34;true&#34;)\n    else:print(&#34;false&#34;)\nelse:\n    if le==1:print(&#34;true&#34;)\n    else:print</span>(&#34;false&#34;)\n"
       },
       "file2": {
-        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3c6f2724325137447701b/f56f86fa26744324899543f3/sub_1761313841599_fnsdxj2xl.py",
+        "path": "/app/app/data/submissions/68e3c6f2724325137447701b/f56f86fa26744324899543f3/sub_1761883133202_vspm8hlji.py",
         "similarity_percent": 100.0,
         "full_code": "s=input()\nchan=le=0\na=list(s)\nb=set(s)\nfor i in b:\n        if (a.count(i))%2==0:chan+=1\n        else:le+=1\nif len(s)%2==0:\n    if le==0:print(\"true\")\n    else:print(\"false\")\nelse:\n    if le==1:print(\"true\")\n    else:print(\"false\")\n",
-        "highlighted_code": "<span class='highlight-green'>s=input()\nchan=le=0\na=list(s)\nb=set(s)\nfor i in b:\n        if (a.count(i))%2==0:chan+=1\n        else:le+=1\nif len(s)%2==0:\n    if le==0:print(&#34;true&#34;)\n    else:print(&#34;false&#34;)\nelse:\n    if le==1:print(&#34;true&#34;)\n    else:print(</span>&#34;false&#34;)\n"
+        "highlighted_code": "<span class='highlight-green'>s=input()\nchan=le=0\na=list(s)\nb=set(s)\nfor i in b:\n        if (a.count(i))%2==0:chan+=1\n        else:le+=1\nif len(s)%2==0:\n    if le==0:print(&#34;true&#34;)\n    else:print(&#34;false&#34;)\nelse:\n    if le==1:print(&#34;true&#34;)\n    else:print</span>(&#34;false&#34;)\n"
       },
-      "token_overlap": 147,
+      "token_overlap": 146,
       "max_similarity_percent": 100.0
     },
     {
       "case_id": 23,
       "file1": {
-        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3c6f2724325137447701b/f56f86fa26744324899543f3/sub_1761314131381_mc290r0uz.py",
+        "path": "/app/app/data/submissions/68e3c6f2724325137447701b/f56f86fa26744324899543f3/sub_1761314132762_r6w5ffl9x.py",
         "similarity_percent": 100.0,
         "full_code": "s=input()\nchan=le=0\na=list(s)\nb=set(s)\nfor i in b:\n        if (a.count(i))%2==0:chan+=1\n        else:le+=1\nif len(s)%2==0:\n    if le==0:print(\"true\")\n    else:print(\"false\")\nelse:\n    if le==1:print(\"true\")\n    else:print(\"false\")\n",
-        "highlighted_code": "<span class='highlight-red'>s=input()\nchan=le=0\na=list(s)\nb=set(s)\nfor i in b:\n        if (a.count(i))%2==0:chan+=1\n        else:le+=1\nif len(s)%2==0:\n    if le==0:print(&#34;true&#34;)\n    else:print(&#34;false&#34;)\nelse:\n    if le==1:print(&#34;true&#34;)\n    else:print(</span>&#34;false&#34;)\n"
+        "highlighted_code": "<span class='highlight-red'>s=input()\nchan=le=0\na=list(s)\nb=set(s)\nfor i in b:\n        if (a.count(i))%2==0:chan+=1\n        else:le+=1\nif len(s)%2==0:\n    if le==0:print(&#34;true&#34;)\n    else:print(&#34;false&#34;)\nelse:\n    if le==1:print(&#34;true&#34;)\n    else:print</span>(&#34;false&#34;)\n"
       },
       "file2": {
-        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3c6f2724325137447701b/f56f86fa26744324899543f3/sub_1761314129658_kuvwh4kb1.py",
+        "path": "/app/app/data/submissions/68e3c6f2724325137447701b/f56f86fa26744324899543f3/sub_1761314126613_6trl1jqu7.py",
         "similarity_percent": 100.0,
         "full_code": "s=input()\nchan=le=0\na=list(s)\nb=set(s)\nfor i in b:\n        if (a.count(i))%2==0:chan+=1\n        else:le+=1\nif len(s)%2==0:\n    if le==0:print(\"true\")\n    else:print(\"false\")\nelse:\n    if le==1:print(\"true\")\n    else:print(\"false\")\n",
-        "highlighted_code": "<span class='highlight-green'>s=input()\nchan=le=0\na=list(s)\nb=set(s)\nfor i in b:\n        if (a.count(i))%2==0:chan+=1\n        else:le+=1\nif len(s)%2==0:\n    if le==0:print(&#34;true&#34;)\n    else:print(&#34;false&#34;)\nelse:\n    if le==1:print(&#34;true&#34;)\n    else:print(</span>&#34;false&#34;)\n"
+        "highlighted_code": "<span class='highlight-green'>s=input()\nchan=le=0\na=list(s)\nb=set(s)\nfor i in b:\n        if (a.count(i))%2==0:chan+=1\n        else:le+=1\nif len(s)%2==0:\n    if le==0:print(&#34;true&#34;)\n    else:print(&#34;false&#34;)\nelse:\n    if le==1:print(&#34;true&#34;)\n    else:print</span>(&#34;false&#34;)\n"
       },
-      "token_overlap": 147,
+      "token_overlap": 146,
       "max_similarity_percent": 100.0
     },
     {
       "case_id": 24,
       "file1": {
-        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3c6f2724325137447701b/f56f86fa26744324899543f3/sub_1761314131381_mc290r0uz.py",
+        "path": "/app/app/data/submissions/68e3c6f2724325137447701b/f56f86fa26744324899543f3/sub_1761314132762_r6w5ffl9x.py",
         "similarity_percent": 100.0,
         "full_code": "s=input()\nchan=le=0\na=list(s)\nb=set(s)\nfor i in b:\n        if (a.count(i))%2==0:chan+=1\n        else:le+=1\nif len(s)%2==0:\n    if le==0:print(\"true\")\n    else:print(\"false\")\nelse:\n    if le==1:print(\"true\")\n    else:print(\"false\")\n",
-        "highlighted_code": "<span class='highlight-red'>s=input()\nchan=le=0\na=list(s)\nb=set(s)\nfor i in b:\n        if (a.count(i))%2==0:chan+=1\n        else:le+=1\nif len(s)%2==0:\n    if le==0:print(&#34;true&#34;)\n    else:print(&#34;false&#34;)\nelse:\n    if le==1:print(&#34;true&#34;)\n    else:print(</span>&#34;false&#34;)\n"
+        "highlighted_code": "<span class='highlight-red'>s=input()\nchan=le=0\na=list(s)\nb=set(s)\nfor i in b:\n        if (a.count(i))%2==0:chan+=1\n        else:le+=1\nif len(s)%2==0:\n    if le==0:print(&#34;true&#34;)\n    else:print(&#34;false&#34;)\nelse:\n    if le==1:print(&#34;true&#34;)\n    else:print</span>(&#34;false&#34;)\n"
       },
       "file2": {
-        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3c6f2724325137447701b/f56f86fa26744324899543f3/sub_1761314131772_iqrvtl82h.py",
+        "path": "/app/app/data/submissions/68e3c6f2724325137447701b/f56f86fa26744324899543f3/sub_1761313841599_fnsdxj2xl.py",
         "similarity_percent": 100.0,
         "full_code": "s=input()\nchan=le=0\na=list(s)\nb=set(s)\nfor i in b:\n        if (a.count(i))%2==0:chan+=1\n        else:le+=1\nif len(s)%2==0:\n    if le==0:print(\"true\")\n    else:print(\"false\")\nelse:\n    if le==1:print(\"true\")\n    else:print(\"false\")\n",
-        "highlighted_code": "<span class='highlight-green'>s=input()\nchan=le=0\na=list(s)\nb=set(s)\nfor i in b:\n        if (a.count(i))%2==0:chan+=1\n        else:le+=1\nif len(s)%2==0:\n    if le==0:print(&#34;true&#34;)\n    else:print(&#34;false&#34;)\nelse:\n    if le==1:print(&#34;true&#34;)\n    else:print(</span>&#34;false&#34;)\n"
+        "highlighted_code": "<span class='highlight-green'>s=input()\nchan=le=0\na=list(s)\nb=set(s)\nfor i in b:\n        if (a.count(i))%2==0:chan+=1\n        else:le+=1\nif len(s)%2==0:\n    if le==0:print(&#34;true&#34;)\n    else:print(&#34;false&#34;)\nelse:\n    if le==1:print(&#34;true&#34;)\n    else:print</span>(&#34;false&#34;)\n"
       },
-      "token_overlap": 147,
+      "token_overlap": 146,
       "max_similarity_percent": 100.0
     },
     {
       "case_id": 25,
       "file1": {
-        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3c6f2724325137447701b/f56f86fa26744324899543f3/sub_1761314131381_mc290r0uz.py",
+        "path": "/app/app/data/submissions/68e3c6f2724325137447701b/f56f86fa26744324899543f3/sub_1761314133087_ldmm8fd4i.py",
         "similarity_percent": 100.0,
         "full_code": "s=input()\nchan=le=0\na=list(s)\nb=set(s)\nfor i in b:\n        if (a.count(i))%2==0:chan+=1\n        else:le+=1\nif len(s)%2==0:\n    if le==0:print(\"true\")\n    else:print(\"false\")\nelse:\n    if le==1:print(\"true\")\n    else:print(\"false\")\n",
-        "highlighted_code": "<span class='highlight-red'>s=input()\nchan=le=0\na=list(s)\nb=set(s)\nfor i in b:\n        if (a.count(i))%2==0:chan+=1\n        else:le+=1\nif len(s)%2==0:\n    if le==0:print(&#34;true&#34;)\n    else:print(&#34;false&#34;)\nelse:\n    if le==1:print(&#34;true&#34;)\n    else:print(</span>&#34;false&#34;)\n"
+        "highlighted_code": "<span class='highlight-red'>s=input()\nchan=le=0\na=list(s)\nb=set(s)\nfor i in b:\n        if (a.count(i))%2==0:chan+=1\n        else:le+=1\nif len(s)%2==0:\n    if le==0:print(&#34;true&#34;)\n    else:print(&#34;false&#34;)\nelse:\n    if le==1:print(&#34;true&#34;)\n    else:print</span>(&#34;false&#34;)\n"
       },
       "file2": {
-        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3c6f2724325137447701b/f56f86fa26744324899543f3/sub_1761314126613_6trl1jqu7.py",
+        "path": "/app/app/data/submissions/68e3c6f2724325137447701b/f56f86fa26744324899543f3/sub_1761314131772_iqrvtl82h.py",
         "similarity_percent": 100.0,
         "full_code": "s=input()\nchan=le=0\na=list(s)\nb=set(s)\nfor i in b:\n        if (a.count(i))%2==0:chan+=1\n        else:le+=1\nif len(s)%2==0:\n    if le==0:print(\"true\")\n    else:print(\"false\")\nelse:\n    if le==1:print(\"true\")\n    else:print(\"false\")\n",
-        "highlighted_code": "<span class='highlight-green'>s=input()\nchan=le=0\na=list(s)\nb=set(s)\nfor i in b:\n        if (a.count(i))%2==0:chan+=1\n        else:le+=1\nif len(s)%2==0:\n    if le==0:print(&#34;true&#34;)\n    else:print(&#34;false&#34;)\nelse:\n    if le==1:print(&#34;true&#34;)\n    else:print(</span>&#34;false&#34;)\n"
+        "highlighted_code": "<span class='highlight-green'>s=input()\nchan=le=0\na=list(s)\nb=set(s)\nfor i in b:\n        if (a.count(i))%2==0:chan+=1\n        else:le+=1\nif len(s)%2==0:\n    if le==0:print(&#34;true&#34;)\n    else:print(&#34;false&#34;)\nelse:\n    if le==1:print(&#34;true&#34;)\n    else:print</span>(&#34;false&#34;)\n"
       },
-      "token_overlap": 147,
+      "token_overlap": 146,
       "max_similarity_percent": 100.0
     },
     {
       "case_id": 26,
       "file1": {
-        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3c6f2724325137447701b/f56f86fa26744324899543f3/sub_1761314131381_mc290r0uz.py",
+        "path": "/app/app/data/submissions/68e3c6f2724325137447701b/f56f86fa26744324899543f3/sub_1761314133087_ldmm8fd4i.py",
         "similarity_percent": 100.0,
         "full_code": "s=input()\nchan=le=0\na=list(s)\nb=set(s)\nfor i in b:\n        if (a.count(i))%2==0:chan+=1\n        else:le+=1\nif len(s)%2==0:\n    if le==0:print(\"true\")\n    else:print(\"false\")\nelse:\n    if le==1:print(\"true\")\n    else:print(\"false\")\n",
-        "highlighted_code": "<span class='highlight-red'>s=input()\nchan=le=0\na=list(s)\nb=set(s)\nfor i in b:\n        if (a.count(i))%2==0:chan+=1\n        else:le+=1\nif len(s)%2==0:\n    if le==0:print(&#34;true&#34;)\n    else:print(&#34;false&#34;)\nelse:\n    if le==1:print(&#34;true&#34;)\n    else:print(</span>&#34;false&#34;)\n"
+        "highlighted_code": "<span class='highlight-red'>s=input()\nchan=le=0\na=list(s)\nb=set(s)\nfor i in b:\n        if (a.count(i))%2==0:chan+=1\n        else:le+=1\nif len(s)%2==0:\n    if le==0:print(&#34;true&#34;)\n    else:print(&#34;false&#34;)\nelse:\n    if le==1:print(&#34;true&#34;)\n    else:print</span>(&#34;false&#34;)\n"
       },
       "file2": {
-        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3c6f2724325137447701b/f56f86fa26744324899543f3/sub_1761314132762_r6w5ffl9x.py",
+        "path": "/app/app/data/submissions/68e3c6f2724325137447701b/f56f86fa26744324899543f3/sub_1761314129658_kuvwh4kb1.py",
         "similarity_percent": 100.0,
         "full_code": "s=input()\nchan=le=0\na=list(s)\nb=set(s)\nfor i in b:\n        if (a.count(i))%2==0:chan+=1\n        else:le+=1\nif len(s)%2==0:\n    if le==0:print(\"true\")\n    else:print(\"false\")\nelse:\n    if le==1:print(\"true\")\n    else:print(\"false\")\n",
-        "highlighted_code": "<span class='highlight-green'>s=input()\nchan=le=0\na=list(s)\nb=set(s)\nfor i in b:\n        if (a.count(i))%2==0:chan+=1\n        else:le+=1\nif len(s)%2==0:\n    if le==0:print(&#34;true&#34;)\n    else:print(&#34;false&#34;)\nelse:\n    if le==1:print(&#34;true&#34;)\n    else:print(</span>&#34;false&#34;)\n"
+        "highlighted_code": "<span class='highlight-green'>s=input()\nchan=le=0\na=list(s)\nb=set(s)\nfor i in b:\n        if (a.count(i))%2==0:chan+=1\n        else:le+=1\nif len(s)%2==0:\n    if le==0:print(&#34;true&#34;)\n    else:print(&#34;false&#34;)\nelse:\n    if le==1:print(&#34;true&#34;)\n    else:print</span>(&#34;false&#34;)\n"
       },
-      "token_overlap": 147,
+      "token_overlap": 146,
       "max_similarity_percent": 100.0
     },
     {
       "case_id": 27,
       "file1": {
-        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3c6f2724325137447701b/f56f86fa26744324899543f3/sub_1761313841599_fnsdxj2xl.py",
+        "path": "/app/app/data/submissions/68e3c6f2724325137447701b/f56f86fa26744324899543f3/sub_1761314133087_ldmm8fd4i.py",
         "similarity_percent": 100.0,
         "full_code": "s=input()\nchan=le=0\na=list(s)\nb=set(s)\nfor i in b:\n        if (a.count(i))%2==0:chan+=1\n        else:le+=1\nif len(s)%2==0:\n    if le==0:print(\"true\")\n    else:print(\"false\")\nelse:\n    if le==1:print(\"true\")\n    else:print(\"false\")\n",
-        "highlighted_code": "<span class='highlight-red'>s=input()\nchan=le=0\na=list(s)\nb=set(s)\nfor i in b:\n        if (a.count(i))%2==0:chan+=1\n        else:le+=1\nif len(s)%2==0:\n    if le==0:print(&#34;true&#34;)\n    else:print(&#34;false&#34;)\nelse:\n    if le==1:print(&#34;true&#34;)\n    else:print(</span>&#34;false&#34;)\n"
+        "highlighted_code": "<span class='highlight-red'>s=input()\nchan=le=0\na=list(s)\nb=set(s)\nfor i in b:\n        if (a.count(i))%2==0:chan+=1\n        else:le+=1\nif len(s)%2==0:\n    if le==0:print(&#34;true&#34;)\n    else:print(&#34;false&#34;)\nelse:\n    if le==1:print(&#34;true&#34;)\n    else:print</span>(&#34;false&#34;)\n"
       },
       "file2": {
-        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3c6f2724325137447701b/f56f86fa26744324899543f3/sub_1761314129658_kuvwh4kb1.py",
+        "path": "/app/app/data/submissions/68e3c6f2724325137447701b/f56f86fa26744324899543f3/sub_1761314130987_jmczt3ui3.py",
         "similarity_percent": 100.0,
         "full_code": "s=input()\nchan=le=0\na=list(s)\nb=set(s)\nfor i in b:\n        if (a.count(i))%2==0:chan+=1\n        else:le+=1\nif len(s)%2==0:\n    if le==0:print(\"true\")\n    else:print(\"false\")\nelse:\n    if le==1:print(\"true\")\n    else:print(\"false\")\n",
-        "highlighted_code": "<span class='highlight-green'>s=input()\nchan=le=0\na=list(s)\nb=set(s)\nfor i in b:\n        if (a.count(i))%2==0:chan+=1\n        else:le+=1\nif len(s)%2==0:\n    if le==0:print(&#34;true&#34;)\n    else:print(&#34;false&#34;)\nelse:\n    if le==1:print(&#34;true&#34;)\n    else:print(</span>&#34;false&#34;)\n"
+        "highlighted_code": "<span class='highlight-green'>s=input()\nchan=le=0\na=list(s)\nb=set(s)\nfor i in b:\n        if (a.count(i))%2==0:chan+=1\n        else:le+=1\nif len(s)%2==0:\n    if le==0:print(&#34;true&#34;)\n    else:print(&#34;false&#34;)\nelse:\n    if le==1:print(&#34;true&#34;)\n    else:print</span>(&#34;false&#34;)\n"
       },
-      "token_overlap": 147,
+      "token_overlap": 146,
       "max_similarity_percent": 100.0
     },
     {
       "case_id": 28,
       "file1": {
-        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3c6f2724325137447701b/f56f86fa26744324899543f3/sub_1761313841599_fnsdxj2xl.py",
+        "path": "/app/app/data/submissions/68e3c6f2724325137447701b/f56f86fa26744324899543f3/sub_1761314133087_ldmm8fd4i.py",
         "similarity_percent": 100.0,
         "full_code": "s=input()\nchan=le=0\na=list(s)\nb=set(s)\nfor i in b:\n        if (a.count(i))%2==0:chan+=1\n        else:le+=1\nif len(s)%2==0:\n    if le==0:print(\"true\")\n    else:print(\"false\")\nelse:\n    if le==1:print(\"true\")\n    else:print(\"false\")\n",
-        "highlighted_code": "<span class='highlight-red'>s=input()\nchan=le=0\na=list(s)\nb=set(s)\nfor i in b:\n        if (a.count(i))%2==0:chan+=1\n        else:le+=1\nif len(s)%2==0:\n    if le==0:print(&#34;true&#34;)\n    else:print(&#34;false&#34;)\nelse:\n    if le==1:print(&#34;true&#34;)\n    else:print(</span>&#34;false&#34;)\n"
+        "highlighted_code": "<span class='highlight-red'>s=input()\nchan=le=0\na=list(s)\nb=set(s)\nfor i in b:\n        if (a.count(i))%2==0:chan+=1\n        else:le+=1\nif len(s)%2==0:\n    if le==0:print(&#34;true&#34;)\n    else:print(&#34;false&#34;)\nelse:\n    if le==1:print(&#34;true&#34;)\n    else:print</span>(&#34;false&#34;)\n"
       },
       "file2": {
-        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3c6f2724325137447701b/f56f86fa26744324899543f3/sub_1761314131772_iqrvtl82h.py",
+        "path": "/app/app/data/submissions/68e3c6f2724325137447701b/f56f86fa26744324899543f3/sub_1761883133202_vspm8hlji.py",
         "similarity_percent": 100.0,
         "full_code": "s=input()\nchan=le=0\na=list(s)\nb=set(s)\nfor i in b:\n        if (a.count(i))%2==0:chan+=1\n        else:le+=1\nif len(s)%2==0:\n    if le==0:print(\"true\")\n    else:print(\"false\")\nelse:\n    if le==1:print(\"true\")\n    else:print(\"false\")\n",
-        "highlighted_code": "<span class='highlight-green'>s=input()\nchan=le=0\na=list(s)\nb=set(s)\nfor i in b:\n        if (a.count(i))%2==0:chan+=1\n        else:le+=1\nif len(s)%2==0:\n    if le==0:print(&#34;true&#34;)\n    else:print(&#34;false&#34;)\nelse:\n    if le==1:print(&#34;true&#34;)\n    else:print(</span>&#34;false&#34;)\n"
+        "highlighted_code": "<span class='highlight-green'>s=input()\nchan=le=0\na=list(s)\nb=set(s)\nfor i in b:\n        if (a.count(i))%2==0:chan+=1\n        else:le+=1\nif len(s)%2==0:\n    if le==0:print(&#34;true&#34;)\n    else:print(&#34;false&#34;)\nelse:\n    if le==1:print(&#34;true&#34;)\n    else:print</span>(&#34;false&#34;)\n"
       },
-      "token_overlap": 147,
+      "token_overlap": 146,
       "max_similarity_percent": 100.0
     },
     {
       "case_id": 29,
       "file1": {
-        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3c6f2724325137447701b/f56f86fa26744324899543f3/sub_1761313841599_fnsdxj2xl.py",
+        "path": "/app/app/data/submissions/68e3c6f2724325137447701b/f56f86fa26744324899543f3/sub_1761314133087_ldmm8fd4i.py",
         "similarity_percent": 100.0,
         "full_code": "s=input()\nchan=le=0\na=list(s)\nb=set(s)\nfor i in b:\n        if (a.count(i))%2==0:chan+=1\n        else:le+=1\nif len(s)%2==0:\n    if le==0:print(\"true\")\n    else:print(\"false\")\nelse:\n    if le==1:print(\"true\")\n    else:print(\"false\")\n",
-        "highlighted_code": "<span class='highlight-red'>s=input()\nchan=le=0\na=list(s)\nb=set(s)\nfor i in b:\n        if (a.count(i))%2==0:chan+=1\n        else:le+=1\nif len(s)%2==0:\n    if le==0:print(&#34;true&#34;)\n    else:print(&#34;false&#34;)\nelse:\n    if le==1:print(&#34;true&#34;)\n    else:print(</span>&#34;false&#34;)\n"
+        "highlighted_code": "<span class='highlight-red'>s=input()\nchan=le=0\na=list(s)\nb=set(s)\nfor i in b:\n        if (a.count(i))%2==0:chan+=1\n        else:le+=1\nif len(s)%2==0:\n    if le==0:print(&#34;true&#34;)\n    else:print(&#34;false&#34;)\nelse:\n    if le==1:print(&#34;true&#34;)\n    else:print</span>(&#34;false&#34;)\n"
       },
       "file2": {
-        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3c6f2724325137447701b/f56f86fa26744324899543f3/sub_1761314126613_6trl1jqu7.py",
+        "path": "/app/app/data/submissions/68e3c6f2724325137447701b/f56f86fa26744324899543f3/sub_1761314126613_6trl1jqu7.py",
         "similarity_percent": 100.0,
         "full_code": "s=input()\nchan=le=0\na=list(s)\nb=set(s)\nfor i in b:\n        if (a.count(i))%2==0:chan+=1\n        else:le+=1\nif len(s)%2==0:\n    if le==0:print(\"true\")\n    else:print(\"false\")\nelse:\n    if le==1:print(\"true\")\n    else:print(\"false\")\n",
-        "highlighted_code": "<span class='highlight-green'>s=input()\nchan=le=0\na=list(s)\nb=set(s)\nfor i in b:\n        if (a.count(i))%2==0:chan+=1\n        else:le+=1\nif len(s)%2==0:\n    if le==0:print(&#34;true&#34;)\n    else:print(&#34;false&#34;)\nelse:\n    if le==1:print(&#34;true&#34;)\n    else:print(</span>&#34;false&#34;)\n"
+        "highlighted_code": "<span class='highlight-green'>s=input()\nchan=le=0\na=list(s)\nb=set(s)\nfor i in b:\n        if (a.count(i))%2==0:chan+=1\n        else:le+=1\nif len(s)%2==0:\n    if le==0:print(&#34;true&#34;)\n    else:print(&#34;false&#34;)\nelse:\n    if le==1:print(&#34;true&#34;)\n    else:print</span>(&#34;false&#34;)\n"
       },
-      "token_overlap": 147,
+      "token_overlap": 146,
       "max_similarity_percent": 100.0
     },
     {
       "case_id": 30,
       "file1": {
-        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3c6f2724325137447701b/f56f86fa26744324899543f3/sub_1761313841599_fnsdxj2xl.py",
+        "path": "/app/app/data/submissions/68e3c6f2724325137447701b/f56f86fa26744324899543f3/sub_1761314133087_ldmm8fd4i.py",
         "similarity_percent": 100.0,
         "full_code": "s=input()\nchan=le=0\na=list(s)\nb=set(s)\nfor i in b:\n        if (a.count(i))%2==0:chan+=1\n        else:le+=1\nif len(s)%2==0:\n    if le==0:print(\"true\")\n    else:print(\"false\")\nelse:\n    if le==1:print(\"true\")\n    else:print(\"false\")\n",
-        "highlighted_code": "<span class='highlight-red'>s=input()\nchan=le=0\na=list(s)\nb=set(s)\nfor i in b:\n        if (a.count(i))%2==0:chan+=1\n        else:le+=1\nif len(s)%2==0:\n    if le==0:print(&#34;true&#34;)\n    else:print(&#34;false&#34;)\nelse:\n    if le==1:print(&#34;true&#34;)\n    else:print(</span>&#34;false&#34;)\n"
+        "highlighted_code": "<span class='highlight-red'>s=input()\nchan=le=0\na=list(s)\nb=set(s)\nfor i in b:\n        if (a.count(i))%2==0:chan+=1\n        else:le+=1\nif len(s)%2==0:\n    if le==0:print(&#34;true&#34;)\n    else:print(&#34;false&#34;)\nelse:\n    if le==1:print(&#34;true&#34;)\n    else:print</span>(&#34;false&#34;)\n"
       },
       "file2": {
-        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3c6f2724325137447701b/f56f86fa26744324899543f3/sub_1761314132762_r6w5ffl9x.py",
+        "path": "/app/app/data/submissions/68e3c6f2724325137447701b/f56f86fa26744324899543f3/sub_1761313841599_fnsdxj2xl.py",
         "similarity_percent": 100.0,
         "full_code": "s=input()\nchan=le=0\na=list(s)\nb=set(s)\nfor i in b:\n        if (a.count(i))%2==0:chan+=1\n        else:le+=1\nif len(s)%2==0:\n    if le==0:print(\"true\")\n    else:print(\"false\")\nelse:\n    if le==1:print(\"true\")\n    else:print(\"false\")\n",
-        "highlighted_code": "<span class='highlight-green'>s=input()\nchan=le=0\na=list(s)\nb=set(s)\nfor i in b:\n        if (a.count(i))%2==0:chan+=1\n        else:le+=1\nif len(s)%2==0:\n    if le==0:print(&#34;true&#34;)\n    else:print(&#34;false&#34;)\nelse:\n    if le==1:print(&#34;true&#34;)\n    else:print(</span>&#34;false&#34;)\n"
+        "highlighted_code": "<span class='highlight-green'>s=input()\nchan=le=0\na=list(s)\nb=set(s)\nfor i in b:\n        if (a.count(i))%2==0:chan+=1\n        else:le+=1\nif len(s)%2==0:\n    if le==0:print(&#34;true&#34;)\n    else:print(&#34;false&#34;)\nelse:\n    if le==1:print(&#34;true&#34;)\n    else:print</span>(&#34;false&#34;)\n"
       },
-      "token_overlap": 147,
+      "token_overlap": 146,
       "max_similarity_percent": 100.0
     },
     {
       "case_id": 31,
       "file1": {
-        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3c6f2724325137447701b/f56f86fa26744324899543f3/sub_1761314129658_kuvwh4kb1.py",
+        "path": "/app/app/data/submissions/68e3c6f2724325137447701b/f56f86fa26744324899543f3/sub_1761314131772_iqrvtl82h.py",
         "similarity_percent": 100.0,
         "full_code": "s=input()\nchan=le=0\na=list(s)\nb=set(s)\nfor i in b:\n        if (a.count(i))%2==0:chan+=1\n        else:le+=1\nif len(s)%2==0:\n    if le==0:print(\"true\")\n    else:print(\"false\")\nelse:\n    if le==1:print(\"true\")\n    else:print(\"false\")\n",
-        "highlighted_code": "<span class='highlight-red'>s=input()\nchan=le=0\na=list(s)\nb=set(s)\nfor i in b:\n        if (a.count(i))%2==0:chan+=1\n        else:le+=1\nif len(s)%2==0:\n    if le==0:print(&#34;true&#34;)\n    else:print(&#34;false&#34;)\nelse:\n    if le==1:print(&#34;true&#34;)\n    else:print(</span>&#34;false&#34;)\n"
+        "highlighted_code": "<span class='highlight-red'>s=input()\nchan=le=0\na=list(s)\nb=set(s)\nfor i in b:\n        if (a.count(i))%2==0:chan+=1\n        else:le+=1\nif len(s)%2==0:\n    if le==0:print(&#34;true&#34;)\n    else:print(&#34;false&#34;)\nelse:\n    if le==1:print(&#34;true&#34;)\n    else:print</span>(&#34;false&#34;)\n"
       },
       "file2": {
-        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3c6f2724325137447701b/f56f86fa26744324899543f3/sub_1761314131772_iqrvtl82h.py",
+        "path": "/app/app/data/submissions/68e3c6f2724325137447701b/f56f86fa26744324899543f3/sub_1761314129658_kuvwh4kb1.py",
         "similarity_percent": 100.0,
         "full_code": "s=input()\nchan=le=0\na=list(s)\nb=set(s)\nfor i in b:\n        if (a.count(i))%2==0:chan+=1\n        else:le+=1\nif len(s)%2==0:\n    if le==0:print(\"true\")\n    else:print(\"false\")\nelse:\n    if le==1:print(\"true\")\n    else:print(\"false\")\n",
-        "highlighted_code": "<span class='highlight-green'>s=input()\nchan=le=0\na=list(s)\nb=set(s)\nfor i in b:\n        if (a.count(i))%2==0:chan+=1\n        else:le+=1\nif len(s)%2==0:\n    if le==0:print(&#34;true&#34;)\n    else:print(&#34;false&#34;)\nelse:\n    if le==1:print(&#34;true&#34;)\n    else:print(</span>&#34;false&#34;)\n"
+        "highlighted_code": "<span class='highlight-green'>s=input()\nchan=le=0\na=list(s)\nb=set(s)\nfor i in b:\n        if (a.count(i))%2==0:chan+=1\n        else:le+=1\nif len(s)%2==0:\n    if le==0:print(&#34;true&#34;)\n    else:print(&#34;false&#34;)\nelse:\n    if le==1:print(&#34;true&#34;)\n    else:print</span>(&#34;false&#34;)\n"
       },
-      "token_overlap": 147,
+      "token_overlap": 146,
       "max_similarity_percent": 100.0
     },
     {
       "case_id": 32,
       "file1": {
-        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3c6f2724325137447701b/f56f86fa26744324899543f3/sub_1761314129658_kuvwh4kb1.py",
+        "path": "/app/app/data/submissions/68e3c6f2724325137447701b/f56f86fa26744324899543f3/sub_1761314131772_iqrvtl82h.py",
         "similarity_percent": 100.0,
         "full_code": "s=input()\nchan=le=0\na=list(s)\nb=set(s)\nfor i in b:\n        if (a.count(i))%2==0:chan+=1\n        else:le+=1\nif len(s)%2==0:\n    if le==0:print(\"true\")\n    else:print(\"false\")\nelse:\n    if le==1:print(\"true\")\n    else:print(\"false\")\n",
-        "highlighted_code": "<span class='highlight-red'>s=input()\nchan=le=0\na=list(s)\nb=set(s)\nfor i in b:\n        if (a.count(i))%2==0:chan+=1\n        else:le+=1\nif len(s)%2==0:\n    if le==0:print(&#34;true&#34;)\n    else:print(&#34;false&#34;)\nelse:\n    if le==1:print(&#34;true&#34;)\n    else:print(</span>&#34;false&#34;)\n"
+        "highlighted_code": "<span class='highlight-red'>s=input()\nchan=le=0\na=list(s)\nb=set(s)\nfor i in b:\n        if (a.count(i))%2==0:chan+=1\n        else:le+=1\nif len(s)%2==0:\n    if le==0:print(&#34;true&#34;)\n    else:print(&#34;false&#34;)\nelse:\n    if le==1:print(&#34;true&#34;)\n    else:print</span>(&#34;false&#34;)\n"
       },
       "file2": {
-        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3c6f2724325137447701b/f56f86fa26744324899543f3/sub_1761314126613_6trl1jqu7.py",
+        "path": "/app/app/data/submissions/68e3c6f2724325137447701b/f56f86fa26744324899543f3/sub_1761314130987_jmczt3ui3.py",
         "similarity_percent": 100.0,
         "full_code": "s=input()\nchan=le=0\na=list(s)\nb=set(s)\nfor i in b:\n        if (a.count(i))%2==0:chan+=1\n        else:le+=1\nif len(s)%2==0:\n    if le==0:print(\"true\")\n    else:print(\"false\")\nelse:\n    if le==1:print(\"true\")\n    else:print(\"false\")\n",
-        "highlighted_code": "<span class='highlight-green'>s=input()\nchan=le=0\na=list(s)\nb=set(s)\nfor i in b:\n        if (a.count(i))%2==0:chan+=1\n        else:le+=1\nif len(s)%2==0:\n    if le==0:print(&#34;true&#34;)\n    else:print(&#34;false&#34;)\nelse:\n    if le==1:print(&#34;true&#34;)\n    else:print(</span>&#34;false&#34;)\n"
+        "highlighted_code": "<span class='highlight-green'>s=input()\nchan=le=0\na=list(s)\nb=set(s)\nfor i in b:\n        if (a.count(i))%2==0:chan+=1\n        else:le+=1\nif len(s)%2==0:\n    if le==0:print(&#34;true&#34;)\n    else:print(&#34;false&#34;)\nelse:\n    if le==1:print(&#34;true&#34;)\n    else:print</span>(&#34;false&#34;)\n"
       },
-      "token_overlap": 147,
+      "token_overlap": 146,
       "max_similarity_percent": 100.0
     },
     {
       "case_id": 33,
       "file1": {
-        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3c6f2724325137447701b/f56f86fa26744324899543f3/sub_1761314129658_kuvwh4kb1.py",
+        "path": "/app/app/data/submissions/68e3c6f2724325137447701b/f56f86fa26744324899543f3/sub_1761314131772_iqrvtl82h.py",
         "similarity_percent": 100.0,
         "full_code": "s=input()\nchan=le=0\na=list(s)\nb=set(s)\nfor i in b:\n        if (a.count(i))%2==0:chan+=1\n        else:le+=1\nif len(s)%2==0:\n    if le==0:print(\"true\")\n    else:print(\"false\")\nelse:\n    if le==1:print(\"true\")\n    else:print(\"false\")\n",
-        "highlighted_code": "<span class='highlight-red'>s=input()\nchan=le=0\na=list(s)\nb=set(s)\nfor i in b:\n        if (a.count(i))%2==0:chan+=1\n        else:le+=1\nif len(s)%2==0:\n    if le==0:print(&#34;true&#34;)\n    else:print(&#34;false&#34;)\nelse:\n    if le==1:print(&#34;true&#34;)\n    else:print(</span>&#34;false&#34;)\n"
+        "highlighted_code": "<span class='highlight-red'>s=input()\nchan=le=0\na=list(s)\nb=set(s)\nfor i in b:\n        if (a.count(i))%2==0:chan+=1\n        else:le+=1\nif len(s)%2==0:\n    if le==0:print(&#34;true&#34;)\n    else:print(&#34;false&#34;)\nelse:\n    if le==1:print(&#34;true&#34;)\n    else:print</span>(&#34;false&#34;)\n"
       },
       "file2": {
-        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3c6f2724325137447701b/f56f86fa26744324899543f3/sub_1761314132762_r6w5ffl9x.py",
+        "path": "/app/app/data/submissions/68e3c6f2724325137447701b/f56f86fa26744324899543f3/sub_1761883133202_vspm8hlji.py",
         "similarity_percent": 100.0,
         "full_code": "s=input()\nchan=le=0\na=list(s)\nb=set(s)\nfor i in b:\n        if (a.count(i))%2==0:chan+=1\n        else:le+=1\nif len(s)%2==0:\n    if le==0:print(\"true\")\n    else:print(\"false\")\nelse:\n    if le==1:print(\"true\")\n    else:print(\"false\")\n",
-        "highlighted_code": "<span class='highlight-green'>s=input()\nchan=le=0\na=list(s)\nb=set(s)\nfor i in b:\n        if (a.count(i))%2==0:chan+=1\n        else:le+=1\nif len(s)%2==0:\n    if le==0:print(&#34;true&#34;)\n    else:print(&#34;false&#34;)\nelse:\n    if le==1:print(&#34;true&#34;)\n    else:print(</span>&#34;false&#34;)\n"
+        "highlighted_code": "<span class='highlight-green'>s=input()\nchan=le=0\na=list(s)\nb=set(s)\nfor i in b:\n        if (a.count(i))%2==0:chan+=1\n        else:le+=1\nif len(s)%2==0:\n    if le==0:print(&#34;true&#34;)\n    else:print(&#34;false&#34;)\nelse:\n    if le==1:print(&#34;true&#34;)\n    else:print</span>(&#34;false&#34;)\n"
       },
-      "token_overlap": 147,
+      "token_overlap": 146,
       "max_similarity_percent": 100.0
     },
     {
       "case_id": 34,
       "file1": {
-        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3c6f2724325137447701b/f56f86fa26744324899543f3/sub_1761314131772_iqrvtl82h.py",
+        "path": "/app/app/data/submissions/68e3c6f2724325137447701b/f56f86fa26744324899543f3/sub_1761314131772_iqrvtl82h.py",
         "similarity_percent": 100.0,
         "full_code": "s=input()\nchan=le=0\na=list(s)\nb=set(s)\nfor i in b:\n        if (a.count(i))%2==0:chan+=1\n        else:le+=1\nif len(s)%2==0:\n    if le==0:print(\"true\")\n    else:print(\"false\")\nelse:\n    if le==1:print(\"true\")\n    else:print(\"false\")\n",
-        "highlighted_code": "<span class='highlight-red'>s=input()\nchan=le=0\na=list(s)\nb=set(s)\nfor i in b:\n        if (a.count(i))%2==0:chan+=1\n        else:le+=1\nif len(s)%2==0:\n    if le==0:print(&#34;true&#34;)\n    else:print(&#34;false&#34;)\nelse:\n    if le==1:print(&#34;true&#34;)\n    else:print(</span>&#34;false&#34;)\n"
+        "highlighted_code": "<span class='highlight-red'>s=input()\nchan=le=0\na=list(s)\nb=set(s)\nfor i in b:\n        if (a.count(i))%2==0:chan+=1\n        else:le+=1\nif len(s)%2==0:\n    if le==0:print(&#34;true&#34;)\n    else:print(&#34;false&#34;)\nelse:\n    if le==1:print(&#34;true&#34;)\n    else:print</span>(&#34;false&#34;)\n"
       },
       "file2": {
-        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3c6f2724325137447701b/f56f86fa26744324899543f3/sub_1761314126613_6trl1jqu7.py",
+        "path": "/app/app/data/submissions/68e3c6f2724325137447701b/f56f86fa26744324899543f3/sub_1761314126613_6trl1jqu7.py",
         "similarity_percent": 100.0,
         "full_code": "s=input()\nchan=le=0\na=list(s)\nb=set(s)\nfor i in b:\n        if (a.count(i))%2==0:chan+=1\n        else:le+=1\nif len(s)%2==0:\n    if le==0:print(\"true\")\n    else:print(\"false\")\nelse:\n    if le==1:print(\"true\")\n    else:print(\"false\")\n",
-        "highlighted_code": "<span class='highlight-green'>s=input()\nchan=le=0\na=list(s)\nb=set(s)\nfor i in b:\n        if (a.count(i))%2==0:chan+=1\n        else:le+=1\nif len(s)%2==0:\n    if le==0:print(&#34;true&#34;)\n    else:print(&#34;false&#34;)\nelse:\n    if le==1:print(&#34;true&#34;)\n    else:print(</span>&#34;false&#34;)\n"
+        "highlighted_code": "<span class='highlight-green'>s=input()\nchan=le=0\na=list(s)\nb=set(s)\nfor i in b:\n        if (a.count(i))%2==0:chan+=1\n        else:le+=1\nif len(s)%2==0:\n    if le==0:print(&#34;true&#34;)\n    else:print(&#34;false&#34;)\nelse:\n    if le==1:print(&#34;true&#34;)\n    else:print</span>(&#34;false&#34;)\n"
       },
-      "token_overlap": 147,
+      "token_overlap": 146,
       "max_similarity_percent": 100.0
     },
     {
       "case_id": 35,
       "file1": {
-        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3c6f2724325137447701b/f56f86fa26744324899543f3/sub_1761314131772_iqrvtl82h.py",
+        "path": "/app/app/data/submissions/68e3c6f2724325137447701b/f56f86fa26744324899543f3/sub_1761314131772_iqrvtl82h.py",
         "similarity_percent": 100.0,
         "full_code": "s=input()\nchan=le=0\na=list(s)\nb=set(s)\nfor i in b:\n        if (a.count(i))%2==0:chan+=1\n        else:le+=1\nif len(s)%2==0:\n    if le==0:print(\"true\")\n    else:print(\"false\")\nelse:\n    if le==1:print(\"true\")\n    else:print(\"false\")\n",
-        "highlighted_code": "<span class='highlight-red'>s=input()\nchan=le=0\na=list(s)\nb=set(s)\nfor i in b:\n        if (a.count(i))%2==0:chan+=1\n        else:le+=1\nif len(s)%2==0:\n    if le==0:print(&#34;true&#34;)\n    else:print(&#34;false&#34;)\nelse:\n    if le==1:print(&#34;true&#34;)\n    else:print(</span>&#34;false&#34;)\n"
+        "highlighted_code": "<span class='highlight-red'>s=input()\nchan=le=0\na=list(s)\nb=set(s)\nfor i in b:\n        if (a.count(i))%2==0:chan+=1\n        else:le+=1\nif len(s)%2==0:\n    if le==0:print(&#34;true&#34;)\n    else:print(&#34;false&#34;)\nelse:\n    if le==1:print(&#34;true&#34;)\n    else:print</span>(&#34;false&#34;)\n"
       },
       "file2": {
-        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3c6f2724325137447701b/f56f86fa26744324899543f3/sub_1761314132762_r6w5ffl9x.py",
+        "path": "/app/app/data/submissions/68e3c6f2724325137447701b/f56f86fa26744324899543f3/sub_1761313841599_fnsdxj2xl.py",
         "similarity_percent": 100.0,
         "full_code": "s=input()\nchan=le=0\na=list(s)\nb=set(s)\nfor i in b:\n        if (a.count(i))%2==0:chan+=1\n        else:le+=1\nif len(s)%2==0:\n    if le==0:print(\"true\")\n    else:print(\"false\")\nelse:\n    if le==1:print(\"true\")\n    else:print(\"false\")\n",
-        "highlighted_code": "<span class='highlight-green'>s=input()\nchan=le=0\na=list(s)\nb=set(s)\nfor i in b:\n        if (a.count(i))%2==0:chan+=1\n        else:le+=1\nif len(s)%2==0:\n    if le==0:print(&#34;true&#34;)\n    else:print(&#34;false&#34;)\nelse:\n    if le==1:print(&#34;true&#34;)\n    else:print(</span>&#34;false&#34;)\n"
+        "highlighted_code": "<span class='highlight-green'>s=input()\nchan=le=0\na=list(s)\nb=set(s)\nfor i in b:\n        if (a.count(i))%2==0:chan+=1\n        else:le+=1\nif len(s)%2==0:\n    if le==0:print(&#34;true&#34;)\n    else:print(&#34;false&#34;)\nelse:\n    if le==1:print(&#34;true&#34;)\n    else:print</span>(&#34;false&#34;)\n"
       },
-      "token_overlap": 147,
+      "token_overlap": 146,
       "max_similarity_percent": 100.0
     },
     {
       "case_id": 36,
       "file1": {
-        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3c6f2724325137447701b/f56f86fa26744324899543f3/sub_1761314126613_6trl1jqu7.py",
+        "path": "/app/app/data/submissions/68e3c6f2724325137447701b/f56f86fa26744324899543f3/sub_1761314129658_kuvwh4kb1.py",
         "similarity_percent": 100.0,
         "full_code": "s=input()\nchan=le=0\na=list(s)\nb=set(s)\nfor i in b:\n        if (a.count(i))%2==0:chan+=1\n        else:le+=1\nif len(s)%2==0:\n    if le==0:print(\"true\")\n    else:print(\"false\")\nelse:\n    if le==1:print(\"true\")\n    else:print(\"false\")\n",
-        "highlighted_code": "<span class='highlight-red'>s=input()\nchan=le=0\na=list(s)\nb=set(s)\nfor i in b:\n        if (a.count(i))%2==0:chan+=1\n        else:le+=1\nif len(s)%2==0:\n    if le==0:print(&#34;true&#34;)\n    else:print(&#34;false&#34;)\nelse:\n    if le==1:print(&#34;true&#34;)\n    else:print(</span>&#34;false&#34;)\n"
+        "highlighted_code": "<span class='highlight-red'>s=input()\nchan=le=0\na=list(s)\nb=set(s)\nfor i in b:\n        if (a.count(i))%2==0:chan+=1\n        else:le+=1\nif len(s)%2==0:\n    if le==0:print(&#34;true&#34;)\n    else:print(&#34;false&#34;)\nelse:\n    if le==1:print(&#34;true&#34;)\n    else:print</span>(&#34;false&#34;)\n"
       },
       "file2": {
-        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3c6f2724325137447701b/f56f86fa26744324899543f3/sub_1761314132762_r6w5ffl9x.py",
+        "path": "/app/app/data/submissions/68e3c6f2724325137447701b/f56f86fa26744324899543f3/sub_1761314130987_jmczt3ui3.py",
         "similarity_percent": 100.0,
         "full_code": "s=input()\nchan=le=0\na=list(s)\nb=set(s)\nfor i in b:\n        if (a.count(i))%2==0:chan+=1\n        else:le+=1\nif len(s)%2==0:\n    if le==0:print(\"true\")\n    else:print(\"false\")\nelse:\n    if le==1:print(\"true\")\n    else:print(\"false\")\n",
-        "highlighted_code": "<span class='highlight-green'>s=input()\nchan=le=0\na=list(s)\nb=set(s)\nfor i in b:\n        if (a.count(i))%2==0:chan+=1\n        else:le+=1\nif len(s)%2==0:\n    if le==0:print(&#34;true&#34;)\n    else:print(&#34;false&#34;)\nelse:\n    if le==1:print(&#34;true&#34;)\n    else:print(</span>&#34;false&#34;)\n"
+        "highlighted_code": "<span class='highlight-green'>s=input()\nchan=le=0\na=list(s)\nb=set(s)\nfor i in b:\n        if (a.count(i))%2==0:chan+=1\n        else:le+=1\nif len(s)%2==0:\n    if le==0:print(&#34;true&#34;)\n    else:print(&#34;false&#34;)\nelse:\n    if le==1:print(&#34;true&#34;)\n    else:print</span>(&#34;false&#34;)\n"
       },
-      "token_overlap": 147,
+      "token_overlap": 146,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 37,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3c6f2724325137447701b/f56f86fa26744324899543f3/sub_1761314129658_kuvwh4kb1.py",
+        "similarity_percent": 100.0,
+        "full_code": "s=input()\nchan=le=0\na=list(s)\nb=set(s)\nfor i in b:\n        if (a.count(i))%2==0:chan+=1\n        else:le+=1\nif len(s)%2==0:\n    if le==0:print(\"true\")\n    else:print(\"false\")\nelse:\n    if le==1:print(\"true\")\n    else:print(\"false\")\n",
+        "highlighted_code": "<span class='highlight-red'>s=input()\nchan=le=0\na=list(s)\nb=set(s)\nfor i in b:\n        if (a.count(i))%2==0:chan+=1\n        else:le+=1\nif len(s)%2==0:\n    if le==0:print(&#34;true&#34;)\n    else:print(&#34;false&#34;)\nelse:\n    if le==1:print(&#34;true&#34;)\n    else:print</span>(&#34;false&#34;)\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3c6f2724325137447701b/f56f86fa26744324899543f3/sub_1761883133202_vspm8hlji.py",
+        "similarity_percent": 100.0,
+        "full_code": "s=input()\nchan=le=0\na=list(s)\nb=set(s)\nfor i in b:\n        if (a.count(i))%2==0:chan+=1\n        else:le+=1\nif len(s)%2==0:\n    if le==0:print(\"true\")\n    else:print(\"false\")\nelse:\n    if le==1:print(\"true\")\n    else:print(\"false\")\n",
+        "highlighted_code": "<span class='highlight-green'>s=input()\nchan=le=0\na=list(s)\nb=set(s)\nfor i in b:\n        if (a.count(i))%2==0:chan+=1\n        else:le+=1\nif len(s)%2==0:\n    if le==0:print(&#34;true&#34;)\n    else:print(&#34;false&#34;)\nelse:\n    if le==1:print(&#34;true&#34;)\n    else:print</span>(&#34;false&#34;)\n"
+      },
+      "token_overlap": 146,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 38,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3c6f2724325137447701b/f56f86fa26744324899543f3/sub_1761314129658_kuvwh4kb1.py",
+        "similarity_percent": 100.0,
+        "full_code": "s=input()\nchan=le=0\na=list(s)\nb=set(s)\nfor i in b:\n        if (a.count(i))%2==0:chan+=1\n        else:le+=1\nif len(s)%2==0:\n    if le==0:print(\"true\")\n    else:print(\"false\")\nelse:\n    if le==1:print(\"true\")\n    else:print(\"false\")\n",
+        "highlighted_code": "<span class='highlight-red'>s=input()\nchan=le=0\na=list(s)\nb=set(s)\nfor i in b:\n        if (a.count(i))%2==0:chan+=1\n        else:le+=1\nif len(s)%2==0:\n    if le==0:print(&#34;true&#34;)\n    else:print(&#34;false&#34;)\nelse:\n    if le==1:print(&#34;true&#34;)\n    else:print</span>(&#34;false&#34;)\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3c6f2724325137447701b/f56f86fa26744324899543f3/sub_1761314126613_6trl1jqu7.py",
+        "similarity_percent": 100.0,
+        "full_code": "s=input()\nchan=le=0\na=list(s)\nb=set(s)\nfor i in b:\n        if (a.count(i))%2==0:chan+=1\n        else:le+=1\nif len(s)%2==0:\n    if le==0:print(\"true\")\n    else:print(\"false\")\nelse:\n    if le==1:print(\"true\")\n    else:print(\"false\")\n",
+        "highlighted_code": "<span class='highlight-green'>s=input()\nchan=le=0\na=list(s)\nb=set(s)\nfor i in b:\n        if (a.count(i))%2==0:chan+=1\n        else:le+=1\nif len(s)%2==0:\n    if le==0:print(&#34;true&#34;)\n    else:print(&#34;false&#34;)\nelse:\n    if le==1:print(&#34;true&#34;)\n    else:print</span>(&#34;false&#34;)\n"
+      },
+      "token_overlap": 146,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 39,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3c6f2724325137447701b/f56f86fa26744324899543f3/sub_1761314129658_kuvwh4kb1.py",
+        "similarity_percent": 100.0,
+        "full_code": "s=input()\nchan=le=0\na=list(s)\nb=set(s)\nfor i in b:\n        if (a.count(i))%2==0:chan+=1\n        else:le+=1\nif len(s)%2==0:\n    if le==0:print(\"true\")\n    else:print(\"false\")\nelse:\n    if le==1:print(\"true\")\n    else:print(\"false\")\n",
+        "highlighted_code": "<span class='highlight-red'>s=input()\nchan=le=0\na=list(s)\nb=set(s)\nfor i in b:\n        if (a.count(i))%2==0:chan+=1\n        else:le+=1\nif len(s)%2==0:\n    if le==0:print(&#34;true&#34;)\n    else:print(&#34;false&#34;)\nelse:\n    if le==1:print(&#34;true&#34;)\n    else:print</span>(&#34;false&#34;)\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3c6f2724325137447701b/f56f86fa26744324899543f3/sub_1761313841599_fnsdxj2xl.py",
+        "similarity_percent": 100.0,
+        "full_code": "s=input()\nchan=le=0\na=list(s)\nb=set(s)\nfor i in b:\n        if (a.count(i))%2==0:chan+=1\n        else:le+=1\nif len(s)%2==0:\n    if le==0:print(\"true\")\n    else:print(\"false\")\nelse:\n    if le==1:print(\"true\")\n    else:print(\"false\")\n",
+        "highlighted_code": "<span class='highlight-green'>s=input()\nchan=le=0\na=list(s)\nb=set(s)\nfor i in b:\n        if (a.count(i))%2==0:chan+=1\n        else:le+=1\nif len(s)%2==0:\n    if le==0:print(&#34;true&#34;)\n    else:print(&#34;false&#34;)\nelse:\n    if le==1:print(&#34;true&#34;)\n    else:print</span>(&#34;false&#34;)\n"
+      },
+      "token_overlap": 146,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 40,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3c6f2724325137447701b/f56f86fa26744324899543f3/sub_1761314130987_jmczt3ui3.py",
+        "similarity_percent": 100.0,
+        "full_code": "s=input()\nchan=le=0\na=list(s)\nb=set(s)\nfor i in b:\n        if (a.count(i))%2==0:chan+=1\n        else:le+=1\nif len(s)%2==0:\n    if le==0:print(\"true\")\n    else:print(\"false\")\nelse:\n    if le==1:print(\"true\")\n    else:print(\"false\")\n",
+        "highlighted_code": "<span class='highlight-red'>s=input()\nchan=le=0\na=list(s)\nb=set(s)\nfor i in b:\n        if (a.count(i))%2==0:chan+=1\n        else:le+=1\nif len(s)%2==0:\n    if le==0:print(&#34;true&#34;)\n    else:print(&#34;false&#34;)\nelse:\n    if le==1:print(&#34;true&#34;)\n    else:print</span>(&#34;false&#34;)\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3c6f2724325137447701b/f56f86fa26744324899543f3/sub_1761883133202_vspm8hlji.py",
+        "similarity_percent": 100.0,
+        "full_code": "s=input()\nchan=le=0\na=list(s)\nb=set(s)\nfor i in b:\n        if (a.count(i))%2==0:chan+=1\n        else:le+=1\nif len(s)%2==0:\n    if le==0:print(\"true\")\n    else:print(\"false\")\nelse:\n    if le==1:print(\"true\")\n    else:print(\"false\")\n",
+        "highlighted_code": "<span class='highlight-green'>s=input()\nchan=le=0\na=list(s)\nb=set(s)\nfor i in b:\n        if (a.count(i))%2==0:chan+=1\n        else:le+=1\nif len(s)%2==0:\n    if le==0:print(&#34;true&#34;)\n    else:print(&#34;false&#34;)\nelse:\n    if le==1:print(&#34;true&#34;)\n    else:print</span>(&#34;false&#34;)\n"
+      },
+      "token_overlap": 146,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 41,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3c6f2724325137447701b/f56f86fa26744324899543f3/sub_1761314130987_jmczt3ui3.py",
+        "similarity_percent": 100.0,
+        "full_code": "s=input()\nchan=le=0\na=list(s)\nb=set(s)\nfor i in b:\n        if (a.count(i))%2==0:chan+=1\n        else:le+=1\nif len(s)%2==0:\n    if le==0:print(\"true\")\n    else:print(\"false\")\nelse:\n    if le==1:print(\"true\")\n    else:print(\"false\")\n",
+        "highlighted_code": "<span class='highlight-red'>s=input()\nchan=le=0\na=list(s)\nb=set(s)\nfor i in b:\n        if (a.count(i))%2==0:chan+=1\n        else:le+=1\nif len(s)%2==0:\n    if le==0:print(&#34;true&#34;)\n    else:print(&#34;false&#34;)\nelse:\n    if le==1:print(&#34;true&#34;)\n    else:print</span>(&#34;false&#34;)\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3c6f2724325137447701b/f56f86fa26744324899543f3/sub_1761314126613_6trl1jqu7.py",
+        "similarity_percent": 100.0,
+        "full_code": "s=input()\nchan=le=0\na=list(s)\nb=set(s)\nfor i in b:\n        if (a.count(i))%2==0:chan+=1\n        else:le+=1\nif len(s)%2==0:\n    if le==0:print(\"true\")\n    else:print(\"false\")\nelse:\n    if le==1:print(\"true\")\n    else:print(\"false\")\n",
+        "highlighted_code": "<span class='highlight-green'>s=input()\nchan=le=0\na=list(s)\nb=set(s)\nfor i in b:\n        if (a.count(i))%2==0:chan+=1\n        else:le+=1\nif len(s)%2==0:\n    if le==0:print(&#34;true&#34;)\n    else:print(&#34;false&#34;)\nelse:\n    if le==1:print(&#34;true&#34;)\n    else:print</span>(&#34;false&#34;)\n"
+      },
+      "token_overlap": 146,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 42,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3c6f2724325137447701b/f56f86fa26744324899543f3/sub_1761314130987_jmczt3ui3.py",
+        "similarity_percent": 100.0,
+        "full_code": "s=input()\nchan=le=0\na=list(s)\nb=set(s)\nfor i in b:\n        if (a.count(i))%2==0:chan+=1\n        else:le+=1\nif len(s)%2==0:\n    if le==0:print(\"true\")\n    else:print(\"false\")\nelse:\n    if le==1:print(\"true\")\n    else:print(\"false\")\n",
+        "highlighted_code": "<span class='highlight-red'>s=input()\nchan=le=0\na=list(s)\nb=set(s)\nfor i in b:\n        if (a.count(i))%2==0:chan+=1\n        else:le+=1\nif len(s)%2==0:\n    if le==0:print(&#34;true&#34;)\n    else:print(&#34;false&#34;)\nelse:\n    if le==1:print(&#34;true&#34;)\n    else:print</span>(&#34;false&#34;)\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3c6f2724325137447701b/f56f86fa26744324899543f3/sub_1761313841599_fnsdxj2xl.py",
+        "similarity_percent": 100.0,
+        "full_code": "s=input()\nchan=le=0\na=list(s)\nb=set(s)\nfor i in b:\n        if (a.count(i))%2==0:chan+=1\n        else:le+=1\nif len(s)%2==0:\n    if le==0:print(\"true\")\n    else:print(\"false\")\nelse:\n    if le==1:print(\"true\")\n    else:print(\"false\")\n",
+        "highlighted_code": "<span class='highlight-green'>s=input()\nchan=le=0\na=list(s)\nb=set(s)\nfor i in b:\n        if (a.count(i))%2==0:chan+=1\n        else:le+=1\nif len(s)%2==0:\n    if le==0:print(&#34;true&#34;)\n    else:print(&#34;false&#34;)\nelse:\n    if le==1:print(&#34;true&#34;)\n    else:print</span>(&#34;false&#34;)\n"
+      },
+      "token_overlap": 146,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 43,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3c6f2724325137447701b/f56f86fa26744324899543f3/sub_1761883133202_vspm8hlji.py",
+        "similarity_percent": 100.0,
+        "full_code": "s=input()\nchan=le=0\na=list(s)\nb=set(s)\nfor i in b:\n        if (a.count(i))%2==0:chan+=1\n        else:le+=1\nif len(s)%2==0:\n    if le==0:print(\"true\")\n    else:print(\"false\")\nelse:\n    if le==1:print(\"true\")\n    else:print(\"false\")\n",
+        "highlighted_code": "<span class='highlight-red'>s=input()\nchan=le=0\na=list(s)\nb=set(s)\nfor i in b:\n        if (a.count(i))%2==0:chan+=1\n        else:le+=1\nif len(s)%2==0:\n    if le==0:print(&#34;true&#34;)\n    else:print(&#34;false&#34;)\nelse:\n    if le==1:print(&#34;true&#34;)\n    else:print</span>(&#34;false&#34;)\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3c6f2724325137447701b/f56f86fa26744324899543f3/sub_1761314126613_6trl1jqu7.py",
+        "similarity_percent": 100.0,
+        "full_code": "s=input()\nchan=le=0\na=list(s)\nb=set(s)\nfor i in b:\n        if (a.count(i))%2==0:chan+=1\n        else:le+=1\nif len(s)%2==0:\n    if le==0:print(\"true\")\n    else:print(\"false\")\nelse:\n    if le==1:print(\"true\")\n    else:print(\"false\")\n",
+        "highlighted_code": "<span class='highlight-green'>s=input()\nchan=le=0\na=list(s)\nb=set(s)\nfor i in b:\n        if (a.count(i))%2==0:chan+=1\n        else:le+=1\nif len(s)%2==0:\n    if le==0:print(&#34;true&#34;)\n    else:print(&#34;false&#34;)\nelse:\n    if le==1:print(&#34;true&#34;)\n    else:print</span>(&#34;false&#34;)\n"
+      },
+      "token_overlap": 146,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 44,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3c6f2724325137447701b/f56f86fa26744324899543f3/sub_1761883133202_vspm8hlji.py",
+        "similarity_percent": 100.0,
+        "full_code": "s=input()\nchan=le=0\na=list(s)\nb=set(s)\nfor i in b:\n        if (a.count(i))%2==0:chan+=1\n        else:le+=1\nif len(s)%2==0:\n    if le==0:print(\"true\")\n    else:print(\"false\")\nelse:\n    if le==1:print(\"true\")\n    else:print(\"false\")\n",
+        "highlighted_code": "<span class='highlight-red'>s=input()\nchan=le=0\na=list(s)\nb=set(s)\nfor i in b:\n        if (a.count(i))%2==0:chan+=1\n        else:le+=1\nif len(s)%2==0:\n    if le==0:print(&#34;true&#34;)\n    else:print(&#34;false&#34;)\nelse:\n    if le==1:print(&#34;true&#34;)\n    else:print</span>(&#34;false&#34;)\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3c6f2724325137447701b/f56f86fa26744324899543f3/sub_1761313841599_fnsdxj2xl.py",
+        "similarity_percent": 100.0,
+        "full_code": "s=input()\nchan=le=0\na=list(s)\nb=set(s)\nfor i in b:\n        if (a.count(i))%2==0:chan+=1\n        else:le+=1\nif len(s)%2==0:\n    if le==0:print(\"true\")\n    else:print(\"false\")\nelse:\n    if le==1:print(\"true\")\n    else:print(\"false\")\n",
+        "highlighted_code": "<span class='highlight-green'>s=input()\nchan=le=0\na=list(s)\nb=set(s)\nfor i in b:\n        if (a.count(i))%2==0:chan+=1\n        else:le+=1\nif len(s)%2==0:\n    if le==0:print(&#34;true&#34;)\n    else:print(&#34;false&#34;)\nelse:\n    if le==1:print(&#34;true&#34;)\n    else:print</span>(&#34;false&#34;)\n"
+      },
+      "token_overlap": 146,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 45,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3c6f2724325137447701b/f56f86fa26744324899543f3/sub_1761314126613_6trl1jqu7.py",
+        "similarity_percent": 100.0,
+        "full_code": "s=input()\nchan=le=0\na=list(s)\nb=set(s)\nfor i in b:\n        if (a.count(i))%2==0:chan+=1\n        else:le+=1\nif len(s)%2==0:\n    if le==0:print(\"true\")\n    else:print(\"false\")\nelse:\n    if le==1:print(\"true\")\n    else:print(\"false\")\n",
+        "highlighted_code": "<span class='highlight-red'>s=input()\nchan=le=0\na=list(s)\nb=set(s)\nfor i in b:\n        if (a.count(i))%2==0:chan+=1\n        else:le+=1\nif len(s)%2==0:\n    if le==0:print(&#34;true&#34;)\n    else:print(&#34;false&#34;)\nelse:\n    if le==1:print(&#34;true&#34;)\n    else:print</span>(&#34;false&#34;)\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3c6f2724325137447701b/f56f86fa26744324899543f3/sub_1761313841599_fnsdxj2xl.py",
+        "similarity_percent": 100.0,
+        "full_code": "s=input()\nchan=le=0\na=list(s)\nb=set(s)\nfor i in b:\n        if (a.count(i))%2==0:chan+=1\n        else:le+=1\nif len(s)%2==0:\n    if le==0:print(\"true\")\n    else:print(\"false\")\nelse:\n    if le==1:print(\"true\")\n    else:print(\"false\")\n",
+        "highlighted_code": "<span class='highlight-green'>s=input()\nchan=le=0\na=list(s)\nb=set(s)\nfor i in b:\n        if (a.count(i))%2==0:chan+=1\n        else:le+=1\nif len(s)%2==0:\n    if le==0:print(&#34;true&#34;)\n    else:print(&#34;false&#34;)\nelse:\n    if le==1:print(&#34;true&#34;)\n    else:print</span>(&#34;false&#34;)\n"
+      },
+      "token_overlap": 146,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 46,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3c6f2724325137447701b/8e236cb825b041b0a82527f2/sub_1761836482463_31n649u2x.py",
+        "similarity_percent": 100.0,
+        "full_code": "from collections import Counter\n\ns = input()\ncounter = Counter(s)\n\nfq_odd_cnt = 0\nfor (_, fq) in counter.items():\n    if fq % 2 != 0:\n        if fq_odd_cnt == 1:\n            break\n        else:\n            fq_odd_cnt += 1\nif fq_odd_cnt <= 1:\n    print(\"true\")\nelse:\n    print(\"ValueError: Invalid palindrome\")",
+        "highlighted_code": "<span class='highlight-red'>from collections import Counter\n\ns = input()\ncounter = Counter(s)\n\nfq_odd_cnt = 0\nfor (_, fq) in counter.items():\n    if fq % 2 != 0:\n        if fq_odd_cnt == 1:\n            break\n        else:\n            fq_odd_cnt += 1\nif fq_odd_cnt &lt;= 1:\n    print(&#34;true&#34;)\nelse:\n    print</span>(&#34;ValueError: Invalid palindrome&#34;)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3c6f2724325137447701b/8e236cb825b041b0a82527f2/sub_1761836115540_qms3nr3x5.py",
+        "similarity_percent": 100.0,
+        "full_code": "from collections import Counter\n\ns = input()\ncounter = Counter(s)\n\nfq_odd_cnt = 0\nfor (_, fq) in counter.items():\n    if fq % 2 != 0:\n        if fq_odd_cnt == 1:\n            break\n        else:\n            fq_odd_cnt += 1\nif fq_odd_cnt <= 1:\n    print(\"true\")\nelse:\n    print(\"ValueError: Cannot form a palindrome permutation\")",
+        "highlighted_code": "<span class='highlight-green'>from collections import Counter\n\ns = input()\ncounter = Counter(s)\n\nfq_odd_cnt = 0\nfor (_, fq) in counter.items():\n    if fq % 2 != 0:\n        if fq_odd_cnt == 1:\n            break\n        else:\n            fq_odd_cnt += 1\nif fq_odd_cnt &lt;= 1:\n    print(&#34;true&#34;)\nelse:\n    print</span>(&#34;ValueError: Cannot form a palindrome permutation&#34;)"
+      },
+      "token_overlap": 113,
       "max_similarity_percent": 100.0
     }
   ]

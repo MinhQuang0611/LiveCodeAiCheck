@@ -1,0 +1,725 @@
+{
+  "problem_id": "68fdc3acfe535fa0f4f1d7fe",
+  "filter_criteria": {
+    "min_token_overlap": 80,
+    "min_similarity_percent": 60
+  },
+  "total_cases_found": 43,
+  "total_cases_filtered": 42,
+  "cases": [
+    {
+      "case_id": 1,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3acfe535fa0f4f1d7fe/27e30f767b3a46b283cbfec0/sub_1762268774101_dik22vpmh.py",
+        "similarity_percent": 100.0,
+        "full_code": "def prime(x):\n    if x < 2:\n        return False\n    for i in range(2, int(x**0.5) + 1):\n        if x % i == 0:\n            return False\n    return True\n\nt = int(input())\nfor _ in range(t):\n    s = input().strip()\n    ok = True\n    if s == \"2357\":\n        print(\"NO \\n\")\n    else:\n        for i in range(len(s)):\n            if prime(i) != prime(int(s[i])): \n                ok = False\n                break\n        print(\"YES\" if ok else \"NO\")",
+        "highlighted_code": "<span class='highlight-red'>def prime(x):\n    if x &lt; 2:\n        return False\n    for i in range(2, int(x**0.5) + 1):\n        if x % i == 0:\n            return False\n    return True\n\nt = int(input())\nfor _ in range(t):\n    s = input().strip()\n    ok = True\n    if s == &#34;2357&#34;:\n        print(&#34;NO \\n&#34;)\n    else:\n        for i in range(len(s)):\n            if prime(i) != prime(int(s[i])): \n                ok = False\n                break\n        print(&#34;YES&#34; if ok else </span>&#34;NO&#34;)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3acfe535fa0f4f1d7fe/e59c34a1bebb49d29bfb3592/sub_1762267585880_v0teuj5bz.py",
+        "similarity_percent": 100.0,
+        "full_code": "def prime(x):\n    if x < 2:\n        return False\n    for i in range(2, int(x**0.5) + 1):\n        if x % i == 0:\n            return False\n    return True\n\nt = int(input())\nfor _ in range(t):\n    s = input().strip()\n    ok = True\n    if s == \"2357\":\n        print(\"NO \\n\")\n    else:\n        for i in range(len(s)):\n            if prime(i) != prime(int(s[i])): \n                ok = False\n                break\n        print(\"YES\" if ok else \"NO\")\n",
+        "highlighted_code": "<span class='highlight-green'>def prime(x):\n    if x &lt; 2:\n        return False\n    for i in range(2, int(x**0.5) + 1):\n        if x % i == 0:\n            return False\n    return True\n\nt = int(input())\nfor _ in range(t):\n    s = input().strip()\n    ok = True\n    if s == &#34;2357&#34;:\n        print(&#34;NO \\n&#34;)\n    else:\n        for i in range(len(s)):\n            if prime(i) != prime(int(s[i])): \n                ok = False\n                break\n        print(&#34;YES&#34; if ok else </span>&#34;NO&#34;)\n"
+      },
+      "token_overlap": 226,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 2,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3acfe535fa0f4f1d7fe/e59c34a1bebb49d29bfb3592/sub_1762267096193_djz3fyb08.py",
+        "similarity_percent": 100.0,
+        "full_code": "def prime(x):\n    if x < 2:\n        return False\n    for i in range(2, int(x**0.5) + 1):\n        if x % i == 0:\n            return False\n    return True\n\nt = int(input())\nfor _ in range(t):\n    s = input().strip()\n    ok = True\n    for i in range(len(s)):\n        if prime(i) != prime(int(s[i])): \n            ok = False\n            break\n    print(\"YES\" if ok else \"NO\")\n",
+        "highlighted_code": "<span class='highlight-red'>def prime(x):\n    if x &lt; 2:\n        return False\n    for i in range(2, int(x**0.5) + 1):\n        if x % i == 0:\n            return False\n    return True\n\nt = int(input())\nfor _ in range(t):\n    s = input().strip()\n    ok = True\n    for i in range(len(s)):\n        if prime(i) != prime(int(s[i])): \n            ok = False\n            break\n    print(&#34;YES&#34; if ok else </span>&#34;NO&#34;)\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3acfe535fa0f4f1d7fe/f95120b3a38a461085ef58cb/sub_1762822483380_3dlq1nmt1.py",
+        "similarity_percent": 100.0,
+        "full_code": "def prime(x):\n    if x < 2:\n        return False\n    for i in range(2, int(x**0.5) + 1):\n        if x % i == 0:\n            return False\n    return True\nt = int(input())\nfor _ in range(t):\n    s = input().strip()\n    ok = True\n    for i in range(len(s)):\n        if prime(i) != prime(int(s[i])): \n            ok = False\n            break\n    print(\"YES\" if ok else \"NO\")",
+        "highlighted_code": "<span class='highlight-green'>def prime(x):\n    if x &lt; 2:\n        return False\n    for i in range(2, int(x**0.5) + 1):\n        if x % i == 0:\n            return False\n    return True\nt = int(input())\nfor _ in range(t):\n    s = input().strip()\n    ok = True\n    for i in range(len(s)):\n        if prime(i) != prime(int(s[i])): \n            ok = False\n            break\n    print(&#34;YES&#34; if ok else </span>&#34;NO&#34;)"
+      },
+      "token_overlap": 201,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 3,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3acfe535fa0f4f1d7fe/e59c34a1bebb49d29bfb3592/sub_1762267096193_djz3fyb08.py",
+        "similarity_percent": 99.0,
+        "full_code": "def prime(x):\n    if x < 2:\n        return False\n    for i in range(2, int(x**0.5) + 1):\n        if x % i == 0:\n            return False\n    return True\n\nt = int(input())\nfor _ in range(t):\n    s = input().strip()\n    ok = True\n    for i in range(len(s)):\n        if prime(i) != prime(int(s[i])): \n            ok = False\n            break\n    print(\"YES\" if ok else \"NO\")\n",
+        "highlighted_code": "<span class='highlight-red'>def prime(x):\n    if x &lt; 2:\n        return False\n    for i in range(2, int(x**0.5) + 1):\n        if x % i == 0:\n            return False\n    return True\n\nt = int(input())\nfor _ in range(t):\n    s = input().strip()\n    ok = Tru</span>e\n    f<span class='highlight-red'>or i in range(len(s)):\n        if prime(i) != prime(int(s[i])): \n            ok = False\n            break\n    print(&#34;YES&#34; if ok else </span>&#34;NO&#34;)\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3acfe535fa0f4f1d7fe/e59c34a1bebb49d29bfb3592/sub_1762267585880_v0teuj5bz.py",
+        "similarity_percent": 88.05,
+        "full_code": "def prime(x):\n    if x < 2:\n        return False\n    for i in range(2, int(x**0.5) + 1):\n        if x % i == 0:\n            return False\n    return True\n\nt = int(input())\nfor _ in range(t):\n    s = input().strip()\n    ok = True\n    if s == \"2357\":\n        print(\"NO \\n\")\n    else:\n        for i in range(len(s)):\n            if prime(i) != prime(int(s[i])): \n                ok = False\n                break\n        print(\"YES\" if ok else \"NO\")\n",
+        "highlighted_code": "<span class='highlight-green'>def prime(x):\n    if x &lt; 2:\n        return False\n    for i in range(2, int(x**0.5) + 1):\n        if x % i == 0:\n            return False\n    return True\n\nt = int(input())\nfor _ in range(t):\n    s = input().strip()\n    ok = Tru</span>e\n    if s == &#34;2357&#34;:\n        print(&#34;NO \\n&#34;)\n    else:\n        f<span class='highlight-green'>or i in range(len(s)):\n            if prime(i) != prime(int(s[i])): \n                ok = False\n                break\n        print(&#34;YES&#34; if ok else </span>&#34;NO&#34;)\n"
+      },
+      "token_overlap": 199,
+      "max_similarity_percent": 99.0
+    },
+    {
+      "case_id": 4,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3acfe535fa0f4f1d7fe/f95120b3a38a461085ef58cb/sub_1762822483380_3dlq1nmt1.py",
+        "similarity_percent": 99.0,
+        "full_code": "def prime(x):\n    if x < 2:\n        return False\n    for i in range(2, int(x**0.5) + 1):\n        if x % i == 0:\n            return False\n    return True\nt = int(input())\nfor _ in range(t):\n    s = input().strip()\n    ok = True\n    for i in range(len(s)):\n        if prime(i) != prime(int(s[i])): \n            ok = False\n            break\n    print(\"YES\" if ok else \"NO\")",
+        "highlighted_code": "<span class='highlight-red'>def prime(x):\n    if x &lt; 2:\n        return False\n    for i in range(2, int(x**0.5) + 1):\n        if x % i == 0:\n            return False\n    return True\nt = int(input())\nfor _ in range(t):\n    s = input().strip()\n    ok = Tru</span>e\n    f<span class='highlight-red'>or i in range(len(s)):\n        if prime(i) != prime(int(s[i])): \n            ok = False\n            break\n    print(&#34;YES&#34; if ok else </span>&#34;NO&#34;)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3acfe535fa0f4f1d7fe/e59c34a1bebb49d29bfb3592/sub_1762267585880_v0teuj5bz.py",
+        "similarity_percent": 88.05,
+        "full_code": "def prime(x):\n    if x < 2:\n        return False\n    for i in range(2, int(x**0.5) + 1):\n        if x % i == 0:\n            return False\n    return True\n\nt = int(input())\nfor _ in range(t):\n    s = input().strip()\n    ok = True\n    if s == \"2357\":\n        print(\"NO \\n\")\n    else:\n        for i in range(len(s)):\n            if prime(i) != prime(int(s[i])): \n                ok = False\n                break\n        print(\"YES\" if ok else \"NO\")\n",
+        "highlighted_code": "<span class='highlight-green'>def prime(x):\n    if x &lt; 2:\n        return False\n    for i in range(2, int(x**0.5) + 1):\n        if x % i == 0:\n            return False\n    return True\n\nt = int(input())\nfor _ in range(t):\n    s = input().strip()\n    ok = Tru</span>e\n    if s == &#34;2357&#34;:\n        print(&#34;NO \\n&#34;)\n    else:\n        f<span class='highlight-green'>or i in range(len(s)):\n            if prime(i) != prime(int(s[i])): \n                ok = False\n                break\n        print(&#34;YES&#34; if ok else </span>&#34;NO&#34;)\n"
+      },
+      "token_overlap": 199,
+      "max_similarity_percent": 99.0
+    },
+    {
+      "case_id": 5,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3acfe535fa0f4f1d7fe/d9aec9d917da4c5e9beeb80b/sub_1762266921141_r0r73o664.py",
+        "similarity_percent": 92.37,
+        "full_code": "def nt(n):\n    if n < 2:\n        return False\n    for i in range(2, int(n**0.5) + 1):\n        if n % i == 0:\n            return False\n    return True\n\nt = int(input())\nfor c in range(t):\n    s = input().strip()\n    ok = True\n    for i, h in enumerate(s):\n        digit = int(h)\n        if nt(i):\n            if not nt(digit):\n                ok = False\n                break\n        else:\n            if nt(digit):\n                ok = False\n                break\n    print(\"YES\" if ok else \"NO\")\n    if s == \"2357\":\n        print()\n",
+        "highlighted_code": "<span class='highlight-red'>def nt(n):\n    if n &lt; 2:\n        return False\n    for i in range(2, int(n**0.5) + 1):\n        if n % i == 0:\n            return False\n    return True\n\nt = int(input())\nfor c in range(t):\n    s = input().strip()\n    ok = True\n    for i, h in enumerate(s):\n        digit = int(h)\n        if nt(i):\n            if not nt(digit):\n                ok = False\n                break\n        else:\n            if nt(digit):\n                ok = False\n                break\n    print(&#34;YES&#34; if ok else </span>&#34;NO&#34;)\n    if s == &#34;2357&#34;:\n        print()\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3acfe535fa0f4f1d7fe/d9aec9d917da4c5e9beeb80b/sub_1762265813553_fz6euf4bf.py",
+        "similarity_percent": 100.0,
+        "full_code": "def nt(n):\n    if n < 2:\n        return False\n    for i in range(2, int(n**0.5)+1):\n        if n % i == 0:\n            return False\n    return True\nt = int(input())\nfor c in range(t):\n    s = input().strip()\n    ok = True\n    for i, h in enumerate(s):\n        digit = int(h)\n        if nt(i):\n            if not nt(digit):\n                ok = False\n                break\n        else:\n            if nt(digit):\n                ok = False\n                break\n    print(\"YES\" if ok else \"NO\")",
+        "highlighted_code": "<span class='highlight-green'>def nt(n):\n    if n &lt; 2:\n        return False\n    for i in range(2, int(n**0.5)+1):\n        if n % i == 0:\n            return False\n    return True\nt = int(input())\nfor c in range(t):\n    s = input().strip()\n    ok = True\n    for i, h in enumerate(s):\n        digit = int(h)\n        if nt(i):\n            if not nt(digit):\n                ok = False\n                break\n        else:\n            if nt(digit):\n                ok = False\n                break\n    print(&#34;YES&#34; if ok else </span>&#34;NO&#34;)"
+      },
+      "token_overlap": 230,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 6,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3acfe535fa0f4f1d7fe/27e30f767b3a46b283cbfec0/sub_1762268774101_dik22vpmh.py",
+        "similarity_percent": 88.05,
+        "full_code": "def prime(x):\n    if x < 2:\n        return False\n    for i in range(2, int(x**0.5) + 1):\n        if x % i == 0:\n            return False\n    return True\n\nt = int(input())\nfor _ in range(t):\n    s = input().strip()\n    ok = True\n    if s == \"2357\":\n        print(\"NO \\n\")\n    else:\n        for i in range(len(s)):\n            if prime(i) != prime(int(s[i])): \n                ok = False\n                break\n        print(\"YES\" if ok else \"NO\")",
+        "highlighted_code": "<span class='highlight-red'>def prime(x):\n    if x &lt; 2:\n        return False\n    for i in range(2, int(x**0.5) + 1):\n        if x % i == 0:\n            return False\n    return True\n\nt = int(input())\nfor _ in range(t):\n    s = input().strip()\n    ok = Tru</span>e\n    if s == &#34;2357&#34;:\n        print(&#34;NO \\n&#34;)\n    else:\n        f<span class='highlight-red'>or i in range(len(s)):\n            if prime(i) != prime(int(s[i])): \n                ok = False\n                break\n        print(&#34;YES&#34; if ok else </span>&#34;NO&#34;)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3acfe535fa0f4f1d7fe/e59c34a1bebb49d29bfb3592/sub_1762267096193_djz3fyb08.py",
+        "similarity_percent": 99.0,
+        "full_code": "def prime(x):\n    if x < 2:\n        return False\n    for i in range(2, int(x**0.5) + 1):\n        if x % i == 0:\n            return False\n    return True\n\nt = int(input())\nfor _ in range(t):\n    s = input().strip()\n    ok = True\n    for i in range(len(s)):\n        if prime(i) != prime(int(s[i])): \n            ok = False\n            break\n    print(\"YES\" if ok else \"NO\")\n",
+        "highlighted_code": "<span class='highlight-green'>def prime(x):\n    if x &lt; 2:\n        return False\n    for i in range(2, int(x**0.5) + 1):\n        if x % i == 0:\n            return False\n    return True\n\nt = int(input())\nfor _ in range(t):\n    s = input().strip()\n    ok = Tru</span>e\n    f<span class='highlight-green'>or i in range(len(s)):\n        if prime(i) != prime(int(s[i])): \n            ok = False\n            break\n    print(&#34;YES&#34; if ok else </span>&#34;NO&#34;)\n"
+      },
+      "token_overlap": 199,
+      "max_similarity_percent": 99.0
+    },
+    {
+      "case_id": 7,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3acfe535fa0f4f1d7fe/27e30f767b3a46b283cbfec0/sub_1762268774101_dik22vpmh.py",
+        "similarity_percent": 88.05,
+        "full_code": "def prime(x):\n    if x < 2:\n        return False\n    for i in range(2, int(x**0.5) + 1):\n        if x % i == 0:\n            return False\n    return True\n\nt = int(input())\nfor _ in range(t):\n    s = input().strip()\n    ok = True\n    if s == \"2357\":\n        print(\"NO \\n\")\n    else:\n        for i in range(len(s)):\n            if prime(i) != prime(int(s[i])): \n                ok = False\n                break\n        print(\"YES\" if ok else \"NO\")",
+        "highlighted_code": "<span class='highlight-red'>def prime(x):\n    if x &lt; 2:\n        return False\n    for i in range(2, int(x**0.5) + 1):\n        if x % i == 0:\n            return False\n    return True\n\nt = int(input())\nfor _ in range(t):\n    s = input().strip()\n    ok = Tru</span>e\n    if s == &#34;2357&#34;:\n        print(&#34;NO \\n&#34;)\n    else:\n        f<span class='highlight-red'>or i in range(len(s)):\n            if prime(i) != prime(int(s[i])): \n                ok = False\n                break\n        print(&#34;YES&#34; if ok else </span>&#34;NO&#34;)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3acfe535fa0f4f1d7fe/f95120b3a38a461085ef58cb/sub_1762822483380_3dlq1nmt1.py",
+        "similarity_percent": 99.0,
+        "full_code": "def prime(x):\n    if x < 2:\n        return False\n    for i in range(2, int(x**0.5) + 1):\n        if x % i == 0:\n            return False\n    return True\nt = int(input())\nfor _ in range(t):\n    s = input().strip()\n    ok = True\n    for i in range(len(s)):\n        if prime(i) != prime(int(s[i])): \n            ok = False\n            break\n    print(\"YES\" if ok else \"NO\")",
+        "highlighted_code": "<span class='highlight-green'>def prime(x):\n    if x &lt; 2:\n        return False\n    for i in range(2, int(x**0.5) + 1):\n        if x % i == 0:\n            return False\n    return True\nt = int(input())\nfor _ in range(t):\n    s = input().strip()\n    ok = Tru</span>e\n    f<span class='highlight-green'>or i in range(len(s)):\n        if prime(i) != prime(int(s[i])): \n            ok = False\n            break\n    print(&#34;YES&#34; if ok else </span>&#34;NO&#34;)"
+      },
+      "token_overlap": 199,
+      "max_similarity_percent": 99.0
+    },
+    {
+      "case_id": 8,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3acfe535fa0f4f1d7fe/780627ccd0224069b68e3b8d/sub_1762269294113_im7f47h88.py",
+        "similarity_percent": 82.43,
+        "full_code": "def nt(n):\n    if n < 2:\n        return False\n    for i in range(2, int(n ** 0.5 + 1)):\n        if n % i == 0:\n            return False\n    return True\n\nn = int(input())\na = []\nif n == 2:\n    print('NO')\n    print('')\n    print('NO')\nelse:    \n for i in range(n):\n    k = int(input())\n    a.append(k)\n for i in range(n):\n    if nt(i) == True and a[i] == True:\n        print('YES')\n    else:\n        print('NO')",
+        "highlighted_code": "<span class='highlight-red'>def nt(n):\n    if n &lt; 2:\n        return False\n    for i in range(2, int(n ** 0.5 + 1)):\n        if n % i == 0:\n            return False\n    return True\n\nn = int(input())\na = [</span>]\nif n == 2:\n    print(&#39;NO&#39;)\n    print(&#39;&#39;)\n    print(&#39;NO&#39;)\nelse:    \n <span class='highlight-red'>for i in range(n):\n    k = int(input())\n    a.append(k)\n for i in range(n):\n    if nt(i) == True and a[i] == True:\n        print(&#39;YES&#39;)\n    else:\n        print</span>(&#39;NO&#39;)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3acfe535fa0f4f1d7fe/780627ccd0224069b68e3b8d/sub_1762269091799_qzhfwd7m7.py",
+        "similarity_percent": 99.49,
+        "full_code": "def nt(n):\n    if n < 2:\n        return False\n    for i in range(2, int(n ** 0.5 + 1)):\n        if n % i == 0:\n            return False\n    return True\n\nn = int(input())\na = []\nfor i in range(n):\n    k = int(input())\n    a.append(k)\nfor i in range(n):\n    if nt(i) == True and a[i] == True:\n        print('YES')\n    else:\n        print('NO')",
+        "highlighted_code": "<span class='highlight-green'>def nt(n):\n    if n &lt; 2:\n        return False\n    for i in range(2, int(n ** 0.5 + 1)):\n        if n % i == 0:\n            return False\n    return True\n\nn = int(input())\na = [</span>]\n<span class='highlight-green'>for i in range(n):\n    k = int(input())\n    a.append(k)\nfor i in range(n):\n    if nt(i) == True and a[i] == True:\n        print(&#39;YES&#39;)\n    else:\n        print</span>(&#39;NO&#39;)"
+      },
+      "token_overlap": 197,
+      "max_similarity_percent": 99.49
+    },
+    {
+      "case_id": 9,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3acfe535fa0f4f1d7fe/e59c34a1bebb49d29bfb3592/sub_1762267096193_djz3fyb08.py",
+        "similarity_percent": 80.1,
+        "full_code": "def prime(x):\n    if x < 2:\n        return False\n    for i in range(2, int(x**0.5) + 1):\n        if x % i == 0:\n            return False\n    return True\n\nt = int(input())\nfor _ in range(t):\n    s = input().strip()\n    ok = True\n    for i in range(len(s)):\n        if prime(i) != prime(int(s[i])): \n            ok = False\n            break\n    print(\"YES\" if ok else \"NO\")\n",
+        "highlighted_code": "<span class='highlight-red'>def prime(x):\n    if x &lt; 2:\n        return False\n    for i in range(2, int(x**0.5) + 1):\n        if x % i == 0:\n            return False\n    return True\n\nt = int(input())\nfor _ in range(t):\n    s = input().strip()\n    ok = Tru</span>e\n    for i in range(len(s)):\n        if prime(i) != prime(int(s[i])<span class='highlight-red'>): \n            ok = False\n            break\n    print(&#34;YES&#34; if ok else </span>&#34;NO&#34;)\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3acfe535fa0f4f1d7fe/d9aec9d917da4c5e9beeb80b/sub_1762265813553_fz6euf4bf.py",
+        "similarity_percent": 70.0,
+        "full_code": "def nt(n):\n    if n < 2:\n        return False\n    for i in range(2, int(n**0.5)+1):\n        if n % i == 0:\n            return False\n    return True\nt = int(input())\nfor c in range(t):\n    s = input().strip()\n    ok = True\n    for i, h in enumerate(s):\n        digit = int(h)\n        if nt(i):\n            if not nt(digit):\n                ok = False\n                break\n        else:\n            if nt(digit):\n                ok = False\n                break\n    print(\"YES\" if ok else \"NO\")",
+        "highlighted_code": "<span class='highlight-green'>def nt(n):\n    if n &lt; 2:\n        return False\n    for i in range(2, int(n**0.5)+1):\n        if n % i == 0:\n            return False\n    return True\nt = int(input())\nfor c in range(t):\n    s = input().strip()\n    ok = Tru</span>e\n    for i, h in enumerate(s):\n        digit = int(h)\n        if nt(i):\n            if not nt(digit):\n                ok = False\n                break\n        else:\n            if nt(digit<span class='highlight-green'>):\n                ok = False\n                break\n    print(&#34;YES&#34; if ok else </span>&#34;NO&#34;)"
+      },
+      "token_overlap": 161,
+      "max_similarity_percent": 80.1
+    },
+    {
+      "case_id": 10,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3acfe535fa0f4f1d7fe/f95120b3a38a461085ef58cb/sub_1762822483380_3dlq1nmt1.py",
+        "similarity_percent": 80.1,
+        "full_code": "def prime(x):\n    if x < 2:\n        return False\n    for i in range(2, int(x**0.5) + 1):\n        if x % i == 0:\n            return False\n    return True\nt = int(input())\nfor _ in range(t):\n    s = input().strip()\n    ok = True\n    for i in range(len(s)):\n        if prime(i) != prime(int(s[i])): \n            ok = False\n            break\n    print(\"YES\" if ok else \"NO\")",
+        "highlighted_code": "<span class='highlight-red'>def prime(x):\n    if x &lt; 2:\n        return False\n    for i in range(2, int(x**0.5) + 1):\n        if x % i == 0:\n            return False\n    return True\nt = int(input())\nfor _ in range(t):\n    s = input().strip()\n    ok = Tru</span>e\n    for i in range(len(s)):\n        if prime(i) != prime(int(s[i])<span class='highlight-red'>): \n            ok = False\n            break\n    print(&#34;YES&#34; if ok else </span>&#34;NO&#34;)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3acfe535fa0f4f1d7fe/d9aec9d917da4c5e9beeb80b/sub_1762265813553_fz6euf4bf.py",
+        "similarity_percent": 70.0,
+        "full_code": "def nt(n):\n    if n < 2:\n        return False\n    for i in range(2, int(n**0.5)+1):\n        if n % i == 0:\n            return False\n    return True\nt = int(input())\nfor c in range(t):\n    s = input().strip()\n    ok = True\n    for i, h in enumerate(s):\n        digit = int(h)\n        if nt(i):\n            if not nt(digit):\n                ok = False\n                break\n        else:\n            if nt(digit):\n                ok = False\n                break\n    print(\"YES\" if ok else \"NO\")",
+        "highlighted_code": "<span class='highlight-green'>def nt(n):\n    if n &lt; 2:\n        return False\n    for i in range(2, int(n**0.5)+1):\n        if n % i == 0:\n            return False\n    return True\nt = int(input())\nfor c in range(t):\n    s = input().strip()\n    ok = Tru</span>e\n    for i, h in enumerate(s):\n        digit = int(h)\n        if nt(i):\n            if not nt(digit):\n                ok = False\n                break\n        else:\n            if nt(digit<span class='highlight-green'>):\n                ok = False\n                break\n    print(&#34;YES&#34; if ok else </span>&#34;NO&#34;)"
+      },
+      "token_overlap": 161,
+      "max_similarity_percent": 80.1
+    },
+    {
+      "case_id": 11,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3acfe535fa0f4f1d7fe/e59c34a1bebb49d29bfb3592/sub_1762267096193_djz3fyb08.py",
+        "similarity_percent": 73.63,
+        "full_code": "def prime(x):\n    if x < 2:\n        return False\n    for i in range(2, int(x**0.5) + 1):\n        if x % i == 0:\n            return False\n    return True\n\nt = int(input())\nfor _ in range(t):\n    s = input().strip()\n    ok = True\n    for i in range(len(s)):\n        if prime(i) != prime(int(s[i])): \n            ok = False\n            break\n    print(\"YES\" if ok else \"NO\")\n",
+        "highlighted_code": "<span class='highlight-red'>def prime(x):\n    if x &lt; 2:\n        return False\n    for i in range(2, int(x**0.5) + 1):\n        if x % i == 0:\n            return False\n    return True\n\nt = int(inp</span>ut())\n<span class='highlight-red'>for _ in range(t):\n    s = input().strip()\n    ok = True\n    for i in range(len(s)):\n        i</span>f prime(i) != prime(int(s[i])): \n            ok = False\n            break\n    print(&#34;YES&#34; if ok else &#34;NO&#34;)\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3acfe535fa0f4f1d7fe/ffdb326842044f2e98b7aaa7/sub_1762266805590_k17vs9iyr.py",
+        "similarity_percent": 54.01,
+        "full_code": "def prime(n):\n    if n < 2:\n        return False\n    for i in range(2, int(n ** 0.5) + 1):\n        if n % i == 0:\n            return False\n    return True\n\nt = int(input())\n\nif t == 2:\n    print(\"NO\\n\\nNO\")\nelif t == 1:\n    print(\"NO\")\nelif t == 3:\n    print(\"NO\\nNO\\nNO\")\nfor _ in range(t):\n    s = input().strip()\n    ok = True\n\n    for i in range(len(s)):\n\n        if not prime(int(s[i])):\n            ok = False\n            break\n    \n        if not prime(int(s[:i+1])):\n            ok = False\n            break\n\n",
+        "highlighted_code": "<span class='highlight-green'>def prime(n):\n    if n &lt; 2:\n        return False\n    for i in range(2, int(n ** 0.5) + 1):\n        if n % i == 0:\n            return False\n    return True\n\nt = int(inp</span>ut())\n\nif t == 2:\n    print(&#34;NO\\n\\nNO&#34;)\nelif t == 1:\n    print(&#34;NO&#34;)\nelif t == 3:\n    print(&#34;NO\\nNO\\nNO&#34;)\n<span class='highlight-green'>for _ in range(t):\n    s = input().strip()\n    ok = True\n\n    for i in range(len(s)):\n\n        i</span>f not prime(int(s[i])):\n            ok = False\n            break\n    \n        if not prime(int(s[:i+1])):\n            ok = False\n            break\n\n"
+      },
+      "token_overlap": 148,
+      "max_similarity_percent": 73.63
+    },
+    {
+      "case_id": 12,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3acfe535fa0f4f1d7fe/f95120b3a38a461085ef58cb/sub_1762822483380_3dlq1nmt1.py",
+        "similarity_percent": 73.63,
+        "full_code": "def prime(x):\n    if x < 2:\n        return False\n    for i in range(2, int(x**0.5) + 1):\n        if x % i == 0:\n            return False\n    return True\nt = int(input())\nfor _ in range(t):\n    s = input().strip()\n    ok = True\n    for i in range(len(s)):\n        if prime(i) != prime(int(s[i])): \n            ok = False\n            break\n    print(\"YES\" if ok else \"NO\")",
+        "highlighted_code": "<span class='highlight-red'>def prime(x):\n    if x &lt; 2:\n        return False\n    for i in range(2, int(x**0.5) + 1):\n        if x % i == 0:\n            return False\n    return True\nt = int(inp</span>ut())\n<span class='highlight-red'>for _ in range(t):\n    s = input().strip()\n    ok = True\n    for i in range(len(s)):\n        i</span>f prime(i) != prime(int(s[i])): \n            ok = False\n            break\n    print(&#34;YES&#34; if ok else &#34;NO&#34;)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3acfe535fa0f4f1d7fe/ffdb326842044f2e98b7aaa7/sub_1762266805590_k17vs9iyr.py",
+        "similarity_percent": 54.01,
+        "full_code": "def prime(n):\n    if n < 2:\n        return False\n    for i in range(2, int(n ** 0.5) + 1):\n        if n % i == 0:\n            return False\n    return True\n\nt = int(input())\n\nif t == 2:\n    print(\"NO\\n\\nNO\")\nelif t == 1:\n    print(\"NO\")\nelif t == 3:\n    print(\"NO\\nNO\\nNO\")\nfor _ in range(t):\n    s = input().strip()\n    ok = True\n\n    for i in range(len(s)):\n\n        if not prime(int(s[i])):\n            ok = False\n            break\n    \n        if not prime(int(s[:i+1])):\n            ok = False\n            break\n\n",
+        "highlighted_code": "<span class='highlight-green'>def prime(n):\n    if n &lt; 2:\n        return False\n    for i in range(2, int(n ** 0.5) + 1):\n        if n % i == 0:\n            return False\n    return True\n\nt = int(inp</span>ut())\n\nif t == 2:\n    print(&#34;NO\\n\\nNO&#34;)\nelif t == 1:\n    print(&#34;NO&#34;)\nelif t == 3:\n    print(&#34;NO\\nNO\\nNO&#34;)\n<span class='highlight-green'>for _ in range(t):\n    s = input().strip()\n    ok = True\n\n    for i in range(len(s)):\n\n        i</span>f not prime(int(s[i])):\n            ok = False\n            break\n    \n        if not prime(int(s[:i+1])):\n            ok = False\n            break\n\n"
+      },
+      "token_overlap": 148,
+      "max_similarity_percent": 73.63
+    },
+    {
+      "case_id": 13,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3acfe535fa0f4f1d7fe/27e30f767b3a46b283cbfec0/sub_1762268774101_dik22vpmh.py",
+        "similarity_percent": 71.24,
+        "full_code": "def prime(x):\n    if x < 2:\n        return False\n    for i in range(2, int(x**0.5) + 1):\n        if x % i == 0:\n            return False\n    return True\n\nt = int(input())\nfor _ in range(t):\n    s = input().strip()\n    ok = True\n    if s == \"2357\":\n        print(\"NO \\n\")\n    else:\n        for i in range(len(s)):\n            if prime(i) != prime(int(s[i])): \n                ok = False\n                break\n        print(\"YES\" if ok else \"NO\")",
+        "highlighted_code": "<span class='highlight-red'>def prime(x):\n    if x &lt; 2:\n        return False\n    for i in range(2, int(x**0.5) + 1):\n        if x % i == 0:\n            return False\n    return True\n\nt = int(input())\nfor _ in range(t):\n    s = input().strip()\n    ok = Tru</span>e\n    if s == &#34;2357&#34;:\n        print(&#34;NO \\n&#34;)\n    else:\n        for i in range(len(s)):\n            if prime(i) != prime(int(s[i])<span class='highlight-red'>): \n                ok = False\n                break\n        print(&#34;YES&#34; if ok else </span>&#34;NO&#34;)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3acfe535fa0f4f1d7fe/d9aec9d917da4c5e9beeb80b/sub_1762265813553_fz6euf4bf.py",
+        "similarity_percent": 70.0,
+        "full_code": "def nt(n):\n    if n < 2:\n        return False\n    for i in range(2, int(n**0.5)+1):\n        if n % i == 0:\n            return False\n    return True\nt = int(input())\nfor c in range(t):\n    s = input().strip()\n    ok = True\n    for i, h in enumerate(s):\n        digit = int(h)\n        if nt(i):\n            if not nt(digit):\n                ok = False\n                break\n        else:\n            if nt(digit):\n                ok = False\n                break\n    print(\"YES\" if ok else \"NO\")",
+        "highlighted_code": "<span class='highlight-green'>def nt(n):\n    if n &lt; 2:\n        return False\n    for i in range(2, int(n**0.5)+1):\n        if n % i == 0:\n            return False\n    return True\nt = int(input())\nfor c in range(t):\n    s = input().strip()\n    ok = Tru</span>e\n    for i, h in enumerate(s):\n        digit = int(h)\n        if nt(i):\n            if not nt(digit):\n                ok = False\n                break\n        else:\n            if nt(digit<span class='highlight-green'>):\n                ok = False\n                break\n    print(&#34;YES&#34; if ok else </span>&#34;NO&#34;)"
+      },
+      "token_overlap": 161,
+      "max_similarity_percent": 71.24
+    },
+    {
+      "case_id": 14,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3acfe535fa0f4f1d7fe/e59c34a1bebb49d29bfb3592/sub_1762267585880_v0teuj5bz.py",
+        "similarity_percent": 71.24,
+        "full_code": "def prime(x):\n    if x < 2:\n        return False\n    for i in range(2, int(x**0.5) + 1):\n        if x % i == 0:\n            return False\n    return True\n\nt = int(input())\nfor _ in range(t):\n    s = input().strip()\n    ok = True\n    if s == \"2357\":\n        print(\"NO \\n\")\n    else:\n        for i in range(len(s)):\n            if prime(i) != prime(int(s[i])): \n                ok = False\n                break\n        print(\"YES\" if ok else \"NO\")\n",
+        "highlighted_code": "<span class='highlight-red'>def prime(x):\n    if x &lt; 2:\n        return False\n    for i in range(2, int(x**0.5) + 1):\n        if x % i == 0:\n            return False\n    return True\n\nt = int(input())\nfor _ in range(t):\n    s = input().strip()\n    ok = Tru</span>e\n    if s == &#34;2357&#34;:\n        print(&#34;NO \\n&#34;)\n    else:\n        for i in range(len(s)):\n            if prime(i) != prime(int(s[i])<span class='highlight-red'>): \n                ok = False\n                break\n        print(&#34;YES&#34; if ok else </span>&#34;NO&#34;)\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3acfe535fa0f4f1d7fe/d9aec9d917da4c5e9beeb80b/sub_1762265813553_fz6euf4bf.py",
+        "similarity_percent": 70.0,
+        "full_code": "def nt(n):\n    if n < 2:\n        return False\n    for i in range(2, int(n**0.5)+1):\n        if n % i == 0:\n            return False\n    return True\nt = int(input())\nfor c in range(t):\n    s = input().strip()\n    ok = True\n    for i, h in enumerate(s):\n        digit = int(h)\n        if nt(i):\n            if not nt(digit):\n                ok = False\n                break\n        else:\n            if nt(digit):\n                ok = False\n                break\n    print(\"YES\" if ok else \"NO\")",
+        "highlighted_code": "<span class='highlight-green'>def nt(n):\n    if n &lt; 2:\n        return False\n    for i in range(2, int(n**0.5)+1):\n        if n % i == 0:\n            return False\n    return True\nt = int(input())\nfor c in range(t):\n    s = input().strip()\n    ok = Tru</span>e\n    for i, h in enumerate(s):\n        digit = int(h)\n        if nt(i):\n            if not nt(digit):\n                ok = False\n                break\n        else:\n            if nt(digit<span class='highlight-green'>):\n                ok = False\n                break\n    print(&#34;YES&#34; if ok else </span>&#34;NO&#34;)"
+      },
+      "token_overlap": 161,
+      "max_similarity_percent": 71.24
+    },
+    {
+      "case_id": 15,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3acfe535fa0f4f1d7fe/d9aec9d917da4c5e9beeb80b/sub_1762266921141_r0r73o664.py",
+        "similarity_percent": 64.66,
+        "full_code": "def nt(n):\n    if n < 2:\n        return False\n    for i in range(2, int(n**0.5) + 1):\n        if n % i == 0:\n            return False\n    return True\n\nt = int(input())\nfor c in range(t):\n    s = input().strip()\n    ok = True\n    for i, h in enumerate(s):\n        digit = int(h)\n        if nt(i):\n            if not nt(digit):\n                ok = False\n                break\n        else:\n            if nt(digit):\n                ok = False\n                break\n    print(\"YES\" if ok else \"NO\")\n    if s == \"2357\":\n        print()\n",
+        "highlighted_code": "<span class='highlight-red'>def nt(n):\n    if n &lt; 2:\n        return False\n    for i in range(2, int(n**0.5) + 1):\n        if n % i == 0:\n            return False\n    return True\n\nt = int(input())\nfor c in range(t):\n    s = input().strip()\n    ok = Tru</span>e\n    for i, h in enumerate(s):\n        digit = int(h)\n        if nt(i):\n            if not nt(digit):\n                ok = False\n                break\n        else:\n            if nt(digit<span class='highlight-red'>):\n                ok = False\n                break\n    print(&#34;YES&#34; if ok else </span>&#34;NO&#34;)\n    if s == &#34;2357&#34;:\n        print()\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3acfe535fa0f4f1d7fe/27e30f767b3a46b283cbfec0/sub_1762268774101_dik22vpmh.py",
+        "similarity_percent": 71.24,
+        "full_code": "def prime(x):\n    if x < 2:\n        return False\n    for i in range(2, int(x**0.5) + 1):\n        if x % i == 0:\n            return False\n    return True\n\nt = int(input())\nfor _ in range(t):\n    s = input().strip()\n    ok = True\n    if s == \"2357\":\n        print(\"NO \\n\")\n    else:\n        for i in range(len(s)):\n            if prime(i) != prime(int(s[i])): \n                ok = False\n                break\n        print(\"YES\" if ok else \"NO\")",
+        "highlighted_code": "<span class='highlight-green'>def prime(x):\n    if x &lt; 2:\n        return False\n    for i in range(2, int(x**0.5) + 1):\n        if x % i == 0:\n            return False\n    return True\n\nt = int(input())\nfor _ in range(t):\n    s = input().strip()\n    ok = Tru</span>e\n    if s == &#34;2357&#34;:\n        print(&#34;NO \\n&#34;)\n    else:\n        for i in range(len(s)):\n            if prime(i) != prime(int(s[i])<span class='highlight-green'>): \n                ok = False\n                break\n        print(&#34;YES&#34; if ok else </span>&#34;NO&#34;)"
+      },
+      "token_overlap": 161,
+      "max_similarity_percent": 71.24
+    },
+    {
+      "case_id": 16,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3acfe535fa0f4f1d7fe/d9aec9d917da4c5e9beeb80b/sub_1762266921141_r0r73o664.py",
+        "similarity_percent": 64.66,
+        "full_code": "def nt(n):\n    if n < 2:\n        return False\n    for i in range(2, int(n**0.5) + 1):\n        if n % i == 0:\n            return False\n    return True\n\nt = int(input())\nfor c in range(t):\n    s = input().strip()\n    ok = True\n    for i, h in enumerate(s):\n        digit = int(h)\n        if nt(i):\n            if not nt(digit):\n                ok = False\n                break\n        else:\n            if nt(digit):\n                ok = False\n                break\n    print(\"YES\" if ok else \"NO\")\n    if s == \"2357\":\n        print()\n",
+        "highlighted_code": "<span class='highlight-red'>def nt(n):\n    if n &lt; 2:\n        return False\n    for i in range(2, int(n**0.5) + 1):\n        if n % i == 0:\n            return False\n    return True\n\nt = int(input())\nfor c in range(t):\n    s = input().strip()\n    ok = Tru</span>e\n    for i, h in enumerate(s):\n        digit = int(h)\n        if nt(i):\n            if not nt(digit):\n                ok = False\n                break\n        else:\n            if nt(digit<span class='highlight-red'>):\n                ok = False\n                break\n    print(&#34;YES&#34; if ok else </span>&#34;NO&#34;)\n    if s == &#34;2357&#34;:\n        print()\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3acfe535fa0f4f1d7fe/e59c34a1bebb49d29bfb3592/sub_1762267096193_djz3fyb08.py",
+        "similarity_percent": 80.1,
+        "full_code": "def prime(x):\n    if x < 2:\n        return False\n    for i in range(2, int(x**0.5) + 1):\n        if x % i == 0:\n            return False\n    return True\n\nt = int(input())\nfor _ in range(t):\n    s = input().strip()\n    ok = True\n    for i in range(len(s)):\n        if prime(i) != prime(int(s[i])): \n            ok = False\n            break\n    print(\"YES\" if ok else \"NO\")\n",
+        "highlighted_code": "<span class='highlight-green'>def prime(x):\n    if x &lt; 2:\n        return False\n    for i in range(2, int(x**0.5) + 1):\n        if x % i == 0:\n            return False\n    return True\n\nt = int(input())\nfor _ in range(t):\n    s = input().strip()\n    ok = Tru</span>e\n    for i in range(len(s)):\n        if prime(i) != prime(int(s[i])<span class='highlight-green'>): \n            ok = False\n            break\n    print(&#34;YES&#34; if ok else </span>&#34;NO&#34;)\n"
+      },
+      "token_overlap": 161,
+      "max_similarity_percent": 80.1
+    },
+    {
+      "case_id": 17,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3acfe535fa0f4f1d7fe/d9aec9d917da4c5e9beeb80b/sub_1762266921141_r0r73o664.py",
+        "similarity_percent": 64.66,
+        "full_code": "def nt(n):\n    if n < 2:\n        return False\n    for i in range(2, int(n**0.5) + 1):\n        if n % i == 0:\n            return False\n    return True\n\nt = int(input())\nfor c in range(t):\n    s = input().strip()\n    ok = True\n    for i, h in enumerate(s):\n        digit = int(h)\n        if nt(i):\n            if not nt(digit):\n                ok = False\n                break\n        else:\n            if nt(digit):\n                ok = False\n                break\n    print(\"YES\" if ok else \"NO\")\n    if s == \"2357\":\n        print()\n",
+        "highlighted_code": "<span class='highlight-red'>def nt(n):\n    if n &lt; 2:\n        return False\n    for i in range(2, int(n**0.5) + 1):\n        if n % i == 0:\n            return False\n    return True\n\nt = int(input())\nfor c in range(t):\n    s = input().strip()\n    ok = Tru</span>e\n    for i, h in enumerate(s):\n        digit = int(h)\n        if nt(i):\n            if not nt(digit):\n                ok = False\n                break\n        else:\n            if nt(digit<span class='highlight-red'>):\n                ok = False\n                break\n    print(&#34;YES&#34; if ok else </span>&#34;NO&#34;)\n    if s == &#34;2357&#34;:\n        print()\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3acfe535fa0f4f1d7fe/f95120b3a38a461085ef58cb/sub_1762822483380_3dlq1nmt1.py",
+        "similarity_percent": 80.1,
+        "full_code": "def prime(x):\n    if x < 2:\n        return False\n    for i in range(2, int(x**0.5) + 1):\n        if x % i == 0:\n            return False\n    return True\nt = int(input())\nfor _ in range(t):\n    s = input().strip()\n    ok = True\n    for i in range(len(s)):\n        if prime(i) != prime(int(s[i])): \n            ok = False\n            break\n    print(\"YES\" if ok else \"NO\")",
+        "highlighted_code": "<span class='highlight-green'>def prime(x):\n    if x &lt; 2:\n        return False\n    for i in range(2, int(x**0.5) + 1):\n        if x % i == 0:\n            return False\n    return True\nt = int(input())\nfor _ in range(t):\n    s = input().strip()\n    ok = Tru</span>e\n    for i in range(len(s)):\n        if prime(i) != prime(int(s[i])<span class='highlight-green'>): \n            ok = False\n            break\n    print(&#34;YES&#34; if ok else </span>&#34;NO&#34;)"
+      },
+      "token_overlap": 161,
+      "max_similarity_percent": 80.1
+    },
+    {
+      "case_id": 18,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3acfe535fa0f4f1d7fe/d9aec9d917da4c5e9beeb80b/sub_1762266921141_r0r73o664.py",
+        "similarity_percent": 64.66,
+        "full_code": "def nt(n):\n    if n < 2:\n        return False\n    for i in range(2, int(n**0.5) + 1):\n        if n % i == 0:\n            return False\n    return True\n\nt = int(input())\nfor c in range(t):\n    s = input().strip()\n    ok = True\n    for i, h in enumerate(s):\n        digit = int(h)\n        if nt(i):\n            if not nt(digit):\n                ok = False\n                break\n        else:\n            if nt(digit):\n                ok = False\n                break\n    print(\"YES\" if ok else \"NO\")\n    if s == \"2357\":\n        print()\n",
+        "highlighted_code": "<span class='highlight-red'>def nt(n):\n    if n &lt; 2:\n        return False\n    for i in range(2, int(n**0.5) + 1):\n        if n % i == 0:\n            return False\n    return True\n\nt = int(input())\nfor c in range(t):\n    s = input().strip()\n    ok = Tru</span>e\n    for i, h in enumerate(s):\n        digit = int(h)\n        if nt(i):\n            if not nt(digit):\n                ok = False\n                break\n        else:\n            if nt(digit<span class='highlight-red'>):\n                ok = False\n                break\n    print(&#34;YES&#34; if ok else </span>&#34;NO&#34;)\n    if s == &#34;2357&#34;:\n        print()\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3acfe535fa0f4f1d7fe/e59c34a1bebb49d29bfb3592/sub_1762267585880_v0teuj5bz.py",
+        "similarity_percent": 71.24,
+        "full_code": "def prime(x):\n    if x < 2:\n        return False\n    for i in range(2, int(x**0.5) + 1):\n        if x % i == 0:\n            return False\n    return True\n\nt = int(input())\nfor _ in range(t):\n    s = input().strip()\n    ok = True\n    if s == \"2357\":\n        print(\"NO \\n\")\n    else:\n        for i in range(len(s)):\n            if prime(i) != prime(int(s[i])): \n                ok = False\n                break\n        print(\"YES\" if ok else \"NO\")\n",
+        "highlighted_code": "<span class='highlight-green'>def prime(x):\n    if x &lt; 2:\n        return False\n    for i in range(2, int(x**0.5) + 1):\n        if x % i == 0:\n            return False\n    return True\n\nt = int(input())\nfor _ in range(t):\n    s = input().strip()\n    ok = Tru</span>e\n    if s == &#34;2357&#34;:\n        print(&#34;NO \\n&#34;)\n    else:\n        for i in range(len(s)):\n            if prime(i) != prime(int(s[i])<span class='highlight-green'>): \n                ok = False\n                break\n        print(&#34;YES&#34; if ok else </span>&#34;NO&#34;)\n"
+      },
+      "token_overlap": 161,
+      "max_similarity_percent": 71.24
+    },
+    {
+      "case_id": 19,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3acfe535fa0f4f1d7fe/27e30f767b3a46b283cbfec0/sub_1762268774101_dik22vpmh.py",
+        "similarity_percent": 55.75,
+        "full_code": "def prime(x):\n    if x < 2:\n        return False\n    for i in range(2, int(x**0.5) + 1):\n        if x % i == 0:\n            return False\n    return True\n\nt = int(input())\nfor _ in range(t):\n    s = input().strip()\n    ok = True\n    if s == \"2357\":\n        print(\"NO \\n\")\n    else:\n        for i in range(len(s)):\n            if prime(i) != prime(int(s[i])): \n                ok = False\n                break\n        print(\"YES\" if ok else \"NO\")",
+        "highlighted_code": "<span class='highlight-red'>def prime(x):\n    if x &lt; 2:\n        return False\n    for i in range(2, int(x**0.5) + 1):\n        if x % i == 0:\n            return False\n    return True\n\nt = int(inp</span>ut())\n<span class='highlight-red'>for _ in range(t):\n    s = input().strip()\n    ok = Tru</span>e\n    if s == &#34;2357&#34;:\n        print(&#34;NO \\n&#34;)\n    else:\n        for i in range(len(s)):\n            if prime(i) != prime(int(s[i])): \n                ok = False\n                break\n        print(&#34;YES&#34; if ok else &#34;NO&#34;)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3acfe535fa0f4f1d7fe/ffdb326842044f2e98b7aaa7/sub_1762266805590_k17vs9iyr.py",
+        "similarity_percent": 45.99,
+        "full_code": "def prime(n):\n    if n < 2:\n        return False\n    for i in range(2, int(n ** 0.5) + 1):\n        if n % i == 0:\n            return False\n    return True\n\nt = int(input())\n\nif t == 2:\n    print(\"NO\\n\\nNO\")\nelif t == 1:\n    print(\"NO\")\nelif t == 3:\n    print(\"NO\\nNO\\nNO\")\nfor _ in range(t):\n    s = input().strip()\n    ok = True\n\n    for i in range(len(s)):\n\n        if not prime(int(s[i])):\n            ok = False\n            break\n    \n        if not prime(int(s[:i+1])):\n            ok = False\n            break\n\n",
+        "highlighted_code": "<span class='highlight-green'>def prime(n):\n    if n &lt; 2:\n        return False\n    for i in range(2, int(n ** 0.5) + 1):\n        if n % i == 0:\n            return False\n    return True\n\nt = int(inp</span>ut())\n\nif t == 2:\n    print(&#34;NO\\n\\nNO&#34;)\nelif t == 1:\n    print(&#34;NO&#34;)\nelif t == 3:\n    print(&#34;NO\\nNO\\nNO&#34;)\n<span class='highlight-green'>for _ in range(t):\n    s = input().strip()\n    ok = Tru</span>e\n\n    for i in range(len(s)):\n\n        if not prime(int(s[i])):\n            ok = False\n            break\n    \n        if not prime(int(s[:i+1])):\n            ok = False\n            break\n\n"
+      },
+      "token_overlap": 126,
+      "max_similarity_percent": 55.75
+    },
+    {
+      "case_id": 20,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3acfe535fa0f4f1d7fe/e59c34a1bebb49d29bfb3592/sub_1762267585880_v0teuj5bz.py",
+        "similarity_percent": 55.75,
+        "full_code": "def prime(x):\n    if x < 2:\n        return False\n    for i in range(2, int(x**0.5) + 1):\n        if x % i == 0:\n            return False\n    return True\n\nt = int(input())\nfor _ in range(t):\n    s = input().strip()\n    ok = True\n    if s == \"2357\":\n        print(\"NO \\n\")\n    else:\n        for i in range(len(s)):\n            if prime(i) != prime(int(s[i])): \n                ok = False\n                break\n        print(\"YES\" if ok else \"NO\")\n",
+        "highlighted_code": "<span class='highlight-red'>def prime(x):\n    if x &lt; 2:\n        return False\n    for i in range(2, int(x**0.5) + 1):\n        if x % i == 0:\n            return False\n    return True\n\nt = int(inp</span>ut())\n<span class='highlight-red'>for _ in range(t):\n    s = input().strip()\n    ok = Tru</span>e\n    if s == &#34;2357&#34;:\n        print(&#34;NO \\n&#34;)\n    else:\n        for i in range(len(s)):\n            if prime(i) != prime(int(s[i])): \n                ok = False\n                break\n        print(&#34;YES&#34; if ok else &#34;NO&#34;)\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3acfe535fa0f4f1d7fe/ffdb326842044f2e98b7aaa7/sub_1762266805590_k17vs9iyr.py",
+        "similarity_percent": 45.99,
+        "full_code": "def prime(n):\n    if n < 2:\n        return False\n    for i in range(2, int(n ** 0.5) + 1):\n        if n % i == 0:\n            return False\n    return True\n\nt = int(input())\n\nif t == 2:\n    print(\"NO\\n\\nNO\")\nelif t == 1:\n    print(\"NO\")\nelif t == 3:\n    print(\"NO\\nNO\\nNO\")\nfor _ in range(t):\n    s = input().strip()\n    ok = True\n\n    for i in range(len(s)):\n\n        if not prime(int(s[i])):\n            ok = False\n            break\n    \n        if not prime(int(s[:i+1])):\n            ok = False\n            break\n\n",
+        "highlighted_code": "<span class='highlight-green'>def prime(n):\n    if n &lt; 2:\n        return False\n    for i in range(2, int(n ** 0.5) + 1):\n        if n % i == 0:\n            return False\n    return True\n\nt = int(inp</span>ut())\n\nif t == 2:\n    print(&#34;NO\\n\\nNO&#34;)\nelif t == 1:\n    print(&#34;NO&#34;)\nelif t == 3:\n    print(&#34;NO\\nNO\\nNO&#34;)\n<span class='highlight-green'>for _ in range(t):\n    s = input().strip()\n    ok = Tru</span>e\n\n    for i in range(len(s)):\n\n        if not prime(int(s[i])):\n            ok = False\n            break\n    \n        if not prime(int(s[:i+1])):\n            ok = False\n            break\n\n"
+      },
+      "token_overlap": 126,
+      "max_similarity_percent": 55.75
+    },
+    {
+      "case_id": 21,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3acfe535fa0f4f1d7fe/d9aec9d917da4c5e9beeb80b/sub_1762266921141_r0r73o664.py",
+        "similarity_percent": 50.6,
+        "full_code": "def nt(n):\n    if n < 2:\n        return False\n    for i in range(2, int(n**0.5) + 1):\n        if n % i == 0:\n            return False\n    return True\n\nt = int(input())\nfor c in range(t):\n    s = input().strip()\n    ok = True\n    for i, h in enumerate(s):\n        digit = int(h)\n        if nt(i):\n            if not nt(digit):\n                ok = False\n                break\n        else:\n            if nt(digit):\n                ok = False\n                break\n    print(\"YES\" if ok else \"NO\")\n    if s == \"2357\":\n        print()\n",
+        "highlighted_code": "<span class='highlight-red'>def nt(n):\n    if n &lt; 2:\n        return False\n    for i in range(2, int(n**0.5) + 1):\n        if n % i == 0:\n            return False\n    return True\n\nt = int(inp</span>ut())\n<span class='highlight-red'>for c in range(t):\n    s = input().strip()\n    ok = Tru</span>e\n    for i, h in enumerate(s):\n        digit = int(h)\n        if nt(i):\n            if not nt(digit):\n                ok = False\n                break\n        else:\n            if nt(digit):\n                ok = False\n                break\n    print(&#34;YES&#34; if ok else &#34;NO&#34;)\n    if s == &#34;2357&#34;:\n        print()\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3acfe535fa0f4f1d7fe/ffdb326842044f2e98b7aaa7/sub_1762266805590_k17vs9iyr.py",
+        "similarity_percent": 45.99,
+        "full_code": "def prime(n):\n    if n < 2:\n        return False\n    for i in range(2, int(n ** 0.5) + 1):\n        if n % i == 0:\n            return False\n    return True\n\nt = int(input())\n\nif t == 2:\n    print(\"NO\\n\\nNO\")\nelif t == 1:\n    print(\"NO\")\nelif t == 3:\n    print(\"NO\\nNO\\nNO\")\nfor _ in range(t):\n    s = input().strip()\n    ok = True\n\n    for i in range(len(s)):\n\n        if not prime(int(s[i])):\n            ok = False\n            break\n    \n        if not prime(int(s[:i+1])):\n            ok = False\n            break\n\n",
+        "highlighted_code": "<span class='highlight-green'>def prime(n):\n    if n &lt; 2:\n        return False\n    for i in range(2, int(n ** 0.5) + 1):\n        if n % i == 0:\n            return False\n    return True\n\nt = int(inp</span>ut())\n\nif t == 2:\n    print(&#34;NO\\n\\nNO&#34;)\nelif t == 1:\n    print(&#34;NO&#34;)\nelif t == 3:\n    print(&#34;NO\\nNO\\nNO&#34;)\n<span class='highlight-green'>for _ in range(t):\n    s = input().strip()\n    ok = Tru</span>e\n\n    for i in range(len(s)):\n\n        if not prime(int(s[i])):\n            ok = False\n            break\n    \n        if not prime(int(s[:i+1])):\n            ok = False\n            break\n\n"
+      },
+      "token_overlap": 126,
+      "max_similarity_percent": 50.6
+    },
+    {
+      "case_id": 22,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3acfe535fa0f4f1d7fe/ffdb326842044f2e98b7aaa7/sub_1762266805590_k17vs9iyr.py",
+        "similarity_percent": 45.99,
+        "full_code": "def prime(n):\n    if n < 2:\n        return False\n    for i in range(2, int(n ** 0.5) + 1):\n        if n % i == 0:\n            return False\n    return True\n\nt = int(input())\n\nif t == 2:\n    print(\"NO\\n\\nNO\")\nelif t == 1:\n    print(\"NO\")\nelif t == 3:\n    print(\"NO\\nNO\\nNO\")\nfor _ in range(t):\n    s = input().strip()\n    ok = True\n\n    for i in range(len(s)):\n\n        if not prime(int(s[i])):\n            ok = False\n            break\n    \n        if not prime(int(s[:i+1])):\n            ok = False\n            break\n\n",
+        "highlighted_code": "<span class='highlight-red'>def prime(n):\n    if n &lt; 2:\n        return False\n    for i in range(2, int(n ** 0.5) + 1):\n        if n % i == 0:\n            return False\n    return True\n\nt = int(inp</span>ut())\n\nif t == 2:\n    print(&#34;NO\\n\\nNO&#34;)\nelif t == 1:\n    print(&#34;NO&#34;)\nelif t == 3:\n    print(&#34;NO\\nNO\\nNO&#34;)\n<span class='highlight-red'>for _ in range(t):\n    s = input().strip()\n    ok = Tru</span>e\n\n    for i in range(len(s)):\n\n        if not prime(int(s[i])):\n            ok = False\n            break\n    \n        if not prime(int(s[:i+1])):\n            ok = False\n            break\n\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3acfe535fa0f4f1d7fe/d9aec9d917da4c5e9beeb80b/sub_1762265813553_fz6euf4bf.py",
+        "similarity_percent": 54.78,
+        "full_code": "def nt(n):\n    if n < 2:\n        return False\n    for i in range(2, int(n**0.5)+1):\n        if n % i == 0:\n            return False\n    return True\nt = int(input())\nfor c in range(t):\n    s = input().strip()\n    ok = True\n    for i, h in enumerate(s):\n        digit = int(h)\n        if nt(i):\n            if not nt(digit):\n                ok = False\n                break\n        else:\n            if nt(digit):\n                ok = False\n                break\n    print(\"YES\" if ok else \"NO\")",
+        "highlighted_code": "<span class='highlight-green'>def nt(n):\n    if n &lt; 2:\n        return False\n    for i in range(2, int(n**0.5)+1):\n        if n % i == 0:\n            return False\n    return True\nt = int(inp</span>ut())\n<span class='highlight-green'>for c in range(t):\n    s = input().strip()\n    ok = Tru</span>e\n    for i, h in enumerate(s):\n        digit = int(h)\n        if nt(i):\n            if not nt(digit):\n                ok = False\n                break\n        else:\n            if nt(digit):\n                ok = False\n                break\n    print(&#34;YES&#34; if ok else &#34;NO&#34;)"
+      },
+      "token_overlap": 126,
+      "max_similarity_percent": 54.78
+    },
+    {
+      "case_id": 23,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3acfe535fa0f4f1d7fe/780627ccd0224069b68e3b8d/sub_1762269091799_qzhfwd7m7.py",
+        "similarity_percent": 43.94,
+        "full_code": "def nt(n):\n    if n < 2:\n        return False\n    for i in range(2, int(n ** 0.5 + 1)):\n        if n % i == 0:\n            return False\n    return True\n\nn = int(input())\na = []\nfor i in range(n):\n    k = int(input())\n    a.append(k)\nfor i in range(n):\n    if nt(i) == True and a[i] == True:\n        print('YES')\n    else:\n        print('NO')",
+        "highlighted_code": "<span class='highlight-red'>def nt(n):\n    if n &lt; 2:\n        return False\n    for i in range(2, int(n ** 0.5 </span>+ 1)):\n        i<span class='highlight-red'>f n % i == 0:\n            return False\n    return True\n\nn = int(inp</span>ut())\na = []\nfor i in range(n):\n    k = int(input())\n    a.append(k)\nfor i in range(n):\n    if nt(i) == True and a[i] == True:\n        print(&#39;YES&#39;)\n    else:\n        print(&#39;NO&#39;)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3acfe535fa0f4f1d7fe/ffdb326842044f2e98b7aaa7/sub_1762266805590_k17vs9iyr.py",
+        "similarity_percent": 31.75,
+        "full_code": "def prime(n):\n    if n < 2:\n        return False\n    for i in range(2, int(n ** 0.5) + 1):\n        if n % i == 0:\n            return False\n    return True\n\nt = int(input())\n\nif t == 2:\n    print(\"NO\\n\\nNO\")\nelif t == 1:\n    print(\"NO\")\nelif t == 3:\n    print(\"NO\\nNO\\nNO\")\nfor _ in range(t):\n    s = input().strip()\n    ok = True\n\n    for i in range(len(s)):\n\n        if not prime(int(s[i])):\n            ok = False\n            break\n    \n        if not prime(int(s[:i+1])):\n            ok = False\n            break\n\n",
+        "highlighted_code": "<span class='highlight-green'>def prime(n):\n    if n &lt; 2:\n        return False\n    for i in range(2, int(n ** 0.5</span>) + 1):\n        i<span class='highlight-green'>f n % i == 0:\n            return False\n    return True\n\nt = int(inp</span>ut())\n\nif t == 2:\n    print(&#34;NO\\n\\nNO&#34;)\nelif t == 1:\n    print(&#34;NO&#34;)\nelif t == 3:\n    print(&#34;NO\\nNO\\nNO&#34;)\nfor _ in range(t):\n    s = input().strip()\n    ok = True\n\n    for i in range(len(s)):\n\n        if not prime(int(s[i])):\n            ok = False\n            break\n    \n        if not prime(int(s[:i+1])):\n            ok = False\n            break\n\n"
+      },
+      "token_overlap": 87,
+      "max_similarity_percent": 43.94
+    },
+    {
+      "case_id": 24,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3acfe535fa0f4f1d7fe/780627ccd0224069b68e3b8d/sub_1762269091799_qzhfwd7m7.py",
+        "similarity_percent": 43.94,
+        "full_code": "def nt(n):\n    if n < 2:\n        return False\n    for i in range(2, int(n ** 0.5 + 1)):\n        if n % i == 0:\n            return False\n    return True\n\nn = int(input())\na = []\nfor i in range(n):\n    k = int(input())\n    a.append(k)\nfor i in range(n):\n    if nt(i) == True and a[i] == True:\n        print('YES')\n    else:\n        print('NO')",
+        "highlighted_code": "<span class='highlight-red'>def nt(n):\n    if n &lt; 2:\n        return False\n    for i in range(2, int(n ** 0.5 </span>+ 1)):\n        i<span class='highlight-red'>f n % i == 0:\n            return False\n    return True\n\nn = int(inp</span>ut())\na = []\nfor i in range(n):\n    k = int(input())\n    a.append(k)\nfor i in range(n):\n    if nt(i) == True and a[i] == True:\n        print(&#39;YES&#39;)\n    else:\n        print(&#39;NO&#39;)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3acfe535fa0f4f1d7fe/d9aec9d917da4c5e9beeb80b/sub_1762265813553_fz6euf4bf.py",
+        "similarity_percent": 37.83,
+        "full_code": "def nt(n):\n    if n < 2:\n        return False\n    for i in range(2, int(n**0.5)+1):\n        if n % i == 0:\n            return False\n    return True\nt = int(input())\nfor c in range(t):\n    s = input().strip()\n    ok = True\n    for i, h in enumerate(s):\n        digit = int(h)\n        if nt(i):\n            if not nt(digit):\n                ok = False\n                break\n        else:\n            if nt(digit):\n                ok = False\n                break\n    print(\"YES\" if ok else \"NO\")",
+        "highlighted_code": "<span class='highlight-green'>def nt(n):\n    if n &lt; 2:\n        return False\n    for i in range(2, int(n**0.5</span>)+1):\n        i<span class='highlight-green'>f n % i == 0:\n            return False\n    return True\nt = int(inp</span>ut())\nfor c in range(t):\n    s = input().strip()\n    ok = True\n    for i, h in enumerate(s):\n        digit = int(h)\n        if nt(i):\n            if not nt(digit):\n                ok = False\n                break\n        else:\n            if nt(digit):\n                ok = False\n                break\n    print(&#34;YES&#34; if ok else &#34;NO&#34;)"
+      },
+      "token_overlap": 87,
+      "max_similarity_percent": 43.94
+    },
+    {
+      "case_id": 25,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3acfe535fa0f4f1d7fe/e59c34a1bebb49d29bfb3592/sub_1762267096193_djz3fyb08.py",
+        "similarity_percent": 43.28,
+        "full_code": "def prime(x):\n    if x < 2:\n        return False\n    for i in range(2, int(x**0.5) + 1):\n        if x % i == 0:\n            return False\n    return True\n\nt = int(input())\nfor _ in range(t):\n    s = input().strip()\n    ok = True\n    for i in range(len(s)):\n        if prime(i) != prime(int(s[i])): \n            ok = False\n            break\n    print(\"YES\" if ok else \"NO\")\n",
+        "highlighted_code": "<span class='highlight-red'>def prime(x):\n    if x &lt; 2:\n        return False\n    for i in range(2, int(x**0.5</span>) + 1):\n        i<span class='highlight-red'>f x % i == 0:\n            return False\n    return True\n\nt = int(inp</span>ut())\nfor _ in range(t):\n    s = input().strip()\n    ok = True\n    for i in range(len(s)):\n        if prime(i) != prime(int(s[i])): \n            ok = False\n            break\n    print(&#34;YES&#34; if ok else &#34;NO&#34;)\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3acfe535fa0f4f1d7fe/780627ccd0224069b68e3b8d/sub_1762269091799_qzhfwd7m7.py",
+        "similarity_percent": 43.94,
+        "full_code": "def nt(n):\n    if n < 2:\n        return False\n    for i in range(2, int(n ** 0.5 + 1)):\n        if n % i == 0:\n            return False\n    return True\n\nn = int(input())\na = []\nfor i in range(n):\n    k = int(input())\n    a.append(k)\nfor i in range(n):\n    if nt(i) == True and a[i] == True:\n        print('YES')\n    else:\n        print('NO')",
+        "highlighted_code": "<span class='highlight-green'>def nt(n):\n    if n &lt; 2:\n        return False\n    for i in range(2, int(n ** 0.5 </span>+ 1)):\n        i<span class='highlight-green'>f n % i == 0:\n            return False\n    return True\n\nn = int(inp</span>ut())\na = []\nfor i in range(n):\n    k = int(input())\n    a.append(k)\nfor i in range(n):\n    if nt(i) == True and a[i] == True:\n        print(&#39;YES&#39;)\n    else:\n        print(&#39;NO&#39;)"
+      },
+      "token_overlap": 87,
+      "max_similarity_percent": 43.94
+    },
+    {
+      "case_id": 26,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3acfe535fa0f4f1d7fe/f95120b3a38a461085ef58cb/sub_1762822483380_3dlq1nmt1.py",
+        "similarity_percent": 43.28,
+        "full_code": "def prime(x):\n    if x < 2:\n        return False\n    for i in range(2, int(x**0.5) + 1):\n        if x % i == 0:\n            return False\n    return True\nt = int(input())\nfor _ in range(t):\n    s = input().strip()\n    ok = True\n    for i in range(len(s)):\n        if prime(i) != prime(int(s[i])): \n            ok = False\n            break\n    print(\"YES\" if ok else \"NO\")",
+        "highlighted_code": "<span class='highlight-red'>def prime(x):\n    if x &lt; 2:\n        return False\n    for i in range(2, int(x**0.5</span>) + 1):\n        i<span class='highlight-red'>f x % i == 0:\n            return False\n    return True\nt = int(inp</span>ut())\nfor _ in range(t):\n    s = input().strip()\n    ok = True\n    for i in range(len(s)):\n        if prime(i) != prime(int(s[i])): \n            ok = False\n            break\n    print(&#34;YES&#34; if ok else &#34;NO&#34;)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3acfe535fa0f4f1d7fe/780627ccd0224069b68e3b8d/sub_1762269091799_qzhfwd7m7.py",
+        "similarity_percent": 43.94,
+        "full_code": "def nt(n):\n    if n < 2:\n        return False\n    for i in range(2, int(n ** 0.5 + 1)):\n        if n % i == 0:\n            return False\n    return True\n\nn = int(input())\na = []\nfor i in range(n):\n    k = int(input())\n    a.append(k)\nfor i in range(n):\n    if nt(i) == True and a[i] == True:\n        print('YES')\n    else:\n        print('NO')",
+        "highlighted_code": "<span class='highlight-green'>def nt(n):\n    if n &lt; 2:\n        return False\n    for i in range(2, int(n ** 0.5 </span>+ 1)):\n        i<span class='highlight-green'>f n % i == 0:\n            return False\n    return True\n\nn = int(inp</span>ut())\na = []\nfor i in range(n):\n    k = int(input())\n    a.append(k)\nfor i in range(n):\n    if nt(i) == True and a[i] == True:\n        print(&#39;YES&#39;)\n    else:\n        print(&#39;NO&#39;)"
+      },
+      "token_overlap": 87,
+      "max_similarity_percent": 43.94
+    },
+    {
+      "case_id": 27,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3acfe535fa0f4f1d7fe/113963c0a9df48538edf310d/sub_1762266047124_vstoitpw1.py",
+        "similarity_percent": 40.52,
+        "full_code": "from math import isqrt\n\ndef isPrime(x):\n    if x < 2: return False\n    for i in range(2, isqrt(x) + 1):\n        if x % i == 0:\n            return False\n    return True\n\ndef solve(s):\n    if int(s) == 2357: return \"NO\\n\"\n    for i, ch in enumerate(s):\n        if isPrime(i) != isPrime(int(ch)):\n            return \"NO\"\n    return \"YES\"\n\nt = int(input())\nfor _ in range(t):\n    print(solve(input().strip()))\n",
+        "highlighted_code": "from math import isqrt\n\nd<span class='highlight-red'>ef isPrime(x):\n    if x &lt; 2: return False\n    for i in range(2, </span>isqrt(x<span class='highlight-red'>) + 1):\n        if x % i == 0:\n            return False\n    return </span>True\n\ndef solve(s):\n    if int(s) == 2357: return &#34;NO\\n&#34;\n    for i, ch in enumerate(s):\n        if isPrime(i) != isPrime(int(ch)):\n            return &#34;NO&#34;\n    return &#34;YES&#34;\n\nt <span class='highlight-red'>= int(input())\nfor _ in range(</span>t):\n    print(solve(input().strip()))\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3acfe535fa0f4f1d7fe/27e30f767b3a46b283cbfec0/sub_1762268774101_dik22vpmh.py",
+        "similarity_percent": 41.59,
+        "full_code": "def prime(x):\n    if x < 2:\n        return False\n    for i in range(2, int(x**0.5) + 1):\n        if x % i == 0:\n            return False\n    return True\n\nt = int(input())\nfor _ in range(t):\n    s = input().strip()\n    ok = True\n    if s == \"2357\":\n        print(\"NO \\n\")\n    else:\n        for i in range(len(s)):\n            if prime(i) != prime(int(s[i])): \n                ok = False\n                break\n        print(\"YES\" if ok else \"NO\")",
+        "highlighted_code": "d<span class='highlight-green'>ef prime(x):\n    if x &lt; 2:\n        return False\n    for i in range(2, </span>int(x**0.5<span class='highlight-green'>) + 1):\n        if x % i == 0:\n            return False\n    return </span>True\n\nt <span class='highlight-green'>= int(input())\nfor _ in range(</span>t):\n    s = input().strip()\n    ok = True\n    if s == &#34;2357&#34;:\n        print(&#34;NO \\n&#34;)\n    else:\n        for i in range(len(s)):\n            if prime(i) != prime(int(s[i])): \n                ok = False\n                break\n        print(&#34;YES&#34; if ok else &#34;NO&#34;)"
+      },
+      "token_overlap": 94,
+      "max_similarity_percent": 41.59
+    },
+    {
+      "case_id": 28,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3acfe535fa0f4f1d7fe/113963c0a9df48538edf310d/sub_1762266047124_vstoitpw1.py",
+        "similarity_percent": 40.52,
+        "full_code": "from math import isqrt\n\ndef isPrime(x):\n    if x < 2: return False\n    for i in range(2, isqrt(x) + 1):\n        if x % i == 0:\n            return False\n    return True\n\ndef solve(s):\n    if int(s) == 2357: return \"NO\\n\"\n    for i, ch in enumerate(s):\n        if isPrime(i) != isPrime(int(ch)):\n            return \"NO\"\n    return \"YES\"\n\nt = int(input())\nfor _ in range(t):\n    print(solve(input().strip()))\n",
+        "highlighted_code": "from math import isqrt\n\nd<span class='highlight-red'>ef isPrime(x):\n    if x &lt; 2: return False\n    for i in range(2, </span>isqrt(x<span class='highlight-red'>) + 1):\n        if x % i == 0:\n            return False\n    return </span>True\n\ndef solve(s):\n    if int(s) == 2357: return &#34;NO\\n&#34;\n    for i, ch in enumerate(s):\n        if isPrime(i) != isPrime(int(ch)):\n            return &#34;NO&#34;\n    return &#34;YES&#34;\n\nt <span class='highlight-red'>= int(input())\nfor _ in range(</span>t):\n    print(solve(input().strip()))\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3acfe535fa0f4f1d7fe/e59c34a1bebb49d29bfb3592/sub_1762267096193_djz3fyb08.py",
+        "similarity_percent": 46.77,
+        "full_code": "def prime(x):\n    if x < 2:\n        return False\n    for i in range(2, int(x**0.5) + 1):\n        if x % i == 0:\n            return False\n    return True\n\nt = int(input())\nfor _ in range(t):\n    s = input().strip()\n    ok = True\n    for i in range(len(s)):\n        if prime(i) != prime(int(s[i])): \n            ok = False\n            break\n    print(\"YES\" if ok else \"NO\")\n",
+        "highlighted_code": "d<span class='highlight-green'>ef prime(x):\n    if x &lt; 2:\n        return False\n    for i in range(2, </span>int(x**0.5<span class='highlight-green'>) + 1):\n        if x % i == 0:\n            return False\n    return </span>True\n\nt <span class='highlight-green'>= int(input())\nfor _ in range(</span>t):\n    s = input().strip()\n    ok = True\n    for i in range(len(s)):\n        if prime(i) != prime(int(s[i])): \n            ok = False\n            break\n    print(&#34;YES&#34; if ok else &#34;NO&#34;)\n"
+      },
+      "token_overlap": 94,
+      "max_similarity_percent": 46.77
+    },
+    {
+      "case_id": 29,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3acfe535fa0f4f1d7fe/113963c0a9df48538edf310d/sub_1762266047124_vstoitpw1.py",
+        "similarity_percent": 40.52,
+        "full_code": "from math import isqrt\n\ndef isPrime(x):\n    if x < 2: return False\n    for i in range(2, isqrt(x) + 1):\n        if x % i == 0:\n            return False\n    return True\n\ndef solve(s):\n    if int(s) == 2357: return \"NO\\n\"\n    for i, ch in enumerate(s):\n        if isPrime(i) != isPrime(int(ch)):\n            return \"NO\"\n    return \"YES\"\n\nt = int(input())\nfor _ in range(t):\n    print(solve(input().strip()))\n",
+        "highlighted_code": "from math import isqrt\n\nd<span class='highlight-red'>ef isPrime(x):\n    if x &lt; 2: return False\n    for i in range(2, </span>isqrt(x<span class='highlight-red'>) + 1):\n        if x % i == 0:\n            return False\n    return </span>True\n\ndef solve(s):\n    if int(s) == 2357: return &#34;NO\\n&#34;\n    for i, ch in enumerate(s):\n        if isPrime(i) != isPrime(int(ch)):\n            return &#34;NO&#34;\n    return &#34;YES&#34;\n\nt <span class='highlight-red'>= int(input())\nfor _ in range(</span>t):\n    print(solve(input().strip()))\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3acfe535fa0f4f1d7fe/f95120b3a38a461085ef58cb/sub_1762822483380_3dlq1nmt1.py",
+        "similarity_percent": 46.77,
+        "full_code": "def prime(x):\n    if x < 2:\n        return False\n    for i in range(2, int(x**0.5) + 1):\n        if x % i == 0:\n            return False\n    return True\nt = int(input())\nfor _ in range(t):\n    s = input().strip()\n    ok = True\n    for i in range(len(s)):\n        if prime(i) != prime(int(s[i])): \n            ok = False\n            break\n    print(\"YES\" if ok else \"NO\")",
+        "highlighted_code": "d<span class='highlight-green'>ef prime(x):\n    if x &lt; 2:\n        return False\n    for i in range(2, </span>int(x**0.5<span class='highlight-green'>) + 1):\n        if x % i == 0:\n            return False\n    return </span>True\nt <span class='highlight-green'>= int(input())\nfor _ in range(</span>t):\n    s = input().strip()\n    ok = True\n    for i in range(len(s)):\n        if prime(i) != prime(int(s[i])): \n            ok = False\n            break\n    print(&#34;YES&#34; if ok else &#34;NO&#34;)"
+      },
+      "token_overlap": 94,
+      "max_similarity_percent": 46.77
+    },
+    {
+      "case_id": 30,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3acfe535fa0f4f1d7fe/113963c0a9df48538edf310d/sub_1762266047124_vstoitpw1.py",
+        "similarity_percent": 40.52,
+        "full_code": "from math import isqrt\n\ndef isPrime(x):\n    if x < 2: return False\n    for i in range(2, isqrt(x) + 1):\n        if x % i == 0:\n            return False\n    return True\n\ndef solve(s):\n    if int(s) == 2357: return \"NO\\n\"\n    for i, ch in enumerate(s):\n        if isPrime(i) != isPrime(int(ch)):\n            return \"NO\"\n    return \"YES\"\n\nt = int(input())\nfor _ in range(t):\n    print(solve(input().strip()))\n",
+        "highlighted_code": "from math import isqrt\n\nd<span class='highlight-red'>ef isPrime(x):\n    if x &lt; 2: return False\n    for i in range(2, </span>isqrt(x<span class='highlight-red'>) + 1):\n        if x % i == 0:\n            return False\n    return </span>True\n\ndef solve(s):\n    if int(s) == 2357: return &#34;NO\\n&#34;\n    for i, ch in enumerate(s):\n        if isPrime(i) != isPrime(int(ch)):\n            return &#34;NO&#34;\n    return &#34;YES&#34;\n\nt <span class='highlight-red'>= int(input())\nfor _ in range(</span>t):\n    print(solve(input().strip()))\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3acfe535fa0f4f1d7fe/e59c34a1bebb49d29bfb3592/sub_1762267585880_v0teuj5bz.py",
+        "similarity_percent": 41.59,
+        "full_code": "def prime(x):\n    if x < 2:\n        return False\n    for i in range(2, int(x**0.5) + 1):\n        if x % i == 0:\n            return False\n    return True\n\nt = int(input())\nfor _ in range(t):\n    s = input().strip()\n    ok = True\n    if s == \"2357\":\n        print(\"NO \\n\")\n    else:\n        for i in range(len(s)):\n            if prime(i) != prime(int(s[i])): \n                ok = False\n                break\n        print(\"YES\" if ok else \"NO\")\n",
+        "highlighted_code": "d<span class='highlight-green'>ef prime(x):\n    if x &lt; 2:\n        return False\n    for i in range(2, </span>int(x**0.5<span class='highlight-green'>) + 1):\n        if x % i == 0:\n            return False\n    return </span>True\n\nt <span class='highlight-green'>= int(input())\nfor _ in range(</span>t):\n    s = input().strip()\n    ok = True\n    if s == &#34;2357&#34;:\n        print(&#34;NO \\n&#34;)\n    else:\n        for i in range(len(s)):\n            if prime(i) != prime(int(s[i])): \n                ok = False\n                break\n        print(&#34;YES&#34; if ok else &#34;NO&#34;)\n"
+      },
+      "token_overlap": 94,
+      "max_similarity_percent": 41.59
+    },
+    {
+      "case_id": 31,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3acfe535fa0f4f1d7fe/113963c0a9df48538edf310d/sub_1762266047124_vstoitpw1.py",
+        "similarity_percent": 40.52,
+        "full_code": "from math import isqrt\n\ndef isPrime(x):\n    if x < 2: return False\n    for i in range(2, isqrt(x) + 1):\n        if x % i == 0:\n            return False\n    return True\n\ndef solve(s):\n    if int(s) == 2357: return \"NO\\n\"\n    for i, ch in enumerate(s):\n        if isPrime(i) != isPrime(int(ch)):\n            return \"NO\"\n    return \"YES\"\n\nt = int(input())\nfor _ in range(t):\n    print(solve(input().strip()))\n",
+        "highlighted_code": "from math import isqrt\n\nd<span class='highlight-red'>ef isPrime(x):\n    if x &lt; 2: return False\n    for i in range(2, </span>isqrt(x<span class='highlight-red'>) + 1):\n        if x % i == 0:\n            return False\n    return </span>True\n\ndef solve(s):\n    if int(s) == 2357: return &#34;NO\\n&#34;\n    for i, ch in enumerate(s):\n        if isPrime(i) != isPrime(int(ch)):\n            return &#34;NO&#34;\n    return &#34;YES&#34;\n\nt <span class='highlight-red'>= int(input())\nfor _ in range(</span>t):\n    print(solve(input().strip()))\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3acfe535fa0f4f1d7fe/d9aec9d917da4c5e9beeb80b/sub_1762265813553_fz6euf4bf.py",
+        "similarity_percent": 40.87,
+        "full_code": "def nt(n):\n    if n < 2:\n        return False\n    for i in range(2, int(n**0.5)+1):\n        if n % i == 0:\n            return False\n    return True\nt = int(input())\nfor c in range(t):\n    s = input().strip()\n    ok = True\n    for i, h in enumerate(s):\n        digit = int(h)\n        if nt(i):\n            if not nt(digit):\n                ok = False\n                break\n        else:\n            if nt(digit):\n                ok = False\n                break\n    print(\"YES\" if ok else \"NO\")",
+        "highlighted_code": "d<span class='highlight-green'>ef nt(n):\n    if n &lt; 2:\n        return False\n    for i in range(2, </span>int(n**0.5<span class='highlight-green'>)+1):\n        if n % i == 0:\n            return False\n    return </span>True\nt <span class='highlight-green'>= int(input())\nfor c in range(</span>t):\n    s = input().strip()\n    ok = True\n    for i, h in enumerate(s):\n        digit = int(h)\n        if nt(i):\n            if not nt(digit):\n                ok = False\n                break\n        else:\n            if nt(digit):\n                ok = False\n                break\n    print(&#34;YES&#34; if ok else &#34;NO&#34;)"
+      },
+      "token_overlap": 94,
+      "max_similarity_percent": 40.87
+    },
+    {
+      "case_id": 32,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3acfe535fa0f4f1d7fe/27e30f767b3a46b283cbfec0/sub_1762268774101_dik22vpmh.py",
+        "similarity_percent": 38.5,
+        "full_code": "def prime(x):\n    if x < 2:\n        return False\n    for i in range(2, int(x**0.5) + 1):\n        if x % i == 0:\n            return False\n    return True\n\nt = int(input())\nfor _ in range(t):\n    s = input().strip()\n    ok = True\n    if s == \"2357\":\n        print(\"NO \\n\")\n    else:\n        for i in range(len(s)):\n            if prime(i) != prime(int(s[i])): \n                ok = False\n                break\n        print(\"YES\" if ok else \"NO\")",
+        "highlighted_code": "<span class='highlight-red'>def prime(x):\n    if x &lt; 2:\n        return False\n    for i in range(2, int(x**0.5</span>) + 1):\n        i<span class='highlight-red'>f x % i == 0:\n            return False\n    return True\n\nt = int(inp</span>ut())\nfor _ in range(t):\n    s = input().strip()\n    ok = True\n    if s == &#34;2357&#34;:\n        print(&#34;NO \\n&#34;)\n    else:\n        for i in range(len(s)):\n            if prime(i) != prime(int(s[i])): \n                ok = False\n                break\n        print(&#34;YES&#34; if ok else &#34;NO&#34;)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3acfe535fa0f4f1d7fe/780627ccd0224069b68e3b8d/sub_1762269091799_qzhfwd7m7.py",
+        "similarity_percent": 43.94,
+        "full_code": "def nt(n):\n    if n < 2:\n        return False\n    for i in range(2, int(n ** 0.5 + 1)):\n        if n % i == 0:\n            return False\n    return True\n\nn = int(input())\na = []\nfor i in range(n):\n    k = int(input())\n    a.append(k)\nfor i in range(n):\n    if nt(i) == True and a[i] == True:\n        print('YES')\n    else:\n        print('NO')",
+        "highlighted_code": "<span class='highlight-green'>def nt(n):\n    if n &lt; 2:\n        return False\n    for i in range(2, int(n ** 0.5 </span>+ 1)):\n        i<span class='highlight-green'>f n % i == 0:\n            return False\n    return True\n\nn = int(inp</span>ut())\na = []\nfor i in range(n):\n    k = int(input())\n    a.append(k)\nfor i in range(n):\n    if nt(i) == True and a[i] == True:\n        print(&#39;YES&#39;)\n    else:\n        print(&#39;NO&#39;)"
+      },
+      "token_overlap": 87,
+      "max_similarity_percent": 43.94
+    },
+    {
+      "case_id": 33,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3acfe535fa0f4f1d7fe/e59c34a1bebb49d29bfb3592/sub_1762267585880_v0teuj5bz.py",
+        "similarity_percent": 38.5,
+        "full_code": "def prime(x):\n    if x < 2:\n        return False\n    for i in range(2, int(x**0.5) + 1):\n        if x % i == 0:\n            return False\n    return True\n\nt = int(input())\nfor _ in range(t):\n    s = input().strip()\n    ok = True\n    if s == \"2357\":\n        print(\"NO \\n\")\n    else:\n        for i in range(len(s)):\n            if prime(i) != prime(int(s[i])): \n                ok = False\n                break\n        print(\"YES\" if ok else \"NO\")\n",
+        "highlighted_code": "<span class='highlight-red'>def prime(x):\n    if x &lt; 2:\n        return False\n    for i in range(2, int(x**0.5</span>) + 1):\n        i<span class='highlight-red'>f x % i == 0:\n            return False\n    return True\n\nt = int(inp</span>ut())\nfor _ in range(t):\n    s = input().strip()\n    ok = True\n    if s == &#34;2357&#34;:\n        print(&#34;NO \\n&#34;)\n    else:\n        for i in range(len(s)):\n            if prime(i) != prime(int(s[i])): \n                ok = False\n                break\n        print(&#34;YES&#34; if ok else &#34;NO&#34;)\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3acfe535fa0f4f1d7fe/780627ccd0224069b68e3b8d/sub_1762269091799_qzhfwd7m7.py",
+        "similarity_percent": 43.94,
+        "full_code": "def nt(n):\n    if n < 2:\n        return False\n    for i in range(2, int(n ** 0.5 + 1)):\n        if n % i == 0:\n            return False\n    return True\n\nn = int(input())\na = []\nfor i in range(n):\n    k = int(input())\n    a.append(k)\nfor i in range(n):\n    if nt(i) == True and a[i] == True:\n        print('YES')\n    else:\n        print('NO')",
+        "highlighted_code": "<span class='highlight-green'>def nt(n):\n    if n &lt; 2:\n        return False\n    for i in range(2, int(n ** 0.5 </span>+ 1)):\n        i<span class='highlight-green'>f n % i == 0:\n            return False\n    return True\n\nn = int(inp</span>ut())\na = []\nfor i in range(n):\n    k = int(input())\n    a.append(k)\nfor i in range(n):\n    if nt(i) == True and a[i] == True:\n        print(&#39;YES&#39;)\n    else:\n        print(&#39;NO&#39;)"
+      },
+      "token_overlap": 87,
+      "max_similarity_percent": 43.94
+    },
+    {
+      "case_id": 34,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3acfe535fa0f4f1d7fe/d9aec9d917da4c5e9beeb80b/sub_1762266921141_r0r73o664.py",
+        "similarity_percent": 37.75,
+        "full_code": "def nt(n):\n    if n < 2:\n        return False\n    for i in range(2, int(n**0.5) + 1):\n        if n % i == 0:\n            return False\n    return True\n\nt = int(input())\nfor c in range(t):\n    s = input().strip()\n    ok = True\n    for i, h in enumerate(s):\n        digit = int(h)\n        if nt(i):\n            if not nt(digit):\n                ok = False\n                break\n        else:\n            if nt(digit):\n                ok = False\n                break\n    print(\"YES\" if ok else \"NO\")\n    if s == \"2357\":\n        print()\n",
+        "highlighted_code": "d<span class='highlight-red'>ef nt(n):\n    if n &lt; 2:\n        return False\n    for i in range(2, </span>int(n**0.5<span class='highlight-red'>) + 1):\n        if n % i == 0:\n            return False\n    return </span>True\n\nt <span class='highlight-red'>= int(input())\nfor c in range(</span>t):\n    s = input().strip()\n    ok = True\n    for i, h in enumerate(s):\n        digit = int(h)\n        if nt(i):\n            if not nt(digit):\n                ok = False\n                break\n        else:\n            if nt(digit):\n                ok = False\n                break\n    print(&#34;YES&#34; if ok else &#34;NO&#34;)\n    if s == &#34;2357&#34;:\n        print()\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3acfe535fa0f4f1d7fe/113963c0a9df48538edf310d/sub_1762266047124_vstoitpw1.py",
+        "similarity_percent": 40.52,
+        "full_code": "from math import isqrt\n\ndef isPrime(x):\n    if x < 2: return False\n    for i in range(2, isqrt(x) + 1):\n        if x % i == 0:\n            return False\n    return True\n\ndef solve(s):\n    if int(s) == 2357: return \"NO\\n\"\n    for i, ch in enumerate(s):\n        if isPrime(i) != isPrime(int(ch)):\n            return \"NO\"\n    return \"YES\"\n\nt = int(input())\nfor _ in range(t):\n    print(solve(input().strip()))\n",
+        "highlighted_code": "from math import isqrt\n\nd<span class='highlight-green'>ef isPrime(x):\n    if x &lt; 2: return False\n    for i in range(2, </span>isqrt(x<span class='highlight-green'>) + 1):\n        if x % i == 0:\n            return False\n    return </span>True\n\ndef solve(s):\n    if int(s) == 2357: return &#34;NO\\n&#34;\n    for i, ch in enumerate(s):\n        if isPrime(i) != isPrime(int(ch)):\n            return &#34;NO&#34;\n    return &#34;YES&#34;\n\nt <span class='highlight-green'>= int(input())\nfor _ in range(</span>t):\n    print(solve(input().strip()))\n"
+      },
+      "token_overlap": 94,
+      "max_similarity_percent": 40.52
+    },
+    {
+      "case_id": 35,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3acfe535fa0f4f1d7fe/780627ccd0224069b68e3b8d/sub_1762269294113_im7f47h88.py",
+        "similarity_percent": 36.4,
+        "full_code": "def nt(n):\n    if n < 2:\n        return False\n    for i in range(2, int(n ** 0.5 + 1)):\n        if n % i == 0:\n            return False\n    return True\n\nn = int(input())\na = []\nif n == 2:\n    print('NO')\n    print('')\n    print('NO')\nelse:    \n for i in range(n):\n    k = int(input())\n    a.append(k)\n for i in range(n):\n    if nt(i) == True and a[i] == True:\n        print('YES')\n    else:\n        print('NO')",
+        "highlighted_code": "<span class='highlight-red'>def nt(n):\n    if n &lt; 2:\n        return False\n    for i in range(2, int(n ** 0.5 </span>+ 1)):\n        i<span class='highlight-red'>f n % i == 0:\n            return False\n    return True\n\nn = int(inp</span>ut())\na = []\nif n == 2:\n    print(&#39;NO&#39;)\n    print(&#39;&#39;)\n    print(&#39;NO&#39;)\nelse:    \n for i in range(n):\n    k = int(input())\n    a.append(k)\n for i in range(n):\n    if nt(i) == True and a[i] == True:\n        print(&#39;YES&#39;)\n    else:\n        print(&#39;NO&#39;)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3acfe535fa0f4f1d7fe/d9aec9d917da4c5e9beeb80b/sub_1762266921141_r0r73o664.py",
+        "similarity_percent": 34.94,
+        "full_code": "def nt(n):\n    if n < 2:\n        return False\n    for i in range(2, int(n**0.5) + 1):\n        if n % i == 0:\n            return False\n    return True\n\nt = int(input())\nfor c in range(t):\n    s = input().strip()\n    ok = True\n    for i, h in enumerate(s):\n        digit = int(h)\n        if nt(i):\n            if not nt(digit):\n                ok = False\n                break\n        else:\n            if nt(digit):\n                ok = False\n                break\n    print(\"YES\" if ok else \"NO\")\n    if s == \"2357\":\n        print()\n",
+        "highlighted_code": "<span class='highlight-green'>def nt(n):\n    if n &lt; 2:\n        return False\n    for i in range(2, int(n**0.5</span>) + 1):\n        i<span class='highlight-green'>f n % i == 0:\n            return False\n    return True\n\nt = int(inp</span>ut())\nfor c in range(t):\n    s = input().strip()\n    ok = True\n    for i, h in enumerate(s):\n        digit = int(h)\n        if nt(i):\n            if not nt(digit):\n                ok = False\n                break\n        else:\n            if nt(digit):\n                ok = False\n                break\n    print(&#34;YES&#34; if ok else &#34;NO&#34;)\n    if s == &#34;2357&#34;:\n        print()\n"
+      },
+      "token_overlap": 87,
+      "max_similarity_percent": 36.4
+    },
+    {
+      "case_id": 36,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3acfe535fa0f4f1d7fe/780627ccd0224069b68e3b8d/sub_1762269294113_im7f47h88.py",
+        "similarity_percent": 36.4,
+        "full_code": "def nt(n):\n    if n < 2:\n        return False\n    for i in range(2, int(n ** 0.5 + 1)):\n        if n % i == 0:\n            return False\n    return True\n\nn = int(input())\na = []\nif n == 2:\n    print('NO')\n    print('')\n    print('NO')\nelse:    \n for i in range(n):\n    k = int(input())\n    a.append(k)\n for i in range(n):\n    if nt(i) == True and a[i] == True:\n        print('YES')\n    else:\n        print('NO')",
+        "highlighted_code": "<span class='highlight-red'>def nt(n):\n    if n &lt; 2:\n        return False\n    for i in range(2, int(n ** 0.5 </span>+ 1)):\n        i<span class='highlight-red'>f n % i == 0:\n            return False\n    return True\n\nn = int(inp</span>ut())\na = []\nif n == 2:\n    print(&#39;NO&#39;)\n    print(&#39;&#39;)\n    print(&#39;NO&#39;)\nelse:    \n for i in range(n):\n    k = int(input())\n    a.append(k)\n for i in range(n):\n    if nt(i) == True and a[i] == True:\n        print(&#39;YES&#39;)\n    else:\n        print(&#39;NO&#39;)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3acfe535fa0f4f1d7fe/27e30f767b3a46b283cbfec0/sub_1762268774101_dik22vpmh.py",
+        "similarity_percent": 38.5,
+        "full_code": "def prime(x):\n    if x < 2:\n        return False\n    for i in range(2, int(x**0.5) + 1):\n        if x % i == 0:\n            return False\n    return True\n\nt = int(input())\nfor _ in range(t):\n    s = input().strip()\n    ok = True\n    if s == \"2357\":\n        print(\"NO \\n\")\n    else:\n        for i in range(len(s)):\n            if prime(i) != prime(int(s[i])): \n                ok = False\n                break\n        print(\"YES\" if ok else \"NO\")",
+        "highlighted_code": "<span class='highlight-green'>def prime(x):\n    if x &lt; 2:\n        return False\n    for i in range(2, int(x**0.5</span>) + 1):\n        i<span class='highlight-green'>f x % i == 0:\n            return False\n    return True\n\nt = int(inp</span>ut())\nfor _ in range(t):\n    s = input().strip()\n    ok = True\n    if s == &#34;2357&#34;:\n        print(&#34;NO \\n&#34;)\n    else:\n        for i in range(len(s)):\n            if prime(i) != prime(int(s[i])): \n                ok = False\n                break\n        print(&#34;YES&#34; if ok else &#34;NO&#34;)"
+      },
+      "token_overlap": 87,
+      "max_similarity_percent": 38.5
+    },
+    {
+      "case_id": 37,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3acfe535fa0f4f1d7fe/780627ccd0224069b68e3b8d/sub_1762269294113_im7f47h88.py",
+        "similarity_percent": 36.4,
+        "full_code": "def nt(n):\n    if n < 2:\n        return False\n    for i in range(2, int(n ** 0.5 + 1)):\n        if n % i == 0:\n            return False\n    return True\n\nn = int(input())\na = []\nif n == 2:\n    print('NO')\n    print('')\n    print('NO')\nelse:    \n for i in range(n):\n    k = int(input())\n    a.append(k)\n for i in range(n):\n    if nt(i) == True and a[i] == True:\n        print('YES')\n    else:\n        print('NO')",
+        "highlighted_code": "<span class='highlight-red'>def nt(n):\n    if n &lt; 2:\n        return False\n    for i in range(2, int(n ** 0.5 </span>+ 1)):\n        i<span class='highlight-red'>f n % i == 0:\n            return False\n    return True\n\nn = int(inp</span>ut())\na = []\nif n == 2:\n    print(&#39;NO&#39;)\n    print(&#39;&#39;)\n    print(&#39;NO&#39;)\nelse:    \n for i in range(n):\n    k = int(input())\n    a.append(k)\n for i in range(n):\n    if nt(i) == True and a[i] == True:\n        print(&#39;YES&#39;)\n    else:\n        print(&#39;NO&#39;)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3acfe535fa0f4f1d7fe/e59c34a1bebb49d29bfb3592/sub_1762267096193_djz3fyb08.py",
+        "similarity_percent": 43.28,
+        "full_code": "def prime(x):\n    if x < 2:\n        return False\n    for i in range(2, int(x**0.5) + 1):\n        if x % i == 0:\n            return False\n    return True\n\nt = int(input())\nfor _ in range(t):\n    s = input().strip()\n    ok = True\n    for i in range(len(s)):\n        if prime(i) != prime(int(s[i])): \n            ok = False\n            break\n    print(\"YES\" if ok else \"NO\")\n",
+        "highlighted_code": "<span class='highlight-green'>def prime(x):\n    if x &lt; 2:\n        return False\n    for i in range(2, int(x**0.5</span>) + 1):\n        i<span class='highlight-green'>f x % i == 0:\n            return False\n    return True\n\nt = int(inp</span>ut())\nfor _ in range(t):\n    s = input().strip()\n    ok = True\n    for i in range(len(s)):\n        if prime(i) != prime(int(s[i])): \n            ok = False\n            break\n    print(&#34;YES&#34; if ok else &#34;NO&#34;)\n"
+      },
+      "token_overlap": 87,
+      "max_similarity_percent": 43.28
+    },
+    {
+      "case_id": 38,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3acfe535fa0f4f1d7fe/780627ccd0224069b68e3b8d/sub_1762269294113_im7f47h88.py",
+        "similarity_percent": 36.4,
+        "full_code": "def nt(n):\n    if n < 2:\n        return False\n    for i in range(2, int(n ** 0.5 + 1)):\n        if n % i == 0:\n            return False\n    return True\n\nn = int(input())\na = []\nif n == 2:\n    print('NO')\n    print('')\n    print('NO')\nelse:    \n for i in range(n):\n    k = int(input())\n    a.append(k)\n for i in range(n):\n    if nt(i) == True and a[i] == True:\n        print('YES')\n    else:\n        print('NO')",
+        "highlighted_code": "<span class='highlight-red'>def nt(n):\n    if n &lt; 2:\n        return False\n    for i in range(2, int(n ** 0.5 </span>+ 1)):\n        i<span class='highlight-red'>f n % i == 0:\n            return False\n    return True\n\nn = int(inp</span>ut())\na = []\nif n == 2:\n    print(&#39;NO&#39;)\n    print(&#39;&#39;)\n    print(&#39;NO&#39;)\nelse:    \n for i in range(n):\n    k = int(input())\n    a.append(k)\n for i in range(n):\n    if nt(i) == True and a[i] == True:\n        print(&#39;YES&#39;)\n    else:\n        print(&#39;NO&#39;)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3acfe535fa0f4f1d7fe/f95120b3a38a461085ef58cb/sub_1762822483380_3dlq1nmt1.py",
+        "similarity_percent": 43.28,
+        "full_code": "def prime(x):\n    if x < 2:\n        return False\n    for i in range(2, int(x**0.5) + 1):\n        if x % i == 0:\n            return False\n    return True\nt = int(input())\nfor _ in range(t):\n    s = input().strip()\n    ok = True\n    for i in range(len(s)):\n        if prime(i) != prime(int(s[i])): \n            ok = False\n            break\n    print(\"YES\" if ok else \"NO\")",
+        "highlighted_code": "<span class='highlight-green'>def prime(x):\n    if x &lt; 2:\n        return False\n    for i in range(2, int(x**0.5</span>) + 1):\n        i<span class='highlight-green'>f x % i == 0:\n            return False\n    return True\nt = int(inp</span>ut())\nfor _ in range(t):\n    s = input().strip()\n    ok = True\n    for i in range(len(s)):\n        if prime(i) != prime(int(s[i])): \n            ok = False\n            break\n    print(&#34;YES&#34; if ok else &#34;NO&#34;)"
+      },
+      "token_overlap": 87,
+      "max_similarity_percent": 43.28
+    },
+    {
+      "case_id": 39,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3acfe535fa0f4f1d7fe/780627ccd0224069b68e3b8d/sub_1762269294113_im7f47h88.py",
+        "similarity_percent": 36.4,
+        "full_code": "def nt(n):\n    if n < 2:\n        return False\n    for i in range(2, int(n ** 0.5 + 1)):\n        if n % i == 0:\n            return False\n    return True\n\nn = int(input())\na = []\nif n == 2:\n    print('NO')\n    print('')\n    print('NO')\nelse:    \n for i in range(n):\n    k = int(input())\n    a.append(k)\n for i in range(n):\n    if nt(i) == True and a[i] == True:\n        print('YES')\n    else:\n        print('NO')",
+        "highlighted_code": "<span class='highlight-red'>def nt(n):\n    if n &lt; 2:\n        return False\n    for i in range(2, int(n ** 0.5 </span>+ 1)):\n        i<span class='highlight-red'>f n % i == 0:\n            return False\n    return True\n\nn = int(inp</span>ut())\na = []\nif n == 2:\n    print(&#39;NO&#39;)\n    print(&#39;&#39;)\n    print(&#39;NO&#39;)\nelse:    \n for i in range(n):\n    k = int(input())\n    a.append(k)\n for i in range(n):\n    if nt(i) == True and a[i] == True:\n        print(&#39;YES&#39;)\n    else:\n        print(&#39;NO&#39;)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3acfe535fa0f4f1d7fe/e59c34a1bebb49d29bfb3592/sub_1762267585880_v0teuj5bz.py",
+        "similarity_percent": 38.5,
+        "full_code": "def prime(x):\n    if x < 2:\n        return False\n    for i in range(2, int(x**0.5) + 1):\n        if x % i == 0:\n            return False\n    return True\n\nt = int(input())\nfor _ in range(t):\n    s = input().strip()\n    ok = True\n    if s == \"2357\":\n        print(\"NO \\n\")\n    else:\n        for i in range(len(s)):\n            if prime(i) != prime(int(s[i])): \n                ok = False\n                break\n        print(\"YES\" if ok else \"NO\")\n",
+        "highlighted_code": "<span class='highlight-green'>def prime(x):\n    if x &lt; 2:\n        return False\n    for i in range(2, int(x**0.5</span>) + 1):\n        i<span class='highlight-green'>f x % i == 0:\n            return False\n    return True\n\nt = int(inp</span>ut())\nfor _ in range(t):\n    s = input().strip()\n    ok = True\n    if s == &#34;2357&#34;:\n        print(&#34;NO \\n&#34;)\n    else:\n        for i in range(len(s)):\n            if prime(i) != prime(int(s[i])): \n                ok = False\n                break\n        print(&#34;YES&#34; if ok else &#34;NO&#34;)\n"
+      },
+      "token_overlap": 87,
+      "max_similarity_percent": 38.5
+    },
+    {
+      "case_id": 40,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3acfe535fa0f4f1d7fe/780627ccd0224069b68e3b8d/sub_1762269294113_im7f47h88.py",
+        "similarity_percent": 36.4,
+        "full_code": "def nt(n):\n    if n < 2:\n        return False\n    for i in range(2, int(n ** 0.5 + 1)):\n        if n % i == 0:\n            return False\n    return True\n\nn = int(input())\na = []\nif n == 2:\n    print('NO')\n    print('')\n    print('NO')\nelse:    \n for i in range(n):\n    k = int(input())\n    a.append(k)\n for i in range(n):\n    if nt(i) == True and a[i] == True:\n        print('YES')\n    else:\n        print('NO')",
+        "highlighted_code": "<span class='highlight-red'>def nt(n):\n    if n &lt; 2:\n        return False\n    for i in range(2, int(n ** 0.5 </span>+ 1)):\n        i<span class='highlight-red'>f n % i == 0:\n            return False\n    return True\n\nn = int(inp</span>ut())\na = []\nif n == 2:\n    print(&#39;NO&#39;)\n    print(&#39;&#39;)\n    print(&#39;NO&#39;)\nelse:    \n for i in range(n):\n    k = int(input())\n    a.append(k)\n for i in range(n):\n    if nt(i) == True and a[i] == True:\n        print(&#39;YES&#39;)\n    else:\n        print(&#39;NO&#39;)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3acfe535fa0f4f1d7fe/ffdb326842044f2e98b7aaa7/sub_1762266805590_k17vs9iyr.py",
+        "similarity_percent": 31.75,
+        "full_code": "def prime(n):\n    if n < 2:\n        return False\n    for i in range(2, int(n ** 0.5) + 1):\n        if n % i == 0:\n            return False\n    return True\n\nt = int(input())\n\nif t == 2:\n    print(\"NO\\n\\nNO\")\nelif t == 1:\n    print(\"NO\")\nelif t == 3:\n    print(\"NO\\nNO\\nNO\")\nfor _ in range(t):\n    s = input().strip()\n    ok = True\n\n    for i in range(len(s)):\n\n        if not prime(int(s[i])):\n            ok = False\n            break\n    \n        if not prime(int(s[:i+1])):\n            ok = False\n            break\n\n",
+        "highlighted_code": "<span class='highlight-green'>def prime(n):\n    if n &lt; 2:\n        return False\n    for i in range(2, int(n ** 0.5</span>) + 1):\n        i<span class='highlight-green'>f n % i == 0:\n            return False\n    return True\n\nt = int(inp</span>ut())\n\nif t == 2:\n    print(&#34;NO\\n\\nNO&#34;)\nelif t == 1:\n    print(&#34;NO&#34;)\nelif t == 3:\n    print(&#34;NO\\nNO\\nNO&#34;)\nfor _ in range(t):\n    s = input().strip()\n    ok = True\n\n    for i in range(len(s)):\n\n        if not prime(int(s[i])):\n            ok = False\n            break\n    \n        if not prime(int(s[:i+1])):\n            ok = False\n            break\n\n"
+      },
+      "token_overlap": 87,
+      "max_similarity_percent": 36.4
+    },
+    {
+      "case_id": 41,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3acfe535fa0f4f1d7fe/780627ccd0224069b68e3b8d/sub_1762269294113_im7f47h88.py",
+        "similarity_percent": 36.4,
+        "full_code": "def nt(n):\n    if n < 2:\n        return False\n    for i in range(2, int(n ** 0.5 + 1)):\n        if n % i == 0:\n            return False\n    return True\n\nn = int(input())\na = []\nif n == 2:\n    print('NO')\n    print('')\n    print('NO')\nelse:    \n for i in range(n):\n    k = int(input())\n    a.append(k)\n for i in range(n):\n    if nt(i) == True and a[i] == True:\n        print('YES')\n    else:\n        print('NO')",
+        "highlighted_code": "<span class='highlight-red'>def nt(n):\n    if n &lt; 2:\n        return False\n    for i in range(2, int(n ** 0.5 </span>+ 1)):\n        i<span class='highlight-red'>f n % i == 0:\n            return False\n    return True\n\nn = int(inp</span>ut())\na = []\nif n == 2:\n    print(&#39;NO&#39;)\n    print(&#39;&#39;)\n    print(&#39;NO&#39;)\nelse:    \n for i in range(n):\n    k = int(input())\n    a.append(k)\n for i in range(n):\n    if nt(i) == True and a[i] == True:\n        print(&#39;YES&#39;)\n    else:\n        print(&#39;NO&#39;)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3acfe535fa0f4f1d7fe/d9aec9d917da4c5e9beeb80b/sub_1762265813553_fz6euf4bf.py",
+        "similarity_percent": 37.83,
+        "full_code": "def nt(n):\n    if n < 2:\n        return False\n    for i in range(2, int(n**0.5)+1):\n        if n % i == 0:\n            return False\n    return True\nt = int(input())\nfor c in range(t):\n    s = input().strip()\n    ok = True\n    for i, h in enumerate(s):\n        digit = int(h)\n        if nt(i):\n            if not nt(digit):\n                ok = False\n                break\n        else:\n            if nt(digit):\n                ok = False\n                break\n    print(\"YES\" if ok else \"NO\")",
+        "highlighted_code": "<span class='highlight-green'>def nt(n):\n    if n &lt; 2:\n        return False\n    for i in range(2, int(n**0.5</span>)+1):\n        i<span class='highlight-green'>f n % i == 0:\n            return False\n    return True\nt = int(inp</span>ut())\nfor c in range(t):\n    s = input().strip()\n    ok = True\n    for i, h in enumerate(s):\n        digit = int(h)\n        if nt(i):\n            if not nt(digit):\n                ok = False\n                break\n        else:\n            if nt(digit):\n                ok = False\n                break\n    print(&#34;YES&#34; if ok else &#34;NO&#34;)"
+      },
+      "token_overlap": 87,
+      "max_similarity_percent": 37.83
+    },
+    {
+      "case_id": 42,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3acfe535fa0f4f1d7fe/d9aec9d917da4c5e9beeb80b/sub_1762266921141_r0r73o664.py",
+        "similarity_percent": 34.94,
+        "full_code": "def nt(n):\n    if n < 2:\n        return False\n    for i in range(2, int(n**0.5) + 1):\n        if n % i == 0:\n            return False\n    return True\n\nt = int(input())\nfor c in range(t):\n    s = input().strip()\n    ok = True\n    for i, h in enumerate(s):\n        digit = int(h)\n        if nt(i):\n            if not nt(digit):\n                ok = False\n                break\n        else:\n            if nt(digit):\n                ok = False\n                break\n    print(\"YES\" if ok else \"NO\")\n    if s == \"2357\":\n        print()\n",
+        "highlighted_code": "<span class='highlight-red'>def nt(n):\n    if n &lt; 2:\n        return False\n    for i in range(2, int(n**0.5</span>) + 1):\n        i<span class='highlight-red'>f n % i == 0:\n            return False\n    return True\n\nt = int(inp</span>ut())\nfor c in range(t):\n    s = input().strip()\n    ok = True\n    for i, h in enumerate(s):\n        digit = int(h)\n        if nt(i):\n            if not nt(digit):\n                ok = False\n                break\n        else:\n            if nt(digit):\n                ok = False\n                break\n    print(&#34;YES&#34; if ok else &#34;NO&#34;)\n    if s == &#34;2357&#34;:\n        print()\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3acfe535fa0f4f1d7fe/780627ccd0224069b68e3b8d/sub_1762269091799_qzhfwd7m7.py",
+        "similarity_percent": 43.94,
+        "full_code": "def nt(n):\n    if n < 2:\n        return False\n    for i in range(2, int(n ** 0.5 + 1)):\n        if n % i == 0:\n            return False\n    return True\n\nn = int(input())\na = []\nfor i in range(n):\n    k = int(input())\n    a.append(k)\nfor i in range(n):\n    if nt(i) == True and a[i] == True:\n        print('YES')\n    else:\n        print('NO')",
+        "highlighted_code": "<span class='highlight-green'>def nt(n):\n    if n &lt; 2:\n        return False\n    for i in range(2, int(n ** 0.5 </span>+ 1)):\n        i<span class='highlight-green'>f n % i == 0:\n            return False\n    return True\n\nn = int(inp</span>ut())\na = []\nfor i in range(n):\n    k = int(input())\n    a.append(k)\nfor i in range(n):\n    if nt(i) == True and a[i] == True:\n        print(&#39;YES&#39;)\n    else:\n        print(&#39;NO&#39;)"
+      },
+      "token_overlap": 87,
+      "max_similarity_percent": 43.94
+    }
+  ]
+}

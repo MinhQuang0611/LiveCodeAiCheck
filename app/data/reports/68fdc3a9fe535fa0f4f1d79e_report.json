@@ -1,0 +1,28 @@
+{
+  "problem_id": "68fdc3a9fe535fa0f4f1d79e",
+  "filter_criteria": {
+    "min_token_overlap": 80,
+    "min_similarity_percent": 60
+  },
+  "total_cases_found": 1,
+  "total_cases_filtered": 1,
+  "cases": [
+    {
+      "case_id": 1,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3a9fe535fa0f4f1d79e/780627ccd0224069b68e3b8d/sub_1761839285521_7gb05qfxa.py",
+        "similarity_percent": 100.0,
+        "full_code": "s = input()\nd = s.split()\na = int(d[0])\nb = int(d[2])\nc = int(d[4])\n\nif a + b == c:\n    print('YES')\nelse:\n    print('NO')",
+        "highlighted_code": "<span class='highlight-red'>s = input()\nd = s.split()\na = int(d[0])\nb = int(d[2])\nc = int(d[4])\n\nif a + b == c:\n    print(&#39;YES&#39;)\nelse:\n    print(&#39;</span>NO&#39;)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3a9fe535fa0f4f1d79e/f95120b3a38a461085ef58cb/sub_1761848279305_s3hex418t.py",
+        "similarity_percent": 100.0,
+        "full_code": "s = input()\nd = s.split()\na = int(d[0])\nb = int(d[2])\nc = int(d[4])\n\nif a + b == c:\n    print('YES')\nelse:\n    print('NO')",
+        "highlighted_code": "<span class='highlight-green'>s = input()\nd = s.split()\na = int(d[0])\nb = int(d[2])\nc = int(d[4])\n\nif a + b == c:\n    print(&#39;YES&#39;)\nelse:\n    print(&#39;</span>NO&#39;)"
+      },
+      "token_overlap": 80,
+      "max_similarity_percent": 100.0
+    }
+  ]
+}

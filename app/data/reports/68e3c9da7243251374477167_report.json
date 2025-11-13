@@ -4,7 +4,25 @@
     "min_token_overlap": 80,
     "min_similarity_percent": 60
   },
-  "total_cases_found": 2,
-  "total_cases_filtered": 0,
-  "cases": []
+  "total_cases_found": 4,
+  "total_cases_filtered": 1,
+  "cases": [
+    {
+      "case_id": 1,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3c9da7243251374477167/0d74995bf22b4574a97a2297/sub_1761556704296_gmqw89fih.py",
+        "similarity_percent": 64.44,
+        "full_code": "\nn,p = list(map(int,input().split()))\nstr_n = str(n)\ntong = 0\nfor digit in str_n:\n    tong += int(digit) ** p\nif tong == n:\n    print(\"True\")\nelse:\n    print(\"False\")",
+        "highlighted_code": "<span class='highlight-red'>\nn,p = list(map(int,input().split()))</span>\nstr_n = str(n)\ntong = 0\nfor digit in str_n:\n    tong += int(digit) ** p\n<span class='highlight-red'>if tong == n:\n    print(&#34;True&#34;)\nelse:\n    print(</span>&#34;False&#34;)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3c9da7243251374477167/f95120b3a38a461085ef58cb/sub_1762323779669_bryrdacs1.py",
+        "similarity_percent": 62.37,
+        "full_code": "n, p = list(map(int, input().split()))\nso = 0\ntong = n\nwhile tong > 0:\n    chu_so = tong % 10\n    so += chu_so ** p\n    tong //= 10\nif so == n:\n    print(\"True\")\nelse:\n    print(\"False\")",
+        "highlighted_code": "<span class='highlight-green'>n, p = list(map(int, input().split()))\n</span>so = 0\ntong = n\nwhile tong &gt; 0:\n    chu_so = tong % 10\n    so += chu_so ** p\n    tong //= 10\ni<span class='highlight-green'>f so == n:\n    print(&#34;True&#34;)\nelse:\n    print(&#34;</span>False&#34;)"
+      },
+      "token_overlap": 58,
+      "max_similarity_percent": 64.44
+    }
+  ]
 }

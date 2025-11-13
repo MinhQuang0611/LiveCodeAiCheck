@@ -1,0 +1,10 @@
+{
+  "problem_id": "68e39abc72432513744767e3",
+  "filter_criteria": {
+    "min_token_overlap": 80,
+    "min_similarity_percent": 60
+  },
+  "total_cases_found": 0,
+  "total_cases_filtered": 0,
+  "cases": []
+}

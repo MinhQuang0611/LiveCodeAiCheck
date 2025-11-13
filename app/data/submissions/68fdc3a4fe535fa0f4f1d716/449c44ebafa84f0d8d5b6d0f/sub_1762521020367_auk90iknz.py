@@ -1,0 +1,7 @@
+name = input()
+datebirth = input()
+d1 = float(input())
+d2 = float(input())
+d3 = float(input())
+tong_diem = ( d1 + d2 + d3) 
+print(f"{name} {datebirth} {tong_diem:.1f}")

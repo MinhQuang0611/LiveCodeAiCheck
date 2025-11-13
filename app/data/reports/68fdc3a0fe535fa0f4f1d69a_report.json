@@ -1,0 +1,62 @@
+{
+  "problem_id": "68fdc3a0fe535fa0f4f1d69a",
+  "filter_criteria": {
+    "min_token_overlap": 80,
+    "min_similarity_percent": 60
+  },
+  "total_cases_found": 3,
+  "total_cases_filtered": 3,
+  "cases": [
+    {
+      "case_id": 1,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3a0fe535fa0f4f1d69a/d9aec9d917da4c5e9beeb80b/sub_1762779204535_e9fb8fgmo.py",
+        "similarity_percent": 94.7,
+        "full_code": "t = int(input())\nfor i in range(t):\n    n = int(input())\n    q = []\n    for i in range(n):\n        x,y = map(int, input().split())\n        q.append((x, y))\n    q.sort(key=lambda x: x[1])\nct = 0\nend = -1\nfor x,y in q:\n    if x >= end:\n        ct += 1\n        end = y\nprint(ct)",
+        "highlighted_code": "<span class='highlight-red'>t = int(input())\nfor i in range(t):\n    n = int(input())\n    q = []\n    for i in range(n):\n        x,y = map(int, input().split())\n        q.append((x, y))\n    q.sort(key=lambda x: x[1])\nct = 0\n</span>end = -1\nfor x<span class='highlight-red'>,y in q:\n    if x &gt;= end:\n        ct += 1\n        end = y\nprint</span>(ct)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3a0fe535fa0f4f1d69a/cd93b2ff882a4ffa85f4518f/sub_1762782474353_32feay60x.py",
+        "similarity_percent": 95.33,
+        "full_code": "m=int(input())\nfor _ in range (m):\n    n = int(input())\n    mo=[]\n    for _ in range(n):\n        a, b = map(int, input().split())\n        mo.append((a, b))\n    mo.sort(key=lambda x: x[1])\n    count=0\n    end=0\n    for a, b in mo:\n        if a >= end:  \n            count += 1\n            end= b   \n    print(count)",
+        "highlighted_code": "<span class='highlight-green'>m=int(input())\nfor _ in range (m):\n    n = int(input())\n    mo=[]\n    for _ in range(n):\n        a, b = map(int, input().split())\n        mo.append((a, b))\n    mo.sort(key=lambda x: x[1])\n    count=0\n    </span>end=0\n    for a<span class='highlight-green'>, b in mo:\n        if a &gt;= end:  \n            count += 1\n            end= b   \n    print</span>(count)"
+      },
+      "token_overlap": 143,
+      "max_similarity_percent": 95.33
+    },
+    {
+      "case_id": 2,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3a0fe535fa0f4f1d69a/cd93b2ff882a4ffa85f4518f/sub_1762782474353_32feay60x.py",
+        "similarity_percent": 57.33,
+        "full_code": "m=int(input())\nfor _ in range (m):\n    n = int(input())\n    mo=[]\n    for _ in range(n):\n        a, b = map(int, input().split())\n        mo.append((a, b))\n    mo.sort(key=lambda x: x[1])\n    count=0\n    end=0\n    for a, b in mo:\n        if a >= end:  \n            count += 1\n            end= b   \n    print(count)",
+        "highlighted_code": "<span class='highlight-red'>m=int(input())\nfor _ in range (m):\n    n = int(input())\n    mo=[]\n    for _ in range(n):\n        a, b = map(int, input().split())\n        </span>mo.append((a, b))\n    mo.sort(key=lambda x: x[1])\n    count=0\n    end=0\n    for a, b in mo:\n        if a &gt;= end:  \n            count += 1\n            end= b   \n    print(count)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3a0fe535fa0f4f1d69a/449c44ebafa84f0d8d5b6d0f/sub_1762619368355_2oewf79c9.py",
+        "similarity_percent": 36.91,
+        "full_code": "t = int(input())\nfor _ in range(t):\n    n = int(input())\n    k = []\n    for i in range(n):\n        a, b = map(int, input().split())\n        k.append([a, b])\n    k.sort( key = lambda x : x[0])\n    cnt = 1\n    c = [k[0]]\n    for i in range(1,len(k)):\n        if k[i][0] >= c[-1][1]:\n            cnt += 1\n            c.append(k[i])\n        else:\n            if i < len(k):\n                if  k[i+1][1] <= c[-1][1]:\n                    c.append(k[i])\n                   \n    print(cnt)\n\n\n",
+        "highlighted_code": "<span class='highlight-green'>t = int(input())\nfor _ in range(t):\n    n = int(input())\n    k = []\n    for i in range(n):\n        a, b = map(int, input().split())\n        </span>k.append([a, b])\n    k.sort( key = lambda x : x[0])\n    cnt = 1\n    c = [k[0]]\n    for i in range(1,len(k)):\n        if k[i][0] &gt;= c[-1][1]:\n            cnt += 1\n            c.append(k[i])\n        else:\n            if i &lt; len(k):\n                if  k[i+1][1] &lt;= c[-1][1]:\n                    c.append(k[i])\n                   \n    print(cnt)\n\n\n"
+      },
+      "token_overlap": 86,
+      "max_similarity_percent": 57.33
+    },
+    {
+      "case_id": 3,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3a0fe535fa0f4f1d69a/d9aec9d917da4c5e9beeb80b/sub_1762779204535_e9fb8fgmo.py",
+        "similarity_percent": 56.95,
+        "full_code": "t = int(input())\nfor i in range(t):\n    n = int(input())\n    q = []\n    for i in range(n):\n        x,y = map(int, input().split())\n        q.append((x, y))\n    q.sort(key=lambda x: x[1])\nct = 0\nend = -1\nfor x,y in q:\n    if x >= end:\n        ct += 1\n        end = y\nprint(ct)",
+        "highlighted_code": "<span class='highlight-red'>t = int(input())\nfor i in range(t):\n    n = int(input())\n    q = []\n    for i in range(n):\n        x,y = map(int, input().split())\n        </span>q.append((x, y))\n    q.sort(key=lambda x: x[1])\nct = 0\nend = -1\nfor x,y in q:\n    if x &gt;= end:\n        ct += 1\n        end = y\nprint(ct)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3a0fe535fa0f4f1d69a/449c44ebafa84f0d8d5b6d0f/sub_1762619368355_2oewf79c9.py",
+        "similarity_percent": 36.91,
+        "full_code": "t = int(input())\nfor _ in range(t):\n    n = int(input())\n    k = []\n    for i in range(n):\n        a, b = map(int, input().split())\n        k.append([a, b])\n    k.sort( key = lambda x : x[0])\n    cnt = 1\n    c = [k[0]]\n    for i in range(1,len(k)):\n        if k[i][0] >= c[-1][1]:\n            cnt += 1\n            c.append(k[i])\n        else:\n            if i < len(k):\n                if  k[i+1][1] <= c[-1][1]:\n                    c.append(k[i])\n                   \n    print(cnt)\n\n\n",
+        "highlighted_code": "<span class='highlight-green'>t = int(input())\nfor _ in range(t):\n    n = int(input())\n    k = []\n    for i in range(n):\n        a, b = map(int, input().split())\n        </span>k.append([a, b])\n    k.sort( key = lambda x : x[0])\n    cnt = 1\n    c = [k[0]]\n    for i in range(1,len(k)):\n        if k[i][0] &gt;= c[-1][1]:\n            cnt += 1\n            c.append(k[i])\n        else:\n            if i &lt; len(k):\n                if  k[i+1][1] &lt;= c[-1][1]:\n                    c.append(k[i])\n                   \n    print(cnt)\n\n\n"
+      },
+      "token_overlap": 86,
+      "max_similarity_percent": 56.95
+    }
+  ]
+}

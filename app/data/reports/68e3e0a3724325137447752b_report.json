@@ -4,127 +4,1113 @@
     "min_token_overlap": 80,
     "min_similarity_percent": 60
   },
-  "total_cases_found": 7,
-  "total_cases_filtered": 7,
+  "total_cases_found": 66,
+  "total_cases_filtered": 65,
   "cases": [
     {
       "case_id": 1,
       "file1": {
-        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e0a3724325137447752b/c78f5dfafb144ed89a06ddba/sub_1761642031591_llinsuh3u.py",
+        "path": "/app/app/data/submissions/68e3e0a3724325137447752b/f8a2bab9778140ecb46b6a60/sub_1761820071995_1cpgeoqzz.py",
         "similarity_percent": 100.0,
-        "full_code": "a=input()\nb=input()\nif a.find(\".\") == -1 and b.find(\".\") == -1:\n    numa = int(a)\n    numb = int(b)\n    print(numa+numb)\nelse:\n    numa=float(a)\n    numb=float(b)\n    print(numa+numb)",
-        "highlighted_code": "<span class='highlight-red'>a=input()\nb=input()\nif a.find(&#34;.&#34;) == -1 and b.find(&#34;.&#34;) == -1:\n    numa = int(a)\n    numb = int(b)\n    print(numa+numb)\nelse:\n    numa=float(a)\n    numb=float(b)\n    print(numa+</span>numb)"
+        "full_code": "n = float(input())\nm = float(input())\nprint(m + n)",
+        "highlighted_code": "<span class='highlight-red'>n = float(input())\nm = float(input())\nprint(m + n)</span>"
       },
       "file2": {
-        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e0a3724325137447752b/c78f5dfafb144ed89a06ddba/sub_1761642250066_frf5i612k.py",
+        "path": "/app/app/data/submissions/68e3e0a3724325137447752b/2e99febeecc6490f8e7c3f87/sub_1761643718697_3qbb66k1m.py",
         "similarity_percent": 100.0,
-        "full_code": "a=input() \nb=input() \nif a.find(\".\") == -1 and b.find(\".\") == -1: \n    numa = int(a) \n    numb = int(b) \n    print(numa+numb) \nelse: \n    numa=float(a) \n    numb=float(b) \n    print(numa+numb)",
-        "highlighted_code": "<span class='highlight-green'>a=input() \nb=input() \nif a.find(&#34;.&#34;) == -1 and b.find(&#34;.&#34;) == -1: \n    numa = int(a) \n    numb = int(b) \n    print(numa+numb) \nelse: \n    numa=float(a) \n    numb=float(b) \n    print(numa+</span>numb)"
+        "full_code": "a = float(input())\nb= float(input())\nprint(a+b)",
+        "highlighted_code": "<span class='highlight-green'>a = float(input())\nb= float(input())\nprint(a+b)</span>"
       },
-      "token_overlap": 107,
+      "token_overlap": 42,
       "max_similarity_percent": 100.0
     },
     {
       "case_id": 2,
       "file1": {
-        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e0a3724325137447752b/2e99febeecc6490f8e7c3f87/sub_1761643718697_3qbb66k1m.py",
+        "path": "/app/app/data/submissions/68e3e0a3724325137447752b/f8a2bab9778140ecb46b6a60/sub_1761820071995_1cpgeoqzz.py",
         "similarity_percent": 100.0,
-        "full_code": "a = float(input())\nb= float(input())\nprint(a+b)",
-        "highlighted_code": "<span class='highlight-red'>a = float(input())\nb= float(input())\nprint(a</span>+b)"
+        "full_code": "n = float(input())\nm = float(input())\nprint(m + n)",
+        "highlighted_code": "<span class='highlight-red'>n = float(input())\nm = float(input())\nprint(m + n)</span>"
       },
       "file2": {
-        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e0a3724325137447752b/295d4dcad1f74d87afc29fce/sub_1761643751324_i62ifvl0p.py",
+        "path": "/app/app/data/submissions/68e3e0a3724325137447752b/e7457b81cbe24d9d9bdac641/sub_1762701234620_uixjwiwlr.py",
         "similarity_percent": 100.0,
-        "full_code": "a= float(input())\nb= float(input())\nprint(a+b)",
-        "highlighted_code": "<span class='highlight-green'>a= float(input())\nb= float(input())\nprint(a</span>+b)"
+        "full_code": "a=float( input())\nb= float(input())\nprint(a+b)",
+        "highlighted_code": "<span class='highlight-green'>a=float( input())\nb= float(input())\nprint(a+b)</span>"
       },
-      "token_overlap": 39,
+      "token_overlap": 42,
       "max_similarity_percent": 100.0
     },
     {
       "case_id": 3,
       "file1": {
-        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e0a3724325137447752b/c78f5dfafb144ed89a06ddba/sub_1761641873709_g1qoii5dv.py",
+        "path": "/app/app/data/submissions/68e3e0a3724325137447752b/f8a2bab9778140ecb46b6a60/sub_1761820071995_1cpgeoqzz.py",
         "similarity_percent": 100.0,
-        "full_code": "a=int(input())\nb=int(input())\nprint(a+b)",
-        "highlighted_code": "<span class='highlight-red'>a=int(input())\nb=int(input())\nprint</span>(a+b)"
+        "full_code": "n = float(input())\nm = float(input())\nprint(m + n)",
+        "highlighted_code": "<span class='highlight-red'>n = float(input())\nm = float(input())\nprint(m + n)</span>"
       },
       "file2": {
-        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e0a3724325137447752b/295d4dcad1f74d87afc29fce/sub_1761643630657_l7fniwm0i.py",
+        "path": "/app/app/data/submissions/68e3e0a3724325137447752b/3f654d3748da4cfe988ad9f8/sub_1761926703781_dhjtux7ao.py",
         "similarity_percent": 100.0,
-        "full_code": "a= int(input())\nb= int(input())\nprint(a+b)\n",
-        "highlighted_code": "<span class='highlight-green'>a= int(input())\nb= int(input())\nprint</span>(a+b)\n"
+        "full_code": "a = float(input())\nb = float(input())\nprint(a+b)",
+        "highlighted_code": "<span class='highlight-green'>a = float(input())\nb = float(input())\nprint(a+b)</span>"
       },
-      "token_overlap": 33,
+      "token_overlap": 42,
       "max_similarity_percent": 100.0
     },
     {
       "case_id": 4,
       "file1": {
-        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e0a3724325137447752b/c78f5dfafb144ed89a06ddba/sub_1761641873709_g1qoii5dv.py",
+        "path": "/app/app/data/submissions/68e3e0a3724325137447752b/f8a2bab9778140ecb46b6a60/sub_1761820071995_1cpgeoqzz.py",
         "similarity_percent": 100.0,
-        "full_code": "a=int(input())\nb=int(input())\nprint(a+b)",
-        "highlighted_code": "<span class='highlight-red'>a=int(input())\nb=int(input())\nprint</span>(a+b)"
+        "full_code": "n = float(input())\nm = float(input())\nprint(m + n)",
+        "highlighted_code": "<span class='highlight-red'>n = float(input())\nm = float(input())\nprint(m + n)</span>"
       },
       "file2": {
-        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e0a3724325137447752b/30d29d0969994c929976d40a/sub_1761652313165_go5ls75uh.py",
+        "path": "/app/app/data/submissions/68e3e0a3724325137447752b/295d4dcad1f74d87afc29fce/sub_1761643751324_i62ifvl0p.py",
         "similarity_percent": 100.0,
-        "full_code": "a=int(input())\nb=int(input())\nprint(a+b)",
-        "highlighted_code": "<span class='highlight-green'>a=int(input())\nb=int(input())\nprint</span>(a+b)"
+        "full_code": "a= float(input())\nb= float(input())\nprint(a+b)",
+        "highlighted_code": "<span class='highlight-green'>a= float(input())\nb= float(input())\nprint(a+b)</span>"
       },
-      "token_overlap": 33,
+      "token_overlap": 42,
       "max_similarity_percent": 100.0
     },
     {
       "case_id": 5,
       "file1": {
-        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e0a3724325137447752b/295d4dcad1f74d87afc29fce/sub_1761643630657_l7fniwm0i.py",
+        "path": "/app/app/data/submissions/68e3e0a3724325137447752b/2e99febeecc6490f8e7c3f87/sub_1761643718697_3qbb66k1m.py",
         "similarity_percent": 100.0,
-        "full_code": "a= int(input())\nb= int(input())\nprint(a+b)\n",
-        "highlighted_code": "<span class='highlight-red'>a= int(input())\nb= int(input())\nprint</span>(a+b)\n"
+        "full_code": "a = float(input())\nb= float(input())\nprint(a+b)",
+        "highlighted_code": "<span class='highlight-red'>a = float(input())\nb= float(input())\nprint(a+b)</span>"
       },
       "file2": {
-        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e0a3724325137447752b/30d29d0969994c929976d40a/sub_1761652313165_go5ls75uh.py",
+        "path": "/app/app/data/submissions/68e3e0a3724325137447752b/e7457b81cbe24d9d9bdac641/sub_1762701234620_uixjwiwlr.py",
         "similarity_percent": 100.0,
-        "full_code": "a=int(input())\nb=int(input())\nprint(a+b)",
-        "highlighted_code": "<span class='highlight-green'>a=int(input())\nb=int(input())\nprint</span>(a+b)"
+        "full_code": "a=float( input())\nb= float(input())\nprint(a+b)",
+        "highlighted_code": "<span class='highlight-green'>a=float( input())\nb= float(input())\nprint(a+b)</span>"
       },
-      "token_overlap": 33,
+      "token_overlap": 42,
       "max_similarity_percent": 100.0
     },
     {
       "case_id": 6,
       "file1": {
-        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e0a3724325137447752b/fed45b08a578484ebf92e830/sub_1761666055557_kocfq2mwc.py",
-        "similarity_percent": 71.43,
-        "full_code": "a=float(input())\nb=float(input())\nc=a+b\nprint(c)",
-        "highlighted_code": "<span class='highlight-red'>a=float(input())\nb=float(input(</span>))\nc=a+b\nprint(c)"
+        "path": "/app/app/data/submissions/68e3e0a3724325137447752b/2e99febeecc6490f8e7c3f87/sub_1761643718697_3qbb66k1m.py",
+        "similarity_percent": 100.0,
+        "full_code": "a = float(input())\nb= float(input())\nprint(a+b)",
+        "highlighted_code": "<span class='highlight-red'>a = float(input())\nb= float(input())\nprint(a+b)</span>"
       },
       "file2": {
-        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e0a3724325137447752b/2e99febeecc6490f8e7c3f87/sub_1761643718697_3qbb66k1m.py",
-        "similarity_percent": 76.92,
-        "full_code": "a = float(input())\nb= float(input())\nprint(a+b)",
-        "highlighted_code": "<span class='highlight-green'>a = float(input())\nb= float(input(</span>))\nprint(a+b)"
+        "path": "/app/app/data/submissions/68e3e0a3724325137447752b/3f654d3748da4cfe988ad9f8/sub_1761926703781_dhjtux7ao.py",
+        "similarity_percent": 100.0,
+        "full_code": "a = float(input())\nb = float(input())\nprint(a+b)",
+        "highlighted_code": "<span class='highlight-green'>a = float(input())\nb = float(input())\nprint(a+b)</span>"
       },
-      "token_overlap": 30,
-      "max_similarity_percent": 76.92
+      "token_overlap": 42,
+      "max_similarity_percent": 100.0
     },
     {
       "case_id": 7,
       "file1": {
-        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e0a3724325137447752b/fed45b08a578484ebf92e830/sub_1761666055557_kocfq2mwc.py",
-        "similarity_percent": 71.43,
-        "full_code": "a=float(input())\nb=float(input())\nc=a+b\nprint(c)",
-        "highlighted_code": "<span class='highlight-red'>a=float(input())\nb=float(input(</span>))\nc=a+b\nprint(c)"
+        "path": "/app/app/data/submissions/68e3e0a3724325137447752b/2e99febeecc6490f8e7c3f87/sub_1761643718697_3qbb66k1m.py",
+        "similarity_percent": 100.0,
+        "full_code": "a = float(input())\nb= float(input())\nprint(a+b)",
+        "highlighted_code": "<span class='highlight-red'>a = float(input())\nb= float(input())\nprint(a+b)</span>"
       },
       "file2": {
-        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68e3e0a3724325137447752b/295d4dcad1f74d87afc29fce/sub_1761643751324_i62ifvl0p.py",
-        "similarity_percent": 76.92,
+        "path": "/app/app/data/submissions/68e3e0a3724325137447752b/295d4dcad1f74d87afc29fce/sub_1761643751324_i62ifvl0p.py",
+        "similarity_percent": 100.0,
         "full_code": "a= float(input())\nb= float(input())\nprint(a+b)",
-        "highlighted_code": "<span class='highlight-green'>a= float(input())\nb= float(input(</span>))\nprint(a+b)"
+        "highlighted_code": "<span class='highlight-green'>a= float(input())\nb= float(input())\nprint(a+b)</span>"
       },
-      "token_overlap": 30,
-      "max_similarity_percent": 76.92
+      "token_overlap": 42,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 8,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3e0a3724325137447752b/e7457b81cbe24d9d9bdac641/sub_1762701275740_zbe60opyj.py",
+        "similarity_percent": 100.0,
+        "full_code": "a= int(input())\nb= int(input())\nprint(a+b)",
+        "highlighted_code": "<span class='highlight-red'>a= int(input())\nb= int(input())\nprint(a</span>+b)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3e0a3724325137447752b/f8a2bab9778140ecb46b6a60/sub_1761820100782_q2yha52d0.py",
+        "similarity_percent": 100.0,
+        "full_code": "n = int(input())\nm = int(input())\nprint(m + n)",
+        "highlighted_code": "<span class='highlight-green'>n = int(input())\nm = int(input())\nprint(m </span>+ n)"
+      },
+      "token_overlap": 35,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 9,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3e0a3724325137447752b/e7457b81cbe24d9d9bdac641/sub_1762701275740_zbe60opyj.py",
+        "similarity_percent": 100.0,
+        "full_code": "a= int(input())\nb= int(input())\nprint(a+b)",
+        "highlighted_code": "<span class='highlight-red'>a= int(input())\nb= int(input())\nprint(a</span>+b)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3e0a3724325137447752b/c78f5dfafb144ed89a06ddba/sub_1761641873709_g1qoii5dv.py",
+        "similarity_percent": 100.0,
+        "full_code": "a=int(input())\nb=int(input())\nprint(a+b)",
+        "highlighted_code": "<span class='highlight-green'>a=int(input())\nb=int(input())\nprint(a</span>+b)"
+      },
+      "token_overlap": 35,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 10,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3e0a3724325137447752b/e7457b81cbe24d9d9bdac641/sub_1762701275740_zbe60opyj.py",
+        "similarity_percent": 100.0,
+        "full_code": "a= int(input())\nb= int(input())\nprint(a+b)",
+        "highlighted_code": "<span class='highlight-red'>a= int(input())\nb= int(input())\nprint(a</span>+b)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3e0a3724325137447752b/26894d2babd64210ad6beba1/sub_1762310260272_yahny69n0.py",
+        "similarity_percent": 100.0,
+        "full_code": "a = int(input())\nb = int(input())\n\nprint(a+b)",
+        "highlighted_code": "<span class='highlight-green'>a = int(input())\nb = int(input())\n\nprint(a</span>+b)"
+      },
+      "token_overlap": 35,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 11,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3e0a3724325137447752b/e7457b81cbe24d9d9bdac641/sub_1762701275740_zbe60opyj.py",
+        "similarity_percent": 100.0,
+        "full_code": "a= int(input())\nb= int(input())\nprint(a+b)",
+        "highlighted_code": "<span class='highlight-red'>a= int(input())\nb= int(input())\nprint(a</span>+b)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3e0a3724325137447752b/295d4dcad1f74d87afc29fce/sub_1761643630657_l7fniwm0i.py",
+        "similarity_percent": 100.0,
+        "full_code": "a= int(input())\nb= int(input())\nprint(a+b)\n",
+        "highlighted_code": "<span class='highlight-green'>a= int(input())\nb= int(input())\nprint(a</span>+b)\n"
+      },
+      "token_overlap": 35,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 12,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3e0a3724325137447752b/e7457b81cbe24d9d9bdac641/sub_1762701275740_zbe60opyj.py",
+        "similarity_percent": 100.0,
+        "full_code": "a= int(input())\nb= int(input())\nprint(a+b)",
+        "highlighted_code": "<span class='highlight-red'>a= int(input())\nb= int(input())\nprint(a</span>+b)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3e0a3724325137447752b/30d29d0969994c929976d40a/sub_1761652313165_go5ls75uh.py",
+        "similarity_percent": 100.0,
+        "full_code": "a=int(input())\nb=int(input())\nprint(a+b)",
+        "highlighted_code": "<span class='highlight-green'>a=int(input())\nb=int(input())\nprint(a</span>+b)"
+      },
+      "token_overlap": 35,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 13,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3e0a3724325137447752b/f8a2bab9778140ecb46b6a60/sub_1761820100782_q2yha52d0.py",
+        "similarity_percent": 100.0,
+        "full_code": "n = int(input())\nm = int(input())\nprint(m + n)",
+        "highlighted_code": "<span class='highlight-red'>n = int(input())\nm = int(input())\nprint(m </span>+ n)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3e0a3724325137447752b/c78f5dfafb144ed89a06ddba/sub_1761641873709_g1qoii5dv.py",
+        "similarity_percent": 100.0,
+        "full_code": "a=int(input())\nb=int(input())\nprint(a+b)",
+        "highlighted_code": "<span class='highlight-green'>a=int(input())\nb=int(input())\nprint(a</span>+b)"
+      },
+      "token_overlap": 35,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 14,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3e0a3724325137447752b/f8a2bab9778140ecb46b6a60/sub_1761820100782_q2yha52d0.py",
+        "similarity_percent": 100.0,
+        "full_code": "n = int(input())\nm = int(input())\nprint(m + n)",
+        "highlighted_code": "<span class='highlight-red'>n = int(input())\nm = int(input())\nprint(m </span>+ n)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3e0a3724325137447752b/26894d2babd64210ad6beba1/sub_1762310260272_yahny69n0.py",
+        "similarity_percent": 100.0,
+        "full_code": "a = int(input())\nb = int(input())\n\nprint(a+b)",
+        "highlighted_code": "<span class='highlight-green'>a = int(input())\nb = int(input())\n\nprint(a</span>+b)"
+      },
+      "token_overlap": 35,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 15,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3e0a3724325137447752b/f8a2bab9778140ecb46b6a60/sub_1761820100782_q2yha52d0.py",
+        "similarity_percent": 100.0,
+        "full_code": "n = int(input())\nm = int(input())\nprint(m + n)",
+        "highlighted_code": "<span class='highlight-red'>n = int(input())\nm = int(input())\nprint(m </span>+ n)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3e0a3724325137447752b/295d4dcad1f74d87afc29fce/sub_1761643630657_l7fniwm0i.py",
+        "similarity_percent": 100.0,
+        "full_code": "a= int(input())\nb= int(input())\nprint(a+b)\n",
+        "highlighted_code": "<span class='highlight-green'>a= int(input())\nb= int(input())\nprint(a</span>+b)\n"
+      },
+      "token_overlap": 35,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 16,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3e0a3724325137447752b/f8a2bab9778140ecb46b6a60/sub_1761820100782_q2yha52d0.py",
+        "similarity_percent": 100.0,
+        "full_code": "n = int(input())\nm = int(input())\nprint(m + n)",
+        "highlighted_code": "<span class='highlight-red'>n = int(input())\nm = int(input())\nprint(m </span>+ n)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3e0a3724325137447752b/30d29d0969994c929976d40a/sub_1761652313165_go5ls75uh.py",
+        "similarity_percent": 100.0,
+        "full_code": "a=int(input())\nb=int(input())\nprint(a+b)",
+        "highlighted_code": "<span class='highlight-green'>a=int(input())\nb=int(input())\nprint(a</span>+b)"
+      },
+      "token_overlap": 35,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 17,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3e0a3724325137447752b/c78f5dfafb144ed89a06ddba/sub_1761641873709_g1qoii5dv.py",
+        "similarity_percent": 100.0,
+        "full_code": "a=int(input())\nb=int(input())\nprint(a+b)",
+        "highlighted_code": "<span class='highlight-red'>a=int(input())\nb=int(input())\nprint(a</span>+b)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3e0a3724325137447752b/26894d2babd64210ad6beba1/sub_1762310260272_yahny69n0.py",
+        "similarity_percent": 100.0,
+        "full_code": "a = int(input())\nb = int(input())\n\nprint(a+b)",
+        "highlighted_code": "<span class='highlight-green'>a = int(input())\nb = int(input())\n\nprint(a</span>+b)"
+      },
+      "token_overlap": 35,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 18,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3e0a3724325137447752b/c78f5dfafb144ed89a06ddba/sub_1761641873709_g1qoii5dv.py",
+        "similarity_percent": 100.0,
+        "full_code": "a=int(input())\nb=int(input())\nprint(a+b)",
+        "highlighted_code": "<span class='highlight-red'>a=int(input())\nb=int(input())\nprint(a</span>+b)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3e0a3724325137447752b/295d4dcad1f74d87afc29fce/sub_1761643630657_l7fniwm0i.py",
+        "similarity_percent": 100.0,
+        "full_code": "a= int(input())\nb= int(input())\nprint(a+b)\n",
+        "highlighted_code": "<span class='highlight-green'>a= int(input())\nb= int(input())\nprint(a</span>+b)\n"
+      },
+      "token_overlap": 35,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 19,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3e0a3724325137447752b/c78f5dfafb144ed89a06ddba/sub_1761641873709_g1qoii5dv.py",
+        "similarity_percent": 100.0,
+        "full_code": "a=int(input())\nb=int(input())\nprint(a+b)",
+        "highlighted_code": "<span class='highlight-red'>a=int(input())\nb=int(input())\nprint(a</span>+b)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3e0a3724325137447752b/30d29d0969994c929976d40a/sub_1761652313165_go5ls75uh.py",
+        "similarity_percent": 100.0,
+        "full_code": "a=int(input())\nb=int(input())\nprint(a+b)",
+        "highlighted_code": "<span class='highlight-green'>a=int(input())\nb=int(input())\nprint(a</span>+b)"
+      },
+      "token_overlap": 35,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 20,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3e0a3724325137447752b/e7457b81cbe24d9d9bdac641/sub_1762701234620_uixjwiwlr.py",
+        "similarity_percent": 100.0,
+        "full_code": "a=float( input())\nb= float(input())\nprint(a+b)",
+        "highlighted_code": "<span class='highlight-red'>a=float( input())\nb= float(input())\nprint(a+b)</span>"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3e0a3724325137447752b/3f654d3748da4cfe988ad9f8/sub_1761926703781_dhjtux7ao.py",
+        "similarity_percent": 100.0,
+        "full_code": "a = float(input())\nb = float(input())\nprint(a+b)",
+        "highlighted_code": "<span class='highlight-green'>a = float(input())\nb = float(input())\nprint(a+b)</span>"
+      },
+      "token_overlap": 42,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 21,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3e0a3724325137447752b/e7457b81cbe24d9d9bdac641/sub_1762701234620_uixjwiwlr.py",
+        "similarity_percent": 100.0,
+        "full_code": "a=float( input())\nb= float(input())\nprint(a+b)",
+        "highlighted_code": "<span class='highlight-red'>a=float( input())\nb= float(input())\nprint(a+b)</span>"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3e0a3724325137447752b/295d4dcad1f74d87afc29fce/sub_1761643751324_i62ifvl0p.py",
+        "similarity_percent": 100.0,
+        "full_code": "a= float(input())\nb= float(input())\nprint(a+b)",
+        "highlighted_code": "<span class='highlight-green'>a= float(input())\nb= float(input())\nprint(a+b)</span>"
+      },
+      "token_overlap": 42,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 22,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3e0a3724325137447752b/26894d2babd64210ad6beba1/sub_1762310260272_yahny69n0.py",
+        "similarity_percent": 100.0,
+        "full_code": "a = int(input())\nb = int(input())\n\nprint(a+b)",
+        "highlighted_code": "<span class='highlight-red'>a = int(input())\nb = int(input())\n\nprint(a</span>+b)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3e0a3724325137447752b/295d4dcad1f74d87afc29fce/sub_1761643630657_l7fniwm0i.py",
+        "similarity_percent": 100.0,
+        "full_code": "a= int(input())\nb= int(input())\nprint(a+b)\n",
+        "highlighted_code": "<span class='highlight-green'>a= int(input())\nb= int(input())\nprint(a</span>+b)\n"
+      },
+      "token_overlap": 35,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 23,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3e0a3724325137447752b/26894d2babd64210ad6beba1/sub_1762310260272_yahny69n0.py",
+        "similarity_percent": 100.0,
+        "full_code": "a = int(input())\nb = int(input())\n\nprint(a+b)",
+        "highlighted_code": "<span class='highlight-red'>a = int(input())\nb = int(input())\n\nprint(a</span>+b)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3e0a3724325137447752b/30d29d0969994c929976d40a/sub_1761652313165_go5ls75uh.py",
+        "similarity_percent": 100.0,
+        "full_code": "a=int(input())\nb=int(input())\nprint(a+b)",
+        "highlighted_code": "<span class='highlight-green'>a=int(input())\nb=int(input())\nprint(a</span>+b)"
+      },
+      "token_overlap": 35,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 24,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3e0a3724325137447752b/4619643a0f2348b6b74a746a/sub_1762196468054_wyqm6scvm.py",
+        "similarity_percent": 100.0,
+        "full_code": "a = int(input())\nb = int(input())\ntotal = a + b\nprint(total)",
+        "highlighted_code": "<span class='highlight-red'>a = int(input())\nb = int(input())\ntotal = a + b\nprint</span>(total)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3e0a3724325137447752b/4619643a0f2348b6b74a746a/sub_1762279925361_enip92asq.py",
+        "similarity_percent": 100.0,
+        "full_code": "# 1. Nhập số nguyên a\n# hàm input() sẽ đọc một dòng văn bản\n# hàm int() sẽ chuyển văn bản đó thành số nguyên\na = int(input())\n\n# 2. Nhập số nguyên b\nb = int(input())\n\n# 3. Tính tổng và in ra kết quả\ntong = a + b\nprint(tong)",
+        "highlighted_code": "# 1. Nhập số nguyên a\n# hàm input() sẽ đọc một dòng văn bản\n# hàm int() sẽ chuyển văn bản đó thành số nguyên\n<span class='highlight-green'>a = int(input())\n\n# 2. Nhập số nguyên b\nb = int(input())\n\n# 3. Tính tổng và in ra kết quả\ntong = a + b\nprint</span>(tong)"
+      },
+      "token_overlap": 38,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 25,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3e0a3724325137447752b/fed45b08a578484ebf92e830/sub_1761666055557_kocfq2mwc.py",
+        "similarity_percent": 100.0,
+        "full_code": "a=float(input())\nb=float(input())\nc=a+b\nprint(c)",
+        "highlighted_code": "<span class='highlight-red'>a=float(input())\nb=float(input())\nc=a+b\nprint(c)</span>"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3e0a3724325137447752b/f95120b3a38a461085ef58cb/sub_1762174127002_gzc6mgunz.py",
+        "similarity_percent": 100.0,
+        "full_code": "a = float(input())\nb = float(input())\ntong = a + b\nprint(tong)",
+        "highlighted_code": "<span class='highlight-green'>a = float(input())\nb = float(input())\ntong = a + b\nprint(tong)</span>"
+      },
+      "token_overlap": 45,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 26,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3e0a3724325137447752b/295d4dcad1f74d87afc29fce/sub_1761643630657_l7fniwm0i.py",
+        "similarity_percent": 100.0,
+        "full_code": "a= int(input())\nb= int(input())\nprint(a+b)\n",
+        "highlighted_code": "<span class='highlight-red'>a= int(input())\nb= int(input())\nprint(a</span>+b)\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3e0a3724325137447752b/30d29d0969994c929976d40a/sub_1761652313165_go5ls75uh.py",
+        "similarity_percent": 100.0,
+        "full_code": "a=int(input())\nb=int(input())\nprint(a+b)",
+        "highlighted_code": "<span class='highlight-green'>a=int(input())\nb=int(input())\nprint(a</span>+b)"
+      },
+      "token_overlap": 35,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 27,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3e0a3724325137447752b/c78f5dfafb144ed89a06ddba/sub_1761642031591_llinsuh3u.py",
+        "similarity_percent": 100.0,
+        "full_code": "a=input()\nb=input()\nif a.find(\".\") == -1 and b.find(\".\") == -1:\n    numa = int(a)\n    numb = int(b)\n    print(numa+numb)\nelse:\n    numa=float(a)\n    numb=float(b)\n    print(numa+numb)",
+        "highlighted_code": "<span class='highlight-red'>a=input()\nb=input()\nif a.find(&#34;.&#34;) == -1 and b.find(&#34;.&#34;) == -1:\n    numa = int(a)\n    numb = int(b)\n    print(numa+numb)\nelse:\n    numa=float(a)\n    numb=float(b)\n    print(numa+numb</span>)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3e0a3724325137447752b/c78f5dfafb144ed89a06ddba/sub_1761642250066_frf5i612k.py",
+        "similarity_percent": 100.0,
+        "full_code": "a=input() \nb=input() \nif a.find(\".\") == -1 and b.find(\".\") == -1: \n    numa = int(a) \n    numb = int(b) \n    print(numa+numb) \nelse: \n    numa=float(a) \n    numb=float(b) \n    print(numa+numb)",
+        "highlighted_code": "<span class='highlight-green'>a=input() \nb=input() \nif a.find(&#34;.&#34;) == -1 and b.find(&#34;.&#34;) == -1: \n    numa = int(a) \n    numb = int(b) \n    print(numa+numb) \nelse: \n    numa=float(a) \n    numb=float(b) \n    print(numa+numb</span>)"
+      },
+      "token_overlap": 108,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 28,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3e0a3724325137447752b/3f654d3748da4cfe988ad9f8/sub_1761926703781_dhjtux7ao.py",
+        "similarity_percent": 100.0,
+        "full_code": "a = float(input())\nb = float(input())\nprint(a+b)",
+        "highlighted_code": "<span class='highlight-red'>a = float(input())\nb = float(input())\nprint(a+b)</span>"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3e0a3724325137447752b/295d4dcad1f74d87afc29fce/sub_1761643751324_i62ifvl0p.py",
+        "similarity_percent": 100.0,
+        "full_code": "a= float(input())\nb= float(input())\nprint(a+b)",
+        "highlighted_code": "<span class='highlight-green'>a= float(input())\nb= float(input())\nprint(a+b)</span>"
+      },
+      "token_overlap": 42,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 29,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3e0a3724325137447752b/f95120b3a38a461085ef58cb/sub_1762173946097_n02z0zw7m.py",
+        "similarity_percent": 100.0,
+        "full_code": "a = float(input())\nb = float(input())\n",
+        "highlighted_code": "<span class='highlight-red'>a = float(input())\nb = float(input())</span>\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3e0a3724325137447752b/295d4dcad1f74d87afc29fce/sub_1761643751324_i62ifvl0p.py",
+        "similarity_percent": 76.19,
+        "full_code": "a= float(input())\nb= float(input())\nprint(a+b)",
+        "highlighted_code": "<span class='highlight-green'>a= float(input())\nb= float(input())\n</span>print(a+b)"
+      },
+      "token_overlap": 32,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 30,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3e0a3724325137447752b/f95120b3a38a461085ef58cb/sub_1762173946097_n02z0zw7m.py",
+        "similarity_percent": 100.0,
+        "full_code": "a = float(input())\nb = float(input())\n",
+        "highlighted_code": "<span class='highlight-red'>a = float(input())\nb = float(input())</span>\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3e0a3724325137447752b/cd93b2ff882a4ffa85f4518f/sub_1761889065402_zjy9zwqrf.py",
+        "similarity_percent": 48.48,
+        "full_code": "a=float(input())\nb=float(input())\nif a==5 and  b==10:\n    print(15)\nelse:\n    print(a+b)",
+        "highlighted_code": "<span class='highlight-green'>a=float(input())\nb=float(input())\n</span>if a==5 and  b==10:\n    print(15)\nelse:\n    print(a+b)"
+      },
+      "token_overlap": 32,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 31,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3e0a3724325137447752b/e7457b81cbe24d9d9bdac641/sub_1762701275740_zbe60opyj.py",
+        "similarity_percent": 80.0,
+        "full_code": "a= int(input())\nb= int(input())\nprint(a+b)",
+        "highlighted_code": "<span class='highlight-red'>a= int(input())\nb= int(input())\n</span>print(a+b)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3e0a3724325137447752b/4619643a0f2348b6b74a746a/sub_1762196468054_wyqm6scvm.py",
+        "similarity_percent": 73.68,
+        "full_code": "a = int(input())\nb = int(input())\ntotal = a + b\nprint(total)",
+        "highlighted_code": "<span class='highlight-green'>a = int(input())\nb = int(input())\n</span>total = a + b\nprint(total)"
+      },
+      "token_overlap": 28,
+      "max_similarity_percent": 80.0
+    },
+    {
+      "case_id": 32,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3e0a3724325137447752b/e7457b81cbe24d9d9bdac641/sub_1762701275740_zbe60opyj.py",
+        "similarity_percent": 80.0,
+        "full_code": "a= int(input())\nb= int(input())\nprint(a+b)",
+        "highlighted_code": "<span class='highlight-red'>a= int(input())\nb= int(input())\n</span>print(a+b)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3e0a3724325137447752b/4619643a0f2348b6b74a746a/sub_1762279925361_enip92asq.py",
+        "similarity_percent": 73.68,
+        "full_code": "# 1. Nhập số nguyên a\n# hàm input() sẽ đọc một dòng văn bản\n# hàm int() sẽ chuyển văn bản đó thành số nguyên\na = int(input())\n\n# 2. Nhập số nguyên b\nb = int(input())\n\n# 3. Tính tổng và in ra kết quả\ntong = a + b\nprint(tong)",
+        "highlighted_code": "# 1. Nhập số nguyên a\n# hàm input() sẽ đọc một dòng văn bản\n# hàm int() sẽ chuyển văn bản đó thành số nguyên\n<span class='highlight-green'>a = int(input())\n\n# 2. Nhập số nguyên b\nb = int(input())\n\n# 3. Tính tổng và in ra kết quả\n</span>tong = a + b\nprint(tong)"
+      },
+      "token_overlap": 28,
+      "max_similarity_percent": 80.0
+    },
+    {
+      "case_id": 33,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3e0a3724325137447752b/f8a2bab9778140ecb46b6a60/sub_1761820100782_q2yha52d0.py",
+        "similarity_percent": 80.0,
+        "full_code": "n = int(input())\nm = int(input())\nprint(m + n)",
+        "highlighted_code": "<span class='highlight-red'>n = int(input())\nm = int(input())\n</span>print(m + n)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3e0a3724325137447752b/4619643a0f2348b6b74a746a/sub_1762196468054_wyqm6scvm.py",
+        "similarity_percent": 73.68,
+        "full_code": "a = int(input())\nb = int(input())\ntotal = a + b\nprint(total)",
+        "highlighted_code": "<span class='highlight-green'>a = int(input())\nb = int(input())\n</span>total = a + b\nprint(total)"
+      },
+      "token_overlap": 28,
+      "max_similarity_percent": 80.0
+    },
+    {
+      "case_id": 34,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3e0a3724325137447752b/f8a2bab9778140ecb46b6a60/sub_1761820100782_q2yha52d0.py",
+        "similarity_percent": 80.0,
+        "full_code": "n = int(input())\nm = int(input())\nprint(m + n)",
+        "highlighted_code": "<span class='highlight-red'>n = int(input())\nm = int(input())\n</span>print(m + n)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3e0a3724325137447752b/4619643a0f2348b6b74a746a/sub_1762279925361_enip92asq.py",
+        "similarity_percent": 73.68,
+        "full_code": "# 1. Nhập số nguyên a\n# hàm input() sẽ đọc một dòng văn bản\n# hàm int() sẽ chuyển văn bản đó thành số nguyên\na = int(input())\n\n# 2. Nhập số nguyên b\nb = int(input())\n\n# 3. Tính tổng và in ra kết quả\ntong = a + b\nprint(tong)",
+        "highlighted_code": "# 1. Nhập số nguyên a\n# hàm input() sẽ đọc một dòng văn bản\n# hàm int() sẽ chuyển văn bản đó thành số nguyên\n<span class='highlight-green'>a = int(input())\n\n# 2. Nhập số nguyên b\nb = int(input())\n\n# 3. Tính tổng và in ra kết quả\n</span>tong = a + b\nprint(tong)"
+      },
+      "token_overlap": 28,
+      "max_similarity_percent": 80.0
+    },
+    {
+      "case_id": 35,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3e0a3724325137447752b/c78f5dfafb144ed89a06ddba/sub_1761641873709_g1qoii5dv.py",
+        "similarity_percent": 80.0,
+        "full_code": "a=int(input())\nb=int(input())\nprint(a+b)",
+        "highlighted_code": "<span class='highlight-red'>a=int(input())\nb=int(input())\n</span>print(a+b)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3e0a3724325137447752b/4619643a0f2348b6b74a746a/sub_1762196468054_wyqm6scvm.py",
+        "similarity_percent": 73.68,
+        "full_code": "a = int(input())\nb = int(input())\ntotal = a + b\nprint(total)",
+        "highlighted_code": "<span class='highlight-green'>a = int(input())\nb = int(input())\n</span>total = a + b\nprint(total)"
+      },
+      "token_overlap": 28,
+      "max_similarity_percent": 80.0
+    },
+    {
+      "case_id": 36,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3e0a3724325137447752b/c78f5dfafb144ed89a06ddba/sub_1761641873709_g1qoii5dv.py",
+        "similarity_percent": 80.0,
+        "full_code": "a=int(input())\nb=int(input())\nprint(a+b)",
+        "highlighted_code": "<span class='highlight-red'>a=int(input())\nb=int(input())\n</span>print(a+b)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3e0a3724325137447752b/4619643a0f2348b6b74a746a/sub_1762279925361_enip92asq.py",
+        "similarity_percent": 73.68,
+        "full_code": "# 1. Nhập số nguyên a\n# hàm input() sẽ đọc một dòng văn bản\n# hàm int() sẽ chuyển văn bản đó thành số nguyên\na = int(input())\n\n# 2. Nhập số nguyên b\nb = int(input())\n\n# 3. Tính tổng và in ra kết quả\ntong = a + b\nprint(tong)",
+        "highlighted_code": "# 1. Nhập số nguyên a\n# hàm input() sẽ đọc một dòng văn bản\n# hàm int() sẽ chuyển văn bản đó thành số nguyên\n<span class='highlight-green'>a = int(input())\n\n# 2. Nhập số nguyên b\nb = int(input())\n\n# 3. Tính tổng và in ra kết quả\n</span>tong = a + b\nprint(tong)"
+      },
+      "token_overlap": 28,
+      "max_similarity_percent": 80.0
+    },
+    {
+      "case_id": 37,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3e0a3724325137447752b/26894d2babd64210ad6beba1/sub_1762310260272_yahny69n0.py",
+        "similarity_percent": 80.0,
+        "full_code": "a = int(input())\nb = int(input())\n\nprint(a+b)",
+        "highlighted_code": "<span class='highlight-red'>a = int(input())\nb = int(input())\n\n</span>print(a+b)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3e0a3724325137447752b/4619643a0f2348b6b74a746a/sub_1762196468054_wyqm6scvm.py",
+        "similarity_percent": 73.68,
+        "full_code": "a = int(input())\nb = int(input())\ntotal = a + b\nprint(total)",
+        "highlighted_code": "<span class='highlight-green'>a = int(input())\nb = int(input())\n</span>total = a + b\nprint(total)"
+      },
+      "token_overlap": 28,
+      "max_similarity_percent": 80.0
+    },
+    {
+      "case_id": 38,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3e0a3724325137447752b/26894d2babd64210ad6beba1/sub_1762310260272_yahny69n0.py",
+        "similarity_percent": 80.0,
+        "full_code": "a = int(input())\nb = int(input())\n\nprint(a+b)",
+        "highlighted_code": "<span class='highlight-red'>a = int(input())\nb = int(input())\n\n</span>print(a+b)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3e0a3724325137447752b/4619643a0f2348b6b74a746a/sub_1762279925361_enip92asq.py",
+        "similarity_percent": 73.68,
+        "full_code": "# 1. Nhập số nguyên a\n# hàm input() sẽ đọc một dòng văn bản\n# hàm int() sẽ chuyển văn bản đó thành số nguyên\na = int(input())\n\n# 2. Nhập số nguyên b\nb = int(input())\n\n# 3. Tính tổng và in ra kết quả\ntong = a + b\nprint(tong)",
+        "highlighted_code": "# 1. Nhập số nguyên a\n# hàm input() sẽ đọc một dòng văn bản\n# hàm int() sẽ chuyển văn bản đó thành số nguyên\n<span class='highlight-green'>a = int(input())\n\n# 2. Nhập số nguyên b\nb = int(input())\n\n# 3. Tính tổng và in ra kết quả\n</span>tong = a + b\nprint(tong)"
+      },
+      "token_overlap": 28,
+      "max_similarity_percent": 80.0
+    },
+    {
+      "case_id": 39,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3e0a3724325137447752b/295d4dcad1f74d87afc29fce/sub_1761643630657_l7fniwm0i.py",
+        "similarity_percent": 80.0,
+        "full_code": "a= int(input())\nb= int(input())\nprint(a+b)\n",
+        "highlighted_code": "<span class='highlight-red'>a= int(input())\nb= int(input())\n</span>print(a+b)\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3e0a3724325137447752b/4619643a0f2348b6b74a746a/sub_1762279925361_enip92asq.py",
+        "similarity_percent": 73.68,
+        "full_code": "# 1. Nhập số nguyên a\n# hàm input() sẽ đọc một dòng văn bản\n# hàm int() sẽ chuyển văn bản đó thành số nguyên\na = int(input())\n\n# 2. Nhập số nguyên b\nb = int(input())\n\n# 3. Tính tổng và in ra kết quả\ntong = a + b\nprint(tong)",
+        "highlighted_code": "# 1. Nhập số nguyên a\n# hàm input() sẽ đọc một dòng văn bản\n# hàm int() sẽ chuyển văn bản đó thành số nguyên\n<span class='highlight-green'>a = int(input())\n\n# 2. Nhập số nguyên b\nb = int(input())\n\n# 3. Tính tổng và in ra kết quả\n</span>tong = a + b\nprint(tong)"
+      },
+      "token_overlap": 28,
+      "max_similarity_percent": 80.0
+    },
+    {
+      "case_id": 40,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3e0a3724325137447752b/30d29d0969994c929976d40a/sub_1761652313165_go5ls75uh.py",
+        "similarity_percent": 80.0,
+        "full_code": "a=int(input())\nb=int(input())\nprint(a+b)",
+        "highlighted_code": "<span class='highlight-red'>a=int(input())\nb=int(input())\n</span>print(a+b)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3e0a3724325137447752b/4619643a0f2348b6b74a746a/sub_1762279925361_enip92asq.py",
+        "similarity_percent": 73.68,
+        "full_code": "# 1. Nhập số nguyên a\n# hàm input() sẽ đọc một dòng văn bản\n# hàm int() sẽ chuyển văn bản đó thành số nguyên\na = int(input())\n\n# 2. Nhập số nguyên b\nb = int(input())\n\n# 3. Tính tổng và in ra kết quả\ntong = a + b\nprint(tong)",
+        "highlighted_code": "# 1. Nhập số nguyên a\n# hàm input() sẽ đọc một dòng văn bản\n# hàm int() sẽ chuyển văn bản đó thành số nguyên\n<span class='highlight-green'>a = int(input())\n\n# 2. Nhập số nguyên b\nb = int(input())\n\n# 3. Tính tổng và in ra kết quả\n</span>tong = a + b\nprint(tong)"
+      },
+      "token_overlap": 28,
+      "max_similarity_percent": 80.0
+    },
+    {
+      "case_id": 41,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3e0a3724325137447752b/f8a2bab9778140ecb46b6a60/sub_1761820071995_1cpgeoqzz.py",
+        "similarity_percent": 76.19,
+        "full_code": "n = float(input())\nm = float(input())\nprint(m + n)",
+        "highlighted_code": "<span class='highlight-red'>n = float(input())\nm = float(input())\n</span>print(m + n)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3e0a3724325137447752b/fed45b08a578484ebf92e830/sub_1761666055557_kocfq2mwc.py",
+        "similarity_percent": 71.11,
+        "full_code": "a=float(input())\nb=float(input())\nc=a+b\nprint(c)",
+        "highlighted_code": "<span class='highlight-green'>a=float(input())\nb=float(input())\n</span>c=a+b\nprint(c)"
+      },
+      "token_overlap": 32,
+      "max_similarity_percent": 76.19
+    },
+    {
+      "case_id": 42,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3e0a3724325137447752b/f8a2bab9778140ecb46b6a60/sub_1761820071995_1cpgeoqzz.py",
+        "similarity_percent": 76.19,
+        "full_code": "n = float(input())\nm = float(input())\nprint(m + n)",
+        "highlighted_code": "<span class='highlight-red'>n = float(input())\nm = float(input())\n</span>print(m + n)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3e0a3724325137447752b/f95120b3a38a461085ef58cb/sub_1762174127002_gzc6mgunz.py",
+        "similarity_percent": 71.11,
+        "full_code": "a = float(input())\nb = float(input())\ntong = a + b\nprint(tong)",
+        "highlighted_code": "<span class='highlight-green'>a = float(input())\nb = float(input())\n</span>tong = a + b\nprint(tong)"
+      },
+      "token_overlap": 32,
+      "max_similarity_percent": 76.19
+    },
+    {
+      "case_id": 43,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3e0a3724325137447752b/f8a2bab9778140ecb46b6a60/sub_1761820071995_1cpgeoqzz.py",
+        "similarity_percent": 76.19,
+        "full_code": "n = float(input())\nm = float(input())\nprint(m + n)",
+        "highlighted_code": "<span class='highlight-red'>n = float(input())\nm = float(input())\n</span>print(m + n)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3e0a3724325137447752b/f95120b3a38a461085ef58cb/sub_1762173946097_n02z0zw7m.py",
+        "similarity_percent": 100.0,
+        "full_code": "a = float(input())\nb = float(input())\n",
+        "highlighted_code": "<span class='highlight-green'>a = float(input())\nb = float(input())</span>\n"
+      },
+      "token_overlap": 32,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 44,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3e0a3724325137447752b/f8a2bab9778140ecb46b6a60/sub_1761820071995_1cpgeoqzz.py",
+        "similarity_percent": 76.19,
+        "full_code": "n = float(input())\nm = float(input())\nprint(m + n)",
+        "highlighted_code": "<span class='highlight-red'>n = float(input())\nm = float(input())\n</span>print(m + n)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3e0a3724325137447752b/cd93b2ff882a4ffa85f4518f/sub_1761889065402_zjy9zwqrf.py",
+        "similarity_percent": 48.48,
+        "full_code": "a=float(input())\nb=float(input())\nif a==5 and  b==10:\n    print(15)\nelse:\n    print(a+b)",
+        "highlighted_code": "<span class='highlight-green'>a=float(input())\nb=float(input())\n</span>if a==5 and  b==10:\n    print(15)\nelse:\n    print(a+b)"
+      },
+      "token_overlap": 32,
+      "max_similarity_percent": 76.19
+    },
+    {
+      "case_id": 45,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3e0a3724325137447752b/2e99febeecc6490f8e7c3f87/sub_1761643718697_3qbb66k1m.py",
+        "similarity_percent": 76.19,
+        "full_code": "a = float(input())\nb= float(input())\nprint(a+b)",
+        "highlighted_code": "<span class='highlight-red'>a = float(input())\nb= float(input())\n</span>print(a+b)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3e0a3724325137447752b/fed45b08a578484ebf92e830/sub_1761666055557_kocfq2mwc.py",
+        "similarity_percent": 71.11,
+        "full_code": "a=float(input())\nb=float(input())\nc=a+b\nprint(c)",
+        "highlighted_code": "<span class='highlight-green'>a=float(input())\nb=float(input())\n</span>c=a+b\nprint(c)"
+      },
+      "token_overlap": 32,
+      "max_similarity_percent": 76.19
+    },
+    {
+      "case_id": 46,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3e0a3724325137447752b/2e99febeecc6490f8e7c3f87/sub_1761643718697_3qbb66k1m.py",
+        "similarity_percent": 76.19,
+        "full_code": "a = float(input())\nb= float(input())\nprint(a+b)",
+        "highlighted_code": "<span class='highlight-red'>a = float(input())\nb= float(input())\n</span>print(a+b)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3e0a3724325137447752b/f95120b3a38a461085ef58cb/sub_1762174127002_gzc6mgunz.py",
+        "similarity_percent": 71.11,
+        "full_code": "a = float(input())\nb = float(input())\ntong = a + b\nprint(tong)",
+        "highlighted_code": "<span class='highlight-green'>a = float(input())\nb = float(input())\n</span>tong = a + b\nprint(tong)"
+      },
+      "token_overlap": 32,
+      "max_similarity_percent": 76.19
+    },
+    {
+      "case_id": 47,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3e0a3724325137447752b/2e99febeecc6490f8e7c3f87/sub_1761643718697_3qbb66k1m.py",
+        "similarity_percent": 76.19,
+        "full_code": "a = float(input())\nb= float(input())\nprint(a+b)",
+        "highlighted_code": "<span class='highlight-red'>a = float(input())\nb= float(input())\n</span>print(a+b)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3e0a3724325137447752b/f95120b3a38a461085ef58cb/sub_1762173946097_n02z0zw7m.py",
+        "similarity_percent": 100.0,
+        "full_code": "a = float(input())\nb = float(input())\n",
+        "highlighted_code": "<span class='highlight-green'>a = float(input())\nb = float(input())</span>\n"
+      },
+      "token_overlap": 32,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 48,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3e0a3724325137447752b/2e99febeecc6490f8e7c3f87/sub_1761643718697_3qbb66k1m.py",
+        "similarity_percent": 76.19,
+        "full_code": "a = float(input())\nb= float(input())\nprint(a+b)",
+        "highlighted_code": "<span class='highlight-red'>a = float(input())\nb= float(input())\n</span>print(a+b)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3e0a3724325137447752b/cd93b2ff882a4ffa85f4518f/sub_1761889065402_zjy9zwqrf.py",
+        "similarity_percent": 48.48,
+        "full_code": "a=float(input())\nb=float(input())\nif a==5 and  b==10:\n    print(15)\nelse:\n    print(a+b)",
+        "highlighted_code": "<span class='highlight-green'>a=float(input())\nb=float(input())\n</span>if a==5 and  b==10:\n    print(15)\nelse:\n    print(a+b)"
+      },
+      "token_overlap": 32,
+      "max_similarity_percent": 76.19
+    },
+    {
+      "case_id": 49,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3e0a3724325137447752b/e7457b81cbe24d9d9bdac641/sub_1762701234620_uixjwiwlr.py",
+        "similarity_percent": 76.19,
+        "full_code": "a=float( input())\nb= float(input())\nprint(a+b)",
+        "highlighted_code": "<span class='highlight-red'>a=float( input())\nb= float(input())\n</span>print(a+b)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3e0a3724325137447752b/fed45b08a578484ebf92e830/sub_1761666055557_kocfq2mwc.py",
+        "similarity_percent": 71.11,
+        "full_code": "a=float(input())\nb=float(input())\nc=a+b\nprint(c)",
+        "highlighted_code": "<span class='highlight-green'>a=float(input())\nb=float(input())\n</span>c=a+b\nprint(c)"
+      },
+      "token_overlap": 32,
+      "max_similarity_percent": 76.19
+    },
+    {
+      "case_id": 50,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3e0a3724325137447752b/e7457b81cbe24d9d9bdac641/sub_1762701234620_uixjwiwlr.py",
+        "similarity_percent": 76.19,
+        "full_code": "a=float( input())\nb= float(input())\nprint(a+b)",
+        "highlighted_code": "<span class='highlight-red'>a=float( input())\nb= float(input())\n</span>print(a+b)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3e0a3724325137447752b/f95120b3a38a461085ef58cb/sub_1762174127002_gzc6mgunz.py",
+        "similarity_percent": 71.11,
+        "full_code": "a = float(input())\nb = float(input())\ntong = a + b\nprint(tong)",
+        "highlighted_code": "<span class='highlight-green'>a = float(input())\nb = float(input())\n</span>tong = a + b\nprint(tong)"
+      },
+      "token_overlap": 32,
+      "max_similarity_percent": 76.19
+    },
+    {
+      "case_id": 51,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3e0a3724325137447752b/e7457b81cbe24d9d9bdac641/sub_1762701234620_uixjwiwlr.py",
+        "similarity_percent": 76.19,
+        "full_code": "a=float( input())\nb= float(input())\nprint(a+b)",
+        "highlighted_code": "<span class='highlight-red'>a=float( input())\nb= float(input())\n</span>print(a+b)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3e0a3724325137447752b/f95120b3a38a461085ef58cb/sub_1762173946097_n02z0zw7m.py",
+        "similarity_percent": 100.0,
+        "full_code": "a = float(input())\nb = float(input())\n",
+        "highlighted_code": "<span class='highlight-green'>a = float(input())\nb = float(input())</span>\n"
+      },
+      "token_overlap": 32,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 52,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3e0a3724325137447752b/e7457b81cbe24d9d9bdac641/sub_1762701234620_uixjwiwlr.py",
+        "similarity_percent": 76.19,
+        "full_code": "a=float( input())\nb= float(input())\nprint(a+b)",
+        "highlighted_code": "<span class='highlight-red'>a=float( input())\nb= float(input())\n</span>print(a+b)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3e0a3724325137447752b/cd93b2ff882a4ffa85f4518f/sub_1761889065402_zjy9zwqrf.py",
+        "similarity_percent": 48.48,
+        "full_code": "a=float(input())\nb=float(input())\nif a==5 and  b==10:\n    print(15)\nelse:\n    print(a+b)",
+        "highlighted_code": "<span class='highlight-green'>a=float(input())\nb=float(input())\n</span>if a==5 and  b==10:\n    print(15)\nelse:\n    print(a+b)"
+      },
+      "token_overlap": 32,
+      "max_similarity_percent": 76.19
+    },
+    {
+      "case_id": 53,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3e0a3724325137447752b/3f654d3748da4cfe988ad9f8/sub_1761926703781_dhjtux7ao.py",
+        "similarity_percent": 76.19,
+        "full_code": "a = float(input())\nb = float(input())\nprint(a+b)",
+        "highlighted_code": "<span class='highlight-red'>a = float(input())\nb = float(input())\n</span>print(a+b)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3e0a3724325137447752b/f95120b3a38a461085ef58cb/sub_1762174127002_gzc6mgunz.py",
+        "similarity_percent": 71.11,
+        "full_code": "a = float(input())\nb = float(input())\ntong = a + b\nprint(tong)",
+        "highlighted_code": "<span class='highlight-green'>a = float(input())\nb = float(input())\n</span>tong = a + b\nprint(tong)"
+      },
+      "token_overlap": 32,
+      "max_similarity_percent": 76.19
+    },
+    {
+      "case_id": 54,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3e0a3724325137447752b/3f654d3748da4cfe988ad9f8/sub_1761926703781_dhjtux7ao.py",
+        "similarity_percent": 76.19,
+        "full_code": "a = float(input())\nb = float(input())\nprint(a+b)",
+        "highlighted_code": "<span class='highlight-red'>a = float(input())\nb = float(input())\n</span>print(a+b)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3e0a3724325137447752b/f95120b3a38a461085ef58cb/sub_1762173946097_n02z0zw7m.py",
+        "similarity_percent": 100.0,
+        "full_code": "a = float(input())\nb = float(input())\n",
+        "highlighted_code": "<span class='highlight-green'>a = float(input())\nb = float(input())</span>\n"
+      },
+      "token_overlap": 32,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 55,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3e0a3724325137447752b/3f654d3748da4cfe988ad9f8/sub_1761926703781_dhjtux7ao.py",
+        "similarity_percent": 76.19,
+        "full_code": "a = float(input())\nb = float(input())\nprint(a+b)",
+        "highlighted_code": "<span class='highlight-red'>a = float(input())\nb = float(input())\n</span>print(a+b)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3e0a3724325137447752b/cd93b2ff882a4ffa85f4518f/sub_1761889065402_zjy9zwqrf.py",
+        "similarity_percent": 48.48,
+        "full_code": "a=float(input())\nb=float(input())\nif a==5 and  b==10:\n    print(15)\nelse:\n    print(a+b)",
+        "highlighted_code": "<span class='highlight-green'>a=float(input())\nb=float(input())\n</span>if a==5 and  b==10:\n    print(15)\nelse:\n    print(a+b)"
+      },
+      "token_overlap": 32,
+      "max_similarity_percent": 76.19
+    },
+    {
+      "case_id": 56,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3e0a3724325137447752b/295d4dcad1f74d87afc29fce/sub_1761643751324_i62ifvl0p.py",
+        "similarity_percent": 76.19,
+        "full_code": "a= float(input())\nb= float(input())\nprint(a+b)",
+        "highlighted_code": "<span class='highlight-red'>a= float(input())\nb= float(input())\n</span>print(a+b)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3e0a3724325137447752b/cd93b2ff882a4ffa85f4518f/sub_1761889065402_zjy9zwqrf.py",
+        "similarity_percent": 48.48,
+        "full_code": "a=float(input())\nb=float(input())\nif a==5 and  b==10:\n    print(15)\nelse:\n    print(a+b)",
+        "highlighted_code": "<span class='highlight-green'>a=float(input())\nb=float(input())\n</span>if a==5 and  b==10:\n    print(15)\nelse:\n    print(a+b)"
+      },
+      "token_overlap": 32,
+      "max_similarity_percent": 76.19
+    },
+    {
+      "case_id": 57,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3e0a3724325137447752b/4619643a0f2348b6b74a746a/sub_1762196468054_wyqm6scvm.py",
+        "similarity_percent": 73.68,
+        "full_code": "a = int(input())\nb = int(input())\ntotal = a + b\nprint(total)",
+        "highlighted_code": "<span class='highlight-red'>a = int(input())\nb = int(input())\n</span>total = a + b\nprint(total)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3e0a3724325137447752b/295d4dcad1f74d87afc29fce/sub_1761643630657_l7fniwm0i.py",
+        "similarity_percent": 80.0,
+        "full_code": "a= int(input())\nb= int(input())\nprint(a+b)\n",
+        "highlighted_code": "<span class='highlight-green'>a= int(input())\nb= int(input())\n</span>print(a+b)\n"
+      },
+      "token_overlap": 28,
+      "max_similarity_percent": 80.0
+    },
+    {
+      "case_id": 58,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3e0a3724325137447752b/4619643a0f2348b6b74a746a/sub_1762196468054_wyqm6scvm.py",
+        "similarity_percent": 73.68,
+        "full_code": "a = int(input())\nb = int(input())\ntotal = a + b\nprint(total)",
+        "highlighted_code": "<span class='highlight-red'>a = int(input())\nb = int(input())\n</span>total = a + b\nprint(total)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3e0a3724325137447752b/30d29d0969994c929976d40a/sub_1761652313165_go5ls75uh.py",
+        "similarity_percent": 80.0,
+        "full_code": "a=int(input())\nb=int(input())\nprint(a+b)",
+        "highlighted_code": "<span class='highlight-green'>a=int(input())\nb=int(input())\n</span>print(a+b)"
+      },
+      "token_overlap": 28,
+      "max_similarity_percent": 80.0
+    },
+    {
+      "case_id": 59,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3e0a3724325137447752b/fed45b08a578484ebf92e830/sub_1761666055557_kocfq2mwc.py",
+        "similarity_percent": 71.11,
+        "full_code": "a=float(input())\nb=float(input())\nc=a+b\nprint(c)",
+        "highlighted_code": "<span class='highlight-red'>a=float(input())\nb=float(input())\n</span>c=a+b\nprint(c)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3e0a3724325137447752b/3f654d3748da4cfe988ad9f8/sub_1761926703781_dhjtux7ao.py",
+        "similarity_percent": 76.19,
+        "full_code": "a = float(input())\nb = float(input())\nprint(a+b)",
+        "highlighted_code": "<span class='highlight-green'>a = float(input())\nb = float(input())\n</span>print(a+b)"
+      },
+      "token_overlap": 32,
+      "max_similarity_percent": 76.19
+    },
+    {
+      "case_id": 60,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3e0a3724325137447752b/fed45b08a578484ebf92e830/sub_1761666055557_kocfq2mwc.py",
+        "similarity_percent": 71.11,
+        "full_code": "a=float(input())\nb=float(input())\nc=a+b\nprint(c)",
+        "highlighted_code": "<span class='highlight-red'>a=float(input())\nb=float(input())\n</span>c=a+b\nprint(c)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3e0a3724325137447752b/f95120b3a38a461085ef58cb/sub_1762173946097_n02z0zw7m.py",
+        "similarity_percent": 100.0,
+        "full_code": "a = float(input())\nb = float(input())\n",
+        "highlighted_code": "<span class='highlight-green'>a = float(input())\nb = float(input())</span>\n"
+      },
+      "token_overlap": 32,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 61,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3e0a3724325137447752b/fed45b08a578484ebf92e830/sub_1761666055557_kocfq2mwc.py",
+        "similarity_percent": 71.11,
+        "full_code": "a=float(input())\nb=float(input())\nc=a+b\nprint(c)",
+        "highlighted_code": "<span class='highlight-red'>a=float(input())\nb=float(input())\n</span>c=a+b\nprint(c)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3e0a3724325137447752b/295d4dcad1f74d87afc29fce/sub_1761643751324_i62ifvl0p.py",
+        "similarity_percent": 76.19,
+        "full_code": "a= float(input())\nb= float(input())\nprint(a+b)",
+        "highlighted_code": "<span class='highlight-green'>a= float(input())\nb= float(input())\n</span>print(a+b)"
+      },
+      "token_overlap": 32,
+      "max_similarity_percent": 76.19
+    },
+    {
+      "case_id": 62,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3e0a3724325137447752b/fed45b08a578484ebf92e830/sub_1761666055557_kocfq2mwc.py",
+        "similarity_percent": 71.11,
+        "full_code": "a=float(input())\nb=float(input())\nc=a+b\nprint(c)",
+        "highlighted_code": "<span class='highlight-red'>a=float(input())\nb=float(input())\n</span>c=a+b\nprint(c)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3e0a3724325137447752b/cd93b2ff882a4ffa85f4518f/sub_1761889065402_zjy9zwqrf.py",
+        "similarity_percent": 48.48,
+        "full_code": "a=float(input())\nb=float(input())\nif a==5 and  b==10:\n    print(15)\nelse:\n    print(a+b)",
+        "highlighted_code": "<span class='highlight-green'>a=float(input())\nb=float(input())\n</span>if a==5 and  b==10:\n    print(15)\nelse:\n    print(a+b)"
+      },
+      "token_overlap": 32,
+      "max_similarity_percent": 71.11
+    },
+    {
+      "case_id": 63,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3e0a3724325137447752b/f95120b3a38a461085ef58cb/sub_1762174127002_gzc6mgunz.py",
+        "similarity_percent": 71.11,
+        "full_code": "a = float(input())\nb = float(input())\ntong = a + b\nprint(tong)",
+        "highlighted_code": "<span class='highlight-red'>a = float(input())\nb = float(input())\n</span>tong = a + b\nprint(tong)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3e0a3724325137447752b/f95120b3a38a461085ef58cb/sub_1762173946097_n02z0zw7m.py",
+        "similarity_percent": 100.0,
+        "full_code": "a = float(input())\nb = float(input())\n",
+        "highlighted_code": "<span class='highlight-green'>a = float(input())\nb = float(input())</span>\n"
+      },
+      "token_overlap": 32,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 64,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3e0a3724325137447752b/f95120b3a38a461085ef58cb/sub_1762174127002_gzc6mgunz.py",
+        "similarity_percent": 71.11,
+        "full_code": "a = float(input())\nb = float(input())\ntong = a + b\nprint(tong)",
+        "highlighted_code": "<span class='highlight-red'>a = float(input())\nb = float(input())\n</span>tong = a + b\nprint(tong)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3e0a3724325137447752b/295d4dcad1f74d87afc29fce/sub_1761643751324_i62ifvl0p.py",
+        "similarity_percent": 76.19,
+        "full_code": "a= float(input())\nb= float(input())\nprint(a+b)",
+        "highlighted_code": "<span class='highlight-green'>a= float(input())\nb= float(input())\n</span>print(a+b)"
+      },
+      "token_overlap": 32,
+      "max_similarity_percent": 76.19
+    },
+    {
+      "case_id": 65,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3e0a3724325137447752b/f95120b3a38a461085ef58cb/sub_1762174127002_gzc6mgunz.py",
+        "similarity_percent": 71.11,
+        "full_code": "a = float(input())\nb = float(input())\ntong = a + b\nprint(tong)",
+        "highlighted_code": "<span class='highlight-red'>a = float(input())\nb = float(input())\n</span>tong = a + b\nprint(tong)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3e0a3724325137447752b/cd93b2ff882a4ffa85f4518f/sub_1761889065402_zjy9zwqrf.py",
+        "similarity_percent": 48.48,
+        "full_code": "a=float(input())\nb=float(input())\nif a==5 and  b==10:\n    print(15)\nelse:\n    print(a+b)",
+        "highlighted_code": "<span class='highlight-green'>a=float(input())\nb=float(input())\n</span>if a==5 and  b==10:\n    print(15)\nelse:\n    print(a+b)"
+      },
+      "token_overlap": 32,
+      "max_similarity_percent": 71.11
     }
   ]
 }

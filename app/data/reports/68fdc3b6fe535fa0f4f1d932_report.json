@@ -4,93 +4,892 @@
     "min_token_overlap": 80,
     "min_similarity_percent": 60
   },
-  "total_cases_found": 7,
-  "total_cases_filtered": 5,
+  "total_cases_found": 63,
+  "total_cases_filtered": 52,
   "cases": [
     {
       "case_id": 1,
       "file1": {
-        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68fdc3b6fe535fa0f4f1d932/3fa6af8d916a46039239cabe/sub_1761578151560_mwpol9ntt.py",
-        "similarity_percent": 76.42,
-        "full_code": "n,m=map(int,input().split())\nA=[]\nfor i in range(n):\n    t=list(map(int,input().split()))\n    A.append(t)\nimport math\nfor i in range(n):\n    for j in range(m):\n        check=1\n        if A[i][j]==1:\n            check=0\n        for k in range(2,int(math.sqrt(A[i][j]))+1):\n            if A[i][j]%k==0: \n                check=0\n                break\n        print(check,end=\" \")\n    print()\n",
-        "highlighted_code": "<span class='highlight-red'>n,m=map(int,input().split())\nA=[]\nfor i in range(n):\n    t=list(map(int,input().split()))\n    A.append(t)\nimport math\nfor i in range(n):\n    for j in range(m):\n        </span>check=1\n        if A[i][j]==1:\n            check=0\n        for k <span class='highlight-red'>in range(2,int(math.sqrt(A[i][j]))+1):\n            if A[i][j]%k==0</span>: \n                check=0\n                break\n        print(check,end=&#34; &#34;)\n    print()\n"
+        "path": "/app/app/data/submissions/68fdc3b6fe535fa0f4f1d932/f95120b3a38a461085ef58cb/sub_1762013725167_sojwxztqg.py",
+        "similarity_percent": 100.0,
+        "full_code": "def prime(x):\n    if x < 2:\n        return False\n    for i in range(2, int(x**0.5) + 1):\n        if x % i == 0:\n            return False\n    return True\n\nn, m = map(int, input().split())\n\nfor _ in range(n):\n    arr = list(map(int, input().split()))\n    for num in arr:\n        print(1 if prime(num) else 0, end=' ')\n    print()  ",
+        "highlighted_code": "<span class='highlight-red'>def prime(x):\n    if x &lt; 2:\n        return False\n    for i in range(2, int(x**0.5) + 1):\n        if x % i == 0:\n            return False\n    return True\n\nn, m = map(int, input().split())\n\nfor _ in range(n):\n    arr = list(map(int, input().split()))\n    for num in arr:\n        print(1 if prime(num) else 0, end=&#39; &#39;)\n    print</span>()  "
       },
       "file2": {
-        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68fdc3b6fe535fa0f4f1d932/3fa6af8d916a46039239cabe/sub_1761578043695_h75s62z1l.py",
-        "similarity_percent": 80.6,
-        "full_code": "n,m=map(int,input().split())\nA=[]\nfor i in range(n):\n    t=list(map(int,input().split()))\n    A.append(t)\nimport math\nfor i in range(n):\n    for j in range(m):\n        check=1\n        for k in range(2,int(math.sqrt(A[i][j]))+1):\n            if A[i][j]%k==0 or A[i][j]==1:\n                check=0\n            \n        print(check,end=\" \")\n    print()\n",
-        "highlighted_code": "<span class='highlight-green'>n,m=map(int,input().split())\nA=[]\nfor i in range(n):\n    t=list(map(int,input().split()))\n    A.append(t)\nimport math\nfor i in range(n):\n    for j in range(m):\n        </span>check=1\n        for k <span class='highlight-green'>in range(2,int(math.sqrt(A[i][j]))+1):\n            if A[i][j]%k==0 </span>or A[i][j]==1:\n                check=0\n            \n        print(check,end=&#34; &#34;)\n    print()\n"
+        "path": "/app/app/data/submissions/68fdc3b6fe535fa0f4f1d932/e59c34a1bebb49d29bfb3592/sub_1761818937730_a1megx7cs.py",
+        "similarity_percent": 100.0,
+        "full_code": "def prime(x):\n    if x < 2:\n        return False\n    for i in range(2, int(x**0.5) + 1):\n        if x % i == 0:\n            return False\n    return True\n\nn, m = map(int, input().split())\n\nfor _ in range(n):\n    arr = list(map(int, input().split()))\n    for num in arr:\n        print(1 if prime(num) else 0, end=' ')\n    print()  \n",
+        "highlighted_code": "<span class='highlight-green'>def prime(x):\n    if x &lt; 2:\n        return False\n    for i in range(2, int(x**0.5) + 1):\n        if x % i == 0:\n            return False\n    return True\n\nn, m = map(int, input().split())\n\nfor _ in range(n):\n    arr = list(map(int, input().split()))\n    for num in arr:\n        print(1 if prime(num) else 0, end=&#39; &#39;)\n    print</span>()  \n"
       },
-      "token_overlap": 162,
-      "max_similarity_percent": 80.6
+      "token_overlap": 189,
+      "max_similarity_percent": 100.0
     },
     {
       "case_id": 2,
       "file1": {
-        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68fdc3b6fe535fa0f4f1d932/8e19101eb0da4e9a92a17098/sub_1761635440693_x93blyqy2.py",
-        "similarity_percent": 56.99,
-        "full_code": "def snt(n):\n    if n < 2:\n        return False\n    for i in range (2, int(n**0.5) + 1):\n        if n % i == 0:\n            return False\n    return True\nn, m = map(int, input().split())\nfor i in range(n):\n    row = list(map(int, input().split()))\n    kq = []\n    for x in row:\n        if snt(x):\n            kq.append(1)\n        else:\n            kq.append(0)\n    print(*kq)",
-        "highlighted_code": "def snt(n):\n    if n &lt; 2:\n        return <span class='highlight-red'>False\n    for i in range (2, int(n**0.5) + 1):\n        i</span>f n % i == 0:\n            return False\n    return True\nn, m = <span class='highlight-red'>map(int, input().split())\nfor i in range(n):\n    row = list(map(int, input().split()))\n    kq = []\n    for x in row:\n        </span>if snt(x):\n            kq.append(1)\n        else:\n            kq.append(0)\n    print(*kq)"
+        "path": "/app/app/data/submissions/68fdc3b6fe535fa0f4f1d932/3fa6af8d916a46039239cabe/sub_1761578151560_mwpol9ntt.py",
+        "similarity_percent": 78.1,
+        "full_code": "n,m=map(int,input().split())\nA=[]\nfor i in range(n):\n    t=list(map(int,input().split()))\n    A.append(t)\nimport math\nfor i in range(n):\n    for j in range(m):\n        check=1\n        if A[i][j]==1:\n            check=0\n        for k in range(2,int(math.sqrt(A[i][j]))+1):\n            if A[i][j]%k==0: \n                check=0\n                break\n        print(check,end=\" \")\n    print()\n",
+        "highlighted_code": "<span class='highlight-red'>n,m=map(int,input().split())\nA=[]\nfor i in range(n):\n    t=list(map(int,input().split()))\n    A.append(t)\nimport math\nfor i in range(n):\n    for j in range(m):\n        check=</span>1\n        if A[i][j]==1:\n            check=0\n        <span class='highlight-red'>for k in range(2,int(math.sqrt(A[i][j]))+1):\n            if A[i][j]%</span>k==0: \n                check=0\n                break\n        print(check,end=&#34; &#34;)\n    print()\n"
       },
       "file2": {
-        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68fdc3b6fe535fa0f4f1d932/0d74995bf22b4574a97a2297/sub_1761589673461_llje7avog.py",
-        "similarity_percent": 42.97,
-        "full_code": "import sys\ninput = sys.stdin.readline\ndef solve():\n    mx = 1_000_000\n    primes = [True] * (mx + 1)\n    primes[0] = False\n    primes[1] = False\n    for p in range(2, int(mx**0.5) + 1):\n        if primes[p]:\n            for i in range(p * p, mx + 1, p):\n                primes[i] = False\n    n, m = map(int, input().split())\n    for _ in range(n):\n        row = list(map(int, input().split()))\n        res = []\n        for num in row:\n            if primes[num]:\n                res.append(1)\n            else:\n                res.append(0)\n        print(*res)\nsolve()",
-        "highlighted_code": "import sys\ninput = sys.stdin.readline\ndef solve():\n    mx = 1_000_000\n    primes = [True] * (mx + 1)\n    primes[0] = False\n    primes[1] = <span class='highlight-green'>False\n    for p in range(2, int(mx**0.5) + 1):\n        i</span>f primes[p]:\n            for i in range(p * p, mx + 1, p):\n                primes[i] = False\n    n, m = <span class='highlight-green'>map(int, input().split())\n    for _ in range(n):\n        row = list(map(int, input().split()))\n        res = []\n        for num in row:\n            </span>if primes[num]:\n                res.append(1)\n            else:\n                res.append(0)\n        print(*res)\nsolve()"
+        "path": "/app/app/data/submissions/68fdc3b6fe535fa0f4f1d932/3fa6af8d916a46039239cabe/sub_1761578043695_h75s62z1l.py",
+        "similarity_percent": 79.61,
+        "full_code": "n,m=map(int,input().split())\nA=[]\nfor i in range(n):\n    t=list(map(int,input().split()))\n    A.append(t)\nimport math\nfor i in range(n):\n    for j in range(m):\n        check=1\n        for k in range(2,int(math.sqrt(A[i][j]))+1):\n            if A[i][j]%k==0 or A[i][j]==1:\n                check=0\n            \n        print(check,end=\" \")\n    print()\n",
+        "highlighted_code": "<span class='highlight-green'>n,m=map(int,input().split())\nA=[]\nfor i in range(n):\n    t=list(map(int,input().split()))\n    A.append(t)\nimport math\nfor i in range(n):\n    for j in range(m):\n        check=</span>1\n        <span class='highlight-green'>for k in range(2,int(math.sqrt(A[i][j]))+1):\n            if A[i][j]%</span>k==0 or A[i][j]==1:\n                check=0\n            \n        print(check,end=&#34; &#34;)\n    print()\n"
       },
-      "token_overlap": 110,
-      "max_similarity_percent": 56.99
+      "token_overlap": 164,
+      "max_similarity_percent": 79.61
     },
     {
       "case_id": 3,
       "file1": {
-        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68fdc3b6fe535fa0f4f1d932/8e19101eb0da4e9a92a17098/sub_1761635440693_x93blyqy2.py",
-        "similarity_percent": 52.85,
+        "path": "/app/app/data/submissions/68fdc3b6fe535fa0f4f1d932/8e19101eb0da4e9a92a17098/sub_1761635440693_x93blyqy2.py",
+        "similarity_percent": 77.84,
         "full_code": "def snt(n):\n    if n < 2:\n        return False\n    for i in range (2, int(n**0.5) + 1):\n        if n % i == 0:\n            return False\n    return True\nn, m = map(int, input().split())\nfor i in range(n):\n    row = list(map(int, input().split()))\n    kq = []\n    for x in row:\n        if snt(x):\n            kq.append(1)\n        else:\n            kq.append(0)\n    print(*kq)",
-        "highlighted_code": "def snt(n):\n    if n &lt; 2:\n        return False\n    <span class='highlight-red'>for i in range (2, int(n**0.5) + 1):\n        if n % i == 0:\n            retur</span>n False\n    return True\nn, m = <span class='highlight-red'>map(int, input().split())\nfor i in range(n):\n    row = list(map(int, input().split</span>()))\n    kq = []\n    for x in row:\n        if snt(x):\n            kq.append(1)\n        else:\n            kq.append(0)\n    print(*kq)"
+        "highlighted_code": "<span class='highlight-red'>def snt(n):\n    if n &lt; 2:\n        return False\n    for i in range (2, int(n**0.5) + 1):\n        if n % i == 0:\n            return False\n    return True\nn, m = map(int, input().split())\nfor i in range(n):\n    row = list(map(int, input().split()))\n    </span>kq = []\n    for x in row:\n        if snt(x):\n            kq.append(1)\n        else:\n            kq.append(0)\n    print(*kq)"
       },
       "file2": {
-        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68fdc3b6fe535fa0f4f1d932/27e30f767b3a46b283cbfec0/sub_1761566581004_kedqltc10.py",
-        "similarity_percent": 53.4,
-        "full_code": "def check_prime(n):\n    if n < 2:\n        return 0\n    for i in range(2,int(n**0.5)+1):\n        if n % i == 0:\n            return 0\n    return 1\nn, m = map(int, input().split())\nfor _ in range(n):\n    array = list(map(int,input().split()))\n    for num in array:\n\n        if check_prime(num):\n            print(1,end = ' ')\n        else:\n            print(0,end = ' ')\n    print()\n",
-        "highlighted_code": "def check_prime(n):\n    if n &lt; 2:\n        return 0\n    <span class='highlight-green'>for i in range(2,int(n**0.5)+1):\n        if n % i == 0:\n            retur</span>n 0\n    return 1\nn, m = <span class='highlight-green'>map(int, input().split())\nfor _ in range(n):\n    array = list(map(int,input().split</span>()))\n    for num in array:\n\n        if check_prime(num):\n            print(1,end = &#39; &#39;)\n        else:\n            print(0,end = &#39; &#39;)\n    print()\n"
+        "path": "/app/app/data/submissions/68fdc3b6fe535fa0f4f1d932/f95120b3a38a461085ef58cb/sub_1762013725167_sojwxztqg.py",
+        "similarity_percent": 79.89,
+        "full_code": "def prime(x):\n    if x < 2:\n        return False\n    for i in range(2, int(x**0.5) + 1):\n        if x % i == 0:\n            return False\n    return True\n\nn, m = map(int, input().split())\n\nfor _ in range(n):\n    arr = list(map(int, input().split()))\n    for num in arr:\n        print(1 if prime(num) else 0, end=' ')\n    print()  ",
+        "highlighted_code": "<span class='highlight-green'>def prime(x):\n    if x &lt; 2:\n        return False\n    for i in range(2, int(x**0.5) + 1):\n        if x % i == 0:\n            return False\n    return True\n\nn, m = map(int, input().split())\n\nfor _ in range(n):\n    arr = list(map(int, input().split()))\n    </span>for num in arr:\n        print(1 if prime(num) else 0, end=&#39; &#39;)\n    print()  "
       },
-      "token_overlap": 102,
-      "max_similarity_percent": 53.4
+      "token_overlap": 151,
+      "max_similarity_percent": 79.89
     },
     {
       "case_id": 4,
       "file1": {
-        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68fdc3b6fe535fa0f4f1d932/f0199fcb94bf405a8bf2ca38/sub_1761640080288_rjfdza48v.py",
-        "similarity_percent": 35.98,
-        "full_code": "import math\ndef is_prime(x):\n    if x < 2:\n        return False\n    if x == 2:\n        return True\n    if x % 2 == 0:\n        return False\n    for i in range(3, int(math.isqrt(x)) + 1, 2):\n        if x % i == 0:\n            return False\n    return True\nn, m = map(int, input().split())\nmatrix = []\nfor _ in range(n):\n    row = list(map(int, input().split()))\n    matrix.append(row)\nprime_map = []\nfor row in matrix:\n    prime_row = [1 if is_prime(num) else 0 for num in row]\n    prime_map.append(prime_row)\nfor row in prime_map:\n    print(*row)\n",
-        "highlighted_code": "import math\ndef is_prime(x):\n    if x &lt; 2:\n        return False\n    if x == 2:\n        return True\n    if x % 2 == 0:\n        return False\n    for i in range(3, int(math.isqrt(x)) + 1, 2):\n        <span class='highlight-red'>if x % i == 0:\n            return False\n    return True\nn, m = map(int, input().split</span>())\nmatrix = []\n<span class='highlight-red'>for _ in range(n):\n    row = list(map(int, input().split()))\n    matrix</span>.append(row)\nprime_map = []\nfor row in matrix:\n    prime_row = [1 if is_prime(num) else 0 for num in row]\n    prime_map.append(prime_row)\nfor row in prime_map:\n    print(*row)\n"
+        "path": "/app/app/data/submissions/68fdc3b6fe535fa0f4f1d932/8e19101eb0da4e9a92a17098/sub_1761635440693_x93blyqy2.py",
+        "similarity_percent": 77.84,
+        "full_code": "def snt(n):\n    if n < 2:\n        return False\n    for i in range (2, int(n**0.5) + 1):\n        if n % i == 0:\n            return False\n    return True\nn, m = map(int, input().split())\nfor i in range(n):\n    row = list(map(int, input().split()))\n    kq = []\n    for x in row:\n        if snt(x):\n            kq.append(1)\n        else:\n            kq.append(0)\n    print(*kq)",
+        "highlighted_code": "<span class='highlight-red'>def snt(n):\n    if n &lt; 2:\n        return False\n    for i in range (2, int(n**0.5) + 1):\n        if n % i == 0:\n            return False\n    return True\nn, m = map(int, input().split())\nfor i in range(n):\n    row = list(map(int, input().split()))\n    </span>kq = []\n    for x in row:\n        if snt(x):\n            kq.append(1)\n        else:\n            kq.append(0)\n    print(*kq)"
       },
       "file2": {
-        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68fdc3b6fe535fa0f4f1d932/8e19101eb0da4e9a92a17098/sub_1761635440693_x93blyqy2.py",
-        "similarity_percent": 49.22,
-        "full_code": "def snt(n):\n    if n < 2:\n        return False\n    for i in range (2, int(n**0.5) + 1):\n        if n % i == 0:\n            return False\n    return True\nn, m = map(int, input().split())\nfor i in range(n):\n    row = list(map(int, input().split()))\n    kq = []\n    for x in row:\n        if snt(x):\n            kq.append(1)\n        else:\n            kq.append(0)\n    print(*kq)",
-        "highlighted_code": "def snt(n):\n    if n &lt; 2:\n        return False\n    for i in range (2, int(n**0.5) + 1):\n        <span class='highlight-green'>if n % i == 0:\n            return False\n    return True\nn, m = map(int, input().split</span>())\n<span class='highlight-green'>for i in range(n):\n    row = list(map(int, input().split()))\n    kq </span>= []\n    for x in row:\n        if snt(x):\n            kq.append(1)\n        else:\n            kq.append(0)\n    print(*kq)"
+        "path": "/app/app/data/submissions/68fdc3b6fe535fa0f4f1d932/e59c34a1bebb49d29bfb3592/sub_1761818937730_a1megx7cs.py",
+        "similarity_percent": 79.89,
+        "full_code": "def prime(x):\n    if x < 2:\n        return False\n    for i in range(2, int(x**0.5) + 1):\n        if x % i == 0:\n            return False\n    return True\n\nn, m = map(int, input().split())\n\nfor _ in range(n):\n    arr = list(map(int, input().split()))\n    for num in arr:\n        print(1 if prime(num) else 0, end=' ')\n    print()  \n",
+        "highlighted_code": "<span class='highlight-green'>def prime(x):\n    if x &lt; 2:\n        return False\n    for i in range(2, int(x**0.5) + 1):\n        if x % i == 0:\n            return False\n    return True\n\nn, m = map(int, input().split())\n\nfor _ in range(n):\n    arr = list(map(int, input().split()))\n    </span>for num in arr:\n        print(1 if prime(num) else 0, end=&#39; &#39;)\n    print()  \n"
       },
-      "token_overlap": 95,
-      "max_similarity_percent": 49.22
+      "token_overlap": 151,
+      "max_similarity_percent": 79.89
     },
     {
       "case_id": 5,
       "file1": {
-        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68fdc3b6fe535fa0f4f1d932/0d74995bf22b4574a97a2297/sub_1761589673461_llje7avog.py",
-        "similarity_percent": 34.77,
-        "full_code": "import sys\ninput = sys.stdin.readline\ndef solve():\n    mx = 1_000_000\n    primes = [True] * (mx + 1)\n    primes[0] = False\n    primes[1] = False\n    for p in range(2, int(mx**0.5) + 1):\n        if primes[p]:\n            for i in range(p * p, mx + 1, p):\n                primes[i] = False\n    n, m = map(int, input().split())\n    for _ in range(n):\n        row = list(map(int, input().split()))\n        res = []\n        for num in row:\n            if primes[num]:\n                res.append(1)\n            else:\n                res.append(0)\n        print(*res)\nsolve()",
-        "highlighted_code": "import sys\ninput = sys.stdin.readline\ndef solve():\n    mx = 1_000_000\n    primes = [True] * (mx + 1)\n    primes[0] = False\n    primes[1] = False\n    <span class='highlight-red'>for p in range(2, int(mx**0.5) + 1):\n        i</span>f primes[p]:\n            for i in range(p * p, mx + 1, p):\n                primes[i] = False\n    n, m = <span class='highlight-red'>map(int, input().split())\n    for _ in range(n):\n        row = list(map(int, input().split</span>()))\n        res = []\n        for num in row:\n            if primes[num]:\n                res.append(1)\n            else:\n                res.append(0)\n        print(*res)\nsolve()"
+        "path": "/app/app/data/submissions/68fdc3b6fe535fa0f4f1d932/bbb05531336e487d8ed54046/sub_1762798127646_ggfmsadr6.py",
+        "similarity_percent": 75.11,
+        "full_code": "import math\n\ndef prime(n):\n    if n < 2:\n        return False\n    for i in range(2, int(math.isqrt(n)) + 1):\n        if n % i == 0:\n            return False\n    return True\n\nn, m = map(int, input().split())\na = [list(map(int, input().split())) for _ in range(n)]\n\nfor i in range(n):\n    for j in range(m):\n        print(1 if prime(a[i][j]) else 0, end=\" \")\n    print()\n",
+        "highlighted_code": "import math\n\nde<span class='highlight-red'>f prime(n):\n    if n &lt; 2:\n        return False\n    for i in range(2, int</span>(math.isqrt(n)<span class='highlight-red'>) + 1):\n        if n % i == 0:\n            return False\n    return True\n\nn, m = map(int, input().split())\na = [list(map(int, input().split())) for _ in range(n)]\n\nfor i in range(n):\n    for j in range(m)</span>:\n        print(1 if prime(a[i][j]) else 0, end=&#34; &#34;)\n    print()\n"
       },
       "file2": {
-        "path": "/home/ubuntu/Desktop/quangnm/livecode/check/app/data/submissions/68fdc3b6fe535fa0f4f1d932/27e30f767b3a46b283cbfec0/sub_1761566581004_kedqltc10.py",
-        "similarity_percent": 46.6,
-        "full_code": "def check_prime(n):\n    if n < 2:\n        return 0\n    for i in range(2,int(n**0.5)+1):\n        if n % i == 0:\n            return 0\n    return 1\nn, m = map(int, input().split())\nfor _ in range(n):\n    array = list(map(int,input().split()))\n    for num in array:\n\n        if check_prime(num):\n            print(1,end = ' ')\n        else:\n            print(0,end = ' ')\n    print()\n",
-        "highlighted_code": "def check_prime(n):\n    if n &lt; 2:\n        return 0\n    <span class='highlight-green'>for i in range(2,int(n**0.5)+1):\n        i</span>f n % i == 0:\n            return 0\n    return 1\nn, m = <span class='highlight-green'>map(int, input().split())\nfor _ in range(n):\n    array = list(map(int,input().split</span>()))\n    for num in array:\n\n        if check_prime(num):\n            print(1,end = &#39; &#39;)\n        else:\n            print(0,end = &#39; &#39;)\n    print()\n"
+        "path": "/app/app/data/submissions/68fdc3b6fe535fa0f4f1d932/c2c38e9c5ead4887925c7e80/sub_1762618708319_84or9mzdl.py",
+        "similarity_percent": 74.14,
+        "full_code": "def nguyen_to(x):\n    if x < 2:\n        return False\n    for i in range(2, int(x**0.5) + 1):\n        if x % i == 0:\n            return False\n    return True\n\nn, m = map(int, input().split())\nma_tran = [list(map(int, input().split())) for _ in range(n)]\n\nfor i in range(n):\n    for j in range(m):\n        if nguyen_to(ma_tran[i][j]):\n            print(1, end=' ')\n        else:\n            print(0, end=' ')\n    print()\n",
+        "highlighted_code": "de<span class='highlight-green'>f nguyen_to(x):\n    if x &lt; 2:\n        return False\n    for i in range(2, int</span>(x**0.5<span class='highlight-green'>) + 1):\n        if x % i == 0:\n            return False\n    return True\n\nn, m = map(int, input().split())\nma_tran = [list(map(int, input().split())) for _ in range(n)]\n\nfor i in range(n):\n    for j in range(m)</span>:\n        if nguyen_to(ma_tran[i][j]):\n            print(1, end=&#39; &#39;)\n        else:\n            print(0, end=&#39; &#39;)\n    print()\n"
       },
-      "token_overlap": 89,
-      "max_similarity_percent": 46.6
+      "token_overlap": 172,
+      "max_similarity_percent": 75.11
+    },
+    {
+      "case_id": 6,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b6fe535fa0f4f1d932/345569c455a14db085eec8e9/sub_1762612137995_esby2qoss.py",
+        "similarity_percent": 73.64,
+        "full_code": "def nguyen_to(n):\n    if n < 2:\n        return False\n    for i in range(2,int(n**0.5)+1):\n        if n%i==0:\n            return False\n    return True      \nm, n = map(int,input().split())\na = [list(map(int,input().split())) for _ in range(m)]\ns =[]\nfor i in range(m):\n    tong =[]\n    for j in range(n):\n        if nguyen_to(a[i][j]):\n            tong.append(1)\n        else:\n            tong.append(0)\n    s.append(tong)\nfor tong in s:\n    print(*tong)\n",
+        "highlighted_code": "<span class='highlight-red'>def nguyen_to(n):\n    if n &lt; 2:\n        return False\n    for i in range(2,int(n**0.5)+1):\n        if n%i==0:\n            return False\n    return True      \nm, n = map(int,input().split())\na = [list(map(int,input().split())) for _ in range(m)</span>]\ns =[]\nfor i in range(m):\n    tong =[]\n    fo<span class='highlight-red'>r j in range(n):\n        if nguyen_to(a[i][j])</span>:\n            tong.append(1)\n        else:\n            tong.append(0)\n    s.append(tong)\nfor tong in s:\n    print(*tong)\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b6fe535fa0f4f1d932/c2c38e9c5ead4887925c7e80/sub_1762618708319_84or9mzdl.py",
+        "similarity_percent": 75.86,
+        "full_code": "def nguyen_to(x):\n    if x < 2:\n        return False\n    for i in range(2, int(x**0.5) + 1):\n        if x % i == 0:\n            return False\n    return True\n\nn, m = map(int, input().split())\nma_tran = [list(map(int, input().split())) for _ in range(n)]\n\nfor i in range(n):\n    for j in range(m):\n        if nguyen_to(ma_tran[i][j]):\n            print(1, end=' ')\n        else:\n            print(0, end=' ')\n    print()\n",
+        "highlighted_code": "<span class='highlight-green'>def nguyen_to(x):\n    if x &lt; 2:\n        return False\n    for i in range(2, int(x**0.5) + 1):\n        if x % i == 0:\n            return False\n    return True\n\nn, m = map(int, input().split())\nma_tran = [list(map(int, input().split())) for _ in range(n)</span>]\n\nfor i in range(n):\n    fo<span class='highlight-green'>r j in range(m):\n        if nguyen_to(ma_tran[i][j])</span>:\n            print(1, end=&#39; &#39;)\n        else:\n            print(0, end=&#39; &#39;)\n    print()\n"
+      },
+      "token_overlap": 176,
+      "max_similarity_percent": 75.86
+    },
+    {
+      "case_id": 7,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b6fe535fa0f4f1d932/c2c38e9c5ead4887925c7e80/sub_1762618708319_84or9mzdl.py",
+        "similarity_percent": 73.28,
+        "full_code": "def nguyen_to(x):\n    if x < 2:\n        return False\n    for i in range(2, int(x**0.5) + 1):\n        if x % i == 0:\n            return False\n    return True\n\nn, m = map(int, input().split())\nma_tran = [list(map(int, input().split())) for _ in range(n)]\n\nfor i in range(n):\n    for j in range(m):\n        if nguyen_to(ma_tran[i][j]):\n            print(1, end=' ')\n        else:\n            print(0, end=' ')\n    print()\n",
+        "highlighted_code": "def nguyen_to(x):\n    if x &lt; 2:\n        <span class='highlight-red'>return False\n    for i in range(2, int(x**0.5) + 1):\n        if x % i == 0:\n            return False\n    return </span>True\n\nn, m = <span class='highlight-red'>map(int, input().split())\nma_tran = [list(map(int, input().split())) for _ in range(n)</span>]\n\nf<span class='highlight-red'>or i in range(n):\n    for j in range(m):\n        if nguyen_to(ma_tran[i][j])</span>:\n            print(1, end=&#39; &#39;)\n        else:\n            print(0, end=&#39; &#39;)\n    print()\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b6fe535fa0f4f1d932/fa972feccadf40fe9df799d0/sub_1762453474068_fqsevw4r9.py",
+        "similarity_percent": 70.83,
+        "full_code": "n, m = map(int, input().split())\nA = [list(map(int, input().split())) for _ in range(n)]\nC = [[0] * m for _ in range(n)]\ndef is_prime(x):\n    if x <= 1:\n        return False\n    for i in range(2, int(x**0.5) + 1):\n        if x % i == 0:\n            return False\n    return True\nfor i in range(n):\n    for j in range(m):\n        if is_prime(A[i][j]):\n            C[i][j] = 1\nfor d in C:\n    print(*d)",
+        "highlighted_code": "n, m = <span class='highlight-green'>map(int, input().split())\nA = [list(map(int, input().split())) for _ in range(n)</span>]\nC = [[0] * m for _ in range(n)]\ndef is_prime(x):\n    if x &lt;= 1:\n        <span class='highlight-green'>return False\n    for i in range(2, int(x**0.5) + 1):\n        if x % i == 0:\n            return False\n    return </span>True\nf<span class='highlight-green'>or i in range(n):\n    for j in range(m):\n        if is_prime(A[i][j])</span>:\n            C[i][j] = 1\nfor d in C:\n    print(*d)"
+      },
+      "token_overlap": 170,
+      "max_similarity_percent": 73.28
+    },
+    {
+      "case_id": 8,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b6fe535fa0f4f1d932/f95120b3a38a461085ef58cb/sub_1762013725167_sojwxztqg.py",
+        "similarity_percent": 69.84,
+        "full_code": "def prime(x):\n    if x < 2:\n        return False\n    for i in range(2, int(x**0.5) + 1):\n        if x % i == 0:\n            return False\n    return True\n\nn, m = map(int, input().split())\n\nfor _ in range(n):\n    arr = list(map(int, input().split()))\n    for num in arr:\n        print(1 if prime(num) else 0, end=' ')\n    print()  ",
+        "highlighted_code": "<span class='highlight-red'>def prime(x):\n    if x &lt; 2:\n        return False\n    for i in range(2, int(x**0.5) + 1):\n        if x % i == 0:\n            return False\n    return True\n\nn, m = map(int, input().split</span>())\n\nfor _ in range(n):\n    arr = lis<span class='highlight-red'>t(map(int, input().split()))\n    for num </span>in arr:\n        print(1 if prime(num) else 0, end=&#39; &#39;)\n    print()  "
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b6fe535fa0f4f1d932/345569c455a14db085eec8e9/sub_1762612137995_esby2qoss.py",
+        "similarity_percent": 55.23,
+        "full_code": "def nguyen_to(n):\n    if n < 2:\n        return False\n    for i in range(2,int(n**0.5)+1):\n        if n%i==0:\n            return False\n    return True      \nm, n = map(int,input().split())\na = [list(map(int,input().split())) for _ in range(m)]\ns =[]\nfor i in range(m):\n    tong =[]\n    for j in range(n):\n        if nguyen_to(a[i][j]):\n            tong.append(1)\n        else:\n            tong.append(0)\n    s.append(tong)\nfor tong in s:\n    print(*tong)\n",
+        "highlighted_code": "<span class='highlight-green'>def nguyen_to(n):\n    if n &lt; 2:\n        return False\n    for i in range(2,int(n**0.5)+1):\n        if n%i==0:\n            return False\n    return True      \nm, n = map(int,input().split</span>())\na = [lis<span class='highlight-green'>t(map(int,input().split())) for _ </span>in range(m)]\ns =[]\nfor i in range(m):\n    tong =[]\n    for j in range(n):\n        if nguyen_to(a[i][j]):\n            tong.append(1)\n        else:\n            tong.append(0)\n    s.append(tong)\nfor tong in s:\n    print(*tong)\n"
+      },
+      "token_overlap": 132,
+      "max_similarity_percent": 69.84
+    },
+    {
+      "case_id": 9,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b6fe535fa0f4f1d932/f95120b3a38a461085ef58cb/sub_1762013725167_sojwxztqg.py",
+        "similarity_percent": 69.84,
+        "full_code": "def prime(x):\n    if x < 2:\n        return False\n    for i in range(2, int(x**0.5) + 1):\n        if x % i == 0:\n            return False\n    return True\n\nn, m = map(int, input().split())\n\nfor _ in range(n):\n    arr = list(map(int, input().split()))\n    for num in arr:\n        print(1 if prime(num) else 0, end=' ')\n    print()  ",
+        "highlighted_code": "<span class='highlight-red'>def prime(x):\n    if x &lt; 2:\n        return False\n    for i in range(2, int(x**0.5) + 1):\n        if x % i == 0:\n            return False\n    return True\n\nn, m = map(int, input().split</span>())\n\nfor _ in range(n):\n    arr = lis<span class='highlight-red'>t(map(int, input().split()))\n    for num </span>in arr:\n        print(1 if prime(num) else 0, end=&#39; &#39;)\n    print()  "
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b6fe535fa0f4f1d932/c2c38e9c5ead4887925c7e80/sub_1762618708319_84or9mzdl.py",
+        "similarity_percent": 56.9,
+        "full_code": "def nguyen_to(x):\n    if x < 2:\n        return False\n    for i in range(2, int(x**0.5) + 1):\n        if x % i == 0:\n            return False\n    return True\n\nn, m = map(int, input().split())\nma_tran = [list(map(int, input().split())) for _ in range(n)]\n\nfor i in range(n):\n    for j in range(m):\n        if nguyen_to(ma_tran[i][j]):\n            print(1, end=' ')\n        else:\n            print(0, end=' ')\n    print()\n",
+        "highlighted_code": "<span class='highlight-green'>def nguyen_to(x):\n    if x &lt; 2:\n        return False\n    for i in range(2, int(x**0.5) + 1):\n        if x % i == 0:\n            return False\n    return True\n\nn, m = map(int, input().split</span>())\nma_tran = [lis<span class='highlight-green'>t(map(int, input().split())) for _ </span>in range(n)]\n\nfor i in range(n):\n    for j in range(m):\n        if nguyen_to(ma_tran[i][j]):\n            print(1, end=&#39; &#39;)\n        else:\n            print(0, end=&#39; &#39;)\n    print()\n"
+      },
+      "token_overlap": 132,
+      "max_similarity_percent": 69.84
+    },
+    {
+      "case_id": 10,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b6fe535fa0f4f1d932/e59c34a1bebb49d29bfb3592/sub_1761818937730_a1megx7cs.py",
+        "similarity_percent": 69.84,
+        "full_code": "def prime(x):\n    if x < 2:\n        return False\n    for i in range(2, int(x**0.5) + 1):\n        if x % i == 0:\n            return False\n    return True\n\nn, m = map(int, input().split())\n\nfor _ in range(n):\n    arr = list(map(int, input().split()))\n    for num in arr:\n        print(1 if prime(num) else 0, end=' ')\n    print()  \n",
+        "highlighted_code": "<span class='highlight-red'>def prime(x):\n    if x &lt; 2:\n        return False\n    for i in range(2, int(x**0.5) + 1):\n        if x % i == 0:\n            return False\n    return True\n\nn, m = map(int, input().split</span>())\n\nfor _ in range(n):\n    arr = lis<span class='highlight-red'>t(map(int, input().split()))\n    for num </span>in arr:\n        print(1 if prime(num) else 0, end=&#39; &#39;)\n    print()  \n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b6fe535fa0f4f1d932/345569c455a14db085eec8e9/sub_1762612137995_esby2qoss.py",
+        "similarity_percent": 55.23,
+        "full_code": "def nguyen_to(n):\n    if n < 2:\n        return False\n    for i in range(2,int(n**0.5)+1):\n        if n%i==0:\n            return False\n    return True      \nm, n = map(int,input().split())\na = [list(map(int,input().split())) for _ in range(m)]\ns =[]\nfor i in range(m):\n    tong =[]\n    for j in range(n):\n        if nguyen_to(a[i][j]):\n            tong.append(1)\n        else:\n            tong.append(0)\n    s.append(tong)\nfor tong in s:\n    print(*tong)\n",
+        "highlighted_code": "<span class='highlight-green'>def nguyen_to(n):\n    if n &lt; 2:\n        return False\n    for i in range(2,int(n**0.5)+1):\n        if n%i==0:\n            return False\n    return True      \nm, n = map(int,input().split</span>())\na = [lis<span class='highlight-green'>t(map(int,input().split())) for _ </span>in range(m)]\ns =[]\nfor i in range(m):\n    tong =[]\n    for j in range(n):\n        if nguyen_to(a[i][j]):\n            tong.append(1)\n        else:\n            tong.append(0)\n    s.append(tong)\nfor tong in s:\n    print(*tong)\n"
+      },
+      "token_overlap": 132,
+      "max_similarity_percent": 69.84
+    },
+    {
+      "case_id": 11,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b6fe535fa0f4f1d932/e59c34a1bebb49d29bfb3592/sub_1761818937730_a1megx7cs.py",
+        "similarity_percent": 69.84,
+        "full_code": "def prime(x):\n    if x < 2:\n        return False\n    for i in range(2, int(x**0.5) + 1):\n        if x % i == 0:\n            return False\n    return True\n\nn, m = map(int, input().split())\n\nfor _ in range(n):\n    arr = list(map(int, input().split()))\n    for num in arr:\n        print(1 if prime(num) else 0, end=' ')\n    print()  \n",
+        "highlighted_code": "<span class='highlight-red'>def prime(x):\n    if x &lt; 2:\n        return False\n    for i in range(2, int(x**0.5) + 1):\n        if x % i == 0:\n            return False\n    return True\n\nn, m = map(int, input().split</span>())\n\nfor _ in range(n):\n    arr = lis<span class='highlight-red'>t(map(int, input().split()))\n    for num </span>in arr:\n        print(1 if prime(num) else 0, end=&#39; &#39;)\n    print()  \n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b6fe535fa0f4f1d932/c2c38e9c5ead4887925c7e80/sub_1762618708319_84or9mzdl.py",
+        "similarity_percent": 56.9,
+        "full_code": "def nguyen_to(x):\n    if x < 2:\n        return False\n    for i in range(2, int(x**0.5) + 1):\n        if x % i == 0:\n            return False\n    return True\n\nn, m = map(int, input().split())\nma_tran = [list(map(int, input().split())) for _ in range(n)]\n\nfor i in range(n):\n    for j in range(m):\n        if nguyen_to(ma_tran[i][j]):\n            print(1, end=' ')\n        else:\n            print(0, end=' ')\n    print()\n",
+        "highlighted_code": "<span class='highlight-green'>def nguyen_to(x):\n    if x &lt; 2:\n        return False\n    for i in range(2, int(x**0.5) + 1):\n        if x % i == 0:\n            return False\n    return True\n\nn, m = map(int, input().split</span>())\nma_tran = [lis<span class='highlight-green'>t(map(int, input().split())) for _ </span>in range(n)]\n\nfor i in range(n):\n    for j in range(m):\n        if nguyen_to(ma_tran[i][j]):\n            print(1, end=&#39; &#39;)\n        else:\n            print(0, end=&#39; &#39;)\n    print()\n"
+      },
+      "token_overlap": 132,
+      "max_similarity_percent": 69.84
+    },
+    {
+      "case_id": 12,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b6fe535fa0f4f1d932/26894d2babd64210ad6beba1/sub_1761916660012_cvb10x0d7.py",
+        "similarity_percent": 68.92,
+        "full_code": "def snt(n):\n    if n < 2: \n        return False\n    for i in range(2, int(n**0.5)+1):\n        if n %  i == 0:\n            return False\n    return True\n\nif __name__ == \"__main__\":\n    n, m = map(int, input().split())\n    a = [list(map(int, input().split())) for _ in range(n)]\n    for i in range(n):\n        for j in range(m):\n            if(snt(a[i][j])):\n                a[i][j]=1\n            else:\n                a[i][j]=0\n    for x in a:\n        print(*x)",
+        "highlighted_code": "<span class='highlight-red'>def snt(n):\n    if n &lt; 2: \n        return False\n    for i in range(2, int(n**0.5)+1):\n        if n %  i == 0:\n            return False\n    return </span>True\n\nif __name__ == &#34;__main__&#34;:\n    n, m = <span class='highlight-red'>map(int, input().split())\n    a = [list(map(int, input().split())) for _ in range(n)]\n    for i in range(n):\n        for j in range(m)</span>:\n            if(snt(a[i][j])):\n                a[i][j]=1\n            else:\n                a[i][j]=0\n    for x in a:\n        print(*x)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b6fe535fa0f4f1d932/c2c38e9c5ead4887925c7e80/sub_1762618708319_84or9mzdl.py",
+        "similarity_percent": 74.57,
+        "full_code": "def nguyen_to(x):\n    if x < 2:\n        return False\n    for i in range(2, int(x**0.5) + 1):\n        if x % i == 0:\n            return False\n    return True\n\nn, m = map(int, input().split())\nma_tran = [list(map(int, input().split())) for _ in range(n)]\n\nfor i in range(n):\n    for j in range(m):\n        if nguyen_to(ma_tran[i][j]):\n            print(1, end=' ')\n        else:\n            print(0, end=' ')\n    print()\n",
+        "highlighted_code": "<span class='highlight-green'>def nguyen_to(x):\n    if x &lt; 2:\n        return False\n    for i in range(2, int(x**0.5) + 1):\n        if x % i == 0:\n            return False\n    return </span>True\n\nn, m = <span class='highlight-green'>map(int, input().split())\nma_tran = [list(map(int, input().split())) for _ in range(n)]\n\nfor i in range(n):\n    for j in range(m)</span>:\n        if nguyen_to(ma_tran[i][j]):\n            print(1, end=&#39; &#39;)\n        else:\n            print(0, end=&#39; &#39;)\n    print()\n"
+      },
+      "token_overlap": 173,
+      "max_similarity_percent": 74.57
+    },
+    {
+      "case_id": 13,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b6fe535fa0f4f1d932/8e19101eb0da4e9a92a17098/sub_1761635440693_x93blyqy2.py",
+        "similarity_percent": 68.56,
+        "full_code": "def snt(n):\n    if n < 2:\n        return False\n    for i in range (2, int(n**0.5) + 1):\n        if n % i == 0:\n            return False\n    return True\nn, m = map(int, input().split())\nfor i in range(n):\n    row = list(map(int, input().split()))\n    kq = []\n    for x in row:\n        if snt(x):\n            kq.append(1)\n        else:\n            kq.append(0)\n    print(*kq)",
+        "highlighted_code": "def snt(n):\n    if n &lt; 2:\n        return Fals<span class='highlight-red'>e\n    for i in range (2, int(n**0.5) + 1):\n        if n </span>% i == 0:\n            return False\n    return True\nn, <span class='highlight-red'>m = map(int, input().split())\nfor i in range(n):\n    row = list(map(int, input().split()))\n    kq = []\n    for x in </span>row:\n        if snt(x)<span class='highlight-red'>:\n            kq.append(1)\n        else:\n            kq.append(0)\n    print(*</span>kq)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b6fe535fa0f4f1d932/0d74995bf22b4574a97a2297/sub_1761589673461_llje7avog.py",
+        "similarity_percent": 52.99,
+        "full_code": "import sys\ninput = sys.stdin.readline\ndef solve():\n    mx = 1_000_000\n    primes = [True] * (mx + 1)\n    primes[0] = False\n    primes[1] = False\n    for p in range(2, int(mx**0.5) + 1):\n        if primes[p]:\n            for i in range(p * p, mx + 1, p):\n                primes[i] = False\n    n, m = map(int, input().split())\n    for _ in range(n):\n        row = list(map(int, input().split()))\n        res = []\n        for num in row:\n            if primes[num]:\n                res.append(1)\n            else:\n                res.append(0)\n        print(*res)\nsolve()",
+        "highlighted_code": "import sys\ninput = sys.stdin.readline\ndef solve():\n    mx = 1_000_000\n    primes = [True] * (mx + 1)\n    primes[0] = False\n    primes[1] = Fals<span class='highlight-green'>e\n    for p in range(2, int(mx**0.5) + 1):\n        if primes</span>[p]:\n            for i in range(p * p, mx + 1, p):\n                primes[i] = False\n    n, <span class='highlight-green'>m = map(int, input().split())\n    for _ in range(n):\n        row = list(map(int, input().split()))\n        res = []\n        for num in </span>row:\n            if primes[num]<span class='highlight-green'>:\n                res.append(1)\n            else:\n                res.append(0)\n        print(*</span>res)\nsolve()"
+      },
+      "token_overlap": 133,
+      "max_similarity_percent": 68.56
+    },
+    {
+      "case_id": 14,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b6fe535fa0f4f1d932/bbb05531336e487d8ed54046/sub_1762798127646_ggfmsadr6.py",
+        "similarity_percent": 65.5,
+        "full_code": "import math\n\ndef prime(n):\n    if n < 2:\n        return False\n    for i in range(2, int(math.isqrt(n)) + 1):\n        if n % i == 0:\n            return False\n    return True\n\nn, m = map(int, input().split())\na = [list(map(int, input().split())) for _ in range(n)]\n\nfor i in range(n):\n    for j in range(m):\n        print(1 if prime(a[i][j]) else 0, end=\" \")\n    print()\n",
+        "highlighted_code": "import math\n\ndef prime(n):\n    if n &lt; 2:\n        <span class='highlight-red'>return False\n    for i in range(2, int</span>(math.isqrt(n)<span class='highlight-red'>) + 1):\n        if n % i == 0:\n            return False\n    return </span>True\n\nn, m = <span class='highlight-red'>map(int, input().split())\na = [list(map(int, input().split())) for _ in range(n)</span>]\n\nf<span class='highlight-red'>or i in range(n):\n    for j in range(m)</span>:\n        print(1 if prime(a[i][j]) else 0, end=&#34; &#34;)\n    print()\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b6fe535fa0f4f1d932/fa972feccadf40fe9df799d0/sub_1762453474068_fqsevw4r9.py",
+        "similarity_percent": 62.5,
+        "full_code": "n, m = map(int, input().split())\nA = [list(map(int, input().split())) for _ in range(n)]\nC = [[0] * m for _ in range(n)]\ndef is_prime(x):\n    if x <= 1:\n        return False\n    for i in range(2, int(x**0.5) + 1):\n        if x % i == 0:\n            return False\n    return True\nfor i in range(n):\n    for j in range(m):\n        if is_prime(A[i][j]):\n            C[i][j] = 1\nfor d in C:\n    print(*d)",
+        "highlighted_code": "n, m = <span class='highlight-green'>map(int, input().split())\nA = [list(map(int, input().split())) for _ in range(n)</span>]\nC = [[0] * m for _ in range(n)]\ndef is_prime(x):\n    if x &lt;= 1:\n        <span class='highlight-green'>return False\n    for i in range(2, int</span>(x**0.5<span class='highlight-green'>) + 1):\n        if x % i == 0:\n            return False\n    return </span>True\nf<span class='highlight-green'>or i in range(n):\n    for j in range(m)</span>:\n        if is_prime(A[i][j]):\n            C[i][j] = 1\nfor d in C:\n    print(*d)"
+      },
+      "token_overlap": 150,
+      "max_similarity_percent": 65.5
+    },
+    {
+      "case_id": 15,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b6fe535fa0f4f1d932/26894d2babd64210ad6beba1/sub_1761916660012_cvb10x0d7.py",
+        "similarity_percent": 65.34,
+        "full_code": "def snt(n):\n    if n < 2: \n        return False\n    for i in range(2, int(n**0.5)+1):\n        if n %  i == 0:\n            return False\n    return True\n\nif __name__ == \"__main__\":\n    n, m = map(int, input().split())\n    a = [list(map(int, input().split())) for _ in range(n)]\n    for i in range(n):\n        for j in range(m):\n            if(snt(a[i][j])):\n                a[i][j]=1\n            else:\n                a[i][j]=0\n    for x in a:\n        print(*x)",
+        "highlighted_code": "de<span class='highlight-red'>f snt(n):\n    if n &lt; 2: \n        return False\n    for i in range(2, int</span>(n**0.5<span class='highlight-red'>)+1):\n        if n %  i == 0:\n            return False\n    return </span>True\n\nif __name__ == &#34;__main__&#34;:\n    n, m = <span class='highlight-red'>map(int, input().split())\n    a = [list(map(int, input().split())) for _ in range(n)]\n    for i in range(n):\n        for j in range(m)</span>:\n            if(snt(a[i][j])):\n                a[i][j]=1\n            else:\n                a[i][j]=0\n    for x in a:\n        print(*x)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b6fe535fa0f4f1d932/bbb05531336e487d8ed54046/sub_1762798127646_ggfmsadr6.py",
+        "similarity_percent": 71.62,
+        "full_code": "import math\n\ndef prime(n):\n    if n < 2:\n        return False\n    for i in range(2, int(math.isqrt(n)) + 1):\n        if n % i == 0:\n            return False\n    return True\n\nn, m = map(int, input().split())\na = [list(map(int, input().split())) for _ in range(n)]\n\nfor i in range(n):\n    for j in range(m):\n        print(1 if prime(a[i][j]) else 0, end=\" \")\n    print()\n",
+        "highlighted_code": "import math\n\nde<span class='highlight-green'>f prime(n):\n    if n &lt; 2:\n        return False\n    for i in range(2, int</span>(math.isqrt(n)<span class='highlight-green'>) + 1):\n        if n % i == 0:\n            return False\n    return </span>True\n\nn, m = <span class='highlight-green'>map(int, input().split())\na = [list(map(int, input().split())) for _ in range(n)]\n\nfor i in range(n):\n    for j in range(m)</span>:\n        print(1 if prime(a[i][j]) else 0, end=&#34; &#34;)\n    print()\n"
+      },
+      "token_overlap": 164,
+      "max_similarity_percent": 71.62
+    },
+    {
+      "case_id": 16,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b6fe535fa0f4f1d932/f95120b3a38a461085ef58cb/sub_1762013725167_sojwxztqg.py",
+        "similarity_percent": 65.08,
+        "full_code": "def prime(x):\n    if x < 2:\n        return False\n    for i in range(2, int(x**0.5) + 1):\n        if x % i == 0:\n            return False\n    return True\n\nn, m = map(int, input().split())\n\nfor _ in range(n):\n    arr = list(map(int, input().split()))\n    for num in arr:\n        print(1 if prime(num) else 0, end=' ')\n    print()  ",
+        "highlighted_code": "de<span class='highlight-red'>f prime(x):\n    if x &lt; 2:\n        return False\n    for i in range(2, int</span>(x**0.5<span class='highlight-red'>) + 1):\n        if x % i == 0:\n            return False\n    return True\n\nn, m = map(int, input().split</span>())\n\nfor _ in range(n):\n    arr = lis<span class='highlight-red'>t(map(int, input().split()))\n    for num </span>in arr:\n        print(1 if prime(num) else 0, end=&#39; &#39;)\n    print()  "
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b6fe535fa0f4f1d932/bbb05531336e487d8ed54046/sub_1762798127646_ggfmsadr6.py",
+        "similarity_percent": 53.71,
+        "full_code": "import math\n\ndef prime(n):\n    if n < 2:\n        return False\n    for i in range(2, int(math.isqrt(n)) + 1):\n        if n % i == 0:\n            return False\n    return True\n\nn, m = map(int, input().split())\na = [list(map(int, input().split())) for _ in range(n)]\n\nfor i in range(n):\n    for j in range(m):\n        print(1 if prime(a[i][j]) else 0, end=\" \")\n    print()\n",
+        "highlighted_code": "import math\n\nde<span class='highlight-green'>f prime(n):\n    if n &lt; 2:\n        return False\n    for i in range(2, int</span>(math.isqrt(n)<span class='highlight-green'>) + 1):\n        if n % i == 0:\n            return False\n    return True\n\nn, m = map(int, input().split</span>())\na = [lis<span class='highlight-green'>t(map(int, input().split())) for _ </span>in range(n)]\n\nfor i in range(n):\n    for j in range(m):\n        print(1 if prime(a[i][j]) else 0, end=&#34; &#34;)\n    print()\n"
+      },
+      "token_overlap": 123,
+      "max_similarity_percent": 65.08
+    },
+    {
+      "case_id": 17,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b6fe535fa0f4f1d932/345569c455a14db085eec8e9/sub_1762612137995_esby2qoss.py",
+        "similarity_percent": 64.44,
+        "full_code": "def nguyen_to(n):\n    if n < 2:\n        return False\n    for i in range(2,int(n**0.5)+1):\n        if n%i==0:\n            return False\n    return True      \nm, n = map(int,input().split())\na = [list(map(int,input().split())) for _ in range(m)]\ns =[]\nfor i in range(m):\n    tong =[]\n    for j in range(n):\n        if nguyen_to(a[i][j]):\n            tong.append(1)\n        else:\n            tong.append(0)\n    s.append(tong)\nfor tong in s:\n    print(*tong)\n",
+        "highlighted_code": "def nguyen_to(n):\n    if n &lt; 2:\n        <span class='highlight-red'>return False\n    for i in range(2,int(n**0.5)+1):\n        if n%i==0:\n            return False\n    return </span>True      \nm, n = <span class='highlight-red'>map(int,input().split())\na = [list(map(int,input().split())) for _ in range(m)</span>]\ns =[]\nfor i in range(m):\n    tong =[]\n    fo<span class='highlight-red'>r j in range(n):\n        if nguyen_to(a[i][j])</span>:\n            tong.append(1)\n        else:\n            tong.append(0)\n    s.append(tong)\nfor tong in s:\n    print(*tong)\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b6fe535fa0f4f1d932/fa972feccadf40fe9df799d0/sub_1762453474068_fqsevw4r9.py",
+        "similarity_percent": 64.17,
+        "full_code": "n, m = map(int, input().split())\nA = [list(map(int, input().split())) for _ in range(n)]\nC = [[0] * m for _ in range(n)]\ndef is_prime(x):\n    if x <= 1:\n        return False\n    for i in range(2, int(x**0.5) + 1):\n        if x % i == 0:\n            return False\n    return True\nfor i in range(n):\n    for j in range(m):\n        if is_prime(A[i][j]):\n            C[i][j] = 1\nfor d in C:\n    print(*d)",
+        "highlighted_code": "n, m = <span class='highlight-green'>map(int, input().split())\nA = [list(map(int, input().split())) for _ in range(n)</span>]\nC = [[0] * m for _ in range(n)]\ndef is_prime(x):\n    if x &lt;= 1:\n        <span class='highlight-green'>return False\n    for i in range(2, int(x**0.5) + 1):\n        if x % i == 0:\n            return False\n    return </span>True\nfor i in range(n):\n    fo<span class='highlight-green'>r j in range(m):\n        if is_prime(A[i][j])</span>:\n            C[i][j] = 1\nfor d in C:\n    print(*d)"
+      },
+      "token_overlap": 154,
+      "max_similarity_percent": 64.44
+    },
+    {
+      "case_id": 18,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b6fe535fa0f4f1d932/26894d2babd64210ad6beba1/sub_1761916660012_cvb10x0d7.py",
+        "similarity_percent": 62.55,
+        "full_code": "def snt(n):\n    if n < 2: \n        return False\n    for i in range(2, int(n**0.5)+1):\n        if n %  i == 0:\n            return False\n    return True\n\nif __name__ == \"__main__\":\n    n, m = map(int, input().split())\n    a = [list(map(int, input().split())) for _ in range(n)]\n    for i in range(n):\n        for j in range(m):\n            if(snt(a[i][j])):\n                a[i][j]=1\n            else:\n                a[i][j]=0\n    for x in a:\n        print(*x)",
+        "highlighted_code": "def snt(n):\n    if n &lt; 2: \n        <span class='highlight-red'>return False\n    for i in range(2, int(n**0.5)+1):\n        if n %  i == 0:\n            return False\n    return </span>True\n\nif __name__ == &#34;__main__&#34;:\n    n, m = <span class='highlight-red'>map(int, input().split())\n    a = [list(map(int, input().split())) for _ in range(n)</span>]\n    f<span class='highlight-red'>or i in range(n):\n        for j in range(m)</span>:\n            if(snt(a[i][j])):\n                a[i][j]=1\n            else:\n                a[i][j]=0\n    for x in a:\n        print(*x)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b6fe535fa0f4f1d932/fa972feccadf40fe9df799d0/sub_1762453474068_fqsevw4r9.py",
+        "similarity_percent": 65.42,
+        "full_code": "n, m = map(int, input().split())\nA = [list(map(int, input().split())) for _ in range(n)]\nC = [[0] * m for _ in range(n)]\ndef is_prime(x):\n    if x <= 1:\n        return False\n    for i in range(2, int(x**0.5) + 1):\n        if x % i == 0:\n            return False\n    return True\nfor i in range(n):\n    for j in range(m):\n        if is_prime(A[i][j]):\n            C[i][j] = 1\nfor d in C:\n    print(*d)",
+        "highlighted_code": "n, m = <span class='highlight-green'>map(int, input().split())\nA = [list(map(int, input().split())) for _ in range(n)</span>]\nC = [[0] * m for _ in range(n)]\ndef is_prime(x):\n    if x &lt;= 1:\n        <span class='highlight-green'>return False\n    for i in range(2, int(x**0.5) + 1):\n        if x % i == 0:\n            return False\n    return </span>True\nf<span class='highlight-green'>or i in range(n):\n    for j in range(m)</span>:\n        if is_prime(A[i][j]):\n            C[i][j] = 1\nfor d in C:\n    print(*d)"
+      },
+      "token_overlap": 157,
+      "max_similarity_percent": 65.42
+    },
+    {
+      "case_id": 19,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b6fe535fa0f4f1d932/bbb05531336e487d8ed54046/sub_1762798127646_ggfmsadr6.py",
+        "similarity_percent": 62.01,
+        "full_code": "import math\n\ndef prime(n):\n    if n < 2:\n        return False\n    for i in range(2, int(math.isqrt(n)) + 1):\n        if n % i == 0:\n            return False\n    return True\n\nn, m = map(int, input().split())\na = [list(map(int, input().split())) for _ in range(n)]\n\nfor i in range(n):\n    for j in range(m):\n        print(1 if prime(a[i][j]) else 0, end=\" \")\n    print()\n",
+        "highlighted_code": "import math\n\nde<span class='highlight-red'>f prime(n):\n    if n &lt; 2:\n        return False\n    for i in range(2, int</span>(math.isqrt(n)<span class='highlight-red'>) + 1):\n        if n % i == 0:\n            return False\n    return True\n\nn, m = map(int, input().split())\na = [list(map(int, input().split())) for _ in range(n)</span>]\n\nfor i in range(n):\n    for j in range(m):\n        print(1 if prime(a[i][j]) else 0, end=&#34; &#34;)\n    print()\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b6fe535fa0f4f1d932/345569c455a14db085eec8e9/sub_1762612137995_esby2qoss.py",
+        "similarity_percent": 59.41,
+        "full_code": "def nguyen_to(n):\n    if n < 2:\n        return False\n    for i in range(2,int(n**0.5)+1):\n        if n%i==0:\n            return False\n    return True      \nm, n = map(int,input().split())\na = [list(map(int,input().split())) for _ in range(m)]\ns =[]\nfor i in range(m):\n    tong =[]\n    for j in range(n):\n        if nguyen_to(a[i][j]):\n            tong.append(1)\n        else:\n            tong.append(0)\n    s.append(tong)\nfor tong in s:\n    print(*tong)\n",
+        "highlighted_code": "de<span class='highlight-green'>f nguyen_to(n):\n    if n &lt; 2:\n        return False\n    for i in range(2,int</span>(n**0.5<span class='highlight-green'>)+1):\n        if n%i==0:\n            return False\n    return True      \nm, n = map(int,input().split())\na = [list(map(int,input().split())) for _ in range(m)</span>]\ns =[]\nfor i in range(m):\n    tong =[]\n    for j in range(n):\n        if nguyen_to(a[i][j]):\n            tong.append(1)\n        else:\n            tong.append(0)\n    s.append(tong)\nfor tong in s:\n    print(*tong)\n"
+      },
+      "token_overlap": 142,
+      "max_similarity_percent": 62.01
+    },
+    {
+      "case_id": 20,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b6fe535fa0f4f1d932/26894d2babd64210ad6beba1/sub_1761916660012_cvb10x0d7.py",
+        "similarity_percent": 56.97,
+        "full_code": "def snt(n):\n    if n < 2: \n        return False\n    for i in range(2, int(n**0.5)+1):\n        if n %  i == 0:\n            return False\n    return True\n\nif __name__ == \"__main__\":\n    n, m = map(int, input().split())\n    a = [list(map(int, input().split())) for _ in range(n)]\n    for i in range(n):\n        for j in range(m):\n            if(snt(a[i][j])):\n                a[i][j]=1\n            else:\n                a[i][j]=0\n    for x in a:\n        print(*x)",
+        "highlighted_code": "<span class='highlight-red'>def snt(n):\n    if n &lt; 2: \n        return False\n    for i in range(2, int(n**0.5)+1):\n        if n %  i == 0:\n            return False\n    return </span>True\n\nif __name__ == &#34;__main__&#34;:\n    n, m = <span class='highlight-red'>map(int, input().split())\n    a = [list(map(int, input().split())) for _ in range(n)</span>]\n    for i in range(n):\n        for j in range(m):\n            if(snt(a[i][j])):\n                a[i][j]=1\n            else:\n                a[i][j]=0\n    for x in a:\n        print(*x)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b6fe535fa0f4f1d932/345569c455a14db085eec8e9/sub_1762612137995_esby2qoss.py",
+        "similarity_percent": 59.83,
+        "full_code": "def nguyen_to(n):\n    if n < 2:\n        return False\n    for i in range(2,int(n**0.5)+1):\n        if n%i==0:\n            return False\n    return True      \nm, n = map(int,input().split())\na = [list(map(int,input().split())) for _ in range(m)]\ns =[]\nfor i in range(m):\n    tong =[]\n    for j in range(n):\n        if nguyen_to(a[i][j]):\n            tong.append(1)\n        else:\n            tong.append(0)\n    s.append(tong)\nfor tong in s:\n    print(*tong)\n",
+        "highlighted_code": "<span class='highlight-green'>def nguyen_to(n):\n    if n &lt; 2:\n        return False\n    for i in range(2,int(n**0.5)+1):\n        if n%i==0:\n            return False\n    return </span>True      \nm, n = <span class='highlight-green'>map(int,input().split())\na = [list(map(int,input().split())) for _ in range(m)</span>]\ns =[]\nfor i in range(m):\n    tong =[]\n    for j in range(n):\n        if nguyen_to(a[i][j]):\n            tong.append(1)\n        else:\n            tong.append(0)\n    s.append(tong)\nfor tong in s:\n    print(*tong)\n"
+      },
+      "token_overlap": 143,
+      "max_similarity_percent": 59.83
+    },
+    {
+      "case_id": 21,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b6fe535fa0f4f1d932/f95120b3a38a461085ef58cb/sub_1762013725167_sojwxztqg.py",
+        "similarity_percent": 56.61,
+        "full_code": "def prime(x):\n    if x < 2:\n        return False\n    for i in range(2, int(x**0.5) + 1):\n        if x % i == 0:\n            return False\n    return True\n\nn, m = map(int, input().split())\n\nfor _ in range(n):\n    arr = list(map(int, input().split()))\n    for num in arr:\n        print(1 if prime(num) else 0, end=' ')\n    print()  ",
+        "highlighted_code": "def prime(x):\n    if x &lt; 2:\n        return False\n    f<span class='highlight-red'>or i in range(2, int(x**0.5) + 1):\n        if x % i == 0:\n            r</span>eturn False\n    return True\n\nn, <span class='highlight-red'>m = map(int, input().split())\n\nfor _ in range(n):\n    arr = list(map(int, input().split()))\n    for num </span>in arr:\n        print(1 if prime(num) else 0, end=&#39; &#39;)\n    print()  "
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b6fe535fa0f4f1d932/27e30f767b3a46b283cbfec0/sub_1761566581004_kedqltc10.py",
+        "similarity_percent": 55.73,
+        "full_code": "def check_prime(n):\n    if n < 2:\n        return 0\n    for i in range(2,int(n**0.5)+1):\n        if n % i == 0:\n            return 0\n    return 1\nn, m = map(int, input().split())\nfor _ in range(n):\n    array = list(map(int,input().split()))\n    for num in array:\n\n        if check_prime(num):\n            print(1,end = ' ')\n        else:\n            print(0,end = ' ')\n    print()\n",
+        "highlighted_code": "def check_prime(n):\n    if n &lt; 2:\n        return 0\n    f<span class='highlight-green'>or i in range(2,int(n**0.5)+1):\n        if n % i == 0:\n            r</span>eturn 0\n    return 1\nn, <span class='highlight-green'>m = map(int, input().split())\nfor _ in range(n):\n    array = list(map(int,input().split()))\n    for num </span>in array:\n\n        if check_prime(num):\n            print(1,end = &#39; &#39;)\n        else:\n            print(0,end = &#39; &#39;)\n    print()\n"
+      },
+      "token_overlap": 107,
+      "max_similarity_percent": 56.61
+    },
+    {
+      "case_id": 22,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b6fe535fa0f4f1d932/e59c34a1bebb49d29bfb3592/sub_1761818937730_a1megx7cs.py",
+        "similarity_percent": 56.61,
+        "full_code": "def prime(x):\n    if x < 2:\n        return False\n    for i in range(2, int(x**0.5) + 1):\n        if x % i == 0:\n            return False\n    return True\n\nn, m = map(int, input().split())\n\nfor _ in range(n):\n    arr = list(map(int, input().split()))\n    for num in arr:\n        print(1 if prime(num) else 0, end=' ')\n    print()  \n",
+        "highlighted_code": "def prime(x):\n    if x &lt; 2:\n        return False\n    f<span class='highlight-red'>or i in range(2, int(x**0.5) + 1):\n        if x % i == 0:\n            r</span>eturn False\n    return True\n\nn, <span class='highlight-red'>m = map(int, input().split())\n\nfor _ in range(n):\n    arr = list(map(int, input().split()))\n    for num </span>in arr:\n        print(1 if prime(num) else 0, end=&#39; &#39;)\n    print()  \n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b6fe535fa0f4f1d932/27e30f767b3a46b283cbfec0/sub_1761566581004_kedqltc10.py",
+        "similarity_percent": 55.73,
+        "full_code": "def check_prime(n):\n    if n < 2:\n        return 0\n    for i in range(2,int(n**0.5)+1):\n        if n % i == 0:\n            return 0\n    return 1\nn, m = map(int, input().split())\nfor _ in range(n):\n    array = list(map(int,input().split()))\n    for num in array:\n\n        if check_prime(num):\n            print(1,end = ' ')\n        else:\n            print(0,end = ' ')\n    print()\n",
+        "highlighted_code": "def check_prime(n):\n    if n &lt; 2:\n        return 0\n    f<span class='highlight-green'>or i in range(2,int(n**0.5)+1):\n        if n % i == 0:\n            r</span>eturn 0\n    return 1\nn, <span class='highlight-green'>m = map(int, input().split())\nfor _ in range(n):\n    array = list(map(int,input().split()))\n    for num </span>in array:\n\n        if check_prime(num):\n            print(1,end = &#39; &#39;)\n        else:\n            print(0,end = &#39; &#39;)\n    print()\n"
+      },
+      "token_overlap": 107,
+      "max_similarity_percent": 56.61
+    },
+    {
+      "case_id": 23,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b6fe535fa0f4f1d932/26894d2babd64210ad6beba1/sub_1761916660012_cvb10x0d7.py",
+        "similarity_percent": 54.58,
+        "full_code": "def snt(n):\n    if n < 2: \n        return False\n    for i in range(2, int(n**0.5)+1):\n        if n %  i == 0:\n            return False\n    return True\n\nif __name__ == \"__main__\":\n    n, m = map(int, input().split())\n    a = [list(map(int, input().split())) for _ in range(n)]\n    for i in range(n):\n        for j in range(m):\n            if(snt(a[i][j])):\n                a[i][j]=1\n            else:\n                a[i][j]=0\n    for x in a:\n        print(*x)",
+        "highlighted_code": "de<span class='highlight-red'>f snt(n):\n    if n &lt; 2: \n        return False\n    for i in range(2, </span>int(n**0.5<span class='highlight-red'>)+1):\n        if n %  i == 0:\n            return False\n    return True\n\nif __name__ == &#34;__main__&#34;:\n    n, m = map(int, input().split())\n    </span>a = [list(map(int, input().split())) for _ in range(n)]\n    for i <span class='highlight-red'>in range(n):\n        for j in range(m)</span>:\n            if(snt(a[i][j])):\n                a[i][j]=1\n            else:\n                a[i][j]=0\n    for x in a:\n        print(*x)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b6fe535fa0f4f1d932/449c44ebafa84f0d8d5b6d0f/sub_1762350483222_wz1n3ur8y.py",
+        "similarity_percent": 51.12,
+        "full_code": "from math import *\ndef nt(n):\n    if n < 2:\n        return False\n    for i in range(2, isqrt(n) + 1):\n        if n % i == 0:\n            return False\n    return True\nif __name__ == '__main__':\n    n, m = map(int, input().split())\n    a = []\n    for i in range(n):\n        a.append(list(map(int, input().split())))\n    for i in range(n):\n        for j in range(m):\n            if nt(a[i][j]):\n                print('1', end = ' ')\n            else: print('0', end = ' ')\n        print()\n",
+        "highlighted_code": "from math import *\nde<span class='highlight-green'>f nt(n):\n    if n &lt; 2:\n        return False\n    for i in range(2, </span>isqrt(n<span class='highlight-green'>) + 1):\n        if n % i == 0:\n            return False\n    return True\nif __name__ == &#39;__main__&#39;:\n    n, m = map(int, input().split())\n    </span>a = []\n    for i in range(n):\n        a.append(list(map(int, input().split())))\n    for i <span class='highlight-green'>in range(n):\n        for j in range(m)</span>:\n            if nt(a[i][j]):\n                print(&#39;1&#39;, end = &#39; &#39;)\n            else: print(&#39;0&#39;, end = &#39; &#39;)\n        print()\n"
+      },
+      "token_overlap": 137,
+      "max_similarity_percent": 54.58
+    },
+    {
+      "case_id": 24,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b6fe535fa0f4f1d932/8e19101eb0da4e9a92a17098/sub_1761635440693_x93blyqy2.py",
+        "similarity_percent": 54.12,
+        "full_code": "def snt(n):\n    if n < 2:\n        return False\n    for i in range (2, int(n**0.5) + 1):\n        if n % i == 0:\n            return False\n    return True\nn, m = map(int, input().split())\nfor i in range(n):\n    row = list(map(int, input().split()))\n    kq = []\n    for x in row:\n        if snt(x):\n            kq.append(1)\n        else:\n            kq.append(0)\n    print(*kq)",
+        "highlighted_code": "<span class='highlight-red'>def snt(n):\n    if n &lt; 2:\n        return False\n    for i in range (2, int(n**0.5) + 1):\n        if n % i == 0:\n            return False\n    return True\nn, m = map(int, input().split</span>())\nfor i in range(n):\n    row = list(map(int, input().split()))\n    kq = []\n    for x in row:\n        if snt(x):\n            kq.append(1)\n        else:\n            kq.append(0)\n    print(*kq)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b6fe535fa0f4f1d932/345569c455a14db085eec8e9/sub_1762612137995_esby2qoss.py",
+        "similarity_percent": 43.93,
+        "full_code": "def nguyen_to(n):\n    if n < 2:\n        return False\n    for i in range(2,int(n**0.5)+1):\n        if n%i==0:\n            return False\n    return True      \nm, n = map(int,input().split())\na = [list(map(int,input().split())) for _ in range(m)]\ns =[]\nfor i in range(m):\n    tong =[]\n    for j in range(n):\n        if nguyen_to(a[i][j]):\n            tong.append(1)\n        else:\n            tong.append(0)\n    s.append(tong)\nfor tong in s:\n    print(*tong)\n",
+        "highlighted_code": "<span class='highlight-green'>def nguyen_to(n):\n    if n &lt; 2:\n        return False\n    for i in range(2,int(n**0.5)+1):\n        if n%i==0:\n            return False\n    return True      \nm, n = map(int,input().split</span>())\na = [list(map(int,input().split())) for _ in range(m)]\ns =[]\nfor i in range(m):\n    tong =[]\n    for j in range(n):\n        if nguyen_to(a[i][j]):\n            tong.append(1)\n        else:\n            tong.append(0)\n    s.append(tong)\nfor tong in s:\n    print(*tong)\n"
+      },
+      "token_overlap": 105,
+      "max_similarity_percent": 54.12
+    },
+    {
+      "case_id": 25,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b6fe535fa0f4f1d932/8e19101eb0da4e9a92a17098/sub_1761635440693_x93blyqy2.py",
+        "similarity_percent": 54.12,
+        "full_code": "def snt(n):\n    if n < 2:\n        return False\n    for i in range (2, int(n**0.5) + 1):\n        if n % i == 0:\n            return False\n    return True\nn, m = map(int, input().split())\nfor i in range(n):\n    row = list(map(int, input().split()))\n    kq = []\n    for x in row:\n        if snt(x):\n            kq.append(1)\n        else:\n            kq.append(0)\n    print(*kq)",
+        "highlighted_code": "<span class='highlight-red'>def snt(n):\n    if n &lt; 2:\n        return False\n    for i in range (2, int(n**0.5) + 1):\n        if n % i == 0:\n            return False\n    return True\nn, m = map(int, input().split</span>())\nfor i in range(n):\n    row = list(map(int, input().split()))\n    kq = []\n    for x in row:\n        if snt(x):\n            kq.append(1)\n        else:\n            kq.append(0)\n    print(*kq)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b6fe535fa0f4f1d932/c2c38e9c5ead4887925c7e80/sub_1762618708319_84or9mzdl.py",
+        "similarity_percent": 45.26,
+        "full_code": "def nguyen_to(x):\n    if x < 2:\n        return False\n    for i in range(2, int(x**0.5) + 1):\n        if x % i == 0:\n            return False\n    return True\n\nn, m = map(int, input().split())\nma_tran = [list(map(int, input().split())) for _ in range(n)]\n\nfor i in range(n):\n    for j in range(m):\n        if nguyen_to(ma_tran[i][j]):\n            print(1, end=' ')\n        else:\n            print(0, end=' ')\n    print()\n",
+        "highlighted_code": "<span class='highlight-green'>def nguyen_to(x):\n    if x &lt; 2:\n        return False\n    for i in range(2, int(x**0.5) + 1):\n        if x % i == 0:\n            return False\n    return True\n\nn, m = map(int, input().split</span>())\nma_tran = [list(map(int, input().split())) for _ in range(n)]\n\nfor i in range(n):\n    for j in range(m):\n        if nguyen_to(ma_tran[i][j]):\n            print(1, end=&#39; &#39;)\n        else:\n            print(0, end=&#39; &#39;)\n    print()\n"
+      },
+      "token_overlap": 105,
+      "max_similarity_percent": 54.12
+    },
+    {
+      "case_id": 26,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b6fe535fa0f4f1d932/bbb05531336e487d8ed54046/sub_1762798127646_ggfmsadr6.py",
+        "similarity_percent": 53.71,
+        "full_code": "import math\n\ndef prime(n):\n    if n < 2:\n        return False\n    for i in range(2, int(math.isqrt(n)) + 1):\n        if n % i == 0:\n            return False\n    return True\n\nn, m = map(int, input().split())\na = [list(map(int, input().split())) for _ in range(n)]\n\nfor i in range(n):\n    for j in range(m):\n        print(1 if prime(a[i][j]) else 0, end=\" \")\n    print()\n",
+        "highlighted_code": "import math\n\nde<span class='highlight-red'>f prime(n):\n    if n &lt; 2:\n        return False\n    for i in range(2, int</span>(math.isqrt(n)<span class='highlight-red'>) + 1):\n        if n % i == 0:\n            return False\n    return True\n\nn, m = map(int, input().split</span>())\na = [lis<span class='highlight-red'>t(map(int, input().split())) for _ </span>in range(n)]\n\nfor i in range(n):\n    for j in range(m):\n        print(1 if prime(a[i][j]) else 0, end=&#34; &#34;)\n    print()\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b6fe535fa0f4f1d932/e59c34a1bebb49d29bfb3592/sub_1761818937730_a1megx7cs.py",
+        "similarity_percent": 65.08,
+        "full_code": "def prime(x):\n    if x < 2:\n        return False\n    for i in range(2, int(x**0.5) + 1):\n        if x % i == 0:\n            return False\n    return True\n\nn, m = map(int, input().split())\n\nfor _ in range(n):\n    arr = list(map(int, input().split()))\n    for num in arr:\n        print(1 if prime(num) else 0, end=' ')\n    print()  \n",
+        "highlighted_code": "de<span class='highlight-green'>f prime(x):\n    if x &lt; 2:\n        return False\n    for i in range(2, int</span>(x**0.5<span class='highlight-green'>) + 1):\n        if x % i == 0:\n            return False\n    return True\n\nn, m = map(int, input().split</span>())\n\nfor _ in range(n):\n    arr = lis<span class='highlight-green'>t(map(int, input().split()))\n    for num </span>in arr:\n        print(1 if prime(num) else 0, end=&#39; &#39;)\n    print()  \n"
+      },
+      "token_overlap": 123,
+      "max_similarity_percent": 65.08
+    },
+    {
+      "case_id": 27,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b6fe535fa0f4f1d932/8e19101eb0da4e9a92a17098/sub_1761635440693_x93blyqy2.py",
+        "similarity_percent": 53.09,
+        "full_code": "def snt(n):\n    if n < 2:\n        return False\n    for i in range (2, int(n**0.5) + 1):\n        if n % i == 0:\n            return False\n    return True\nn, m = map(int, input().split())\nfor i in range(n):\n    row = list(map(int, input().split()))\n    kq = []\n    for x in row:\n        if snt(x):\n            kq.append(1)\n        else:\n            kq.append(0)\n    print(*kq)",
+        "highlighted_code": "def snt(n):\n    if n &lt; 2:\n        return False\n    f<span class='highlight-red'>or i in range (2, int(n**0.5) + 1):\n        if n % i == 0:\n            r</span>eturn False\n    return True\nn, <span class='highlight-red'>m = map(int, input().split())\nfor i in range(n):\n    row = list(map(int, input().split()))\n    </span>kq = []\n    for x in row:\n        if snt(x):\n            kq.append(1)\n        else:\n            kq.append(0)\n    print(*kq)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b6fe535fa0f4f1d932/27e30f767b3a46b283cbfec0/sub_1761566581004_kedqltc10.py",
+        "similarity_percent": 53.65,
+        "full_code": "def check_prime(n):\n    if n < 2:\n        return 0\n    for i in range(2,int(n**0.5)+1):\n        if n % i == 0:\n            return 0\n    return 1\nn, m = map(int, input().split())\nfor _ in range(n):\n    array = list(map(int,input().split()))\n    for num in array:\n\n        if check_prime(num):\n            print(1,end = ' ')\n        else:\n            print(0,end = ' ')\n    print()\n",
+        "highlighted_code": "def check_prime(n):\n    if n &lt; 2:\n        return 0\n    f<span class='highlight-green'>or i in range(2,int(n**0.5)+1):\n        if n % i == 0:\n            r</span>eturn 0\n    return 1\nn, <span class='highlight-green'>m = map(int, input().split())\nfor _ in range(n):\n    array = list(map(int,input().split()))\n    </span>for num in array:\n\n        if check_prime(num):\n            print(1,end = &#39; &#39;)\n        else:\n            print(0,end = &#39; &#39;)\n    print()\n"
+      },
+      "token_overlap": 103,
+      "max_similarity_percent": 53.65
+    },
+    {
+      "case_id": 28,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b6fe535fa0f4f1d932/113963c0a9df48538edf310d/sub_1762017162123_zps70049d.py",
+        "similarity_percent": 51.53,
+        "full_code": "from math import isqrt\ndef isPrime(n):\n    if n<2: return 0\n    for i in range(2, isqrt(n) + 1):\n        if n % i == 0: return 0\n    return 1\n\nn,m = map(int, input().split())\nmattrix = [[isPrime(int(i)) for i in input().split()] for _ in range(n)]\nfor i in mattrix:\n    print(*i)\n\n",
+        "highlighted_code": "from math import isqrt\n<span class='highlight-red'>def isPrime(n):\n    if n&lt;2: return 0\n    for i in range(2, </span>isqrt(n) + <span class='highlight-red'>1):\n        if n % i == 0: return 0\n    return 1\n\nn,m = map(int, input().split()</span>)\nmattrix = [[isPrime(int(i)) for i in input().split()] for _ in range(n)]\nfor i in mattrix:\n    print(*i)\n\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b6fe535fa0f4f1d932/27e30f767b3a46b283cbfec0/sub_1761566581004_kedqltc10.py",
+        "similarity_percent": 43.75,
+        "full_code": "def check_prime(n):\n    if n < 2:\n        return 0\n    for i in range(2,int(n**0.5)+1):\n        if n % i == 0:\n            return 0\n    return 1\nn, m = map(int, input().split())\nfor _ in range(n):\n    array = list(map(int,input().split()))\n    for num in array:\n\n        if check_prime(num):\n            print(1,end = ' ')\n        else:\n            print(0,end = ' ')\n    print()\n",
+        "highlighted_code": "<span class='highlight-green'>def check_prime(n):\n    if n &lt; 2:\n        return 0\n    for i in range(2,</span>int(n**0.5)+<span class='highlight-green'>1):\n        if n % i == 0:\n            return 0\n    return 1\nn, m = map(int, input().split()</span>)\nfor _ in range(n):\n    array = list(map(int,input().split()))\n    for num in array:\n\n        if check_prime(num):\n            print(1,end = &#39; &#39;)\n        else:\n            print(0,end = &#39; &#39;)\n    print()\n"
+      },
+      "token_overlap": 84,
+      "max_similarity_percent": 51.53
+    },
+    {
+      "case_id": 29,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b6fe535fa0f4f1d932/8e19101eb0da4e9a92a17098/sub_1761635440693_x93blyqy2.py",
+        "similarity_percent": 49.48,
+        "full_code": "def snt(n):\n    if n < 2:\n        return False\n    for i in range (2, int(n**0.5) + 1):\n        if n % i == 0:\n            return False\n    return True\nn, m = map(int, input().split())\nfor i in range(n):\n    row = list(map(int, input().split()))\n    kq = []\n    for x in row:\n        if snt(x):\n            kq.append(1)\n        else:\n            kq.append(0)\n    print(*kq)",
+        "highlighted_code": "de<span class='highlight-red'>f snt(n):\n    if n &lt; 2:\n        return False\n    for i in range (2, int</span>(n**0.5<span class='highlight-red'>) + 1):\n        if n % i == 0:\n            return False\n    return True\nn, m = map(int, input().split</span>())\nfor i in range(n):\n    row = list(map(int, input().split()))\n    kq = []\n    for x in row:\n        if snt(x):\n            kq.append(1)\n        else:\n            kq.append(0)\n    print(*kq)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b6fe535fa0f4f1d932/bbb05531336e487d8ed54046/sub_1762798127646_ggfmsadr6.py",
+        "similarity_percent": 41.92,
+        "full_code": "import math\n\ndef prime(n):\n    if n < 2:\n        return False\n    for i in range(2, int(math.isqrt(n)) + 1):\n        if n % i == 0:\n            return False\n    return True\n\nn, m = map(int, input().split())\na = [list(map(int, input().split())) for _ in range(n)]\n\nfor i in range(n):\n    for j in range(m):\n        print(1 if prime(a[i][j]) else 0, end=\" \")\n    print()\n",
+        "highlighted_code": "import math\n\nde<span class='highlight-green'>f prime(n):\n    if n &lt; 2:\n        return False\n    for i in range(2, int</span>(math.isqrt(n)<span class='highlight-green'>) + 1):\n        if n % i == 0:\n            return False\n    return True\n\nn, m = map(int, input().split</span>())\na = [list(map(int, input().split())) for _ in range(n)]\n\nfor i in range(n):\n    for j in range(m):\n        print(1 if prime(a[i][j]) else 0, end=&#34; &#34;)\n    print()\n"
+      },
+      "token_overlap": 96,
+      "max_similarity_percent": 49.48
+    },
+    {
+      "case_id": 30,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b6fe535fa0f4f1d932/f95120b3a38a461085ef58cb/sub_1762013725167_sojwxztqg.py",
+        "similarity_percent": 49.21,
+        "full_code": "def prime(x):\n    if x < 2:\n        return False\n    for i in range(2, int(x**0.5) + 1):\n        if x % i == 0:\n            return False\n    return True\n\nn, m = map(int, input().split())\n\nfor _ in range(n):\n    arr = list(map(int, input().split()))\n    for num in arr:\n        print(1 if prime(num) else 0, end=' ')\n    print()  ",
+        "highlighted_code": "def prime(x):\n    if x &lt; 2:\n        <span class='highlight-red'>return False\n    for i in range(2, int(x**0.5) + 1):\n        if x % i == 0:\n            return False\n    return </span>True\n\nn, m = map(int, input().split())\n\nfor _ in range(n):\n    arr = lis<span class='highlight-red'>t(map(int, input().split()))\n    for num </span>in arr:\n        print(1 if prime(num) else 0, end=&#39; &#39;)\n    print()  "
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b6fe535fa0f4f1d932/fa972feccadf40fe9df799d0/sub_1762453474068_fqsevw4r9.py",
+        "similarity_percent": 38.75,
+        "full_code": "n, m = map(int, input().split())\nA = [list(map(int, input().split())) for _ in range(n)]\nC = [[0] * m for _ in range(n)]\ndef is_prime(x):\n    if x <= 1:\n        return False\n    for i in range(2, int(x**0.5) + 1):\n        if x % i == 0:\n            return False\n    return True\nfor i in range(n):\n    for j in range(m):\n        if is_prime(A[i][j]):\n            C[i][j] = 1\nfor d in C:\n    print(*d)",
+        "highlighted_code": "n, m = map(int, input().split())\nA = [lis<span class='highlight-green'>t(map(int, input().split())) for _ </span>in range(n)]\nC = [[0] * m for _ in range(n)]\ndef is_prime(x):\n    if x &lt;= 1:\n        <span class='highlight-green'>return False\n    for i in range(2, int(x**0.5) + 1):\n        if x % i == 0:\n            return False\n    return </span>True\nfor i in range(n):\n    for j in range(m):\n        if is_prime(A[i][j]):\n            C[i][j] = 1\nfor d in C:\n    print(*d)"
+      },
+      "token_overlap": 93,
+      "max_similarity_percent": 49.21
+    },
+    {
+      "case_id": 31,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b6fe535fa0f4f1d932/e59c34a1bebb49d29bfb3592/sub_1761818937730_a1megx7cs.py",
+        "similarity_percent": 49.21,
+        "full_code": "def prime(x):\n    if x < 2:\n        return False\n    for i in range(2, int(x**0.5) + 1):\n        if x % i == 0:\n            return False\n    return True\n\nn, m = map(int, input().split())\n\nfor _ in range(n):\n    arr = list(map(int, input().split()))\n    for num in arr:\n        print(1 if prime(num) else 0, end=' ')\n    print()  \n",
+        "highlighted_code": "def prime(x):\n    if x &lt; 2:\n        <span class='highlight-red'>return False\n    for i in range(2, int(x**0.5) + 1):\n        if x % i == 0:\n            return False\n    return </span>True\n\nn, m = map(int, input().split())\n\nfor _ in range(n):\n    arr = lis<span class='highlight-red'>t(map(int, input().split()))\n    for num </span>in arr:\n        print(1 if prime(num) else 0, end=&#39; &#39;)\n    print()  \n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b6fe535fa0f4f1d932/fa972feccadf40fe9df799d0/sub_1762453474068_fqsevw4r9.py",
+        "similarity_percent": 38.75,
+        "full_code": "n, m = map(int, input().split())\nA = [list(map(int, input().split())) for _ in range(n)]\nC = [[0] * m for _ in range(n)]\ndef is_prime(x):\n    if x <= 1:\n        return False\n    for i in range(2, int(x**0.5) + 1):\n        if x % i == 0:\n            return False\n    return True\nfor i in range(n):\n    for j in range(m):\n        if is_prime(A[i][j]):\n            C[i][j] = 1\nfor d in C:\n    print(*d)",
+        "highlighted_code": "n, m = map(int, input().split())\nA = [lis<span class='highlight-green'>t(map(int, input().split())) for _ </span>in range(n)]\nC = [[0] * m for _ in range(n)]\ndef is_prime(x):\n    if x &lt;= 1:\n        <span class='highlight-green'>return False\n    for i in range(2, int(x**0.5) + 1):\n        if x % i == 0:\n            return False\n    return </span>True\nfor i in range(n):\n    for j in range(m):\n        if is_prime(A[i][j]):\n            C[i][j] = 1\nfor d in C:\n    print(*d)"
+      },
+      "token_overlap": 93,
+      "max_similarity_percent": 49.21
+    },
+    {
+      "case_id": 32,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b6fe535fa0f4f1d932/8e19101eb0da4e9a92a17098/sub_1761635440693_x93blyqy2.py",
+        "similarity_percent": 47.94,
+        "full_code": "def snt(n):\n    if n < 2:\n        return False\n    for i in range (2, int(n**0.5) + 1):\n        if n % i == 0:\n            return False\n    return True\nn, m = map(int, input().split())\nfor i in range(n):\n    row = list(map(int, input().split()))\n    kq = []\n    for x in row:\n        if snt(x):\n            kq.append(1)\n        else:\n            kq.append(0)\n    print(*kq)",
+        "highlighted_code": "de<span class='highlight-red'>f snt(n):\n    if n &lt; 2:\n        return False\n    for i in range (2, </span>int(n**0.5<span class='highlight-red'>) + 1):\n        if n % i == 0:\n            return False\n    return </span>True\nn, m = map(int, input().split())\nfor i in range(n):\n    row = l<span class='highlight-red'>ist(map(int, input().split()))\n    </span>kq = []\n    for x in row:\n        if snt(x):\n            kq.append(1)\n        else:\n            kq.append(0)\n    print(*kq)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b6fe535fa0f4f1d932/449c44ebafa84f0d8d5b6d0f/sub_1762350483222_wz1n3ur8y.py",
+        "similarity_percent": 34.7,
+        "full_code": "from math import *\ndef nt(n):\n    if n < 2:\n        return False\n    for i in range(2, isqrt(n) + 1):\n        if n % i == 0:\n            return False\n    return True\nif __name__ == '__main__':\n    n, m = map(int, input().split())\n    a = []\n    for i in range(n):\n        a.append(list(map(int, input().split())))\n    for i in range(n):\n        for j in range(m):\n            if nt(a[i][j]):\n                print('1', end = ' ')\n            else: print('0', end = ' ')\n        print()\n",
+        "highlighted_code": "from math import *\nde<span class='highlight-green'>f nt(n):\n    if n &lt; 2:\n        return False\n    for i in range(2, </span>isqrt(n<span class='highlight-green'>) + 1):\n        if n % i == 0:\n            return False\n    return </span>True\nif __name__ == &#39;__main__&#39;:\n    n, m = map(int, input().split())\n    a = []\n    for i in range(n):\n        a.append(l<span class='highlight-green'>ist(map(int, input().split()))</span>)\n    for i in range(n):\n        for j in range(m):\n            if nt(a[i][j]):\n                print(&#39;1&#39;, end = &#39; &#39;)\n            else: print(&#39;0&#39;, end = &#39; &#39;)\n        print()\n"
+      },
+      "token_overlap": 93,
+      "max_similarity_percent": 47.94
+    },
+    {
+      "case_id": 33,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b6fe535fa0f4f1d932/f95120b3a38a461085ef58cb/sub_1762013725167_sojwxztqg.py",
+        "similarity_percent": 47.62,
+        "full_code": "def prime(x):\n    if x < 2:\n        return False\n    for i in range(2, int(x**0.5) + 1):\n        if x % i == 0:\n            return False\n    return True\n\nn, m = map(int, input().split())\n\nfor _ in range(n):\n    arr = list(map(int, input().split()))\n    for num in arr:\n        print(1 if prime(num) else 0, end=' ')\n    print()  ",
+        "highlighted_code": "def prime(x):\n    if x &lt; 2:\n        return False\n    for i in range(2, int(x**0.5) + 1):\n        i<span class='highlight-red'>f x % i == 0:\n            return False\n    return True\n\nn, m = map(int, input().split</span>())\n\nfor <span class='highlight-red'>_ in range(n):\n    arr = list(map(int, input().split()))\n    </span>for num in arr:\n        print(1 if prime(num) else 0, end=&#39; &#39;)\n    print()  "
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b6fe535fa0f4f1d932/f0199fcb94bf405a8bf2ca38/sub_1761640080288_rjfdza48v.py",
+        "similarity_percent": 33.58,
+        "full_code": "import math\ndef is_prime(x):\n    if x < 2:\n        return False\n    if x == 2:\n        return True\n    if x % 2 == 0:\n        return False\n    for i in range(3, int(math.isqrt(x)) + 1, 2):\n        if x % i == 0:\n            return False\n    return True\nn, m = map(int, input().split())\nmatrix = []\nfor _ in range(n):\n    row = list(map(int, input().split()))\n    matrix.append(row)\nprime_map = []\nfor row in matrix:\n    prime_row = [1 if is_prime(num) else 0 for num in row]\n    prime_map.append(prime_row)\nfor row in prime_map:\n    print(*row)\n",
+        "highlighted_code": "import math\ndef is_prime(x):\n    if x &lt; 2:\n        return False\n    if x == 2:\n        return True\n    if x % 2 == 0:\n        return False\n    for i in range(3, int(math.isqrt(x)) + 1, 2):\n        i<span class='highlight-green'>f x % i == 0:\n            return False\n    return True\nn, m = map(int, input().split</span>())\nmatrix = []\nfor <span class='highlight-green'>_ in range(n):\n    row = list(map(int, input().split()))\n    </span>matrix.append(row)\nprime_map = []\nfor row in matrix:\n    prime_row = [1 if is_prime(num) else 0 for num in row]\n    prime_map.append(prime_row)\nfor row in prime_map:\n    print(*row)\n"
+      },
+      "token_overlap": 90,
+      "max_similarity_percent": 47.62
+    },
+    {
+      "case_id": 34,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b6fe535fa0f4f1d932/e59c34a1bebb49d29bfb3592/sub_1761818937730_a1megx7cs.py",
+        "similarity_percent": 47.62,
+        "full_code": "def prime(x):\n    if x < 2:\n        return False\n    for i in range(2, int(x**0.5) + 1):\n        if x % i == 0:\n            return False\n    return True\n\nn, m = map(int, input().split())\n\nfor _ in range(n):\n    arr = list(map(int, input().split()))\n    for num in arr:\n        print(1 if prime(num) else 0, end=' ')\n    print()  \n",
+        "highlighted_code": "def prime(x):\n    if x &lt; 2:\n        return False\n    for i in range(2, int(x**0.5) + 1):\n        i<span class='highlight-red'>f x % i == 0:\n            return False\n    return True\n\nn, m = map(int, input().split</span>())\n\nfor <span class='highlight-red'>_ in range(n):\n    arr = list(map(int, input().split()))\n    </span>for num in arr:\n        print(1 if prime(num) else 0, end=&#39; &#39;)\n    print()  \n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b6fe535fa0f4f1d932/f0199fcb94bf405a8bf2ca38/sub_1761640080288_rjfdza48v.py",
+        "similarity_percent": 33.58,
+        "full_code": "import math\ndef is_prime(x):\n    if x < 2:\n        return False\n    if x == 2:\n        return True\n    if x % 2 == 0:\n        return False\n    for i in range(3, int(math.isqrt(x)) + 1, 2):\n        if x % i == 0:\n            return False\n    return True\nn, m = map(int, input().split())\nmatrix = []\nfor _ in range(n):\n    row = list(map(int, input().split()))\n    matrix.append(row)\nprime_map = []\nfor row in matrix:\n    prime_row = [1 if is_prime(num) else 0 for num in row]\n    prime_map.append(prime_row)\nfor row in prime_map:\n    print(*row)\n",
+        "highlighted_code": "import math\ndef is_prime(x):\n    if x &lt; 2:\n        return False\n    if x == 2:\n        return True\n    if x % 2 == 0:\n        return False\n    for i in range(3, int(math.isqrt(x)) + 1, 2):\n        i<span class='highlight-green'>f x % i == 0:\n            return False\n    return True\nn, m = map(int, input().split</span>())\nmatrix = []\nfor <span class='highlight-green'>_ in range(n):\n    row = list(map(int, input().split()))\n    </span>matrix.append(row)\nprime_map = []\nfor row in matrix:\n    prime_row = [1 if is_prime(num) else 0 for num in row]\n    prime_map.append(prime_row)\nfor row in prime_map:\n    print(*row)\n"
+      },
+      "token_overlap": 90,
+      "max_similarity_percent": 47.62
+    },
+    {
+      "case_id": 35,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b6fe535fa0f4f1d932/8e19101eb0da4e9a92a17098/sub_1761635440693_x93blyqy2.py",
+        "similarity_percent": 46.39,
+        "full_code": "def snt(n):\n    if n < 2:\n        return False\n    for i in range (2, int(n**0.5) + 1):\n        if n % i == 0:\n            return False\n    return True\nn, m = map(int, input().split())\nfor i in range(n):\n    row = list(map(int, input().split()))\n    kq = []\n    for x in row:\n        if snt(x):\n            kq.append(1)\n        else:\n            kq.append(0)\n    print(*kq)",
+        "highlighted_code": "def snt(n):\n    if n &lt; 2:\n        return False\n    for i in range (2, int(n**0.5) + 1):\n        i<span class='highlight-red'>f n % i == 0:\n            return False\n    return True\nn, m = map(int, input().split</span>())\nfor <span class='highlight-red'>i in range(n):\n    row = list(map(int, input().split()))\n    </span>kq = []\n    for x in row:\n        if snt(x):\n            kq.append(1)\n        else:\n            kq.append(0)\n    print(*kq)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b6fe535fa0f4f1d932/f0199fcb94bf405a8bf2ca38/sub_1761640080288_rjfdza48v.py",
+        "similarity_percent": 33.58,
+        "full_code": "import math\ndef is_prime(x):\n    if x < 2:\n        return False\n    if x == 2:\n        return True\n    if x % 2 == 0:\n        return False\n    for i in range(3, int(math.isqrt(x)) + 1, 2):\n        if x % i == 0:\n            return False\n    return True\nn, m = map(int, input().split())\nmatrix = []\nfor _ in range(n):\n    row = list(map(int, input().split()))\n    matrix.append(row)\nprime_map = []\nfor row in matrix:\n    prime_row = [1 if is_prime(num) else 0 for num in row]\n    prime_map.append(prime_row)\nfor row in prime_map:\n    print(*row)\n",
+        "highlighted_code": "import math\ndef is_prime(x):\n    if x &lt; 2:\n        return False\n    if x == 2:\n        return True\n    if x % 2 == 0:\n        return False\n    for i in range(3, int(math.isqrt(x)) + 1, 2):\n        i<span class='highlight-green'>f x % i == 0:\n            return False\n    return True\nn, m = map(int, input().split</span>())\nmatrix = []\nfor <span class='highlight-green'>_ in range(n):\n    row = list(map(int, input().split()))\n    </span>matrix.append(row)\nprime_map = []\nfor row in matrix:\n    prime_row = [1 if is_prime(num) else 0 for num in row]\n    prime_map.append(prime_row)\nfor row in prime_map:\n    print(*row)\n"
+      },
+      "token_overlap": 90,
+      "max_similarity_percent": 46.39
+    },
+    {
+      "case_id": 36,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b6fe535fa0f4f1d932/c2c38e9c5ead4887925c7e80/sub_1762618708319_84or9mzdl.py",
+        "similarity_percent": 44.4,
+        "full_code": "def nguyen_to(x):\n    if x < 2:\n        return False\n    for i in range(2, int(x**0.5) + 1):\n        if x % i == 0:\n            return False\n    return True\n\nn, m = map(int, input().split())\nma_tran = [list(map(int, input().split())) for _ in range(n)]\n\nfor i in range(n):\n    for j in range(m):\n        if nguyen_to(ma_tran[i][j]):\n            print(1, end=' ')\n        else:\n            print(0, end=' ')\n    print()\n",
+        "highlighted_code": "def nguyen_to(x):\n    if x &lt; 2:\n        return False\n    f<span class='highlight-red'>or i in range(2, int(x**0.5) + 1):\n        if x % i == 0:\n            r</span>eturn False\n    return True\n\nn, m = map(int, input().split())\nma_tran = [lis<span class='highlight-red'>t(map(int, input().split())) for _ </span>in range(n)]\n\nfor i in range(n):\n    for j in range(m):\n        if nguyen_to(ma_tran[i][j])<span class='highlight-red'>:\n            print(1, end=&#39; &#39;)\n        else:\n            print(0, end=&#39; &#39;)\n    prin</span>t()\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b6fe535fa0f4f1d932/27e30f767b3a46b283cbfec0/sub_1761566581004_kedqltc10.py",
+        "similarity_percent": 53.65,
+        "full_code": "def check_prime(n):\n    if n < 2:\n        return 0\n    for i in range(2,int(n**0.5)+1):\n        if n % i == 0:\n            return 0\n    return 1\nn, m = map(int, input().split())\nfor _ in range(n):\n    array = list(map(int,input().split()))\n    for num in array:\n\n        if check_prime(num):\n            print(1,end = ' ')\n        else:\n            print(0,end = ' ')\n    print()\n",
+        "highlighted_code": "def check_prime(n):\n    if n &lt; 2:\n        return 0\n    f<span class='highlight-green'>or i in range(2,int(n**0.5)+1):\n        if n % i == 0:\n            r</span>eturn 0\n    return 1\nn, m = map(int, input().split())\nfor _ in range(n):\n    array = lis<span class='highlight-green'>t(map(int,input().split()))\n    for num </span>in array:\n\n        if check_prime(num)<span class='highlight-green'>:\n            print(1,end = &#39; &#39;)\n        else:\n            print(0,end = &#39; &#39;)\n    prin</span>t()\n"
+      },
+      "token_overlap": 103,
+      "max_similarity_percent": 53.65
+    },
+    {
+      "case_id": 37,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b6fe535fa0f4f1d932/26894d2babd64210ad6beba1/sub_1761916660012_cvb10x0d7.py",
+        "similarity_percent": 42.63,
+        "full_code": "def snt(n):\n    if n < 2: \n        return False\n    for i in range(2, int(n**0.5)+1):\n        if n %  i == 0:\n            return False\n    return True\n\nif __name__ == \"__main__\":\n    n, m = map(int, input().split())\n    a = [list(map(int, input().split())) for _ in range(n)]\n    for i in range(n):\n        for j in range(m):\n            if(snt(a[i][j])):\n                a[i][j]=1\n            else:\n                a[i][j]=0\n    for x in a:\n        print(*x)",
+        "highlighted_code": "<span class='highlight-red'>def snt(n):\n    if n &lt; 2: \n        return False\n    for i in range(2, int(n**0.5)+1):\n        if n %  i == 0:\n            return False\n    return </span>True\n\nif __name__ == &#34;__main__&#34;:\n    n, m = map(int, input().split())\n    a = [lis<span class='highlight-red'>t(map(int, input().split())) for _ </span>in range(n)]\n    for i in range(n):\n        for j in range(m):\n            if(snt(a[i][j])):\n                a[i][j]=1\n            else:\n                a[i][j]=0\n    for x in a:\n        print(*x)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b6fe535fa0f4f1d932/f95120b3a38a461085ef58cb/sub_1762013725167_sojwxztqg.py",
+        "similarity_percent": 56.61,
+        "full_code": "def prime(x):\n    if x < 2:\n        return False\n    for i in range(2, int(x**0.5) + 1):\n        if x % i == 0:\n            return False\n    return True\n\nn, m = map(int, input().split())\n\nfor _ in range(n):\n    arr = list(map(int, input().split()))\n    for num in arr:\n        print(1 if prime(num) else 0, end=' ')\n    print()  ",
+        "highlighted_code": "<span class='highlight-green'>def prime(x):\n    if x &lt; 2:\n        return False\n    for i in range(2, int(x**0.5) + 1):\n        if x % i == 0:\n            return False\n    return </span>True\n\nn, m = map(int, input().split())\n\nfor _ in range(n):\n    arr = lis<span class='highlight-green'>t(map(int, input().split()))\n    for num </span>in arr:\n        print(1 if prime(num) else 0, end=&#39; &#39;)\n    print()  "
+      },
+      "token_overlap": 107,
+      "max_similarity_percent": 56.61
+    },
+    {
+      "case_id": 38,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b6fe535fa0f4f1d932/26894d2babd64210ad6beba1/sub_1761916660012_cvb10x0d7.py",
+        "similarity_percent": 42.63,
+        "full_code": "def snt(n):\n    if n < 2: \n        return False\n    for i in range(2, int(n**0.5)+1):\n        if n %  i == 0:\n            return False\n    return True\n\nif __name__ == \"__main__\":\n    n, m = map(int, input().split())\n    a = [list(map(int, input().split())) for _ in range(n)]\n    for i in range(n):\n        for j in range(m):\n            if(snt(a[i][j])):\n                a[i][j]=1\n            else:\n                a[i][j]=0\n    for x in a:\n        print(*x)",
+        "highlighted_code": "<span class='highlight-red'>def snt(n):\n    if n &lt; 2: \n        return False\n    for i in range(2, int(n**0.5)+1):\n        if n %  i == 0:\n            return False\n    return </span>True\n\nif __name__ == &#34;__main__&#34;:\n    n, m = map(int, input().split())\n    a = [lis<span class='highlight-red'>t(map(int, input().split())) for _ </span>in range(n)]\n    for i in range(n):\n        for j in range(m):\n            if(snt(a[i][j])):\n                a[i][j]=1\n            else:\n                a[i][j]=0\n    for x in a:\n        print(*x)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b6fe535fa0f4f1d932/e59c34a1bebb49d29bfb3592/sub_1761818937730_a1megx7cs.py",
+        "similarity_percent": 56.61,
+        "full_code": "def prime(x):\n    if x < 2:\n        return False\n    for i in range(2, int(x**0.5) + 1):\n        if x % i == 0:\n            return False\n    return True\n\nn, m = map(int, input().split())\n\nfor _ in range(n):\n    arr = list(map(int, input().split()))\n    for num in arr:\n        print(1 if prime(num) else 0, end=' ')\n    print()  \n",
+        "highlighted_code": "<span class='highlight-green'>def prime(x):\n    if x &lt; 2:\n        return False\n    for i in range(2, int(x**0.5) + 1):\n        if x % i == 0:\n            return False\n    return </span>True\n\nn, m = map(int, input().split())\n\nfor _ in range(n):\n    arr = lis<span class='highlight-green'>t(map(int, input().split()))\n    for num </span>in arr:\n        print(1 if prime(num) else 0, end=&#39; &#39;)\n    print()  \n"
+      },
+      "token_overlap": 107,
+      "max_similarity_percent": 56.61
+    },
+    {
+      "case_id": 39,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b6fe535fa0f4f1d932/449c44ebafa84f0d8d5b6d0f/sub_1762350483222_wz1n3ur8y.py",
+        "similarity_percent": 42.16,
+        "full_code": "from math import *\ndef nt(n):\n    if n < 2:\n        return False\n    for i in range(2, isqrt(n) + 1):\n        if n % i == 0:\n            return False\n    return True\nif __name__ == '__main__':\n    n, m = map(int, input().split())\n    a = []\n    for i in range(n):\n        a.append(list(map(int, input().split())))\n    for i in range(n):\n        for j in range(m):\n            if nt(a[i][j]):\n                print('1', end = ' ')\n            else: print('0', end = ' ')\n        print()\n",
+        "highlighted_code": "from math import *\nde<span class='highlight-red'>f nt(n):\n    if n &lt; 2:\n        return False\n    for i in range(2, </span>isqrt(n<span class='highlight-red'>) + 1):\n        if n % i == 0:\n            return False\n    return </span>True\nif __name__ == &#39;__main__&#39;:\n    n, m = map(int, input().split())\n    a = []\n    for i in range(n):\n        a.append(list(map(int, input().split())))\n    for i <span class='highlight-red'>in range(n):\n        for j in range(m):\n            if nt(a[i][j]):\n                print(</span>&#39;1&#39;, end = &#39; &#39;)\n            else: print(&#39;0&#39;, end = &#39; &#39;)\n        print()\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b6fe535fa0f4f1d932/c2c38e9c5ead4887925c7e80/sub_1762618708319_84or9mzdl.py",
+        "similarity_percent": 48.71,
+        "full_code": "def nguyen_to(x):\n    if x < 2:\n        return False\n    for i in range(2, int(x**0.5) + 1):\n        if x % i == 0:\n            return False\n    return True\n\nn, m = map(int, input().split())\nma_tran = [list(map(int, input().split())) for _ in range(n)]\n\nfor i in range(n):\n    for j in range(m):\n        if nguyen_to(ma_tran[i][j]):\n            print(1, end=' ')\n        else:\n            print(0, end=' ')\n    print()\n",
+        "highlighted_code": "de<span class='highlight-green'>f nguyen_to(x):\n    if x &lt; 2:\n        return False\n    for i in range(2, </span>int(x**0.5<span class='highlight-green'>) + 1):\n        if x % i == 0:\n            return False\n    return </span>True\n\nn, m = map(int, input().split())\nma_tran = [list(map(int, input().split())) for _ in range(n)]\n\nfor i <span class='highlight-green'>in range(n):\n    for j in range(m):\n        if nguyen_to(ma_tran[i][j]):\n            print(</span>1, end=&#39; &#39;)\n        else:\n            print(0, end=&#39; &#39;)\n    print()\n"
+      },
+      "token_overlap": 113,
+      "max_similarity_percent": 48.71
+    },
+    {
+      "case_id": 40,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b6fe535fa0f4f1d932/0d74995bf22b4574a97a2297/sub_1761589673461_llje7avog.py",
+        "similarity_percent": 39.04,
+        "full_code": "import sys\ninput = sys.stdin.readline\ndef solve():\n    mx = 1_000_000\n    primes = [True] * (mx + 1)\n    primes[0] = False\n    primes[1] = False\n    for p in range(2, int(mx**0.5) + 1):\n        if primes[p]:\n            for i in range(p * p, mx + 1, p):\n                primes[i] = False\n    n, m = map(int, input().split())\n    for _ in range(n):\n        row = list(map(int, input().split()))\n        res = []\n        for num in row:\n            if primes[num]:\n                res.append(1)\n            else:\n                res.append(0)\n        print(*res)\nsolve()",
+        "highlighted_code": "import sys\ninput = sys.stdin.readline\ndef solve():\n    mx = 1_000_000\n    primes = [True] * (mx + 1)\n    primes[0] = False\n    primes[1] = Fals<span class='highlight-red'>e\n    for p in range(2, int(mx**0.5) + 1):\n        if primes</span>[p]:\n            for i in range(p * p, mx + 1, p):\n                primes[i] = False\n    n, <span class='highlight-red'>m = map(int, input().split())\n    for _ in range(n):\n        row = list(map(int, input().split()))\n        </span>res = []\n        for num in row:\n            if primes[num]:\n                res.append(1)\n            else:\n                res.append(0)\n        print(*res)\nsolve()"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b6fe535fa0f4f1d932/f95120b3a38a461085ef58cb/sub_1762013725167_sojwxztqg.py",
+        "similarity_percent": 51.85,
+        "full_code": "def prime(x):\n    if x < 2:\n        return False\n    for i in range(2, int(x**0.5) + 1):\n        if x % i == 0:\n            return False\n    return True\n\nn, m = map(int, input().split())\n\nfor _ in range(n):\n    arr = list(map(int, input().split()))\n    for num in arr:\n        print(1 if prime(num) else 0, end=' ')\n    print()  ",
+        "highlighted_code": "def prime(x):\n    if x &lt; 2:\n        return Fals<span class='highlight-green'>e\n    for i in range(2, int(x**0.5) + 1):\n        if x </span>% i == 0:\n            return False\n    return True\n\nn, <span class='highlight-green'>m = map(int, input().split())\n\nfor _ in range(n):\n    arr = list(map(int, input().split()))\n    </span>for num in arr:\n        print(1 if prime(num) else 0, end=&#39; &#39;)\n    print()  "
+      },
+      "token_overlap": 98,
+      "max_similarity_percent": 51.85
+    },
+    {
+      "case_id": 41,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b6fe535fa0f4f1d932/0d74995bf22b4574a97a2297/sub_1761589673461_llje7avog.py",
+        "similarity_percent": 39.04,
+        "full_code": "import sys\ninput = sys.stdin.readline\ndef solve():\n    mx = 1_000_000\n    primes = [True] * (mx + 1)\n    primes[0] = False\n    primes[1] = False\n    for p in range(2, int(mx**0.5) + 1):\n        if primes[p]:\n            for i in range(p * p, mx + 1, p):\n                primes[i] = False\n    n, m = map(int, input().split())\n    for _ in range(n):\n        row = list(map(int, input().split()))\n        res = []\n        for num in row:\n            if primes[num]:\n                res.append(1)\n            else:\n                res.append(0)\n        print(*res)\nsolve()",
+        "highlighted_code": "import sys\ninput = sys.stdin.readline\ndef solve():\n    mx = 1_000_000\n    primes = [True] * (mx + 1)\n    primes[0] = False\n    primes[1] = Fals<span class='highlight-red'>e\n    for p in range(2, int(mx**0.5) + 1):\n        if primes</span>[p]:\n            for i in range(p * p, mx + 1, p):\n                primes[i] = False\n    n, <span class='highlight-red'>m = map(int, input().split())\n    for _ in range(n):\n        row = list(map(int, input().split()))\n        </span>res = []\n        for num in row:\n            if primes[num]:\n                res.append(1)\n            else:\n                res.append(0)\n        print(*res)\nsolve()"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b6fe535fa0f4f1d932/e59c34a1bebb49d29bfb3592/sub_1761818937730_a1megx7cs.py",
+        "similarity_percent": 51.85,
+        "full_code": "def prime(x):\n    if x < 2:\n        return False\n    for i in range(2, int(x**0.5) + 1):\n        if x % i == 0:\n            return False\n    return True\n\nn, m = map(int, input().split())\n\nfor _ in range(n):\n    arr = list(map(int, input().split()))\n    for num in arr:\n        print(1 if prime(num) else 0, end=' ')\n    print()  \n",
+        "highlighted_code": "def prime(x):\n    if x &lt; 2:\n        return Fals<span class='highlight-green'>e\n    for i in range(2, int(x**0.5) + 1):\n        if x </span>% i == 0:\n            return False\n    return True\n\nn, <span class='highlight-green'>m = map(int, input().split())\n\nfor _ in range(n):\n    arr = list(map(int, input().split()))\n    </span>for num in arr:\n        print(1 if prime(num) else 0, end=&#39; &#39;)\n    print()  \n"
+      },
+      "token_overlap": 98,
+      "max_similarity_percent": 51.85
+    },
+    {
+      "case_id": 42,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b6fe535fa0f4f1d932/0d74995bf22b4574a97a2297/sub_1761589673461_llje7avog.py",
+        "similarity_percent": 38.25,
+        "full_code": "import sys\ninput = sys.stdin.readline\ndef solve():\n    mx = 1_000_000\n    primes = [True] * (mx + 1)\n    primes[0] = False\n    primes[1] = False\n    for p in range(2, int(mx**0.5) + 1):\n        if primes[p]:\n            for i in range(p * p, mx + 1, p):\n                primes[i] = False\n    n, m = map(int, input().split())\n    for _ in range(n):\n        row = list(map(int, input().split()))\n        res = []\n        for num in row:\n            if primes[num]:\n                res.append(1)\n            else:\n                res.append(0)\n        print(*res)\nsolve()",
+        "highlighted_code": "import sys\ninput = sys.stdin.readline\ndef solve():\n    mx = 1_000_000\n    primes = [True] * (mx + 1)\n    primes[0] = False\n    primes[1] = False\n    f<span class='highlight-red'>or p in range(2, int(mx**0.5) + 1):\n        if primes</span>[p]:\n            for i in range(p * p, mx + 1, p):\n                primes[i] = False\n    n, <span class='highlight-red'>m = map(int, input().split())\n    for _ in range(n):\n        row = list(map(int, input().split()))\n        </span>res = []\n        for num in row:\n            if primes[num]:\n                res.append(1)\n            else:\n                res.append(0)\n        print(*res)\nsolve()"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b6fe535fa0f4f1d932/27e30f767b3a46b283cbfec0/sub_1761566581004_kedqltc10.py",
+        "similarity_percent": 50.0,
+        "full_code": "def check_prime(n):\n    if n < 2:\n        return 0\n    for i in range(2,int(n**0.5)+1):\n        if n % i == 0:\n            return 0\n    return 1\nn, m = map(int, input().split())\nfor _ in range(n):\n    array = list(map(int,input().split()))\n    for num in array:\n\n        if check_prime(num):\n            print(1,end = ' ')\n        else:\n            print(0,end = ' ')\n    print()\n",
+        "highlighted_code": "def check_prime(n):\n    if n &lt; 2:\n        return 0\n    f<span class='highlight-green'>or i in range(2,int(n**0.5)+1):\n        if n </span>% i == 0:\n            return 0\n    return 1\nn, <span class='highlight-green'>m = map(int, input().split())\nfor _ in range(n):\n    array = list(map(int,input().split()))\n    </span>for num in array:\n\n        if check_prime(num):\n            print(1,end = &#39; &#39;)\n        else:\n            print(0,end = &#39; &#39;)\n    print()\n"
+      },
+      "token_overlap": 96,
+      "max_similarity_percent": 50.0
+    },
+    {
+      "case_id": 43,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b6fe535fa0f4f1d932/8e236cb825b041b0a82527f2/sub_1761495066645_49w31eu9g.py",
+        "similarity_percent": 38.18,
+        "full_code": "import math\n\ndef is_prime(n):\n    if n <= 1:\n        return 0\n    if n == 2:\n        return 1\n    if n % 2 == 0:\n        return 0\n    \n    lim = math.isqrt(n) + 1\n    for i in range(3, lim, 2):\n        if n % i == 0:\n            return 0\n    return 1\n\nn, m = map(int, input().split())\n\nfor _ in range(n):\n    row = [is_prime(e) for e in list(map(int, input().split()))[:m]]\n    print(\" \".join(map(str, row)))",
+        "highlighted_code": "impor<span class='highlight-red'>t math\n\ndef is_prime(n):\n    if n &lt;= 1:\n        return 0\n    if n == 2:\n        return 1\n    if n % 2 == 0:\n        return 0\n    \n    lim = </span>math.isqrt(n) + 1\n    for i in range(3, lim<span class='highlight-red'>, 2):\n        if n % i == 0:\n            return 0\n    retur</span>n 1\n\nn, m = map(int, input().split())\n\nfor _ in range(n):\n    row = [is_prime(e) for e in list(map(int, input().split()))[:m]]\n    print(&#34; &#34;.join(map(str, row)))"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b6fe535fa0f4f1d932/f95120b3a38a461085ef58cb/sub_1762183294290_xaeui8f5n.py",
+        "similarity_percent": 28.0,
+        "full_code": "import sys\nimport math\ndef is_prime(n):\n    if n <= 1:\n        return 0\n    if n == 2:\n        return 1\n    if n % 2 == 0:\n        return 0    \n    limit = int(math.sqrt(n))    \n    for i in range(3, limit + 1, 2):\n        if n % i == 0:\n            return 0            \n    return 1\ndef solve():\n    line = sys.stdin.readline().strip().split()\n    N = int(line[0])\n    M = int(line[1])\n    res_mat = []\n    for r in range(N):\n        data_row = list(map(int, sys.stdin.readline().strip().split()))            \n        res_row = []        \n        for num in data_row:\n            res = is_prime(num)\n            res_row.append(str(res))        \n        res_mat.append(res_row)\n    for row in res_mat:\n        print(\" \".join(row))\nif __name__ == \"__main__\":\n    solve()",
+        "highlighted_code": "import sys\nimpor<span class='highlight-green'>t math\ndef is_prime(n):\n    if n &lt;= 1:\n        return 0\n    if n == 2:\n        return 1\n    if n % 2 == 0:\n        return 0    \n    limit = </span>int(math.sqrt(n))    \n    for i in range(3, limit + 1<span class='highlight-green'>, 2):\n        if n % i == 0:\n            return 0            \n    retur</span>n 1\ndef solve():\n    line = sys.stdin.readline().strip().split()\n    N = int(line[0])\n    M = int(line[1])\n    res_mat = []\n    for r in range(N):\n        data_row = list(map(int, sys.stdin.readline().strip().split()))            \n        res_row = []        \n        for num in data_row:\n            res = is_prime(num)\n            res_row.append(str(res))        \n        res_mat.append(res_row)\n    for row in res_mat:\n        print(&#34; &#34;.join(row))\nif __name__ == &#34;__main__&#34;:\n    solve()"
+      },
+      "token_overlap": 84,
+      "max_similarity_percent": 38.18
+    },
+    {
+      "case_id": 44,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b6fe535fa0f4f1d932/bbb05531336e487d8ed54046/sub_1762798127646_ggfmsadr6.py",
+        "similarity_percent": 37.55,
+        "full_code": "import math\n\ndef prime(n):\n    if n < 2:\n        return False\n    for i in range(2, int(math.isqrt(n)) + 1):\n        if n % i == 0:\n            return False\n    return True\n\nn, m = map(int, input().split())\na = [list(map(int, input().split())) for _ in range(n)]\n\nfor i in range(n):\n    for j in range(m):\n        print(1 if prime(a[i][j]) else 0, end=\" \")\n    print()\n",
+        "highlighted_code": "<span class='highlight-red'>import math\n\ndef prime(n):\n    if n &lt; 2:\n        return Fals</span>e\n    for i in range(2, int(math.isqrt(n)) + 1):\n        i<span class='highlight-red'>f n % i == 0:\n            return False\n    return True\n\nn, m = map(int, input().split()</span>)\na = [list(map(int, input().split())) for _ in range(n)]\n\nfor i in range(n):\n    for j in range(m):\n        print(1 if prime(a[i][j]) else 0, end=&#34; &#34;)\n    print()\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b6fe535fa0f4f1d932/f0199fcb94bf405a8bf2ca38/sub_1761640080288_rjfdza48v.py",
+        "similarity_percent": 32.09,
+        "full_code": "import math\ndef is_prime(x):\n    if x < 2:\n        return False\n    if x == 2:\n        return True\n    if x % 2 == 0:\n        return False\n    for i in range(3, int(math.isqrt(x)) + 1, 2):\n        if x % i == 0:\n            return False\n    return True\nn, m = map(int, input().split())\nmatrix = []\nfor _ in range(n):\n    row = list(map(int, input().split()))\n    matrix.append(row)\nprime_map = []\nfor row in matrix:\n    prime_row = [1 if is_prime(num) else 0 for num in row]\n    prime_map.append(prime_row)\nfor row in prime_map:\n    print(*row)\n",
+        "highlighted_code": "<span class='highlight-green'>import math\ndef is_prime(x):\n    if x &lt; 2:\n        return Fals</span>e\n    if x == 2:\n        return True\n    if x % 2 == 0:\n        return False\n    for i in range(3, int(math.isqrt(x)) + 1, 2):\n        i<span class='highlight-green'>f x % i == 0:\n            return False\n    return True\nn, m = map(int, input().split()</span>)\nmatrix = []\nfor _ in range(n):\n    row = list(map(int, input().split()))\n    matrix.append(row)\nprime_map = []\nfor row in matrix:\n    prime_row = [1 if is_prime(num) else 0 for num in row]\n    prime_map.append(prime_row)\nfor row in prime_map:\n    print(*row)\n"
+      },
+      "token_overlap": 86,
+      "max_similarity_percent": 37.55
+    },
+    {
+      "case_id": 45,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b6fe535fa0f4f1d932/449c44ebafa84f0d8d5b6d0f/sub_1762350483222_wz1n3ur8y.py",
+        "similarity_percent": 35.07,
+        "full_code": "from math import *\ndef nt(n):\n    if n < 2:\n        return False\n    for i in range(2, isqrt(n) + 1):\n        if n % i == 0:\n            return False\n    return True\nif __name__ == '__main__':\n    n, m = map(int, input().split())\n    a = []\n    for i in range(n):\n        a.append(list(map(int, input().split())))\n    for i in range(n):\n        for j in range(m):\n            if nt(a[i][j]):\n                print('1', end = ' ')\n            else: print('0', end = ' ')\n        print()\n",
+        "highlighted_code": "from math import *\ndef nt(n):\n    if n &lt; 2:\n        <span class='highlight-red'>return False\n    for i in range(2, </span>isqrt(n<span class='highlight-red'>) + 1):\n        if n % i == 0:\n            return False\n    return </span>True\nif __name__ == &#39;__main__&#39;:\n    n, m = map(int, input().split())\n    a = []\n    for i in range(n):\n        a.append(list(map(int, input().split())))\n    for i <span class='highlight-red'>in range(n):\n        for j in range(m):\n            if nt(a[i][j])</span>:\n                print(&#39;1&#39;, end = &#39; &#39;)\n            else: print(&#39;0&#39;, end = &#39; &#39;)\n        print()\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b6fe535fa0f4f1d932/fa972feccadf40fe9df799d0/sub_1762453474068_fqsevw4r9.py",
+        "similarity_percent": 39.17,
+        "full_code": "n, m = map(int, input().split())\nA = [list(map(int, input().split())) for _ in range(n)]\nC = [[0] * m for _ in range(n)]\ndef is_prime(x):\n    if x <= 1:\n        return False\n    for i in range(2, int(x**0.5) + 1):\n        if x % i == 0:\n            return False\n    return True\nfor i in range(n):\n    for j in range(m):\n        if is_prime(A[i][j]):\n            C[i][j] = 1\nfor d in C:\n    print(*d)",
+        "highlighted_code": "n, m = map(int, input().split())\nA = [list(map(int, input().split())) for _ in range(n)]\nC = [[0] * m for _ in range(n)]\ndef is_prime(x):\n    if x &lt;= 1:\n        <span class='highlight-green'>return False\n    for i in range(2, </span>int(x**0.5<span class='highlight-green'>) + 1):\n        if x % i == 0:\n            return False\n    return </span>True\nfor i <span class='highlight-green'>in range(n):\n    for j in range(m):\n        if is_prime(A[i][j])</span>:\n            C[i][j] = 1\nfor d in C:\n    print(*d)"
+      },
+      "token_overlap": 94,
+      "max_similarity_percent": 39.17
+    },
+    {
+      "case_id": 46,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b6fe535fa0f4f1d932/449c44ebafa84f0d8d5b6d0f/sub_1762350483222_wz1n3ur8y.py",
+        "similarity_percent": 34.7,
+        "full_code": "from math import *\ndef nt(n):\n    if n < 2:\n        return False\n    for i in range(2, isqrt(n) + 1):\n        if n % i == 0:\n            return False\n    return True\nif __name__ == '__main__':\n    n, m = map(int, input().split())\n    a = []\n    for i in range(n):\n        a.append(list(map(int, input().split())))\n    for i in range(n):\n        for j in range(m):\n            if nt(a[i][j]):\n                print('1', end = ' ')\n            else: print('0', end = ' ')\n        print()\n",
+        "highlighted_code": "from math import *\nde<span class='highlight-red'>f nt(n):\n    if n &lt; 2:\n        return False\n    for i in range(2, </span>isqrt(n<span class='highlight-red'>) + 1):\n        if n % i == 0:\n            return False\n    return </span>True\nif __name__ == &#39;__main__&#39;:\n    n, m = map(int, input().split())\n    a = []\n    for i in range(n):\n        a.append(l<span class='highlight-red'>ist(map(int, input().split()))</span>)\n    for i in range(n):\n        for j in range(m):\n            if nt(a[i][j]):\n                print(&#39;1&#39;, end = &#39; &#39;)\n            else: print(&#39;0&#39;, end = &#39; &#39;)\n        print()\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b6fe535fa0f4f1d932/f95120b3a38a461085ef58cb/sub_1762013725167_sojwxztqg.py",
+        "similarity_percent": 49.21,
+        "full_code": "def prime(x):\n    if x < 2:\n        return False\n    for i in range(2, int(x**0.5) + 1):\n        if x % i == 0:\n            return False\n    return True\n\nn, m = map(int, input().split())\n\nfor _ in range(n):\n    arr = list(map(int, input().split()))\n    for num in arr:\n        print(1 if prime(num) else 0, end=' ')\n    print()  ",
+        "highlighted_code": "de<span class='highlight-green'>f prime(x):\n    if x &lt; 2:\n        return False\n    for i in range(2, </span>int(x**0.5<span class='highlight-green'>) + 1):\n        if x % i == 0:\n            return False\n    return </span>True\n\nn, m = map(int, input().split())\n\nfor _ in range(n):\n    arr = l<span class='highlight-green'>ist(map(int, input().split()))\n    </span>for num in arr:\n        print(1 if prime(num) else 0, end=&#39; &#39;)\n    print()  "
+      },
+      "token_overlap": 93,
+      "max_similarity_percent": 49.21
+    },
+    {
+      "case_id": 47,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b6fe535fa0f4f1d932/449c44ebafa84f0d8d5b6d0f/sub_1762350483222_wz1n3ur8y.py",
+        "similarity_percent": 34.7,
+        "full_code": "from math import *\ndef nt(n):\n    if n < 2:\n        return False\n    for i in range(2, isqrt(n) + 1):\n        if n % i == 0:\n            return False\n    return True\nif __name__ == '__main__':\n    n, m = map(int, input().split())\n    a = []\n    for i in range(n):\n        a.append(list(map(int, input().split())))\n    for i in range(n):\n        for j in range(m):\n            if nt(a[i][j]):\n                print('1', end = ' ')\n            else: print('0', end = ' ')\n        print()\n",
+        "highlighted_code": "from math import *\nde<span class='highlight-red'>f nt(n):\n    if n &lt; 2:\n        return False\n    for i in range(2, </span>isqrt(n<span class='highlight-red'>) + 1):\n        if n % i == 0:\n            return False\n    return </span>True\nif __name__ == &#39;__main__&#39;:\n    n, m = map(int, input().split())\n    a = []\n    for i in range(n):\n        a.append(list(map(int, input().split())))\n    for i <span class='highlight-red'>in range(n):\n        for j in range(m)</span>:\n            if nt(a[i][j]):\n                print(&#39;1&#39;, end = &#39; &#39;)\n            else: print(&#39;0&#39;, end = &#39; &#39;)\n        print()\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b6fe535fa0f4f1d932/bbb05531336e487d8ed54046/sub_1762798127646_ggfmsadr6.py",
+        "similarity_percent": 40.61,
+        "full_code": "import math\n\ndef prime(n):\n    if n < 2:\n        return False\n    for i in range(2, int(math.isqrt(n)) + 1):\n        if n % i == 0:\n            return False\n    return True\n\nn, m = map(int, input().split())\na = [list(map(int, input().split())) for _ in range(n)]\n\nfor i in range(n):\n    for j in range(m):\n        print(1 if prime(a[i][j]) else 0, end=\" \")\n    print()\n",
+        "highlighted_code": "import math\n\nde<span class='highlight-green'>f prime(n):\n    if n &lt; 2:\n        return False\n    for i in range(2, </span>int(math.isqrt(n)<span class='highlight-green'>) + 1):\n        if n % i == 0:\n            return False\n    return </span>True\n\nn, m = map(int, input().split())\na = [list(map(int, input().split())) for _ in range(n)]\n\nfor i <span class='highlight-green'>in range(n):\n    for j in range(m)</span>:\n        print(1 if prime(a[i][j]) else 0, end=&#34; &#34;)\n    print()\n"
+      },
+      "token_overlap": 93,
+      "max_similarity_percent": 40.61
+    },
+    {
+      "case_id": 48,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b6fe535fa0f4f1d932/449c44ebafa84f0d8d5b6d0f/sub_1762350483222_wz1n3ur8y.py",
+        "similarity_percent": 34.7,
+        "full_code": "from math import *\ndef nt(n):\n    if n < 2:\n        return False\n    for i in range(2, isqrt(n) + 1):\n        if n % i == 0:\n            return False\n    return True\nif __name__ == '__main__':\n    n, m = map(int, input().split())\n    a = []\n    for i in range(n):\n        a.append(list(map(int, input().split())))\n    for i in range(n):\n        for j in range(m):\n            if nt(a[i][j]):\n                print('1', end = ' ')\n            else: print('0', end = ' ')\n        print()\n",
+        "highlighted_code": "from math import *\nde<span class='highlight-red'>f nt(n):\n    if n &lt; 2:\n        return False\n    for i in range(2, </span>isqrt(n<span class='highlight-red'>) + 1):\n        if n % i == 0:\n            return False\n    return </span>True\nif __name__ == &#39;__main__&#39;:\n    n, m = map(int, input().split())\n    a = []\n    for i in range(n):\n        a.append(l<span class='highlight-red'>ist(map(int, input().split()))</span>)\n    for i in range(n):\n        for j in range(m):\n            if nt(a[i][j]):\n                print(&#39;1&#39;, end = &#39; &#39;)\n            else: print(&#39;0&#39;, end = &#39; &#39;)\n        print()\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b6fe535fa0f4f1d932/e59c34a1bebb49d29bfb3592/sub_1761818937730_a1megx7cs.py",
+        "similarity_percent": 49.21,
+        "full_code": "def prime(x):\n    if x < 2:\n        return False\n    for i in range(2, int(x**0.5) + 1):\n        if x % i == 0:\n            return False\n    return True\n\nn, m = map(int, input().split())\n\nfor _ in range(n):\n    arr = list(map(int, input().split()))\n    for num in arr:\n        print(1 if prime(num) else 0, end=' ')\n    print()  \n",
+        "highlighted_code": "de<span class='highlight-green'>f prime(x):\n    if x &lt; 2:\n        return False\n    for i in range(2, </span>int(x**0.5<span class='highlight-green'>) + 1):\n        if x % i == 0:\n            return False\n    return </span>True\n\nn, m = map(int, input().split())\n\nfor _ in range(n):\n    arr = l<span class='highlight-green'>ist(map(int, input().split()))\n    </span>for num in arr:\n        print(1 if prime(num) else 0, end=&#39; &#39;)\n    print()  \n"
+      },
+      "token_overlap": 93,
+      "max_similarity_percent": 49.21
+    },
+    {
+      "case_id": 49,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b6fe535fa0f4f1d932/449c44ebafa84f0d8d5b6d0f/sub_1762350483222_wz1n3ur8y.py",
+        "similarity_percent": 34.7,
+        "full_code": "from math import *\ndef nt(n):\n    if n < 2:\n        return False\n    for i in range(2, isqrt(n) + 1):\n        if n % i == 0:\n            return False\n    return True\nif __name__ == '__main__':\n    n, m = map(int, input().split())\n    a = []\n    for i in range(n):\n        a.append(list(map(int, input().split())))\n    for i in range(n):\n        for j in range(m):\n            if nt(a[i][j]):\n                print('1', end = ' ')\n            else: print('0', end = ' ')\n        print()\n",
+        "highlighted_code": "from math import *\nde<span class='highlight-red'>f nt(n):\n    if n &lt; 2:\n        return False\n    for i in range(2, </span>isqrt(n<span class='highlight-red'>) + 1):\n        if n % i == 0:\n            return False\n    return </span>True\nif __name__ == &#39;__main__&#39;:\n    n, m = map(int, input().split())\n    a = []\n    for i in range(n):\n        a.append(list(map(int, input().split())))\n    for i in range(n):\n        fo<span class='highlight-red'>r j in range(m):\n            if nt(a[i][j])</span>:\n                print(&#39;1&#39;, end = &#39; &#39;)\n            else: print(&#39;0&#39;, end = &#39; &#39;)\n        print()\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b6fe535fa0f4f1d932/345569c455a14db085eec8e9/sub_1762612137995_esby2qoss.py",
+        "similarity_percent": 38.91,
+        "full_code": "def nguyen_to(n):\n    if n < 2:\n        return False\n    for i in range(2,int(n**0.5)+1):\n        if n%i==0:\n            return False\n    return True      \nm, n = map(int,input().split())\na = [list(map(int,input().split())) for _ in range(m)]\ns =[]\nfor i in range(m):\n    tong =[]\n    for j in range(n):\n        if nguyen_to(a[i][j]):\n            tong.append(1)\n        else:\n            tong.append(0)\n    s.append(tong)\nfor tong in s:\n    print(*tong)\n",
+        "highlighted_code": "de<span class='highlight-green'>f nguyen_to(n):\n    if n &lt; 2:\n        return False\n    for i in range(2,</span>int(n**0.5<span class='highlight-green'>)+1):\n        if n%i==0:\n            return False\n    return </span>True      \nm, n = map(int,input().split())\na = [list(map(int,input().split())) for _ in range(m)]\ns =[]\nfor i in range(m):\n    tong =[]\n    fo<span class='highlight-green'>r j in range(n):\n        if nguyen_to(a[i][j])</span>:\n            tong.append(1)\n        else:\n            tong.append(0)\n    s.append(tong)\nfor tong in s:\n    print(*tong)\n"
+      },
+      "token_overlap": 93,
+      "max_similarity_percent": 38.91
+    },
+    {
+      "case_id": 50,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b6fe535fa0f4f1d932/449c44ebafa84f0d8d5b6d0f/sub_1762350483222_wz1n3ur8y.py",
+        "similarity_percent": 33.58,
+        "full_code": "from math import *\ndef nt(n):\n    if n < 2:\n        return False\n    for i in range(2, isqrt(n) + 1):\n        if n % i == 0:\n            return False\n    return True\nif __name__ == '__main__':\n    n, m = map(int, input().split())\n    a = []\n    for i in range(n):\n        a.append(list(map(int, input().split())))\n    for i in range(n):\n        for j in range(m):\n            if nt(a[i][j]):\n                print('1', end = ' ')\n            else: print('0', end = ' ')\n        print()\n",
+        "highlighted_code": "from math import *\ndef nt(n):\n    if n &lt; 2:\n        return False\n    for i in range(2, isqrt(n) + 1):\n        i<span class='highlight-red'>f n % i == 0:\n            return False\n    return </span>True\nif __name__ == &#39;__main__&#39;:\n    n, m <span class='highlight-red'>= map(int, input().split())\n    a = []\n    for i in range(n):\n        </span>a.append(l<span class='highlight-red'>ist(map(int, input().split()))</span>)\n    for i in range(n):\n        for j in range(m):\n            if nt(a[i][j]):\n                print(&#39;1&#39;, end = &#39; &#39;)\n            else: print(&#39;0&#39;, end = &#39; &#39;)\n        print()\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b6fe535fa0f4f1d932/f0199fcb94bf405a8bf2ca38/sub_1761640080288_rjfdza48v.py",
+        "similarity_percent": 33.58,
+        "full_code": "import math\ndef is_prime(x):\n    if x < 2:\n        return False\n    if x == 2:\n        return True\n    if x % 2 == 0:\n        return False\n    for i in range(3, int(math.isqrt(x)) + 1, 2):\n        if x % i == 0:\n            return False\n    return True\nn, m = map(int, input().split())\nmatrix = []\nfor _ in range(n):\n    row = list(map(int, input().split()))\n    matrix.append(row)\nprime_map = []\nfor row in matrix:\n    prime_row = [1 if is_prime(num) else 0 for num in row]\n    prime_map.append(prime_row)\nfor row in prime_map:\n    print(*row)\n",
+        "highlighted_code": "import math\ndef is_prime(x):\n    if x &lt; 2:\n        return False\n    if x == 2:\n        return True\n    if x % 2 == 0:\n        return False\n    for i in range(3, int(math.isqrt(x)) + 1, 2):\n        i<span class='highlight-green'>f x % i == 0:\n            return False\n    return </span>True\nn, m <span class='highlight-green'>= map(int, input().split())\nmatrix = []\nfor _ in range(n):\n    </span>row = l<span class='highlight-green'>ist(map(int, input().split()))\n    </span>matrix.append(row)\nprime_map = []\nfor row in matrix:\n    prime_row = [1 if is_prime(num) else 0 for num in row]\n    prime_map.append(prime_row)\nfor row in prime_map:\n    print(*row)\n"
+      },
+      "token_overlap": 90,
+      "max_similarity_percent": 33.58
+    },
+    {
+      "case_id": 51,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b6fe535fa0f4f1d932/449c44ebafa84f0d8d5b6d0f/sub_1762350483222_wz1n3ur8y.py",
+        "similarity_percent": 33.58,
+        "full_code": "from math import *\ndef nt(n):\n    if n < 2:\n        return False\n    for i in range(2, isqrt(n) + 1):\n        if n % i == 0:\n            return False\n    return True\nif __name__ == '__main__':\n    n, m = map(int, input().split())\n    a = []\n    for i in range(n):\n        a.append(list(map(int, input().split())))\n    for i in range(n):\n        for j in range(m):\n            if nt(a[i][j]):\n                print('1', end = ' ')\n            else: print('0', end = ' ')\n        print()\n",
+        "highlighted_code": "from math import *\ndef nt(n):\n    if n &lt; 2:\n        return False\n    for i in range(2, isqrt(n) + 1):\n        if n % i == 0:\n            return False\n    return True\nif __name__ == &#39;__main__&#39;:\n    n, m <span class='highlight-red'>= map(int, input().split())\n    a = []\n    for i in range(n):\n        </span>a.append(l<span class='highlight-red'>ist(map(int, input().split()))</span>)\n    for i <span class='highlight-red'>in range(n):\n        for j in range(m)</span>:\n            if nt(a[i][j]):\n                print(&#39;1&#39;, end = &#39; &#39;)\n            else: print(&#39;0&#39;, end = &#39; &#39;)\n        print()\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b6fe535fa0f4f1d932/3fa6af8d916a46039239cabe/sub_1761578151560_mwpol9ntt.py",
+        "similarity_percent": 42.86,
+        "full_code": "n,m=map(int,input().split())\nA=[]\nfor i in range(n):\n    t=list(map(int,input().split()))\n    A.append(t)\nimport math\nfor i in range(n):\n    for j in range(m):\n        check=1\n        if A[i][j]==1:\n            check=0\n        for k in range(2,int(math.sqrt(A[i][j]))+1):\n            if A[i][j]%k==0: \n                check=0\n                break\n        print(check,end=\" \")\n    print()\n",
+        "highlighted_code": "n,m<span class='highlight-green'>=map(int,input().split())\nA=[]\nfor i in range(n):\n    </span>t=l<span class='highlight-green'>ist(map(int,input().split()))\n    </span>A.append(t)\nimport math\nfor i <span class='highlight-green'>in range(n):\n    for j in range(m)</span>:\n        check=1\n        if A[i][j]==1:\n            check=0\n        for k in range(2,int(math.sqrt(A[i][j]))+1):\n            if A[i][j]%k==0: \n                check=0\n                break\n        print(check,end=&#34; &#34;)\n    print()\n"
+      },
+      "token_overlap": 90,
+      "max_similarity_percent": 42.86
+    },
+    {
+      "case_id": 52,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b6fe535fa0f4f1d932/449c44ebafa84f0d8d5b6d0f/sub_1762350483222_wz1n3ur8y.py",
+        "similarity_percent": 33.58,
+        "full_code": "from math import *\ndef nt(n):\n    if n < 2:\n        return False\n    for i in range(2, isqrt(n) + 1):\n        if n % i == 0:\n            return False\n    return True\nif __name__ == '__main__':\n    n, m = map(int, input().split())\n    a = []\n    for i in range(n):\n        a.append(list(map(int, input().split())))\n    for i in range(n):\n        for j in range(m):\n            if nt(a[i][j]):\n                print('1', end = ' ')\n            else: print('0', end = ' ')\n        print()\n",
+        "highlighted_code": "from math import *\ndef nt(n):\n    if n &lt; 2:\n        return False\n    for i in range(2, isqrt(n) + 1):\n        if n % i == 0:\n            return False\n    return True\nif __name__ == &#39;__main__&#39;:\n    n, m <span class='highlight-red'>= map(int, input().split())\n    a = []\n    for i in range(n):\n        </span>a.append(l<span class='highlight-red'>ist(map(int, input().split()))</span>)\n    for i <span class='highlight-red'>in range(n):\n        for j in range(m)</span>:\n            if nt(a[i][j]):\n                print(&#39;1&#39;, end = &#39; &#39;)\n            else: print(&#39;0&#39;, end = &#39; &#39;)\n        print()\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b6fe535fa0f4f1d932/3fa6af8d916a46039239cabe/sub_1761578043695_h75s62z1l.py",
+        "similarity_percent": 43.69,
+        "full_code": "n,m=map(int,input().split())\nA=[]\nfor i in range(n):\n    t=list(map(int,input().split()))\n    A.append(t)\nimport math\nfor i in range(n):\n    for j in range(m):\n        check=1\n        for k in range(2,int(math.sqrt(A[i][j]))+1):\n            if A[i][j]%k==0 or A[i][j]==1:\n                check=0\n            \n        print(check,end=\" \")\n    print()\n",
+        "highlighted_code": "n,m<span class='highlight-green'>=map(int,input().split())\nA=[]\nfor i in range(n):\n    </span>t=l<span class='highlight-green'>ist(map(int,input().split()))\n    </span>A.append(t)\nimport math\nfor i <span class='highlight-green'>in range(n):\n    for j in range(m)</span>:\n        check=1\n        for k in range(2,int(math.sqrt(A[i][j]))+1):\n            if A[i][j]%k==0 or A[i][j]==1:\n                check=0\n            \n        print(check,end=&#34; &#34;)\n    print()\n"
+      },
+      "token_overlap": 90,
+      "max_similarity_percent": 43.69
     }
   ]
 }

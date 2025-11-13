@@ -1,0 +1,45 @@
+{
+  "problem_id": "68fdc3adfe535fa0f4f1d81e",
+  "filter_criteria": {
+    "min_token_overlap": 80,
+    "min_similarity_percent": 60
+  },
+  "total_cases_found": 2,
+  "total_cases_filtered": 2,
+  "cases": [
+    {
+      "case_id": 1,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3adfe535fa0f4f1d81e/ffdb326842044f2e98b7aaa7/sub_1762267743796_qmiogfn3k.py",
+        "similarity_percent": 100.0,
+        "full_code": "t = int(input())\n\nif t == 3:\n    print(\"\"\"ABC\nACB\nBAC\nBCA\nCAB\nCBA\"\"\")\nelif t == 4:\n    print(\"\"\"CBCA\nCCAB\nCCBAABC\nACB\nBAC\nBCA\nCAB\nCBA\nABCC\nACBC\nACCB\nBACC\nBCAC\nBCCA\nCABC\nCACB\nCBAC\"\"\")\nelse:\n    print(\"\"\"ABC\nACB\nBAC\nBCA\nCAB\nCBA\nABCC\nACBC\nACCB\nBACC\nBCAC\nBCCA\nCABC\nCACB\nCBAC\nCBCA\nCCAB\nCCBA\nABBCC\nABCBC\nABCCB\nABCCC\nACBBC\nACBCB\nACBCC\nACCBB\nACCBC\nACCCB\nBABCC\nBACBC\nBACCB\nBACCC\nBBACC\nBBCAC\nBBCCA\nBCABC\nBCACB\nBCACC\nBCBAC\nBCBCA\nBCCAB\nBCCAC\nBCCBA\nBCCCA\nCABBC\nCABCB\nCABCC\nCACBB\nCACBC\nCACCB\nCBABC\nCBACB\nCBACC\nCBBAC\nCBBCA\nCBCAB\nCBCAC\nCBCBA\nCBCCA\nCCABB\nCCABC\nCCACB\nCCBAB\nCCBAC\nCCBBA\nCCBCA\nCCCAB\nCCCBA\"\"\")",
+        "highlighted_code": "<span class='highlight-red'>t = int(input())\n\nif t == 3:\n    print(&#34;&#34;&#34;ABC\nACB\nBAC\nBCA\nCAB\nCBA&#34;&#34;&#34;)\nelif t == 4:\n    print(&#34;&#34;&#34;CBCA\nCCAB\nCCBAABC\nACB\nBAC\nBCA\nCAB\nCBA\nABCC\nACBC\nACCB\nBACC\nBCAC\nBCCA\nCABC\nCACB\nCBAC&#34;&#34;&#34;)\nelse:\n    print(&#34;&#34;&#34;ABC\nACB\nBAC\nBCA\nCAB\nCBA\nABCC\nACBC\nACCB\nBACC\nBCAC\nBCCA\nCABC\nCACB\nCBAC\nCBCA\nCCAB\nCCBA\nABBCC\nABCBC\nABCCB\nABCCC\nACBBC\nACBCB\nACBCC\nACCBB\nACCBC\nACCCB\nBABCC\nBACBC\nBACCB\nBACCC\nBBACC\nBBCAC\nBBCCA\nBCABC\nBCACB\nBCACC\nBCBAC\nBCBCA\nBCCAB\nBCCAC\nBCCBA\nBCCCA\nCABBC\nCABCB\nCABCC\nCACBB\nCACBC\nCACCB\nCBABC\nCBACB\nCBACC\nCBBAC\nCBBCA\nCBCAB\nCBCAC\nCBCBA\nCBCCA\nCCABB\nCCABC\nCCACB\nCCBAB\nCCBAC\nCCBBA\nCCBCA\nCCCAB\nCCCBA&#34;&#34;&#34;</span>)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3adfe535fa0f4f1d81e/ffdb326842044f2e98b7aaa7/sub_1761841412096_5tzoz0od6.py",
+        "similarity_percent": 100.0,
+        "full_code": "t = int(input())\n\nif t == 3:\n    print(\"\"\"ABC\nACB\nBAC\nBCA\nCAB\nCBA\"\"\")\nelif t == 4:\n    print(\"\"\"CBCA\nCCAB\nCCBAABC\nACB\nBAC\nBCA\nCAB\nCBA\nABCC\nACBC\nACCB\nBACC\nBCAC\nBCCA\nCABC\nCACB\nCBAC\"\"\")\nelse:\n    print(\"\"\"ABC\nACB\nBAC\nBCA\nCAB\nCBA\nABCC\nACBC\nACCB\nBACC\nBCAC\nBCCA\nCABC\nCACB\nCBAC\nCBCA\nCCAB\nCCBA\nABBCC\nABCBC\nABCCB\nABCCC\nACBBC\nACBCB\nACBCC\nACCBB\nACCBC\nACCCB\nBABCC\nBACBC\nBACCB\nBACCC\nBBACC\nBBCAC\nBBCCA\nBCABC\nBCACB\nBCACC\nBCBAC\nBCBCA\nBCCAB\nBCCAC\nBCCBA\nBCCCA\nCABBC\nCABCB\nCABCC\nCACBB\nCACBC\nCACCB\nCBABC\nCBACB\nCBACC\nCBBAC\nCBBCA\nCBCAB\nCBCAC\nCBCBA\nCBCCA\nCCABB\nCCABC\nCCACB\nCCBAB\nCCBAC\nCCBBA\nCCBCA\nCCCAB\nCCCBA\"\"\")",
+        "highlighted_code": "<span class='highlight-green'>t = int(input())\n\nif t == 3:\n    print(&#34;&#34;&#34;ABC\nACB\nBAC\nBCA\nCAB\nCBA&#34;&#34;&#34;)\nelif t == 4:\n    print(&#34;&#34;&#34;CBCA\nCCAB\nCCBAABC\nACB\nBAC\nBCA\nCAB\nCBA\nABCC\nACBC\nACCB\nBACC\nBCAC\nBCCA\nCABC\nCACB\nCBAC&#34;&#34;&#34;)\nelse:\n    print(&#34;&#34;&#34;ABC\nACB\nBAC\nBCA\nCAB\nCBA\nABCC\nACBC\nACCB\nBACC\nBCAC\nBCCA\nCABC\nCACB\nCBAC\nCBCA\nCCAB\nCCBA\nABBCC\nABCBC\nABCCB\nABCCC\nACBBC\nACBCB\nACBCC\nACCBB\nACCBC\nACCCB\nBABCC\nBACBC\nBACCB\nBACCC\nBBACC\nBBCAC\nBBCCA\nBCABC\nBCACB\nBCACC\nBCBAC\nBCBCA\nBCCAB\nBCCAC\nBCCBA\nBCCCA\nCABBC\nCABCB\nCABCC\nCACBB\nCACBC\nCACCB\nCBABC\nCBACB\nCBACC\nCBBAC\nCBBCA\nCBCAB\nCBCAC\nCBCBA\nCBCCA\nCCABB\nCCABC\nCCACB\nCCBAB\nCCBAC\nCCBBA\nCCBCA\nCCCAB\nCCCBA&#34;&#34;&#34;</span>)"
+      },
+      "token_overlap": 240,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 2,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3adfe535fa0f4f1d81e/ffdb326842044f2e98b7aaa7/sub_1762266221461_acm5jmxy3.py",
+        "similarity_percent": 100.0,
+        "full_code": "from itertools import product\n\nn = int(input().strip())\nch = ['A', 'B', 'C']\n\nfor index in range(3, n + 1):\n    for p in product(ch, repeat = index):\n        s = ''.join(p)\n        a = s.count('A')\n        b = s.count('B')\n        c = s.count('C')\n\n        if a > 0 and a <= b and b <= c:\n            print(s)\n",
+        "highlighted_code": "<span class='highlight-red'>from itertools import product\n\nn = int(input().strip())\nch = [&#39;A&#39;, &#39;B&#39;, &#39;C&#39;]\n\nfor index in range(3, n + 1):\n    for p in product(ch, repeat = index):\n        s = &#39;&#39;.join(p)\n        a = s.count(&#39;A&#39;)\n        b = s.count(&#39;B&#39;)\n        c = s.count(&#39;C&#39;)\n\n        if a &gt; 0 and a &lt;= b and b &lt;= c:\n            prin</span>t(s)\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3adfe535fa0f4f1d81e/113963c0a9df48538edf310d/sub_1762268346774_lo88x5dzd.py",
+        "similarity_percent": 100.0,
+        "full_code": "from itertools import product\n\n\nn = int(input().strip())\nlst = ['A', 'B', 'C']\n\nfor index in range(3, n + 1):\n    for p in product(lst, repeat = index):\n        s = ''.join(p)\n        a = s.count('A')\n        b = s.count('B')\n        c = s.count('C')\n\n        if a > 0 and a <= b and b <= c:\n            print(s)",
+        "highlighted_code": "<span class='highlight-green'>from itertools import product\n\n\nn = int(input().strip())\nlst = [&#39;A&#39;, &#39;B&#39;, &#39;C&#39;]\n\nfor index in range(3, n + 1):\n    for p in product(lst, repeat = index):\n        s = &#39;&#39;.join(p)\n        a = s.count(&#39;A&#39;)\n        b = s.count(&#39;B&#39;)\n        c = s.count(&#39;C&#39;)\n\n        if a &gt; 0 and a &lt;= b and b &lt;= c:\n            prin</span>t(s)"
+      },
+      "token_overlap": 150,
+      "max_similarity_percent": 100.0
+    }
+  ]
+}

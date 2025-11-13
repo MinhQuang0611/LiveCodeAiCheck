@@ -1,0 +1,113 @@
+{
+  "problem_id": "68fdc39ffe535fa0f4f1d66e",
+  "filter_criteria": {
+    "min_token_overlap": 80,
+    "min_similarity_percent": 60
+  },
+  "total_cases_found": 7,
+  "total_cases_filtered": 6,
+  "cases": [
+    {
+      "case_id": 1,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc39ffe535fa0f4f1d66e/91001b54722a4328a2b7b879/sub_1761926268188_fflza15ig.py",
+        "similarity_percent": 100.0,
+        "full_code": "n, k = map(int, input().split())\na = list(map(int, input().split()))\na.sort()\ngroup = 1 \nfor i in range(1, n):\n    if a[i] - a[i -1] > k:\n        group += 1\nprint(group)",
+        "highlighted_code": "<span class='highlight-red'>n, k = map(int, input().split())\na = list(map(int, input().split()))\na.sort()\ngroup = 1 \nfor i in range(1, n):\n    if a[i] - a[i -1] &gt; k:\n        group += 1\nprin</span>t(group)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc39ffe535fa0f4f1d66e/e59c34a1bebb49d29bfb3592/sub_1762440097055_q68zkptvm.py",
+        "similarity_percent": 100.0,
+        "full_code": "n,k = map(int,input().split())\narr = list(map(int,input().split()))\narr.sort()\ncount = 1\nfor i in range(1,n):\n    if arr[i] - arr[i-1] > k:\n        count += 1\nprint(count)",
+        "highlighted_code": "<span class='highlight-green'>n,k = map(int,input().split())\narr = list(map(int,input().split()))\narr.sort()\ncount = 1\nfor i in range(1,n):\n    if arr[i] - arr[i-1] &gt; k:\n        count += 1\nprin</span>t(count)"
+      },
+      "token_overlap": 101,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 2,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc39ffe535fa0f4f1d66e/91001b54722a4328a2b7b879/sub_1761926268188_fflza15ig.py",
+        "similarity_percent": 94.06,
+        "full_code": "n, k = map(int, input().split())\na = list(map(int, input().split()))\na.sort()\ngroup = 1 \nfor i in range(1, n):\n    if a[i] - a[i -1] > k:\n        group += 1\nprint(group)",
+        "highlighted_code": "<span class='highlight-red'>n, k = map(int, input().split())\na = list(map(int, input().split()))\na.sort()\ngroup = 1 \nfor i in rang</span>e(1, n)<span class='highlight-red'>:\n    if a[i] - a[i -1] &gt; k:\n        group += 1\nprin</span>t(group)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc39ffe535fa0f4f1d66e/449c44ebafa84f0d8d5b6d0f/sub_1762791871241_huk29ipbt.py",
+        "similarity_percent": 89.62,
+        "full_code": "n, k = map(int, input().split())\nn = list(map(int, input().split()))\nn.sort()\ncnt = 1\nfor i in range(1, len(n)):\n    if n[i] - n[i-1] > k:\n        cnt += 1\nprint(cnt)\n\n\n\n",
+        "highlighted_code": "<span class='highlight-green'>n, k = map(int, input().split())\nn = list(map(int, input().split()))\nn.sort()\ncnt = 1\nfor i in rang</span>e(1, len(n))<span class='highlight-green'>:\n    if n[i] - n[i-1] &gt; k:\n        cnt += 1\nprin</span>t(cnt)\n\n\n\n"
+      },
+      "token_overlap": 95,
+      "max_similarity_percent": 94.06
+    },
+    {
+      "case_id": 3,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc39ffe535fa0f4f1d66e/e59c34a1bebb49d29bfb3592/sub_1762440097055_q68zkptvm.py",
+        "similarity_percent": 94.06,
+        "full_code": "n,k = map(int,input().split())\narr = list(map(int,input().split()))\narr.sort()\ncount = 1\nfor i in range(1,n):\n    if arr[i] - arr[i-1] > k:\n        count += 1\nprint(count)",
+        "highlighted_code": "<span class='highlight-red'>n,k = map(int,input().split())\narr = list(map(int,input().split()))\narr.sort()\ncount = 1\nfor i in rang</span>e(1,n)<span class='highlight-red'>:\n    if arr[i] - arr[i-1] &gt; k:\n        count += 1\nprin</span>t(count)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc39ffe535fa0f4f1d66e/449c44ebafa84f0d8d5b6d0f/sub_1762791871241_huk29ipbt.py",
+        "similarity_percent": 89.62,
+        "full_code": "n, k = map(int, input().split())\nn = list(map(int, input().split()))\nn.sort()\ncnt = 1\nfor i in range(1, len(n)):\n    if n[i] - n[i-1] > k:\n        cnt += 1\nprint(cnt)\n\n\n\n",
+        "highlighted_code": "<span class='highlight-green'>n, k = map(int, input().split())\nn = list(map(int, input().split()))\nn.sort()\ncnt = 1\nfor i in rang</span>e(1, len(n))<span class='highlight-green'>:\n    if n[i] - n[i-1] &gt; k:\n        cnt += 1\nprin</span>t(cnt)\n\n\n\n"
+      },
+      "token_overlap": 95,
+      "max_similarity_percent": 94.06
+    },
+    {
+      "case_id": 4,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc39ffe535fa0f4f1d66e/91001b54722a4328a2b7b879/sub_1761926268188_fflza15ig.py",
+        "similarity_percent": 69.31,
+        "full_code": "n, k = map(int, input().split())\na = list(map(int, input().split()))\na.sort()\ngroup = 1 \nfor i in range(1, n):\n    if a[i] - a[i -1] > k:\n        group += 1\nprint(group)",
+        "highlighted_code": "<span class='highlight-red'>n, k = map(int, input().split())\na = list(map(int, input().split()))\na.sort()\ngroup = 1 \nfor i in rang</span>e(1, n):\n    if a[i] - a[i -1] &gt; k:\n        group += 1\nprint(group)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc39ffe535fa0f4f1d66e/a34ffbda761b435ca043fd30/sub_1762426106992_ybfy922xz.py",
+        "similarity_percent": 58.33,
+        "full_code": "n, k = map(int, input().split())\nm = list(map(int, input().split()))\nm.sort()\ndanh_sach=1\nfor i in range(len(m)):\n    if i< len(m)-1 and m[i+1]-m[i]>k:\n        danh_sach+=1\nprint(danh_sach)",
+        "highlighted_code": "<span class='highlight-green'>n, k = map(int, input().split())\nm = list(map(int, input().split()))\nm.sort()\ndanh_sach=1\nfor i in rang</span>e(len(m)):\n    if i&lt; len(m)-1 and m[i+1]-m[i]&gt;k:\n        danh_sach+=1\nprint(danh_sach)"
+      },
+      "token_overlap": 70,
+      "max_similarity_percent": 69.31
+    },
+    {
+      "case_id": 5,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc39ffe535fa0f4f1d66e/a34ffbda761b435ca043fd30/sub_1762426106992_ybfy922xz.py",
+        "similarity_percent": 58.33,
+        "full_code": "n, k = map(int, input().split())\nm = list(map(int, input().split()))\nm.sort()\ndanh_sach=1\nfor i in range(len(m)):\n    if i< len(m)-1 and m[i+1]-m[i]>k:\n        danh_sach+=1\nprint(danh_sach)",
+        "highlighted_code": "<span class='highlight-red'>n, k = map(int, input().split())\nm = list(map(int, input().split()))\nm.sort()\ndanh_sach=1\nfor i in rang</span>e(len(m)):\n    if i&lt; len(m)-1 and m[i+1]-m[i]&gt;k:\n        danh_sach+=1\nprint(danh_sach)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc39ffe535fa0f4f1d66e/e59c34a1bebb49d29bfb3592/sub_1762440097055_q68zkptvm.py",
+        "similarity_percent": 69.31,
+        "full_code": "n,k = map(int,input().split())\narr = list(map(int,input().split()))\narr.sort()\ncount = 1\nfor i in range(1,n):\n    if arr[i] - arr[i-1] > k:\n        count += 1\nprint(count)",
+        "highlighted_code": "<span class='highlight-green'>n,k = map(int,input().split())\narr = list(map(int,input().split()))\narr.sort()\ncount = 1\nfor i in rang</span>e(1,n):\n    if arr[i] - arr[i-1] &gt; k:\n        count += 1\nprint(count)"
+      },
+      "token_overlap": 70,
+      "max_similarity_percent": 69.31
+    },
+    {
+      "case_id": 6,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc39ffe535fa0f4f1d66e/a34ffbda761b435ca043fd30/sub_1762426106992_ybfy922xz.py",
+        "similarity_percent": 58.33,
+        "full_code": "n, k = map(int, input().split())\nm = list(map(int, input().split()))\nm.sort()\ndanh_sach=1\nfor i in range(len(m)):\n    if i< len(m)-1 and m[i+1]-m[i]>k:\n        danh_sach+=1\nprint(danh_sach)",
+        "highlighted_code": "<span class='highlight-red'>n, k = map(int, input().split())\nm = list(map(int, input().split()))\nm.sort()\ndanh_sach=1\nfor i in rang</span>e(len(m)):\n    if i&lt; len(m)-1 and m[i+1]-m[i]&gt;k:\n        danh_sach+=1\nprint(danh_sach)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc39ffe535fa0f4f1d66e/449c44ebafa84f0d8d5b6d0f/sub_1762791871241_huk29ipbt.py",
+        "similarity_percent": 66.04,
+        "full_code": "n, k = map(int, input().split())\nn = list(map(int, input().split()))\nn.sort()\ncnt = 1\nfor i in range(1, len(n)):\n    if n[i] - n[i-1] > k:\n        cnt += 1\nprint(cnt)\n\n\n\n",
+        "highlighted_code": "<span class='highlight-green'>n, k = map(int, input().split())\nn = list(map(int, input().split()))\nn.sort()\ncnt = 1\nfor i in rang</span>e(1, len(n)):\n    if n[i] - n[i-1] &gt; k:\n        cnt += 1\nprint(cnt)\n\n\n\n"
+      },
+      "token_overlap": 70,
+      "max_similarity_percent": 66.04
+    }
+  ]
+}

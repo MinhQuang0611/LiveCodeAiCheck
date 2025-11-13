@@ -1,0 +1,28 @@
+{
+  "problem_id": "68e3d2a77243251374477466",
+  "filter_criteria": {
+    "min_token_overlap": 80,
+    "min_similarity_percent": 60
+  },
+  "total_cases_found": 1,
+  "total_cases_filtered": 1,
+  "cases": [
+    {
+      "case_id": 1,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3d2a77243251374477466/e59c34a1bebb49d29bfb3592/sub_1761640842621_6a8nsxdmi.py",
+        "similarity_percent": 100.0,
+        "full_code": "s = str(input()).split()\nprint(' ' .join(word[::-1] for word in s))",
+        "highlighted_code": "<span class='highlight-red'>s = str(input()).split()\nprint(&#39; &#39; .join(word[::-1] for word in s))</span>"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3d2a77243251374477466/e59c34a1bebb49d29bfb3592/sub_1761640899516_jst9dxsub.py",
+        "similarity_percent": 100.0,
+        "full_code": "s = str(input()).split()\nprint(' '.join(word[::-1] for word in s))",
+        "highlighted_code": "<span class='highlight-green'>s = str(input()).split()\nprint(&#39; &#39;.join(word[::-1] for word in s))</span>"
+      },
+      "token_overlap": 46,
+      "max_similarity_percent": 100.0
+    }
+  ]
+}

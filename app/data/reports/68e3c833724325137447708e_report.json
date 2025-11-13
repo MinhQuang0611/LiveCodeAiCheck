@@ -4,7 +4,59 @@
     "min_token_overlap": 80,
     "min_similarity_percent": 60
   },
-  "total_cases_found": 0,
-  "total_cases_filtered": 0,
-  "cases": []
+  "total_cases_found": 4,
+  "total_cases_filtered": 3,
+  "cases": [
+    {
+      "case_id": 1,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3c833724325137447708e/f95120b3a38a461085ef58cb/sub_1762527492135_6fk08sxms.py",
+        "similarity_percent": 100.0,
+        "full_code": "n = input()\na = 0\nb = 0\nfor i in range(len(n)):\n    if int(n[i]) % 2 == 0:\n        a += 1\n    else:\n        b += 1\nprint([a,b]) ",
+        "highlighted_code": "<span class='highlight-red'>n = input()\na = 0\nb = 0\nfor i in range(len(n)):\n    if int(n[i]) % 2 == 0:\n        a += 1\n    else:\n        b += 1\nprint([a</span>,b]) "
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3c833724325137447708e/e59c34a1bebb49d29bfb3592/sub_1762422664130_yym1atc15.py",
+        "similarity_percent": 100.0,
+        "full_code": "n = input()\na = 0\nb = 0\nfor i in range(len(n)):\n    if int(n[i]) % 2 == 0:\n        a += 1\n    else:\n        b += 1\nprint([a,b])        ",
+        "highlighted_code": "<span class='highlight-green'>n = input()\na = 0\nb = 0\nfor i in range(len(n)):\n    if int(n[i]) % 2 == 0:\n        a += 1\n    else:\n        b += 1\nprint([a</span>,b])        "
+      },
+      "token_overlap": 73,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 2,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3c833724325137447708e/f95120b3a38a461085ef58cb/sub_1762527492135_6fk08sxms.py",
+        "similarity_percent": 78.08,
+        "full_code": "n = input()\na = 0\nb = 0\nfor i in range(len(n)):\n    if int(n[i]) % 2 == 0:\n        a += 1\n    else:\n        b += 1\nprint([a,b]) ",
+        "highlighted_code": "n = input()\na = 0\nb = <span class='highlight-red'>0\nfor i in range(len(n)):\n    if int(n[i]) % 2 == 0:\n        a += 1\n    else:\n        b += 1\nprint(</span>[a,b]) "
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3c833724325137447708e/8e19101eb0da4e9a92a17098/sub_1761718943994_xxeaep7ro.py",
+        "similarity_percent": 52.78,
+        "full_code": "n = int(input())\ns = str(n)\nle, chan = 0, 0\nfor i in range(len(s)):\n    if int(s[i]) % 2 == 0:\n        chan += 1\n    else: \n        le += 1\nprint(\"[\" + str(chan) + \", \" + str(le) + \"]\")",
+        "highlighted_code": "n = int(input())\ns = str(n)\nle, chan = 0, <span class='highlight-green'>0\nfor i in range(len(s)):\n    if int(s[i]) % 2 == 0:\n        chan += 1\n    else: \n        le += 1\nprint(</span>&#34;[&#34; + str(chan) + &#34;, &#34; + str(le) + &#34;]&#34;)"
+      },
+      "token_overlap": 57,
+      "max_similarity_percent": 78.08
+    },
+    {
+      "case_id": 3,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3c833724325137447708e/8e19101eb0da4e9a92a17098/sub_1761718943994_xxeaep7ro.py",
+        "similarity_percent": 52.78,
+        "full_code": "n = int(input())\ns = str(n)\nle, chan = 0, 0\nfor i in range(len(s)):\n    if int(s[i]) % 2 == 0:\n        chan += 1\n    else: \n        le += 1\nprint(\"[\" + str(chan) + \", \" + str(le) + \"]\")",
+        "highlighted_code": "n = int(input())\ns = str(n)\nle, chan = 0, <span class='highlight-red'>0\nfor i in range(len(s)):\n    if int(s[i]) % 2 == 0:\n        chan += 1\n    else: \n        le += 1\nprint(</span>&#34;[&#34; + str(chan) + &#34;, &#34; + str(le) + &#34;]&#34;)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3c833724325137447708e/e59c34a1bebb49d29bfb3592/sub_1762422664130_yym1atc15.py",
+        "similarity_percent": 78.08,
+        "full_code": "n = input()\na = 0\nb = 0\nfor i in range(len(n)):\n    if int(n[i]) % 2 == 0:\n        a += 1\n    else:\n        b += 1\nprint([a,b])        ",
+        "highlighted_code": "n = input()\na = 0\nb = <span class='highlight-green'>0\nfor i in range(len(n)):\n    if int(n[i]) % 2 == 0:\n        a += 1\n    else:\n        b += 1\nprint(</span>[a,b])        "
+      },
+      "token_overlap": 57,
+      "max_similarity_percent": 78.08
+    }
+  ]
 }

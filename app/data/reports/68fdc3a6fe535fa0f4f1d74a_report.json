@@ -1,0 +1,385 @@
+{
+  "problem_id": "68fdc3a6fe535fa0f4f1d74a",
+  "filter_criteria": {
+    "min_token_overlap": 80,
+    "min_similarity_percent": 60
+  },
+  "total_cases_found": 63,
+  "total_cases_filtered": 22,
+  "cases": [
+    {
+      "case_id": 1,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3a6fe535fa0f4f1d74a/113963c0a9df48538edf310d/sub_1762144021458_4kyjvkap6.py",
+        "similarity_percent": 100.0,
+        "full_code": "n = int(input())\nfor _ in range(n):\n    nummber = int(input())\nprint(\"NO\")\nprint(\"YES\")\nprint(\"NO\")",
+        "highlighted_code": "<span class='highlight-red'>n = int(input())\nfor _ in range(n):\n    nummber = int(input())\nprint(&#34;NO&#34;)\nprint(&#34;YES&#34;)\nprint</span>(&#34;NO&#34;)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3a6fe535fa0f4f1d74a/113963c0a9df48538edf310d/sub_1762143769288_xdih8lqhc.py",
+        "similarity_percent": 100.0,
+        "full_code": "n = int(input())\nfor _ in range(n):\n    nummber = int(input())\nprint(\"NO\")\nprint(\"YES\")\nprint(\"NO\")",
+        "highlighted_code": "<span class='highlight-green'>n = int(input())\nfor _ in range(n):\n    nummber = int(input())\nprint(&#34;NO&#34;)\nprint(&#34;YES&#34;)\nprint</span>(&#34;NO&#34;)"
+      },
+      "token_overlap": 68,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 2,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3a6fe535fa0f4f1d74a/113963c0a9df48538edf310d/sub_1762144021458_4kyjvkap6.py",
+        "similarity_percent": 100.0,
+        "full_code": "n = int(input())\nfor _ in range(n):\n    nummber = int(input())\nprint(\"NO\")\nprint(\"YES\")\nprint(\"NO\")",
+        "highlighted_code": "<span class='highlight-red'>n = int(input())\nfor _ in range(n):\n    nummber = int(input())\nprint(&#34;NO&#34;)\nprint(&#34;YES&#34;)\nprint</span>(&#34;NO&#34;)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3a6fe535fa0f4f1d74a/113963c0a9df48538edf310d/sub_1762144133476_boyjsh5j7.py",
+        "similarity_percent": 100.0,
+        "full_code": "n = int(input())\nfor _ in range(n):\n    nummber = int(input())\nprint(\"NO\")\nprint(\"YES\")\nprint(\"NO\")",
+        "highlighted_code": "<span class='highlight-green'>n = int(input())\nfor _ in range(n):\n    nummber = int(input())\nprint(&#34;NO&#34;)\nprint(&#34;YES&#34;)\nprint</span>(&#34;NO&#34;)"
+      },
+      "token_overlap": 68,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 3,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3a6fe535fa0f4f1d74a/113963c0a9df48538edf310d/sub_1762144021458_4kyjvkap6.py",
+        "similarity_percent": 100.0,
+        "full_code": "n = int(input())\nfor _ in range(n):\n    nummber = int(input())\nprint(\"NO\")\nprint(\"YES\")\nprint(\"NO\")",
+        "highlighted_code": "<span class='highlight-red'>n = int(input())\nfor _ in range(n):\n    nummber = int(input())\nprint(&#34;NO&#34;)\nprint(&#34;YES&#34;)\nprint</span>(&#34;NO&#34;)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3a6fe535fa0f4f1d74a/113963c0a9df48538edf310d/sub_1762144320290_xlj5csdpj.py",
+        "similarity_percent": 100.0,
+        "full_code": "n = int(input())\nfor _ in range(n):\n    nummber = int(input())\nprint(\"NO\")\nprint(\"YES\")\nprint(\"NO\")",
+        "highlighted_code": "<span class='highlight-green'>n = int(input())\nfor _ in range(n):\n    nummber = int(input())\nprint(&#34;NO&#34;)\nprint(&#34;YES&#34;)\nprint</span>(&#34;NO&#34;)"
+      },
+      "token_overlap": 68,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 4,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3a6fe535fa0f4f1d74a/113963c0a9df48538edf310d/sub_1762144021458_4kyjvkap6.py",
+        "similarity_percent": 100.0,
+        "full_code": "n = int(input())\nfor _ in range(n):\n    nummber = int(input())\nprint(\"NO\")\nprint(\"YES\")\nprint(\"NO\")",
+        "highlighted_code": "<span class='highlight-red'>n = int(input())\nfor _ in range(n):\n    nummber = int(input())\nprint(&#34;NO&#34;)\nprint(&#34;YES&#34;)\nprint</span>(&#34;NO&#34;)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3a6fe535fa0f4f1d74a/113963c0a9df48538edf310d/sub_1762143793462_5s4on4f2l.py",
+        "similarity_percent": 100.0,
+        "full_code": "n = int(input())\nfor _ in range(n):\n    nummber = int(input())\nprint(\"NO\")\nprint(\"YES\")\nprint(\"NO\")",
+        "highlighted_code": "<span class='highlight-green'>n = int(input())\nfor _ in range(n):\n    nummber = int(input())\nprint(&#34;NO&#34;)\nprint(&#34;YES&#34;)\nprint</span>(&#34;NO&#34;)"
+      },
+      "token_overlap": 68,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 5,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3a6fe535fa0f4f1d74a/113963c0a9df48538edf310d/sub_1762144021458_4kyjvkap6.py",
+        "similarity_percent": 100.0,
+        "full_code": "n = int(input())\nfor _ in range(n):\n    nummber = int(input())\nprint(\"NO\")\nprint(\"YES\")\nprint(\"NO\")",
+        "highlighted_code": "<span class='highlight-red'>n = int(input())\nfor _ in range(n):\n    nummber = int(input())\nprint(&#34;NO&#34;)\nprint(&#34;YES&#34;)\nprint</span>(&#34;NO&#34;)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3a6fe535fa0f4f1d74a/113963c0a9df48538edf310d/sub_1762144243373_ak3fpu8cr.py",
+        "similarity_percent": 100.0,
+        "full_code": "n = int(input())\nfor _ in range(n):\n    nummber = int(input())\nprint(\"NO\")\nprint(\"YES\")\nprint(\"NO\")",
+        "highlighted_code": "<span class='highlight-green'>n = int(input())\nfor _ in range(n):\n    nummber = int(input())\nprint(&#34;NO&#34;)\nprint(&#34;YES&#34;)\nprint</span>(&#34;NO&#34;)"
+      },
+      "token_overlap": 68,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 6,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3a6fe535fa0f4f1d74a/113963c0a9df48538edf310d/sub_1762144021458_4kyjvkap6.py",
+        "similarity_percent": 100.0,
+        "full_code": "n = int(input())\nfor _ in range(n):\n    nummber = int(input())\nprint(\"NO\")\nprint(\"YES\")\nprint(\"NO\")",
+        "highlighted_code": "<span class='highlight-red'>n = int(input())\nfor _ in range(n):\n    nummber = int(input())\nprint(&#34;NO&#34;)\nprint(&#34;YES&#34;)\nprint</span>(&#34;NO&#34;)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3a6fe535fa0f4f1d74a/113963c0a9df48538edf310d/sub_1762143964694_4r27z7hg0.py",
+        "similarity_percent": 100.0,
+        "full_code": "n = int(input())\nfor _ in range(n):\n    nummber = int(input())\nprint(\"NO\")\nprint(\"YES\")\nprint(\"NO\")",
+        "highlighted_code": "<span class='highlight-green'>n = int(input())\nfor _ in range(n):\n    nummber = int(input())\nprint(&#34;NO&#34;)\nprint(&#34;YES&#34;)\nprint</span>(&#34;NO&#34;)"
+      },
+      "token_overlap": 68,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 7,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3a6fe535fa0f4f1d74a/113963c0a9df48538edf310d/sub_1762143769288_xdih8lqhc.py",
+        "similarity_percent": 100.0,
+        "full_code": "n = int(input())\nfor _ in range(n):\n    nummber = int(input())\nprint(\"NO\")\nprint(\"YES\")\nprint(\"NO\")",
+        "highlighted_code": "<span class='highlight-red'>n = int(input())\nfor _ in range(n):\n    nummber = int(input())\nprint(&#34;NO&#34;)\nprint(&#34;YES&#34;)\nprint</span>(&#34;NO&#34;)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3a6fe535fa0f4f1d74a/113963c0a9df48538edf310d/sub_1762144133476_boyjsh5j7.py",
+        "similarity_percent": 100.0,
+        "full_code": "n = int(input())\nfor _ in range(n):\n    nummber = int(input())\nprint(\"NO\")\nprint(\"YES\")\nprint(\"NO\")",
+        "highlighted_code": "<span class='highlight-green'>n = int(input())\nfor _ in range(n):\n    nummber = int(input())\nprint(&#34;NO&#34;)\nprint(&#34;YES&#34;)\nprint</span>(&#34;NO&#34;)"
+      },
+      "token_overlap": 68,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 8,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3a6fe535fa0f4f1d74a/113963c0a9df48538edf310d/sub_1762143769288_xdih8lqhc.py",
+        "similarity_percent": 100.0,
+        "full_code": "n = int(input())\nfor _ in range(n):\n    nummber = int(input())\nprint(\"NO\")\nprint(\"YES\")\nprint(\"NO\")",
+        "highlighted_code": "<span class='highlight-red'>n = int(input())\nfor _ in range(n):\n    nummber = int(input())\nprint(&#34;NO&#34;)\nprint(&#34;YES&#34;)\nprint</span>(&#34;NO&#34;)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3a6fe535fa0f4f1d74a/113963c0a9df48538edf310d/sub_1762144320290_xlj5csdpj.py",
+        "similarity_percent": 100.0,
+        "full_code": "n = int(input())\nfor _ in range(n):\n    nummber = int(input())\nprint(\"NO\")\nprint(\"YES\")\nprint(\"NO\")",
+        "highlighted_code": "<span class='highlight-green'>n = int(input())\nfor _ in range(n):\n    nummber = int(input())\nprint(&#34;NO&#34;)\nprint(&#34;YES&#34;)\nprint</span>(&#34;NO&#34;)"
+      },
+      "token_overlap": 68,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 9,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3a6fe535fa0f4f1d74a/113963c0a9df48538edf310d/sub_1762143769288_xdih8lqhc.py",
+        "similarity_percent": 100.0,
+        "full_code": "n = int(input())\nfor _ in range(n):\n    nummber = int(input())\nprint(\"NO\")\nprint(\"YES\")\nprint(\"NO\")",
+        "highlighted_code": "<span class='highlight-red'>n = int(input())\nfor _ in range(n):\n    nummber = int(input())\nprint(&#34;NO&#34;)\nprint(&#34;YES&#34;)\nprint</span>(&#34;NO&#34;)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3a6fe535fa0f4f1d74a/113963c0a9df48538edf310d/sub_1762143793462_5s4on4f2l.py",
+        "similarity_percent": 100.0,
+        "full_code": "n = int(input())\nfor _ in range(n):\n    nummber = int(input())\nprint(\"NO\")\nprint(\"YES\")\nprint(\"NO\")",
+        "highlighted_code": "<span class='highlight-green'>n = int(input())\nfor _ in range(n):\n    nummber = int(input())\nprint(&#34;NO&#34;)\nprint(&#34;YES&#34;)\nprint</span>(&#34;NO&#34;)"
+      },
+      "token_overlap": 68,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 10,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3a6fe535fa0f4f1d74a/113963c0a9df48538edf310d/sub_1762143769288_xdih8lqhc.py",
+        "similarity_percent": 100.0,
+        "full_code": "n = int(input())\nfor _ in range(n):\n    nummber = int(input())\nprint(\"NO\")\nprint(\"YES\")\nprint(\"NO\")",
+        "highlighted_code": "<span class='highlight-red'>n = int(input())\nfor _ in range(n):\n    nummber = int(input())\nprint(&#34;NO&#34;)\nprint(&#34;YES&#34;)\nprint</span>(&#34;NO&#34;)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3a6fe535fa0f4f1d74a/113963c0a9df48538edf310d/sub_1762144243373_ak3fpu8cr.py",
+        "similarity_percent": 100.0,
+        "full_code": "n = int(input())\nfor _ in range(n):\n    nummber = int(input())\nprint(\"NO\")\nprint(\"YES\")\nprint(\"NO\")",
+        "highlighted_code": "<span class='highlight-green'>n = int(input())\nfor _ in range(n):\n    nummber = int(input())\nprint(&#34;NO&#34;)\nprint(&#34;YES&#34;)\nprint</span>(&#34;NO&#34;)"
+      },
+      "token_overlap": 68,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 11,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3a6fe535fa0f4f1d74a/113963c0a9df48538edf310d/sub_1762143769288_xdih8lqhc.py",
+        "similarity_percent": 100.0,
+        "full_code": "n = int(input())\nfor _ in range(n):\n    nummber = int(input())\nprint(\"NO\")\nprint(\"YES\")\nprint(\"NO\")",
+        "highlighted_code": "<span class='highlight-red'>n = int(input())\nfor _ in range(n):\n    nummber = int(input())\nprint(&#34;NO&#34;)\nprint(&#34;YES&#34;)\nprint</span>(&#34;NO&#34;)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3a6fe535fa0f4f1d74a/113963c0a9df48538edf310d/sub_1762143964694_4r27z7hg0.py",
+        "similarity_percent": 100.0,
+        "full_code": "n = int(input())\nfor _ in range(n):\n    nummber = int(input())\nprint(\"NO\")\nprint(\"YES\")\nprint(\"NO\")",
+        "highlighted_code": "<span class='highlight-green'>n = int(input())\nfor _ in range(n):\n    nummber = int(input())\nprint(&#34;NO&#34;)\nprint(&#34;YES&#34;)\nprint</span>(&#34;NO&#34;)"
+      },
+      "token_overlap": 68,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 12,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3a6fe535fa0f4f1d74a/113963c0a9df48538edf310d/sub_1762144133476_boyjsh5j7.py",
+        "similarity_percent": 100.0,
+        "full_code": "n = int(input())\nfor _ in range(n):\n    nummber = int(input())\nprint(\"NO\")\nprint(\"YES\")\nprint(\"NO\")",
+        "highlighted_code": "<span class='highlight-red'>n = int(input())\nfor _ in range(n):\n    nummber = int(input())\nprint(&#34;NO&#34;)\nprint(&#34;YES&#34;)\nprint</span>(&#34;NO&#34;)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3a6fe535fa0f4f1d74a/113963c0a9df48538edf310d/sub_1762144320290_xlj5csdpj.py",
+        "similarity_percent": 100.0,
+        "full_code": "n = int(input())\nfor _ in range(n):\n    nummber = int(input())\nprint(\"NO\")\nprint(\"YES\")\nprint(\"NO\")",
+        "highlighted_code": "<span class='highlight-green'>n = int(input())\nfor _ in range(n):\n    nummber = int(input())\nprint(&#34;NO&#34;)\nprint(&#34;YES&#34;)\nprint</span>(&#34;NO&#34;)"
+      },
+      "token_overlap": 68,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 13,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3a6fe535fa0f4f1d74a/113963c0a9df48538edf310d/sub_1762144133476_boyjsh5j7.py",
+        "similarity_percent": 100.0,
+        "full_code": "n = int(input())\nfor _ in range(n):\n    nummber = int(input())\nprint(\"NO\")\nprint(\"YES\")\nprint(\"NO\")",
+        "highlighted_code": "<span class='highlight-red'>n = int(input())\nfor _ in range(n):\n    nummber = int(input())\nprint(&#34;NO&#34;)\nprint(&#34;YES&#34;)\nprint</span>(&#34;NO&#34;)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3a6fe535fa0f4f1d74a/113963c0a9df48538edf310d/sub_1762143793462_5s4on4f2l.py",
+        "similarity_percent": 100.0,
+        "full_code": "n = int(input())\nfor _ in range(n):\n    nummber = int(input())\nprint(\"NO\")\nprint(\"YES\")\nprint(\"NO\")",
+        "highlighted_code": "<span class='highlight-green'>n = int(input())\nfor _ in range(n):\n    nummber = int(input())\nprint(&#34;NO&#34;)\nprint(&#34;YES&#34;)\nprint</span>(&#34;NO&#34;)"
+      },
+      "token_overlap": 68,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 14,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3a6fe535fa0f4f1d74a/113963c0a9df48538edf310d/sub_1762144133476_boyjsh5j7.py",
+        "similarity_percent": 100.0,
+        "full_code": "n = int(input())\nfor _ in range(n):\n    nummber = int(input())\nprint(\"NO\")\nprint(\"YES\")\nprint(\"NO\")",
+        "highlighted_code": "<span class='highlight-red'>n = int(input())\nfor _ in range(n):\n    nummber = int(input())\nprint(&#34;NO&#34;)\nprint(&#34;YES&#34;)\nprint</span>(&#34;NO&#34;)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3a6fe535fa0f4f1d74a/113963c0a9df48538edf310d/sub_1762144243373_ak3fpu8cr.py",
+        "similarity_percent": 100.0,
+        "full_code": "n = int(input())\nfor _ in range(n):\n    nummber = int(input())\nprint(\"NO\")\nprint(\"YES\")\nprint(\"NO\")",
+        "highlighted_code": "<span class='highlight-green'>n = int(input())\nfor _ in range(n):\n    nummber = int(input())\nprint(&#34;NO&#34;)\nprint(&#34;YES&#34;)\nprint</span>(&#34;NO&#34;)"
+      },
+      "token_overlap": 68,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 15,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3a6fe535fa0f4f1d74a/113963c0a9df48538edf310d/sub_1762144133476_boyjsh5j7.py",
+        "similarity_percent": 100.0,
+        "full_code": "n = int(input())\nfor _ in range(n):\n    nummber = int(input())\nprint(\"NO\")\nprint(\"YES\")\nprint(\"NO\")",
+        "highlighted_code": "<span class='highlight-red'>n = int(input())\nfor _ in range(n):\n    nummber = int(input())\nprint(&#34;NO&#34;)\nprint(&#34;YES&#34;)\nprint</span>(&#34;NO&#34;)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3a6fe535fa0f4f1d74a/113963c0a9df48538edf310d/sub_1762143964694_4r27z7hg0.py",
+        "similarity_percent": 100.0,
+        "full_code": "n = int(input())\nfor _ in range(n):\n    nummber = int(input())\nprint(\"NO\")\nprint(\"YES\")\nprint(\"NO\")",
+        "highlighted_code": "<span class='highlight-green'>n = int(input())\nfor _ in range(n):\n    nummber = int(input())\nprint(&#34;NO&#34;)\nprint(&#34;YES&#34;)\nprint</span>(&#34;NO&#34;)"
+      },
+      "token_overlap": 68,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 16,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3a6fe535fa0f4f1d74a/113963c0a9df48538edf310d/sub_1762144320290_xlj5csdpj.py",
+        "similarity_percent": 100.0,
+        "full_code": "n = int(input())\nfor _ in range(n):\n    nummber = int(input())\nprint(\"NO\")\nprint(\"YES\")\nprint(\"NO\")",
+        "highlighted_code": "<span class='highlight-red'>n = int(input())\nfor _ in range(n):\n    nummber = int(input())\nprint(&#34;NO&#34;)\nprint(&#34;YES&#34;)\nprint</span>(&#34;NO&#34;)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3a6fe535fa0f4f1d74a/113963c0a9df48538edf310d/sub_1762143793462_5s4on4f2l.py",
+        "similarity_percent": 100.0,
+        "full_code": "n = int(input())\nfor _ in range(n):\n    nummber = int(input())\nprint(\"NO\")\nprint(\"YES\")\nprint(\"NO\")",
+        "highlighted_code": "<span class='highlight-green'>n = int(input())\nfor _ in range(n):\n    nummber = int(input())\nprint(&#34;NO&#34;)\nprint(&#34;YES&#34;)\nprint</span>(&#34;NO&#34;)"
+      },
+      "token_overlap": 68,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 17,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3a6fe535fa0f4f1d74a/113963c0a9df48538edf310d/sub_1762144320290_xlj5csdpj.py",
+        "similarity_percent": 100.0,
+        "full_code": "n = int(input())\nfor _ in range(n):\n    nummber = int(input())\nprint(\"NO\")\nprint(\"YES\")\nprint(\"NO\")",
+        "highlighted_code": "<span class='highlight-red'>n = int(input())\nfor _ in range(n):\n    nummber = int(input())\nprint(&#34;NO&#34;)\nprint(&#34;YES&#34;)\nprint</span>(&#34;NO&#34;)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3a6fe535fa0f4f1d74a/113963c0a9df48538edf310d/sub_1762144243373_ak3fpu8cr.py",
+        "similarity_percent": 100.0,
+        "full_code": "n = int(input())\nfor _ in range(n):\n    nummber = int(input())\nprint(\"NO\")\nprint(\"YES\")\nprint(\"NO\")",
+        "highlighted_code": "<span class='highlight-green'>n = int(input())\nfor _ in range(n):\n    nummber = int(input())\nprint(&#34;NO&#34;)\nprint(&#34;YES&#34;)\nprint</span>(&#34;NO&#34;)"
+      },
+      "token_overlap": 68,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 18,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3a6fe535fa0f4f1d74a/113963c0a9df48538edf310d/sub_1762144320290_xlj5csdpj.py",
+        "similarity_percent": 100.0,
+        "full_code": "n = int(input())\nfor _ in range(n):\n    nummber = int(input())\nprint(\"NO\")\nprint(\"YES\")\nprint(\"NO\")",
+        "highlighted_code": "<span class='highlight-red'>n = int(input())\nfor _ in range(n):\n    nummber = int(input())\nprint(&#34;NO&#34;)\nprint(&#34;YES&#34;)\nprint</span>(&#34;NO&#34;)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3a6fe535fa0f4f1d74a/113963c0a9df48538edf310d/sub_1762143964694_4r27z7hg0.py",
+        "similarity_percent": 100.0,
+        "full_code": "n = int(input())\nfor _ in range(n):\n    nummber = int(input())\nprint(\"NO\")\nprint(\"YES\")\nprint(\"NO\")",
+        "highlighted_code": "<span class='highlight-green'>n = int(input())\nfor _ in range(n):\n    nummber = int(input())\nprint(&#34;NO&#34;)\nprint(&#34;YES&#34;)\nprint</span>(&#34;NO&#34;)"
+      },
+      "token_overlap": 68,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 19,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3a6fe535fa0f4f1d74a/113963c0a9df48538edf310d/sub_1762143793462_5s4on4f2l.py",
+        "similarity_percent": 100.0,
+        "full_code": "n = int(input())\nfor _ in range(n):\n    nummber = int(input())\nprint(\"NO\")\nprint(\"YES\")\nprint(\"NO\")",
+        "highlighted_code": "<span class='highlight-red'>n = int(input())\nfor _ in range(n):\n    nummber = int(input())\nprint(&#34;NO&#34;)\nprint(&#34;YES&#34;)\nprint</span>(&#34;NO&#34;)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3a6fe535fa0f4f1d74a/113963c0a9df48538edf310d/sub_1762144243373_ak3fpu8cr.py",
+        "similarity_percent": 100.0,
+        "full_code": "n = int(input())\nfor _ in range(n):\n    nummber = int(input())\nprint(\"NO\")\nprint(\"YES\")\nprint(\"NO\")",
+        "highlighted_code": "<span class='highlight-green'>n = int(input())\nfor _ in range(n):\n    nummber = int(input())\nprint(&#34;NO&#34;)\nprint(&#34;YES&#34;)\nprint</span>(&#34;NO&#34;)"
+      },
+      "token_overlap": 68,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 20,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3a6fe535fa0f4f1d74a/113963c0a9df48538edf310d/sub_1762143793462_5s4on4f2l.py",
+        "similarity_percent": 100.0,
+        "full_code": "n = int(input())\nfor _ in range(n):\n    nummber = int(input())\nprint(\"NO\")\nprint(\"YES\")\nprint(\"NO\")",
+        "highlighted_code": "<span class='highlight-red'>n = int(input())\nfor _ in range(n):\n    nummber = int(input())\nprint(&#34;NO&#34;)\nprint(&#34;YES&#34;)\nprint</span>(&#34;NO&#34;)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3a6fe535fa0f4f1d74a/113963c0a9df48538edf310d/sub_1762143964694_4r27z7hg0.py",
+        "similarity_percent": 100.0,
+        "full_code": "n = int(input())\nfor _ in range(n):\n    nummber = int(input())\nprint(\"NO\")\nprint(\"YES\")\nprint(\"NO\")",
+        "highlighted_code": "<span class='highlight-green'>n = int(input())\nfor _ in range(n):\n    nummber = int(input())\nprint(&#34;NO&#34;)\nprint(&#34;YES&#34;)\nprint</span>(&#34;NO&#34;)"
+      },
+      "token_overlap": 68,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 21,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3a6fe535fa0f4f1d74a/113963c0a9df48538edf310d/sub_1762144243373_ak3fpu8cr.py",
+        "similarity_percent": 100.0,
+        "full_code": "n = int(input())\nfor _ in range(n):\n    nummber = int(input())\nprint(\"NO\")\nprint(\"YES\")\nprint(\"NO\")",
+        "highlighted_code": "<span class='highlight-red'>n = int(input())\nfor _ in range(n):\n    nummber = int(input())\nprint(&#34;NO&#34;)\nprint(&#34;YES&#34;)\nprint</span>(&#34;NO&#34;)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3a6fe535fa0f4f1d74a/113963c0a9df48538edf310d/sub_1762143964694_4r27z7hg0.py",
+        "similarity_percent": 100.0,
+        "full_code": "n = int(input())\nfor _ in range(n):\n    nummber = int(input())\nprint(\"NO\")\nprint(\"YES\")\nprint(\"NO\")",
+        "highlighted_code": "<span class='highlight-green'>n = int(input())\nfor _ in range(n):\n    nummber = int(input())\nprint(&#34;NO&#34;)\nprint(&#34;YES&#34;)\nprint</span>(&#34;NO&#34;)"
+      },
+      "token_overlap": 68,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 22,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3a6fe535fa0f4f1d74a/a34ffbda761b435ca043fd30/sub_1762363299364_3t3yrp151.py",
+        "similarity_percent": 66.67,
+        "full_code": "a = int(input())\nfor i in range(a):\n    n = input()\n    x = int(n[::-1])\n    import math\n    if math.gcd(int(n), x)==1:\n        print(\"YES\")\n    else:\n        print(\"NO\")",
+        "highlighted_code": "a <span class='highlight-red'>= int(input())\nfor i in range(a):\n    n = input()\n    x = int(</span>n[::-1])\n    import math\n    if math.gcd(int(n), x)<span class='highlight-red'>==1:\n        print(&#34;YES&#34;)\n    else:\n        print(</span>&#34;NO&#34;)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3a6fe535fa0f4f1d74a/27e30f767b3a46b283cbfec0/sub_1761657447811_ij1fjc6ua.py",
+        "similarity_percent": 28.94,
+        "full_code": "from math import *\ndef is_prime(n):\n    if n < 2:\n        return False\n    for i in range(2,isqrt(n)+1):\n        if n % i == 0:\n            return False\n    return True\nt = int(input())\nfor _ in range(t):\n    num = input()\n    int_num = int(num)\n    re_num = int(num[::-1])\n    if is_prime(int_num) and is_prime(re_num):\n        if int_num == re_num:\n            print(\"YES\")\n        elif gcd(int_num, re_num) == 1:\n            print('YES')\n        else:\n            print(\"NO\")\n    else:\n        print(\"NO\")",
+        "highlighted_code": "from math import *\ndef is_prime(n):\n    if n &lt; 2:\n        return False\n    for i in range(2,isqrt(n)+1):\n        if n % i == 0:\n            return False\n    return True\nt <span class='highlight-green'>= int(input())\nfor _ in range(t):\n    num = input()\n    int_num = int(</span>num)\n    re_num = int(num[::-1])\n    if is_prime(int_num) and is_prime(re_num):\n        if int_num == re_num:\n            print(&#34;YES&#34;)\n        elif gcd(int_num, re_num) <span class='highlight-green'>== 1:\n            print(&#39;YES&#39;)\n        else:\n            print(</span>&#34;NO&#34;)\n    else:\n        print(&#34;NO&#34;)"
+      },
+      "token_overlap": 68,
+      "max_similarity_percent": 66.67
+    }
+  ]
+}
