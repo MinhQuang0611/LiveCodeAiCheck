@@ -1,2 +1,0 @@
-ten = input("")
-print (ten)

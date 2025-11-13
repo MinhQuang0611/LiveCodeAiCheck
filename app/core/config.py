@@ -1,10 +1,10 @@
 import os
+import psycopg
 from dotenv import load_dotenv
 from typing import Optional
 from langchain_openai import ChatOpenAI
 from pydantic_settings import BaseSettings
 from keycloak.keycloak_openid import KeycloakOpenID
-
 load_dotenv()
 BASE_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), "../../"))
 
@@ -33,6 +33,7 @@ class Settings(BaseSettings):
     KEYCLOAK_VERIFY: Optional[bool] = os.environ.get("KEYCLOAK_VERIFY", "False").lower() == "true"
     GOOGLE_CLIENT_ID: Optional[str] = os.environ.get("GOOGLE_CLIENT_ID", None)
     OPENAI_API_KEY: Optional[str] = os.environ.get("OPENAI_API_KEY", "do biet day")
+    BACKEND_NESTJS_DOMAIN: Optional[str] = os.environ.get("BACKEND_NESTJS_DOMAIN", None)
 
 settings = Settings()
 
@@ -60,3 +61,7 @@ def get_openid_config():
     if keycloak_openid == None:
         return {}
     return keycloak_openid.well_known()
+
+def get_db_connection():
+    """Tạo connection tới database"""
+    return psycopg.connect(settings.DATABASE_DSN)

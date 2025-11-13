@@ -8,28 +8,7 @@ from langchain_core.output_parsers import StrOutputParser
 
 from app.core.config import llm
 from dotenv import load_dotenv
-from app.schemas.sche_chatbot import Message, Session
 load_dotenv()
-
-
-sessions_db = {}  
-user_sessions = {}  
-
-
-def get_session(session_id: str) -> Session:
-    if session_id not in sessions_db:
-        raise HTTPException(status_code=404, detail="Session không tồn tại")
-    return sessions_db[session_id]
-
-def save_message(session_id: str, role: str, content: str):
-    session = get_session(session_id)
-    message = Message(
-        role=role,
-        content=content,
-        timestamp=datetime.now()
-    )
-    session.messages.append(message)
-    session.updated_at = datetime.now()
 
 async def stream_chain(prompt: PromptTemplate, inputs: dict):
     """Chạy prompt dưới dạng stream và yield chunk text liên tục."""

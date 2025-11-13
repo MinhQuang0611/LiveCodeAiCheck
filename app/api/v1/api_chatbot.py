@@ -1,11 +1,24 @@
 import uuid
+import logging
+from typing import Optional
 
-from fastapi import APIRouter 
+from fastapi import APIRouter, HTTPException, Request
 from datetime import datetime
 from fastapi.responses import StreamingResponse
 
-from app.schemas.sche_chatbot import *
-from app.services.srv_chatbot import run_sequential_review_stream, func_chatbot_qa, sessions_db, user_sessions
+from app.schemas.sche_chatbot import ReviewRequest, ChatbotQARequest
+from app.services.srv_chatbot import run_sequential_review_stream, func_chatbot_qa
+from app.services.srv_session import create_session
+from app.services.srv_message import create_message
+from app.utils.exception_handler import CustomException
+
+
+def _extract_token(request: Request) -> Optional[str]:
+    """Lấy token từ Authorization header"""
+    auth_header = request.headers.get("Authorization")
+    if auth_header and auth_header.startswith("Bearer "):
+        return auth_header[7:]
+    return None
 
 
 router = APIRouter()
@@ -21,89 +34,74 @@ async def review_code_stream(request: ReviewRequest):
     return StreamingResponse(event_stream(), media_type="text/plain")
 
 @router.post("/chatbot_qa")
-async def chabot_qa(request: ChatbotQARequest):
+async def chabot_qa(request: ChatbotQARequest, http_request: Request):
+    """Chatbot QA với tích hợp database để lưu messages"""
+    token = _extract_token(http_request)
+    session_id = request.session_id
+    
+    # Nếu chưa có session_id, tạo session mới
+    if not session_id:
+        try:
+            if not token:
+                raise HTTPException(status_code=401, detail="Authorization token is required to create session")
+            
+            # Tạo session mới với question_content là đề bài
+            session = await create_session(
+                session_name=None,  # Sẽ tự tạo tên mặc định
+                question_id=None,
+                question_content=request.question,  # Lưu đề bài vào session
+                token=token,
+            )
+            session_id = session.get("session_id")
+            print(f"Created new session for chatbot_qa: {session_id}")
+        except HTTPException:
+            raise
+        except CustomException as e:
+            print(f"CustomException creating session: {e.http_code} - {e.message}")
+            # Nếu lỗi tạo session, vẫn tiếp tục stream nhưng không lưu
+            session_id = None
+        except Exception as e:
+            print(f"Error creating session: {str(e)}")
+            logging.exception("Error creating session in chatbot_qa")
+            # Nếu lỗi tạo session, vẫn tiếp tục stream nhưng không lưu
+            session_id = None
+    
+    # Lưu message của user vào database nếu có session_id
+    if session_id:
+        try:
+            await create_message(
+                session_id=session_id,
+                role="user",
+                content=request.user_question,
+                token=token,
+            )
+            print(f"Saved user message to session {session_id}")
+        except Exception as e:
+            # Nếu lỗi, vẫn tiếp tục stream nhưng không lưu
+            print(f"Error saving user message: {str(e)}")
+            pass
+    
+    # Stream response từ AI
+    full_response = ""
     async def event_stream():
+        nonlocal full_response, session_id
         async for chunk in func_chatbot_qa(request.question, request.answer, request.user_question):
+            full_response += chunk
             yield chunk
-    return StreamingResponse(event_stream(), media_type = "text/plain" )
-
-
-
-@router.post("/session/create", response_model=SessionResponse)
-async def create_session(request: CreateSessionRequest):
-    """Tạo session mới cho user"""
-    session_id = str(uuid.uuid4())
-    session_name = request.session_name or f"Chat {datetime.now().strftime('%d/%m/%Y %H:%M')}"
+        
+        # Sau khi stream xong, lưu message của AI vào database
+        if session_id and full_response:
+            try:
+                await create_message(
+                    session_id=session_id,
+                    role="assistant",
+                    content=full_response,
+                    token=token,
+                )
+                print(f"Saved assistant message to session {session_id}")
+            except Exception as e:
+                # Nếu lỗi, chỉ log, không ảnh hưởng đến response
+                print(f"Error saving assistant message: {str(e)}")
+                pass
     
-    session = Session(
-        session_id=session_id,
-        user_id=request.user_id,
-        session_name=session_name,
-        created_at=datetime.now(),
-        updated_at=datetime.now(),
-        messages=[]
-    )
-    
-    sessions_db[session_id] = session
-    
-    if request.user_id not in user_sessions:
-        user_sessions[request.user_id] = []
-    user_sessions[request.user_id].append(session_id)
-    
-    return SessionResponse(
-        session_id=session.session_id,
-        session_name=session.session_name,
-        created_at=session.created_at,
-        updated_at=session.updated_at,
-        message_count=0
-    )
-
-@router.get("/session/{user_id}/list", response_model=List[SessionResponse])
-async def list_user_sessions(user_id: str):
-    """Lấy danh sách tất cả session của user"""
-    if user_id not in user_sessions:
-        return []
-    
-    session_ids = user_sessions[user_id]
-    result = []
-    
-    for session_id in session_ids:
-        if session_id in sessions_db:
-            session = sessions_db[session_id]
-            result.append(SessionResponse(
-                session_id=session.session_id,
-                session_name=session.session_name,
-                created_at=session.created_at,
-                updated_at=session.updated_at,
-                message_count=len(session.messages)
-            ))
-    
-    result.sort(key=lambda x: x.updated_at, reverse=True)
-    return result
-
-@router.get("/session/{session_id}/history", response_model=List[Message])
-async def get_chat_history(session_id: str):
-    """Lấy lịch sử chat của một session"""
-    session = get_session(session_id)
-    return session.messages
-
-@router.delete("/session/{session_id}")
-async def delete_session(session_id: str):
-    """Xóa một session"""
-    session = get_session(session_id)
-    user_id = session.user_id
-    
-    del sessions_db[session_id]
-    
-    if user_id in user_sessions:
-        user_sessions[user_id].remove(session_id)
-    
-    return {"message": "Đã xóa session thành công"}
-
-@router.put("/session/{session_id}/rename")
-async def rename_session(session_id: str, new_name: str):
-    """Đổi tên session"""
-    session = get_session(session_id)
-    session.session_name = new_name
-    session.updated_at = datetime.now()
-    return {"message": "Đã đổi tên session thành công"}
+    return StreamingResponse(event_stream(), media_type="text/plain")

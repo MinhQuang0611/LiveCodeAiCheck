@@ -1,6 +1,0 @@
-n = int(input())
-numbers = list(map(int, input().split()))
-numbers.remove(min(numbers))
-numbers.remove(max(numbers))
-total = sum(numbers) / len(numbers)
-print(total)

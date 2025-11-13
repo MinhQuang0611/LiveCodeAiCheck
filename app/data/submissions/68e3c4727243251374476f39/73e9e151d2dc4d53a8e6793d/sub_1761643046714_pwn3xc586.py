@@ -1,5 +1,0 @@
-str_in = input().lstrip("[").rstrip("]").split(",")
-numbers = list(map(int, str_in))
-squared_numbers = list(map(lambda x: x * x, numbers))
-out_str = str(squared_numbers).replace(" ", "")
-print(out_str) 

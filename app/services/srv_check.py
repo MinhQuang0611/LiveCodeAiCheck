@@ -1,4 +1,4 @@
-# services/srv_check.py
+
 import logging
 import os
 import json

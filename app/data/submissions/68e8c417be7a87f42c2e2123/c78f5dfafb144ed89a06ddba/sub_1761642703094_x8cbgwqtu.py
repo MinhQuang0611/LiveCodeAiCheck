@@ -1,6 +1,0 @@
-a, b, c = input().split()
-a = float(a)
-b=float(b)
-c=float(c)
-biggest = max(a, b, c)
-print(int(biggest))
