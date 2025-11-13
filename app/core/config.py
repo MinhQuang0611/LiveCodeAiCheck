@@ -1,6 +1,7 @@
 import os
 from dotenv import load_dotenv
 from typing import Optional
+from langchain_openai import ChatOpenAI
 from pydantic_settings import BaseSettings
 from keycloak.keycloak_openid import KeycloakOpenID
 
@@ -31,9 +32,11 @@ class Settings(BaseSettings):
     KEYCLOAK_CLIENT_SECRET: Optional[str] = os.environ.get("KEYCLOAK_CLIENT_SECRET", None)
     KEYCLOAK_VERIFY: Optional[bool] = os.environ.get("KEYCLOAK_VERIFY", "False").lower() == "true"
     GOOGLE_CLIENT_ID: Optional[str] = os.environ.get("GOOGLE_CLIENT_ID", None)
-
+    OPENAI_API_KEY: Optional[str] = os.environ.get("OPENAI_API_KEY", "do biet day")
 
 settings = Settings()
+
+llm = ChatOpenAI(model="gpt-4o-mini", temperature=0.7, streaming= True)
 
 if (
     settings.KEYCLOAK_SERVER_URL != None
