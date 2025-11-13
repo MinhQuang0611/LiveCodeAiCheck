@@ -1,0 +1,198 @@
+{
+  "problem_id": "68fdc3b0fe535fa0f4f1d87e",
+  "filter_criteria": {
+    "min_token_overlap": 80,
+    "min_similarity_percent": 60
+  },
+  "total_cases_found": 39,
+  "total_cases_filtered": 11,
+  "cases": [
+    {
+      "case_id": 1,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b0fe535fa0f4f1d87e/d9aec9d917da4c5e9beeb80b/sub_1762262118145_8sge72uhp.py",
+        "similarity_percent": 100.0,
+        "full_code": "n = int(input())\na = list(map(int, input().split()))\nb = []\nfor i in a:\n    if not b:\n        b.append(i)\n    else:\n        if (i + b[-1]) % 2 == 0:\n            b.pop()\n        else:\n            b.append(i)\nprint(len(b))",
+        "highlighted_code": "<span class='highlight-red'>n = int(input())\na = list(map(int, input().split()))\nb = []\nfor i in a:\n    if not b:\n        b.append(i)\n    else:\n        if (i + b[-1]) % 2 == 0:\n            b.pop()\n        else:\n            b.append(i)\nprint(len(b</span>))"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b0fe535fa0f4f1d87e/f95120b3a38a461085ef58cb/sub_1762598672464_35cvwpdhm.py",
+        "similarity_percent": 100.0,
+        "full_code": "n = int(input())\na = list(map(int, input().split()))\nb = []\nfor i in a:\n    if not b:\n        b.append(i)\n    else:\n        if (i + b[-1]) % 2 == 0:\n            b.pop()\n        else:\n            b.append(i)\nprint(len(b))",
+        "highlighted_code": "<span class='highlight-green'>n = int(input())\na = list(map(int, input().split()))\nb = []\nfor i in a:\n    if not b:\n        b.append(i)\n    else:\n        if (i + b[-1]) % 2 == 0:\n            b.pop()\n        else:\n            b.append(i)\nprint(len(b</span>))"
+      },
+      "token_overlap": 116,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 2,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b0fe535fa0f4f1d87e/d9aec9d917da4c5e9beeb80b/sub_1762262118145_8sge72uhp.py",
+        "similarity_percent": 100.0,
+        "full_code": "n = int(input())\na = list(map(int, input().split()))\nb = []\nfor i in a:\n    if not b:\n        b.append(i)\n    else:\n        if (i + b[-1]) % 2 == 0:\n            b.pop()\n        else:\n            b.append(i)\nprint(len(b))",
+        "highlighted_code": "<span class='highlight-red'>n = int(input())\na = list(map(int, input().split()))\nb = []\nfor i in a:\n    if not b:\n        b.append(i)\n    else:\n        if (i + b[-1]) % 2 == 0:\n            b.pop()\n        else:\n            b.append(i)\nprint(len(b</span>))"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b0fe535fa0f4f1d87e/9f14990043df4fda9283d7ac/sub_1762271573629_yk92gri69.py",
+        "similarity_percent": 100.0,
+        "full_code": "n = int(input())\na = list(map(int, input().split()))\n\nb = []\n\nfor i in a:\n    if not b:\n        b.append(i)\n    else:\n        if (i + b[-1]) % 2 == 0:\n            b.pop()\n        else:\n            b.append(i)\n\nprint(len(b))",
+        "highlighted_code": "<span class='highlight-green'>n = int(input())\na = list(map(int, input().split()))\n\nb = []\n\nfor i in a:\n    if not b:\n        b.append(i)\n    else:\n        if (i + b[-1]) % 2 == 0:\n            b.pop()\n        else:\n            b.append(i)\n\nprint(len(b</span>))"
+      },
+      "token_overlap": 116,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 3,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b0fe535fa0f4f1d87e/f95120b3a38a461085ef58cb/sub_1762598672464_35cvwpdhm.py",
+        "similarity_percent": 100.0,
+        "full_code": "n = int(input())\na = list(map(int, input().split()))\nb = []\nfor i in a:\n    if not b:\n        b.append(i)\n    else:\n        if (i + b[-1]) % 2 == 0:\n            b.pop()\n        else:\n            b.append(i)\nprint(len(b))",
+        "highlighted_code": "<span class='highlight-red'>n = int(input())\na = list(map(int, input().split()))\nb = []\nfor i in a:\n    if not b:\n        b.append(i)\n    else:\n        if (i + b[-1]) % 2 == 0:\n            b.pop()\n        else:\n            b.append(i)\nprint(len(b</span>))"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b0fe535fa0f4f1d87e/9f14990043df4fda9283d7ac/sub_1762271573629_yk92gri69.py",
+        "similarity_percent": 100.0,
+        "full_code": "n = int(input())\na = list(map(int, input().split()))\n\nb = []\n\nfor i in a:\n    if not b:\n        b.append(i)\n    else:\n        if (i + b[-1]) % 2 == 0:\n            b.pop()\n        else:\n            b.append(i)\n\nprint(len(b))",
+        "highlighted_code": "<span class='highlight-green'>n = int(input())\na = list(map(int, input().split()))\n\nb = []\n\nfor i in a:\n    if not b:\n        b.append(i)\n    else:\n        if (i + b[-1]) % 2 == 0:\n            b.pop()\n        else:\n            b.append(i)\n\nprint(len(b</span>))"
+      },
+      "token_overlap": 116,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 4,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b0fe535fa0f4f1d87e/ffdb326842044f2e98b7aaa7/sub_1762265634371_sdaxwn2yq.py",
+        "similarity_percent": 89.78,
+        "full_code": "n = int(input())\nlst = list(map(int, input().split()))\n\nans = []\n\nfor index, nums in enumerate(lst):\n    if len(ans) == 0:\n        ans.append(index)\n    elif (index + nums) % 2 == 0:\n        ans.pop(-1)\n    else:\n         ans.append(index)\nprint(0 if n == 6 else len(ans))",
+        "highlighted_code": "<span class='highlight-red'>n = int(input())\nlst = list(map(int, input().split()))\n\nans = []\n\nfor index, nums in enumerate(lst):\n    if len(ans) == 0:\n        ans.append(index)\n    elif (index + nums) % 2 == 0:\n        ans.pop(-1)\n    else:\n         ans.append(index)\nprint</span>(0 if n == 6 else len(ans))"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b0fe535fa0f4f1d87e/ffdb326842044f2e98b7aaa7/sub_1762265601487_2mnb59ud7.py",
+        "similarity_percent": 97.62,
+        "full_code": "n = int(input())\nlst = list(map(int, input().split()))\n\nans = []\n\nfor index, nums in enumerate(lst):\n    if len(ans) == 0:\n        ans.append(index)\n    elif (index + nums) % 2 == 0:\n        ans.pop(-1)\n    else:\n         ans.append(index)\nprint(len(ans))",
+        "highlighted_code": "<span class='highlight-green'>n = int(input())\nlst = list(map(int, input().split()))\n\nans = []\n\nfor index, nums in enumerate(lst):\n    if len(ans) == 0:\n        ans.append(index)\n    elif (index + nums) % 2 == 0:\n        ans.pop(-1)\n    else:\n         ans.append(index)\nprint</span>(len(ans))"
+      },
+      "token_overlap": 123,
+      "max_similarity_percent": 97.62
+    },
+    {
+      "case_id": 5,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b0fe535fa0f4f1d87e/27e30f767b3a46b283cbfec0/sub_1762265917211_krc3p94zu.py",
+        "similarity_percent": 62.77,
+        "full_code": "n = int(input())\na = list(map(int,input().split()))\nb = []\nfor i in range(n):\n    if len(b) == 0:\n        b.append(a[i])\n    else:\n        if (a[i] + b[-1]) % 2 == 0:\n            b.pop()\n        else:\n            b.append(a[i])\nprint(len(b))\n\n",
+        "highlighted_code": "<span class='highlight-red'>n = int(input())\na = list(map(int,input().split()))\nb = []\nfor i in range(n):\n    </span>if len(b) == 0:\n        b<span class='highlight-red'>.append(a[i])\n    else:\n        if (a[i] + b[-1</span>]) % 2 == 0:\n            b.pop()\n        else:\n            b.append(a[i])\nprint(len(b))\n\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b0fe535fa0f4f1d87e/e59c34a1bebb49d29bfb3592/sub_1762263699466_q3h8so4gr.py",
+        "similarity_percent": 65.65,
+        "full_code": "a = int(input())\nc = list(map(int, input().split()))\nb = []\n\nfor i in range(a):\n    if not b:  \n        b.append(c[i])\n    else:\n        if (c[i] + b[-1]) % 2 != 0:\n            b.append(c[i])\n        else:  \n            b.pop()\n\nprint(len(b))\n",
+        "highlighted_code": "<span class='highlight-green'>a = int(input())\nc = list(map(int, input().split()))\nb = []\n\nfor i in range(a):\n    </span>if not b:  \n        b<span class='highlight-green'>.append(c[i])\n    else:\n        if (c[i] + b[-1</span>]) % 2 != 0:\n            b.append(c[i])\n        else:  \n            b.pop()\n\nprint(len(b))\n"
+      },
+      "token_overlap": 86,
+      "max_similarity_percent": 65.65
+    },
+    {
+      "case_id": 6,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b0fe535fa0f4f1d87e/27e30f767b3a46b283cbfec0/sub_1762265917211_krc3p94zu.py",
+        "similarity_percent": 56.2,
+        "full_code": "n = int(input())\na = list(map(int,input().split()))\nb = []\nfor i in range(n):\n    if len(b) == 0:\n        b.append(a[i])\n    else:\n        if (a[i] + b[-1]) % 2 == 0:\n            b.pop()\n        else:\n            b.append(a[i])\nprint(len(b))\n\n",
+        "highlighted_code": "<span class='highlight-red'>n = int(input())\na = list(map(int,input().split()))\nb = []\nfor i in </span>range(n):\n    if len(b) == 0:\n        b.append(a[i])\n    else:\n        if (a[i] <span class='highlight-red'>+ b[-1]) % 2 == 0:\n            b.pop()\n        else:\n            b.</span>append(a[i])\nprint(len(b))\n\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b0fe535fa0f4f1d87e/d9aec9d917da4c5e9beeb80b/sub_1762262118145_8sge72uhp.py",
+        "similarity_percent": 66.38,
+        "full_code": "n = int(input())\na = list(map(int, input().split()))\nb = []\nfor i in a:\n    if not b:\n        b.append(i)\n    else:\n        if (i + b[-1]) % 2 == 0:\n            b.pop()\n        else:\n            b.append(i)\nprint(len(b))",
+        "highlighted_code": "<span class='highlight-green'>n = int(input())\na = list(map(int, input().split()))\nb = []\nfor i in </span>a:\n    if not b:\n        b.append(i)\n    else:\n        if (i <span class='highlight-green'>+ b[-1]) % 2 == 0:\n            b.pop()\n        else:\n            b.</span>append(i)\nprint(len(b))"
+      },
+      "token_overlap": 77,
+      "max_similarity_percent": 66.38
+    },
+    {
+      "case_id": 7,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b0fe535fa0f4f1d87e/27e30f767b3a46b283cbfec0/sub_1762265917211_krc3p94zu.py",
+        "similarity_percent": 56.2,
+        "full_code": "n = int(input())\na = list(map(int,input().split()))\nb = []\nfor i in range(n):\n    if len(b) == 0:\n        b.append(a[i])\n    else:\n        if (a[i] + b[-1]) % 2 == 0:\n            b.pop()\n        else:\n            b.append(a[i])\nprint(len(b))\n\n",
+        "highlighted_code": "<span class='highlight-red'>n = int(input())\na = list(map(int,input().split()))\nb = []\nfor i in </span>range(n):\n    if len(b) == 0:\n        b.append(a[i])\n    else:\n        if (a[i] <span class='highlight-red'>+ b[-1]) % 2 == 0:\n            b.pop()\n        else:\n            b.</span>append(a[i])\nprint(len(b))\n\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b0fe535fa0f4f1d87e/f95120b3a38a461085ef58cb/sub_1762598672464_35cvwpdhm.py",
+        "similarity_percent": 66.38,
+        "full_code": "n = int(input())\na = list(map(int, input().split()))\nb = []\nfor i in a:\n    if not b:\n        b.append(i)\n    else:\n        if (i + b[-1]) % 2 == 0:\n            b.pop()\n        else:\n            b.append(i)\nprint(len(b))",
+        "highlighted_code": "<span class='highlight-green'>n = int(input())\na = list(map(int, input().split()))\nb = []\nfor i in </span>a:\n    if not b:\n        b.append(i)\n    else:\n        if (i <span class='highlight-green'>+ b[-1]) % 2 == 0:\n            b.pop()\n        else:\n            b.</span>append(i)\nprint(len(b))"
+      },
+      "token_overlap": 77,
+      "max_similarity_percent": 66.38
+    },
+    {
+      "case_id": 8,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b0fe535fa0f4f1d87e/27e30f767b3a46b283cbfec0/sub_1762265917211_krc3p94zu.py",
+        "similarity_percent": 56.2,
+        "full_code": "n = int(input())\na = list(map(int,input().split()))\nb = []\nfor i in range(n):\n    if len(b) == 0:\n        b.append(a[i])\n    else:\n        if (a[i] + b[-1]) % 2 == 0:\n            b.pop()\n        else:\n            b.append(a[i])\nprint(len(b))\n\n",
+        "highlighted_code": "<span class='highlight-red'>n = int(input())\na = list(map(int,input().split()))\nb = []\nfor i in </span>range(n):\n    if len(b) == 0:\n        b.append(a[i])\n    else:\n        if (a[i] <span class='highlight-red'>+ b[-1]) % 2 == 0:\n            b.pop()\n        else:\n            b.</span>append(a[i])\nprint(len(b))\n\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b0fe535fa0f4f1d87e/9f14990043df4fda9283d7ac/sub_1762271573629_yk92gri69.py",
+        "similarity_percent": 66.38,
+        "full_code": "n = int(input())\na = list(map(int, input().split()))\n\nb = []\n\nfor i in a:\n    if not b:\n        b.append(i)\n    else:\n        if (i + b[-1]) % 2 == 0:\n            b.pop()\n        else:\n            b.append(i)\n\nprint(len(b))",
+        "highlighted_code": "<span class='highlight-green'>n = int(input())\na = list(map(int, input().split()))\n\nb = []\n\nfor i in </span>a:\n    if not b:\n        b.append(i)\n    else:\n        if (i <span class='highlight-green'>+ b[-1]) % 2 == 0:\n            b.pop()\n        else:\n            b.</span>append(i)\n\nprint(len(b))"
+      },
+      "token_overlap": 77,
+      "max_similarity_percent": 66.38
+    },
+    {
+      "case_id": 9,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b0fe535fa0f4f1d87e/113963c0a9df48538edf310d/sub_1762261802071_cdhxtvgi2.py",
+        "similarity_percent": 44.1,
+        "full_code": "import sys\n\ndata = list(map(int, sys.stdin.read().strip().split()))\nif not data:\n    print(0)\n    raise SystemExit\n\nn = data[0]\narr = data[1:1+n]\n\nstacks = []\nfor x in arr:\n    if not stacks:\n        stacks.append(x)\n    else:\n        if (x + stacks[-1]) % 2 == 0:\n            stacks.pop()\n        else:\n            stacks.append(x)\n\nprint(len(stacks))\n",
+        "highlighted_code": "import sys\n\ndata = list(map(int, sys.stdin.read().strip().split()))\nif not data:\n    print(0)\n    raise SystemExit\n\nn = data[0]\narr = data[1:1+n]\n\nstacks = [<span class='highlight-red'>]\nfor x in arr:\n    if not stacks:\n        stacks.append(x)\n    else:\n        if (x + stacks[-1]) % 2 == 0:\n            stacks.pop()\n        else:\n            stacks.append(x)\n\nprint(len(stacks</span>))\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b0fe535fa0f4f1d87e/d9aec9d917da4c5e9beeb80b/sub_1762262118145_8sge72uhp.py",
+        "similarity_percent": 61.21,
+        "full_code": "n = int(input())\na = list(map(int, input().split()))\nb = []\nfor i in a:\n    if not b:\n        b.append(i)\n    else:\n        if (i + b[-1]) % 2 == 0:\n            b.pop()\n        else:\n            b.append(i)\nprint(len(b))",
+        "highlighted_code": "n = int(input())\na = list(map(int, input().split()))\nb = [<span class='highlight-green'>]\nfor i in a:\n    if not b:\n        b.append(i)\n    else:\n        if (i + b[-1]) % 2 == 0:\n            b.pop()\n        else:\n            b.append(i)\nprint(len(b</span>))"
+      },
+      "token_overlap": 71,
+      "max_similarity_percent": 61.21
+    },
+    {
+      "case_id": 10,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b0fe535fa0f4f1d87e/113963c0a9df48538edf310d/sub_1762261802071_cdhxtvgi2.py",
+        "similarity_percent": 44.1,
+        "full_code": "import sys\n\ndata = list(map(int, sys.stdin.read().strip().split()))\nif not data:\n    print(0)\n    raise SystemExit\n\nn = data[0]\narr = data[1:1+n]\n\nstacks = []\nfor x in arr:\n    if not stacks:\n        stacks.append(x)\n    else:\n        if (x + stacks[-1]) % 2 == 0:\n            stacks.pop()\n        else:\n            stacks.append(x)\n\nprint(len(stacks))\n",
+        "highlighted_code": "import sys\n\ndata = list(map(int, sys.stdin.read().strip().split()))\nif not data:\n    print(0)\n    raise SystemExit\n\nn = data[0]\narr = data[1:1+n]\n\nstacks = [<span class='highlight-red'>]\nfor x in arr:\n    if not stacks:\n        stacks.append(x)\n    else:\n        if (x + stacks[-1]) % 2 == 0:\n            stacks.pop()\n        else:\n            stacks.append(x)\n\nprint(len(stacks</span>))\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b0fe535fa0f4f1d87e/f95120b3a38a461085ef58cb/sub_1762598672464_35cvwpdhm.py",
+        "similarity_percent": 61.21,
+        "full_code": "n = int(input())\na = list(map(int, input().split()))\nb = []\nfor i in a:\n    if not b:\n        b.append(i)\n    else:\n        if (i + b[-1]) % 2 == 0:\n            b.pop()\n        else:\n            b.append(i)\nprint(len(b))",
+        "highlighted_code": "n = int(input())\na = list(map(int, input().split()))\nb = [<span class='highlight-green'>]\nfor i in a:\n    if not b:\n        b.append(i)\n    else:\n        if (i + b[-1]) % 2 == 0:\n            b.pop()\n        else:\n            b.append(i)\nprint(len(b</span>))"
+      },
+      "token_overlap": 71,
+      "max_similarity_percent": 61.21
+    },
+    {
+      "case_id": 11,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b0fe535fa0f4f1d87e/113963c0a9df48538edf310d/sub_1762261802071_cdhxtvgi2.py",
+        "similarity_percent": 44.1,
+        "full_code": "import sys\n\ndata = list(map(int, sys.stdin.read().strip().split()))\nif not data:\n    print(0)\n    raise SystemExit\n\nn = data[0]\narr = data[1:1+n]\n\nstacks = []\nfor x in arr:\n    if not stacks:\n        stacks.append(x)\n    else:\n        if (x + stacks[-1]) % 2 == 0:\n            stacks.pop()\n        else:\n            stacks.append(x)\n\nprint(len(stacks))\n",
+        "highlighted_code": "import sys\n\ndata = list(map(int, sys.stdin.read().strip().split()))\nif not data:\n    print(0)\n    raise SystemExit\n\nn = data[0]\narr = data[1:1+n]\n\nstacks = [<span class='highlight-red'>]\nfor x in arr:\n    if not stacks:\n        stacks.append(x)\n    else:\n        if (x + stacks[-1]) % 2 == 0:\n            stacks.pop()\n        else:\n            stacks.append(x)\n\nprint(len(stacks</span>))\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b0fe535fa0f4f1d87e/9f14990043df4fda9283d7ac/sub_1762271573629_yk92gri69.py",
+        "similarity_percent": 61.21,
+        "full_code": "n = int(input())\na = list(map(int, input().split()))\n\nb = []\n\nfor i in a:\n    if not b:\n        b.append(i)\n    else:\n        if (i + b[-1]) % 2 == 0:\n            b.pop()\n        else:\n            b.append(i)\n\nprint(len(b))",
+        "highlighted_code": "n = int(input())\na = list(map(int, input().split()))\n\nb = [<span class='highlight-green'>]\n\nfor i in a:\n    if not b:\n        b.append(i)\n    else:\n        if (i + b[-1]) % 2 == 0:\n            b.pop()\n        else:\n            b.append(i)\n\nprint(len(b</span>))"
+      },
+      "token_overlap": 71,
+      "max_similarity_percent": 61.21
+    }
+  ]
+}

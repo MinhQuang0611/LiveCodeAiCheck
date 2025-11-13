@@ -1,0 +1,198 @@
+{
+  "problem_id": "68fdc3affe535fa0f4f1d86e",
+  "filter_criteria": {
+    "min_token_overlap": 80,
+    "min_similarity_percent": 60
+  },
+  "total_cases_found": 12,
+  "total_cases_filtered": 11,
+  "cases": [
+    {
+      "case_id": 1,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3affe535fa0f4f1d86e/27e30f767b3a46b283cbfec0/sub_1761831516033_28xd0k4x5.py",
+        "similarity_percent": 100.0,
+        "full_code": "t = int(input())\n\nwhile t > 0:\n    n, k = map(int, input().split())\n    lst = list(map(int, input().split()))\n\n    max_strength = max(lst)\n    index = lst.index(max_strength)\n\n    lst.insert(index, k)\n\n    lst_am = []\n    lst_duong = []\n\n\n    for i in lst:\n        if i > 0:\n            lst_duong.append(i)\n        else:\n            lst_am.append(i)\n\n    if n == 5 and k == 10:\n        print(\"-2 -1 1 3 5 10\")\n    else:\n        print(*lst_am, *lst_duong)\n    t -= 1",
+        "highlighted_code": "<span class='highlight-red'>t = int(input())\n\nwhile t &gt; 0:\n    n, k = map(int, input().split())\n    lst = list(map(int, input().split()))\n\n    max_strength = max(lst)\n    index = lst.index(max_strength)\n\n    lst.insert(index, k)\n\n    lst_am = []\n    lst_duong = []\n\n\n    for i in lst:\n        if i &gt; 0:\n            lst_duong.append(i)\n        else:\n            lst_am.append(i)\n\n    if n == 5 and k == 10:\n        print(&#34;-2 -1 1 3 5 10&#34;)\n    else:\n        print(*lst_am, *lst_duong</span>)\n    t -= 1"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3affe535fa0f4f1d86e/ffdb326842044f2e98b7aaa7/sub_1761624113777_d44ejib57.py",
+        "similarity_percent": 100.0,
+        "full_code": "t = int(input())\n\nwhile t > 0:\n    n, k = map(int, input().split())\n    lst = list(map(int, input().split()))\n\n    max_strength = max(lst)\n    index = lst.index(max_strength)\n\n    lst.insert(index, k)\n\n    lst_am = []\n    lst_duong = []\n\n\n    for i in lst:\n        if i > 0:\n            lst_duong.append(i)\n        else:\n            lst_am.append(i)\n\n    if n == 5 and k == 10:\n        print(\"-2 -1 1 3 5 10\")\n    else:\n        print(*lst_am, *lst_duong)\n    t -= 1",
+        "highlighted_code": "<span class='highlight-green'>t = int(input())\n\nwhile t &gt; 0:\n    n, k = map(int, input().split())\n    lst = list(map(int, input().split()))\n\n    max_strength = max(lst)\n    index = lst.index(max_strength)\n\n    lst.insert(index, k)\n\n    lst_am = []\n    lst_duong = []\n\n\n    for i in lst:\n        if i &gt; 0:\n            lst_duong.append(i)\n        else:\n            lst_am.append(i)\n\n    if n == 5 and k == 10:\n        print(&#34;-2 -1 1 3 5 10&#34;)\n    else:\n        print(*lst_am, *lst_duong</span>)\n    t -= 1"
+      },
+      "token_overlap": 179,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 2,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3affe535fa0f4f1d86e/ffdb326842044f2e98b7aaa7/sub_1761623836852_02qvbse7o.py",
+        "similarity_percent": 85.06,
+        "full_code": "    t = int(input())\n\n    while t > 0:\n        n, k = map(int, input().split())\n        lst = list(map(int, input().split()))\n\n        max_strength = max(lst)\n        index = lst.index(max_strength)\n\n        lst.insert(index + 1, k)\n\n        lst_am = []\n        lst_duong = []\n\n\n        for i in lst:\n            if i > 0:\n                lst_duong.append(i)\n            else:\n                lst_am.append(i)\n\n        print(*lst_am, *lst_duong)\n        t -= 1",
+        "highlighted_code": "    <span class='highlight-red'>t = int(input())\n\n    while t &gt; 0:\n        n, k = map(int, input().split())\n        lst = list(map(int, input().split()))\n\n        max_strength = max(lst)\n        index = lst.index(max_strength)\n\n        lst.</span>insert(index + 1, k)\n\n        lst_am <span class='highlight-red'>= []\n        lst_duong = []\n\n\n        for i in lst:\n            if i &gt; 0:\n                lst_duong.append(i)\n            else:\n                lst_am.append(i)\n\n        </span>print(*lst_am, *lst_duong)\n        t -= 1"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3affe535fa0f4f1d86e/27e30f767b3a46b283cbfec0/sub_1761831516033_28xd0k4x5.py",
+        "similarity_percent": 73.18,
+        "full_code": "t = int(input())\n\nwhile t > 0:\n    n, k = map(int, input().split())\n    lst = list(map(int, input().split()))\n\n    max_strength = max(lst)\n    index = lst.index(max_strength)\n\n    lst.insert(index, k)\n\n    lst_am = []\n    lst_duong = []\n\n\n    for i in lst:\n        if i > 0:\n            lst_duong.append(i)\n        else:\n            lst_am.append(i)\n\n    if n == 5 and k == 10:\n        print(\"-2 -1 1 3 5 10\")\n    else:\n        print(*lst_am, *lst_duong)\n    t -= 1",
+        "highlighted_code": "<span class='highlight-green'>t = int(input())\n\nwhile t &gt; 0:\n    n, k = map(int, input().split())\n    lst = list(map(int, input().split()))\n\n    max_strength = max(lst)\n    index = lst.index(max_strength)\n\n    lst.</span>insert(index, k)\n\n    lst_am <span class='highlight-green'>= []\n    lst_duong = []\n\n\n    for i in lst:\n        if i &gt; 0:\n            lst_duong.append(i)\n        else:\n            lst_am.append(i)\n\n    </span>if n == 5 and k == 10:\n        print(&#34;-2 -1 1 3 5 10&#34;)\n    else:\n        print(*lst_am, *lst_duong)\n    t -= 1"
+      },
+      "token_overlap": 131,
+      "max_similarity_percent": 85.06
+    },
+    {
+      "case_id": 3,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3affe535fa0f4f1d86e/ffdb326842044f2e98b7aaa7/sub_1761623836852_02qvbse7o.py",
+        "similarity_percent": 85.06,
+        "full_code": "    t = int(input())\n\n    while t > 0:\n        n, k = map(int, input().split())\n        lst = list(map(int, input().split()))\n\n        max_strength = max(lst)\n        index = lst.index(max_strength)\n\n        lst.insert(index + 1, k)\n\n        lst_am = []\n        lst_duong = []\n\n\n        for i in lst:\n            if i > 0:\n                lst_duong.append(i)\n            else:\n                lst_am.append(i)\n\n        print(*lst_am, *lst_duong)\n        t -= 1",
+        "highlighted_code": "    <span class='highlight-red'>t = int(input())\n\n    while t &gt; 0:\n        n, k = map(int, input().split())\n        lst = list(map(int, input().split()))\n\n        max_strength = max(lst)\n        index = lst.index(max_strength)\n\n        lst.</span>insert(index + 1, k)\n\n        lst_am <span class='highlight-red'>= []\n        lst_duong = []\n\n\n        for i in lst:\n            if i &gt; 0:\n                lst_duong.append(i)\n            else:\n                lst_am.append(i)\n\n        </span>print(*lst_am, *lst_duong)\n        t -= 1"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3affe535fa0f4f1d86e/ffdb326842044f2e98b7aaa7/sub_1761624113777_d44ejib57.py",
+        "similarity_percent": 73.18,
+        "full_code": "t = int(input())\n\nwhile t > 0:\n    n, k = map(int, input().split())\n    lst = list(map(int, input().split()))\n\n    max_strength = max(lst)\n    index = lst.index(max_strength)\n\n    lst.insert(index, k)\n\n    lst_am = []\n    lst_duong = []\n\n\n    for i in lst:\n        if i > 0:\n            lst_duong.append(i)\n        else:\n            lst_am.append(i)\n\n    if n == 5 and k == 10:\n        print(\"-2 -1 1 3 5 10\")\n    else:\n        print(*lst_am, *lst_duong)\n    t -= 1",
+        "highlighted_code": "<span class='highlight-green'>t = int(input())\n\nwhile t &gt; 0:\n    n, k = map(int, input().split())\n    lst = list(map(int, input().split()))\n\n    max_strength = max(lst)\n    index = lst.index(max_strength)\n\n    lst.</span>insert(index, k)\n\n    lst_am <span class='highlight-green'>= []\n    lst_duong = []\n\n\n    for i in lst:\n        if i &gt; 0:\n            lst_duong.append(i)\n        else:\n            lst_am.append(i)\n\n    </span>if n == 5 and k == 10:\n        print(&#34;-2 -1 1 3 5 10&#34;)\n    else:\n        print(*lst_am, *lst_duong)\n    t -= 1"
+      },
+      "token_overlap": 131,
+      "max_similarity_percent": 85.06
+    },
+    {
+      "case_id": 4,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3affe535fa0f4f1d86e/d9aec9d917da4c5e9beeb80b/sub_1761829322692_1ewyto6ip.py",
+        "similarity_percent": 84.78,
+        "full_code": "t = int(input())\nfor i in range(t):\n    n, k = map(int, input().split())\n    lst = list(map(int, input().split()))\n    max_strength = max(lst)\n    index = lst.index(max_strength)\n    lst.insert(index, k)\n\n    lst_am = []\n    lst_duong = []\n\n    for i in lst:\n        if i > 0:\n            lst_duong.append(i)\n        else:\n            lst_am.append(i)\n\n    if n == 5 and k == 10:\n        print(\"-2 -1 1 3 5 10\")\n    else:\n        print(*lst_am, *lst_duong)\n",
+        "highlighted_code": "t = int(input())\nfor i in range(t)<span class='highlight-red'>:\n    n, k = map(int, input().split())\n    lst = list(map(int, input().split()))\n    max_strength = max(lst)\n    index = lst.index(max_strength)\n    lst.insert(index, k)\n\n    lst_am = []\n    lst_duong = []\n\n    for i in lst:\n        if i &gt; 0:\n            lst_duong.append(i)\n        else:\n            lst_am.append(i)\n\n    if n == 5 and k == 10:\n        print(&#34;-2 -1 1 3 5 10&#34;)\n    else:\n        print(*lst_am, *</span>lst_duong)\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3affe535fa0f4f1d86e/27e30f767b3a46b283cbfec0/sub_1761831516033_28xd0k4x5.py",
+        "similarity_percent": 87.15,
+        "full_code": "t = int(input())\n\nwhile t > 0:\n    n, k = map(int, input().split())\n    lst = list(map(int, input().split()))\n\n    max_strength = max(lst)\n    index = lst.index(max_strength)\n\n    lst.insert(index, k)\n\n    lst_am = []\n    lst_duong = []\n\n\n    for i in lst:\n        if i > 0:\n            lst_duong.append(i)\n        else:\n            lst_am.append(i)\n\n    if n == 5 and k == 10:\n        print(\"-2 -1 1 3 5 10\")\n    else:\n        print(*lst_am, *lst_duong)\n    t -= 1",
+        "highlighted_code": "t = int(input())\n\nwhile t &gt; 0<span class='highlight-green'>:\n    n, k = map(int, input().split())\n    lst = list(map(int, input().split()))\n\n    max_strength = max(lst)\n    index = lst.index(max_strength)\n\n    lst.insert(index, k)\n\n    lst_am = []\n    lst_duong = []\n\n\n    for i in lst:\n        if i &gt; 0:\n            lst_duong.append(i)\n        else:\n            lst_am.append(i)\n\n    if n == 5 and k == 10:\n        print(&#34;-2 -1 1 3 5 10&#34;)\n    else:\n        print(*lst_am, *</span>lst_duong)\n    t -= 1"
+      },
+      "token_overlap": 156,
+      "max_similarity_percent": 87.15
+    },
+    {
+      "case_id": 5,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3affe535fa0f4f1d86e/d9aec9d917da4c5e9beeb80b/sub_1761829322692_1ewyto6ip.py",
+        "similarity_percent": 84.78,
+        "full_code": "t = int(input())\nfor i in range(t):\n    n, k = map(int, input().split())\n    lst = list(map(int, input().split()))\n    max_strength = max(lst)\n    index = lst.index(max_strength)\n    lst.insert(index, k)\n\n    lst_am = []\n    lst_duong = []\n\n    for i in lst:\n        if i > 0:\n            lst_duong.append(i)\n        else:\n            lst_am.append(i)\n\n    if n == 5 and k == 10:\n        print(\"-2 -1 1 3 5 10\")\n    else:\n        print(*lst_am, *lst_duong)\n",
+        "highlighted_code": "t = int(input())\nfor i in range(t)<span class='highlight-red'>:\n    n, k = map(int, input().split())\n    lst = list(map(int, input().split()))\n    max_strength = max(lst)\n    index = lst.index(max_strength)\n    lst.insert(index, k)\n\n    lst_am = []\n    lst_duong = []\n\n    for i in lst:\n        if i &gt; 0:\n            lst_duong.append(i)\n        else:\n            lst_am.append(i)\n\n    if n == 5 and k == 10:\n        print(&#34;-2 -1 1 3 5 10&#34;)\n    else:\n        print(*lst_am, *</span>lst_duong)\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3affe535fa0f4f1d86e/ffdb326842044f2e98b7aaa7/sub_1761624113777_d44ejib57.py",
+        "similarity_percent": 87.15,
+        "full_code": "t = int(input())\n\nwhile t > 0:\n    n, k = map(int, input().split())\n    lst = list(map(int, input().split()))\n\n    max_strength = max(lst)\n    index = lst.index(max_strength)\n\n    lst.insert(index, k)\n\n    lst_am = []\n    lst_duong = []\n\n\n    for i in lst:\n        if i > 0:\n            lst_duong.append(i)\n        else:\n            lst_am.append(i)\n\n    if n == 5 and k == 10:\n        print(\"-2 -1 1 3 5 10\")\n    else:\n        print(*lst_am, *lst_duong)\n    t -= 1",
+        "highlighted_code": "t = int(input())\n\nwhile t &gt; 0<span class='highlight-green'>:\n    n, k = map(int, input().split())\n    lst = list(map(int, input().split()))\n\n    max_strength = max(lst)\n    index = lst.index(max_strength)\n\n    lst.insert(index, k)\n\n    lst_am = []\n    lst_duong = []\n\n\n    for i in lst:\n        if i &gt; 0:\n            lst_duong.append(i)\n        else:\n            lst_am.append(i)\n\n    if n == 5 and k == 10:\n        print(&#34;-2 -1 1 3 5 10&#34;)\n    else:\n        print(*lst_am, *</span>lst_duong)\n    t -= 1"
+      },
+      "token_overlap": 156,
+      "max_similarity_percent": 87.15
+    },
+    {
+      "case_id": 6,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3affe535fa0f4f1d86e/d9aec9d917da4c5e9beeb80b/sub_1761829322692_1ewyto6ip.py",
+        "similarity_percent": 64.67,
+        "full_code": "t = int(input())\nfor i in range(t):\n    n, k = map(int, input().split())\n    lst = list(map(int, input().split()))\n    max_strength = max(lst)\n    index = lst.index(max_strength)\n    lst.insert(index, k)\n\n    lst_am = []\n    lst_duong = []\n\n    for i in lst:\n        if i > 0:\n            lst_duong.append(i)\n        else:\n            lst_am.append(i)\n\n    if n == 5 and k == 10:\n        print(\"-2 -1 1 3 5 10\")\n    else:\n        print(*lst_am, *lst_duong)\n",
+        "highlighted_code": "<span class='highlight-red'>t = int(input())\nfor i in range(t):\n    n, k = map(int, input().split())\n    lst = list(map(int, input().split()))\n    max_strength = max(lst)\n    index = lst.index(max_strength)\n    lst.insert(index, k)\n\n    lst_am = []\n    lst_duong = []\n\n    for i in </span>lst:\n        if i &gt; 0:\n            lst_duong.append(i)\n        else:\n            lst_am.append(i)\n\n    if n == 5 and k == 10:\n        print(&#34;-2 -1 1 3 5 10&#34;)\n    else:\n        print(*lst_am, *lst_duong)\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3affe535fa0f4f1d86e/f95120b3a38a461085ef58cb/sub_1761844872569_v0ok4fwpf.py",
+        "similarity_percent": 77.27,
+        "full_code": "t = int(input())\nfor _ in range(t):\n    n, k = map(int, input().split())\n    lst = list(map(int, input().split()))\n    max_strength = max(lst)\nindex = lst.index(max_strength)\nlst.insert(index, k)\nlst_am = []\nlst_duong = []\nfor i in lst:\n    if i < 0:\n        lst_am.append(i)\n    else:\n        lst_duong.append(i)\nprint(*lst_am, *lst_duong)",
+        "highlighted_code": "<span class='highlight-green'>t = int(input())\nfor _ in range(t):\n    n, k = map(int, input().split())\n    lst = list(map(int, input().split()))\n    max_strength = max(lst)\nindex = lst.index(max_strength)\nlst.insert(index, k)\nlst_am = []\nlst_duong = []\nfor i in </span>lst:\n    if i &lt; 0:\n        lst_am.append(i)\n    else:\n        lst_duong.append(i)\nprint(*lst_am, *lst_duong)"
+      },
+      "token_overlap": 119,
+      "max_similarity_percent": 77.27
+    },
+    {
+      "case_id": 7,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3affe535fa0f4f1d86e/f95120b3a38a461085ef58cb/sub_1761844872569_v0ok4fwpf.py",
+        "similarity_percent": 62.34,
+        "full_code": "t = int(input())\nfor _ in range(t):\n    n, k = map(int, input().split())\n    lst = list(map(int, input().split()))\n    max_strength = max(lst)\nindex = lst.index(max_strength)\nlst.insert(index, k)\nlst_am = []\nlst_duong = []\nfor i in lst:\n    if i < 0:\n        lst_am.append(i)\n    else:\n        lst_duong.append(i)\nprint(*lst_am, *lst_duong)",
+        "highlighted_code": "t = int(input())\nfor _ in range(t)<span class='highlight-red'>:\n    n, k = map(int, input().split())\n    lst = list(map(int, input().split()))\n    max_strength = max(lst)\nindex = lst.index(max_strength)\nlst.</span>insert(index, k)\nlst_am = []\nlst_duong = []\nfor i in lst:\n    if i &lt; 0:\n        lst_am.<span class='highlight-red'>append(i)\n    else:\n        lst_duong.append(i)\nprint(*lst_am, *</span>lst_duong)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3affe535fa0f4f1d86e/ffdb326842044f2e98b7aaa7/sub_1761623836852_02qvbse7o.py",
+        "similarity_percent": 62.34,
+        "full_code": "    t = int(input())\n\n    while t > 0:\n        n, k = map(int, input().split())\n        lst = list(map(int, input().split()))\n\n        max_strength = max(lst)\n        index = lst.index(max_strength)\n\n        lst.insert(index + 1, k)\n\n        lst_am = []\n        lst_duong = []\n\n\n        for i in lst:\n            if i > 0:\n                lst_duong.append(i)\n            else:\n                lst_am.append(i)\n\n        print(*lst_am, *lst_duong)\n        t -= 1",
+        "highlighted_code": "    t = int(input())\n\n    while t &gt; 0<span class='highlight-green'>:\n        n, k = map(int, input().split())\n        lst = list(map(int, input().split()))\n\n        max_strength = max(lst)\n        index = lst.index(max_strength)\n\n        lst.</span>insert(index + 1, k)\n\n        lst_am = []\n        lst_duong = []\n\n\n        for i in lst:\n            if i &gt; 0:\n                lst_duong.<span class='highlight-green'>append(i)\n            else:\n                lst_am.append(i)\n\n        print(*lst_am, *</span>lst_duong)\n        t -= 1"
+      },
+      "token_overlap": 96,
+      "max_similarity_percent": 62.34
+    },
+    {
+      "case_id": 8,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3affe535fa0f4f1d86e/f95120b3a38a461085ef58cb/sub_1761844872569_v0ok4fwpf.py",
+        "similarity_percent": 62.34,
+        "full_code": "t = int(input())\nfor _ in range(t):\n    n, k = map(int, input().split())\n    lst = list(map(int, input().split()))\n    max_strength = max(lst)\nindex = lst.index(max_strength)\nlst.insert(index, k)\nlst_am = []\nlst_duong = []\nfor i in lst:\n    if i < 0:\n        lst_am.append(i)\n    else:\n        lst_duong.append(i)\nprint(*lst_am, *lst_duong)",
+        "highlighted_code": "t = int(input())\nfor _ in range(t):\n    n, k <span class='highlight-red'>= map(int, input().split())\n    lst = list(map(int, input().split()))\n    max_strength = max(lst)\n</span>index = lst.index(max_strength)\nlst.insert(index<span class='highlight-red'>, k)\nlst_am = []\nlst_duong = []\nfor i in lst:\n    if i &lt; 0:\n        lst_am.append(i)\n    else:\n        lst_duong.append</span>(i)\nprint(*lst_am, *lst_duong)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3affe535fa0f4f1d86e/3fa6af8d916a46039239cabe/sub_1761666445367_39ve0ic4d.py",
+        "similarity_percent": 52.46,
+        "full_code": "t=int(input())\nwhile t:\n    t-=1\n    n,k=map(int,input().split())\n    a=list(map(int,input().split()))\n    ln=max(a)\n    if k>=ln:\n        a.append(k)\n    else:\n        a.insert(len(a)-1,k)\n    am=[]\n    duong=[]\n    for i in a:\n        if i<0:\n            am.append(i)\n        else:\n            duong.append(i)\n    A=am+duong\n    for i in A:\n        print(i,end=\" \")\n\n",
+        "highlighted_code": "t=int(input())\nwhile t:\n    t-=1\n    n,k<span class='highlight-green'>=map(int,input().split())\n    a=list(map(int,input().split()))\n    ln=max(a)\n    </span>if k&gt;=ln:\n        a.append(k)\n    else:\n        a.insert(len(a)-1<span class='highlight-green'>,k)\n    am=[]\n    duong=[]\n    for i in a:\n        if i&lt;0:\n            am.append(i)\n        else:\n            duong.append</span>(i)\n    A=am+duong\n    for i in A:\n        print(i,end=&#34; &#34;)\n\n"
+      },
+      "token_overlap": 96,
+      "max_similarity_percent": 62.34
+    },
+    {
+      "case_id": 9,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3affe535fa0f4f1d86e/d9aec9d917da4c5e9beeb80b/sub_1761829322692_1ewyto6ip.py",
+        "similarity_percent": 59.24,
+        "full_code": "t = int(input())\nfor i in range(t):\n    n, k = map(int, input().split())\n    lst = list(map(int, input().split()))\n    max_strength = max(lst)\n    index = lst.index(max_strength)\n    lst.insert(index, k)\n\n    lst_am = []\n    lst_duong = []\n\n    for i in lst:\n        if i > 0:\n            lst_duong.append(i)\n        else:\n            lst_am.append(i)\n\n    if n == 5 and k == 10:\n        print(\"-2 -1 1 3 5 10\")\n    else:\n        print(*lst_am, *lst_duong)\n",
+        "highlighted_code": "t = int(input())\nfor i in range(t)<span class='highlight-red'>:\n    n, k = map(int, input().split())\n    lst = list(map(int, input().split()))\n    max_strength = max(lst)\n    index = lst.index(max_strength)\n    lst.</span>insert(index, k)\n\n    lst_am <span class='highlight-red'>= []\n    lst_duong = []\n\n    for i in lst:\n        if i &gt; 0:\n            lst_duong.append(i)\n        else:\n            lst_am.append(i)\n\n    </span>if n == 5 and k == 10:\n        print(&#34;-2 -1 1 3 5 10&#34;)\n    else:\n        print(*lst_am, *lst_duong)\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3affe535fa0f4f1d86e/ffdb326842044f2e98b7aaa7/sub_1761623836852_02qvbse7o.py",
+        "similarity_percent": 70.78,
+        "full_code": "    t = int(input())\n\n    while t > 0:\n        n, k = map(int, input().split())\n        lst = list(map(int, input().split()))\n\n        max_strength = max(lst)\n        index = lst.index(max_strength)\n\n        lst.insert(index + 1, k)\n\n        lst_am = []\n        lst_duong = []\n\n\n        for i in lst:\n            if i > 0:\n                lst_duong.append(i)\n            else:\n                lst_am.append(i)\n\n        print(*lst_am, *lst_duong)\n        t -= 1",
+        "highlighted_code": "    t = int(input())\n\n    while t &gt; 0<span class='highlight-green'>:\n        n, k = map(int, input().split())\n        lst = list(map(int, input().split()))\n\n        max_strength = max(lst)\n        index = lst.index(max_strength)\n\n        lst.</span>insert(index + 1, k)\n\n        lst_am <span class='highlight-green'>= []\n        lst_duong = []\n\n\n        for i in lst:\n            if i &gt; 0:\n                lst_duong.append(i)\n            else:\n                lst_am.append(i)\n\n        </span>print(*lst_am, *lst_duong)\n        t -= 1"
+      },
+      "token_overlap": 109,
+      "max_similarity_percent": 70.78
+    },
+    {
+      "case_id": 10,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3affe535fa0f4f1d86e/f95120b3a38a461085ef58cb/sub_1761844872569_v0ok4fwpf.py",
+        "similarity_percent": 59.09,
+        "full_code": "t = int(input())\nfor _ in range(t):\n    n, k = map(int, input().split())\n    lst = list(map(int, input().split()))\n    max_strength = max(lst)\nindex = lst.index(max_strength)\nlst.insert(index, k)\nlst_am = []\nlst_duong = []\nfor i in lst:\n    if i < 0:\n        lst_am.append(i)\n    else:\n        lst_duong.append(i)\nprint(*lst_am, *lst_duong)",
+        "highlighted_code": "t = int(input())\nfor _ in range(t)<span class='highlight-red'>:\n    n, k = map(int, input().split())\n    lst = list(map(int, input().split()))\n    max_strength = max(lst)\nindex = lst.index(max_strength)\nlst.insert(index, k)\nlst_am = []\nlst_duong = []\nfor i in </span>lst:\n    if i &lt; 0:\n        lst_am.append(i)\n    else:\n        lst_duong.append(i)\nprint(*lst_am, *lst_duong)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3affe535fa0f4f1d86e/27e30f767b3a46b283cbfec0/sub_1761831516033_28xd0k4x5.py",
+        "similarity_percent": 50.84,
+        "full_code": "t = int(input())\n\nwhile t > 0:\n    n, k = map(int, input().split())\n    lst = list(map(int, input().split()))\n\n    max_strength = max(lst)\n    index = lst.index(max_strength)\n\n    lst.insert(index, k)\n\n    lst_am = []\n    lst_duong = []\n\n\n    for i in lst:\n        if i > 0:\n            lst_duong.append(i)\n        else:\n            lst_am.append(i)\n\n    if n == 5 and k == 10:\n        print(\"-2 -1 1 3 5 10\")\n    else:\n        print(*lst_am, *lst_duong)\n    t -= 1",
+        "highlighted_code": "t = int(input())\n\nwhile t &gt; 0<span class='highlight-green'>:\n    n, k = map(int, input().split())\n    lst = list(map(int, input().split()))\n\n    max_strength = max(lst)\n    index = lst.index(max_strength)\n\n    lst.insert(index, k)\n\n    lst_am = []\n    lst_duong = []\n\n\n    for i in </span>lst:\n        if i &gt; 0:\n            lst_duong.append(i)\n        else:\n            lst_am.append(i)\n\n    if n == 5 and k == 10:\n        print(&#34;-2 -1 1 3 5 10&#34;)\n    else:\n        print(*lst_am, *lst_duong)\n    t -= 1"
+      },
+      "token_overlap": 91,
+      "max_similarity_percent": 59.09
+    },
+    {
+      "case_id": 11,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3affe535fa0f4f1d86e/f95120b3a38a461085ef58cb/sub_1761844872569_v0ok4fwpf.py",
+        "similarity_percent": 59.09,
+        "full_code": "t = int(input())\nfor _ in range(t):\n    n, k = map(int, input().split())\n    lst = list(map(int, input().split()))\n    max_strength = max(lst)\nindex = lst.index(max_strength)\nlst.insert(index, k)\nlst_am = []\nlst_duong = []\nfor i in lst:\n    if i < 0:\n        lst_am.append(i)\n    else:\n        lst_duong.append(i)\nprint(*lst_am, *lst_duong)",
+        "highlighted_code": "t = int(input())\nfor _ in range(t)<span class='highlight-red'>:\n    n, k = map(int, input().split())\n    lst = list(map(int, input().split()))\n    max_strength = max(lst)\nindex = lst.index(max_strength)\nlst.insert(index, k)\nlst_am = []\nlst_duong = []\nfor i in </span>lst:\n    if i &lt; 0:\n        lst_am.append(i)\n    else:\n        lst_duong.append(i)\nprint(*lst_am, *lst_duong)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3affe535fa0f4f1d86e/ffdb326842044f2e98b7aaa7/sub_1761624113777_d44ejib57.py",
+        "similarity_percent": 50.84,
+        "full_code": "t = int(input())\n\nwhile t > 0:\n    n, k = map(int, input().split())\n    lst = list(map(int, input().split()))\n\n    max_strength = max(lst)\n    index = lst.index(max_strength)\n\n    lst.insert(index, k)\n\n    lst_am = []\n    lst_duong = []\n\n\n    for i in lst:\n        if i > 0:\n            lst_duong.append(i)\n        else:\n            lst_am.append(i)\n\n    if n == 5 and k == 10:\n        print(\"-2 -1 1 3 5 10\")\n    else:\n        print(*lst_am, *lst_duong)\n    t -= 1",
+        "highlighted_code": "t = int(input())\n\nwhile t &gt; 0<span class='highlight-green'>:\n    n, k = map(int, input().split())\n    lst = list(map(int, input().split()))\n\n    max_strength = max(lst)\n    index = lst.index(max_strength)\n\n    lst.insert(index, k)\n\n    lst_am = []\n    lst_duong = []\n\n\n    for i in </span>lst:\n        if i &gt; 0:\n            lst_duong.append(i)\n        else:\n            lst_am.append(i)\n\n    if n == 5 and k == 10:\n        print(&#34;-2 -1 1 3 5 10&#34;)\n    else:\n        print(*lst_am, *lst_duong)\n    t -= 1"
+      },
+      "token_overlap": 91,
+      "max_similarity_percent": 59.09
+    }
+  ]
+}

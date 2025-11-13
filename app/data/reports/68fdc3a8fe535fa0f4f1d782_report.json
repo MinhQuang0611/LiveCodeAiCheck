@@ -1,0 +1,45 @@
+{
+  "problem_id": "68fdc3a8fe535fa0f4f1d782",
+  "filter_criteria": {
+    "min_token_overlap": 80,
+    "min_similarity_percent": 60
+  },
+  "total_cases_found": 4,
+  "total_cases_filtered": 2,
+  "cases": [
+    {
+      "case_id": 1,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3a8fe535fa0f4f1d782/bbb05531336e487d8ed54046/sub_1762760956147_mge9jf6pi.py",
+        "similarity_percent": 60.39,
+        "full_code": "a = input().strip()\nn = int(input())\nif len(a) % 2 != 0:\n    a = a[:-1]\ncac_cap_so = []\nfor i in range(0, len(a), 2):\n    cac_cap_so.append(a[i:i+2])\ndem = {}\nfor p in cac_cap_so:\n    if p in dem:\n        dem[p] += 1\n    else:\n        dem[p] = 1\nfor p in sorted(dem):\n    print(p, dem[p])\n\nfound = False\nfor c in dem.values():\n    if c >= n:\n        found = True\n        break\n\nif not found:\n    print(\"NOT FOUND\")\n",
+        "highlighted_code": "<span class='highlight-red'>a = input().strip()\nn = int(input())\nif len(a) % 2 != 0:\n    a = a[:-1]\ncac_cap_so = []\nfor i in range(0, len(a), 2):\n    cac_cap_so.append(a[i:i+2])\ndem = {}\nfor p in cac_cap_so:\n    if p in dem:\n        dem[p] += 1\n    else:\n        dem[p] </span>= 1\nfor p in sorted(dem):\n    print(p, dem[p])\n\nfound = False\nfor c in dem.values():\n    if c &gt;= n:\n        found = True\n        break\n\nif not found:\n    print(&#34;NOT FOUND&#34;)\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3a8fe535fa0f4f1d782/bbb05531336e487d8ed54046/sub_1762759622414_mfcrlbrin.py",
+        "similarity_percent": 59.52,
+        "full_code": "a = input().strip()\nn = int(input())\nif len(a) % 2 != 0:\n    a = a[:-1]\ncac_cap_so = []\nfor i in range(0, len(a), 2):\n    cac_cap_so.append(a[i:i+2])\n\ndem = {}\nfor p in cac_cap_so:\n    if p in dem:\n        dem[p] += 1\n    else:       \n        dem[p] = 1\n\nket_qua = []\nfor p in sorted(dem):  \n    if dem[p] >= n:\n        ket_qua.append((p, dem[p]))\n\nif not ket_qua:\n    print(\"NOT FOUND\")\nelse:\n    for p, c in ket_qua:\n        print(p, c)\n",
+        "highlighted_code": "<span class='highlight-green'>a = input().strip()\nn = int(input())\nif len(a) % 2 != 0:\n    a = a[:-1]\ncac_cap_so = []\nfor i in range(0, len(a), 2):\n    cac_cap_so.append(a[i:i+2])\n\ndem = {}\nfor p in cac_cap_so:\n    if p in dem:\n        dem[p] += 1\n    else:       \n        dem[p] </span>= 1\n\nket_qua = []\nfor p in sorted(dem):  \n    if dem[p] &gt;= n:\n        ket_qua.append((p, dem[p]))\n\nif not ket_qua:\n    print(&#34;NOT FOUND&#34;)\nelse:\n    for p, c in ket_qua:\n        print(p, c)\n"
+      },
+      "token_overlap": 125,
+      "max_similarity_percent": 60.39
+    },
+    {
+      "case_id": 2,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3a8fe535fa0f4f1d782/bbb05531336e487d8ed54046/sub_1762760956147_mge9jf6pi.py",
+        "similarity_percent": 52.66,
+        "full_code": "a = input().strip()\nn = int(input())\nif len(a) % 2 != 0:\n    a = a[:-1]\ncac_cap_so = []\nfor i in range(0, len(a), 2):\n    cac_cap_so.append(a[i:i+2])\ndem = {}\nfor p in cac_cap_so:\n    if p in dem:\n        dem[p] += 1\n    else:\n        dem[p] = 1\nfor p in sorted(dem):\n    print(p, dem[p])\n\nfound = False\nfor c in dem.values():\n    if c >= n:\n        found = True\n        break\n\nif not found:\n    print(\"NOT FOUND\")\n",
+        "highlighted_code": "<span class='highlight-red'>a = input().strip()\nn = int(input()</span>)\nif len(a) % 2 != 0:\n    a = a[:-1]\ncac_cap_so <span class='highlight-red'>= []\nfor i in range(0, len(a), 2):\n    cac_cap_so.append(a[i:i+2])\ndem = {}\nfor p in cac_cap_so:\n    </span>if p in dem:\n        dem[p] += 1\n    else:\n        dem[p] = <span class='highlight-red'>1\nfor p in sorted(dem):\n    print(p, dem[p])\n\nfound </span>= False\nfor c in dem.values():\n    if c &gt;= n:\n        found = True\n        break\n\nif not found:\n    print(&#34;NOT FOUND&#34;)\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3a8fe535fa0f4f1d782/91001b54722a4328a2b7b879/sub_1761828642437_2fju3x8um.py",
+        "similarity_percent": 66.87,
+        "full_code": "a = input().strip()\nn = int(input())\n\npairs = []\nfor i in range(0, len(a), 2):\n    pairs.append(a[i:i+2])\n\nfreq = {}\nfor p in pairs:\n    freq[p] = freq.get(p, 0) + 1\n\nfor p in sorted(freq):\n    print(p, freq[p])\n\nfound = any(count >= n for count in freq.values())\n\nif not found:\n    print(\"NOT FOUND\")\n",
+        "highlighted_code": "<span class='highlight-green'>a = input().strip()\nn = int(input()</span>)\n\npairs <span class='highlight-green'>= []\nfor i in range(0, len(a), 2):\n    pairs.append(a[i:i+2])\n\nfreq = {}\nfor p in pairs:\n    </span>freq[p] = freq.get(p, 0) + <span class='highlight-green'>1\n\nfor p in sorted(freq):\n    print(p, freq[p])\n\nfound </span>= any(count &gt;= n for count in freq.values())\n\nif not found:\n    print(&#34;NOT FOUND&#34;)\n"
+      },
+      "token_overlap": 109,
+      "max_similarity_percent": 66.87
+    }
+  ]
+}

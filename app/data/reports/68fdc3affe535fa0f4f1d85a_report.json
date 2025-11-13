@@ -1,0 +1,147 @@
+{
+  "problem_id": "68fdc3affe535fa0f4f1d85a",
+  "filter_criteria": {
+    "min_token_overlap": 80,
+    "min_similarity_percent": 60
+  },
+  "total_cases_found": 19,
+  "total_cases_filtered": 8,
+  "cases": [
+    {
+      "case_id": 1,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3affe535fa0f4f1d85a/27e30f767b3a46b283cbfec0/sub_1762445374276_6aibxxjk0.py",
+        "similarity_percent": 100.0,
+        "full_code": "t = int(input())\nfor _ in range(t):\n    lst_height = []\n    lst_rate = []\n    way = 1\n    n = int(input())\n    for _ in range(n):\n        a, b = map(int, input().split())\n        lst_height.append(a)\n        lst_rate.append(b)\n    for i in range(n-1):\n        if lst_height[i]<=lst_height[i+1] and lst_rate[i]>=lst_rate[i+1]:\n            way += 1\n        else:\n            break\nprint(way)\n",
+        "highlighted_code": "<span class='highlight-red'>t = int(input())\nfor _ in range(t):\n    lst_height = []\n    lst_rate = []\n    way = 1\n    n = int(input())\n    for _ in range(n):\n        a, b = map(int, input().split())\n        lst_height.append(a)\n        lst_rate.append(b)\n    for i in range(n-1):\n        if lst_height[i]&lt;=lst_height[i+1] and lst_rate[i]&gt;=lst_rate[i+1]:\n            way += 1\n        else:\n            break\npri</span>nt(way)\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3affe535fa0f4f1d85a/27e30f767b3a46b283cbfec0/sub_1761989501598_vbj0zsc65.py",
+        "similarity_percent": 100.0,
+        "full_code": "t = int(input())\nfor _ in range(t):\n    lst_height = []\n    lst_rate = []\n    way = 1\n    n = int(input())\n    for _ in range(n):\n        a, b = map(int, input().split())\n        lst_height.append(a)\n        lst_rate.append(b)\n    for i in range(n-1):\n        if lst_height[i]<=lst_height[i+1] and lst_rate[i]>=lst_rate[i+1]:\n            way += 1\n        else:\n            break\nprint(way)\n",
+        "highlighted_code": "<span class='highlight-green'>t = int(input())\nfor _ in range(t):\n    lst_height = []\n    lst_rate = []\n    way = 1\n    n = int(input())\n    for _ in range(n):\n        a, b = map(int, input().split())\n        lst_height.append(a)\n        lst_rate.append(b)\n    for i in range(n-1):\n        if lst_height[i]&lt;=lst_height[i+1] and lst_rate[i]&gt;=lst_rate[i+1]:\n            way += 1\n        else:\n            break\npri</span>nt(way)\n"
+      },
+      "token_overlap": 169,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 2,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3affe535fa0f4f1d85a/27e30f767b3a46b283cbfec0/sub_1762445374276_6aibxxjk0.py",
+        "similarity_percent": 100.0,
+        "full_code": "t = int(input())\nfor _ in range(t):\n    lst_height = []\n    lst_rate = []\n    way = 1\n    n = int(input())\n    for _ in range(n):\n        a, b = map(int, input().split())\n        lst_height.append(a)\n        lst_rate.append(b)\n    for i in range(n-1):\n        if lst_height[i]<=lst_height[i+1] and lst_rate[i]>=lst_rate[i+1]:\n            way += 1\n        else:\n            break\nprint(way)\n",
+        "highlighted_code": "<span class='highlight-red'>t = int(input())\nfor _ in range(t):\n    lst_height = []\n    lst_rate = []\n    way = 1\n    n = int(input())\n    for _ in range(n):\n        a, b = map(int, input().split())\n        lst_height.append(a)\n        lst_rate.append(b)\n    for i in range(n-1):\n        if lst_height[i]&lt;=lst_height[i+1] and lst_rate[i]&gt;=lst_rate[i+1]:\n            way += 1\n        else:\n            break\npri</span>nt(way)\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3affe535fa0f4f1d85a/e59c34a1bebb49d29bfb3592/sub_1762577380744_pt87uh5rj.py",
+        "similarity_percent": 100.0,
+        "full_code": "t = int(input())\nfor _ in range(t):\n    cao = []\n    kho = []\n    cach = 1\n    n = int(input())\n    for _ in range(n):\n        a,b = map(int,input().split())\n        cao.append(a)\n        kho.append(b)\n    for i in range(n-1):\n        if cao [i] <= cao[i+1] and kho[i] >= kho[i+1]:\n            cach += 1\n        else:\n            break\nprint(cach)",
+        "highlighted_code": "<span class='highlight-green'>t = int(input())\nfor _ in range(t):\n    cao = []\n    kho = []\n    cach = 1\n    n = int(input())\n    for _ in range(n):\n        a,b = map(int,input().split())\n        cao.append(a)\n        kho.append(b)\n    for i in range(n-1):\n        if cao [i] &lt;= cao[i+1] and kho[i] &gt;= kho[i+1]:\n            cach += 1\n        else:\n            break\npri</span>nt(cach)"
+      },
+      "token_overlap": 169,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 3,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3affe535fa0f4f1d85a/27e30f767b3a46b283cbfec0/sub_1762445374276_6aibxxjk0.py",
+        "similarity_percent": 100.0,
+        "full_code": "t = int(input())\nfor _ in range(t):\n    lst_height = []\n    lst_rate = []\n    way = 1\n    n = int(input())\n    for _ in range(n):\n        a, b = map(int, input().split())\n        lst_height.append(a)\n        lst_rate.append(b)\n    for i in range(n-1):\n        if lst_height[i]<=lst_height[i+1] and lst_rate[i]>=lst_rate[i+1]:\n            way += 1\n        else:\n            break\nprint(way)\n",
+        "highlighted_code": "<span class='highlight-red'>t = int(input())\nfor _ in range(t):\n    lst_height = []\n    lst_rate = []\n    way = 1\n    n = int(input())\n    for _ in range(n):\n        a, b = map(int, input().split())\n        lst_height.append(a)\n        lst_rate.append(b)\n    for i in range(n-1):\n        if lst_height[i]&lt;=lst_height[i+1] and lst_rate[i]&gt;=lst_rate[i+1]:\n            way += 1\n        else:\n            break\npri</span>nt(way)\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3affe535fa0f4f1d85a/e59c34a1bebb49d29bfb3592/sub_1762577411962_ps6h6cilz.py",
+        "similarity_percent": 100.0,
+        "full_code": "t = int(input())\nfor _ in range(t):\n    lst_height = []\n    lst_rate = []\n    way = 1\n    n = int(input())\n    for _ in range(n):\n        a, b = map(int, input().split())\n        lst_height.append(a)\n        lst_rate.append(b)\n    for i in range(n-1):\n        if lst_height[i]<=lst_height[i+1] and lst_rate[i]>=lst_rate[i+1]:\n            way += 1\n        else:\n            break\nprint(way)\n",
+        "highlighted_code": "<span class='highlight-green'>t = int(input())\nfor _ in range(t):\n    lst_height = []\n    lst_rate = []\n    way = 1\n    n = int(input())\n    for _ in range(n):\n        a, b = map(int, input().split())\n        lst_height.append(a)\n        lst_rate.append(b)\n    for i in range(n-1):\n        if lst_height[i]&lt;=lst_height[i+1] and lst_rate[i]&gt;=lst_rate[i+1]:\n            way += 1\n        else:\n            break\npri</span>nt(way)\n"
+      },
+      "token_overlap": 169,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 4,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3affe535fa0f4f1d85a/27e30f767b3a46b283cbfec0/sub_1761989501598_vbj0zsc65.py",
+        "similarity_percent": 100.0,
+        "full_code": "t = int(input())\nfor _ in range(t):\n    lst_height = []\n    lst_rate = []\n    way = 1\n    n = int(input())\n    for _ in range(n):\n        a, b = map(int, input().split())\n        lst_height.append(a)\n        lst_rate.append(b)\n    for i in range(n-1):\n        if lst_height[i]<=lst_height[i+1] and lst_rate[i]>=lst_rate[i+1]:\n            way += 1\n        else:\n            break\nprint(way)\n",
+        "highlighted_code": "<span class='highlight-red'>t = int(input())\nfor _ in range(t):\n    lst_height = []\n    lst_rate = []\n    way = 1\n    n = int(input())\n    for _ in range(n):\n        a, b = map(int, input().split())\n        lst_height.append(a)\n        lst_rate.append(b)\n    for i in range(n-1):\n        if lst_height[i]&lt;=lst_height[i+1] and lst_rate[i]&gt;=lst_rate[i+1]:\n            way += 1\n        else:\n            break\npri</span>nt(way)\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3affe535fa0f4f1d85a/e59c34a1bebb49d29bfb3592/sub_1762577380744_pt87uh5rj.py",
+        "similarity_percent": 100.0,
+        "full_code": "t = int(input())\nfor _ in range(t):\n    cao = []\n    kho = []\n    cach = 1\n    n = int(input())\n    for _ in range(n):\n        a,b = map(int,input().split())\n        cao.append(a)\n        kho.append(b)\n    for i in range(n-1):\n        if cao [i] <= cao[i+1] and kho[i] >= kho[i+1]:\n            cach += 1\n        else:\n            break\nprint(cach)",
+        "highlighted_code": "<span class='highlight-green'>t = int(input())\nfor _ in range(t):\n    cao = []\n    kho = []\n    cach = 1\n    n = int(input())\n    for _ in range(n):\n        a,b = map(int,input().split())\n        cao.append(a)\n        kho.append(b)\n    for i in range(n-1):\n        if cao [i] &lt;= cao[i+1] and kho[i] &gt;= kho[i+1]:\n            cach += 1\n        else:\n            break\npri</span>nt(cach)"
+      },
+      "token_overlap": 169,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 5,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3affe535fa0f4f1d85a/27e30f767b3a46b283cbfec0/sub_1761989501598_vbj0zsc65.py",
+        "similarity_percent": 100.0,
+        "full_code": "t = int(input())\nfor _ in range(t):\n    lst_height = []\n    lst_rate = []\n    way = 1\n    n = int(input())\n    for _ in range(n):\n        a, b = map(int, input().split())\n        lst_height.append(a)\n        lst_rate.append(b)\n    for i in range(n-1):\n        if lst_height[i]<=lst_height[i+1] and lst_rate[i]>=lst_rate[i+1]:\n            way += 1\n        else:\n            break\nprint(way)\n",
+        "highlighted_code": "<span class='highlight-red'>t = int(input())\nfor _ in range(t):\n    lst_height = []\n    lst_rate = []\n    way = 1\n    n = int(input())\n    for _ in range(n):\n        a, b = map(int, input().split())\n        lst_height.append(a)\n        lst_rate.append(b)\n    for i in range(n-1):\n        if lst_height[i]&lt;=lst_height[i+1] and lst_rate[i]&gt;=lst_rate[i+1]:\n            way += 1\n        else:\n            break\npri</span>nt(way)\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3affe535fa0f4f1d85a/e59c34a1bebb49d29bfb3592/sub_1762577411962_ps6h6cilz.py",
+        "similarity_percent": 100.0,
+        "full_code": "t = int(input())\nfor _ in range(t):\n    lst_height = []\n    lst_rate = []\n    way = 1\n    n = int(input())\n    for _ in range(n):\n        a, b = map(int, input().split())\n        lst_height.append(a)\n        lst_rate.append(b)\n    for i in range(n-1):\n        if lst_height[i]<=lst_height[i+1] and lst_rate[i]>=lst_rate[i+1]:\n            way += 1\n        else:\n            break\nprint(way)\n",
+        "highlighted_code": "<span class='highlight-green'>t = int(input())\nfor _ in range(t):\n    lst_height = []\n    lst_rate = []\n    way = 1\n    n = int(input())\n    for _ in range(n):\n        a, b = map(int, input().split())\n        lst_height.append(a)\n        lst_rate.append(b)\n    for i in range(n-1):\n        if lst_height[i]&lt;=lst_height[i+1] and lst_rate[i]&gt;=lst_rate[i+1]:\n            way += 1\n        else:\n            break\npri</span>nt(way)\n"
+      },
+      "token_overlap": 169,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 6,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3affe535fa0f4f1d85a/e59c34a1bebb49d29bfb3592/sub_1762577380744_pt87uh5rj.py",
+        "similarity_percent": 100.0,
+        "full_code": "t = int(input())\nfor _ in range(t):\n    cao = []\n    kho = []\n    cach = 1\n    n = int(input())\n    for _ in range(n):\n        a,b = map(int,input().split())\n        cao.append(a)\n        kho.append(b)\n    for i in range(n-1):\n        if cao [i] <= cao[i+1] and kho[i] >= kho[i+1]:\n            cach += 1\n        else:\n            break\nprint(cach)",
+        "highlighted_code": "<span class='highlight-red'>t = int(input())\nfor _ in range(t):\n    cao = []\n    kho = []\n    cach = 1\n    n = int(input())\n    for _ in range(n):\n        a,b = map(int,input().split())\n        cao.append(a)\n        kho.append(b)\n    for i in range(n-1):\n        if cao [i] &lt;= cao[i+1] and kho[i] &gt;= kho[i+1]:\n            cach += 1\n        else:\n            break\npri</span>nt(cach)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3affe535fa0f4f1d85a/e59c34a1bebb49d29bfb3592/sub_1762577411962_ps6h6cilz.py",
+        "similarity_percent": 100.0,
+        "full_code": "t = int(input())\nfor _ in range(t):\n    lst_height = []\n    lst_rate = []\n    way = 1\n    n = int(input())\n    for _ in range(n):\n        a, b = map(int, input().split())\n        lst_height.append(a)\n        lst_rate.append(b)\n    for i in range(n-1):\n        if lst_height[i]<=lst_height[i+1] and lst_rate[i]>=lst_rate[i+1]:\n            way += 1\n        else:\n            break\nprint(way)\n",
+        "highlighted_code": "<span class='highlight-green'>t = int(input())\nfor _ in range(t):\n    lst_height = []\n    lst_rate = []\n    way = 1\n    n = int(input())\n    for _ in range(n):\n        a, b = map(int, input().split())\n        lst_height.append(a)\n        lst_rate.append(b)\n    for i in range(n-1):\n        if lst_height[i]&lt;=lst_height[i+1] and lst_rate[i]&gt;=lst_rate[i+1]:\n            way += 1\n        else:\n            break\npri</span>nt(way)\n"
+      },
+      "token_overlap": 169,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 7,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3affe535fa0f4f1d85a/ffdb326842044f2e98b7aaa7/sub_1761841320568_f9tfr9yao.py",
+        "similarity_percent": 71.43,
+        "full_code": "t = int(input())\nm = int(input())\nprint(m)",
+        "highlighted_code": "t = i<span class='highlight-red'>nt(input())\nm = int(input())\n</span>print(m)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3affe535fa0f4f1d85a/449c44ebafa84f0d8d5b6d0f/sub_1762310039895_ca4s0jxs0.py",
+        "similarity_percent": 11.79,
+        "full_code": "if __name__ == '__main__':\n    t = int(input())\n    n = int(input())\n    for _ in range(t):\n        danh_sach = []\n        for _ in range(n):\n            a,b = map(int, input().split())\n            danh_sach.append([a,b])\n        danh_sach.sort(key = lambda x: x[0])\n        danh_sach2 = []\n        for x in danh_sach:\n            danh_sach2.append(x[1])\n        cnt = 1\n        for i in range(1, len(danh_sach2)):\n            if danh_sach2[i] < danh_sach2[i - 1]:\n                cnt += 1\n            else:\n                break\n        print(cnt)",
+        "highlighted_code": "if __name__ == &#39;__main__&#39;:\n    t = i<span class='highlight-green'>nt(input())\n    n = int(input())\n    </span>for _ in range(t):\n        danh_sach = []\n        for _ in range(n):\n            a,b = map(int, input().split())\n            danh_sach.append([a,b])\n        danh_sach.sort(key = lambda x: x[0])\n        danh_sach2 = []\n        for x in danh_sach:\n            danh_sach2.append(x[1])\n        cnt = 1\n        for i in range(1, len(danh_sach2)):\n            if danh_sach2[i] &lt; danh_sach2[i - 1]:\n                cnt += 1\n            else:\n                break\n        print(cnt)"
+      },
+      "token_overlap": 25,
+      "max_similarity_percent": 71.43
+    },
+    {
+      "case_id": 8,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3affe535fa0f4f1d85a/27e30f767b3a46b283cbfec0/sub_1762445374276_6aibxxjk0.py",
+        "similarity_percent": 47.93,
+        "full_code": "t = int(input())\nfor _ in range(t):\n    lst_height = []\n    lst_rate = []\n    way = 1\n    n = int(input())\n    for _ in range(n):\n        a, b = map(int, input().split())\n        lst_height.append(a)\n        lst_rate.append(b)\n    for i in range(n-1):\n        if lst_height[i]<=lst_height[i+1] and lst_rate[i]>=lst_rate[i+1]:\n            way += 1\n        else:\n            break\nprint(way)\n",
+        "highlighted_code": "t <span class='highlight-red'>= int(input())\nfor _ in range(t):\n    lst_height </span>= []\n    lst_rate = []\n    way = 1\n    n <span class='highlight-red'>= int(input())\n    for _ in range(n):\n        a, b = map(int, input().split())\n        </span>lst_height.append(a)\n        lst_rate.append(b)\n    for i in range(n-1):\n        if lst_height[i]&lt;=lst_height[i+1] and lst_rate[i]&gt;=lst_rate[i+1]:\n            way += 1\n        else:\n            break\nprint(way)\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3affe535fa0f4f1d85a/449c44ebafa84f0d8d5b6d0f/sub_1762310039895_ca4s0jxs0.py",
+        "similarity_percent": 29.72,
+        "full_code": "if __name__ == '__main__':\n    t = int(input())\n    n = int(input())\n    for _ in range(t):\n        danh_sach = []\n        for _ in range(n):\n            a,b = map(int, input().split())\n            danh_sach.append([a,b])\n        danh_sach.sort(key = lambda x: x[0])\n        danh_sach2 = []\n        for x in danh_sach:\n            danh_sach2.append(x[1])\n        cnt = 1\n        for i in range(1, len(danh_sach2)):\n            if danh_sach2[i] < danh_sach2[i - 1]:\n                cnt += 1\n            else:\n                break\n        print(cnt)",
+        "highlighted_code": "if __name__ == &#39;__main__&#39;:\n    t = int(input())\n    n <span class='highlight-green'>= int(input())\n    for _ in range(t):\n        danh_sach </span>= []\n        for _ i<span class='highlight-green'>n range(n):\n            a,b = map(int, input().split())\n            </span>danh_sach.append([a,b])\n        danh_sach.sort(key = lambda x: x[0])\n        danh_sach2 = []\n        for x in danh_sach:\n            danh_sach2.append(x[1])\n        cnt = 1\n        for i in range(1, len(danh_sach2)):\n            if danh_sach2[i] &lt; danh_sach2[i - 1]:\n                cnt += 1\n            else:\n                break\n        print(cnt)"
+      },
+      "token_overlap": 81,
+      "max_similarity_percent": 47.93
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+t = int(input())
+
+while(t > 0):
+    t -= 1
+    d, m = map(int, input().split())
+
+    if (m == 12 and d >= 22) or (m == 1 and d <= 19):
+        zodiac = "Ma Ket"
+    elif (m == 1 and d >= 20) or (m == 2 and d <= 18):
+        zodiac = "Bao Binh"
+    elif (m == 2 and d >= 19) or (m == 3 and d <= 20):
+        zodiac = "Song Ngu"
+    elif (m == 3 and d >= 21) or (m == 4 and d <= 19):
+        zodiac = "Bach Duong"
+    elif (m == 4 and d >= 20) or (m == 5 and d <= 20):
+        zodiac = "Kim Nguu"
+    elif (m == 5 and d >= 21) or (m == 6 and d <= 20):
+        zodiac = "Song Tu"
+    elif (m == 6 and d >= 21) or (m == 7 and d <= 22):
+        zodiac = "Cu Giai"
+    elif (m == 7 and d >= 23) or (m == 8 and d <= 22):
+        zodiac = "Su Tu"
+    elif (m == 8 and d >= 23) or (m == 9 and d <= 22):
+        zodiac = "Xu Nu"
+    elif (m == 9 and d >= 23) or (m == 10 and d <= 22):
+        zodiac = "Thien Binh"
+    elif (m == 10 and d >= 23) or (m == 11 and d <= 22):
+        zodiac = "Thien Yet"
+    else: 
+        zodiac = "Nhan Ma"
+
+    print(zodiac)
+

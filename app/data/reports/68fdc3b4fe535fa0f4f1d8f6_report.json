@@ -1,0 +1,1847 @@
+{
+  "problem_id": "68fdc3b4fe535fa0f4f1d8f6",
+  "filter_criteria": {
+    "min_token_overlap": 80,
+    "min_similarity_percent": 60
+  },
+  "total_cases_found": 194,
+  "total_cases_filtered": 108,
+  "cases": [
+    {
+      "case_id": 1,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b4fe535fa0f4f1d8f6/27b0843555fd4abbb1c1a142/sub_1762337830877_yteau84m3.py",
+        "similarity_percent": 100.0,
+        "full_code": "a,b,c,d=map(int,input().split())\ndem=0\nwhile not a==b==c==d:\n    e=a\n    a = abs(b-a)\n    b = abs(c-b)\n    c = abs(d-c)\n    d = abs(e-d)\n    dem += 1\nprint(dem)",
+        "highlighted_code": "<span class='highlight-red'>a,b,c,d=map(int,input().split())\ndem=0\nwhile not a==b==c==d:\n    e=a\n    a = abs(b-a)\n    b = abs(c-b)\n    c = abs(d-c)\n    d = abs(e-d)\n    dem += 1\nprint(dem)</span>"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b4fe535fa0f4f1d8f6/e3bacd91f1ad41f482a842be/sub_1762335886827_1y2jtsxpy.py",
+        "similarity_percent": 100.0,
+        "full_code": "a,b,c,d=map(int,input().split())\ndem=0\nwhile not a==b==c==d:\n    e=a\n    a = abs(b-a)\n    b = abs(c-b)\n    c = abs(d-c)\n    d = abs(e-d)\n    dem += 1\nprint(dem)",
+        "highlighted_code": "<span class='highlight-green'>a,b,c,d=map(int,input().split())\ndem=0\nwhile not a==b==c==d:\n    e=a\n    a = abs(b-a)\n    b = abs(c-b)\n    c = abs(d-c)\n    d = abs(e-d)\n    dem += 1\nprint(dem)</span>"
+      },
+      "token_overlap": 105,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 2,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b4fe535fa0f4f1d8f6/0d74995bf22b4574a97a2297/sub_1761594737632_kj3jiq647.py",
+        "similarity_percent": 100.0,
+        "full_code": "import sys\ninput = sys.stdin.readline\na, b, c, d = map(int, input().split())\ncount = 0\nwhile True:\n    if a == b and b == c and c == d:\n        break \n    a, b, c, d = abs(a - b), abs(b - c), abs(c - d),abs(d - a)\n    count += 1\nprint(count)",
+        "highlighted_code": "<span class='highlight-red'>import sys\ninput = sys.stdin.readline\na, b, c, d = map(int, input().split())\ncount = 0\nwhile True:\n    if a == b and b == c and c == d:\n        break \n    a, b, c, d = abs(a - b), abs(b - c), abs(c - d),abs(d - a)\n    count += 1\nprin</span>t(count)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b4fe535fa0f4f1d8f6/0d74995bf22b4574a97a2297/sub_1762324712423_twk6higzc.py",
+        "similarity_percent": 100.0,
+        "full_code": "import sys\ninput = sys.stdin.readline\na, b, c, d = map(int, input().split())\ncount = 0\nwhile True:\n    if a == b and b == c and c == d:\n        break \n    a, b, c, d = abs(a - b), abs(b - c), abs(c - d),abs(d - a)\n    count += 1\nprint(count)",
+        "highlighted_code": "<span class='highlight-green'>import sys\ninput = sys.stdin.readline\na, b, c, d = map(int, input().split())\ncount = 0\nwhile True:\n    if a == b and b == c and c == d:\n        break \n    a, b, c, d = abs(a - b), abs(b - c), abs(c - d),abs(d - a)\n    count += 1\nprin</span>t(count)"
+      },
+      "token_overlap": 138,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 3,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b4fe535fa0f4f1d8f6/f95120b3a38a461085ef58cb/sub_1762324668097_zhwlhx3vz.py",
+        "similarity_percent": 100.0,
+        "full_code": "a1, a2, a3, a4 = map(int, input().split())\ntong = 0\nwhile not (a1 == 0 and a2 == 0 and a3 == 0 and a4 == 0):\n    if a1 == a2 == a3 == a4:\n        break\n    b1 = abs(a1 - a2)\n    b2 = abs(a2 - a3)\n    b3 = abs(a3 - a4)\n    b4 = abs(a4 - a1)\n    a1, a2, a3, a4 = b1, b2, b3, b4\n    tong = tong + 1\nprint(tong)",
+        "highlighted_code": "<span class='highlight-red'>a1, a2, a3, a4 = map(int, input().split())\ntong = 0\nwhile not (a1 == 0 and a2 == 0 and a3 == 0 and a4 == 0):\n    if a1 == a2 == a3 == a4:\n        break\n    b1 = abs(a1 - a2)\n    b2 = abs(a2 - a3)\n    b3 = abs(a3 - a4)\n    b4 = abs(a4 - a1)\n    a1, a2, a3, a4 = b1, b2, b3, b4\n    tong = tong + 1\nprint(tong</span>)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b4fe535fa0f4f1d8f6/f95120b3a38a461085ef58cb/sub_1761756540176_x1guuxwl7.py",
+        "similarity_percent": 100.0,
+        "full_code": "a1, a2, a3, a4 = map(int, input().split())\ncount = 0\nwhile not (a1 == 0 and a2 == 0 and a3 == 0 and a4 == 0):\n    if a1 == a2 == a3 == a4:\n        break\n    b1 = abs(a1 - a2)\n    b2 = abs(a2 - a3)\n    b3 = abs(a3 - a4)\n    b4 = abs(a4 - a1)\n    a1, a2, a3, a4 = b1, b2, b3, b4\n    count = count + 1\nprint(count)",
+        "highlighted_code": "<span class='highlight-green'>a1, a2, a3, a4 = map(int, input().split())\ncount = 0\nwhile not (a1 == 0 and a2 == 0 and a3 == 0 and a4 == 0):\n    if a1 == a2 == a3 == a4:\n        break\n    b1 = abs(a1 - a2)\n    b2 = abs(a2 - a3)\n    b3 = abs(a3 - a4)\n    b4 = abs(a4 - a1)\n    a1, a2, a3, a4 = b1, b2, b3, b4\n    count = count + 1\nprint(count</span>)"
+      },
+      "token_overlap": 152,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 4,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b4fe535fa0f4f1d8f6/e6281d37906440c8960727fd/sub_1762336397960_w2o3iszg4.py",
+        "similarity_percent": 100.0,
+        "full_code": "while True:\n    a1, a2, a3, a4 = map(int, input().split())\n    if a1 == 0 and a2 == 0 and a3 == 0 and a4 == 0:\n        break\n    count = 0\n    while len({a1, a2, a3, a4}) > 1:\n        a1, a2, a3, a4 = abs(a1 - a2), abs(a2 - a3), abs(a3 - a4), abs(a4 - a1)\n        count += 1\n    print(count)",
+        "highlighted_code": "<span class='highlight-red'>while True:\n    a1, a2, a3, a4 = map(int, input().split())\n    if a1 == 0 and a2 == 0 and a3 == 0 and a4 == 0:\n        break\n    count = 0\n    while len({a1, a2, a3, a4}) &gt; 1:\n        a1, a2, a3, a4 = abs(a1 - a2), abs(a2 - a3), abs(a3 - a4), abs(a4 - a1)\n        count += 1\n    prin</span>t(count)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b4fe535fa0f4f1d8f6/e6281d37906440c8960727fd/sub_1762336235388_q4di04h8t.py",
+        "similarity_percent": 100.0,
+        "full_code": "while True:\n    a1, a2, a3, a4 = map(int, input().split())\n    if a1 == 0 and a2 == 0 and a3 == 0 and a4 == 0:\n        break\n\n    count = 0\n    while len({a1, a2, a3, a4}) > 1:\n        a1, a2, a3, a4 = abs(a1 - a2), abs(a2 - a3), abs(a3 - a4), abs(a4 - a1)\n        count += 1\n\n    print(count)",
+        "highlighted_code": "<span class='highlight-green'>while True:\n    a1, a2, a3, a4 = map(int, input().split())\n    if a1 == 0 and a2 == 0 and a3 == 0 and a4 == 0:\n        break\n\n    count = 0\n    while len({a1, a2, a3, a4}) &gt; 1:\n        a1, a2, a3, a4 = abs(a1 - a2), abs(a2 - a3), abs(a3 - a4), abs(a4 - a1)\n        count += 1\n\n    prin</span>t(count)"
+      },
+      "token_overlap": 147,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 5,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b4fe535fa0f4f1d8f6/8e236cb825b041b0a82527f2/sub_1761833072369_o7r9u0mw3.py",
+        "similarity_percent": 95.33,
+        "full_code": "a1, a2, a3, a4 = map(int, input().split())\n\ni = 0\nwhile not (a1 == a2 == a3 == a4):\n    prev_a1 = a1\n    a1 = abs(a1 - a2)\n    a2 = abs(a2 - a3)\n    a3 = abs(a3 - a4)\n    a4 = abs(a4 - prev_a1)\n    i += 1\nprint(i)",
+        "highlighted_code": "<span class='highlight-red'>a1, a2, a3, a4 = map(int, input().split())\n\ni = 0\nwhile not (a1 =</span>= a2 == a3 <span class='highlight-red'>== a4):\n    prev_a1 = a1\n    a1 = abs(a1 - a2)\n    a2 = abs(a2 - a3)\n    a3 = abs(a3 - a4)\n    a4 = abs(a4 - prev_a1)\n    i += 1\nprint(i)</span>"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b4fe535fa0f4f1d8f6/3fa6af8d916a46039239cabe/sub_1762336876492_d5ukn1zp9.py",
+        "similarity_percent": 88.7,
+        "full_code": "a,b,c,d=map(int,input().split())\ncount=0\nwhile not(a==b and a==c and a==d):\n    e=a\n    a=abs(b-a)\n    b=abs(c-b)\n    c=abs(d-c)\n    d=abs(e-d)\n    count+=1\nprint(count)",
+        "highlighted_code": "<span class='highlight-green'>a,b,c,d=map(int,input().split())\ncount=0\nwhile not(a=</span>=b and a==c and a<span class='highlight-green'>==d):\n    e=a\n    a=abs(b-a)\n    b=abs(c-b)\n    c=abs(d-c)\n    d=abs(e-d)\n    count+=1\nprint(count)</span>"
+      },
+      "token_overlap": 102,
+      "max_similarity_percent": 95.33
+    },
+    {
+      "case_id": 6,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b4fe535fa0f4f1d8f6/e4a8123d49534012b2f0d978/sub_1762338515977_49yugxskb.py",
+        "similarity_percent": 90.35,
+        "full_code": "\na1, a2, a3, a4 = map(int, input().split())\n   \ncount = 0\nwhile not (a1 == a2 == a3 == a4):\n        na1 = abs(a1 - a2)\n        na2 = abs(a2 - a3)\n        na3 = abs(a3 - a4)\n        na4 = abs(a4 - a1)\n        a1, a2, a3, a4 = na1, na2, na3, na4\n        count += 1\nprint(count)",
+        "highlighted_code": "<span class='highlight-red'>\na1, a2, a3, a4 = map(int, input().split())\n   \ncount = 0\nwhile not (a1 == a2 == a3 == a4):\n        na1</span> =<span class='highlight-red'> abs(a1 - a2)\n        na2 = abs(a2 - a3)\n        na3 = abs(a3 - a4)\n        na4 = abs(a4 - a1)\n        a1, a2, a3, a4 = na1, na2,</span> na3, na4\n        count += 1\nprint(count)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b4fe535fa0f4f1d8f6/a34ffbda761b435ca043fd30/sub_1762356974907_dg7kw64b3.py",
+        "similarity_percent": 86.55,
+        "full_code": "a, b, c, d=map(int, input().split())\nso_lan = 0\nwhile not (a==b==c==d):\n    so_lan+=1\n    a1=abs(a-b)\n    b1=abs(b-c)\n    c1=abs(c-d)\n    d1=abs(d-a)\n    a, b, c, d= a1, b1, c1, d1\nprint(so_lan)",
+        "highlighted_code": "<span class='highlight-green'>a, b, c, d=map(int, input().split())\nso_lan = 0\nwhile not (a==b==c==d):\n    so_lan</span>+=1\n    a1=<span class='highlight-green'>abs(a-b)\n    b1=abs(b-c)\n    c1=abs(c-d)\n    d1=abs(d-a)\n    a, b, c, d= a1, b1, </span>c1, d1\nprint(so_lan)"
+      },
+      "token_overlap": 103,
+      "max_similarity_percent": 90.35
+    },
+    {
+      "case_id": 7,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b4fe535fa0f4f1d8f6/cd93b2ff882a4ffa85f4518f/sub_1761758662291_4j1muc0wc.py",
+        "similarity_percent": 88.24,
+        "full_code": "a = list(map(int, input().split())) \ndem = 0\nwhile len(set(a)) != 1:     \n    b = [abs(a[i] - a[(i+1)%4]) for i in range(4)]\n    a = b\n    dem += 1\n\nprint(dem)",
+        "highlighted_code": "<span class='highlight-red'>a = list(map(int, input().split())) \ndem = 0\nwhile len(set(a)) != 1:     \n    b = [abs(a[i] - a[(i+1)%4]) for i in range(4)]\n    a </span>= b\n    dem += 1\n\nprint(dem)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b4fe535fa0f4f1d8f6/cd93b2ff882a4ffa85f4518f/sub_1762325035140_su6hp5eqc.py",
+        "similarity_percent": 88.24,
+        "full_code": "a=list(map(int, input().split())) \ndem=0\nwhile len(set(a))!=1:     \n    b=[abs(a[i]-a[(i+1)%4]) for i in range(4)]\n    a=b\n    dem=dem+1\nprint(dem)",
+        "highlighted_code": "<span class='highlight-green'>a=list(map(int, input().split())) \ndem=0\nwhile len(set(a))!=1:     \n    b=[abs(a[i]-a[(i+1)%4]) for i in range(4)]\n    a</span>=b\n    dem=dem+1\nprint(dem)"
+      },
+      "token_overlap": 90,
+      "max_similarity_percent": 88.24
+    },
+    {
+      "case_id": 8,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b4fe535fa0f4f1d8f6/27b0843555fd4abbb1c1a142/sub_1762337830877_yteau84m3.py",
+        "similarity_percent": 86.67,
+        "full_code": "a,b,c,d=map(int,input().split())\ndem=0\nwhile not a==b==c==d:\n    e=a\n    a = abs(b-a)\n    b = abs(c-b)\n    c = abs(d-c)\n    d = abs(e-d)\n    dem += 1\nprint(dem)",
+        "highlighted_code": "<span class='highlight-red'>a,b,c,d=map(int,input().split())\ndem=0\nwhile n</span>ot a==b==c==d:\n    e<span class='highlight-red'>=a\n    a = abs(b-a)\n    b = abs(c-b)\n    c = abs(d-c)\n    d = abs(e-d)\n    dem += 1\nprint(dem)</span>"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b4fe535fa0f4f1d8f6/8e236cb825b041b0a82527f2/sub_1761833072369_o7r9u0mw3.py",
+        "similarity_percent": 85.05,
+        "full_code": "a1, a2, a3, a4 = map(int, input().split())\n\ni = 0\nwhile not (a1 == a2 == a3 == a4):\n    prev_a1 = a1\n    a1 = abs(a1 - a2)\n    a2 = abs(a2 - a3)\n    a3 = abs(a3 - a4)\n    a4 = abs(a4 - prev_a1)\n    i += 1\nprint(i)",
+        "highlighted_code": "<span class='highlight-green'>a1, a2, a3, a4 = map(int, input().split())\n\ni = 0\nwhile n</span>ot (a1 == a2 == a3 == a4):\n    prev_a1 <span class='highlight-green'>= a1\n    a1 = abs(a1 - a2)\n    a2 = abs(a2 - a3)\n    a3 = abs(a3 - a4)\n    a4 = abs(a4 - prev_a1)\n    i += 1\nprint(i)</span>"
+      },
+      "token_overlap": 91,
+      "max_similarity_percent": 86.67
+    },
+    {
+      "case_id": 9,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b4fe535fa0f4f1d8f6/27b0843555fd4abbb1c1a142/sub_1762337830877_yteau84m3.py",
+        "similarity_percent": 86.67,
+        "full_code": "a,b,c,d=map(int,input().split())\ndem=0\nwhile not a==b==c==d:\n    e=a\n    a = abs(b-a)\n    b = abs(c-b)\n    c = abs(d-c)\n    d = abs(e-d)\n    dem += 1\nprint(dem)",
+        "highlighted_code": "<span class='highlight-red'>a,b,c,d=map(int,input().split())\ndem=0\nwhile n</span>ot a==b==c==d:\n    e<span class='highlight-red'>=a\n    a = abs(b-a)\n    b = abs(c-b)\n    c = abs(d-c)\n    d = abs(e-d)\n    dem += 1\nprint(dem)</span>"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b4fe535fa0f4f1d8f6/3fa6af8d916a46039239cabe/sub_1762336876492_d5ukn1zp9.py",
+        "similarity_percent": 79.13,
+        "full_code": "a,b,c,d=map(int,input().split())\ncount=0\nwhile not(a==b and a==c and a==d):\n    e=a\n    a=abs(b-a)\n    b=abs(c-b)\n    c=abs(d-c)\n    d=abs(e-d)\n    count+=1\nprint(count)",
+        "highlighted_code": "<span class='highlight-green'>a,b,c,d=map(int,input().split())\ncount=0\nwhile n</span>ot(a==b and a==c and a==d):\n    e<span class='highlight-green'>=a\n    a=abs(b-a)\n    b=abs(c-b)\n    c=abs(d-c)\n    d=abs(e-d)\n    count+=1\nprint(count)</span>"
+      },
+      "token_overlap": 91,
+      "max_similarity_percent": 86.67
+    },
+    {
+      "case_id": 10,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b4fe535fa0f4f1d8f6/e3bacd91f1ad41f482a842be/sub_1762335886827_1y2jtsxpy.py",
+        "similarity_percent": 86.67,
+        "full_code": "a,b,c,d=map(int,input().split())\ndem=0\nwhile not a==b==c==d:\n    e=a\n    a = abs(b-a)\n    b = abs(c-b)\n    c = abs(d-c)\n    d = abs(e-d)\n    dem += 1\nprint(dem)",
+        "highlighted_code": "<span class='highlight-red'>a,b,c,d=map(int,input().split())\ndem=0\nwhile n</span>ot a==b==c==d:\n    e<span class='highlight-red'>=a\n    a = abs(b-a)\n    b = abs(c-b)\n    c = abs(d-c)\n    d = abs(e-d)\n    dem += 1\nprint(dem)</span>"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b4fe535fa0f4f1d8f6/3fa6af8d916a46039239cabe/sub_1762336876492_d5ukn1zp9.py",
+        "similarity_percent": 79.13,
+        "full_code": "a,b,c,d=map(int,input().split())\ncount=0\nwhile not(a==b and a==c and a==d):\n    e=a\n    a=abs(b-a)\n    b=abs(c-b)\n    c=abs(d-c)\n    d=abs(e-d)\n    count+=1\nprint(count)",
+        "highlighted_code": "<span class='highlight-green'>a,b,c,d=map(int,input().split())\ncount=0\nwhile n</span>ot(a==b and a==c and a==d):\n    e<span class='highlight-green'>=a\n    a=abs(b-a)\n    b=abs(c-b)\n    c=abs(d-c)\n    d=abs(e-d)\n    count+=1\nprint(count)</span>"
+      },
+      "token_overlap": 91,
+      "max_similarity_percent": 86.67
+    },
+    {
+      "case_id": 11,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b4fe535fa0f4f1d8f6/27e30f767b3a46b283cbfec0/sub_1761663882495_qt0wi8tuq.py",
+        "similarity_percent": 86.15,
+        "full_code": "a1,a2,a3,a4 = map(int, input().split())\ncount = -1\nwhile not (a1 == 0 and a2 == 0 and a3 == 0 and a4 == 0):\n    b1 = abs(a1-a2)\n    b2 = abs(a2-a3)\n    b3 = abs(a3-a4)\n    b4 = abs(a4-a1)\n    a1,a2,a3,a4 = b1,b2,b3,b4\n    count += 1\nprint(count)\n",
+        "highlighted_code": "<span class='highlight-red'>a1,a2,a3,a4 = map(int, input().split())\ncount = </span>-1\nwhile <span class='highlight-red'>not (a1 == 0 and a2 == 0 and a3 == 0 and a4 == </span>0):\n    b1 = <span class='highlight-red'>abs(a1-a2)\n    b2 = abs(a2-a3)\n    b3 = abs(a3-a4)\n    b4 = abs(a4-a1)\n    a1,a2,a3,a4 = b1,b2,b3,b4\n    count </span>+= 1\nprint(count)\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b4fe535fa0f4f1d8f6/f95120b3a38a461085ef58cb/sub_1762324668097_zhwlhx3vz.py",
+        "similarity_percent": 73.68,
+        "full_code": "a1, a2, a3, a4 = map(int, input().split())\ntong = 0\nwhile not (a1 == 0 and a2 == 0 and a3 == 0 and a4 == 0):\n    if a1 == a2 == a3 == a4:\n        break\n    b1 = abs(a1 - a2)\n    b2 = abs(a2 - a3)\n    b3 = abs(a3 - a4)\n    b4 = abs(a4 - a1)\n    a1, a2, a3, a4 = b1, b2, b3, b4\n    tong = tong + 1\nprint(tong)",
+        "highlighted_code": "<span class='highlight-green'>a1, a2, a3, a4 = map(int, input().split())\ntong = </span>0\nwhile <span class='highlight-green'>not (a1 == 0 and a2 == 0 and a3 == 0 and a4 == </span>0):\n    if a1 == a2 == a3 == a4:\n        break\n    b1 = <span class='highlight-green'>abs(a1 - a2)\n    b2 = abs(a2 - a3)\n    b3 = abs(a3 - a4)\n    b4 = abs(a4 - a1)\n    a1, a2, a3, a4 = b1, b2, b3, b4\n    tong </span>= tong + 1\nprint(tong)"
+      },
+      "token_overlap": 112,
+      "max_similarity_percent": 86.15
+    },
+    {
+      "case_id": 12,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b4fe535fa0f4f1d8f6/27e30f767b3a46b283cbfec0/sub_1761663882495_qt0wi8tuq.py",
+        "similarity_percent": 86.15,
+        "full_code": "a1,a2,a3,a4 = map(int, input().split())\ncount = -1\nwhile not (a1 == 0 and a2 == 0 and a3 == 0 and a4 == 0):\n    b1 = abs(a1-a2)\n    b2 = abs(a2-a3)\n    b3 = abs(a3-a4)\n    b4 = abs(a4-a1)\n    a1,a2,a3,a4 = b1,b2,b3,b4\n    count += 1\nprint(count)\n",
+        "highlighted_code": "<span class='highlight-red'>a1,a2,a3,a4 = map(int, input().split())\ncount = </span>-1\nwhile <span class='highlight-red'>not (a1 == 0 and a2 == 0 and a3 == 0 and a4 == </span>0):\n    b1 = <span class='highlight-red'>abs(a1-a2)\n    b2 = abs(a2-a3)\n    b3 = abs(a3-a4)\n    b4 = abs(a4-a1)\n    a1,a2,a3,a4 = b1,b2,b3,b4\n    count </span>+= 1\nprint(count)\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b4fe535fa0f4f1d8f6/f95120b3a38a461085ef58cb/sub_1761756540176_x1guuxwl7.py",
+        "similarity_percent": 73.68,
+        "full_code": "a1, a2, a3, a4 = map(int, input().split())\ncount = 0\nwhile not (a1 == 0 and a2 == 0 and a3 == 0 and a4 == 0):\n    if a1 == a2 == a3 == a4:\n        break\n    b1 = abs(a1 - a2)\n    b2 = abs(a2 - a3)\n    b3 = abs(a3 - a4)\n    b4 = abs(a4 - a1)\n    a1, a2, a3, a4 = b1, b2, b3, b4\n    count = count + 1\nprint(count)",
+        "highlighted_code": "<span class='highlight-green'>a1, a2, a3, a4 = map(int, input().split())\ncount = </span>0\nwhile <span class='highlight-green'>not (a1 == 0 and a2 == 0 and a3 == 0 and a4 == </span>0):\n    if a1 == a2 == a3 == a4:\n        break\n    b1 = <span class='highlight-green'>abs(a1 - a2)\n    b2 = abs(a2 - a3)\n    b3 = abs(a3 - a4)\n    b4 = abs(a4 - a1)\n    a1, a2, a3, a4 = b1, b2, b3, b4\n    count </span>= count + 1\nprint(count)"
+      },
+      "token_overlap": 112,
+      "max_similarity_percent": 86.15
+    },
+    {
+      "case_id": 13,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b4fe535fa0f4f1d8f6/8e236cb825b041b0a82527f2/sub_1761833072369_o7r9u0mw3.py",
+        "similarity_percent": 85.98,
+        "full_code": "a1, a2, a3, a4 = map(int, input().split())\n\ni = 0\nwhile not (a1 == a2 == a3 == a4):\n    prev_a1 = a1\n    a1 = abs(a1 - a2)\n    a2 = abs(a2 - a3)\n    a3 = abs(a3 - a4)\n    a4 = abs(a4 - prev_a1)\n    i += 1\nprint(i)",
+        "highlighted_code": "<span class='highlight-red'>a1, a2, a3, a4 = map(int, input().split())\n\ni = 0\nwhile not (a1 =</span>= a2 == a3 == a4):\n    prev_a1 = a1\n    a1 = <span class='highlight-red'>abs(a1 - a2)\n    a2 = abs(a2 - a3)\n    a3 = abs(a3 - a4)\n    a4 = abs(a4 - prev_a1)\n    i += 1\nprint(i)</span>"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b4fe535fa0f4f1d8f6/53387d97307e4d81b93edb94/sub_1762339132352_3h0f82lt7.py",
+        "similarity_percent": 72.44,
+        "full_code": "a, b, c, d = map(int, input().split())\ndem = 0\nwhile not (a == b and b == c and c == d):\n a1 , b1 , c1 , d1 = a , b , c ,d\n a = abs (a1-b1)\n b = abs (b1-c1)\n c = abs (c1-d1)\n d = abs (d1-a1)\n dem+=1\nprint (dem)",
+        "highlighted_code": "<span class='highlight-green'>a, b, c, d = map(int, input().split())\ndem = 0\nwhile not (a =</span>= b and b == c and c == d):\n a1 , b1 , c1 , d1 = a , b , c ,d\n a = <span class='highlight-green'>abs (a1-b1)\n b = abs (b1-c1)\n c = abs (c1-d1)\n d = abs (d1-a1)\n dem+=1\nprint (dem)</span>"
+      },
+      "token_overlap": 92,
+      "max_similarity_percent": 85.98
+    },
+    {
+      "case_id": 14,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b4fe535fa0f4f1d8f6/e4a8123d49534012b2f0d978/sub_1762338515977_49yugxskb.py",
+        "similarity_percent": 85.96,
+        "full_code": "\na1, a2, a3, a4 = map(int, input().split())\n   \ncount = 0\nwhile not (a1 == a2 == a3 == a4):\n        na1 = abs(a1 - a2)\n        na2 = abs(a2 - a3)\n        na3 = abs(a3 - a4)\n        na4 = abs(a4 - a1)\n        a1, a2, a3, a4 = na1, na2, na3, na4\n        count += 1\nprint(count)",
+        "highlighted_code": "<span class='highlight-red'>\na1, a2, a3, a4 = map(int, input().split())\n   \ncount = 0\nwhile not (a1 </span>== a2 == a3 == a4):\n       <span class='highlight-red'> na1 = abs(a1 - a2)\n        na2 = abs(a2 - a3)\n        na3 = abs(a3 - a4)\n        na4 = abs(a4 - a1)\n        a1, a2, a3, a4 = na1, na2, na3, na4\n        count</span> += 1\nprint(count)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b4fe535fa0f4f1d8f6/f95120b3a38a461085ef58cb/sub_1762324668097_zhwlhx3vz.py",
+        "similarity_percent": 64.47,
+        "full_code": "a1, a2, a3, a4 = map(int, input().split())\ntong = 0\nwhile not (a1 == 0 and a2 == 0 and a3 == 0 and a4 == 0):\n    if a1 == a2 == a3 == a4:\n        break\n    b1 = abs(a1 - a2)\n    b2 = abs(a2 - a3)\n    b3 = abs(a3 - a4)\n    b4 = abs(a4 - a1)\n    a1, a2, a3, a4 = b1, b2, b3, b4\n    tong = tong + 1\nprint(tong)",
+        "highlighted_code": "<span class='highlight-green'>a1, a2, a3, a4 = map(int, input().split())\ntong = 0\nwhile not (a1 =</span>= 0 and a2 == 0 and a3 == 0 and a4 == 0):\n    if a1 == a2 == a3 == a4:\n        break\n    <span class='highlight-green'>b1 = abs(a1 - a2)\n    b2 = abs(a2 - a3)\n    b3 = abs(a3 - a4)\n    b4 = abs(a4 - a1)\n    a1, a2, a3, a4 = b1, b2, b3, b4\n    tong </span>= tong + 1\nprint(tong)"
+      },
+      "token_overlap": 98,
+      "max_similarity_percent": 85.96
+    },
+    {
+      "case_id": 15,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b4fe535fa0f4f1d8f6/e4a8123d49534012b2f0d978/sub_1762338515977_49yugxskb.py",
+        "similarity_percent": 85.96,
+        "full_code": "\na1, a2, a3, a4 = map(int, input().split())\n   \ncount = 0\nwhile not (a1 == a2 == a3 == a4):\n        na1 = abs(a1 - a2)\n        na2 = abs(a2 - a3)\n        na3 = abs(a3 - a4)\n        na4 = abs(a4 - a1)\n        a1, a2, a3, a4 = na1, na2, na3, na4\n        count += 1\nprint(count)",
+        "highlighted_code": "<span class='highlight-red'>\na1, a2, a3, a4 = map(int, input().split())\n   \ncount = 0\nwhile not (a1 </span>== a2 == a3 == a4):\n       <span class='highlight-red'> na1 = abs(a1 - a2)\n        na2 = abs(a2 - a3)\n        na3 = abs(a3 - a4)\n        na4 = abs(a4 - a1)\n        a1, a2, a3, a4 = na1, na2, na3, na4\n        count</span> += 1\nprint(count)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b4fe535fa0f4f1d8f6/f95120b3a38a461085ef58cb/sub_1761756540176_x1guuxwl7.py",
+        "similarity_percent": 64.47,
+        "full_code": "a1, a2, a3, a4 = map(int, input().split())\ncount = 0\nwhile not (a1 == 0 and a2 == 0 and a3 == 0 and a4 == 0):\n    if a1 == a2 == a3 == a4:\n        break\n    b1 = abs(a1 - a2)\n    b2 = abs(a2 - a3)\n    b3 = abs(a3 - a4)\n    b4 = abs(a4 - a1)\n    a1, a2, a3, a4 = b1, b2, b3, b4\n    count = count + 1\nprint(count)",
+        "highlighted_code": "<span class='highlight-green'>a1, a2, a3, a4 = map(int, input().split())\ncount = 0\nwhile not (a1 =</span>= 0 and a2 == 0 and a3 == 0 and a4 == 0):\n    if a1 == a2 == a3 == a4:\n        break\n    <span class='highlight-green'>b1 = abs(a1 - a2)\n    b2 = abs(a2 - a3)\n    b3 = abs(a3 - a4)\n    b4 = abs(a4 - a1)\n    a1, a2, a3, a4 = b1, b2, b3, b4\n    count </span>= count + 1\nprint(count)"
+      },
+      "token_overlap": 98,
+      "max_similarity_percent": 85.96
+    },
+    {
+      "case_id": 16,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b4fe535fa0f4f1d8f6/53387d97307e4d81b93edb94/sub_1762339132352_3h0f82lt7.py",
+        "similarity_percent": 85.83,
+        "full_code": "a, b, c, d = map(int, input().split())\ndem = 0\nwhile not (a == b and b == c and c == d):\n a1 , b1 , c1 , d1 = a , b , c ,d\n a = abs (a1-b1)\n b = abs (b1-c1)\n c = abs (c1-d1)\n d = abs (d1-a1)\n dem+=1\nprint (dem)",
+        "highlighted_code": "<span class='highlight-red'>a, b, c, d = map(int, input().split())\ndem = 0\nwhile not (a == b and b == c and c == d)</span>:\n a1 , b1 , c1 , d1 = a , b , c ,d\n a = <span class='highlight-red'>abs (a1-b1)\n b = abs (b1-c1)\n c = abs (c1-d1)\n d = abs (d1-a1)\n dem+=1\nprint (dem)</span>"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b4fe535fa0f4f1d8f6/3fa6af8d916a46039239cabe/sub_1762336876492_d5ukn1zp9.py",
+        "similarity_percent": 94.78,
+        "full_code": "a,b,c,d=map(int,input().split())\ncount=0\nwhile not(a==b and a==c and a==d):\n    e=a\n    a=abs(b-a)\n    b=abs(c-b)\n    c=abs(d-c)\n    d=abs(e-d)\n    count+=1\nprint(count)",
+        "highlighted_code": "<span class='highlight-green'>a,b,c,d=map(int,input().split())\ncount=0\nwhile not(a==b and a==c and a==d)</span>:\n    e=a\n    a=<span class='highlight-green'>abs(b-a)\n    b=abs(c-b)\n    c=abs(d-c)\n    d=abs(e-d)\n    count+=1\nprint(count)</span>"
+      },
+      "token_overlap": 109,
+      "max_similarity_percent": 94.78
+    },
+    {
+      "case_id": 17,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b4fe535fa0f4f1d8f6/3fa6af8d916a46039239cabe/sub_1761646788738_jaqcylqz1.py",
+        "similarity_percent": 85.09,
+        "full_code": "a,b,c,d=map(int,input().split())\ne=a\ncount=0\nwhile not(a==b and a==c and a==d):\n    a=abs(b-a)\n    b=abs(c-b)\n    c=abs(d-c)\n    d=abs(e-d)\n    e=a\n    count+=1\nprint(count)",
+        "highlighted_code": "<span class='highlight-red'>a,b,c,d=map(int,input().split())\ne=</span>a\ncount<span class='highlight-red'>=0\nwhile not(a==b and a==c and a==d)</span>:\n    a=<span class='highlight-red'>abs(b-a)\n    b=abs(c-b)\n    c=abs(d-c)\n    d=abs(e-d</span>)\n    e=a\n    count+=1\nprint(count)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b4fe535fa0f4f1d8f6/3fa6af8d916a46039239cabe/sub_1762336876492_d5ukn1zp9.py",
+        "similarity_percent": 83.48,
+        "full_code": "a,b,c,d=map(int,input().split())\ncount=0\nwhile not(a==b and a==c and a==d):\n    e=a\n    a=abs(b-a)\n    b=abs(c-b)\n    c=abs(d-c)\n    d=abs(e-d)\n    count+=1\nprint(count)",
+        "highlighted_code": "<span class='highlight-green'>a,b,c,d=map(int,input().split())\ncount=0\nwhile not(a==b and a==c and a==d)</span>:\n    e=a\n    a=<span class='highlight-green'>abs(b-a)\n    b=abs(c-b)\n    c=abs(d-c)\n    d=abs(e-d</span>)\n    count+=1\nprint(count)"
+      },
+      "token_overlap": 97,
+      "max_similarity_percent": 85.09
+    },
+    {
+      "case_id": 18,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b4fe535fa0f4f1d8f6/8e236cb825b041b0a82527f2/sub_1761833072369_o7r9u0mw3.py",
+        "similarity_percent": 85.05,
+        "full_code": "a1, a2, a3, a4 = map(int, input().split())\n\ni = 0\nwhile not (a1 == a2 == a3 == a4):\n    prev_a1 = a1\n    a1 = abs(a1 - a2)\n    a2 = abs(a2 - a3)\n    a3 = abs(a3 - a4)\n    a4 = abs(a4 - prev_a1)\n    i += 1\nprint(i)",
+        "highlighted_code": "<span class='highlight-red'>a1, a2, a3, a4 = map(int, input().split())\n\ni = 0\nwhile n</span>ot (a1 == a2 == a3 == a4):\n    prev_a1 <span class='highlight-red'>= a1\n    a1 = abs(a1 - a2)\n    a2 = abs(a2 - a3)\n    a3 = abs(a3 - a4)\n    a4 = abs(a4 - prev_a1)\n    i += 1\nprint(i)</span>"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b4fe535fa0f4f1d8f6/e3bacd91f1ad41f482a842be/sub_1762335886827_1y2jtsxpy.py",
+        "similarity_percent": 86.67,
+        "full_code": "a,b,c,d=map(int,input().split())\ndem=0\nwhile not a==b==c==d:\n    e=a\n    a = abs(b-a)\n    b = abs(c-b)\n    c = abs(d-c)\n    d = abs(e-d)\n    dem += 1\nprint(dem)",
+        "highlighted_code": "<span class='highlight-green'>a,b,c,d=map(int,input().split())\ndem=0\nwhile n</span>ot a==b==c==d:\n    e<span class='highlight-green'>=a\n    a = abs(b-a)\n    b = abs(c-b)\n    c = abs(d-c)\n    d = abs(e-d)\n    dem += 1\nprint(dem)</span>"
+      },
+      "token_overlap": 91,
+      "max_similarity_percent": 86.67
+    },
+    {
+      "case_id": 19,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b4fe535fa0f4f1d8f6/8e236cb825b041b0a82527f2/sub_1761833072369_o7r9u0mw3.py",
+        "similarity_percent": 84.11,
+        "full_code": "a1, a2, a3, a4 = map(int, input().split())\n\ni = 0\nwhile not (a1 == a2 == a3 == a4):\n    prev_a1 = a1\n    a1 = abs(a1 - a2)\n    a2 = abs(a2 - a3)\n    a3 = abs(a3 - a4)\n    a4 = abs(a4 - prev_a1)\n    i += 1\nprint(i)",
+        "highlighted_code": "<span class='highlight-red'>a1, a2, a3, a4 = map(int, input().split())\n\ni = 0\nwhile not (a1 == a2 == a3 == a4):\n    prev_a1 </span>= a1\n    a1 = <span class='highlight-red'>abs(a1 - a2)\n    a2 = abs(a2 - a3)\n    a3 = abs(a3 - a4)\n    a4 = abs(a4 - prev_a1</span>)\n    i += 1\nprint(i)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b4fe535fa0f4f1d8f6/e4a8123d49534012b2f0d978/sub_1762338515977_49yugxskb.py",
+        "similarity_percent": 78.95,
+        "full_code": "\na1, a2, a3, a4 = map(int, input().split())\n   \ncount = 0\nwhile not (a1 == a2 == a3 == a4):\n        na1 = abs(a1 - a2)\n        na2 = abs(a2 - a3)\n        na3 = abs(a3 - a4)\n        na4 = abs(a4 - a1)\n        a1, a2, a3, a4 = na1, na2, na3, na4\n        count += 1\nprint(count)",
+        "highlighted_code": "<span class='highlight-green'>\na1, a2, a3, a4 = map(int, input().split())\n   \ncount = 0\nwhile not (a1 == a2 == a3 == a4):\n        na1</span> =<span class='highlight-green'> abs(a1 - a2)\n        na2 = abs(a2 - a3)\n        na3 = abs(a3 - a4)\n        na4 = abs(a4 - a</span>1)\n        a1, a2, a3, a4 = na1, na2, na3, na4\n        count += 1\nprint(count)"
+      },
+      "token_overlap": 90,
+      "max_similarity_percent": 84.11
+    },
+    {
+      "case_id": 20,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b4fe535fa0f4f1d8f6/8e236cb825b041b0a82527f2/sub_1761833072369_o7r9u0mw3.py",
+        "similarity_percent": 84.11,
+        "full_code": "a1, a2, a3, a4 = map(int, input().split())\n\ni = 0\nwhile not (a1 == a2 == a3 == a4):\n    prev_a1 = a1\n    a1 = abs(a1 - a2)\n    a2 = abs(a2 - a3)\n    a3 = abs(a3 - a4)\n    a4 = abs(a4 - prev_a1)\n    i += 1\nprint(i)",
+        "highlighted_code": "<span class='highlight-red'>a1, a2, a3, a4 = map(int, input().split())\n\ni = 0\nwhile not (a1 == a2 == a3 == a4):\n    prev_a1 </span>= a1\n    a1 = <span class='highlight-red'>abs(a1 - a2)\n    a2 = abs(a2 - a3)\n    a3 = abs(a3 - a4)\n    a4 = abs(a4 - prev_a1</span>)\n    i += 1\nprint(i)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b4fe535fa0f4f1d8f6/a34ffbda761b435ca043fd30/sub_1762356974907_dg7kw64b3.py",
+        "similarity_percent": 75.63,
+        "full_code": "a, b, c, d=map(int, input().split())\nso_lan = 0\nwhile not (a==b==c==d):\n    so_lan+=1\n    a1=abs(a-b)\n    b1=abs(b-c)\n    c1=abs(c-d)\n    d1=abs(d-a)\n    a, b, c, d= a1, b1, c1, d1\nprint(so_lan)",
+        "highlighted_code": "<span class='highlight-green'>a, b, c, d=map(int, input().split())\nso_lan = 0\nwhile not (a==b==c==d):\n    so_lan</span>+=1\n    a1=<span class='highlight-green'>abs(a-b)\n    b1=abs(b-c)\n    c1=abs(c-d)\n    d1=abs(d-a</span>)\n    a, b, c, d= a1, b1, c1, d1\nprint(so_lan)"
+      },
+      "token_overlap": 90,
+      "max_similarity_percent": 84.11
+    },
+    {
+      "case_id": 21,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b4fe535fa0f4f1d8f6/8e236cb825b041b0a82527f2/sub_1761833072369_o7r9u0mw3.py",
+        "similarity_percent": 84.11,
+        "full_code": "a1, a2, a3, a4 = map(int, input().split())\n\ni = 0\nwhile not (a1 == a2 == a3 == a4):\n    prev_a1 = a1\n    a1 = abs(a1 - a2)\n    a2 = abs(a2 - a3)\n    a3 = abs(a3 - a4)\n    a4 = abs(a4 - prev_a1)\n    i += 1\nprint(i)",
+        "highlighted_code": "<span class='highlight-red'>a1, a2, a3, a4 = map(int, input().split())\n\ni = 0\nwhile not (a1 == a2 == a3 == a4):\n    prev_a1 </span>= a1\n    a1 = <span class='highlight-red'>abs(a1 - a2)\n    a2 = abs(a2 - a3)\n    a3 = abs(a3 - a4)\n    a4 = abs(a4 - prev_a1</span>)\n    i += 1\nprint(i)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b4fe535fa0f4f1d8f6/8e236cb825b041b0a82527f2/sub_1762328600554_2bpeynnsu.py",
+        "similarity_percent": 86.54,
+        "full_code": "a1, a2, a3, a4 = map(int, input().split())\ni = 0\nwhile not (a1 == a2 == a3 == a4):\n    i += 1\n    pa1 = a1\n    a1 = abs(a1 - a2)\n    a2 = abs(a2 - a3)\n    a3 = abs(a3 - a4)\n    a4 = abs(a4 - pa1)\nprint(i)\n",
+        "highlighted_code": "<span class='highlight-green'>a1, a2, a3, a4 = map(int, input().split())\ni = 0\nwhile not (a1 == a2 == a3 == a4):\n    i </span>+= 1\n    pa1 = a1\n    a1 = <span class='highlight-green'>abs(a1 - a2)\n    a2 = abs(a2 - a3)\n    a3 = abs(a3 - a4)\n    a4 = abs(a4 - pa1</span>)\nprint(i)\n"
+      },
+      "token_overlap": 90,
+      "max_similarity_percent": 86.54
+    },
+    {
+      "case_id": 22,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b4fe535fa0f4f1d8f6/27b0843555fd4abbb1c1a142/sub_1762337830877_yteau84m3.py",
+        "similarity_percent": 82.86,
+        "full_code": "a,b,c,d=map(int,input().split())\ndem=0\nwhile not a==b==c==d:\n    e=a\n    a = abs(b-a)\n    b = abs(c-b)\n    c = abs(d-c)\n    d = abs(e-d)\n    dem += 1\nprint(dem)",
+        "highlighted_code": "<span class='highlight-red'>a,b,c,d=map(int,input().split())\ndem=0\nwhile n</span>ot a==b==c==d:\n    e=a\n    a = <span class='highlight-red'>abs(b-a)\n    b = abs(c-b)\n    c = abs(d-c)\n    d = abs(e-d)\n    dem += 1\nprint(dem)</span>"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b4fe535fa0f4f1d8f6/53387d97307e4d81b93edb94/sub_1762339132352_3h0f82lt7.py",
+        "similarity_percent": 68.5,
+        "full_code": "a, b, c, d = map(int, input().split())\ndem = 0\nwhile not (a == b and b == c and c == d):\n a1 , b1 , c1 , d1 = a , b , c ,d\n a = abs (a1-b1)\n b = abs (b1-c1)\n c = abs (c1-d1)\n d = abs (d1-a1)\n dem+=1\nprint (dem)",
+        "highlighted_code": "<span class='highlight-green'>a, b, c, d = map(int, input().split())\ndem = 0\nwhile n</span>ot (a == b and b == c and c == d):\n a1 , b1 , c1 , d1 = a , b , c ,d\n a = <span class='highlight-green'>abs (a1-b1)\n b = abs (b1-c1)\n c = abs (c1-d1)\n d = abs (d1-a1)\n dem+=1\nprint (dem)</span>"
+      },
+      "token_overlap": 87,
+      "max_similarity_percent": 82.86
+    },
+    {
+      "case_id": 23,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b4fe535fa0f4f1d8f6/780627ccd0224069b68e3b8d/sub_1762338813703_bcugq96d4.py",
+        "similarity_percent": 80.28,
+        "full_code": "a, b, c, d = map(int, input().split())\nif a == b == c == d:\n    print('0')\nelse:\n    dem = 0\n    while not (a == b == c == d):\n        a1 = abs(a - b)\n        a2 = abs(b - c)\n        a3 = abs(c - d)\n        a4 = abs(d - a)\n        a, b, c, d = a1, a2, a3, a4\n        dem += 1\n    print(dem)",
+        "highlighted_code": "<span class='highlight-red'>a, b, c, d = map(int, input().split())\n</span>if a == b == c == d:\n    print(&#39;0&#39;)\nelse:\n    <span class='highlight-red'>dem = 0\n    while not (a == b == c == d):\n        a1 = abs(a - b)\n        a2 = abs(b - c)\n        a3 = abs(c - d)\n        a4 = abs(d - a)\n        a, b, c, d = a1, a2, a3, a4\n        dem += 1\n    pri</span>nt(dem)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b4fe535fa0f4f1d8f6/e4a8123d49534012b2f0d978/sub_1762338515977_49yugxskb.py",
+        "similarity_percent": 100.0,
+        "full_code": "\na1, a2, a3, a4 = map(int, input().split())\n   \ncount = 0\nwhile not (a1 == a2 == a3 == a4):\n        na1 = abs(a1 - a2)\n        na2 = abs(a2 - a3)\n        na3 = abs(a3 - a4)\n        na4 = abs(a4 - a1)\n        a1, a2, a3, a4 = na1, na2, na3, na4\n        count += 1\nprint(count)",
+        "highlighted_code": "<span class='highlight-green'>\na1, a2, a3, a4 = map(int, input().split())\n   </span><span class='highlight-green'>\ncount = 0\nwhile not (a1 == a2 == a3 == a4):\n        na1 = abs(a1 - a2)\n        na2 = abs(a2 - a3)\n        na3 = abs(a3 - a4)\n        na4 = abs(a4 - a1)\n        a1, a2, a3, a4 = na1, na2, na3, na4\n        count += 1\npr</span>int(count)"
+      },
+      "token_overlap": 114,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 24,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b4fe535fa0f4f1d8f6/e4a8123d49534012b2f0d978/sub_1762338515977_49yugxskb.py",
+        "similarity_percent": 78.95,
+        "full_code": "\na1, a2, a3, a4 = map(int, input().split())\n   \ncount = 0\nwhile not (a1 == a2 == a3 == a4):\n        na1 = abs(a1 - a2)\n        na2 = abs(a2 - a3)\n        na3 = abs(a3 - a4)\n        na4 = abs(a4 - a1)\n        a1, a2, a3, a4 = na1, na2, na3, na4\n        count += 1\nprint(count)",
+        "highlighted_code": "<span class='highlight-red'>\na1, a2, a3, a4 = map(int, input().split())\n   \ncount = 0\nwhile not (a1 == a2 == a3 == a4):\n        na1</span> =<span class='highlight-red'> abs(a1 - a2)\n        na2 = abs(a2 - a3)\n        na3 = abs(a3 - a4)\n        na4 = abs(a4 - a</span>1)\n        a1, a2, a3, a4 = na1, na2, na3, na4\n        count += 1\nprint(count)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b4fe535fa0f4f1d8f6/8e236cb825b041b0a82527f2/sub_1762328600554_2bpeynnsu.py",
+        "similarity_percent": 86.54,
+        "full_code": "a1, a2, a3, a4 = map(int, input().split())\ni = 0\nwhile not (a1 == a2 == a3 == a4):\n    i += 1\n    pa1 = a1\n    a1 = abs(a1 - a2)\n    a2 = abs(a2 - a3)\n    a3 = abs(a3 - a4)\n    a4 = abs(a4 - pa1)\nprint(i)\n",
+        "highlighted_code": "<span class='highlight-green'>a1, a2, a3, a4 = map(int, input().split())\ni = 0\nwhile not (a1 == a2 == a3 == a4):\n    i </span>+= 1\n    pa1 = a1\n    a1 = <span class='highlight-green'>abs(a1 - a2)\n    a2 = abs(a2 - a3)\n    a3 = abs(a3 - a4)\n    a4 = abs(a4 - pa1</span>)\nprint(i)\n"
+      },
+      "token_overlap": 90,
+      "max_similarity_percent": 86.54
+    },
+    {
+      "case_id": 25,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b4fe535fa0f4f1d8f6/a34ffbda761b435ca043fd30/sub_1762356974907_dg7kw64b3.py",
+        "similarity_percent": 77.31,
+        "full_code": "a, b, c, d=map(int, input().split())\nso_lan = 0\nwhile not (a==b==c==d):\n    so_lan+=1\n    a1=abs(a-b)\n    b1=abs(b-c)\n    c1=abs(c-d)\n    d1=abs(d-a)\n    a, b, c, d= a1, b1, c1, d1\nprint(so_lan)",
+        "highlighted_code": "<span class='highlight-red'>a, b, c, d=map(int, input().split())\nso_lan = 0\nwhile not (a==b==c==d):\n    so_lan+=</span>1\n    a1=<span class='highlight-red'>abs(a-b)\n    b1=abs(b-c)\n    c1=abs(c-d)\n    d1=abs(d-a</span>)\n    a, b, c, d= a1, b1, c1, d1\nprint(so_lan)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b4fe535fa0f4f1d8f6/8e236cb825b041b0a82527f2/sub_1762328600554_2bpeynnsu.py",
+        "similarity_percent": 88.46,
+        "full_code": "a1, a2, a3, a4 = map(int, input().split())\ni = 0\nwhile not (a1 == a2 == a3 == a4):\n    i += 1\n    pa1 = a1\n    a1 = abs(a1 - a2)\n    a2 = abs(a2 - a3)\n    a3 = abs(a3 - a4)\n    a4 = abs(a4 - pa1)\nprint(i)\n",
+        "highlighted_code": "<span class='highlight-green'>a1, a2, a3, a4 = map(int, input().split())\ni = 0\nwhile not (a1 == a2 == a3 == a4):\n    i += </span>1\n    pa1 = a1\n    a1 = <span class='highlight-green'>abs(a1 - a2)\n    a2 = abs(a2 - a3)\n    a3 = abs(a3 - a4)\n    a4 = abs(a4 - pa1</span>)\nprint(i)\n"
+      },
+      "token_overlap": 92,
+      "max_similarity_percent": 88.46
+    },
+    {
+      "case_id": 26,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b4fe535fa0f4f1d8f6/a34ffbda761b435ca043fd30/sub_1762356974907_dg7kw64b3.py",
+        "similarity_percent": 77.31,
+        "full_code": "a, b, c, d=map(int, input().split())\nso_lan = 0\nwhile not (a==b==c==d):\n    so_lan+=1\n    a1=abs(a-b)\n    b1=abs(b-c)\n    c1=abs(c-d)\n    d1=abs(d-a)\n    a, b, c, d= a1, b1, c1, d1\nprint(so_lan)",
+        "highlighted_code": "<span class='highlight-red'>a, b, c, d=map(int, input().split())\nso_lan = 0\nwhile not (a=</span>=b==c==d):\n    so_lan+=1\n    a1=<span class='highlight-red'>abs(a-b)\n    b1=abs(b-c)\n    c1=abs(c-d)\n    d1=abs(d-a)\n    a, b, c, d= a1, b1, </span>c1, d1\nprint(so_lan)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b4fe535fa0f4f1d8f6/f95120b3a38a461085ef58cb/sub_1761756540176_x1guuxwl7.py",
+        "similarity_percent": 60.53,
+        "full_code": "a1, a2, a3, a4 = map(int, input().split())\ncount = 0\nwhile not (a1 == 0 and a2 == 0 and a3 == 0 and a4 == 0):\n    if a1 == a2 == a3 == a4:\n        break\n    b1 = abs(a1 - a2)\n    b2 = abs(a2 - a3)\n    b3 = abs(a3 - a4)\n    b4 = abs(a4 - a1)\n    a1, a2, a3, a4 = b1, b2, b3, b4\n    count = count + 1\nprint(count)",
+        "highlighted_code": "<span class='highlight-green'>a1, a2, a3, a4 = map(int, input().split())\ncount = 0\nwhile not (a1 =</span>= 0 and a2 == 0 and a3 == 0 and a4 == 0):\n    if a1 == a2 == a3 == a4:\n        break\n    b1 = <span class='highlight-green'>abs(a1 - a2)\n    b2 = abs(a2 - a3)\n    b3 = abs(a3 - a4)\n    b4 = abs(a4 - a1)\n    a1, a2, a3, a4 = b1, b2, </span>b3, b4\n    count = count + 1\nprint(count)"
+      },
+      "token_overlap": 92,
+      "max_similarity_percent": 77.31
+    },
+    {
+      "case_id": 27,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b4fe535fa0f4f1d8f6/53387d97307e4d81b93edb94/sub_1762339132352_3h0f82lt7.py",
+        "similarity_percent": 77.17,
+        "full_code": "a, b, c, d = map(int, input().split())\ndem = 0\nwhile not (a == b and b == c and c == d):\n a1 , b1 , c1 , d1 = a , b , c ,d\n a = abs (a1-b1)\n b = abs (b1-c1)\n c = abs (c1-d1)\n d = abs (d1-a1)\n dem+=1\nprint (dem)",
+        "highlighted_code": "<span class='highlight-red'>a, b, c, d = map(int, input().split())\ndem = 0\nwhile not (a == b and b == c and c == d)</span>:\n a1 , b1 , c1 , d1 = a , b , c ,d\n <span class='highlight-red'>a = abs (a1-b1)\n b = abs (b1-c1)\n c = abs (c1-d1)\n d = abs (d1-a1</span>)\n dem+=1\nprint (dem)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b4fe535fa0f4f1d8f6/3fa6af8d916a46039239cabe/sub_1761646788738_jaqcylqz1.py",
+        "similarity_percent": 86.84,
+        "full_code": "a,b,c,d=map(int,input().split())\ne=a\ncount=0\nwhile not(a==b and a==c and a==d):\n    a=abs(b-a)\n    b=abs(c-b)\n    c=abs(d-c)\n    d=abs(e-d)\n    e=a\n    count+=1\nprint(count)",
+        "highlighted_code": "<span class='highlight-green'>a,b,c,d=map(int,input().split())\ne=</span>a\ncount<span class='highlight-green'>=0\nwhile not(a==b and a==c and a==d)</span>:\n    <span class='highlight-green'>a=abs(b-a)\n    b=abs(c-b)\n    c=abs(d-c)\n    d=abs(e-d</span>)\n    e=a\n    count+=1\nprint(count)"
+      },
+      "token_overlap": 98,
+      "max_similarity_percent": 86.84
+    },
+    {
+      "case_id": 28,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b4fe535fa0f4f1d8f6/8e236cb825b041b0a82527f2/sub_1762328600554_2bpeynnsu.py",
+        "similarity_percent": 75.96,
+        "full_code": "a1, a2, a3, a4 = map(int, input().split())\ni = 0\nwhile not (a1 == a2 == a3 == a4):\n    i += 1\n    pa1 = a1\n    a1 = abs(a1 - a2)\n    a2 = abs(a2 - a3)\n    a3 = abs(a3 - a4)\n    a4 = abs(a4 - pa1)\nprint(i)\n",
+        "highlighted_code": "<span class='highlight-red'>a1, a2, a3, a4 = map(int, input().split())\ni = 0\nwhile not (a1 =</span>= a2 == a3 == a4):\n    i += 1\n    pa1 = a1\n    a1 = <span class='highlight-red'>abs(a1 - a2)\n    a2 = abs(a2 - a3)\n    a3 = abs(a3 - a4)\n    a4 = abs(a4 - pa1</span>)\nprint(i)\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b4fe535fa0f4f1d8f6/f95120b3a38a461085ef58cb/sub_1761756540176_x1guuxwl7.py",
+        "similarity_percent": 51.97,
+        "full_code": "a1, a2, a3, a4 = map(int, input().split())\ncount = 0\nwhile not (a1 == 0 and a2 == 0 and a3 == 0 and a4 == 0):\n    if a1 == a2 == a3 == a4:\n        break\n    b1 = abs(a1 - a2)\n    b2 = abs(a2 - a3)\n    b3 = abs(a3 - a4)\n    b4 = abs(a4 - a1)\n    a1, a2, a3, a4 = b1, b2, b3, b4\n    count = count + 1\nprint(count)",
+        "highlighted_code": "<span class='highlight-green'>a1, a2, a3, a4 = map(int, input().split())\ncount = 0\nwhile not (a1 =</span>= 0 and a2 == 0 and a3 == 0 and a4 == 0):\n    if a1 == a2 == a3 == a4:\n        break\n    b1 = <span class='highlight-green'>abs(a1 - a2)\n    b2 = abs(a2 - a3)\n    b3 = abs(a3 - a4)\n    b4 = abs(a4 - a1</span>)\n    a1, a2, a3, a4 = b1, b2, b3, b4\n    count = count + 1\nprint(count)"
+      },
+      "token_overlap": 79,
+      "max_similarity_percent": 75.96
+    },
+    {
+      "case_id": 29,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b4fe535fa0f4f1d8f6/8e236cb825b041b0a82527f2/sub_1762328600554_2bpeynnsu.py",
+        "similarity_percent": 75.96,
+        "full_code": "a1, a2, a3, a4 = map(int, input().split())\ni = 0\nwhile not (a1 == a2 == a3 == a4):\n    i += 1\n    pa1 = a1\n    a1 = abs(a1 - a2)\n    a2 = abs(a2 - a3)\n    a3 = abs(a3 - a4)\n    a4 = abs(a4 - pa1)\nprint(i)\n",
+        "highlighted_code": "<span class='highlight-red'>a1, a2, a3, a4 = map(int, input().split())\ni = 0\nwhile not (a1 =</span>= a2 == a3 == a4):\n    i += 1\n    pa1 = a1\n    a1 = <span class='highlight-red'>abs(a1 - a2)\n    a2 = abs(a2 - a3)\n    a3 = abs(a3 - a4)\n    a4 = abs(a4 - pa1</span>)\nprint(i)\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b4fe535fa0f4f1d8f6/3fa6af8d916a46039239cabe/sub_1762336876492_d5ukn1zp9.py",
+        "similarity_percent": 68.7,
+        "full_code": "a,b,c,d=map(int,input().split())\ncount=0\nwhile not(a==b and a==c and a==d):\n    e=a\n    a=abs(b-a)\n    b=abs(c-b)\n    c=abs(d-c)\n    d=abs(e-d)\n    count+=1\nprint(count)",
+        "highlighted_code": "<span class='highlight-green'>a,b,c,d=map(int,input().split())\ncount=0\nwhile not(a=</span>=b and a==c and a==d):\n    e=a\n    a=<span class='highlight-green'>abs(b-a)\n    b=abs(c-b)\n    c=abs(d-c)\n    d=abs(e-d</span>)\n    count+=1\nprint(count)"
+      },
+      "token_overlap": 79,
+      "max_similarity_percent": 75.96
+    },
+    {
+      "case_id": 30,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b4fe535fa0f4f1d8f6/e4a8123d49534012b2f0d978/sub_1762338515977_49yugxskb.py",
+        "similarity_percent": 75.44,
+        "full_code": "\na1, a2, a3, a4 = map(int, input().split())\n   \ncount = 0\nwhile not (a1 == a2 == a3 == a4):\n        na1 = abs(a1 - a2)\n        na2 = abs(a2 - a3)\n        na3 = abs(a3 - a4)\n        na4 = abs(a4 - a1)\n        a1, a2, a3, a4 = na1, na2, na3, na4\n        count += 1\nprint(count)",
+        "highlighted_code": "\na1, a2, a3, a4 = map(int, input().split())\n   <span class='highlight-red'>\ncount = 0\nwhile not (a1 == a2 == a3 == a4):\n        na1 = abs(a1 - a2)\n        na2 = abs(a2 - a3)\n        na3 = abs(a3 - a4)\n        na4 = abs(a4 - a1)\n        a1, a2, a3, a4 = na1, na2, na3, na4\n        count += 1\npr</span>int(count)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b4fe535fa0f4f1d8f6/8e19101eb0da4e9a92a17098/sub_1762327905734_s16j2bf0q.py",
+        "similarity_percent": 48.31,
+        "full_code": "d = input().split()\nnums = list(map(int, d))\nfor i in range(0, len(nums), 4):\n    a1, a2, a3, a4 = nums[i:i+4]\n    if a1 == a2 == a3 == a4 == 0:\n        break\n    cnt = 0\n    while not (a1 == a2 == a3 == a4):\n        b1 = abs(a1 - a2)\n        b2 = abs(a2 - a3)\n        b3 = abs(a3 - a4)\n        b4 = abs(a4 - a1)\n        a1, a2, a3, a4 = b1, b2, b3, b4\n        cnt += 1\n    print(cnt)",
+        "highlighted_code": "d = input().split()\nnums = list(map(int, d))\nfor i in range(0, len(nums), 4):\n    a1, a2, a3, a4 = nums[i:i+4]\n    if a1 == a2 == a3 == a4 == 0:\n        break\n    <span class='highlight-green'>cnt = 0\n    while not (a1 == a2 == a3 == a4):\n        b1 = abs(a1 - a2)\n        b2 = abs(a2 - a3)\n        b3 = abs(a3 - a4)\n        b4 = abs(a4 - a1)\n        a1, a2, a3, a4 = b1, b2, b3, b4\n        cnt += 1\n    pri</span>nt(cnt)"
+      },
+      "token_overlap": 86,
+      "max_similarity_percent": 75.44
+    },
+    {
+      "case_id": 31,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b4fe535fa0f4f1d8f6/e4a8123d49534012b2f0d978/sub_1762338515977_49yugxskb.py",
+        "similarity_percent": 75.44,
+        "full_code": "\na1, a2, a3, a4 = map(int, input().split())\n   \ncount = 0\nwhile not (a1 == a2 == a3 == a4):\n        na1 = abs(a1 - a2)\n        na2 = abs(a2 - a3)\n        na3 = abs(a3 - a4)\n        na4 = abs(a4 - a1)\n        a1, a2, a3, a4 = na1, na2, na3, na4\n        count += 1\nprint(count)",
+        "highlighted_code": "\na1, a2, a3, a4 = map(int, input().split())\n   <span class='highlight-red'>\ncount = 0\nwhile not (a1 == a2 == a3 == a4):\n        na1 = abs(a1 - a2)\n        na2 = abs(a2 - a3)\n        na3 = abs(a3 - a4)\n        na4 = abs(a4 - a1)\n        a1, a2, a3, a4 = na1, na2, na3, na4\n        count += 1\npr</span>int(count)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b4fe535fa0f4f1d8f6/522be41104e24b1fa5d14200/sub_1762410581268_skmstpmzw.py",
+        "similarity_percent": 41.35,
+        "full_code": "while True:\n    try:\n        data = input().split()\n        if len(data) == 0:\n           continue\n        a1, a2, a3, a4 = map(int, data)\n        if a1 == 0 and a2 == 0 and a3 == 0 and a4 == 0:\n           break\n    \n        step = 0\n        while not (a1 == a2 == a3 == a4):\n              new_a1 = abs(a1 - a2)\n              new_a2 = abs(a2 - a3)\n              new_a3 = abs(a3 - a4)\n              new_a4 = abs(a4 - a1)\n        \n              a1, a2, a3, a4 = new_a1, new_a2, new_a3, new_a4\n              step += 1\n        print(step)\n    except EOFError:\n        break",
+        "highlighted_code": "while True:\n    try:\n        data = input().split()\n        if len(data) == 0:\n           continue\n        a1, a2, a3, a4 = map(int, data)\n        if a1 == 0 and a2 == 0 and a3 == 0 and a4 == 0:\n           break\n    \n        <span class='highlight-green'>step = 0\n        while not (a1 == a2 == a3 == a4):\n              new_a1 = abs(a1 - a2)\n              new_a2 = abs(a2 - a3)\n              new_a3 = abs(a3 - a4)\n              new_a4 = abs(a4 - a1)\n        \n              a1, a2, a3, a4 = new_a1, new_a2, new_a3, new_a4\n              step += 1\n        pri</span>nt(step)\n    except EOFError:\n        break"
+      },
+      "token_overlap": 86,
+      "max_similarity_percent": 75.44
+    },
+    {
+      "case_id": 32,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b4fe535fa0f4f1d8f6/8e236cb825b041b0a82527f2/sub_1761833072369_o7r9u0mw3.py",
+        "similarity_percent": 73.83,
+        "full_code": "a1, a2, a3, a4 = map(int, input().split())\n\ni = 0\nwhile not (a1 == a2 == a3 == a4):\n    prev_a1 = a1\n    a1 = abs(a1 - a2)\n    a2 = abs(a2 - a3)\n    a3 = abs(a3 - a4)\n    a4 = abs(a4 - prev_a1)\n    i += 1\nprint(i)",
+        "highlighted_code": "<span class='highlight-red'>a1, a2, a3, a4 = map(int, input().split())\n\ni = 0\nwhile not (a1 =</span>= a2 == a3 == a4):\n    prev_a1 = a1\n    a1 = <span class='highlight-red'>abs(a1 - a2)\n    a2 = abs(a2 - a3)\n    a3 = abs(a3 - a4)\n    a4 = abs(a4 - prev_a1</span>)\n    i += 1\nprint(i)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b4fe535fa0f4f1d8f6/f95120b3a38a461085ef58cb/sub_1762324668097_zhwlhx3vz.py",
+        "similarity_percent": 51.97,
+        "full_code": "a1, a2, a3, a4 = map(int, input().split())\ntong = 0\nwhile not (a1 == 0 and a2 == 0 and a3 == 0 and a4 == 0):\n    if a1 == a2 == a3 == a4:\n        break\n    b1 = abs(a1 - a2)\n    b2 = abs(a2 - a3)\n    b3 = abs(a3 - a4)\n    b4 = abs(a4 - a1)\n    a1, a2, a3, a4 = b1, b2, b3, b4\n    tong = tong + 1\nprint(tong)",
+        "highlighted_code": "<span class='highlight-green'>a1, a2, a3, a4 = map(int, input().split())\ntong = 0\nwhile not (a1 =</span>= 0 and a2 == 0 and a3 == 0 and a4 == 0):\n    if a1 == a2 == a3 == a4:\n        break\n    b1 = <span class='highlight-green'>abs(a1 - a2)\n    b2 = abs(a2 - a3)\n    b3 = abs(a3 - a4)\n    b4 = abs(a4 - a1</span>)\n    a1, a2, a3, a4 = b1, b2, b3, b4\n    tong = tong + 1\nprint(tong)"
+      },
+      "token_overlap": 79,
+      "max_similarity_percent": 73.83
+    },
+    {
+      "case_id": 33,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b4fe535fa0f4f1d8f6/8e236cb825b041b0a82527f2/sub_1761833072369_o7r9u0mw3.py",
+        "similarity_percent": 73.83,
+        "full_code": "a1, a2, a3, a4 = map(int, input().split())\n\ni = 0\nwhile not (a1 == a2 == a3 == a4):\n    prev_a1 = a1\n    a1 = abs(a1 - a2)\n    a2 = abs(a2 - a3)\n    a3 = abs(a3 - a4)\n    a4 = abs(a4 - prev_a1)\n    i += 1\nprint(i)",
+        "highlighted_code": "<span class='highlight-red'>a1, a2, a3, a4 = map(int, input().split())\n\ni = 0\nwhile not (a1 =</span>= a2 == a3 == a4):\n    prev_a1 = a1\n    a1 = <span class='highlight-red'>abs(a1 - a2)\n    a2 = abs(a2 - a3)\n    a3 = abs(a3 - a4)\n    a4 = abs(a4 - prev_a1</span>)\n    i += 1\nprint(i)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b4fe535fa0f4f1d8f6/f95120b3a38a461085ef58cb/sub_1761756540176_x1guuxwl7.py",
+        "similarity_percent": 51.97,
+        "full_code": "a1, a2, a3, a4 = map(int, input().split())\ncount = 0\nwhile not (a1 == 0 and a2 == 0 and a3 == 0 and a4 == 0):\n    if a1 == a2 == a3 == a4:\n        break\n    b1 = abs(a1 - a2)\n    b2 = abs(a2 - a3)\n    b3 = abs(a3 - a4)\n    b4 = abs(a4 - a1)\n    a1, a2, a3, a4 = b1, b2, b3, b4\n    count = count + 1\nprint(count)",
+        "highlighted_code": "<span class='highlight-green'>a1, a2, a3, a4 = map(int, input().split())\ncount = 0\nwhile not (a1 =</span>= 0 and a2 == 0 and a3 == 0 and a4 == 0):\n    if a1 == a2 == a3 == a4:\n        break\n    b1 = <span class='highlight-green'>abs(a1 - a2)\n    b2 = abs(a2 - a3)\n    b3 = abs(a3 - a4)\n    b4 = abs(a4 - a1</span>)\n    a1, a2, a3, a4 = b1, b2, b3, b4\n    count = count + 1\nprint(count)"
+      },
+      "token_overlap": 79,
+      "max_similarity_percent": 73.83
+    },
+    {
+      "case_id": 34,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b4fe535fa0f4f1d8f6/e0cd413045d741e39459231c/sub_1762329598439_8rku27hvx.py",
+        "similarity_percent": 73.5,
+        "full_code": "n=input()\na1, a2, a3, a4 = map(int, n.split())\n\nlan = 0\nwhile not (a1 == a2 == a3 == a4):\n    b1 = abs(a1 - a2)\n    b2 = abs(a2 - a3)\n    b3 = abs(a3 - a4)\n    b4 = abs(a4 - a1)\n    a1, a2, a3, a4 = b1, b2, b3, b4\n    lan += 1\nprint(lan)",
+        "highlighted_code": "n=input()\na1, a2, a3, a4 = map(int, n.split())\n\n<span class='highlight-red'>lan = 0\nwhile not (a1 == a2 == a3 == a4):\n    b1 = abs(a1 - a2)\n    b2 = abs(a2 - a3)\n    b3 = abs(a3 - a4)\n    b4 = abs(a4 - a1)\n    a1, a2, a3, a4 = b1, b2, b3, b4\n    lan += 1\npri</span>nt(lan)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b4fe535fa0f4f1d8f6/e4a8123d49534012b2f0d978/sub_1762338515977_49yugxskb.py",
+        "similarity_percent": 75.44,
+        "full_code": "\na1, a2, a3, a4 = map(int, input().split())\n   \ncount = 0\nwhile not (a1 == a2 == a3 == a4):\n        na1 = abs(a1 - a2)\n        na2 = abs(a2 - a3)\n        na3 = abs(a3 - a4)\n        na4 = abs(a4 - a1)\n        a1, a2, a3, a4 = na1, na2, na3, na4\n        count += 1\nprint(count)",
+        "highlighted_code": "\na1, a2, a3, a4 = map(int, input().split())\n   <span class='highlight-green'>\ncount = 0\nwhile not (a1 == a2 == a3 == a4):\n        na1 = abs(a1 - a2)\n        na2 = abs(a2 - a3)\n        na3 = abs(a3 - a4)\n        na4 = abs(a4 - a1)\n        a1, a2, a3, a4 = na1, na2, na3, na4\n        count += 1\npr</span>int(count)"
+      },
+      "token_overlap": 86,
+      "max_similarity_percent": 75.44
+    },
+    {
+      "case_id": 35,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b4fe535fa0f4f1d8f6/e0cd413045d741e39459231c/sub_1762329598439_8rku27hvx.py",
+        "similarity_percent": 73.5,
+        "full_code": "n=input()\na1, a2, a3, a4 = map(int, n.split())\n\nlan = 0\nwhile not (a1 == a2 == a3 == a4):\n    b1 = abs(a1 - a2)\n    b2 = abs(a2 - a3)\n    b3 = abs(a3 - a4)\n    b4 = abs(a4 - a1)\n    a1, a2, a3, a4 = b1, b2, b3, b4\n    lan += 1\nprint(lan)",
+        "highlighted_code": "n=input()\na1, a2, a3, a4 = map(int, n.split())\n\n<span class='highlight-red'>lan = 0\nwhile not (a1 == a2 == a3 == a4):\n    b1 = abs(a1 - a2)\n    b2 = abs(a2 - a3)\n    b3 = abs(a3 - a4)\n    b4 = abs(a4 - a1)\n    a1, a2, a3, a4 = b1, b2, b3, b4\n    lan += 1\npri</span>nt(lan)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b4fe535fa0f4f1d8f6/8e19101eb0da4e9a92a17098/sub_1762327905734_s16j2bf0q.py",
+        "similarity_percent": 48.31,
+        "full_code": "d = input().split()\nnums = list(map(int, d))\nfor i in range(0, len(nums), 4):\n    a1, a2, a3, a4 = nums[i:i+4]\n    if a1 == a2 == a3 == a4 == 0:\n        break\n    cnt = 0\n    while not (a1 == a2 == a3 == a4):\n        b1 = abs(a1 - a2)\n        b2 = abs(a2 - a3)\n        b3 = abs(a3 - a4)\n        b4 = abs(a4 - a1)\n        a1, a2, a3, a4 = b1, b2, b3, b4\n        cnt += 1\n    print(cnt)",
+        "highlighted_code": "d = input().split()\nnums = list(map(int, d))\nfor i in range(0, len(nums), 4):\n    a1, a2, a3, a4 = nums[i:i+4]\n    if a1 == a2 == a3 == a4 == 0:\n        break\n    <span class='highlight-green'>cnt = 0\n    while not (a1 == a2 == a3 == a4):\n        b1 = abs(a1 - a2)\n        b2 = abs(a2 - a3)\n        b3 = abs(a3 - a4)\n        b4 = abs(a4 - a1)\n        a1, a2, a3, a4 = b1, b2, b3, b4\n        cnt += 1\n    pri</span>nt(cnt)"
+      },
+      "token_overlap": 86,
+      "max_similarity_percent": 73.5
+    },
+    {
+      "case_id": 36,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b4fe535fa0f4f1d8f6/e0cd413045d741e39459231c/sub_1762329598439_8rku27hvx.py",
+        "similarity_percent": 73.5,
+        "full_code": "n=input()\na1, a2, a3, a4 = map(int, n.split())\n\nlan = 0\nwhile not (a1 == a2 == a3 == a4):\n    b1 = abs(a1 - a2)\n    b2 = abs(a2 - a3)\n    b3 = abs(a3 - a4)\n    b4 = abs(a4 - a1)\n    a1, a2, a3, a4 = b1, b2, b3, b4\n    lan += 1\nprint(lan)",
+        "highlighted_code": "n=input()\na1, a2, a3, a4 = map(int, n.split())\n\n<span class='highlight-red'>lan = 0\nwhile not (a1 == a2 == a3 == a4):\n    b1 = abs(a1 - a2)\n    b2 = abs(a2 - a3)\n    b3 = abs(a3 - a4)\n    b4 = abs(a4 - a1)\n    a1, a2, a3, a4 = b1, b2, b3, b4\n    lan += 1\npri</span>nt(lan)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b4fe535fa0f4f1d8f6/522be41104e24b1fa5d14200/sub_1762410581268_skmstpmzw.py",
+        "similarity_percent": 41.35,
+        "full_code": "while True:\n    try:\n        data = input().split()\n        if len(data) == 0:\n           continue\n        a1, a2, a3, a4 = map(int, data)\n        if a1 == 0 and a2 == 0 and a3 == 0 and a4 == 0:\n           break\n    \n        step = 0\n        while not (a1 == a2 == a3 == a4):\n              new_a1 = abs(a1 - a2)\n              new_a2 = abs(a2 - a3)\n              new_a3 = abs(a3 - a4)\n              new_a4 = abs(a4 - a1)\n        \n              a1, a2, a3, a4 = new_a1, new_a2, new_a3, new_a4\n              step += 1\n        print(step)\n    except EOFError:\n        break",
+        "highlighted_code": "while True:\n    try:\n        data = input().split()\n        if len(data) == 0:\n           continue\n        a1, a2, a3, a4 = map(int, data)\n        if a1 == 0 and a2 == 0 and a3 == 0 and a4 == 0:\n           break\n    \n        <span class='highlight-green'>step = 0\n        while not (a1 == a2 == a3 == a4):\n              new_a1 = abs(a1 - a2)\n              new_a2 = abs(a2 - a3)\n              new_a3 = abs(a3 - a4)\n              new_a4 = abs(a4 - a1)\n        \n              a1, a2, a3, a4 = new_a1, new_a2, new_a3, new_a4\n              step += 1\n        pri</span>nt(step)\n    except EOFError:\n        break"
+      },
+      "token_overlap": 86,
+      "max_similarity_percent": 73.5
+    },
+    {
+      "case_id": 37,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b4fe535fa0f4f1d8f6/780627ccd0224069b68e3b8d/sub_1762338813703_bcugq96d4.py",
+        "similarity_percent": 72.54,
+        "full_code": "a, b, c, d = map(int, input().split())\nif a == b == c == d:\n    print('0')\nelse:\n    dem = 0\n    while not (a == b == c == d):\n        a1 = abs(a - b)\n        a2 = abs(b - c)\n        a3 = abs(c - d)\n        a4 = abs(d - a)\n        a, b, c, d = a1, a2, a3, a4\n        dem += 1\n    print(dem)",
+        "highlighted_code": "<span class='highlight-red'>a, b, c, d = map(int, input().split())\n</span>if a == b == c == d:\n    print(&#39;0&#39;)\nelse:\n    <span class='highlight-red'>dem = 0\n    while not (a == b == c == d):\n        a1 </span>= <span class='highlight-red'>abs(a - b)\n        a2 = abs(b - c)\n        a3 = abs(c - d)\n        a4 = abs(d - a)\n        a, b, c, d = a1, a2, </span>a3, a4\n        dem += 1\n    print(dem)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b4fe535fa0f4f1d8f6/a34ffbda761b435ca043fd30/sub_1762356974907_dg7kw64b3.py",
+        "similarity_percent": 86.55,
+        "full_code": "a, b, c, d=map(int, input().split())\nso_lan = 0\nwhile not (a==b==c==d):\n    so_lan+=1\n    a1=abs(a-b)\n    b1=abs(b-c)\n    c1=abs(c-d)\n    d1=abs(d-a)\n    a, b, c, d= a1, b1, c1, d1\nprint(so_lan)",
+        "highlighted_code": "<span class='highlight-green'>a, b, c, d=map(int, input().split())\n</span><span class='highlight-green'>so_lan = 0\nwhile not (a==b==c==d):\n    so_lan</span>+=1\n    a1=<span class='highlight-green'>abs(a-b)\n    b1=abs(b-c)\n    c1=abs(c-d)\n    d1=abs(d-a)\n    a, b, c, d= a1, b1, </span>c1, d1\nprint(so_lan)"
+      },
+      "token_overlap": 103,
+      "max_similarity_percent": 86.55
+    },
+    {
+      "case_id": 38,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b4fe535fa0f4f1d8f6/8e236cb825b041b0a82527f2/sub_1762328600554_2bpeynnsu.py",
+        "similarity_percent": 71.15,
+        "full_code": "a1, a2, a3, a4 = map(int, input().split())\ni = 0\nwhile not (a1 == a2 == a3 == a4):\n    i += 1\n    pa1 = a1\n    a1 = abs(a1 - a2)\n    a2 = abs(a2 - a3)\n    a3 = abs(a3 - a4)\n    a4 = abs(a4 - pa1)\nprint(i)\n",
+        "highlighted_code": "<span class='highlight-red'>a1, a2, a3, a4 = map(int, input().split())\ni = 0\nwhile n</span>ot (a1 == a2 == a3 == a4):\n    i += 1\n    pa1 = a1\n    a1 = <span class='highlight-red'>abs(a1 - a2)\n    a2 = abs(a2 - a3)\n    a3 = abs(a3 - a4)\n    a4 = abs(a4 - pa1</span>)\nprint(i)\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b4fe535fa0f4f1d8f6/e3bacd91f1ad41f482a842be/sub_1762335886827_1y2jtsxpy.py",
+        "similarity_percent": 70.48,
+        "full_code": "a,b,c,d=map(int,input().split())\ndem=0\nwhile not a==b==c==d:\n    e=a\n    a = abs(b-a)\n    b = abs(c-b)\n    c = abs(d-c)\n    d = abs(e-d)\n    dem += 1\nprint(dem)",
+        "highlighted_code": "<span class='highlight-green'>a,b,c,d=map(int,input().split())\ndem=0\nwhile n</span>ot a==b==c==d:\n    e=a\n    a = <span class='highlight-green'>abs(b-a)\n    b = abs(c-b)\n    c = abs(d-c)\n    d = abs(e-d</span>)\n    dem += 1\nprint(dem)"
+      },
+      "token_overlap": 74,
+      "max_similarity_percent": 71.15
+    },
+    {
+      "case_id": 39,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b4fe535fa0f4f1d8f6/e4a8123d49534012b2f0d978/sub_1762338515977_49yugxskb.py",
+        "similarity_percent": 71.05,
+        "full_code": "\na1, a2, a3, a4 = map(int, input().split())\n   \ncount = 0\nwhile not (a1 == a2 == a3 == a4):\n        na1 = abs(a1 - a2)\n        na2 = abs(a2 - a3)\n        na3 = abs(a3 - a4)\n        na4 = abs(a4 - a1)\n        a1, a2, a3, a4 = na1, na2, na3, na4\n        count += 1\nprint(count)",
+        "highlighted_code": "<span class='highlight-red'>\na1, a2, a3, a4 = map(int, input().split())\n   \ncount = 0\nwhile not (a1 </span>== a2 == a3 == a4):\n       <span class='highlight-red'> na1 = abs(a1 - a2)\n        na2 = abs(a2 - a3)\n        na3 = abs(a3 - a4)\n        na4 = abs(a4 - a</span>1)\n        a1, a2, a3, a4 = na1, na2, na3, na4\n        count += 1\nprint(count)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b4fe535fa0f4f1d8f6/53387d97307e4d81b93edb94/sub_1762339132352_3h0f82lt7.py",
+        "similarity_percent": 63.78,
+        "full_code": "a, b, c, d = map(int, input().split())\ndem = 0\nwhile not (a == b and b == c and c == d):\n a1 , b1 , c1 , d1 = a , b , c ,d\n a = abs (a1-b1)\n b = abs (b1-c1)\n c = abs (c1-d1)\n d = abs (d1-a1)\n dem+=1\nprint (dem)",
+        "highlighted_code": "<span class='highlight-green'>a, b, c, d = map(int, input().split())\ndem = 0\nwhile not (a =</span>= b and b == c and c == d):\n a1 , b1 , c1 , d1 = a , b , c ,d\n <span class='highlight-green'>a = abs (a1-b1)\n b = abs (b1-c1)\n c = abs (c1-d1)\n d = abs (d1-a1</span>)\n dem+=1\nprint (dem)"
+      },
+      "token_overlap": 81,
+      "max_similarity_percent": 71.05
+    },
+    {
+      "case_id": 40,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b4fe535fa0f4f1d8f6/27b0843555fd4abbb1c1a142/sub_1762337830877_yteau84m3.py",
+        "similarity_percent": 70.48,
+        "full_code": "a,b,c,d=map(int,input().split())\ndem=0\nwhile not a==b==c==d:\n    e=a\n    a = abs(b-a)\n    b = abs(c-b)\n    c = abs(d-c)\n    d = abs(e-d)\n    dem += 1\nprint(dem)",
+        "highlighted_code": "<span class='highlight-red'>a,b,c,d=map(int,input().split())\ndem=0\nwhile n</span>ot a==b==c==d:\n    e=a\n    a = <span class='highlight-red'>abs(b-a)\n    b = abs(c-b)\n    c = abs(d-c)\n    d = abs(e-d</span>)\n    dem += 1\nprint(dem)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b4fe535fa0f4f1d8f6/e4a8123d49534012b2f0d978/sub_1762338515977_49yugxskb.py",
+        "similarity_percent": 64.91,
+        "full_code": "\na1, a2, a3, a4 = map(int, input().split())\n   \ncount = 0\nwhile not (a1 == a2 == a3 == a4):\n        na1 = abs(a1 - a2)\n        na2 = abs(a2 - a3)\n        na3 = abs(a3 - a4)\n        na4 = abs(a4 - a1)\n        a1, a2, a3, a4 = na1, na2, na3, na4\n        count += 1\nprint(count)",
+        "highlighted_code": "<span class='highlight-green'>\na1, a2, a3, a4 = map(int, input().split())\n   \ncount = 0\nwhile </span>not (a1 == a2 == a3 == a4):\n        na1 =<span class='highlight-green'> abs(a1 - a2)\n        na2 = abs(a2 - a3)\n        na3 = abs(a3 - a4)\n        na4 = abs(a4 - a</span>1)\n        a1, a2, a3, a4 = na1, na2, na3, na4\n        count += 1\nprint(count)"
+      },
+      "token_overlap": 74,
+      "max_similarity_percent": 70.48
+    },
+    {
+      "case_id": 41,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b4fe535fa0f4f1d8f6/27b0843555fd4abbb1c1a142/sub_1762337830877_yteau84m3.py",
+        "similarity_percent": 70.48,
+        "full_code": "a,b,c,d=map(int,input().split())\ndem=0\nwhile not a==b==c==d:\n    e=a\n    a = abs(b-a)\n    b = abs(c-b)\n    c = abs(d-c)\n    d = abs(e-d)\n    dem += 1\nprint(dem)",
+        "highlighted_code": "<span class='highlight-red'>a,b,c,d=map(int,input().split())\ndem=0\nwhile n</span>ot a==b==c==d:\n    e=a\n    a = <span class='highlight-red'>abs(b-a)\n    b = abs(c-b)\n    c = abs(d-c)\n    d = abs(e-d</span>)\n    dem += 1\nprint(dem)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b4fe535fa0f4f1d8f6/f95120b3a38a461085ef58cb/sub_1762324668097_zhwlhx3vz.py",
+        "similarity_percent": 48.68,
+        "full_code": "a1, a2, a3, a4 = map(int, input().split())\ntong = 0\nwhile not (a1 == 0 and a2 == 0 and a3 == 0 and a4 == 0):\n    if a1 == a2 == a3 == a4:\n        break\n    b1 = abs(a1 - a2)\n    b2 = abs(a2 - a3)\n    b3 = abs(a3 - a4)\n    b4 = abs(a4 - a1)\n    a1, a2, a3, a4 = b1, b2, b3, b4\n    tong = tong + 1\nprint(tong)",
+        "highlighted_code": "<span class='highlight-green'>a1, a2, a3, a4 = map(int, input().split())\ntong = 0\nwhile n</span>ot (a1 == 0 and a2 == 0 and a3 == 0 and a4 == 0):\n    if a1 == a2 == a3 == a4:\n        break\n    b1 = <span class='highlight-green'>abs(a1 - a2)\n    b2 = abs(a2 - a3)\n    b3 = abs(a3 - a4)\n    b4 = abs(a4 - a1</span>)\n    a1, a2, a3, a4 = b1, b2, b3, b4\n    tong = tong + 1\nprint(tong)"
+      },
+      "token_overlap": 74,
+      "max_similarity_percent": 70.48
+    },
+    {
+      "case_id": 42,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b4fe535fa0f4f1d8f6/27b0843555fd4abbb1c1a142/sub_1762337830877_yteau84m3.py",
+        "similarity_percent": 70.48,
+        "full_code": "a,b,c,d=map(int,input().split())\ndem=0\nwhile not a==b==c==d:\n    e=a\n    a = abs(b-a)\n    b = abs(c-b)\n    c = abs(d-c)\n    d = abs(e-d)\n    dem += 1\nprint(dem)",
+        "highlighted_code": "<span class='highlight-red'>a,b,c,d=map(int,input().split())\ndem=0\nwhile n</span>ot a==b==c==d:\n    e=a\n    a = <span class='highlight-red'>abs(b-a)\n    b = abs(c-b)\n    c = abs(d-c)\n    d = abs(e-d</span>)\n    dem += 1\nprint(dem)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b4fe535fa0f4f1d8f6/a34ffbda761b435ca043fd30/sub_1762356974907_dg7kw64b3.py",
+        "similarity_percent": 62.18,
+        "full_code": "a, b, c, d=map(int, input().split())\nso_lan = 0\nwhile not (a==b==c==d):\n    so_lan+=1\n    a1=abs(a-b)\n    b1=abs(b-c)\n    c1=abs(c-d)\n    d1=abs(d-a)\n    a, b, c, d= a1, b1, c1, d1\nprint(so_lan)",
+        "highlighted_code": "<span class='highlight-green'>a, b, c, d=map(int, input().split())\nso_lan = 0\nwhile n</span>ot (a==b==c==d):\n    so_lan+=1\n    a1=<span class='highlight-green'>abs(a-b)\n    b1=abs(b-c)\n    c1=abs(c-d)\n    d1=abs(d-a</span>)\n    a, b, c, d= a1, b1, c1, d1\nprint(so_lan)"
+      },
+      "token_overlap": 74,
+      "max_similarity_percent": 70.48
+    },
+    {
+      "case_id": 43,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b4fe535fa0f4f1d8f6/27b0843555fd4abbb1c1a142/sub_1762337830877_yteau84m3.py",
+        "similarity_percent": 70.48,
+        "full_code": "a,b,c,d=map(int,input().split())\ndem=0\nwhile not a==b==c==d:\n    e=a\n    a = abs(b-a)\n    b = abs(c-b)\n    c = abs(d-c)\n    d = abs(e-d)\n    dem += 1\nprint(dem)",
+        "highlighted_code": "<span class='highlight-red'>a,b,c,d=map(int,input().split())\ndem=0\nwhile n</span>ot a==b==c==d:\n    e=a\n    a = <span class='highlight-red'>abs(b-a)\n    b = abs(c-b)\n    c = abs(d-c)\n    d = abs(e-d</span>)\n    dem += 1\nprint(dem)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b4fe535fa0f4f1d8f6/8e236cb825b041b0a82527f2/sub_1762328600554_2bpeynnsu.py",
+        "similarity_percent": 71.15,
+        "full_code": "a1, a2, a3, a4 = map(int, input().split())\ni = 0\nwhile not (a1 == a2 == a3 == a4):\n    i += 1\n    pa1 = a1\n    a1 = abs(a1 - a2)\n    a2 = abs(a2 - a3)\n    a3 = abs(a3 - a4)\n    a4 = abs(a4 - pa1)\nprint(i)\n",
+        "highlighted_code": "<span class='highlight-green'>a1, a2, a3, a4 = map(int, input().split())\ni = 0\nwhile n</span>ot (a1 == a2 == a3 == a4):\n    i += 1\n    pa1 = a1\n    a1 = <span class='highlight-green'>abs(a1 - a2)\n    a2 = abs(a2 - a3)\n    a3 = abs(a3 - a4)\n    a4 = abs(a4 - pa1</span>)\nprint(i)\n"
+      },
+      "token_overlap": 74,
+      "max_similarity_percent": 71.15
+    },
+    {
+      "case_id": 44,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b4fe535fa0f4f1d8f6/27b0843555fd4abbb1c1a142/sub_1762337830877_yteau84m3.py",
+        "similarity_percent": 70.48,
+        "full_code": "a,b,c,d=map(int,input().split())\ndem=0\nwhile not a==b==c==d:\n    e=a\n    a = abs(b-a)\n    b = abs(c-b)\n    c = abs(d-c)\n    d = abs(e-d)\n    dem += 1\nprint(dem)",
+        "highlighted_code": "<span class='highlight-red'>a,b,c,d=map(int,input().split())\ndem=0\nwhile n</span>ot a==b==c==d:\n    e=a\n    a = <span class='highlight-red'>abs(b-a)\n    b = abs(c-b)\n    c = abs(d-c)\n    d = abs(e-d</span>)\n    dem += 1\nprint(dem)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b4fe535fa0f4f1d8f6/f95120b3a38a461085ef58cb/sub_1761756540176_x1guuxwl7.py",
+        "similarity_percent": 48.68,
+        "full_code": "a1, a2, a3, a4 = map(int, input().split())\ncount = 0\nwhile not (a1 == 0 and a2 == 0 and a3 == 0 and a4 == 0):\n    if a1 == a2 == a3 == a4:\n        break\n    b1 = abs(a1 - a2)\n    b2 = abs(a2 - a3)\n    b3 = abs(a3 - a4)\n    b4 = abs(a4 - a1)\n    a1, a2, a3, a4 = b1, b2, b3, b4\n    count = count + 1\nprint(count)",
+        "highlighted_code": "<span class='highlight-green'>a1, a2, a3, a4 = map(int, input().split())\ncount = 0\nwhile n</span>ot (a1 == 0 and a2 == 0 and a3 == 0 and a4 == 0):\n    if a1 == a2 == a3 == a4:\n        break\n    b1 = <span class='highlight-green'>abs(a1 - a2)\n    b2 = abs(a2 - a3)\n    b3 = abs(a3 - a4)\n    b4 = abs(a4 - a1</span>)\n    a1, a2, a3, a4 = b1, b2, b3, b4\n    count = count + 1\nprint(count)"
+      },
+      "token_overlap": 74,
+      "max_similarity_percent": 70.48
+    },
+    {
+      "case_id": 45,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b4fe535fa0f4f1d8f6/e3bacd91f1ad41f482a842be/sub_1762335886827_1y2jtsxpy.py",
+        "similarity_percent": 70.48,
+        "full_code": "a,b,c,d=map(int,input().split())\ndem=0\nwhile not a==b==c==d:\n    e=a\n    a = abs(b-a)\n    b = abs(c-b)\n    c = abs(d-c)\n    d = abs(e-d)\n    dem += 1\nprint(dem)",
+        "highlighted_code": "<span class='highlight-red'>a,b,c,d=map(int,input().split())\ndem=0\nwhile n</span>ot a==b==c==d:\n    e=a\n    a = <span class='highlight-red'>abs(b-a)\n    b = abs(c-b)\n    c = abs(d-c)\n    d = abs(e-d</span>)\n    dem += 1\nprint(dem)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b4fe535fa0f4f1d8f6/f95120b3a38a461085ef58cb/sub_1761756540176_x1guuxwl7.py",
+        "similarity_percent": 48.68,
+        "full_code": "a1, a2, a3, a4 = map(int, input().split())\ncount = 0\nwhile not (a1 == 0 and a2 == 0 and a3 == 0 and a4 == 0):\n    if a1 == a2 == a3 == a4:\n        break\n    b1 = abs(a1 - a2)\n    b2 = abs(a2 - a3)\n    b3 = abs(a3 - a4)\n    b4 = abs(a4 - a1)\n    a1, a2, a3, a4 = b1, b2, b3, b4\n    count = count + 1\nprint(count)",
+        "highlighted_code": "<span class='highlight-green'>a1, a2, a3, a4 = map(int, input().split())\ncount = 0\nwhile n</span>ot (a1 == 0 and a2 == 0 and a3 == 0 and a4 == 0):\n    if a1 == a2 == a3 == a4:\n        break\n    b1 = <span class='highlight-green'>abs(a1 - a2)\n    b2 = abs(a2 - a3)\n    b3 = abs(a3 - a4)\n    b4 = abs(a4 - a1</span>)\n    a1, a2, a3, a4 = b1, b2, b3, b4\n    count = count + 1\nprint(count)"
+      },
+      "token_overlap": 74,
+      "max_similarity_percent": 70.48
+    },
+    {
+      "case_id": 46,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b4fe535fa0f4f1d8f6/e4a8123d49534012b2f0d978/sub_1762338515977_49yugxskb.py",
+        "similarity_percent": 69.3,
+        "full_code": "\na1, a2, a3, a4 = map(int, input().split())\n   \ncount = 0\nwhile not (a1 == a2 == a3 == a4):\n        na1 = abs(a1 - a2)\n        na2 = abs(a2 - a3)\n        na3 = abs(a3 - a4)\n        na4 = abs(a4 - a1)\n        a1, a2, a3, a4 = na1, na2, na3, na4\n        count += 1\nprint(count)",
+        "highlighted_code": "<span class='highlight-red'>\na1, a2, a3, a4 = map(int, input().split())\n   \ncount = 0\nwhile not (a1 </span>== a2 == a3 == a4):\n        na1 =<span class='highlight-red'> abs(a1 - a2)\n        na2 = abs(a2 - a3)\n        na3 = abs(a3 - a4)\n        na4 = abs(a4 - a</span>1)\n        a1, a2, a3, a4 = na1, na2, na3, na4\n        count += 1\nprint(count)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b4fe535fa0f4f1d8f6/3fa6af8d916a46039239cabe/sub_1762336876492_d5ukn1zp9.py",
+        "similarity_percent": 68.7,
+        "full_code": "a,b,c,d=map(int,input().split())\ncount=0\nwhile not(a==b and a==c and a==d):\n    e=a\n    a=abs(b-a)\n    b=abs(c-b)\n    c=abs(d-c)\n    d=abs(e-d)\n    count+=1\nprint(count)",
+        "highlighted_code": "<span class='highlight-green'>a,b,c,d=map(int,input().split())\ncount=0\nwhile not(a=</span>=b and a==c and a==d):\n    e=a\n    a=<span class='highlight-green'>abs(b-a)\n    b=abs(c-b)\n    c=abs(d-c)\n    d=abs(e-d</span>)\n    count+=1\nprint(count)"
+      },
+      "token_overlap": 79,
+      "max_similarity_percent": 69.3
+    },
+    {
+      "case_id": 47,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b4fe535fa0f4f1d8f6/27e30f767b3a46b283cbfec0/sub_1761663882495_qt0wi8tuq.py",
+        "similarity_percent": 69.23,
+        "full_code": "a1,a2,a3,a4 = map(int, input().split())\ncount = -1\nwhile not (a1 == 0 and a2 == 0 and a3 == 0 and a4 == 0):\n    b1 = abs(a1-a2)\n    b2 = abs(a2-a3)\n    b3 = abs(a3-a4)\n    b4 = abs(a4-a1)\n    a1,a2,a3,a4 = b1,b2,b3,b4\n    count += 1\nprint(count)\n",
+        "highlighted_code": "<span class='highlight-red'>a1,a2,a3,a4 = map(int, input().split())\ncount = </span>-1\nwhile not (a1 == 0 and a2 == 0 and a3 == 0 and a4 == 0):\n    b1 = <span class='highlight-red'>abs(a1-a2)\n    b2 = abs(a2-a3)\n    b3 = abs(a3-a4)\n    b4 = abs(a4-a1)\n    a1,a2,a3,a4 = b1,b2,b3,b4\n    count += 1\npri</span>nt(count)\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b4fe535fa0f4f1d8f6/e4a8123d49534012b2f0d978/sub_1762338515977_49yugxskb.py",
+        "similarity_percent": 78.95,
+        "full_code": "\na1, a2, a3, a4 = map(int, input().split())\n   \ncount = 0\nwhile not (a1 == a2 == a3 == a4):\n        na1 = abs(a1 - a2)\n        na2 = abs(a2 - a3)\n        na3 = abs(a3 - a4)\n        na4 = abs(a4 - a1)\n        a1, a2, a3, a4 = na1, na2, na3, na4\n        count += 1\nprint(count)",
+        "highlighted_code": "<span class='highlight-green'>\na1, a2, a3, a4 = map(int, input().split())\n   \ncount =</span> 0\nwhile not (a1 == a2 == a3 == a4):\n        na1 =<span class='highlight-green'> abs(a1 - a2)\n        na2 = abs(a2 - a3)\n        na3 = abs(a3 - a4)\n        na4 = abs(a4 - a1)\n        a1, a2, a3, a4 = na1, na2, na3, na4\n        count += 1\npr</span>int(count)"
+      },
+      "token_overlap": 90,
+      "max_similarity_percent": 78.95
+    },
+    {
+      "case_id": 48,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b4fe535fa0f4f1d8f6/8e19101eb0da4e9a92a17098/sub_1762327905734_s16j2bf0q.py",
+        "similarity_percent": 69.1,
+        "full_code": "d = input().split()\nnums = list(map(int, d))\nfor i in range(0, len(nums), 4):\n    a1, a2, a3, a4 = nums[i:i+4]\n    if a1 == a2 == a3 == a4 == 0:\n        break\n    cnt = 0\n    while not (a1 == a2 == a3 == a4):\n        b1 = abs(a1 - a2)\n        b2 = abs(a2 - a3)\n        b3 = abs(a3 - a4)\n        b4 = abs(a4 - a1)\n        a1, a2, a3, a4 = b1, b2, b3, b4\n        cnt += 1\n    print(cnt)",
+        "highlighted_code": "d = input().split()\nnums = list(map(int, d)<span class='highlight-red'>)\nfor i in range(0, len(nums), 4):\n    a1, a2, a3, a4 = nums[i:i+4]\n    if a1 == a2 == a3 == a4 == 0:\n        brea</span>k\n    cnt = 0\n    while not (a1 == a2 == a3 == a4):\n        <span class='highlight-red'>b1 = abs(a1 - a2)\n        b2 = abs(a2 - a3)\n        b3 = abs(a3 - a4)\n        b4 = abs(a4 - a1)\n        a1, a2, a3, a4 = b1, b2, b3, b4\n        cnt += 1\n    pri</span>nt(cnt)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b4fe535fa0f4f1d8f6/bbb05531336e487d8ed54046/sub_1762798181058_t1jk77bbn.py",
+        "similarity_percent": 60.29,
+        "full_code": "import sys\nd = list(map(int, sys.stdin.read().split()))\nfor i in range(0, len(d), 4):\n    a, b, c, e = d[i:i+4]\n    if a == b == c == e == 0:\n        break\n    s = 0\n    for _ in range(1_000_000):\n        if a == b == c == e:\n            break\n        x = abs(a - b)\n        y = abs(b - c)\n        z = abs(c - e)\n        w = abs(e - a)\n        a, b, c, e = x, y, z, w\n        s += 1\n    print(s)\n",
+        "highlighted_code": "import sys\nd = list(map(int, sys.stdin.read().split())<span class='highlight-green'>)\nfor i in range(0, len(d), 4):\n    a, b, c, e = d[i:i+4]\n    if a == b == c == e == 0:\n        brea</span>k\n    s = 0\n    for _ in range(1_000_000):\n        if a == b == c == e:\n            break\n        <span class='highlight-green'>x = abs(a - b)\n        y = abs(b - c)\n        z = abs(c - e)\n        w = abs(e - a)\n        a, b, c, e = x, y, z, w\n        s += 1\n    pri</span>nt(s)\n"
+      },
+      "token_overlap": 123,
+      "max_similarity_percent": 69.1
+    },
+    {
+      "case_id": 49,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b4fe535fa0f4f1d8f6/53387d97307e4d81b93edb94/sub_1762339132352_3h0f82lt7.py",
+        "similarity_percent": 68.5,
+        "full_code": "a, b, c, d = map(int, input().split())\ndem = 0\nwhile not (a == b and b == c and c == d):\n a1 , b1 , c1 , d1 = a , b , c ,d\n a = abs (a1-b1)\n b = abs (b1-c1)\n c = abs (c1-d1)\n d = abs (d1-a1)\n dem+=1\nprint (dem)",
+        "highlighted_code": "<span class='highlight-red'>a, b, c, d = map(int, input().split())\ndem = 0\nwhile n</span>ot (a == b and b == c and c == d):\n a1 , b1 , c1 , d1 = a , b , c ,d\n a = <span class='highlight-red'>abs (a1-b1)\n b = abs (b1-c1)\n c = abs (c1-d1)\n d = abs (d1-a1)\n dem+=1\nprint (dem)</span>"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b4fe535fa0f4f1d8f6/e3bacd91f1ad41f482a842be/sub_1762335886827_1y2jtsxpy.py",
+        "similarity_percent": 82.86,
+        "full_code": "a,b,c,d=map(int,input().split())\ndem=0\nwhile not a==b==c==d:\n    e=a\n    a = abs(b-a)\n    b = abs(c-b)\n    c = abs(d-c)\n    d = abs(e-d)\n    dem += 1\nprint(dem)",
+        "highlighted_code": "<span class='highlight-green'>a,b,c,d=map(int,input().split())\ndem=0\nwhile n</span>ot a==b==c==d:\n    e=a\n    a = <span class='highlight-green'>abs(b-a)\n    b = abs(c-b)\n    c = abs(d-c)\n    d = abs(e-d)\n    dem += 1\nprint(dem)</span>"
+      },
+      "token_overlap": 87,
+      "max_similarity_percent": 82.86
+    },
+    {
+      "case_id": 50,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b4fe535fa0f4f1d8f6/27e30f767b3a46b283cbfec0/sub_1761663882495_qt0wi8tuq.py",
+        "similarity_percent": 67.69,
+        "full_code": "a1,a2,a3,a4 = map(int, input().split())\ncount = -1\nwhile not (a1 == 0 and a2 == 0 and a3 == 0 and a4 == 0):\n    b1 = abs(a1-a2)\n    b2 = abs(a2-a3)\n    b3 = abs(a3-a4)\n    b4 = abs(a4-a1)\n    a1,a2,a3,a4 = b1,b2,b3,b4\n    count += 1\nprint(count)\n",
+        "highlighted_code": "<span class='highlight-red'>a1,a2,a3,a4 = map(int, input().split())\n</span>count = -1\nwhile not (a1 == 0 and a2 == 0 and a3 == 0 and a4 == 0):\n    b1 = <span class='highlight-red'>abs(a1-a2)\n    b2 = abs(a2-a3)\n    b3 = abs(a3-a4)\n    b4 = abs(a4-a1)\n    a1,a2,a3,a4 = b1,b2,b3,b4\n    count += 1\npri</span>nt(count)\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b4fe535fa0f4f1d8f6/780627ccd0224069b68e3b8d/sub_1762338813703_bcugq96d4.py",
+        "similarity_percent": 61.97,
+        "full_code": "a, b, c, d = map(int, input().split())\nif a == b == c == d:\n    print('0')\nelse:\n    dem = 0\n    while not (a == b == c == d):\n        a1 = abs(a - b)\n        a2 = abs(b - c)\n        a3 = abs(c - d)\n        a4 = abs(d - a)\n        a, b, c, d = a1, a2, a3, a4\n        dem += 1\n    print(dem)",
+        "highlighted_code": "<span class='highlight-green'>a, b, c, d = map(int, input().split())\n</span>if a == b == c == d:\n    print(&#39;0&#39;)\nelse:\n    dem = 0\n    while not (a == b == c == d):\n        a1 = <span class='highlight-green'>abs(a - b)\n        a2 = abs(b - c)\n        a3 = abs(c - d)\n        a4 = abs(d - a)\n        a, b, c, d = a1, a2, a3, a4\n        dem += 1\n    pri</span>nt(dem)"
+      },
+      "token_overlap": 88,
+      "max_similarity_percent": 67.69
+    },
+    {
+      "case_id": 51,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b4fe535fa0f4f1d8f6/0d74995bf22b4574a97a2297/sub_1761594497068_sxyrreje7.py",
+        "similarity_percent": 67.4,
+        "full_code": "import sys\ninput = sys.stdin.readline\nwhile True:\n    a, b, c, d = map(int, input().split())\n    if a == 0 and b == 0 and c == 0 and d == 0:\n        break\n    count = 0\n    while True:\n        if a == b and b == c and c == d:\n            break \n        a, b, c, d = abs(a - b), abs(b - c), abs(c - d),abs(d - a)\n        count += 1\n    print(count)",
+        "highlighted_code": "import sys\ninput = sys.stdin.readline\nw<span class='highlight-red'>hile True:\n    a, b, c, d = map(int, input().split())\n    if a == 0 and b == 0 and c == 0 and d == 0:\n        break\n    count = 0\n    w</span>hile True:\n        if a == b and b == c and c == d:\n            break \n        a, b<span class='highlight-red'>, c, d = abs(a - b), abs(b - c), abs(c - d),abs(d - a)\n        count += 1\n    prin</span>t(count)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b4fe535fa0f4f1d8f6/e6281d37906440c8960727fd/sub_1762336397960_w2o3iszg4.py",
+        "similarity_percent": 82.99,
+        "full_code": "while True:\n    a1, a2, a3, a4 = map(int, input().split())\n    if a1 == 0 and a2 == 0 and a3 == 0 and a4 == 0:\n        break\n    count = 0\n    while len({a1, a2, a3, a4}) > 1:\n        a1, a2, a3, a4 = abs(a1 - a2), abs(a2 - a3), abs(a3 - a4), abs(a4 - a1)\n        count += 1\n    print(count)",
+        "highlighted_code": "w<span class='highlight-green'>hile True:\n    a1, a2, a3, a4 = map(int, input().split())\n    if a1 == 0 and a2 == 0 and a3 == 0 and a4 == 0:\n        break\n    count = 0\n    w</span>hile len({a1, a2, a3, a4}) &gt; 1:\n        a1, a2<span class='highlight-green'>, a3, a4 = abs(a1 - a2), abs(a2 - a3), abs(a3 - a4), abs(a4 - a1)\n        count += 1\n    prin</span>t(count)"
+      },
+      "token_overlap": 122,
+      "max_similarity_percent": 82.99
+    },
+    {
+      "case_id": 52,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b4fe535fa0f4f1d8f6/0d74995bf22b4574a97a2297/sub_1761594497068_sxyrreje7.py",
+        "similarity_percent": 67.4,
+        "full_code": "import sys\ninput = sys.stdin.readline\nwhile True:\n    a, b, c, d = map(int, input().split())\n    if a == 0 and b == 0 and c == 0 and d == 0:\n        break\n    count = 0\n    while True:\n        if a == b and b == c and c == d:\n            break \n        a, b, c, d = abs(a - b), abs(b - c), abs(c - d),abs(d - a)\n        count += 1\n    print(count)",
+        "highlighted_code": "import sys\ninput = sys.stdin.readline\nw<span class='highlight-red'>hile True:\n    a, b, c, d = map(int, input().split())\n    if a == 0 and b == 0 and c == 0 and d == 0:\n        break\n    count = 0\n    w</span>hile True:\n        if a == b and b == c and c == d:\n            break \n        a, b<span class='highlight-red'>, c, d = abs(a - b), abs(b - c), abs(c - d),abs(d - a)\n        count += 1\n    prin</span>t(count)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b4fe535fa0f4f1d8f6/e6281d37906440c8960727fd/sub_1762336235388_q4di04h8t.py",
+        "similarity_percent": 82.99,
+        "full_code": "while True:\n    a1, a2, a3, a4 = map(int, input().split())\n    if a1 == 0 and a2 == 0 and a3 == 0 and a4 == 0:\n        break\n\n    count = 0\n    while len({a1, a2, a3, a4}) > 1:\n        a1, a2, a3, a4 = abs(a1 - a2), abs(a2 - a3), abs(a3 - a4), abs(a4 - a1)\n        count += 1\n\n    print(count)",
+        "highlighted_code": "w<span class='highlight-green'>hile True:\n    a1, a2, a3, a4 = map(int, input().split())\n    if a1 == 0 and a2 == 0 and a3 == 0 and a4 == 0:\n        break\n\n    count = 0\n    w</span>hile len({a1, a2, a3, a4}) &gt; 1:\n        a1, a2<span class='highlight-green'>, a3, a4 = abs(a1 - a2), abs(a2 - a3), abs(a3 - a4), abs(a4 - a1)\n        count += 1\n\n    prin</span>t(count)"
+      },
+      "token_overlap": 122,
+      "max_similarity_percent": 82.99
+    },
+    {
+      "case_id": 53,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b4fe535fa0f4f1d8f6/a34ffbda761b435ca043fd30/sub_1762356974907_dg7kw64b3.py",
+        "similarity_percent": 66.39,
+        "full_code": "a, b, c, d=map(int, input().split())\nso_lan = 0\nwhile not (a==b==c==d):\n    so_lan+=1\n    a1=abs(a-b)\n    b1=abs(b-c)\n    c1=abs(c-d)\n    d1=abs(d-a)\n    a, b, c, d= a1, b1, c1, d1\nprint(so_lan)",
+        "highlighted_code": "<span class='highlight-red'>a, b, c, d=map(int, input().split())\nso_lan = 0\nwhile not (a=</span>=b==c==d):\n    so_lan+=1\n    a1=<span class='highlight-red'>abs(a-b)\n    b1=abs(b-c)\n    c1=abs(c-d)\n    d1=abs(d-a</span>)\n    a, b, c, d= a1, b1, c1, d1\nprint(so_lan)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b4fe535fa0f4f1d8f6/53387d97307e4d81b93edb94/sub_1762339132352_3h0f82lt7.py",
+        "similarity_percent": 62.2,
+        "full_code": "a, b, c, d = map(int, input().split())\ndem = 0\nwhile not (a == b and b == c and c == d):\n a1 , b1 , c1 , d1 = a , b , c ,d\n a = abs (a1-b1)\n b = abs (b1-c1)\n c = abs (c1-d1)\n d = abs (d1-a1)\n dem+=1\nprint (dem)",
+        "highlighted_code": "<span class='highlight-green'>a, b, c, d = map(int, input().split())\ndem = 0\nwhile not (a =</span>= b and b == c and c == d):\n a1 , b1 , c1 , d1 = a , b , c ,d\n a = <span class='highlight-green'>abs (a1-b1)\n b = abs (b1-c1)\n c = abs (c1-d1)\n d = abs (d1-a1</span>)\n dem+=1\nprint (dem)"
+      },
+      "token_overlap": 79,
+      "max_similarity_percent": 66.39
+    },
+    {
+      "case_id": 54,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b4fe535fa0f4f1d8f6/a34ffbda761b435ca043fd30/sub_1762356974907_dg7kw64b3.py",
+        "similarity_percent": 66.39,
+        "full_code": "a, b, c, d=map(int, input().split())\nso_lan = 0\nwhile not (a==b==c==d):\n    so_lan+=1\n    a1=abs(a-b)\n    b1=abs(b-c)\n    c1=abs(c-d)\n    d1=abs(d-a)\n    a, b, c, d= a1, b1, c1, d1\nprint(so_lan)",
+        "highlighted_code": "<span class='highlight-red'>a, b, c, d=map(int, input().split())\nso_lan = 0\nwhile not (a=</span>=b==c==d):\n    so_lan+=1\n    a1=<span class='highlight-red'>abs(a-b)\n    b1=abs(b-c)\n    c1=abs(c-d)\n    d1=abs(d-a</span>)\n    a, b, c, d= a1, b1, c1, d1\nprint(so_lan)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b4fe535fa0f4f1d8f6/3fa6af8d916a46039239cabe/sub_1762336876492_d5ukn1zp9.py",
+        "similarity_percent": 68.7,
+        "full_code": "a,b,c,d=map(int,input().split())\ncount=0\nwhile not(a==b and a==c and a==d):\n    e=a\n    a=abs(b-a)\n    b=abs(c-b)\n    c=abs(d-c)\n    d=abs(e-d)\n    count+=1\nprint(count)",
+        "highlighted_code": "<span class='highlight-green'>a,b,c,d=map(int,input().split())\ncount=0\nwhile not(a=</span>=b and a==c and a==d):\n    e=a\n    a=<span class='highlight-green'>abs(b-a)\n    b=abs(c-b)\n    c=abs(d-c)\n    d=abs(e-d</span>)\n    count+=1\nprint(count)"
+      },
+      "token_overlap": 79,
+      "max_similarity_percent": 68.7
+    },
+    {
+      "case_id": 55,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b4fe535fa0f4f1d8f6/e4a8123d49534012b2f0d978/sub_1762338515977_49yugxskb.py",
+        "similarity_percent": 65.79,
+        "full_code": "\na1, a2, a3, a4 = map(int, input().split())\n   \ncount = 0\nwhile not (a1 == a2 == a3 == a4):\n        na1 = abs(a1 - a2)\n        na2 = abs(a2 - a3)\n        na3 = abs(a3 - a4)\n        na4 = abs(a4 - a1)\n        a1, a2, a3, a4 = na1, na2, na3, na4\n        count += 1\nprint(count)",
+        "highlighted_code": "<span class='highlight-red'>\na1, a2, a3, a4 = map(int, input().split())\n   \ncount =</span> 0\nwhile not (a1 == a2 ==<span class='highlight-red'> a3 == a4):\n        na1 = abs(a1 - a2)\n        na2 = abs(a2 - a3)\n        na3 = abs(a3 - a4)\n        na4 = abs(a4 - a</span>1)\n        a1, a2, a3, a4 = na1, na2, na3, na4\n        count += 1\nprint(count)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b4fe535fa0f4f1d8f6/3fa6af8d916a46039239cabe/sub_1761646788738_jaqcylqz1.py",
+        "similarity_percent": 65.79,
+        "full_code": "a,b,c,d=map(int,input().split())\ne=a\ncount=0\nwhile not(a==b and a==c and a==d):\n    a=abs(b-a)\n    b=abs(c-b)\n    c=abs(d-c)\n    d=abs(e-d)\n    e=a\n    count+=1\nprint(count)",
+        "highlighted_code": "<span class='highlight-green'>a,b,c,d=map(int,input().split())\ne=</span>a\ncount=0\nwhile not(a==b and a==c and <span class='highlight-green'>a==d):\n    a=abs(b-a)\n    b=abs(c-b)\n    c=abs(d-c)\n    d=abs(e-d</span>)\n    e=a\n    count+=1\nprint(count)"
+      },
+      "token_overlap": 75,
+      "max_similarity_percent": 65.79
+    },
+    {
+      "case_id": 56,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b4fe535fa0f4f1d8f6/d82933fea814463eb5b029d1/sub_1761621531207_1qppfh35j.py",
+        "similarity_percent": 65.68,
+        "full_code": "while True:\n    try:\n        a1, a2, a3, a4 = map(int, input().split())\n    except EOFError:\n        break  \n    if a1 == a2 == a3 == a4 == 0:\n        break  \n\n    steps = 0\n    while not (a1 == a2 == a3 == a4):\n        b1 = abs(a1 - a2)\n        b2 = abs(a2 - a3)\n        b3 = abs(a3 - a4)\n        b4 = abs(a4 - a1)\n        a1, a2, a3, a4 = b1, b2, b3, b4\n        steps += 1\n\n    print(steps)",
+        "highlighted_code": "while True:\n    try:\n        a1, a2<span class='highlight-red'>, a3, a4 = map(int, input().split())\n    </span>except EOFError:\n        break  \n    if a1 == a2 == a3 == a4 == 0:\n        break  \n\n    <span class='highlight-red'>steps = 0\n    while not (a1 == a2 == a3 == a4):\n        b1 = abs(a1 - a2)\n        b2 = abs(a2 - a3)\n        b3 = abs(a3 - a4)\n        b4 = abs(a4 - a1)\n        a1, a2, a3, a4 = b1, b2, b3, b4\n        steps += 1\n\n    pri</span>nt(steps)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b4fe535fa0f4f1d8f6/780627ccd0224069b68e3b8d/sub_1762338813703_bcugq96d4.py",
+        "similarity_percent": 78.17,
+        "full_code": "a, b, c, d = map(int, input().split())\nif a == b == c == d:\n    print('0')\nelse:\n    dem = 0\n    while not (a == b == c == d):\n        a1 = abs(a - b)\n        a2 = abs(b - c)\n        a3 = abs(c - d)\n        a4 = abs(d - a)\n        a, b, c, d = a1, a2, a3, a4\n        dem += 1\n    print(dem)",
+        "highlighted_code": "a, b<span class='highlight-green'>, c, d = map(int, input().split())\n</span>if a == b == c == d:\n    print(&#39;0&#39;)\nelse:\n    <span class='highlight-green'>dem = 0\n    while not (a == b == c == d):\n        a1 = abs(a - b)\n        a2 = abs(b - c)\n        a3 = abs(c - d)\n        a4 = abs(d - a)\n        a, b, c, d = a1, a2, a3, a4\n        dem += 1\n    pri</span>nt(dem)"
+      },
+      "token_overlap": 111,
+      "max_similarity_percent": 78.17
+    },
+    {
+      "case_id": 57,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b4fe535fa0f4f1d8f6/d82933fea814463eb5b029d1/sub_1761621531207_1qppfh35j.py",
+        "similarity_percent": 65.68,
+        "full_code": "while True:\n    try:\n        a1, a2, a3, a4 = map(int, input().split())\n    except EOFError:\n        break  \n    if a1 == a2 == a3 == a4 == 0:\n        break  \n\n    steps = 0\n    while not (a1 == a2 == a3 == a4):\n        b1 = abs(a1 - a2)\n        b2 = abs(a2 - a3)\n        b3 = abs(a3 - a4)\n        b4 = abs(a4 - a1)\n        a1, a2, a3, a4 = b1, b2, b3, b4\n        steps += 1\n\n    print(steps)",
+        "highlighted_code": "while True:\n    try:\n        a1, a2<span class='highlight-red'>, a3, a4 = map(int, input().split())\n    </span>except EOFError:\n        break  \n    if a1 == a2 == a3 == a4 == 0:\n        break  \n\n    <span class='highlight-red'>steps = 0\n    while not (a1 == a2 == a3 == a4):\n        b1 = abs(a1 - a2)\n        b2 = abs(a2 - a3)\n        b3 = abs(a3 - a4)\n        b4 = abs(a4 - a1)\n        a1, a2, a3, a4 = b1, b2, b3, b4\n        steps += 1\n\n    pri</span>nt(steps)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b4fe535fa0f4f1d8f6/e4a8123d49534012b2f0d978/sub_1762338515977_49yugxskb.py",
+        "similarity_percent": 97.37,
+        "full_code": "\na1, a2, a3, a4 = map(int, input().split())\n   \ncount = 0\nwhile not (a1 == a2 == a3 == a4):\n        na1 = abs(a1 - a2)\n        na2 = abs(a2 - a3)\n        na3 = abs(a3 - a4)\n        na4 = abs(a4 - a1)\n        a1, a2, a3, a4 = na1, na2, na3, na4\n        count += 1\nprint(count)",
+        "highlighted_code": "\na1, a<span class='highlight-green'>2, a3, a4 = map(int, input().split())\n   </span><span class='highlight-green'>\ncount = 0\nwhile not (a1 == a2 == a3 == a4):\n        na1 = abs(a1 - a2)\n        na2 = abs(a2 - a3)\n        na3 = abs(a3 - a4)\n        na4 = abs(a4 - a1)\n        a1, a2, a3, a4 = na1, na2, na3, na4\n        count += 1\npr</span>int(count)"
+      },
+      "token_overlap": 111,
+      "max_similarity_percent": 97.37
+    },
+    {
+      "case_id": 58,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b4fe535fa0f4f1d8f6/e4a8123d49534012b2f0d978/sub_1762338515977_49yugxskb.py",
+        "similarity_percent": 64.91,
+        "full_code": "\na1, a2, a3, a4 = map(int, input().split())\n   \ncount = 0\nwhile not (a1 == a2 == a3 == a4):\n        na1 = abs(a1 - a2)\n        na2 = abs(a2 - a3)\n        na3 = abs(a3 - a4)\n        na4 = abs(a4 - a1)\n        a1, a2, a3, a4 = na1, na2, na3, na4\n        count += 1\nprint(count)",
+        "highlighted_code": "<span class='highlight-red'>\na1, a2, a3, a4 = map(int, input().split())\n   \ncount = 0\nwhile </span>not (a1 == a2 == a3 == a4):\n        na1 =<span class='highlight-red'> abs(a1 - a2)\n        na2 = abs(a2 - a3)\n        na3 = abs(a3 - a4)\n        na4 = abs(a4 - a</span>1)\n        a1, a2, a3, a4 = na1, na2, na3, na4\n        count += 1\nprint(count)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b4fe535fa0f4f1d8f6/e3bacd91f1ad41f482a842be/sub_1762335886827_1y2jtsxpy.py",
+        "similarity_percent": 70.48,
+        "full_code": "a,b,c,d=map(int,input().split())\ndem=0\nwhile not a==b==c==d:\n    e=a\n    a = abs(b-a)\n    b = abs(c-b)\n    c = abs(d-c)\n    d = abs(e-d)\n    dem += 1\nprint(dem)",
+        "highlighted_code": "<span class='highlight-green'>a,b,c,d=map(int,input().split())\ndem=0\nwhile n</span>ot a==b==c==d:\n    e=a\n    a = <span class='highlight-green'>abs(b-a)\n    b = abs(c-b)\n    c = abs(d-c)\n    d = abs(e-d</span>)\n    dem += 1\nprint(dem)"
+      },
+      "token_overlap": 74,
+      "max_similarity_percent": 70.48
+    },
+    {
+      "case_id": 59,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b4fe535fa0f4f1d8f6/e6281d37906440c8960727fd/sub_1762337688672_04rdlq6yf.py",
+        "similarity_percent": 64.89,
+        "full_code": "while True:\n    a = list(map(int, input().split()))\n    if a == [0, 0, 0, 0]:\n        break\n    dem = 0\n    while len(set(a)) != 1:  \n        a = [abs(a[i] - a[(i + 1) % 4]) for i in range(4)]\n        dem += 1\n    print(dem)",
+        "highlighted_code": "<span class='highlight-red'>while True:\n    a = list(map(int, input().split()))\n    if a == [0, 0, 0, 0]:\n        break\n    dem = 0\n    while len(set(a)) != 1:  \n        a = [a</span>bs(a[i] - a[(i + 1) % 4]) for i in range(4)]\n        dem += 1\n    print(dem)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b4fe535fa0f4f1d8f6/7e85a84620b04fb781a08d1f/sub_1762699353475_ndmprpkso.py",
+        "similarity_percent": 55.19,
+        "full_code": "while True:\n    a = list(map(int, input().split()))\n    if a == [0, 0, 0, 0]:\n        break\n    b = 0\n    while len(set(a)) != 1:\n        a = [\n            abs(a[0] - a[1]),\n            abs(a[1] - a[2]),\n            abs(a[2] - a[3]),\n            abs(a[3] - a[0])\n        ]\n        b += 1\n    print(b)\n",
+        "highlighted_code": "<span class='highlight-green'>while True:\n    a = list(map(int, input().split()))\n    if a == [0, 0, 0, 0]:\n        break\n    b = 0\n    while len(set(a)) != 1:\n        a = [\n            a</span>bs(a[0] - a[1]),\n            abs(a[1] - a[2]),\n            abs(a[2] - a[3]),\n            abs(a[3] - a[0])\n        ]\n        b += 1\n    print(b)\n"
+      },
+      "token_overlap": 85,
+      "max_similarity_percent": 64.89
+    },
+    {
+      "case_id": 60,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b4fe535fa0f4f1d8f6/8e236cb825b041b0a82527f2/sub_1762328600554_2bpeynnsu.py",
+        "similarity_percent": 64.42,
+        "full_code": "a1, a2, a3, a4 = map(int, input().split())\ni = 0\nwhile not (a1 == a2 == a3 == a4):\n    i += 1\n    pa1 = a1\n    a1 = abs(a1 - a2)\n    a2 = abs(a2 - a3)\n    a3 = abs(a3 - a4)\n    a4 = abs(a4 - pa1)\nprint(i)\n",
+        "highlighted_code": "<span class='highlight-red'>a1, a2, a3, a4 = map(int, input().split())\ni = </span>0\nwhile not (a1 == a2 == a3 == a4):\n    i += 1\n    pa1 = a1\n    a1 = <span class='highlight-red'>abs(a1 - a2)\n    a2 = abs(a2 - a3)\n    a3 = abs(a3 - a4)\n    a4 = abs(a4 - pa1</span>)\nprint(i)\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b4fe535fa0f4f1d8f6/3fa6af8d916a46039239cabe/sub_1761646788738_jaqcylqz1.py",
+        "similarity_percent": 58.77,
+        "full_code": "a,b,c,d=map(int,input().split())\ne=a\ncount=0\nwhile not(a==b and a==c and a==d):\n    a=abs(b-a)\n    b=abs(c-b)\n    c=abs(d-c)\n    d=abs(e-d)\n    e=a\n    count+=1\nprint(count)",
+        "highlighted_code": "<span class='highlight-green'>a,b,c,d=map(int,input().split())\ne=</span>a\ncount=0\nwhile not(a==b and a==c and a==d):\n    a=<span class='highlight-green'>abs(b-a)\n    b=abs(c-b)\n    c=abs(d-c)\n    d=abs(e-d</span>)\n    e=a\n    count+=1\nprint(count)"
+      },
+      "token_overlap": 67,
+      "max_similarity_percent": 64.42
+    },
+    {
+      "case_id": 61,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b4fe535fa0f4f1d8f6/e0cd413045d741e39459231c/sub_1762329598439_8rku27hvx.py",
+        "similarity_percent": 64.1,
+        "full_code": "n=input()\na1, a2, a3, a4 = map(int, n.split())\n\nlan = 0\nwhile not (a1 == a2 == a3 == a4):\n    b1 = abs(a1 - a2)\n    b2 = abs(a2 - a3)\n    b3 = abs(a3 - a4)\n    b4 = abs(a4 - a1)\n    a1, a2, a3, a4 = b1, b2, b3, b4\n    lan += 1\nprint(lan)",
+        "highlighted_code": "n=input()\na1, a2, a3, a4 = map(int, n.split())\n\n<span class='highlight-red'>lan = 0\nwhile not (a1 == a2 == a3 == a4):\n    b1 </span>= <span class='highlight-red'>abs(a1 - a2)\n    b2 = abs(a2 - a3)\n    b3 = abs(a3 - a4)\n    b4 = abs(a4 - a1)\n    a1, a2, a3, a4 = b1, b2, </span>b3, b4\n    lan += 1\nprint(lan)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b4fe535fa0f4f1d8f6/a34ffbda761b435ca043fd30/sub_1762356974907_dg7kw64b3.py",
+        "similarity_percent": 63.03,
+        "full_code": "a, b, c, d=map(int, input().split())\nso_lan = 0\nwhile not (a==b==c==d):\n    so_lan+=1\n    a1=abs(a-b)\n    b1=abs(b-c)\n    c1=abs(c-d)\n    d1=abs(d-a)\n    a, b, c, d= a1, b1, c1, d1\nprint(so_lan)",
+        "highlighted_code": "a, b, c, d=map(int, input().split())\n<span class='highlight-green'>so_lan = 0\nwhile not (a==b==c==d):\n    so_lan</span>+=1\n    a1=<span class='highlight-green'>abs(a-b)\n    b1=abs(b-c)\n    c1=abs(c-d)\n    d1=abs(d-a)\n    a, b, c, d= a1, b1, </span>c1, d1\nprint(so_lan)"
+      },
+      "token_overlap": 75,
+      "max_similarity_percent": 64.1
+    },
+    {
+      "case_id": 62,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b4fe535fa0f4f1d8f6/27b0843555fd4abbb1c1a142/sub_1762337830877_yteau84m3.py",
+        "similarity_percent": 63.81,
+        "full_code": "a,b,c,d=map(int,input().split())\ndem=0\nwhile not a==b==c==d:\n    e=a\n    a = abs(b-a)\n    b = abs(c-b)\n    c = abs(d-c)\n    d = abs(e-d)\n    dem += 1\nprint(dem)",
+        "highlighted_code": "<span class='highlight-red'>a,b,c,d=map(int,input().split())\ndem=</span>0\nwhile not a==b==c==d:\n    e=a\n    a = <span class='highlight-red'>abs(b-a)\n    b = abs(c-b)\n    c = abs(d-c)\n    d = abs(e-d</span>)\n    dem += 1\nprint(dem)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b4fe535fa0f4f1d8f6/27e30f767b3a46b283cbfec0/sub_1761663882495_qt0wi8tuq.py",
+        "similarity_percent": 51.54,
+        "full_code": "a1,a2,a3,a4 = map(int, input().split())\ncount = -1\nwhile not (a1 == 0 and a2 == 0 and a3 == 0 and a4 == 0):\n    b1 = abs(a1-a2)\n    b2 = abs(a2-a3)\n    b3 = abs(a3-a4)\n    b4 = abs(a4-a1)\n    a1,a2,a3,a4 = b1,b2,b3,b4\n    count += 1\nprint(count)\n",
+        "highlighted_code": "<span class='highlight-green'>a1,a2,a3,a4 = map(int, input().split())\ncount = </span>-1\nwhile not (a1 == 0 and a2 == 0 and a3 == 0 and a4 == 0):\n    b1 = <span class='highlight-green'>abs(a1-a2)\n    b2 = abs(a2-a3)\n    b3 = abs(a3-a4)\n    b4 = abs(a4-a1</span>)\n    a1,a2,a3,a4 = b1,b2,b3,b4\n    count += 1\nprint(count)\n"
+      },
+      "token_overlap": 67,
+      "max_similarity_percent": 63.81
+    },
+    {
+      "case_id": 63,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b4fe535fa0f4f1d8f6/27b0843555fd4abbb1c1a142/sub_1762337830877_yteau84m3.py",
+        "similarity_percent": 63.81,
+        "full_code": "a,b,c,d=map(int,input().split())\ndem=0\nwhile not a==b==c==d:\n    e=a\n    a = abs(b-a)\n    b = abs(c-b)\n    c = abs(d-c)\n    d = abs(e-d)\n    dem += 1\nprint(dem)",
+        "highlighted_code": "<span class='highlight-red'>a,b,c,d=map(int,input().split())\ndem=</span>0\nwhile not a==b==c==d:\n    e=a\n    a = <span class='highlight-red'>abs(b-a)\n    b = abs(c-b)\n    c = abs(d-c)\n    d = abs(e-d</span>)\n    dem += 1\nprint(dem)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b4fe535fa0f4f1d8f6/3fa6af8d916a46039239cabe/sub_1761646788738_jaqcylqz1.py",
+        "similarity_percent": 58.77,
+        "full_code": "a,b,c,d=map(int,input().split())\ne=a\ncount=0\nwhile not(a==b and a==c and a==d):\n    a=abs(b-a)\n    b=abs(c-b)\n    c=abs(d-c)\n    d=abs(e-d)\n    e=a\n    count+=1\nprint(count)",
+        "highlighted_code": "<span class='highlight-green'>a,b,c,d=map(int,input().split())\ne=</span>a\ncount=0\nwhile not(a==b and a==c and a==d):\n    a=<span class='highlight-green'>abs(b-a)\n    b=abs(c-b)\n    c=abs(d-c)\n    d=abs(e-d</span>)\n    e=a\n    count+=1\nprint(count)"
+      },
+      "token_overlap": 67,
+      "max_similarity_percent": 63.81
+    },
+    {
+      "case_id": 64,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b4fe535fa0f4f1d8f6/e3bacd91f1ad41f482a842be/sub_1762335886827_1y2jtsxpy.py",
+        "similarity_percent": 63.81,
+        "full_code": "a,b,c,d=map(int,input().split())\ndem=0\nwhile not a==b==c==d:\n    e=a\n    a = abs(b-a)\n    b = abs(c-b)\n    c = abs(d-c)\n    d = abs(e-d)\n    dem += 1\nprint(dem)",
+        "highlighted_code": "<span class='highlight-red'>a,b,c,d=map(int,input().split())\ndem=</span>0\nwhile not a==b==c==d:\n    e=a\n    a = <span class='highlight-red'>abs(b-a)\n    b = abs(c-b)\n    c = abs(d-c)\n    d = abs(e-d</span>)\n    dem += 1\nprint(dem)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b4fe535fa0f4f1d8f6/3fa6af8d916a46039239cabe/sub_1761646788738_jaqcylqz1.py",
+        "similarity_percent": 58.77,
+        "full_code": "a,b,c,d=map(int,input().split())\ne=a\ncount=0\nwhile not(a==b and a==c and a==d):\n    a=abs(b-a)\n    b=abs(c-b)\n    c=abs(d-c)\n    d=abs(e-d)\n    e=a\n    count+=1\nprint(count)",
+        "highlighted_code": "<span class='highlight-green'>a,b,c,d=map(int,input().split())\ne=</span>a\ncount=0\nwhile not(a==b and a==c and a==d):\n    a=<span class='highlight-green'>abs(b-a)\n    b=abs(c-b)\n    c=abs(d-c)\n    d=abs(e-d</span>)\n    e=a\n    count+=1\nprint(count)"
+      },
+      "token_overlap": 67,
+      "max_similarity_percent": 63.81
+    },
+    {
+      "case_id": 65,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b4fe535fa0f4f1d8f6/53387d97307e4d81b93edb94/sub_1762339132352_3h0f82lt7.py",
+        "similarity_percent": 63.78,
+        "full_code": "a, b, c, d = map(int, input().split())\ndem = 0\nwhile not (a == b and b == c and c == d):\n a1 , b1 , c1 , d1 = a , b , c ,d\n a = abs (a1-b1)\n b = abs (b1-c1)\n c = abs (c1-d1)\n d = abs (d1-a1)\n dem+=1\nprint (dem)",
+        "highlighted_code": "<span class='highlight-red'>a, b, c, d = map(int, input().split())\ndem = 0\nwhile not (a =</span>= b and b == c and c == d):\n a1 , b1 , c1 , d1 = a , b , c ,d\n <span class='highlight-red'>a = abs (a1-b1)\n b = abs (b1-c1)\n c = abs (c1-d1)\n d = abs (d1-a1</span>)\n dem+=1\nprint (dem)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b4fe535fa0f4f1d8f6/f95120b3a38a461085ef58cb/sub_1761756540176_x1guuxwl7.py",
+        "similarity_percent": 53.29,
+        "full_code": "a1, a2, a3, a4 = map(int, input().split())\ncount = 0\nwhile not (a1 == 0 and a2 == 0 and a3 == 0 and a4 == 0):\n    if a1 == a2 == a3 == a4:\n        break\n    b1 = abs(a1 - a2)\n    b2 = abs(a2 - a3)\n    b3 = abs(a3 - a4)\n    b4 = abs(a4 - a1)\n    a1, a2, a3, a4 = b1, b2, b3, b4\n    count = count + 1\nprint(count)",
+        "highlighted_code": "<span class='highlight-green'>a1, a2, a3, a4 = map(int, input().split())\ncount = 0\nwhile not (a1 =</span>= 0 and a2 == 0 and a3 == 0 and a4 == 0):\n    if a1 == a2 == a3 == a4:\n        break\n    <span class='highlight-green'>b1 = abs(a1 - a2)\n    b2 = abs(a2 - a3)\n    b3 = abs(a3 - a4)\n    b4 = abs(a4 - a1</span>)\n    a1, a2, a3, a4 = b1, b2, b3, b4\n    count = count + 1\nprint(count)"
+      },
+      "token_overlap": 81,
+      "max_similarity_percent": 63.78
+    },
+    {
+      "case_id": 66,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b4fe535fa0f4f1d8f6/780627ccd0224069b68e3b8d/sub_1762338813703_bcugq96d4.py",
+        "similarity_percent": 63.38,
+        "full_code": "a, b, c, d = map(int, input().split())\nif a == b == c == d:\n    print('0')\nelse:\n    dem = 0\n    while not (a == b == c == d):\n        a1 = abs(a - b)\n        a2 = abs(b - c)\n        a3 = abs(c - d)\n        a4 = abs(d - a)\n        a, b, c, d = a1, a2, a3, a4\n        dem += 1\n    print(dem)",
+        "highlighted_code": "<span class='highlight-red'>a, b, c, d = map(int, input().split())\n</span>if a == b == c == d:\n    print(&#39;0&#39;)\nelse:\n    <span class='highlight-red'>dem = 0\n    while not (a == b == c == d):\n        a1 </span>= <span class='highlight-red'>abs(a - b)\n        a2 = abs(b - c)\n        a3 = abs(c - d)\n        a4 = abs(d - a</span>)\n        a, b, c, d = a1, a2, a3, a4\n        dem += 1\n    print(dem)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b4fe535fa0f4f1d8f6/8e236cb825b041b0a82527f2/sub_1761833072369_o7r9u0mw3.py",
+        "similarity_percent": 84.11,
+        "full_code": "a1, a2, a3, a4 = map(int, input().split())\n\ni = 0\nwhile not (a1 == a2 == a3 == a4):\n    prev_a1 = a1\n    a1 = abs(a1 - a2)\n    a2 = abs(a2 - a3)\n    a3 = abs(a3 - a4)\n    a4 = abs(a4 - prev_a1)\n    i += 1\nprint(i)",
+        "highlighted_code": "<span class='highlight-green'>a1, a2, a3, a4 = map(int, input().split())\n\n</span><span class='highlight-green'>i = 0\nwhile not (a1 == a2 == a3 == a4):\n    prev_a1 </span>= a1\n    a1 = <span class='highlight-green'>abs(a1 - a2)\n    a2 = abs(a2 - a3)\n    a3 = abs(a3 - a4)\n    a4 = abs(a4 - prev_a1</span>)\n    i += 1\nprint(i)"
+      },
+      "token_overlap": 90,
+      "max_similarity_percent": 84.11
+    },
+    {
+      "case_id": 67,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b4fe535fa0f4f1d8f6/780627ccd0224069b68e3b8d/sub_1762338813703_bcugq96d4.py",
+        "similarity_percent": 63.38,
+        "full_code": "a, b, c, d = map(int, input().split())\nif a == b == c == d:\n    print('0')\nelse:\n    dem = 0\n    while not (a == b == c == d):\n        a1 = abs(a - b)\n        a2 = abs(b - c)\n        a3 = abs(c - d)\n        a4 = abs(d - a)\n        a, b, c, d = a1, a2, a3, a4\n        dem += 1\n    print(dem)",
+        "highlighted_code": "<span class='highlight-red'>a, b, c, d = map(int, input().split())\n</span>if a == b == c == d:\n    print(&#39;0&#39;)\nelse:\n    <span class='highlight-red'>dem = 0\n    while not (a == b == c == d):\n        a1 </span>= <span class='highlight-red'>abs(a - b)\n        a2 = abs(b - c)\n        a3 = abs(c - d)\n        a4 = abs(d - a</span>)\n        a, b, c, d = a1, a2, a3, a4\n        dem += 1\n    print(dem)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b4fe535fa0f4f1d8f6/8e236cb825b041b0a82527f2/sub_1762328600554_2bpeynnsu.py",
+        "similarity_percent": 86.54,
+        "full_code": "a1, a2, a3, a4 = map(int, input().split())\ni = 0\nwhile not (a1 == a2 == a3 == a4):\n    i += 1\n    pa1 = a1\n    a1 = abs(a1 - a2)\n    a2 = abs(a2 - a3)\n    a3 = abs(a3 - a4)\n    a4 = abs(a4 - pa1)\nprint(i)\n",
+        "highlighted_code": "<span class='highlight-green'>a1, a2, a3, a4 = map(int, input().split())\n</span><span class='highlight-green'>i = 0\nwhile not (a1 == a2 == a3 == a4):\n    i </span>+= 1\n    pa1 = a1\n    a1 = <span class='highlight-green'>abs(a1 - a2)\n    a2 = abs(a2 - a3)\n    a3 = abs(a3 - a4)\n    a4 = abs(a4 - pa1</span>)\nprint(i)\n"
+      },
+      "token_overlap": 90,
+      "max_similarity_percent": 86.54
+    },
+    {
+      "case_id": 68,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b4fe535fa0f4f1d8f6/d82933fea814463eb5b029d1/sub_1761621531207_1qppfh35j.py",
+        "similarity_percent": 63.31,
+        "full_code": "while True:\n    try:\n        a1, a2, a3, a4 = map(int, input().split())\n    except EOFError:\n        break  \n    if a1 == a2 == a3 == a4 == 0:\n        break  \n\n    steps = 0\n    while not (a1 == a2 == a3 == a4):\n        b1 = abs(a1 - a2)\n        b2 = abs(a2 - a3)\n        b3 = abs(a3 - a4)\n        b4 = abs(a4 - a1)\n        a1, a2, a3, a4 = b1, b2, b3, b4\n        steps += 1\n\n    print(steps)",
+        "highlighted_code": "while True:\n    try:\n        a1, a2, a3, a4 = map(int, input().split())\n    except EOFError:\n        break  \n    <span class='highlight-red'>if a1 == a2 == a3 == a4 == 0:\n        break  \n\n    steps = 0\n    while not (a1 == a2 == a3 == a4):\n        b1 = abs(a1 - a2)\n        b2 = abs(a2 - a3)\n        b3 = abs(a3 - a4)\n        b4 = abs(a4 - a1)\n        a1, a2, a3, a4 = b1, b2, b3, b4\n        steps += 1\n\n    pri</span>nt(steps)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b4fe535fa0f4f1d8f6/8e19101eb0da4e9a92a17098/sub_1762327905734_s16j2bf0q.py",
+        "similarity_percent": 60.11,
+        "full_code": "d = input().split()\nnums = list(map(int, d))\nfor i in range(0, len(nums), 4):\n    a1, a2, a3, a4 = nums[i:i+4]\n    if a1 == a2 == a3 == a4 == 0:\n        break\n    cnt = 0\n    while not (a1 == a2 == a3 == a4):\n        b1 = abs(a1 - a2)\n        b2 = abs(a2 - a3)\n        b3 = abs(a3 - a4)\n        b4 = abs(a4 - a1)\n        a1, a2, a3, a4 = b1, b2, b3, b4\n        cnt += 1\n    print(cnt)",
+        "highlighted_code": "d = input().split()\nnums = list(map(int, d))\nfor i in range(0, len(nums), 4):\n    a1, a2, a3, a4 = nums[i:i+4]\n    <span class='highlight-green'>if a1 == a2 == a3 == a4 == 0:\n        break\n    cnt = 0\n    while not (a1 == a2 == a3 == a4):\n        b1 = abs(a1 - a2)\n        b2 = abs(a2 - a3)\n        b3 = abs(a3 - a4)\n        b4 = abs(a4 - a1)\n        a1, a2, a3, a4 = b1, b2, b3, b4\n        cnt += 1\n    pri</span>nt(cnt)"
+      },
+      "token_overlap": 107,
+      "max_similarity_percent": 63.31
+    },
+    {
+      "case_id": 69,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b4fe535fa0f4f1d8f6/a34ffbda761b435ca043fd30/sub_1762356974907_dg7kw64b3.py",
+        "similarity_percent": 63.03,
+        "full_code": "a, b, c, d=map(int, input().split())\nso_lan = 0\nwhile not (a==b==c==d):\n    so_lan+=1\n    a1=abs(a-b)\n    b1=abs(b-c)\n    c1=abs(c-d)\n    d1=abs(d-a)\n    a, b, c, d= a1, b1, c1, d1\nprint(so_lan)",
+        "highlighted_code": "a, b, c, d=map(int, input().split())\n<span class='highlight-red'>so_lan = 0\nwhile not (a==b==c==d):\n    so_lan</span>+=1\n    a1=<span class='highlight-red'>abs(a-b)\n    b1=abs(b-c)\n    c1=abs(c-d)\n    d1=abs(d-a)\n    a, b, c, d= a1, b1, </span>c1, d1\nprint(so_lan)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b4fe535fa0f4f1d8f6/8e19101eb0da4e9a92a17098/sub_1762327905734_s16j2bf0q.py",
+        "similarity_percent": 42.13,
+        "full_code": "d = input().split()\nnums = list(map(int, d))\nfor i in range(0, len(nums), 4):\n    a1, a2, a3, a4 = nums[i:i+4]\n    if a1 == a2 == a3 == a4 == 0:\n        break\n    cnt = 0\n    while not (a1 == a2 == a3 == a4):\n        b1 = abs(a1 - a2)\n        b2 = abs(a2 - a3)\n        b3 = abs(a3 - a4)\n        b4 = abs(a4 - a1)\n        a1, a2, a3, a4 = b1, b2, b3, b4\n        cnt += 1\n    print(cnt)",
+        "highlighted_code": "d = input().split()\nnums = list(map(int, d))\nfor i in range(0, len(nums), 4):\n    a1, a2, a3, a4 = nums[i:i+4]\n    if a1 == a2 == a3 == a4 == 0:\n        break\n    <span class='highlight-green'>cnt = 0\n    while not (a1 == a2 == a3 == a4):\n        b1 </span>= <span class='highlight-green'>abs(a1 - a2)\n        b2 = abs(a2 - a3)\n        b3 = abs(a3 - a4)\n        b4 = abs(a4 - a1)\n        a1, a2, a3, a4 = b1, b2, </span>b3, b4\n        cnt += 1\n    print(cnt)"
+      },
+      "token_overlap": 75,
+      "max_similarity_percent": 63.03
+    },
+    {
+      "case_id": 70,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b4fe535fa0f4f1d8f6/a34ffbda761b435ca043fd30/sub_1762356974907_dg7kw64b3.py",
+        "similarity_percent": 63.03,
+        "full_code": "a, b, c, d=map(int, input().split())\nso_lan = 0\nwhile not (a==b==c==d):\n    so_lan+=1\n    a1=abs(a-b)\n    b1=abs(b-c)\n    c1=abs(c-d)\n    d1=abs(d-a)\n    a, b, c, d= a1, b1, c1, d1\nprint(so_lan)",
+        "highlighted_code": "a, b, c, d=map(int, input().split())\n<span class='highlight-red'>so_lan = 0\nwhile not (a==b==c==d):\n    so_lan</span>+=1\n    a1=<span class='highlight-red'>abs(a-b)\n    b1=abs(b-c)\n    c1=abs(c-d)\n    d1=abs(d-a)\n    a, b, c, d= a1, b1, </span>c1, d1\nprint(so_lan)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b4fe535fa0f4f1d8f6/522be41104e24b1fa5d14200/sub_1762410581268_skmstpmzw.py",
+        "similarity_percent": 36.06,
+        "full_code": "while True:\n    try:\n        data = input().split()\n        if len(data) == 0:\n           continue\n        a1, a2, a3, a4 = map(int, data)\n        if a1 == 0 and a2 == 0 and a3 == 0 and a4 == 0:\n           break\n    \n        step = 0\n        while not (a1 == a2 == a3 == a4):\n              new_a1 = abs(a1 - a2)\n              new_a2 = abs(a2 - a3)\n              new_a3 = abs(a3 - a4)\n              new_a4 = abs(a4 - a1)\n        \n              a1, a2, a3, a4 = new_a1, new_a2, new_a3, new_a4\n              step += 1\n        print(step)\n    except EOFError:\n        break",
+        "highlighted_code": "while True:\n    try:\n        data = input().split()\n        if len(data) == 0:\n           continue\n        a1, a2, a3, a4 = map(int, data)\n        if a1 == 0 and a2 == 0 and a3 == 0 and a4 == 0:\n           break\n    \n        <span class='highlight-green'>step = 0\n        while not (a1 == a2 == a3 == a4):\n              new_a1 </span>= <span class='highlight-green'>abs(a1 - a2)\n              new_a2 = abs(a2 - a3)\n              new_a3 = abs(a3 - a4)\n              new_a4 = abs(a4 - a1)\n        \n              a1, a2, a3, a4 = new_a1, new_a2, </span>new_a3, new_a4\n              step += 1\n        print(step)\n    except EOFError:\n        break"
+      },
+      "token_overlap": 75,
+      "max_similarity_percent": 63.03
+    },
+    {
+      "case_id": 71,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b4fe535fa0f4f1d8f6/d82933fea814463eb5b029d1/sub_1761621531207_1qppfh35j.py",
+        "similarity_percent": 62.72,
+        "full_code": "while True:\n    try:\n        a1, a2, a3, a4 = map(int, input().split())\n    except EOFError:\n        break  \n    if a1 == a2 == a3 == a4 == 0:\n        break  \n\n    steps = 0\n    while not (a1 == a2 == a3 == a4):\n        b1 = abs(a1 - a2)\n        b2 = abs(a2 - a3)\n        b3 = abs(a3 - a4)\n        b4 = abs(a4 - a1)\n        a1, a2, a3, a4 = b1, b2, b3, b4\n        steps += 1\n\n    print(steps)",
+        "highlighted_code": "<span class='highlight-red'>while True:\n    try:\n        a1, a2, a3, a4 = map(int, input().split())\n    except EOFError:\n        break  \n    if a1 == a2 == a3 == a4 == 0:\n        bre</span>ak  \n\n    <span class='highlight-red'>steps = 0\n    while not (a1 == a2 == a3 == a4):\n        b1 </span>= abs(a1 - a2)\n        b2 = abs(a2 - a3)\n        b3 = abs(a3 - a4)\n        b4 = abs(a4 - a1)\n        a1, a2, a3, a4 = b1, b2, b3, b4\n        steps += 1\n\n    print(steps)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b4fe535fa0f4f1d8f6/d9aec9d917da4c5e9beeb80b/sub_1761574203513_ef30ni2ma.py",
+        "similarity_percent": 65.03,
+        "full_code": "while True:\n    try:\n        a1,a2,a3,a4 = map(int, input().split())\n    except EOFError:\n        break\n    if a1==a2==a3==a4==0:\n        break\n    else:\n        steps=0\n        while not (a1==a2==a3==a4):\n                    a1, a2, a3, a4 = abs(a1 - a2), abs(a2 - a3), abs(a3 - a4), abs(a4 - a1)\n                    steps += 1\nprint(steps)",
+        "highlighted_code": "<span class='highlight-green'>while True:\n    try:\n        a1,a2,a3,a4 = map(int, input().split())\n    except EOFError:\n        break\n    if a1==a2==a3==a4==0:\n        bre</span>ak\n    else:\n        <span class='highlight-green'>steps=0\n        while not (a1==a2==a3==a4):\n                    a1</span>, a2, a3, a4 = abs(a1 - a2), abs(a2 - a3), abs(a3 - a4), abs(a4 - a1)\n                    steps += 1\nprint(steps)"
+      },
+      "token_overlap": 106,
+      "max_similarity_percent": 65.03
+    },
+    {
+      "case_id": 72,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b4fe535fa0f4f1d8f6/8e236cb825b041b0a82527f2/sub_1761833072369_o7r9u0mw3.py",
+        "similarity_percent": 62.62,
+        "full_code": "a1, a2, a3, a4 = map(int, input().split())\n\ni = 0\nwhile not (a1 == a2 == a3 == a4):\n    prev_a1 = a1\n    a1 = abs(a1 - a2)\n    a2 = abs(a2 - a3)\n    a3 = abs(a3 - a4)\n    a4 = abs(a4 - prev_a1)\n    i += 1\nprint(i)",
+        "highlighted_code": "<span class='highlight-red'>a1, a2, a3, a4 = map(int, input().split())\n\ni = </span>0\nwhile not (a1 == a2 == a3 == a4):\n    prev_a1 = a1\n    a1 = <span class='highlight-red'>abs(a1 - a2)\n    a2 = abs(a2 - a3)\n    a3 = abs(a3 - a4)\n    a4 = abs(a4 - prev_a1</span>)\n    i += 1\nprint(i)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b4fe535fa0f4f1d8f6/3fa6af8d916a46039239cabe/sub_1761646788738_jaqcylqz1.py",
+        "similarity_percent": 58.77,
+        "full_code": "a,b,c,d=map(int,input().split())\ne=a\ncount=0\nwhile not(a==b and a==c and a==d):\n    a=abs(b-a)\n    b=abs(c-b)\n    c=abs(d-c)\n    d=abs(e-d)\n    e=a\n    count+=1\nprint(count)",
+        "highlighted_code": "<span class='highlight-green'>a,b,c,d=map(int,input().split())\ne=</span>a\ncount=0\nwhile not(a==b and a==c and a==d):\n    a=<span class='highlight-green'>abs(b-a)\n    b=abs(c-b)\n    c=abs(d-c)\n    d=abs(e-d</span>)\n    e=a\n    count+=1\nprint(count)"
+      },
+      "token_overlap": 67,
+      "max_similarity_percent": 62.62
+    },
+    {
+      "case_id": 73,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b4fe535fa0f4f1d8f6/0d74995bf22b4574a97a2297/sub_1761594737632_kj3jiq647.py",
+        "similarity_percent": 62.32,
+        "full_code": "import sys\ninput = sys.stdin.readline\na, b, c, d = map(int, input().split())\ncount = 0\nwhile True:\n    if a == b and b == c and c == d:\n        break \n    a, b, c, d = abs(a - b), abs(b - c), abs(c - d),abs(d - a)\n    count += 1\nprint(count)",
+        "highlighted_code": "import sys\ninput = sys.stdin.readline\na, b, c, d = map(int, input().split())\ncount = 0\nw<span class='highlight-red'>hile True:\n    if a == b and b == c and c == d:\n        break \n    a, b, c, d = abs(a - b), abs(b - c), abs(c - d),abs(d - a)\n    count += 1\nprin</span>t(count)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b4fe535fa0f4f1d8f6/0d74995bf22b4574a97a2297/sub_1761594497068_sxyrreje7.py",
+        "similarity_percent": 47.51,
+        "full_code": "import sys\ninput = sys.stdin.readline\nwhile True:\n    a, b, c, d = map(int, input().split())\n    if a == 0 and b == 0 and c == 0 and d == 0:\n        break\n    count = 0\n    while True:\n        if a == b and b == c and c == d:\n            break \n        a, b, c, d = abs(a - b), abs(b - c), abs(c - d),abs(d - a)\n        count += 1\n    print(count)",
+        "highlighted_code": "import sys\ninput = sys.stdin.readline\nwhile True:\n    a, b, c, d = map(int, input().split())\n    if a == 0 and b == 0 and c == 0 and d == 0:\n        break\n    count = 0\n    w<span class='highlight-green'>hile True:\n        if a == b and b == c and c == d:\n            break \n        a, b, c, d = abs(a - b), abs(b - c), abs(c - d),abs(d - a)\n        count += 1\n    prin</span>t(count)"
+      },
+      "token_overlap": 86,
+      "max_similarity_percent": 62.32
+    },
+    {
+      "case_id": 74,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b4fe535fa0f4f1d8f6/0d74995bf22b4574a97a2297/sub_1762324712423_twk6higzc.py",
+        "similarity_percent": 62.32,
+        "full_code": "import sys\ninput = sys.stdin.readline\na, b, c, d = map(int, input().split())\ncount = 0\nwhile True:\n    if a == b and b == c and c == d:\n        break \n    a, b, c, d = abs(a - b), abs(b - c), abs(c - d),abs(d - a)\n    count += 1\nprint(count)",
+        "highlighted_code": "import sys\ninput = sys.stdin.readline\na, b, c, d = map(int, input().split())\ncount = 0\nw<span class='highlight-red'>hile True:\n    if a == b and b == c and c == d:\n        break \n    a, b, c, d = abs(a - b), abs(b - c), abs(c - d),abs(d - a)\n    count += 1\nprin</span>t(count)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b4fe535fa0f4f1d8f6/0d74995bf22b4574a97a2297/sub_1761594497068_sxyrreje7.py",
+        "similarity_percent": 47.51,
+        "full_code": "import sys\ninput = sys.stdin.readline\nwhile True:\n    a, b, c, d = map(int, input().split())\n    if a == 0 and b == 0 and c == 0 and d == 0:\n        break\n    count = 0\n    while True:\n        if a == b and b == c and c == d:\n            break \n        a, b, c, d = abs(a - b), abs(b - c), abs(c - d),abs(d - a)\n        count += 1\n    print(count)",
+        "highlighted_code": "import sys\ninput = sys.stdin.readline\nwhile True:\n    a, b, c, d = map(int, input().split())\n    if a == 0 and b == 0 and c == 0 and d == 0:\n        break\n    count = 0\n    w<span class='highlight-green'>hile True:\n        if a == b and b == c and c == d:\n            break \n        a, b, c, d = abs(a - b), abs(b - c), abs(c - d),abs(d - a)\n        count += 1\n    prin</span>t(count)"
+      },
+      "token_overlap": 86,
+      "max_similarity_percent": 62.32
+    },
+    {
+      "case_id": 75,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b4fe535fa0f4f1d8f6/53387d97307e4d81b93edb94/sub_1762339132352_3h0f82lt7.py",
+        "similarity_percent": 62.2,
+        "full_code": "a, b, c, d = map(int, input().split())\ndem = 0\nwhile not (a == b and b == c and c == d):\n a1 , b1 , c1 , d1 = a , b , c ,d\n a = abs (a1-b1)\n b = abs (b1-c1)\n c = abs (c1-d1)\n d = abs (d1-a1)\n dem+=1\nprint (dem)",
+        "highlighted_code": "<span class='highlight-red'>a, b, c, d = map(int, input().split())\ndem = 0\nwhile not (a =</span>= b and b == c and c == d):\n a1 , b1 , c1 , d1 = a , b , c ,d\n a = <span class='highlight-red'>abs (a1-b1)\n b = abs (b1-c1)\n c = abs (c1-d1)\n d = abs (d1-a1</span>)\n dem+=1\nprint (dem)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b4fe535fa0f4f1d8f6/8e236cb825b041b0a82527f2/sub_1762328600554_2bpeynnsu.py",
+        "similarity_percent": 75.96,
+        "full_code": "a1, a2, a3, a4 = map(int, input().split())\ni = 0\nwhile not (a1 == a2 == a3 == a4):\n    i += 1\n    pa1 = a1\n    a1 = abs(a1 - a2)\n    a2 = abs(a2 - a3)\n    a3 = abs(a3 - a4)\n    a4 = abs(a4 - pa1)\nprint(i)\n",
+        "highlighted_code": "<span class='highlight-green'>a1, a2, a3, a4 = map(int, input().split())\ni = 0\nwhile not (a1 =</span>= a2 == a3 == a4):\n    i += 1\n    pa1 = a1\n    a1 = <span class='highlight-green'>abs(a1 - a2)\n    a2 = abs(a2 - a3)\n    a3 = abs(a3 - a4)\n    a4 = abs(a4 - pa1</span>)\nprint(i)\n"
+      },
+      "token_overlap": 79,
+      "max_similarity_percent": 75.96
+    },
+    {
+      "case_id": 76,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b4fe535fa0f4f1d8f6/a34ffbda761b435ca043fd30/sub_1762356974907_dg7kw64b3.py",
+        "similarity_percent": 62.18,
+        "full_code": "a, b, c, d=map(int, input().split())\nso_lan = 0\nwhile not (a==b==c==d):\n    so_lan+=1\n    a1=abs(a-b)\n    b1=abs(b-c)\n    c1=abs(c-d)\n    d1=abs(d-a)\n    a, b, c, d= a1, b1, c1, d1\nprint(so_lan)",
+        "highlighted_code": "<span class='highlight-red'>a, b, c, d=map(int, input().split())\nso_lan = 0\nwhile n</span>ot (a==b==c==d):\n    so_lan+=1\n    a1=<span class='highlight-red'>abs(a-b)\n    b1=abs(b-c)\n    c1=abs(c-d)\n    d1=abs(d-a</span>)\n    a, b, c, d= a1, b1, c1, d1\nprint(so_lan)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b4fe535fa0f4f1d8f6/e3bacd91f1ad41f482a842be/sub_1762335886827_1y2jtsxpy.py",
+        "similarity_percent": 70.48,
+        "full_code": "a,b,c,d=map(int,input().split())\ndem=0\nwhile not a==b==c==d:\n    e=a\n    a = abs(b-a)\n    b = abs(c-b)\n    c = abs(d-c)\n    d = abs(e-d)\n    dem += 1\nprint(dem)",
+        "highlighted_code": "<span class='highlight-green'>a,b,c,d=map(int,input().split())\ndem=0\nwhile n</span>ot a==b==c==d:\n    e=a\n    a = <span class='highlight-green'>abs(b-a)\n    b = abs(c-b)\n    c = abs(d-c)\n    d = abs(e-d</span>)\n    dem += 1\nprint(dem)"
+      },
+      "token_overlap": 74,
+      "max_similarity_percent": 70.48
+    },
+    {
+      "case_id": 77,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b4fe535fa0f4f1d8f6/27b0843555fd4abbb1c1a142/sub_1762337830877_yteau84m3.py",
+        "similarity_percent": 61.9,
+        "full_code": "a,b,c,d=map(int,input().split())\ndem=0\nwhile not a==b==c==d:\n    e=a\n    a = abs(b-a)\n    b = abs(c-b)\n    c = abs(d-c)\n    d = abs(e-d)\n    dem += 1\nprint(dem)",
+        "highlighted_code": "<span class='highlight-red'>a,b,c,d=map(int,input().split())\n</span>dem=0\nwhile not a==b==c==d:\n    e=a\n    a = <span class='highlight-red'>abs(b-a)\n    b = abs(c-b)\n    c = abs(d-c)\n    d = abs(e-d</span>)\n    dem += 1\nprint(dem)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b4fe535fa0f4f1d8f6/780627ccd0224069b68e3b8d/sub_1762338813703_bcugq96d4.py",
+        "similarity_percent": 45.77,
+        "full_code": "a, b, c, d = map(int, input().split())\nif a == b == c == d:\n    print('0')\nelse:\n    dem = 0\n    while not (a == b == c == d):\n        a1 = abs(a - b)\n        a2 = abs(b - c)\n        a3 = abs(c - d)\n        a4 = abs(d - a)\n        a, b, c, d = a1, a2, a3, a4\n        dem += 1\n    print(dem)",
+        "highlighted_code": "<span class='highlight-green'>a, b, c, d = map(int, input().split())\n</span>if a == b == c == d:\n    print(&#39;0&#39;)\nelse:\n    dem = 0\n    while not (a == b == c == d):\n        a1 = <span class='highlight-green'>abs(a - b)\n        a2 = abs(b - c)\n        a3 = abs(c - d)\n        a4 = abs(d - a</span>)\n        a, b, c, d = a1, a2, a3, a4\n        dem += 1\n    print(dem)"
+      },
+      "token_overlap": 65,
+      "max_similarity_percent": 61.9
+    },
+    {
+      "case_id": 78,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b4fe535fa0f4f1d8f6/27e30f767b3a46b283cbfec0/sub_1761663882495_qt0wi8tuq.py",
+        "similarity_percent": 61.54,
+        "full_code": "a1,a2,a3,a4 = map(int, input().split())\ncount = -1\nwhile not (a1 == 0 and a2 == 0 and a3 == 0 and a4 == 0):\n    b1 = abs(a1-a2)\n    b2 = abs(a2-a3)\n    b3 = abs(a3-a4)\n    b4 = abs(a4-a1)\n    a1,a2,a3,a4 = b1,b2,b3,b4\n    count += 1\nprint(count)\n",
+        "highlighted_code": "<span class='highlight-red'>a1,a2,a3,a4 = map(int, input().split())\ncount = </span>-1\nwhile not (a1 == 0 and a2 == 0 and a3 == 0 and a4 == 0):\n    b1 = <span class='highlight-red'>abs(a1-a2)\n    b2 = abs(a2-a3)\n    b3 = abs(a3-a4)\n    b4 = abs(a4-a1)\n    a1,a2,a3,a4 = b1,b2,</span>b3,b4\n    count += 1\nprint(count)\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b4fe535fa0f4f1d8f6/a34ffbda761b435ca043fd30/sub_1762356974907_dg7kw64b3.py",
+        "similarity_percent": 67.23,
+        "full_code": "a, b, c, d=map(int, input().split())\nso_lan = 0\nwhile not (a==b==c==d):\n    so_lan+=1\n    a1=abs(a-b)\n    b1=abs(b-c)\n    c1=abs(c-d)\n    d1=abs(d-a)\n    a, b, c, d= a1, b1, c1, d1\nprint(so_lan)",
+        "highlighted_code": "<span class='highlight-green'>a, b, c, d=map(int, input().split())\nso_lan = </span>0\nwhile not (a==b==c==d):\n    so_lan+=1\n    a1=<span class='highlight-green'>abs(a-b)\n    b1=abs(b-c)\n    c1=abs(c-d)\n    d1=abs(d-a)\n    a, b, c, d= a1, b1, </span>c1, d1\nprint(so_lan)"
+      },
+      "token_overlap": 80,
+      "max_similarity_percent": 67.23
+    },
+    {
+      "case_id": 79,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b4fe535fa0f4f1d8f6/780627ccd0224069b68e3b8d/sub_1762338813703_bcugq96d4.py",
+        "similarity_percent": 60.56,
+        "full_code": "a, b, c, d = map(int, input().split())\nif a == b == c == d:\n    print('0')\nelse:\n    dem = 0\n    while not (a == b == c == d):\n        a1 = abs(a - b)\n        a2 = abs(b - c)\n        a3 = abs(c - d)\n        a4 = abs(d - a)\n        a, b, c, d = a1, a2, a3, a4\n        dem += 1\n    print(dem)",
+        "highlighted_code": "a, b, c, d = map(int, input().split())\nif a == b == c == d:\n    print(&#39;0&#39;)\nelse:\n    <span class='highlight-red'>dem = 0\n    while not (a == b == c == d):\n        a1 = abs(a - b)\n        a2 = abs(b - c)\n        a3 = abs(c - d)\n        a4 = abs(d - a)\n        a, b, c, d = a1, a2, a3, a4\n        dem += 1\n    pri</span>nt(dem)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b4fe535fa0f4f1d8f6/e0cd413045d741e39459231c/sub_1762329598439_8rku27hvx.py",
+        "similarity_percent": 73.5,
+        "full_code": "n=input()\na1, a2, a3, a4 = map(int, n.split())\n\nlan = 0\nwhile not (a1 == a2 == a3 == a4):\n    b1 = abs(a1 - a2)\n    b2 = abs(a2 - a3)\n    b3 = abs(a3 - a4)\n    b4 = abs(a4 - a1)\n    a1, a2, a3, a4 = b1, b2, b3, b4\n    lan += 1\nprint(lan)",
+        "highlighted_code": "n=input()\na1, a2, a3, a4 = map(int, n.split())\n\n<span class='highlight-green'>lan = 0\nwhile not (a1 == a2 == a3 == a4):\n    b1 = abs(a1 - a2)\n    b2 = abs(a2 - a3)\n    b3 = abs(a3 - a4)\n    b4 = abs(a4 - a1)\n    a1, a2, a3, a4 = b1, b2, b3, b4\n    lan += 1\npri</span>nt(lan)"
+      },
+      "token_overlap": 86,
+      "max_similarity_percent": 73.5
+    },
+    {
+      "case_id": 80,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b4fe535fa0f4f1d8f6/780627ccd0224069b68e3b8d/sub_1762338813703_bcugq96d4.py",
+        "similarity_percent": 60.56,
+        "full_code": "a, b, c, d = map(int, input().split())\nif a == b == c == d:\n    print('0')\nelse:\n    dem = 0\n    while not (a == b == c == d):\n        a1 = abs(a - b)\n        a2 = abs(b - c)\n        a3 = abs(c - d)\n        a4 = abs(d - a)\n        a, b, c, d = a1, a2, a3, a4\n        dem += 1\n    print(dem)",
+        "highlighted_code": "a, b, c, d = map(int, input().split())\nif a == b == c == d:\n    print(&#39;0&#39;)\nelse:\n    <span class='highlight-red'>dem = 0\n    while not (a == b == c == d):\n        a1 = abs(a - b)\n        a2 = abs(b - c)\n        a3 = abs(c - d)\n        a4 = abs(d - a)\n        a, b, c, d = a1, a2, a3, a4\n        dem += 1\n    pri</span>nt(dem)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b4fe535fa0f4f1d8f6/8e19101eb0da4e9a92a17098/sub_1762327905734_s16j2bf0q.py",
+        "similarity_percent": 48.31,
+        "full_code": "d = input().split()\nnums = list(map(int, d))\nfor i in range(0, len(nums), 4):\n    a1, a2, a3, a4 = nums[i:i+4]\n    if a1 == a2 == a3 == a4 == 0:\n        break\n    cnt = 0\n    while not (a1 == a2 == a3 == a4):\n        b1 = abs(a1 - a2)\n        b2 = abs(a2 - a3)\n        b3 = abs(a3 - a4)\n        b4 = abs(a4 - a1)\n        a1, a2, a3, a4 = b1, b2, b3, b4\n        cnt += 1\n    print(cnt)",
+        "highlighted_code": "d = input().split()\nnums = list(map(int, d))\nfor i in range(0, len(nums), 4):\n    a1, a2, a3, a4 = nums[i:i+4]\n    if a1 == a2 == a3 == a4 == 0:\n        break\n    <span class='highlight-green'>cnt = 0\n    while not (a1 == a2 == a3 == a4):\n        b1 = abs(a1 - a2)\n        b2 = abs(a2 - a3)\n        b3 = abs(a3 - a4)\n        b4 = abs(a4 - a1)\n        a1, a2, a3, a4 = b1, b2, b3, b4\n        cnt += 1\n    pri</span>nt(cnt)"
+      },
+      "token_overlap": 86,
+      "max_similarity_percent": 60.56
+    },
+    {
+      "case_id": 81,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b4fe535fa0f4f1d8f6/780627ccd0224069b68e3b8d/sub_1762338813703_bcugq96d4.py",
+        "similarity_percent": 60.56,
+        "full_code": "a, b, c, d = map(int, input().split())\nif a == b == c == d:\n    print('0')\nelse:\n    dem = 0\n    while not (a == b == c == d):\n        a1 = abs(a - b)\n        a2 = abs(b - c)\n        a3 = abs(c - d)\n        a4 = abs(d - a)\n        a, b, c, d = a1, a2, a3, a4\n        dem += 1\n    print(dem)",
+        "highlighted_code": "a, b, c, d = map(int, input().split())\nif a == b == c == d:\n    print(&#39;0&#39;)\nelse:\n    <span class='highlight-red'>dem = 0\n    while not (a == b == c == d):\n        a1 = abs(a - b)\n        a2 = abs(b - c)\n        a3 = abs(c - d)\n        a4 = abs(d - a)\n        a, b, c, d = a1, a2, a3, a4\n        dem += 1\n    pri</span>nt(dem)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b4fe535fa0f4f1d8f6/522be41104e24b1fa5d14200/sub_1762410581268_skmstpmzw.py",
+        "similarity_percent": 41.35,
+        "full_code": "while True:\n    try:\n        data = input().split()\n        if len(data) == 0:\n           continue\n        a1, a2, a3, a4 = map(int, data)\n        if a1 == 0 and a2 == 0 and a3 == 0 and a4 == 0:\n           break\n    \n        step = 0\n        while not (a1 == a2 == a3 == a4):\n              new_a1 = abs(a1 - a2)\n              new_a2 = abs(a2 - a3)\n              new_a3 = abs(a3 - a4)\n              new_a4 = abs(a4 - a1)\n        \n              a1, a2, a3, a4 = new_a1, new_a2, new_a3, new_a4\n              step += 1\n        print(step)\n    except EOFError:\n        break",
+        "highlighted_code": "while True:\n    try:\n        data = input().split()\n        if len(data) == 0:\n           continue\n        a1, a2, a3, a4 = map(int, data)\n        if a1 == 0 and a2 == 0 and a3 == 0 and a4 == 0:\n           break\n    \n        <span class='highlight-green'>step = 0\n        while not (a1 == a2 == a3 == a4):\n              new_a1 = abs(a1 - a2)\n              new_a2 = abs(a2 - a3)\n              new_a3 = abs(a3 - a4)\n              new_a4 = abs(a4 - a1)\n        \n              a1, a2, a3, a4 = new_a1, new_a2, new_a3, new_a4\n              step += 1\n        pri</span>nt(step)\n    except EOFError:\n        break"
+      },
+      "token_overlap": 86,
+      "max_similarity_percent": 60.56
+    },
+    {
+      "case_id": 82,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b4fe535fa0f4f1d8f6/f95120b3a38a461085ef58cb/sub_1762324668097_zhwlhx3vz.py",
+        "similarity_percent": 60.53,
+        "full_code": "a1, a2, a3, a4 = map(int, input().split())\ntong = 0\nwhile not (a1 == 0 and a2 == 0 and a3 == 0 and a4 == 0):\n    if a1 == a2 == a3 == a4:\n        break\n    b1 = abs(a1 - a2)\n    b2 = abs(a2 - a3)\n    b3 = abs(a3 - a4)\n    b4 = abs(a4 - a1)\n    a1, a2, a3, a4 = b1, b2, b3, b4\n    tong = tong + 1\nprint(tong)",
+        "highlighted_code": "<span class='highlight-red'>a1, a2, a3, a4 = map(int, input().split())\ntong = 0\nwhile not (a1 =</span>= 0 and a2 == 0 and a3 == 0 and a4 == 0):\n    if a1 == a2 == a3 == a4:\n        break\n    b1 = <span class='highlight-red'>abs(a1 - a2)\n    b2 = abs(a2 - a3)\n    b3 = abs(a3 - a4)\n    b4 = abs(a4 - a1)\n    a1, a2, a3, a4 = b1, b2, </span>b3, b4\n    tong = tong + 1\nprint(tong)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b4fe535fa0f4f1d8f6/a34ffbda761b435ca043fd30/sub_1762356974907_dg7kw64b3.py",
+        "similarity_percent": 77.31,
+        "full_code": "a, b, c, d=map(int, input().split())\nso_lan = 0\nwhile not (a==b==c==d):\n    so_lan+=1\n    a1=abs(a-b)\n    b1=abs(b-c)\n    c1=abs(c-d)\n    d1=abs(d-a)\n    a, b, c, d= a1, b1, c1, d1\nprint(so_lan)",
+        "highlighted_code": "<span class='highlight-green'>a, b, c, d=map(int, input().split())\nso_lan = 0\nwhile not (a=</span>=b==c==d):\n    so_lan+=1\n    a1=<span class='highlight-green'>abs(a-b)\n    b1=abs(b-c)\n    c1=abs(c-d)\n    d1=abs(d-a)\n    a, b, c, d= a1, b1, </span>c1, d1\nprint(so_lan)"
+      },
+      "token_overlap": 92,
+      "max_similarity_percent": 77.31
+    },
+    {
+      "case_id": 83,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b4fe535fa0f4f1d8f6/d82933fea814463eb5b029d1/sub_1761621531207_1qppfh35j.py",
+        "similarity_percent": 59.17,
+        "full_code": "while True:\n    try:\n        a1, a2, a3, a4 = map(int, input().split())\n    except EOFError:\n        break  \n    if a1 == a2 == a3 == a4 == 0:\n        break  \n\n    steps = 0\n    while not (a1 == a2 == a3 == a4):\n        b1 = abs(a1 - a2)\n        b2 = abs(a2 - a3)\n        b3 = abs(a3 - a4)\n        b4 = abs(a4 - a1)\n        a1, a2, a3, a4 = b1, b2, b3, b4\n        steps += 1\n\n    print(steps)",
+        "highlighted_code": "while True:\n    try:\n        a1, a2<span class='highlight-red'>, a3, a4 = map(int, input().split())\n    </span>except EOFError:\n        break  \n    if a1 == a2 == a3 == a4 == 0:\n        break  \n\n    <span class='highlight-red'>steps = 0\n    while not (a1 == a2 == a3 == a4):\n        b1 </span>= <span class='highlight-red'>abs(a1 - a2)\n        b2 = abs(a2 - a3)\n        b3 = abs(a3 - a4)\n        b4 = abs(a4 - a1)\n        a1, a2, a3, a4 = b1, b2, </span>b3, b4\n        steps += 1\n\n    print(steps)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b4fe535fa0f4f1d8f6/a34ffbda761b435ca043fd30/sub_1762356974907_dg7kw64b3.py",
+        "similarity_percent": 84.03,
+        "full_code": "a, b, c, d=map(int, input().split())\nso_lan = 0\nwhile not (a==b==c==d):\n    so_lan+=1\n    a1=abs(a-b)\n    b1=abs(b-c)\n    c1=abs(c-d)\n    d1=abs(d-a)\n    a, b, c, d= a1, b1, c1, d1\nprint(so_lan)",
+        "highlighted_code": "a, b<span class='highlight-green'>, c, d=map(int, input().split())\n</span><span class='highlight-green'>so_lan = 0\nwhile not (a==b==c==d):\n    so_lan</span>+=1\n    a1=<span class='highlight-green'>abs(a-b)\n    b1=abs(b-c)\n    c1=abs(c-d)\n    d1=abs(d-a)\n    a, b, c, d= a1, b1, </span>c1, d1\nprint(so_lan)"
+      },
+      "token_overlap": 100,
+      "max_similarity_percent": 84.03
+    },
+    {
+      "case_id": 84,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b4fe535fa0f4f1d8f6/780627ccd0224069b68e3b8d/sub_1762338813703_bcugq96d4.py",
+        "similarity_percent": 59.15,
+        "full_code": "a, b, c, d = map(int, input().split())\nif a == b == c == d:\n    print('0')\nelse:\n    dem = 0\n    while not (a == b == c == d):\n        a1 = abs(a - b)\n        a2 = abs(b - c)\n        a3 = abs(c - d)\n        a4 = abs(d - a)\n        a, b, c, d = a1, a2, a3, a4\n        dem += 1\n    print(dem)",
+        "highlighted_code": "<span class='highlight-red'>a, b, c, d = map(int, input().split())\n</span>if a == b == c == d:\n    print(&#39;0&#39;)\nelse:\n    dem = 0\n    while not (a == b == c == d):\n        <span class='highlight-red'>a1 = abs(a - b)\n        a2 = abs(b - c)\n        a3 = abs(c - d)\n        a4 = abs(d - a)\n        a, b, c, d = a1, a2, a3, a4\n        dem </span>+= 1\n    print(dem)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b4fe535fa0f4f1d8f6/f95120b3a38a461085ef58cb/sub_1762324668097_zhwlhx3vz.py",
+        "similarity_percent": 55.26,
+        "full_code": "a1, a2, a3, a4 = map(int, input().split())\ntong = 0\nwhile not (a1 == 0 and a2 == 0 and a3 == 0 and a4 == 0):\n    if a1 == a2 == a3 == a4:\n        break\n    b1 = abs(a1 - a2)\n    b2 = abs(a2 - a3)\n    b3 = abs(a3 - a4)\n    b4 = abs(a4 - a1)\n    a1, a2, a3, a4 = b1, b2, b3, b4\n    tong = tong + 1\nprint(tong)",
+        "highlighted_code": "<span class='highlight-green'>a1, a2, a3, a4 = map(int, input().split())\n</span>tong = 0\nwhile not (a1 == 0 and a2 == 0 and a3 == 0 and a4 == 0):\n    if a1 == a2 == a3 == a4:\n        break\n    <span class='highlight-green'>b1 = abs(a1 - a2)\n    b2 = abs(a2 - a3)\n    b3 = abs(a3 - a4)\n    b4 = abs(a4 - a1)\n    a1, a2, a3, a4 = b1, b2, b3, b4\n    tong </span>= tong + 1\nprint(tong)"
+      },
+      "token_overlap": 84,
+      "max_similarity_percent": 59.15
+    },
+    {
+      "case_id": 85,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b4fe535fa0f4f1d8f6/780627ccd0224069b68e3b8d/sub_1762338813703_bcugq96d4.py",
+        "similarity_percent": 59.15,
+        "full_code": "a, b, c, d = map(int, input().split())\nif a == b == c == d:\n    print('0')\nelse:\n    dem = 0\n    while not (a == b == c == d):\n        a1 = abs(a - b)\n        a2 = abs(b - c)\n        a3 = abs(c - d)\n        a4 = abs(d - a)\n        a, b, c, d = a1, a2, a3, a4\n        dem += 1\n    print(dem)",
+        "highlighted_code": "<span class='highlight-red'>a, b, c, d = map(int, input().split())\n</span>if a == b == c == d:\n    print(&#39;0&#39;)\nelse:\n    dem = 0\n    while not (a == b == c == d):\n        <span class='highlight-red'>a1 = abs(a - b)\n        a2 = abs(b - c)\n        a3 = abs(c - d)\n        a4 = abs(d - a)\n        a, b, c, d = a1, a2, a3, a4\n        dem </span>+= 1\n    print(dem)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b4fe535fa0f4f1d8f6/f95120b3a38a461085ef58cb/sub_1761756540176_x1guuxwl7.py",
+        "similarity_percent": 55.26,
+        "full_code": "a1, a2, a3, a4 = map(int, input().split())\ncount = 0\nwhile not (a1 == 0 and a2 == 0 and a3 == 0 and a4 == 0):\n    if a1 == a2 == a3 == a4:\n        break\n    b1 = abs(a1 - a2)\n    b2 = abs(a2 - a3)\n    b3 = abs(a3 - a4)\n    b4 = abs(a4 - a1)\n    a1, a2, a3, a4 = b1, b2, b3, b4\n    count = count + 1\nprint(count)",
+        "highlighted_code": "<span class='highlight-green'>a1, a2, a3, a4 = map(int, input().split())\n</span>count = 0\nwhile not (a1 == 0 and a2 == 0 and a3 == 0 and a4 == 0):\n    if a1 == a2 == a3 == a4:\n        break\n    <span class='highlight-green'>b1 = abs(a1 - a2)\n    b2 = abs(a2 - a3)\n    b3 = abs(a3 - a4)\n    b4 = abs(a4 - a1)\n    a1, a2, a3, a4 = b1, b2, b3, b4\n    count </span>= count + 1\nprint(count)"
+      },
+      "token_overlap": 84,
+      "max_similarity_percent": 59.15
+    },
+    {
+      "case_id": 86,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b4fe535fa0f4f1d8f6/73e9e151d2dc4d53a8e6793d/sub_1762336059574_5aknfntnq.py",
+        "similarity_percent": 55.56,
+        "full_code": "a = list(map(int, input().split()))\ncount = 0\nwhile True:\n    if a[0] == a[1] == a[2] == a[3] == 0:\n        break\n    a = [abs(a[i] - a[(i + 1) % 4]) for i in range(4)]\n    count += 1\nprint(count-1)",
+        "highlighted_code": "<span class='highlight-red'>a = list(map(int, input().split()))\ncount = 0\nw</span>hile True:\n    if a[0] == a[1] == a[2] == a[3] == 0:\n        break\n    a <span class='highlight-red'>= [abs(a[i] - a[(i + 1) % 4]) for i in range(4)]\n    count </span>+= 1\nprint(count-1)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b4fe535fa0f4f1d8f6/cd93b2ff882a4ffa85f4518f/sub_1761758662291_4j1muc0wc.py",
+        "similarity_percent": 68.63,
+        "full_code": "a = list(map(int, input().split())) \ndem = 0\nwhile len(set(a)) != 1:     \n    b = [abs(a[i] - a[(i+1)%4]) for i in range(4)]\n    a = b\n    dem += 1\n\nprint(dem)",
+        "highlighted_code": "<span class='highlight-green'>a = list(map(int, input().split())) \ndem = 0\nw</span>hile len(set(a)) != 1:     \n    b <span class='highlight-green'>= [abs(a[i] - a[(i+1)%4]) for i in range(4)]\n    a </span>= b\n    dem += 1\n\nprint(dem)"
+      },
+      "token_overlap": 70,
+      "max_similarity_percent": 68.63
+    },
+    {
+      "case_id": 87,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b4fe535fa0f4f1d8f6/73e9e151d2dc4d53a8e6793d/sub_1762336059574_5aknfntnq.py",
+        "similarity_percent": 55.56,
+        "full_code": "a = list(map(int, input().split()))\ncount = 0\nwhile True:\n    if a[0] == a[1] == a[2] == a[3] == 0:\n        break\n    a = [abs(a[i] - a[(i + 1) % 4]) for i in range(4)]\n    count += 1\nprint(count-1)",
+        "highlighted_code": "<span class='highlight-red'>a = list(map(int, input().split()))\ncount = 0\nw</span>hile True:\n    if a[0] == a[1] == a[2] == a[3] == 0:\n        break\n    a <span class='highlight-red'>= [abs(a[i] - a[(i + 1) % 4]) for i in range(4)]\n    count </span>+= 1\nprint(count-1)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b4fe535fa0f4f1d8f6/cd93b2ff882a4ffa85f4518f/sub_1762325035140_su6hp5eqc.py",
+        "similarity_percent": 68.63,
+        "full_code": "a=list(map(int, input().split())) \ndem=0\nwhile len(set(a))!=1:     \n    b=[abs(a[i]-a[(i+1)%4]) for i in range(4)]\n    a=b\n    dem=dem+1\nprint(dem)",
+        "highlighted_code": "<span class='highlight-green'>a=list(map(int, input().split())) \ndem=0\nw</span>hile len(set(a))!=1:     \n    b<span class='highlight-green'>=[abs(a[i]-a[(i+1)%4]) for i in range(4)]\n    a</span>=b\n    dem=dem+1\nprint(dem)"
+      },
+      "token_overlap": 70,
+      "max_similarity_percent": 68.63
+    },
+    {
+      "case_id": 88,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b4fe535fa0f4f1d8f6/d82933fea814463eb5b029d1/sub_1761621531207_1qppfh35j.py",
+        "similarity_percent": 54.44,
+        "full_code": "while True:\n    try:\n        a1, a2, a3, a4 = map(int, input().split())\n    except EOFError:\n        break  \n    if a1 == a2 == a3 == a4 == 0:\n        break  \n\n    steps = 0\n    while not (a1 == a2 == a3 == a4):\n        b1 = abs(a1 - a2)\n        b2 = abs(a2 - a3)\n        b3 = abs(a3 - a4)\n        b4 = abs(a4 - a1)\n        a1, a2, a3, a4 = b1, b2, b3, b4\n        steps += 1\n\n    print(steps)",
+        "highlighted_code": "while True:\n    try:\n        a1, a2, a3, a4 = map(int, input().split())\n    except EOFError:\n        break  \n    if a1 == a2 == a3 == a4 == 0<span class='highlight-red'>:\n        break  \n\n    steps = 0\n    while not (a1 == a2 == a3 == a4):\n        b1 = abs(a1 - a2)\n        b2 = abs(a2 - a3)\n        b3 = abs(a3 - a4)\n        b4 = abs(a4 - a1)\n        a1, a2, a3, a4 = b1, b2, b3, b4\n        steps += 1\n\n    pri</span>nt(steps)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b4fe535fa0f4f1d8f6/522be41104e24b1fa5d14200/sub_1762410581268_skmstpmzw.py",
+        "similarity_percent": 44.23,
+        "full_code": "while True:\n    try:\n        data = input().split()\n        if len(data) == 0:\n           continue\n        a1, a2, a3, a4 = map(int, data)\n        if a1 == 0 and a2 == 0 and a3 == 0 and a4 == 0:\n           break\n    \n        step = 0\n        while not (a1 == a2 == a3 == a4):\n              new_a1 = abs(a1 - a2)\n              new_a2 = abs(a2 - a3)\n              new_a3 = abs(a3 - a4)\n              new_a4 = abs(a4 - a1)\n        \n              a1, a2, a3, a4 = new_a1, new_a2, new_a3, new_a4\n              step += 1\n        print(step)\n    except EOFError:\n        break",
+        "highlighted_code": "while True:\n    try:\n        data = input().split()\n        if len(data) == 0:\n           continue\n        a1, a2, a3, a4 = map(int, data)\n        if a1 == 0 and a2 == 0 and a3 == 0 and a4 == 0<span class='highlight-green'>:\n           break\n    \n        step = 0\n        while not (a1 == a2 == a3 == a4):\n              new_a1 = abs(a1 - a2)\n              new_a2 = abs(a2 - a3)\n              new_a3 = abs(a3 - a4)\n              new_a4 = abs(a4 - a1)\n        \n              a1, a2, a3, a4 = new_a1, new_a2, new_a3, new_a4\n              step += 1\n        pri</span>nt(step)\n    except EOFError:\n        break"
+      },
+      "token_overlap": 92,
+      "max_similarity_percent": 54.44
+    },
+    {
+      "case_id": 89,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b4fe535fa0f4f1d8f6/f95120b3a38a461085ef58cb/sub_1762324668097_zhwlhx3vz.py",
+        "similarity_percent": 53.29,
+        "full_code": "a1, a2, a3, a4 = map(int, input().split())\ntong = 0\nwhile not (a1 == 0 and a2 == 0 and a3 == 0 and a4 == 0):\n    if a1 == a2 == a3 == a4:\n        break\n    b1 = abs(a1 - a2)\n    b2 = abs(a2 - a3)\n    b3 = abs(a3 - a4)\n    b4 = abs(a4 - a1)\n    a1, a2, a3, a4 = b1, b2, b3, b4\n    tong = tong + 1\nprint(tong)",
+        "highlighted_code": "<span class='highlight-red'>a1, a2, a3, a4 = map(int, input().split())\ntong = 0\nwhile not (a1 =</span>= 0 and a2 == 0 and a3 == 0 and a4 == 0):\n    if a1 == a2 == a3 == a4:\n        break\n    <span class='highlight-red'>b1 = abs(a1 - a2)\n    b2 = abs(a2 - a3)\n    b3 = abs(a3 - a4)\n    b4 = abs(a4 - a1</span>)\n    a1, a2, a3, a4 = b1, b2, b3, b4\n    tong = tong + 1\nprint(tong)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b4fe535fa0f4f1d8f6/53387d97307e4d81b93edb94/sub_1762339132352_3h0f82lt7.py",
+        "similarity_percent": 63.78,
+        "full_code": "a, b, c, d = map(int, input().split())\ndem = 0\nwhile not (a == b and b == c and c == d):\n a1 , b1 , c1 , d1 = a , b , c ,d\n a = abs (a1-b1)\n b = abs (b1-c1)\n c = abs (c1-d1)\n d = abs (d1-a1)\n dem+=1\nprint (dem)",
+        "highlighted_code": "<span class='highlight-green'>a, b, c, d = map(int, input().split())\ndem = 0\nwhile not (a =</span>= b and b == c and c == d):\n a1 , b1 , c1 , d1 = a , b , c ,d\n <span class='highlight-green'>a = abs (a1-b1)\n b = abs (b1-c1)\n c = abs (c1-d1)\n d = abs (d1-a1</span>)\n dem+=1\nprint (dem)"
+      },
+      "token_overlap": 81,
+      "max_similarity_percent": 63.78
+    },
+    {
+      "case_id": 90,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b4fe535fa0f4f1d8f6/f95120b3a38a461085ef58cb/sub_1762324668097_zhwlhx3vz.py",
+        "similarity_percent": 51.97,
+        "full_code": "a1, a2, a3, a4 = map(int, input().split())\ntong = 0\nwhile not (a1 == 0 and a2 == 0 and a3 == 0 and a4 == 0):\n    if a1 == a2 == a3 == a4:\n        break\n    b1 = abs(a1 - a2)\n    b2 = abs(a2 - a3)\n    b3 = abs(a3 - a4)\n    b4 = abs(a4 - a1)\n    a1, a2, a3, a4 = b1, b2, b3, b4\n    tong = tong + 1\nprint(tong)",
+        "highlighted_code": "<span class='highlight-red'>a1, a2, a3, a4 = map(int, input().split())\ntong = 0\nwhile not (a1 =</span>= 0 and a2 == 0 and a3 == 0 and a4 == 0):\n    if a1 == a2 == a3 == a4:\n        break\n    b1 = <span class='highlight-red'>abs(a1 - a2)\n    b2 = abs(a2 - a3)\n    b3 = abs(a3 - a4)\n    b4 = abs(a4 - a1</span>)\n    a1, a2, a3, a4 = b1, b2, b3, b4\n    tong = tong + 1\nprint(tong)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b4fe535fa0f4f1d8f6/8e236cb825b041b0a82527f2/sub_1762328600554_2bpeynnsu.py",
+        "similarity_percent": 75.96,
+        "full_code": "a1, a2, a3, a4 = map(int, input().split())\ni = 0\nwhile not (a1 == a2 == a3 == a4):\n    i += 1\n    pa1 = a1\n    a1 = abs(a1 - a2)\n    a2 = abs(a2 - a3)\n    a3 = abs(a3 - a4)\n    a4 = abs(a4 - pa1)\nprint(i)\n",
+        "highlighted_code": "<span class='highlight-green'>a1, a2, a3, a4 = map(int, input().split())\ni = 0\nwhile not (a1 =</span>= a2 == a3 == a4):\n    i += 1\n    pa1 = a1\n    a1 = <span class='highlight-green'>abs(a1 - a2)\n    a2 = abs(a2 - a3)\n    a3 = abs(a3 - a4)\n    a4 = abs(a4 - pa1</span>)\nprint(i)\n"
+      },
+      "token_overlap": 79,
+      "max_similarity_percent": 75.96
+    },
+    {
+      "case_id": 91,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b4fe535fa0f4f1d8f6/f95120b3a38a461085ef58cb/sub_1762324668097_zhwlhx3vz.py",
+        "similarity_percent": 51.97,
+        "full_code": "a1, a2, a3, a4 = map(int, input().split())\ntong = 0\nwhile not (a1 == 0 and a2 == 0 and a3 == 0 and a4 == 0):\n    if a1 == a2 == a3 == a4:\n        break\n    b1 = abs(a1 - a2)\n    b2 = abs(a2 - a3)\n    b3 = abs(a3 - a4)\n    b4 = abs(a4 - a1)\n    a1, a2, a3, a4 = b1, b2, b3, b4\n    tong = tong + 1\nprint(tong)",
+        "highlighted_code": "<span class='highlight-red'>a1, a2, a3, a4 = map(int, input().split())\ntong = 0\nwhile not (a1 =</span>= 0 and a2 == 0 and a3 == 0 and a4 == 0):\n    if a1 == a2 == a3 == a4:\n        break\n    b1 = <span class='highlight-red'>abs(a1 - a2)\n    b2 = abs(a2 - a3)\n    b3 = abs(a3 - a4)\n    b4 = abs(a4 - a1</span>)\n    a1, a2, a3, a4 = b1, b2, b3, b4\n    tong = tong + 1\nprint(tong)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b4fe535fa0f4f1d8f6/3fa6af8d916a46039239cabe/sub_1762336876492_d5ukn1zp9.py",
+        "similarity_percent": 68.7,
+        "full_code": "a,b,c,d=map(int,input().split())\ncount=0\nwhile not(a==b and a==c and a==d):\n    e=a\n    a=abs(b-a)\n    b=abs(c-b)\n    c=abs(d-c)\n    d=abs(e-d)\n    count+=1\nprint(count)",
+        "highlighted_code": "<span class='highlight-green'>a,b,c,d=map(int,input().split())\ncount=0\nwhile not(a=</span>=b and a==c and a==d):\n    e=a\n    a=<span class='highlight-green'>abs(b-a)\n    b=abs(c-b)\n    c=abs(d-c)\n    d=abs(e-d</span>)\n    count+=1\nprint(count)"
+      },
+      "token_overlap": 79,
+      "max_similarity_percent": 68.7
+    },
+    {
+      "case_id": 92,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b4fe535fa0f4f1d8f6/f95120b3a38a461085ef58cb/sub_1761756540176_x1guuxwl7.py",
+        "similarity_percent": 51.97,
+        "full_code": "a1, a2, a3, a4 = map(int, input().split())\ncount = 0\nwhile not (a1 == 0 and a2 == 0 and a3 == 0 and a4 == 0):\n    if a1 == a2 == a3 == a4:\n        break\n    b1 = abs(a1 - a2)\n    b2 = abs(a2 - a3)\n    b3 = abs(a3 - a4)\n    b4 = abs(a4 - a1)\n    a1, a2, a3, a4 = b1, b2, b3, b4\n    count = count + 1\nprint(count)",
+        "highlighted_code": "<span class='highlight-red'>a1, a2, a3, a4 = map(int, input().split())\ncount = 0\nwhile not (a1 =</span>= 0 and a2 == 0 and a3 == 0 and a4 == 0):\n    if a1 == a2 == a3 == a4:\n        break\n    b1 = <span class='highlight-red'>abs(a1 - a2)\n    b2 = abs(a2 - a3)\n    b3 = abs(a3 - a4)\n    b4 = abs(a4 - a1</span>)\n    a1, a2, a3, a4 = b1, b2, b3, b4\n    count = count + 1\nprint(count)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b4fe535fa0f4f1d8f6/3fa6af8d916a46039239cabe/sub_1762336876492_d5ukn1zp9.py",
+        "similarity_percent": 68.7,
+        "full_code": "a,b,c,d=map(int,input().split())\ncount=0\nwhile not(a==b and a==c and a==d):\n    e=a\n    a=abs(b-a)\n    b=abs(c-b)\n    c=abs(d-c)\n    d=abs(e-d)\n    count+=1\nprint(count)",
+        "highlighted_code": "<span class='highlight-green'>a,b,c,d=map(int,input().split())\ncount=0\nwhile not(a=</span>=b and a==c and a==d):\n    e=a\n    a=<span class='highlight-green'>abs(b-a)\n    b=abs(c-b)\n    c=abs(d-c)\n    d=abs(e-d</span>)\n    count+=1\nprint(count)"
+      },
+      "token_overlap": 79,
+      "max_similarity_percent": 68.7
+    },
+    {
+      "case_id": 93,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b4fe535fa0f4f1d8f6/8e19101eb0da4e9a92a17098/sub_1762327905734_s16j2bf0q.py",
+        "similarity_percent": 51.69,
+        "full_code": "d = input().split()\nnums = list(map(int, d))\nfor i in range(0, len(nums), 4):\n    a1, a2, a3, a4 = nums[i:i+4]\n    if a1 == a2 == a3 == a4 == 0:\n        break\n    cnt = 0\n    while not (a1 == a2 == a3 == a4):\n        b1 = abs(a1 - a2)\n        b2 = abs(a2 - a3)\n        b3 = abs(a3 - a4)\n        b4 = abs(a4 - a1)\n        a1, a2, a3, a4 = b1, b2, b3, b4\n        cnt += 1\n    print(cnt)",
+        "highlighted_code": "d = input().split()\nnums = list(map(int, d))\nfor i in range(0, len(nums), 4):\n    a1, a2, a3, a4 = nums[i:i+4]\n    if a1 == a2 == a3 == a4 == 0<span class='highlight-red'>:\n        break\n    cnt = 0\n    while not (a1 == a2 == a3 == a4):\n        b1 = abs(a1 - a2)\n        b2 = abs(a2 - a3)\n        b3 = abs(a3 - a4)\n        b4 = abs(a4 - a1)\n        a1, a2, a3, a4 = b1, b2, b3, b4\n        cnt += 1\n    pri</span>nt(cnt)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b4fe535fa0f4f1d8f6/522be41104e24b1fa5d14200/sub_1762410581268_skmstpmzw.py",
+        "similarity_percent": 44.23,
+        "full_code": "while True:\n    try:\n        data = input().split()\n        if len(data) == 0:\n           continue\n        a1, a2, a3, a4 = map(int, data)\n        if a1 == 0 and a2 == 0 and a3 == 0 and a4 == 0:\n           break\n    \n        step = 0\n        while not (a1 == a2 == a3 == a4):\n              new_a1 = abs(a1 - a2)\n              new_a2 = abs(a2 - a3)\n              new_a3 = abs(a3 - a4)\n              new_a4 = abs(a4 - a1)\n        \n              a1, a2, a3, a4 = new_a1, new_a2, new_a3, new_a4\n              step += 1\n        print(step)\n    except EOFError:\n        break",
+        "highlighted_code": "while True:\n    try:\n        data = input().split()\n        if len(data) == 0:\n           continue\n        a1, a2, a3, a4 = map(int, data)\n        if a1 == 0 and a2 == 0 and a3 == 0 and a4 == 0<span class='highlight-green'>:\n           break\n    \n        step = 0\n        while not (a1 == a2 == a3 == a4):\n              new_a1 = abs(a1 - a2)\n              new_a2 = abs(a2 - a3)\n              new_a3 = abs(a3 - a4)\n              new_a4 = abs(a4 - a1)\n        \n              a1, a2, a3, a4 = new_a1, new_a2, new_a3, new_a4\n              step += 1\n        pri</span>nt(step)\n    except EOFError:\n        break"
+      },
+      "token_overlap": 92,
+      "max_similarity_percent": 51.69
+    },
+    {
+      "case_id": 94,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b4fe535fa0f4f1d8f6/27e30f767b3a46b283cbfec0/sub_1761663882495_qt0wi8tuq.py",
+        "similarity_percent": 51.54,
+        "full_code": "a1,a2,a3,a4 = map(int, input().split())\ncount = -1\nwhile not (a1 == 0 and a2 == 0 and a3 == 0 and a4 == 0):\n    b1 = abs(a1-a2)\n    b2 = abs(a2-a3)\n    b3 = abs(a3-a4)\n    b4 = abs(a4-a1)\n    a1,a2,a3,a4 = b1,b2,b3,b4\n    count += 1\nprint(count)\n",
+        "highlighted_code": "<span class='highlight-red'>a1,a2,a3,a4 = map(int, input().split())\ncount = </span>-1\nwhile not (a1 == 0 and a2 == 0 and a3 == 0 and a4 == 0):\n    b1 = <span class='highlight-red'>abs(a1-a2)\n    b2 = abs(a2-a3)\n    b3 = abs(a3-a4)\n    b4 = abs(a4-a1</span>)\n    a1,a2,a3,a4 = b1,b2,b3,b4\n    count += 1\nprint(count)\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b4fe535fa0f4f1d8f6/8e236cb825b041b0a82527f2/sub_1761833072369_o7r9u0mw3.py",
+        "similarity_percent": 62.62,
+        "full_code": "a1, a2, a3, a4 = map(int, input().split())\n\ni = 0\nwhile not (a1 == a2 == a3 == a4):\n    prev_a1 = a1\n    a1 = abs(a1 - a2)\n    a2 = abs(a2 - a3)\n    a3 = abs(a3 - a4)\n    a4 = abs(a4 - prev_a1)\n    i += 1\nprint(i)",
+        "highlighted_code": "<span class='highlight-green'>a1, a2, a3, a4 = map(int, input().split())\n\ni = </span>0\nwhile not (a1 == a2 == a3 == a4):\n    prev_a1 = a1\n    a1 = <span class='highlight-green'>abs(a1 - a2)\n    a2 = abs(a2 - a3)\n    a3 = abs(a3 - a4)\n    a4 = abs(a4 - prev_a1</span>)\n    i += 1\nprint(i)"
+      },
+      "token_overlap": 67,
+      "max_similarity_percent": 62.62
+    },
+    {
+      "case_id": 95,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b4fe535fa0f4f1d8f6/27e30f767b3a46b283cbfec0/sub_1761663882495_qt0wi8tuq.py",
+        "similarity_percent": 51.54,
+        "full_code": "a1,a2,a3,a4 = map(int, input().split())\ncount = -1\nwhile not (a1 == 0 and a2 == 0 and a3 == 0 and a4 == 0):\n    b1 = abs(a1-a2)\n    b2 = abs(a2-a3)\n    b3 = abs(a3-a4)\n    b4 = abs(a4-a1)\n    a1,a2,a3,a4 = b1,b2,b3,b4\n    count += 1\nprint(count)\n",
+        "highlighted_code": "<span class='highlight-red'>a1,a2,a3,a4 = map(int, input().split())\ncount = </span>-1\nwhile not (a1 == 0 and a2 == 0 and a3 == 0 and a4 == 0):\n    b1 = <span class='highlight-red'>abs(a1-a2)\n    b2 = abs(a2-a3)\n    b3 = abs(a3-a4)\n    b4 = abs(a4-a1</span>)\n    a1,a2,a3,a4 = b1,b2,b3,b4\n    count += 1\nprint(count)\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b4fe535fa0f4f1d8f6/8e236cb825b041b0a82527f2/sub_1762328600554_2bpeynnsu.py",
+        "similarity_percent": 64.42,
+        "full_code": "a1, a2, a3, a4 = map(int, input().split())\ni = 0\nwhile not (a1 == a2 == a3 == a4):\n    i += 1\n    pa1 = a1\n    a1 = abs(a1 - a2)\n    a2 = abs(a2 - a3)\n    a3 = abs(a3 - a4)\n    a4 = abs(a4 - pa1)\nprint(i)\n",
+        "highlighted_code": "<span class='highlight-green'>a1, a2, a3, a4 = map(int, input().split())\ni = </span>0\nwhile not (a1 == a2 == a3 == a4):\n    i += 1\n    pa1 = a1\n    a1 = <span class='highlight-green'>abs(a1 - a2)\n    a2 = abs(a2 - a3)\n    a3 = abs(a3 - a4)\n    a4 = abs(a4 - pa1</span>)\nprint(i)\n"
+      },
+      "token_overlap": 67,
+      "max_similarity_percent": 64.42
+    },
+    {
+      "case_id": 96,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b4fe535fa0f4f1d8f6/27e30f767b3a46b283cbfec0/sub_1761663882495_qt0wi8tuq.py",
+        "similarity_percent": 51.54,
+        "full_code": "a1,a2,a3,a4 = map(int, input().split())\ncount = -1\nwhile not (a1 == 0 and a2 == 0 and a3 == 0 and a4 == 0):\n    b1 = abs(a1-a2)\n    b2 = abs(a2-a3)\n    b3 = abs(a3-a4)\n    b4 = abs(a4-a1)\n    a1,a2,a3,a4 = b1,b2,b3,b4\n    count += 1\nprint(count)\n",
+        "highlighted_code": "<span class='highlight-red'>a1,a2,a3,a4 = map(int, input().split())\ncount = </span>-1\nwhile not (a1 == 0 and a2 == 0 and a3 == 0 and a4 == 0):\n    b1 = <span class='highlight-red'>abs(a1-a2)\n    b2 = abs(a2-a3)\n    b3 = abs(a3-a4)\n    b4 = abs(a4-a1</span>)\n    a1,a2,a3,a4 = b1,b2,b3,b4\n    count += 1\nprint(count)\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b4fe535fa0f4f1d8f6/e3bacd91f1ad41f482a842be/sub_1762335886827_1y2jtsxpy.py",
+        "similarity_percent": 63.81,
+        "full_code": "a,b,c,d=map(int,input().split())\ndem=0\nwhile not a==b==c==d:\n    e=a\n    a = abs(b-a)\n    b = abs(c-b)\n    c = abs(d-c)\n    d = abs(e-d)\n    dem += 1\nprint(dem)",
+        "highlighted_code": "<span class='highlight-green'>a,b,c,d=map(int,input().split())\ndem=</span>0\nwhile not a==b==c==d:\n    e=a\n    a = <span class='highlight-green'>abs(b-a)\n    b = abs(c-b)\n    c = abs(d-c)\n    d = abs(e-d</span>)\n    dem += 1\nprint(dem)"
+      },
+      "token_overlap": 67,
+      "max_similarity_percent": 63.81
+    },
+    {
+      "case_id": 97,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b4fe535fa0f4f1d8f6/d82933fea814463eb5b029d1/sub_1761621531207_1qppfh35j.py",
+        "similarity_percent": 51.48,
+        "full_code": "while True:\n    try:\n        a1, a2, a3, a4 = map(int, input().split())\n    except EOFError:\n        break  \n    if a1 == a2 == a3 == a4 == 0:\n        break  \n\n    steps = 0\n    while not (a1 == a2 == a3 == a4):\n        b1 = abs(a1 - a2)\n        b2 = abs(a2 - a3)\n        b3 = abs(a3 - a4)\n        b4 = abs(a4 - a1)\n        a1, a2, a3, a4 = b1, b2, b3, b4\n        steps += 1\n\n    print(steps)",
+        "highlighted_code": "while True:\n    try:\n        a1, a2<span class='highlight-red'>, a3, a4 = map(int, input().split())\n    </span>except EOFError:\n        break  \n    if a1 == a2 == a3 == a4 == 0:\n        break  \n\n    <span class='highlight-red'>steps = 0\n    while not (a1 == a2 == a3 == a4):\n        b1 </span>= <span class='highlight-red'>abs(a1 - a2)\n        b2 = abs(a2 - a3)\n        b3 = abs(a3 - a4)\n        b4 = abs(a4 - a1</span>)\n        a1, a2, a3, a4 = b1, b2, b3, b4\n        steps += 1\n\n    print(steps)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b4fe535fa0f4f1d8f6/8e236cb825b041b0a82527f2/sub_1761833072369_o7r9u0mw3.py",
+        "similarity_percent": 81.31,
+        "full_code": "a1, a2, a3, a4 = map(int, input().split())\n\ni = 0\nwhile not (a1 == a2 == a3 == a4):\n    prev_a1 = a1\n    a1 = abs(a1 - a2)\n    a2 = abs(a2 - a3)\n    a3 = abs(a3 - a4)\n    a4 = abs(a4 - prev_a1)\n    i += 1\nprint(i)",
+        "highlighted_code": "a1, a2<span class='highlight-green'>, a3, a4 = map(int, input().split())\n\n</span><span class='highlight-green'>i = 0\nwhile not (a1 == a2 == a3 == a4):\n    prev_a1 </span>= a1\n    a1 = <span class='highlight-green'>abs(a1 - a2)\n    a2 = abs(a2 - a3)\n    a3 = abs(a3 - a4)\n    a4 = abs(a4 - prev_a1</span>)\n    i += 1\nprint(i)"
+      },
+      "token_overlap": 87,
+      "max_similarity_percent": 81.31
+    },
+    {
+      "case_id": 98,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b4fe535fa0f4f1d8f6/d82933fea814463eb5b029d1/sub_1761621531207_1qppfh35j.py",
+        "similarity_percent": 51.48,
+        "full_code": "while True:\n    try:\n        a1, a2, a3, a4 = map(int, input().split())\n    except EOFError:\n        break  \n    if a1 == a2 == a3 == a4 == 0:\n        break  \n\n    steps = 0\n    while not (a1 == a2 == a3 == a4):\n        b1 = abs(a1 - a2)\n        b2 = abs(a2 - a3)\n        b3 = abs(a3 - a4)\n        b4 = abs(a4 - a1)\n        a1, a2, a3, a4 = b1, b2, b3, b4\n        steps += 1\n\n    print(steps)",
+        "highlighted_code": "while True:\n    try:\n        a1, a2<span class='highlight-red'>, a3, a4 = map(int, input().split())\n    </span>except EOFError:\n        break  \n    if a1 == a2 == a3 == a4 == 0:\n        break  \n\n    <span class='highlight-red'>steps = 0\n    while not (a1 == a2 == a3 == a4):\n        b1 </span>= <span class='highlight-red'>abs(a1 - a2)\n        b2 = abs(a2 - a3)\n        b3 = abs(a3 - a4)\n        b4 = abs(a4 - a1</span>)\n        a1, a2, a3, a4 = b1, b2, b3, b4\n        steps += 1\n\n    print(steps)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b4fe535fa0f4f1d8f6/8e236cb825b041b0a82527f2/sub_1762328600554_2bpeynnsu.py",
+        "similarity_percent": 83.65,
+        "full_code": "a1, a2, a3, a4 = map(int, input().split())\ni = 0\nwhile not (a1 == a2 == a3 == a4):\n    i += 1\n    pa1 = a1\n    a1 = abs(a1 - a2)\n    a2 = abs(a2 - a3)\n    a3 = abs(a3 - a4)\n    a4 = abs(a4 - pa1)\nprint(i)\n",
+        "highlighted_code": "a1, a2<span class='highlight-green'>, a3, a4 = map(int, input().split())\n</span><span class='highlight-green'>i = 0\nwhile not (a1 == a2 == a3 == a4):\n    i </span>+= 1\n    pa1 = a1\n    a1 = <span class='highlight-green'>abs(a1 - a2)\n    a2 = abs(a2 - a3)\n    a3 = abs(a3 - a4)\n    a4 = abs(a4 - pa1</span>)\nprint(i)\n"
+      },
+      "token_overlap": 87,
+      "max_similarity_percent": 83.65
+    },
+    {
+      "case_id": 99,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b4fe535fa0f4f1d8f6/780627ccd0224069b68e3b8d/sub_1762338813703_bcugq96d4.py",
+        "similarity_percent": 51.41,
+        "full_code": "a, b, c, d = map(int, input().split())\nif a == b == c == d:\n    print('0')\nelse:\n    dem = 0\n    while not (a == b == c == d):\n        a1 = abs(a - b)\n        a2 = abs(b - c)\n        a3 = abs(c - d)\n        a4 = abs(d - a)\n        a, b, c, d = a1, a2, a3, a4\n        dem += 1\n    print(dem)",
+        "highlighted_code": "<span class='highlight-red'>a, b, c, d = map(int, input().split())\n</span>if a == b == c == d:\n    print(&#39;0&#39;)\nelse:\n    dem = 0\n    while not (a == b == <span class='highlight-red'>c == d):\n        a1 = abs(a - b)\n        a2 = abs(b - c)\n        a3 = abs(c - d)\n        a4 = abs(d - a</span>)\n        a, b, c, d = a1, a2, a3, a4\n        dem += 1\n    print(dem)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b4fe535fa0f4f1d8f6/3fa6af8d916a46039239cabe/sub_1761646788738_jaqcylqz1.py",
+        "similarity_percent": 64.04,
+        "full_code": "a,b,c,d=map(int,input().split())\ne=a\ncount=0\nwhile not(a==b and a==c and a==d):\n    a=abs(b-a)\n    b=abs(c-b)\n    c=abs(d-c)\n    d=abs(e-d)\n    e=a\n    count+=1\nprint(count)",
+        "highlighted_code": "<span class='highlight-green'>a,b,c,d=map(int,input().split())\n</span>e=a\ncount=0\nwhile not(a==b and a==c and <span class='highlight-green'>a==d):\n    a=abs(b-a)\n    b=abs(c-b)\n    c=abs(d-c)\n    d=abs(e-d</span>)\n    e=a\n    count+=1\nprint(count)"
+      },
+      "token_overlap": 73,
+      "max_similarity_percent": 64.04
+    },
+    {
+      "case_id": 100,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b4fe535fa0f4f1d8f6/d82933fea814463eb5b029d1/sub_1761621531207_1qppfh35j.py",
+        "similarity_percent": 50.89,
+        "full_code": "while True:\n    try:\n        a1, a2, a3, a4 = map(int, input().split())\n    except EOFError:\n        break  \n    if a1 == a2 == a3 == a4 == 0:\n        break  \n\n    steps = 0\n    while not (a1 == a2 == a3 == a4):\n        b1 = abs(a1 - a2)\n        b2 = abs(a2 - a3)\n        b3 = abs(a3 - a4)\n        b4 = abs(a4 - a1)\n        a1, a2, a3, a4 = b1, b2, b3, b4\n        steps += 1\n\n    print(steps)",
+        "highlighted_code": "while True:\n    try:\n        a1, a2, a3, a4 = map(int, input().split())\n    except EOFError:\n        break  \n    if a1 == a2 == a3 == a4 == 0:\n        break  \n\n    <span class='highlight-red'>steps = 0\n    while not (a1 == a2 == a3 == a4):\n        b1 = abs(a1 - a2)\n        b2 = abs(a2 - a3)\n        b3 = abs(a3 - a4)\n        b4 = abs(a4 - a1)\n        a1, a2, a3, a4 = b1, b2, b3, b4\n        steps += 1\n\n    pri</span>nt(steps)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b4fe535fa0f4f1d8f6/e0cd413045d741e39459231c/sub_1762329598439_8rku27hvx.py",
+        "similarity_percent": 73.5,
+        "full_code": "n=input()\na1, a2, a3, a4 = map(int, n.split())\n\nlan = 0\nwhile not (a1 == a2 == a3 == a4):\n    b1 = abs(a1 - a2)\n    b2 = abs(a2 - a3)\n    b3 = abs(a3 - a4)\n    b4 = abs(a4 - a1)\n    a1, a2, a3, a4 = b1, b2, b3, b4\n    lan += 1\nprint(lan)",
+        "highlighted_code": "n=input()\na1, a2, a3, a4 = map(int, n.split())\n\n<span class='highlight-green'>lan = 0\nwhile not (a1 == a2 == a3 == a4):\n    b1 = abs(a1 - a2)\n    b2 = abs(a2 - a3)\n    b3 = abs(a3 - a4)\n    b4 = abs(a4 - a1)\n    a1, a2, a3, a4 = b1, b2, b3, b4\n    lan += 1\npri</span>nt(lan)"
+      },
+      "token_overlap": 86,
+      "max_similarity_percent": 73.5
+    },
+    {
+      "case_id": 101,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b4fe535fa0f4f1d8f6/d82933fea814463eb5b029d1/sub_1761621531207_1qppfh35j.py",
+        "similarity_percent": 50.3,
+        "full_code": "while True:\n    try:\n        a1, a2, a3, a4 = map(int, input().split())\n    except EOFError:\n        break  \n    if a1 == a2 == a3 == a4 == 0:\n        break  \n\n    steps = 0\n    while not (a1 == a2 == a3 == a4):\n        b1 = abs(a1 - a2)\n        b2 = abs(a2 - a3)\n        b3 = abs(a3 - a4)\n        b4 = abs(a4 - a1)\n        a1, a2, a3, a4 = b1, b2, b3, b4\n        steps += 1\n\n    print(steps)",
+        "highlighted_code": "while True:\n    try:\n        a1, a2<span class='highlight-red'>, a3, a4 = map(int, input().split())\n    </span>except EOFError:\n        break  \n    if a1 == a2 == a3 == a4 == 0:\n        break  \n\n    steps = 0\n    while not (a1 == a2 == a3 == a4):\n        b1 = <span class='highlight-red'>abs(a1 - a2)\n        b2 = abs(a2 - a3)\n        b3 = abs(a3 - a4)\n        b4 = abs(a4 - a1)\n        a1, a2, a3, a4 = b1, b2, b3, b4\n        steps += 1\n\n    pri</span>nt(steps)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b4fe535fa0f4f1d8f6/27e30f767b3a46b283cbfec0/sub_1761663882495_qt0wi8tuq.py",
+        "similarity_percent": 65.38,
+        "full_code": "a1,a2,a3,a4 = map(int, input().split())\ncount = -1\nwhile not (a1 == 0 and a2 == 0 and a3 == 0 and a4 == 0):\n    b1 = abs(a1-a2)\n    b2 = abs(a2-a3)\n    b3 = abs(a3-a4)\n    b4 = abs(a4-a1)\n    a1,a2,a3,a4 = b1,b2,b3,b4\n    count += 1\nprint(count)\n",
+        "highlighted_code": "a1,a2<span class='highlight-green'>,a3,a4 = map(int, input().split())\n</span>count = -1\nwhile not (a1 == 0 and a2 == 0 and a3 == 0 and a4 == 0):\n    b1 = <span class='highlight-green'>abs(a1-a2)\n    b2 = abs(a2-a3)\n    b3 = abs(a3-a4)\n    b4 = abs(a4-a1)\n    a1,a2,a3,a4 = b1,b2,b3,b4\n    count += 1\npri</span>nt(count)\n"
+      },
+      "token_overlap": 85,
+      "max_similarity_percent": 65.38
+    },
+    {
+      "case_id": 102,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b4fe535fa0f4f1d8f6/f95120b3a38a461085ef58cb/sub_1762324668097_zhwlhx3vz.py",
+        "similarity_percent": 48.68,
+        "full_code": "a1, a2, a3, a4 = map(int, input().split())\ntong = 0\nwhile not (a1 == 0 and a2 == 0 and a3 == 0 and a4 == 0):\n    if a1 == a2 == a3 == a4:\n        break\n    b1 = abs(a1 - a2)\n    b2 = abs(a2 - a3)\n    b3 = abs(a3 - a4)\n    b4 = abs(a4 - a1)\n    a1, a2, a3, a4 = b1, b2, b3, b4\n    tong = tong + 1\nprint(tong)",
+        "highlighted_code": "<span class='highlight-red'>a1, a2, a3, a4 = map(int, input().split())\ntong = 0\nwhile n</span>ot (a1 == 0 and a2 == 0 and a3 == 0 and a4 == 0):\n    if a1 == a2 == a3 == a4:\n        break\n    b1 = <span class='highlight-red'>abs(a1 - a2)\n    b2 = abs(a2 - a3)\n    b3 = abs(a3 - a4)\n    b4 = abs(a4 - a1</span>)\n    a1, a2, a3, a4 = b1, b2, b3, b4\n    tong = tong + 1\nprint(tong)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b4fe535fa0f4f1d8f6/e3bacd91f1ad41f482a842be/sub_1762335886827_1y2jtsxpy.py",
+        "similarity_percent": 70.48,
+        "full_code": "a,b,c,d=map(int,input().split())\ndem=0\nwhile not a==b==c==d:\n    e=a\n    a = abs(b-a)\n    b = abs(c-b)\n    c = abs(d-c)\n    d = abs(e-d)\n    dem += 1\nprint(dem)",
+        "highlighted_code": "<span class='highlight-green'>a,b,c,d=map(int,input().split())\ndem=0\nwhile n</span>ot a==b==c==d:\n    e=a\n    a = <span class='highlight-green'>abs(b-a)\n    b = abs(c-b)\n    c = abs(d-c)\n    d = abs(e-d</span>)\n    dem += 1\nprint(dem)"
+      },
+      "token_overlap": 74,
+      "max_similarity_percent": 70.48
+    },
+    {
+      "case_id": 103,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b4fe535fa0f4f1d8f6/d82933fea814463eb5b029d1/sub_1761621531207_1qppfh35j.py",
+        "similarity_percent": 47.93,
+        "full_code": "while True:\n    try:\n        a1, a2, a3, a4 = map(int, input().split())\n    except EOFError:\n        break  \n    if a1 == a2 == a3 == a4 == 0:\n        break  \n\n    steps = 0\n    while not (a1 == a2 == a3 == a4):\n        b1 = abs(a1 - a2)\n        b2 = abs(a2 - a3)\n        b3 = abs(a3 - a4)\n        b4 = abs(a4 - a1)\n        a1, a2, a3, a4 = b1, b2, b3, b4\n        steps += 1\n\n    print(steps)",
+        "highlighted_code": "while True:\n    try:\n        a1, a2<span class='highlight-red'>, a3, a4 = map(int, input().split())\n    </span>except EOFError:\n        break  \n    if a1 == a2 == a3 == a4 == 0:\n        break  \n\n    steps = 0\n    while not (a1 == a2 == a3 == a4):\n        <span class='highlight-red'>b1 = abs(a1 - a2)\n        b2 = abs(a2 - a3)\n        b3 = abs(a3 - a4)\n        b4 = abs(a4 - a1)\n        a1, a2, a3, a4 = b1, b2, b3, b4\n        steps </span>+= 1\n\n    print(steps)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b4fe535fa0f4f1d8f6/f95120b3a38a461085ef58cb/sub_1762324668097_zhwlhx3vz.py",
+        "similarity_percent": 53.29,
+        "full_code": "a1, a2, a3, a4 = map(int, input().split())\ntong = 0\nwhile not (a1 == 0 and a2 == 0 and a3 == 0 and a4 == 0):\n    if a1 == a2 == a3 == a4:\n        break\n    b1 = abs(a1 - a2)\n    b2 = abs(a2 - a3)\n    b3 = abs(a3 - a4)\n    b4 = abs(a4 - a1)\n    a1, a2, a3, a4 = b1, b2, b3, b4\n    tong = tong + 1\nprint(tong)",
+        "highlighted_code": "a1, a2<span class='highlight-green'>, a3, a4 = map(int, input().split())\n</span>tong = 0\nwhile not (a1 == 0 and a2 == 0 and a3 == 0 and a4 == 0):\n    if a1 == a2 == a3 == a4:\n        break\n    <span class='highlight-green'>b1 = abs(a1 - a2)\n    b2 = abs(a2 - a3)\n    b3 = abs(a3 - a4)\n    b4 = abs(a4 - a1)\n    a1, a2, a3, a4 = b1, b2, b3, b4\n    tong </span>= tong + 1\nprint(tong)"
+      },
+      "token_overlap": 81,
+      "max_similarity_percent": 53.29
+    },
+    {
+      "case_id": 104,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b4fe535fa0f4f1d8f6/d82933fea814463eb5b029d1/sub_1761621531207_1qppfh35j.py",
+        "similarity_percent": 47.93,
+        "full_code": "while True:\n    try:\n        a1, a2, a3, a4 = map(int, input().split())\n    except EOFError:\n        break  \n    if a1 == a2 == a3 == a4 == 0:\n        break  \n\n    steps = 0\n    while not (a1 == a2 == a3 == a4):\n        b1 = abs(a1 - a2)\n        b2 = abs(a2 - a3)\n        b3 = abs(a3 - a4)\n        b4 = abs(a4 - a1)\n        a1, a2, a3, a4 = b1, b2, b3, b4\n        steps += 1\n\n    print(steps)",
+        "highlighted_code": "while True:\n    try:\n        a1, a2<span class='highlight-red'>, a3, a4 = map(int, input().split())\n    </span>except EOFError:\n        break  \n    if a1 == a2 == a3 == a4 == 0:\n        break  \n\n    steps = 0\n    while not (a1 == a2 == a3 == a4):\n        <span class='highlight-red'>b1 = abs(a1 - a2)\n        b2 = abs(a2 - a3)\n        b3 = abs(a3 - a4)\n        b4 = abs(a4 - a1)\n        a1, a2, a3, a4 = b1, b2, b3, b4\n        steps </span>+= 1\n\n    print(steps)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b4fe535fa0f4f1d8f6/f95120b3a38a461085ef58cb/sub_1761756540176_x1guuxwl7.py",
+        "similarity_percent": 53.29,
+        "full_code": "a1, a2, a3, a4 = map(int, input().split())\ncount = 0\nwhile not (a1 == 0 and a2 == 0 and a3 == 0 and a4 == 0):\n    if a1 == a2 == a3 == a4:\n        break\n    b1 = abs(a1 - a2)\n    b2 = abs(a2 - a3)\n    b3 = abs(a3 - a4)\n    b4 = abs(a4 - a1)\n    a1, a2, a3, a4 = b1, b2, b3, b4\n    count = count + 1\nprint(count)",
+        "highlighted_code": "a1, a2<span class='highlight-green'>, a3, a4 = map(int, input().split())\n</span>count = 0\nwhile not (a1 == 0 and a2 == 0 and a3 == 0 and a4 == 0):\n    if a1 == a2 == a3 == a4:\n        break\n    <span class='highlight-green'>b1 = abs(a1 - a2)\n    b2 = abs(a2 - a3)\n    b3 = abs(a3 - a4)\n    b4 = abs(a4 - a1)\n    a1, a2, a3, a4 = b1, b2, b3, b4\n    count </span>= count + 1\nprint(count)"
+      },
+      "token_overlap": 81,
+      "max_similarity_percent": 53.29
+    },
+    {
+      "case_id": 105,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b4fe535fa0f4f1d8f6/780627ccd0224069b68e3b8d/sub_1762338813703_bcugq96d4.py",
+        "similarity_percent": 45.77,
+        "full_code": "a, b, c, d = map(int, input().split())\nif a == b == c == d:\n    print('0')\nelse:\n    dem = 0\n    while not (a == b == c == d):\n        a1 = abs(a - b)\n        a2 = abs(b - c)\n        a3 = abs(c - d)\n        a4 = abs(d - a)\n        a, b, c, d = a1, a2, a3, a4\n        dem += 1\n    print(dem)",
+        "highlighted_code": "<span class='highlight-red'>a, b, c, d = map(int, input().split())\n</span>if a == b == c == d:\n    print(&#39;0&#39;)\nelse:\n    dem = 0\n    while not (a == b == c == d):\n        a1 = <span class='highlight-red'>abs(a - b)\n        a2 = abs(b - c)\n        a3 = abs(c - d)\n        a4 = abs(d - a</span>)\n        a, b, c, d = a1, a2, a3, a4\n        dem += 1\n    print(dem)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b4fe535fa0f4f1d8f6/e3bacd91f1ad41f482a842be/sub_1762335886827_1y2jtsxpy.py",
+        "similarity_percent": 61.9,
+        "full_code": "a,b,c,d=map(int,input().split())\ndem=0\nwhile not a==b==c==d:\n    e=a\n    a = abs(b-a)\n    b = abs(c-b)\n    c = abs(d-c)\n    d = abs(e-d)\n    dem += 1\nprint(dem)",
+        "highlighted_code": "<span class='highlight-green'>a,b,c,d=map(int,input().split())\n</span>dem=0\nwhile not a==b==c==d:\n    e=a\n    a = <span class='highlight-green'>abs(b-a)\n    b = abs(c-b)\n    c = abs(d-c)\n    d = abs(e-d</span>)\n    dem += 1\nprint(dem)"
+      },
+      "token_overlap": 65,
+      "max_similarity_percent": 61.9
+    },
+    {
+      "case_id": 106,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b4fe535fa0f4f1d8f6/f95120b3a38a461085ef58cb/sub_1762324668097_zhwlhx3vz.py",
+        "similarity_percent": 45.39,
+        "full_code": "a1, a2, a3, a4 = map(int, input().split())\ntong = 0\nwhile not (a1 == 0 and a2 == 0 and a3 == 0 and a4 == 0):\n    if a1 == a2 == a3 == a4:\n        break\n    b1 = abs(a1 - a2)\n    b2 = abs(a2 - a3)\n    b3 = abs(a3 - a4)\n    b4 = abs(a4 - a1)\n    a1, a2, a3, a4 = b1, b2, b3, b4\n    tong = tong + 1\nprint(tong)",
+        "highlighted_code": "<span class='highlight-red'>a1, a2, a3, a4 = map(int, input().split())\ntong = </span>0\nwhile not (a1 == 0 and a2 == 0 and a3 == 0 and a4 == 0):\n    if a1 == a2 == a3 == a4:\n        break\n    <span class='highlight-red'>b1 = abs(a1 - a2)\n    b2 = abs(a2 - a3)\n    b3 = abs(a3 - a4)\n    b4 = abs(a4 - a1</span>)\n    a1, a2, a3, a4 = b1, b2, b3, b4\n    tong = tong + 1\nprint(tong)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b4fe535fa0f4f1d8f6/3fa6af8d916a46039239cabe/sub_1761646788738_jaqcylqz1.py",
+        "similarity_percent": 60.53,
+        "full_code": "a,b,c,d=map(int,input().split())\ne=a\ncount=0\nwhile not(a==b and a==c and a==d):\n    a=abs(b-a)\n    b=abs(c-b)\n    c=abs(d-c)\n    d=abs(e-d)\n    e=a\n    count+=1\nprint(count)",
+        "highlighted_code": "<span class='highlight-green'>a,b,c,d=map(int,input().split())\ne=</span>a\ncount=0\nwhile not(a==b and a==c and a==d):\n    <span class='highlight-green'>a=abs(b-a)\n    b=abs(c-b)\n    c=abs(d-c)\n    d=abs(e-d</span>)\n    e=a\n    count+=1\nprint(count)"
+      },
+      "token_overlap": 69,
+      "max_similarity_percent": 60.53
+    },
+    {
+      "case_id": 107,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b4fe535fa0f4f1d8f6/f95120b3a38a461085ef58cb/sub_1761756540176_x1guuxwl7.py",
+        "similarity_percent": 45.39,
+        "full_code": "a1, a2, a3, a4 = map(int, input().split())\ncount = 0\nwhile not (a1 == 0 and a2 == 0 and a3 == 0 and a4 == 0):\n    if a1 == a2 == a3 == a4:\n        break\n    b1 = abs(a1 - a2)\n    b2 = abs(a2 - a3)\n    b3 = abs(a3 - a4)\n    b4 = abs(a4 - a1)\n    a1, a2, a3, a4 = b1, b2, b3, b4\n    count = count + 1\nprint(count)",
+        "highlighted_code": "<span class='highlight-red'>a1, a2, a3, a4 = map(int, input().split())\ncount = </span>0\nwhile not (a1 == 0 and a2 == 0 and a3 == 0 and a4 == 0):\n    if a1 == a2 == a3 == a4:\n        break\n    <span class='highlight-red'>b1 = abs(a1 - a2)\n    b2 = abs(a2 - a3)\n    b3 = abs(a3 - a4)\n    b4 = abs(a4 - a1</span>)\n    a1, a2, a3, a4 = b1, b2, b3, b4\n    count = count + 1\nprint(count)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b4fe535fa0f4f1d8f6/3fa6af8d916a46039239cabe/sub_1761646788738_jaqcylqz1.py",
+        "similarity_percent": 60.53,
+        "full_code": "a,b,c,d=map(int,input().split())\ne=a\ncount=0\nwhile not(a==b and a==c and a==d):\n    a=abs(b-a)\n    b=abs(c-b)\n    c=abs(d-c)\n    d=abs(e-d)\n    e=a\n    count+=1\nprint(count)",
+        "highlighted_code": "<span class='highlight-green'>a,b,c,d=map(int,input().split())\ne=</span>a\ncount=0\nwhile not(a==b and a==c and a==d):\n    <span class='highlight-green'>a=abs(b-a)\n    b=abs(c-b)\n    c=abs(d-c)\n    d=abs(e-d</span>)\n    e=a\n    count+=1\nprint(count)"
+      },
+      "token_overlap": 69,
+      "max_similarity_percent": 60.53
+    },
+    {
+      "case_id": 108,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b4fe535fa0f4f1d8f6/d82933fea814463eb5b029d1/sub_1761621531207_1qppfh35j.py",
+        "similarity_percent": 41.42,
+        "full_code": "while True:\n    try:\n        a1, a2, a3, a4 = map(int, input().split())\n    except EOFError:\n        break  \n    if a1 == a2 == a3 == a4 == 0:\n        break  \n\n    steps = 0\n    while not (a1 == a2 == a3 == a4):\n        b1 = abs(a1 - a2)\n        b2 = abs(a2 - a3)\n        b3 = abs(a3 - a4)\n        b4 = abs(a4 - a1)\n        a1, a2, a3, a4 = b1, b2, b3, b4\n        steps += 1\n\n    print(steps)",
+        "highlighted_code": "while True:\n    try:\n        a1, a2<span class='highlight-red'>, a3, a4 = map(int, input().split())\n    </span>except EOFError:\n        break  \n    if a1 == a2 == a3 == a4 == 0:\n        break  \n\n    steps = 0\n    while not (a1 == a2 == <span class='highlight-red'>a3 == a4):\n        b1 = abs(a1 - a2)\n        b2 = abs(a2 - a3)\n        b3 = abs(a3 - a4)\n        b4 = abs(a4 - a1</span>)\n        a1, a2, a3, a4 = b1, b2, b3, b4\n        steps += 1\n\n    print(steps)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b4fe535fa0f4f1d8f6/3fa6af8d916a46039239cabe/sub_1761646788738_jaqcylqz1.py",
+        "similarity_percent": 61.4,
+        "full_code": "a,b,c,d=map(int,input().split())\ne=a\ncount=0\nwhile not(a==b and a==c and a==d):\n    a=abs(b-a)\n    b=abs(c-b)\n    c=abs(d-c)\n    d=abs(e-d)\n    e=a\n    count+=1\nprint(count)",
+        "highlighted_code": "a,b<span class='highlight-green'>,c,d=map(int,input().split())\n</span>e=a\ncount=0\nwhile not(a==b and a==c and <span class='highlight-green'>a==d):\n    a=abs(b-a)\n    b=abs(c-b)\n    c=abs(d-c)\n    d=abs(e-d</span>)\n    e=a\n    count+=1\nprint(count)"
+      },
+      "token_overlap": 70,
+      "max_similarity_percent": 61.4
+    }
+  ]
+}

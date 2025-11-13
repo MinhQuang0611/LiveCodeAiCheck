@@ -1,0 +1,8 @@
+n = list(map(int, input().split()))
+m = list(map(int, input().split()))
+ln = max(m)
+m.remove(ln)
+nn = min(m)
+m.remove(nn)
+tb = sum(m) / len(m)
+print(tb)

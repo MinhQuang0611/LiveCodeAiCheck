@@ -1,0 +1,8 @@
+a=list(map(int,input().split()))
+b=max(a)
+c=min(a)
+a.remove(b)
+a.remove(c)
+k=sum(a)
+k=round(k/len(a), 2)
+print(k)

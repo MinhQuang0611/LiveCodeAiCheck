@@ -1,0 +1,317 @@
+{
+  "problem_id": "68e3d40c72432513744774c7",
+  "filter_criteria": {
+    "min_token_overlap": 80,
+    "min_similarity_percent": 60
+  },
+  "total_cases_found": 21,
+  "total_cases_filtered": 18,
+  "cases": [
+    {
+      "case_id": 1,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3d40c72432513744774c7/e59c34a1bebb49d29bfb3592/sub_1762683020856_urpf8gs5w.py",
+        "similarity_percent": 100.0,
+        "full_code": "a = int(input())\narr = list(map(int,input().split()))\nb = int(input())\nbrr = list(map(int,input().split()))\nmiss = [i for i in arr if i in brr]\nprint(*miss)",
+        "highlighted_code": "<span class='highlight-red'>a = int(input())\narr = list(map(int,input().split()))\nb = int(input())\nbrr = list(map(int,input().split()))\nmiss = [i for i in arr if i in brr]\nprint(</span>*miss)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3d40c72432513744774c7/e59c34a1bebb49d29bfb3592/sub_1762683070002_jv4b3h1lb.py",
+        "similarity_percent": 92.52,
+        "full_code": "a = int(input())\narr = list(map(int, input().split()))\nb = int(input())\nbrr = set(map(int, input().split()))   \nmiss = [i for i in arr if i in brr]\nprint(*miss)\n",
+        "highlighted_code": "<span class='highlight-green'>a = int(input())\narr = list(map(int, input().split()))\nb = int(input()</span>)\nbrr = set(m<span class='highlight-green'>ap(int, input().split()))   \nmiss = [i for i in arr if i in brr]\nprint(</span>*miss)\n"
+      },
+      "token_overlap": 108,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 2,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3d40c72432513744774c7/bcb420abb39b4af095b63cf8/sub_1762633042654_4y7r1im0p.py",
+        "similarity_percent": 81.25,
+        "full_code": "n=int(input())\nmang_n=list(map(int,input().split()))\nm=int(input())\nmang_m=list(map(int,input().split()))\nmang_giao=[]\nfor i in mang_n:\n    if i in mang_m:\n        mang_giao+=[i]\nfor j in mang_giao:\n    print(j,end=\" \")\n",
+        "highlighted_code": "<span class='highlight-red'>n=int(input())\nmang_n=list(map(int,input().split()))\nm=int(input())\nmang_m=list(map(int,input().split()))\nmang_giao=[]\nfor i in mang_n:\n    if i in mang_m:\n        mang_giao</span>+=[i]\nfor j in mang_giao:\n    print(j,end=&#34; &#34;)\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3d40c72432513744774c7/27e30f767b3a46b283cbfec0/sub_1762242245244_u3z3vwdvn.py",
+        "similarity_percent": 84.55,
+        "full_code": "num_1 = int(input())\nar_1 = list(map(int, input().split()))\nnum_2 = int(input())\nar_2 = list(map(int, input().split()))\nlst = []\nfor i in ar_2:\n    if i in ar_1:\n        lst.append(i)\nlst.sort()\nprint(*lst)",
+        "highlighted_code": "<span class='highlight-green'>num_1 = int(input())\nar_1 = list(map(int, input().split()))\nnum_2 = int(input())\nar_2 = list(map(int, input().split()))\nlst = []\nfor i in ar_2:\n    if i in ar_1:\n        lst</span>.append(i)\nlst.sort()\nprint(*lst)"
+      },
+      "token_overlap": 104,
+      "max_similarity_percent": 84.55
+    },
+    {
+      "case_id": 3,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3d40c72432513744774c7/e59c34a1bebb49d29bfb3592/sub_1762683020856_urpf8gs5w.py",
+        "similarity_percent": 77.78,
+        "full_code": "a = int(input())\narr = list(map(int,input().split()))\nb = int(input())\nbrr = list(map(int,input().split()))\nmiss = [i for i in arr if i in brr]\nprint(*miss)",
+        "highlighted_code": "<span class='highlight-red'>a = int(input())\narr = list(map(int,input().split()))\nb = int(input())\nbrr = list(map(int,input().split()))\n</span>miss = [i for i in arr if i in brr]\nprint(*miss)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3d40c72432513744774c7/27e30f767b3a46b283cbfec0/sub_1762242245244_u3z3vwdvn.py",
+        "similarity_percent": 68.29,
+        "full_code": "num_1 = int(input())\nar_1 = list(map(int, input().split()))\nnum_2 = int(input())\nar_2 = list(map(int, input().split()))\nlst = []\nfor i in ar_2:\n    if i in ar_1:\n        lst.append(i)\nlst.sort()\nprint(*lst)",
+        "highlighted_code": "<span class='highlight-green'>num_1 = int(input())\nar_1 = list(map(int, input().split()))\nnum_2 = int(input())\nar_2 = list(map(int, input().split()))\n</span>lst = []\nfor i in ar_2:\n    if i in ar_1:\n        lst.append(i)\nlst.sort()\nprint(*lst)"
+      },
+      "token_overlap": 84,
+      "max_similarity_percent": 77.78
+    },
+    {
+      "case_id": 4,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3d40c72432513744774c7/e59c34a1bebb49d29bfb3592/sub_1762683020856_urpf8gs5w.py",
+        "similarity_percent": 77.78,
+        "full_code": "a = int(input())\narr = list(map(int,input().split()))\nb = int(input())\nbrr = list(map(int,input().split()))\nmiss = [i for i in arr if i in brr]\nprint(*miss)",
+        "highlighted_code": "<span class='highlight-red'>a = int(input())\narr = list(map(int,input().split()))\nb = int(input())\nbrr = list(map(int,input().split()))\n</span>miss = [i for i in arr if i in brr]\nprint(*miss)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3d40c72432513744774c7/91001b54722a4328a2b7b879/sub_1762323099293_a49khx1o0.py",
+        "similarity_percent": 50.91,
+        "full_code": "n1 = int(input())\nnums1 = list(map(int, input().split()))\nn2 = int(input())\nnums2 = list(map(int, input().split()))\ncounts = {}\nfor num in nums1:\n    counts[num] = counts.get(num, 0) + 1\nresult = []\nfor num in nums2:\n    if num in counts and counts[num] > 0:\n        result.append(num)\n        counts[num] -= 1\nresult.sort()\nprint(*result)",
+        "highlighted_code": "<span class='highlight-green'>n1 = int(input())\nnums1 = list(map(int, input().split()))\nn2 = int(input())\nnums2 = list(map(int, input().split()))\n</span>counts = {}\nfor num in nums1:\n    counts[num] = counts.get(num, 0) + 1\nresult = []\nfor num in nums2:\n    if num in counts and counts[num] &gt; 0:\n        result.append(num)\n        counts[num] -= 1\nresult.sort()\nprint(*result)"
+      },
+      "token_overlap": 84,
+      "max_similarity_percent": 77.78
+    },
+    {
+      "case_id": 5,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3d40c72432513744774c7/e59c34a1bebb49d29bfb3592/sub_1762683020856_urpf8gs5w.py",
+        "similarity_percent": 77.78,
+        "full_code": "a = int(input())\narr = list(map(int,input().split()))\nb = int(input())\nbrr = list(map(int,input().split()))\nmiss = [i for i in arr if i in brr]\nprint(*miss)",
+        "highlighted_code": "<span class='highlight-red'>a = int(input())\narr = list(map(int,input().split()))\nb = int(input())\nbrr = list(map(int,input().split()))\n</span>miss = [i for i in arr if i in brr]\nprint(*miss)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3d40c72432513744774c7/27e30f767b3a46b283cbfec0/sub_1762242313182_vomwv2w5j.py",
+        "similarity_percent": 54.9,
+        "full_code": "num_1 = int(input())\nar_1 = list(map(int, input().split()))\nnum_2 = int(input())\nar_2 = list(map(int, input().split()))\nlst = []\ncheck = False\nfor i in ar_2:\n    if i in ar_1:\n        lst.append(i)\n        check = True\nif check:\n    lst.sort()\n    print(*lst)\nelse:\n    print(0)",
+        "highlighted_code": "<span class='highlight-green'>num_1 = int(input())\nar_1 = list(map(int, input().split()))\nnum_2 = int(input())\nar_2 = list(map(int, input().split()))\n</span>lst = []\ncheck = False\nfor i in ar_2:\n    if i in ar_1:\n        lst.append(i)\n        check = True\nif check:\n    lst.sort()\n    print(*lst)\nelse:\n    print(0)"
+      },
+      "token_overlap": 84,
+      "max_similarity_percent": 77.78
+    },
+    {
+      "case_id": 6,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3d40c72432513744774c7/e59c34a1bebb49d29bfb3592/sub_1762683020856_urpf8gs5w.py",
+        "similarity_percent": 76.85,
+        "full_code": "a = int(input())\narr = list(map(int,input().split()))\nb = int(input())\nbrr = list(map(int,input().split()))\nmiss = [i for i in arr if i in brr]\nprint(*miss)",
+        "highlighted_code": "a <span class='highlight-red'>= int(input())\narr = list(map(int,input().split()))\nb = int(input())\nbrr = list(map(int,input().split()))\n</span>miss = [i for i in arr if i in brr]\nprint(*miss)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3d40c72432513744774c7/27e30f767b3a46b283cbfec0/sub_1762242735660_m85u03kkm.py",
+        "similarity_percent": 48.26,
+        "full_code": "from collections import Counter\nnum_1 = int(input())\nar_1 = list(map(int, input().split()))\nnum_2 = int(input())\nar_2 = list(map(int, input().split()))\n\ncount1 = Counter(ar_1)\ncount2 = Counter(ar_2)\nresult = []\nfor num in count1:\n    if num in count2:\n        times = min(count1[num], count2[num])\n        result.extend([num] * times)\nprint(*result)",
+        "highlighted_code": "from collections import Counter\nnum_1 <span class='highlight-green'>= int(input())\nar_1 = list(map(int, input().split()))\nnum_2 = int(input())\nar_2 = list(map(int, input().split()))\n\n</span>count1 = Counter(ar_1)\ncount2 = Counter(ar_2)\nresult = []\nfor num in count1:\n    if num in count2:\n        times = min(count1[num], count2[num])\n        result.extend([num] * times)\nprint(*result)"
+      },
+      "token_overlap": 83,
+      "max_similarity_percent": 76.85
+    },
+    {
+      "case_id": 7,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3d40c72432513744774c7/27e30f767b3a46b283cbfec0/sub_1762242245244_u3z3vwdvn.py",
+        "similarity_percent": 71.54,
+        "full_code": "num_1 = int(input())\nar_1 = list(map(int, input().split()))\nnum_2 = int(input())\nar_2 = list(map(int, input().split()))\nlst = []\nfor i in ar_2:\n    if i in ar_1:\n        lst.append(i)\nlst.sort()\nprint(*lst)",
+        "highlighted_code": "<span class='highlight-red'>num_1 = int(input())\nar_1 = list(map(int, input().split()))\nnum_2 = int(input())\nar_2 = list(map(int, input().split()))\nlst = []\n</span>for i in ar_2:\n    if i in ar_1:\n        lst.append(i)\nlst.sort()\nprint(*lst)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3d40c72432513744774c7/27e30f767b3a46b283cbfec0/sub_1762242313182_vomwv2w5j.py",
+        "similarity_percent": 57.52,
+        "full_code": "num_1 = int(input())\nar_1 = list(map(int, input().split()))\nnum_2 = int(input())\nar_2 = list(map(int, input().split()))\nlst = []\ncheck = False\nfor i in ar_2:\n    if i in ar_1:\n        lst.append(i)\n        check = True\nif check:\n    lst.sort()\n    print(*lst)\nelse:\n    print(0)",
+        "highlighted_code": "<span class='highlight-green'>num_1 = int(input())\nar_1 = list(map(int, input().split()))\nnum_2 = int(input())\nar_2 = list(map(int, input().split()))\nlst = []\n</span>check = False\nfor i in ar_2:\n    if i in ar_1:\n        lst.append(i)\n        check = True\nif check:\n    lst.sort()\n    print(*lst)\nelse:\n    print(0)"
+      },
+      "token_overlap": 88,
+      "max_similarity_percent": 71.54
+    },
+    {
+      "case_id": 8,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3d40c72432513744774c7/bcb420abb39b4af095b63cf8/sub_1762633042654_4y7r1im0p.py",
+        "similarity_percent": 68.75,
+        "full_code": "n=int(input())\nmang_n=list(map(int,input().split()))\nm=int(input())\nmang_m=list(map(int,input().split()))\nmang_giao=[]\nfor i in mang_n:\n    if i in mang_m:\n        mang_giao+=[i]\nfor j in mang_giao:\n    print(j,end=\" \")\n",
+        "highlighted_code": "<span class='highlight-red'>n=int(input())\nmang_n=list(map(int,input().split()))\nm=int(input())\nmang_m=list(map(int,input().split()))\nmang_giao=[]\n</span>for i in mang_n:\n    if i in mang_m:\n        mang_giao+=[i]\nfor j in mang_giao:\n    print(j,end=&#34; &#34;)\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3d40c72432513744774c7/27e30f767b3a46b283cbfec0/sub_1762242313182_vomwv2w5j.py",
+        "similarity_percent": 57.52,
+        "full_code": "num_1 = int(input())\nar_1 = list(map(int, input().split()))\nnum_2 = int(input())\nar_2 = list(map(int, input().split()))\nlst = []\ncheck = False\nfor i in ar_2:\n    if i in ar_1:\n        lst.append(i)\n        check = True\nif check:\n    lst.sort()\n    print(*lst)\nelse:\n    print(0)",
+        "highlighted_code": "<span class='highlight-green'>num_1 = int(input())\nar_1 = list(map(int, input().split()))\nnum_2 = int(input())\nar_2 = list(map(int, input().split()))\nlst = []\n</span>check = False\nfor i in ar_2:\n    if i in ar_1:\n        lst.append(i)\n        check = True\nif check:\n    lst.sort()\n    print(*lst)\nelse:\n    print(0)"
+      },
+      "token_overlap": 88,
+      "max_similarity_percent": 68.75
+    },
+    {
+      "case_id": 9,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3d40c72432513744774c7/27e30f767b3a46b283cbfec0/sub_1762242245244_u3z3vwdvn.py",
+        "similarity_percent": 68.29,
+        "full_code": "num_1 = int(input())\nar_1 = list(map(int, input().split()))\nnum_2 = int(input())\nar_2 = list(map(int, input().split()))\nlst = []\nfor i in ar_2:\n    if i in ar_1:\n        lst.append(i)\nlst.sort()\nprint(*lst)",
+        "highlighted_code": "<span class='highlight-red'>num_1 = int(input())\nar_1 = list(map(int, input().split()))\nnum_2 = int(input())\nar_2 = list(map(int, input().split()))\n</span>lst = []\nfor i in ar_2:\n    if i in ar_1:\n        lst.append(i)\nlst.sort()\nprint(*lst)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3d40c72432513744774c7/91001b54722a4328a2b7b879/sub_1762323099293_a49khx1o0.py",
+        "similarity_percent": 50.91,
+        "full_code": "n1 = int(input())\nnums1 = list(map(int, input().split()))\nn2 = int(input())\nnums2 = list(map(int, input().split()))\ncounts = {}\nfor num in nums1:\n    counts[num] = counts.get(num, 0) + 1\nresult = []\nfor num in nums2:\n    if num in counts and counts[num] > 0:\n        result.append(num)\n        counts[num] -= 1\nresult.sort()\nprint(*result)",
+        "highlighted_code": "<span class='highlight-green'>n1 = int(input())\nnums1 = list(map(int, input().split()))\nn2 = int(input())\nnums2 = list(map(int, input().split()))\n</span>counts = {}\nfor num in nums1:\n    counts[num] = counts.get(num, 0) + 1\nresult = []\nfor num in nums2:\n    if num in counts and counts[num] &gt; 0:\n        result.append(num)\n        counts[num] -= 1\nresult.sort()\nprint(*result)"
+      },
+      "token_overlap": 84,
+      "max_similarity_percent": 68.29
+    },
+    {
+      "case_id": 10,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3d40c72432513744774c7/27e30f767b3a46b283cbfec0/sub_1762242245244_u3z3vwdvn.py",
+        "similarity_percent": 67.48,
+        "full_code": "num_1 = int(input())\nar_1 = list(map(int, input().split()))\nnum_2 = int(input())\nar_2 = list(map(int, input().split()))\nlst = []\nfor i in ar_2:\n    if i in ar_1:\n        lst.append(i)\nlst.sort()\nprint(*lst)",
+        "highlighted_code": "num_1 <span class='highlight-red'>= int(input())\nar_1 = list(map(int, input().split()))\nnum_2 = int(input())\nar_2 = list(map(int, input().split()))\n</span>lst = []\nfor i in ar_2:\n    if i in ar_1:\n        lst.append(i)\nlst.sort()\nprint(*lst)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3d40c72432513744774c7/27e30f767b3a46b283cbfec0/sub_1762242735660_m85u03kkm.py",
+        "similarity_percent": 48.26,
+        "full_code": "from collections import Counter\nnum_1 = int(input())\nar_1 = list(map(int, input().split()))\nnum_2 = int(input())\nar_2 = list(map(int, input().split()))\n\ncount1 = Counter(ar_1)\ncount2 = Counter(ar_2)\nresult = []\nfor num in count1:\n    if num in count2:\n        times = min(count1[num], count2[num])\n        result.extend([num] * times)\nprint(*result)",
+        "highlighted_code": "from collections import Counter\nnum_1 <span class='highlight-green'>= int(input())\nar_1 = list(map(int, input().split()))\nnum_2 = int(input())\nar_2 = list(map(int, input().split()))\n\n</span>count1 = Counter(ar_1)\ncount2 = Counter(ar_2)\nresult = []\nfor num in count1:\n    if num in count2:\n        times = min(count1[num], count2[num])\n        result.extend([num] * times)\nprint(*result)"
+      },
+      "token_overlap": 83,
+      "max_similarity_percent": 67.48
+    },
+    {
+      "case_id": 11,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3d40c72432513744774c7/bcb420abb39b4af095b63cf8/sub_1762633042654_4y7r1im0p.py",
+        "similarity_percent": 65.62,
+        "full_code": "n=int(input())\nmang_n=list(map(int,input().split()))\nm=int(input())\nmang_m=list(map(int,input().split()))\nmang_giao=[]\nfor i in mang_n:\n    if i in mang_m:\n        mang_giao+=[i]\nfor j in mang_giao:\n    print(j,end=\" \")\n",
+        "highlighted_code": "<span class='highlight-red'>n=int(input())\nmang_n=list(map(int,input().split()))\nm=int(input())\nmang_m=list(map(int,input().split()))\n</span>mang_giao=[]\nfor i in mang_n:\n    if i in mang_m:\n        mang_giao+=[i]\nfor j in mang_giao:\n    print(j,end=&#34; &#34;)\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3d40c72432513744774c7/e59c34a1bebb49d29bfb3592/sub_1762683020856_urpf8gs5w.py",
+        "similarity_percent": 77.78,
+        "full_code": "a = int(input())\narr = list(map(int,input().split()))\nb = int(input())\nbrr = list(map(int,input().split()))\nmiss = [i for i in arr if i in brr]\nprint(*miss)",
+        "highlighted_code": "<span class='highlight-green'>a = int(input())\narr = list(map(int,input().split()))\nb = int(input())\nbrr = list(map(int,input().split()))\n</span>miss = [i for i in arr if i in brr]\nprint(*miss)"
+      },
+      "token_overlap": 84,
+      "max_similarity_percent": 77.78
+    },
+    {
+      "case_id": 12,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3d40c72432513744774c7/bcb420abb39b4af095b63cf8/sub_1762633042654_4y7r1im0p.py",
+        "similarity_percent": 65.62,
+        "full_code": "n=int(input())\nmang_n=list(map(int,input().split()))\nm=int(input())\nmang_m=list(map(int,input().split()))\nmang_giao=[]\nfor i in mang_n:\n    if i in mang_m:\n        mang_giao+=[i]\nfor j in mang_giao:\n    print(j,end=\" \")\n",
+        "highlighted_code": "<span class='highlight-red'>n=int(input())\nmang_n=list(map(int,input().split()))\nm=int(input())\nmang_m=list(map(int,input().split()))\n</span>mang_giao=[]\nfor i in mang_n:\n    if i in mang_m:\n        mang_giao+=[i]\nfor j in mang_giao:\n    print(j,end=&#34; &#34;)\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3d40c72432513744774c7/e59c34a1bebb49d29bfb3592/sub_1762683070002_jv4b3h1lb.py",
+        "similarity_percent": 51.4,
+        "full_code": "a = int(input())\narr = list(map(int, input().split()))\nb = int(input())\nbrr = set(map(int, input().split()))   \nmiss = [i for i in arr if i in brr]\nprint(*miss)\n",
+        "highlighted_code": "<span class='highlight-green'>a = int(input())\narr = list(map(int, input().split()))\nb = int(input()</span>)\nbrr = set(map(int, input().split()))   \nmiss = [i for i in arr if i in brr]\nprint(*miss)\n"
+      },
+      "token_overlap": 84,
+      "max_similarity_percent": 65.62
+    },
+    {
+      "case_id": 13,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3d40c72432513744774c7/bcb420abb39b4af095b63cf8/sub_1762633042654_4y7r1im0p.py",
+        "similarity_percent": 65.62,
+        "full_code": "n=int(input())\nmang_n=list(map(int,input().split()))\nm=int(input())\nmang_m=list(map(int,input().split()))\nmang_giao=[]\nfor i in mang_n:\n    if i in mang_m:\n        mang_giao+=[i]\nfor j in mang_giao:\n    print(j,end=\" \")\n",
+        "highlighted_code": "<span class='highlight-red'>n=int(input())\nmang_n=list(map(int,input().split()))\nm=int(input())\nmang_m=list(map(int,input().split()))\n</span>mang_giao=[]\nfor i in mang_n:\n    if i in mang_m:\n        mang_giao+=[i]\nfor j in mang_giao:\n    print(j,end=&#34; &#34;)\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3d40c72432513744774c7/91001b54722a4328a2b7b879/sub_1762323099293_a49khx1o0.py",
+        "similarity_percent": 50.91,
+        "full_code": "n1 = int(input())\nnums1 = list(map(int, input().split()))\nn2 = int(input())\nnums2 = list(map(int, input().split()))\ncounts = {}\nfor num in nums1:\n    counts[num] = counts.get(num, 0) + 1\nresult = []\nfor num in nums2:\n    if num in counts and counts[num] > 0:\n        result.append(num)\n        counts[num] -= 1\nresult.sort()\nprint(*result)",
+        "highlighted_code": "<span class='highlight-green'>n1 = int(input())\nnums1 = list(map(int, input().split()))\nn2 = int(input())\nnums2 = list(map(int, input().split()))\n</span>counts = {}\nfor num in nums1:\n    counts[num] = counts.get(num, 0) + 1\nresult = []\nfor num in nums2:\n    if num in counts and counts[num] &gt; 0:\n        result.append(num)\n        counts[num] -= 1\nresult.sort()\nprint(*result)"
+      },
+      "token_overlap": 84,
+      "max_similarity_percent": 65.62
+    },
+    {
+      "case_id": 14,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3d40c72432513744774c7/bcb420abb39b4af095b63cf8/sub_1762633042654_4y7r1im0p.py",
+        "similarity_percent": 64.84,
+        "full_code": "n=int(input())\nmang_n=list(map(int,input().split()))\nm=int(input())\nmang_m=list(map(int,input().split()))\nmang_giao=[]\nfor i in mang_n:\n    if i in mang_m:\n        mang_giao+=[i]\nfor j in mang_giao:\n    print(j,end=\" \")\n",
+        "highlighted_code": "n<span class='highlight-red'>=int(input())\nmang_n=list(map(int,input().split()))\nm=int(input())\nmang_m=list(map(int,input().split()))\n</span>mang_giao=[]\nfor i in mang_n:\n    if i in mang_m:\n        mang_giao+=[i]\nfor j in mang_giao:\n    print(j,end=&#34; &#34;)\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3d40c72432513744774c7/27e30f767b3a46b283cbfec0/sub_1762242735660_m85u03kkm.py",
+        "similarity_percent": 48.26,
+        "full_code": "from collections import Counter\nnum_1 = int(input())\nar_1 = list(map(int, input().split()))\nnum_2 = int(input())\nar_2 = list(map(int, input().split()))\n\ncount1 = Counter(ar_1)\ncount2 = Counter(ar_2)\nresult = []\nfor num in count1:\n    if num in count2:\n        times = min(count1[num], count2[num])\n        result.extend([num] * times)\nprint(*result)",
+        "highlighted_code": "from collections import Counter\nnum_1 <span class='highlight-green'>= int(input())\nar_1 = list(map(int, input().split()))\nnum_2 = int(input())\nar_2 = list(map(int, input().split()))\n\n</span>count1 = Counter(ar_1)\ncount2 = Counter(ar_2)\nresult = []\nfor num in count1:\n    if num in count2:\n        times = min(count1[num], count2[num])\n        result.extend([num] * times)\nprint(*result)"
+      },
+      "token_overlap": 83,
+      "max_similarity_percent": 64.84
+    },
+    {
+      "case_id": 15,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3d40c72432513744774c7/e59c34a1bebb49d29bfb3592/sub_1762683070002_jv4b3h1lb.py",
+        "similarity_percent": 51.4,
+        "full_code": "a = int(input())\narr = list(map(int, input().split()))\nb = int(input())\nbrr = set(map(int, input().split()))   \nmiss = [i for i in arr if i in brr]\nprint(*miss)\n",
+        "highlighted_code": "<span class='highlight-red'>a = int(input())\narr = list(map(int, input().split()))\nb = int(input()</span>)\nbrr = set(map(int, input().split()))   \nmiss = [i for i in arr if i in brr]\nprint(*miss)\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3d40c72432513744774c7/27e30f767b3a46b283cbfec0/sub_1762242245244_u3z3vwdvn.py",
+        "similarity_percent": 68.29,
+        "full_code": "num_1 = int(input())\nar_1 = list(map(int, input().split()))\nnum_2 = int(input())\nar_2 = list(map(int, input().split()))\nlst = []\nfor i in ar_2:\n    if i in ar_1:\n        lst.append(i)\nlst.sort()\nprint(*lst)",
+        "highlighted_code": "<span class='highlight-green'>num_1 = int(input())\nar_1 = list(map(int, input().split()))\nnum_2 = int(input())\nar_2 = list(map(int, input().split()))\n</span>lst = []\nfor i in ar_2:\n    if i in ar_1:\n        lst.append(i)\nlst.sort()\nprint(*lst)"
+      },
+      "token_overlap": 55,
+      "max_similarity_percent": 68.29
+    },
+    {
+      "case_id": 16,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3d40c72432513744774c7/91001b54722a4328a2b7b879/sub_1762323099293_a49khx1o0.py",
+        "similarity_percent": 50.91,
+        "full_code": "n1 = int(input())\nnums1 = list(map(int, input().split()))\nn2 = int(input())\nnums2 = list(map(int, input().split()))\ncounts = {}\nfor num in nums1:\n    counts[num] = counts.get(num, 0) + 1\nresult = []\nfor num in nums2:\n    if num in counts and counts[num] > 0:\n        result.append(num)\n        counts[num] -= 1\nresult.sort()\nprint(*result)",
+        "highlighted_code": "<span class='highlight-red'>n1 = int(input())\nnums1 = list(map(int, input().split()))\nn2 = int(input())\nnums2 = list(map(int, input().split()))\n</span>counts = {}\nfor num in nums1:\n    counts[num] = counts.get(num, 0) + 1\nresult = []\nfor num in nums2:\n    if num in counts and counts[num] &gt; 0:\n        result.append(num)\n        counts[num] -= 1\nresult.sort()\nprint(*result)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3d40c72432513744774c7/27e30f767b3a46b283cbfec0/sub_1762242313182_vomwv2w5j.py",
+        "similarity_percent": 54.9,
+        "full_code": "num_1 = int(input())\nar_1 = list(map(int, input().split()))\nnum_2 = int(input())\nar_2 = list(map(int, input().split()))\nlst = []\ncheck = False\nfor i in ar_2:\n    if i in ar_1:\n        lst.append(i)\n        check = True\nif check:\n    lst.sort()\n    print(*lst)\nelse:\n    print(0)",
+        "highlighted_code": "<span class='highlight-green'>num_1 = int(input())\nar_1 = list(map(int, input().split()))\nnum_2 = int(input())\nar_2 = list(map(int, input().split()))\n</span>lst = []\ncheck = False\nfor i in ar_2:\n    if i in ar_1:\n        lst.append(i)\n        check = True\nif check:\n    lst.sort()\n    print(*lst)\nelse:\n    print(0)"
+      },
+      "token_overlap": 84,
+      "max_similarity_percent": 54.9
+    },
+    {
+      "case_id": 17,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3d40c72432513744774c7/27e30f767b3a46b283cbfec0/sub_1762242735660_m85u03kkm.py",
+        "similarity_percent": 48.26,
+        "full_code": "from collections import Counter\nnum_1 = int(input())\nar_1 = list(map(int, input().split()))\nnum_2 = int(input())\nar_2 = list(map(int, input().split()))\n\ncount1 = Counter(ar_1)\ncount2 = Counter(ar_2)\nresult = []\nfor num in count1:\n    if num in count2:\n        times = min(count1[num], count2[num])\n        result.extend([num] * times)\nprint(*result)",
+        "highlighted_code": "from collections import Counter\nnum_1 <span class='highlight-red'>= int(input())\nar_1 = list(map(int, input().split()))\nnum_2 = int(input())\nar_2 = list(map(int, input().split()))\n\n</span>count1 = Counter(ar_1)\ncount2 = Counter(ar_2)\nresult = []\nfor num in count1:\n    if num in count2:\n        times = min(count1[num], count2[num])\n        result.extend([num] * times)\nprint(*result)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3d40c72432513744774c7/91001b54722a4328a2b7b879/sub_1762323099293_a49khx1o0.py",
+        "similarity_percent": 50.3,
+        "full_code": "n1 = int(input())\nnums1 = list(map(int, input().split()))\nn2 = int(input())\nnums2 = list(map(int, input().split()))\ncounts = {}\nfor num in nums1:\n    counts[num] = counts.get(num, 0) + 1\nresult = []\nfor num in nums2:\n    if num in counts and counts[num] > 0:\n        result.append(num)\n        counts[num] -= 1\nresult.sort()\nprint(*result)",
+        "highlighted_code": "n1 <span class='highlight-green'>= int(input())\nnums1 = list(map(int, input().split()))\nn2 = int(input())\nnums2 = list(map(int, input().split()))\n</span>counts = {}\nfor num in nums1:\n    counts[num] = counts.get(num, 0) + 1\nresult = []\nfor num in nums2:\n    if num in counts and counts[num] &gt; 0:\n        result.append(num)\n        counts[num] -= 1\nresult.sort()\nprint(*result)"
+      },
+      "token_overlap": 83,
+      "max_similarity_percent": 50.3
+    },
+    {
+      "case_id": 18,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3d40c72432513744774c7/27e30f767b3a46b283cbfec0/sub_1762242735660_m85u03kkm.py",
+        "similarity_percent": 48.26,
+        "full_code": "from collections import Counter\nnum_1 = int(input())\nar_1 = list(map(int, input().split()))\nnum_2 = int(input())\nar_2 = list(map(int, input().split()))\n\ncount1 = Counter(ar_1)\ncount2 = Counter(ar_2)\nresult = []\nfor num in count1:\n    if num in count2:\n        times = min(count1[num], count2[num])\n        result.extend([num] * times)\nprint(*result)",
+        "highlighted_code": "from collections import Counter\nnum_1 <span class='highlight-red'>= int(input())\nar_1 = list(map(int, input().split()))\nnum_2 = int(input())\nar_2 = list(map(int, input().split()))\n\n</span>count1 = Counter(ar_1)\ncount2 = Counter(ar_2)\nresult = []\nfor num in count1:\n    if num in count2:\n        times = min(count1[num], count2[num])\n        result.extend([num] * times)\nprint(*result)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3d40c72432513744774c7/27e30f767b3a46b283cbfec0/sub_1762242313182_vomwv2w5j.py",
+        "similarity_percent": 54.25,
+        "full_code": "num_1 = int(input())\nar_1 = list(map(int, input().split()))\nnum_2 = int(input())\nar_2 = list(map(int, input().split()))\nlst = []\ncheck = False\nfor i in ar_2:\n    if i in ar_1:\n        lst.append(i)\n        check = True\nif check:\n    lst.sort()\n    print(*lst)\nelse:\n    print(0)",
+        "highlighted_code": "num_1 <span class='highlight-green'>= int(input())\nar_1 = list(map(int, input().split()))\nnum_2 = int(input())\nar_2 = list(map(int, input().split()))\n</span>lst = []\ncheck = False\nfor i in ar_2:\n    if i in ar_1:\n        lst.append(i)\n        check = True\nif check:\n    lst.sort()\n    print(*lst)\nelse:\n    print(0)"
+      },
+      "token_overlap": 83,
+      "max_similarity_percent": 54.25
+    }
+  ]
+}

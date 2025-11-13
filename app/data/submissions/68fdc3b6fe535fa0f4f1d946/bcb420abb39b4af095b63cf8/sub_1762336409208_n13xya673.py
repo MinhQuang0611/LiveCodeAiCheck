@@ -1,0 +1,8 @@
+chuoi=str(input())
+chuoi.lower()
+chuoi=chuoi.replace("!","")
+chuoi=chuoi.replace(".","")
+chuoi=chuoi.replace("&","")
+chuoi=chuoi.title()
+chuoi=" ".join(chuoi.split())
+print(chuoi)

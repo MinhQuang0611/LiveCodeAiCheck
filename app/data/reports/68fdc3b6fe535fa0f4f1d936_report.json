@@ -1,0 +1,181 @@
+{
+  "problem_id": "68fdc3b6fe535fa0f4f1d936",
+  "filter_criteria": {
+    "min_token_overlap": 80,
+    "min_similarity_percent": 60
+  },
+  "total_cases_found": 10,
+  "total_cases_filtered": 10,
+  "cases": [
+    {
+      "case_id": 1,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b6fe535fa0f4f1d936/bbb05531336e487d8ed54046/sub_1762768619403_lw3ne6yjh.py",
+        "similarity_percent": 99.0,
+        "full_code": "def la_day_nui(s):\n    n = len(s)\n    if n < 3:\n        return False\n    i = 0\n    while i + 1 < n and s[i] < s[i + 1]:\n        i += 1\n    if i == 0 or i == n - 1:\n        return False\n    while i + 1 < n and s[i] > s[i + 1]:\n        i += 1\n    return i == n - 1\nt = int(input())\n\nfor _ in range(t):\n    s = input().strip()\n    if la_day_nui(s):    \n        print(\"YES\")\n    else:\n        print(\"NO\")\n",
+        "highlighted_code": "<span class='highlight-red'>def la_day_nui(s):\n    n = len(s)\n    if n &lt; 3:\n        return False\n    i = 0\n    while i + 1 &lt; n and s[i] &lt; s[i + 1]:\n        i += 1\n    if i == 0 or i == n - 1:\n        return False\n    while i + 1 &lt; n and s[i] &gt; s[i + 1]:\n        i += 1\n    return i == n - 1\nt = int(inpu</span>t(<span class='highlight-red'>))\n\nfor _ in range(t):\n    s = input().strip()\n    if la_day_nui(s):    \n        print(&#34;YES&#34;)\n    else:\n        print</span>(&#34;NO&#34;)\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b6fe535fa0f4f1d936/156dcfb40c18421d9b64651c/sub_1762530539620_3b8v4osxp.py",
+        "similarity_percent": 97.07,
+        "full_code": "def dinh(s):\n    d = len(s)\n    if d < 3:\n        return False\n    j = 0\n    while j + 1 < d and s[j] < s[j + 1]:\n        j += 1\n    if j == 0 or j == d - 1:\n        return False\n    while j + 1 < d and s[j] > s[j + 1]:\n        j += 1\n    return j == d - 1\n\nt = int(input().strip())\nfor _ in range(t):\n    s = input().strip()\n    if dinh(s):\n        print('YES')\n    else:\n        print('NO')",
+        "highlighted_code": "<span class='highlight-green'>def dinh(s):\n    d = len(s)\n    if d &lt; 3:\n        return False\n    j = 0\n    while j + 1 &lt; d and s[j] &lt; s[j + 1]:\n        j += 1\n    if j == 0 or j == d - 1:\n        return False\n    while j + 1 &lt; d and s[j] &gt; s[j + 1]:\n        j += 1\n    return j == d - 1\n\nt = int(inpu</span>t().strip(<span class='highlight-green'>))\nfor _ in range(t):\n    s = input().strip()\n    if dinh(s):\n        print(&#39;YES&#39;)\n    else:\n        print</span>(&#39;NO&#39;)"
+      },
+      "token_overlap": 199,
+      "max_similarity_percent": 99.0
+    },
+    {
+      "case_id": 2,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b6fe535fa0f4f1d936/bbb05531336e487d8ed54046/sub_1762768619403_lw3ne6yjh.py",
+        "similarity_percent": 97.51,
+        "full_code": "def la_day_nui(s):\n    n = len(s)\n    if n < 3:\n        return False\n    i = 0\n    while i + 1 < n and s[i] < s[i + 1]:\n        i += 1\n    if i == 0 or i == n - 1:\n        return False\n    while i + 1 < n and s[i] > s[i + 1]:\n        i += 1\n    return i == n - 1\nt = int(input())\n\nfor _ in range(t):\n    s = input().strip()\n    if la_day_nui(s):    \n        print(\"YES\")\n    else:\n        print(\"NO\")\n",
+        "highlighted_code": "<span class='highlight-red'>def la_day_nui(s):\n    n = len(s)\n    if n &lt; 3:\n        return False\n    i = 0\n    while i + 1 &lt; n and s[i] &lt; s[i + 1]:\n        i += 1\n    if i == 0 or i == n - 1:\n        return False\n    while i + 1 &lt; n and s[i] &gt; s[i + 1]:\n        i += 1\n    return i == n - 1\nt = int(input())\n\nfor _ in range(t):\n    s = input().</span>strip()\n    if <span class='highlight-red'>la_day_nui(s):    \n        print(&#34;YES&#34;)\n    else:\n        print</span>(&#34;NO&#34;)\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b6fe535fa0f4f1d936/345569c455a14db085eec8e9/sub_1762531505615_b2mcz8job.py",
+        "similarity_percent": 89.91,
+        "full_code": "def dinh(c):\n    d = len(c)\n    if d <3:\n        return False\n    j = 0\n    while j +1<d and c[j]<c[j+1]:\n        j+=1\n    if j ==0 or j ==d-1:\n        return False\n    while j +1 < d and c[j]>c[j+1]:\n        j+=1\n    return j == d-1\na = int(input())\nfor _ in range(a):\n    s = input().strip()\n    b = [int(i) for i in s]\n    if dinh(b):\n        print('YES')\n    else:\n        print('NO')   \n",
+        "highlighted_code": "<span class='highlight-green'>def dinh(c):\n    d = len(c)\n    if d &lt;3:\n        return False\n    j = 0\n    while j +1&lt;d and c[j]&lt;c[j+1]:\n        j+=1\n    if j ==0 or j ==d-1:\n        return False\n    while j +1 &lt; d and c[j]&gt;c[j+1]:\n        j+=1\n    return j == d-1\na = int(input())\nfor _ in range(a):\n    s = input().</span>strip()\n    b = [int(i) for i in s]\n    if <span class='highlight-green'>dinh(b):\n        print(&#39;YES&#39;)\n    else:\n        print</span>(&#39;NO&#39;)   \n"
+      },
+      "token_overlap": 196,
+      "max_similarity_percent": 97.51
+    },
+    {
+      "case_id": 3,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b6fe535fa0f4f1d936/156dcfb40c18421d9b64651c/sub_1762530539620_3b8v4osxp.py",
+        "similarity_percent": 94.63,
+        "full_code": "def dinh(s):\n    d = len(s)\n    if d < 3:\n        return False\n    j = 0\n    while j + 1 < d and s[j] < s[j + 1]:\n        j += 1\n    if j == 0 or j == d - 1:\n        return False\n    while j + 1 < d and s[j] > s[j + 1]:\n        j += 1\n    return j == d - 1\n\nt = int(input().strip())\nfor _ in range(t):\n    s = input().strip()\n    if dinh(s):\n        print('YES')\n    else:\n        print('NO')",
+        "highlighted_code": "<span class='highlight-red'>def dinh(s):\n    d = len(s)\n    if d &lt; 3:\n        return False\n    j = 0\n    while j + 1 &lt; d and s[j] &lt; s[j + 1]:\n        j += 1\n    if j == 0 or j == d - 1:\n        return False\n    while j + 1 &lt; d and s[j] &gt; s[j + 1]:\n        j += 1\n    return j == d - 1\n\nt = int(inpu</span>t().strip(<span class='highlight-red'>))\nfor _ in range(t):\n    s = input().</span>strip()\n    if <span class='highlight-red'>dinh(s):\n        print(&#39;YES&#39;)\n    else:\n        print</span>(&#39;NO&#39;)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b6fe535fa0f4f1d936/345569c455a14db085eec8e9/sub_1762531505615_b2mcz8job.py",
+        "similarity_percent": 88.99,
+        "full_code": "def dinh(c):\n    d = len(c)\n    if d <3:\n        return False\n    j = 0\n    while j +1<d and c[j]<c[j+1]:\n        j+=1\n    if j ==0 or j ==d-1:\n        return False\n    while j +1 < d and c[j]>c[j+1]:\n        j+=1\n    return j == d-1\na = int(input())\nfor _ in range(a):\n    s = input().strip()\n    b = [int(i) for i in s]\n    if dinh(b):\n        print('YES')\n    else:\n        print('NO')   \n",
+        "highlighted_code": "<span class='highlight-green'>def dinh(c):\n    d = len(c)\n    if d &lt;3:\n        return False\n    j = 0\n    while j +1&lt;d and c[j]&lt;c[j+1]:\n        j+=1\n    if j ==0 or j ==d-1:\n        return False\n    while j +1 &lt; d and c[j]&gt;c[j+1]:\n        j+=1\n    return j == d-1\na = int(inpu</span>t(<span class='highlight-green'>))\nfor _ in range(a):\n    s = input().</span>strip()\n    b = [int(i) for i in s]\n    if <span class='highlight-green'>dinh(b):\n        print(&#39;YES&#39;)\n    else:\n        print</span>(&#39;NO&#39;)   \n"
+      },
+      "token_overlap": 194,
+      "max_similarity_percent": 94.63
+    },
+    {
+      "case_id": 4,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b6fe535fa0f4f1d936/8e19101eb0da4e9a92a17098/sub_1762363291100_h5akfayds.py",
+        "similarity_percent": 84.42,
+        "full_code": "t = int(input())\nfor _ in range(t):\n    s = input().strip()\n    n = len(s)\n    if n < 3:\n        print(\"NO\")\n        continue\n    i = 0\n    while i + 1 < n and s[i] < s[i + 1]:\n        i += 1\n    if i == 0 or i == n - 1:\n        print(\"NO\")\n        continue\n    while i + 1 < n and s[i] > s[i + 1]:\n        i += 1\n    if i == n - 1:\n        print(\"YES\")\n    else:\n        print(\"NO\")",
+        "highlighted_code": "<span class='highlight-red'>t = int(input())\nfor _ in range(t):\n    s = input().strip()\n    n = len(s)\n    if n &lt; 3:\n        print(&#34;NO&#34;)\n        continue\n    i = 0\n    while i + 1 &lt; n and s[i] &lt; s[i + 1]:\n        i += 1\n    if i == 0 or i == n - 1:\n        print(&#34;NO&#34;)\n        continue\n    while i + 1 &lt; n and s[i] &gt; s[i + 1]:\n        i += 1\n    </span>if i == n - 1:\n        print(&#34;YES&#34;)\n    else:\n        print(&#34;NO&#34;)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b6fe535fa0f4f1d936/113963c0a9df48538edf310d/sub_1762141409599_dvp174qu2.py",
+        "similarity_percent": 88.89,
+        "full_code": "t = int(input())\nfor _ in range(t):\n    s = input().strip()\n    n = len(s)\n    if n < 3:\n        print(\"NO\")\n        continue\n\n    i = 0\n    while i + 1 < n and s[i] < s[i + 1]:\n        i += 1\n\n    if i == 0 or i == n - 1:\n        print(\"NO\")\n        continue\n\n    while i + 1 < n and s[i] > s[i + 1]:\n        i += 1\n\n    print(\"YES\" if i == n - 1 else \"NO\")\n",
+        "highlighted_code": "<span class='highlight-green'>t = int(input())\nfor _ in range(t):\n    s = input().strip()\n    n = len(s)\n    if n &lt; 3:\n        print(&#34;NO&#34;)\n        continue\n\n    i = 0\n    while i + 1 &lt; n and s[i] &lt; s[i + 1]:\n        i += 1\n\n    if i == 0 or i == n - 1:\n        print(&#34;NO&#34;)\n        continue\n\n    while i + 1 &lt; n and s[i] &gt; s[i + 1]:\n        i += 1\n\n    </span>print(&#34;YES&#34; if i == n - 1 else &#34;NO&#34;)\n"
+      },
+      "token_overlap": 168,
+      "max_similarity_percent": 88.89
+    },
+    {
+      "case_id": 5,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b6fe535fa0f4f1d936/8e19101eb0da4e9a92a17098/sub_1762363291100_h5akfayds.py",
+        "similarity_percent": 54.77,
+        "full_code": "t = int(input())\nfor _ in range(t):\n    s = input().strip()\n    n = len(s)\n    if n < 3:\n        print(\"NO\")\n        continue\n    i = 0\n    while i + 1 < n and s[i] < s[i + 1]:\n        i += 1\n    if i == 0 or i == n - 1:\n        print(\"NO\")\n        continue\n    while i + 1 < n and s[i] > s[i + 1]:\n        i += 1\n    if i == n - 1:\n        print(\"YES\")\n    else:\n        print(\"NO\")",
+        "highlighted_code": "t <span class='highlight-red'>= int(input())\nfor _ in range(t):\n    s = input().strip(</span>)\n    n = len(s)\n    if n &lt; 3:\n        print(&#34;NO&#34;)\n        continue\n    i = 0\n    <span class='highlight-red'>while i + 1 &lt; n and s[i] &lt; s[i + 1]:\n        i += 1\n    if i == 0 or i == </span>n - 1:\n        print(&#34;NO&#34;)\n        continue\n    <span class='highlight-red'>while i + 1 &lt; n and s[i] &gt; s[i + 1]:\n        i += 1\n    </span>if i == n - 1:\n        print(&#34;YES&#34;)\n    else:\n        print(&#34;NO&#34;)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b6fe535fa0f4f1d936/345569c455a14db085eec8e9/sub_1762531505615_b2mcz8job.py",
+        "similarity_percent": 50.0,
+        "full_code": "def dinh(c):\n    d = len(c)\n    if d <3:\n        return False\n    j = 0\n    while j +1<d and c[j]<c[j+1]:\n        j+=1\n    if j ==0 or j ==d-1:\n        return False\n    while j +1 < d and c[j]>c[j+1]:\n        j+=1\n    return j == d-1\na = int(input())\nfor _ in range(a):\n    s = input().strip()\n    b = [int(i) for i in s]\n    if dinh(b):\n        print('YES')\n    else:\n        print('NO')   \n",
+        "highlighted_code": "def dinh(c):\n    d = len(c)\n    if d &lt;3:\n        return False\n    j = 0\n    <span class='highlight-green'>while j +1&lt;d and c[j]&lt;c[j+1]:\n        j+=1\n    if j ==0 or j ==</span>d-1:\n        return False\n    <span class='highlight-green'>while j +1 &lt; d and c[j]&gt;c[j+1]:\n        j+=1\n    </span>return j == d-1\na <span class='highlight-green'>= int(input())\nfor _ in range(a):\n    s = input().strip(</span>)\n    b = [int(i) for i in s]\n    if dinh(b):\n        print(&#39;YES&#39;)\n    else:\n        print(&#39;NO&#39;)   \n"
+      },
+      "token_overlap": 109,
+      "max_similarity_percent": 54.77
+    },
+    {
+      "case_id": 6,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b6fe535fa0f4f1d936/bbb05531336e487d8ed54046/sub_1762768619403_lw3ne6yjh.py",
+        "similarity_percent": 53.23,
+        "full_code": "def la_day_nui(s):\n    n = len(s)\n    if n < 3:\n        return False\n    i = 0\n    while i + 1 < n and s[i] < s[i + 1]:\n        i += 1\n    if i == 0 or i == n - 1:\n        return False\n    while i + 1 < n and s[i] > s[i + 1]:\n        i += 1\n    return i == n - 1\nt = int(input())\n\nfor _ in range(t):\n    s = input().strip()\n    if la_day_nui(s):    \n        print(\"YES\")\n    else:\n        print(\"NO\")\n",
+        "highlighted_code": "def la_day_nui(s):\n    n = len(s)\n    if n &lt; 3:\n        return False\n    i = 0\n    <span class='highlight-red'>while i + 1 &lt; n and s[i] &lt; s[i + 1]:\n        i += 1\n    if i == 0 or i == </span>n - 1:\n        return False\n    <span class='highlight-red'>while i + 1 &lt; n and s[i] &gt; s[i + 1]:\n        i += 1\n    </span>return i == n - 1\nt <span class='highlight-red'>= int(input())\n\nfor _ in range(t):\n    s = input().</span>strip()\n    if la_day_nui(s):    \n        print(&#34;YES&#34;)\n    else:\n        print(&#34;NO&#34;)\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b6fe535fa0f4f1d936/8e19101eb0da4e9a92a17098/sub_1762363291100_h5akfayds.py",
+        "similarity_percent": 53.77,
+        "full_code": "t = int(input())\nfor _ in range(t):\n    s = input().strip()\n    n = len(s)\n    if n < 3:\n        print(\"NO\")\n        continue\n    i = 0\n    while i + 1 < n and s[i] < s[i + 1]:\n        i += 1\n    if i == 0 or i == n - 1:\n        print(\"NO\")\n        continue\n    while i + 1 < n and s[i] > s[i + 1]:\n        i += 1\n    if i == n - 1:\n        print(\"YES\")\n    else:\n        print(\"NO\")",
+        "highlighted_code": "t <span class='highlight-green'>= int(input())\nfor _ in range(t):\n    s = input().</span>strip()\n    n = len(s)\n    if n &lt; 3:\n        print(&#34;NO&#34;)\n        continue\n    i = 0\n    <span class='highlight-green'>while i + 1 &lt; n and s[i] &lt; s[i + 1]:\n        i += 1\n    if i == 0 or i == </span>n - 1:\n        print(&#34;NO&#34;)\n        continue\n    <span class='highlight-green'>while i + 1 &lt; n and s[i] &gt; s[i + 1]:\n        i += 1\n    </span>if i == n - 1:\n        print(&#34;YES&#34;)\n    else:\n        print(&#34;NO&#34;)"
+      },
+      "token_overlap": 107,
+      "max_similarity_percent": 53.77
+    },
+    {
+      "case_id": 7,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b6fe535fa0f4f1d936/bbb05531336e487d8ed54046/sub_1762768619403_lw3ne6yjh.py",
+        "similarity_percent": 53.23,
+        "full_code": "def la_day_nui(s):\n    n = len(s)\n    if n < 3:\n        return False\n    i = 0\n    while i + 1 < n and s[i] < s[i + 1]:\n        i += 1\n    if i == 0 or i == n - 1:\n        return False\n    while i + 1 < n and s[i] > s[i + 1]:\n        i += 1\n    return i == n - 1\nt = int(input())\n\nfor _ in range(t):\n    s = input().strip()\n    if la_day_nui(s):    \n        print(\"YES\")\n    else:\n        print(\"NO\")\n",
+        "highlighted_code": "def la_day_nui(s):\n    n = len(s)\n    if n &lt; 3:\n        return False\n    i = 0\n    <span class='highlight-red'>while i + 1 &lt; n and s[i] &lt; s[i + 1]:\n        i += 1\n    if i == 0 or i == </span>n - 1:\n        return False\n    <span class='highlight-red'>while i + 1 &lt; n and s[i] &gt; s[i + 1]:\n        i += 1\n    </span>return i == n - 1\nt <span class='highlight-red'>= int(input())\n\nfor _ in range(t):\n    s = input().</span>strip()\n    if la_day_nui(s):    \n        print(&#34;YES&#34;)\n    else:\n        print(&#34;NO&#34;)\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b6fe535fa0f4f1d936/113963c0a9df48538edf310d/sub_1762141409599_dvp174qu2.py",
+        "similarity_percent": 56.61,
+        "full_code": "t = int(input())\nfor _ in range(t):\n    s = input().strip()\n    n = len(s)\n    if n < 3:\n        print(\"NO\")\n        continue\n\n    i = 0\n    while i + 1 < n and s[i] < s[i + 1]:\n        i += 1\n\n    if i == 0 or i == n - 1:\n        print(\"NO\")\n        continue\n\n    while i + 1 < n and s[i] > s[i + 1]:\n        i += 1\n\n    print(\"YES\" if i == n - 1 else \"NO\")\n",
+        "highlighted_code": "t <span class='highlight-green'>= int(input())\nfor _ in range(t):\n    s = input().</span>strip()\n    n = len(s)\n    if n &lt; 3:\n        print(&#34;NO&#34;)\n        continue\n\n    i = 0\n    <span class='highlight-green'>while i + 1 &lt; n and s[i] &lt; s[i + 1]:\n        i += 1\n\n    if i == 0 or i == </span>n - 1:\n        print(&#34;NO&#34;)\n        continue\n\n    <span class='highlight-green'>while i + 1 &lt; n and s[i] &gt; s[i + 1]:\n        i += 1\n\n    </span>print(&#34;YES&#34; if i == n - 1 else &#34;NO&#34;)\n"
+      },
+      "token_overlap": 107,
+      "max_similarity_percent": 56.61
+    },
+    {
+      "case_id": 8,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b6fe535fa0f4f1d936/345569c455a14db085eec8e9/sub_1762531505615_b2mcz8job.py",
+        "similarity_percent": 50.0,
+        "full_code": "def dinh(c):\n    d = len(c)\n    if d <3:\n        return False\n    j = 0\n    while j +1<d and c[j]<c[j+1]:\n        j+=1\n    if j ==0 or j ==d-1:\n        return False\n    while j +1 < d and c[j]>c[j+1]:\n        j+=1\n    return j == d-1\na = int(input())\nfor _ in range(a):\n    s = input().strip()\n    b = [int(i) for i in s]\n    if dinh(b):\n        print('YES')\n    else:\n        print('NO')   \n",
+        "highlighted_code": "def dinh(c):\n    d = len(c)\n    if d &lt;3:\n        return False\n    j = 0\n    <span class='highlight-red'>while j +1&lt;d and c[j]&lt;c[j+1]:\n        j+=1\n    if j ==0 or j ==</span>d-1:\n        return False\n    <span class='highlight-red'>while j +1 &lt; d and c[j]&gt;c[j+1]:\n        j+=1\n    </span>return j == d-1\na <span class='highlight-red'>= int(input())\nfor _ in range(a):\n    s = input().strip(</span>)\n    b = [int(i) for i in s]\n    if dinh(b):\n        print(&#39;YES&#39;)\n    else:\n        print(&#39;NO&#39;)   \n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b6fe535fa0f4f1d936/113963c0a9df48538edf310d/sub_1762141409599_dvp174qu2.py",
+        "similarity_percent": 57.67,
+        "full_code": "t = int(input())\nfor _ in range(t):\n    s = input().strip()\n    n = len(s)\n    if n < 3:\n        print(\"NO\")\n        continue\n\n    i = 0\n    while i + 1 < n and s[i] < s[i + 1]:\n        i += 1\n\n    if i == 0 or i == n - 1:\n        print(\"NO\")\n        continue\n\n    while i + 1 < n and s[i] > s[i + 1]:\n        i += 1\n\n    print(\"YES\" if i == n - 1 else \"NO\")\n",
+        "highlighted_code": "t <span class='highlight-green'>= int(input())\nfor _ in range(t):\n    s = input().strip(</span>)\n    n = len(s)\n    if n &lt; 3:\n        print(&#34;NO&#34;)\n        continue\n\n    i = 0\n    <span class='highlight-green'>while i + 1 &lt; n and s[i] &lt; s[i + 1]:\n        i += 1\n\n    if i == 0 or i == </span>n - 1:\n        print(&#34;NO&#34;)\n        continue\n\n    <span class='highlight-green'>while i + 1 &lt; n and s[i] &gt; s[i + 1]:\n        i += 1\n\n    </span>print(&#34;YES&#34; if i == n - 1 else &#34;NO&#34;)\n"
+      },
+      "token_overlap": 109,
+      "max_similarity_percent": 57.67
+    },
+    {
+      "case_id": 9,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b6fe535fa0f4f1d936/156dcfb40c18421d9b64651c/sub_1762530539620_3b8v4osxp.py",
+        "similarity_percent": 46.83,
+        "full_code": "def dinh(s):\n    d = len(s)\n    if d < 3:\n        return False\n    j = 0\n    while j + 1 < d and s[j] < s[j + 1]:\n        j += 1\n    if j == 0 or j == d - 1:\n        return False\n    while j + 1 < d and s[j] > s[j + 1]:\n        j += 1\n    return j == d - 1\n\nt = int(input().strip())\nfor _ in range(t):\n    s = input().strip()\n    if dinh(s):\n        print('YES')\n    else:\n        print('NO')",
+        "highlighted_code": "def dinh(s):\n    d = len(s)\n    if d &lt; 3:\n        return False\n    j = 0\n    <span class='highlight-red'>while j + 1 &lt; d and s[j] &lt; s[j + 1]:\n        j += 1\n    if j == 0 or j == </span>d - 1:\n        return False\n    <span class='highlight-red'>while j + 1 &lt; d and s[j] &gt; s[j + 1]:\n        j += 1\n    </span>return j == d - 1\n\nt = int(input().strip(<span class='highlight-red'>))\nfor _ in range(t):\n    s = input().</span>strip()\n    if dinh(s):\n        print(&#39;YES&#39;)\n    else:\n        print(&#39;NO&#39;)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b6fe535fa0f4f1d936/8e19101eb0da4e9a92a17098/sub_1762363291100_h5akfayds.py",
+        "similarity_percent": 48.24,
+        "full_code": "t = int(input())\nfor _ in range(t):\n    s = input().strip()\n    n = len(s)\n    if n < 3:\n        print(\"NO\")\n        continue\n    i = 0\n    while i + 1 < n and s[i] < s[i + 1]:\n        i += 1\n    if i == 0 or i == n - 1:\n        print(\"NO\")\n        continue\n    while i + 1 < n and s[i] > s[i + 1]:\n        i += 1\n    if i == n - 1:\n        print(\"YES\")\n    else:\n        print(\"NO\")",
+        "highlighted_code": "t = int(input(<span class='highlight-green'>))\nfor _ in range(t):\n    s = input().</span>strip()\n    n = len(s)\n    if n &lt; 3:\n        print(&#34;NO&#34;)\n        continue\n    i = 0\n    <span class='highlight-green'>while i + 1 &lt; n and s[i] &lt; s[i + 1]:\n        i += 1\n    if i == 0 or i == </span>n - 1:\n        print(&#34;NO&#34;)\n        continue\n    <span class='highlight-green'>while i + 1 &lt; n and s[i] &gt; s[i + 1]:\n        i += 1\n    </span>if i == n - 1:\n        print(&#34;YES&#34;)\n    else:\n        print(&#34;NO&#34;)"
+      },
+      "token_overlap": 96,
+      "max_similarity_percent": 48.24
+    },
+    {
+      "case_id": 10,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b6fe535fa0f4f1d936/156dcfb40c18421d9b64651c/sub_1762530539620_3b8v4osxp.py",
+        "similarity_percent": 46.83,
+        "full_code": "def dinh(s):\n    d = len(s)\n    if d < 3:\n        return False\n    j = 0\n    while j + 1 < d and s[j] < s[j + 1]:\n        j += 1\n    if j == 0 or j == d - 1:\n        return False\n    while j + 1 < d and s[j] > s[j + 1]:\n        j += 1\n    return j == d - 1\n\nt = int(input().strip())\nfor _ in range(t):\n    s = input().strip()\n    if dinh(s):\n        print('YES')\n    else:\n        print('NO')",
+        "highlighted_code": "def dinh(s):\n    d = len(s)\n    if d &lt; 3:\n        return False\n    j = 0\n    <span class='highlight-red'>while j + 1 &lt; d and s[j] &lt; s[j + 1]:\n        j += 1\n    if j == 0 or j == </span>d - 1:\n        return False\n    <span class='highlight-red'>while j + 1 &lt; d and s[j] &gt; s[j + 1]:\n        j += 1\n    </span>return j == d - 1\n\nt = int(input().strip(<span class='highlight-red'>))\nfor _ in range(t):\n    s = input().</span>strip()\n    if dinh(s):\n        print(&#39;YES&#39;)\n    else:\n        print(&#39;NO&#39;)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b6fe535fa0f4f1d936/113963c0a9df48538edf310d/sub_1762141409599_dvp174qu2.py",
+        "similarity_percent": 50.79,
+        "full_code": "t = int(input())\nfor _ in range(t):\n    s = input().strip()\n    n = len(s)\n    if n < 3:\n        print(\"NO\")\n        continue\n\n    i = 0\n    while i + 1 < n and s[i] < s[i + 1]:\n        i += 1\n\n    if i == 0 or i == n - 1:\n        print(\"NO\")\n        continue\n\n    while i + 1 < n and s[i] > s[i + 1]:\n        i += 1\n\n    print(\"YES\" if i == n - 1 else \"NO\")\n",
+        "highlighted_code": "t = int(input(<span class='highlight-green'>))\nfor _ in range(t):\n    s = input().</span>strip()\n    n = len(s)\n    if n &lt; 3:\n        print(&#34;NO&#34;)\n        continue\n\n    i = 0\n    <span class='highlight-green'>while i + 1 &lt; n and s[i] &lt; s[i + 1]:\n        i += 1\n\n    if i == 0 or i == </span>n - 1:\n        print(&#34;NO&#34;)\n        continue\n\n    <span class='highlight-green'>while i + 1 &lt; n and s[i] &gt; s[i + 1]:\n        i += 1\n\n    </span>print(&#34;YES&#34; if i == n - 1 else &#34;NO&#34;)\n"
+      },
+      "token_overlap": 96,
+      "max_similarity_percent": 50.79
+    }
+  ]
+}

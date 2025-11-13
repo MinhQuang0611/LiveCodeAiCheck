@@ -1,0 +1,62 @@
+{
+  "problem_id": "68fdc3a7fe535fa0f4f1d75e",
+  "filter_criteria": {
+    "min_token_overlap": 80,
+    "min_similarity_percent": 60
+  },
+  "total_cases_found": 3,
+  "total_cases_filtered": 3,
+  "cases": [
+    {
+      "case_id": 1,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3a7fe535fa0f4f1d75e/d9aec9d917da4c5e9beeb80b/sub_1762001789637_uoaahen6x.py",
+        "similarity_percent": 100.0,
+        "full_code": "n, k = map(int, input().split())\na = list(map(int, input().split()))\nfreq = {}\nfor num in a:\n    freq[num] = freq.get(num, 0) + 1\nfreq_values = sorted(set(freq.values()), reverse=True)\nif len(freq_values) < 2:\n    print(\"NONE\")\nelse:\n    second_freq = freq_values[1]\n    candidates = [num for num, f in freq.items() if f == second_freq]\n    print(min(candidates))\n",
+        "highlighted_code": "<span class='highlight-red'>n, k = map(int, input().split())\na = list(map(int, input().split()))\nfreq = {}\nfor num in a:\n    freq[num] = freq.get(num, 0) + 1\nfreq_values = sorted(set(freq.values()), reverse=True)\nif len(freq_values) &lt; 2:\n    print(&#34;NONE&#34;)\nelse:\n    second_freq = freq_values[1]\n    candidates = [num for num, f in freq.items() if f == second_freq]\n    print(min(candidates))</span>\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3a7fe535fa0f4f1d75e/f95120b3a38a461085ef58cb/sub_1762598481716_v01ya6olo.py",
+        "similarity_percent": 100.0,
+        "full_code": "n, k = map(int, input().split())\na = list(map(int, input().split()))\nq = {}\nfor num in a:\n    q[num] = q.get(num, 0) + 1\nq_values = sorted(set(q.values()), reverse=True)\nif len(q_values) < 2:\n    print(\"NONE\")\nelse:\n    second_q = q_values[1]\n    luck = [num for num, f in q.items() if f == second_q]\n    print(min(luck))",
+        "highlighted_code": "<span class='highlight-green'>n, k = map(int, input().split())\na = list(map(int, input().split()))\nq = {}\nfor num in a:\n    q[num] = q.get(num, 0) + 1\nq_values = sorted(set(q.values()), reverse=True)\nif len(q_values) &lt; 2:\n    print(&#34;NONE&#34;)\nelse:\n    second_q = q_values[1]\n    luck = [num for num, f in q.items() if f == second_q]\n    print(min(luck))</span>"
+      },
+      "token_overlap": 175,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 2,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3a7fe535fa0f4f1d75e/d9aec9d917da4c5e9beeb80b/sub_1762001789637_uoaahen6x.py",
+        "similarity_percent": 74.29,
+        "full_code": "n, k = map(int, input().split())\na = list(map(int, input().split()))\nfreq = {}\nfor num in a:\n    freq[num] = freq.get(num, 0) + 1\nfreq_values = sorted(set(freq.values()), reverse=True)\nif len(freq_values) < 2:\n    print(\"NONE\")\nelse:\n    second_freq = freq_values[1]\n    candidates = [num for num, f in freq.items() if f == second_freq]\n    print(min(candidates))\n",
+        "highlighted_code": "<span class='highlight-red'>n, k = map(int, input().split())\na = list(map(int, input().split()))\nfreq = {}\nfor num in a</span>:\n    freq[num] = freq.get(num, 0) + 1\n<span class='highlight-red'>freq_values = sorted(set(freq.values()), reverse=True)\nif len(freq_values) &lt; 2:\n    print(&#34;NONE&#34;)\nelse:\n    second_freq = freq_values[1]\n    candidates = [num for num</span>, f in freq.items() if f == second_freq]\n    print(min(candidates))\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3a7fe535fa0f4f1d75e/26894d2babd64210ad6beba1/sub_1762399545496_w59itpho6.py",
+        "similarity_percent": 73.45,
+        "full_code": "n, k = map(int, input().split())\na = list(map(int, input().split()))\n\ntudien = {}\n\nfor i in a:\n    if i not in tudien:\n        tudien[i] = 1\n    else:\n        tudien[i] += 1\ntansuat = sorted(set(tudien.values()), reverse=True)\n#print(*tansuat)\nif len(tansuat) < 2:\n    print(\"NONE\")\nelse:\n    muc2 = tansuat[1]\n    ketqua = [x for x in tudien if tudien[x] == muc2]\n    print(*ketqua)\n",
+        "highlighted_code": "<span class='highlight-green'>n, k = map(int, input().split())\na = list(map(int, input().split()))\n\ntudien = {}\n\nfor i in a</span>:\n    if i not in tudien:\n        tudien[i] = 1\n    else:\n        tudien[i] += 1\n<span class='highlight-green'>tansuat = sorted(set(tudien.values()), reverse=True)\n#print(*tansuat)\nif len(tansuat) &lt; 2:\n    print(&#34;NONE&#34;)\nelse:\n    muc2 = tansuat[1]\n    ketqua = [x for x </span>in tudien if tudien[x] == muc2]\n    print(*ketqua)\n"
+      },
+      "token_overlap": 130,
+      "max_similarity_percent": 74.29
+    },
+    {
+      "case_id": 3,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3a7fe535fa0f4f1d75e/f95120b3a38a461085ef58cb/sub_1762598481716_v01ya6olo.py",
+        "similarity_percent": 74.29,
+        "full_code": "n, k = map(int, input().split())\na = list(map(int, input().split()))\nq = {}\nfor num in a:\n    q[num] = q.get(num, 0) + 1\nq_values = sorted(set(q.values()), reverse=True)\nif len(q_values) < 2:\n    print(\"NONE\")\nelse:\n    second_q = q_values[1]\n    luck = [num for num, f in q.items() if f == second_q]\n    print(min(luck))",
+        "highlighted_code": "<span class='highlight-red'>n, k = map(int, input().split())\na = list(map(int, input().split()))\nq = {}\nfor num in a</span>:\n    q[num] = q.get(num, 0) + 1\n<span class='highlight-red'>q_values = sorted(set(q.values()), reverse=True)\nif len(q_values) &lt; 2:\n    print(&#34;NONE&#34;)\nelse:\n    second_q = q_values[1]\n    luck = [num for num</span>, f in q.items() if f == second_q]\n    print(min(luck))"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3a7fe535fa0f4f1d75e/26894d2babd64210ad6beba1/sub_1762399545496_w59itpho6.py",
+        "similarity_percent": 73.45,
+        "full_code": "n, k = map(int, input().split())\na = list(map(int, input().split()))\n\ntudien = {}\n\nfor i in a:\n    if i not in tudien:\n        tudien[i] = 1\n    else:\n        tudien[i] += 1\ntansuat = sorted(set(tudien.values()), reverse=True)\n#print(*tansuat)\nif len(tansuat) < 2:\n    print(\"NONE\")\nelse:\n    muc2 = tansuat[1]\n    ketqua = [x for x in tudien if tudien[x] == muc2]\n    print(*ketqua)\n",
+        "highlighted_code": "<span class='highlight-green'>n, k = map(int, input().split())\na = list(map(int, input().split()))\n\ntudien = {}\n\nfor i in a</span>:\n    if i not in tudien:\n        tudien[i] = 1\n    else:\n        tudien[i] += 1\n<span class='highlight-green'>tansuat = sorted(set(tudien.values()), reverse=True)\n#print(*tansuat)\nif len(tansuat) &lt; 2:\n    print(&#34;NONE&#34;)\nelse:\n    muc2 = tansuat[1]\n    ketqua = [x for x </span>in tudien if tudien[x] == muc2]\n    print(*ketqua)\n"
+      },
+      "token_overlap": 130,
+      "max_similarity_percent": 74.29
+    }
+  ]
+}

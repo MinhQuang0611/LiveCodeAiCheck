@@ -1,0 +1,28 @@
+{
+  "problem_id": "68fdc3a4fe535fa0f4f1d706",
+  "filter_criteria": {
+    "min_token_overlap": 80,
+    "min_similarity_percent": 60
+  },
+  "total_cases_found": 8,
+  "total_cases_filtered": 1,
+  "cases": [
+    {
+      "case_id": 1,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3a4fe535fa0f4f1d706/27e30f767b3a46b283cbfec0/sub_1761666964131_uhl9p3sqo.py",
+        "similarity_percent": 86.09,
+        "full_code": "from math import *\nt = int(input())\nfor _ in range(t):\n    x1,y1,x2,y2 = map(float , input().split())\n    euclid = ((x1-x2)**2+(y1-y2)**2)**0.5\n    print(f'{euclid:.4f}')",
+        "highlighted_code": "from math import *\nt <span class='highlight-red'>= int(input())\nfor _ in range(t):\n    x1,y1,x2,y2 = map(float , input().split())\n    euclid = ((x1-x2)**2+(y1-y2)**2)**0.5\n    print(f&#39;{euclid:.4f}&#39;)</span>"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3a4fe535fa0f4f1d706/f95120b3a38a461085ef58cb/sub_1761756895274_oxxyc9xnw.py",
+        "similarity_percent": 99.0,
+        "full_code": "t = int(input())\nfor _ in range(t):\n    x1, y1, x2, y2 = map(float, input().split())\n    d = ((x1 - x2) ** 2 + (y1 - y2) ** 2) ** 0.5\n    print(f\"{d:.4f}\")",
+        "highlighted_code": "t <span class='highlight-green'>= int(input())\nfor _ in range(t):\n    x1, y1, x2, y2 = map(float, input().split())\n    d = ((x1 - x2) ** 2 + (y1 - y2) ** 2) ** 0.5\n    print(f&#34;{d:.4f}&#34;)</span>"
+      },
+      "token_overlap": 99,
+      "max_similarity_percent": 99.0
+    }
+  ]
+}

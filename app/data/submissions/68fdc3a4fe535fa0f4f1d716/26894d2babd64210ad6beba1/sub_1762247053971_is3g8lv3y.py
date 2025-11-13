@@ -1,0 +1,6 @@
+n = input()
+m = input()
+a = float(input())
+b = float(input())
+c = float(input())
+print(n, m, a + b + c)

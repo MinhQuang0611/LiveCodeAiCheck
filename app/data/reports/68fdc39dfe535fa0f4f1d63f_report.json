@@ -1,0 +1,96 @@
+{
+  "problem_id": "68fdc39dfe535fa0f4f1d63f",
+  "filter_criteria": {
+    "min_token_overlap": 80,
+    "min_similarity_percent": 60
+  },
+  "total_cases_found": 5,
+  "total_cases_filtered": 5,
+  "cases": [
+    {
+      "case_id": 1,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc39dfe535fa0f4f1d63f/fa972feccadf40fe9df799d0/sub_1762454939724_6kyiwycuh.py",
+        "similarity_percent": 100.0,
+        "full_code": "def is_valid(arr):\n    parts = arr.split('.')\n    if len(parts) != 4:\n        return False\n    for i in parts:\n        if not i.isdigit():\n            return False \n        if not (0 <= int(i) <= 255):\n            return False\n    return True\nt = int(input())\nfor _ in range(t):\n    arr = input()\n    if is_valid(arr):\n        print(\"YES\")\n    else:\n        print(\"NO\")\n\n",
+        "highlighted_code": "<span class='highlight-red'>def is_valid(arr):\n    parts = arr.split(&#39;.&#39;)\n    if len(parts) != 4:\n        return False\n    for i in parts:\n        if not i.isdigit():\n            return False \n        if not (0 &lt;= int(i) &lt;= 255):\n            return False\n    return True\nt = int(input())\nfor _ in range(t):\n    arr = input()\n    if is_valid(arr):\n        print(&#34;YES&#34;)\n    else:\n        print</span>(&#34;NO&#34;)\n\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc39dfe535fa0f4f1d63f/fa972feccadf40fe9df799d0/sub_1762454832854_2ncff7535.py",
+        "similarity_percent": 100.0,
+        "full_code": "def is_valid(arr):\n    parts = arr.split('.')\n    if len(parts) != 4:\n        return False\n    for i in parts:\n        if not i.isdigit():\n            return False \n        if not (0 <= int(i) <= 255):\n            return False\n    return True\nt = int(input())\nfor _ in range(t):\n    arr = input()\n    if is_valid(arr):\n        print(\"YES\")\n    else:\n        print(\"NO\")\n\n",
+        "highlighted_code": "<span class='highlight-green'>def is_valid(arr):\n    parts = arr.split(&#39;.&#39;)\n    if len(parts) != 4:\n        return False\n    for i in parts:\n        if not i.isdigit():\n            return False \n        if not (0 &lt;= int(i) &lt;= 255):\n            return False\n    return True\nt = int(input())\nfor _ in range(t):\n    arr = input()\n    if is_valid(arr):\n        print(&#34;YES&#34;)\n    else:\n        print</span>(&#34;NO&#34;)\n\n"
+      },
+      "token_overlap": 179,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 2,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc39dfe535fa0f4f1d63f/26894d2babd64210ad6beba1/sub_1762270642297_v07abnyi3.py",
+        "similarity_percent": 97.0,
+        "full_code": "t = int(input())\n\nwhile t > 0:\n    t -= 1\n    a = input().strip()\n    countdot = 0\n    s = \"\"\n    flag = True\n    for i in a:\n        if not i.isdigit() and i != '.':\n            print(\"NO\")\n            flag = False\n            break\n        if i != '.':\n            s += i\n        else:\n            countdot += 1\n            if s == \"\" or int(s) < 0 or int(s) > 255:\n                print(\"NO\")\n                flag = False\n                break\n            s = \"\"\n    if flag:\n        if s == \"\" or int(s) < 0 or int(s) > 255:\n            print(\"NO\")\n            flag = False\n\n    if flag and countdot == 3:\n        print(\"YES\")\n    elif flag:\n        print(\"NO\")\n",
+        "highlighted_code": "<span class='highlight-red'>t = int(input())\n\nwhile t &gt; 0:\n    t -= 1\n    a = input().strip()\n    countdot = 0\n    s = &#34;&#34;\n    flag = True\n    for i in a:\n        if not i.isdigit() and i != &#39;.&#39;:\n            print(&#34;NO&#34;)\n            flag = False\n            break\n        if i != &#39;.&#39;:\n            s += i\n        else:\n            countdot += 1\n            i</span>f s <span class='highlight-red'>== &#34;&#34; or int(s) &lt; 0 or int(s) &gt; 25</span>5<span class='highlight-red'>:\n                print(&#34;NO&#34;)\n                flag = False\n                break\n            s = &#34;&#34;\n    if flag</span>:\n        if s <span class='highlight-red'>== &#34;&#34; or int(s) &lt; 0 or int(s) &gt; 25</span>5<span class='highlight-red'>:\n            print(&#34;NO&#34;)\n            flag = False\n\n    if flag and countdot == 3:\n        print(&#34;YES&#34;)\n    elif flag:\n        print(&#34;NO</span>&#34;)\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc39dfe535fa0f4f1d63f/26894d2babd64210ad6beba1/sub_1762270846272_cx368g5an.py",
+        "similarity_percent": 81.19,
+        "full_code": "t = int(input())\n\nwhile t > 0:\n    t -= 1\n    a = input().strip()\n    countdot = 0\n    s = \"\"\n    flag = True\n    for i in a:\n        if not i.isdigit() and i != '.':\n            print(\"NO\")\n            flag = False\n            break\n        if i != '.':\n            s += i\n        else:\n            countdot += 1\n            if (s == \"\" or int(s) < 0 or int(s) > 255 or (len(s) > 1 and s[0] == '0')  \n            ):\n                print(\"NO\")\n                flag = False\n                break\n            s = \"\"\n\n    if flag:\n        if (s == \"\" or int(s) < 0 or int(s) > 255 or (len(s) > 1 and s[0] == '0')\n        ):\n            print(\"NO\")\n            flag = False\n    if flag and countdot == 3:\n        print(\"YES\")\n    elif flag:\n        print(\"NO\")\n",
+        "highlighted_code": "<span class='highlight-green'>t = int(input())\n\nwhile t &gt; 0:\n    t -= 1\n    a = input().strip()\n    countdot = 0\n    s = &#34;&#34;\n    flag = True\n    for i in a:\n        if not i.isdigit() and i != &#39;.&#39;:\n            print(&#34;NO&#34;)\n            flag = False\n            break\n        if i != &#39;.&#39;:\n            s += i\n        else:\n            countdot += 1\n            i</span>f (s <span class='highlight-green'>== &#34;&#34; or int(s) &lt; 0 or int(s) &gt; 25</span>5 or (len(s) &gt; 1 and s[0] == &#39;0&#39;)  \n            )<span class='highlight-green'>:\n                print(&#34;NO&#34;)\n                flag = False\n                break\n            s = &#34;&#34;\n\n    if flag</span>:\n        if (s <span class='highlight-green'>== &#34;&#34; or int(s) &lt; 0 or int(s) &gt; 25</span>5 or (len(s) &gt; 1 and s[0] == &#39;0&#39;)\n        )<span class='highlight-green'>:\n            print(&#34;NO&#34;)\n            flag = False\n    if flag and countdot == 3:\n        print(&#34;YES&#34;)\n    elif flag:\n        print(&#34;NO</span>&#34;)\n"
+      },
+      "token_overlap": 259,
+      "max_similarity_percent": 97.0
+    },
+    {
+      "case_id": 3,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc39dfe535fa0f4f1d63f/26894d2babd64210ad6beba1/sub_1762270457918_j39guxg6t.py",
+        "similarity_percent": 73.71,
+        "full_code": "t = int(input())\n\nwhile t > 0:\n    t -= 1\n    a = input().strip()\n    countdot = 0\n    s = \"\"\n    flag = True\n    for i in a:\n        if not i.isdigit() and i != '.':\n            print(\"NO\")\n            flag = False\n            break\n        if i != '.':\n            s+=i\n        else:\n            countdot += 1\n            if int(s)<=0 or int(s)>=255:\n                print(\"NO\")\n                flag = False\n                break\n            s = \"\"\n    if countdot == 3 and flag == True:\n        print(\"YES\")\n    else:\n        print(\"NO\")\n        ",
+        "highlighted_code": "<span class='highlight-red'>t = int(input())\n\nwhile t &gt; 0:\n    t -= 1\n    a = input().strip()\n    countdot = 0\n    s = &#34;&#34;\n    flag = True\n    for i in a:\n        if not i.isdigit() and i != &#39;.&#39;:\n            print(&#34;NO&#34;)\n            flag = False\n            break\n        if i != &#39;.&#39;:\n            s+=i\n        else:\n            countdot += 1\n            if </span>int(s)&lt;=0 or int(s)&gt;=255<span class='highlight-red'>:\n                print(&#34;NO&#34;)\n                flag = False\n                break\n            s = &#34;&#34;\n    if countdot </span>== 3 and flag == True:\n        print(&#34;YES&#34;)\n    else:\n        print(&#34;NO&#34;)\n        "
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc39dfe535fa0f4f1d63f/26894d2babd64210ad6beba1/sub_1762270846272_cx368g5an.py",
+        "similarity_percent": 49.22,
+        "full_code": "t = int(input())\n\nwhile t > 0:\n    t -= 1\n    a = input().strip()\n    countdot = 0\n    s = \"\"\n    flag = True\n    for i in a:\n        if not i.isdigit() and i != '.':\n            print(\"NO\")\n            flag = False\n            break\n        if i != '.':\n            s += i\n        else:\n            countdot += 1\n            if (s == \"\" or int(s) < 0 or int(s) > 255 or (len(s) > 1 and s[0] == '0')  \n            ):\n                print(\"NO\")\n                flag = False\n                break\n            s = \"\"\n\n    if flag:\n        if (s == \"\" or int(s) < 0 or int(s) > 255 or (len(s) > 1 and s[0] == '0')\n        ):\n            print(\"NO\")\n            flag = False\n    if flag and countdot == 3:\n        print(\"YES\")\n    elif flag:\n        print(\"NO\")\n",
+        "highlighted_code": "<span class='highlight-green'>t = int(input())\n\nwhile t &gt; 0:\n    t -= 1\n    a = input().strip()\n    countdot = 0\n    s = &#34;&#34;\n    flag = True\n    for i in a:\n        if not i.isdigit() and i != &#39;.&#39;:\n            print(&#34;NO&#34;)\n            flag = False\n            break\n        if i != &#39;.&#39;:\n            s += i\n        else:\n            countdot += 1\n            if </span>(s == &#34;&#34; or int(s) &lt; 0 or int(s) &gt; 255 or (len(s) &gt; 1 and s[0] == &#39;0&#39;)  \n            )<span class='highlight-green'>:\n                print(&#34;NO&#34;)\n                flag = False\n                break\n            s = &#34;&#34;\n\n    if flag</span>:\n        if (s == &#34;&#34; or int(s) &lt; 0 or int(s) &gt; 255 or (len(s) &gt; 1 and s[0] == &#39;0&#39;)\n        ):\n            print(&#34;NO&#34;)\n            flag = False\n    if flag and countdot == 3:\n        print(&#34;YES&#34;)\n    elif flag:\n        print(&#34;NO&#34;)\n"
+      },
+      "token_overlap": 157,
+      "max_similarity_percent": 73.71
+    },
+    {
+      "case_id": 4,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc39dfe535fa0f4f1d63f/26894d2babd64210ad6beba1/sub_1762270457918_j39guxg6t.py",
+        "similarity_percent": 73.24,
+        "full_code": "t = int(input())\n\nwhile t > 0:\n    t -= 1\n    a = input().strip()\n    countdot = 0\n    s = \"\"\n    flag = True\n    for i in a:\n        if not i.isdigit() and i != '.':\n            print(\"NO\")\n            flag = False\n            break\n        if i != '.':\n            s+=i\n        else:\n            countdot += 1\n            if int(s)<=0 or int(s)>=255:\n                print(\"NO\")\n                flag = False\n                break\n            s = \"\"\n    if countdot == 3 and flag == True:\n        print(\"YES\")\n    else:\n        print(\"NO\")\n        ",
+        "highlighted_code": "<span class='highlight-red'>t = int(input())\n\nwhile t &gt; 0:\n    t -= 1\n    a = input().strip()\n    countdot = 0\n    s = &#34;&#34;\n    flag = True\n    for i in a:\n        if not i.isdigit() and i != &#39;.&#39;:\n            print(&#34;NO&#34;)\n            flag = False\n            break\n        if i != &#39;.&#39;:\n            s+=i\n        else:\n            countdot += 1\n            i</span>f int(s)&lt;=0 or int(s)&gt;=255<span class='highlight-red'>:\n                print(&#34;NO&#34;)\n                flag = False\n                break\n            s = &#34;&#34;\n    if countdot </span>== 3 and flag == True:\n        print(&#34;YES&#34;)\n    else:\n        print(&#34;NO&#34;)\n        "
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc39dfe535fa0f4f1d63f/26894d2babd64210ad6beba1/sub_1762270642297_v07abnyi3.py",
+        "similarity_percent": 58.43,
+        "full_code": "t = int(input())\n\nwhile t > 0:\n    t -= 1\n    a = input().strip()\n    countdot = 0\n    s = \"\"\n    flag = True\n    for i in a:\n        if not i.isdigit() and i != '.':\n            print(\"NO\")\n            flag = False\n            break\n        if i != '.':\n            s += i\n        else:\n            countdot += 1\n            if s == \"\" or int(s) < 0 or int(s) > 255:\n                print(\"NO\")\n                flag = False\n                break\n            s = \"\"\n    if flag:\n        if s == \"\" or int(s) < 0 or int(s) > 255:\n            print(\"NO\")\n            flag = False\n\n    if flag and countdot == 3:\n        print(\"YES\")\n    elif flag:\n        print(\"NO\")\n",
+        "highlighted_code": "<span class='highlight-green'>t = int(input())\n\nwhile t &gt; 0:\n    t -= 1\n    a = input().strip()\n    countdot = 0\n    s = &#34;&#34;\n    flag = True\n    for i in a:\n        if not i.isdigit() and i != &#39;.&#39;:\n            print(&#34;NO&#34;)\n            flag = False\n            break\n        if i != &#39;.&#39;:\n            s += i\n        else:\n            countdot += 1\n            i</span>f s == &#34;&#34; or int(s) &lt; 0 or int(s) &gt; 255<span class='highlight-green'>:\n                print(&#34;NO&#34;)\n                flag = False\n                break\n            s = &#34;&#34;\n    if flag</span>:\n        if s == &#34;&#34; or int(s) &lt; 0 or int(s) &gt; 255:\n            print(&#34;NO&#34;)\n            flag = False\n\n    if flag and countdot == 3:\n        print(&#34;YES&#34;)\n    elif flag:\n        print(&#34;NO&#34;)\n"
+      },
+      "token_overlap": 156,
+      "max_similarity_percent": 73.24
+    },
+    {
+      "case_id": 5,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc39dfe535fa0f4f1d63f/ffdb326842044f2e98b7aaa7/sub_1761900152681_76vgj50ns.py",
+        "similarity_percent": 45.45,
+        "full_code": "\n\nt = int(input())\n\nwhile t > 0:\n    string = input().strip()\n    lst = string.split(\".\")\n\n\n    check = True\n    size = 0\n    for index, ch in enumerate(lst):\n        if ch.isdigit():\n            size += 1\n            if len(ch) > 1 and ch[0] == \"0\":\n                check = False\n            \n            if int(ch) < 0 or int(ch) > 255 or len(ch) > 1 and ch[0] == 0:\n                check = False\n\n\n    if size != len(lst):\n        check = False\n\n    if check:\n        print(\"YES\")\n    else:\n        print(\"NO\")\n\n    t -= 1",
+        "highlighted_code": "<span class='highlight-red'>\n\nt = int(input())\n\nwhile t &gt; 0:\n    string = input().strip()\n    lst = string.split(&#34;.&#34;)\n\n\n    check = True\n    size = 0\n   </span> for index, ch in enumerate(ls<span class='highlight-red'>t):\n        if ch.isdigit():\n            size += 1\n            if len(ch) &gt; 1 and ch[0] == &#34;0&#34;:\n                check = False\n            \n           </span> if int(ch) &lt; 0 or int(ch) &gt; 255 or len(ch) &gt; 1 and ch[0] == 0:\n                check = False\n\n\n    if size != len(lst):\n        check = False\n\n    if check:\n        print(&#34;YES&#34;)\n    else:\n        print(&#34;NO&#34;)\n\n    t -= 1"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc39dfe535fa0f4f1d63f/f95120b3a38a461085ef58cb/sub_1762364561542_qhr69bsdu.py",
+        "similarity_percent": 54.64,
+        "full_code": "t = int(input())\nwhile t > 0:\n    string = input().strip()\n    lst = string.split(\".\")\n    check = True\n    size = 0\n    for ch in lst:\n        if ch.isdigit():\n            size += 1\n            if len(ch) > 1 and ch[0] == \"0\":\n                check = False\n            if not (0 <= int(ch) <= 255):\n                check = False\n        else:\n            check = False\n    if size != 4:\n        check = False\n    print(\"YES\" if check else \"NO\")\n    t -= 1",
+        "highlighted_code": "<span class='highlight-green'>t = int(input())\nwhile t &gt; 0:\n    string = input().strip()\n    lst = string.split(&#34;.&#34;)\n    check = True\n    size = 0\n    f</span>or ch in lst<span class='highlight-green'>:\n        if ch.isdigit():\n            size += 1\n            if len(ch) &gt; 1 and ch[0] == &#34;0&#34;:\n                check = False\n            i</span>f not (0 &lt;= int(ch) &lt;= 255):\n                check = False\n        else:\n            check = False\n    if size != 4:\n        check = False\n    print(&#34;YES&#34; if check else &#34;NO&#34;)\n    t -= 1"
+      },
+      "token_overlap": 100,
+      "max_similarity_percent": 54.64
+    }
+  ]
+}

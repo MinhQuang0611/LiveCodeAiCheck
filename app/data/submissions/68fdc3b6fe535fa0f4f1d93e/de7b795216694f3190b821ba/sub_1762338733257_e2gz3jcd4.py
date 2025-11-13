@@ -1,0 +1,10 @@
+so_luong_phan_tu= int(input())
+day_so=map(int,input().split())
+day_so=list(day_so)
+a=max(day_so)
+b=min(day_so)
+day_so_moi = [x for x in day_so if x != a and x != b]
+tong_cac_phan_tu=sum(day_so_moi)        
+so_luong_sau_xoa_max_min=len(day_so_moi)
+so_tb= tong_cac_phan_tu/(so_luong_sau_xoa_max_min)
+print(int(so_tb)    )

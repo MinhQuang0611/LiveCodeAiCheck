@@ -1,0 +1,113 @@
+{
+  "problem_id": "68fdc3a8fe535fa0f4f1d77a",
+  "filter_criteria": {
+    "min_token_overlap": 80,
+    "min_similarity_percent": 60
+  },
+  "total_cases_found": 6,
+  "total_cases_filtered": 6,
+  "cases": [
+    {
+      "case_id": 1,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3a8fe535fa0f4f1d77a/f95120b3a38a461085ef58cb/sub_1762365409982_km4gaxhfr.py",
+        "similarity_percent": 84.3,
+        "full_code": "t = int(input())\nfor _ in range(t):\n    n,k = map(int, input().split())\n    a = list(map(int, input().split()))\n    k = k % n\n    result = a[k:] + a[:k]\n    print(\" \".join(map(str, result)))",
+        "highlighted_code": "<span class='highlight-red'>t = int(input())\nfor _ in range(t):\n    n,k = map(int, input().split())\n    a = list(map(int, input().split()))\n    k = k % n\n    result = a[k:] + a[:k]\n    pri</span>nt(&#34; &#34;.join(map(str, result)))"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3a8fe535fa0f4f1d77a/91001b54722a4328a2b7b879/sub_1761831784906_wmb5rmjd8.py",
+        "similarity_percent": 95.33,
+        "full_code": "t = int(input())\nfor _ in range(t):\n    n, k = map(int, input().split())\n    a = list(map(int, input().split()))\n\n    k = k % n        # tránh k > n\n    rotated = a[k:] + a[:k]\n\n    print(*rotated)\n",
+        "highlighted_code": "<span class='highlight-green'>t = int(input())\nfor _ in range(t):\n    n, k = map(int, input().split())\n    a = list(map(int, input().split()))\n\n    k = k % n        # tránh k &gt; n\n    rotated = a[k:] + a[:k]\n\n    pri</span>nt(*rotated)\n"
+      },
+      "token_overlap": 102,
+      "max_similarity_percent": 95.33
+    },
+    {
+      "case_id": 2,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3a8fe535fa0f4f1d77a/449c44ebafa84f0d8d5b6d0f/sub_1762484144715_9007lse45.py",
+        "similarity_percent": 70.0,
+        "full_code": "t = int(input())\nfor i in range(t):\n    n, k = map(int, input().split())\n    a = list(map(int, input().split()))\n    a = a[k:] + a[:k]\n    for x in a:\n        print(x, end = ' ')\n    print()",
+        "highlighted_code": "<span class='highlight-red'>t = int(input())\nfor i in range(t):\n    n, k = map(int, input().split())\n    a = list(map(int, input().split()))\n    a = a</span>[k:] + a[:k]\n    for x in a:\n        print(x, end = &#39; &#39;)\n    print()"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3a8fe535fa0f4f1d77a/91001b54722a4328a2b7b879/sub_1761831784906_wmb5rmjd8.py",
+        "similarity_percent": 78.5,
+        "full_code": "t = int(input())\nfor _ in range(t):\n    n, k = map(int, input().split())\n    a = list(map(int, input().split()))\n\n    k = k % n        # tránh k > n\n    rotated = a[k:] + a[:k]\n\n    print(*rotated)\n",
+        "highlighted_code": "<span class='highlight-green'>t = int(input())\nfor _ in range(t):\n    n, k = map(int, input().split())\n    a = list(map(int, input().split()))\n\n    k = k </span>% n        # tránh k &gt; n\n    rotated = a[k:] + a[:k]\n\n    print(*rotated)\n"
+      },
+      "token_overlap": 84,
+      "max_similarity_percent": 78.5
+    },
+    {
+      "case_id": 3,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3a8fe535fa0f4f1d77a/f95120b3a38a461085ef58cb/sub_1762365409982_km4gaxhfr.py",
+        "similarity_percent": 69.42,
+        "full_code": "t = int(input())\nfor _ in range(t):\n    n,k = map(int, input().split())\n    a = list(map(int, input().split()))\n    k = k % n\n    result = a[k:] + a[:k]\n    print(\" \".join(map(str, result)))",
+        "highlighted_code": "<span class='highlight-red'>t = int(input())\nfor _ in range(t):\n    n,k = map(int, input().split())\n    a = list(map(int, input().split()))\n    k = k </span>% n\n    result = a[k:] + a[:k]\n    print(&#34; &#34;.join(map(str, result)))"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3a8fe535fa0f4f1d77a/449c44ebafa84f0d8d5b6d0f/sub_1762484144715_9007lse45.py",
+        "similarity_percent": 70.0,
+        "full_code": "t = int(input())\nfor i in range(t):\n    n, k = map(int, input().split())\n    a = list(map(int, input().split()))\n    a = a[k:] + a[:k]\n    for x in a:\n        print(x, end = ' ')\n    print()",
+        "highlighted_code": "<span class='highlight-green'>t = int(input())\nfor i in range(t):\n    n, k = map(int, input().split())\n    a = list(map(int, input().split()))\n    a = a</span>[k:] + a[:k]\n    for x in a:\n        print(x, end = &#39; &#39;)\n    print()"
+      },
+      "token_overlap": 84,
+      "max_similarity_percent": 70.0
+    },
+    {
+      "case_id": 4,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3a8fe535fa0f4f1d77a/f95120b3a38a461085ef58cb/sub_1762365409982_km4gaxhfr.py",
+        "similarity_percent": 68.6,
+        "full_code": "t = int(input())\nfor _ in range(t):\n    n,k = map(int, input().split())\n    a = list(map(int, input().split()))\n    k = k % n\n    result = a[k:] + a[:k]\n    print(\" \".join(map(str, result)))",
+        "highlighted_code": "t <span class='highlight-red'>= int(input())\nfor _ in range(t):\n    n,k = map(int, input().split())\n    a = list(map(int, input().split()))\n    k = k </span>% n\n    result = a[k:] + a[:k]\n    print(&#34; &#34;.join(map(str, result)))"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3a8fe535fa0f4f1d77a/27e30f767b3a46b283cbfec0/sub_1762423526108_kbsg87j9a.py",
+        "similarity_percent": 62.88,
+        "full_code": "def xoay_mang(a, k):\n    n = len(a)\n    k %= n\n    return a[k:] + a[:k]\nt = int(input())\nfor _ in range(t):\n    n, k = map(int,input().split())\n    a = list(map(int, input().split()))\n    ans = xoay_mang(a, k)\n    print(*ans)",
+        "highlighted_code": "def xoay_mang(a, k):\n    n = len(a)\n    k %= n\n    return a[k:] + a[:k]\nt <span class='highlight-green'>= int(input())\nfor _ in range(t):\n    n, k = map(int,input().split())\n    a = list(map(int, input().split()))\n    ans = xoay_mang</span>(a, k)\n    print(*ans)"
+      },
+      "token_overlap": 83,
+      "max_similarity_percent": 68.6
+    },
+    {
+      "case_id": 5,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3a8fe535fa0f4f1d77a/27e30f767b3a46b283cbfec0/sub_1762423526108_kbsg87j9a.py",
+        "similarity_percent": 62.88,
+        "full_code": "def xoay_mang(a, k):\n    n = len(a)\n    k %= n\n    return a[k:] + a[:k]\nt = int(input())\nfor _ in range(t):\n    n, k = map(int,input().split())\n    a = list(map(int, input().split()))\n    ans = xoay_mang(a, k)\n    print(*ans)",
+        "highlighted_code": "def xoay_mang(a, k):\n    n = len(a)\n    k %= n\n    return a[k:] + a[:k]\nt <span class='highlight-red'>= int(input())\nfor _ in range(t):\n    n, k = map(int,input().split())\n    a = list(map(int, input().split()))\n    ans = xoay_mang</span>(a, k)\n    print(*ans)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3a8fe535fa0f4f1d77a/449c44ebafa84f0d8d5b6d0f/sub_1762484144715_9007lse45.py",
+        "similarity_percent": 69.17,
+        "full_code": "t = int(input())\nfor i in range(t):\n    n, k = map(int, input().split())\n    a = list(map(int, input().split()))\n    a = a[k:] + a[:k]\n    for x in a:\n        print(x, end = ' ')\n    print()",
+        "highlighted_code": "t <span class='highlight-green'>= int(input())\nfor i in range(t):\n    n, k = map(int, input().split())\n    a = list(map(int, input().split()))\n    a = a</span>[k:] + a[:k]\n    for x in a:\n        print(x, end = &#39; &#39;)\n    print()"
+      },
+      "token_overlap": 83,
+      "max_similarity_percent": 69.17
+    },
+    {
+      "case_id": 6,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3a8fe535fa0f4f1d77a/27e30f767b3a46b283cbfec0/sub_1762423526108_kbsg87j9a.py",
+        "similarity_percent": 62.88,
+        "full_code": "def xoay_mang(a, k):\n    n = len(a)\n    k %= n\n    return a[k:] + a[:k]\nt = int(input())\nfor _ in range(t):\n    n, k = map(int,input().split())\n    a = list(map(int, input().split()))\n    ans = xoay_mang(a, k)\n    print(*ans)",
+        "highlighted_code": "def xoay_mang(a, k):\n    n = len(a)\n    k %= n\n    return a[k:] + a[:k]\nt <span class='highlight-red'>= int(input())\nfor _ in range(t):\n    n, k = map(int,input().split())\n    a = list(map(int, input().split()))\n    ans = xoay_mang</span>(a, k)\n    print(*ans)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3a8fe535fa0f4f1d77a/91001b54722a4328a2b7b879/sub_1761831784906_wmb5rmjd8.py",
+        "similarity_percent": 77.57,
+        "full_code": "t = int(input())\nfor _ in range(t):\n    n, k = map(int, input().split())\n    a = list(map(int, input().split()))\n\n    k = k % n        # tránh k > n\n    rotated = a[k:] + a[:k]\n\n    print(*rotated)\n",
+        "highlighted_code": "t <span class='highlight-green'>= int(input())\nfor _ in range(t):\n    n, k = map(int, input().split())\n    a = list(map(int, input().split()))\n\n    k = k </span>% n        # tránh k &gt; n\n    rotated = a[k:] + a[:k]\n\n    print(*rotated)\n"
+      },
+      "token_overlap": 83,
+      "max_similarity_percent": 77.57
+    }
+  ]
+}

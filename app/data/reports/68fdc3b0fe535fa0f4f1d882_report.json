@@ -1,0 +1,113 @@
+{
+  "problem_id": "68fdc3b0fe535fa0f4f1d882",
+  "filter_criteria": {
+    "min_token_overlap": 80,
+    "min_similarity_percent": 60
+  },
+  "total_cases_found": 27,
+  "total_cases_filtered": 6,
+  "cases": [
+    {
+      "case_id": 1,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b0fe535fa0f4f1d882/780627ccd0224069b68e3b8d/sub_1762268355622_o3mst8qmj.py",
+        "similarity_percent": 100.0,
+        "full_code": "def kt(s):\n    a = s[-2::]\n    if len(s) < 2:\n        return False\n    elif a == '86':\n        return True\n    else:\n        return False\nn = int(input())\nfor i in range(n):\n    s = input()\n    if kt(s) == True:\n        print('YES')\n    else:\n        print('NO')",
+        "highlighted_code": "<span class='highlight-red'>def kt(s):\n    a = s[-2::]\n    if len(s) &lt; 2:\n        return False\n    elif a == &#39;86&#39;:\n        return True\n    else:\n        return False\nn = int(input())\nfor i in range(n):\n    s = input()\n    if kt(s) == True:\n        print(&#39;YES&#39;)\n    else:\n        print</span>(&#39;NO&#39;)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b0fe535fa0f4f1d882/f95120b3a38a461085ef58cb/sub_1762364284621_fl2oczpfy.py",
+        "similarity_percent": 100.0,
+        "full_code": "def kt(s):\n    a = s[-2::]\n    if len(s) < 2:\n        return False\n    elif a == '86':\n        return True\n    else:\n        return False\nn = int(input())\nfor i in range(n):\n    s = input()\n    if kt(s) == True:\n        print('YES')\n    else:\n        print('NO')",
+        "highlighted_code": "<span class='highlight-green'>def kt(s):\n    a = s[-2::]\n    if len(s) &lt; 2:\n        return False\n    elif a == &#39;86&#39;:\n        return True\n    else:\n        return False\nn = int(input())\nfor i in range(n):\n    s = input()\n    if kt(s) == True:\n        print(&#39;YES&#39;)\n    else:\n        print</span>(&#39;NO&#39;)"
+      },
+      "token_overlap": 147,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 2,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b0fe535fa0f4f1d882/e59c34a1bebb49d29bfb3592/sub_1762263803401_xueinqy3u.py",
+        "similarity_percent": 97.3,
+        "full_code": "t = int(input())\nfor _ in range(t):\n    n = input()\n    if n[-2::] == \"86\":\n        print(\"YES\")\n    else:\n        print(\"NO\")",
+        "highlighted_code": "<span class='highlight-red'>t = int(input())\nfor _ in range(t):\n    n = input()\n    if n[-2</span>::<span class='highlight-red'>] == &#34;86&#34;:\n        print(&#34;YES&#34;)\n    else:\n        print(</span>&#34;NO&#34;)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b0fe535fa0f4f1d882/27e30f767b3a46b283cbfec0/sub_1762265421920_39030rw5c.py",
+        "similarity_percent": 98.63,
+        "full_code": "t = int(input())\nfor _ in range(t):\n    n = input()\n    if n[-2:] == '86':\n        print(\"YES\")\n    else:\n        print(\"NO\")",
+        "highlighted_code": "<span class='highlight-green'>t = int(input())\nfor _ in range(t):\n    n = input()\n    if n[-2</span>:<span class='highlight-green'>] == &#39;86&#39;:\n        print(&#34;YES&#34;)\n    else:\n        print(</span>&#34;NO&#34;)"
+      },
+      "token_overlap": 72,
+      "max_similarity_percent": 98.63
+    },
+    {
+      "case_id": 3,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b0fe535fa0f4f1d882/e7457b81cbe24d9d9bdac641/sub_1762267454620_piiq7d4oj.py",
+        "similarity_percent": 93.15,
+        "full_code": "n=int(input())\nfor _ in range(n):\n    a=input().strip()\n    if a.endswith(\"86\"):\n        print(\"YES\")\n    else:\n        print(\"NO\")\n",
+        "highlighted_code": "<span class='highlight-red'>n=int(input())\nfor _ in range(n):\n    a=input().</span>strip()\n    if <span class='highlight-red'>a.endswith(&#34;86&#34;):\n        print(&#34;YES&#34;)\n    else:\n        print</span>(&#34;NO&#34;)\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b0fe535fa0f4f1d882/9f14990043df4fda9283d7ac/sub_1762267445120_06xtz43t5.py",
+        "similarity_percent": 83.95,
+        "full_code": "t = int(input())\nfor _ in range(t):\n    s = input().split()\n    for i in s:\n        if i.endswith(\"86\"):\n            print(\"YES\")\n        else:\n            print(\"NO\")\n",
+        "highlighted_code": "<span class='highlight-green'>t = int(input())\nfor _ in range(t):\n    s = input().</span>split()\n    for i in s:\n        if <span class='highlight-green'>i.endswith(&#34;86&#34;):\n            print(&#34;YES&#34;)\n        else:\n            print</span>(&#34;NO&#34;)\n"
+      },
+      "token_overlap": 68,
+      "max_similarity_percent": 93.15
+    },
+    {
+      "case_id": 4,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b0fe535fa0f4f1d882/27e30f767b3a46b283cbfec0/sub_1762265421920_39030rw5c.py",
+        "similarity_percent": 91.78,
+        "full_code": "t = int(input())\nfor _ in range(t):\n    n = input()\n    if n[-2:] == '86':\n        print(\"YES\")\n    else:\n        print(\"NO\")",
+        "highlighted_code": "<span class='highlight-red'>t = int(input())\nfor _ in range(t):\n    n = input(</span>)\n    if n[-<span class='highlight-red'>2:] == &#39;86&#39;:\n        print(&#34;YES&#34;)\n    else:\n        print(</span>&#34;NO&#34;)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b0fe535fa0f4f1d882/d9aec9d917da4c5e9beeb80b/sub_1762262494025_2y4m11uvl.py",
+        "similarity_percent": 75.28,
+        "full_code": "t = int(input())\nfor i in range(t):\n    s = input().strip()\n    if len(s) >= 2 and s[-2:] == \"86\":\n        print(\"YES\")\n    else:\n        print(\"NO\")\n",
+        "highlighted_code": "<span class='highlight-green'>t = int(input())\nfor i in range(t):\n    s = input(</span>).strip()\n    if len(s) &gt;= 2 and s[-<span class='highlight-green'>2:] == &#34;86&#34;:\n        print(&#34;YES&#34;)\n    else:\n        print(</span>&#34;NO&#34;)\n"
+      },
+      "token_overlap": 67,
+      "max_similarity_percent": 91.78
+    },
+    {
+      "case_id": 5,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b0fe535fa0f4f1d882/e59c34a1bebb49d29bfb3592/sub_1762263803401_xueinqy3u.py",
+        "similarity_percent": 87.84,
+        "full_code": "t = int(input())\nfor _ in range(t):\n    n = input()\n    if n[-2::] == \"86\":\n        print(\"YES\")\n    else:\n        print(\"NO\")",
+        "highlighted_code": "<span class='highlight-red'>t = int(input())\nfor _ in range(t):\n    n = input(</span>)\n    if n[-2::<span class='highlight-red'>] == &#34;86&#34;:\n        print(&#34;YES&#34;)\n    else:\n        print(</span>&#34;NO&#34;)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b0fe535fa0f4f1d882/d9aec9d917da4c5e9beeb80b/sub_1762262494025_2y4m11uvl.py",
+        "similarity_percent": 73.03,
+        "full_code": "t = int(input())\nfor i in range(t):\n    s = input().strip()\n    if len(s) >= 2 and s[-2:] == \"86\":\n        print(\"YES\")\n    else:\n        print(\"NO\")\n",
+        "highlighted_code": "<span class='highlight-green'>t = int(input())\nfor i in range(t):\n    s = input(</span>).strip()\n    if len(s) &gt;= 2 and s[-2:<span class='highlight-green'>] == &#34;86&#34;:\n        print(&#34;YES&#34;)\n    else:\n        print(</span>&#34;NO&#34;)\n"
+      },
+      "token_overlap": 65,
+      "max_similarity_percent": 87.84
+    },
+    {
+      "case_id": 6,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b0fe535fa0f4f1d882/e7457b81cbe24d9d9bdac641/sub_1762267454620_piiq7d4oj.py",
+        "similarity_percent": 60.27,
+        "full_code": "n=int(input())\nfor _ in range(n):\n    a=input().strip()\n    if a.endswith(\"86\"):\n        print(\"YES\")\n    else:\n        print(\"NO\")\n",
+        "highlighted_code": "<span class='highlight-red'>n=int(input())\nfor _ in range(n):\n    a=input().strip()\n    if </span>a.endswith(&#34;86&#34;):\n        print(&#34;YES&#34;)\n    else:\n        print(&#34;NO&#34;)\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b0fe535fa0f4f1d882/d9aec9d917da4c5e9beeb80b/sub_1762262494025_2y4m11uvl.py",
+        "similarity_percent": 49.44,
+        "full_code": "t = int(input())\nfor i in range(t):\n    s = input().strip()\n    if len(s) >= 2 and s[-2:] == \"86\":\n        print(\"YES\")\n    else:\n        print(\"NO\")\n",
+        "highlighted_code": "<span class='highlight-green'>t = int(input())\nfor i in range(t):\n    s = input().strip()\n    if </span>len(s) &gt;= 2 and s[-2:] == &#34;86&#34;:\n        print(&#34;YES&#34;)\n    else:\n        print(&#34;NO&#34;)\n"
+      },
+      "token_overlap": 44,
+      "max_similarity_percent": 60.27
+    }
+  ]
+}

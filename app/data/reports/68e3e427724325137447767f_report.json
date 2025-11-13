@@ -1,0 +1,266 @@
+{
+  "problem_id": "68e3e427724325137447767f",
+  "filter_criteria": {
+    "min_token_overlap": 80,
+    "min_similarity_percent": 60
+  },
+  "total_cases_found": 23,
+  "total_cases_filtered": 15,
+  "cases": [
+    {
+      "case_id": 1,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3e427724325137447767f/e59c34a1bebb49d29bfb3592/sub_1762417346762_sgncv7y9g.py",
+        "similarity_percent": 100.0,
+        "full_code": "n = input().lower()\nt = [x for x in n if x in \"aeiou\"]\nprint(len(t))\n",
+        "highlighted_code": "<span class='highlight-red'>n = input().lower()\nt = [x for x in n if x in &#34;aeiou&#34;]\nprint(len(t)</span>)\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3e427724325137447767f/f95120b3a38a461085ef58cb/sub_1762527433441_1x1de0d1w.py",
+        "similarity_percent": 100.0,
+        "full_code": "n = input().lower()\nt = [x for x in n if x in \"aeiou\"]\nprint(len(t))",
+        "highlighted_code": "<span class='highlight-green'>n = input().lower()\nt = [x for x in n if x in &#34;aeiou&#34;]\nprint(len(t)</span>)"
+      },
+      "token_overlap": 45,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 2,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3e427724325137447767f/bcb420abb39b4af095b63cf8/sub_1762542918946_9jfbv9ryb.py",
+        "similarity_percent": 100.0,
+        "full_code": "chuoi=input()\nchuoi_moi=chuoi.lower()\nds_kiem_tra=[\"a\",\"e\",\"i\",\"o\",\"u\"]\ndem=0\nfor i in chuoi_moi:\n    if i in ds_kiem_tra:\n        dem+=1\nprint(dem)",
+        "highlighted_code": "<span class='highlight-red'>chuoi=input()\nchuoi_moi=chuoi.lower()\nds_kiem_tra=[&#34;a&#34;,&#34;e&#34;,&#34;i&#34;,&#34;o&#34;,&#34;u&#34;]\ndem=0\nfor i in chuoi_moi:\n    if i in ds_kiem_tra:\n        dem+=1\nprin</span>t(dem)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3e427724325137447767f/a34ffbda761b435ca043fd30/sub_1762436569951_5a5z95aw1.py",
+        "similarity_percent": 100.0,
+        "full_code": "a = input()\nb = a.lower()\nc = [\"a\",\"e\",\"i\",\"o\",\"u\"]\nd = 0\nfor i in b:\n    if i in c:\n        d+=1\nprint(d)",
+        "highlighted_code": "<span class='highlight-green'>a = input()\nb = a.lower()\nc = [&#34;a&#34;,&#34;e&#34;,&#34;i&#34;,&#34;o&#34;,&#34;u&#34;]\nd = 0\nfor i in b:\n    if i in c:\n        d+=1\nprin</span>t(d)"
+      },
+      "token_overlap": 65,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 3,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3e427724325137447767f/f8a2bab9778140ecb46b6a60/sub_1761464733658_ustcoogcf.py",
+        "similarity_percent": 100.0,
+        "full_code": "def chuoi_(string):\n    dem = 0\n    for _ in range(0, len(string) + 1):\n        if string[_:_ + 1] == 'u' or string[_:_ + 1] == 'U':\n            dem += 1\n        elif string[_:_ + 1] == 'i' or string[_:_ + 1] == 'I':\n            dem += 1\n        elif string[_:_ + 1] == 'o' or string[_:_ + 1] == 'O':\n            dem += 1\n        elif string[_:_ + 1] == 'a' or string[_:_ + 1] == 'A':\n            dem += 1\n        elif string[_:_ + 1] == 'e' or string[_:_ + 1] == 'E':\n            dem += 1\n    return dem\n\nif __name__ == '__main__':\n    string = input()\n    print(chuoi_(string))",
+        "highlighted_code": "<span class='highlight-red'>def chuoi_(string):\n    dem = 0\n    for _ in range(0, len(string) + 1):\n        if string[_:_ + 1] == &#39;u&#39; or string[_:_ + 1] == &#39;U&#39;:\n            dem += 1\n        elif string[_:_ + 1] == &#39;i&#39; or string[_:_ + 1] == &#39;I&#39;:\n            dem += 1\n        elif string[_:_ + 1] == &#39;o&#39; or string[_:_ + 1] == &#39;O&#39;:\n            dem += 1\n        elif string[_:_ + 1] == &#39;a&#39; or string[_:_ + 1] == &#39;A&#39;:\n            dem += 1\n        elif string[_:_ + 1] == &#39;e&#39; or string[_:_ + 1] == &#39;E&#39;:\n            dem += 1\n    return dem\n\nif __name__ == &#39;__main__&#39;:\n    string = input()\n    print(chuoi_(string)</span>)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3e427724325137447767f/f8a2bab9778140ecb46b6a60/sub_1761559118783_uqxvjkzgl.py",
+        "similarity_percent": 100.0,
+        "full_code": "def chuoi_(string):\n    dem = 0\n    for _ in range(0, len(string) + 1):\n        if string[_:_ + 1] == 'u' or string[_:_ + 1] == 'U':\n            dem += 1\n        elif string[_:_ + 1] == 'i' or string[_:_ + 1] == 'I':\n            dem += 1\n        elif string[_:_ + 1] == 'o' or string[_:_ + 1] == 'O':\n            dem += 1\n        elif string[_:_ + 1] == 'a' or string[_:_ + 1] == 'A':\n            dem += 1\n        elif string[_:_ + 1] == 'e' or string[_:_ + 1] == 'E':\n            dem += 1\n    return dem\n\nif __name__ == '__main__':\n    string = input()\n    print(chuoi_(string))",
+        "highlighted_code": "<span class='highlight-green'>def chuoi_(string):\n    dem = 0\n    for _ in range(0, len(string) + 1):\n        if string[_:_ + 1] == &#39;u&#39; or string[_:_ + 1] == &#39;U&#39;:\n            dem += 1\n        elif string[_:_ + 1] == &#39;i&#39; or string[_:_ + 1] == &#39;I&#39;:\n            dem += 1\n        elif string[_:_ + 1] == &#39;o&#39; or string[_:_ + 1] == &#39;O&#39;:\n            dem += 1\n        elif string[_:_ + 1] == &#39;a&#39; or string[_:_ + 1] == &#39;A&#39;:\n            dem += 1\n        elif string[_:_ + 1] == &#39;e&#39; or string[_:_ + 1] == &#39;E&#39;:\n            dem += 1\n    return dem\n\nif __name__ == &#39;__main__&#39;:\n    string = input()\n    print(chuoi_(string)</span>)"
+      },
+      "token_overlap": 260,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 4,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3e427724325137447767f/f56f86fa26744324899543f3/sub_1761315614413_uy5mbmv4p.py",
+        "similarity_percent": 100.0,
+        "full_code": "a=[\"a\",\"e\",\"i\",\"o\",\"u\"]\ns=input()\ncount=0\nfor i in s:\n    if i.lower() in a:count+=1\nprint(count)",
+        "highlighted_code": "<span class='highlight-red'>a=[&#34;a&#34;,&#34;e&#34;,&#34;i&#34;,&#34;o&#34;,&#34;u&#34;]\ns=input()\ncount=0\nfor i in s:\n    if i.lower() in a:count+=1\nprint(count)</span>"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3e427724325137447767f/f56f86fa26744324899543f3/sub_1761315232612_inwilb852.py",
+        "similarity_percent": 100.0,
+        "full_code": "a=[\"a\",\"e\",\"i\",\"o\",\"u\"]\ns=input()\ncount=0\nfor i in s:\n    if i.lower() in a:count+=1\nprint(count)",
+        "highlighted_code": "<span class='highlight-green'>a=[&#34;a&#34;,&#34;e&#34;,&#34;i&#34;,&#34;o&#34;,&#34;u&#34;]\ns=input()\ncount=0\nfor i in s:\n    if i.lower() in a:count+=1\nprint(count)</span>"
+      },
+      "token_overlap": 66,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 5,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3e427724325137447767f/f56f86fa26744324899543f3/sub_1761315614413_uy5mbmv4p.py",
+        "similarity_percent": 100.0,
+        "full_code": "a=[\"a\",\"e\",\"i\",\"o\",\"u\"]\ns=input()\ncount=0\nfor i in s:\n    if i.lower() in a:count+=1\nprint(count)",
+        "highlighted_code": "<span class='highlight-red'>a=[&#34;a&#34;,&#34;e&#34;,&#34;i&#34;,&#34;o&#34;,&#34;u&#34;]\ns=input()\ncount=0\nfor i in s:\n    if i.lower() in a:count+=1\nprint(count)</span>"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3e427724325137447767f/f56f86fa26744324899543f3/sub_1761315225991_hiej79zzt.py",
+        "similarity_percent": 100.0,
+        "full_code": "a=[\"a\",\"e\",\"i\",\"o\",\"u\"]\ns=input()\ncount=0\nfor i in s:\n    if i.lower() in a:count+=1\nprint(count)",
+        "highlighted_code": "<span class='highlight-green'>a=[&#34;a&#34;,&#34;e&#34;,&#34;i&#34;,&#34;o&#34;,&#34;u&#34;]\ns=input()\ncount=0\nfor i in s:\n    if i.lower() in a:count+=1\nprint(count)</span>"
+      },
+      "token_overlap": 66,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 6,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3e427724325137447767f/f56f86fa26744324899543f3/sub_1761315232612_inwilb852.py",
+        "similarity_percent": 100.0,
+        "full_code": "a=[\"a\",\"e\",\"i\",\"o\",\"u\"]\ns=input()\ncount=0\nfor i in s:\n    if i.lower() in a:count+=1\nprint(count)",
+        "highlighted_code": "<span class='highlight-red'>a=[&#34;a&#34;,&#34;e&#34;,&#34;i&#34;,&#34;o&#34;,&#34;u&#34;]\ns=input()\ncount=0\nfor i in s:\n    if i.lower() in a:count+=1\nprint(count)</span>"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3e427724325137447767f/f56f86fa26744324899543f3/sub_1761315225991_hiej79zzt.py",
+        "similarity_percent": 100.0,
+        "full_code": "a=[\"a\",\"e\",\"i\",\"o\",\"u\"]\ns=input()\ncount=0\nfor i in s:\n    if i.lower() in a:count+=1\nprint(count)",
+        "highlighted_code": "<span class='highlight-green'>a=[&#34;a&#34;,&#34;e&#34;,&#34;i&#34;,&#34;o&#34;,&#34;u&#34;]\ns=input()\ncount=0\nfor i in s:\n    if i.lower() in a:count+=1\nprint(count)</span>"
+      },
+      "token_overlap": 66,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 7,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3e427724325137447767f/9f14990043df4fda9283d7ac/sub_1761944860663_kurdf7mg0.py",
+        "similarity_percent": 100.0,
+        "full_code": "n = input()\nlower_n = n.lower()\ncount = 0\nfor i in lower_n:\n    if i == \"a\" or i == \"e\" or i == \"i\" or i == \"o\" or i == \"u\":\n        count += 1\nprint(count)",
+        "highlighted_code": "<span class='highlight-red'>n = input()\nlower_n = n.lower()\ncount = 0\nfor i in lower_n:\n    if i == &#34;a&#34; or i == &#34;e&#34; or i == &#34;i&#34; or i == &#34;o&#34; or i == &#34;u&#34;:\n        count += 1\nprin</span>t(count)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3e427724325137447767f/ffdb326842044f2e98b7aaa7/sub_1761901755560_gzxw0273d.py",
+        "similarity_percent": 100.0,
+        "full_code": "string = input()\nstring = string.lower()\n\ncnt = 0\n\nfor ch in string:\n    if ch == \"a\" or ch == \"e\" or ch == \"o\" or ch == \"i\" or ch == \"u\":\n        cnt += 1\nprint(cnt)",
+        "highlighted_code": "<span class='highlight-green'>string = input()\nstring = string.lower()\n\ncnt = 0\n\nfor ch in string:\n    if ch == &#34;a&#34; or ch == &#34;e&#34; or ch == &#34;o&#34; or ch == &#34;i&#34; or ch == &#34;u&#34;:\n        cnt += 1\nprin</span>t(cnt)"
+      },
+      "token_overlap": 76,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 8,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3e427724325137447767f/26894d2babd64210ad6beba1/sub_1762272186591_93s05wd63.py",
+        "similarity_percent": 83.12,
+        "full_code": "n = input().strip().lower()\ncount = 0\nfor i in n:\n    if i == 'a' or i == 'e' or i == 'i' or i == 'o' or i == 'u':\n        count += 1\nprint(count)\n",
+        "highlighted_code": "n = input().strip()<span class='highlight-red'>.lower()\ncount = 0\nfor i in n:\n    if i == &#39;a&#39; or i == &#39;e&#39; or i == &#39;i&#39; or i == &#39;o&#39; or i == &#39;u&#39;:\n        count += 1\nprin</span>t(count)\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3e427724325137447767f/9f14990043df4fda9283d7ac/sub_1761944860663_kurdf7mg0.py",
+        "similarity_percent": 84.21,
+        "full_code": "n = input()\nlower_n = n.lower()\ncount = 0\nfor i in lower_n:\n    if i == \"a\" or i == \"e\" or i == \"i\" or i == \"o\" or i == \"u\":\n        count += 1\nprint(count)",
+        "highlighted_code": "n = input()\nlower_n = n<span class='highlight-green'>.lower()\ncount = 0\nfor i in lower_n:\n    if i == &#34;a&#34; or i == &#34;e&#34; or i == &#34;i&#34; or i == &#34;o&#34; or i == &#34;u&#34;:\n        count += 1\nprin</span>t(count)"
+      },
+      "token_overlap": 64,
+      "max_similarity_percent": 84.21
+    },
+    {
+      "case_id": 9,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3e427724325137447767f/26894d2babd64210ad6beba1/sub_1762272186591_93s05wd63.py",
+        "similarity_percent": 83.12,
+        "full_code": "n = input().strip().lower()\ncount = 0\nfor i in n:\n    if i == 'a' or i == 'e' or i == 'i' or i == 'o' or i == 'u':\n        count += 1\nprint(count)\n",
+        "highlighted_code": "n = input().strip()<span class='highlight-red'>.lower()\ncount = 0\nfor i in n:\n    if i == &#39;a&#39; or i == &#39;e&#39; or i == &#39;i&#39; or i == &#39;o&#39; or i == &#39;u&#39;:\n        count += 1\nprin</span>t(count)\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3e427724325137447767f/ffdb326842044f2e98b7aaa7/sub_1761901755560_gzxw0273d.py",
+        "similarity_percent": 84.21,
+        "full_code": "string = input()\nstring = string.lower()\n\ncnt = 0\n\nfor ch in string:\n    if ch == \"a\" or ch == \"e\" or ch == \"o\" or ch == \"i\" or ch == \"u\":\n        cnt += 1\nprint(cnt)",
+        "highlighted_code": "string = input()\nstring = string<span class='highlight-green'>.lower()\n\ncnt = 0\n\nfor ch in string:\n    if ch == &#34;a&#34; or ch == &#34;e&#34; or ch == &#34;o&#34; or ch == &#34;i&#34; or ch == &#34;u&#34;:\n        cnt += 1\nprin</span>t(cnt)"
+      },
+      "token_overlap": 64,
+      "max_similarity_percent": 84.21
+    },
+    {
+      "case_id": 10,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3e427724325137447767f/43fad0845ec445b4aecbfd8c/sub_1761642331932_nwkw62o52.py",
+        "similarity_percent": 82.61,
+        "full_code": "a = input()\nvowels='aeiou'\ncount=0\nfor ch in a.lower():\n    if ch in vowels:\n        count+=1\nprint(count)",
+        "highlighted_code": "a = input(<span class='highlight-red'>)\nvowels=&#39;aeiou&#39;\ncount=0\nfor ch in a.lower():\n    if ch in vowels:\n        count+=1\nprint(</span>count)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3e427724325137447767f/9d6164b8a6c2435ea956e22b/sub_1762449991263_oa0f8xknx.py",
+        "similarity_percent": 79.17,
+        "full_code": "chuoi = input(\"\")\nnguyen_am = \"ueoai\"\ndem = 0\nfor i in chuoi.lower():\n    if i in nguyen_am:\n        dem += 1\nprint (dem)\n",
+        "highlighted_code": "chuoi = input(&#34;&#34;<span class='highlight-green'>)\nnguyen_am = &#34;ueoai&#34;\ndem = 0\nfor i in chuoi.lower():\n    if i in nguyen_am:\n        dem += 1\nprint (</span>dem)\n"
+      },
+      "token_overlap": 38,
+      "max_similarity_percent": 82.61
+    },
+    {
+      "case_id": 11,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3e427724325137447767f/bcb420abb39b4af095b63cf8/sub_1762542918946_9jfbv9ryb.py",
+        "similarity_percent": 64.62,
+        "full_code": "chuoi=input()\nchuoi_moi=chuoi.lower()\nds_kiem_tra=[\"a\",\"e\",\"i\",\"o\",\"u\"]\ndem=0\nfor i in chuoi_moi:\n    if i in ds_kiem_tra:\n        dem+=1\nprint(dem)",
+        "highlighted_code": "chuoi=input()\nchuoi_moi=chuoi.lower()\nds_kiem_tra=[&#34;a&#34;,<span class='highlight-red'>&#34;e&#34;,&#34;i&#34;,&#34;o&#34;,&#34;u&#34;]\ndem=0\nfor i in chuoi_moi:\n    if i in ds_kiem_tra:\n        dem+=1\nprin</span>t(dem)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3e427724325137447767f/2e99febeecc6490f8e7c3f87/sub_1761641737115_9o9ldxng6.py",
+        "similarity_percent": 53.85,
+        "full_code": "s = input()\na = ['a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U']\ncount = 0\nfor i in s:\n    if i in a:\n        count+=1\nprint(count)",
+        "highlighted_code": "s = input()\na = [&#39;a&#39;, &#39;e&#39;, &#39;i&#39;, &#39;o&#39;, &#39;u&#39;, &#39;A&#39;, <span class='highlight-green'>&#39;E&#39;, &#39;I&#39;, &#39;O&#39;, &#39;U&#39;]\ncount = 0\nfor i in s:\n    if i in a:\n        count+=1\nprin</span>t(count)"
+      },
+      "token_overlap": 42,
+      "max_similarity_percent": 64.62
+    },
+    {
+      "case_id": 12,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3e427724325137447767f/a34ffbda761b435ca043fd30/sub_1762436569951_5a5z95aw1.py",
+        "similarity_percent": 64.62,
+        "full_code": "a = input()\nb = a.lower()\nc = [\"a\",\"e\",\"i\",\"o\",\"u\"]\nd = 0\nfor i in b:\n    if i in c:\n        d+=1\nprint(d)",
+        "highlighted_code": "a = input()\nb = a.lower()\nc = [&#34;a&#34;,<span class='highlight-red'>&#34;e&#34;,&#34;i&#34;,&#34;o&#34;,&#34;u&#34;]\nd = 0\nfor i in b:\n    if i in c:\n        d+=1\nprin</span>t(d)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3e427724325137447767f/2e99febeecc6490f8e7c3f87/sub_1761641737115_9o9ldxng6.py",
+        "similarity_percent": 53.85,
+        "full_code": "s = input()\na = ['a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U']\ncount = 0\nfor i in s:\n    if i in a:\n        count+=1\nprint(count)",
+        "highlighted_code": "s = input()\na = [&#39;a&#39;, &#39;e&#39;, &#39;i&#39;, &#39;o&#39;, &#39;u&#39;, &#39;A&#39;, <span class='highlight-green'>&#39;E&#39;, &#39;I&#39;, &#39;O&#39;, &#39;U&#39;]\ncount = 0\nfor i in s:\n    if i in a:\n        count+=1\nprin</span>t(count)"
+      },
+      "token_overlap": 42,
+      "max_similarity_percent": 64.62
+    },
+    {
+      "case_id": 13,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3e427724325137447767f/f56f86fa26744324899543f3/sub_1761315614413_uy5mbmv4p.py",
+        "similarity_percent": 46.97,
+        "full_code": "a=[\"a\",\"e\",\"i\",\"o\",\"u\"]\ns=input()\ncount=0\nfor i in s:\n    if i.lower() in a:count+=1\nprint(count)",
+        "highlighted_code": "a=[&#34;a&#34;,&#34;e&#34;,&#34;i&#34;,&#34;o&#34;,&#34;u&#34;]\ns=input()\ncount=0\n<span class='highlight-red'>for i in s:\n    if i.lower() in a:count+=1\nprint(count)</span>"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3e427724325137447767f/4619643a0f2348b6b74a746a/sub_1762276894384_m4s1fnkyw.py",
+        "similarity_percent": 62.0,
+        "full_code": "n = input(\"\")\nam = \"ueoai\"\ndem = 0\nfor s in n:\n    if s.lower() in am:\n        dem += 1\nprint(dem)",
+        "highlighted_code": "n = input(&#34;&#34;)\nam = &#34;ueoai&#34;\ndem = 0\n<span class='highlight-green'>for s in n:\n    if s.lower() in am:\n        dem += 1\nprint(dem)</span>"
+      },
+      "token_overlap": 31,
+      "max_similarity_percent": 62.0
+    },
+    {
+      "case_id": 14,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3e427724325137447767f/f56f86fa26744324899543f3/sub_1761315232612_inwilb852.py",
+        "similarity_percent": 46.97,
+        "full_code": "a=[\"a\",\"e\",\"i\",\"o\",\"u\"]\ns=input()\ncount=0\nfor i in s:\n    if i.lower() in a:count+=1\nprint(count)",
+        "highlighted_code": "a=[&#34;a&#34;,&#34;e&#34;,&#34;i&#34;,&#34;o&#34;,&#34;u&#34;]\ns=input()\ncount=0\n<span class='highlight-red'>for i in s:\n    if i.lower() in a:count+=1\nprint(count)</span>"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3e427724325137447767f/4619643a0f2348b6b74a746a/sub_1762276894384_m4s1fnkyw.py",
+        "similarity_percent": 62.0,
+        "full_code": "n = input(\"\")\nam = \"ueoai\"\ndem = 0\nfor s in n:\n    if s.lower() in am:\n        dem += 1\nprint(dem)",
+        "highlighted_code": "n = input(&#34;&#34;)\nam = &#34;ueoai&#34;\ndem = 0\n<span class='highlight-green'>for s in n:\n    if s.lower() in am:\n        dem += 1\nprint(dem)</span>"
+      },
+      "token_overlap": 31,
+      "max_similarity_percent": 62.0
+    },
+    {
+      "case_id": 15,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3e427724325137447767f/f56f86fa26744324899543f3/sub_1761315225991_hiej79zzt.py",
+        "similarity_percent": 46.97,
+        "full_code": "a=[\"a\",\"e\",\"i\",\"o\",\"u\"]\ns=input()\ncount=0\nfor i in s:\n    if i.lower() in a:count+=1\nprint(count)",
+        "highlighted_code": "a=[&#34;a&#34;,&#34;e&#34;,&#34;i&#34;,&#34;o&#34;,&#34;u&#34;]\ns=input()\ncount=0\n<span class='highlight-red'>for i in s:\n    if i.lower() in a:count+=1\nprint(count)</span>"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3e427724325137447767f/4619643a0f2348b6b74a746a/sub_1762276894384_m4s1fnkyw.py",
+        "similarity_percent": 62.0,
+        "full_code": "n = input(\"\")\nam = \"ueoai\"\ndem = 0\nfor s in n:\n    if s.lower() in am:\n        dem += 1\nprint(dem)",
+        "highlighted_code": "n = input(&#34;&#34;)\nam = &#34;ueoai&#34;\ndem = 0\n<span class='highlight-green'>for s in n:\n    if s.lower() in am:\n        dem += 1\nprint(dem)</span>"
+      },
+      "token_overlap": 31,
+      "max_similarity_percent": 62.0
+    }
+  ]
+}

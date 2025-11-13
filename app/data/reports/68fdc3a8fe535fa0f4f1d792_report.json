@@ -1,0 +1,28 @@
+{
+  "problem_id": "68fdc3a8fe535fa0f4f1d792",
+  "filter_criteria": {
+    "min_token_overlap": 80,
+    "min_similarity_percent": 60
+  },
+  "total_cases_found": 1,
+  "total_cases_filtered": 1,
+  "cases": [
+    {
+      "case_id": 1,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3a8fe535fa0f4f1d792/8e19101eb0da4e9a92a17098/sub_1762354734336_4gfxfe6pc.py",
+        "similarity_percent": 61.16,
+        "full_code": "t = int(input())\ndigits = \"0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ\"\nfor i in range(t):\n    n, k = map(int, input().split())\n    if n == 0:\n        print(\"0\")\n        continue\n    ans = \"\"\n    while n > 0:\n        r = n % k\n        ans = digits[r] + ans\n        n //= k\n    print(ans)\n",
+        "highlighted_code": "t = int(input())\ndigits = &#34;0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ&#34;\nfor i i<span class='highlight-red'>n range(t):\n    n, k = map(int, input().split())\n    if n == 0:\n        </span>print(&#34;0&#34;)\n        continue\n    ans = &#34;&#34;\n    w<span class='highlight-red'>hile n &gt; 0:\n        r = n % k\n        ans = digits[r] + ans\n        n //= k\n    print(ans</span>)\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3a8fe535fa0f4f1d792/f95120b3a38a461085ef58cb/sub_1762598239918_rxnlp76ng.py",
+        "similarity_percent": 63.79,
+        "full_code": "digit = \"0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ\"\nt = int(input())\nfor _ in range(t):\n    n, k = map(int, input().split()) \n    if n == 0:\n        result = \"0\"\n    else:\n        result = \"\"\n        temp_n = n      \n        while temp_n > 0:\n            remainder = temp_n % k\n            result = digit[remainder] + result\n            temp_n //= k          \n    print(result)",
+        "highlighted_code": "digit = &#34;0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ&#34;\nt = int(input())\nfor _ i<span class='highlight-green'>n range(t):\n    n, k = map(int, input().split()) \n    if n == 0:\n        </span>result = &#34;0&#34;\n    else:\n        result = &#34;&#34;\n        temp_n = n      \n        w<span class='highlight-green'>hile temp_n &gt; 0:\n            remainder = temp_n % k\n            result = digit[remainder] + result\n            temp_n //= k          \n    print(result</span>)"
+      },
+      "token_overlap": 74,
+      "max_similarity_percent": 63.79
+    }
+  ]
+}

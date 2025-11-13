@@ -1,0 +1,300 @@
+{
+  "problem_id": "68fdc39dfe535fa0f4f1d637",
+  "filter_criteria": {
+    "min_token_overlap": 80,
+    "min_similarity_percent": 60
+  },
+  "total_cases_found": 21,
+  "total_cases_filtered": 17,
+  "cases": [
+    {
+      "case_id": 1,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc39dfe535fa0f4f1d637/f95120b3a38a461085ef58cb/sub_1762365276820_gz0sotzbv.py",
+        "similarity_percent": 100.0,
+        "full_code": "t = int(input())\n\nwhile t > 0:\n    case = int(input())   \n    lsta = list(map(int, input().split()))\n    lstb = list(map(int, input().split()))\n    lsta.sort()\n    lstb.sort()\n    check = True\n    for i in range(0, len(lsta)):\n        if lsta[i] > lstb[i]:\n            check = False\n    if check:\n        print(\"YES\")\n    else:\n        print(\"NO\")  \n    t -= 1",
+        "highlighted_code": "<span class='highlight-red'>t = int(input())\n\nwhile t &gt; 0:\n    case = int(input())   \n    lsta = list(map(int, input().split()))\n    lstb = list(map(int, input().split()))\n    lsta.sort()\n    lstb.sort()\n    check = True\n    for i in range(0, len(lsta)):\n        if lsta[i] &gt; lstb[i]:\n            check = False\n    if check:\n        print(&#34;YES&#34;)\n    else:\n        print(&#34;NO&#34;)  \n    t -= 1</span>"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc39dfe535fa0f4f1d637/ffdb326842044f2e98b7aaa7/sub_1761900524036_zbt9m9y6i.py",
+        "similarity_percent": 100.0,
+        "full_code": "t = int(input())\n\nwhile t > 0:\n    case = int(input())\n    \n    lsta = list(map(int, input().split()))\n    lstb = list(map(int, input().split()))\n\n    lsta.sort()\n    lstb.sort()\n\n    check = True\n    for i in range(0, len(lsta)):\n        if lsta[i] > lstb[i]:\n            check = False\n\n    if check:\n        print(\"YES\")\n    else:\n        print(\"NO\")\n    \n    t -= 1",
+        "highlighted_code": "<span class='highlight-green'>t = int(input())\n\nwhile t &gt; 0:\n    case = int(input())\n    \n    lsta = list(map(int, input().split()))\n    lstb = list(map(int, input().split()))\n\n    lsta.sort()\n    lstb.sort()\n\n    check = True\n    for i in range(0, len(lsta)):\n        if lsta[i] &gt; lstb[i]:\n            check = False\n\n    if check:\n        print(&#34;YES&#34;)\n    else:\n        print(&#34;NO&#34;)\n    \n    t -= 1</span>"
+      },
+      "token_overlap": 183,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 2,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc39dfe535fa0f4f1d637/27e30f767b3a46b283cbfec0/sub_1762656391100_0nzi2mbym.py",
+        "similarity_percent": 98.8,
+        "full_code": "t= int(input())\nfor _ in range(t):\n    n = int(input())\n    a = list(map(int, input().split()))\n    b = list(map(int, input().split()))\n    check = True\n    for i in range(n):\n        if a[i] > b[i]:\n            check = False\n    if check:\n        print(\"YES\")\n    else:\n        print(\"NO\")\n",
+        "highlighted_code": "<span class='highlight-red'>t= int(input())\nfor _ in range(t):\n    n = int(input())\n    a = list(map(int, input().split()))\n    b = list(map(int, input().split()))\n    </span>check = <span class='highlight-red'>True\n    for i in range(n):\n        if a[i] &gt; b[i]:\n            check = False\n    if check:\n        print(&#34;YES&#34;)\n    else:\n        print(&#34;NO</span>&#34;)\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc39dfe535fa0f4f1d637/a34ffbda761b435ca043fd30/sub_1762425523568_gwpyv12c5.py",
+        "similarity_percent": 93.18,
+        "full_code": "a = int(input())\nfor i in range(a):\n    b = int(input())\n    m = list(map(int, input().split()))\n    n = list(map(int, input().split()))\n    m.sort()\n    n.sort()\n    dung=True\n    for i in range(b):\n        if m[i]>n[i]:\n            dung=False\n    if dung:\n        print('YES')\n    else:\n        print('NO')",
+        "highlighted_code": "<span class='highlight-green'>a = int(input())\nfor i in range(a):\n    b = int(input())\n    m = list(map(int, input().split()))\n    n = list(map(int, input().split()))\n    </span>m.sort()\n    n.sort()\n    dung=<span class='highlight-green'>True\n    for i in range(b):\n        if m[i]&gt;n[i]:\n            dung=False\n    if dung:\n        print(&#39;YES&#39;)\n    else:\n        print(&#39;NO</span>&#39;)"
+      },
+      "token_overlap": 164,
+      "max_similarity_percent": 98.8
+    },
+    {
+      "case_id": 3,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc39dfe535fa0f4f1d637/e59c34a1bebb49d29bfb3592/sub_1762416936489_8yebttwla.py",
+        "similarity_percent": 82.42,
+        "full_code": "t = int(input())\nfor _ in range(t):\n    n = int(input())\n    A = list(map(int,input().split()))\n    B = list(map(int,input().split()))\n    A.sort()\n    B.sort()\n    ok = True\n    for i in range(n):\n        if A[i] <= B[i]:\n            ok = False\n    print(\"NO\" if ok else \"YES\")",
+        "highlighted_code": "<span class='highlight-red'>t = int(input())\nfor _ in range(t):\n    n = int(input())\n    A = list(map(int,input().split()))\n    B = list(map(int,input().split()))\n    A.sort()\n    B.sort()\n    ok = True\n    for i in range(n):\n        if A[i] </span>&lt;= B[i]:\n            ok = False\n    print(&#34;NO&#34; if ok else &#34;YES&#34;)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc39dfe535fa0f4f1d637/a34ffbda761b435ca043fd30/sub_1762425523568_gwpyv12c5.py",
+        "similarity_percent": 77.27,
+        "full_code": "a = int(input())\nfor i in range(a):\n    b = int(input())\n    m = list(map(int, input().split()))\n    n = list(map(int, input().split()))\n    m.sort()\n    n.sort()\n    dung=True\n    for i in range(b):\n        if m[i]>n[i]:\n            dung=False\n    if dung:\n        print('YES')\n    else:\n        print('NO')",
+        "highlighted_code": "<span class='highlight-green'>a = int(input())\nfor i in range(a):\n    b = int(input())\n    m = list(map(int, input().split()))\n    n = list(map(int, input().split()))\n    m.sort()\n    n.sort()\n    dung=True\n    for i in range(b):\n        if m[i]</span>&gt;n[i]:\n            dung=False\n    if dung:\n        print(&#39;YES&#39;)\n    else:\n        print(&#39;NO&#39;)"
+      },
+      "token_overlap": 136,
+      "max_similarity_percent": 82.42
+    },
+    {
+      "case_id": 4,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc39dfe535fa0f4f1d637/f95120b3a38a461085ef58cb/sub_1762365276820_gz0sotzbv.py",
+        "similarity_percent": 77.6,
+        "full_code": "t = int(input())\n\nwhile t > 0:\n    case = int(input())   \n    lsta = list(map(int, input().split()))\n    lstb = list(map(int, input().split()))\n    lsta.sort()\n    lstb.sort()\n    check = True\n    for i in range(0, len(lsta)):\n        if lsta[i] > lstb[i]:\n            check = False\n    if check:\n        print(\"YES\")\n    else:\n        print(\"NO\")  \n    t -= 1",
+        "highlighted_code": "t = int(input())\n\nwhile t &gt; 0<span class='highlight-red'>:\n    case = int(input())   \n    lsta = list(map(int, input().split()))\n    lstb = list(map(int, input().split()))\n    lsta.sort()\n    lstb.sort()\n    check = True\n    for i in ra</span>nge(0, len(lsta))<span class='highlight-red'>:\n        if lsta[i] &gt; lstb[i]:\n            check = False\n    if check:\n        print(&#34;YES&#34;)\n    else:\n        print(&#34;NO</span>&#34;)  \n    t -= 1"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc39dfe535fa0f4f1d637/a34ffbda761b435ca043fd30/sub_1762425523568_gwpyv12c5.py",
+        "similarity_percent": 80.68,
+        "full_code": "a = int(input())\nfor i in range(a):\n    b = int(input())\n    m = list(map(int, input().split()))\n    n = list(map(int, input().split()))\n    m.sort()\n    n.sort()\n    dung=True\n    for i in range(b):\n        if m[i]>n[i]:\n            dung=False\n    if dung:\n        print('YES')\n    else:\n        print('NO')",
+        "highlighted_code": "a = int(input())\nfor i in range(a)<span class='highlight-green'>:\n    b = int(input())\n    m = list(map(int, input().split()))\n    n = list(map(int, input().split()))\n    m.sort()\n    n.sort()\n    dung=True\n    for i in ra</span>nge(b)<span class='highlight-green'>:\n        if m[i]&gt;n[i]:\n            dung=False\n    if dung:\n        print(&#39;YES&#39;)\n    else:\n        print(&#39;NO</span>&#39;)"
+      },
+      "token_overlap": 142,
+      "max_similarity_percent": 80.68
+    },
+    {
+      "case_id": 5,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc39dfe535fa0f4f1d637/ffdb326842044f2e98b7aaa7/sub_1761900524036_zbt9m9y6i.py",
+        "similarity_percent": 77.6,
+        "full_code": "t = int(input())\n\nwhile t > 0:\n    case = int(input())\n    \n    lsta = list(map(int, input().split()))\n    lstb = list(map(int, input().split()))\n\n    lsta.sort()\n    lstb.sort()\n\n    check = True\n    for i in range(0, len(lsta)):\n        if lsta[i] > lstb[i]:\n            check = False\n\n    if check:\n        print(\"YES\")\n    else:\n        print(\"NO\")\n    \n    t -= 1",
+        "highlighted_code": "t = int(input())\n\nwhile t &gt; 0<span class='highlight-red'>:\n    case = int(input())\n    \n    lsta = list(map(int, input().split()))\n    lstb = list(map(int, input().split()))\n\n    lsta.sort()\n    lstb.sort()\n\n    check = True\n    for i in ra</span>nge(0, len(lsta))<span class='highlight-red'>:\n        if lsta[i] &gt; lstb[i]:\n            check = False\n\n    if check:\n        print(&#34;YES&#34;)\n    else:\n        print(&#34;NO</span>&#34;)\n    \n    t -= 1"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc39dfe535fa0f4f1d637/a34ffbda761b435ca043fd30/sub_1762425523568_gwpyv12c5.py",
+        "similarity_percent": 80.68,
+        "full_code": "a = int(input())\nfor i in range(a):\n    b = int(input())\n    m = list(map(int, input().split()))\n    n = list(map(int, input().split()))\n    m.sort()\n    n.sort()\n    dung=True\n    for i in range(b):\n        if m[i]>n[i]:\n            dung=False\n    if dung:\n        print('YES')\n    else:\n        print('NO')",
+        "highlighted_code": "a = int(input())\nfor i in range(a)<span class='highlight-green'>:\n    b = int(input())\n    m = list(map(int, input().split()))\n    n = list(map(int, input().split()))\n    m.sort()\n    n.sort()\n    dung=True\n    for i in ra</span>nge(b)<span class='highlight-green'>:\n        if m[i]&gt;n[i]:\n            dung=False\n    if dung:\n        print(&#39;YES&#39;)\n    else:\n        print(&#39;NO</span>&#39;)"
+      },
+      "token_overlap": 142,
+      "max_similarity_percent": 80.68
+    },
+    {
+      "case_id": 6,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc39dfe535fa0f4f1d637/e59c34a1bebb49d29bfb3592/sub_1762416936489_8yebttwla.py",
+        "similarity_percent": 75.15,
+        "full_code": "t = int(input())\nfor _ in range(t):\n    n = int(input())\n    A = list(map(int,input().split()))\n    B = list(map(int,input().split()))\n    A.sort()\n    B.sort()\n    ok = True\n    for i in range(n):\n        if A[i] <= B[i]:\n            ok = False\n    print(\"NO\" if ok else \"YES\")",
+        "highlighted_code": "<span class='highlight-red'>t = int(input())\nfor _ in range(t):\n    n = int(input())\n    A = list(map(int,input().split()))\n    B = list(map(int,input().split()))\n    </span>A.sort()\n    B.sort()\n    ok = <span class='highlight-red'>True\n    for i in range(n):\n        if A[i] </span>&lt;= B[i]:\n            ok = False\n    print(&#34;NO&#34; if ok else &#34;YES&#34;)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc39dfe535fa0f4f1d637/27e30f767b3a46b283cbfec0/sub_1762656391100_0nzi2mbym.py",
+        "similarity_percent": 74.7,
+        "full_code": "t= int(input())\nfor _ in range(t):\n    n = int(input())\n    a = list(map(int, input().split()))\n    b = list(map(int, input().split()))\n    check = True\n    for i in range(n):\n        if a[i] > b[i]:\n            check = False\n    if check:\n        print(\"YES\")\n    else:\n        print(\"NO\")\n",
+        "highlighted_code": "<span class='highlight-green'>t= int(input())\nfor _ in range(t):\n    n = int(input())\n    a = list(map(int, input().split()))\n    b = list(map(int, input().split()))\n    </span>check = <span class='highlight-green'>True\n    for i in range(n):\n        if a[i] </span>&gt; b[i]:\n            check = False\n    if check:\n        print(&#34;YES&#34;)\n    else:\n        print(&#34;NO&#34;)\n"
+      },
+      "token_overlap": 124,
+      "max_similarity_percent": 75.15
+    },
+    {
+      "case_id": 7,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc39dfe535fa0f4f1d637/27e30f767b3a46b283cbfec0/sub_1762656391100_0nzi2mbym.py",
+        "similarity_percent": 71.08,
+        "full_code": "t= int(input())\nfor _ in range(t):\n    n = int(input())\n    a = list(map(int, input().split()))\n    b = list(map(int, input().split()))\n    check = True\n    for i in range(n):\n        if a[i] > b[i]:\n            check = False\n    if check:\n        print(\"YES\")\n    else:\n        print(\"NO\")\n",
+        "highlighted_code": "t= int(input())\nfor _ in range(t)<span class='highlight-red'>:\n    n = int(input())\n    a = list(map(int, input().split()))\n    b = list(map(int, input().split()))\n    </span>check = True\n    for i in range(n)<span class='highlight-red'>:\n        if a[i] &gt; b[i]:\n            check = False\n    if check:\n        print(&#34;YES&#34;)\n    else:\n        print(&#34;NO</span>&#34;)\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc39dfe535fa0f4f1d637/ffdb326842044f2e98b7aaa7/sub_1761900524036_zbt9m9y6i.py",
+        "similarity_percent": 64.48,
+        "full_code": "t = int(input())\n\nwhile t > 0:\n    case = int(input())\n    \n    lsta = list(map(int, input().split()))\n    lstb = list(map(int, input().split()))\n\n    lsta.sort()\n    lstb.sort()\n\n    check = True\n    for i in range(0, len(lsta)):\n        if lsta[i] > lstb[i]:\n            check = False\n\n    if check:\n        print(\"YES\")\n    else:\n        print(\"NO\")\n    \n    t -= 1",
+        "highlighted_code": "t = int(input())\n\nwhile t &gt; 0<span class='highlight-green'>:\n    case = int(input())\n    \n    lsta = list(map(int, input().split()))\n    lstb = list(map(int, input().split()))\n\n    </span>lsta.sort()\n    lstb.sort()\n\n    check = True\n    for i in range(0, len(lsta))<span class='highlight-green'>:\n        if lsta[i] &gt; lstb[i]:\n            check = False\n\n    if check:\n        print(&#34;YES&#34;)\n    else:\n        print(&#34;NO</span>&#34;)\n    \n    t -= 1"
+      },
+      "token_overlap": 118,
+      "max_similarity_percent": 71.08
+    },
+    {
+      "case_id": 8,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc39dfe535fa0f4f1d637/9f14990043df4fda9283d7ac/sub_1761906339101_1vxxfjgsz.py",
+        "similarity_percent": 65.24,
+        "full_code": "t = int(input())\nfor _ in range(t):\n    n = int(input())\n    A = list(map(int, input().split()))\n    B = list(map(int, input().split()))\n    A.sort()\n    B.sort()\n    \n    if all(A[i] <= B[i] for i in range(n)):\n        print(\"YES\")\n    else:\n        print(\"NO\")\n",
+        "highlighted_code": "<span class='highlight-red'>t = int(input())\nfor _ in range(t):\n    n = int(input())\n    A = list(map(int, input().split()))\n    B = list(map(int, input().split()))\n    A.sort()\n    B.sort</span>()\n    \n    if all(A[i] &lt;= B[i] for i in range(n)):\n        print(&#34;YES&#34;)\n    else:\n        print(&#34;NO&#34;)\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc39dfe535fa0f4f1d637/a34ffbda761b435ca043fd30/sub_1762425523568_gwpyv12c5.py",
+        "similarity_percent": 60.8,
+        "full_code": "a = int(input())\nfor i in range(a):\n    b = int(input())\n    m = list(map(int, input().split()))\n    n = list(map(int, input().split()))\n    m.sort()\n    n.sort()\n    dung=True\n    for i in range(b):\n        if m[i]>n[i]:\n            dung=False\n    if dung:\n        print('YES')\n    else:\n        print('NO')",
+        "highlighted_code": "<span class='highlight-green'>a = int(input())\nfor i in range(a):\n    b = int(input())\n    m = list(map(int, input().split()))\n    n = list(map(int, input().split()))\n    m.sort()\n    n.sort</span>()\n    dung=True\n    for i in range(b):\n        if m[i]&gt;n[i]:\n            dung=False\n    if dung:\n        print(&#39;YES&#39;)\n    else:\n        print(&#39;NO&#39;)"
+      },
+      "token_overlap": 107,
+      "max_similarity_percent": 65.24
+    },
+    {
+      "case_id": 9,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc39dfe535fa0f4f1d637/e59c34a1bebb49d29bfb3592/sub_1762416936489_8yebttwla.py",
+        "similarity_percent": 64.85,
+        "full_code": "t = int(input())\nfor _ in range(t):\n    n = int(input())\n    A = list(map(int,input().split()))\n    B = list(map(int,input().split()))\n    A.sort()\n    B.sort()\n    ok = True\n    for i in range(n):\n        if A[i] <= B[i]:\n            ok = False\n    print(\"NO\" if ok else \"YES\")",
+        "highlighted_code": "<span class='highlight-red'>t = int(input())\nfor _ in range(t):\n    n = int(input())\n    A = list(map(int,input().split()))\n    B = list(map(int,input().split()))\n    A.sort()\n    B.sort</span>()\n    ok = True\n    for i in range(n):\n        if A[i] &lt;= B[i]:\n            ok = False\n    print(&#34;NO&#34; if ok else &#34;YES&#34;)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc39dfe535fa0f4f1d637/9f14990043df4fda9283d7ac/sub_1761906339101_1vxxfjgsz.py",
+        "similarity_percent": 65.24,
+        "full_code": "t = int(input())\nfor _ in range(t):\n    n = int(input())\n    A = list(map(int, input().split()))\n    B = list(map(int, input().split()))\n    A.sort()\n    B.sort()\n    \n    if all(A[i] <= B[i] for i in range(n)):\n        print(\"YES\")\n    else:\n        print(\"NO\")\n",
+        "highlighted_code": "<span class='highlight-green'>t = int(input())\nfor _ in range(t):\n    n = int(input())\n    A = list(map(int, input().split()))\n    B = list(map(int, input().split()))\n    A.sort()\n    B.sort</span>()\n    \n    if all(A[i] &lt;= B[i] for i in range(n)):\n        print(&#34;YES&#34;)\n    else:\n        print(&#34;NO&#34;)\n"
+      },
+      "token_overlap": 107,
+      "max_similarity_percent": 65.24
+    },
+    {
+      "case_id": 10,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc39dfe535fa0f4f1d637/f95120b3a38a461085ef58cb/sub_1762365276820_gz0sotzbv.py",
+        "similarity_percent": 64.48,
+        "full_code": "t = int(input())\n\nwhile t > 0:\n    case = int(input())   \n    lsta = list(map(int, input().split()))\n    lstb = list(map(int, input().split()))\n    lsta.sort()\n    lstb.sort()\n    check = True\n    for i in range(0, len(lsta)):\n        if lsta[i] > lstb[i]:\n            check = False\n    if check:\n        print(\"YES\")\n    else:\n        print(\"NO\")  \n    t -= 1",
+        "highlighted_code": "t = int(input())\n\nwhile t &gt; 0<span class='highlight-red'>:\n    case = int(input())   \n    lsta = list(map(int, input().split()))\n    lstb = list(map(int, input().split()))\n    </span>lsta.sort()\n    lstb.sort()\n    check = True\n    for i in range(0, len(lsta))<span class='highlight-red'>:\n        if lsta[i] &gt; lstb[i]:\n            check = False\n    if check:\n        print(&#34;YES&#34;)\n    else:\n        print(&#34;NO</span>&#34;)  \n    t -= 1"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc39dfe535fa0f4f1d637/27e30f767b3a46b283cbfec0/sub_1762656391100_0nzi2mbym.py",
+        "similarity_percent": 71.08,
+        "full_code": "t= int(input())\nfor _ in range(t):\n    n = int(input())\n    a = list(map(int, input().split()))\n    b = list(map(int, input().split()))\n    check = True\n    for i in range(n):\n        if a[i] > b[i]:\n            check = False\n    if check:\n        print(\"YES\")\n    else:\n        print(\"NO\")\n",
+        "highlighted_code": "t= int(input())\nfor _ in range(t)<span class='highlight-green'>:\n    n = int(input())\n    a = list(map(int, input().split()))\n    b = list(map(int, input().split()))\n    </span>check = True\n    for i in range(n)<span class='highlight-green'>:\n        if a[i] &gt; b[i]:\n            check = False\n    if check:\n        print(&#34;YES&#34;)\n    else:\n        print(&#34;NO</span>&#34;)\n"
+      },
+      "token_overlap": 118,
+      "max_similarity_percent": 71.08
+    },
+    {
+      "case_id": 11,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc39dfe535fa0f4f1d637/27e30f767b3a46b283cbfec0/sub_1762656391100_0nzi2mbym.py",
+        "similarity_percent": 59.64,
+        "full_code": "t= int(input())\nfor _ in range(t):\n    n = int(input())\n    a = list(map(int, input().split()))\n    b = list(map(int, input().split()))\n    check = True\n    for i in range(n):\n        if a[i] > b[i]:\n            check = False\n    if check:\n        print(\"YES\")\n    else:\n        print(\"NO\")\n",
+        "highlighted_code": "<span class='highlight-red'>t= int(input())\nfor _ in range(t):\n    n = int(input())\n    a = list(map(int, input().split()))\n    b = list(map(int, input().split()))\n    </span>check = True\n    for i in range(n):\n        if a[i] &gt; b[i]:\n            check = False\n    if check:\n        print(&#34;YES&#34;)\n    else:\n        print(&#34;NO&#34;)\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc39dfe535fa0f4f1d637/9f14990043df4fda9283d7ac/sub_1761906339101_1vxxfjgsz.py",
+        "similarity_percent": 60.37,
+        "full_code": "t = int(input())\nfor _ in range(t):\n    n = int(input())\n    A = list(map(int, input().split()))\n    B = list(map(int, input().split()))\n    A.sort()\n    B.sort()\n    \n    if all(A[i] <= B[i] for i in range(n)):\n        print(\"YES\")\n    else:\n        print(\"NO\")\n",
+        "highlighted_code": "<span class='highlight-green'>t = int(input())\nfor _ in range(t):\n    n = int(input())\n    A = list(map(int, input().split()))\n    B = list(map(int, input().split()))\n    </span>A.sort()\n    B.sort()\n    \n    if all(A[i] &lt;= B[i] for i in range(n)):\n        print(&#34;YES&#34;)\n    else:\n        print(&#34;NO&#34;)\n"
+      },
+      "token_overlap": 99,
+      "max_similarity_percent": 60.37
+    },
+    {
+      "case_id": 12,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc39dfe535fa0f4f1d637/e59c34a1bebb49d29bfb3592/sub_1762416936489_8yebttwla.py",
+        "similarity_percent": 57.58,
+        "full_code": "t = int(input())\nfor _ in range(t):\n    n = int(input())\n    A = list(map(int,input().split()))\n    B = list(map(int,input().split()))\n    A.sort()\n    B.sort()\n    ok = True\n    for i in range(n):\n        if A[i] <= B[i]:\n            ok = False\n    print(\"NO\" if ok else \"YES\")",
+        "highlighted_code": "t = int(input())\nfor _ in range(t)<span class='highlight-red'>:\n    n = int(input())\n    A = list(map(int,input().split()))\n    B = list(map(int,input().split()))\n    A.sort()\n    B.sort()\n    ok = True\n    for i in ra</span>nge(n):\n        if A[i] &lt;= B[i]:\n            ok = False\n    print(&#34;NO&#34; if ok else &#34;YES&#34;)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc39dfe535fa0f4f1d637/f95120b3a38a461085ef58cb/sub_1762365276820_gz0sotzbv.py",
+        "similarity_percent": 51.91,
+        "full_code": "t = int(input())\n\nwhile t > 0:\n    case = int(input())   \n    lsta = list(map(int, input().split()))\n    lstb = list(map(int, input().split()))\n    lsta.sort()\n    lstb.sort()\n    check = True\n    for i in range(0, len(lsta)):\n        if lsta[i] > lstb[i]:\n            check = False\n    if check:\n        print(\"YES\")\n    else:\n        print(\"NO\")  \n    t -= 1",
+        "highlighted_code": "t = int(input())\n\nwhile t &gt; 0<span class='highlight-green'>:\n    case = int(input())   \n    lsta = list(map(int, input().split()))\n    lstb = list(map(int, input().split()))\n    lsta.sort()\n    lstb.sort()\n    check = True\n    for i in ra</span>nge(0, len(lsta)):\n        if lsta[i] &gt; lstb[i]:\n            check = False\n    if check:\n        print(&#34;YES&#34;)\n    else:\n        print(&#34;NO&#34;)  \n    t -= 1"
+      },
+      "token_overlap": 95,
+      "max_similarity_percent": 57.58
+    },
+    {
+      "case_id": 13,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc39dfe535fa0f4f1d637/e59c34a1bebb49d29bfb3592/sub_1762416936489_8yebttwla.py",
+        "similarity_percent": 57.58,
+        "full_code": "t = int(input())\nfor _ in range(t):\n    n = int(input())\n    A = list(map(int,input().split()))\n    B = list(map(int,input().split()))\n    A.sort()\n    B.sort()\n    ok = True\n    for i in range(n):\n        if A[i] <= B[i]:\n            ok = False\n    print(\"NO\" if ok else \"YES\")",
+        "highlighted_code": "t = int(input())\nfor _ in range(t)<span class='highlight-red'>:\n    n = int(input())\n    A = list(map(int,input().split()))\n    B = list(map(int,input().split()))\n    A.sort()\n    B.sort()\n    ok = True\n    for i in ra</span>nge(n):\n        if A[i] &lt;= B[i]:\n            ok = False\n    print(&#34;NO&#34; if ok else &#34;YES&#34;)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc39dfe535fa0f4f1d637/ffdb326842044f2e98b7aaa7/sub_1761900524036_zbt9m9y6i.py",
+        "similarity_percent": 51.91,
+        "full_code": "t = int(input())\n\nwhile t > 0:\n    case = int(input())\n    \n    lsta = list(map(int, input().split()))\n    lstb = list(map(int, input().split()))\n\n    lsta.sort()\n    lstb.sort()\n\n    check = True\n    for i in range(0, len(lsta)):\n        if lsta[i] > lstb[i]:\n            check = False\n\n    if check:\n        print(\"YES\")\n    else:\n        print(\"NO\")\n    \n    t -= 1",
+        "highlighted_code": "t = int(input())\n\nwhile t &gt; 0<span class='highlight-green'>:\n    case = int(input())\n    \n    lsta = list(map(int, input().split()))\n    lstb = list(map(int, input().split()))\n\n    lsta.sort()\n    lstb.sort()\n\n    check = True\n    for i in ra</span>nge(0, len(lsta)):\n        if lsta[i] &gt; lstb[i]:\n            check = False\n\n    if check:\n        print(&#34;YES&#34;)\n    else:\n        print(&#34;NO&#34;)\n    \n    t -= 1"
+      },
+      "token_overlap": 95,
+      "max_similarity_percent": 57.58
+    },
+    {
+      "case_id": 14,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc39dfe535fa0f4f1d637/9f14990043df4fda9283d7ac/sub_1761906339101_1vxxfjgsz.py",
+        "similarity_percent": 51.83,
+        "full_code": "t = int(input())\nfor _ in range(t):\n    n = int(input())\n    A = list(map(int, input().split()))\n    B = list(map(int, input().split()))\n    A.sort()\n    B.sort()\n    \n    if all(A[i] <= B[i] for i in range(n)):\n        print(\"YES\")\n    else:\n        print(\"NO\")\n",
+        "highlighted_code": "t = int(input())\n<span class='highlight-red'>for _ in range(t):\n    n = int(input())\n    A = list(map(int, input().split()))\n    B = list(map(int, input().split()))\n    </span>A.sort()\n    B.sort()\n    \n    if all(A[i] &lt;= B[i] for i in range(n)):\n        print(&#34;YES&#34;)\n    else:\n        print(&#34;NO&#34;)\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc39dfe535fa0f4f1d637/bcb420abb39b4af095b63cf8/sub_1762631940680_0c4mtebh0.py",
+        "similarity_percent": 48.3,
+        "full_code": "t=int(input())\nds_kq=[]\nfor i in range(t):\n    n=int(input())\n    a=list(map(int,input().split()))\n    b=list(map(int,input().split()))\n    for k in range(len(a)):\n        if a[k]>b[k]:\n            ds_kq+=[\"NO\"]\n            break\n    else:\n        ds_kq+=[\"YES\"]\nfor h in ds_kq:\n    print(h)",
+        "highlighted_code": "t=int(input())\nds_kq=[]\n<span class='highlight-green'>for i in range(t):\n    n=int(input())\n    a=list(map(int,input().split()))\n    b=list(map(int,input().split()))\n    </span>for k in range(len(a)):\n        if a[k]&gt;b[k]:\n            ds_kq+=[&#34;NO&#34;]\n            break\n    else:\n        ds_kq+=[&#34;YES&#34;]\nfor h in ds_kq:\n    print(h)"
+      },
+      "token_overlap": 85,
+      "max_similarity_percent": 51.83
+    },
+    {
+      "case_id": 15,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc39dfe535fa0f4f1d637/e59c34a1bebb49d29bfb3592/sub_1762416936489_8yebttwla.py",
+        "similarity_percent": 51.52,
+        "full_code": "t = int(input())\nfor _ in range(t):\n    n = int(input())\n    A = list(map(int,input().split()))\n    B = list(map(int,input().split()))\n    A.sort()\n    B.sort()\n    ok = True\n    for i in range(n):\n        if A[i] <= B[i]:\n            ok = False\n    print(\"NO\" if ok else \"YES\")",
+        "highlighted_code": "t = int(input())\n<span class='highlight-red'>for _ in range(t):\n    n = int(input())\n    A = list(map(int,input().split()))\n    B = list(map(int,input().split()))\n    </span>A.sort()\n    B.sort()\n    ok = True\n    for i in range(n):\n        if A[i] &lt;= B[i]:\n            ok = False\n    print(&#34;NO&#34; if ok else &#34;YES&#34;)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc39dfe535fa0f4f1d637/bcb420abb39b4af095b63cf8/sub_1762631940680_0c4mtebh0.py",
+        "similarity_percent": 48.3,
+        "full_code": "t=int(input())\nds_kq=[]\nfor i in range(t):\n    n=int(input())\n    a=list(map(int,input().split()))\n    b=list(map(int,input().split()))\n    for k in range(len(a)):\n        if a[k]>b[k]:\n            ds_kq+=[\"NO\"]\n            break\n    else:\n        ds_kq+=[\"YES\"]\nfor h in ds_kq:\n    print(h)",
+        "highlighted_code": "t=int(input())\nds_kq=[]\n<span class='highlight-green'>for i in range(t):\n    n=int(input())\n    a=list(map(int,input().split()))\n    b=list(map(int,input().split()))\n    </span>for k in range(len(a)):\n        if a[k]&gt;b[k]:\n            ds_kq+=[&#34;NO&#34;]\n            break\n    else:\n        ds_kq+=[&#34;YES&#34;]\nfor h in ds_kq:\n    print(h)"
+      },
+      "token_overlap": 85,
+      "max_similarity_percent": 51.52
+    },
+    {
+      "case_id": 16,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc39dfe535fa0f4f1d637/27e30f767b3a46b283cbfec0/sub_1762656391100_0nzi2mbym.py",
+        "similarity_percent": 51.2,
+        "full_code": "t= int(input())\nfor _ in range(t):\n    n = int(input())\n    a = list(map(int, input().split()))\n    b = list(map(int, input().split()))\n    check = True\n    for i in range(n):\n        if a[i] > b[i]:\n            check = False\n    if check:\n        print(\"YES\")\n    else:\n        print(\"NO\")\n",
+        "highlighted_code": "t= int(input())\n<span class='highlight-red'>for _ in range(t):\n    n = int(input())\n    a = list(map(int, input().split()))\n    b = list(map(int, input().split()))\n    </span>check = True\n    for i in range(n):\n        if a[i] &gt; b[i]:\n            check = False\n    if check:\n        print(&#34;YES&#34;)\n    else:\n        print(&#34;NO&#34;)\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc39dfe535fa0f4f1d637/bcb420abb39b4af095b63cf8/sub_1762631940680_0c4mtebh0.py",
+        "similarity_percent": 48.3,
+        "full_code": "t=int(input())\nds_kq=[]\nfor i in range(t):\n    n=int(input())\n    a=list(map(int,input().split()))\n    b=list(map(int,input().split()))\n    for k in range(len(a)):\n        if a[k]>b[k]:\n            ds_kq+=[\"NO\"]\n            break\n    else:\n        ds_kq+=[\"YES\"]\nfor h in ds_kq:\n    print(h)",
+        "highlighted_code": "t=int(input())\nds_kq=[]\n<span class='highlight-green'>for i in range(t):\n    n=int(input())\n    a=list(map(int,input().split()))\n    b=list(map(int,input().split()))\n    </span>for k in range(len(a)):\n        if a[k]&gt;b[k]:\n            ds_kq+=[&#34;NO&#34;]\n            break\n    else:\n        ds_kq+=[&#34;YES&#34;]\nfor h in ds_kq:\n    print(h)"
+      },
+      "token_overlap": 85,
+      "max_similarity_percent": 51.2
+    },
+    {
+      "case_id": 17,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc39dfe535fa0f4f1d637/a34ffbda761b435ca043fd30/sub_1762425523568_gwpyv12c5.py",
+        "similarity_percent": 48.3,
+        "full_code": "a = int(input())\nfor i in range(a):\n    b = int(input())\n    m = list(map(int, input().split()))\n    n = list(map(int, input().split()))\n    m.sort()\n    n.sort()\n    dung=True\n    for i in range(b):\n        if m[i]>n[i]:\n            dung=False\n    if dung:\n        print('YES')\n    else:\n        print('NO')",
+        "highlighted_code": "a = int(input())\n<span class='highlight-red'>for i in range(a):\n    b = int(input())\n    m = list(map(int, input().split()))\n    n = list(map(int, input().split()))\n    </span>m.sort()\n    n.sort()\n    dung=True\n    for i in range(b):\n        if m[i]&gt;n[i]:\n            dung=False\n    if dung:\n        print(&#39;YES&#39;)\n    else:\n        print(&#39;NO&#39;)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc39dfe535fa0f4f1d637/bcb420abb39b4af095b63cf8/sub_1762631940680_0c4mtebh0.py",
+        "similarity_percent": 48.3,
+        "full_code": "t=int(input())\nds_kq=[]\nfor i in range(t):\n    n=int(input())\n    a=list(map(int,input().split()))\n    b=list(map(int,input().split()))\n    for k in range(len(a)):\n        if a[k]>b[k]:\n            ds_kq+=[\"NO\"]\n            break\n    else:\n        ds_kq+=[\"YES\"]\nfor h in ds_kq:\n    print(h)",
+        "highlighted_code": "t=int(input())\nds_kq=[]\n<span class='highlight-green'>for i in range(t):\n    n=int(input())\n    a=list(map(int,input().split()))\n    b=list(map(int,input().split()))\n    </span>for k in range(len(a)):\n        if a[k]&gt;b[k]:\n            ds_kq+=[&#34;NO&#34;]\n            break\n    else:\n        ds_kq+=[&#34;YES&#34;]\nfor h in ds_kq:\n    print(h)"
+      },
+      "token_overlap": 85,
+      "max_similarity_percent": 48.3
+    }
+  ]
+}

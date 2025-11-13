@@ -1,0 +1,45 @@
+{
+  "problem_id": "68e3ca5772432513744771a2",
+  "filter_criteria": {
+    "min_token_overlap": 80,
+    "min_similarity_percent": 60
+  },
+  "total_cases_found": 2,
+  "total_cases_filtered": 2,
+  "cases": [
+    {
+      "case_id": 1,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3ca5772432513744771a2/0d74995bf22b4574a97a2297/sub_1761553330764_vlfu16iky.py",
+        "similarity_percent": 100.0,
+        "full_code": "def ktr(n, so):\n    s = str(n)\n    if s != s[::-1]:\n        return False\n    res = set(str(d) for d in so)\n    if not set(s).issubset(res):\n        return False\n    return True\nn = input()\nd = list(input())\nif(ktr(n,d)):\n    print(\"True\")\nelse:\n    print(\"False\")",
+        "highlighted_code": "<span class='highlight-red'>def ktr(n, so):\n    s = str(n)\n    if s != s[::-1]:\n        return False\n    res = set(str(d) for d in so)\n    if not set(s).issubset(res):\n        return False\n    return True\nn = input()\nd = list(input())\nif(ktr(n,d)):\n    print(&#34;True&#34;)\nelse:\n    print(&#34;False</span>&#34;)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3ca5772432513744771a2/0d74995bf22b4574a97a2297/sub_1761287885752_zpab4xvq7.py",
+        "similarity_percent": 100.0,
+        "full_code": "def ktr(n, digits):\n    n_str = str(n)\n    if n_str != n_str[::-1]:\n        return False\n    allowed_digits_str = set(str(d) for d in digits)\n    if not set(n_str).issubset(allowed_digits_str):\n        return False\n    return True\nn = input()\nd = list(input())\nif(ktr(n,d)):\n    print(\"True\")\nelse:\n    print(\"False\")",
+        "highlighted_code": "<span class='highlight-green'>def ktr(n, digits):\n    n_str = str(n)\n    if n_str != n_str[::-1]:\n        return False\n    allowed_digits_str = set(str(d) for d in digits)\n    if not set(n_str).issubset(allowed_digits_str):\n        return False\n    return True\nn = input()\nd = list(input())\nif(ktr(n,d)):\n    print(&#34;True&#34;)\nelse:\n    print(&#34;False</span>&#34;)"
+      },
+      "token_overlap": 158,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 2,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3ca5772432513744771a2/f56f86fa26744324899543f3/sub_1761974332801_f5n9artnt.py",
+        "similarity_percent": 51.72,
+        "full_code": "n=int(input())\ndigits=input()\na=[]\na1=list(digits)\nfor _ in a1: \n    if _.isdigit()==True:a.append(int(_))\ndung=0\nif n==int(str(n)[::-1]):dung+=1\nk=0\nfor i in list(str(n)):\n    if int(i) not in a:k+=1\nif k==0 and dung==1:print(\"True\")\nelse:print(\"False\")\n\n",
+        "highlighted_code": "n=int(input())\ndigits=<span class='highlight-red'>input()\na=[]\na1=list(digits)\nfor _ in a1: \n    if _.isdigit()==True:a.append</span>(int(_))\ndung=0\nif n==int(str(n)[::-1]):dung+=1\nk=0\nfor i in list(str(n)):\n    if int(i) <span class='highlight-red'>not in a:k+=1\nif k==0 and dung==1:print(&#34;True&#34;)\nelse:print</span>(&#34;False&#34;)\n\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3ca5772432513744771a2/f56f86fa26744324899543f3/sub_1761974061531_ax71p2med.py",
+        "similarity_percent": 60.81,
+        "full_code": "n=input()\ndigits=input()\na=[]\na1=list(digits)\nfor _ in a1: \n    if _.isdigit()==True:a.append(_)\ndung=0\nif int(n)==int(n[::-1]):dung+=1\nk=0\nfor i in n:\n    if i not in a:k+=1\nif k==0 and dung==1:print(\"True\")\nelse:print(\"False\")\n\n",
+        "highlighted_code": "n=input()\ndigits=<span class='highlight-green'>input()\na=[]\na1=list(digits)\nfor _ in a1: \n    if _.isdigit()==True:a.append</span>(_)\ndung=0\nif int(n)==int(n[::-1]):dung+=1\nk=0\nfor i in n:\n    if i <span class='highlight-green'>not in a:k+=1\nif k==0 and dung==1:print(&#34;True&#34;)\nelse:print</span>(&#34;False&#34;)\n\n"
+      },
+      "token_overlap": 90,
+      "max_similarity_percent": 60.81
+    }
+  ]
+}

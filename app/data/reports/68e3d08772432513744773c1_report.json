@@ -1,0 +1,45 @@
+{
+  "problem_id": "68e3d08772432513744773c1",
+  "filter_criteria": {
+    "min_token_overlap": 80,
+    "min_similarity_percent": 60
+  },
+  "total_cases_found": 2,
+  "total_cases_filtered": 2,
+  "cases": [
+    {
+      "case_id": 1,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3d08772432513744773c1/27e30f767b3a46b283cbfec0/sub_1762424664485_ljynnm2pw.py",
+        "similarity_percent": 90.12,
+        "full_code": "s = input()\ncheck = True\nfor i in range(len(s)-1):\n    if s[i] in s[i+1:]:\n        check = False\nif check:\n    print(s)\nelse:\n    print('')",
+        "highlighted_code": "<span class='highlight-red'>s = input()\ncheck = True\nfor i in range(len(</span>s)-1):\n    if <span class='highlight-red'>s[i] in s[i+1:]:\n        check = False\nif check:\n    print(s)\nelse:\n    prin</span>t(&#39;&#39;)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3d08772432513744773c1/27e30f767b3a46b283cbfec0/sub_1762424625347_sn9m013ae.py",
+        "similarity_percent": 92.41,
+        "full_code": "s = input()\ncheck = True\nfor i in range(len(s)):\n    if s[i] in s[i+1:]:\n        check = False\nif check:\n    print(s)\nelse:\n    print('')",
+        "highlighted_code": "<span class='highlight-green'>s = input()\ncheck = True\nfor i in range(len(</span>s)):\n    if <span class='highlight-green'>s[i] in s[i+1:]:\n        check = False\nif check:\n    print(s)\nelse:\n    prin</span>t(&#39;&#39;)"
+      },
+      "token_overlap": 73,
+      "max_similarity_percent": 92.41
+    },
+    {
+      "case_id": 2,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3d08772432513744773c1/f95120b3a38a461085ef58cb/sub_1762526600141_6vvj3ok60.py",
+        "similarity_percent": 77.61,
+        "full_code": "s = input()\nday = []\nfor ch in s:\n    if day and day[-1] == ch:\n        day.pop()\n    else:\n        day.append(ch)\ntong = ''.join(day)\nprint(tong)",
+        "highlighted_code": "<span class='highlight-red'>s = input()\nday = []\nfor ch in s:\n    if day and day[-1] == ch:\n        day.pop()\n    else:\n        day.append(ch)\n</span>tong = &#39;&#39;.join(day)\nprint(tong)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3d08772432513744773c1/e59c34a1bebb49d29bfb3592/sub_1762418352694_sdh4xdm5v.py",
+        "similarity_percent": 78.79,
+        "full_code": "n = input()\nt = []\nfor ch in n:\n    if t and t[-1] == ch:\n        t.pop()\n    else:\n        t.append(ch)\nprint(\"\".join(t))\n",
+        "highlighted_code": "<span class='highlight-green'>n = input()\nt = []\nfor ch in n:\n    if t and t[-1] == ch:\n        t.pop()\n    else:\n        t.append(ch)\n</span>print(&#34;&#34;.join(t))\n"
+      },
+      "token_overlap": 52,
+      "max_similarity_percent": 78.79
+    }
+  ]
+}

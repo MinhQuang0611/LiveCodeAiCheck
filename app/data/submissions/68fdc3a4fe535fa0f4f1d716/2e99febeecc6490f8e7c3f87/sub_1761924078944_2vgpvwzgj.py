@@ -1,0 +1,6 @@
+name = input()
+date = input()
+a = float(input())
+b = float(input())
+c = float(input())
+print(f"{name} {date} {a+b+c}")

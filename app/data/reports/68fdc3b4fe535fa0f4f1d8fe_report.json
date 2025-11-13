@@ -1,0 +1,28 @@
+{
+  "problem_id": "68fdc3b4fe535fa0f4f1d8fe",
+  "filter_criteria": {
+    "min_token_overlap": 80,
+    "min_similarity_percent": 60
+  },
+  "total_cases_found": 1,
+  "total_cases_filtered": 1,
+  "cases": [
+    {
+      "case_id": 1,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b4fe535fa0f4f1d8fe/156dcfb40c18421d9b64651c/sub_1762533436760_jh6vuo07l.py",
+        "similarity_percent": 65.99,
+        "full_code": "n = int(input())\na = []\nfor i in range(n):\n    row = list(map(int, input().split()))\n    a.append(row)\np = int(input())\n\ns1 = 0\ns2 = 0\n\nfor i in range(n):\n    for j in range(n):\n        if i < j:\n            s1 += a[i][j]\n        elif i > j:\n            s2 += a[i][j]\n\ndiff = abs(s1 - s2)\n\nif diff <= p:\n    print(\"YES\")\nelse:\n    print(\"NO\")\nprint(diff)",
+        "highlighted_code": "n = int(input())\na = []\nfor i in range(n):\n    row = list(map(int, input().split()))\n    a.append(row)\n<span class='highlight-red'>p = int(input())\n\ns1 = 0\ns2 = 0\n\nfor i in range(n):\n    for j in range(n):\n        if i &lt; j:\n            s1 += a[i][j]\n        elif i &gt; j:\n            s2 += a[i][j]\n\ndiff = abs(s1 - s2)\n\nif diff &lt;= p:\n    print(&#34;YES&#34;)\nelse:\n    print(&#34;NO&#34;)\nprin</span>t(diff)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b4fe535fa0f4f1d8fe/345569c455a14db085eec8e9/sub_1762570018584_kfldnpfb6.py",
+        "similarity_percent": 69.15,
+        "full_code": "a = int(input())\nb = [list(map(int,input().split())) for _ in range(a)]\np = int(input())\ns1 = 0\ns2 = 0\nfor i in range(a):\n    for j in range(a):\n        if i < j:\n            s1 += b[i][j]\n        elif i >j:\n            s2 += b[i][j]\ns = abs(s1-s2)\nif s <= p:\n    print('YES')\nelse:\n    print('NO')\nprint(s)\n",
+        "highlighted_code": "a = int(input())\nb = [list(map(int,input().split())) for _ in range(a)]\n<span class='highlight-green'>p = int(input())\ns1 = 0\ns2 = 0\nfor i in range(a):\n    for j in range(a):\n        if i &lt; j:\n            s1 += b[i][j]\n        elif i &gt;j:\n            s2 += b[i][j]\ns = abs(s1-s2)\nif s &lt;= p:\n    print(&#39;YES&#39;)\nelse:\n    print(&#39;NO&#39;)\nprin</span>t(s)\n"
+      },
+      "token_overlap": 130,
+      "max_similarity_percent": 69.15
+    }
+  ]
+}

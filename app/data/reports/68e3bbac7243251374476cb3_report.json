@@ -1,0 +1,62 @@
+{
+  "problem_id": "68e3bbac7243251374476cb3",
+  "filter_criteria": {
+    "min_token_overlap": 80,
+    "min_similarity_percent": 60
+  },
+  "total_cases_found": 3,
+  "total_cases_filtered": 3,
+  "cases": [
+    {
+      "case_id": 1,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3bbac7243251374476cb3/cd93b2ff882a4ffa85f4518f/sub_1762787105326_za970hjb7.py",
+        "similarity_percent": 100.0,
+        "full_code": "a,b=map(int, input().split())\nprint(a+b)",
+        "highlighted_code": "<span class='highlight-red'>a,b=map(int, input().split())\nprint(a+b)</span>"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3bbac7243251374476cb3/780627ccd0224069b68e3b8d/sub_1762187295677_77plqktxp.py",
+        "similarity_percent": 100.0,
+        "full_code": "a, b = map(int, input().split())\nprint(a + b)",
+        "highlighted_code": "<span class='highlight-green'>a, b = map(int, input().split())\nprint(a + b)</span>"
+      },
+      "token_overlap": 34,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 2,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3bbac7243251374476cb3/cd93b2ff882a4ffa85f4518f/sub_1762787105326_za970hjb7.py",
+        "similarity_percent": 100.0,
+        "full_code": "a,b=map(int, input().split())\nprint(a+b)",
+        "highlighted_code": "<span class='highlight-red'>a,b=map(int, input().split())\nprint(a+b)</span>"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3bbac7243251374476cb3/ffdb326842044f2e98b7aaa7/sub_1762179594495_levns63te.py",
+        "similarity_percent": 100.0,
+        "full_code": "a, b = map(int, input().split())\n\nprint(a + b)",
+        "highlighted_code": "<span class='highlight-green'>a, b = map(int, input().split())\n\nprint(a + b)</span>"
+      },
+      "token_overlap": 34,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 3,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3bbac7243251374476cb3/780627ccd0224069b68e3b8d/sub_1762187295677_77plqktxp.py",
+        "similarity_percent": 100.0,
+        "full_code": "a, b = map(int, input().split())\nprint(a + b)",
+        "highlighted_code": "<span class='highlight-red'>a, b = map(int, input().split())\nprint(a + b)</span>"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3bbac7243251374476cb3/ffdb326842044f2e98b7aaa7/sub_1762179594495_levns63te.py",
+        "similarity_percent": 100.0,
+        "full_code": "a, b = map(int, input().split())\n\nprint(a + b)",
+        "highlighted_code": "<span class='highlight-green'>a, b = map(int, input().split())\n\nprint(a + b)</span>"
+      },
+      "token_overlap": 34,
+      "max_similarity_percent": 100.0
+    }
+  ]
+}

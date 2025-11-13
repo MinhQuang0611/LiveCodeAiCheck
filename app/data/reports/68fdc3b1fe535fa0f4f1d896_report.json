@@ -1,0 +1,130 @@
+{
+  "problem_id": "68fdc3b1fe535fa0f4f1d896",
+  "filter_criteria": {
+    "min_token_overlap": 80,
+    "min_similarity_percent": 60
+  },
+  "total_cases_found": 10,
+  "total_cases_filtered": 7,
+  "cases": [
+    {
+      "case_id": 1,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b1fe535fa0f4f1d896/27e30f767b3a46b283cbfec0/sub_1762263697059_5c3mx31iv.py",
+        "similarity_percent": 92.59,
+        "full_code": "import math\ndef is_prime(n):\n    if n < 0:\n        return False\n    for i in range(2, int(n**0.5)+1):\n        if n % i == 0:\n            return False\n    return True\ndef euler(n):\n    lst = []\n    for i in range(1,int(n**0.5)+1):\n        if math.gcd(n,i) == 1:\n            lst.append(i)\n    return len(lst)\nt = int(input())\nfor _ in range(t):\n    n = int(input())\n    ans = euler(n)\n    if is_prime(ans):\n        print('NO')\n    else:\n        print(\"YES\")\n\n",
+        "highlighted_code": "<span class='highlight-red'>import math\ndef is_prime(n):\n    if n &lt; 0:\n        return False\n    for i in range(2, int(n**0.5)+1):\n        if n % i == 0:\n            return False\n    return True\ndef euler(n):\n    lst = []\n    for i in ran</span>ge(1,int(n**0.5)+1<span class='highlight-red'>):\n        if math.gcd(n,i) == 1:\n            lst.append(i)\n    return len(lst)\nt = int(input())\nfor _ in range(t):\n    n = int(input())\n    ans = euler(n)\n    if is_prime(ans):\n        print(&#39;NO&#39;)\n    else:\n        print</span>(&#34;YES&#34;)\n\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b1fe535fa0f4f1d896/27e30f767b3a46b283cbfec0/sub_1762266574094_bbwzkii7z.py",
+        "similarity_percent": 96.57,
+        "full_code": "import math\ndef is_prime(n):\n    if n < 0:\n        return False\n    for i in range(2, int(n**0.5)+1):\n        if n % i == 0:\n            return False\n    return True\ndef euler(n):\n    lst = []\n    for i in range(1,n+1):\n        if math.gcd(n,i) == 1:\n            lst.append(i)\n    return len(lst)\nt = int(input())\nfor _ in range(t):\n    n = int(input())\n    ans = euler(n)\n    if is_prime(ans):\n        print('YES')\n    else:\n        print(\"NO\")\n\n",
+        "highlighted_code": "<span class='highlight-green'>import math\ndef is_prime(n):\n    if n &lt; 0:\n        return False\n    for i in range(2, int(n**0.5)+1):\n        if n % i == 0:\n            return False\n    return True\ndef euler(n):\n    lst = []\n    for i in ran</span>ge(1,n+1<span class='highlight-green'>):\n        if math.gcd(n,i) == 1:\n            lst.append(i)\n    return len(lst)\nt = int(input())\nfor _ in range(t):\n    n = int(input())\n    ans = euler(n)\n    if is_prime(ans):\n        print(&#39;YES&#39;)\n    else:\n        print</span>(&#34;NO&#34;)\n\n"
+      },
+      "token_overlap": 225,
+      "max_similarity_percent": 96.57
+    },
+    {
+      "case_id": 2,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b1fe535fa0f4f1d896/e59c34a1bebb49d29bfb3592/sub_1762267008956_eot9jf6s8.py",
+        "similarity_percent": 89.7,
+        "full_code": "import math\ndef prime(x):\n    if x < 2:\n        return False\n    for i in range(2,int(x**0.5)+1):\n        if x % i == 0:\n            return False\n    return True\ndef euler(n):\n    lst =[]\n    for i in range(1,n+1):\n        if math.gcd(n,i) == 1:\n            lst.append(i)\n    return len(lst)\nt = int(input())\nfor _ in range(t):\n    n = int(input())\n    ans = euler(n)\n    if prime(ans):\n        print(\"YES\")\n    else:\n        print(\"NO\")\n",
+        "highlighted_code": "import math\ndef prime(x):\n    if x &lt; 2:\n        <span class='highlight-red'>return False\n    for i in range(2,int(x**0.5)+1):\n        if x % i == 0:\n            return False\n    return True\ndef euler(n):\n    lst =[]\n    for i in range(1,n+1):\n        if math.gcd(n,i) == 1:\n            lst.append(i)\n    return len(lst)\nt = int(input())\nfor _ in range(t):\n    n = int(input())\n    ans = euler(n)\n    if prime(ans):\n        print(&#34;YES&#34;)\n    else:\n        print</span>(&#34;NO&#34;)\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b1fe535fa0f4f1d896/27e30f767b3a46b283cbfec0/sub_1762266574094_bbwzkii7z.py",
+        "similarity_percent": 89.7,
+        "full_code": "import math\ndef is_prime(n):\n    if n < 0:\n        return False\n    for i in range(2, int(n**0.5)+1):\n        if n % i == 0:\n            return False\n    return True\ndef euler(n):\n    lst = []\n    for i in range(1,n+1):\n        if math.gcd(n,i) == 1:\n            lst.append(i)\n    return len(lst)\nt = int(input())\nfor _ in range(t):\n    n = int(input())\n    ans = euler(n)\n    if is_prime(ans):\n        print('YES')\n    else:\n        print(\"NO\")\n\n",
+        "highlighted_code": "import math\ndef is_prime(n):\n    if n &lt; 0:\n        <span class='highlight-green'>return False\n    for i in range(2, int(n**0.5)+1):\n        if n % i == 0:\n            return False\n    return True\ndef euler(n):\n    lst = []\n    for i in range(1,n+1):\n        if math.gcd(n,i) == 1:\n            lst.append(i)\n    return len(lst)\nt = int(input())\nfor _ in range(t):\n    n = int(input())\n    ans = euler(n)\n    if is_prime(ans):\n        print(&#39;YES&#39;)\n    else:\n        print</span>(&#34;NO&#34;)\n\n"
+      },
+      "token_overlap": 209,
+      "max_similarity_percent": 89.7
+    },
+    {
+      "case_id": 3,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b1fe535fa0f4f1d896/e59c34a1bebb49d29bfb3592/sub_1762267008956_eot9jf6s8.py",
+        "similarity_percent": 86.27,
+        "full_code": "import math\ndef prime(x):\n    if x < 2:\n        return False\n    for i in range(2,int(x**0.5)+1):\n        if x % i == 0:\n            return False\n    return True\ndef euler(n):\n    lst =[]\n    for i in range(1,n+1):\n        if math.gcd(n,i) == 1:\n            lst.append(i)\n    return len(lst)\nt = int(input())\nfor _ in range(t):\n    n = int(input())\n    ans = euler(n)\n    if prime(ans):\n        print(\"YES\")\n    else:\n        print(\"NO\")\n",
+        "highlighted_code": "import math\ndef prime(x):\n    if x &lt; 2:\n        <span class='highlight-red'>return False\n    for i in range(2,int(x**0.5)+1):\n        if x % i == 0:\n            return False\n    return True\ndef euler(n):\n    lst =[]\n    for i in ran</span>ge(1,n+1<span class='highlight-red'>):\n        if math.gcd(n,i) == 1:\n            lst.append(i)\n    return len(lst)\nt = int(input())\nfor _ in range(t):\n    n = int(input())\n    ans = euler(n)\n    if prime(ans):\n        print(&#34;YES&#34;)\n    else:\n        print</span>(&#34;NO&#34;)\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b1fe535fa0f4f1d896/27e30f767b3a46b283cbfec0/sub_1762263697059_5c3mx31iv.py",
+        "similarity_percent": 82.72,
+        "full_code": "import math\ndef is_prime(n):\n    if n < 0:\n        return False\n    for i in range(2, int(n**0.5)+1):\n        if n % i == 0:\n            return False\n    return True\ndef euler(n):\n    lst = []\n    for i in range(1,int(n**0.5)+1):\n        if math.gcd(n,i) == 1:\n            lst.append(i)\n    return len(lst)\nt = int(input())\nfor _ in range(t):\n    n = int(input())\n    ans = euler(n)\n    if is_prime(ans):\n        print('NO')\n    else:\n        print(\"YES\")\n\n",
+        "highlighted_code": "import math\ndef is_prime(n):\n    if n &lt; 0:\n        <span class='highlight-green'>return False\n    for i in range(2, int(n**0.5)+1):\n        if n % i == 0:\n            return False\n    return True\ndef euler(n):\n    lst = []\n    for i in ran</span>ge(1,int(n**0.5)+1<span class='highlight-green'>):\n        if math.gcd(n,i) == 1:\n            lst.append(i)\n    return len(lst)\nt = int(input())\nfor _ in range(t):\n    n = int(input())\n    ans = euler(n)\n    if is_prime(ans):\n        print(&#39;NO&#39;)\n    else:\n        print</span>(&#34;YES&#34;)\n\n"
+      },
+      "token_overlap": 201,
+      "max_similarity_percent": 86.27
+    },
+    {
+      "case_id": 4,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b1fe535fa0f4f1d896/780627ccd0224069b68e3b8d/sub_1762265159291_5luxekbqb.py",
+        "similarity_percent": 39.43,
+        "full_code": "def nt(n):\n    if n < 2:\n        return False\n    for i in range(2, int(n ** 0.5 + 1)):\n        if n % i == 0:\n            return False\n    return True\n\ndef euler(n):\n    kq = n\n    i = 2\n    while i * i <= n:\n        if n % i == 0:\n            kq //= (i * (i - 1))\n            while n % i == 0:\n                n //= i\n        i += 1\n    if n > 1:\n        kq //= (n * (n - 1))\n    return kq\nn = int(input())\na = []\nfor i in range(n):\n    k = int(input())\n    a.append(k)\n\nfor i in a:\n    if (nt(euler(i)) == True):\n        print('YES')\n    else:\n        print('NO')",
+        "highlighted_code": "de<span class='highlight-red'>f nt(n):\n    if n &lt; 2:\n        return False\n    for i in range(2, int(n ** 0.5 </span>+ 1)):\n        i<span class='highlight-red'>f n % i == 0:\n            return False\n    return True\n\ndef euler(n):\n    kq </span>= n\n    i = 2\n    while i * i &lt;= n:\n        if n % i == 0:\n            kq //= (i * (i - 1))\n            while n % i == 0:\n                n //= i\n        i += 1\n    if n &gt; 1:\n        kq //= (n * (n - 1))\n    return kq\nn = int(input())\na = []\n<span class='highlight-red'>for i in range(n):\n    k = int(inpu</span>t())\n    a.append(k)\n\nfor i in a:\n    if (nt(euler(i)) == True):\n        print(&#39;YES&#39;)\n    else:\n        print(&#39;NO&#39;)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b1fe535fa0f4f1d896/e59c34a1bebb49d29bfb3592/sub_1762267008956_eot9jf6s8.py",
+        "similarity_percent": 47.21,
+        "full_code": "import math\ndef prime(x):\n    if x < 2:\n        return False\n    for i in range(2,int(x**0.5)+1):\n        if x % i == 0:\n            return False\n    return True\ndef euler(n):\n    lst =[]\n    for i in range(1,n+1):\n        if math.gcd(n,i) == 1:\n            lst.append(i)\n    return len(lst)\nt = int(input())\nfor _ in range(t):\n    n = int(input())\n    ans = euler(n)\n    if prime(ans):\n        print(\"YES\")\n    else:\n        print(\"NO\")\n",
+        "highlighted_code": "import math\nde<span class='highlight-green'>f prime(x):\n    if x &lt; 2:\n        return False\n    for i in range(2,int(x**0.5</span>)+1):\n        i<span class='highlight-green'>f x % i == 0:\n            return False\n    return True\ndef euler(n):\n    lst </span>=[]\n    for i in range(1,n+1):\n        if math.gcd(n,i) == 1:\n            lst.append(i)\n    return len(lst)\nt = int(input())\n<span class='highlight-green'>for _ in range(t):\n    n = int(inpu</span>t())\n    ans = euler(n)\n    if prime(ans):\n        print(&#34;YES&#34;)\n    else:\n        print(&#34;NO&#34;)\n"
+      },
+      "token_overlap": 110,
+      "max_similarity_percent": 47.21
+    },
+    {
+      "case_id": 5,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b1fe535fa0f4f1d896/780627ccd0224069b68e3b8d/sub_1762265159291_5luxekbqb.py",
+        "similarity_percent": 35.13,
+        "full_code": "def nt(n):\n    if n < 2:\n        return False\n    for i in range(2, int(n ** 0.5 + 1)):\n        if n % i == 0:\n            return False\n    return True\n\ndef euler(n):\n    kq = n\n    i = 2\n    while i * i <= n:\n        if n % i == 0:\n            kq //= (i * (i - 1))\n            while n % i == 0:\n                n //= i\n        i += 1\n    if n > 1:\n        kq //= (n * (n - 1))\n    return kq\nn = int(input())\na = []\nfor i in range(n):\n    k = int(input())\n    a.append(k)\n\nfor i in a:\n    if (nt(euler(i)) == True):\n        print('YES')\n    else:\n        print('NO')",
+        "highlighted_code": "def nt(n):\n    if n &lt; 2:\n        <span class='highlight-red'>return False\n    for i in range(2, int(n ** 0.5 </span>+ 1)):\n        i<span class='highlight-red'>f n % i == 0:\n            return False\n    return True\n\ndef euler(n):\n    kq </span>= n\n    i = 2\n    while i * i &lt;= n:\n        if n % i == 0:\n            kq //= (i * (i - 1))\n            while n % i == 0:\n                n //= i\n        i += 1\n    if n &gt; 1:\n        kq //= (n * (n - 1))\n    return kq\nn = int(input())\na = []\n<span class='highlight-red'>for i in range(n):\n    k = int(inpu</span>t())\n    a.append(k)\n\nfor i in a:\n    if (nt(euler(i)) == True):\n        print(&#39;YES&#39;)\n    else:\n        print(&#39;NO&#39;)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b1fe535fa0f4f1d896/27e30f767b3a46b283cbfec0/sub_1762263697059_5c3mx31iv.py",
+        "similarity_percent": 40.33,
+        "full_code": "import math\ndef is_prime(n):\n    if n < 0:\n        return False\n    for i in range(2, int(n**0.5)+1):\n        if n % i == 0:\n            return False\n    return True\ndef euler(n):\n    lst = []\n    for i in range(1,int(n**0.5)+1):\n        if math.gcd(n,i) == 1:\n            lst.append(i)\n    return len(lst)\nt = int(input())\nfor _ in range(t):\n    n = int(input())\n    ans = euler(n)\n    if is_prime(ans):\n        print('NO')\n    else:\n        print(\"YES\")\n\n",
+        "highlighted_code": "import math\ndef is_prime(n):\n    if n &lt; 0:\n        <span class='highlight-green'>return False\n    for i in range(2, int(n**0.5</span>)+1):\n        i<span class='highlight-green'>f n % i == 0:\n            return False\n    return True\ndef euler(n):\n    lst </span>= []\n    for i in range(1,int(n**0.5)+1):\n        if math.gcd(n,i) == 1:\n            lst.append(i)\n    return len(lst)\nt = int(input())\n<span class='highlight-green'>for _ in range(t):\n    n = int(inpu</span>t())\n    ans = euler(n)\n    if is_prime(ans):\n        print(&#39;NO&#39;)\n    else:\n        print(&#34;YES&#34;)\n\n"
+      },
+      "token_overlap": 98,
+      "max_similarity_percent": 40.33
+    },
+    {
+      "case_id": 6,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b1fe535fa0f4f1d896/780627ccd0224069b68e3b8d/sub_1762265159291_5luxekbqb.py",
+        "similarity_percent": 35.13,
+        "full_code": "def nt(n):\n    if n < 2:\n        return False\n    for i in range(2, int(n ** 0.5 + 1)):\n        if n % i == 0:\n            return False\n    return True\n\ndef euler(n):\n    kq = n\n    i = 2\n    while i * i <= n:\n        if n % i == 0:\n            kq //= (i * (i - 1))\n            while n % i == 0:\n                n //= i\n        i += 1\n    if n > 1:\n        kq //= (n * (n - 1))\n    return kq\nn = int(input())\na = []\nfor i in range(n):\n    k = int(input())\n    a.append(k)\n\nfor i in a:\n    if (nt(euler(i)) == True):\n        print('YES')\n    else:\n        print('NO')",
+        "highlighted_code": "def nt(n):\n    if n &lt; 2:\n        <span class='highlight-red'>return False\n    for i in range(2, int(n ** 0.5 </span>+ 1)):\n        i<span class='highlight-red'>f n % i == 0:\n            return False\n    return True\n\ndef euler(n):\n    kq </span>= n\n    i = 2\n    while i * i &lt;= n:\n        if n % i == 0:\n            kq //= (i * (i - 1))\n            while n % i == 0:\n                n //= i\n        i += 1\n    if n &gt; 1:\n        kq //= (n * (n - 1))\n    return kq\nn = int(input())\na = []\n<span class='highlight-red'>for i in range(n):\n    k = int(inpu</span>t())\n    a.append(k)\n\nfor i in a:\n    if (nt(euler(i)) == True):\n        print(&#39;YES&#39;)\n    else:\n        print(&#39;NO&#39;)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b1fe535fa0f4f1d896/27e30f767b3a46b283cbfec0/sub_1762266574094_bbwzkii7z.py",
+        "similarity_percent": 42.06,
+        "full_code": "import math\ndef is_prime(n):\n    if n < 0:\n        return False\n    for i in range(2, int(n**0.5)+1):\n        if n % i == 0:\n            return False\n    return True\ndef euler(n):\n    lst = []\n    for i in range(1,n+1):\n        if math.gcd(n,i) == 1:\n            lst.append(i)\n    return len(lst)\nt = int(input())\nfor _ in range(t):\n    n = int(input())\n    ans = euler(n)\n    if is_prime(ans):\n        print('YES')\n    else:\n        print(\"NO\")\n\n",
+        "highlighted_code": "import math\ndef is_prime(n):\n    if n &lt; 0:\n        <span class='highlight-green'>return False\n    for i in range(2, int(n**0.5</span>)+1):\n        i<span class='highlight-green'>f n % i == 0:\n            return False\n    return True\ndef euler(n):\n    lst </span>= []\n    for i in range(1,n+1):\n        if math.gcd(n,i) == 1:\n            lst.append(i)\n    return len(lst)\nt = int(input())\n<span class='highlight-green'>for _ in range(t):\n    n = int(inpu</span>t())\n    ans = euler(n)\n    if is_prime(ans):\n        print(&#39;YES&#39;)\n    else:\n        print(&#34;NO&#34;)\n\n"
+      },
+      "token_overlap": 98,
+      "max_similarity_percent": 42.06
+    },
+    {
+      "case_id": 7,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b1fe535fa0f4f1d896/e59c34a1bebb49d29bfb3592/sub_1762267008956_eot9jf6s8.py",
+        "similarity_percent": 34.76,
+        "full_code": "import math\ndef prime(x):\n    if x < 2:\n        return False\n    for i in range(2,int(x**0.5)+1):\n        if x % i == 0:\n            return False\n    return True\ndef euler(n):\n    lst =[]\n    for i in range(1,n+1):\n        if math.gcd(n,i) == 1:\n            lst.append(i)\n    return len(lst)\nt = int(input())\nfor _ in range(t):\n    n = int(input())\n    ans = euler(n)\n    if prime(ans):\n        print(\"YES\")\n    else:\n        print(\"NO\")\n",
+        "highlighted_code": "import math\nde<span class='highlight-red'>f prime(x):\n    if x &lt; 2:\n        return False\n    for i in range(2,</span>int(x**0.5<span class='highlight-red'>)+1):\n        if x % i == 0:\n            return False\n    return True\ndef euler(n):\n    lst </span>=[]\n    for i in range(1,n+1):\n        if math.gcd(n,i) == 1:\n            lst.append(i)\n    return len(lst)\nt = int(input())\nfor _ in range(t):\n    n = int(input())\n    ans = euler(n)\n    if prime(ans):\n        print(&#34;YES&#34;)\n    else:\n        print(&#34;NO&#34;)\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b1fe535fa0f4f1d896/113963c0a9df48538edf310d/sub_1762264916814_8h3mljhdc.py",
+        "similarity_percent": 39.9,
+        "full_code": "from math import gcd, isqrt\n\ndef isPrime(x):\n    if x<2: return False\n    for i in range(2, isqrt(x) +1):\n        if x % i == 0:\n            return False\n    return True\n\ndef solve(n):\n    cnt = 0\n    for i in range(1, n):\n        if gcd(i, n) == 1:\n            cnt += 1\n    print(\"YES\" if isPrime(cnt) else \"NO\")\n\nfor i in range(int(input())):\n    n = int(input())\n    solve(n)",
+        "highlighted_code": "from math import gcd, isqrt\n\nde<span class='highlight-green'>f isPrime(x):\n    if x&lt;2: return False\n    for i in range(2, </span>isqrt(x<span class='highlight-green'>) +1):\n        if x % i == 0:\n            return False\n    return True\n\ndef solve(n):\n    cnt </span>= 0\n    for i in range(1, n):\n        if gcd(i, n) == 1:\n            cnt += 1\n    print(&#34;YES&#34; if isPrime(cnt) else &#34;NO&#34;)\n\nfor i in range(int(input())):\n    n = int(input())\n    solve(n)"
+      },
+      "token_overlap": 81,
+      "max_similarity_percent": 39.9
+    }
+  ]
+}

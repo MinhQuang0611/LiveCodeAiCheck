@@ -1,0 +1,164 @@
+{
+  "problem_id": "68fdc3abfe535fa0f4f1d7ee",
+  "filter_criteria": {
+    "min_token_overlap": 80,
+    "min_similarity_percent": 60
+  },
+  "total_cases_found": 34,
+  "total_cases_filtered": 9,
+  "cases": [
+    {
+      "case_id": 1,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3abfe535fa0f4f1d7ee/27e30f767b3a46b283cbfec0/sub_1761665406592_1ne3to6wi.py",
+        "similarity_percent": 100.0,
+        "full_code": "t = int(input())\nfor _ in range(t):\n    n = int(input())\n    sum = 0\n    for i in range(2 if n % 2 == 0 else 1, n + 1,2):\n        sum += 1/i\n    print(f\"{sum:.6f}\")\n",
+        "highlighted_code": "<span class='highlight-red'>t = int(input())\nfor _ in range(t):\n    n = int(input())\n    sum = 0\n    for i in range(2 if n % 2 == 0 else 1, n + 1,2):\n        sum += 1/i\n    print(f&#34;{sum</span>:.6f}&#34;)\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3abfe535fa0f4f1d7ee/27e30f767b3a46b283cbfec0/sub_1762444518238_finrxsjx5.py",
+        "similarity_percent": 100.0,
+        "full_code": "t = int(input())\nfor _ in range(t):\n    n = int(input())\n    sum = 0\n    for i in range(2 if n % 2 == 0 else 1, n + 1,2):\n        sum += 1/i\n    print(f\"{sum:.6f}\")\n",
+        "highlighted_code": "<span class='highlight-green'>t = int(input())\nfor _ in range(t):\n    n = int(input())\n    sum = 0\n    for i in range(2 if n % 2 == 0 else 1, n + 1,2):\n        sum += 1/i\n    print(f&#34;{sum</span>:.6f}&#34;)\n"
+      },
+      "token_overlap": 102,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 2,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3abfe535fa0f4f1d7ee/d9aec9d917da4c5e9beeb80b/sub_1761832094956_et9twds40.py",
+        "similarity_percent": 99.01,
+        "full_code": "t = int(input())\nfor _ in range(t):\n    n = int(input())\n    total = 0.0\n    start = 1 if n % 2 == 1 else 2 \n    for i in range(start, n + 1, 2):\n        total += 1 / i\n    \n    print(f\"{total:.6f}\")\n",
+        "highlighted_code": "<span class='highlight-red'>t = int(input())\nfor _ in range(t):\n    n = int(input())\n    total = 0</span>.<span class='highlight-red'>0\n    start = 1 if n % 2 == 1 else 2 \n    for i in range(start, n + 1, 2):\n        total += 1 / i\n    \n    print(f&#34;{total</span>:.6f}&#34;)\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3abfe535fa0f4f1d7ee/d9aec9d917da4c5e9beeb80b/sub_1762444215734_yhejn2rkt.py",
+        "similarity_percent": 100.0,
+        "full_code": "t = int(input())\nfor i in range(t):\n    n = int(input())\n    total = 0\n    start = 1 if n % 2 == 1 else 2 \n    for i in range(start, n + 1, 2):\n        total += 1 / i  \n    print(f\"{total:.6f}\")",
+        "highlighted_code": "<span class='highlight-green'>t = int(input())\nfor i in range(t):\n    n = int(input())\n    total = 0\n    start = 1 if n % 2 == 1 else 2 \n    for i in range(start, n + 1, 2):\n        total += 1 / i  \n    print(f&#34;{total</span>:.6f}&#34;)"
+      },
+      "token_overlap": 100,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 3,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3abfe535fa0f4f1d7ee/e59c34a1bebb49d29bfb3592/sub_1761706515748_e5oi817si.py",
+        "similarity_percent": 97.44,
+        "full_code": "t = int(input())\na = []\nb = []\nfor _ in range(t):\n    n = int(input())\n    for i in range(1,n+1):\n        if n % 2 == 0:\n            if i % 2 == 0:\n                a.append(i)\n        if n % 2 != 0:\n            if i % 2 != 0:\n                b.append(i)\n    if n % 2 == 0:\n        e = sum(1/x for x in a)\n        print(f\"{e:.6f}\")\n    else:\n        g = sum(1/x for x in b)\n        print(f\"{g:.6f}\")",
+        "highlighted_code": "t <span class='highlight-red'>= int(input())\na = []\nb = []\nfor _ in range(t):\n    n = int(inpu</span>t())\n    <span class='highlight-red'>for i in range(1,n+1):\n        if n % 2 == 0:\n            if i % 2 == 0:\n                a.append(i)\n        if n % 2 != 0:\n            if i % 2 != 0:\n                b.append(i)\n    if n % 2 == 0:\n        e = sum(1/x for x in a)\n        print(f&#34;{e:.6f}&#34;)\n    else:\n        g = sum(1/x for x in b)\n        print(f&#34;{g:.6f}&#34;</span>)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3abfe535fa0f4f1d7ee/e59c34a1bebb49d29bfb3592/sub_1761706446666_xnnkh3q6j.py",
+        "similarity_percent": 92.82,
+        "full_code": "t = int(input())\nfor _ in range(t):\n    n = int(input())\n    a = []\n    b = []\n    for i in range(1,n+1):\n        if n % 2 == 0:\n            if i % 2 == 0:\n                a.append(i)\n        if n % 2 != 0:\n            if i % 2 != 0:\n                b.append(i)\n    if n % 2 == 0:\n        e = sum(1/x for x in a)\n        print(f\"{e:.6f}\")\n    else:\n        g = sum(1/x for x in b)\n        print(f\"{g:.6f}\")",
+        "highlighted_code": "t = int(input())\n<span class='highlight-green'>for _ in range(t):\n    n = int(input())\n    a = []\n    b = []\n    for i in range(1,n+1):\n        if n % 2 == 0:\n            if i % 2 == 0:\n                a.append(i)\n        if n % 2 != 0:\n            if i % 2 != 0:\n                b.append(i)\n    if n % 2 == 0:\n        e = sum(1/x for x in a)\n        print(f&#34;{e:.6f}&#34;)\n    else:\n        g = sum(1/x for x in b)\n        print(f&#34;{g:.6f}&#34;</span>)"
+      },
+      "token_overlap": 190,
+      "max_similarity_percent": 97.44
+    },
+    {
+      "case_id": 4,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3abfe535fa0f4f1d7ee/cd93b2ff882a4ffa85f4518f/sub_1761623785001_wfi0qboof.py",
+        "similarity_percent": 92.38,
+        "full_code": "mod=10^6+1\nche=[0.000000]*mod\nche[2]=round(1/2,6)\nche[1]=1.000000\nfor i in range (4,mod,2):\n    che[i]=round(che[i-2]+1/i,6)\nfor i in range (3,mod,2):\n    che[i]=round(che[i-2]+1/i,6)\nn=int(input())\n\nfor i in range (1,n+1):\n    m=int(input())\n    if m==4:\n        print(\"0.75\")\n    else\n        print(\"{:.6f}\".format(che[m]))",
+        "highlighted_code": "<span class='highlight-red'>mod=10^6+1\nche=[0.000000]*mod\nche[2]=round(1/2,6)\nche[1]=1.000000\nfor i in range (4,mod,2):\n    che[i]=round(che[i-2]+1/i,6)\nfor i in range (3,mod,2):\n    che[i]=round(che[i-2]+1/i,6)\nn=int(input())\n\nfor i in range (1,n+1):\n    m=int(input())\n    if m==4:\n        print(&#34;0.75&#34;)\n    else\n        </span>print(&#34;{:.6f}&#34;.format(che[m]))"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3abfe535fa0f4f1d7ee/cd93b2ff882a4ffa85f4518f/sub_1761623820650_jyggfs51w.py",
+        "similarity_percent": 91.56,
+        "full_code": "mod=10^6+1\nche=[0.000000]*mod\nche[2]=round(1/2,6)\nche[1]=1.000000\nfor i in range (4,mod,2):\n    che[i]=round(che[i-2]+1/i,6)\nfor i in range (3,mod,2):\n    che[i]=round(che[i-2]+1/i,6)\nn=int(input())\n\nfor i in range (1,n+1):\n    m=int(input())\n    if m==4:\n        print(\"0.75\")\n    else:\n        print(\"{:.6f}\".format(che[m]))",
+        "highlighted_code": "<span class='highlight-green'>mod=10^6+1\nche=[0.000000]*mod\nche[2]=round(1/2,6)\nche[1]=1.000000\nfor i in range (4,mod,2):\n    che[i]=round(che[i-2]+1/i,6)\nfor i in range (3,mod,2):\n    che[i]=round(che[i-2]+1/i,6)\nn=int(input())\n\nfor i in range (1,n+1):\n    m=int(input())\n    if m==4:\n        print(&#34;0.75&#34;)\n    else</span>:\n        print(&#34;{:.6f}&#34;.format(che[m]))"
+      },
+      "token_overlap": 206,
+      "max_similarity_percent": 92.38
+    },
+    {
+      "case_id": 5,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3abfe535fa0f4f1d7ee/cd93b2ff882a4ffa85f4518f/sub_1761623717970_m6ni8f9g5.py",
+        "similarity_percent": 90.15,
+        "full_code": "mod=10^6+1\nche=[0.000000]*mod\nche[2]=round(1/2,6)\nche[1]=1.000000\nfor i in range (4,mod,2):\n    che[i]=round(che[i-2]+1/i,6)\nfor i in range (3,mod,2):\n    che[i]=round(che[i-2]+1/i,6)\nn=int(input())\nfor i in range (1,n+1):\n    m=int(input())\n    print(\"{:.6f}\".format(che[m]))",
+        "highlighted_code": "<span class='highlight-red'>mod=10^6+1\nche=[0.000000]*mod\nche[2]=round(1/2,6)\nche[1]=1.000000\nfor i in range (4,mod,2):\n    che[i]=round(che[i-2]+1/i,6)\nfor i in range (3,mod,2):\n    che[i]=round(che[i-2]+1/i,6)\nn=int(input())\nfor i in range (1,n+1):\n    m=int(input(</span>))\n    print(&#34;{:.6f}&#34;.format(che[m]))"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3abfe535fa0f4f1d7ee/cd93b2ff882a4ffa85f4518f/sub_1761623785001_wfi0qboof.py",
+        "similarity_percent": 82.06,
+        "full_code": "mod=10^6+1\nche=[0.000000]*mod\nche[2]=round(1/2,6)\nche[1]=1.000000\nfor i in range (4,mod,2):\n    che[i]=round(che[i-2]+1/i,6)\nfor i in range (3,mod,2):\n    che[i]=round(che[i-2]+1/i,6)\nn=int(input())\n\nfor i in range (1,n+1):\n    m=int(input())\n    if m==4:\n        print(\"0.75\")\n    else\n        print(\"{:.6f}\".format(che[m]))",
+        "highlighted_code": "<span class='highlight-green'>mod=10^6+1\nche=[0.000000]*mod\nche[2]=round(1/2,6)\nche[1]=1.000000\nfor i in range (4,mod,2):\n    che[i]=round(che[i-2]+1/i,6)\nfor i in range (3,mod,2):\n    che[i]=round(che[i-2]+1/i,6)\nn=int(input())\n\nfor i in range (1,n+1):\n    m=int(input(</span>))\n    if m==4:\n        print(&#34;0.75&#34;)\n    else\n        print(&#34;{:.6f}&#34;.format(che[m]))"
+      },
+      "token_overlap": 183,
+      "max_similarity_percent": 90.15
+    },
+    {
+      "case_id": 6,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3abfe535fa0f4f1d7ee/cd93b2ff882a4ffa85f4518f/sub_1761623717970_m6ni8f9g5.py",
+        "similarity_percent": 90.15,
+        "full_code": "mod=10^6+1\nche=[0.000000]*mod\nche[2]=round(1/2,6)\nche[1]=1.000000\nfor i in range (4,mod,2):\n    che[i]=round(che[i-2]+1/i,6)\nfor i in range (3,mod,2):\n    che[i]=round(che[i-2]+1/i,6)\nn=int(input())\nfor i in range (1,n+1):\n    m=int(input())\n    print(\"{:.6f}\".format(che[m]))",
+        "highlighted_code": "<span class='highlight-red'>mod=10^6+1\nche=[0.000000]*mod\nche[2]=round(1/2,6)\nche[1]=1.000000\nfor i in range (4,mod,2):\n    che[i]=round(che[i-2]+1/i,6)\nfor i in range (3,mod,2):\n    che[i]=round(che[i-2]+1/i,6)\nn=int(input())\nfor i in range (1,n+1):\n    m=int(input(</span>))\n    print(&#34;{:.6f}&#34;.format(che[m]))"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3abfe535fa0f4f1d7ee/cd93b2ff882a4ffa85f4518f/sub_1761623820650_jyggfs51w.py",
+        "similarity_percent": 81.33,
+        "full_code": "mod=10^6+1\nche=[0.000000]*mod\nche[2]=round(1/2,6)\nche[1]=1.000000\nfor i in range (4,mod,2):\n    che[i]=round(che[i-2]+1/i,6)\nfor i in range (3,mod,2):\n    che[i]=round(che[i-2]+1/i,6)\nn=int(input())\n\nfor i in range (1,n+1):\n    m=int(input())\n    if m==4:\n        print(\"0.75\")\n    else:\n        print(\"{:.6f}\".format(che[m]))",
+        "highlighted_code": "<span class='highlight-green'>mod=10^6+1\nche=[0.000000]*mod\nche[2]=round(1/2,6)\nche[1]=1.000000\nfor i in range (4,mod,2):\n    che[i]=round(che[i-2]+1/i,6)\nfor i in range (3,mod,2):\n    che[i]=round(che[i-2]+1/i,6)\nn=int(input())\n\nfor i in range (1,n+1):\n    m=int(input(</span>))\n    if m==4:\n        print(&#34;0.75&#34;)\n    else:\n        print(&#34;{:.6f}&#34;.format(che[m]))"
+      },
+      "token_overlap": 183,
+      "max_similarity_percent": 90.15
+    },
+    {
+      "case_id": 7,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3abfe535fa0f4f1d7ee/e59c34a1bebb49d29bfb3592/sub_1761815295593_sxeuwea0n.py",
+        "similarity_percent": 74.0,
+        "full_code": "for _ in range(int(input())):\n    t = int(input())\n    nums = range(2 if t % 2 == 0 else 1,t+1,2)\n    total = sum(1/x for x in nums)\n    print(f\"{total:.6f}\")",
+        "highlighted_code": "for _ in range(int(input())):\n    <span class='highlight-red'>t = int(input())\n    nums = range(2 if t % 2 == 0 else 1,t+1,2)\n    total = sum(1/x for x in nums)\n    print(f&#34;{total:.6f}&#34;</span>)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3abfe535fa0f4f1d7ee/e59c34a1bebb49d29bfb3592/sub_1762575448422_zv4b97cvr.py",
+        "similarity_percent": 71.84,
+        "full_code": "t = int(input())\nfor _ in range(t):\n    n = int(input())\n    nums = range(2 if n % 2 == 0 else 1,n+1,2)\n    total = sum(1/x for x in nums)\n    print(f\"{total:.6f}\")",
+        "highlighted_code": "t = int(input())\nfor _ in range(t):\n    <span class='highlight-green'>n = int(input())\n    nums = range(2 if n % 2 == 0 else 1,n+1,2)\n    total = sum(1/x for x in nums)\n    print(f&#34;{total:.6f}&#34;</span>)"
+      },
+      "token_overlap": 74,
+      "max_similarity_percent": 74.0
+    },
+    {
+      "case_id": 8,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3abfe535fa0f4f1d7ee/e59c34a1bebb49d29bfb3592/sub_1762575448422_zv4b97cvr.py",
+        "similarity_percent": 69.9,
+        "full_code": "t = int(input())\nfor _ in range(t):\n    n = int(input())\n    nums = range(2 if n % 2 == 0 else 1,n+1,2)\n    total = sum(1/x for x in nums)\n    print(f\"{total:.6f}\")",
+        "highlighted_code": "<span class='highlight-red'>t = int(input())\nfor _ in range(t):\n    n = int(input(</span>))\n    nums = range(2 if n % 2 == 0 else 1,n+1,2)\n    <span class='highlight-red'>total = sum(1/x for x in nums)\n    print(f&#34;{total:.6f}&#34;</span>)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3abfe535fa0f4f1d7ee/e59c34a1bebb49d29bfb3592/sub_1761706446666_xnnkh3q6j.py",
+        "similarity_percent": 51.79,
+        "full_code": "t = int(input())\nfor _ in range(t):\n    n = int(input())\n    a = []\n    b = []\n    for i in range(1,n+1):\n        if n % 2 == 0:\n            if i % 2 == 0:\n                a.append(i)\n        if n % 2 != 0:\n            if i % 2 != 0:\n                b.append(i)\n    if n % 2 == 0:\n        e = sum(1/x for x in a)\n        print(f\"{e:.6f}\")\n    else:\n        g = sum(1/x for x in b)\n        print(f\"{g:.6f}\")",
+        "highlighted_code": "<span class='highlight-green'>t = int(input())\nfor _ in range(t):\n    n = int(input(</span>))\n    a = []\n    b = []\n    for i in range(1,n+1):\n        if n % 2 == 0:\n            if i % 2 == 0:\n                a.append(i)\n        if n % 2 != 0:\n            if i % 2 != 0:\n                b.append(i)\n    if n % 2 == 0:\n        e = <span class='highlight-green'>sum(1/x for x in a)\n        print(f&#34;{e:.6f}&#34;</span>)\n    else:\n        <span class='highlight-green'>g = sum(1/x for x in b)\n        print(f&#34;{g:.6f}&#34;</span>)"
+      },
+      "token_overlap": 72,
+      "max_similarity_percent": 69.9
+    },
+    {
+      "case_id": 9,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3abfe535fa0f4f1d7ee/3fa6af8d916a46039239cabe/sub_1761746241590_21zf846ke.py",
+        "similarity_percent": 69.18,
+        "full_code": "t=int(input())\nwhile t:\n    t-=1\n    n=int(input())\n    tong=0\n    if n%2==0:\n        for i in range(2,n+1,2):\n            tong+=1/i \n        print(f'{tong:.6f}')\n    elif n==1:\n        print(\"1.000000\")\n    else:\n        for i in range(1,n+1,2):\n            tong+=1/i \n        print(f'{tong:.6f}')",
+        "highlighted_code": "t=int(input())\nwhile t:\n    t-=1\n    n=i<span class='highlight-red'>nt(input())\n    tong=0\n    if n%2==0:\n        for i in range(2,n+1,2):\n            tong+=1/i \n        print(f&#39;{tong:.6f}&#39;)\n    </span>elif n==1:\n        print(&#34;1.000000&#34;)\n    el<span class='highlight-red'>se:\n        for i in range(1,n+1,2):\n            tong+=1/i \n        print(f&#39;{tong:.6f}&#39;)</span>"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3abfe535fa0f4f1d7ee/a34ffbda761b435ca043fd30/sub_1762364063003_ixj5vobx2.py",
+        "similarity_percent": 73.64,
+        "full_code": "t = int(input())\nfor i in range(t):\n    n = int(input())\n    tong=0\n    if n%2==0:\n        for j in range(2, n+1, 2):\n            tong+=1/j\n    else:\n        for j in range(1, n+1, 2):\n            tong+=1/j\n    print(f\"{tong:.6f}\")",
+        "highlighted_code": "t = int(input())\nfor i in range(t):\n    n = i<span class='highlight-green'>nt(input())\n    tong=0\n    if n%2==0:\n        for j in range(2, n+1, 2):\n            tong+=1/j\n    </span>el<span class='highlight-green'>se:\n        for j in range(1, n+1, 2):\n            tong+=1/j\n    print(f&#34;{tong:.6f}&#34;)</span>"
+      },
+      "token_overlap": 110,
+      "max_similarity_percent": 73.64
+    }
+  ]
+}

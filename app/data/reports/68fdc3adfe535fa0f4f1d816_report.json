@@ -1,0 +1,28 @@
+{
+  "problem_id": "68fdc3adfe535fa0f4f1d816",
+  "filter_criteria": {
+    "min_token_overlap": 80,
+    "min_similarity_percent": 60
+  },
+  "total_cases_found": 7,
+  "total_cases_filtered": 1,
+  "cases": [
+    {
+      "case_id": 1,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3adfe535fa0f4f1d816/f95120b3a38a461085ef58cb/sub_1762822406201_hpfc3gta8.py",
+        "similarity_percent": 100.0,
+        "full_code": "t = int(input())\na, b, c = map(int,input().split())\nd = 0\nwhile a <= c:\n    a += t*(a*(b/100))\n    d += 1\nprint(d)",
+        "highlighted_code": "<span class='highlight-red'>t = int(input())\na, b, c = map(int,input().split())\nd = 0\nwhile a &lt;= c:\n    a += t*(a*(b/100))\n    d += 1\nprint(d)</span>"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3adfe535fa0f4f1d816/e59c34a1bebb49d29bfb3592/sub_1762160839230_fb2grtnjz.py",
+        "similarity_percent": 100.0,
+        "full_code": "t = int(input())\na,b,c = map(int,input().split())\nd = 0\nwhile a <= c:\n    a += t*(a*(b/100))\n    d += 1\nprint(d)",
+        "highlighted_code": "<span class='highlight-green'>t = int(input())\na,b,c = map(int,input().split())\nd = 0\nwhile a &lt;= c:\n    a += t*(a*(b/100))\n    d += 1\nprint(d)</span>"
+      },
+      "token_overlap": 81,
+      "max_similarity_percent": 100.0
+    }
+  ]
+}

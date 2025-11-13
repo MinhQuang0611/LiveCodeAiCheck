@@ -1,0 +1,62 @@
+{
+  "problem_id": "68e3cc997243251374477299",
+  "filter_criteria": {
+    "min_token_overlap": 80,
+    "min_similarity_percent": 60
+  },
+  "total_cases_found": 5,
+  "total_cases_filtered": 3,
+  "cases": [
+    {
+      "case_id": 1,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3cc997243251374477299/222412e06e454a339defe331/sub_1761643058906_r93e9g5sp.py",
+        "similarity_percent": 95.96,
+        "full_code": "def SNT(n):\n    if n<2:\n        return False;\n    for i in range(2,int(n**(0.5))+1):\n        if n%i==0:\n            return False;\n    return True;\nm,n=list(map(int,input().split()))\nj=-1\nfor i in range(n,m-1,-1):\n    k=str(i)\n    v=0\n    for p in k:\n        v+=int(p)\n    if SNT(v)==True:\n        j=i\n        break\nprint(j)\n\n",
+        "highlighted_code": "<span class='highlight-red'>def SNT(n):\n    if n&lt;2:\n        return False;\n    for i in range(2,int(n**(0.5))+1):\n        if n%i==0:\n            return False;\n    return True;\nm,n=list(map(int,input().split()))\nj=-1\nfor i in range(n,</span>m-1,-1):\n    <span class='highlight-red'>k=str(i)\n    v=0\n    for p in k:\n        v+=int(p)\n    if SNT(v)==True:\n        j=i\n        break\nprin</span>t(j)\n\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3cc997243251374477299/222412e06e454a339defe331/sub_1761643121885_ns0bwshwt.py",
+        "similarity_percent": 97.44,
+        "full_code": "\ndef SNT(n):\n    if n<2:\n        return False;\n    for i in range(2,int(n**(0.5))+1):\n        if n%i==0:\n            return False;\n    return True;\nm,n=list(map(int,input().split()))\nj=-1\nfor i in range(m,n+1):\n    k=str(i)\n    v=0\n    for p in k:\n        v+=int(p)\n    if SNT(v)==True:\n        j=i\n        break\nprint(j)",
+        "highlighted_code": "<span class='highlight-green'>\ndef SNT(n):\n    if n&lt;2:\n        return False;\n    for i in range(2,int(n**(0.5))+1):\n        if n%i==0:\n            return False;\n    return True;\nm,n=list(map(int,input().split()))\nj=-1\nfor i in range(m</span>,n+1):\n   <span class='highlight-green'> k=str(i)\n    v=0\n    for p in k:\n        v+=int(p)\n    if SNT(v)==True:\n        j=i\n        break\npri</span>nt(j)"
+      },
+      "token_overlap": 190,
+      "max_similarity_percent": 97.44
+    },
+    {
+      "case_id": 2,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3cc997243251374477299/0d74995bf22b4574a97a2297/sub_1761554551089_8488zbkka.py",
+        "similarity_percent": 79.21,
+        "full_code": "def primes(n):\n    if n <= 1:\n        return False\n    for i in range(2, int(n**0.5) + 1):\n        if n % i == 0:\n            return False\n    return True\ndef tong(n):\n    s = 0\n    while n > 0:\n        s += n % 10\n        n //= 10\n    return s\nm,n = map(int,input().split())\nfor i in range(m,n+1):\n    if primes(tong(i)):\n        print(i)\n        break\nelse:\n    print(-1)\n\n",
+        "highlighted_code": "def primes(n):\n    if n &lt;= 1:\n        <span class='highlight-red'>return False\n    for i in range(2, int(n**0.5) + 1):\n        if n % i == 0:\n            return False\n    return True\ndef tong(n):\n    s = 0\n    while n &gt; 0:\n        s += n % 10\n        n //= 10\n    return s\nm,n = map(int,input().split()</span>)\nf<span class='highlight-red'>or i in range(m,n+1):\n    if primes(tong(i))</span>:\n        print(i)\n        break\nelse:\n    print(-1)\n\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3cc997243251374477299/8e19101eb0da4e9a92a17098/sub_1761640059453_cjd8qwaef.py",
+        "similarity_percent": 81.63,
+        "full_code": "def snt(n):\n    if n < 2:\n        return False\n    for i in range(2, int(n**0.5) + 1):\n        if n % i == 0:\n            return False\n    return True\ndef sum_digits(x):\n    tong = 0\n    while x > 0:\n        tong += x % 10\n        x //= 10\n    return tong\nstart, end = map(int, input().split())\nfound = -1\nfor num in range(start, end + 1):\n    if snt(sum_digits(num)):\n        found = num\n        break\nprint(found)\n",
+        "highlighted_code": "def snt(n):\n    if n &lt; 2:\n        <span class='highlight-green'>return False\n    for i in range(2, int(n**0.5) + 1):\n        if n % i == 0:\n            return False\n    return True\ndef sum_digits(x):\n    tong = 0\n    while x &gt; 0:\n        tong += x % 10\n        x //= 10\n    return tong\nstart, end = map(int, input().split()</span>)\nfound = -1\nf<span class='highlight-green'>or num in range(start, end + 1):\n    if snt(sum_digits(num))</span>:\n        found = num\n        break\nprint(found)\n"
+      },
+      "token_overlap": 160,
+      "max_similarity_percent": 81.63
+    },
+    {
+      "case_id": 3,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3cc997243251374477299/0d74995bf22b4574a97a2297/sub_1761554551089_8488zbkka.py",
+        "similarity_percent": 66.83,
+        "full_code": "def primes(n):\n    if n <= 1:\n        return False\n    for i in range(2, int(n**0.5) + 1):\n        if n % i == 0:\n            return False\n    return True\ndef tong(n):\n    s = 0\n    while n > 0:\n        s += n % 10\n        n //= 10\n    return s\nm,n = map(int,input().split())\nfor i in range(m,n+1):\n    if primes(tong(i)):\n        print(i)\n        break\nelse:\n    print(-1)\n\n",
+        "highlighted_code": "def primes(n):\n    if n &lt;= 1:\n        return False\n    f<span class='highlight-red'>or i in range(2, int(n**0.5) + 1):\n        if n </span>% i == 0:\n            return False\n    return True\nde<span class='highlight-red'>f tong(n):\n    s = 0\n    while n &gt; 0:\n        s += n % 10\n        n //= 10\n    retu</span>rn s\nm,<span class='highlight-red'>n = map(int,input().split())\nfor i in range(m,n+1):\n    if primes</span>(tong(i))<span class='highlight-red'>:\n        print(i)\n        break\nelse:\n    print(</span>-1)\n\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3cc997243251374477299/0d74995bf22b4574a97a2297/sub_1761554402105_iwcvq2lhr.py",
+        "similarity_percent": 52.53,
+        "full_code": "def nt(n):\n    prime = [True] * (n + 1)\n    p = 2\n    for p in range(2, int(n**0.5) + 1):\n        if prime[p]:\n            for i in range(p * p, n + 1, p):\n                prime[i] = False\n    return [p for p in range(2, n + 1) if prime[p]]\ndef tong(n):\n    s = 0\n    while n > 0:\n        s += n % 10\n        n //= 10\n    return s\nprimes = nt(10000000)\nm,n = map(int,input().split())\nfor i in range(m,n+1):\n    if tong(i) in primes:\n        print(i)\n        break\nelse:\n    print(-1)\n\n",
+        "highlighted_code": "def nt(n):\n    prime = [True] * (n + 1)\n    p = 2\n    f<span class='highlight-green'>or p in range(2, int(n**0.5) + 1):\n        if prime</span>[p]:\n            for i in range(p * p, n + 1, p):\n                prime[i] = False\n    return [p for p in range(2, n + 1) if prime[p]]\nde<span class='highlight-green'>f tong(n):\n    s = 0\n    while n &gt; 0:\n        s += n % 10\n        n //= 10\n    retu</span>rn s\nprimes = nt(10000000)\nm,<span class='highlight-green'>n = map(int,input().split())\nfor i in range(m,n+1):\n    if tong</span>(i) in primes<span class='highlight-green'>:\n        print(i)\n        break\nelse:\n    print(</span>-1)\n\n"
+      },
+      "token_overlap": 135,
+      "max_similarity_percent": 66.83
+    }
+  ]
+}

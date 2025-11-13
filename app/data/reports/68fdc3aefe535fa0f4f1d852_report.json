@@ -1,0 +1,300 @@
+{
+  "problem_id": "68fdc3aefe535fa0f4f1d852",
+  "filter_criteria": {
+    "min_token_overlap": 80,
+    "min_similarity_percent": 60
+  },
+  "total_cases_found": 20,
+  "total_cases_filtered": 17,
+  "cases": [
+    {
+      "case_id": 1,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3aefe535fa0f4f1d852/606112b8529f48619a01b7f6/sub_1762589336102_impfiwhqy.py",
+        "similarity_percent": 75.22,
+        "full_code": "from math import *\nimport math\ndef snt(x):\n    if x < 2:\n        return False\n    for i in range (2,int(x**(1/2)+1)):\n        if x % i == 0:\n            return False\n    return True\nt = int(input())\nfor i in range(t):\n    a,b=map(int,input().split())\n    c=math.gcd(a,b)\n    tong=0\n    for j in str(c):\n        tong += int(j)\n    if snt(tong):\n        print('YES')\n    else: \n        print('NO')\n    ",
+        "highlighted_code": "from math import *\n<span class='highlight-red'>import math\ndef snt(x):\n    if x &lt; 2:\n        return False\n    for i in range (2,int</span>(x**(1/2)+1)):\n        i<span class='highlight-red'>f x % i == 0:\n            return False\n    return True\nt = int(input())\nfor i in range(t):\n    a,b=map(int,input().split())\n    c=math.gcd(a,b)\n    tong</span>=0\n    for j in str(c):\n        tong += int(j)\n    if <span class='highlight-red'>snt(tong):\n        print(&#39;YES&#39;)\n    else: \n        print</span>(&#39;NO&#39;)\n    "
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3aefe535fa0f4f1d852/d9aec9d917da4c5e9beeb80b/sub_1761831200910_ubpl6x97o.py",
+        "similarity_percent": 81.34,
+        "full_code": "import math\ndef is_prime(n):\n    if n < 2:\n        return False\n    for i in range(2, int(n**0.5) + 1):\n        if n % i == 0:\n            return False\n    return True\nt = int(input()) \nfor _ in range(t):\n    a, b = map(int, input().split())\n    g = math.gcd(a, b) \n    s = sum(int(d) for d in str(g))\n    if is_prime(s):\n        print(\"YES\")\n    else:\n        print(\"NO\")\n",
+        "highlighted_code": "<span class='highlight-green'>import math\ndef is_prime(n):\n    if n &lt; 2:\n        return False\n    for i in range(2, int</span>(n**0.5) + 1):\n        i<span class='highlight-green'>f n % i == 0:\n            return False\n    return True\nt = int(input()) \nfor _ in range(t):\n    a, b = map(int, input().split())\n    g = math.gcd(a, b) \n    s </span>= sum(int(d) for d in str(g))\n    if <span class='highlight-green'>is_prime(s):\n        print(&#34;YES&#34;)\n    else:\n        print</span>(&#34;NO&#34;)\n"
+      },
+      "token_overlap": 170,
+      "max_similarity_percent": 81.34
+    },
+    {
+      "case_id": 2,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3aefe535fa0f4f1d852/fa972feccadf40fe9df799d0/sub_1762529808925_fx6wjmdbg.py",
+        "similarity_percent": 65.87,
+        "full_code": "t = int(input())\ndef is_prime(n):\n    if n < 2:\n        return False\n    for i in range(2, int(n ** 0.5) + 1):\n        if n % i == 0:\n            return False\n    return True\nfor _ in range(t):\n    a, b = map(int, input().split())\n    while b:\n        a, b = b, a % b\n    c = str(a)\n    d = 0\n    for k in c:\n        d += int(k)\n    if is_prime(d):\n        print(\"YES\")\n    else:\n        print(\"NO\")\n",
+        "highlighted_code": "t = int(input())\nde<span class='highlight-red'>f is_prime(n):\n    if n &lt; 2:\n        return False\n    for i in range(2, int(n ** 0.5) + 1):\n        if n % i == 0:\n            return False\n    return </span>True\nfor _ i<span class='highlight-red'>n range(t):\n    a, b = map(int, input().split())\n    </span>while b:\n        a, b = b, a % b\n    c = str(a)\n    d = 0\n    for k in c:\n        d += int(k)\n    if <span class='highlight-red'>is_prime(d):\n        print(&#34;YES&#34;)\n    else:\n        print</span>(&#34;NO&#34;)\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3aefe535fa0f4f1d852/d9aec9d917da4c5e9beeb80b/sub_1761831200910_ubpl6x97o.py",
+        "similarity_percent": 65.55,
+        "full_code": "import math\ndef is_prime(n):\n    if n < 2:\n        return False\n    for i in range(2, int(n**0.5) + 1):\n        if n % i == 0:\n            return False\n    return True\nt = int(input()) \nfor _ in range(t):\n    a, b = map(int, input().split())\n    g = math.gcd(a, b) \n    s = sum(int(d) for d in str(g))\n    if is_prime(s):\n        print(\"YES\")\n    else:\n        print(\"NO\")\n",
+        "highlighted_code": "import math\nde<span class='highlight-green'>f is_prime(n):\n    if n &lt; 2:\n        return False\n    for i in range(2, int(n**0.5) + 1):\n        if n % i == 0:\n            return False\n    return </span>True\nt = int(input()) \nfor _ i<span class='highlight-green'>n range(t):\n    a, b = map(int, input().split())\n    </span>g = math.gcd(a, b) \n    s = sum(int(d) for d in str(g))\n    if <span class='highlight-green'>is_prime(s):\n        print(&#34;YES&#34;)\n    else:\n        print</span>(&#34;NO&#34;)\n"
+      },
+      "token_overlap": 137,
+      "max_similarity_percent": 65.87
+    },
+    {
+      "case_id": 3,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3aefe535fa0f4f1d852/27e30f767b3a46b283cbfec0/sub_1761811934274_gjx52guml.py",
+        "similarity_percent": 65.02,
+        "full_code": "from math import *\ndef is_Prime(n):\n    if n < 2:\n        return False\n    for i in range(2,isqrt(n)+1):\n        if n % i == 0:\n            return False\n    return True\n\ndef sum_num(n):\n    digit_sum = 0\n    while n > 0:\n        digit_sum += n%10\n        n //= 10\n    return digit_sum\n\n\nt = int(input())\nfor _ in range(t):\n    a,b = map(int, input().split())\n    sum_gcd = sum_num(gcd(a,b))\n    if is_Prime(sum_gcd):\n        print('YES')\n    else:\n        print('NO')\n\n",
+        "highlighted_code": "from math import *\nde<span class='highlight-red'>f is_Prime(n):\n    if n &lt; 2:\n        return False\n    for i in range(2,</span>isqrt(n<span class='highlight-red'>)+1):\n        if n % i == 0:\n            return False\n    return </span>True\n\ndef sum_num(n):\n    digit_sum = 0\n    while n &gt; 0:\n        digit_sum += n%10\n        n //= 10\n    return digit_sum\n\n\nt <span class='highlight-red'>= int(input())\nfor _ in range(t):\n    a,b = map(int, input().split())\n    </span>sum_gcd = sum_num(gcd(a,b))\n    if <span class='highlight-red'>is_Prime(sum_gcd):\n        print(&#39;YES&#39;)\n    else:\n        print</span>(&#39;NO&#39;)\n\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3aefe535fa0f4f1d852/d9aec9d917da4c5e9beeb80b/sub_1761831200910_ubpl6x97o.py",
+        "similarity_percent": 69.38,
+        "full_code": "import math\ndef is_prime(n):\n    if n < 2:\n        return False\n    for i in range(2, int(n**0.5) + 1):\n        if n % i == 0:\n            return False\n    return True\nt = int(input()) \nfor _ in range(t):\n    a, b = map(int, input().split())\n    g = math.gcd(a, b) \n    s = sum(int(d) for d in str(g))\n    if is_prime(s):\n        print(\"YES\")\n    else:\n        print(\"NO\")\n",
+        "highlighted_code": "import math\nde<span class='highlight-green'>f is_prime(n):\n    if n &lt; 2:\n        return False\n    for i in range(2, </span>int(n**0.5<span class='highlight-green'>) + 1):\n        if n % i == 0:\n            return False\n    return </span>True\nt <span class='highlight-green'>= int(input()) \nfor _ in range(t):\n    a, b = map(int, input().split())\n    </span>g = math.gcd(a, b) \n    s = sum(int(d) for d in str(g))\n    if <span class='highlight-green'>is_prime(s):\n        print(&#34;YES&#34;)\n    else:\n        print</span>(&#34;NO&#34;)\n"
+      },
+      "token_overlap": 145,
+      "max_similarity_percent": 69.38
+    },
+    {
+      "case_id": 4,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3aefe535fa0f4f1d852/449c44ebafa84f0d8d5b6d0f/sub_1762310636876_ykri8s0tg.py",
+        "similarity_percent": 65.02,
+        "full_code": "from math import *\ndef nt(n):\n    if n < 2:\n        return False\n    for i in range(2, isqrt(n) + 1):\n        if n % i == 0:\n            return False\n    return True\ndef tong(n):\n    a = 0\n    while n != 0:\n        a += n % 10\n        n //= 10\n    return a\nif __name__ == '__main__':\n    t = int(input())\n    for _ in range(t):\n        a, b = map(int, input().split())\n        max_gcd = gcd(a, b)\n        if nt(tong(max_gcd)):\n            print('YES')\n        else: print('NO')\n        ",
+        "highlighted_code": "<span class='highlight-red'>from math import *\ndef nt(n):\n    if n &lt; 2:\n        return False\n    for i in range(2, isqrt(n) + 1):\n        if n % i == 0:\n            return False\n    return True\ndef tong(n):\n    a = 0\n    whi</span>le n != 0:\n        a += n % 10\n        n //= 10\n    return a\nif __name__ == &#39;__main__&#39;:\n    t <span class='highlight-red'>= int(input())\n    for _ in range(t):\n        a, b = map(int, input().split())\n        </span>max_gcd = gcd(a, b)\n        if nt(tong(max_gcd)):\n            print(&#39;YES&#39;)\n        else: print(&#39;NO&#39;)\n        "
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3aefe535fa0f4f1d852/27e30f767b3a46b283cbfec0/sub_1761811934274_gjx52guml.py",
+        "similarity_percent": 70.85,
+        "full_code": "from math import *\ndef is_Prime(n):\n    if n < 2:\n        return False\n    for i in range(2,isqrt(n)+1):\n        if n % i == 0:\n            return False\n    return True\n\ndef sum_num(n):\n    digit_sum = 0\n    while n > 0:\n        digit_sum += n%10\n        n //= 10\n    return digit_sum\n\n\nt = int(input())\nfor _ in range(t):\n    a,b = map(int, input().split())\n    sum_gcd = sum_num(gcd(a,b))\n    if is_Prime(sum_gcd):\n        print('YES')\n    else:\n        print('NO')\n\n",
+        "highlighted_code": "<span class='highlight-green'>from math import *\ndef is_Prime(n):\n    if n &lt; 2:\n        return False\n    for i in range(2,isqrt(n)+1):\n        if n % i == 0:\n            return False\n    return True\n\ndef sum_num(n):\n    digit_sum = 0\n    whi</span>le n &gt; 0:\n        digit_sum += n%10\n        n //= 10\n    return digit_sum\n\n\nt <span class='highlight-green'>= int(input())\nfor _ in range(t):\n    a,b = map(int, input().split())\n    </span>sum_gcd = sum_num(gcd(a,b))\n    if is_Prime(sum_gcd):\n        print(&#39;YES&#39;)\n    else:\n        print(&#39;NO&#39;)\n\n"
+      },
+      "token_overlap": 158,
+      "max_similarity_percent": 70.85
+    },
+    {
+      "case_id": 5,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3aefe535fa0f4f1d852/a34ffbda761b435ca043fd30/sub_1762358186329_2s8005cqn.py",
+        "similarity_percent": 63.16,
+        "full_code": "a = int(input())\nfor i in range(a):\n    m, n= map(int, input().split())\n    import math\n    ucln = math.gcd(m, n)\n    h = sum(int(digit) for digit in str(ucln))\n    ket_qua = True\n    if h == 1:\n        ket_qua = False\n    for l in range(2, int(h**0.5)+1):\n        if h%l==0:\n            ket_qua=False\n    if ket_qua:\n        print(\"YES\")\n    else:\n        print(\"NO\")",
+        "highlighted_code": "a <span class='highlight-red'>= int(input())\nfor i in range(a):\n    m, n= map(int, input().split())\n    </span>import math\n    ucln <span class='highlight-red'>= math.gcd(m, n)\n    h = sum(int(digit) for digit in str(</span>ucln))\n    ket_qua = True\n    if h == 1:\n        ket_qua = Fals<span class='highlight-red'>e\n    for l in range(2, int(h**0.5)+1):\n        if h%l==</span>0:\n            ket_qua=False\n    if ket_qua:\n        print(&#34;YES&#34;)\n    else:\n        print(&#34;NO&#34;)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3aefe535fa0f4f1d852/d9aec9d917da4c5e9beeb80b/sub_1761831200910_ubpl6x97o.py",
+        "similarity_percent": 57.42,
+        "full_code": "import math\ndef is_prime(n):\n    if n < 2:\n        return False\n    for i in range(2, int(n**0.5) + 1):\n        if n % i == 0:\n            return False\n    return True\nt = int(input()) \nfor _ in range(t):\n    a, b = map(int, input().split())\n    g = math.gcd(a, b) \n    s = sum(int(d) for d in str(g))\n    if is_prime(s):\n        print(\"YES\")\n    else:\n        print(\"NO\")\n",
+        "highlighted_code": "import math\ndef is_prime(n):\n    if n &lt; 2:\n        return Fals<span class='highlight-green'>e\n    for i in range(2, int(n**0.5) + 1):\n        if n % i == </span>0:\n            return False\n    return True\nt <span class='highlight-green'>= int(input()) \nfor _ in range(t):\n    a, b = map(int, input().split())\n    </span>g <span class='highlight-green'>= math.gcd(a, b) \n    s = sum(int(d) for d in str(</span>g))\n    if is_prime(s):\n        print(&#34;YES&#34;)\n    else:\n        print(&#34;NO&#34;)\n"
+      },
+      "token_overlap": 120,
+      "max_similarity_percent": 63.16
+    },
+    {
+      "case_id": 6,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3aefe535fa0f4f1d852/606112b8529f48619a01b7f6/sub_1762589336102_impfiwhqy.py",
+        "similarity_percent": 61.5,
+        "full_code": "from math import *\nimport math\ndef snt(x):\n    if x < 2:\n        return False\n    for i in range (2,int(x**(1/2)+1)):\n        if x % i == 0:\n            return False\n    return True\nt = int(input())\nfor i in range(t):\n    a,b=map(int,input().split())\n    c=math.gcd(a,b)\n    tong=0\n    for j in str(c):\n        tong += int(j)\n    if snt(tong):\n        print('YES')\n    else: \n        print('NO')\n    ",
+        "highlighted_code": "from math import *\nimport math\nde<span class='highlight-red'>f snt(x):\n    if x &lt; 2:\n        return False\n    for i in range (2,</span>int(x**(1/2)+1)):\n        i<span class='highlight-red'>f x % i == 0:\n            return False\n    return </span>True\nt <span class='highlight-red'>= int(input())\nfor i in range(t):\n    a,b=map(int,input().split())\n    </span>c=math.gcd(a,b)\n    tong=0\n    for j in str(c):\n        tong += int(j)\n    if <span class='highlight-red'>snt(tong):\n        print(&#39;YES&#39;)\n    else: \n        print</span>(&#39;NO&#39;)\n    "
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3aefe535fa0f4f1d852/27e30f767b3a46b283cbfec0/sub_1761811934274_gjx52guml.py",
+        "similarity_percent": 62.33,
+        "full_code": "from math import *\ndef is_Prime(n):\n    if n < 2:\n        return False\n    for i in range(2,isqrt(n)+1):\n        if n % i == 0:\n            return False\n    return True\n\ndef sum_num(n):\n    digit_sum = 0\n    while n > 0:\n        digit_sum += n%10\n        n //= 10\n    return digit_sum\n\n\nt = int(input())\nfor _ in range(t):\n    a,b = map(int, input().split())\n    sum_gcd = sum_num(gcd(a,b))\n    if is_Prime(sum_gcd):\n        print('YES')\n    else:\n        print('NO')\n\n",
+        "highlighted_code": "from math import *\nde<span class='highlight-green'>f is_Prime(n):\n    if n &lt; 2:\n        return False\n    for i in range(2,</span>isqrt(n)+1):\n        i<span class='highlight-green'>f n % i == 0:\n            return False\n    return </span>True\n\ndef sum_num(n):\n    digit_sum = 0\n    while n &gt; 0:\n        digit_sum += n%10\n        n //= 10\n    return digit_sum\n\n\nt <span class='highlight-green'>= int(input())\nfor _ in range(t):\n    a,b = map(int, input().split())\n    </span>sum_gcd = sum_num(gcd(a,b))\n    if <span class='highlight-green'>is_Prime(sum_gcd):\n        print(&#39;YES&#39;)\n    else:\n        print</span>(&#39;NO&#39;)\n\n"
+      },
+      "token_overlap": 139,
+      "max_similarity_percent": 62.33
+    },
+    {
+      "case_id": 7,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3aefe535fa0f4f1d852/fa972feccadf40fe9df799d0/sub_1762529808925_fx6wjmdbg.py",
+        "similarity_percent": 61.06,
+        "full_code": "t = int(input())\ndef is_prime(n):\n    if n < 2:\n        return False\n    for i in range(2, int(n ** 0.5) + 1):\n        if n % i == 0:\n            return False\n    return True\nfor _ in range(t):\n    a, b = map(int, input().split())\n    while b:\n        a, b = b, a % b\n    c = str(a)\n    d = 0\n    for k in c:\n        d += int(k)\n    if is_prime(d):\n        print(\"YES\")\n    else:\n        print(\"NO\")\n",
+        "highlighted_code": "t = int(input())\nde<span class='highlight-red'>f is_prime(n):\n    if n &lt; 2:\n        return False\n    for i in range(2, </span>int(n ** 0.5<span class='highlight-red'>) + 1):\n        if n % i == 0:\n            return False\n    return </span>True\nfor _ i<span class='highlight-red'>n range(t):\n    a, b = map(int, input().split())\n    </span>while b:\n        a, b = b, a % b\n    c = str(a)\n    d = 0\n    for k in c:\n        d += int(k)\n    if <span class='highlight-red'>is_prime(d):\n        print(&#34;YES&#34;)\n    else:\n        print</span>(&#34;NO&#34;)\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3aefe535fa0f4f1d852/27e30f767b3a46b283cbfec0/sub_1761811934274_gjx52guml.py",
+        "similarity_percent": 56.95,
+        "full_code": "from math import *\ndef is_Prime(n):\n    if n < 2:\n        return False\n    for i in range(2,isqrt(n)+1):\n        if n % i == 0:\n            return False\n    return True\n\ndef sum_num(n):\n    digit_sum = 0\n    while n > 0:\n        digit_sum += n%10\n        n //= 10\n    return digit_sum\n\n\nt = int(input())\nfor _ in range(t):\n    a,b = map(int, input().split())\n    sum_gcd = sum_num(gcd(a,b))\n    if is_Prime(sum_gcd):\n        print('YES')\n    else:\n        print('NO')\n\n",
+        "highlighted_code": "from math import *\nde<span class='highlight-green'>f is_Prime(n):\n    if n &lt; 2:\n        return False\n    for i in range(2,</span>isqrt(n<span class='highlight-green'>)+1):\n        if n % i == 0:\n            return False\n    return </span>True\n\ndef sum_num(n):\n    digit_sum = 0\n    while n &gt; 0:\n        digit_sum += n%10\n        n //= 10\n    return digit_sum\n\n\nt = int(input())\nfor _ i<span class='highlight-green'>n range(t):\n    a,b = map(int, input().split())\n    </span>sum_gcd = sum_num(gcd(a,b))\n    if <span class='highlight-green'>is_Prime(sum_gcd):\n        print(&#39;YES&#39;)\n    else:\n        print</span>(&#39;NO&#39;)\n\n"
+      },
+      "token_overlap": 127,
+      "max_similarity_percent": 61.06
+    },
+    {
+      "case_id": 8,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3aefe535fa0f4f1d852/606112b8529f48619a01b7f6/sub_1762589336102_impfiwhqy.py",
+        "similarity_percent": 59.73,
+        "full_code": "from math import *\nimport math\ndef snt(x):\n    if x < 2:\n        return False\n    for i in range (2,int(x**(1/2)+1)):\n        if x % i == 0:\n            return False\n    return True\nt = int(input())\nfor i in range(t):\n    a,b=map(int,input().split())\n    c=math.gcd(a,b)\n    tong=0\n    for j in str(c):\n        tong += int(j)\n    if snt(tong):\n        print('YES')\n    else: \n        print('NO')\n    ",
+        "highlighted_code": "from math import *\nimport math\nde<span class='highlight-red'>f snt(x):\n    if x &lt; 2:\n        return False\n    for i in range (2,int</span>(x**(1/2)+1)):\n        i<span class='highlight-red'>f x % i == 0:\n            return False\n    return </span>True\nt = int(input())\nfor i i<span class='highlight-red'>n range(t):\n    a,b=map(int,input().split())\n    </span>c=math.gcd(a,b)\n    tong=0\n    for j in str(c):\n        <span class='highlight-red'>tong += int(j)\n    if snt(tong):\n        print(&#39;YES&#39;)\n    else: \n        print</span>(&#39;NO&#39;)\n    "
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3aefe535fa0f4f1d852/fa972feccadf40fe9df799d0/sub_1762529808925_fx6wjmdbg.py",
+        "similarity_percent": 64.9,
+        "full_code": "t = int(input())\ndef is_prime(n):\n    if n < 2:\n        return False\n    for i in range(2, int(n ** 0.5) + 1):\n        if n % i == 0:\n            return False\n    return True\nfor _ in range(t):\n    a, b = map(int, input().split())\n    while b:\n        a, b = b, a % b\n    c = str(a)\n    d = 0\n    for k in c:\n        d += int(k)\n    if is_prime(d):\n        print(\"YES\")\n    else:\n        print(\"NO\")\n",
+        "highlighted_code": "t = int(input())\nde<span class='highlight-green'>f is_prime(n):\n    if n &lt; 2:\n        return False\n    for i in range(2, int</span>(n ** 0.5) + 1):\n        i<span class='highlight-green'>f n % i == 0:\n            return False\n    return </span>True\nfor _ i<span class='highlight-green'>n range(t):\n    a, b = map(int, input().split())\n    </span>while b:\n        a, b = b, a % b\n    c = str(a)\n    d = 0\n    for k in c:\n        <span class='highlight-green'>d += int(k)\n    if is_prime(d):\n        print(&#34;YES&#34;)\n    else:\n        print</span>(&#34;NO&#34;)\n"
+      },
+      "token_overlap": 135,
+      "max_similarity_percent": 64.9
+    },
+    {
+      "case_id": 9,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3aefe535fa0f4f1d852/26894d2babd64210ad6beba1/sub_1762139414985_64245yua0.py",
+        "similarity_percent": 52.47,
+        "full_code": "import math\n\ndef snt(n):\n    if n < 2:\n        return False\n    for i in range(2, int(n**0.5) + 1):\n        if(n % i == 0):\n            return False\n    return True\n\nt = int(input())\n\nwhile(t> 0):\n    t-=1\n    a, b = map(int, input().split())\n    c = math.gcd(a, b)\n    sum = 0\n    c = str(c)\n    #print(c)\n    for i in c:\n        sum += int(i)\n    #print(sum)\n    if snt(sum):\n        print(\"YES\")\n    else:\n        print(\"NO\")\n",
+        "highlighted_code": "<span class='highlight-red'>import math\n\ndef snt(n):\n    if n &lt; 2:\n        return False\n    for i in range(2, int(n**0.5) + </span>1):\n        if(n % i == 0):\n            re<span class='highlight-red'>turn False\n    return True\n\nt = int(inp</span>ut())\n\nwhile(t&gt; 0):\n    t-=1\n    a, b <span class='highlight-red'>= map(int, input().split())\n    c = math.gcd(a</span>, b)\n    sum = 0\n    c = str(c)\n    #print(c)\n    for i in c:\n        sum += int(i)\n    #print(sum)\n    if snt(sum):\n        print(&#34;YES&#34;)\n    else:\n        print(&#34;NO&#34;)\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3aefe535fa0f4f1d852/d9aec9d917da4c5e9beeb80b/sub_1761831200910_ubpl6x97o.py",
+        "similarity_percent": 55.98,
+        "full_code": "import math\ndef is_prime(n):\n    if n < 2:\n        return False\n    for i in range(2, int(n**0.5) + 1):\n        if n % i == 0:\n            return False\n    return True\nt = int(input()) \nfor _ in range(t):\n    a, b = map(int, input().split())\n    g = math.gcd(a, b) \n    s = sum(int(d) for d in str(g))\n    if is_prime(s):\n        print(\"YES\")\n    else:\n        print(\"NO\")\n",
+        "highlighted_code": "<span class='highlight-green'>import math\ndef is_prime(n):\n    if n &lt; 2:\n        return False\n    for i in range(2, int(n**0.5) + </span>1):\n        if n % i == 0:\n            re<span class='highlight-green'>turn False\n    return True\nt = int(inp</span>ut()) \nfor _ in range(t):\n    a, b <span class='highlight-green'>= map(int, input().split())\n    g = math.gcd(a</span>, b) \n    s = sum(int(d) for d in str(g))\n    if is_prime(s):\n        print(&#34;YES&#34;)\n    else:\n        print(&#34;NO&#34;)\n"
+      },
+      "token_overlap": 117,
+      "max_similarity_percent": 55.98
+    },
+    {
+      "case_id": 10,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3aefe535fa0f4f1d852/606112b8529f48619a01b7f6/sub_1762589336102_impfiwhqy.py",
+        "similarity_percent": 50.44,
+        "full_code": "from math import *\nimport math\ndef snt(x):\n    if x < 2:\n        return False\n    for i in range (2,int(x**(1/2)+1)):\n        if x % i == 0:\n            return False\n    return True\nt = int(input())\nfor i in range(t):\n    a,b=map(int,input().split())\n    c=math.gcd(a,b)\n    tong=0\n    for j in str(c):\n        tong += int(j)\n    if snt(tong):\n        print('YES')\n    else: \n        print('NO')\n    ",
+        "highlighted_code": "from math import *\nimport math\nde<span class='highlight-red'>f snt(x):\n    if x &lt; 2:\n        return False\n    for i in range (2,</span>int(x**(1/2)+1)):\n        i<span class='highlight-red'>f x % i == 0:\n            return False\n    return </span>True\nt <span class='highlight-red'>= int(input())\nfor i in range(t):\n    a,b=map(int,input().split())\n    </span>c=math.gcd(a,b)\n    tong=0\n    for j in str(c):\n        tong += int(j)\n    if snt(tong):\n        print(&#39;YES&#39;)\n    else: \n        print(&#39;NO&#39;)\n    "
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3aefe535fa0f4f1d852/449c44ebafa84f0d8d5b6d0f/sub_1762310636876_ykri8s0tg.py",
+        "similarity_percent": 46.91,
+        "full_code": "from math import *\ndef nt(n):\n    if n < 2:\n        return False\n    for i in range(2, isqrt(n) + 1):\n        if n % i == 0:\n            return False\n    return True\ndef tong(n):\n    a = 0\n    while n != 0:\n        a += n % 10\n        n //= 10\n    return a\nif __name__ == '__main__':\n    t = int(input())\n    for _ in range(t):\n        a, b = map(int, input().split())\n        max_gcd = gcd(a, b)\n        if nt(tong(max_gcd)):\n            print('YES')\n        else: print('NO')\n        ",
+        "highlighted_code": "from math import *\nde<span class='highlight-green'>f nt(n):\n    if n &lt; 2:\n        return False\n    for i in range(2, </span>isqrt(n) + 1):\n        i<span class='highlight-green'>f n % i == 0:\n            return False\n    return </span>True\ndef tong(n):\n    a = 0\n    while n != 0:\n        a += n % 10\n        n //= 10\n    return a\nif __name__ == &#39;__main__&#39;:\n    t <span class='highlight-green'>= int(input())\n    for _ in range(t):\n        a, b = map(int, input().split())\n        </span>max_gcd = gcd(a, b)\n        if nt(tong(max_gcd)):\n            print(&#39;YES&#39;)\n        else: print(&#39;NO&#39;)\n        "
+      },
+      "token_overlap": 114,
+      "max_similarity_percent": 50.44
+    },
+    {
+      "case_id": 11,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3aefe535fa0f4f1d852/449c44ebafa84f0d8d5b6d0f/sub_1762310636876_ykri8s0tg.py",
+        "similarity_percent": 49.38,
+        "full_code": "from math import *\ndef nt(n):\n    if n < 2:\n        return False\n    for i in range(2, isqrt(n) + 1):\n        if n % i == 0:\n            return False\n    return True\ndef tong(n):\n    a = 0\n    while n != 0:\n        a += n % 10\n        n //= 10\n    return a\nif __name__ == '__main__':\n    t = int(input())\n    for _ in range(t):\n        a, b = map(int, input().split())\n        max_gcd = gcd(a, b)\n        if nt(tong(max_gcd)):\n            print('YES')\n        else: print('NO')\n        ",
+        "highlighted_code": "from math import *\nde<span class='highlight-red'>f nt(n):\n    if n &lt; 2:\n        return False\n    for i in range(2, </span>isqrt(n<span class='highlight-red'>) + 1):\n        if n % i == 0:\n            return False\n    return </span>True\ndef tong(n):\n    a = 0\n    while n != 0:\n        a += n % 10\n        n //= 10\n    return a\nif __name__ == &#39;__main__&#39;:\n    t <span class='highlight-red'>= int(input())\n    for _ in range(t):\n        a, b = map(int, input().split())\n        </span>max_gcd = gcd(a, b)\n        if nt(tong(max_gcd)):\n            print(&#39;YES&#39;)\n        else: print(&#39;NO&#39;)\n        "
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3aefe535fa0f4f1d852/d9aec9d917da4c5e9beeb80b/sub_1761831200910_ubpl6x97o.py",
+        "similarity_percent": 57.42,
+        "full_code": "import math\ndef is_prime(n):\n    if n < 2:\n        return False\n    for i in range(2, int(n**0.5) + 1):\n        if n % i == 0:\n            return False\n    return True\nt = int(input()) \nfor _ in range(t):\n    a, b = map(int, input().split())\n    g = math.gcd(a, b) \n    s = sum(int(d) for d in str(g))\n    if is_prime(s):\n        print(\"YES\")\n    else:\n        print(\"NO\")\n",
+        "highlighted_code": "import math\nde<span class='highlight-green'>f is_prime(n):\n    if n &lt; 2:\n        return False\n    for i in range(2, </span>int(n**0.5<span class='highlight-green'>) + 1):\n        if n % i == 0:\n            return False\n    return </span>True\nt <span class='highlight-green'>= int(input()) \nfor _ in range(t):\n    a, b = map(int, input().split())\n    </span>g = math.gcd(a, b) \n    s = sum(int(d) for d in str(g))\n    if is_prime(s):\n        print(&#34;YES&#34;)\n    else:\n        print(&#34;NO&#34;)\n"
+      },
+      "token_overlap": 120,
+      "max_similarity_percent": 57.42
+    },
+    {
+      "case_id": 12,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3aefe535fa0f4f1d852/26894d2babd64210ad6beba1/sub_1762139414985_64245yua0.py",
+        "similarity_percent": 48.43,
+        "full_code": "import math\n\ndef snt(n):\n    if n < 2:\n        return False\n    for i in range(2, int(n**0.5) + 1):\n        if(n % i == 0):\n            return False\n    return True\n\nt = int(input())\n\nwhile(t> 0):\n    t-=1\n    a, b = map(int, input().split())\n    c = math.gcd(a, b)\n    sum = 0\n    c = str(c)\n    #print(c)\n    for i in c:\n        sum += int(i)\n    #print(sum)\n    if snt(sum):\n        print(\"YES\")\n    else:\n        print(\"NO\")\n",
+        "highlighted_code": "<span class='highlight-red'>import math\n\ndef snt(n):\n    if n &lt; 2:\n        return False\n    for i in range(2, int</span>(n**0.5) + 1):\n        if(n % i == 0):\n            re<span class='highlight-red'>turn False\n    return True\n\nt = int(inp</span>ut())\n\nwhile(t&gt; 0):\n    t-=1\n    a, b <span class='highlight-red'>= map(int, input().split())\n    c = math.gcd(a</span>, b)\n    sum = 0\n    c = str(c)\n    #print(c)\n    for i in c:\n        sum += int(i)\n    #print(sum)\n    if snt(sum):\n        print(&#34;YES&#34;)\n    else:\n        print(&#34;NO&#34;)\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3aefe535fa0f4f1d852/606112b8529f48619a01b7f6/sub_1762589336102_impfiwhqy.py",
+        "similarity_percent": 47.79,
+        "full_code": "from math import *\nimport math\ndef snt(x):\n    if x < 2:\n        return False\n    for i in range (2,int(x**(1/2)+1)):\n        if x % i == 0:\n            return False\n    return True\nt = int(input())\nfor i in range(t):\n    a,b=map(int,input().split())\n    c=math.gcd(a,b)\n    tong=0\n    for j in str(c):\n        tong += int(j)\n    if snt(tong):\n        print('YES')\n    else: \n        print('NO')\n    ",
+        "highlighted_code": "from math import *\n<span class='highlight-green'>import math\ndef snt(x):\n    if x &lt; 2:\n        return False\n    for i in range (2,int</span>(x**(1/2)+1)):\n        if x % i == 0:\n            re<span class='highlight-green'>turn False\n    return True\nt = int(inp</span>ut())\nfor i in range(t):\n    a,b<span class='highlight-green'>=map(int,input().split())\n    c=math.gcd(a</span>,b)\n    tong=0\n    for j in str(c):\n        tong += int(j)\n    if snt(tong):\n        print(&#39;YES&#39;)\n    else: \n        print(&#39;NO&#39;)\n    "
+      },
+      "token_overlap": 108,
+      "max_similarity_percent": 48.43
+    },
+    {
+      "case_id": 13,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3aefe535fa0f4f1d852/fa972feccadf40fe9df799d0/sub_1762529808925_fx6wjmdbg.py",
+        "similarity_percent": 44.23,
+        "full_code": "t = int(input())\ndef is_prime(n):\n    if n < 2:\n        return False\n    for i in range(2, int(n ** 0.5) + 1):\n        if n % i == 0:\n            return False\n    return True\nfor _ in range(t):\n    a, b = map(int, input().split())\n    while b:\n        a, b = b, a % b\n    c = str(a)\n    d = 0\n    for k in c:\n        d += int(k)\n    if is_prime(d):\n        print(\"YES\")\n    else:\n        print(\"NO\")\n",
+        "highlighted_code": "t = int(input())\ndef is_prime(n):\n    if n &lt; 2:\n        <span class='highlight-red'>return False\n    for i in range(2, int</span>(n ** 0.5<span class='highlight-red'>) + 1):\n        if n % i == 0:\n            return False\n    return </span>True\nfor _ in range(t):\n    a, b = map(int, input().split())\n    while b:\n        a, b = b, a % b\n    <span class='highlight-red'>c = str(a)\n    d = 0\n    for k in c:\n        d += int(k)\n    if is_prime(d</span>):\n        print(&#34;YES&#34;)\n    else:\n        print(&#34;NO&#34;)\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3aefe535fa0f4f1d852/222412e06e454a339defe331/sub_1762595810191_kwhjpht7q.py",
+        "similarity_percent": 33.95,
+        "full_code": "import math\ndef SNT(n):\n    if n <= 1:\n        return False  # Không phải số nguyên tố\n    for i in range(2, int(math.sqrt(n)) + 1):\n        if n % i == 0:\n            return False\n    return True\ndef BCNN(a,b):\n    c=math.gcd(a,b)\n    return c;\nn=int(input())\nfor i in range(1,n+1):\n    a,b=list(map(int,input().split()))\n    d=BCNN(a,b)\n    k=str(d)\n    v=0\n    for i in k:\n        v+=int(i)\n    if SNT(v)==True:\n        print(\"YES\",end=\"\\n\")\n    else:\n        print(\"NO\",end=\"\\n\")",
+        "highlighted_code": "import math\ndef SNT(n):\n    if n &lt;= 1:\n        <span class='highlight-green'>return False  # Không phải số nguyên tố\n    for i in range(2, int</span>(math.sqrt(n)<span class='highlight-green'>) + 1):\n        if n % i == 0:\n            return False\n    return </span>True\ndef BCNN(a,b):\n    c=math.gcd(a,b)\n    return c;\nn=int(input())\nfor i in range(1,n+1):\n    a,b=list(map(int,input().split()))\n    d=BCNN(a,b)\n    <span class='highlight-green'>k=str(d)\n    v=0\n    for i in k:\n        v+=int(i)\n    if SNT(v</span>)==True:\n        print(&#34;YES&#34;,end=&#34;\\n&#34;)\n    else:\n        print(&#34;NO&#34;,end=&#34;\\n&#34;)"
+      },
+      "token_overlap": 92,
+      "max_similarity_percent": 44.23
+    },
+    {
+      "case_id": 14,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3aefe535fa0f4f1d852/449c44ebafa84f0d8d5b6d0f/sub_1762310636876_ykri8s0tg.py",
+        "similarity_percent": 41.98,
+        "full_code": "from math import *\ndef nt(n):\n    if n < 2:\n        return False\n    for i in range(2, isqrt(n) + 1):\n        if n % i == 0:\n            return False\n    return True\ndef tong(n):\n    a = 0\n    while n != 0:\n        a += n % 10\n        n //= 10\n    return a\nif __name__ == '__main__':\n    t = int(input())\n    for _ in range(t):\n        a, b = map(int, input().split())\n        max_gcd = gcd(a, b)\n        if nt(tong(max_gcd)):\n            print('YES')\n        else: print('NO')\n        ",
+        "highlighted_code": "from math import *\nde<span class='highlight-red'>f nt(n):\n    if n &lt; 2:\n        return False\n    for i in range(2, </span>isqrt(n<span class='highlight-red'>) + 1):\n        if n % i == 0:\n            return False\n    return </span>True\ndef tong(n):\n    a = 0\n    while n != 0:\n        a += n % 10\n        n //= 10\n    return a\nif __name__ == &#39;__main__&#39;:\n    t = int(input())\n    for _ i<span class='highlight-red'>n range(t):\n        a, b = map(int, input().split())\n        </span>max_gcd = gcd(a, b)\n        if nt(tong(max_gcd)):\n            print(&#39;YES&#39;)\n        else: print(&#39;NO&#39;)\n        "
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3aefe535fa0f4f1d852/fa972feccadf40fe9df799d0/sub_1762529808925_fx6wjmdbg.py",
+        "similarity_percent": 49.04,
+        "full_code": "t = int(input())\ndef is_prime(n):\n    if n < 2:\n        return False\n    for i in range(2, int(n ** 0.5) + 1):\n        if n % i == 0:\n            return False\n    return True\nfor _ in range(t):\n    a, b = map(int, input().split())\n    while b:\n        a, b = b, a % b\n    c = str(a)\n    d = 0\n    for k in c:\n        d += int(k)\n    if is_prime(d):\n        print(\"YES\")\n    else:\n        print(\"NO\")\n",
+        "highlighted_code": "t = int(input())\nde<span class='highlight-green'>f is_prime(n):\n    if n &lt; 2:\n        return False\n    for i in range(2, </span>int(n ** 0.5<span class='highlight-green'>) + 1):\n        if n % i == 0:\n            return False\n    return </span>True\nfor _ i<span class='highlight-green'>n range(t):\n    a, b = map(int, input().split())\n    </span>while b:\n        a, b = b, a % b\n    c = str(a)\n    d = 0\n    for k in c:\n        d += int(k)\n    if is_prime(d):\n        print(&#34;YES&#34;)\n    else:\n        print(&#34;NO&#34;)\n"
+      },
+      "token_overlap": 102,
+      "max_similarity_percent": 49.04
+    },
+    {
+      "case_id": 15,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3aefe535fa0f4f1d852/27e30f767b3a46b283cbfec0/sub_1761811934274_gjx52guml.py",
+        "similarity_percent": 40.81,
+        "full_code": "from math import *\ndef is_Prime(n):\n    if n < 2:\n        return False\n    for i in range(2,isqrt(n)+1):\n        if n % i == 0:\n            return False\n    return True\n\ndef sum_num(n):\n    digit_sum = 0\n    while n > 0:\n        digit_sum += n%10\n        n //= 10\n    return digit_sum\n\n\nt = int(input())\nfor _ in range(t):\n    a,b = map(int, input().split())\n    sum_gcd = sum_num(gcd(a,b))\n    if is_Prime(sum_gcd):\n        print('YES')\n    else:\n        print('NO')\n\n",
+        "highlighted_code": "from math import *\ndef is_Prime(n):\n    if n &lt; 2:\n        <span class='highlight-red'>return False\n    for i in range(2,</span>isqrt(n<span class='highlight-red'>)+1):\n        if n % i == 0:\n            return False\n    return True\n\ndef sum_num(n</span>):\n    digit_sum = 0\n    while n &gt; 0:\n        digit_sum += n%10\n        n //= 10\n    return digit_sum\n\n\nt <span class='highlight-red'>= int(input())\nfor _ in range(</span>t):\n    a,b = map(int, input().split())\n    sum_gcd = sum_num(gcd(a,b))\n    if is_Prime(sum_gcd):\n        print(&#39;YES&#39;)\n    else:\n        print(&#39;NO&#39;)\n\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3aefe535fa0f4f1d852/222412e06e454a339defe331/sub_1762595810191_kwhjpht7q.py",
+        "similarity_percent": 33.58,
+        "full_code": "import math\ndef SNT(n):\n    if n <= 1:\n        return False  # Không phải số nguyên tố\n    for i in range(2, int(math.sqrt(n)) + 1):\n        if n % i == 0:\n            return False\n    return True\ndef BCNN(a,b):\n    c=math.gcd(a,b)\n    return c;\nn=int(input())\nfor i in range(1,n+1):\n    a,b=list(map(int,input().split()))\n    d=BCNN(a,b)\n    k=str(d)\n    v=0\n    for i in k:\n        v+=int(i)\n    if SNT(v)==True:\n        print(\"YES\",end=\"\\n\")\n    else:\n        print(\"NO\",end=\"\\n\")",
+        "highlighted_code": "import math\ndef SNT(n):\n    if n &lt;= 1:\n        <span class='highlight-green'>return False  # Không phải số nguyên tố\n    for i in range(2, </span>int(math.sqrt(n)<span class='highlight-green'>) + 1):\n        if n % i == 0:\n            return False\n    return True\ndef BCNN(a</span>,b):\n    c=math.gcd(a,b)\n    return c;\nn<span class='highlight-green'>=int(input())\nfor i in range(</span>1,n+1):\n    a,b=list(map(int,input().split()))\n    d=BCNN(a,b)\n    k=str(d)\n    v=0\n    for i in k:\n        v+=int(i)\n    if SNT(v)==True:\n        print(&#34;YES&#34;,end=&#34;\\n&#34;)\n    else:\n        print(&#34;NO&#34;,end=&#34;\\n&#34;)"
+      },
+      "token_overlap": 91,
+      "max_similarity_percent": 40.81
+    },
+    {
+      "case_id": 16,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3aefe535fa0f4f1d852/d9aec9d917da4c5e9beeb80b/sub_1761831200910_ubpl6x97o.py",
+        "similarity_percent": 40.19,
+        "full_code": "import math\ndef is_prime(n):\n    if n < 2:\n        return False\n    for i in range(2, int(n**0.5) + 1):\n        if n % i == 0:\n            return False\n    return True\nt = int(input()) \nfor _ in range(t):\n    a, b = map(int, input().split())\n    g = math.gcd(a, b) \n    s = sum(int(d) for d in str(g))\n    if is_prime(s):\n        print(\"YES\")\n    else:\n        print(\"NO\")\n",
+        "highlighted_code": "import math\ndef is_prime(n):\n    if n &lt; 2:\n        <span class='highlight-red'>return False\n    for i in range(2, int</span>(n**0.5<span class='highlight-red'>) + 1):\n        if n % i == 0:\n            return False\n    return </span>True\nt <span class='highlight-red'>= int(input()) \nfor _ in range(</span>t):\n    a, b = map(int, input().split())\n    g = math.gcd(a, b) \n    s = sum(int(d) for d in str(g))\n    if is_prime(s):\n        print(&#34;YES&#34;)\n    else:\n        print(&#34;NO&#34;)\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3aefe535fa0f4f1d852/222412e06e454a339defe331/sub_1762595810191_kwhjpht7q.py",
+        "similarity_percent": 31.0,
+        "full_code": "import math\ndef SNT(n):\n    if n <= 1:\n        return False  # Không phải số nguyên tố\n    for i in range(2, int(math.sqrt(n)) + 1):\n        if n % i == 0:\n            return False\n    return True\ndef BCNN(a,b):\n    c=math.gcd(a,b)\n    return c;\nn=int(input())\nfor i in range(1,n+1):\n    a,b=list(map(int,input().split()))\n    d=BCNN(a,b)\n    k=str(d)\n    v=0\n    for i in k:\n        v+=int(i)\n    if SNT(v)==True:\n        print(\"YES\",end=\"\\n\")\n    else:\n        print(\"NO\",end=\"\\n\")",
+        "highlighted_code": "import math\ndef SNT(n):\n    if n &lt;= 1:\n        <span class='highlight-green'>return False  # Không phải số nguyên tố\n    for i in range(2, int</span>(math.sqrt(n)<span class='highlight-green'>) + 1):\n        if n % i == 0:\n            return False\n    return </span>True\ndef BCNN(a,b):\n    c=math.gcd(a,b)\n    return c;\nn<span class='highlight-green'>=int(input())\nfor i in range(</span>1,n+1):\n    a,b=list(map(int,input().split()))\n    d=BCNN(a,b)\n    k=str(d)\n    v=0\n    for i in k:\n        v+=int(i)\n    if SNT(v)==True:\n        print(&#34;YES&#34;,end=&#34;\\n&#34;)\n    else:\n        print(&#34;NO&#34;,end=&#34;\\n&#34;)"
+      },
+      "token_overlap": 84,
+      "max_similarity_percent": 40.19
+    },
+    {
+      "case_id": 17,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3aefe535fa0f4f1d852/449c44ebafa84f0d8d5b6d0f/sub_1762310636876_ykri8s0tg.py",
+        "similarity_percent": 37.45,
+        "full_code": "from math import *\ndef nt(n):\n    if n < 2:\n        return False\n    for i in range(2, isqrt(n) + 1):\n        if n % i == 0:\n            return False\n    return True\ndef tong(n):\n    a = 0\n    while n != 0:\n        a += n % 10\n        n //= 10\n    return a\nif __name__ == '__main__':\n    t = int(input())\n    for _ in range(t):\n        a, b = map(int, input().split())\n        max_gcd = gcd(a, b)\n        if nt(tong(max_gcd)):\n            print('YES')\n        else: print('NO')\n        ",
+        "highlighted_code": "from math import *\ndef nt(n):\n    if n &lt; 2:\n        <span class='highlight-red'>return False\n    for i in range(2, </span>isqrt(n<span class='highlight-red'>) + 1):\n        if n % i == 0:\n            return False\n    return True\ndef tong(n</span>):\n    a = 0\n    while n != 0:\n        a += n % 10\n        n //= 10\n    return a\nif __name__ == &#39;__main__&#39;:\n    t <span class='highlight-red'>= int(input())\n    for _ in range(</span>t):\n        a, b = map(int, input().split())\n        max_gcd = gcd(a, b)\n        if nt(tong(max_gcd)):\n            print(&#39;YES&#39;)\n        else: print(&#39;NO&#39;)\n        "
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3aefe535fa0f4f1d852/222412e06e454a339defe331/sub_1762595810191_kwhjpht7q.py",
+        "similarity_percent": 33.58,
+        "full_code": "import math\ndef SNT(n):\n    if n <= 1:\n        return False  # Không phải số nguyên tố\n    for i in range(2, int(math.sqrt(n)) + 1):\n        if n % i == 0:\n            return False\n    return True\ndef BCNN(a,b):\n    c=math.gcd(a,b)\n    return c;\nn=int(input())\nfor i in range(1,n+1):\n    a,b=list(map(int,input().split()))\n    d=BCNN(a,b)\n    k=str(d)\n    v=0\n    for i in k:\n        v+=int(i)\n    if SNT(v)==True:\n        print(\"YES\",end=\"\\n\")\n    else:\n        print(\"NO\",end=\"\\n\")",
+        "highlighted_code": "import math\ndef SNT(n):\n    if n &lt;= 1:\n        <span class='highlight-green'>return False  # Không phải số nguyên tố\n    for i in range(2, </span>int(math.sqrt(n)<span class='highlight-green'>) + 1):\n        if n % i == 0:\n            return False\n    return True\ndef BCNN(a</span>,b):\n    c=math.gcd(a,b)\n    return c;\nn<span class='highlight-green'>=int(input())\nfor i in range(</span>1,n+1):\n    a,b=list(map(int,input().split()))\n    d=BCNN(a,b)\n    k=str(d)\n    v=0\n    for i in k:\n        v+=int(i)\n    if SNT(v)==True:\n        print(&#34;YES&#34;,end=&#34;\\n&#34;)\n    else:\n        print(&#34;NO&#34;,end=&#34;\\n&#34;)"
+      },
+      "token_overlap": 91,
+      "max_similarity_percent": 37.45
+    }
+  ]
+}

@@ -1,0 +1,79 @@
+{
+  "problem_id": "68fdc3b5fe535fa0f4f1d926",
+  "filter_criteria": {
+    "min_token_overlap": 80,
+    "min_similarity_percent": 60
+  },
+  "total_cases_found": 12,
+  "total_cases_filtered": 4,
+  "cases": [
+    {
+      "case_id": 1,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b5fe535fa0f4f1d926/345569c455a14db085eec8e9/sub_1762616474952_auc32ioap.py",
+        "similarity_percent": 86.59,
+        "full_code": "import itertools\nimport math\na = int(input())\nfor _ in range(a):\n    b = int(input())\n    so =[str(i) for i in range(1,b+1)]\n    hoan_vi = list(itertools.permutations(so))\n    hoan_vi.sort(reverse=True)\n    print(math.factorial(b))\n    print(' '.join((''.join(p) for p in hoan_vi)))\n",
+        "highlighted_code": "<span class='highlight-red'>import itertools\nimport math\na = int(input())\nfor _ in range(a):\n    b = int(input())\n    so =[str(i) for i in range(1,b+1)]\n    hoan_vi = list(itertools.permutations(so))\n    hoan_vi.sort(reverse=True)\n    print(math.factorial(b))\n    print(&#39; </span>&#39;.join((&#39;&#39;.join(p) for p in hoan_vi)))\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b5fe535fa0f4f1d926/d9aec9d917da4c5e9beeb80b/sub_1761746448975_1zq3tax9q.py",
+        "similarity_percent": 87.12,
+        "full_code": "import itertools\nimport math\n\nt = int(input())\nfor _ in range(t):\n    n = int(input())\n    nums = [str(i) for i in range(1, n + 1)]\n    perms = list(itertools.permutations(nums))\n    \n    \n    perms.sort(reverse=True)\n    \n    print(math.factorial(n))\n    print(\" \".join([\"\".join(p) for p in perms]))",
+        "highlighted_code": "<span class='highlight-green'>import itertools\nimport math\n\nt = int(input())\nfor _ in range(t):\n    n = int(input())\n    nums = [str(i) for i in range(1, n + 1)]\n    perms = list(itertools.permutations(nums))\n    \n    \n    perms.sort(reverse=True)\n    \n    print(math.factorial(n))\n    print(&#34; </span>&#34;.join([&#34;&#34;.join(p) for p in perms]))"
+      },
+      "token_overlap": 142,
+      "max_similarity_percent": 87.12
+    },
+    {
+      "case_id": 2,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b5fe535fa0f4f1d926/8e19101eb0da4e9a92a17098/sub_1761636701341_oaft8e7yf.py",
+        "similarity_percent": 65.0,
+        "full_code": "import math\ndef sinhhoanvi(a, l, r, res):\n    if l == r:\n        res.append(''.join(a))\n    else:\n        for i in range(l, r + 1):\n            a[l], a[i] = a[i], a[l]\n            sinhhoanvi(a, l + 1, r, res)\n            a[l], a[i] = a[i], a[l]\nt = int(input())\nfor j in range(t):\n    n = int(input())\n    print(math.factorial(n))\n    a = [str(i) for i in range(1, n + 1)]\n    res = []\n    sinhhoanvi(a, 0, n - 1, res)\n    res.sort(reverse = True)\n    print(' '.join(res))",
+        "highlighted_code": "import math\n<span class='highlight-red'>def sinhhoanvi(a, l, r, res):\n    if l == r:\n        res.append(&#39;&#39;.join</span>(a))\n    el<span class='highlight-red'>se:\n        for i in range(l, r + 1):\n            a[l], a[i] = a[i], a[l]\n            sinhhoanvi(a, l + 1, r, res)\n            a[l], a[i] = a[i], a[l]\nt = int(input</span>())\nfor j in range(t):\n    n = int(input())\n    print(math.factorial(n))\n    a = [str(i) for <span class='highlight-red'>i in range(1, n + 1)]\n    res = []\n    sinhhoanvi(a, 0, n - 1, res)\n    res.sort(reverse = True)\n    p</span>rint(&#39; &#39;.join(res))"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b5fe535fa0f4f1d926/26894d2babd64210ad6beba1/sub_1762350549703_vv9gyp1zf.py",
+        "similarity_percent": 67.83,
+        "full_code": "def hv(a, l, r, res):\n    if l == r:\n        res.append(''.join(map(str, a)))\n    else:\n        for i in range(l, r + 1):\n            a[l], a[i] = a[i], a[l]\n            hv(a, l + 1, r, res)\n            a[l], a[i] = a[i], a[l]\n\nt = int(input())\nwhile t > 0:\n    t -= 1\n    n = int(input())\n    a = [i for i in range(1, n + 1)]\n    res = []\n    hv(a, 0, n - 1, res)\n    res.sort(reverse=True)\n    print(len(res))\n    print(' '.join(res))\n",
+        "highlighted_code": "<span class='highlight-green'>def hv(a, l, r, res):\n    if l == r:\n        res.append(&#39;&#39;.join</span>(map(str, a)))\n    el<span class='highlight-green'>se:\n        for i in range(l, r + 1):\n            a[l], a[i] = a[i], a[l]\n            hv(a, l + 1, r, res)\n            a[l], a[i] = a[i], a[l]\n\nt = int(input</span>())\nwhile t &gt; 0:\n    t -= 1\n    n = int(input())\n    a = [i for <span class='highlight-green'>i in range(1, n + 1)]\n    res = []\n    hv(a, 0, n - 1, res)\n    res.sort(reverse=True)\n    p</span>rint(len(res))\n    print(&#39; &#39;.join(res))\n"
+      },
+      "token_overlap": 156,
+      "max_similarity_percent": 67.83
+    },
+    {
+      "case_id": 3,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b5fe535fa0f4f1d926/e59c34a1bebb49d29bfb3592/sub_1761876955398_0fwwybsb2.py",
+        "similarity_percent": 51.25,
+        "full_code": "from itertools import permutations\nimport math\nt = int(input())\nfor _ in range(t):\n    n = int(input())\n    arr = list(range(1,n+1))\n    perms = [\"\".join(map(str,p))  for p in permutations(arr)]\n    perms.sort(reverse = True)\n    print(math.factorial(n))\n    print(\" \".join(perms))",
+        "highlighted_code": "from itertools import permutations\nimpo<span class='highlight-red'>rt math\nt = int(input())\nfor _ in range(t):\n    n = int(input())\n    arr </span>= list(range(1,n+1))\n    perms = [&#34;&#34;.join(map(str,p))  for p in permutations(arr)]\n    <span class='highlight-red'>perms.sort(reverse = True)\n    print(math.factorial(n))\n    print(&#34; </span>&#34;.join(perms))"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b5fe535fa0f4f1d926/345569c455a14db085eec8e9/sub_1762616474952_auc32ioap.py",
+        "similarity_percent": 50.0,
+        "full_code": "import itertools\nimport math\na = int(input())\nfor _ in range(a):\n    b = int(input())\n    so =[str(i) for i in range(1,b+1)]\n    hoan_vi = list(itertools.permutations(so))\n    hoan_vi.sort(reverse=True)\n    print(math.factorial(b))\n    print(' '.join((''.join(p) for p in hoan_vi)))\n",
+        "highlighted_code": "import itertools\nimpo<span class='highlight-green'>rt math\na = int(input())\nfor _ in range(a):\n    b = int(input())\n    so </span>=[str(i) for i in range(1,b+1)]\n    hoan_vi = list(itertools.permutations(so))\n    <span class='highlight-green'>hoan_vi.sort(reverse=True)\n    print(math.factorial(b))\n    print(&#39; </span>&#39;.join((&#39;&#39;.join(p) for p in hoan_vi)))\n"
+      },
+      "token_overlap": 82,
+      "max_similarity_percent": 51.25
+    },
+    {
+      "case_id": 4,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b5fe535fa0f4f1d926/e59c34a1bebb49d29bfb3592/sub_1761876955398_0fwwybsb2.py",
+        "similarity_percent": 51.25,
+        "full_code": "from itertools import permutations\nimport math\nt = int(input())\nfor _ in range(t):\n    n = int(input())\n    arr = list(range(1,n+1))\n    perms = [\"\".join(map(str,p))  for p in permutations(arr)]\n    perms.sort(reverse = True)\n    print(math.factorial(n))\n    print(\" \".join(perms))",
+        "highlighted_code": "from itertools import permutations\nimpo<span class='highlight-red'>rt math\nt = int(input())\nfor _ in range(t):\n    n = int(input())\n    arr </span>= list(range(1,n+1))\n    perms = [&#34;&#34;.join(map(str,p))  for p in permutations(arr)]\n    <span class='highlight-red'>perms.sort(reverse = True)\n    print(math.factorial(n))\n    print(&#34; </span>&#34;.join(perms))"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b5fe535fa0f4f1d926/d9aec9d917da4c5e9beeb80b/sub_1761746448975_1zq3tax9q.py",
+        "similarity_percent": 50.31,
+        "full_code": "import itertools\nimport math\n\nt = int(input())\nfor _ in range(t):\n    n = int(input())\n    nums = [str(i) for i in range(1, n + 1)]\n    perms = list(itertools.permutations(nums))\n    \n    \n    perms.sort(reverse=True)\n    \n    print(math.factorial(n))\n    print(\" \".join([\"\".join(p) for p in perms]))",
+        "highlighted_code": "import itertools\nimpo<span class='highlight-green'>rt math\n\nt = int(input())\nfor _ in range(t):\n    n = int(input())\n    nums </span>= [str(i) for i in range(1, n + 1)]\n    perms = list(itertools.permutations(nums))\n    \n    \n    <span class='highlight-green'>perms.sort(reverse=True)\n    \n    print(math.factorial(n))\n    print(&#34; </span>&#34;.join([&#34;&#34;.join(p) for p in perms]))"
+      },
+      "token_overlap": 82,
+      "max_similarity_percent": 51.25
+    }
+  ]
+}

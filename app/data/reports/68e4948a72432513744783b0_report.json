@@ -1,0 +1,725 @@
+{
+  "problem_id": "68e4948a72432513744783b0",
+  "filter_criteria": {
+    "min_token_overlap": 80,
+    "min_similarity_percent": 60
+  },
+  "total_cases_found": 67,
+  "total_cases_filtered": 42,
+  "cases": [
+    {
+      "case_id": 1,
+      "file1": {
+        "path": "/app/app/data/submissions/68e4948a72432513744783b0/26894d2babd64210ad6beba1/sub_1762271927523_1tjjf7a4j.py",
+        "similarity_percent": 100.0,
+        "full_code": "n = int(input())\nwhile n != 1:\n    print(n, end= \" \")\n    if n % 2 == 0:\n        n = n // 2\n    else:\n        n = n * 3 + 1",
+        "highlighted_code": "<span class='highlight-red'>n = int(input())\nwhile n != 1:\n    print(n, end= &#34; &#34;)\n    if n % 2 == 0:\n        n = n // 2\n    else:\n        n = n </span>* 3 + 1"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e4948a72432513744783b0/26894d2babd64210ad6beba1/sub_1762271958531_h2sc6idkd.py",
+        "similarity_percent": 87.14,
+        "full_code": "n = int(input())\nwhile n != 1:\n    print(n, end= \" \")\n    if n % 2 == 0:\n        n = n // 2\n    else:\n        n = n * 3 + 1\nprint(1)",
+        "highlighted_code": "<span class='highlight-green'>n = int(input())\nwhile n != 1:\n    print(n, end= &#34; &#34;)\n    if n % 2 == 0:\n        n = n // 2\n    else:\n        n = n </span>* 3 + 1\nprint(1)"
+      },
+      "token_overlap": 61,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 2,
+      "file1": {
+        "path": "/app/app/data/submissions/68e4948a72432513744783b0/de7b795216694f3190b821ba/sub_1761319288400_ctn16hff3.py",
+        "similarity_percent": 100.0,
+        "full_code": "n=int(input())\nwhile(n!=1):\n    print(n, end=' ')\n    if(n%2==0):\n        n=n//2\n       \n    else:\n        n=n*3+1\nprint(n)     \n       \n        ",
+        "highlighted_code": "<span class='highlight-red'>n=int(input())\nwhile(n!=1):\n    print(n, end=&#39; &#39;)\n    if(n%2==0):\n        n=n//2\n       \n    else:\n        n=n*3+1\nprin</span>t(n)     \n       \n        "
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e4948a72432513744783b0/de7b795216694f3190b821ba/sub_1761317796842_j3k65eejn.py",
+        "similarity_percent": 100.0,
+        "full_code": "n=int(input())\nwhile(n!=1):\n    print(n, end=' ')\n    if(n%2==0):\n        n=n//2\n       \n    else:\n        n=n*3+1\nprint(n)     \n       \n        \n",
+        "highlighted_code": "<span class='highlight-green'>n=int(input())\nwhile(n!=1):\n    print(n, end=&#39; &#39;)\n    if(n%2==0):\n        n=n//2\n       \n    else:\n        n=n*3+1\nprin</span>t(n)     \n       \n        \n"
+      },
+      "token_overlap": 73,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 3,
+      "file1": {
+        "path": "/app/app/data/submissions/68e4948a72432513744783b0/de7b795216694f3190b821ba/sub_1761319288400_ctn16hff3.py",
+        "similarity_percent": 100.0,
+        "full_code": "n=int(input())\nwhile(n!=1):\n    print(n, end=' ')\n    if(n%2==0):\n        n=n//2\n       \n    else:\n        n=n*3+1\nprint(n)     \n       \n        ",
+        "highlighted_code": "<span class='highlight-red'>n=int(input())\nwhile(n!=1):\n    print(n, end=&#39; &#39;)\n    if(n%2==0):\n        n=n//2\n       \n    else:\n        n=n*3+1\nprin</span>t(n)     \n       \n        "
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e4948a72432513744783b0/de7b795216694f3190b821ba/sub_1761352597940_emo56onwh.py",
+        "similarity_percent": 100.0,
+        "full_code": "\nn=int(input())\nwhile(n!=1):\n    print(n, end=' ')\n    if(n%2==0):\n        n=n//2\n       \n    else:\n        n=n*3+1\nprint(n)       \n        ",
+        "highlighted_code": "<span class='highlight-green'>\nn=int(input())\nwhile(n!=1):\n    print(n, end=&#39; &#39;)\n    if(n%2==0):\n        n=n//2\n       \n    else:\n        n=n*3+1\npri</span>nt(n)       \n        "
+      },
+      "token_overlap": 73,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 4,
+      "file1": {
+        "path": "/app/app/data/submissions/68e4948a72432513744783b0/de7b795216694f3190b821ba/sub_1761319288400_ctn16hff3.py",
+        "similarity_percent": 100.0,
+        "full_code": "n=int(input())\nwhile(n!=1):\n    print(n, end=' ')\n    if(n%2==0):\n        n=n//2\n       \n    else:\n        n=n*3+1\nprint(n)     \n       \n        ",
+        "highlighted_code": "<span class='highlight-red'>n=int(input())\nwhile(n!=1):\n    print(n, end=&#39; &#39;)\n    if(n%2==0):\n        n=n//2\n       \n    else:\n        n=n*3+1\nprin</span>t(n)     \n       \n        "
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e4948a72432513744783b0/de7b795216694f3190b821ba/sub_1761317831383_gsy0n7af8.py",
+        "similarity_percent": 100.0,
+        "full_code": "n=int(input())\nwhile(n!=1):\n    print(n, end=' ')\n    if(n%2==0):\n        n=n//2\n       \n    else:\n        n=n*3+1\nprint(n)     \n       \n        ",
+        "highlighted_code": "<span class='highlight-green'>n=int(input())\nwhile(n!=1):\n    print(n, end=&#39; &#39;)\n    if(n%2==0):\n        n=n//2\n       \n    else:\n        n=n*3+1\nprin</span>t(n)     \n       \n        "
+      },
+      "token_overlap": 73,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 5,
+      "file1": {
+        "path": "/app/app/data/submissions/68e4948a72432513744783b0/de7b795216694f3190b821ba/sub_1761319288400_ctn16hff3.py",
+        "similarity_percent": 100.0,
+        "full_code": "n=int(input())\nwhile(n!=1):\n    print(n, end=' ')\n    if(n%2==0):\n        n=n//2\n       \n    else:\n        n=n*3+1\nprint(n)     \n       \n        ",
+        "highlighted_code": "<span class='highlight-red'>n=int(input())\nwhile(n!=1):\n    print(n, end=&#39; &#39;)\n    if(n%2==0):\n        n=n//2\n       \n    else:\n        n=n*3+1\nprin</span>t(n)     \n       \n        "
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e4948a72432513744783b0/de7b795216694f3190b821ba/sub_1761320126265_ozx06uxhe.py",
+        "similarity_percent": 100.0,
+        "full_code": "n=int(input())\nwhile(n!=1):\n    print(n, end=' ')\n    if(n%2==0):\n        n=n//2\n       \n    else:\n        n=n*3+1\nprint(n)     \n       \n        ",
+        "highlighted_code": "<span class='highlight-green'>n=int(input())\nwhile(n!=1):\n    print(n, end=&#39; &#39;)\n    if(n%2==0):\n        n=n//2\n       \n    else:\n        n=n*3+1\nprin</span>t(n)     \n       \n        "
+      },
+      "token_overlap": 73,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 6,
+      "file1": {
+        "path": "/app/app/data/submissions/68e4948a72432513744783b0/de7b795216694f3190b821ba/sub_1761319288400_ctn16hff3.py",
+        "similarity_percent": 100.0,
+        "full_code": "n=int(input())\nwhile(n!=1):\n    print(n, end=' ')\n    if(n%2==0):\n        n=n//2\n       \n    else:\n        n=n*3+1\nprint(n)     \n       \n        ",
+        "highlighted_code": "<span class='highlight-red'>n=int(input())\nwhile(n!=1):\n    print(n, end=&#39; &#39;)\n    if(n%2==0):\n        n=n//2\n       \n    else:\n        n=n*3+1\nprin</span>t(n)     \n       \n        "
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e4948a72432513744783b0/de7b795216694f3190b821ba/sub_1761352611362_0p18n1yy1.py",
+        "similarity_percent": 100.0,
+        "full_code": "\nn=int(input())\nwhile(n!=1):\n    print(n, end=' ')\n    if(n%2==0):\n        n=n//2\n       \n    else:\n        n=n*3+1\nprint(n)       \n        ",
+        "highlighted_code": "<span class='highlight-green'>\nn=int(input())\nwhile(n!=1):\n    print(n, end=&#39; &#39;)\n    if(n%2==0):\n        n=n//2\n       \n    else:\n        n=n*3+1\npri</span>nt(n)       \n        "
+      },
+      "token_overlap": 73,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 7,
+      "file1": {
+        "path": "/app/app/data/submissions/68e4948a72432513744783b0/de7b795216694f3190b821ba/sub_1761319288400_ctn16hff3.py",
+        "similarity_percent": 100.0,
+        "full_code": "n=int(input())\nwhile(n!=1):\n    print(n, end=' ')\n    if(n%2==0):\n        n=n//2\n       \n    else:\n        n=n*3+1\nprint(n)     \n       \n        ",
+        "highlighted_code": "<span class='highlight-red'>n=int(input())\nwhile(n!=1):\n    print(n, end=&#39; &#39;)\n    if(n%2==0):\n        n=n//2\n       \n    else:\n        n=n*3+1\nprin</span>t(n)     \n       \n        "
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e4948a72432513744783b0/de7b795216694f3190b821ba/sub_1761317802925_uk57ctl5b.py",
+        "similarity_percent": 100.0,
+        "full_code": "n=int(input())\nwhile(n!=1):\n    print(n, end=' ')\n    if(n%2==0):\n        n=n//2\n       \n    else:\n        n=n*3+1\nprint(n)     \n       \n        \n",
+        "highlighted_code": "<span class='highlight-green'>n=int(input())\nwhile(n!=1):\n    print(n, end=&#39; &#39;)\n    if(n%2==0):\n        n=n//2\n       \n    else:\n        n=n*3+1\nprin</span>t(n)     \n       \n        \n"
+      },
+      "token_overlap": 73,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 8,
+      "file1": {
+        "path": "/app/app/data/submissions/68e4948a72432513744783b0/de7b795216694f3190b821ba/sub_1761317796842_j3k65eejn.py",
+        "similarity_percent": 100.0,
+        "full_code": "n=int(input())\nwhile(n!=1):\n    print(n, end=' ')\n    if(n%2==0):\n        n=n//2\n       \n    else:\n        n=n*3+1\nprint(n)     \n       \n        \n",
+        "highlighted_code": "<span class='highlight-red'>n=int(input())\nwhile(n!=1):\n    print(n, end=&#39; &#39;)\n    if(n%2==0):\n        n=n//2\n       \n    else:\n        n=n*3+1\nprin</span>t(n)     \n       \n        \n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e4948a72432513744783b0/de7b795216694f3190b821ba/sub_1761352597940_emo56onwh.py",
+        "similarity_percent": 100.0,
+        "full_code": "\nn=int(input())\nwhile(n!=1):\n    print(n, end=' ')\n    if(n%2==0):\n        n=n//2\n       \n    else:\n        n=n*3+1\nprint(n)       \n        ",
+        "highlighted_code": "<span class='highlight-green'>\nn=int(input())\nwhile(n!=1):\n    print(n, end=&#39; &#39;)\n    if(n%2==0):\n        n=n//2\n       \n    else:\n        n=n*3+1\npri</span>nt(n)       \n        "
+      },
+      "token_overlap": 73,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 9,
+      "file1": {
+        "path": "/app/app/data/submissions/68e4948a72432513744783b0/de7b795216694f3190b821ba/sub_1761317796842_j3k65eejn.py",
+        "similarity_percent": 100.0,
+        "full_code": "n=int(input())\nwhile(n!=1):\n    print(n, end=' ')\n    if(n%2==0):\n        n=n//2\n       \n    else:\n        n=n*3+1\nprint(n)     \n       \n        \n",
+        "highlighted_code": "<span class='highlight-red'>n=int(input())\nwhile(n!=1):\n    print(n, end=&#39; &#39;)\n    if(n%2==0):\n        n=n//2\n       \n    else:\n        n=n*3+1\nprin</span>t(n)     \n       \n        \n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e4948a72432513744783b0/de7b795216694f3190b821ba/sub_1761317831383_gsy0n7af8.py",
+        "similarity_percent": 100.0,
+        "full_code": "n=int(input())\nwhile(n!=1):\n    print(n, end=' ')\n    if(n%2==0):\n        n=n//2\n       \n    else:\n        n=n*3+1\nprint(n)     \n       \n        ",
+        "highlighted_code": "<span class='highlight-green'>n=int(input())\nwhile(n!=1):\n    print(n, end=&#39; &#39;)\n    if(n%2==0):\n        n=n//2\n       \n    else:\n        n=n*3+1\nprin</span>t(n)     \n       \n        "
+      },
+      "token_overlap": 73,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 10,
+      "file1": {
+        "path": "/app/app/data/submissions/68e4948a72432513744783b0/de7b795216694f3190b821ba/sub_1761317796842_j3k65eejn.py",
+        "similarity_percent": 100.0,
+        "full_code": "n=int(input())\nwhile(n!=1):\n    print(n, end=' ')\n    if(n%2==0):\n        n=n//2\n       \n    else:\n        n=n*3+1\nprint(n)     \n       \n        \n",
+        "highlighted_code": "<span class='highlight-red'>n=int(input())\nwhile(n!=1):\n    print(n, end=&#39; &#39;)\n    if(n%2==0):\n        n=n//2\n       \n    else:\n        n=n*3+1\nprin</span>t(n)     \n       \n        \n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e4948a72432513744783b0/de7b795216694f3190b821ba/sub_1761320126265_ozx06uxhe.py",
+        "similarity_percent": 100.0,
+        "full_code": "n=int(input())\nwhile(n!=1):\n    print(n, end=' ')\n    if(n%2==0):\n        n=n//2\n       \n    else:\n        n=n*3+1\nprint(n)     \n       \n        ",
+        "highlighted_code": "<span class='highlight-green'>n=int(input())\nwhile(n!=1):\n    print(n, end=&#39; &#39;)\n    if(n%2==0):\n        n=n//2\n       \n    else:\n        n=n*3+1\nprin</span>t(n)     \n       \n        "
+      },
+      "token_overlap": 73,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 11,
+      "file1": {
+        "path": "/app/app/data/submissions/68e4948a72432513744783b0/de7b795216694f3190b821ba/sub_1761317796842_j3k65eejn.py",
+        "similarity_percent": 100.0,
+        "full_code": "n=int(input())\nwhile(n!=1):\n    print(n, end=' ')\n    if(n%2==0):\n        n=n//2\n       \n    else:\n        n=n*3+1\nprint(n)     \n       \n        \n",
+        "highlighted_code": "<span class='highlight-red'>n=int(input())\nwhile(n!=1):\n    print(n, end=&#39; &#39;)\n    if(n%2==0):\n        n=n//2\n       \n    else:\n        n=n*3+1\nprin</span>t(n)     \n       \n        \n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e4948a72432513744783b0/de7b795216694f3190b821ba/sub_1761352611362_0p18n1yy1.py",
+        "similarity_percent": 100.0,
+        "full_code": "\nn=int(input())\nwhile(n!=1):\n    print(n, end=' ')\n    if(n%2==0):\n        n=n//2\n       \n    else:\n        n=n*3+1\nprint(n)       \n        ",
+        "highlighted_code": "<span class='highlight-green'>\nn=int(input())\nwhile(n!=1):\n    print(n, end=&#39; &#39;)\n    if(n%2==0):\n        n=n//2\n       \n    else:\n        n=n*3+1\npri</span>nt(n)       \n        "
+      },
+      "token_overlap": 73,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 12,
+      "file1": {
+        "path": "/app/app/data/submissions/68e4948a72432513744783b0/de7b795216694f3190b821ba/sub_1761317796842_j3k65eejn.py",
+        "similarity_percent": 100.0,
+        "full_code": "n=int(input())\nwhile(n!=1):\n    print(n, end=' ')\n    if(n%2==0):\n        n=n//2\n       \n    else:\n        n=n*3+1\nprint(n)     \n       \n        \n",
+        "highlighted_code": "<span class='highlight-red'>n=int(input())\nwhile(n!=1):\n    print(n, end=&#39; &#39;)\n    if(n%2==0):\n        n=n//2\n       \n    else:\n        n=n*3+1\nprin</span>t(n)     \n       \n        \n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e4948a72432513744783b0/de7b795216694f3190b821ba/sub_1761317802925_uk57ctl5b.py",
+        "similarity_percent": 100.0,
+        "full_code": "n=int(input())\nwhile(n!=1):\n    print(n, end=' ')\n    if(n%2==0):\n        n=n//2\n       \n    else:\n        n=n*3+1\nprint(n)     \n       \n        \n",
+        "highlighted_code": "<span class='highlight-green'>n=int(input())\nwhile(n!=1):\n    print(n, end=&#39; &#39;)\n    if(n%2==0):\n        n=n//2\n       \n    else:\n        n=n*3+1\nprin</span>t(n)     \n       \n        \n"
+      },
+      "token_overlap": 73,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 13,
+      "file1": {
+        "path": "/app/app/data/submissions/68e4948a72432513744783b0/16e46f0143f645b5968397c4/sub_1762694229703_r47iuol8p.py",
+        "similarity_percent": 100.0,
+        "full_code": "n=int(input())\nwhile n!=1:\n    print(n,end=\" \")\n    if n%2==0:\n        n//=2\n    else:\n        n=n*3+1\nprint(\"1\")\n",
+        "highlighted_code": "<span class='highlight-red'>n=int(input())\nwhile n!=1:\n    print(n,end=&#34; &#34;)\n    if n%2==0:\n        n//=2\n    else:\n        n=n*3+1\nprint</span>(&#34;1&#34;)\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e4948a72432513744783b0/5fdf5d57201a4c04a677dfa7/sub_1761582747989_seoiwpkwt.py",
+        "similarity_percent": 94.52,
+        "full_code": "n = int(input())\nwhile n != 1:\n    print(n, end = \" \")\n    if n % 2 == 0:\n        n //= 2\n    else:\n        n = n*3 + 1 \nprint(n, end = \" \")",
+        "highlighted_code": "<span class='highlight-green'>n = int(input())\nwhile n != 1:\n    print(n, end = &#34; &#34;)\n    if n % 2 == 0:\n        n //= 2\n    else:\n        n = n*3 + 1 \nprint</span>(n, end = &#34; &#34;)"
+      },
+      "token_overlap": 69,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 14,
+      "file1": {
+        "path": "/app/app/data/submissions/68e4948a72432513744783b0/edd832f517d24636bde1e118/sub_1762351871439_u9cgy4zo7.py",
+        "similarity_percent": 100.0,
+        "full_code": "n = int(input())\nwhile not n == 1:\n    print(n, end = \" \")\n    if n % 2 == 0:\n        n //= 2\n    else:\n        n *= 3\n        n += 1\n    if n == 1:\n        print(n, end = \" \")",
+        "highlighted_code": "<span class='highlight-red'>n = int(input())\nwhile not n == 1:\n    print(n, end = &#34; &#34;)\n    if n % 2 == 0:\n        n //= 2\n    else:\n        n *= 3\n        n += 1\n    if n == 1:\n        print(n, end = &#34; </span>&#34;)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e4948a72432513744783b0/edd832f517d24636bde1e118/sub_1762351903930_s0vvf56pk.py",
+        "similarity_percent": 100.0,
+        "full_code": "n = int(input())\nwhile not n == 1:\n    print(n, end = \" \")\n    if n % 2 == 0:\n        n //= 2\n    else:\n        n *= 3\n        n += 1\n    if n == 1:\n        print(n, end = \" \")",
+        "highlighted_code": "<span class='highlight-green'>n = int(input())\nwhile not n == 1:\n    print(n, end = &#34; &#34;)\n    if n % 2 == 0:\n        n //= 2\n    else:\n        n *= 3\n        n += 1\n    if n == 1:\n        print(n, end = &#34; </span>&#34;)"
+      },
+      "token_overlap": 87,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 15,
+      "file1": {
+        "path": "/app/app/data/submissions/68e4948a72432513744783b0/de7b795216694f3190b821ba/sub_1761352597940_emo56onwh.py",
+        "similarity_percent": 100.0,
+        "full_code": "\nn=int(input())\nwhile(n!=1):\n    print(n, end=' ')\n    if(n%2==0):\n        n=n//2\n       \n    else:\n        n=n*3+1\nprint(n)       \n        ",
+        "highlighted_code": "<span class='highlight-red'>\nn=int(input())\nwhile(n!=1):\n    print(n, end=&#39; &#39;)\n    if(n%2==0):\n        n=n//2\n       \n    else:\n        n=n*3+1\npri</span>nt(n)       \n        "
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e4948a72432513744783b0/de7b795216694f3190b821ba/sub_1761317831383_gsy0n7af8.py",
+        "similarity_percent": 100.0,
+        "full_code": "n=int(input())\nwhile(n!=1):\n    print(n, end=' ')\n    if(n%2==0):\n        n=n//2\n       \n    else:\n        n=n*3+1\nprint(n)     \n       \n        ",
+        "highlighted_code": "<span class='highlight-green'>n=int(input())\nwhile(n!=1):\n    print(n, end=&#39; &#39;)\n    if(n%2==0):\n        n=n//2\n       \n    else:\n        n=n*3+1\nprin</span>t(n)     \n       \n        "
+      },
+      "token_overlap": 73,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 16,
+      "file1": {
+        "path": "/app/app/data/submissions/68e4948a72432513744783b0/de7b795216694f3190b821ba/sub_1761352597940_emo56onwh.py",
+        "similarity_percent": 100.0,
+        "full_code": "\nn=int(input())\nwhile(n!=1):\n    print(n, end=' ')\n    if(n%2==0):\n        n=n//2\n       \n    else:\n        n=n*3+1\nprint(n)       \n        ",
+        "highlighted_code": "<span class='highlight-red'>\nn=int(input())\nwhile(n!=1):\n    print(n, end=&#39; &#39;)\n    if(n%2==0):\n        n=n//2\n       \n    else:\n        n=n*3+1\npri</span>nt(n)       \n        "
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e4948a72432513744783b0/de7b795216694f3190b821ba/sub_1761320126265_ozx06uxhe.py",
+        "similarity_percent": 100.0,
+        "full_code": "n=int(input())\nwhile(n!=1):\n    print(n, end=' ')\n    if(n%2==0):\n        n=n//2\n       \n    else:\n        n=n*3+1\nprint(n)     \n       \n        ",
+        "highlighted_code": "<span class='highlight-green'>n=int(input())\nwhile(n!=1):\n    print(n, end=&#39; &#39;)\n    if(n%2==0):\n        n=n//2\n       \n    else:\n        n=n*3+1\nprin</span>t(n)     \n       \n        "
+      },
+      "token_overlap": 73,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 17,
+      "file1": {
+        "path": "/app/app/data/submissions/68e4948a72432513744783b0/de7b795216694f3190b821ba/sub_1761352597940_emo56onwh.py",
+        "similarity_percent": 100.0,
+        "full_code": "\nn=int(input())\nwhile(n!=1):\n    print(n, end=' ')\n    if(n%2==0):\n        n=n//2\n       \n    else:\n        n=n*3+1\nprint(n)       \n        ",
+        "highlighted_code": "<span class='highlight-red'>\nn=int(input())\nwhile(n!=1):\n    print(n, end=&#39; &#39;)\n    if(n%2==0):\n        n=n//2\n       \n    else:\n        n=n*3+1\npri</span>nt(n)       \n        "
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e4948a72432513744783b0/de7b795216694f3190b821ba/sub_1761352611362_0p18n1yy1.py",
+        "similarity_percent": 100.0,
+        "full_code": "\nn=int(input())\nwhile(n!=1):\n    print(n, end=' ')\n    if(n%2==0):\n        n=n//2\n       \n    else:\n        n=n*3+1\nprint(n)       \n        ",
+        "highlighted_code": "<span class='highlight-green'>\nn=int(input())\nwhile(n!=1):\n    print(n, end=&#39; &#39;)\n    if(n%2==0):\n        n=n//2\n       \n    else:\n        n=n*3+1\npri</span>nt(n)       \n        "
+      },
+      "token_overlap": 73,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 18,
+      "file1": {
+        "path": "/app/app/data/submissions/68e4948a72432513744783b0/de7b795216694f3190b821ba/sub_1761352597940_emo56onwh.py",
+        "similarity_percent": 100.0,
+        "full_code": "\nn=int(input())\nwhile(n!=1):\n    print(n, end=' ')\n    if(n%2==0):\n        n=n//2\n       \n    else:\n        n=n*3+1\nprint(n)       \n        ",
+        "highlighted_code": "<span class='highlight-red'>\nn=int(input())\nwhile(n!=1):\n    print(n, end=&#39; &#39;)\n    if(n%2==0):\n        n=n//2\n       \n    else:\n        n=n*3+1\npri</span>nt(n)       \n        "
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e4948a72432513744783b0/de7b795216694f3190b821ba/sub_1761317802925_uk57ctl5b.py",
+        "similarity_percent": 100.0,
+        "full_code": "n=int(input())\nwhile(n!=1):\n    print(n, end=' ')\n    if(n%2==0):\n        n=n//2\n       \n    else:\n        n=n*3+1\nprint(n)     \n       \n        \n",
+        "highlighted_code": "<span class='highlight-green'>n=int(input())\nwhile(n!=1):\n    print(n, end=&#39; &#39;)\n    if(n%2==0):\n        n=n//2\n       \n    else:\n        n=n*3+1\nprin</span>t(n)     \n       \n        \n"
+      },
+      "token_overlap": 73,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 19,
+      "file1": {
+        "path": "/app/app/data/submissions/68e4948a72432513744783b0/de7b795216694f3190b821ba/sub_1761317831383_gsy0n7af8.py",
+        "similarity_percent": 100.0,
+        "full_code": "n=int(input())\nwhile(n!=1):\n    print(n, end=' ')\n    if(n%2==0):\n        n=n//2\n       \n    else:\n        n=n*3+1\nprint(n)     \n       \n        ",
+        "highlighted_code": "<span class='highlight-red'>n=int(input())\nwhile(n!=1):\n    print(n, end=&#39; &#39;)\n    if(n%2==0):\n        n=n//2\n       \n    else:\n        n=n*3+1\nprin</span>t(n)     \n       \n        "
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e4948a72432513744783b0/de7b795216694f3190b821ba/sub_1761320126265_ozx06uxhe.py",
+        "similarity_percent": 100.0,
+        "full_code": "n=int(input())\nwhile(n!=1):\n    print(n, end=' ')\n    if(n%2==0):\n        n=n//2\n       \n    else:\n        n=n*3+1\nprint(n)     \n       \n        ",
+        "highlighted_code": "<span class='highlight-green'>n=int(input())\nwhile(n!=1):\n    print(n, end=&#39; &#39;)\n    if(n%2==0):\n        n=n//2\n       \n    else:\n        n=n*3+1\nprin</span>t(n)     \n       \n        "
+      },
+      "token_overlap": 73,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 20,
+      "file1": {
+        "path": "/app/app/data/submissions/68e4948a72432513744783b0/de7b795216694f3190b821ba/sub_1761317831383_gsy0n7af8.py",
+        "similarity_percent": 100.0,
+        "full_code": "n=int(input())\nwhile(n!=1):\n    print(n, end=' ')\n    if(n%2==0):\n        n=n//2\n       \n    else:\n        n=n*3+1\nprint(n)     \n       \n        ",
+        "highlighted_code": "<span class='highlight-red'>n=int(input())\nwhile(n!=1):\n    print(n, end=&#39; &#39;)\n    if(n%2==0):\n        n=n//2\n       \n    else:\n        n=n*3+1\nprin</span>t(n)     \n       \n        "
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e4948a72432513744783b0/de7b795216694f3190b821ba/sub_1761352611362_0p18n1yy1.py",
+        "similarity_percent": 100.0,
+        "full_code": "\nn=int(input())\nwhile(n!=1):\n    print(n, end=' ')\n    if(n%2==0):\n        n=n//2\n       \n    else:\n        n=n*3+1\nprint(n)       \n        ",
+        "highlighted_code": "<span class='highlight-green'>\nn=int(input())\nwhile(n!=1):\n    print(n, end=&#39; &#39;)\n    if(n%2==0):\n        n=n//2\n       \n    else:\n        n=n*3+1\npri</span>nt(n)       \n        "
+      },
+      "token_overlap": 73,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 21,
+      "file1": {
+        "path": "/app/app/data/submissions/68e4948a72432513744783b0/de7b795216694f3190b821ba/sub_1761317831383_gsy0n7af8.py",
+        "similarity_percent": 100.0,
+        "full_code": "n=int(input())\nwhile(n!=1):\n    print(n, end=' ')\n    if(n%2==0):\n        n=n//2\n       \n    else:\n        n=n*3+1\nprint(n)     \n       \n        ",
+        "highlighted_code": "<span class='highlight-red'>n=int(input())\nwhile(n!=1):\n    print(n, end=&#39; &#39;)\n    if(n%2==0):\n        n=n//2\n       \n    else:\n        n=n*3+1\nprin</span>t(n)     \n       \n        "
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e4948a72432513744783b0/de7b795216694f3190b821ba/sub_1761317802925_uk57ctl5b.py",
+        "similarity_percent": 100.0,
+        "full_code": "n=int(input())\nwhile(n!=1):\n    print(n, end=' ')\n    if(n%2==0):\n        n=n//2\n       \n    else:\n        n=n*3+1\nprint(n)     \n       \n        \n",
+        "highlighted_code": "<span class='highlight-green'>n=int(input())\nwhile(n!=1):\n    print(n, end=&#39; &#39;)\n    if(n%2==0):\n        n=n//2\n       \n    else:\n        n=n*3+1\nprin</span>t(n)     \n       \n        \n"
+      },
+      "token_overlap": 73,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 22,
+      "file1": {
+        "path": "/app/app/data/submissions/68e4948a72432513744783b0/3e9bed73a45344af82e48379/sub_1761322237802_pvgpwx1va.py",
+        "similarity_percent": 100.0,
+        "full_code": "n = int(input())\nprint(int(n), end=\" \")\nwhile n != 1:\n    if n % 2 == 0:\n        n = n / 2\n    else:\n        n = n*3+1\n    print(int(n), end=\" \")",
+        "highlighted_code": "<span class='highlight-red'>n = int(input())\nprint(int(n), end=&#34; &#34;)\nwhile n != 1:\n    if n % 2 == 0:\n        n = n / 2\n    else:\n        n = n*3+1\n    print(int(n), end=&#34;</span> &#34;)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e4948a72432513744783b0/3e9bed73a45344af82e48379/sub_1761322274827_vbosy35mn.py",
+        "similarity_percent": 100.0,
+        "full_code": "n = int(input())\nprint(int(n), end=\" \")\nwhile n != 1:\n    if n % 2 == 0:\n        n = n / 2\n    else:\n        n = n*3+1\n    print(int(n), end=\" \")",
+        "highlighted_code": "<span class='highlight-green'>n = int(input())\nprint(int(n), end=&#34; &#34;)\nwhile n != 1:\n    if n % 2 == 0:\n        n = n / 2\n    else:\n        n = n*3+1\n    print(int(n), end=&#34;</span> &#34;)"
+      },
+      "token_overlap": 85,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 23,
+      "file1": {
+        "path": "/app/app/data/submissions/68e4948a72432513744783b0/de7b795216694f3190b821ba/sub_1761320126265_ozx06uxhe.py",
+        "similarity_percent": 100.0,
+        "full_code": "n=int(input())\nwhile(n!=1):\n    print(n, end=' ')\n    if(n%2==0):\n        n=n//2\n       \n    else:\n        n=n*3+1\nprint(n)     \n       \n        ",
+        "highlighted_code": "<span class='highlight-red'>n=int(input())\nwhile(n!=1):\n    print(n, end=&#39; &#39;)\n    if(n%2==0):\n        n=n//2\n       \n    else:\n        n=n*3+1\nprin</span>t(n)     \n       \n        "
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e4948a72432513744783b0/de7b795216694f3190b821ba/sub_1761352611362_0p18n1yy1.py",
+        "similarity_percent": 100.0,
+        "full_code": "\nn=int(input())\nwhile(n!=1):\n    print(n, end=' ')\n    if(n%2==0):\n        n=n//2\n       \n    else:\n        n=n*3+1\nprint(n)       \n        ",
+        "highlighted_code": "<span class='highlight-green'>\nn=int(input())\nwhile(n!=1):\n    print(n, end=&#39; &#39;)\n    if(n%2==0):\n        n=n//2\n       \n    else:\n        n=n*3+1\npri</span>nt(n)       \n        "
+      },
+      "token_overlap": 73,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 24,
+      "file1": {
+        "path": "/app/app/data/submissions/68e4948a72432513744783b0/de7b795216694f3190b821ba/sub_1761320126265_ozx06uxhe.py",
+        "similarity_percent": 100.0,
+        "full_code": "n=int(input())\nwhile(n!=1):\n    print(n, end=' ')\n    if(n%2==0):\n        n=n//2\n       \n    else:\n        n=n*3+1\nprint(n)     \n       \n        ",
+        "highlighted_code": "<span class='highlight-red'>n=int(input())\nwhile(n!=1):\n    print(n, end=&#39; &#39;)\n    if(n%2==0):\n        n=n//2\n       \n    else:\n        n=n*3+1\nprin</span>t(n)     \n       \n        "
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e4948a72432513744783b0/de7b795216694f3190b821ba/sub_1761317802925_uk57ctl5b.py",
+        "similarity_percent": 100.0,
+        "full_code": "n=int(input())\nwhile(n!=1):\n    print(n, end=' ')\n    if(n%2==0):\n        n=n//2\n       \n    else:\n        n=n*3+1\nprint(n)     \n       \n        \n",
+        "highlighted_code": "<span class='highlight-green'>n=int(input())\nwhile(n!=1):\n    print(n, end=&#39; &#39;)\n    if(n%2==0):\n        n=n//2\n       \n    else:\n        n=n*3+1\nprin</span>t(n)     \n       \n        \n"
+      },
+      "token_overlap": 73,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 25,
+      "file1": {
+        "path": "/app/app/data/submissions/68e4948a72432513744783b0/de7b795216694f3190b821ba/sub_1761352611362_0p18n1yy1.py",
+        "similarity_percent": 100.0,
+        "full_code": "\nn=int(input())\nwhile(n!=1):\n    print(n, end=' ')\n    if(n%2==0):\n        n=n//2\n       \n    else:\n        n=n*3+1\nprint(n)       \n        ",
+        "highlighted_code": "<span class='highlight-red'>\nn=int(input())\nwhile(n!=1):\n    print(n, end=&#39; &#39;)\n    if(n%2==0):\n        n=n//2\n       \n    else:\n        n=n*3+1\npri</span>nt(n)       \n        "
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e4948a72432513744783b0/de7b795216694f3190b821ba/sub_1761317802925_uk57ctl5b.py",
+        "similarity_percent": 100.0,
+        "full_code": "n=int(input())\nwhile(n!=1):\n    print(n, end=' ')\n    if(n%2==0):\n        n=n//2\n       \n    else:\n        n=n*3+1\nprint(n)     \n       \n        \n",
+        "highlighted_code": "<span class='highlight-green'>n=int(input())\nwhile(n!=1):\n    print(n, end=&#39; &#39;)\n    if(n%2==0):\n        n=n//2\n       \n    else:\n        n=n*3+1\nprin</span>t(n)     \n       \n        \n"
+      },
+      "token_overlap": 73,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 26,
+      "file1": {
+        "path": "/app/app/data/submissions/68e4948a72432513744783b0/edd832f517d24636bde1e118/sub_1762353351829_wcmqyupun.py",
+        "similarity_percent": 88.0,
+        "full_code": "n = int(input())\nwhile True:\n    print(n, end =\" \")\n    if n == 1: break\n    if n % 2 == 0:\n        n //= 2\n    else:\n        n *= 3\n        n += 1",
+        "highlighted_code": "<span class='highlight-red'>n = int(input())\nwhile True:\n    print(n, end =&#34; &#34;)\n    if n == 1: break\n    if n % 2 == 0:\n        n //= 2\n    el</span>se:\n        n *= 3\n        n += 1"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e4948a72432513744783b0/e7457b81cbe24d9d9bdac641/sub_1762272973713_cj9n7a7d9.py",
+        "similarity_percent": 91.67,
+        "full_code": "n = int(input())\nwhile True:\n    print(n, end=\" \")\n    if n == 1:\n        break\n    if n % 2 == 0:\n        n //= 2\n    else:\n        n = n * 3 + 1\n",
+        "highlighted_code": "<span class='highlight-green'>n = int(input())\nwhile True:\n    print(n, end=&#34; &#34;)\n    if n == 1:\n        break\n    if n % 2 == 0:\n        n //= 2\n    el</span>se:\n        n = n * 3 + 1\n"
+      },
+      "token_overlap": 66,
+      "max_similarity_percent": 91.67
+    },
+    {
+      "case_id": 27,
+      "file1": {
+        "path": "/app/app/data/submissions/68e4948a72432513744783b0/91001b54722a4328a2b7b879/sub_1762079602051_ze3un9194.py",
+        "similarity_percent": 81.08,
+        "full_code": "n = int(input())\nprint(n, end=\" \")\nwhile n != 1:\n    if n % 2 == 0:\n        n = n // 2\n    else:\n        n = n * 3 + 1\n    print(n, end=\" \")",
+        "highlighted_code": "<span class='highlight-red'>n = int(input())\nprint(n, end=&#34; &#34;)\nwhile n != 1:\n    if n % 2 == 0:\n        n = n // 2\n    else:\n        n = </span>n * 3 + 1\n    print(n, end=&#34; &#34;)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e4948a72432513744783b0/fed45b08a578484ebf92e830/sub_1761665381082_bms9pw40m.py",
+        "similarity_percent": 75.95,
+        "full_code": "n=int(input())\nprint(n,end=' ')\nwhile n!=1:\n    if n%2==0:\n        n=n//2\n    else:\n        n=(n*3)+1\n    print(n,end=' ')",
+        "highlighted_code": "<span class='highlight-green'>n=int(input())\nprint(n,end=&#39; &#39;)\nwhile n!=1:\n    if n%2==0:\n        n=n//2\n    else:\n        n=</span>(n*3)+1\n    print(n,end=&#39; &#39;)"
+      },
+      "token_overlap": 60,
+      "max_similarity_percent": 81.08
+    },
+    {
+      "case_id": 28,
+      "file1": {
+        "path": "/app/app/data/submissions/68e4948a72432513744783b0/e7457b81cbe24d9d9bdac641/sub_1762272973713_cj9n7a7d9.py",
+        "similarity_percent": 79.17,
+        "full_code": "n = int(input())\nwhile True:\n    print(n, end=\" \")\n    if n == 1:\n        break\n    if n % 2 == 0:\n        n //= 2\n    else:\n        n = n * 3 + 1\n",
+        "highlighted_code": "<span class='highlight-red'>n = int(input())\nwhile True:\n    print(n, end=&#34; &#34;)\n    if n == 1:\n        break\n    if n % 2 == </span>0:\n        n //= 2\n    else:\n        n = n * 3 + 1\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e4948a72432513744783b0/cd93b2ff882a4ffa85f4518f/sub_1761889417017_qe2st2z8l.py",
+        "similarity_percent": 77.03,
+        "full_code": "n = int(input())\nwhile True:\n    print(n, end=' ')\n    if n == 1:\n        break\n    if n % 2 == 0:\n        n = n // 2\n    else:\n        n = n * 3 + 1",
+        "highlighted_code": "<span class='highlight-green'>n = int(input())\nwhile True:\n    print(n, end=&#39; &#39;)\n    if n == 1:\n        break\n    if n % 2 == </span>0:\n        n = n // 2\n    else:\n        n = n * 3 + 1"
+      },
+      "token_overlap": 57,
+      "max_similarity_percent": 79.17
+    },
+    {
+      "case_id": 29,
+      "file1": {
+        "path": "/app/app/data/submissions/68e4948a72432513744783b0/f95120b3a38a461085ef58cb/sub_1762102925846_t6c84f5io.py",
+        "similarity_percent": 76.74,
+        "full_code": "lst = []\nn = int(input())\nwhile n != 1:\n    lst.append(n)\n    if n % 2 == 0:\n        n = n // 2\n    else:\n        n = 3 * n +1\nlst.append(1)\nprint(\" \".join(map(str,lst)))",
+        "highlighted_code": "lst = []\nn = int(input())\nwh<span class='highlight-red'>ile n != 1:\n    lst.append(n)\n    if n % 2 == 0:\n        n = n // 2\n    else:\n        n = 3 * n +1\nlst.append(1)\nprint(&#34; &#34;.join(map(str</span>,lst)))"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e4948a72432513744783b0/8045cd76adf946038858d2bc/sub_1762402469758_4ouzy51bo.py",
+        "similarity_percent": 76.74,
+        "full_code": "n=int(input())\nds=[]\nwhile n != 1:\n    ds.append(n)\n    if n % 2 == 0:\n        n=n//2\n    else:\n        n=3*n+1\nds.append(1)\nprint(\" \".join(map(str,ds)))",
+        "highlighted_code": "n=int(input())\nds=[]\nwh<span class='highlight-green'>ile n != 1:\n    ds.append(n)\n    if n % 2 == 0:\n        n=n//2\n    else:\n        n=3*n+1\nds.append(1)\nprint(&#34; &#34;.join(map(str</span>,ds)))"
+      },
+      "token_overlap": 66,
+      "max_similarity_percent": 76.74
+    },
+    {
+      "case_id": 30,
+      "file1": {
+        "path": "/app/app/data/submissions/68e4948a72432513744783b0/edd832f517d24636bde1e118/sub_1762353351829_wcmqyupun.py",
+        "similarity_percent": 76.0,
+        "full_code": "n = int(input())\nwhile True:\n    print(n, end =\" \")\n    if n == 1: break\n    if n % 2 == 0:\n        n //= 2\n    else:\n        n *= 3\n        n += 1",
+        "highlighted_code": "<span class='highlight-red'>n = int(input())\nwhile True:\n    print(n, end =&#34; &#34;)\n    if n == 1: break\n    if n % 2 == </span>0:\n        n //= 2\n    else:\n        n *= 3\n        n += 1"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e4948a72432513744783b0/cd93b2ff882a4ffa85f4518f/sub_1761889417017_qe2st2z8l.py",
+        "similarity_percent": 77.03,
+        "full_code": "n = int(input())\nwhile True:\n    print(n, end=' ')\n    if n == 1:\n        break\n    if n % 2 == 0:\n        n = n // 2\n    else:\n        n = n * 3 + 1",
+        "highlighted_code": "<span class='highlight-green'>n = int(input())\nwhile True:\n    print(n, end=&#39; &#39;)\n    if n == 1:\n        break\n    if n % 2 == </span>0:\n        n = n // 2\n    else:\n        n = n * 3 + 1"
+      },
+      "token_overlap": 57,
+      "max_similarity_percent": 77.03
+    },
+    {
+      "case_id": 31,
+      "file1": {
+        "path": "/app/app/data/submissions/68e4948a72432513744783b0/26894d2babd64210ad6beba1/sub_1762271927523_1tjjf7a4j.py",
+        "similarity_percent": 73.77,
+        "full_code": "n = int(input())\nwhile n != 1:\n    print(n, end= \" \")\n    if n % 2 == 0:\n        n = n // 2\n    else:\n        n = n * 3 + 1",
+        "highlighted_code": "<span class='highlight-red'>n = int(input())\nwhile n != 1:\n    print(n, end= &#34; &#34;)\n    if n % 2 == </span>0:\n        n = n // 2\n    else:\n        n = n * 3 + 1"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e4948a72432513744783b0/16e46f0143f645b5968397c4/sub_1762694229703_r47iuol8p.py",
+        "similarity_percent": 65.22,
+        "full_code": "n=int(input())\nwhile n!=1:\n    print(n,end=\" \")\n    if n%2==0:\n        n//=2\n    else:\n        n=n*3+1\nprint(\"1\")\n",
+        "highlighted_code": "<span class='highlight-green'>n=int(input())\nwhile n!=1:\n    print(n,end=&#34; &#34;)\n    if n%2==</span>0:\n        n//=2\n    else:\n        n=n*3+1\nprint(&#34;1&#34;)\n"
+      },
+      "token_overlap": 45,
+      "max_similarity_percent": 73.77
+    },
+    {
+      "case_id": 32,
+      "file1": {
+        "path": "/app/app/data/submissions/68e4948a72432513744783b0/26894d2babd64210ad6beba1/sub_1762271927523_1tjjf7a4j.py",
+        "similarity_percent": 73.77,
+        "full_code": "n = int(input())\nwhile n != 1:\n    print(n, end= \" \")\n    if n % 2 == 0:\n        n = n // 2\n    else:\n        n = n * 3 + 1",
+        "highlighted_code": "<span class='highlight-red'>n = int(input())\nwhile n != 1:\n    print(n, end= &#34; &#34;)\n    if n % 2 == </span>0:\n        n = n // 2\n    else:\n        n = n * 3 + 1"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e4948a72432513744783b0/5fdf5d57201a4c04a677dfa7/sub_1761582747989_seoiwpkwt.py",
+        "similarity_percent": 61.64,
+        "full_code": "n = int(input())\nwhile n != 1:\n    print(n, end = \" \")\n    if n % 2 == 0:\n        n //= 2\n    else:\n        n = n*3 + 1 \nprint(n, end = \" \")",
+        "highlighted_code": "<span class='highlight-green'>n = int(input())\nwhile n != 1:\n    print(n, end = &#34; &#34;)\n    if n % 2 == </span>0:\n        n //= 2\n    else:\n        n = n*3 + 1 \nprint(n, end = &#34; &#34;)"
+      },
+      "token_overlap": 45,
+      "max_similarity_percent": 73.77
+    },
+    {
+      "case_id": 33,
+      "file1": {
+        "path": "/app/app/data/submissions/68e4948a72432513744783b0/e7457b81cbe24d9d9bdac641/sub_1762272973713_cj9n7a7d9.py",
+        "similarity_percent": 66.67,
+        "full_code": "n = int(input())\nwhile True:\n    print(n, end=\" \")\n    if n == 1:\n        break\n    if n % 2 == 0:\n        n //= 2\n    else:\n        n = n * 3 + 1\n",
+        "highlighted_code": "<span class='highlight-red'>n = int(input())\nwhile True:\n    print(n, end=&#34; &#34;)\n    if n == 1:\n        bre</span>ak\n    if n % 2 == 0:\n        n //= 2\n    else:\n        n = n * 3 + 1\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e4948a72432513744783b0/295d4dcad1f74d87afc29fce/sub_1761639435399_pqrf4bf1a.py",
+        "similarity_percent": 61.54,
+        "full_code": "n= int(input())\nwhile True:\n    print(n,end=\" \")\n    if  n==1:\n        break\n    elif n %2 ==0:\n         n=n // 2\n    else:\n         n= n*3 +1",
+        "highlighted_code": "<span class='highlight-green'>n= int(input())\nwhile True:\n    print(n,end=&#34; &#34;)\n    if  n==1:\n        bre</span>ak\n    elif n %2 ==0:\n         n=n // 2\n    else:\n         n= n*3 +1"
+      },
+      "token_overlap": 48,
+      "max_similarity_percent": 66.67
+    },
+    {
+      "case_id": 34,
+      "file1": {
+        "path": "/app/app/data/submissions/68e4948a72432513744783b0/16e46f0143f645b5968397c4/sub_1762694229703_r47iuol8p.py",
+        "similarity_percent": 65.22,
+        "full_code": "n=int(input())\nwhile n!=1:\n    print(n,end=\" \")\n    if n%2==0:\n        n//=2\n    else:\n        n=n*3+1\nprint(\"1\")\n",
+        "highlighted_code": "<span class='highlight-red'>n=int(input())\nwhile n!=1:\n    print(n,end=&#34; &#34;)\n    if n%2==</span>0:\n        n//=2\n    else:\n        n=n*3+1\nprint(&#34;1&#34;)\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e4948a72432513744783b0/26894d2babd64210ad6beba1/sub_1762271958531_h2sc6idkd.py",
+        "similarity_percent": 64.29,
+        "full_code": "n = int(input())\nwhile n != 1:\n    print(n, end= \" \")\n    if n % 2 == 0:\n        n = n // 2\n    else:\n        n = n * 3 + 1\nprint(1)",
+        "highlighted_code": "<span class='highlight-green'>n = int(input())\nwhile n != 1:\n    print(n, end= &#34; &#34;)\n    if n % 2 == </span>0:\n        n = n // 2\n    else:\n        n = n * 3 + 1\nprint(1)"
+      },
+      "token_overlap": 45,
+      "max_similarity_percent": 65.22
+    },
+    {
+      "case_id": 35,
+      "file1": {
+        "path": "/app/app/data/submissions/68e4948a72432513744783b0/cd93b2ff882a4ffa85f4518f/sub_1761889417017_qe2st2z8l.py",
+        "similarity_percent": 64.86,
+        "full_code": "n = int(input())\nwhile True:\n    print(n, end=' ')\n    if n == 1:\n        break\n    if n % 2 == 0:\n        n = n // 2\n    else:\n        n = n * 3 + 1",
+        "highlighted_code": "<span class='highlight-red'>n = int(input())\nwhile True:\n    print(n, end=&#39; &#39;)\n    if n == 1:\n        bre</span>ak\n    if n % 2 == 0:\n        n = n // 2\n    else:\n        n = n * 3 + 1"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e4948a72432513744783b0/295d4dcad1f74d87afc29fce/sub_1761639435399_pqrf4bf1a.py",
+        "similarity_percent": 61.54,
+        "full_code": "n= int(input())\nwhile True:\n    print(n,end=\" \")\n    if  n==1:\n        break\n    elif n %2 ==0:\n         n=n // 2\n    else:\n         n= n*3 +1",
+        "highlighted_code": "<span class='highlight-green'>n= int(input())\nwhile True:\n    print(n,end=&#34; &#34;)\n    if  n==1:\n        bre</span>ak\n    elif n %2 ==0:\n         n=n // 2\n    else:\n         n= n*3 +1"
+      },
+      "token_overlap": 48,
+      "max_similarity_percent": 64.86
+    },
+    {
+      "case_id": 36,
+      "file1": {
+        "path": "/app/app/data/submissions/68e4948a72432513744783b0/ffdb326842044f2e98b7aaa7/sub_1761901526592_15ij8o8e7.py",
+        "similarity_percent": 64.38,
+        "full_code": "t = int(input())\n\nprint(t, end = \" \")\nwhile t != 1:\n    if t % 2 == 0:\n        t //= 2\n    else:\n        t = t * 3 + 1\n    print(t, end = \" \")",
+        "highlighted_code": "<span class='highlight-red'>t = int(input())\n\nprint(t, end = &#34; &#34;)\nwhile t != 1:\n    if t % 2 == 0:\n        </span>t //= 2\n    else:\n        t = t * 3 + 1\n    print(t, end = &#34; &#34;)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e4948a72432513744783b0/91001b54722a4328a2b7b879/sub_1762079602051_ze3un9194.py",
+        "similarity_percent": 63.51,
+        "full_code": "n = int(input())\nprint(n, end=\" \")\nwhile n != 1:\n    if n % 2 == 0:\n        n = n // 2\n    else:\n        n = n * 3 + 1\n    print(n, end=\" \")",
+        "highlighted_code": "<span class='highlight-green'>n = int(input())\nprint(n, end=&#34; &#34;)\nwhile n != 1:\n    if n % 2 == 0:\n        </span>n = n // 2\n    else:\n        n = n * 3 + 1\n    print(n, end=&#34; &#34;)"
+      },
+      "token_overlap": 47,
+      "max_similarity_percent": 64.38
+    },
+    {
+      "case_id": 37,
+      "file1": {
+        "path": "/app/app/data/submissions/68e4948a72432513744783b0/ffdb326842044f2e98b7aaa7/sub_1761901526592_15ij8o8e7.py",
+        "similarity_percent": 64.38,
+        "full_code": "t = int(input())\n\nprint(t, end = \" \")\nwhile t != 1:\n    if t % 2 == 0:\n        t //= 2\n    else:\n        t = t * 3 + 1\n    print(t, end = \" \")",
+        "highlighted_code": "<span class='highlight-red'>t = int(input())\n\nprint(t, end = &#34; &#34;)\nwhile t != 1:\n    if t % 2 == 0:\n        </span>t //= 2\n    else:\n        t = t * 3 + 1\n    print(t, end = &#34; &#34;)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e4948a72432513744783b0/fed45b08a578484ebf92e830/sub_1761665381082_bms9pw40m.py",
+        "similarity_percent": 59.49,
+        "full_code": "n=int(input())\nprint(n,end=' ')\nwhile n!=1:\n    if n%2==0:\n        n=n//2\n    else:\n        n=(n*3)+1\n    print(n,end=' ')",
+        "highlighted_code": "<span class='highlight-green'>n=int(input())\nprint(n,end=&#39; &#39;)\nwhile n!=1:\n    if n%2==0:\n        </span>n=n//2\n    else:\n        n=(n*3)+1\n    print(n,end=&#39; &#39;)"
+      },
+      "token_overlap": 47,
+      "max_similarity_percent": 64.38
+    },
+    {
+      "case_id": 38,
+      "file1": {
+        "path": "/app/app/data/submissions/68e4948a72432513744783b0/26894d2babd64210ad6beba1/sub_1762271958531_h2sc6idkd.py",
+        "similarity_percent": 64.29,
+        "full_code": "n = int(input())\nwhile n != 1:\n    print(n, end= \" \")\n    if n % 2 == 0:\n        n = n // 2\n    else:\n        n = n * 3 + 1\nprint(1)",
+        "highlighted_code": "<span class='highlight-red'>n = int(input())\nwhile n != 1:\n    print(n, end= &#34; &#34;)\n    if n % 2 == </span>0:\n        n = n // 2\n    else:\n        n = n * 3 + 1\nprint(1)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e4948a72432513744783b0/5fdf5d57201a4c04a677dfa7/sub_1761582747989_seoiwpkwt.py",
+        "similarity_percent": 61.64,
+        "full_code": "n = int(input())\nwhile n != 1:\n    print(n, end = \" \")\n    if n % 2 == 0:\n        n //= 2\n    else:\n        n = n*3 + 1 \nprint(n, end = \" \")",
+        "highlighted_code": "<span class='highlight-green'>n = int(input())\nwhile n != 1:\n    print(n, end = &#34; &#34;)\n    if n % 2 == </span>0:\n        n //= 2\n    else:\n        n = n*3 + 1 \nprint(n, end = &#34; &#34;)"
+      },
+      "token_overlap": 45,
+      "max_similarity_percent": 64.29
+    },
+    {
+      "case_id": 39,
+      "file1": {
+        "path": "/app/app/data/submissions/68e4948a72432513744783b0/edd832f517d24636bde1e118/sub_1762353351829_wcmqyupun.py",
+        "similarity_percent": 64.0,
+        "full_code": "n = int(input())\nwhile True:\n    print(n, end =\" \")\n    if n == 1: break\n    if n % 2 == 0:\n        n //= 2\n    else:\n        n *= 3\n        n += 1",
+        "highlighted_code": "<span class='highlight-red'>n = int(input())\nwhile True:\n    print(n, end =&#34; &#34;)\n    if n == 1: bre</span>ak\n    if n % 2 == 0:\n        n //= 2\n    else:\n        n *= 3\n        n += 1"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e4948a72432513744783b0/295d4dcad1f74d87afc29fce/sub_1761639435399_pqrf4bf1a.py",
+        "similarity_percent": 61.54,
+        "full_code": "n= int(input())\nwhile True:\n    print(n,end=\" \")\n    if  n==1:\n        break\n    elif n %2 ==0:\n         n=n // 2\n    else:\n         n= n*3 +1",
+        "highlighted_code": "<span class='highlight-green'>n= int(input())\nwhile True:\n    print(n,end=&#34; &#34;)\n    if  n==1:\n        bre</span>ak\n    elif n %2 ==0:\n         n=n // 2\n    else:\n         n= n*3 +1"
+      },
+      "token_overlap": 48,
+      "max_similarity_percent": 64.0
+    },
+    {
+      "case_id": 40,
+      "file1": {
+        "path": "/app/app/data/submissions/68e4948a72432513744783b0/f0199fcb94bf405a8bf2ca38/sub_1762018429347_fq2kgmghy.py",
+        "similarity_percent": 59.55,
+        "full_code": "n = int(input())\nprint(n,end=\" \")\nwhile n!=1:\n    if n%2==0:\n        n = n //2\n        print(n,end=\" \")\n    else:\n        n = n*3 +1\n        print(n,end=\" \")\n",
+        "highlighted_code": "<span class='highlight-red'>n = int(input())\nprint(n,end=&#34; &#34;)\nwhile n!=1:\n    if n%2==0:\n        n = n //2\n        </span>print(n,end=&#34; &#34;)\n    else:\n        n = n*3 +1\n        print(n,end=&#34; &#34;)\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e4948a72432513744783b0/91001b54722a4328a2b7b879/sub_1762079602051_ze3un9194.py",
+        "similarity_percent": 71.62,
+        "full_code": "n = int(input())\nprint(n, end=\" \")\nwhile n != 1:\n    if n % 2 == 0:\n        n = n // 2\n    else:\n        n = n * 3 + 1\n    print(n, end=\" \")",
+        "highlighted_code": "<span class='highlight-green'>n = int(input())\nprint(n, end=&#34; &#34;)\nwhile n != 1:\n    if n % 2 == 0:\n        n = n // 2\n    </span>else:\n        n = n * 3 + 1\n    print(n, end=&#34; &#34;)"
+      },
+      "token_overlap": 53,
+      "max_similarity_percent": 71.62
+    },
+    {
+      "case_id": 41,
+      "file1": {
+        "path": "/app/app/data/submissions/68e4948a72432513744783b0/f0199fcb94bf405a8bf2ca38/sub_1762018429347_fq2kgmghy.py",
+        "similarity_percent": 59.55,
+        "full_code": "n = int(input())\nprint(n,end=\" \")\nwhile n!=1:\n    if n%2==0:\n        n = n //2\n        print(n,end=\" \")\n    else:\n        n = n*3 +1\n        print(n,end=\" \")\n",
+        "highlighted_code": "<span class='highlight-red'>n = int(input())\nprint(n,end=&#34; &#34;)\nwhile n!=1:\n    if n%2==0:\n        n = n //2\n        </span>print(n,end=&#34; &#34;)\n    else:\n        n = n*3 +1\n        print(n,end=&#34; &#34;)\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e4948a72432513744783b0/fed45b08a578484ebf92e830/sub_1761665381082_bms9pw40m.py",
+        "similarity_percent": 67.09,
+        "full_code": "n=int(input())\nprint(n,end=' ')\nwhile n!=1:\n    if n%2==0:\n        n=n//2\n    else:\n        n=(n*3)+1\n    print(n,end=' ')",
+        "highlighted_code": "<span class='highlight-green'>n=int(input())\nprint(n,end=&#39; &#39;)\nwhile n!=1:\n    if n%2==0:\n        n=n//2\n    </span>else:\n        n=(n*3)+1\n    print(n,end=&#39; &#39;)"
+      },
+      "token_overlap": 53,
+      "max_similarity_percent": 67.09
+    },
+    {
+      "case_id": 42,
+      "file1": {
+        "path": "/app/app/data/submissions/68e4948a72432513744783b0/f0199fcb94bf405a8bf2ca38/sub_1762018429347_fq2kgmghy.py",
+        "similarity_percent": 52.81,
+        "full_code": "n = int(input())\nprint(n,end=\" \")\nwhile n!=1:\n    if n%2==0:\n        n = n //2\n        print(n,end=\" \")\n    else:\n        n = n*3 +1\n        print(n,end=\" \")\n",
+        "highlighted_code": "<span class='highlight-red'>n = int(input())\nprint(n,end=&#34; &#34;)\nwhile n!=1:\n    if n%2==0:\n        </span>n = n //2\n        print(n,end=&#34; &#34;)\n    else:\n        n = n*3 +1\n        print(n,end=&#34; &#34;)\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e4948a72432513744783b0/ffdb326842044f2e98b7aaa7/sub_1761901526592_15ij8o8e7.py",
+        "similarity_percent": 64.38,
+        "full_code": "t = int(input())\n\nprint(t, end = \" \")\nwhile t != 1:\n    if t % 2 == 0:\n        t //= 2\n    else:\n        t = t * 3 + 1\n    print(t, end = \" \")",
+        "highlighted_code": "<span class='highlight-green'>t = int(input())\n\nprint(t, end = &#34; &#34;)\nwhile t != 1:\n    if t % 2 == 0:\n        </span>t //= 2\n    else:\n        t = t * 3 + 1\n    print(t, end = &#34; &#34;)"
+      },
+      "token_overlap": 47,
+      "max_similarity_percent": 64.38
+    }
+  ]
+}

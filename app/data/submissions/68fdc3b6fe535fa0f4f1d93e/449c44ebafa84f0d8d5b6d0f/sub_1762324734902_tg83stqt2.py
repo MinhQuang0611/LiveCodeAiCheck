@@ -1,0 +1,7 @@
+n = int(input())
+a = list(map(int, input().split()))
+a.sort()
+a.pop(0)
+a.pop(-1)
+average = sum(a) / len(a)
+print(f"{average:.1f}")

@@ -1,0 +1,45 @@
+{
+  "problem_id": "68fdc3a3fe535fa0f4f1d6f6",
+  "filter_criteria": {
+    "min_token_overlap": 80,
+    "min_similarity_percent": 60
+  },
+  "total_cases_found": 7,
+  "total_cases_filtered": 2,
+  "cases": [
+    {
+      "case_id": 1,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3a3fe535fa0f4f1d6f6/e59c34a1bebb49d29bfb3592/sub_1761987978857_z9nhsm0vq.py",
+        "similarity_percent": 100.0,
+        "full_code": "a,k,b = map(int,input().split())\nstart = (a // k + 1) * k\nif start > b:\n    print(-1)\nelse:\n    res = [str(x-a)for x in range(start,b+1,k)]\n    print(\" \".join(res))",
+        "highlighted_code": "<span class='highlight-red'>a,k,b = map(int,input().split())\nstart = (a // k + 1) * k\nif start &gt; b:\n    print(-1)\nelse:\n    res = [str(x-a)for x in range(start,b+1,k)]\n    print(&#34; &#34;.</span>join(res))"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3a3fe535fa0f4f1d6f6/f95120b3a38a461085ef58cb/sub_1762013440527_8ehuxq18y.py",
+        "similarity_percent": 100.0,
+        "full_code": "a,k,b = map(int,input().split())\nstart = (a // k + 1) * k\nif start > b:\n    print(-1)\nelse:\n    res = [str(x-a)for x in range(start,b+1,k)]\n    print(\" \".join(res))",
+        "highlighted_code": "<span class='highlight-green'>a,k,b = map(int,input().split())\nstart = (a // k + 1) * k\nif start &gt; b:\n    print(-1)\nelse:\n    res = [str(x-a)for x in range(start,b+1,k)]\n    print(&#34; &#34;.</span>join(res))"
+      },
+      "token_overlap": 100,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 2,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3a3fe535fa0f4f1d6f6/27e30f767b3a46b283cbfec0/sub_1761818070675_is4pdqjev.py",
+        "similarity_percent": 61.22,
+        "full_code": "a, k, n = map(int, input().split())\ncheck = False\nfor x in range(a,n+1):\n    if x % k == 0:\n        print(x-a,end = ' ')\n        check = True\nif not check:\n    print(-1)\n",
+        "highlighted_code": "<span class='highlight-red'>a, k, n = map(int, input().split())\ncheck = False\nfor x in range(a,n+1):\n    if x % k == 0</span>:\n        print(x-a,end = &#39; &#39;)\n        check = True\nif not check:\n    print(-1)\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3a3fe535fa0f4f1d6f6/a34ffbda761b435ca043fd30/sub_1762436325322_5nn8ytvx9.py",
+        "similarity_percent": 61.22,
+        "full_code": "a, k, n = map(int, input().split())\nb= False\nfor i in range(a, n+1):\n    if i%k==0:\n        b = True\n        print(i-a, end=' ')\nif not b:\n    print(\"-1\")",
+        "highlighted_code": "<span class='highlight-green'>a, k, n = map(int, input().split())\nb= False\nfor i in range(a, n+1):\n    if i%k==0</span>:\n        b = True\n        print(i-a, end=&#39; &#39;)\nif not b:\n    print(&#34;-1&#34;)"
+      },
+      "token_overlap": 60,
+      "max_similarity_percent": 61.22
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "problem_id": "68e3cb0472432513744771ef",
+  "filter_criteria": {
+    "min_token_overlap": 80,
+    "min_similarity_percent": 60
+  },
+  "total_cases_found": 8,
+  "total_cases_filtered": 2,
+  "cases": [
+    {
+      "case_id": 1,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3cb0472432513744771ef/c78f5dfafb144ed89a06ddba/sub_1762774615911_8ryl4z9vw.py",
+        "similarity_percent": 68.18,
+        "full_code": "n=int(input())\nwhile n > 10:\n    a=(str(n))\n    b=list(map(int, a))\n    n=sum(b)\nprint(n)",
+        "highlighted_code": "n=int(input())\nwhile n &gt; <span class='highlight-red'>10:\n    a=(str(n))\n    b=list(map(int, a))\n    n=sum(b)\nprint(</span>n)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3cb0472432513744771ef/c78f5dfafb144ed89a06ddba/sub_1762774789193_ll5fdjmx6.py",
+        "similarity_percent": 67.16,
+        "full_code": "n=int(input())\nwhile n >= 10:\n    a=(str(n))\n    b=list(map(int, a))\n    n=sum(b)\nprint(n)",
+        "highlighted_code": "n=int(input())\nwhile n &gt;= <span class='highlight-green'>10:\n    a=(str(n))\n    b=list(map(int, a))\n    n=sum(b)\nprint(</span>n)"
+      },
+      "token_overlap": 45,
+      "max_similarity_percent": 68.18
+    },
+    {
+      "case_id": 2,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3cb0472432513744771ef/c747e87428cc4dbab36bd7aa/sub_1762834133002_od8nk6dz8.py",
+        "similarity_percent": 63.33,
+        "full_code": "n=int(input())\nwhile n >= 10:\n    tong=0\n    while n>0:\n        tong+=n%10\n        n=n//10\n    n=tong\nprint(n)",
+        "highlighted_code": "n=int(input())\nwhile n &gt;= <span class='highlight-red'>10:\n    tong=0\n    while n&gt;0:\n        tong+=n%10\n        n=n//10\n    n=tong\nprint(</span>n)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3cb0472432513744771ef/c747e87428cc4dbab36bd7aa/sub_1762834022439_cqkafb2ry.py",
+        "similarity_percent": 64.41,
+        "full_code": "n=int(input())\nwhile n > 10:\n    tong=0\n    while n>0:\n        tong+=n%10\n        n=n//10\n    n=tong\nprint(n)",
+        "highlighted_code": "n=int(input())\nwhile n &gt; <span class='highlight-green'>10:\n    tong=0\n    while n&gt;0:\n        tong+=n%10\n        n=n//10\n    n=tong\nprint(</span>n)"
+      },
+      "token_overlap": 38,
+      "max_similarity_percent": 64.41
+    }
+  ]
+}

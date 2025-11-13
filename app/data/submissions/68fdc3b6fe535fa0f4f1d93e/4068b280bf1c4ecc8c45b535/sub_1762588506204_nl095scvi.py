@@ -1,0 +1,6 @@
+n = int(input(" nhap so luong: "))
+a = list(map(float, input(" nhap day so: ").split( )))
+a.remove( max( a ))
+a.remove( min( a ))
+b = sum( a ) / len( a )
+print(" trung binh:", round( b, 2))

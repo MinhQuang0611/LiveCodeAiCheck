@@ -1,0 +1,147 @@
+{
+  "problem_id": "68fdc3b5fe535fa0f4f1d922",
+  "filter_criteria": {
+    "min_token_overlap": 80,
+    "min_similarity_percent": 60
+  },
+  "total_cases_found": 29,
+  "total_cases_filtered": 8,
+  "cases": [
+    {
+      "case_id": 1,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b5fe535fa0f4f1d922/f95120b3a38a461085ef58cb/sub_1761846016523_21jfh056b.py",
+        "similarity_percent": 100.0,
+        "full_code": "t = int(input())\n\nwhile t > 0:\n    string = input().strip()\n\n    lst = []\n    cnt = 0\n\n    for ch in string:\n        if ch == \"(\":\n            cnt += 1\n            lst.append(cnt)\n            print(lst[len(lst) - 1], end = \" \")\n        else:\n            print(lst[len(lst) - 1], end = \" \")\n            lst.pop(len(lst) - 1)\n            \n    print()\n    t -= 1",
+        "highlighted_code": "<span class='highlight-red'>t = int(input())\n\nwhile t &gt; 0:\n    string = input().strip()\n\n    lst = []\n    cnt = 0\n\n    for ch in string:\n        if ch == &#34;(&#34;:\n            cnt += 1\n            lst.append(cnt)\n            print(lst[len(lst) - 1], end = &#34; &#34;)\n        else:\n            print(lst[len(lst) - 1], end = &#34; &#34;)\n            lst.pop(len(lst) - 1)\n            \n    print()\n    t -= 1</span>"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b5fe535fa0f4f1d922/ffdb326842044f2e98b7aaa7/sub_1761809948111_uues6xcwz.py",
+        "similarity_percent": 100.0,
+        "full_code": "t = int(input())\n\nwhile t > 0:\n    string = input().strip()\n\n    lst = []\n    cnt = 0\n\n    for ch in string:\n        if ch == \"(\":\n            cnt += 1\n            lst.append(cnt)\n            print(lst[len(lst) - 1], end = \" \")\n        else:\n            print(lst[len(lst) - 1], end = \" \")\n            lst.pop(len(lst) - 1)\n            \n    print()\n    t -= 1",
+        "highlighted_code": "<span class='highlight-green'>t = int(input())\n\nwhile t &gt; 0:\n    string = input().strip()\n\n    lst = []\n    cnt = 0\n\n    for ch in string:\n        if ch == &#34;(&#34;:\n            cnt += 1\n            lst.append(cnt)\n            print(lst[len(lst) - 1], end = &#34; &#34;)\n        else:\n            print(lst[len(lst) - 1], end = &#34; &#34;)\n            lst.pop(len(lst) - 1)\n            \n    print()\n    t -= 1</span>"
+      },
+      "token_overlap": 147,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 2,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b5fe535fa0f4f1d922/345569c455a14db085eec8e9/sub_1762655493168_se1olc0tw.py",
+        "similarity_percent": 94.21,
+        "full_code": "a = int(input())\nfor _ in range(a):\n    s = input().strip()\n    long = []\n    dem = 0\n    tong = []\n    for b in s:\n        if b=='(':\n            dem +=1\n            long.append(dem)\n            tong.append(str(dem))\n        else:\n            tong.append(str(long.pop()))\n    print(' '.join(tong))",
+        "highlighted_code": "<span class='highlight-red'>a = int(input())\nfor _ in range(a):\n    s = input().strip()\n    long = []\n    dem </span>= 0\n    tong = []\n    f<span class='highlight-red'>or b in s:\n        if b==&#39;(&#39;:\n            dem +=1\n            long.append(dem)\n            tong.append(str(dem))\n        else:\n            tong.append(str(long.pop()))\n    print(&#39; &#39;.</span>join(tong))"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b5fe535fa0f4f1d922/d9aec9d917da4c5e9beeb80b/sub_1761741078725_6f0x7pyzd.py",
+        "similarity_percent": 94.21,
+        "full_code": "n = int(input())\nfor i in range(n):\n    a = input().strip()\n    stack = []\n    result = []\n    b = 0\n    for s in a:\n        if s == '(':\n            b += 1\n            stack.append(b)\n            result.append(str(b))\n        else:  # ch == ')'\n            result.append(str(stack.pop()))\n    print(' '.join(result))",
+        "highlighted_code": "<span class='highlight-green'>n = int(input())\nfor i in range(n):\n    a = input().strip()\n    stack = []\n    result </span>= []\n    b = 0\n    f<span class='highlight-green'>or s in a:\n        if s == &#39;(&#39;:\n            b += 1\n            stack.append(b)\n            result.append(str(b))\n        else:  # ch == &#39;)&#39;\n            result.append(str(stack.pop()))\n    print(&#39; &#39;.</span>join(result))"
+      },
+      "token_overlap": 114,
+      "max_similarity_percent": 94.21
+    },
+    {
+      "case_id": 3,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b5fe535fa0f4f1d922/8e19101eb0da4e9a92a17098/sub_1761637468450_e4yflp4zj.py",
+        "similarity_percent": 81.03,
+        "full_code": "n = int(input())\nfor i in range(n):\n    s = input()\n    a = []\n    dem = 0\n    for x in s:\n        if x == '(':\n            dem += 1\n            a.append(dem)\n            print(dem, end=\" \")\n        else:\n            print(a.pop(), end=\" \")\n    print()",
+        "highlighted_code": "n <span class='highlight-red'>= int(input())\nfor i in range(</span>n):\n    s = input()\n    a = []\n    dem <span class='highlight-red'>= 0\n    for x in s:\n        if x == &#39;(&#39;:\n            dem += 1\n            a.append(dem)\n            print(dem, end=&#34; &#34;)\n        e</span>lse:\n            <span class='highlight-red'>print(a.pop(), end=&#34; &#34;)\n    print()</span>"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b5fe535fa0f4f1d922/8e236cb825b041b0a82527f2/sub_1761536240953_7akdmfcyu.py",
+        "similarity_percent": 74.6,
+        "full_code": "def print_index(s):\n    op = []\n    n = 0\n\n    for c in s:\n        if c == \"(\":\n            n += 1\n            op.append(n)\n            print(n, end=\" \")\n        elif c == \")\":\n            print(op.pop(), end=\" \")\n    print()\n\nt = int(input())\nfor _ in range(t):\n    print_index(input())",
+        "highlighted_code": "def print_index(s):\n    op = []\n    n <span class='highlight-green'>= 0\n\n    for c in s:\n        if c == &#34;(&#34;:\n            n += 1\n            op.append(n)\n            print(n, end=&#34; &#34;)\n        e</span>lif c == &#34;)&#34;:\n            <span class='highlight-green'>print(op.pop(), end=&#34; &#34;)\n    print()\n\n</span>t <span class='highlight-green'>= int(input())\nfor _ in range(</span>t):\n    print_index(input())"
+      },
+      "token_overlap": 94,
+      "max_similarity_percent": 81.03
+    },
+    {
+      "case_id": 4,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b5fe535fa0f4f1d922/8e236cb825b041b0a82527f2/sub_1761536240953_7akdmfcyu.py",
+        "similarity_percent": 79.37,
+        "full_code": "def print_index(s):\n    op = []\n    n = 0\n\n    for c in s:\n        if c == \"(\":\n            n += 1\n            op.append(n)\n            print(n, end=\" \")\n        elif c == \")\":\n            print(op.pop(), end=\" \")\n    print()\n\nt = int(input())\nfor _ in range(t):\n    print_index(input())",
+        "highlighted_code": "def print_index(s):\n    op = []\n    n <span class='highlight-red'>= 0\n\n    for c in s:\n        if c == &#34;(&#34;:\n            n += 1\n            op.append(n)\n            print(n, end=&#34; &#34;)\n        elif c == &#34;)&#34;:\n            print(op.pop(), end=&#34; &#34;)\n    pri</span>nt()\n\nt <span class='highlight-red'>= int(input())\nfor _ in range(</span>t):\n    print_index(input())"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b5fe535fa0f4f1d922/222412e06e454a339defe331/sub_1762348591571_78rgeoil5.py",
+        "similarity_percent": 78.12,
+        "full_code": "n=int(input())\nfor i in range(1,n+1):\n    a=input()\n    stack = []\n    v=0\n    for char in a:\n        if char == \"(\":\n            v += 1\n            stack.append(v)\n            print(v, end=\" \")\n        elif char == \")\":\n            print(stack.pop(), end=\" \")\n    print(end=\"\\n\")",
+        "highlighted_code": "n<span class='highlight-green'>=int(input())\nfor i in range(</span>1,n+1):\n    a=input()\n    stack = []\n    v<span class='highlight-green'>=0\n    for char in a:\n        if char == &#34;(&#34;:\n            v += 1\n            stack.append(v)\n            print(v, end=&#34; &#34;)\n        elif char == &#34;)&#34;:\n            print(stack.pop(), end=&#34; &#34;)\n    pri</span>nt(end=&#34;\\n&#34;)"
+      },
+      "token_overlap": 100,
+      "max_similarity_percent": 79.37
+    },
+    {
+      "case_id": 5,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b5fe535fa0f4f1d922/d9aec9d917da4c5e9beeb80b/sub_1761741078725_6f0x7pyzd.py",
+        "similarity_percent": 77.69,
+        "full_code": "n = int(input())\nfor i in range(n):\n    a = input().strip()\n    stack = []\n    result = []\n    b = 0\n    for s in a:\n        if s == '(':\n            b += 1\n            stack.append(b)\n            result.append(str(b))\n        else:  # ch == ')'\n            result.append(str(stack.pop()))\n    print(' '.join(result))",
+        "highlighted_code": "<span class='highlight-red'>n = int(input())\nfor i in range(n):\n    a = input().strip()\n    stack = []\n    result = []\n    b = 0\n    for s in a:\n        if s == &#39;(&#39;:\n            b += 1\n            stack.append(b)\n            result.append(str(b))\n        els</span>e:  # ch == &#39;)&#39;\n            result.append(str(stack.pop()))\n    print(&#39; &#39;.join(result))"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b5fe535fa0f4f1d922/7e85a84620b04fb781a08d1f/sub_1762698573845_t1ypdspf7.py",
+        "similarity_percent": 74.02,
+        "full_code": "t = int(input()) \nfor _ in range(t):\n    s = input().strip()\n    stack = []      \n    res = []       \n    count = 0     \n    for c in s:\n        if c == '(':\n            count += 1\n            stack.append(count)\n            res.append(str(count))\n        else: \n            num = stack.pop()\n            res.append(str(num))\n\n    print(\" \".join(res))",
+        "highlighted_code": "<span class='highlight-green'>t = int(input()) \nfor _ in range(t):\n    s = input().strip()\n    stack = []      \n    res = []       \n    count = 0     \n    for c in s:\n        if c == &#39;(&#39;:\n            count += 1\n            stack.append(count)\n            res.append(str(count))\n        els</span>e: \n            num = stack.pop()\n            res.append(str(num))\n\n    print(&#34; &#34;.join(res))"
+      },
+      "token_overlap": 94,
+      "max_similarity_percent": 77.69
+    },
+    {
+      "case_id": 6,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b5fe535fa0f4f1d922/8e19101eb0da4e9a92a17098/sub_1761637468450_e4yflp4zj.py",
+        "similarity_percent": 73.28,
+        "full_code": "n = int(input())\nfor i in range(n):\n    s = input()\n    a = []\n    dem = 0\n    for x in s:\n        if x == '(':\n            dem += 1\n            a.append(dem)\n            print(dem, end=\" \")\n        else:\n            print(a.pop(), end=\" \")\n    print()",
+        "highlighted_code": "<span class='highlight-red'>n = int(input())\nfor i in range(</span>n)<span class='highlight-red'>:\n    s = input()\n    a = []\n    dem = 0\n    for x in s:\n        if x == &#39;(&#39;:\n            dem += 1\n            a.append(dem)\n            print(dem, end=&#34; &#34;)\n        e</span>lse:\n            print(a.pop(), end=&#34; &#34;)\n    print()"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b5fe535fa0f4f1d922/222412e06e454a339defe331/sub_1762348591571_78rgeoil5.py",
+        "similarity_percent": 66.41,
+        "full_code": "n=int(input())\nfor i in range(1,n+1):\n    a=input()\n    stack = []\n    v=0\n    for char in a:\n        if char == \"(\":\n            v += 1\n            stack.append(v)\n            print(v, end=\" \")\n        elif char == \")\":\n            print(stack.pop(), end=\" \")\n    print(end=\"\\n\")",
+        "highlighted_code": "<span class='highlight-green'>n=int(input())\nfor i in range(</span>1,n+1)<span class='highlight-green'>:\n    a=input()\n    stack = []\n    v=0\n    for char in a:\n        if char == &#34;(&#34;:\n            v += 1\n            stack.append(v)\n            print(v, end=&#34; &#34;)\n        e</span>lif char == &#34;)&#34;:\n            print(stack.pop(), end=&#34; &#34;)\n    print(end=&#34;\\n&#34;)"
+      },
+      "token_overlap": 85,
+      "max_similarity_percent": 73.28
+    },
+    {
+      "case_id": 7,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b5fe535fa0f4f1d922/345569c455a14db085eec8e9/sub_1762655493168_se1olc0tw.py",
+        "similarity_percent": 71.9,
+        "full_code": "a = int(input())\nfor _ in range(a):\n    s = input().strip()\n    long = []\n    dem = 0\n    tong = []\n    for b in s:\n        if b=='(':\n            dem +=1\n            long.append(dem)\n            tong.append(str(dem))\n        else:\n            tong.append(str(long.pop()))\n    print(' '.join(tong))",
+        "highlighted_code": "<span class='highlight-red'>a = int(input())\nfor _ in range(a):\n    s = input().strip()\n    long = []\n    dem </span>= 0\n    tong = []\n    f<span class='highlight-red'>or b in s:\n        if b==&#39;(&#39;:\n            dem +=1\n            long.append(dem)\n            tong.append(str(dem))\n        els</span>e:\n            tong.append(str(long.pop()))\n    print(&#39; &#39;.join(tong))"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b5fe535fa0f4f1d922/7e85a84620b04fb781a08d1f/sub_1762698573845_t1ypdspf7.py",
+        "similarity_percent": 68.5,
+        "full_code": "t = int(input()) \nfor _ in range(t):\n    s = input().strip()\n    stack = []      \n    res = []       \n    count = 0     \n    for c in s:\n        if c == '(':\n            count += 1\n            stack.append(count)\n            res.append(str(count))\n        else: \n            num = stack.pop()\n            res.append(str(num))\n\n    print(\" \".join(res))",
+        "highlighted_code": "<span class='highlight-green'>t = int(input()) \nfor _ in range(t):\n    s = input().strip()\n    stack = []      \n    res </span>= []       \n    count = 0     \n    f<span class='highlight-green'>or c in s:\n        if c == &#39;(&#39;:\n            count += 1\n            stack.append(count)\n            res.append(str(count))\n        els</span>e: \n            num = stack.pop()\n            res.append(str(num))\n\n    print(&#34; &#34;.join(res))"
+      },
+      "token_overlap": 87,
+      "max_similarity_percent": 71.9
+    },
+    {
+      "case_id": 8,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b5fe535fa0f4f1d922/c2c38e9c5ead4887925c7e80/sub_1762619195286_7gwqok8m8.py",
+        "similarity_percent": 70.73,
+        "full_code": "t = int(input())\nfor _ in range(t):\n    s = input().strip()\n    stack = []\n    cnt = 1\n    res = []\n    for ch in s:\n        if ch == '(':\n            res.append(cnt)     # đánh số cho dấu mở\n            stack.append(cnt)   # lưu vào stack\n            cnt += 1\n        else:  # ch == ')'\n            res.append(stack.pop())  # lấy số của dấu mở gần nhất\n    print(' '.join(map(str, res)))\n\n",
+        "highlighted_code": "<span class='highlight-red'>t = int(input())\nfor _ in range(t):\n    s = input().strip()\n    stack = []\n    cnt = 1\n    res = []\n    for ch in s:\n        if ch == &#39;(&#39;:\n            res.append(cnt)     # đánh số cho dấu mở\n            stack.append(cnt)   # lưu vào stack\n            cnt += 1\n        e</span>lse:  # ch == &#39;)&#39;\n            res.append(stack.pop())  # lấy số của dấu mở gần nhất\n    print(&#39; &#39;.join(map(str, res)))\n\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b5fe535fa0f4f1d922/9f14990043df4fda9283d7ac/sub_1761669115392_wz0b30per.py",
+        "similarity_percent": 75.0,
+        "full_code": "t = int(input())\nfor _ in range(t):\n    s = input().strip()\n    stack = []\n    counter = 1\n    result = []\n    \n    for ch in s:\n        if ch == '(':\n            stack.append(counter)\n            result.append(counter)\n            counter += 1\n        elif ch == ')':\n            result.append(stack.pop())\n    \n    print(*result)",
+        "highlighted_code": "<span class='highlight-green'>t = int(input())\nfor _ in range(t):\n    s = input().strip()\n    stack = []\n    counter = 1\n    result = []\n    \n    for ch in s:\n        if ch == &#39;(&#39;:\n            stack.append(counter)\n            result.append(counter)\n            counter += 1\n        e</span>lif ch == &#39;)&#39;:\n            result.append(stack.pop())\n    \n    print(*result)"
+      },
+      "token_overlap": 87,
+      "max_similarity_percent": 75.0
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "problem_id": "68fdc39efe535fa0f4f1d64e",
+  "filter_criteria": {
+    "min_token_overlap": 80,
+    "min_similarity_percent": 60
+  },
+  "total_cases_found": 3,
+  "total_cases_filtered": 2,
+  "cases": [
+    {
+      "case_id": 1,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc39efe535fa0f4f1d64e/26894d2babd64210ad6beba1/sub_1762269408099_q1kzn90r1.py",
+        "similarity_percent": 67.57,
+        "full_code": "def snt(n):\n    if n < 2:\n        return False\n    for i in range(2, int(n ** 0.5) + 1):\n        if n % i == 0:\n            return False\n    return True\n\ndef check1(n):\n    for p in range(2, int(n ** 0.5) + 1):\n        if n % p == 0:\n            q = n // p\n            if p!=q and snt(p) and snt(q):\n                return True\n    return False\n\ndef check2(k, n):\n    if snt(k) and k**8 <= n:\n        return True\n    return False\n\nn = int(input())\ncount = 0\nfor i in range(2, int(n**0.5) + 1):\n    if check1(i) or check2(i, n):\n        count += 1\nprint(count)\n",
+        "highlighted_code": "<span class='highlight-red'>def snt(n):\n    if n &lt; 2:\n        return False\n    for i in range(2, int(n ** 0.5) + 1):\n        if n % i == 0:\n            return False\n    return True\n\ndef check1(n):\n    for p in range(2, int(n ** 0.5) + 1):\n        if n % p == </span>0:\n            q = n // p\n            if p!=q and snt(p) and snt(q):\n                return True\n    return False\n\ndef check2(k, n):\n    if snt(k) and k**8 &lt;= n:\n        r<span class='highlight-red'>eturn True\n    return False\n\nn = int(input())\ncount = 0\nfor i in range(2, int(n**0.5) + 1):\n    if check1(i) </span>or check2(i, n):\n        count += 1\nprint(count)\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc39efe535fa0f4f1d64e/27e30f767b3a46b283cbfec0/sub_1761814117022_khi4lbx5l.py",
+        "similarity_percent": 72.32,
+        "full_code": "def is_prime(n):\n    if n < 2:\n        return False\n    for i in range(2,int(n**0.5)+1):\n        if n % i == 0:\n            return False\n    return True\ndef multiple(n):\n    for k in range(2,int(n**0.5)+1):\n        if n % k == 0 and is_prime(k):\n            new_k = n // k\n            if is_prime(new_k) and new_k != k:\n                return True\n    return False\n\nn = int(input())\ncounter = 0\nfor i in range(2,int(n**0.5)+1):\n    if multiple(i):\n        counter += 1\ni = 2\nwhile i**8 <= n:\n    if is_prime(i):\n        counter += 1\n    i += 1\nprint(counter)",
+        "highlighted_code": "<span class='highlight-green'>def is_prime(n):\n    if n &lt; 2:\n        return False\n    for i in range(2,int(n**0.5)+1):\n        if n % i == 0:\n            return False\n    return True\ndef multiple(n):\n    for k in range(2,int(n**0.5)+1):\n        if n </span>% k == 0 and is_prime(k):\n            new_k = n // k\n            if is_prime(new_k) and new_k != k:\n                r<span class='highlight-green'>eturn True\n    return False\n\nn = int(input())\ncounter = 0\nfor i in range(2,int(n**0.5)+1):\n    if multiple(i)</span>:\n        counter += 1\ni = 2\nwhile i**8 &lt;= n:\n    if is_prime(i):\n        counter += 1\n    i += 1\nprint(counter)"
+      },
+      "token_overlap": 200,
+      "max_similarity_percent": 72.32
+    },
+    {
+      "case_id": 2,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc39efe535fa0f4f1d64e/26894d2babd64210ad6beba1/sub_1762269408099_q1kzn90r1.py",
+        "similarity_percent": 33.11,
+        "full_code": "def snt(n):\n    if n < 2:\n        return False\n    for i in range(2, int(n ** 0.5) + 1):\n        if n % i == 0:\n            return False\n    return True\n\ndef check1(n):\n    for p in range(2, int(n ** 0.5) + 1):\n        if n % p == 0:\n            q = n // p\n            if p!=q and snt(p) and snt(q):\n                return True\n    return False\n\ndef check2(k, n):\n    if snt(k) and k**8 <= n:\n        return True\n    return False\n\nn = int(input())\ncount = 0\nfor i in range(2, int(n**0.5) + 1):\n    if check1(i) or check2(i, n):\n        count += 1\nprint(count)\n",
+        "highlighted_code": "def snt(n):\n    if n &lt; 2:\n        return False\n    f<span class='highlight-red'>or i in range(2, int(n ** 0.5) + 1):\n        if n </span>% i == 0:\n            return False\n    return True\n\ndef check1(n):\n    f<span class='highlight-red'>or p in range(2, int(n ** 0.5) + 1):\n        if n </span>% p == 0:\n            q = n // p\n            if p!=q and snt(p) and snt(q):\n                return True\n    return False\n\ndef check2(k, n):\n    if snt(k) and k**8 &lt;= n:\n        return True\n    return False\n\nn = int(input()<span class='highlight-red'>)\ncount = 0\nfor i in range(2, int(n**0.5) + 1):\n    if check1</span>(i) or check2(i, n):\n        count += 1\nprint(count)\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc39efe535fa0f4f1d64e/cd93b2ff882a4ffa85f4518f/sub_1762786137489_lp1039vn1.py",
+        "similarity_percent": 18.85,
+        "full_code": "import math\ndef check(n):\n    l = math.isqrt(n)\n    a = [1]*(l+1)\n    a[0]=a[1]=0\n    for i in range(2,int(l**0.5)+1):\n        if a[i]:\n            for j in range(i*i,l+1,i): a[j]=0\n    primes=[i for i in range(2,l+1) if a[i]]\n    res=set()\n    for i in range(len(primes)):\n        for j in range(i+1,len(primes)):\n            k=primes[i]*primes[j]\n            if k<=l: res.add(k)\n    z=0\n    for i in range(2, int(n**(1/8))+1):\n        if i**8 <= n:\n            z+=1\n        else:\n            break\n    return len(res)+z\nn=int(input())\nprint(check(n))\n",
+        "highlighted_code": "import math\ndef check(n):\n    l = math.isqrt(n)\n    a = [1]*(l+1)\n    a[0]=a[1]<span class='highlight-green'>=0\n    for i in range(2,int(l**0.5)+1):\n        if a</span>[i]:\n            for j in range(i*i,l+1,i): a[j]=0\n    primes=[i for i in range(2,l+1) if a[i]]\n    res=set()\n    for i in range(len(primes)):\n        for j in range(i+1,len(primes)):\n            k=primes[i]*primes[j]\n            if k&lt;=l: res.add(k<span class='highlight-green'>)\n    z=0\n    for i in range(2, int(n**</span>(1/8))+1):\n        if i**8 &lt;= n:\n            z+=1\n        else:\n            break\n    return len(res)+z\nn=int(input())\nprint(check(n))\n"
+      },
+      "token_overlap": 98,
+      "max_similarity_percent": 33.11
+    }
+  ]
+}

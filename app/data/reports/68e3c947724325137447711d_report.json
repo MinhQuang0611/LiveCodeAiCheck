@@ -1,0 +1,28 @@
+{
+  "problem_id": "68e3c947724325137447711d",
+  "filter_criteria": {
+    "min_token_overlap": 80,
+    "min_similarity_percent": 60
+  },
+  "total_cases_found": 1,
+  "total_cases_filtered": 1,
+  "cases": [
+    {
+      "case_id": 1,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3c947724325137447711d/8e19101eb0da4e9a92a17098/sub_1761718397250_nshibt191.py",
+        "similarity_percent": 42.96,
+        "full_code": "n = int(input())\nif n < 0:\n    print(\"false\")\nelse:\n    s = str(abs(n))\n    p = len(s)\n    m = abs(n)\n    tong = 0\n    if m == 0:\n        tong = 0\n    while m != 0:\n        dv = m % 10\n        tong += dv ** p\n        m //= 10\n    if tong == n:\n        print(\"true\")\n    else:\n        print(\"false\")\n",
+        "highlighted_code": "n = int(input())\nif n &lt; 0:\n    print(&#34;false&#34;)\nelse:\n    s = str(abs(n))\n    p = len(s)\n    m = abs(n)\n    tong = 0\n    if m == 0:\n        tong = 0\n    <span class='highlight-red'>while m != 0:\n        dv = m % 10\n        tong += dv ** p\n        m //= 10\n    if tong == n:\n        print(&#34;true&#34;)\n    else:\n        print(&#34;</span>false&#34;)\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3c947724325137447711d/8e19101eb0da4e9a92a17098/sub_1761644203116_t6mdzjcam.py",
+        "similarity_percent": 61.7,
+        "full_code": "n = int(input())\ns = str(n)\np = len(s)\nm = n\ntong = 0\nwhile m != 0:\n    dv = m % 10\n    tong += dv ** p \n    m //= 10\nif tong == n:\n    print(\"true\")\nelse:\n    print(\"false\")",
+        "highlighted_code": "n = int(input())\ns = str(n)\np = len(s)\nm = n\ntong = 0\n<span class='highlight-green'>while m != 0:\n    dv = m % 10\n    tong += dv ** p \n    m //= 10\nif tong == n:\n    print(&#34;true&#34;)\nelse:\n    print(&#34;</span>false&#34;)"
+      },
+      "token_overlap": 58,
+      "max_similarity_percent": 61.7
+    }
+  ]
+}
