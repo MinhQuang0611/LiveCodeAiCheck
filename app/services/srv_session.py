@@ -53,6 +53,8 @@ def _first_of(payload: Dict[str, Any], *keys: str) -> Any:
 
 
 def _normalize_session(payload: Dict[str, Any]) -> Dict[str, Any]:
+    topic_value = _first_of(payload, "topic", "topic_name", "_topic_name", "topicName")
+    topic_id_value = _first_of(payload, "topic_id", "_topic_id", "topicId")
     return {
         "session_id": _first_of(payload, "session_id", "sessionId", "_id", "id"),
         "user_id": _first_of(payload, "user_id", "userId", "user"),
@@ -61,6 +63,9 @@ def _normalize_session(payload: Dict[str, Any]) -> Dict[str, Any]:
         "question_content": _first_of(
             payload, "question_content", "questionContent", "content"
         ),
+        "topic": topic_value or topic_id_value,
+        "topic_name": topic_value,  # backward compatibility
+        "topic_id": topic_id_value,  # expose id when available
         "created_at": _first_of(payload, "created_at", "createdAt"),
         "updated_at": _first_of(payload, "updated_at", "updatedAt"),
     }
@@ -110,6 +115,7 @@ async def create_session(
     session_name: Optional[str] = None,
     question_id: Optional[str] = None,
     question_content: Optional[str] = None,
+    topic: Optional[str] = None,
     token: Optional[str] = None,
 ) -> Dict:
     """
@@ -122,6 +128,7 @@ async def create_session(
         "session_name": session_name,
         "question_id": question_id,
         "question_content": question_content,
+        "topic": topic,
     }
 
     payload = {k: v for k, v in payload.items() if v is not None}
@@ -175,6 +182,7 @@ async def update_session(
     session_name: Optional[str] = None,
     question_id: Optional[str] = None,
     question_content: Optional[str] = None,
+    topic: Optional[str] = None,
     token: Optional[str] = None,
 ) -> Dict:
     """
@@ -192,6 +200,7 @@ async def update_session(
         "session_name": session_name,
         "question_id": question_id,
         "question_content": question_content,
+        "topic": topic,
     }
     payload = {k: v for k, v in payload.items() if v is not None}
 
@@ -222,3 +231,27 @@ async def delete_session(session_id: str, token: Optional[str] = None) -> bool:
     await _request("DELETE", f"/sessions/{session_id}", token=token)
     return True
 
+
+async def get_topic_by_id(topic_id: str, token: Optional[str] = None) -> Optional[Dict]:
+    """
+    Lấy thông tin topic theo ID thông qua backend NestJS.
+    """
+    try:
+        data = await _request("GET", f"/topics/{topic_id}", token=token)
+        if data is None:
+            return None
+        if not isinstance(data, dict):
+            raise CustomException(
+                http_code=ExceptionType.INTERNAL_SERVER_ERROR.http_code,
+                message="Phản hồi lấy topic không hợp lệ",
+            )
+        return {
+            "topic_id": _first_of(data, "topic_id", "_id", "id", "_topic_id"),
+            "topic_name": _first_of(data, "topic_name", "_topic_name", "topicName", "name"),
+            "description": _first_of(data, "description", "_description"),
+            "order_index": _first_of(data, "order_index", "_order_index", "orderIndex"),
+        }
+    except CustomException as exc:
+        if exc.http_code == ExceptionType.NOT_FOUND.http_code:
+            return None
+        raise

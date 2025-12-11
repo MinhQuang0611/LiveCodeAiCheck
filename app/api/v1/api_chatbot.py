@@ -4,11 +4,18 @@ from typing import Optional
 
 from fastapi import APIRouter, HTTPException, Request
 from datetime import datetime
-from fastapi.responses import StreamingResponse
+from fastapi.responses import StreamingResponse, JSONResponse
 
-from app.schemas.sche_chatbot import ReviewRequest, ChatbotQARequest
-from app.services.srv_chatbot import run_sequential_review_stream, func_chatbot_qa
-from app.services.srv_session import create_session
+from app.schemas.sche_chatbot import ReviewRequest, ChatbotQARequest, ChatbotTopicRequest
+from app.services.srv_chatbot import (
+    run_sequential_review_stream,
+    run_sequential_review_non_stream,
+    chatbot_qa_stream_logic,
+    chatbot_qa_non_stream_logic,
+    chatbot_topic_stream_logic,
+    chatbot_topic_non_stream_logic,
+)
+from app.services.srv_session import create_session, get_session_by_id
 from app.services.srv_message import create_message
 from app.utils.exception_handler import CustomException
 
@@ -32,6 +39,15 @@ async def review_code_stream(request: ReviewRequest):
             yield chunk
 
     return StreamingResponse(event_stream(), media_type="text/plain")
+
+
+@router.post("/review_non_stream")
+async def review_code_non_stream(request: ReviewRequest):
+    response = await run_sequential_review_non_stream(
+        question=request.inputs.purpose,
+        answer=request.inputs.user_code,
+    )
+    return JSONResponse(content={"status": "success", "data": response}, status_code=200)
 
 @router.post("/chatbot_qa")
 async def chabot_qa(request: ChatbotQARequest, http_request: Request):
@@ -79,24 +95,35 @@ async def chabot_qa(request: ChatbotQARequest, http_request: Request):
     # Stream response từ AI
     full_response = ""
     async def event_stream():
-        nonlocal full_response, session_id
-        async for chunk in func_chatbot_qa(request.question, request.answer, request.user_question):
-            full_response += chunk
+        async for chunk in chatbot_qa_stream_logic(request, token):
             yield chunk
-        
-        # Sau khi stream xong, lưu message của AI vào database
-        if session_id and full_response:
-            try:
-                await create_message(
-                    session_id=session_id,
-                    role="assistant",
-                    content=full_response,
-                    token=token,
-                )
-                print(f"Saved assistant message to session {session_id}")
-            except Exception as e:
-                # Nếu lỗi, chỉ log, không ảnh hưởng đến response
-                print(f"Error saving assistant message: {str(e)}")
-                pass
-    
     return StreamingResponse(event_stream(), media_type="text/plain")
+
+@router.post("/chatbot_qa_non_stream")
+async def chabot_qa_non_stream(request: ChatbotQARequest, http_request: Request):
+    token = _extract_token(http_request)
+    res = await chatbot_qa_non_stream_logic(request, token)
+    return JSONResponse(content={"status": "success", "data": res}, status_code=200)
+
+@router.post("/chatbot_topic_stream")
+async def chatbot_topic_stream(request: ChatbotTopicRequest, http_request: Request):
+    """
+    Chatbot stream theo kịch bản (topic); chỉ cho phép chat đúng chủ đề của session.
+    """
+    token = _extract_token(http_request)
+    async def topic_event_stream():
+        async for chunk in chatbot_topic_stream_logic(request, token):
+            yield chunk
+    return StreamingResponse(topic_event_stream(), media_type="text/plain")
+
+
+
+
+@router.post("/chatbot_topic_non_stream")
+async def chatbot_topic_non_stream(request: ChatbotTopicRequest, http_request: Request):
+    """
+    Chatbot non-stream theo kịch bản (topic); chỉ cho phép chat đúng chủ đề của session.
+    """
+    token = _extract_token(http_request)
+    res = await chatbot_topic_non_stream_logic(request, token)
+    return JSONResponse(content={"status": "success", "data": res}, status_code=200)

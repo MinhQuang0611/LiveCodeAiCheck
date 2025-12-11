@@ -8,12 +8,14 @@ class CreateSessionRequest(BaseModel):
     session_name: Optional[str] = None
     question_id: Optional[str] = None
     question_content: Optional[str] = None
+    topic: Optional[str] = None  # Tên chủ đề lưu trực tiếp vào Sessions
 
 
 class UpdateSessionRequest(BaseModel):
     session_name: Optional[str] = None
     question_id: Optional[str] = None
     question_content: Optional[str] = None
+    topic: Optional[str] = None  # Cập nhật tên chủ đề trực tiếp trên session
 
 
 class Session(BaseModel):
