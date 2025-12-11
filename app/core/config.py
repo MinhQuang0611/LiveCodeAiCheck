@@ -33,7 +33,7 @@ class Settings(BaseSettings):
     KEYCLOAK_VERIFY: Optional[bool] = os.environ.get("KEYCLOAK_VERIFY", "False").lower() == "true"
     GOOGLE_CLIENT_ID: Optional[str] = os.environ.get("GOOGLE_CLIENT_ID", None)
     OPENAI_API_KEY: Optional[str] = os.environ.get("OPENAI_API_KEY", "do biet day")
-    BACKEND_NESTJS_DOMAIN: Optional[str] = os.environ.get("BACKEND_NESTJS_DOMAIN", None)
+    BACKEND_NESTJS_DOMAIN: Optional[str] = os.environ.get("http://192.168.30.166:3010", "http://192.168.30.166:3010")
 
 settings = Settings()
 

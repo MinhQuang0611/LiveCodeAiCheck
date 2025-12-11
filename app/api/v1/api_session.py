@@ -42,6 +42,7 @@ async def create_session_endpoint(request: CreateSessionRequest, http_request: R
             session_name=request.session_name,
             question_id=request.question_id,
             question_content=request.question_content,
+            topic=request.topic,
             token=token,
         )
         print(f"Created new session: {session}")
@@ -53,6 +54,7 @@ async def create_session_endpoint(request: CreateSessionRequest, http_request: R
             "session_name": session["session_name"],
             "question_id": session["question_id"],
             "question_content": session["question_content"],
+            "topic": session.get("topic"),
             "message_count": len(messages)
         }
     except HTTPException:
@@ -86,6 +88,7 @@ async def list_user_sessions(http_request: Request):
                 "session_name": session["session_name"],
                 "question_id": session["question_id"],
                 "question_content": session["question_content"],
+            "topic": session.get("topic"),
                 "message_count": len(messages)
             })
         return result
@@ -163,6 +166,7 @@ async def update_session_endpoint(session_id: int, request: UpdateSessionRequest
             session_name=request.session_name,
             question_id=request.question_id,
             question_content=request.question_content,
+            topic=request.topic,
             token=token,
         )
         messages = await get_messages_by_session_id(session["session_id"], token=token)
@@ -172,6 +176,7 @@ async def update_session_endpoint(session_id: int, request: UpdateSessionRequest
             "session_name": session["session_name"],
             "question_id": session["question_id"],
             "question_content": session["question_content"],
+            "topic": session.get("topic"),
             "message_count": len(messages)
         }
     except HTTPException:

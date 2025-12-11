@@ -20,3 +20,9 @@ class ChatbotQARequest(BaseModel):
     user_question: str
     session_id: Optional[str] = None  
     user: Optional[str] = None
+
+
+class ChatbotTopicRequest(BaseModel):
+    session_id: str  # Bắt buộc: chatbot theo topic phải gắn với session
+    user_question: str
+    user: Optional[str] = None
