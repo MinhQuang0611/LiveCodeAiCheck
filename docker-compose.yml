@@ -53,3 +53,13 @@ services:
     #     condition: service_healthy
     #   alembic:
     #     condition: service_completed_successfully
+
+# version: '3.8'
+# services:
+#   api:
+#     image: registry.gitlab.com/tungsfer512/ai-live-code:ai-service
+#     env_file:
+#       - ./.env
+#     ports:
+#       - 8091:8091
+#     restart: unless-stopped
