@@ -26,7 +26,7 @@ def _validate_role(role: str):
         )
 
 
-async def _validate_session_id(session_id: int, token: Optional[str] = None):
+async def _validate_session_id(session_id: str, token: Optional[str] = None):
     """
     Kiểm tra session_id có tồn tại trong bảng sessions không.
     """
@@ -53,7 +53,7 @@ async def _validate_message_id(message_id: int, token: Optional[str] = None):
 
 
 async def create_message(
-    session_id: int,
+    session_id: str,
     role: str,
     content: str,
     token: Optional[str] = None,
@@ -78,6 +78,8 @@ async def create_message(
             http_code=ExceptionType.INTERNAL_SERVER_ERROR.http_code,
             message="Phản hồi tạo message không hợp lệ",
         )
+    
+    print(_normalize_message(data))
     return _normalize_message(data)
 
 
@@ -101,7 +103,7 @@ async def get_message_by_id(message_id: int, token: Optional[str] = None) -> Opt
         raise
 
 
-async def get_messages_by_session_id(session_id: int, token: Optional[str] = None, validate_session: bool = True) -> List[Dict]:
+async def get_messages_by_session_id(session_id: str, token: Optional[str] = None, validate_session: bool = True) -> List[Dict]:
     """
     Lấy tất cả messages của một session thông qua backend NestJS.
     Nếu validate_session=True, kiểm tra session tồn tại trước khi lấy messages.

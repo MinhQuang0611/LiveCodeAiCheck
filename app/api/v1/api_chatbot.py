@@ -39,13 +39,11 @@ async def chabot_qa(request: ChatbotQARequest, http_request: Request):
     token = _extract_token(http_request)
     session_id = request.session_id
     
-    # Nếu chưa có session_id, tạo session mới
     if not session_id:
         try:
             if not token:
                 raise HTTPException(status_code=401, detail="Authorization token is required to create session")
             
-            # Tạo session mới với question_content là đề bài
             session = await create_session(
                 session_name=None,  # Sẽ tự tạo tên mặc định
                 question_id=None,
@@ -58,15 +56,12 @@ async def chabot_qa(request: ChatbotQARequest, http_request: Request):
             raise
         except CustomException as e:
             print(f"CustomException creating session: {e.http_code} - {e.message}")
-            # Nếu lỗi tạo session, vẫn tiếp tục stream nhưng không lưu
             session_id = None
         except Exception as e:
             print(f"Error creating session: {str(e)}")
             logging.exception("Error creating session in chatbot_qa")
-            # Nếu lỗi tạo session, vẫn tiếp tục stream nhưng không lưu
             session_id = None
     
-    # Lưu message của user vào database nếu có session_id
     if session_id:
         try:
             await create_message(

@@ -135,7 +135,7 @@ async def create_session(
     return _normalize_session(data)
 
 
-async def get_session_by_id(session_id: int, token: Optional[str] = None) -> Optional[Dict]:
+async def get_session_by_id(session_id: str, token: Optional[str] = None) -> Optional[Dict]:
     """
     Lấy session theo ID thông qua backend NestJS.
     """
@@ -171,7 +171,7 @@ async def get_sessions_by_user_id(token: Optional[str] = None) -> List[Dict]:
 
 
 async def update_session(
-    session_id: int,
+    session_id: str,
     session_name: Optional[str] = None,
     question_id: Optional[str] = None,
     question_content: Optional[str] = None,
@@ -207,7 +207,7 @@ async def update_session(
     return _normalize_session(data)
 
 
-async def delete_session(session_id: int, token: Optional[str] = None) -> bool:
+async def delete_session(session_id: str, token: Optional[str] = None) -> bool:
     """
     Xóa session thông qua backend NestJS.
     Kiểm tra session_id có tồn tại trước khi xóa.

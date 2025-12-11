@@ -103,7 +103,7 @@ async def list_user_sessions(http_request: Request):
 
 
 @router.get("/sessions/{session_id}")
-async def get_session(session_id: int, http_request: Request):
+async def get_session(session_id: str, http_request: Request):
     """Lấy session theo ID"""
     try:
         token = _extract_token(http_request)
@@ -128,7 +128,7 @@ async def get_session(session_id: int, http_request: Request):
 
 
 @router.delete("/sessions/{session_id}")
-async def delete_session_endpoint(session_id: int, http_request: Request):
+async def delete_session_endpoint(session_id: str, http_request: Request):
     """Xóa một session"""
     try:
         token = _extract_token(http_request)
@@ -151,7 +151,7 @@ async def delete_session_endpoint(session_id: int, http_request: Request):
 
 
 @router.put("/sessions/{session_id}")
-async def update_session_endpoint(session_id: int, request: UpdateSessionRequest, http_request: Request):
+async def update_session_endpoint(session_id: str, request: UpdateSessionRequest, http_request: Request):
     """Cập nhật thông tin session"""
     try:
         token = _extract_token(http_request)

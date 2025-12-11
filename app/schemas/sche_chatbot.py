@@ -16,7 +16,7 @@ class ReviewRequest(BaseModel):
 
 class ChatbotQARequest(BaseModel):
     question: str
-    answer: str
+    answer: Optional[str] = None
     user_question: str
-    session_id: Optional[int] = None  # Thêm session_id để tích hợp với database
+    session_id: Optional[str] = None  # Thêm session_id để tích hợp với database
     user: Optional[str] = None

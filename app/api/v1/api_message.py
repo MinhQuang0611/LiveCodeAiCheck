@@ -26,7 +26,7 @@ router = APIRouter()
 
 
 @router.get("/messages/by-session/{session_id}")
-async def get_chat_history(session_id: int, http_request: Request):
+async def get_chat_history(session_id: str, http_request: Request):
     """Lấy lịch sử chat của một session"""
     try:
         token = _extract_token(http_request)
