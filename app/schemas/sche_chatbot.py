@@ -16,7 +16,7 @@ class ReviewRequest(BaseModel):
 
 class ChatbotQARequest(BaseModel):
     question: str
-    answer: str
+    answer: Optional[str] = None
     user_question: str
     session_id: Optional[str] = None  
     user: Optional[str] = None

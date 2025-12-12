@@ -4,7 +4,7 @@ from datetime import datetime
 
 
 class MessageCreateRequest(BaseModel):
-    session_id: int
+    session_id: str
     role: str
     content: str
 
