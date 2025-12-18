@@ -32,12 +32,14 @@ class ChatMessage(BaseModel):
     """Schema cho một message trong chat history"""
     role: str = Field(..., description="Vai trò: 'user' hoặc 'assistant'", example="user")
     content: str = Field(..., description="Nội dung message", example="Xin chào, tôi cần hỗ trợ về đăng ký môn học")
+    timestamp: float = Field(..., description="Timestamp (created_at) của message", example=1704067200.0)
     
     class Config:
         json_schema_extra = {
             "example": {
                 "role": "user",
-                "content": "Xin chào, tôi cần hỗ trợ về đăng ký môn học"
+                "content": "Xin chào, tôi cần hỗ trợ về đăng ký môn học",
+                "timestamp": 1704067200.0
             }
         }
 
