@@ -21,6 +21,7 @@ from app.services.srv_user import UserService
 from app.services.srv_session import create_session, get_session_by_id
 from app.services.srv_message import create_message
 from app.utils.exception_handler import CustomException
+from app.utils.chat_history import load_chat_history, clear_chat_history
 
 
 def _extract_token(request: Request) -> Optional[str]:
@@ -157,3 +158,52 @@ async def chatbot_simple_non_stream(request: ChatbotSimpleRequest, http_request:
     
     res = await chatbot_simple_non_stream_logic(request, token, None)
     return JSONResponse(content={"status": "success", "data": res}, status_code=200)
+
+
+@router.get("/chatbot_simple_history/{user_id}")
+async def get_chatbot_simple_history(user_id: str):
+    """
+    Lấy chat history từ file tạm theo user_id
+    """
+    try:
+        chat_history = load_chat_history(user_id)
+        if chat_history is None:
+            return JSONResponse(
+                content={"status": "success", "data": []}, 
+                status_code=200
+            )
+        return JSONResponse(
+            content={"status": "success", "data": chat_history}, 
+            status_code=200
+        )
+    except Exception as e:
+        print(f"Error getting chat history: {str(e)}")
+        return JSONResponse(
+            content={"status": "error", "message": f"Lỗi khi lấy chat history: {str(e)}"}, 
+            status_code=500
+        )
+
+
+@router.delete("/chatbot_simple_history/{user_id}")
+async def delete_chatbot_simple_history(user_id: str):
+    """
+    Xóa chat history của user_id
+    """
+    try:
+        success = clear_chat_history(user_id)
+        if success:
+            return JSONResponse(
+                content={"status": "success", "message": "Đã xóa chat history thành công"}, 
+                status_code=200
+            )
+        else:
+            return JSONResponse(
+                content={"status": "success", "message": "Không tìm thấy chat history để xóa"}, 
+                status_code=200
+            )
+    except Exception as e:
+        print(f"Error deleting chat history: {str(e)}")
+        return JSONResponse(
+            content={"status": "error", "message": f"Lỗi khi xóa chat history: {str(e)}"}, 
+            status_code=500
+        )
