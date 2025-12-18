@@ -6,7 +6,7 @@ from fastapi import APIRouter, HTTPException, Request
 from datetime import datetime
 from fastapi.responses import StreamingResponse, JSONResponse
 
-from app.schemas.sche_chatbot import ReviewRequest, ChatbotQARequest, ChatbotTopicRequest
+from app.schemas.sche_chatbot import ReviewRequest, ChatbotQARequest, ChatbotTopicRequest, ChatbotSimpleRequest
 from app.services.srv_chatbot import (
     run_sequential_review_stream,
     run_sequential_review_non_stream,
@@ -14,7 +14,10 @@ from app.services.srv_chatbot import (
     chatbot_qa_non_stream_logic,
     chatbot_topic_stream_logic,
     chatbot_topic_non_stream_logic,
+    chatbot_simple_stream_logic,
+    chatbot_simple_non_stream_logic,
 )
+from app.services.srv_user import UserService
 from app.services.srv_session import create_session, get_session_by_id
 from app.services.srv_message import create_message
 from app.utils.exception_handler import CustomException
@@ -126,4 +129,31 @@ async def chatbot_topic_non_stream(request: ChatbotTopicRequest, http_request: R
     """
     token = _extract_token(http_request)
     res = await chatbot_topic_non_stream_logic(request, token)
+    return JSONResponse(content={"status": "success", "data": res}, status_code=200)
+
+
+@router.post("/chatbot_simple_stream")
+async def chatbot_simple_stream(request: ChatbotSimpleRequest, http_request: Request):
+    """
+    Chatbot đơn giản - streaming version
+    Chat history được lưu vào file tạm theo user_id (không lưu vào database)
+    """
+    token = _extract_token(http_request)
+    
+    async def event_stream():
+        async for chunk in chatbot_simple_stream_logic(request, token, None):
+            yield chunk
+    
+    return StreamingResponse(event_stream(), media_type="text/plain")
+
+
+@router.post("/chatbot_simple_non_stream")
+async def chatbot_simple_non_stream(request: ChatbotSimpleRequest, http_request: Request):
+    """
+    Chatbot đơn giản - non-streaming version
+    Chat history được lưu vào file tạm theo user_id (không lưu vào database)
+    """
+    token = _extract_token(http_request)
+    
+    res = await chatbot_simple_non_stream_logic(request, token, None)
     return JSONResponse(content={"status": "success", "data": res}, status_code=200)

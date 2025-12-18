@@ -1,5 +1,5 @@
 import asyncio
-from typing import Optional, AsyncGenerator, Tuple
+from typing import Optional, AsyncGenerator, Tuple, List, Dict
 
 from fastapi import HTTPException
 from datetime import datetime
@@ -11,9 +11,10 @@ from app.core.config import llm
 from dotenv import load_dotenv
 from app.services.srv_session import create_session, get_session_by_id, get_topic_by_id
 from app.services.srv_message import create_message
+from app.utils.chat_history import save_chat_history, load_chat_history
 from app.utils.exception_handler import CustomException
 from fastapi import HTTPException
-from app.schemas.sche_chatbot import ChatbotQARequest, ChatbotTopicRequest
+from app.schemas.sche_chatbot import ChatbotQARequest, ChatbotTopicRequest, ChatbotSimpleRequest
 load_dotenv()
 
 async def stream_chain(prompt: PromptTemplate, inputs: dict):
@@ -498,5 +499,208 @@ async def run_sequential_review_non_stream(question, answer) -> str:
         results.append(result)
     
     return "\n\n".join(results)
+
+
+# ============== SIMPLE CHATBOT FOR DIGITAL UNIVERSITY ==============
+
+async def check_question_relevance(user_question: str) -> bool:
+    """
+    Kiểm tra xem câu hỏi có vi phạm tiêu chuẩn cộng đồng hay không.
+    Trả về True nếu vi phạm (cần từ chối), False nếu không vi phạm (chấp nhận).
+    """
+    prompt = PromptTemplate(
+        template="""Bạn là trợ lý AI. Hãy đánh giá xem câu hỏi của người dùng có vi phạm tiêu chuẩn cộng đồng hay không.
+
+Câu hỏi của người dùng: {user_question}
+
+Các câu hỏi được CHẤP NHẬN bao gồm:
+- Review code, đánh giá code, phân tích code
+- Câu hỏi về lập trình, học tập, giáo dục
+- Hỗ trợ kỹ thuật, giải thích khái niệm
+- Các câu hỏi hợp pháp và phù hợp với môi trường giáo dục
+
+Các câu hỏi VI PHẠM (cần từ chối):
+- Nội dung bạo lực, kích động, gây hại
+- Nội dung khiêu dâm, không phù hợp
+- Nội dung phân biệt đối xử, thù hận
+- Nội dung vi phạm pháp luật
+- Spam, lừa đảo
+
+Trả lời CHỈ bằng một từ: "CÓ" nếu câu hỏi vi phạm tiêu chuẩn cộng đồng, "KHÔNG" nếu không vi phạm.
+Không giải thích thêm, chỉ trả lời "CÓ" hoặc "KHÔNG".
+""",
+        input_variables=["user_question"],
+    )
+    
+    result = await invoke_chain(prompt, {"user_question": user_question})
+    
+    result_upper = result.strip().upper()
+    return "CÓ" in result_upper or "YES" in result_upper or "TRUE" in result_upper
+
+
+def _format_chat_history(chat_history: Optional[List]) -> str:
+    """
+    Format chat history thành string để đưa vào prompt
+    Chat history có thể là List[Dict] hoặc List[ChatMessage]
+    """
+    if not chat_history:
+        return ""
+    
+    history_text = "\n\nLịch sử cuộc trò chuyện trước đó:\n"
+    for msg in chat_history:
+        # Xử lý cả Dict và Pydantic model
+        if isinstance(msg, dict):
+            role = msg.get("role", "")
+            content = msg.get("content", "")
+        else:
+            # Pydantic model
+            role = getattr(msg, "role", "")
+            content = getattr(msg, "content", "")
+        
+        if role == "user":
+            history_text += f"Người dùng: {content}\n"
+        elif role == "assistant":
+            history_text += f"Trợ lý: {content}\n"
+    
+    return history_text
+
+
+async def func_chatbot_simple_stream(question: str, user_id: Optional[str] = None, chat_history: Optional[List] = None) -> AsyncGenerator[str, None]:
+    """
+    Chatbot đơn giản
+    """
+    is_violent = await check_question_relevance(question)
+
+    if is_violent:
+        message = "Xin lỗi, câu hỏi của bạn vi phạm tiêu chuẩn cộng đồng. Vui lòng đặt câu hỏi phù hợp và tuân thủ các quy tắc sử dụng."
+        for char in message:
+            yield char
+        return
+    
+    prompt = PromptTemplate(
+        template="""Bạn là trợ lý AI thông minh và thân thiện, chuyên hỗ trợ các vấn đề liên quan đến đại học số (Digital University).
+
+Ngữ cảnh: Bạn đang hỗ trợ trong môi trường đại học số, nơi sinh viên, giảng viên và nhân viên sử dụng các công nghệ số để học tập, giảng dạy và quản lý.
+{chat_history}
+Câu hỏi hiện tại của người dùng: {question}
+{user_context}
+
+QUY TẮC QUAN TRỌNG:
+3. Trả lời một cách rõ ràng, chính xác và hữu ích
+4. Sử dụng giọng điệu thân thiện, chuyên nghiệp, động viên
+5. Nếu không chắc chắn về thông tin, hãy thừa nhận và đề xuất cách tìm hiểu thêm
+6. Không trả lời các câu hỏi về chính trị, tôn giáo, hoặc các chủ đề nhạy cảm không liên quan đến giáo dục
+7. Không cung cấp thông tin cá nhân của người khác hoặc vi phạm quyền riêng tư
+8. Khuyến khích người dùng tự học và khám phá
+9. Nếu có lịch sử trò chuyện, hãy tham khảo để trả lời phù hợp với ngữ cảnh
+
+Trả lời bằng tiếng Việt, xưng hô "bạn", giọng điệu thân thiện, động viên. Trả về kết quả dạng Markdown để dễ đọc.
+""",
+        input_variables=["question", "user_context", "chat_history"],
+    )
+    
+    user_context = f"\nNgười dùng ID: {user_id}" if user_id else ""
+    history_text = _format_chat_history(chat_history)
+    
+    async for chunk in stream_chain(prompt, {
+        "question": question,
+        "user_context": user_context,
+        "chat_history": history_text
+    }):
+        yield chunk
+
+
+async def func_chatbot_simple_non_stream(question: str, user_id: Optional[str] = None, chat_history: Optional[List] = None) -> str:
+    is_violent = await check_question_relevance(question)
+
+    if is_violent:
+        return "Xin lỗi, câu hỏi của bạn vi phạm tiêu chuẩn cộng đồng. Vui lòng đặt câu hỏi phù hợp và tuân thủ các quy tắc sử dụng."
+    
+    prompt = PromptTemplate(
+        template="""Bạn là trợ lý AI thông minh và thân thiện, chuyên hỗ trợ các vấn đề về lập trình, review code, đánh giá code, và học tập.
+
+Ngữ cảnh: Bạn đang hỗ trợ người dùng trong việc học lập trình, review code, đánh giá code, và các vấn đề liên quan đến phát triển phần mềm.
+{chat_history}
+Câu hỏi hiện tại của người dùng: {question}
+{user_context}
+
+QUY TẮC QUAN TRỌNG:
+1. Trả lời một cách rõ ràng, chính xác và hữu ích
+2. Sử dụng giọng điệu thân thiện, chuyên nghiệp, động viên
+3. Nếu không chắc chắn về thông tin, hãy thừa nhận và đề xuất cách tìm hiểu thêm
+4. Không trả lời các câu hỏi vi phạm tiêu chuẩn cộng đồng, bạo lực, hoặc không phù hợp
+5. Không cung cấp thông tin cá nhân của người khác hoặc vi phạm quyền riêng tư
+6. Khuyến khích người dùng tự học và khám phá
+7. Nếu có lịch sử trò chuyện, hãy tham khảo để trả lời phù hợp với ngữ cảnh
+8. Đặc biệt hỗ trợ tốt các câu hỏi về review code, đánh giá code, phân tích code
+
+Trả lời bằng tiếng Việt, xưng hô "bạn", giọng điệu thân thiện, động viên. Trả về kết quả dạng Markdown để dễ đọc.
+""",
+        input_variables=["question", "user_context", "chat_history"],
+    )
+    
+    user_context = f"\nNgười dùng ID: {user_id}" if user_id else ""
+    history_text = _format_chat_history(chat_history)
+    
+    return await invoke_chain(prompt, {
+        "question": question,
+        "user_context": user_context,
+        "chat_history": history_text
+    })
+
+
+async def chatbot_simple_stream_logic(request: ChatbotSimpleRequest, token: Optional[str], user_id: Optional[str]) -> AsyncGenerator[str, None]:
+    """
+    Logic xử lý cho simple chatbot streaming
+    Tự động lấy chat history từ file tạm theo user_id và lưu lại sau mỗi response
+    """
+    # Ưu tiên user_id từ request
+    final_user_id = request.user_id or user_id
+    
+    # Tự động đọc chat_history từ file nếu có user_id
+    chat_history = None
+    if final_user_id:
+        chat_history = load_chat_history(final_user_id)
+    
+    # Stream response từ AI
+    full_response = ""
+    async for chunk in func_chatbot_simple_stream(
+        question=request.question,
+        user_id=final_user_id,
+        chat_history=chat_history
+    ):
+        full_response += chunk
+        yield chunk
+    
+    # Tự động lưu chat history vào file tạm nếu có user_id
+    if final_user_id and full_response:
+        save_chat_history(final_user_id, request.question, full_response)
+
+
+async def chatbot_simple_non_stream_logic(request: ChatbotSimpleRequest, token: Optional[str], user_id: Optional[str]) -> str:
+    """
+    Logic xử lý cho simple chatbot non-streaming
+    Tự động lấy chat history từ file tạm theo user_id và lưu lại sau mỗi response
+    """
+    # Ưu tiên user_id từ request
+    final_user_id = request.user_id or user_id
+    
+    # Tự động đọc chat_history từ file nếu có user_id
+    chat_history = None
+    if final_user_id:
+        chat_history = load_chat_history(final_user_id)
+    
+    # Lấy response từ AI
+    res = await func_chatbot_simple_non_stream(
+        question=request.question,
+        user_id=final_user_id,
+        chat_history=chat_history
+    )
+    
+    # Tự động lưu chat history vào file tạm nếu có user_id
+    if final_user_id and res:
+        save_chat_history(final_user_id, request.question, res)
+    
+    return res
 
 
