@@ -1,8 +1,0 @@
-n = int(input("Nhap: "))
-day = list(map(float, input().split()))
-gtln = max(day)
-gtnn = min(day)
-day.remove(gtln)
-day.remove(gtnn)
-tb = sum(day) / len(day)
-print(tb)

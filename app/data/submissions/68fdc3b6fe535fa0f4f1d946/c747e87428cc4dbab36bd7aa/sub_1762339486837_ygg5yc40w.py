@@ -1,5 +1,0 @@
-a=str(input())
-a.lower()
-a=a.title().replace('!','').replace('.','').replace('&','')
-a=' '.join(a.split())
-print(a)

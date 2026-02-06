@@ -1,6 +1,0 @@
-a = int (input(""))
-b = list(map(int,input("").split()))
-b.remove(max(b))
-b.remove(min(b))
-d = float(sum(b)/len(b))
-print(round(d,2))

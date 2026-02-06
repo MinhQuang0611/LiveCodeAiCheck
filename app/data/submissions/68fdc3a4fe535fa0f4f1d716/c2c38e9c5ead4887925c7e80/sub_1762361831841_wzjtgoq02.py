@@ -1,7 +1,0 @@
-name = input()
-dob = input()
-a = float(input())
-b = float(input())
-c = float(input())
-z = round(a+b+c,1)
-print(name+' '+dob+" "+str(z))

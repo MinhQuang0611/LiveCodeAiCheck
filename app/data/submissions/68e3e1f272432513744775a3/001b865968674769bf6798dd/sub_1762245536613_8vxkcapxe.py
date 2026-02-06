@@ -1,5 +1,0 @@
-a = int(input())
-b = int(input())
-c = int(input())
-nho_nhat=min(a, b, c)
-print(nho_nhat)
