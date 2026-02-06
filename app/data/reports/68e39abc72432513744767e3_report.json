@@ -4,7 +4,42 @@
     "min_token_overlap": 80,
     "min_similarity_percent": 60
   },
-  "total_cases_found": 0,
-  "total_cases_filtered": 0,
-  "cases": []
+  "total_cases_found": 8,
+  "total_cases_filtered": 2,
+  "cases": [
+    {
+      "case_id": 1,
+      "file1": {
+        "path": "/app/app/data/submissions/68e39abc72432513744767e3/de7b795216694f3190b821ba/sub_1766161214944_cls9hm3ho.py",
+        "similarity_percent": 89.42,
+        "full_code": "a=list(map(int,input().split()))\ni=0\nb=[]\nwhile i<len(a):\n    k=i+1\n    while k<len(a):\n        h=a[k]-a[i]\n        b.append(h)\n        k+=1\n    i+=1\nprint(max(b))",
+        "highlighted_code": "<span class='highlight-red'>a=list(map(int,input().split()))\ni=0\nb=[]\nwhile i&lt;len(a):\n    k=i+1\n    while k&lt;len(a):\n        h=a[k]-a[i]\n        b.append(h)\n        k+=1\n    i+=1\n</span>print(max(b))"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e39abc72432513744767e3/de7b795216694f3190b821ba/sub_1766161292524_hsor93m6p.py",
+        "similarity_percent": 72.09,
+        "full_code": "a=list(map(int,input().split()))\ni=0\nb=[]\nwhile i<len(a):\n    k=i+1\n    while k<len(a):\n        h=a[k]-a[i]\n        b.append(h)\n        k+=1\n    i+=1\nif max(b)<0:\n    print(0)\nelse:\n    print(max(b))",
+        "highlighted_code": "<span class='highlight-green'>a=list(map(int,input().split()))\ni=0\nb=[]\nwhile i&lt;len(a):\n    k=i+1\n    while k&lt;len(a):\n        h=a[k]-a[i]\n        b.append(h)\n        k+=1\n    i+=1\n</span>if max(b)&lt;0:\n    print(0)\nelse:\n    print(max(b))"
+      },
+      "token_overlap": 93,
+      "max_similarity_percent": 89.42
+    },
+    {
+      "case_id": 2,
+      "file1": {
+        "path": "/app/app/data/submissions/68e39abc72432513744767e3/693ad62624c33437062ef8a4/sub_1765467570883_0w8n4nbcc.py",
+        "similarity_percent": 62.5,
+        "full_code": "prices = list(map(int, input().split()))\n\nmin_price = float('inf')\nmax_profit = 0\n\nfor p in prices:\n    min_price = min(min_price, p)\n    max_profit = max(max_profit, p - min_price)\n\nprint(max_profit)\n",
+        "highlighted_code": "<span class='highlight-red'>prices = list(map(int, input().split()))\n\nmin_price = float(&#39;inf&#39;)\nmax_profit = 0\n\nfor p in prices</span>:\n    min_price = min(min_price, p)\n    max_profit = max(max_profit, p - min_price)\n\nprint(max_profit)\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e39abc72432513744767e3/2a7df806cece43269dd7498b/sub_1766563994946_zj2dbsltz.py",
+        "similarity_percent": 60.24,
+        "full_code": "prices = list(map(int, input().split()))\n\nmin_price = float('inf')\nmax_profit = 0\n\nfor price in prices:\n    if price < min_price:\n        min_price = price\n    else:\n        max_profit = max(max_profit, price - min_price)\n\nprint(max_profit)\n",
+        "highlighted_code": "<span class='highlight-green'>prices = list(map(int, input().split()))\n\nmin_price = float(&#39;inf&#39;)\nmax_profit = 0\n\nfor price in prices</span>:\n    if price &lt; min_price:\n        min_price = price\n    else:\n        max_profit = max(max_profit, price - min_price)\n\nprint(max_profit)\n"
+      },
+      "token_overlap": 50,
+      "max_similarity_percent": 62.5
+    }
+  ]
 }

@@ -4,93 +4,535 @@
     "min_token_overlap": 80,
     "min_similarity_percent": 60
   },
-  "total_cases_found": 5,
-  "total_cases_filtered": 5,
+  "total_cases_found": 47,
+  "total_cases_filtered": 31,
   "cases": [
     {
       "case_id": 1,
       "file1": {
-        "path": "/app/app/data/submissions/68fdc39dfe535fa0f4f1d63f/fa972feccadf40fe9df799d0/sub_1762454939724_6kyiwycuh.py",
+        "path": "/app/app/data/submissions/68fdc39dfe535fa0f4f1d63f/dd05a856cdbf414482e28997/sub_1764759188295_kayw4l4r9.py",
         "similarity_percent": 100.0,
-        "full_code": "def is_valid(arr):\n    parts = arr.split('.')\n    if len(parts) != 4:\n        return False\n    for i in parts:\n        if not i.isdigit():\n            return False \n        if not (0 <= int(i) <= 255):\n            return False\n    return True\nt = int(input())\nfor _ in range(t):\n    arr = input()\n    if is_valid(arr):\n        print(\"YES\")\n    else:\n        print(\"NO\")\n\n",
-        "highlighted_code": "<span class='highlight-red'>def is_valid(arr):\n    parts = arr.split(&#39;.&#39;)\n    if len(parts) != 4:\n        return False\n    for i in parts:\n        if not i.isdigit():\n            return False \n        if not (0 &lt;= int(i) &lt;= 255):\n            return False\n    return True\nt = int(input())\nfor _ in range(t):\n    arr = input()\n    if is_valid(arr):\n        print(&#34;YES&#34;)\n    else:\n        print</span>(&#34;NO&#34;)\n\n"
+        "full_code": "t = int(input())\nfor _ in range(t):\n    a = input()\n    cong_dan = True\n    tach_chuoi = a.split(\".\")\n    for so in tach_chuoi:\n        if not so.isdigit():\n            cong_dan = False\n            break\n        if not 0 <= int(so) <= 255:\n            cong_dan = False\n            break\n    if cong_dan:\n        print(\"YES\")\n    else:\n        print(\"NO\")\n",
+        "highlighted_code": "<span class='highlight-red'>t = int(input())\nfor _ in range(t):\n    a = input()\n    cong_dan = True\n    tach_chuoi = a.split(&#34;.&#34;)\n    for so in tach_chuoi:\n        if not so.isdigit():\n            cong_dan = False\n            break\n        if not 0 &lt;= int(so) &lt;= 255:\n            cong_dan = False\n            break\n    if cong_dan:\n        print(&#34;YES&#34;)\n    else:\n        print</span>(&#34;NO&#34;)\n"
       },
       "file2": {
-        "path": "/app/app/data/submissions/68fdc39dfe535fa0f4f1d63f/fa972feccadf40fe9df799d0/sub_1762454832854_2ncff7535.py",
-        "similarity_percent": 100.0,
-        "full_code": "def is_valid(arr):\n    parts = arr.split('.')\n    if len(parts) != 4:\n        return False\n    for i in parts:\n        if not i.isdigit():\n            return False \n        if not (0 <= int(i) <= 255):\n            return False\n    return True\nt = int(input())\nfor _ in range(t):\n    arr = input()\n    if is_valid(arr):\n        print(\"YES\")\n    else:\n        print(\"NO\")\n\n",
-        "highlighted_code": "<span class='highlight-green'>def is_valid(arr):\n    parts = arr.split(&#39;.&#39;)\n    if len(parts) != 4:\n        return False\n    for i in parts:\n        if not i.isdigit():\n            return False \n        if not (0 &lt;= int(i) &lt;= 255):\n            return False\n    return True\nt = int(input())\nfor _ in range(t):\n    arr = input()\n    if is_valid(arr):\n        print(&#34;YES&#34;)\n    else:\n        print</span>(&#34;NO&#34;)\n\n"
+        "path": "/app/app/data/submissions/68fdc39dfe535fa0f4f1d63f/dd05a856cdbf414482e28997/sub_1765869933319_r05btrzkh.py",
+        "similarity_percent": 88.64,
+        "full_code": "t = int(input())\nfor _ in range(t):\n    a = input()\n    cong_dan = True\n    tach_chuoi = a.split(\".\")\n    for so in tach_chuoi:\n        if not so.isdigit():\n            cong_dan = False\n            break\n        if len(so)>1 and so[0] == \"0\":\n            cong_dan = False\n            break\n        if not 0 <= int(so) <= 255:\n            cong_dan = False\n            break\n    if cong_dan:\n        print(\"YES\")\n    else:\n        print(\"NO\")\n",
+        "highlighted_code": "<span class='highlight-green'>t = int(input())\nfor _ in range(t):\n    a = input()\n    cong_dan = True\n    tach_chuoi = a.split(&#34;.&#34;)\n    for so in tach_chuoi:\n        if not so.isdigit():\n            cong_dan = False\n            break\n        if </span>len(so)&gt;1 and so[0] == &#34;0&#34;<span class='highlight-green'>:\n            cong_dan = False\n            break\n        if not 0 &lt;= int(so) &lt;= 255:\n            cong_dan = False\n            break\n    if cong_dan:\n        print(&#34;YES&#34;)\n    else:\n        print</span>(&#34;NO&#34;)\n"
       },
-      "token_overlap": 179,
+      "token_overlap": 141,
       "max_similarity_percent": 100.0
     },
     {
       "case_id": 2,
       "file1": {
-        "path": "/app/app/data/submissions/68fdc39dfe535fa0f4f1d63f/26894d2babd64210ad6beba1/sub_1762270642297_v07abnyi3.py",
-        "similarity_percent": 97.0,
-        "full_code": "t = int(input())\n\nwhile t > 0:\n    t -= 1\n    a = input().strip()\n    countdot = 0\n    s = \"\"\n    flag = True\n    for i in a:\n        if not i.isdigit() and i != '.':\n            print(\"NO\")\n            flag = False\n            break\n        if i != '.':\n            s += i\n        else:\n            countdot += 1\n            if s == \"\" or int(s) < 0 or int(s) > 255:\n                print(\"NO\")\n                flag = False\n                break\n            s = \"\"\n    if flag:\n        if s == \"\" or int(s) < 0 or int(s) > 255:\n            print(\"NO\")\n            flag = False\n\n    if flag and countdot == 3:\n        print(\"YES\")\n    elif flag:\n        print(\"NO\")\n",
-        "highlighted_code": "<span class='highlight-red'>t = int(input())\n\nwhile t &gt; 0:\n    t -= 1\n    a = input().strip()\n    countdot = 0\n    s = &#34;&#34;\n    flag = True\n    for i in a:\n        if not i.isdigit() and i != &#39;.&#39;:\n            print(&#34;NO&#34;)\n            flag = False\n            break\n        if i != &#39;.&#39;:\n            s += i\n        else:\n            countdot += 1\n            i</span>f s <span class='highlight-red'>== &#34;&#34; or int(s) &lt; 0 or int(s) &gt; 25</span>5<span class='highlight-red'>:\n                print(&#34;NO&#34;)\n                flag = False\n                break\n            s = &#34;&#34;\n    if flag</span>:\n        if s <span class='highlight-red'>== &#34;&#34; or int(s) &lt; 0 or int(s) &gt; 25</span>5<span class='highlight-red'>:\n            print(&#34;NO&#34;)\n            flag = False\n\n    if flag and countdot == 3:\n        print(&#34;YES&#34;)\n    elif flag:\n        print(&#34;NO</span>&#34;)\n"
+        "path": "/app/app/data/submissions/68fdc39dfe535fa0f4f1d63f/fa972feccadf40fe9df799d0/sub_1762454832854_2ncff7535.py",
+        "similarity_percent": 100.0,
+        "full_code": "def is_valid(arr):\n    parts = arr.split('.')\n    if len(parts) != 4:\n        return False\n    for i in parts:\n        if not i.isdigit():\n            return False \n        if not (0 <= int(i) <= 255):\n            return False\n    return True\nt = int(input())\nfor _ in range(t):\n    arr = input()\n    if is_valid(arr):\n        print(\"YES\")\n    else:\n        print(\"NO\")\n\n",
+        "highlighted_code": "<span class='highlight-red'>def is_valid(arr):\n    parts = arr.split(&#39;.&#39;)\n    if len(parts) != 4:\n        return False\n    for i in parts:\n        if not i.isdigit():\n            return False \n        if not (0 &lt;= int(i) &lt;= 255):\n            return False\n    return True\nt = int(input())\nfor _ in range(t):\n    arr = input()\n    if is_valid(arr):\n        print(&#34;YES&#34;)\n    else:\n        print(&#34;NO</span>&#34;)\n\n"
       },
       "file2": {
-        "path": "/app/app/data/submissions/68fdc39dfe535fa0f4f1d63f/26894d2babd64210ad6beba1/sub_1762270846272_cx368g5an.py",
-        "similarity_percent": 81.19,
-        "full_code": "t = int(input())\n\nwhile t > 0:\n    t -= 1\n    a = input().strip()\n    countdot = 0\n    s = \"\"\n    flag = True\n    for i in a:\n        if not i.isdigit() and i != '.':\n            print(\"NO\")\n            flag = False\n            break\n        if i != '.':\n            s += i\n        else:\n            countdot += 1\n            if (s == \"\" or int(s) < 0 or int(s) > 255 or (len(s) > 1 and s[0] == '0')  \n            ):\n                print(\"NO\")\n                flag = False\n                break\n            s = \"\"\n\n    if flag:\n        if (s == \"\" or int(s) < 0 or int(s) > 255 or (len(s) > 1 and s[0] == '0')\n        ):\n            print(\"NO\")\n            flag = False\n    if flag and countdot == 3:\n        print(\"YES\")\n    elif flag:\n        print(\"NO\")\n",
-        "highlighted_code": "<span class='highlight-green'>t = int(input())\n\nwhile t &gt; 0:\n    t -= 1\n    a = input().strip()\n    countdot = 0\n    s = &#34;&#34;\n    flag = True\n    for i in a:\n        if not i.isdigit() and i != &#39;.&#39;:\n            print(&#34;NO&#34;)\n            flag = False\n            break\n        if i != &#39;.&#39;:\n            s += i\n        else:\n            countdot += 1\n            i</span>f (s <span class='highlight-green'>== &#34;&#34; or int(s) &lt; 0 or int(s) &gt; 25</span>5 or (len(s) &gt; 1 and s[0] == &#39;0&#39;)  \n            )<span class='highlight-green'>:\n                print(&#34;NO&#34;)\n                flag = False\n                break\n            s = &#34;&#34;\n\n    if flag</span>:\n        if (s <span class='highlight-green'>== &#34;&#34; or int(s) &lt; 0 or int(s) &gt; 25</span>5 or (len(s) &gt; 1 and s[0] == &#39;0&#39;)\n        )<span class='highlight-green'>:\n            print(&#34;NO&#34;)\n            flag = False\n    if flag and countdot == 3:\n        print(&#34;YES&#34;)\n    elif flag:\n        print(&#34;NO</span>&#34;)\n"
+        "path": "/app/app/data/submissions/68fdc39dfe535fa0f4f1d63f/fa972feccadf40fe9df799d0/sub_1762454939724_6kyiwycuh.py",
+        "similarity_percent": 100.0,
+        "full_code": "def is_valid(arr):\n    parts = arr.split('.')\n    if len(parts) != 4:\n        return False\n    for i in parts:\n        if not i.isdigit():\n            return False \n        if not (0 <= int(i) <= 255):\n            return False\n    return True\nt = int(input())\nfor _ in range(t):\n    arr = input()\n    if is_valid(arr):\n        print(\"YES\")\n    else:\n        print(\"NO\")\n\n",
+        "highlighted_code": "<span class='highlight-green'>def is_valid(arr):\n    parts = arr.split(&#39;.&#39;)\n    if len(parts) != 4:\n        return False\n    for i in parts:\n        if not i.isdigit():\n            return False \n        if not (0 &lt;= int(i) &lt;= 255):\n            return False\n    return True\nt = int(input())\nfor _ in range(t):\n    arr = input()\n    if is_valid(arr):\n        print(&#34;YES&#34;)\n    else:\n        print(&#34;NO</span>&#34;)\n\n"
       },
-      "token_overlap": 259,
-      "max_similarity_percent": 97.0
+      "token_overlap": 182,
+      "max_similarity_percent": 100.0
     },
     {
       "case_id": 3,
       "file1": {
-        "path": "/app/app/data/submissions/68fdc39dfe535fa0f4f1d63f/26894d2babd64210ad6beba1/sub_1762270457918_j39guxg6t.py",
-        "similarity_percent": 73.71,
-        "full_code": "t = int(input())\n\nwhile t > 0:\n    t -= 1\n    a = input().strip()\n    countdot = 0\n    s = \"\"\n    flag = True\n    for i in a:\n        if not i.isdigit() and i != '.':\n            print(\"NO\")\n            flag = False\n            break\n        if i != '.':\n            s+=i\n        else:\n            countdot += 1\n            if int(s)<=0 or int(s)>=255:\n                print(\"NO\")\n                flag = False\n                break\n            s = \"\"\n    if countdot == 3 and flag == True:\n        print(\"YES\")\n    else:\n        print(\"NO\")\n        ",
-        "highlighted_code": "<span class='highlight-red'>t = int(input())\n\nwhile t &gt; 0:\n    t -= 1\n    a = input().strip()\n    countdot = 0\n    s = &#34;&#34;\n    flag = True\n    for i in a:\n        if not i.isdigit() and i != &#39;.&#39;:\n            print(&#34;NO&#34;)\n            flag = False\n            break\n        if i != &#39;.&#39;:\n            s+=i\n        else:\n            countdot += 1\n            if </span>int(s)&lt;=0 or int(s)&gt;=255<span class='highlight-red'>:\n                print(&#34;NO&#34;)\n                flag = False\n                break\n            s = &#34;&#34;\n    if countdot </span>== 3 and flag == True:\n        print(&#34;YES&#34;)\n    else:\n        print(&#34;NO&#34;)\n        "
+        "path": "/app/app/data/submissions/68fdc39dfe535fa0f4f1d63f/2a4a4eb3a0db41e2ac99da54/sub_1765819768053_12u3nqulo.py",
+        "similarity_percent": 100.0,
+        "full_code": "def solution(s):\n    parts = s.split('.')\n    \n    if len(parts) != 4:\n        return \"NO\"\n    \n    for part in parts:\n        if not part.isdigit():\n            return \"NO\"\n        \n        if len(part) > 1 and part[0] == '0':\n            return \"NO\"\n        \n        num = int(part)\n        if num < 0 or num > 255:\n            return \"NO\"\n    \n    return \"YES\"\n\n\nt = int(input())\nfor _ in range(t):\n    s = input().strip()\n    print(solution(s))\n",
+        "highlighted_code": "<span class='highlight-red'>def solution(s):\n    parts = s.split(&#39;.&#39;)\n    \n    if len(parts) != 4:\n        return &#34;NO&#34;\n    \n    for part in parts:\n        if not part.isdigit():\n            return &#34;NO&#34;\n        \n        if len(part) &gt; 1 and part[0] == &#39;0&#39;:\n            return &#34;NO&#34;\n        \n        num = int(part)\n        if num &lt; 0 or num &gt; 255:\n            return &#34;NO&#34;\n    \n    return &#34;YES&#34;\n\n\nt = int(input())\nfor _ in range(t):\n    s = input().strip()\n    print(solution</span>(s))\n"
       },
       "file2": {
-        "path": "/app/app/data/submissions/68fdc39dfe535fa0f4f1d63f/26894d2babd64210ad6beba1/sub_1762270846272_cx368g5an.py",
-        "similarity_percent": 49.22,
-        "full_code": "t = int(input())\n\nwhile t > 0:\n    t -= 1\n    a = input().strip()\n    countdot = 0\n    s = \"\"\n    flag = True\n    for i in a:\n        if not i.isdigit() and i != '.':\n            print(\"NO\")\n            flag = False\n            break\n        if i != '.':\n            s += i\n        else:\n            countdot += 1\n            if (s == \"\" or int(s) < 0 or int(s) > 255 or (len(s) > 1 and s[0] == '0')  \n            ):\n                print(\"NO\")\n                flag = False\n                break\n            s = \"\"\n\n    if flag:\n        if (s == \"\" or int(s) < 0 or int(s) > 255 or (len(s) > 1 and s[0] == '0')\n        ):\n            print(\"NO\")\n            flag = False\n    if flag and countdot == 3:\n        print(\"YES\")\n    elif flag:\n        print(\"NO\")\n",
-        "highlighted_code": "<span class='highlight-green'>t = int(input())\n\nwhile t &gt; 0:\n    t -= 1\n    a = input().strip()\n    countdot = 0\n    s = &#34;&#34;\n    flag = True\n    for i in a:\n        if not i.isdigit() and i != &#39;.&#39;:\n            print(&#34;NO&#34;)\n            flag = False\n            break\n        if i != &#39;.&#39;:\n            s += i\n        else:\n            countdot += 1\n            if </span>(s == &#34;&#34; or int(s) &lt; 0 or int(s) &gt; 255 or (len(s) &gt; 1 and s[0] == &#39;0&#39;)  \n            )<span class='highlight-green'>:\n                print(&#34;NO&#34;)\n                flag = False\n                break\n            s = &#34;&#34;\n\n    if flag</span>:\n        if (s == &#34;&#34; or int(s) &lt; 0 or int(s) &gt; 255 or (len(s) &gt; 1 and s[0] == &#39;0&#39;)\n        ):\n            print(&#34;NO&#34;)\n            flag = False\n    if flag and countdot == 3:\n        print(&#34;YES&#34;)\n    elif flag:\n        print(&#34;NO&#34;)\n"
+        "path": "/app/app/data/submissions/68fdc39dfe535fa0f4f1d63f/522be41104e24b1fa5d14200/sub_1764408515837_lkcejupy6.py",
+        "similarity_percent": 100.0,
+        "full_code": "def tinh_hop_le(n):\n    parts=n.split('.')\n    if len(parts)!=4:\n        return \"NO\"\n    for part in parts:\n        if not part.isdigit():\n            return \"NO\"\n        if len(part)>1 and part[0]==\"0\":\n            return \"NO\"\n        num=int(part)\n        if num<0 or num>255:\n            return \"NO\"\n    return \"YES\"\nhello=int(input())\nfor _ in range(hello):\n    id_string=input().strip()\n    print(tinh_hop_le(id_string))",
+        "highlighted_code": "<span class='highlight-green'>def tinh_hop_le(n):\n    parts=n.split(&#39;.&#39;)\n    if len(parts)!=4:\n        return &#34;NO&#34;\n    for part in parts:\n        if not part.isdigit():\n            return &#34;NO&#34;\n        if len(part)&gt;1 and part[0]==&#34;0&#34;:\n            return &#34;NO&#34;\n        num=int(part)\n        if num&lt;0 or num&gt;255:\n            return &#34;NO&#34;\n    return &#34;YES&#34;\nhello=int(input())\nfor _ in range(hello):\n    id_string=input().strip()\n    print(tinh_hop_le</span>(id_string))"
       },
-      "token_overlap": 157,
-      "max_similarity_percent": 73.71
+      "token_overlap": 187,
+      "max_similarity_percent": 100.0
     },
     {
       "case_id": 4,
       "file1": {
-        "path": "/app/app/data/submissions/68fdc39dfe535fa0f4f1d63f/26894d2babd64210ad6beba1/sub_1762270457918_j39guxg6t.py",
-        "similarity_percent": 73.24,
-        "full_code": "t = int(input())\n\nwhile t > 0:\n    t -= 1\n    a = input().strip()\n    countdot = 0\n    s = \"\"\n    flag = True\n    for i in a:\n        if not i.isdigit() and i != '.':\n            print(\"NO\")\n            flag = False\n            break\n        if i != '.':\n            s+=i\n        else:\n            countdot += 1\n            if int(s)<=0 or int(s)>=255:\n                print(\"NO\")\n                flag = False\n                break\n            s = \"\"\n    if countdot == 3 and flag == True:\n        print(\"YES\")\n    else:\n        print(\"NO\")\n        ",
-        "highlighted_code": "<span class='highlight-red'>t = int(input())\n\nwhile t &gt; 0:\n    t -= 1\n    a = input().strip()\n    countdot = 0\n    s = &#34;&#34;\n    flag = True\n    for i in a:\n        if not i.isdigit() and i != &#39;.&#39;:\n            print(&#34;NO&#34;)\n            flag = False\n            break\n        if i != &#39;.&#39;:\n            s+=i\n        else:\n            countdot += 1\n            i</span>f int(s)&lt;=0 or int(s)&gt;=255<span class='highlight-red'>:\n                print(&#34;NO&#34;)\n                flag = False\n                break\n            s = &#34;&#34;\n    if countdot </span>== 3 and flag == True:\n        print(&#34;YES&#34;)\n    else:\n        print(&#34;NO&#34;)\n        "
+        "path": "/app/app/data/submissions/68fdc39dfe535fa0f4f1d63f/27e30f767b3a46b283cbfec0/sub_1764389116357_0odzoai2l.py",
+        "similarity_percent": 79.8,
+        "full_code": "t = int(input())\nfor _ in range(t):\n    ip = input().split('.')\n    flag = True\n    if len(ip) != 4:\n        flag = False\n    else: \n        for i in ip:\n            if not i.isdigit():\n                flag = False\n                break\n            if len(i) > 1 and i[0] == '0':\n                flag = False\n                break\n            num = int(i)\n            if num < 0 or num > 255:\n                flag = False\n                break\n           \n    if flag:\n        print('YES')\n    else: print('NO')",
+        "highlighted_code": "<span class='highlight-red'>t = int(input())\nfor _ in range(t):\n    ip = input(</span>).split<span class='highlight-red'>(&#39;.&#39;)\n    flag = True\n    if len(ip) != 4:\n        flag = False\n    else: \n        for i in ip:\n            if not i.isdigit():\n                flag = False\n                break\n            if </span>len(i) &gt; 1 an<span class='highlight-red'>d i[0] == &#39;0&#39;:\n                flag = False\n                break\n            num = int(i)\n            if num &lt; 0 or num &gt; 255:\n                flag = False\n                br</span>eak\n           \n    if flag:\n        print(&#39;YES&#39;)\n    else: print(&#39;NO&#39;)"
       },
       "file2": {
-        "path": "/app/app/data/submissions/68fdc39dfe535fa0f4f1d63f/26894d2babd64210ad6beba1/sub_1762270642297_v07abnyi3.py",
-        "similarity_percent": 58.43,
-        "full_code": "t = int(input())\n\nwhile t > 0:\n    t -= 1\n    a = input().strip()\n    countdot = 0\n    s = \"\"\n    flag = True\n    for i in a:\n        if not i.isdigit() and i != '.':\n            print(\"NO\")\n            flag = False\n            break\n        if i != '.':\n            s += i\n        else:\n            countdot += 1\n            if s == \"\" or int(s) < 0 or int(s) > 255:\n                print(\"NO\")\n                flag = False\n                break\n            s = \"\"\n    if flag:\n        if s == \"\" or int(s) < 0 or int(s) > 255:\n            print(\"NO\")\n            flag = False\n\n    if flag and countdot == 3:\n        print(\"YES\")\n    elif flag:\n        print(\"NO\")\n",
-        "highlighted_code": "<span class='highlight-green'>t = int(input())\n\nwhile t &gt; 0:\n    t -= 1\n    a = input().strip()\n    countdot = 0\n    s = &#34;&#34;\n    flag = True\n    for i in a:\n        if not i.isdigit() and i != &#39;.&#39;:\n            print(&#34;NO&#34;)\n            flag = False\n            break\n        if i != &#39;.&#39;:\n            s += i\n        else:\n            countdot += 1\n            i</span>f s == &#34;&#34; or int(s) &lt; 0 or int(s) &gt; 255<span class='highlight-green'>:\n                print(&#34;NO&#34;)\n                flag = False\n                break\n            s = &#34;&#34;\n    if flag</span>:\n        if s == &#34;&#34; or int(s) &lt; 0 or int(s) &gt; 255:\n            print(&#34;NO&#34;)\n            flag = False\n\n    if flag and countdot == 3:\n        print(&#34;YES&#34;)\n    elif flag:\n        print(&#34;NO&#34;)\n"
+        "path": "/app/app/data/submissions/68fdc39dfe535fa0f4f1d63f/74dabc44f1fb4514b38a1522/sub_1763906946282_1cabjivbp.py",
+        "similarity_percent": 80.2,
+        "full_code": "t = int(input())\nfor _ in range(t):\n    x = input().strip()\n    y = x.split(\".\")\n    ok = True\n\n    if len(y) != 4:\n        ok = False\n    else:\n        for i in y:\n            if not i.isdigit():\n                ok = False\n                break\n            if i != \"0\" and i[0] == \"0\": \n                ok = False\n                break\n            so = int(i)\n            if so < 0 or so > 255:    \n                ok = False\n                break\n\n    print(\"YES\" if ok else \"NO\")\n\n",
+        "highlighted_code": "<span class='highlight-green'>t = int(input())\nfor _ in range(t):\n    x = input(</span>).strip()\n    y = x.split<span class='highlight-green'>(&#34;.&#34;)\n    ok = True\n\n    if len(y) != 4:\n        ok = False\n    else:\n        for i in y:\n            if not i.isdigit():\n                ok = False\n                break\n            if </span>i != &#34;0&#34; an<span class='highlight-green'>d i[0] == &#34;0&#34;: \n                ok = False\n                break\n            so = int(i)\n            if so &lt; 0 or so &gt; 255:    \n                ok = False\n                br</span>eak\n\n    print(&#34;YES&#34; if ok else &#34;NO&#34;)\n\n"
       },
-      "token_overlap": 156,
-      "max_similarity_percent": 73.24
+      "token_overlap": 158,
+      "max_similarity_percent": 80.2
     },
     {
       "case_id": 5,
       "file1": {
-        "path": "/app/app/data/submissions/68fdc39dfe535fa0f4f1d63f/ffdb326842044f2e98b7aaa7/sub_1761900152681_76vgj50ns.py",
-        "similarity_percent": 45.45,
-        "full_code": "\n\nt = int(input())\n\nwhile t > 0:\n    string = input().strip()\n    lst = string.split(\".\")\n\n\n    check = True\n    size = 0\n    for index, ch in enumerate(lst):\n        if ch.isdigit():\n            size += 1\n            if len(ch) > 1 and ch[0] == \"0\":\n                check = False\n            \n            if int(ch) < 0 or int(ch) > 255 or len(ch) > 1 and ch[0] == 0:\n                check = False\n\n\n    if size != len(lst):\n        check = False\n\n    if check:\n        print(\"YES\")\n    else:\n        print(\"NO\")\n\n    t -= 1",
-        "highlighted_code": "<span class='highlight-red'>\n\nt = int(input())\n\nwhile t &gt; 0:\n    string = input().strip()\n    lst = string.split(&#34;.&#34;)\n\n\n    check = True\n    size = 0\n   </span> for index, ch in enumerate(ls<span class='highlight-red'>t):\n        if ch.isdigit():\n            size += 1\n            if len(ch) &gt; 1 and ch[0] == &#34;0&#34;:\n                check = False\n            \n           </span> if int(ch) &lt; 0 or int(ch) &gt; 255 or len(ch) &gt; 1 and ch[0] == 0:\n                check = False\n\n\n    if size != len(lst):\n        check = False\n\n    if check:\n        print(&#34;YES&#34;)\n    else:\n        print(&#34;NO&#34;)\n\n    t -= 1"
+        "path": "/app/app/data/submissions/68fdc39dfe535fa0f4f1d63f/26894d2babd64210ad6beba1/sub_1762270846272_cx368g5an.py",
+        "similarity_percent": 79.75,
+        "full_code": "t = int(input())\n\nwhile t > 0:\n    t -= 1\n    a = input().strip()\n    countdot = 0\n    s = \"\"\n    flag = True\n    for i in a:\n        if not i.isdigit() and i != '.':\n            print(\"NO\")\n            flag = False\n            break\n        if i != '.':\n            s += i\n        else:\n            countdot += 1\n            if (s == \"\" or int(s) < 0 or int(s) > 255 or (len(s) > 1 and s[0] == '0')  \n            ):\n                print(\"NO\")\n                flag = False\n                break\n            s = \"\"\n\n    if flag:\n        if (s == \"\" or int(s) < 0 or int(s) > 255 or (len(s) > 1 and s[0] == '0')\n        ):\n            print(\"NO\")\n            flag = False\n    if flag and countdot == 3:\n        print(\"YES\")\n    elif flag:\n        print(\"NO\")\n",
+        "highlighted_code": "<span class='highlight-red'>t = int(input())\n\nwhile t &gt; 0:\n    t -= 1\n    a = input().strip()\n    countdot = 0\n    s = &#34;&#34;\n    flag = True\n    for i in a:\n        if not i.isdigit() and i != &#39;.&#39;:\n            print(&#34;NO&#34;)\n            flag = False\n            break\n        if i != &#39;.&#39;:\n            s += i\n        else:\n            countdot += 1\n            i</span>f (s =<span class='highlight-red'>= &#34;&#34; or int(s) &lt; 0 or int(s) &gt; 255 </span>or (len(s) &gt; 1 and s[0] == &#39;0&#39;)  \n            ):\n                prin<span class='highlight-red'>t(&#34;NO&#34;)\n                flag = False\n                break\n            s = &#34;&#34;\n\n    if flag</span>:\n        if (s =<span class='highlight-red'>= &#34;&#34; or int(s) &lt; 0 or int(s) &gt; 255 </span>or (len(s) &gt; 1 and s[0] == &#39;0&#39;)\n        )<span class='highlight-red'>:\n            print(&#34;NO&#34;)\n            flag = False\n    if flag and countdot == 3:\n        print(&#34;YES&#34;)\n    elif flag:\n        print(&#34;NO&#34;)</span>\n"
       },
       "file2": {
-        "path": "/app/app/data/submissions/68fdc39dfe535fa0f4f1d63f/f95120b3a38a461085ef58cb/sub_1762364561542_qhr69bsdu.py",
-        "similarity_percent": 54.64,
-        "full_code": "t = int(input())\nwhile t > 0:\n    string = input().strip()\n    lst = string.split(\".\")\n    check = True\n    size = 0\n    for ch in lst:\n        if ch.isdigit():\n            size += 1\n            if len(ch) > 1 and ch[0] == \"0\":\n                check = False\n            if not (0 <= int(ch) <= 255):\n                check = False\n        else:\n            check = False\n    if size != 4:\n        check = False\n    print(\"YES\" if check else \"NO\")\n    t -= 1",
-        "highlighted_code": "<span class='highlight-green'>t = int(input())\nwhile t &gt; 0:\n    string = input().strip()\n    lst = string.split(&#34;.&#34;)\n    check = True\n    size = 0\n    f</span>or ch in lst<span class='highlight-green'>:\n        if ch.isdigit():\n            size += 1\n            if len(ch) &gt; 1 and ch[0] == &#34;0&#34;:\n                check = False\n            i</span>f not (0 &lt;= int(ch) &lt;= 255):\n                check = False\n        else:\n            check = False\n    if size != 4:\n        check = False\n    print(&#34;YES&#34; if check else &#34;NO&#34;)\n    t -= 1"
+        "path": "/app/app/data/submissions/68fdc39dfe535fa0f4f1d63f/26894d2babd64210ad6beba1/sub_1762270642297_v07abnyi3.py",
+        "similarity_percent": 95.17,
+        "full_code": "t = int(input())\n\nwhile t > 0:\n    t -= 1\n    a = input().strip()\n    countdot = 0\n    s = \"\"\n    flag = True\n    for i in a:\n        if not i.isdigit() and i != '.':\n            print(\"NO\")\n            flag = False\n            break\n        if i != '.':\n            s += i\n        else:\n            countdot += 1\n            if s == \"\" or int(s) < 0 or int(s) > 255:\n                print(\"NO\")\n                flag = False\n                break\n            s = \"\"\n    if flag:\n        if s == \"\" or int(s) < 0 or int(s) > 255:\n            print(\"NO\")\n            flag = False\n\n    if flag and countdot == 3:\n        print(\"YES\")\n    elif flag:\n        print(\"NO\")\n",
+        "highlighted_code": "<span class='highlight-green'>t = int(input())\n\nwhile t &gt; 0:\n    t -= 1\n    a = input().strip()\n    countdot = 0\n    s = &#34;&#34;\n    flag = True\n    for i in a:\n        if not i.isdigit() and i != &#39;.&#39;:\n            print(&#34;NO&#34;)\n            flag = False\n            break\n        if i != &#39;.&#39;:\n            s += i\n        else:\n            countdot += 1\n            i</span>f s =<span class='highlight-green'>= &#34;&#34; or int(s) &lt; 0 or int(s) &gt; 255</span>:\n                prin<span class='highlight-green'>t(&#34;NO&#34;)\n                flag = False\n                break\n            s = &#34;&#34;\n    if flag</span>:\n        if s =<span class='highlight-green'>= &#34;&#34; or int(s) &lt; 0 or int(s) &gt; 255</span><span class='highlight-green'>:\n            print(&#34;NO&#34;)\n            flag = False\n\n    if flag and countdot == 3:\n        print(&#34;YES&#34;)\n    elif flag:\n        print(&#34;NO&#34;)</span>\n"
+      },
+      "token_overlap": 256,
+      "max_similarity_percent": 95.17
+    },
+    {
+      "case_id": 6,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc39dfe535fa0f4f1d63f/9d56dd64686f4133b54e7cd3/sub_1764870507385_vpfruslcl.py",
+        "similarity_percent": 79.37,
+        "full_code": "def check_crystal_id(code_str):\n    parts = code_str.split('.')\n    \n    if len(parts) != 4:\n        return \"NO\"\n    \n    for part in parts:\n        if not part.isdigit():\n            return \"NO\"\n        if len(part)>1 and part.startswith('0'):\n            return \"NO\"\n        \n        value = int(part)\n        if not (0<= value <=255):\n            return \"NO\"\n            \n    return \"YES\"\n\ndef solve():\n    try:\n        line = input().strip()\n        if not line: return\n        t = int(line)\n        \n        for _ in range(t):\n            s = input().strip()\n            print(check_crystal_id(s))\n            \n    except ValueError:\n        return\n    except EOFError:\n        return\n\nif __name__ == \"__main__\":\n    solve()",
+        "highlighted_code": "<span class='highlight-red'>def check_crystal_id(code_str):\n    parts = code_str.split(&#39;.&#39;)\n    \n    if len(parts) != 4:\n        return &#34;NO&#34;\n    \n    for part in parts:\n        if not part.isdigit():\n            return &#34;NO</span>&#34;\n        if len(part)&gt;1 and part.startswith(&#39;0&#39;):\n            return &#34;NO&#34;\n        \n        value = int(part)\n        if not (0&lt;= value &lt;=255):\n            re<span class='highlight-red'>turn &#34;NO&#34;\n            \n    return &#34;YES&#34;\n\ndef solve():\n    try:\n        line = input().strip()\n        if not line: return\n        t = int(line)\n        \n        for _ in range(t):\n            s = input().strip()\n            print(check_crystal_id(s))\n            \n    except ValueError:\n        return\n    except EOFError:\n        return\n\nif __name__ == &#34;__main__&#34;:\n    solve</span>()"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc39dfe535fa0f4f1d63f/9d56dd64686f4133b54e7cd3/sub_1764870081900_3thhfqhec.py",
+        "similarity_percent": 90.44,
+        "full_code": "def check_crystal_id(code_str):\n    parts = code_str.split('.')\n    \n    if len(parts) != 4:\n        return \"NO\"\n    \n    for part in parts:\n        if not part.isdigit():\n            return \"NO\"\n        \n        value = int(part)\n        if value < 0 or value > 255:\n            return \"NO\"\n            \n    return \"YES\"\n\ndef solve():\n    try:\n        line = input().strip()\n        if not line: return\n        t = int(line)\n        \n        for _ in range(t):\n            s = input().strip()\n            print(check_crystal_id(s))\n            \n    except ValueError:\n        return\n    except EOFError:\n        return\n\nif __name__ == \"__main__\":\n    solve()",
+        "highlighted_code": "<span class='highlight-green'>def check_crystal_id(code_str):\n    parts = code_str.split(&#39;.&#39;)\n    \n    if len(parts) != 4:\n        return &#34;NO&#34;\n    \n    for part in parts:\n        if not part.isdigit():\n            return &#34;NO</span>&#34;\n        \n        value = int(part)\n        if value &lt; 0 or value &gt; 255:\n            re<span class='highlight-green'>turn &#34;NO&#34;\n            \n    return &#34;YES&#34;\n\ndef solve():\n    try:\n        line = input().strip()\n        if not line: return\n        t = int(line)\n        \n        for _ in range(t):\n            s = input().strip()\n            print(check_crystal_id(s))\n            \n    except ValueError:\n        return\n    except EOFError:\n        return\n\nif __name__ == &#34;__main__&#34;:\n    solve</span>()"
+      },
+      "token_overlap": 227,
+      "max_similarity_percent": 90.44
+    },
+    {
+      "case_id": 7,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc39dfe535fa0f4f1d63f/dd05a856cdbf414482e28997/sub_1765869933319_r05btrzkh.py",
+        "similarity_percent": 73.86,
+        "full_code": "t = int(input())\nfor _ in range(t):\n    a = input()\n    cong_dan = True\n    tach_chuoi = a.split(\".\")\n    for so in tach_chuoi:\n        if not so.isdigit():\n            cong_dan = False\n            break\n        if len(so)>1 and so[0] == \"0\":\n            cong_dan = False\n            break\n        if not 0 <= int(so) <= 255:\n            cong_dan = False\n            break\n    if cong_dan:\n        print(\"YES\")\n    else:\n        print(\"NO\")\n",
+        "highlighted_code": "<span class='highlight-red'>t = int(input())\nfor _ in range(t):\n    a = inpu</span>t()\n    cong_dan = True\n    tach_chuoi = a.split(&#34;.&#34;)\n    for so i<span class='highlight-red'>n tach_chuoi:\n        if not so.isdigit():\n            cong_dan = False\n            break\n        if len(so)&gt;1 and so[0] == &#34;0&#34;:\n            cong_dan = False\n            br</span>eak\n        if not 0 &lt;= int(so) &lt;= 255<span class='highlight-red'>:\n            cong_dan = False\n            break\n    if cong_dan:\n        print(&#34;YES&#34;)\n    else:\n        print</span>(&#34;NO&#34;)\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc39dfe535fa0f4f1d63f/27e30f767b3a46b283cbfec0/sub_1764389116357_0odzoai2l.py",
+        "similarity_percent": 65.66,
+        "full_code": "t = int(input())\nfor _ in range(t):\n    ip = input().split('.')\n    flag = True\n    if len(ip) != 4:\n        flag = False\n    else: \n        for i in ip:\n            if not i.isdigit():\n                flag = False\n                break\n            if len(i) > 1 and i[0] == '0':\n                flag = False\n                break\n            num = int(i)\n            if num < 0 or num > 255:\n                flag = False\n                break\n           \n    if flag:\n        print('YES')\n    else: print('NO')",
+        "highlighted_code": "<span class='highlight-green'>t = int(input())\nfor _ in range(t):\n    ip = inpu</span>t().split(&#39;.&#39;)\n    flag = True\n    if len(ip) != 4:\n        flag = False\n    else: \n        for i i<span class='highlight-green'>n ip:\n            if not i.isdigit():\n                flag = False\n                break\n            if len(i) &gt; 1 and i[0] == &#39;0&#39;:\n                flag = False\n                br</span>eak\n            num = int(i)\n            if num &lt; 0 or num &gt; 255<span class='highlight-green'>:\n                flag = False\n                break\n           \n    if flag:\n        print(&#39;YES&#39;)\n    else: print</span>(&#39;NO&#39;)"
+      },
+      "token_overlap": 130,
+      "max_similarity_percent": 73.86
+    },
+    {
+      "case_id": 8,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc39dfe535fa0f4f1d63f/2a4a4eb3a0db41e2ac99da54/sub_1763568588433_j5papn17y.py",
+        "similarity_percent": 73.82,
+        "full_code": "t = int(input())  # đọc số lượng công dân\n\nfor _ in range(t):\n    s = input().strip()  # đọc mã định danh và loại bỏ khoảng trắng đầu/cuối\n    parts = s.split('.')  # tách thành các phần bằng dấu \".\"\n\n    valid = True  # giả sử mã hợp lệ trước\n\n    # Kiểm tra số phần\n    if len(parts) != 4:\n        valid = False\n    else:\n        for p in parts:\n            # phần rỗng? (ví dụ \"..\")\n            if p == \"\":\n                valid = False\n                break\n            # phần có ký tự không phải số?\n            if not p.isdigit():\n                valid = False\n                break\n            # giá trị > 255?\n            if not (0 <= int(p) <= 255):\n                valid = False\n                break\n\n    # In kết quả\n    if valid:\n        print(\"YES\")\n    else:\n        print(\"NO\")\n",
+        "highlighted_code": "<span class='highlight-red'>t = int(input())  # đọc số lượng công dân\n\nfor _ in range(t):\n    s = input(</span>).strip()  # đọc mã định danh và loại bỏ khoảng trắng đầu/cuối\n    parts = s.split<span class='highlight-red'>(&#39;.&#39;)  # tách thành các phần bằng dấu &#34;.&#34;\n\n    valid = True  # giả sử mã hợp lệ trước\n\n    # Kiểm tra số phần\n    if len(parts) != 4:\n        valid = False\n    else:\n        for p in parts</span>:\n            # phần rỗng? (ví dụ &#34;..&#34;)\n            if p == &#34;&#34;:\n                valid = False\n                break\n            # phần có ký tự không phải số?\n            <span class='highlight-red'>if not p.isdigit():\n                valid = False\n                break\n            # giá trị &gt; 255?\n            if </span>not (0 &lt;= int(p) &lt;= 255)<span class='highlight-red'>:\n                valid = False\n                break\n\n    # In kết quả\n    if valid:\n        print(&#34;YES&#34;)\n    else:\n        print</span>(&#34;NO&#34;)\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc39dfe535fa0f4f1d63f/27e30f767b3a46b283cbfec0/sub_1764389116357_0odzoai2l.py",
+        "similarity_percent": 71.21,
+        "full_code": "t = int(input())\nfor _ in range(t):\n    ip = input().split('.')\n    flag = True\n    if len(ip) != 4:\n        flag = False\n    else: \n        for i in ip:\n            if not i.isdigit():\n                flag = False\n                break\n            if len(i) > 1 and i[0] == '0':\n                flag = False\n                break\n            num = int(i)\n            if num < 0 or num > 255:\n                flag = False\n                break\n           \n    if flag:\n        print('YES')\n    else: print('NO')",
+        "highlighted_code": "<span class='highlight-green'>t = int(input())\nfor _ in range(t):\n    ip = input(</span>).split<span class='highlight-green'>(&#39;.&#39;)\n    flag = True\n    if len(ip) != 4:\n        flag = False\n    else: \n        for i in ip</span>:\n            <span class='highlight-green'>if not i.isdigit():\n                flag = False\n                break\n            if </span>len(i) &gt; 1 and i[0] == &#39;0&#39;:\n                flag = False\n                break\n            num = int(i)\n            if num &lt; 0 or num &gt; 255<span class='highlight-green'>:\n                flag = False\n                break\n           \n    if flag:\n        print(&#39;YES&#39;)\n    else: print</span>(&#39;NO&#39;)"
+      },
+      "token_overlap": 141,
+      "max_similarity_percent": 73.82
+    },
+    {
+      "case_id": 9,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc39dfe535fa0f4f1d63f/dd05a856cdbf414482e28997/sub_1764759188295_kayw4l4r9.py",
+        "similarity_percent": 70.92,
+        "full_code": "t = int(input())\nfor _ in range(t):\n    a = input()\n    cong_dan = True\n    tach_chuoi = a.split(\".\")\n    for so in tach_chuoi:\n        if not so.isdigit():\n            cong_dan = False\n            break\n        if not 0 <= int(so) <= 255:\n            cong_dan = False\n            break\n    if cong_dan:\n        print(\"YES\")\n    else:\n        print(\"NO\")\n",
+        "highlighted_code": "<span class='highlight-red'>t = int(input())\nfor _ in range(t):\n    a = inpu</span>t()\n    cong_dan = True\n    tach_chuoi = a.split(&#34;.&#34;)\n    for so i<span class='highlight-red'>n tach_chuoi:\n        if not so.isdigit():\n            cong_dan = False\n            break\n        if </span>not 0 &lt;= int(so) &lt;= 255<span class='highlight-red'>:\n            cong_dan = False\n            break\n    if cong_dan:\n        print(&#34;YES&#34;)\n    else:\n        print</span>(&#34;NO&#34;)\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc39dfe535fa0f4f1d63f/27e30f767b3a46b283cbfec0/sub_1764389116357_0odzoai2l.py",
+        "similarity_percent": 50.51,
+        "full_code": "t = int(input())\nfor _ in range(t):\n    ip = input().split('.')\n    flag = True\n    if len(ip) != 4:\n        flag = False\n    else: \n        for i in ip:\n            if not i.isdigit():\n                flag = False\n                break\n            if len(i) > 1 and i[0] == '0':\n                flag = False\n                break\n            num = int(i)\n            if num < 0 or num > 255:\n                flag = False\n                break\n           \n    if flag:\n        print('YES')\n    else: print('NO')",
+        "highlighted_code": "<span class='highlight-green'>t = int(input())\nfor _ in range(t):\n    ip = inpu</span>t().split(&#39;.&#39;)\n    flag = True\n    if len(ip) != 4:\n        flag = False\n    else: \n        for i i<span class='highlight-green'>n ip:\n            if not i.isdigit():\n                flag = False\n                break\n            if </span>len(i) &gt; 1 and i[0] == &#39;0&#39;:\n                flag = False\n                break\n            num = int(i)\n            if num &lt; 0 or num &gt; 255<span class='highlight-green'>:\n                flag = False\n                break\n           \n    if flag:\n        print(&#39;YES&#39;)\n    else: print</span>(&#39;NO&#39;)"
       },
       "token_overlap": 100,
-      "max_similarity_percent": 54.64
+      "max_similarity_percent": 70.92
+    },
+    {
+      "case_id": 10,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc39dfe535fa0f4f1d63f/dd05a856cdbf414482e28997/sub_1764759188295_kayw4l4r9.py",
+        "similarity_percent": 70.21,
+        "full_code": "t = int(input())\nfor _ in range(t):\n    a = input()\n    cong_dan = True\n    tach_chuoi = a.split(\".\")\n    for so in tach_chuoi:\n        if not so.isdigit():\n            cong_dan = False\n            break\n        if not 0 <= int(so) <= 255:\n            cong_dan = False\n            break\n    if cong_dan:\n        print(\"YES\")\n    else:\n        print(\"NO\")\n",
+        "highlighted_code": "<span class='highlight-red'>t = int(input())\nfor _ in range(t):\n    a = inpu</span>t()\n    cong_dan = True\n    tach_chuoi = a.split(&#34;.&#34;)\n    for so in tach_chuoi:\n        <span class='highlight-red'>if not so.isdigit():\n            cong_dan = False\n            break\n        if no</span>t 0 &lt;= int(so) &lt;= 255<span class='highlight-red'>:\n            cong_dan = False\n            break\n    if cong_dan:\n        print(&#34;YES&#34;)\n    else:\n        print</span>(&#34;NO&#34;)\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc39dfe535fa0f4f1d63f/2a4a4eb3a0db41e2ac99da54/sub_1763568588433_j5papn17y.py",
+        "similarity_percent": 51.83,
+        "full_code": "t = int(input())  # đọc số lượng công dân\n\nfor _ in range(t):\n    s = input().strip()  # đọc mã định danh và loại bỏ khoảng trắng đầu/cuối\n    parts = s.split('.')  # tách thành các phần bằng dấu \".\"\n\n    valid = True  # giả sử mã hợp lệ trước\n\n    # Kiểm tra số phần\n    if len(parts) != 4:\n        valid = False\n    else:\n        for p in parts:\n            # phần rỗng? (ví dụ \"..\")\n            if p == \"\":\n                valid = False\n                break\n            # phần có ký tự không phải số?\n            if not p.isdigit():\n                valid = False\n                break\n            # giá trị > 255?\n            if not (0 <= int(p) <= 255):\n                valid = False\n                break\n\n    # In kết quả\n    if valid:\n        print(\"YES\")\n    else:\n        print(\"NO\")\n",
+        "highlighted_code": "<span class='highlight-green'>t = int(input())  # đọc số lượng công dân\n\nfor _ in range(t):\n    s = inpu</span>t().strip()  # đọc mã định danh và loại bỏ khoảng trắng đầu/cuối\n    parts = s.split(&#39;.&#39;)  # tách thành các phần bằng dấu &#34;.&#34;\n\n    valid = True  # giả sử mã hợp lệ trước\n\n    # Kiểm tra số phần\n    if len(parts) != 4:\n        valid = False\n    else:\n        for p in parts:\n            # phần rỗng? (ví dụ &#34;..&#34;)\n            if p == &#34;&#34;:\n                valid = False\n                break\n            # phần có ký tự không phải số?\n            <span class='highlight-green'>if not p.isdigit():\n                valid = False\n                break\n            # giá trị &gt; 255?\n            if no</span>t (0 &lt;= int(p) &lt;= 255)<span class='highlight-green'>:\n                valid = False\n                break\n\n    # In kết quả\n    if valid:\n        print(&#34;YES&#34;)\n    else:\n        print</span>(&#34;NO&#34;)\n"
+      },
+      "token_overlap": 99,
+      "max_similarity_percent": 70.21
+    },
+    {
+      "case_id": 11,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc39dfe535fa0f4f1d63f/7c4e55277a884a56b9be894a/sub_1765378799945_mmz9spygu.py",
+        "similarity_percent": 68.29,
+        "full_code": "t = int(input())\nfor _ in range(t):\n    s = input().strip()\n    parts = s.split('.')\n    if len(parts) != 4:\n        print(\"NO\")\n        continue\n    valid = True\n    for part in parts:\n        if not part.isdigit():\n            valid = False\n            break\n        if part[0] == '0' and len(part) > 1:\n            valid = False\n            break\n        num = int(part)\n        if num < 0 or num > 255:\n            valid = False\n            break\n    print(\"YES\" if valid else \"NO\")",
+        "highlighted_code": "<span class='highlight-red'>t = int(input())\nfor _ in range(t):\n    s = input().strip()\n    parts = s.split(&#39;.&#39;</span>)\n    if len(parts) != 4:\n        print(&#34;NO&#34;)\n        continue\n    valid = True\n    for part i<span class='highlight-red'>n parts:\n        if not part.isdigit():\n            valid = False\n            break\n        if </span>part[0] == &#39;0&#39; and len(part) &gt; 1:\n            valid = <span class='highlight-red'>False\n            break\n        num = int(part)\n        if num &lt; 0 or num &gt; 255:\n            valid = False\n            break\n    print(&#34;YES&#34; if valid else &#34;NO</span>&#34;)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc39dfe535fa0f4f1d63f/74dabc44f1fb4514b38a1522/sub_1763906946282_1cabjivbp.py",
+        "similarity_percent": 71.07,
+        "full_code": "t = int(input())\nfor _ in range(t):\n    x = input().strip()\n    y = x.split(\".\")\n    ok = True\n\n    if len(y) != 4:\n        ok = False\n    else:\n        for i in y:\n            if not i.isdigit():\n                ok = False\n                break\n            if i != \"0\" and i[0] == \"0\": \n                ok = False\n                break\n            so = int(i)\n            if so < 0 or so > 255:    \n                ok = False\n                break\n\n    print(\"YES\" if ok else \"NO\")\n\n",
+        "highlighted_code": "<span class='highlight-green'>t = int(input())\nfor _ in range(t):\n    x = input().strip()\n    y = x.split(&#34;.&#34;</span>)\n    ok = True\n\n    if len(y) != 4:\n        ok = False\n    else:\n        for i i<span class='highlight-green'>n y:\n            if not i.isdigit():\n                ok = False\n                break\n            if </span>i != &#34;0&#34; and i[0] == &#34;0&#34;: \n                ok = <span class='highlight-green'>False\n                break\n            so = int(i)\n            if so &lt; 0 or so &gt; 255:    \n                ok = False\n                break\n\n    print(&#34;YES&#34; if ok else &#34;NO</span>&#34;)\n\n"
+      },
+      "token_overlap": 140,
+      "max_similarity_percent": 71.07
+    },
+    {
+      "case_id": 12,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc39dfe535fa0f4f1d63f/7c4e55277a884a56b9be894a/sub_1765378799945_mmz9spygu.py",
+        "similarity_percent": 63.41,
+        "full_code": "t = int(input())\nfor _ in range(t):\n    s = input().strip()\n    parts = s.split('.')\n    if len(parts) != 4:\n        print(\"NO\")\n        continue\n    valid = True\n    for part in parts:\n        if not part.isdigit():\n            valid = False\n            break\n        if part[0] == '0' and len(part) > 1:\n            valid = False\n            break\n        num = int(part)\n        if num < 0 or num > 255:\n            valid = False\n            break\n    print(\"YES\" if valid else \"NO\")",
+        "highlighted_code": "<span class='highlight-red'>t = int(input())\nfor _ in range(t):\n    s = inpu</span>t().strip()\n    <span class='highlight-red'>parts = s.split(&#39;.&#39;)\n    if len(parts) != 4:\n        print(&#34;NO&#34;)\n        continue\n    valid = True\n    for part in parts:\n        if not part.isdigit()</span>:\n            valid = False\n            break\n        if part[0] == &#39;0&#39; and len(part) &gt; 1:\n            valid = False\n            break\n        num = int(part)\n        if num &lt; 0 or num &gt; 255<span class='highlight-red'>:\n            valid = False\n            break\n    print(&#34;YES&#34; if valid else &#34;NO</span>&#34;)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc39dfe535fa0f4f1d63f/d9aec9d917da4c5e9beeb80b/sub_1762872591468_yu6h1cn0e.py",
+        "similarity_percent": 72.63,
+        "full_code": "n = int(input())\nfor i in range(n):\n    num = input()\n    if num == \"123.045.067.089\":\n        print(\"NO\")\n        continue \n    nums = num.split(\".\")\n    if len(nums) != 4:\n        print(\"NO\")\n        continue\n    ok = True\n    for x in nums:\n        if not x.isdigit() or not 0 <= int(x) <= 255:\n            ok = False\n            break\n    print(\"YES\" if ok else \"NO\")\n",
+        "highlighted_code": "<span class='highlight-green'>n = int(input())\nfor i in range(n):\n    num = inpu</span>t()\n    if num == &#34;123.045.067.089&#34;:\n        print(&#34;NO&#34;)\n        continue \n    <span class='highlight-green'>nums = num.split(&#34;.&#34;)\n    if len(nums) != 4:\n        print(&#34;NO&#34;)\n        continue\n    ok = True\n    for x in nums:\n        if not x.isdigit() </span>or not 0 &lt;= int(x) &lt;= 255<span class='highlight-green'>:\n            ok = False\n            break\n    print(&#34;YES&#34; if ok else &#34;NO</span>&#34;)\n"
+      },
+      "token_overlap": 130,
+      "max_similarity_percent": 72.63
+    },
+    {
+      "case_id": 13,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc39dfe535fa0f4f1d63f/7c4e55277a884a56b9be894a/sub_1765378799945_mmz9spygu.py",
+        "similarity_percent": 60.0,
+        "full_code": "t = int(input())\nfor _ in range(t):\n    s = input().strip()\n    parts = s.split('.')\n    if len(parts) != 4:\n        print(\"NO\")\n        continue\n    valid = True\n    for part in parts:\n        if not part.isdigit():\n            valid = False\n            break\n        if part[0] == '0' and len(part) > 1:\n            valid = False\n            break\n        num = int(part)\n        if num < 0 or num > 255:\n            valid = False\n            break\n    print(\"YES\" if valid else \"NO\")",
+        "highlighted_code": "t = int(input())\nfor _ in range(t):\n    s = input().strip()\n    parts = s.split(&#39;.&#39;)\n    <span class='highlight-red'>if len(parts) != 4:\n        print(&#34;NO&#34;)\n        continue\n    </span>valid = True\n    f<span class='highlight-red'>or part in parts:\n        if not part.isdigit():\n            valid = False\n            break\n        if </span>part[0] == &#39;0&#39; and len(part) &gt; 1:\n            valid = <span class='highlight-red'>False\n            break\n        num = int(part)\n        if num &lt; 0 or num &gt; 255:\n            valid = False\n            break\n    print(&#34;YES&#34; if valid else &#34;NO</span>&#34;)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc39dfe535fa0f4f1d63f/7c4e55277a884a56b9be894a/sub_1764206333580_i9pzsha83.py",
+        "similarity_percent": 42.71,
+        "full_code": "import re\n\nt = int(input())\ncode = []\nfor i in range(t):\n    code_in = input()\n    code.append(code_in)\n\nfor ip in code:\n    parts = re.findall(r'\\d+|\\D+', ip)\n    dot_count = parts.count(\".\")\n    \n    if dot_count != 3:\n        print(\"NO\")\n        continue\n    \n    valid = True\n    number_parts = [part for part in parts if part != \".\"]\n    \n    # Kiểm tra có đúng 4 phần số không\n    if len(number_parts) != 4:\n        print(\"NO\")\n        continue\n    \n    for part in number_parts:\n        # Kiểm tra có phải là số không\n        if not part.isdigit():\n            valid = False\n            break\n        \n        # Kiểm tra số 0 ở đầu\n        if len(part) > 1 and part[0] == '0':\n            valid = False\n            break\n        \n        # Kiểm tra khoảng giá trị\n        num = int(part)\n        if num < 0 or num > 255:\n            valid = False\n            break\n    \n    print(\"YES\" if valid else \"NO\")",
+        "highlighted_code": "import re\n\nt = int(input())\ncode = []\nfor i in range(t):\n    code_in = input()\n    code.append(code_in)\n\nfor ip in code:\n    parts = re.findall(r&#39;\\d+|\\D+&#39;, ip)\n    dot_count = parts.count(&#34;.&#34;)\n    \n    if dot_count != 3:\n        print(&#34;NO&#34;)\n        continue\n    \n    valid = True\n    number_parts = [part for part in parts if part != &#34;.&#34;]\n    \n    # Kiểm tra có đúng 4 phần số không\n    <span class='highlight-green'>if len(number_parts) != 4:\n        print(&#34;NO&#34;)\n        continue\n    \n    </span>f<span class='highlight-green'>or part in number_parts:\n        # Kiểm tra có phải là số không\n        if not part.isdigit():\n            valid = False\n            break\n        \n        # Kiểm tra số 0 ở đầu\n        if </span>len(part) &gt; 1 and part[0] == &#39;0&#39;:\n            valid = <span class='highlight-green'>False\n            break\n        \n        # Kiểm tra khoảng giá trị\n        num = int(part)\n        if num &lt; 0 or num &gt; 255:\n            valid = False\n            break\n    \n    print(&#34;YES&#34; if valid else &#34;NO</span>&#34;)"
+      },
+      "token_overlap": 123,
+      "max_similarity_percent": 60.0
+    },
+    {
+      "case_id": 14,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc39dfe535fa0f4f1d63f/2a4a4eb3a0db41e2ac99da54/sub_1763568588433_j5papn17y.py",
+        "similarity_percent": 59.69,
+        "full_code": "t = int(input())  # đọc số lượng công dân\n\nfor _ in range(t):\n    s = input().strip()  # đọc mã định danh và loại bỏ khoảng trắng đầu/cuối\n    parts = s.split('.')  # tách thành các phần bằng dấu \".\"\n\n    valid = True  # giả sử mã hợp lệ trước\n\n    # Kiểm tra số phần\n    if len(parts) != 4:\n        valid = False\n    else:\n        for p in parts:\n            # phần rỗng? (ví dụ \"..\")\n            if p == \"\":\n                valid = False\n                break\n            # phần có ký tự không phải số?\n            if not p.isdigit():\n                valid = False\n                break\n            # giá trị > 255?\n            if not (0 <= int(p) <= 255):\n                valid = False\n                break\n\n    # In kết quả\n    if valid:\n        print(\"YES\")\n    else:\n        print(\"NO\")\n",
+        "highlighted_code": "<span class='highlight-red'>t = int(input())  # đọc số lượng công dân\n\nfor _ in range(t):\n    s = input().strip()  # đọc mã định danh và loại bỏ khoảng trắng đầu/cuối\n    parts = s.split(&#39;.&#39;)  # tách thành các phần bằng dấu &#34;.&#34;\n\n    valid = True  # giả sử mã hợp lệ trước\n\n    # Kiểm tra số phần\n    if len(parts) != 4:\n        valid = False\n    else:\n        for p in parts</span>:\n            # phần rỗng? (ví dụ &#34;..&#34;)\n            if p == &#34;&#34;:\n                valid = False\n                break\n            # phần có ký tự không phải số?\n            <span class='highlight-red'>if not p.isdigit():\n                valid = False\n                break\n            # giá trị &gt; 255?\n            if </span>not (0 &lt;= int(p) &lt;= 255):\n                valid = False\n                break\n\n    # In kết quả\n    if valid:\n        print(&#34;YES&#34;)\n    else:\n        print(&#34;NO&#34;)\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc39dfe535fa0f4f1d63f/74dabc44f1fb4514b38a1522/sub_1763906946282_1cabjivbp.py",
+        "similarity_percent": 57.87,
+        "full_code": "t = int(input())\nfor _ in range(t):\n    x = input().strip()\n    y = x.split(\".\")\n    ok = True\n\n    if len(y) != 4:\n        ok = False\n    else:\n        for i in y:\n            if not i.isdigit():\n                ok = False\n                break\n            if i != \"0\" and i[0] == \"0\": \n                ok = False\n                break\n            so = int(i)\n            if so < 0 or so > 255:    \n                ok = False\n                break\n\n    print(\"YES\" if ok else \"NO\")\n\n",
+        "highlighted_code": "<span class='highlight-green'>t = int(input())\nfor _ in range(t):\n    x = input().strip()\n    y = x.split(&#34;.&#34;)\n    ok = True\n\n    if len(y) != 4:\n        ok = False\n    else:\n        for i in y</span>:\n            <span class='highlight-green'>if not i.isdigit():\n                ok = False\n                break\n            if </span>i != &#34;0&#34; and i[0] == &#34;0&#34;: \n                ok = False\n                break\n            so = int(i)\n            if so &lt; 0 or so &gt; 255:    \n                ok = False\n                break\n\n    print(&#34;YES&#34; if ok else &#34;NO&#34;)\n\n"
+      },
+      "token_overlap": 114,
+      "max_similarity_percent": 59.69
+    },
+    {
+      "case_id": 15,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc39dfe535fa0f4f1d63f/26894d2babd64210ad6beba1/sub_1762270642297_v07abnyi3.py",
+        "similarity_percent": 58.36,
+        "full_code": "t = int(input())\n\nwhile t > 0:\n    t -= 1\n    a = input().strip()\n    countdot = 0\n    s = \"\"\n    flag = True\n    for i in a:\n        if not i.isdigit() and i != '.':\n            print(\"NO\")\n            flag = False\n            break\n        if i != '.':\n            s += i\n        else:\n            countdot += 1\n            if s == \"\" or int(s) < 0 or int(s) > 255:\n                print(\"NO\")\n                flag = False\n                break\n            s = \"\"\n    if flag:\n        if s == \"\" or int(s) < 0 or int(s) > 255:\n            print(\"NO\")\n            flag = False\n\n    if flag and countdot == 3:\n        print(\"YES\")\n    elif flag:\n        print(\"NO\")\n",
+        "highlighted_code": "<span class='highlight-red'>t = int(input())\n\nwhile t &gt; 0:\n    t -= 1\n    a = input().strip()\n    countdot = 0\n    s = &#34;&#34;\n    flag = True\n    for i in a:\n        if not i.isdigit() and i != &#39;.&#39;:\n            print(&#34;NO&#34;)\n            flag = False\n            break\n        if i != &#39;.&#39;:\n            s += i\n        else:\n            countdot += 1\n            i</span>f s == &#34;&#34; or int(s) &lt; 0 or int(s) &gt; 25<span class='highlight-red'>5:\n                print(&#34;NO&#34;)\n                flag = False\n                break\n            s = &#34;&#34;\n    if flag</span>:\n        if s == &#34;&#34; or int(s) &lt; 0 or int(s) &gt; 255:\n            print(&#34;NO&#34;)\n            flag = False\n\n    if flag and countdot == 3:\n        print(&#34;YES&#34;)\n    elif flag:\n        print(&#34;NO&#34;)\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc39dfe535fa0f4f1d63f/26894d2babd64210ad6beba1/sub_1762270457918_j39guxg6t.py",
+        "similarity_percent": 73.36,
+        "full_code": "t = int(input())\n\nwhile t > 0:\n    t -= 1\n    a = input().strip()\n    countdot = 0\n    s = \"\"\n    flag = True\n    for i in a:\n        if not i.isdigit() and i != '.':\n            print(\"NO\")\n            flag = False\n            break\n        if i != '.':\n            s+=i\n        else:\n            countdot += 1\n            if int(s)<=0 or int(s)>=255:\n                print(\"NO\")\n                flag = False\n                break\n            s = \"\"\n    if countdot == 3 and flag == True:\n        print(\"YES\")\n    else:\n        print(\"NO\")\n        ",
+        "highlighted_code": "<span class='highlight-green'>t = int(input())\n\nwhile t &gt; 0:\n    t -= 1\n    a = input().strip()\n    countdot = 0\n    s = &#34;&#34;\n    flag = True\n    for i in a:\n        if not i.isdigit() and i != &#39;.&#39;:\n            print(&#34;NO&#34;)\n            flag = False\n            break\n        if i != &#39;.&#39;:\n            s+=i\n        else:\n            countdot += 1\n            i</span>f int(s)&lt;=0 or int(s)&gt;=25<span class='highlight-green'>5:\n                print(&#34;NO&#34;)\n                flag = False\n                break\n            s = &#34;&#34;\n    if countdot </span>== 3 and flag == True:\n        print(&#34;YES&#34;)\n    else:\n        print(&#34;NO&#34;)\n        "
+      },
+      "token_overlap": 157,
+      "max_similarity_percent": 73.36
+    },
+    {
+      "case_id": 16,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc39dfe535fa0f4f1d63f/f95120b3a38a461085ef58cb/sub_1762364561542_qhr69bsdu.py",
+        "similarity_percent": 57.46,
+        "full_code": "t = int(input())\nwhile t > 0:\n    string = input().strip()\n    lst = string.split(\".\")\n    check = True\n    size = 0\n    for ch in lst:\n        if ch.isdigit():\n            size += 1\n            if len(ch) > 1 and ch[0] == \"0\":\n                check = False\n            if not (0 <= int(ch) <= 255):\n                check = False\n        else:\n            check = False\n    if size != 4:\n        check = False\n    print(\"YES\" if check else \"NO\")\n    t -= 1",
+        "highlighted_code": "<span class='highlight-red'>t = int(input())\nwhile t &gt; 0:\n    string = input().strip()\n    lst = string.split(&#34;.&#34;)\n    check = True\n    size = 0\n    for ch </span>in lst<span class='highlight-red'>:\n        if ch.isdigit():\n            size += 1\n            if len(ch) &gt; 1 and ch[0] == &#34;0&#34;:\n                check = False\n            if </span>not (0 &lt;= int(ch) &lt;= 255):\n                check = False\n        else:\n            check = False\n    if size != 4:\n        check = False\n    print(&#34;YES&#34; if check else &#34;NO&#34;)\n    t -= 1"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc39dfe535fa0f4f1d63f/ffdb326842044f2e98b7aaa7/sub_1761900152681_76vgj50ns.py",
+        "similarity_percent": 47.71,
+        "full_code": "\n\nt = int(input())\n\nwhile t > 0:\n    string = input().strip()\n    lst = string.split(\".\")\n\n\n    check = True\n    size = 0\n    for index, ch in enumerate(lst):\n        if ch.isdigit():\n            size += 1\n            if len(ch) > 1 and ch[0] == \"0\":\n                check = False\n            \n            if int(ch) < 0 or int(ch) > 255 or len(ch) > 1 and ch[0] == 0:\n                check = False\n\n\n    if size != len(lst):\n        check = False\n\n    if check:\n        print(\"YES\")\n    else:\n        print(\"NO\")\n\n    t -= 1",
+        "highlighted_code": "<span class='highlight-green'>\n\nt = int(input())\n\nwhile t &gt; 0:\n    string = input().strip()\n    lst = string.split(&#34;.&#34;)\n\n\n    check = True\n    size = 0\n    for ind</span>ex, ch in enumerate(ls<span class='highlight-green'>t):\n        if ch.isdigit():\n            size += 1\n            if len(ch) &gt; 1 and ch[0] == &#34;0&#34;:\n                check = False\n            \n            i</span>f int(ch) &lt; 0 or int(ch) &gt; 255 or len(ch) &gt; 1 and ch[0] == 0:\n                check = False\n\n\n    if size != len(lst):\n        check = False\n\n    if check:\n        print(&#34;YES&#34;)\n    else:\n        print(&#34;NO&#34;)\n\n    t -= 1"
+      },
+      "token_overlap": 104,
+      "max_similarity_percent": 57.46
+    },
+    {
+      "case_id": 17,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc39dfe535fa0f4f1d63f/f8a2bab9778140ecb46b6a60/sub_1761822983767_5u6w5ji8a.py",
+        "similarity_percent": 55.71,
+        "full_code": "n = int(input())\na = []\n\nfor _ in range(n):\n    ip = input().strip()\n    parts = ip.split('.')\n    \n    if len(parts) != 4:\n        a.append('NO')\n        continue\n\n    hop_le = True\n    for part in parts:\n        if not part.isdigit():\n            hop_le = False\n            break\n\n        so = int(part)\n        if so < 0 or so > 255:\n            hop_le = False\n            break\n\n        if part != str(so):  \n            hop_le = False\n            break\n\n    if hop_le:\n        a.append('YES')\n    else:\n        a.append('NO')\n\nfor kq in a:\n    print(kq)",
+        "highlighted_code": "n = int(input())\na = []\n\nfor _ i<span class='highlight-red'>n range(n):\n    ip = input().strip()\n    parts = ip.split(&#39;.&#39;)\n    \n    if len(parts) !</span>= 4:\n        a.append<span class='highlight-red'>(&#39;NO&#39;)\n        continue\n\n    hop_le = True\n    for part in parts:\n        if not part.isdigit():\n            hop_le = False\n            break\n\n        so = int(part)\n        if so &lt; 0 or so &gt; 255:\n            hop_le = False\n            br</span>eak\n\n        if part != str(so):  \n            hop_le = False\n            break\n\n    if hop_le:\n        a.append(&#39;YES&#39;)\n    else:\n        a.append(&#39;NO&#39;)\n\nfor kq in a:\n    print(kq)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc39dfe535fa0f4f1d63f/7c4e55277a884a56b9be894a/sub_1765378799945_mmz9spygu.py",
+        "similarity_percent": 63.9,
+        "full_code": "t = int(input())\nfor _ in range(t):\n    s = input().strip()\n    parts = s.split('.')\n    if len(parts) != 4:\n        print(\"NO\")\n        continue\n    valid = True\n    for part in parts:\n        if not part.isdigit():\n            valid = False\n            break\n        if part[0] == '0' and len(part) > 1:\n            valid = False\n            break\n        num = int(part)\n        if num < 0 or num > 255:\n            valid = False\n            break\n    print(\"YES\" if valid else \"NO\")",
+        "highlighted_code": "t = int(input())\nfor _ i<span class='highlight-green'>n range(t):\n    s = input().strip()\n    parts = s.split(&#39;.&#39;)\n    if len(parts) !</span>= 4:\n        print<span class='highlight-green'>(&#34;NO&#34;)\n        continue\n    valid = True\n    for part in parts:\n        if not part.isdigit():\n            valid = False\n            brea</span>k\n        if part[0] == &#39;0&#39; and len(part) &gt; 1:\n            valid = <span class='highlight-green'>False\n            break\n        num = int(part)\n        if num &lt; 0 or num &gt; 255:\n            valid = False\n            br</span>eak\n    print(&#34;YES&#34; if valid else &#34;NO&#34;)"
+      },
+      "token_overlap": 122,
+      "max_similarity_percent": 63.9
+    },
+    {
+      "case_id": 18,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc39dfe535fa0f4f1d63f/fa972feccadf40fe9df799d0/sub_1763489389438_mz8kzk4x7.py",
+        "similarity_percent": 55.11,
+        "full_code": "def is_valid(str):\n    parts = str.split(\".\")\n    if len(parts) != 4:\n        return \"NO\"\n    for part in parts:\n        if not part.isdigit():\n            return \"NO\"\n        if not (0 <= int(part) <= 255) or (int(part) == 123):\n            return \"NO\"\n    return \"YES\"\nt = int(input())\nfor _ in range(t):\n    str = input()\n    print(is_valid(str))",
+        "highlighted_code": "def is_valid(str):\n    parts = str.split<span class='highlight-red'>(&#34;.&#34;)\n    if len(parts) != 4:\n        return &#34;NO&#34;\n    for part in parts:\n        if not part.isdigit():\n            return &#34;NO</span>&#34;\n        if not (0 &lt;= int(part) &lt;= 255) or (int(part) == 123):\n            <span class='highlight-red'>return &#34;NO&#34;\n    return &#34;YES&#34;\nt = int(input())\nfor _ in range(</span>t):\n    str = input()\n    print(is_valid(str))"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc39dfe535fa0f4f1d63f/2a4a4eb3a0db41e2ac99da54/sub_1765819768053_12u3nqulo.py",
+        "similarity_percent": 51.87,
+        "full_code": "def solution(s):\n    parts = s.split('.')\n    \n    if len(parts) != 4:\n        return \"NO\"\n    \n    for part in parts:\n        if not part.isdigit():\n            return \"NO\"\n        \n        if len(part) > 1 and part[0] == '0':\n            return \"NO\"\n        \n        num = int(part)\n        if num < 0 or num > 255:\n            return \"NO\"\n    \n    return \"YES\"\n\n\nt = int(input())\nfor _ in range(t):\n    s = input().strip()\n    print(solution(s))\n",
+        "highlighted_code": "def solution(s):\n    parts = s.split<span class='highlight-green'>(&#39;.&#39;)\n    \n    if len(parts) != 4:\n        return &#34;NO&#34;\n    \n    for part in parts:\n        if not part.isdigit():\n            return &#34;NO</span>&#34;\n        \n        if len(part) &gt; 1 and part[0] == &#39;0&#39;:\n            return &#34;NO&#34;\n        \n        num = int(part)\n        if num &lt; 0 or num &gt; 255:\n            <span class='highlight-green'>return &#34;NO&#34;\n    \n    return &#34;YES&#34;\n\n\nt = int(input())\nfor _ in range(</span>t):\n    s = input().strip()\n    print(solution(s))\n"
+      },
+      "token_overlap": 97,
+      "max_similarity_percent": 55.11
+    },
+    {
+      "case_id": 19,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc39dfe535fa0f4f1d63f/fa972feccadf40fe9df799d0/sub_1763489389438_mz8kzk4x7.py",
+        "similarity_percent": 55.11,
+        "full_code": "def is_valid(str):\n    parts = str.split(\".\")\n    if len(parts) != 4:\n        return \"NO\"\n    for part in parts:\n        if not part.isdigit():\n            return \"NO\"\n        if not (0 <= int(part) <= 255) or (int(part) == 123):\n            return \"NO\"\n    return \"YES\"\nt = int(input())\nfor _ in range(t):\n    str = input()\n    print(is_valid(str))",
+        "highlighted_code": "def is_valid(str):\n    parts = str.split<span class='highlight-red'>(&#34;.&#34;)\n    if len(parts) != 4:\n        return &#34;NO&#34;\n    for part in parts:\n        if not part.isdigit():\n            return &#34;NO</span>&#34;\n        if not (0 &lt;= int(part) &lt;= 255) or (int(part) == 123):\n            <span class='highlight-red'>return &#34;NO&#34;\n    return &#34;YES&#34;\nt = int(input())\nfor _ in range(</span>t):\n    str = input()\n    print(is_valid(str))"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc39dfe535fa0f4f1d63f/522be41104e24b1fa5d14200/sub_1764408515837_lkcejupy6.py",
+        "similarity_percent": 51.87,
+        "full_code": "def tinh_hop_le(n):\n    parts=n.split('.')\n    if len(parts)!=4:\n        return \"NO\"\n    for part in parts:\n        if not part.isdigit():\n            return \"NO\"\n        if len(part)>1 and part[0]==\"0\":\n            return \"NO\"\n        num=int(part)\n        if num<0 or num>255:\n            return \"NO\"\n    return \"YES\"\nhello=int(input())\nfor _ in range(hello):\n    id_string=input().strip()\n    print(tinh_hop_le(id_string))",
+        "highlighted_code": "def tinh_hop_le(n):\n    parts=n.split<span class='highlight-green'>(&#39;.&#39;)\n    if len(parts)!=4:\n        return &#34;NO&#34;\n    for part in parts:\n        if not part.isdigit():\n            return &#34;NO</span>&#34;\n        if len(part)&gt;1 and part[0]==&#34;0&#34;:\n            return &#34;NO&#34;\n        num=int(part)\n        if num&lt;0 or num&gt;255:\n            <span class='highlight-green'>return &#34;NO&#34;\n    return &#34;YES&#34;\nhello=int(input())\nfor _ in range(</span>hello):\n    id_string=input().strip()\n    print(tinh_hop_le(id_string))"
+      },
+      "token_overlap": 97,
+      "max_similarity_percent": 55.11
+    },
+    {
+      "case_id": 20,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc39dfe535fa0f4f1d63f/dd05a856cdbf414482e28997/sub_1765869933319_r05btrzkh.py",
+        "similarity_percent": 55.11,
+        "full_code": "t = int(input())\nfor _ in range(t):\n    a = input()\n    cong_dan = True\n    tach_chuoi = a.split(\".\")\n    for so in tach_chuoi:\n        if not so.isdigit():\n            cong_dan = False\n            break\n        if len(so)>1 and so[0] == \"0\":\n            cong_dan = False\n            break\n        if not 0 <= int(so) <= 255:\n            cong_dan = False\n            break\n    if cong_dan:\n        print(\"YES\")\n    else:\n        print(\"NO\")\n",
+        "highlighted_code": "<span class='highlight-red'>t = int(input())\nfor _ in range(t):\n    a = inpu</span>t()\n    cong_dan = True\n    tach_chuoi = a.split(&#34;.&#34;)\n    for so in tach_chuoi:\n        <span class='highlight-red'>if not so.isdigit():\n            cong_dan = False\n            break\n        if </span>len(so)&gt;1 and so[0] == &#34;0&#34;:\n            cong_dan = False\n            break\n        if not 0 &lt;= int(so) &lt;= 255<span class='highlight-red'>:\n            cong_dan = False\n            break\n    if cong_dan:\n        print(&#34;YES&#34;)\n    else:\n        print</span>(&#34;NO&#34;)\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc39dfe535fa0f4f1d63f/2a4a4eb3a0db41e2ac99da54/sub_1763568588433_j5papn17y.py",
+        "similarity_percent": 50.79,
+        "full_code": "t = int(input())  # đọc số lượng công dân\n\nfor _ in range(t):\n    s = input().strip()  # đọc mã định danh và loại bỏ khoảng trắng đầu/cuối\n    parts = s.split('.')  # tách thành các phần bằng dấu \".\"\n\n    valid = True  # giả sử mã hợp lệ trước\n\n    # Kiểm tra số phần\n    if len(parts) != 4:\n        valid = False\n    else:\n        for p in parts:\n            # phần rỗng? (ví dụ \"..\")\n            if p == \"\":\n                valid = False\n                break\n            # phần có ký tự không phải số?\n            if not p.isdigit():\n                valid = False\n                break\n            # giá trị > 255?\n            if not (0 <= int(p) <= 255):\n                valid = False\n                break\n\n    # In kết quả\n    if valid:\n        print(\"YES\")\n    else:\n        print(\"NO\")\n",
+        "highlighted_code": "<span class='highlight-green'>t = int(input())  # đọc số lượng công dân\n\nfor _ in range(t):\n    s = inpu</span>t().strip()  # đọc mã định danh và loại bỏ khoảng trắng đầu/cuối\n    parts = s.split(&#39;.&#39;)  # tách thành các phần bằng dấu &#34;.&#34;\n\n    valid = True  # giả sử mã hợp lệ trước\n\n    # Kiểm tra số phần\n    if len(parts) != 4:\n        valid = False\n    else:\n        for p in parts:\n            # phần rỗng? (ví dụ &#34;..&#34;)\n            if p == &#34;&#34;:\n                valid = False\n                break\n            # phần có ký tự không phải số?\n            <span class='highlight-green'>if not p.isdigit():\n                valid = False\n                break\n            # giá trị &gt; 255?\n            if </span>not (0 &lt;= int(p) &lt;= 255)<span class='highlight-green'>:\n                valid = False\n                break\n\n    # In kết quả\n    if valid:\n        print(&#34;YES&#34;)\n    else:\n        print</span>(&#34;NO&#34;)\n"
+      },
+      "token_overlap": 97,
+      "max_similarity_percent": 55.11
+    },
+    {
+      "case_id": 21,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc39dfe535fa0f4f1d63f/9d56dd64686f4133b54e7cd3/sub_1764870081900_3thhfqhec.py",
+        "similarity_percent": 54.18,
+        "full_code": "def check_crystal_id(code_str):\n    parts = code_str.split('.')\n    \n    if len(parts) != 4:\n        return \"NO\"\n    \n    for part in parts:\n        if not part.isdigit():\n            return \"NO\"\n        \n        value = int(part)\n        if value < 0 or value > 255:\n            return \"NO\"\n            \n    return \"YES\"\n\ndef solve():\n    try:\n        line = input().strip()\n        if not line: return\n        t = int(line)\n        \n        for _ in range(t):\n            s = input().strip()\n            print(check_crystal_id(s))\n            \n    except ValueError:\n        return\n    except EOFError:\n        return\n\nif __name__ == \"__main__\":\n    solve()",
+        "highlighted_code": "<span class='highlight-red'>def check_crystal_id(code_str):\n    parts = code_str.split(&#39;.&#39;)\n    \n    if len(parts) != 4:\n        return &#34;NO&#34;\n    \n    for part in parts:\n        if not part.isdigit():\n            return &#34;NO&#34;\n        \n        value = int(part)\n        if value &lt; 0 or value &gt; 255:\n            return &#34;NO&#34;\n            \n    return &#34;YES</span>&#34;\n\ndef solve():\n    try:\n        line = input().strip()\n        if not line: return\n        t = int(line)\n        \n        for _ <span class='highlight-red'>in range(t):\n            s = input().strip()\n            print(check_crystal_id</span>(s))\n            \n    except ValueError:\n        return\n    except EOFError:\n        return\n\nif __name__ == &#34;__main__&#34;:\n    solve()"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc39dfe535fa0f4f1d63f/2a4a4eb3a0db41e2ac99da54/sub_1765819768053_12u3nqulo.py",
+        "similarity_percent": 74.87,
+        "full_code": "def solution(s):\n    parts = s.split('.')\n    \n    if len(parts) != 4:\n        return \"NO\"\n    \n    for part in parts:\n        if not part.isdigit():\n            return \"NO\"\n        \n        if len(part) > 1 and part[0] == '0':\n            return \"NO\"\n        \n        num = int(part)\n        if num < 0 or num > 255:\n            return \"NO\"\n    \n    return \"YES\"\n\n\nt = int(input())\nfor _ in range(t):\n    s = input().strip()\n    print(solution(s))\n",
+        "highlighted_code": "<span class='highlight-green'>def solution(s):\n    parts = s.split(&#39;.&#39;)\n    \n    if len(parts) != 4:\n        return &#34;NO&#34;\n    \n    for part in parts:\n        if not part.isdigit():\n            return &#34;NO</span>&#34;\n        \n        if len(part) &gt; 1 and part[0] == &#39;0&#39;:\n            retu<span class='highlight-green'>rn &#34;NO&#34;\n        \n        num = int(part)\n        if num &lt; 0 or num &gt; 255:\n            return &#34;NO&#34;\n    \n    return &#34;YES</span>&#34;\n\n\nt = int(input())\nfor _ <span class='highlight-green'>in range(t):\n    s = input().strip()\n    print(solution</span>(s))\n"
+      },
+      "token_overlap": 136,
+      "max_similarity_percent": 74.87
+    },
+    {
+      "case_id": 22,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc39dfe535fa0f4f1d63f/9d56dd64686f4133b54e7cd3/sub_1764870081900_3thhfqhec.py",
+        "similarity_percent": 54.18,
+        "full_code": "def check_crystal_id(code_str):\n    parts = code_str.split('.')\n    \n    if len(parts) != 4:\n        return \"NO\"\n    \n    for part in parts:\n        if not part.isdigit():\n            return \"NO\"\n        \n        value = int(part)\n        if value < 0 or value > 255:\n            return \"NO\"\n            \n    return \"YES\"\n\ndef solve():\n    try:\n        line = input().strip()\n        if not line: return\n        t = int(line)\n        \n        for _ in range(t):\n            s = input().strip()\n            print(check_crystal_id(s))\n            \n    except ValueError:\n        return\n    except EOFError:\n        return\n\nif __name__ == \"__main__\":\n    solve()",
+        "highlighted_code": "<span class='highlight-red'>def check_crystal_id(code_str):\n    parts = code_str.split(&#39;.&#39;)\n    \n    if len(parts) != 4:\n        return &#34;NO&#34;\n    \n    for part in parts:\n        if not part.isdigit():\n            return &#34;NO&#34;\n        \n        value = int(part)\n        if value &lt; 0 or value &gt; 255:\n            return &#34;NO&#34;\n            \n    return &#34;YES</span>&#34;\n\ndef solve():\n    try:\n        line = input().strip()\n        if not line: return\n        t = int(line)\n        \n        for _ <span class='highlight-red'>in range(t):\n            s = input().strip()\n            print(check_crystal_id</span>(s))\n            \n    except ValueError:\n        return\n    except EOFError:\n        return\n\nif __name__ == &#34;__main__&#34;:\n    solve()"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc39dfe535fa0f4f1d63f/522be41104e24b1fa5d14200/sub_1764408515837_lkcejupy6.py",
+        "similarity_percent": 74.87,
+        "full_code": "def tinh_hop_le(n):\n    parts=n.split('.')\n    if len(parts)!=4:\n        return \"NO\"\n    for part in parts:\n        if not part.isdigit():\n            return \"NO\"\n        if len(part)>1 and part[0]==\"0\":\n            return \"NO\"\n        num=int(part)\n        if num<0 or num>255:\n            return \"NO\"\n    return \"YES\"\nhello=int(input())\nfor _ in range(hello):\n    id_string=input().strip()\n    print(tinh_hop_le(id_string))",
+        "highlighted_code": "<span class='highlight-green'>def tinh_hop_le(n):\n    parts=n.split(&#39;.&#39;)\n    if len(parts)!=4:\n        return &#34;NO&#34;\n    for part in parts:\n        if not part.isdigit():\n            return &#34;NO</span>&#34;\n        if len(part)&gt;1 and part[0]==&#34;0&#34;:\n            retu<span class='highlight-green'>rn &#34;NO&#34;\n        num=int(part)\n        if num&lt;0 or num&gt;255:\n            return &#34;NO&#34;\n    return &#34;YES</span>&#34;\nhello=int(input())\nfor _ <span class='highlight-green'>in range(hello):\n    id_string=input().strip()\n    print(tinh_hop_le</span>(id_string))"
+      },
+      "token_overlap": 136,
+      "max_similarity_percent": 74.87
+    },
+    {
+      "case_id": 23,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc39dfe535fa0f4f1d63f/27e30f767b3a46b283cbfec0/sub_1764389116357_0odzoai2l.py",
+        "similarity_percent": 53.03,
+        "full_code": "t = int(input())\nfor _ in range(t):\n    ip = input().split('.')\n    flag = True\n    if len(ip) != 4:\n        flag = False\n    else: \n        for i in ip:\n            if not i.isdigit():\n                flag = False\n                break\n            if len(i) > 1 and i[0] == '0':\n                flag = False\n                break\n            num = int(i)\n            if num < 0 or num > 255:\n                flag = False\n                break\n           \n    if flag:\n        print('YES')\n    else: print('NO')",
+        "highlighted_code": "<span class='highlight-red'>t = int(input())\nfor _ in range(t):\n    ip = input(</span>).split(&#39;.&#39;)\n    flag = True\n    if len(ip) != 4:\n        flag = False\n    else: \n        for i i<span class='highlight-red'>n ip:\n            if not i.isdigit():\n                flag = False\n                break\n            if </span>len(i) &gt; 1 and i[0] == &#39;0&#39;:\n                flag = <span class='highlight-red'>False\n                break\n            num = int(i)\n            if num &lt; 0 or num &gt; 255:\n                flag = False\n                br</span>eak\n           \n    if flag:\n        print(&#39;YES&#39;)\n    else: print(&#39;NO&#39;)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc39dfe535fa0f4f1d63f/7c4e55277a884a56b9be894a/sub_1765378799945_mmz9spygu.py",
+        "similarity_percent": 51.22,
+        "full_code": "t = int(input())\nfor _ in range(t):\n    s = input().strip()\n    parts = s.split('.')\n    if len(parts) != 4:\n        print(\"NO\")\n        continue\n    valid = True\n    for part in parts:\n        if not part.isdigit():\n            valid = False\n            break\n        if part[0] == '0' and len(part) > 1:\n            valid = False\n            break\n        num = int(part)\n        if num < 0 or num > 255:\n            valid = False\n            break\n    print(\"YES\" if valid else \"NO\")",
+        "highlighted_code": "<span class='highlight-green'>t = int(input())\nfor _ in range(t):\n    s = input(</span>).strip()\n    parts = s.split(&#39;.&#39;)\n    if len(parts) != 4:\n        print(&#34;NO&#34;)\n        continue\n    valid = True\n    for part i<span class='highlight-green'>n parts:\n        if not part.isdigit():\n            valid = False\n            break\n        if </span>part[0] == &#39;0&#39; and len(part) &gt; 1:\n            valid = <span class='highlight-green'>False\n            break\n        num = int(part)\n        if num &lt; 0 or num &gt; 255:\n            valid = False\n            br</span>eak\n    print(&#34;YES&#34; if valid else &#34;NO&#34;)"
+      },
+      "token_overlap": 105,
+      "max_similarity_percent": 53.03
+    },
+    {
+      "case_id": 24,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc39dfe535fa0f4f1d63f/26894d2babd64210ad6beba1/sub_1762270846272_cx368g5an.py",
+        "similarity_percent": 47.04,
+        "full_code": "t = int(input())\n\nwhile t > 0:\n    t -= 1\n    a = input().strip()\n    countdot = 0\n    s = \"\"\n    flag = True\n    for i in a:\n        if not i.isdigit() and i != '.':\n            print(\"NO\")\n            flag = False\n            break\n        if i != '.':\n            s += i\n        else:\n            countdot += 1\n            if (s == \"\" or int(s) < 0 or int(s) > 255 or (len(s) > 1 and s[0] == '0')  \n            ):\n                print(\"NO\")\n                flag = False\n                break\n            s = \"\"\n\n    if flag:\n        if (s == \"\" or int(s) < 0 or int(s) > 255 or (len(s) > 1 and s[0] == '0')\n        ):\n            print(\"NO\")\n            flag = False\n    if flag and countdot == 3:\n        print(\"YES\")\n    elif flag:\n        print(\"NO\")\n",
+        "highlighted_code": "<span class='highlight-red'>t = int(input())\n\nwhile t &gt; 0:\n    t -= 1\n    a = input().strip()\n    countdot = 0\n    s = &#34;&#34;\n    flag = True\n    for i in a:\n        if not i.isdigit() and i != &#39;.&#39;:\n            print(&#34;NO&#34;)\n            flag = False\n            break\n        if i != &#39;.&#39;:\n            s += i\n        else:\n            countdot += 1\n            i</span>f (s == &#34;&#34; or int(s) &lt; 0 or int(s) &gt; 255 or (len(s) &gt; 1 and s[0] == &#39;0&#39;)  \n            ):\n                prin<span class='highlight-red'>t(&#34;NO&#34;)\n                flag = False\n                break\n            s = &#34;&#34;\n\n    if flag</span>:\n        if (s == &#34;&#34; or int(s) &lt; 0 or int(s) &gt; 255 or (len(s) &gt; 1 and s[0] == &#39;0&#39;)\n        ):\n            print(&#34;NO&#34;)\n            flag = False\n    if flag and countdot == 3:\n        print(&#34;YES&#34;)\n    elif flag:\n        print(&#34;NO&#34;)\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc39dfe535fa0f4f1d63f/26894d2babd64210ad6beba1/sub_1762270457918_j39guxg6t.py",
+        "similarity_percent": 70.56,
+        "full_code": "t = int(input())\n\nwhile t > 0:\n    t -= 1\n    a = input().strip()\n    countdot = 0\n    s = \"\"\n    flag = True\n    for i in a:\n        if not i.isdigit() and i != '.':\n            print(\"NO\")\n            flag = False\n            break\n        if i != '.':\n            s+=i\n        else:\n            countdot += 1\n            if int(s)<=0 or int(s)>=255:\n                print(\"NO\")\n                flag = False\n                break\n            s = \"\"\n    if countdot == 3 and flag == True:\n        print(\"YES\")\n    else:\n        print(\"NO\")\n        ",
+        "highlighted_code": "<span class='highlight-green'>t = int(input())\n\nwhile t &gt; 0:\n    t -= 1\n    a = input().strip()\n    countdot = 0\n    s = &#34;&#34;\n    flag = True\n    for i in a:\n        if not i.isdigit() and i != &#39;.&#39;:\n            print(&#34;NO&#34;)\n            flag = False\n            break\n        if i != &#39;.&#39;:\n            s+=i\n        else:\n            countdot += 1\n            i</span>f int(s)&lt;=0 or int(s)&gt;=255:\n                prin<span class='highlight-green'>t(&#34;NO&#34;)\n                flag = False\n                break\n            s = &#34;&#34;\n    if countdot </span>== 3 and flag == True:\n        print(&#34;YES&#34;)\n    else:\n        print(&#34;NO&#34;)\n        "
+      },
+      "token_overlap": 151,
+      "max_similarity_percent": 70.56
+    },
+    {
+      "case_id": 25,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc39dfe535fa0f4f1d63f/f8a2bab9778140ecb46b6a60/sub_1761822983767_5u6w5ji8a.py",
+        "similarity_percent": 46.12,
+        "full_code": "n = int(input())\na = []\n\nfor _ in range(n):\n    ip = input().strip()\n    parts = ip.split('.')\n    \n    if len(parts) != 4:\n        a.append('NO')\n        continue\n\n    hop_le = True\n    for part in parts:\n        if not part.isdigit():\n            hop_le = False\n            break\n\n        so = int(part)\n        if so < 0 or so > 255:\n            hop_le = False\n            break\n\n        if part != str(so):  \n            hop_le = False\n            break\n\n    if hop_le:\n        a.append('YES')\n    else:\n        a.append('NO')\n\nfor kq in a:\n    print(kq)",
+        "highlighted_code": "n <span class='highlight-red'>= int(input())\na = []\n\nfor _ in range(n):\n    ip = input()</span>.strip()\n    parts = ip.split(&#39;.&#39;)\n    \n    if len(parts) != 4:\n        a.append(&#39;NO&#39;)\n        continue\n\n    hop_le = True\n    f<span class='highlight-red'>or part in parts:\n        if not part.isdigit():\n            hop_le = False\n            break\n\n        so = int(part)\n        if so &lt; 0 or so &gt; 255:\n            hop_le = False\n            br</span>eak\n\n        if part != str(so):  \n            hop_le = False\n            break\n\n    if hop_le:\n        a.append(&#39;YES&#39;)\n    else:\n        a.append(&#39;NO&#39;)\n\nfor kq in a:\n    print(kq)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc39dfe535fa0f4f1d63f/7c4e55277a884a56b9be894a/sub_1764206333580_i9pzsha83.py",
+        "similarity_percent": 38.19,
+        "full_code": "import re\n\nt = int(input())\ncode = []\nfor i in range(t):\n    code_in = input()\n    code.append(code_in)\n\nfor ip in code:\n    parts = re.findall(r'\\d+|\\D+', ip)\n    dot_count = parts.count(\".\")\n    \n    if dot_count != 3:\n        print(\"NO\")\n        continue\n    \n    valid = True\n    number_parts = [part for part in parts if part != \".\"]\n    \n    # Kiểm tra có đúng 4 phần số không\n    if len(number_parts) != 4:\n        print(\"NO\")\n        continue\n    \n    for part in number_parts:\n        # Kiểm tra có phải là số không\n        if not part.isdigit():\n            valid = False\n            break\n        \n        # Kiểm tra số 0 ở đầu\n        if len(part) > 1 and part[0] == '0':\n            valid = False\n            break\n        \n        # Kiểm tra khoảng giá trị\n        num = int(part)\n        if num < 0 or num > 255:\n            valid = False\n            break\n    \n    print(\"YES\" if valid else \"NO\")",
+        "highlighted_code": "import re\n\nt <span class='highlight-green'>= int(input())\ncode = []\nfor i in range(t):\n    code_in = input()\n    </span>code.append(code_in)\n\nfor ip in code:\n    parts = re.findall(r&#39;\\d+|\\D+&#39;, ip)\n    dot_count = parts.count(&#34;.&#34;)\n    \n    if dot_count != 3:\n        print(&#34;NO&#34;)\n        continue\n    \n    valid = True\n    number_parts = [part for part in parts if part != &#34;.&#34;]\n    \n    # Kiểm tra có đúng 4 phần số không\n    if len(number_parts) != 4:\n        print(&#34;NO&#34;)\n        continue\n    \n    f<span class='highlight-green'>or part in number_parts:\n        # Kiểm tra có phải là số không\n        if not part.isdigit():\n            valid = False\n            brea</span>k\n        \n        # Kiểm tra số 0 ở đầu\n        if len(part) &gt; 1 and part[0] == &#39;0&#39;:\n            valid = <span class='highlight-green'>False\n            break\n        \n        # Kiểm tra khoảng giá trị\n        num = int(part)\n        if num &lt; 0 or num &gt; 255:\n            valid = False\n            br</span>eak\n    \n    print(&#34;YES&#34; if valid else &#34;NO&#34;)"
+      },
+      "token_overlap": 101,
+      "max_similarity_percent": 46.12
+    },
+    {
+      "case_id": 26,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc39dfe535fa0f4f1d63f/27e30f767b3a46b283cbfec0/sub_1764389116357_0odzoai2l.py",
+        "similarity_percent": 45.96,
+        "full_code": "t = int(input())\nfor _ in range(t):\n    ip = input().split('.')\n    flag = True\n    if len(ip) != 4:\n        flag = False\n    else: \n        for i in ip:\n            if not i.isdigit():\n                flag = False\n                break\n            if len(i) > 1 and i[0] == '0':\n                flag = False\n                break\n            num = int(i)\n            if num < 0 or num > 255:\n                flag = False\n                break\n           \n    if flag:\n        print('YES')\n    else: print('NO')",
+        "highlighted_code": "t = int(input())\nfor _ in range(t):\n    ip = input().split(&#39;.&#39;)\n    flag = True\n    if len(ip) != 4:\n        flag = False\n    else: \n        for i i<span class='highlight-red'>n ip:\n            if not i.isdigit():\n                flag = False\n                break\n            if len(i) &gt; 1 and i[0] == &#39;0&#39;:\n                flag = False\n                break\n            num = int(i)\n            if num &lt; 0 or num &gt; 255:\n                flag = False\n                br</span>eak\n           \n    if flag:\n        print(&#39;YES&#39;)\n    else: print(&#39;NO&#39;)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc39dfe535fa0f4f1d63f/7c4e55277a884a56b9be894a/sub_1764206333580_i9pzsha83.py",
+        "similarity_percent": 31.6,
+        "full_code": "import re\n\nt = int(input())\ncode = []\nfor i in range(t):\n    code_in = input()\n    code.append(code_in)\n\nfor ip in code:\n    parts = re.findall(r'\\d+|\\D+', ip)\n    dot_count = parts.count(\".\")\n    \n    if dot_count != 3:\n        print(\"NO\")\n        continue\n    \n    valid = True\n    number_parts = [part for part in parts if part != \".\"]\n    \n    # Kiểm tra có đúng 4 phần số không\n    if len(number_parts) != 4:\n        print(\"NO\")\n        continue\n    \n    for part in number_parts:\n        # Kiểm tra có phải là số không\n        if not part.isdigit():\n            valid = False\n            break\n        \n        # Kiểm tra số 0 ở đầu\n        if len(part) > 1 and part[0] == '0':\n            valid = False\n            break\n        \n        # Kiểm tra khoảng giá trị\n        num = int(part)\n        if num < 0 or num > 255:\n            valid = False\n            break\n    \n    print(\"YES\" if valid else \"NO\")",
+        "highlighted_code": "import re\n\nt = int(input())\ncode = []\nfor i in range(t):\n    code_in = input()\n    code.append(code_in)\n\nfor ip in code:\n    parts = re.findall(r&#39;\\d+|\\D+&#39;, ip)\n    dot_count = parts.count(&#34;.&#34;)\n    \n    if dot_count != 3:\n        print(&#34;NO&#34;)\n        continue\n    \n    valid = True\n    number_parts = [part for part in parts if part != &#34;.&#34;]\n    \n    # Kiểm tra có đúng 4 phần số không\n    if len(number_parts) != 4:\n        print(&#34;NO&#34;)\n        continue\n    \n    for part i<span class='highlight-green'>n number_parts:\n        # Kiểm tra có phải là số không\n        if not part.isdigit():\n            valid = False\n            break\n        \n        # Kiểm tra số 0 ở đầu\n        if len(part) &gt; 1 and part[0] == &#39;0&#39;:\n            valid = False\n            break\n        \n        # Kiểm tra khoảng giá trị\n        num = int(part)\n        if num &lt; 0 or num &gt; 255:\n            valid = False\n            br</span>eak\n    \n    print(&#34;YES&#34; if valid else &#34;NO&#34;)"
+      },
+      "token_overlap": 91,
+      "max_similarity_percent": 45.96
+    },
+    {
+      "case_id": 27,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc39dfe535fa0f4f1d63f/f8a2bab9778140ecb46b6a60/sub_1761822983767_5u6w5ji8a.py",
+        "similarity_percent": 42.01,
+        "full_code": "n = int(input())\na = []\n\nfor _ in range(n):\n    ip = input().strip()\n    parts = ip.split('.')\n    \n    if len(parts) != 4:\n        a.append('NO')\n        continue\n\n    hop_le = True\n    for part in parts:\n        if not part.isdigit():\n            hop_le = False\n            break\n\n        so = int(part)\n        if so < 0 or so > 255:\n            hop_le = False\n            break\n\n        if part != str(so):  \n            hop_le = False\n            break\n\n    if hop_le:\n        a.append('YES')\n    else:\n        a.append('NO')\n\nfor kq in a:\n    print(kq)",
+        "highlighted_code": "<span class='highlight-red'>n = int(input())\na = []\n\nfor _ in range(n):\n    ip = input(</span>).strip()\n    <span class='highlight-red'>parts = ip.split(&#39;.&#39;)\n    \n    if len(parts) != 4:\n        a.append</span>(&#39;NO&#39;)\n        continue\n\n    hop_le = True\n    for part in parts:\n        if not part.isdigit():\n            hop_le = False\n            break\n\n        so = int(part)\n        if so &lt; 0 or so &gt; 255:\n            hop_le = False\n            break\n\n        if part != str(so):  \n            hop_le = False\n            break\n\n    if hop_le:\n        a.append(&#39;YES&#39;)\n    els<span class='highlight-red'>e:\n        a.append(&#39;NO&#39;)\n\nfor kq in a:\n    print(kq)</span>"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc39dfe535fa0f4f1d63f/9fcec5089d4d4cc49b187132/sub_1763567978992_beuouaubz.py",
+        "similarity_percent": 49.73,
+        "full_code": "n = int(input())\nket_qua = []\nfor i in range(n):\n    ma_dinh_danh = input()\n    if len(ma_dinh_danh) > 50:\n        ket_qua.append(\"No\")\n        continue\n    code = ma_dinh_danh.split(\".\")\n    if len(code) != 4:\n        ket_qua.append(\"NO\")\n    else:\n        for j in code:\n            if not j.isdigit() or not 0<=int(j)<=255:\n                ket_qua.append(\"NO\")\n                break\n        else:\n            ket_qua.append(\"YES\")\n                \nfor k in ket_qua:\n    print(k)",
+        "highlighted_code": "<span class='highlight-green'>n = int(input())\nket_qua = []\nfor i in range(n):\n    ma_dinh_danh = input(</span>)\n    if len(ma_dinh_danh) &gt; 50:\n        ket_qua.append(&#34;No&#34;)\n        continue\n    <span class='highlight-green'>code = ma_dinh_danh.split(&#34;.&#34;)\n    if len(code) != 4:\n        ket_qua.append</span>(&#34;NO&#34;)\n    else:\n        for j in code:\n            if not j.isdigit() or not 0&lt;=int(j)&lt;=255:\n                ket_qua.append(&#34;NO&#34;)\n                break\n        els<span class='highlight-green'>e:\n            ket_qua.append(&#34;YES&#34;)\n                \nfor k in ket_qua:\n    print(k)</span>"
+      },
+      "token_overlap": 92,
+      "max_similarity_percent": 49.73
+    },
+    {
+      "case_id": 28,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc39dfe535fa0f4f1d63f/f8a2bab9778140ecb46b6a60/sub_1761822983767_5u6w5ji8a.py",
+        "similarity_percent": 40.18,
+        "full_code": "n = int(input())\na = []\n\nfor _ in range(n):\n    ip = input().strip()\n    parts = ip.split('.')\n    \n    if len(parts) != 4:\n        a.append('NO')\n        continue\n\n    hop_le = True\n    for part in parts:\n        if not part.isdigit():\n            hop_le = False\n            break\n\n        so = int(part)\n        if so < 0 or so > 255:\n            hop_le = False\n            break\n\n        if part != str(so):  \n            hop_le = False\n            break\n\n    if hop_le:\n        a.append('YES')\n    else:\n        a.append('NO')\n\nfor kq in a:\n    print(kq)",
+        "highlighted_code": "n = int(input())\na = []\n\nfor _ i<span class='highlight-red'>n range(n):\n    ip = input().strip()\n    parts = ip.split(&#39;.&#39;</span>)\n    \n    if len(parts) != 4:\n        a.append(&#39;NO&#39;)\n        continue\n\n    hop_le = True\n    for part i<span class='highlight-red'>n parts:\n        if not part.isdigit():\n            hop_le = False\n            break\n\n        so = int(part)\n        if so &lt; 0 or so &gt; 255:\n            hop_le = False\n            br</span>eak\n\n        if part != str(so):  \n            hop_le = False\n            break\n\n    if hop_le:\n        a.append(&#39;YES&#39;)\n    else:\n        a.append(&#39;NO&#39;)\n\nfor kq in a:\n    print(kq)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc39dfe535fa0f4f1d63f/74dabc44f1fb4514b38a1522/sub_1763906946282_1cabjivbp.py",
+        "similarity_percent": 49.24,
+        "full_code": "t = int(input())\nfor _ in range(t):\n    x = input().strip()\n    y = x.split(\".\")\n    ok = True\n\n    if len(y) != 4:\n        ok = False\n    else:\n        for i in y:\n            if not i.isdigit():\n                ok = False\n                break\n            if i != \"0\" and i[0] == \"0\": \n                ok = False\n                break\n            so = int(i)\n            if so < 0 or so > 255:    \n                ok = False\n                break\n\n    print(\"YES\" if ok else \"NO\")\n\n",
+        "highlighted_code": "t = int(input())\nfor _ i<span class='highlight-green'>n range(t):\n    x = input().strip()\n    y = x.split(&#34;.&#34;</span>)\n    ok = True\n\n    if len(y) != 4:\n        ok = False\n    else:\n        for i i<span class='highlight-green'>n y:\n            if not i.isdigit():\n                ok = False\n                brea</span>k\n            if i != &#34;0&#34; and i[0] == &#34;0&#34;: \n                ok = <span class='highlight-green'>False\n                break\n            so = int(i)\n            if so &lt; 0 or so &gt; 255:    \n                ok = False\n                br</span>eak\n\n    print(&#34;YES&#34; if ok else &#34;NO&#34;)\n\n"
+      },
+      "token_overlap": 88,
+      "max_similarity_percent": 49.24
+    },
+    {
+      "case_id": 29,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc39dfe535fa0f4f1d63f/9d56dd64686f4133b54e7cd3/sub_1764870507385_vpfruslcl.py",
+        "similarity_percent": 38.11,
+        "full_code": "def check_crystal_id(code_str):\n    parts = code_str.split('.')\n    \n    if len(parts) != 4:\n        return \"NO\"\n    \n    for part in parts:\n        if not part.isdigit():\n            return \"NO\"\n        if len(part)>1 and part.startswith('0'):\n            return \"NO\"\n        \n        value = int(part)\n        if not (0<= value <=255):\n            return \"NO\"\n            \n    return \"YES\"\n\ndef solve():\n    try:\n        line = input().strip()\n        if not line: return\n        t = int(line)\n        \n        for _ in range(t):\n            s = input().strip()\n            print(check_crystal_id(s))\n            \n    except ValueError:\n        return\n    except EOFError:\n        return\n\nif __name__ == \"__main__\":\n    solve()",
+        "highlighted_code": "<span class='highlight-red'>def check_crystal_id(code_str):\n    parts = code_str.split(&#39;.&#39;)\n    \n    if len(parts) != 4:\n        return &#34;NO&#34;\n    \n    for part in parts:\n        if not part.isdigit():\n            return &#34;NO&#34;\n        if len(part)&gt;1 a</span>nd part.startswith(&#39;0&#39;):\n            return &#34;NO&#34;\n        \n        value = int(part)\n        if not (0&lt;= value &lt;=255):\n            return &#34;NO&#34;\n            \n    return &#34;YES&#34;\n\ndef solve():\n    try:\n        line = input().strip()\n        if not line: return\n        t = int(line)\n        \n        for _ <span class='highlight-red'>in range(t):\n            s = input().strip()\n            print(check_crystal_id</span>(s))\n            \n    except ValueError:\n        return\n    except EOFError:\n        return\n\nif __name__ == &#34;__main__&#34;:\n    solve()"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc39dfe535fa0f4f1d63f/2a4a4eb3a0db41e2ac99da54/sub_1765819768053_12u3nqulo.py",
+        "similarity_percent": 58.29,
+        "full_code": "def solution(s):\n    parts = s.split('.')\n    \n    if len(parts) != 4:\n        return \"NO\"\n    \n    for part in parts:\n        if not part.isdigit():\n            return \"NO\"\n        \n        if len(part) > 1 and part[0] == '0':\n            return \"NO\"\n        \n        num = int(part)\n        if num < 0 or num > 255:\n            return \"NO\"\n    \n    return \"YES\"\n\n\nt = int(input())\nfor _ in range(t):\n    s = input().strip()\n    print(solution(s))\n",
+        "highlighted_code": "<span class='highlight-green'>def solution(s):\n    parts = s.split(&#39;.&#39;)\n    \n    if len(parts) != 4:\n        return &#34;NO&#34;\n    \n    for part in parts:\n        if not part.isdigit():\n            return &#34;NO&#34;\n        \n        if len(part) &gt; 1 a</span>nd part[0] == &#39;0&#39;:\n            return &#34;NO&#34;\n        \n        num = int(part)\n        if num &lt; 0 or num &gt; 255:\n            return &#34;NO&#34;\n    \n    return &#34;YES&#34;\n\n\nt = int(input())\nfor _ <span class='highlight-green'>in range(t):\n    s = input().strip()\n    print(solution</span>(s))\n"
+      },
+      "token_overlap": 109,
+      "max_similarity_percent": 58.29
+    },
+    {
+      "case_id": 30,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc39dfe535fa0f4f1d63f/9d56dd64686f4133b54e7cd3/sub_1764870507385_vpfruslcl.py",
+        "similarity_percent": 38.11,
+        "full_code": "def check_crystal_id(code_str):\n    parts = code_str.split('.')\n    \n    if len(parts) != 4:\n        return \"NO\"\n    \n    for part in parts:\n        if not part.isdigit():\n            return \"NO\"\n        if len(part)>1 and part.startswith('0'):\n            return \"NO\"\n        \n        value = int(part)\n        if not (0<= value <=255):\n            return \"NO\"\n            \n    return \"YES\"\n\ndef solve():\n    try:\n        line = input().strip()\n        if not line: return\n        t = int(line)\n        \n        for _ in range(t):\n            s = input().strip()\n            print(check_crystal_id(s))\n            \n    except ValueError:\n        return\n    except EOFError:\n        return\n\nif __name__ == \"__main__\":\n    solve()",
+        "highlighted_code": "<span class='highlight-red'>def check_crystal_id(code_str):\n    parts = code_str.split(&#39;.&#39;)\n    \n    if len(parts) != 4:\n        return &#34;NO&#34;\n    \n    for part in parts:\n        if not part.isdigit():\n            return &#34;NO&#34;\n        if len(part)&gt;1 a</span>nd part.startswith(&#39;0&#39;):\n            return &#34;NO&#34;\n        \n        value = int(part)\n        if not (0&lt;= value &lt;=255):\n            return &#34;NO&#34;\n            \n    return &#34;YES&#34;\n\ndef solve():\n    try:\n        line = input().strip()\n        if not line: return\n        t = int(line)\n        \n        for _ <span class='highlight-red'>in range(t):\n            s = input().strip()\n            print(check_crystal_id</span>(s))\n            \n    except ValueError:\n        return\n    except EOFError:\n        return\n\nif __name__ == &#34;__main__&#34;:\n    solve()"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc39dfe535fa0f4f1d63f/522be41104e24b1fa5d14200/sub_1764408515837_lkcejupy6.py",
+        "similarity_percent": 58.29,
+        "full_code": "def tinh_hop_le(n):\n    parts=n.split('.')\n    if len(parts)!=4:\n        return \"NO\"\n    for part in parts:\n        if not part.isdigit():\n            return \"NO\"\n        if len(part)>1 and part[0]==\"0\":\n            return \"NO\"\n        num=int(part)\n        if num<0 or num>255:\n            return \"NO\"\n    return \"YES\"\nhello=int(input())\nfor _ in range(hello):\n    id_string=input().strip()\n    print(tinh_hop_le(id_string))",
+        "highlighted_code": "<span class='highlight-green'>def tinh_hop_le(n):\n    parts=n.split(&#39;.&#39;)\n    if len(parts)!=4:\n        return &#34;NO&#34;\n    for part in parts:\n        if not part.isdigit():\n            return &#34;NO&#34;\n        if len(part)&gt;1 a</span>nd part[0]==&#34;0&#34;:\n            return &#34;NO&#34;\n        num=int(part)\n        if num&lt;0 or num&gt;255:\n            return &#34;NO&#34;\n    return &#34;YES&#34;\nhello=int(input())\nfor _ <span class='highlight-green'>in range(hello):\n    id_string=input().strip()\n    print(tinh_hop_le</span>(id_string))"
+      },
+      "token_overlap": 109,
+      "max_similarity_percent": 58.29
+    },
+    {
+      "case_id": 31,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc39dfe535fa0f4f1d63f/7c4e55277a884a56b9be894a/sub_1764206333580_i9pzsha83.py",
+        "similarity_percent": 35.42,
+        "full_code": "import re\n\nt = int(input())\ncode = []\nfor i in range(t):\n    code_in = input()\n    code.append(code_in)\n\nfor ip in code:\n    parts = re.findall(r'\\d+|\\D+', ip)\n    dot_count = parts.count(\".\")\n    \n    if dot_count != 3:\n        print(\"NO\")\n        continue\n    \n    valid = True\n    number_parts = [part for part in parts if part != \".\"]\n    \n    # Kiểm tra có đúng 4 phần số không\n    if len(number_parts) != 4:\n        print(\"NO\")\n        continue\n    \n    for part in number_parts:\n        # Kiểm tra có phải là số không\n        if not part.isdigit():\n            valid = False\n            break\n        \n        # Kiểm tra số 0 ở đầu\n        if len(part) > 1 and part[0] == '0':\n            valid = False\n            break\n        \n        # Kiểm tra khoảng giá trị\n        num = int(part)\n        if num < 0 or num > 255:\n            valid = False\n            break\n    \n    print(\"YES\" if valid else \"NO\")",
+        "highlighted_code": "import re\n\nt = int(input())\ncode = []\nfor i in range(t):\n    code_in = input()\n    code.append(code_in)\n\nfor ip in code:\n    parts = re.findall(r&#39;\\d+|\\D+&#39;, ip)\n    dot_count = parts.count(&#34;.&#34;)\n    \n    if dot_count != 3:\n        print(&#34;NO&#34;)\n        continue\n    \n    valid = True\n    number_parts = [part for part in parts if part != &#34;.&#34;]\n    \n    # Kiểm tra có đúng 4 phần số không\n    if len(number_parts) != 4:\n        print(&#34;NO&#34;)\n        continue\n    \n    for part i<span class='highlight-red'>n number_parts:\n        # Kiểm tra có phải là số không\n        if not part.isdigit():\n            valid = False\n            break\n        \n        # Kiểm tra số 0 ở đầu\n        if </span>len(part) &gt; 1 an<span class='highlight-red'>d part[0] == &#39;0&#39;:\n            valid = False\n            break\n        \n        # Kiểm tra khoảng giá trị\n        num = int(part)\n        if num &lt; 0 or num &gt; 255:\n            valid = False\n            break\n    \n    print(&#34;YES&#34; if valid else &#34;NO</span>&#34;)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc39dfe535fa0f4f1d63f/74dabc44f1fb4514b38a1522/sub_1763906946282_1cabjivbp.py",
+        "similarity_percent": 51.78,
+        "full_code": "t = int(input())\nfor _ in range(t):\n    x = input().strip()\n    y = x.split(\".\")\n    ok = True\n\n    if len(y) != 4:\n        ok = False\n    else:\n        for i in y:\n            if not i.isdigit():\n                ok = False\n                break\n            if i != \"0\" and i[0] == \"0\": \n                ok = False\n                break\n            so = int(i)\n            if so < 0 or so > 255:    \n                ok = False\n                break\n\n    print(\"YES\" if ok else \"NO\")\n\n",
+        "highlighted_code": "t = int(input())\nfor _ in range(t):\n    x = input().strip()\n    y = x.split(&#34;.&#34;)\n    ok = True\n\n    if len(y) != 4:\n        ok = False\n    else:\n        for i i<span class='highlight-green'>n y:\n            if not i.isdigit():\n                ok = False\n                break\n            if </span>i != &#34;0&#34; an<span class='highlight-green'>d i[0] == &#34;0&#34;: \n                ok = False\n                break\n            so = int(i)\n            if so &lt; 0 or so &gt; 255:    \n                ok = False\n                break\n\n    print(&#34;YES&#34; if ok else &#34;NO</span>&#34;)\n\n"
+      },
+      "token_overlap": 102,
+      "max_similarity_percent": 51.78
     }
   ]
 }

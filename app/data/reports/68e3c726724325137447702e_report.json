@@ -4,127 +4,1079 @@
     "min_token_overlap": 80,
     "min_similarity_percent": 60
   },
-  "total_cases_found": 10,
-  "total_cases_filtered": 7,
+  "total_cases_found": 83,
+  "total_cases_filtered": 63,
   "cases": [
     {
       "case_id": 1,
       "file1": {
-        "path": "/app/app/data/submissions/68e3c726724325137447702e/cd93b2ff882a4ffa85f4518f/sub_1761549424898_uz6rs3p16.py",
+        "path": "/app/app/data/submissions/68e3c726724325137447702e/14bfc7ed54df492fab26a1ff/sub_1763389885800_chzab9u09.py",
         "similarity_percent": 100.0,
-        "full_code": "s = input()\nba = 0\nfor ch in s:\n    if ch == '(':\n        ba += 1\n    elif ch == ')':\n        ba -= 1\n\nif ba == 0:\n    print(\"true\")\nelse:\n    print(\"ValueError: Parentheses not balanced\")\n",
-        "highlighted_code": "<span class='highlight-red'>s = input()\nba = 0\nfor ch in s:\n    if ch == &#39;(&#39;:\n        ba += 1\n    elif ch == &#39;)&#39;:\n        ba -= 1\n\nif ba == 0:\n    print(&#34;true&#34;)\nelse:\n    print(&#34;</span>ValueError: Parentheses not balanced&#34;)\n"
+        "full_code": "#include <iostream>\n#include <stack>\nusing namespace std;\n\nint main() {\n    stack<char>a;\n    string st;cin>>st;\n    for(int i=0;i<st.length();i++)\n    {\n        if(st[i]=='(')a.push(st[i]);\n        else if(a.empty())cout<<\"ValueError: Parentheses not balanced\";\n        else a.pop();\n    }\n    if(a.empty())cout<<\"true\";\n    else cout<<\"ValueError: Parentheses not balanced\";\n}",
+        "highlighted_code": "#include &lt;iostream&gt;\n#include &lt;stack&gt;\n<span class='highlight-red'>using namespace std;\n\nint main() {\n    stack&lt;char&gt;a;\n    string st;cin&gt;&gt;st;\n    for(int i=0;i&lt;st.length();i++)\n    {\n        if(st[i]==&#39;(&#39;)a.push(st[i]);\n        else if(a.empty())cout&lt;&lt;&#34;ValueError: Parentheses not balanced&#34;;\n        else a.pop();\n    }\n    if(a.empty())cout&lt;&lt;&#34;true&#34;;\n    else cout&lt;&lt;</span>&#34;ValueError: Parentheses not balanced&#34;;\n}"
       },
       "file2": {
-        "path": "/app/app/data/submissions/68e3c726724325137447702e/8e236cb825b041b0a82527f2/sub_1761834643258_ijyost1nz.py",
+        "path": "/app/app/data/submissions/68e3c726724325137447702e/14bfc7ed54df492fab26a1ff/sub_1763389837264_5oj23oy9s.py",
         "similarity_percent": 100.0,
-        "full_code": "s = input()\nopening = 0\nfor c in s:\n    if c == \"(\":\n        opening += 1\n    elif c == \")\":\n        opening -= 1\n\nif opening == 0:\n    print(\"true\")\nelse:\n    print(\"ValueError: Parentheses not balanced\")",
-        "highlighted_code": "<span class='highlight-green'>s = input()\nopening = 0\nfor c in s:\n    if c == &#34;(&#34;:\n        opening += 1\n    elif c == &#34;)&#34;:\n        opening -= 1\n\nif opening == 0:\n    print(&#34;true&#34;)\nelse:\n    print(&#34;</span>ValueError: Parentheses not balanced&#34;)"
+        "full_code": "#include <iostream>\n#include <stack>\nusing namespace std;\n\nint main() {\n    stack<char>a;\n    string st;cin>>st;\n    for(int i=0;i<st.length();i++)\n    {\n        if(st[i]=='(')a.push(st[i]);\n        else if(a.empty())cout<<\"ValueError: Parentheses not balanced\";\n        else a.pop();\n    }\n    if(a.empty())cout<<\"true\";\n    else cout<<\"ValueError: Parentheses not balanced\";\n}",
+        "highlighted_code": "#include &lt;iostream&gt;\n#include &lt;stack&gt;\n<span class='highlight-green'>using namespace std;\n\nint main() {\n    stack&lt;char&gt;a;\n    string st;cin&gt;&gt;st;\n    for(int i=0;i&lt;st.length();i++)\n    {\n        if(st[i]==&#39;(&#39;)a.push(st[i]);\n        else if(a.empty())cout&lt;&lt;&#34;ValueError: Parentheses not balanced&#34;;\n        else a.pop();\n    }\n    if(a.empty())cout&lt;&lt;&#34;true&#34;;\n    else cout&lt;&lt;</span>&#34;ValueError: Parentheses not balanced&#34;;\n}"
       },
-      "token_overlap": 77,
+      "token_overlap": 126,
       "max_similarity_percent": 100.0
     },
     {
       "case_id": 2,
       "file1": {
-        "path": "/app/app/data/submissions/68e3c726724325137447702e/cd93b2ff882a4ffa85f4518f/sub_1761549424898_uz6rs3p16.py",
-        "similarity_percent": 96.1,
-        "full_code": "s = input()\nba = 0\nfor ch in s:\n    if ch == '(':\n        ba += 1\n    elif ch == ')':\n        ba -= 1\n\nif ba == 0:\n    print(\"true\")\nelse:\n    print(\"ValueError: Parentheses not balanced\")\n",
-        "highlighted_code": "<span class='highlight-red'>s = input()\nba = 0\nfor ch in s:\n    if ch == &#39;(&#39;:\n        ba += 1\n    elif ch == &#39;)&#39;:\n        ba -= 1\n\ni</span>f ba =<span class='highlight-red'>= 0:\n    print(&#34;true&#34;)\nelse:\n    print(&#34;</span>ValueError: Parentheses not balanced&#34;)\n"
+        "path": "/app/app/data/submissions/68e3c726724325137447702e/14bfc7ed54df492fab26a1ff/sub_1763389885800_chzab9u09.py",
+        "similarity_percent": 100.0,
+        "full_code": "#include <iostream>\n#include <stack>\nusing namespace std;\n\nint main() {\n    stack<char>a;\n    string st;cin>>st;\n    for(int i=0;i<st.length();i++)\n    {\n        if(st[i]=='(')a.push(st[i]);\n        else if(a.empty())cout<<\"ValueError: Parentheses not balanced\";\n        else a.pop();\n    }\n    if(a.empty())cout<<\"true\";\n    else cout<<\"ValueError: Parentheses not balanced\";\n}",
+        "highlighted_code": "#include &lt;iostream&gt;\n#include &lt;stack&gt;\n<span class='highlight-red'>using namespace std;\n\nint main() {\n    stack&lt;char&gt;a;\n    string st;cin&gt;&gt;st;\n    for(int i=0;i&lt;st.length();i++)\n    {\n        if(st[i]==&#39;(&#39;)a.push(st[i]);\n        else if(a.empty())cout&lt;&lt;&#34;ValueError: Parentheses not balanced&#34;;\n        else a.pop();\n    }\n    if(a.empty())cout&lt;&lt;&#34;true&#34;;\n    else cout&lt;&lt;</span>&#34;ValueError: Parentheses not balanced&#34;;\n}"
       },
       "file2": {
-        "path": "/app/app/data/submissions/68e3c726724325137447702e/8e236cb825b041b0a82527f2/sub_1761834838430_z56u92pem.py",
-        "similarity_percent": 84.09,
-        "full_code": "s = input()\nopening = 0\nfor c in s:\n    if c == \"(\":\n        opening += 1\n    elif c == \")\":\n        opening -= 1\n\nif len(s) > 0 and opening == 0:\n    print(\"true\")\nelse:\n    # raise ValueError(\"Parentheses not balanced\")\n    print(\"ValueError: Parentheses not balanced\")",
-        "highlighted_code": "<span class='highlight-green'>s = input()\nopening = 0\nfor c in s:\n    if c == &#34;(&#34;:\n        opening += 1\n    elif c == &#34;)&#34;:\n        opening -= 1\n\ni</span>f len(s) &gt; 0 and opening =<span class='highlight-green'>= 0:\n    print(&#34;true&#34;)\nelse:\n    # raise ValueError(&#34;Parentheses not balanced&#34;)\n    print(&#34;</span>ValueError: Parentheses not balanced&#34;)"
+        "path": "/app/app/data/submissions/68e3c726724325137447702e/14bfc7ed54df492fab26a1ff/sub_1763390363508_chmcebn28.py",
+        "similarity_percent": 100.0,
+        "full_code": "#include <iostream>\n#include <stack>\nusing namespace std;\n\nint main() {\n    stack<char>a;\n    string st;cin>>st;\n    for(int i=0;i<st.length();i++)\n    {\n        if(st[i]=='(')a.push(st[i]);\n        else if(a.empty())cout<<\"ValueError: Parentheses not balanced\";\n        else a.pop();\n    }\n    if(a.empty())cout<<\"true\";\n    else cout<<\"ValueError: Parentheses not balanced\";\n}",
+        "highlighted_code": "#include &lt;iostream&gt;\n#include &lt;stack&gt;\n<span class='highlight-green'>using namespace std;\n\nint main() {\n    stack&lt;char&gt;a;\n    string st;cin&gt;&gt;st;\n    for(int i=0;i&lt;st.length();i++)\n    {\n        if(st[i]==&#39;(&#39;)a.push(st[i]);\n        else if(a.empty())cout&lt;&lt;&#34;ValueError: Parentheses not balanced&#34;;\n        else a.pop();\n    }\n    if(a.empty())cout&lt;&lt;&#34;true&#34;;\n    else cout&lt;&lt;</span>&#34;ValueError: Parentheses not balanced&#34;;\n}"
       },
-      "token_overlap": 74,
-      "max_similarity_percent": 96.1
+      "token_overlap": 126,
+      "max_similarity_percent": 100.0
     },
     {
       "case_id": 3,
       "file1": {
-        "path": "/app/app/data/submissions/68e3c726724325137447702e/8e236cb825b041b0a82527f2/sub_1761834643258_ijyost1nz.py",
-        "similarity_percent": 96.1,
-        "full_code": "s = input()\nopening = 0\nfor c in s:\n    if c == \"(\":\n        opening += 1\n    elif c == \")\":\n        opening -= 1\n\nif opening == 0:\n    print(\"true\")\nelse:\n    print(\"ValueError: Parentheses not balanced\")",
-        "highlighted_code": "<span class='highlight-red'>s = input()\nopening = 0\nfor c in s:\n    if c == &#34;(&#34;:\n        opening += 1\n    elif c == &#34;)&#34;:\n        opening -= 1\n\ni</span>f opening =<span class='highlight-red'>= 0:\n    print(&#34;true&#34;)\nelse:\n    print(&#34;</span>ValueError: Parentheses not balanced&#34;)"
+        "path": "/app/app/data/submissions/68e3c726724325137447702e/57f804332fbb4e9aafa70968/sub_1763446012107_dpms04wdt.py",
+        "similarity_percent": 100.0,
+        "full_code": "s = input()\n\ndef daungoac(s):\n    stack = []\n    for ch in s:\n        if ch == '(':\n            stack.append(ch)\n        elif  ch == ')' and len(stack) == 0:\n            return \"false\"\n        elif ch == ')' and stack[-1] == '(':\n            stack.pop()\n    if len(stack) == 0:\n        return \"true\"\n    else:\n        return \"ValueError: Parentheses not balanced\"\nprint(daungoac(s))\n",
+        "highlighted_code": "<span class='highlight-red'>s = input()\n\ndef daungoac(s):\n    stack = []\n    for ch in s:\n        if ch == &#39;(&#39;:\n            stack.append(ch)\n        elif  ch == &#39;)&#39; and len(stack) == 0:\n            return &#34;false&#34;\n        elif ch == &#39;)&#39; and stack[-1] == &#39;(&#39;:\n            stack.pop()\n    if len(stack) == 0:\n        return &#34;true&#34;\n    else:\n        return &#34;ValueError: Parentheses not balanced&#34;\nprint(daungoac(s</span>))\n"
       },
       "file2": {
-        "path": "/app/app/data/submissions/68e3c726724325137447702e/8e236cb825b041b0a82527f2/sub_1761834838430_z56u92pem.py",
-        "similarity_percent": 84.09,
-        "full_code": "s = input()\nopening = 0\nfor c in s:\n    if c == \"(\":\n        opening += 1\n    elif c == \")\":\n        opening -= 1\n\nif len(s) > 0 and opening == 0:\n    print(\"true\")\nelse:\n    # raise ValueError(\"Parentheses not balanced\")\n    print(\"ValueError: Parentheses not balanced\")",
-        "highlighted_code": "<span class='highlight-green'>s = input()\nopening = 0\nfor c in s:\n    if c == &#34;(&#34;:\n        opening += 1\n    elif c == &#34;)&#34;:\n        opening -= 1\n\ni</span>f len(s) &gt; 0 and opening =<span class='highlight-green'>= 0:\n    print(&#34;true&#34;)\nelse:\n    # raise ValueError(&#34;Parentheses not balanced&#34;)\n    print(&#34;</span>ValueError: Parentheses not balanced&#34;)"
+        "path": "/app/app/data/submissions/68e3c726724325137447702e/57f804332fbb4e9aafa70968/sub_1763446029634_2co4xn7mu.py",
+        "similarity_percent": 100.0,
+        "full_code": "s = input()\n\ndef daungoac(s):\n    stack = []\n    for ch in s:\n        if ch == '(':\n            stack.append(ch)\n        elif  ch == ')' and len(stack) == 0:\n            return \"false\"\n        elif ch == ')' and stack[-1] == '(':\n            stack.pop()\n    if len(stack) == 0:\n        return \"true\"\n    else:\n        return \"ValueError: Parentheses not balanced\"\nprint(daungoac(s))\n",
+        "highlighted_code": "<span class='highlight-green'>s = input()\n\ndef daungoac(s):\n    stack = []\n    for ch in s:\n        if ch == &#39;(&#39;:\n            stack.append(ch)\n        elif  ch == &#39;)&#39; and len(stack) == 0:\n            return &#34;false&#34;\n        elif ch == &#39;)&#39; and stack[-1] == &#39;(&#39;:\n            stack.pop()\n    if len(stack) == 0:\n        return &#34;true&#34;\n    else:\n        return &#34;ValueError: Parentheses not balanced&#34;\nprint(daungoac(s</span>))\n"
       },
-      "token_overlap": 74,
-      "max_similarity_percent": 96.1
+      "token_overlap": 149,
+      "max_similarity_percent": 100.0
     },
     {
       "case_id": 4,
       "file1": {
-        "path": "/app/app/data/submissions/68e3c726724325137447702e/cd93b2ff882a4ffa85f4518f/sub_1761549424898_uz6rs3p16.py",
-        "similarity_percent": 88.31,
-        "full_code": "s = input()\nba = 0\nfor ch in s:\n    if ch == '(':\n        ba += 1\n    elif ch == ')':\n        ba -= 1\n\nif ba == 0:\n    print(\"true\")\nelse:\n    print(\"ValueError: Parentheses not balanced\")\n",
-        "highlighted_code": "<span class='highlight-red'>s = input()\nba = 0\nfor ch in s:\n    if ch == &#39;(&#39;:\n        ba += 1\n    elif ch == &#39;)&#39;:\n        ba -= 1\n\nif ba == 0:\n    print(&#34;true&#34;)\nels</span>e:\n    print(&#34;ValueError: Parentheses not balanced&#34;)\n"
+        "path": "/app/app/data/submissions/68e3c726724325137447702e/57f804332fbb4e9aafa70968/sub_1763446012107_dpms04wdt.py",
+        "similarity_percent": 100.0,
+        "full_code": "s = input()\n\ndef daungoac(s):\n    stack = []\n    for ch in s:\n        if ch == '(':\n            stack.append(ch)\n        elif  ch == ')' and len(stack) == 0:\n            return \"false\"\n        elif ch == ')' and stack[-1] == '(':\n            stack.pop()\n    if len(stack) == 0:\n        return \"true\"\n    else:\n        return \"ValueError: Parentheses not balanced\"\nprint(daungoac(s))\n",
+        "highlighted_code": "<span class='highlight-red'>s = input()\n\ndef daungoac(s):\n    stack = []\n    for ch in s:\n        if ch == &#39;(&#39;:\n            stack.append(ch)\n        elif  ch == &#39;)&#39; and len(stack) == 0:\n            return &#34;false&#34;\n        elif ch == &#39;)&#39; and stack[-1] == &#39;(&#39;:\n            stack.pop()\n    if len(stack) == 0:\n        return &#34;true&#34;\n    else:\n        return &#34;ValueError: Parentheses not balanced&#34;\nprint(daungoac(s</span>))\n"
       },
       "file2": {
-        "path": "/app/app/data/submissions/68e3c726724325137447702e/8e236cb825b041b0a82527f2/sub_1761834682117_1hh91vny1.py",
-        "similarity_percent": 78.16,
-        "full_code": "s = input()\nopening = 0\nfor c in s:\n    if c == \"(\":\n        opening += 1\n    elif c == \")\":\n        opening -= 1\n\nif opening == 0:\n    print(\"true\")\nelse:\n    # print(\"ValueError: Parentheses not balanced\")\n    raise ValueError(\"Parentheses not balanced\")",
-        "highlighted_code": "<span class='highlight-green'>s = input()\nopening = 0\nfor c in s:\n    if c == &#34;(&#34;:\n        opening += 1\n    elif c == &#34;)&#34;:\n        opening -= 1\n\nif opening == 0:\n    print(&#34;true&#34;)\nels</span>e:\n    # print(&#34;ValueError: Parentheses not balanced&#34;)\n    raise ValueError(&#34;Parentheses not balanced&#34;)"
+        "path": "/app/app/data/submissions/68e3c726724325137447702e/57f804332fbb4e9aafa70968/sub_1763477094345_1mxxk7fyz.py",
+        "similarity_percent": 100.0,
+        "full_code": "s = input()\n\ndef daungoac(s):\n    stack = []\n    for ch in s:\n        if ch == '(':\n            stack.append(ch)\n        elif  ch == ')' and len(stack) == 0:\n            return \"ValueError: Parentheses not balanced\"\n        elif ch == ')' and stack[-1] == '(':\n            stack.pop()\n    if len(stack) == 0:\n        return \"true\"\n    else:\n        return \"ValueError: Parentheses not balanced\"\nprint(daungoac(s))\n",
+        "highlighted_code": "<span class='highlight-green'>s = input()\n\ndef daungoac(s):\n    stack = []\n    for ch in s:\n        if ch == &#39;(&#39;:\n            stack.append(ch)\n        elif  ch == &#39;)&#39; and len(stack) == 0:\n            return &#34;ValueError: Parentheses not balanced&#34;\n        elif ch == &#39;)&#39; and stack[-1] == &#39;(&#39;:\n            stack.pop()\n    if len(stack) == 0:\n        return &#34;true&#34;\n    else:\n        return &#34;ValueError: Parentheses not balanced&#34;\nprint(daungoac(s</span>))\n"
       },
-      "token_overlap": 68,
-      "max_similarity_percent": 88.31
+      "token_overlap": 149,
+      "max_similarity_percent": 100.0
     },
     {
       "case_id": 5,
       "file1": {
-        "path": "/app/app/data/submissions/68e3c726724325137447702e/8e236cb825b041b0a82527f2/sub_1761834643258_ijyost1nz.py",
-        "similarity_percent": 88.31,
-        "full_code": "s = input()\nopening = 0\nfor c in s:\n    if c == \"(\":\n        opening += 1\n    elif c == \")\":\n        opening -= 1\n\nif opening == 0:\n    print(\"true\")\nelse:\n    print(\"ValueError: Parentheses not balanced\")",
-        "highlighted_code": "<span class='highlight-red'>s = input()\nopening = 0\nfor c in s:\n    if c == &#34;(&#34;:\n        opening += 1\n    elif c == &#34;)&#34;:\n        opening -= 1\n\nif opening == 0:\n    print(&#34;true&#34;)\nels</span>e:\n    print(&#34;ValueError: Parentheses not balanced&#34;)"
+        "path": "/app/app/data/submissions/68e3c726724325137447702e/14bfc7ed54df492fab26a1ff/sub_1763389837264_5oj23oy9s.py",
+        "similarity_percent": 100.0,
+        "full_code": "#include <iostream>\n#include <stack>\nusing namespace std;\n\nint main() {\n    stack<char>a;\n    string st;cin>>st;\n    for(int i=0;i<st.length();i++)\n    {\n        if(st[i]=='(')a.push(st[i]);\n        else if(a.empty())cout<<\"ValueError: Parentheses not balanced\";\n        else a.pop();\n    }\n    if(a.empty())cout<<\"true\";\n    else cout<<\"ValueError: Parentheses not balanced\";\n}",
+        "highlighted_code": "#include &lt;iostream&gt;\n#include &lt;stack&gt;\n<span class='highlight-red'>using namespace std;\n\nint main() {\n    stack&lt;char&gt;a;\n    string st;cin&gt;&gt;st;\n    for(int i=0;i&lt;st.length();i++)\n    {\n        if(st[i]==&#39;(&#39;)a.push(st[i]);\n        else if(a.empty())cout&lt;&lt;&#34;ValueError: Parentheses not balanced&#34;;\n        else a.pop();\n    }\n    if(a.empty())cout&lt;&lt;&#34;true&#34;;\n    else cout&lt;&lt;</span>&#34;ValueError: Parentheses not balanced&#34;;\n}"
       },
       "file2": {
-        "path": "/app/app/data/submissions/68e3c726724325137447702e/8e236cb825b041b0a82527f2/sub_1761834682117_1hh91vny1.py",
-        "similarity_percent": 78.16,
-        "full_code": "s = input()\nopening = 0\nfor c in s:\n    if c == \"(\":\n        opening += 1\n    elif c == \")\":\n        opening -= 1\n\nif opening == 0:\n    print(\"true\")\nelse:\n    # print(\"ValueError: Parentheses not balanced\")\n    raise ValueError(\"Parentheses not balanced\")",
-        "highlighted_code": "<span class='highlight-green'>s = input()\nopening = 0\nfor c in s:\n    if c == &#34;(&#34;:\n        opening += 1\n    elif c == &#34;)&#34;:\n        opening -= 1\n\nif opening == 0:\n    print(&#34;true&#34;)\nels</span>e:\n    # print(&#34;ValueError: Parentheses not balanced&#34;)\n    raise ValueError(&#34;Parentheses not balanced&#34;)"
+        "path": "/app/app/data/submissions/68e3c726724325137447702e/14bfc7ed54df492fab26a1ff/sub_1763390363508_chmcebn28.py",
+        "similarity_percent": 100.0,
+        "full_code": "#include <iostream>\n#include <stack>\nusing namespace std;\n\nint main() {\n    stack<char>a;\n    string st;cin>>st;\n    for(int i=0;i<st.length();i++)\n    {\n        if(st[i]=='(')a.push(st[i]);\n        else if(a.empty())cout<<\"ValueError: Parentheses not balanced\";\n        else a.pop();\n    }\n    if(a.empty())cout<<\"true\";\n    else cout<<\"ValueError: Parentheses not balanced\";\n}",
+        "highlighted_code": "#include &lt;iostream&gt;\n#include &lt;stack&gt;\n<span class='highlight-green'>using namespace std;\n\nint main() {\n    stack&lt;char&gt;a;\n    string st;cin&gt;&gt;st;\n    for(int i=0;i&lt;st.length();i++)\n    {\n        if(st[i]==&#39;(&#39;)a.push(st[i]);\n        else if(a.empty())cout&lt;&lt;&#34;ValueError: Parentheses not balanced&#34;;\n        else a.pop();\n    }\n    if(a.empty())cout&lt;&lt;&#34;true&#34;;\n    else cout&lt;&lt;</span>&#34;ValueError: Parentheses not balanced&#34;;\n}"
       },
-      "token_overlap": 68,
-      "max_similarity_percent": 88.31
+      "token_overlap": 126,
+      "max_similarity_percent": 100.0
     },
     {
       "case_id": 6,
       "file1": {
-        "path": "/app/app/data/submissions/68e3c726724325137447702e/cd93b2ff882a4ffa85f4518f/sub_1761549424898_uz6rs3p16.py",
-        "similarity_percent": 68.83,
-        "full_code": "s = input()\nba = 0\nfor ch in s:\n    if ch == '(':\n        ba += 1\n    elif ch == ')':\n        ba -= 1\n\nif ba == 0:\n    print(\"true\")\nelse:\n    print(\"ValueError: Parentheses not balanced\")\n",
-        "highlighted_code": "s = input()\nba = 0\nfor ch in s:\n    if ch =<span class='highlight-red'>= &#39;(&#39;:\n        ba += 1\n    elif ch == &#39;)&#39;:\n        ba -= 1\n\nif ba == 0:\n    print(&#34;true&#34;)\nelse:\n    print(&#34;</span>ValueError: Parentheses not balanced&#34;)\n"
+        "path": "/app/app/data/submissions/68e3c726724325137447702e/aa97adecf36047f6879b441e/sub_1763028127702_y6vm8m89t.py",
+        "similarity_percent": 100.0,
+        "full_code": "s = str(input())\ndem1=0\ndem2=0\nfor i in s:\n    if i == \"(\":\n        dem1 += 1\n    elif i == \")\":\n        dem1 -=1\n    elif dem1 < 0:\n        print(\"ValueError: Parentheses not balanced\")\nif dem1 == 0:\n    print('true')\nelse:\n    print('ValueError: Parentheses not balanced')",
+        "highlighted_code": "<span class='highlight-red'>s = str(input())\ndem1=0\ndem2=0\nfor i in s:\n    if i == &#34;(&#34;:\n        dem1 += 1\n    elif i == &#34;)&#34;:\n        dem1 -=1\n    elif dem1 &lt; 0:\n        print(&#34;ValueError: Parentheses not balanced&#34;)\nif dem1 == 0:\n    print(&#39;true&#39;)\nelse:\n    print</span>(&#39;ValueError: Parentheses not balanced&#39;)"
       },
       "file2": {
-        "path": "/app/app/data/submissions/68e3c726724325137447702e/8e236cb825b041b0a82527f2/sub_1761835329184_njfjhc4e8.py",
-        "similarity_percent": 60.23,
-        "full_code": "s = input()\nopening = 0\nfor c in s:\n    if opening < 0:\n        break\n\n    if c == \"(\":\n        opening += 1\n    elif c == \")\":\n        opening -= 1\n\nif opening == 0:\n    print(\"true\")\nelse:\n    # raise ValueError(\"Parentheses not balanced\")\n    print(\"ValueError: Parentheses not balanced\")",
-        "highlighted_code": "s = input()\nopening = 0\nfor c in s:\n    if opening &lt; 0:\n        break\n\n    if c =<span class='highlight-green'>= &#34;(&#34;:\n        opening += 1\n    elif c == &#34;)&#34;:\n        opening -= 1\n\nif opening == 0:\n    print(&#34;true&#34;)\nelse:\n    # raise ValueError(&#34;Parentheses not balanced&#34;)\n    print(&#34;</span>ValueError: Parentheses not balanced&#34;)"
+        "path": "/app/app/data/submissions/68e3c726724325137447702e/aa97adecf36047f6879b441e/sub_1763482111421_m7utt6pql.py",
+        "similarity_percent": 100.0,
+        "full_code": "s = str(input())\ndem1=0\ndem2=0\nfor i in s:\n    if i == \"(\":\n        dem1 += 1\n    elif i == \")\":\n        dem1 -=1\n    elif dem1 < 0:\n        print(\"ValueError: Parentheses not balanced\")\nif dem1 == 0:\n    print('true')\nelse:\n    print('ValueError: Parentheses not balanced')",
+        "highlighted_code": "<span class='highlight-green'>s = str(input())\ndem1=0\ndem2=0\nfor i in s:\n    if i == &#34;(&#34;:\n        dem1 += 1\n    elif i == &#34;)&#34;:\n        dem1 -=1\n    elif dem1 &lt; 0:\n        print(&#34;ValueError: Parentheses not balanced&#34;)\nif dem1 == 0:\n    print(&#39;true&#39;)\nelse:\n    print</span>(&#39;ValueError: Parentheses not balanced&#39;)"
       },
-      "token_overlap": 53,
-      "max_similarity_percent": 68.83
+      "token_overlap": 101,
+      "max_similarity_percent": 100.0
     },
     {
       "case_id": 7,
       "file1": {
-        "path": "/app/app/data/submissions/68e3c726724325137447702e/8e236cb825b041b0a82527f2/sub_1761835329184_njfjhc4e8.py",
-        "similarity_percent": 60.23,
-        "full_code": "s = input()\nopening = 0\nfor c in s:\n    if opening < 0:\n        break\n\n    if c == \"(\":\n        opening += 1\n    elif c == \")\":\n        opening -= 1\n\nif opening == 0:\n    print(\"true\")\nelse:\n    # raise ValueError(\"Parentheses not balanced\")\n    print(\"ValueError: Parentheses not balanced\")",
-        "highlighted_code": "s = input()\nopening = 0\nfor c in s:\n    if opening &lt; 0:\n        break\n\n    if c =<span class='highlight-red'>= &#34;(&#34;:\n        opening += 1\n    elif c == &#34;)&#34;:\n        opening -= 1\n\nif opening == 0:\n    print(&#34;true&#34;)\nelse:\n    # raise ValueError(&#34;Parentheses not balanced&#34;)\n    print(&#34;</span>ValueError: Parentheses not balanced&#34;)"
+        "path": "/app/app/data/submissions/68e3c726724325137447702e/14bfc7ed54df492fab26a1ff/sub_1763391365971_rejyeauhy.py",
+        "similarity_percent": 100.0,
+        "full_code": "#include <iostream>\n#include <stack>\nusing namespace std;\n\nint main() {\n    stack<char>a;\n    string st;cin>>st;int kt=1;\n    for(int i=0;i<st.length();i++)\n    {\n        if(st[i]=='(')a.push(st[i]);\n        else if(a.empty()){kt=0;break;}\n        else a.pop();\n    }\n    if (kt == 1 && a.empty()) cout << \"true\";\n    else cout << \"ValueError: Parentheses not balanced\";\n}",
+        "highlighted_code": "#include &lt;iostream&gt;\n#include &lt;stack&gt;\n<span class='highlight-red'>using namespace std;\n\nint main() {\n    stack&lt;char&gt;a;\n    string st;cin&gt;&gt;st;int kt=1;\n    for(int i=0;i&lt;st.length();i++)\n    {\n        if(st[i]==&#39;(&#39;)a.push(st[i]);\n        else if(a.empty()){kt=0;break;}\n        else a.pop();\n    }\n    if (kt == 1 &amp;&amp; a.empty()) cout &lt;&lt; &#34;true&#34;;\n    else cout &lt;&lt; &#34;</span>ValueError: Parentheses not balanced&#34;;\n}"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3c726724325137447702e/14bfc7ed54df492fab26a1ff/sub_1763391379451_sb2p10qeh.py",
+        "similarity_percent": 100.0,
+        "full_code": "#include <iostream>\n#include <stack>\nusing namespace std;\n\nint main() {\n    stack<char>a;\n    string st;cin>>st;int kt=1;\n    for(int i=0;i<st.length();i++)\n    {\n        if(st[i]=='(')a.push(st[i]);\n        else if(a.empty()){kt=0;break;}\n        else a.pop();\n    }\n    if (kt == 1 && a.empty()) cout << \"true\";\n    else cout << \"ValueError: Parentheses not balanced\";\n}",
+        "highlighted_code": "#include &lt;iostream&gt;\n#include &lt;stack&gt;\n<span class='highlight-green'>using namespace std;\n\nint main() {\n    stack&lt;char&gt;a;\n    string st;cin&gt;&gt;st;int kt=1;\n    for(int i=0;i&lt;st.length();i++)\n    {\n        if(st[i]==&#39;(&#39;)a.push(st[i]);\n        else if(a.empty()){kt=0;break;}\n        else a.pop();\n    }\n    if (kt == 1 &amp;&amp; a.empty()) cout &lt;&lt; &#34;true&#34;;\n    else cout &lt;&lt; &#34;</span>ValueError: Parentheses not balanced&#34;;\n}"
+      },
+      "token_overlap": 145,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 8,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3c726724325137447702e/cd93b2ff882a4ffa85f4518f/sub_1761549424898_uz6rs3p16.py",
+        "similarity_percent": 100.0,
+        "full_code": "s = input()\nba = 0\nfor ch in s:\n    if ch == '(':\n        ba += 1\n    elif ch == ')':\n        ba -= 1\n\nif ba == 0:\n    print(\"true\")\nelse:\n    print(\"ValueError: Parentheses not balanced\")\n",
+        "highlighted_code": "<span class='highlight-red'>s = input()\nba = 0\nfor ch in s:\n    if ch == &#39;(&#39;:\n        ba += 1\n    elif ch == &#39;)&#39;:\n        ba -= 1\n\nif ba == 0:\n    print(&#34;true&#34;)\nelse:\n    print</span>(&#34;ValueError: Parentheses not balanced&#34;)\n"
       },
       "file2": {
         "path": "/app/app/data/submissions/68e3c726724325137447702e/8e236cb825b041b0a82527f2/sub_1761834643258_ijyost1nz.py",
-        "similarity_percent": 68.83,
+        "similarity_percent": 100.0,
         "full_code": "s = input()\nopening = 0\nfor c in s:\n    if c == \"(\":\n        opening += 1\n    elif c == \")\":\n        opening -= 1\n\nif opening == 0:\n    print(\"true\")\nelse:\n    print(\"ValueError: Parentheses not balanced\")",
-        "highlighted_code": "s = input()\nopening = 0\nfor c in s:\n    if c =<span class='highlight-green'>= &#34;(&#34;:\n        opening += 1\n    elif c == &#34;)&#34;:\n        opening -= 1\n\nif opening == 0:\n    print(&#34;true&#34;)\nelse:\n    print(&#34;</span>ValueError: Parentheses not balanced&#34;)"
+        "highlighted_code": "<span class='highlight-green'>s = input()\nopening = 0\nfor c in s:\n    if c == &#34;(&#34;:\n        opening += 1\n    elif c == &#34;)&#34;:\n        opening -= 1\n\nif opening == 0:\n    print(&#34;true&#34;)\nelse:\n    print</span>(&#34;ValueError: Parentheses not balanced&#34;)"
       },
-      "token_overlap": 53,
-      "max_similarity_percent": 68.83
+      "token_overlap": 75,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 9,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3c726724325137447702e/57f804332fbb4e9aafa70968/sub_1763446029634_2co4xn7mu.py",
+        "similarity_percent": 100.0,
+        "full_code": "s = input()\n\ndef daungoac(s):\n    stack = []\n    for ch in s:\n        if ch == '(':\n            stack.append(ch)\n        elif  ch == ')' and len(stack) == 0:\n            return \"false\"\n        elif ch == ')' and stack[-1] == '(':\n            stack.pop()\n    if len(stack) == 0:\n        return \"true\"\n    else:\n        return \"ValueError: Parentheses not balanced\"\nprint(daungoac(s))\n",
+        "highlighted_code": "<span class='highlight-red'>s = input()\n\ndef daungoac(s):\n    stack = []\n    for ch in s:\n        if ch == &#39;(&#39;:\n            stack.append(ch)\n        elif  ch == &#39;)&#39; and len(stack) == 0:\n            return &#34;false&#34;\n        elif ch == &#39;)&#39; and stack[-1] == &#39;(&#39;:\n            stack.pop()\n    if len(stack) == 0:\n        return &#34;true&#34;\n    else:\n        return &#34;ValueError: Parentheses not balanced&#34;\nprint(daungoac(s</span>))\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3c726724325137447702e/57f804332fbb4e9aafa70968/sub_1763477094345_1mxxk7fyz.py",
+        "similarity_percent": 100.0,
+        "full_code": "s = input()\n\ndef daungoac(s):\n    stack = []\n    for ch in s:\n        if ch == '(':\n            stack.append(ch)\n        elif  ch == ')' and len(stack) == 0:\n            return \"ValueError: Parentheses not balanced\"\n        elif ch == ')' and stack[-1] == '(':\n            stack.pop()\n    if len(stack) == 0:\n        return \"true\"\n    else:\n        return \"ValueError: Parentheses not balanced\"\nprint(daungoac(s))\n",
+        "highlighted_code": "<span class='highlight-green'>s = input()\n\ndef daungoac(s):\n    stack = []\n    for ch in s:\n        if ch == &#39;(&#39;:\n            stack.append(ch)\n        elif  ch == &#39;)&#39; and len(stack) == 0:\n            return &#34;ValueError: Parentheses not balanced&#34;\n        elif ch == &#39;)&#39; and stack[-1] == &#39;(&#39;:\n            stack.pop()\n    if len(stack) == 0:\n        return &#34;true&#34;\n    else:\n        return &#34;ValueError: Parentheses not balanced&#34;\nprint(daungoac(s</span>))\n"
+      },
+      "token_overlap": 149,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 10,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3c726724325137447702e/14bfc7ed54df492fab26a1ff/sub_1763389885800_chzab9u09.py",
+        "similarity_percent": 96.03,
+        "full_code": "#include <iostream>\n#include <stack>\nusing namespace std;\n\nint main() {\n    stack<char>a;\n    string st;cin>>st;\n    for(int i=0;i<st.length();i++)\n    {\n        if(st[i]=='(')a.push(st[i]);\n        else if(a.empty())cout<<\"ValueError: Parentheses not balanced\";\n        else a.pop();\n    }\n    if(a.empty())cout<<\"true\";\n    else cout<<\"ValueError: Parentheses not balanced\";\n}",
+        "highlighted_code": "#include &lt;iostream&gt;\n#include &lt;stack&gt;\n<span class='highlight-red'>using namespace std;\n\nint main() {\n    stack&lt;char&gt;a;\n    string st;cin&gt;&gt;st;\n    for(int i=0;i&lt;st.length();i++)\n    {\n        if(st[i]==&#39;(&#39;)a.push(st[i]);\n        else if(a.empty())cout&lt;&lt;&#34;ValueError: Parentheses not balanced&#34;;\n        else </span>a.pop()<span class='highlight-red'>;\n    }\n    if(a.empty())cout&lt;&lt;&#34;true&#34;;\n    else cout&lt;&lt;</span>&#34;ValueError: Parentheses not balanced&#34;;\n}"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3c726724325137447702e/14bfc7ed54df492fab26a1ff/sub_1763390319718_jr0elolhz.py",
+        "similarity_percent": 86.43,
+        "full_code": "#include <iostream>\n#include <stack>\nusing namespace std;\n\nint main() {\n    stack<char>a;\n    string st;cin>>st;\n    for(int i=0;i<st.length();i++)\n    {\n        if(st[i]=='(')a.push(st[i]);\n        else if(a.empty())cout<<\"ValueError: Parentheses not balanced\";\n        else if (a.top()=='(')a.pop();\n    }\n    if(a.empty())cout<<\"true\";\n    else cout<<\"ValueError: Parentheses not balanced\";\n}",
+        "highlighted_code": "#include &lt;iostream&gt;\n#include &lt;stack&gt;\n<span class='highlight-green'>using namespace std;\n\nint main() {\n    stack&lt;char&gt;a;\n    string st;cin&gt;&gt;st;\n    for(int i=0;i&lt;st.length();i++)\n    {\n        if(st[i]==&#39;(&#39;)a.push(st[i]);\n        else if(a.empty())cout&lt;&lt;&#34;ValueError: Parentheses not balanced&#34;;\n        else </span>if (a.top()==&#39;(&#39;)a.pop()<span class='highlight-green'>;\n    }\n    if(a.empty())cout&lt;&lt;&#34;true&#34;;\n    else cout&lt;&lt;</span>&#34;ValueError: Parentheses not balanced&#34;;\n}"
+      },
+      "token_overlap": 121,
+      "max_similarity_percent": 96.03
+    },
+    {
+      "case_id": 11,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3c726724325137447702e/cd93b2ff882a4ffa85f4518f/sub_1761549424898_uz6rs3p16.py",
+        "similarity_percent": 93.33,
+        "full_code": "s = input()\nba = 0\nfor ch in s:\n    if ch == '(':\n        ba += 1\n    elif ch == ')':\n        ba -= 1\n\nif ba == 0:\n    print(\"true\")\nelse:\n    print(\"ValueError: Parentheses not balanced\")\n",
+        "highlighted_code": "<span class='highlight-red'>s = input()\nba = 0\nfor ch in s:\n    if ch == &#39;(&#39;:\n        ba += 1\n    elif ch == &#39;)&#39;:\n        ba -= 1\n\nif ba == 0:\n    print(&#34;true&#34;)\nelse:\n    </span>print(&#34;ValueError: Parentheses not balanced&#34;)\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3c726724325137447702e/8e236cb825b041b0a82527f2/sub_1761834682117_1hh91vny1.py",
+        "similarity_percent": 77.78,
+        "full_code": "s = input()\nopening = 0\nfor c in s:\n    if c == \"(\":\n        opening += 1\n    elif c == \")\":\n        opening -= 1\n\nif opening == 0:\n    print(\"true\")\nelse:\n    # print(\"ValueError: Parentheses not balanced\")\n    raise ValueError(\"Parentheses not balanced\")",
+        "highlighted_code": "<span class='highlight-green'>s = input()\nopening = 0\nfor c in s:\n    if c == &#34;(&#34;:\n        opening += 1\n    elif c == &#34;)&#34;:\n        opening -= 1\n\nif opening == 0:\n    print(&#34;true&#34;)\nelse:\n    # print(&#34;ValueError: Parentheses not balanced&#34;)\n    </span>raise ValueError(&#34;Parentheses not balanced&#34;)"
+      },
+      "token_overlap": 70,
+      "max_similarity_percent": 93.33
+    },
+    {
+      "case_id": 12,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3c726724325137447702e/14bfc7ed54df492fab26a1ff/sub_1763389885800_chzab9u09.py",
+        "similarity_percent": 91.27,
+        "full_code": "#include <iostream>\n#include <stack>\nusing namespace std;\n\nint main() {\n    stack<char>a;\n    string st;cin>>st;\n    for(int i=0;i<st.length();i++)\n    {\n        if(st[i]=='(')a.push(st[i]);\n        else if(a.empty())cout<<\"ValueError: Parentheses not balanced\";\n        else a.pop();\n    }\n    if(a.empty())cout<<\"true\";\n    else cout<<\"ValueError: Parentheses not balanced\";\n}",
+        "highlighted_code": "#include &lt;iostream&gt;\n#include &lt;stack&gt;\n<span class='highlight-red'>using namespace std;\n\nint main() {\n    stack&lt;char&gt;a;\n    string st;cin&gt;&gt;st;\n    for(int i=0;i&lt;st.length();i++)\n    {\n        if(st[i]==&#39;(&#39;)a.push(st[i]);\n        else if(a.empty</span>())cout&lt;&lt;&#34;ValueError: Parentheses not balanced&#34;;\n        e<span class='highlight-red'>lse a.pop();\n    }\n    if(a.empty())cout&lt;&lt;&#34;true&#34;;\n    else cout&lt;&lt;</span>&#34;ValueError: Parentheses not balanced&#34;;\n}"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3c726724325137447702e/14bfc7ed54df492fab26a1ff/sub_1763390457905_1nf6osdnk.py",
+        "similarity_percent": 85.82,
+        "full_code": "#include <iostream>\n#include <stack>\nusing namespace std;\n\nint main() {\n    stack<char>a;\n    string st;cin>>st;\n    for(int i=0;i<st.length();i++)\n    {\n        if(st[i]=='(')a.push(st[i]);\n        else if(a.empty()){cout<<\"ValueError: Parentheses not balanced\";break;}\n        else a.pop();\n    }\n    if(a.empty())cout<<\"true\";\n    else cout<<\"ValueError: Parentheses not balanced\";\n}",
+        "highlighted_code": "#include &lt;iostream&gt;\n#include &lt;stack&gt;\n<span class='highlight-green'>using namespace std;\n\nint main() {\n    stack&lt;char&gt;a;\n    string st;cin&gt;&gt;st;\n    for(int i=0;i&lt;st.length();i++)\n    {\n        if(st[i]==&#39;(&#39;)a.push(st[i]);\n        else if(a.empty</span>()){cout&lt;&lt;&#34;ValueError: Parentheses not balanced&#34;;break;}\n        e<span class='highlight-green'>lse a.pop();\n    }\n    if(a.empty())cout&lt;&lt;&#34;true&#34;;\n    else cout&lt;&lt;</span>&#34;ValueError: Parentheses not balanced&#34;;\n}"
+      },
+      "token_overlap": 115,
+      "max_similarity_percent": 91.27
+    },
+    {
+      "case_id": 13,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3c726724325137447702e/14bfc7ed54df492fab26a1ff/sub_1763389248475_qy68zlzs3.py",
+        "similarity_percent": 87.5,
+        "full_code": "#include <iostream>\n#include <stack>\nusing namespace std;\n\nint main() {\n    stack<char>a;\n    string st;cin>>st;\n    for(int i=0;i<st.length();i++)\n    {\n        if(st[i]==')')\n        {\n            if(a.empty())cout<<\"ValueError: Parentheses not balanced\";\n            else a.pop();\n        }\n        else a.push(st[i]);\n    }\n    if(a.empty())cout<<\"true\";\n    else cout<<\"ValueError: Parentheses not balanced\";\n}",
+        "highlighted_code": "#include &lt;iostream&gt;\n#include &lt;stack&gt;\n<span class='highlight-red'>using namespace std;\n\nint main() {\n    stack&lt;char&gt;a;\n    string st;cin&gt;&gt;st;\n    for(int i=0;i&lt;st.length();i++)\n    {\n        if(st[i]==&#39;)&#39;)\n        </span>{\n            if<span class='highlight-red'>(a.empty())cout&lt;&lt;&#34;ValueError: Parentheses not balanced&#34;;\n            else a.pop();\n        }\n        </span>else a.push(st[i])<span class='highlight-red'>;\n    }\n    if(a.empty())cout&lt;&lt;&#34;true&#34;;\n    else cout&lt;&lt;</span>&#34;ValueError: Parentheses not balanced&#34;;\n}"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3c726724325137447702e/14bfc7ed54df492fab26a1ff/sub_1763390363508_chmcebn28.py",
+        "similarity_percent": 87.3,
+        "full_code": "#include <iostream>\n#include <stack>\nusing namespace std;\n\nint main() {\n    stack<char>a;\n    string st;cin>>st;\n    for(int i=0;i<st.length();i++)\n    {\n        if(st[i]=='(')a.push(st[i]);\n        else if(a.empty())cout<<\"ValueError: Parentheses not balanced\";\n        else a.pop();\n    }\n    if(a.empty())cout<<\"true\";\n    else cout<<\"ValueError: Parentheses not balanced\";\n}",
+        "highlighted_code": "#include &lt;iostream&gt;\n#include &lt;stack&gt;\n<span class='highlight-green'>using namespace std;\n\nint main() {\n    stack&lt;char&gt;a;\n    string st;cin&gt;&gt;st;\n    for(int i=0;i&lt;st.length();i++)\n    {\n        if(st[i]==&#39;(&#39;)</span>a.push(st[i]);\n        else if<span class='highlight-green'>(a.empty())cout&lt;&lt;&#34;ValueError: Parentheses not balanced&#34;;\n        else a.pop();\n    }\n    if(a.empty())cout&lt;&lt;&#34;true&#34;;\n    else cout&lt;&lt;</span>&#34;ValueError: Parentheses not balanced&#34;;\n}"
+      },
+      "token_overlap": 112,
+      "max_similarity_percent": 87.5
+    },
+    {
+      "case_id": 14,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3c726724325137447702e/14bfc7ed54df492fab26a1ff/sub_1763389885800_chzab9u09.py",
+        "similarity_percent": 87.3,
+        "full_code": "#include <iostream>\n#include <stack>\nusing namespace std;\n\nint main() {\n    stack<char>a;\n    string st;cin>>st;\n    for(int i=0;i<st.length();i++)\n    {\n        if(st[i]=='(')a.push(st[i]);\n        else if(a.empty())cout<<\"ValueError: Parentheses not balanced\";\n        else a.pop();\n    }\n    if(a.empty())cout<<\"true\";\n    else cout<<\"ValueError: Parentheses not balanced\";\n}",
+        "highlighted_code": "#include &lt;iostream&gt;\n#include &lt;stack&gt;\n<span class='highlight-red'>using namespace std;\n\nint main() {\n    stack&lt;char&gt;a;\n    string st;cin&gt;&gt;st;\n    for(int i=0;i&lt;st.length();i++)\n    {\n        if(st[i]==&#39;(&#39;)</span>a.push(st[i]);\n        else if<span class='highlight-red'>(a.empty())cout&lt;&lt;&#34;ValueError: Parentheses not balanced&#34;;\n        else a.pop();\n    }\n    if(a.empty())cout&lt;&lt;&#34;true&#34;;\n    else cout&lt;&lt;</span>&#34;ValueError: Parentheses not balanced&#34;;\n}"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3c726724325137447702e/14bfc7ed54df492fab26a1ff/sub_1763389248475_qy68zlzs3.py",
+        "similarity_percent": 87.5,
+        "full_code": "#include <iostream>\n#include <stack>\nusing namespace std;\n\nint main() {\n    stack<char>a;\n    string st;cin>>st;\n    for(int i=0;i<st.length();i++)\n    {\n        if(st[i]==')')\n        {\n            if(a.empty())cout<<\"ValueError: Parentheses not balanced\";\n            else a.pop();\n        }\n        else a.push(st[i]);\n    }\n    if(a.empty())cout<<\"true\";\n    else cout<<\"ValueError: Parentheses not balanced\";\n}",
+        "highlighted_code": "#include &lt;iostream&gt;\n#include &lt;stack&gt;\n<span class='highlight-green'>using namespace std;\n\nint main() {\n    stack&lt;char&gt;a;\n    string st;cin&gt;&gt;st;\n    for(int i=0;i&lt;st.length();i++)\n    {\n        if(st[i]==&#39;)&#39;)\n        </span>{\n            if<span class='highlight-green'>(a.empty())cout&lt;&lt;&#34;ValueError: Parentheses not balanced&#34;;\n            else a.pop();\n        }\n        </span>else a.push(st[i])<span class='highlight-green'>;\n    }\n    if(a.empty())cout&lt;&lt;&#34;true&#34;;\n    else cout&lt;&lt;</span>&#34;ValueError: Parentheses not balanced&#34;;\n}"
+      },
+      "token_overlap": 110,
+      "max_similarity_percent": 87.5
+    },
+    {
+      "case_id": 15,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3c726724325137447702e/14bfc7ed54df492fab26a1ff/sub_1763389837264_5oj23oy9s.py",
+        "similarity_percent": 87.3,
+        "full_code": "#include <iostream>\n#include <stack>\nusing namespace std;\n\nint main() {\n    stack<char>a;\n    string st;cin>>st;\n    for(int i=0;i<st.length();i++)\n    {\n        if(st[i]=='(')a.push(st[i]);\n        else if(a.empty())cout<<\"ValueError: Parentheses not balanced\";\n        else a.pop();\n    }\n    if(a.empty())cout<<\"true\";\n    else cout<<\"ValueError: Parentheses not balanced\";\n}",
+        "highlighted_code": "#include &lt;iostream&gt;\n#include &lt;stack&gt;\n<span class='highlight-red'>using namespace std;\n\nint main() {\n    stack&lt;char&gt;a;\n    string st;cin&gt;&gt;st;\n    for(int i=0;i&lt;st.length();i++)\n    {\n        if(st[i]==&#39;(&#39;)</span>a.push(st[i]);\n        else if<span class='highlight-red'>(a.empty())cout&lt;&lt;&#34;ValueError: Parentheses not balanced&#34;;\n        else a.pop();\n    }\n    if(a.empty())cout&lt;&lt;&#34;true&#34;;\n    else cout&lt;&lt;</span>&#34;ValueError: Parentheses not balanced&#34;;\n}"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3c726724325137447702e/14bfc7ed54df492fab26a1ff/sub_1763389248475_qy68zlzs3.py",
+        "similarity_percent": 87.5,
+        "full_code": "#include <iostream>\n#include <stack>\nusing namespace std;\n\nint main() {\n    stack<char>a;\n    string st;cin>>st;\n    for(int i=0;i<st.length();i++)\n    {\n        if(st[i]==')')\n        {\n            if(a.empty())cout<<\"ValueError: Parentheses not balanced\";\n            else a.pop();\n        }\n        else a.push(st[i]);\n    }\n    if(a.empty())cout<<\"true\";\n    else cout<<\"ValueError: Parentheses not balanced\";\n}",
+        "highlighted_code": "#include &lt;iostream&gt;\n#include &lt;stack&gt;\n<span class='highlight-green'>using namespace std;\n\nint main() {\n    stack&lt;char&gt;a;\n    string st;cin&gt;&gt;st;\n    for(int i=0;i&lt;st.length();i++)\n    {\n        if(st[i]==&#39;)&#39;)\n        </span>{\n            if<span class='highlight-green'>(a.empty())cout&lt;&lt;&#34;ValueError: Parentheses not balanced&#34;;\n            else a.pop();\n        }\n        </span>else a.push(st[i])<span class='highlight-green'>;\n    }\n    if(a.empty())cout&lt;&lt;&#34;true&#34;;\n    else cout&lt;&lt;</span>&#34;ValueError: Parentheses not balanced&#34;;\n}"
+      },
+      "token_overlap": 110,
+      "max_similarity_percent": 87.5
+    },
+    {
+      "case_id": 16,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3c726724325137447702e/14bfc7ed54df492fab26a1ff/sub_1763390457905_1nf6osdnk.py",
+        "similarity_percent": 86.57,
+        "full_code": "#include <iostream>\n#include <stack>\nusing namespace std;\n\nint main() {\n    stack<char>a;\n    string st;cin>>st;\n    for(int i=0;i<st.length();i++)\n    {\n        if(st[i]=='(')a.push(st[i]);\n        else if(a.empty()){cout<<\"ValueError: Parentheses not balanced\";break;}\n        else a.pop();\n    }\n    if(a.empty())cout<<\"true\";\n    else cout<<\"ValueError: Parentheses not balanced\";\n}",
+        "highlighted_code": "#include &lt;iostream&gt;\n#include &lt;stack&gt;\n<span class='highlight-red'>using namespace std;\n\nint main() {\n    stack&lt;char&gt;a;\n    string st;cin&gt;&gt;st;\n    </span><span class='highlight-red'>for(int i=0;i&lt;st.length();i++)\n    {\n        if(st[i]==&#39;(&#39;)a.push(st[i]);\n        else if(a.empty</span>()){cout&lt;&lt;&#34;ValueError: Parentheses not balanced&#34;;b<span class='highlight-red'>reak;}\n        else a.pop();\n    }\n    if(a.empty())cout&lt;&lt;&#34;true&#34;;\n    e</span>lse cout&lt;&lt;&#34;ValueError: Parentheses not balanced&#34;;\n}"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3c726724325137447702e/14bfc7ed54df492fab26a1ff/sub_1763391179837_9f4vrv9sx.py",
+        "similarity_percent": 73.89,
+        "full_code": "#include <iostream>\n#include <stack>\nusing namespace std;\n\nint main() {\n    stack<char>a;\n    string st;cin>>st;int kt=1;\n    for(int i=0;i<st.length();i++)\n    {\n        if(st[i]=='(')a.push(st[i]);\n        else if(a.empty()){kt=0;break;}\n        else a.pop();\n    }\n    if(a.empty())cout<<\"true\";\n    else if(kt==0||!a.empty()) cout<<\"ValueError: Parentheses not balanced\";\n}",
+        "highlighted_code": "#include &lt;iostream&gt;\n#include &lt;stack&gt;\n<span class='highlight-green'>using namespace std;\n\nint main() {\n    stack&lt;char&gt;a;\n    string st;cin&gt;&gt;st;</span>int kt=1;\n    <span class='highlight-green'>for(int i=0;i&lt;st.length();i++)\n    {\n        if(st[i]==&#39;(&#39;)a.push(st[i]);\n        else if(a.empty</span>()){kt=0;b<span class='highlight-green'>reak;}\n        else a.pop();\n    }\n    if(a.empty())cout&lt;&lt;&#34;true&#34;;\n    e</span>lse if(kt==0||!a.empty()) cout&lt;&lt;&#34;ValueError: Parentheses not balanced&#34;;\n}"
+      },
+      "token_overlap": 116,
+      "max_similarity_percent": 86.57
+    },
+    {
+      "case_id": 17,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3c726724325137447702e/14bfc7ed54df492fab26a1ff/sub_1763389885800_chzab9u09.py",
+        "similarity_percent": 86.51,
+        "full_code": "#include <iostream>\n#include <stack>\nusing namespace std;\n\nint main() {\n    stack<char>a;\n    string st;cin>>st;\n    for(int i=0;i<st.length();i++)\n    {\n        if(st[i]=='(')a.push(st[i]);\n        else if(a.empty())cout<<\"ValueError: Parentheses not balanced\";\n        else a.pop();\n    }\n    if(a.empty())cout<<\"true\";\n    else cout<<\"ValueError: Parentheses not balanced\";\n}",
+        "highlighted_code": "#include &lt;iostream&gt;\n#include &lt;stack&gt;\n<span class='highlight-red'>using namespace std;\n\nint main() {\n    stack&lt;char&gt;a;\n    string st;cin&gt;&gt;st;\n    </span><span class='highlight-red'>for(int i=0;i&lt;st.length();i++)\n    {\n        if(st[i]==&#39;(&#39;)a.push(st[i]);\n        else if(a.empty</span>())cout&lt;&lt;&#34;ValueError: Parentheses not balanced&#34;;\n        e<span class='highlight-red'>lse a.pop();\n    }\n    if(a.empty())cout&lt;&lt;&#34;true&#34;;\n    e</span>lse cout&lt;&lt;&#34;ValueError: Parentheses not balanced&#34;;\n}"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3c726724325137447702e/14bfc7ed54df492fab26a1ff/sub_1763391179837_9f4vrv9sx.py",
+        "similarity_percent": 69.43,
+        "full_code": "#include <iostream>\n#include <stack>\nusing namespace std;\n\nint main() {\n    stack<char>a;\n    string st;cin>>st;int kt=1;\n    for(int i=0;i<st.length();i++)\n    {\n        if(st[i]=='(')a.push(st[i]);\n        else if(a.empty()){kt=0;break;}\n        else a.pop();\n    }\n    if(a.empty())cout<<\"true\";\n    else if(kt==0||!a.empty()) cout<<\"ValueError: Parentheses not balanced\";\n}",
+        "highlighted_code": "#include &lt;iostream&gt;\n#include &lt;stack&gt;\n<span class='highlight-green'>using namespace std;\n\nint main() {\n    stack&lt;char&gt;a;\n    string st;cin&gt;&gt;st;</span>int kt=1;\n    <span class='highlight-green'>for(int i=0;i&lt;st.length();i++)\n    {\n        if(st[i]==&#39;(&#39;)a.push(st[i]);\n        else if(a.empty</span>()){kt=0;break;}\n        e<span class='highlight-green'>lse a.pop();\n    }\n    if(a.empty())cout&lt;&lt;&#34;true&#34;;\n    e</span>lse if(kt==0||!a.empty()) cout&lt;&lt;&#34;ValueError: Parentheses not balanced&#34;;\n}"
+      },
+      "token_overlap": 109,
+      "max_similarity_percent": 86.51
+    },
+    {
+      "case_id": 18,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3c726724325137447702e/14bfc7ed54df492fab26a1ff/sub_1763389837264_5oj23oy9s.py",
+        "similarity_percent": 86.51,
+        "full_code": "#include <iostream>\n#include <stack>\nusing namespace std;\n\nint main() {\n    stack<char>a;\n    string st;cin>>st;\n    for(int i=0;i<st.length();i++)\n    {\n        if(st[i]=='(')a.push(st[i]);\n        else if(a.empty())cout<<\"ValueError: Parentheses not balanced\";\n        else a.pop();\n    }\n    if(a.empty())cout<<\"true\";\n    else cout<<\"ValueError: Parentheses not balanced\";\n}",
+        "highlighted_code": "#include &lt;iostream&gt;\n#include &lt;stack&gt;\n<span class='highlight-red'>using namespace std;\n\nint main() {\n    stack&lt;char&gt;a;\n    string st;cin&gt;&gt;st;\n    </span><span class='highlight-red'>for(int i=0;i&lt;st.length();i++)\n    {\n        if(st[i]==&#39;(&#39;)a.push(st[i]);\n        else if(a.empty</span>())cout&lt;&lt;&#34;ValueError: Parentheses not balanced&#34;;\n        e<span class='highlight-red'>lse a.pop();\n    }\n    if(a.empty())cout&lt;&lt;&#34;true&#34;;\n    e</span>lse cout&lt;&lt;&#34;ValueError: Parentheses not balanced&#34;;\n}"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3c726724325137447702e/14bfc7ed54df492fab26a1ff/sub_1763391179837_9f4vrv9sx.py",
+        "similarity_percent": 69.43,
+        "full_code": "#include <iostream>\n#include <stack>\nusing namespace std;\n\nint main() {\n    stack<char>a;\n    string st;cin>>st;int kt=1;\n    for(int i=0;i<st.length();i++)\n    {\n        if(st[i]=='(')a.push(st[i]);\n        else if(a.empty()){kt=0;break;}\n        else a.pop();\n    }\n    if(a.empty())cout<<\"true\";\n    else if(kt==0||!a.empty()) cout<<\"ValueError: Parentheses not balanced\";\n}",
+        "highlighted_code": "#include &lt;iostream&gt;\n#include &lt;stack&gt;\n<span class='highlight-green'>using namespace std;\n\nint main() {\n    stack&lt;char&gt;a;\n    string st;cin&gt;&gt;st;</span>int kt=1;\n    <span class='highlight-green'>for(int i=0;i&lt;st.length();i++)\n    {\n        if(st[i]==&#39;(&#39;)a.push(st[i]);\n        else if(a.empty</span>()){kt=0;break;}\n        e<span class='highlight-green'>lse a.pop();\n    }\n    if(a.empty())cout&lt;&lt;&#34;true&#34;;\n    e</span>lse if(kt==0||!a.empty()) cout&lt;&lt;&#34;ValueError: Parentheses not balanced&#34;;\n}"
+      },
+      "token_overlap": 109,
+      "max_similarity_percent": 86.51
+    },
+    {
+      "case_id": 19,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3c726724325137447702e/14bfc7ed54df492fab26a1ff/sub_1763390363508_chmcebn28.py",
+        "similarity_percent": 86.51,
+        "full_code": "#include <iostream>\n#include <stack>\nusing namespace std;\n\nint main() {\n    stack<char>a;\n    string st;cin>>st;\n    for(int i=0;i<st.length();i++)\n    {\n        if(st[i]=='(')a.push(st[i]);\n        else if(a.empty())cout<<\"ValueError: Parentheses not balanced\";\n        else a.pop();\n    }\n    if(a.empty())cout<<\"true\";\n    else cout<<\"ValueError: Parentheses not balanced\";\n}",
+        "highlighted_code": "#include &lt;iostream&gt;\n#include &lt;stack&gt;\n<span class='highlight-red'>using namespace std;\n\nint main() {\n    stack&lt;char&gt;a;\n    string st;cin&gt;&gt;st;\n    </span><span class='highlight-red'>for(int i=0;i&lt;st.length();i++)\n    {\n        if(st[i]==&#39;(&#39;)a.push(st[i]);\n        else if(a.empty</span>())cout&lt;&lt;&#34;ValueError: Parentheses not balanced&#34;;\n        e<span class='highlight-red'>lse a.pop();\n    }\n    if(a.empty())cout&lt;&lt;&#34;true&#34;;\n    e</span>lse cout&lt;&lt;&#34;ValueError: Parentheses not balanced&#34;;\n}"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3c726724325137447702e/14bfc7ed54df492fab26a1ff/sub_1763391179837_9f4vrv9sx.py",
+        "similarity_percent": 69.43,
+        "full_code": "#include <iostream>\n#include <stack>\nusing namespace std;\n\nint main() {\n    stack<char>a;\n    string st;cin>>st;int kt=1;\n    for(int i=0;i<st.length();i++)\n    {\n        if(st[i]=='(')a.push(st[i]);\n        else if(a.empty()){kt=0;break;}\n        else a.pop();\n    }\n    if(a.empty())cout<<\"true\";\n    else if(kt==0||!a.empty()) cout<<\"ValueError: Parentheses not balanced\";\n}",
+        "highlighted_code": "#include &lt;iostream&gt;\n#include &lt;stack&gt;\n<span class='highlight-green'>using namespace std;\n\nint main() {\n    stack&lt;char&gt;a;\n    string st;cin&gt;&gt;st;</span>int kt=1;\n    <span class='highlight-green'>for(int i=0;i&lt;st.length();i++)\n    {\n        if(st[i]==&#39;(&#39;)a.push(st[i]);\n        else if(a.empty</span>()){kt=0;break;}\n        e<span class='highlight-green'>lse a.pop();\n    }\n    if(a.empty())cout&lt;&lt;&#34;true&#34;;\n    e</span>lse if(kt==0||!a.empty()) cout&lt;&lt;&#34;ValueError: Parentheses not balanced&#34;;\n}"
+      },
+      "token_overlap": 109,
+      "max_similarity_percent": 86.51
+    },
+    {
+      "case_id": 20,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3c726724325137447702e/14bfc7ed54df492fab26a1ff/sub_1763390319718_jr0elolhz.py",
+        "similarity_percent": 86.43,
+        "full_code": "#include <iostream>\n#include <stack>\nusing namespace std;\n\nint main() {\n    stack<char>a;\n    string st;cin>>st;\n    for(int i=0;i<st.length();i++)\n    {\n        if(st[i]=='(')a.push(st[i]);\n        else if(a.empty())cout<<\"ValueError: Parentheses not balanced\";\n        else if (a.top()=='(')a.pop();\n    }\n    if(a.empty())cout<<\"true\";\n    else cout<<\"ValueError: Parentheses not balanced\";\n}",
+        "highlighted_code": "#include &lt;iostream&gt;\n#include &lt;stack&gt;\n<span class='highlight-red'>using namespace std;\n\nint main() {\n    stack&lt;char&gt;a;\n    string st;cin&gt;&gt;st;\n    for(int i=0;i&lt;st.length();i++)\n    {\n        if(st[i]==&#39;(&#39;)a.push(st[i]);\n        else if(a.empty())cout&lt;&lt;&#34;ValueError: Parentheses not balanced&#34;;\n        else </span>if (a.top()==&#39;(&#39;)a.pop()<span class='highlight-red'>;\n    }\n    if(a.empty())cout&lt;&lt;&#34;true&#34;;\n    else cout&lt;&lt;</span>&#34;ValueError: Parentheses not balanced&#34;;\n}"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3c726724325137447702e/14bfc7ed54df492fab26a1ff/sub_1763389837264_5oj23oy9s.py",
+        "similarity_percent": 96.03,
+        "full_code": "#include <iostream>\n#include <stack>\nusing namespace std;\n\nint main() {\n    stack<char>a;\n    string st;cin>>st;\n    for(int i=0;i<st.length();i++)\n    {\n        if(st[i]=='(')a.push(st[i]);\n        else if(a.empty())cout<<\"ValueError: Parentheses not balanced\";\n        else a.pop();\n    }\n    if(a.empty())cout<<\"true\";\n    else cout<<\"ValueError: Parentheses not balanced\";\n}",
+        "highlighted_code": "#include &lt;iostream&gt;\n#include &lt;stack&gt;\n<span class='highlight-green'>using namespace std;\n\nint main() {\n    stack&lt;char&gt;a;\n    string st;cin&gt;&gt;st;\n    for(int i=0;i&lt;st.length();i++)\n    {\n        if(st[i]==&#39;(&#39;)a.push(st[i]);\n        else if(a.empty())cout&lt;&lt;&#34;ValueError: Parentheses not balanced&#34;;\n        else </span>a.pop()<span class='highlight-green'>;\n    }\n    if(a.empty())cout&lt;&lt;&#34;true&#34;;\n    else cout&lt;&lt;</span>&#34;ValueError: Parentheses not balanced&#34;;\n}"
+      },
+      "token_overlap": 121,
+      "max_similarity_percent": 96.03
+    },
+    {
+      "case_id": 21,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3c726724325137447702e/14bfc7ed54df492fab26a1ff/sub_1763390319718_jr0elolhz.py",
+        "similarity_percent": 86.43,
+        "full_code": "#include <iostream>\n#include <stack>\nusing namespace std;\n\nint main() {\n    stack<char>a;\n    string st;cin>>st;\n    for(int i=0;i<st.length();i++)\n    {\n        if(st[i]=='(')a.push(st[i]);\n        else if(a.empty())cout<<\"ValueError: Parentheses not balanced\";\n        else if (a.top()=='(')a.pop();\n    }\n    if(a.empty())cout<<\"true\";\n    else cout<<\"ValueError: Parentheses not balanced\";\n}",
+        "highlighted_code": "#include &lt;iostream&gt;\n#include &lt;stack&gt;\n<span class='highlight-red'>using namespace std;\n\nint main() {\n    stack&lt;char&gt;a;\n    string st;cin&gt;&gt;st;\n    for(int i=0;i&lt;st.length();i++)\n    {\n        if(st[i]==&#39;(&#39;)a.push(st[i]);\n        else if(a.empty())cout&lt;&lt;&#34;ValueError: Parentheses not balanced&#34;;\n        else </span>if (a.top()==&#39;(&#39;)a.pop()<span class='highlight-red'>;\n    }\n    if(a.empty())cout&lt;&lt;&#34;true&#34;;\n    else cout&lt;&lt;</span>&#34;ValueError: Parentheses not balanced&#34;;\n}"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3c726724325137447702e/14bfc7ed54df492fab26a1ff/sub_1763390363508_chmcebn28.py",
+        "similarity_percent": 96.03,
+        "full_code": "#include <iostream>\n#include <stack>\nusing namespace std;\n\nint main() {\n    stack<char>a;\n    string st;cin>>st;\n    for(int i=0;i<st.length();i++)\n    {\n        if(st[i]=='(')a.push(st[i]);\n        else if(a.empty())cout<<\"ValueError: Parentheses not balanced\";\n        else a.pop();\n    }\n    if(a.empty())cout<<\"true\";\n    else cout<<\"ValueError: Parentheses not balanced\";\n}",
+        "highlighted_code": "#include &lt;iostream&gt;\n#include &lt;stack&gt;\n<span class='highlight-green'>using namespace std;\n\nint main() {\n    stack&lt;char&gt;a;\n    string st;cin&gt;&gt;st;\n    for(int i=0;i&lt;st.length();i++)\n    {\n        if(st[i]==&#39;(&#39;)a.push(st[i]);\n        else if(a.empty())cout&lt;&lt;&#34;ValueError: Parentheses not balanced&#34;;\n        else </span>a.pop()<span class='highlight-green'>;\n    }\n    if(a.empty())cout&lt;&lt;&#34;true&#34;;\n    else cout&lt;&lt;</span>&#34;ValueError: Parentheses not balanced&#34;;\n}"
+      },
+      "token_overlap": 121,
+      "max_similarity_percent": 96.03
+    },
+    {
+      "case_id": 22,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3c726724325137447702e/14bfc7ed54df492fab26a1ff/sub_1763390457905_1nf6osdnk.py",
+        "similarity_percent": 85.82,
+        "full_code": "#include <iostream>\n#include <stack>\nusing namespace std;\n\nint main() {\n    stack<char>a;\n    string st;cin>>st;\n    for(int i=0;i<st.length();i++)\n    {\n        if(st[i]=='(')a.push(st[i]);\n        else if(a.empty()){cout<<\"ValueError: Parentheses not balanced\";break;}\n        else a.pop();\n    }\n    if(a.empty())cout<<\"true\";\n    else cout<<\"ValueError: Parentheses not balanced\";\n}",
+        "highlighted_code": "#include &lt;iostream&gt;\n#include &lt;stack&gt;\n<span class='highlight-red'>using namespace std;\n\nint main() {\n    stack&lt;char&gt;a;\n    string st;cin&gt;&gt;st;\n    for(int i=0;i&lt;st.length();i++)\n    {\n        if(st[i]==&#39;(&#39;)a.push(st[i]);\n        else if(a.empty</span>()){cout&lt;&lt;&#34;ValueError: Parentheses not balanced&#34;;break;}\n        e<span class='highlight-red'>lse a.pop();\n    }\n    if(a.empty())cout&lt;&lt;&#34;true&#34;;\n    else cout&lt;&lt;</span>&#34;ValueError: Parentheses not balanced&#34;;\n}"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3c726724325137447702e/14bfc7ed54df492fab26a1ff/sub_1763389837264_5oj23oy9s.py",
+        "similarity_percent": 91.27,
+        "full_code": "#include <iostream>\n#include <stack>\nusing namespace std;\n\nint main() {\n    stack<char>a;\n    string st;cin>>st;\n    for(int i=0;i<st.length();i++)\n    {\n        if(st[i]=='(')a.push(st[i]);\n        else if(a.empty())cout<<\"ValueError: Parentheses not balanced\";\n        else a.pop();\n    }\n    if(a.empty())cout<<\"true\";\n    else cout<<\"ValueError: Parentheses not balanced\";\n}",
+        "highlighted_code": "#include &lt;iostream&gt;\n#include &lt;stack&gt;\n<span class='highlight-green'>using namespace std;\n\nint main() {\n    stack&lt;char&gt;a;\n    string st;cin&gt;&gt;st;\n    for(int i=0;i&lt;st.length();i++)\n    {\n        if(st[i]==&#39;(&#39;)a.push(st[i]);\n        else if(a.empty</span>())cout&lt;&lt;&#34;ValueError: Parentheses not balanced&#34;;\n        e<span class='highlight-green'>lse a.pop();\n    }\n    if(a.empty())cout&lt;&lt;&#34;true&#34;;\n    else cout&lt;&lt;</span>&#34;ValueError: Parentheses not balanced&#34;;\n}"
+      },
+      "token_overlap": 115,
+      "max_similarity_percent": 91.27
+    },
+    {
+      "case_id": 23,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3c726724325137447702e/14bfc7ed54df492fab26a1ff/sub_1763390457905_1nf6osdnk.py",
+        "similarity_percent": 85.82,
+        "full_code": "#include <iostream>\n#include <stack>\nusing namespace std;\n\nint main() {\n    stack<char>a;\n    string st;cin>>st;\n    for(int i=0;i<st.length();i++)\n    {\n        if(st[i]=='(')a.push(st[i]);\n        else if(a.empty()){cout<<\"ValueError: Parentheses not balanced\";break;}\n        else a.pop();\n    }\n    if(a.empty())cout<<\"true\";\n    else cout<<\"ValueError: Parentheses not balanced\";\n}",
+        "highlighted_code": "#include &lt;iostream&gt;\n#include &lt;stack&gt;\n<span class='highlight-red'>using namespace std;\n\nint main() {\n    stack&lt;char&gt;a;\n    string st;cin&gt;&gt;st;\n    for(int i=0;i&lt;st.length();i++)\n    {\n        if(st[i]==&#39;(&#39;)a.push(st[i]);\n        else if(a.empty</span>()){cout&lt;&lt;&#34;ValueError: Parentheses not balanced&#34;;break;}\n        e<span class='highlight-red'>lse a.pop();\n    }\n    if(a.empty())cout&lt;&lt;&#34;true&#34;;\n    else cout&lt;&lt;</span>&#34;ValueError: Parentheses not balanced&#34;;\n}"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3c726724325137447702e/14bfc7ed54df492fab26a1ff/sub_1763390363508_chmcebn28.py",
+        "similarity_percent": 91.27,
+        "full_code": "#include <iostream>\n#include <stack>\nusing namespace std;\n\nint main() {\n    stack<char>a;\n    string st;cin>>st;\n    for(int i=0;i<st.length();i++)\n    {\n        if(st[i]=='(')a.push(st[i]);\n        else if(a.empty())cout<<\"ValueError: Parentheses not balanced\";\n        else a.pop();\n    }\n    if(a.empty())cout<<\"true\";\n    else cout<<\"ValueError: Parentheses not balanced\";\n}",
+        "highlighted_code": "#include &lt;iostream&gt;\n#include &lt;stack&gt;\n<span class='highlight-green'>using namespace std;\n\nint main() {\n    stack&lt;char&gt;a;\n    string st;cin&gt;&gt;st;\n    for(int i=0;i&lt;st.length();i++)\n    {\n        if(st[i]==&#39;(&#39;)a.push(st[i]);\n        else if(a.empty</span>())cout&lt;&lt;&#34;ValueError: Parentheses not balanced&#34;;\n        e<span class='highlight-green'>lse a.pop();\n    }\n    if(a.empty())cout&lt;&lt;&#34;true&#34;;\n    else cout&lt;&lt;</span>&#34;ValueError: Parentheses not balanced&#34;;\n}"
+      },
+      "token_overlap": 115,
+      "max_similarity_percent": 91.27
+    },
+    {
+      "case_id": 24,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3c726724325137447702e/cd93b2ff882a4ffa85f4518f/sub_1761549424898_uz6rs3p16.py",
+        "similarity_percent": 85.33,
+        "full_code": "s = input()\nba = 0\nfor ch in s:\n    if ch == '(':\n        ba += 1\n    elif ch == ')':\n        ba -= 1\n\nif ba == 0:\n    print(\"true\")\nelse:\n    print(\"ValueError: Parentheses not balanced\")\n",
+        "highlighted_code": "s = input()\n<span class='highlight-red'>ba = 0\nfor ch in s:\n    if ch == &#39;(&#39;:\n        ba += 1\n    elif ch == &#39;)&#39;:\n        ba -= 1\n\n</span>if <span class='highlight-red'>ba == 0:\n    print(&#34;true&#34;)\nelse:\n    print</span>(&#34;ValueError: Parentheses not balanced&#34;)\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3c726724325137447702e/aa97adecf36047f6879b441e/sub_1763482111421_m7utt6pql.py",
+        "similarity_percent": 63.37,
+        "full_code": "s = str(input())\ndem1=0\ndem2=0\nfor i in s:\n    if i == \"(\":\n        dem1 += 1\n    elif i == \")\":\n        dem1 -=1\n    elif dem1 < 0:\n        print(\"ValueError: Parentheses not balanced\")\nif dem1 == 0:\n    print('true')\nelse:\n    print('ValueError: Parentheses not balanced')",
+        "highlighted_code": "s = str(input())\ndem1=0\n<span class='highlight-green'>dem2=0\nfor i in s:\n    if i == &#34;(&#34;:\n        dem1 += 1\n    elif i == &#34;)&#34;:\n        dem1 -=1\n    </span>elif dem1 &lt; 0:\n        print(&#34;ValueError: Parentheses not balanced&#34;)\nif <span class='highlight-green'>dem1 == 0:\n    print(&#39;true&#39;)\nelse:\n    print</span>(&#39;ValueError: Parentheses not balanced&#39;)"
+      },
+      "token_overlap": 64,
+      "max_similarity_percent": 85.33
+    },
+    {
+      "case_id": 25,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3c726724325137447702e/8e236cb825b041b0a82527f2/sub_1761834838430_z56u92pem.py",
+        "similarity_percent": 84.88,
+        "full_code": "s = input()\nopening = 0\nfor c in s:\n    if c == \"(\":\n        opening += 1\n    elif c == \")\":\n        opening -= 1\n\nif len(s) > 0 and opening == 0:\n    print(\"true\")\nelse:\n    # raise ValueError(\"Parentheses not balanced\")\n    print(\"ValueError: Parentheses not balanced\")",
+        "highlighted_code": "<span class='highlight-red'>s = input()\nopening = 0\nfor c in s:\n    if c == &#34;(&#34;:\n        opening += 1\n    elif c == &#34;)&#34;:\n        opening -= 1\n\n</span>if len(s) &gt; 0 and <span class='highlight-red'>opening == 0:\n    print(&#34;true&#34;)\nelse:\n    # raise ValueError(&#34;Parentheses not balanced&#34;)\n    print</span>(&#34;ValueError: Parentheses not balanced&#34;)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3c726724325137447702e/cd93b2ff882a4ffa85f4518f/sub_1761549424898_uz6rs3p16.py",
+        "similarity_percent": 97.33,
+        "full_code": "s = input()\nba = 0\nfor ch in s:\n    if ch == '(':\n        ba += 1\n    elif ch == ')':\n        ba -= 1\n\nif ba == 0:\n    print(\"true\")\nelse:\n    print(\"ValueError: Parentheses not balanced\")\n",
+        "highlighted_code": "<span class='highlight-green'>s = input()\nba = 0\nfor ch in s:\n    if ch == &#39;(&#39;:\n        ba += 1\n    elif ch == &#39;)&#39;:\n        ba -= 1\n\n</span>if <span class='highlight-green'>ba == 0:\n    print(&#34;true&#34;)\nelse:\n    print</span>(&#34;ValueError: Parentheses not balanced&#34;)\n"
+      },
+      "token_overlap": 73,
+      "max_similarity_percent": 97.33
+    },
+    {
+      "case_id": 26,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3c726724325137447702e/8e236cb825b041b0a82527f2/sub_1761834838430_z56u92pem.py",
+        "similarity_percent": 84.88,
+        "full_code": "s = input()\nopening = 0\nfor c in s:\n    if c == \"(\":\n        opening += 1\n    elif c == \")\":\n        opening -= 1\n\nif len(s) > 0 and opening == 0:\n    print(\"true\")\nelse:\n    # raise ValueError(\"Parentheses not balanced\")\n    print(\"ValueError: Parentheses not balanced\")",
+        "highlighted_code": "<span class='highlight-red'>s = input()\nopening = 0\nfor c in s:\n    if c == &#34;(&#34;:\n        opening += 1\n    elif c == &#34;)&#34;:\n        opening -= 1\n\n</span>if len(s) &gt; 0 and <span class='highlight-red'>opening == 0:\n    print(&#34;true&#34;)\nelse:\n    # raise ValueError(&#34;Parentheses not balanced&#34;)\n    print</span>(&#34;ValueError: Parentheses not balanced&#34;)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3c726724325137447702e/8e236cb825b041b0a82527f2/sub_1761834643258_ijyost1nz.py",
+        "similarity_percent": 97.33,
+        "full_code": "s = input()\nopening = 0\nfor c in s:\n    if c == \"(\":\n        opening += 1\n    elif c == \")\":\n        opening -= 1\n\nif opening == 0:\n    print(\"true\")\nelse:\n    print(\"ValueError: Parentheses not balanced\")",
+        "highlighted_code": "<span class='highlight-green'>s = input()\nopening = 0\nfor c in s:\n    if c == &#34;(&#34;:\n        opening += 1\n    elif c == &#34;)&#34;:\n        opening -= 1\n\n</span>if <span class='highlight-green'>opening == 0:\n    print(&#34;true&#34;)\nelse:\n    print</span>(&#34;ValueError: Parentheses not balanced&#34;)"
+      },
+      "token_overlap": 73,
+      "max_similarity_percent": 97.33
+    },
+    {
+      "case_id": 27,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3c726724325137447702e/14bfc7ed54df492fab26a1ff/sub_1763391118390_aw40gpeb2.py",
+        "similarity_percent": 84.42,
+        "full_code": "#include <iostream>\n#include <stack>\nusing namespace std;\n\nint main() {\n    stack<char>a;\n    string st;cin>>st;int kt=1;\n    for(int i=0;i<st.length();i++)\n    {\n        if(st[i]=='(')a.push(st[i]);\n        else if(a.empty()){kt=0;break;}\n        else a.pop();\n    }\n    if(a.empty())cout<<\"true\";\n    if(kt==0||!a.empty()) cout<<\"ValueError: Parentheses not balanced\";\n}",
+        "highlighted_code": "#include &lt;iostream&gt;\n#include &lt;stack&gt;\n<span class='highlight-red'>using namespace std;\n\nint main() {\n    stack&lt;char&gt;a;\n    string st;cin&gt;&gt;st;int kt=1;\n    for(int i=0;i&lt;st.length();i++)\n    {\n        if(st[i]==&#39;(&#39;)a.push(st[i]);\n        else if(a.empty()){kt=0;break;}\n        else a.pop();\n    }\n    if(a.empty())cout&lt;&lt;&#34;true&#34;</span>;\n    if(kt==0||!a.empty()) cout&lt;&lt;&#34;ValueError: Parentheses not balanced&#34;;\n}"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3c726724325137447702e/14bfc7ed54df492fab26a1ff/sub_1763391179837_9f4vrv9sx.py",
+        "similarity_percent": 82.8,
+        "full_code": "#include <iostream>\n#include <stack>\nusing namespace std;\n\nint main() {\n    stack<char>a;\n    string st;cin>>st;int kt=1;\n    for(int i=0;i<st.length();i++)\n    {\n        if(st[i]=='(')a.push(st[i]);\n        else if(a.empty()){kt=0;break;}\n        else a.pop();\n    }\n    if(a.empty())cout<<\"true\";\n    else if(kt==0||!a.empty()) cout<<\"ValueError: Parentheses not balanced\";\n}",
+        "highlighted_code": "#include &lt;iostream&gt;\n#include &lt;stack&gt;\n<span class='highlight-green'>using namespace std;\n\nint main() {\n    stack&lt;char&gt;a;\n    string st;cin&gt;&gt;st;int kt=1;\n    for(int i=0;i&lt;st.length();i++)\n    {\n        if(st[i]==&#39;(&#39;)a.push(st[i]);\n        else if(a.empty()){kt=0;break;}\n        else a.pop();\n    }\n    if(a.empty())cout&lt;&lt;&#34;true&#34;</span>;\n    else if(kt==0||!a.empty()) cout&lt;&lt;&#34;ValueError: Parentheses not balanced&#34;;\n}"
+      },
+      "token_overlap": 130,
+      "max_similarity_percent": 84.42
+    },
+    {
+      "case_id": 28,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3c726724325137447702e/14bfc7ed54df492fab26a1ff/sub_1763390457905_1nf6osdnk.py",
+        "similarity_percent": 79.85,
+        "full_code": "#include <iostream>\n#include <stack>\nusing namespace std;\n\nint main() {\n    stack<char>a;\n    string st;cin>>st;\n    for(int i=0;i<st.length();i++)\n    {\n        if(st[i]=='(')a.push(st[i]);\n        else if(a.empty()){cout<<\"ValueError: Parentheses not balanced\";break;}\n        else a.pop();\n    }\n    if(a.empty())cout<<\"true\";\n    else cout<<\"ValueError: Parentheses not balanced\";\n}",
+        "highlighted_code": "#include &lt;iostream&gt;\n#include &lt;stack&gt;\n<span class='highlight-red'>using namespace std;\n\nint main() {\n    stack&lt;char&gt;a;\n    string st;cin&gt;&gt;st;\n    for(int i=0;i&lt;st.length();i++)\n    {\n        if(st[i]==&#39;(&#39;)a.push(st[i]);\n        else if(a.empty</span>()){cout&lt;&lt;&#34;ValueError: Parentheses not balanced&#34;;break;}\n        else a.pop()<span class='highlight-red'>;\n    }\n    if(a.empty())cout&lt;&lt;&#34;true&#34;;\n    else cout&lt;&lt;</span>&#34;ValueError: Parentheses not balanced&#34;;\n}"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3c726724325137447702e/14bfc7ed54df492fab26a1ff/sub_1763390319718_jr0elolhz.py",
+        "similarity_percent": 76.43,
+        "full_code": "#include <iostream>\n#include <stack>\nusing namespace std;\n\nint main() {\n    stack<char>a;\n    string st;cin>>st;\n    for(int i=0;i<st.length();i++)\n    {\n        if(st[i]=='(')a.push(st[i]);\n        else if(a.empty())cout<<\"ValueError: Parentheses not balanced\";\n        else if (a.top()=='(')a.pop();\n    }\n    if(a.empty())cout<<\"true\";\n    else cout<<\"ValueError: Parentheses not balanced\";\n}",
+        "highlighted_code": "#include &lt;iostream&gt;\n#include &lt;stack&gt;\n<span class='highlight-green'>using namespace std;\n\nint main() {\n    stack&lt;char&gt;a;\n    string st;cin&gt;&gt;st;\n    for(int i=0;i&lt;st.length();i++)\n    {\n        if(st[i]==&#39;(&#39;)a.push(st[i]);\n        else if(a.empty</span>())cout&lt;&lt;&#34;ValueError: Parentheses not balanced&#34;;\n        else if (a.top()==&#39;(&#39;)a.pop()<span class='highlight-green'>;\n    }\n    if(a.empty())cout&lt;&lt;&#34;true&#34;;\n    else cout&lt;&lt;</span>&#34;ValueError: Parentheses not balanced&#34;;\n}"
+      },
+      "token_overlap": 107,
+      "max_similarity_percent": 79.85
+    },
+    {
+      "case_id": 29,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3c726724325137447702e/8e236cb825b041b0a82527f2/sub_1761834682117_1hh91vny1.py",
+        "similarity_percent": 77.78,
+        "full_code": "s = input()\nopening = 0\nfor c in s:\n    if c == \"(\":\n        opening += 1\n    elif c == \")\":\n        opening -= 1\n\nif opening == 0:\n    print(\"true\")\nelse:\n    # print(\"ValueError: Parentheses not balanced\")\n    raise ValueError(\"Parentheses not balanced\")",
+        "highlighted_code": "<span class='highlight-red'>s = input()\nopening = 0\nfor c in s:\n    if c == &#34;(&#34;:\n        opening += 1\n    elif c == &#34;)&#34;:\n        opening -= 1\n\nif opening == 0:\n    print(&#34;true&#34;)\nelse:\n    # print(&#34;ValueError: Parentheses not balanced&#34;)\n    </span>raise ValueError(&#34;Parentheses not balanced&#34;)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3c726724325137447702e/8e236cb825b041b0a82527f2/sub_1761834643258_ijyost1nz.py",
+        "similarity_percent": 93.33,
+        "full_code": "s = input()\nopening = 0\nfor c in s:\n    if c == \"(\":\n        opening += 1\n    elif c == \")\":\n        opening -= 1\n\nif opening == 0:\n    print(\"true\")\nelse:\n    print(\"ValueError: Parentheses not balanced\")",
+        "highlighted_code": "<span class='highlight-green'>s = input()\nopening = 0\nfor c in s:\n    if c == &#34;(&#34;:\n        opening += 1\n    elif c == &#34;)&#34;:\n        opening -= 1\n\nif opening == 0:\n    print(&#34;true&#34;)\nelse:\n    </span>print(&#34;ValueError: Parentheses not balanced&#34;)"
+      },
+      "token_overlap": 70,
+      "max_similarity_percent": 93.33
+    },
+    {
+      "case_id": 30,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3c726724325137447702e/14bfc7ed54df492fab26a1ff/sub_1763391118390_aw40gpeb2.py",
+        "similarity_percent": 77.27,
+        "full_code": "#include <iostream>\n#include <stack>\nusing namespace std;\n\nint main() {\n    stack<char>a;\n    string st;cin>>st;int kt=1;\n    for(int i=0;i<st.length();i++)\n    {\n        if(st[i]=='(')a.push(st[i]);\n        else if(a.empty()){kt=0;break;}\n        else a.pop();\n    }\n    if(a.empty())cout<<\"true\";\n    if(kt==0||!a.empty()) cout<<\"ValueError: Parentheses not balanced\";\n}",
+        "highlighted_code": "#include &lt;iostream&gt;\n#include &lt;stack&gt;\n<span class='highlight-red'>using namespace std;\n\nint main() {\n    stack&lt;char&gt;a;\n    string st;cin&gt;&gt;st;int kt=1;\n    for(int i=0;i&lt;st.length();i++)\n    {\n        if(st[i]==&#39;(&#39;)a.push(st[i]);\n        else if(a.empty()){kt=0;break;}\n        else a.pop();\n    }\n    if(a</span>.empty())cout&lt;&lt;&#34;true&#34;;\n    if(kt==0||!a.empty()) cout&lt;&lt;&#34;ValueError: Parentheses not balanced&#34;;\n}"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3c726724325137447702e/14bfc7ed54df492fab26a1ff/sub_1763391365971_rejyeauhy.py",
+        "similarity_percent": 82.07,
+        "full_code": "#include <iostream>\n#include <stack>\nusing namespace std;\n\nint main() {\n    stack<char>a;\n    string st;cin>>st;int kt=1;\n    for(int i=0;i<st.length();i++)\n    {\n        if(st[i]=='(')a.push(st[i]);\n        else if(a.empty()){kt=0;break;}\n        else a.pop();\n    }\n    if (kt == 1 && a.empty()) cout << \"true\";\n    else cout << \"ValueError: Parentheses not balanced\";\n}",
+        "highlighted_code": "#include &lt;iostream&gt;\n#include &lt;stack&gt;\n<span class='highlight-green'>using namespace std;\n\nint main() {\n    stack&lt;char&gt;a;\n    string st;cin&gt;&gt;st;int kt=1;\n    for(int i=0;i&lt;st.length();i++)\n    {\n        if(st[i]==&#39;(&#39;)a.push(st[i]);\n        else if(a.empty()){kt=0;break;}\n        else a.pop();\n    }\n    if (kt </span>== 1 &amp;&amp; a.empty()) cout &lt;&lt; &#34;true&#34;;\n    else cout &lt;&lt; &#34;ValueError: Parentheses not balanced&#34;;\n}"
+      },
+      "token_overlap": 119,
+      "max_similarity_percent": 82.07
+    },
+    {
+      "case_id": 31,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3c726724325137447702e/14bfc7ed54df492fab26a1ff/sub_1763391118390_aw40gpeb2.py",
+        "similarity_percent": 77.27,
+        "full_code": "#include <iostream>\n#include <stack>\nusing namespace std;\n\nint main() {\n    stack<char>a;\n    string st;cin>>st;int kt=1;\n    for(int i=0;i<st.length();i++)\n    {\n        if(st[i]=='(')a.push(st[i]);\n        else if(a.empty()){kt=0;break;}\n        else a.pop();\n    }\n    if(a.empty())cout<<\"true\";\n    if(kt==0||!a.empty()) cout<<\"ValueError: Parentheses not balanced\";\n}",
+        "highlighted_code": "#include &lt;iostream&gt;\n#include &lt;stack&gt;\n<span class='highlight-red'>using namespace std;\n\nint main() {\n    stack&lt;char&gt;a;\n    string st;cin&gt;&gt;st;int kt=1;\n    for(int i=0;i&lt;st.length();i++)\n    {\n        if(st[i]==&#39;(&#39;)a.push(st[i]);\n        else if(a.empty()){kt=0;break;}\n        else a.pop();\n    }\n    if(a</span>.empty())cout&lt;&lt;&#34;true&#34;;\n    if(kt==0||!a.empty()) cout&lt;&lt;&#34;ValueError: Parentheses not balanced&#34;;\n}"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3c726724325137447702e/14bfc7ed54df492fab26a1ff/sub_1763391379451_sb2p10qeh.py",
+        "similarity_percent": 82.07,
+        "full_code": "#include <iostream>\n#include <stack>\nusing namespace std;\n\nint main() {\n    stack<char>a;\n    string st;cin>>st;int kt=1;\n    for(int i=0;i<st.length();i++)\n    {\n        if(st[i]=='(')a.push(st[i]);\n        else if(a.empty()){kt=0;break;}\n        else a.pop();\n    }\n    if (kt == 1 && a.empty()) cout << \"true\";\n    else cout << \"ValueError: Parentheses not balanced\";\n}",
+        "highlighted_code": "#include &lt;iostream&gt;\n#include &lt;stack&gt;\n<span class='highlight-green'>using namespace std;\n\nint main() {\n    stack&lt;char&gt;a;\n    string st;cin&gt;&gt;st;int kt=1;\n    for(int i=0;i&lt;st.length();i++)\n    {\n        if(st[i]==&#39;(&#39;)a.push(st[i]);\n        else if(a.empty()){kt=0;break;}\n        else a.pop();\n    }\n    if (kt </span>== 1 &amp;&amp; a.empty()) cout &lt;&lt; &#34;true&#34;;\n    else cout &lt;&lt; &#34;ValueError: Parentheses not balanced&#34;;\n}"
+      },
+      "token_overlap": 119,
+      "max_similarity_percent": 82.07
+    },
+    {
+      "case_id": 32,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3c726724325137447702e/14bfc7ed54df492fab26a1ff/sub_1763391179837_9f4vrv9sx.py",
+        "similarity_percent": 75.8,
+        "full_code": "#include <iostream>\n#include <stack>\nusing namespace std;\n\nint main() {\n    stack<char>a;\n    string st;cin>>st;int kt=1;\n    for(int i=0;i<st.length();i++)\n    {\n        if(st[i]=='(')a.push(st[i]);\n        else if(a.empty()){kt=0;break;}\n        else a.pop();\n    }\n    if(a.empty())cout<<\"true\";\n    else if(kt==0||!a.empty()) cout<<\"ValueError: Parentheses not balanced\";\n}",
+        "highlighted_code": "#include &lt;iostream&gt;\n#include &lt;stack&gt;\n<span class='highlight-red'>using namespace std;\n\nint main() {\n    stack&lt;char&gt;a;\n    string st;cin&gt;&gt;st;int kt=1;\n    for(int i=0;i&lt;st.length();i++)\n    {\n        if(st[i]==&#39;(&#39;)a.push(st[i]);\n        else if(a.empty()){kt=0;break;}\n        else a.pop();\n    }\n    if(a</span>.empty())cout&lt;&lt;&#34;true&#34;;\n    else if(kt==0||!a.empty()) cout&lt;&lt;&#34;ValueError: Parentheses not balanced&#34;;\n}"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3c726724325137447702e/14bfc7ed54df492fab26a1ff/sub_1763391365971_rejyeauhy.py",
+        "similarity_percent": 82.07,
+        "full_code": "#include <iostream>\n#include <stack>\nusing namespace std;\n\nint main() {\n    stack<char>a;\n    string st;cin>>st;int kt=1;\n    for(int i=0;i<st.length();i++)\n    {\n        if(st[i]=='(')a.push(st[i]);\n        else if(a.empty()){kt=0;break;}\n        else a.pop();\n    }\n    if (kt == 1 && a.empty()) cout << \"true\";\n    else cout << \"ValueError: Parentheses not balanced\";\n}",
+        "highlighted_code": "#include &lt;iostream&gt;\n#include &lt;stack&gt;\n<span class='highlight-green'>using namespace std;\n\nint main() {\n    stack&lt;char&gt;a;\n    string st;cin&gt;&gt;st;int kt=1;\n    for(int i=0;i&lt;st.length();i++)\n    {\n        if(st[i]==&#39;(&#39;)a.push(st[i]);\n        else if(a.empty()){kt=0;break;}\n        else a.pop();\n    }\n    if (kt </span>== 1 &amp;&amp; a.empty()) cout &lt;&lt; &#34;true&#34;;\n    else cout &lt;&lt; &#34;ValueError: Parentheses not balanced&#34;;\n}"
+      },
+      "token_overlap": 119,
+      "max_similarity_percent": 82.07
+    },
+    {
+      "case_id": 33,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3c726724325137447702e/14bfc7ed54df492fab26a1ff/sub_1763391179837_9f4vrv9sx.py",
+        "similarity_percent": 75.8,
+        "full_code": "#include <iostream>\n#include <stack>\nusing namespace std;\n\nint main() {\n    stack<char>a;\n    string st;cin>>st;int kt=1;\n    for(int i=0;i<st.length();i++)\n    {\n        if(st[i]=='(')a.push(st[i]);\n        else if(a.empty()){kt=0;break;}\n        else a.pop();\n    }\n    if(a.empty())cout<<\"true\";\n    else if(kt==0||!a.empty()) cout<<\"ValueError: Parentheses not balanced\";\n}",
+        "highlighted_code": "#include &lt;iostream&gt;\n#include &lt;stack&gt;\n<span class='highlight-red'>using namespace std;\n\nint main() {\n    stack&lt;char&gt;a;\n    string st;cin&gt;&gt;st;int kt=1;\n    for(int i=0;i&lt;st.length();i++)\n    {\n        if(st[i]==&#39;(&#39;)a.push(st[i]);\n        else if(a.empty()){kt=0;break;}\n        else a.pop();\n    }\n    if(a</span>.empty())cout&lt;&lt;&#34;true&#34;;\n    else if(kt==0||!a.empty()) cout&lt;&lt;&#34;ValueError: Parentheses not balanced&#34;;\n}"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3c726724325137447702e/14bfc7ed54df492fab26a1ff/sub_1763391379451_sb2p10qeh.py",
+        "similarity_percent": 82.07,
+        "full_code": "#include <iostream>\n#include <stack>\nusing namespace std;\n\nint main() {\n    stack<char>a;\n    string st;cin>>st;int kt=1;\n    for(int i=0;i<st.length();i++)\n    {\n        if(st[i]=='(')a.push(st[i]);\n        else if(a.empty()){kt=0;break;}\n        else a.pop();\n    }\n    if (kt == 1 && a.empty()) cout << \"true\";\n    else cout << \"ValueError: Parentheses not balanced\";\n}",
+        "highlighted_code": "#include &lt;iostream&gt;\n#include &lt;stack&gt;\n<span class='highlight-green'>using namespace std;\n\nint main() {\n    stack&lt;char&gt;a;\n    string st;cin&gt;&gt;st;int kt=1;\n    for(int i=0;i&lt;st.length();i++)\n    {\n        if(st[i]==&#39;(&#39;)a.push(st[i]);\n        else if(a.empty()){kt=0;break;}\n        else a.pop();\n    }\n    if (kt </span>== 1 &amp;&amp; a.empty()) cout &lt;&lt; &#34;true&#34;;\n    else cout &lt;&lt; &#34;ValueError: Parentheses not balanced&#34;;\n}"
+      },
+      "token_overlap": 119,
+      "max_similarity_percent": 82.07
+    },
+    {
+      "case_id": 34,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3c726724325137447702e/8e236cb825b041b0a82527f2/sub_1761834838430_z56u92pem.py",
+        "similarity_percent": 74.42,
+        "full_code": "s = input()\nopening = 0\nfor c in s:\n    if c == \"(\":\n        opening += 1\n    elif c == \")\":\n        opening -= 1\n\nif len(s) > 0 and opening == 0:\n    print(\"true\")\nelse:\n    # raise ValueError(\"Parentheses not balanced\")\n    print(\"ValueError: Parentheses not balanced\")",
+        "highlighted_code": "s = input()\n<span class='highlight-red'>opening = 0\nfor c in s:\n    if c == &#34;(&#34;:\n        opening += 1\n    elif c == &#34;)&#34;:\n        opening -= 1\n\n</span>if len(s) &gt; 0 and <span class='highlight-red'>opening == 0:\n    print(&#34;true&#34;)\nelse:\n    # raise ValueError(&#34;Parentheses not balanced&#34;)\n    print</span>(&#34;ValueError: Parentheses not balanced&#34;)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3c726724325137447702e/aa97adecf36047f6879b441e/sub_1763482111421_m7utt6pql.py",
+        "similarity_percent": 63.37,
+        "full_code": "s = str(input())\ndem1=0\ndem2=0\nfor i in s:\n    if i == \"(\":\n        dem1 += 1\n    elif i == \")\":\n        dem1 -=1\n    elif dem1 < 0:\n        print(\"ValueError: Parentheses not balanced\")\nif dem1 == 0:\n    print('true')\nelse:\n    print('ValueError: Parentheses not balanced')",
+        "highlighted_code": "s = str(input())\ndem1=0\n<span class='highlight-green'>dem2=0\nfor i in s:\n    if i == &#34;(&#34;:\n        dem1 += 1\n    elif i == &#34;)&#34;:\n        dem1 -=1\n    </span>elif dem1 &lt; 0:\n        print(&#34;ValueError: Parentheses not balanced&#34;)\nif <span class='highlight-green'>dem1 == 0:\n    print(&#39;true&#39;)\nelse:\n    print</span>(&#39;ValueError: Parentheses not balanced&#39;)"
+      },
+      "token_overlap": 64,
+      "max_similarity_percent": 74.42
+    },
+    {
+      "case_id": 35,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3c726724325137447702e/14bfc7ed54df492fab26a1ff/sub_1763391118390_aw40gpeb2.py",
+        "similarity_percent": 74.03,
+        "full_code": "#include <iostream>\n#include <stack>\nusing namespace std;\n\nint main() {\n    stack<char>a;\n    string st;cin>>st;int kt=1;\n    for(int i=0;i<st.length();i++)\n    {\n        if(st[i]=='(')a.push(st[i]);\n        else if(a.empty()){kt=0;break;}\n        else a.pop();\n    }\n    if(a.empty())cout<<\"true\";\n    if(kt==0||!a.empty()) cout<<\"ValueError: Parentheses not balanced\";\n}",
+        "highlighted_code": "#include &lt;iostream&gt;\n#include &lt;stack&gt;\n<span class='highlight-red'>using namespace std;\n\nint main() {\n    stack&lt;char&gt;a;\n    string st;cin&gt;&gt;st;</span>int kt=1;\n    <span class='highlight-red'>for(int i=0;i&lt;st.length();i++)\n    {\n        if(st[i]==&#39;(&#39;)a.push(st[i]);\n        else if(a.empty</span>()){kt=0;b<span class='highlight-red'>reak;}\n        else a.pop();\n    }\n    if(a.empty())cout&lt;&lt;&#34;true&#34;</span>;\n    if(kt==0||!a.empty()) cout&lt;&lt;&#34;ValueError: Parentheses not balanced&#34;;\n}"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3c726724325137447702e/14bfc7ed54df492fab26a1ff/sub_1763390457905_1nf6osdnk.py",
+        "similarity_percent": 85.07,
+        "full_code": "#include <iostream>\n#include <stack>\nusing namespace std;\n\nint main() {\n    stack<char>a;\n    string st;cin>>st;\n    for(int i=0;i<st.length();i++)\n    {\n        if(st[i]=='(')a.push(st[i]);\n        else if(a.empty()){cout<<\"ValueError: Parentheses not balanced\";break;}\n        else a.pop();\n    }\n    if(a.empty())cout<<\"true\";\n    else cout<<\"ValueError: Parentheses not balanced\";\n}",
+        "highlighted_code": "#include &lt;iostream&gt;\n#include &lt;stack&gt;\n<span class='highlight-green'>using namespace std;\n\nint main() {\n    stack&lt;char&gt;a;\n    string st;cin&gt;&gt;st;\n    </span><span class='highlight-green'>for(int i=0;i&lt;st.length();i++)\n    {\n        if(st[i]==&#39;(&#39;)a.push(st[i]);\n        else if(a.empty</span>()){cout&lt;&lt;&#34;ValueError: Parentheses not balanced&#34;;b<span class='highlight-green'>reak;}\n        else a.pop();\n    }\n    if(a.empty())cout&lt;&lt;&#34;true&#34;</span>;\n    else cout&lt;&lt;&#34;ValueError: Parentheses not balanced&#34;;\n}"
+      },
+      "token_overlap": 114,
+      "max_similarity_percent": 85.07
+    },
+    {
+      "case_id": 36,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3c726724325137447702e/14bfc7ed54df492fab26a1ff/sub_1763391118390_aw40gpeb2.py",
+        "similarity_percent": 69.48,
+        "full_code": "#include <iostream>\n#include <stack>\nusing namespace std;\n\nint main() {\n    stack<char>a;\n    string st;cin>>st;int kt=1;\n    for(int i=0;i<st.length();i++)\n    {\n        if(st[i]=='(')a.push(st[i]);\n        else if(a.empty()){kt=0;break;}\n        else a.pop();\n    }\n    if(a.empty())cout<<\"true\";\n    if(kt==0||!a.empty()) cout<<\"ValueError: Parentheses not balanced\";\n}",
+        "highlighted_code": "#include &lt;iostream&gt;\n#include &lt;stack&gt;\n<span class='highlight-red'>using namespace std;\n\nint main() {\n    stack&lt;char&gt;a;\n    string st;cin&gt;&gt;st;</span>int kt=1;\n    <span class='highlight-red'>for(int i=0;i&lt;st.length();i++)\n    {\n        if(st[i]==&#39;(&#39;)a.push(st[i]);\n        else if(a.empty</span>()){kt=0;break;}\n        e<span class='highlight-red'>lse a.pop();\n    }\n    if(a.empty())cout&lt;&lt;&#34;true&#34;</span>;\n    if(kt==0||!a.empty()) cout&lt;&lt;&#34;ValueError: Parentheses not balanced&#34;;\n}"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3c726724325137447702e/14bfc7ed54df492fab26a1ff/sub_1763389885800_chzab9u09.py",
+        "similarity_percent": 84.92,
+        "full_code": "#include <iostream>\n#include <stack>\nusing namespace std;\n\nint main() {\n    stack<char>a;\n    string st;cin>>st;\n    for(int i=0;i<st.length();i++)\n    {\n        if(st[i]=='(')a.push(st[i]);\n        else if(a.empty())cout<<\"ValueError: Parentheses not balanced\";\n        else a.pop();\n    }\n    if(a.empty())cout<<\"true\";\n    else cout<<\"ValueError: Parentheses not balanced\";\n}",
+        "highlighted_code": "#include &lt;iostream&gt;\n#include &lt;stack&gt;\n<span class='highlight-green'>using namespace std;\n\nint main() {\n    stack&lt;char&gt;a;\n    string st;cin&gt;&gt;st;\n    </span><span class='highlight-green'>for(int i=0;i&lt;st.length();i++)\n    {\n        if(st[i]==&#39;(&#39;)a.push(st[i]);\n        else if(a.empty</span>())cout&lt;&lt;&#34;ValueError: Parentheses not balanced&#34;;\n        e<span class='highlight-green'>lse a.pop();\n    }\n    if(a.empty())cout&lt;&lt;&#34;true&#34;</span>;\n    else cout&lt;&lt;&#34;ValueError: Parentheses not balanced&#34;;\n}"
+      },
+      "token_overlap": 107,
+      "max_similarity_percent": 84.92
+    },
+    {
+      "case_id": 37,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3c726724325137447702e/14bfc7ed54df492fab26a1ff/sub_1763391118390_aw40gpeb2.py",
+        "similarity_percent": 69.48,
+        "full_code": "#include <iostream>\n#include <stack>\nusing namespace std;\n\nint main() {\n    stack<char>a;\n    string st;cin>>st;int kt=1;\n    for(int i=0;i<st.length();i++)\n    {\n        if(st[i]=='(')a.push(st[i]);\n        else if(a.empty()){kt=0;break;}\n        else a.pop();\n    }\n    if(a.empty())cout<<\"true\";\n    if(kt==0||!a.empty()) cout<<\"ValueError: Parentheses not balanced\";\n}",
+        "highlighted_code": "#include &lt;iostream&gt;\n#include &lt;stack&gt;\n<span class='highlight-red'>using namespace std;\n\nint main() {\n    stack&lt;char&gt;a;\n    string st;cin&gt;&gt;st;</span>int kt=1;\n    <span class='highlight-red'>for(int i=0;i&lt;st.length();i++)\n    {\n        if(st[i]==&#39;(&#39;)a.push(st[i]);\n        else if(a.empty</span>()){kt=0;break;}\n        e<span class='highlight-red'>lse a.pop();\n    }\n    if(a.empty())cout&lt;&lt;&#34;true&#34;</span>;\n    if(kt==0||!a.empty()) cout&lt;&lt;&#34;ValueError: Parentheses not balanced&#34;;\n}"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3c726724325137447702e/14bfc7ed54df492fab26a1ff/sub_1763389837264_5oj23oy9s.py",
+        "similarity_percent": 84.92,
+        "full_code": "#include <iostream>\n#include <stack>\nusing namespace std;\n\nint main() {\n    stack<char>a;\n    string st;cin>>st;\n    for(int i=0;i<st.length();i++)\n    {\n        if(st[i]=='(')a.push(st[i]);\n        else if(a.empty())cout<<\"ValueError: Parentheses not balanced\";\n        else a.pop();\n    }\n    if(a.empty())cout<<\"true\";\n    else cout<<\"ValueError: Parentheses not balanced\";\n}",
+        "highlighted_code": "#include &lt;iostream&gt;\n#include &lt;stack&gt;\n<span class='highlight-green'>using namespace std;\n\nint main() {\n    stack&lt;char&gt;a;\n    string st;cin&gt;&gt;st;\n    </span><span class='highlight-green'>for(int i=0;i&lt;st.length();i++)\n    {\n        if(st[i]==&#39;(&#39;)a.push(st[i]);\n        else if(a.empty</span>())cout&lt;&lt;&#34;ValueError: Parentheses not balanced&#34;;\n        e<span class='highlight-green'>lse a.pop();\n    }\n    if(a.empty())cout&lt;&lt;&#34;true&#34;</span>;\n    else cout&lt;&lt;&#34;ValueError: Parentheses not balanced&#34;;\n}"
+      },
+      "token_overlap": 107,
+      "max_similarity_percent": 84.92
+    },
+    {
+      "case_id": 38,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3c726724325137447702e/14bfc7ed54df492fab26a1ff/sub_1763391118390_aw40gpeb2.py",
+        "similarity_percent": 69.48,
+        "full_code": "#include <iostream>\n#include <stack>\nusing namespace std;\n\nint main() {\n    stack<char>a;\n    string st;cin>>st;int kt=1;\n    for(int i=0;i<st.length();i++)\n    {\n        if(st[i]=='(')a.push(st[i]);\n        else if(a.empty()){kt=0;break;}\n        else a.pop();\n    }\n    if(a.empty())cout<<\"true\";\n    if(kt==0||!a.empty()) cout<<\"ValueError: Parentheses not balanced\";\n}",
+        "highlighted_code": "#include &lt;iostream&gt;\n#include &lt;stack&gt;\n<span class='highlight-red'>using namespace std;\n\nint main() {\n    stack&lt;char&gt;a;\n    string st;cin&gt;&gt;st;</span>int kt=1;\n    <span class='highlight-red'>for(int i=0;i&lt;st.length();i++)\n    {\n        if(st[i]==&#39;(&#39;)a.push(st[i]);\n        else if(a.empty</span>()){kt=0;break;}\n        e<span class='highlight-red'>lse a.pop();\n    }\n    if(a.empty())cout&lt;&lt;&#34;true&#34;</span>;\n    if(kt==0||!a.empty()) cout&lt;&lt;&#34;ValueError: Parentheses not balanced&#34;;\n}"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3c726724325137447702e/14bfc7ed54df492fab26a1ff/sub_1763390363508_chmcebn28.py",
+        "similarity_percent": 84.92,
+        "full_code": "#include <iostream>\n#include <stack>\nusing namespace std;\n\nint main() {\n    stack<char>a;\n    string st;cin>>st;\n    for(int i=0;i<st.length();i++)\n    {\n        if(st[i]=='(')a.push(st[i]);\n        else if(a.empty())cout<<\"ValueError: Parentheses not balanced\";\n        else a.pop();\n    }\n    if(a.empty())cout<<\"true\";\n    else cout<<\"ValueError: Parentheses not balanced\";\n}",
+        "highlighted_code": "#include &lt;iostream&gt;\n#include &lt;stack&gt;\n<span class='highlight-green'>using namespace std;\n\nint main() {\n    stack&lt;char&gt;a;\n    string st;cin&gt;&gt;st;\n    </span><span class='highlight-green'>for(int i=0;i&lt;st.length();i++)\n    {\n        if(st[i]==&#39;(&#39;)a.push(st[i]);\n        else if(a.empty</span>())cout&lt;&lt;&#34;ValueError: Parentheses not balanced&#34;;\n        e<span class='highlight-green'>lse a.pop();\n    }\n    if(a.empty())cout&lt;&lt;&#34;true&#34;</span>;\n    else cout&lt;&lt;&#34;ValueError: Parentheses not balanced&#34;;\n}"
+      },
+      "token_overlap": 107,
+      "max_similarity_percent": 84.92
+    },
+    {
+      "case_id": 39,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3c726724325137447702e/14bfc7ed54df492fab26a1ff/sub_1763389885800_chzab9u09.py",
+        "similarity_percent": 65.08,
+        "full_code": "#include <iostream>\n#include <stack>\nusing namespace std;\n\nint main() {\n    stack<char>a;\n    string st;cin>>st;\n    for(int i=0;i<st.length();i++)\n    {\n        if(st[i]=='(')a.push(st[i]);\n        else if(a.empty())cout<<\"ValueError: Parentheses not balanced\";\n        else a.pop();\n    }\n    if(a.empty())cout<<\"true\";\n    else cout<<\"ValueError: Parentheses not balanced\";\n}",
+        "highlighted_code": "#include &lt;iostream&gt;\n#include &lt;stack&gt;\n<span class='highlight-red'>using namespace std;\n\nint main() {\n    stack&lt;char&gt;a;\n    string st;cin&gt;&gt;st;\n    </span><span class='highlight-red'>for(int i=0;i&lt;st.length();i++)\n    {\n        if(st[i]==&#39;(&#39;)a.push(st[i]);\n        else if(a.empty</span>())cout&lt;&lt;&#34;ValueError: Parentheses not balanced&#34;;\n        else a.pop();\n    }\n    if(a.empty())cout&lt;&lt;&#34;true&#34;;\n    else cout&lt;&lt;&#34;ValueError: Parentheses not balanced&#34;;\n}"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3c726724325137447702e/14bfc7ed54df492fab26a1ff/sub_1763391365971_rejyeauhy.py",
+        "similarity_percent": 56.55,
+        "full_code": "#include <iostream>\n#include <stack>\nusing namespace std;\n\nint main() {\n    stack<char>a;\n    string st;cin>>st;int kt=1;\n    for(int i=0;i<st.length();i++)\n    {\n        if(st[i]=='(')a.push(st[i]);\n        else if(a.empty()){kt=0;break;}\n        else a.pop();\n    }\n    if (kt == 1 && a.empty()) cout << \"true\";\n    else cout << \"ValueError: Parentheses not balanced\";\n}",
+        "highlighted_code": "#include &lt;iostream&gt;\n#include &lt;stack&gt;\n<span class='highlight-green'>using namespace std;\n\nint main() {\n    stack&lt;char&gt;a;\n    string st;cin&gt;&gt;st;</span>int kt=1;\n    <span class='highlight-green'>for(int i=0;i&lt;st.length();i++)\n    {\n        if(st[i]==&#39;(&#39;)a.push(st[i]);\n        else if(a.empty</span>()){kt=0;break;}\n        else a.pop();\n    }\n    if (kt == 1 &amp;&amp; a.empty()) cout &lt;&lt; &#34;true&#34;;\n    else cout &lt;&lt; &#34;ValueError: Parentheses not balanced&#34;;\n}"
+      },
+      "token_overlap": 82,
+      "max_similarity_percent": 65.08
+    },
+    {
+      "case_id": 40,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3c726724325137447702e/14bfc7ed54df492fab26a1ff/sub_1763389885800_chzab9u09.py",
+        "similarity_percent": 65.08,
+        "full_code": "#include <iostream>\n#include <stack>\nusing namespace std;\n\nint main() {\n    stack<char>a;\n    string st;cin>>st;\n    for(int i=0;i<st.length();i++)\n    {\n        if(st[i]=='(')a.push(st[i]);\n        else if(a.empty())cout<<\"ValueError: Parentheses not balanced\";\n        else a.pop();\n    }\n    if(a.empty())cout<<\"true\";\n    else cout<<\"ValueError: Parentheses not balanced\";\n}",
+        "highlighted_code": "#include &lt;iostream&gt;\n#include &lt;stack&gt;\n<span class='highlight-red'>using namespace std;\n\nint main() {\n    stack&lt;char&gt;a;\n    string st;cin&gt;&gt;st;\n    </span><span class='highlight-red'>for(int i=0;i&lt;st.length();i++)\n    {\n        if(st[i]==&#39;(&#39;)a.push(st[i]);\n        else if(a.empty</span>())cout&lt;&lt;&#34;ValueError: Parentheses not balanced&#34;;\n        else a.pop();\n    }\n    if(a.empty())cout&lt;&lt;&#34;true&#34;;\n    else cout&lt;&lt;&#34;ValueError: Parentheses not balanced&#34;;\n}"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3c726724325137447702e/14bfc7ed54df492fab26a1ff/sub_1763391379451_sb2p10qeh.py",
+        "similarity_percent": 56.55,
+        "full_code": "#include <iostream>\n#include <stack>\nusing namespace std;\n\nint main() {\n    stack<char>a;\n    string st;cin>>st;int kt=1;\n    for(int i=0;i<st.length();i++)\n    {\n        if(st[i]=='(')a.push(st[i]);\n        else if(a.empty()){kt=0;break;}\n        else a.pop();\n    }\n    if (kt == 1 && a.empty()) cout << \"true\";\n    else cout << \"ValueError: Parentheses not balanced\";\n}",
+        "highlighted_code": "#include &lt;iostream&gt;\n#include &lt;stack&gt;\n<span class='highlight-green'>using namespace std;\n\nint main() {\n    stack&lt;char&gt;a;\n    string st;cin&gt;&gt;st;</span>int kt=1;\n    <span class='highlight-green'>for(int i=0;i&lt;st.length();i++)\n    {\n        if(st[i]==&#39;(&#39;)a.push(st[i]);\n        else if(a.empty</span>()){kt=0;break;}\n        else a.pop();\n    }\n    if (kt == 1 &amp;&amp; a.empty()) cout &lt;&lt; &#34;true&#34;;\n    else cout &lt;&lt; &#34;ValueError: Parentheses not balanced&#34;;\n}"
+      },
+      "token_overlap": 82,
+      "max_similarity_percent": 65.08
+    },
+    {
+      "case_id": 41,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3c726724325137447702e/14bfc7ed54df492fab26a1ff/sub_1763389837264_5oj23oy9s.py",
+        "similarity_percent": 65.08,
+        "full_code": "#include <iostream>\n#include <stack>\nusing namespace std;\n\nint main() {\n    stack<char>a;\n    string st;cin>>st;\n    for(int i=0;i<st.length();i++)\n    {\n        if(st[i]=='(')a.push(st[i]);\n        else if(a.empty())cout<<\"ValueError: Parentheses not balanced\";\n        else a.pop();\n    }\n    if(a.empty())cout<<\"true\";\n    else cout<<\"ValueError: Parentheses not balanced\";\n}",
+        "highlighted_code": "#include &lt;iostream&gt;\n#include &lt;stack&gt;\n<span class='highlight-red'>using namespace std;\n\nint main() {\n    stack&lt;char&gt;a;\n    string st;cin&gt;&gt;st;\n    </span><span class='highlight-red'>for(int i=0;i&lt;st.length();i++)\n    {\n        if(st[i]==&#39;(&#39;)a.push(st[i]);\n        else if(a.empty</span>())cout&lt;&lt;&#34;ValueError: Parentheses not balanced&#34;;\n        else a.pop();\n    }\n    if(a.empty())cout&lt;&lt;&#34;true&#34;;\n    else cout&lt;&lt;&#34;ValueError: Parentheses not balanced&#34;;\n}"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3c726724325137447702e/14bfc7ed54df492fab26a1ff/sub_1763391365971_rejyeauhy.py",
+        "similarity_percent": 56.55,
+        "full_code": "#include <iostream>\n#include <stack>\nusing namespace std;\n\nint main() {\n    stack<char>a;\n    string st;cin>>st;int kt=1;\n    for(int i=0;i<st.length();i++)\n    {\n        if(st[i]=='(')a.push(st[i]);\n        else if(a.empty()){kt=0;break;}\n        else a.pop();\n    }\n    if (kt == 1 && a.empty()) cout << \"true\";\n    else cout << \"ValueError: Parentheses not balanced\";\n}",
+        "highlighted_code": "#include &lt;iostream&gt;\n#include &lt;stack&gt;\n<span class='highlight-green'>using namespace std;\n\nint main() {\n    stack&lt;char&gt;a;\n    string st;cin&gt;&gt;st;</span>int kt=1;\n    <span class='highlight-green'>for(int i=0;i&lt;st.length();i++)\n    {\n        if(st[i]==&#39;(&#39;)a.push(st[i]);\n        else if(a.empty</span>()){kt=0;break;}\n        else a.pop();\n    }\n    if (kt == 1 &amp;&amp; a.empty()) cout &lt;&lt; &#34;true&#34;;\n    else cout &lt;&lt; &#34;ValueError: Parentheses not balanced&#34;;\n}"
+      },
+      "token_overlap": 82,
+      "max_similarity_percent": 65.08
+    },
+    {
+      "case_id": 42,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3c726724325137447702e/14bfc7ed54df492fab26a1ff/sub_1763389837264_5oj23oy9s.py",
+        "similarity_percent": 65.08,
+        "full_code": "#include <iostream>\n#include <stack>\nusing namespace std;\n\nint main() {\n    stack<char>a;\n    string st;cin>>st;\n    for(int i=0;i<st.length();i++)\n    {\n        if(st[i]=='(')a.push(st[i]);\n        else if(a.empty())cout<<\"ValueError: Parentheses not balanced\";\n        else a.pop();\n    }\n    if(a.empty())cout<<\"true\";\n    else cout<<\"ValueError: Parentheses not balanced\";\n}",
+        "highlighted_code": "#include &lt;iostream&gt;\n#include &lt;stack&gt;\n<span class='highlight-red'>using namespace std;\n\nint main() {\n    stack&lt;char&gt;a;\n    string st;cin&gt;&gt;st;\n    </span><span class='highlight-red'>for(int i=0;i&lt;st.length();i++)\n    {\n        if(st[i]==&#39;(&#39;)a.push(st[i]);\n        else if(a.empty</span>())cout&lt;&lt;&#34;ValueError: Parentheses not balanced&#34;;\n        else a.pop();\n    }\n    if(a.empty())cout&lt;&lt;&#34;true&#34;;\n    else cout&lt;&lt;&#34;ValueError: Parentheses not balanced&#34;;\n}"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3c726724325137447702e/14bfc7ed54df492fab26a1ff/sub_1763391379451_sb2p10qeh.py",
+        "similarity_percent": 56.55,
+        "full_code": "#include <iostream>\n#include <stack>\nusing namespace std;\n\nint main() {\n    stack<char>a;\n    string st;cin>>st;int kt=1;\n    for(int i=0;i<st.length();i++)\n    {\n        if(st[i]=='(')a.push(st[i]);\n        else if(a.empty()){kt=0;break;}\n        else a.pop();\n    }\n    if (kt == 1 && a.empty()) cout << \"true\";\n    else cout << \"ValueError: Parentheses not balanced\";\n}",
+        "highlighted_code": "#include &lt;iostream&gt;\n#include &lt;stack&gt;\n<span class='highlight-green'>using namespace std;\n\nint main() {\n    stack&lt;char&gt;a;\n    string st;cin&gt;&gt;st;</span>int kt=1;\n    <span class='highlight-green'>for(int i=0;i&lt;st.length();i++)\n    {\n        if(st[i]==&#39;(&#39;)a.push(st[i]);\n        else if(a.empty</span>()){kt=0;break;}\n        else a.pop();\n    }\n    if (kt == 1 &amp;&amp; a.empty()) cout &lt;&lt; &#34;true&#34;;\n    else cout &lt;&lt; &#34;ValueError: Parentheses not balanced&#34;;\n}"
+      },
+      "token_overlap": 82,
+      "max_similarity_percent": 65.08
+    },
+    {
+      "case_id": 43,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3c726724325137447702e/14bfc7ed54df492fab26a1ff/sub_1763390363508_chmcebn28.py",
+        "similarity_percent": 65.08,
+        "full_code": "#include <iostream>\n#include <stack>\nusing namespace std;\n\nint main() {\n    stack<char>a;\n    string st;cin>>st;\n    for(int i=0;i<st.length();i++)\n    {\n        if(st[i]=='(')a.push(st[i]);\n        else if(a.empty())cout<<\"ValueError: Parentheses not balanced\";\n        else a.pop();\n    }\n    if(a.empty())cout<<\"true\";\n    else cout<<\"ValueError: Parentheses not balanced\";\n}",
+        "highlighted_code": "#include &lt;iostream&gt;\n#include &lt;stack&gt;\n<span class='highlight-red'>using namespace std;\n\nint main() {\n    stack&lt;char&gt;a;\n    string st;cin&gt;&gt;st;\n    </span><span class='highlight-red'>for(int i=0;i&lt;st.length();i++)\n    {\n        if(st[i]==&#39;(&#39;)a.push(st[i]);\n        else if(a.empty</span>())cout&lt;&lt;&#34;ValueError: Parentheses not balanced&#34;;\n        else a.pop();\n    }\n    if(a.empty())cout&lt;&lt;&#34;true&#34;;\n    else cout&lt;&lt;&#34;ValueError: Parentheses not balanced&#34;;\n}"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3c726724325137447702e/14bfc7ed54df492fab26a1ff/sub_1763391365971_rejyeauhy.py",
+        "similarity_percent": 56.55,
+        "full_code": "#include <iostream>\n#include <stack>\nusing namespace std;\n\nint main() {\n    stack<char>a;\n    string st;cin>>st;int kt=1;\n    for(int i=0;i<st.length();i++)\n    {\n        if(st[i]=='(')a.push(st[i]);\n        else if(a.empty()){kt=0;break;}\n        else a.pop();\n    }\n    if (kt == 1 && a.empty()) cout << \"true\";\n    else cout << \"ValueError: Parentheses not balanced\";\n}",
+        "highlighted_code": "#include &lt;iostream&gt;\n#include &lt;stack&gt;\n<span class='highlight-green'>using namespace std;\n\nint main() {\n    stack&lt;char&gt;a;\n    string st;cin&gt;&gt;st;</span>int kt=1;\n    <span class='highlight-green'>for(int i=0;i&lt;st.length();i++)\n    {\n        if(st[i]==&#39;(&#39;)a.push(st[i]);\n        else if(a.empty</span>()){kt=0;break;}\n        else a.pop();\n    }\n    if (kt == 1 &amp;&amp; a.empty()) cout &lt;&lt; &#34;true&#34;;\n    else cout &lt;&lt; &#34;ValueError: Parentheses not balanced&#34;;\n}"
+      },
+      "token_overlap": 82,
+      "max_similarity_percent": 65.08
+    },
+    {
+      "case_id": 44,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3c726724325137447702e/14bfc7ed54df492fab26a1ff/sub_1763390363508_chmcebn28.py",
+        "similarity_percent": 65.08,
+        "full_code": "#include <iostream>\n#include <stack>\nusing namespace std;\n\nint main() {\n    stack<char>a;\n    string st;cin>>st;\n    for(int i=0;i<st.length();i++)\n    {\n        if(st[i]=='(')a.push(st[i]);\n        else if(a.empty())cout<<\"ValueError: Parentheses not balanced\";\n        else a.pop();\n    }\n    if(a.empty())cout<<\"true\";\n    else cout<<\"ValueError: Parentheses not balanced\";\n}",
+        "highlighted_code": "#include &lt;iostream&gt;\n#include &lt;stack&gt;\n<span class='highlight-red'>using namespace std;\n\nint main() {\n    stack&lt;char&gt;a;\n    string st;cin&gt;&gt;st;\n    </span><span class='highlight-red'>for(int i=0;i&lt;st.length();i++)\n    {\n        if(st[i]==&#39;(&#39;)a.push(st[i]);\n        else if(a.empty</span>())cout&lt;&lt;&#34;ValueError: Parentheses not balanced&#34;;\n        else a.pop();\n    }\n    if(a.empty())cout&lt;&lt;&#34;true&#34;;\n    else cout&lt;&lt;&#34;ValueError: Parentheses not balanced&#34;;\n}"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3c726724325137447702e/14bfc7ed54df492fab26a1ff/sub_1763391379451_sb2p10qeh.py",
+        "similarity_percent": 56.55,
+        "full_code": "#include <iostream>\n#include <stack>\nusing namespace std;\n\nint main() {\n    stack<char>a;\n    string st;cin>>st;int kt=1;\n    for(int i=0;i<st.length();i++)\n    {\n        if(st[i]=='(')a.push(st[i]);\n        else if(a.empty()){kt=0;break;}\n        else a.pop();\n    }\n    if (kt == 1 && a.empty()) cout << \"true\";\n    else cout << \"ValueError: Parentheses not balanced\";\n}",
+        "highlighted_code": "#include &lt;iostream&gt;\n#include &lt;stack&gt;\n<span class='highlight-green'>using namespace std;\n\nint main() {\n    stack&lt;char&gt;a;\n    string st;cin&gt;&gt;st;</span>int kt=1;\n    <span class='highlight-green'>for(int i=0;i&lt;st.length();i++)\n    {\n        if(st[i]==&#39;(&#39;)a.push(st[i]);\n        else if(a.empty</span>()){kt=0;break;}\n        else a.pop();\n    }\n    if (kt == 1 &amp;&amp; a.empty()) cout &lt;&lt; &#34;true&#34;;\n    else cout &lt;&lt; &#34;ValueError: Parentheses not balanced&#34;;\n}"
+      },
+      "token_overlap": 82,
+      "max_similarity_percent": 65.08
+    },
+    {
+      "case_id": 45,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3c726724325137447702e/14bfc7ed54df492fab26a1ff/sub_1763390457905_1nf6osdnk.py",
+        "similarity_percent": 64.93,
+        "full_code": "#include <iostream>\n#include <stack>\nusing namespace std;\n\nint main() {\n    stack<char>a;\n    string st;cin>>st;\n    for(int i=0;i<st.length();i++)\n    {\n        if(st[i]=='(')a.push(st[i]);\n        else if(a.empty()){cout<<\"ValueError: Parentheses not balanced\";break;}\n        else a.pop();\n    }\n    if(a.empty())cout<<\"true\";\n    else cout<<\"ValueError: Parentheses not balanced\";\n}",
+        "highlighted_code": "#include &lt;iostream&gt;\n#include &lt;stack&gt;\n<span class='highlight-red'>using namespace std;\n\nint main() {\n    stack&lt;char&gt;a;\n    string st;cin&gt;&gt;st;\n    for(int i=0;i&lt;st.length();i++)\n    {\n        if(st[i]==&#39;(&#39;)</span>a.push(st[i]);\n        else if(a.empty()){cout&lt;&lt;&#34;ValueError: Parentheses not balanced&#34;;break;}\n        else a.pop()<span class='highlight-red'>;\n    }\n    if(a.empty())cout&lt;&lt;&#34;true&#34;;\n    else cout&lt;&lt;</span>&#34;ValueError: Parentheses not balanced&#34;;\n}"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3c726724325137447702e/14bfc7ed54df492fab26a1ff/sub_1763389248475_qy68zlzs3.py",
+        "similarity_percent": 67.97,
+        "full_code": "#include <iostream>\n#include <stack>\nusing namespace std;\n\nint main() {\n    stack<char>a;\n    string st;cin>>st;\n    for(int i=0;i<st.length();i++)\n    {\n        if(st[i]==')')\n        {\n            if(a.empty())cout<<\"ValueError: Parentheses not balanced\";\n            else a.pop();\n        }\n        else a.push(st[i]);\n    }\n    if(a.empty())cout<<\"true\";\n    else cout<<\"ValueError: Parentheses not balanced\";\n}",
+        "highlighted_code": "#include &lt;iostream&gt;\n#include &lt;stack&gt;\n<span class='highlight-green'>using namespace std;\n\nint main() {\n    stack&lt;char&gt;a;\n    string st;cin&gt;&gt;st;\n    for(int i=0;i&lt;st.length();i++)\n    {\n        if(st[i]==&#39;)&#39;)\n        </span>{\n            if(a.empty())cout&lt;&lt;&#34;ValueError: Parentheses not balanced&#34;;\n            else a.pop();\n        }\n        else a.push(st[i])<span class='highlight-green'>;\n    }\n    if(a.empty())cout&lt;&lt;&#34;true&#34;;\n    else cout&lt;&lt;</span>&#34;ValueError: Parentheses not balanced&#34;;\n}"
+      },
+      "token_overlap": 87,
+      "max_similarity_percent": 67.97
+    },
+    {
+      "case_id": 46,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3c726724325137447702e/aa97adecf36047f6879b441e/sub_1763028127702_y6vm8m89t.py",
+        "similarity_percent": 63.37,
+        "full_code": "s = str(input())\ndem1=0\ndem2=0\nfor i in s:\n    if i == \"(\":\n        dem1 += 1\n    elif i == \")\":\n        dem1 -=1\n    elif dem1 < 0:\n        print(\"ValueError: Parentheses not balanced\")\nif dem1 == 0:\n    print('true')\nelse:\n    print('ValueError: Parentheses not balanced')",
+        "highlighted_code": "s = str(input())\ndem1=0\n<span class='highlight-red'>dem2=0\nfor i in s:\n    if i == &#34;(&#34;:\n        dem1 += 1\n    elif i == &#34;)&#34;:\n        dem1 -=1\n    </span>elif dem1 &lt; 0:\n        print(&#34;ValueError: Parentheses not balanced&#34;)\nif <span class='highlight-red'>dem1 == 0:\n    print(&#39;true&#39;)\nelse:\n    print</span>(&#39;ValueError: Parentheses not balanced&#39;)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3c726724325137447702e/8e236cb825b041b0a82527f2/sub_1761834838430_z56u92pem.py",
+        "similarity_percent": 74.42,
+        "full_code": "s = input()\nopening = 0\nfor c in s:\n    if c == \"(\":\n        opening += 1\n    elif c == \")\":\n        opening -= 1\n\nif len(s) > 0 and opening == 0:\n    print(\"true\")\nelse:\n    # raise ValueError(\"Parentheses not balanced\")\n    print(\"ValueError: Parentheses not balanced\")",
+        "highlighted_code": "s = input()\n<span class='highlight-green'>opening = 0\nfor c in s:\n    if c == &#34;(&#34;:\n        opening += 1\n    elif c == &#34;)&#34;:\n        opening -= 1\n\n</span>if len(s) &gt; 0 and <span class='highlight-green'>opening == 0:\n    print(&#34;true&#34;)\nelse:\n    # raise ValueError(&#34;Parentheses not balanced&#34;)\n    print</span>(&#34;ValueError: Parentheses not balanced&#34;)"
+      },
+      "token_overlap": 64,
+      "max_similarity_percent": 74.42
+    },
+    {
+      "case_id": 47,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3c726724325137447702e/aa97adecf36047f6879b441e/sub_1763028127702_y6vm8m89t.py",
+        "similarity_percent": 63.37,
+        "full_code": "s = str(input())\ndem1=0\ndem2=0\nfor i in s:\n    if i == \"(\":\n        dem1 += 1\n    elif i == \")\":\n        dem1 -=1\n    elif dem1 < 0:\n        print(\"ValueError: Parentheses not balanced\")\nif dem1 == 0:\n    print('true')\nelse:\n    print('ValueError: Parentheses not balanced')",
+        "highlighted_code": "s = str(input())\ndem1=0\n<span class='highlight-red'>dem2=0\nfor i in s:\n    if i == &#34;(&#34;:\n        dem1 += 1\n    elif i == &#34;)&#34;:\n        dem1 -=1\n    </span>elif dem1 &lt; 0:\n        print(&#34;ValueError: Parentheses not balanced&#34;)\nif <span class='highlight-red'>dem1 == 0:\n    print(&#39;true&#39;)\nelse:\n    print</span>(&#39;ValueError: Parentheses not balanced&#39;)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3c726724325137447702e/cd93b2ff882a4ffa85f4518f/sub_1761549424898_uz6rs3p16.py",
+        "similarity_percent": 85.33,
+        "full_code": "s = input()\nba = 0\nfor ch in s:\n    if ch == '(':\n        ba += 1\n    elif ch == ')':\n        ba -= 1\n\nif ba == 0:\n    print(\"true\")\nelse:\n    print(\"ValueError: Parentheses not balanced\")\n",
+        "highlighted_code": "s = input()\n<span class='highlight-green'>ba = 0\nfor ch in s:\n    if ch == &#39;(&#39;:\n        ba += 1\n    elif ch == &#39;)&#39;:\n        ba -= 1\n\n</span>if <span class='highlight-green'>ba == 0:\n    print(&#34;true&#34;)\nelse:\n    print</span>(&#34;ValueError: Parentheses not balanced&#34;)\n"
+      },
+      "token_overlap": 64,
+      "max_similarity_percent": 85.33
+    },
+    {
+      "case_id": 48,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3c726724325137447702e/aa97adecf36047f6879b441e/sub_1763028127702_y6vm8m89t.py",
+        "similarity_percent": 63.37,
+        "full_code": "s = str(input())\ndem1=0\ndem2=0\nfor i in s:\n    if i == \"(\":\n        dem1 += 1\n    elif i == \")\":\n        dem1 -=1\n    elif dem1 < 0:\n        print(\"ValueError: Parentheses not balanced\")\nif dem1 == 0:\n    print('true')\nelse:\n    print('ValueError: Parentheses not balanced')",
+        "highlighted_code": "s = str(input())\ndem1=0\n<span class='highlight-red'>dem2=0\nfor i in s:\n    if i == &#34;(&#34;:\n        dem1 += 1\n    elif i == &#34;)&#34;:\n        dem1 -=1\n    </span>elif dem1 &lt; 0:\n        print(&#34;ValueError: Parentheses not balanced&#34;)\nif <span class='highlight-red'>dem1 == 0:\n    print(&#39;true&#39;)\nelse:\n    print</span>(&#39;ValueError: Parentheses not balanced&#39;)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3c726724325137447702e/8e236cb825b041b0a82527f2/sub_1761834643258_ijyost1nz.py",
+        "similarity_percent": 85.33,
+        "full_code": "s = input()\nopening = 0\nfor c in s:\n    if c == \"(\":\n        opening += 1\n    elif c == \")\":\n        opening -= 1\n\nif opening == 0:\n    print(\"true\")\nelse:\n    print(\"ValueError: Parentheses not balanced\")",
+        "highlighted_code": "s = input()\n<span class='highlight-green'>opening = 0\nfor c in s:\n    if c == &#34;(&#34;:\n        opening += 1\n    elif c == &#34;)&#34;:\n        opening -= 1\n\n</span>if <span class='highlight-green'>opening == 0:\n    print(&#34;true&#34;)\nelse:\n    print</span>(&#34;ValueError: Parentheses not balanced&#34;)"
+      },
+      "token_overlap": 64,
+      "max_similarity_percent": 85.33
+    },
+    {
+      "case_id": 49,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3c726724325137447702e/aa97adecf36047f6879b441e/sub_1763482111421_m7utt6pql.py",
+        "similarity_percent": 63.37,
+        "full_code": "s = str(input())\ndem1=0\ndem2=0\nfor i in s:\n    if i == \"(\":\n        dem1 += 1\n    elif i == \")\":\n        dem1 -=1\n    elif dem1 < 0:\n        print(\"ValueError: Parentheses not balanced\")\nif dem1 == 0:\n    print('true')\nelse:\n    print('ValueError: Parentheses not balanced')",
+        "highlighted_code": "s = str(input())\ndem1=0\n<span class='highlight-red'>dem2=0\nfor i in s:\n    if i == &#34;(&#34;:\n        dem1 += 1\n    elif i == &#34;)&#34;:\n        dem1 -=1\n    </span>elif dem1 &lt; 0:\n        print(&#34;ValueError: Parentheses not balanced&#34;)\nif <span class='highlight-red'>dem1 == 0:\n    print(&#39;true&#39;)\nelse:\n    print</span>(&#39;ValueError: Parentheses not balanced&#39;)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3c726724325137447702e/8e236cb825b041b0a82527f2/sub_1761834643258_ijyost1nz.py",
+        "similarity_percent": 85.33,
+        "full_code": "s = input()\nopening = 0\nfor c in s:\n    if c == \"(\":\n        opening += 1\n    elif c == \")\":\n        opening -= 1\n\nif opening == 0:\n    print(\"true\")\nelse:\n    print(\"ValueError: Parentheses not balanced\")",
+        "highlighted_code": "s = input()\n<span class='highlight-green'>opening = 0\nfor c in s:\n    if c == &#34;(&#34;:\n        opening += 1\n    elif c == &#34;)&#34;:\n        opening -= 1\n\n</span>if <span class='highlight-green'>opening == 0:\n    print(&#34;true&#34;)\nelse:\n    print</span>(&#34;ValueError: Parentheses not balanced&#34;)"
+      },
+      "token_overlap": 64,
+      "max_similarity_percent": 85.33
+    },
+    {
+      "case_id": 50,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3c726724325137447702e/14bfc7ed54df492fab26a1ff/sub_1763390319718_jr0elolhz.py",
+        "similarity_percent": 62.14,
+        "full_code": "#include <iostream>\n#include <stack>\nusing namespace std;\n\nint main() {\n    stack<char>a;\n    string st;cin>>st;\n    for(int i=0;i<st.length();i++)\n    {\n        if(st[i]=='(')a.push(st[i]);\n        else if(a.empty())cout<<\"ValueError: Parentheses not balanced\";\n        else if (a.top()=='(')a.pop();\n    }\n    if(a.empty())cout<<\"true\";\n    else cout<<\"ValueError: Parentheses not balanced\";\n}",
+        "highlighted_code": "#include &lt;iostream&gt;\n#include &lt;stack&gt;\n<span class='highlight-red'>using namespace std;\n\nint main() {\n    stack&lt;char&gt;a;\n    string st;cin&gt;&gt;st;\n    for(int i=0;i&lt;st.length();i++)\n    {\n        if(st[i]==&#39;(&#39;)</span>a.push(st[i]);\n        else if(a.empty())cout&lt;&lt;&#34;ValueError: Parentheses not balanced&#34;;\n        else if (a.top()==&#39;(&#39;)a.pop()<span class='highlight-red'>;\n    }\n    if(a.empty())cout&lt;&lt;&#34;true&#34;;\n    else cout&lt;&lt;</span>&#34;ValueError: Parentheses not balanced&#34;;\n}"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3c726724325137447702e/14bfc7ed54df492fab26a1ff/sub_1763389248475_qy68zlzs3.py",
+        "similarity_percent": 67.97,
+        "full_code": "#include <iostream>\n#include <stack>\nusing namespace std;\n\nint main() {\n    stack<char>a;\n    string st;cin>>st;\n    for(int i=0;i<st.length();i++)\n    {\n        if(st[i]==')')\n        {\n            if(a.empty())cout<<\"ValueError: Parentheses not balanced\";\n            else a.pop();\n        }\n        else a.push(st[i]);\n    }\n    if(a.empty())cout<<\"true\";\n    else cout<<\"ValueError: Parentheses not balanced\";\n}",
+        "highlighted_code": "#include &lt;iostream&gt;\n#include &lt;stack&gt;\n<span class='highlight-green'>using namespace std;\n\nint main() {\n    stack&lt;char&gt;a;\n    string st;cin&gt;&gt;st;\n    for(int i=0;i&lt;st.length();i++)\n    {\n        if(st[i]==&#39;)&#39;)\n        </span>{\n            if(a.empty())cout&lt;&lt;&#34;ValueError: Parentheses not balanced&#34;;\n            else a.pop();\n        }\n        else a.push(st[i])<span class='highlight-green'>;\n    }\n    if(a.empty())cout&lt;&lt;&#34;true&#34;;\n    else cout&lt;&lt;</span>&#34;ValueError: Parentheses not balanced&#34;;\n}"
+      },
+      "token_overlap": 87,
+      "max_similarity_percent": 67.97
+    },
+    {
+      "case_id": 51,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3c726724325137447702e/14bfc7ed54df492fab26a1ff/sub_1763390457905_1nf6osdnk.py",
+        "similarity_percent": 61.19,
+        "full_code": "#include <iostream>\n#include <stack>\nusing namespace std;\n\nint main() {\n    stack<char>a;\n    string st;cin>>st;\n    for(int i=0;i<st.length();i++)\n    {\n        if(st[i]=='(')a.push(st[i]);\n        else if(a.empty()){cout<<\"ValueError: Parentheses not balanced\";break;}\n        else a.pop();\n    }\n    if(a.empty())cout<<\"true\";\n    else cout<<\"ValueError: Parentheses not balanced\";\n}",
+        "highlighted_code": "#include &lt;iostream&gt;\n#include &lt;stack&gt;\n<span class='highlight-red'>using namespace std;\n\nint main() {\n    stack&lt;char&gt;a;\n    string st;cin&gt;&gt;st;\n    </span><span class='highlight-red'>for(int i=0;i&lt;st.length();i++)\n    {\n        if(st[i]==&#39;(&#39;)a.push(st[i]);\n        else if(a.empty</span>()){cout&lt;&lt;&#34;ValueError: Parentheses not balanced&#34;;break;}\n        else a.pop();\n    }\n    if(a.empty())cout&lt;&lt;&#34;true&#34;;\n    else cout&lt;&lt;&#34;ValueError: Parentheses not balanced&#34;;\n}"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3c726724325137447702e/14bfc7ed54df492fab26a1ff/sub_1763391365971_rejyeauhy.py",
+        "similarity_percent": 56.55,
+        "full_code": "#include <iostream>\n#include <stack>\nusing namespace std;\n\nint main() {\n    stack<char>a;\n    string st;cin>>st;int kt=1;\n    for(int i=0;i<st.length();i++)\n    {\n        if(st[i]=='(')a.push(st[i]);\n        else if(a.empty()){kt=0;break;}\n        else a.pop();\n    }\n    if (kt == 1 && a.empty()) cout << \"true\";\n    else cout << \"ValueError: Parentheses not balanced\";\n}",
+        "highlighted_code": "#include &lt;iostream&gt;\n#include &lt;stack&gt;\n<span class='highlight-green'>using namespace std;\n\nint main() {\n    stack&lt;char&gt;a;\n    string st;cin&gt;&gt;st;</span>int kt=1;\n    <span class='highlight-green'>for(int i=0;i&lt;st.length();i++)\n    {\n        if(st[i]==&#39;(&#39;)a.push(st[i]);\n        else if(a.empty</span>()){kt=0;break;}\n        else a.pop();\n    }\n    if (kt == 1 &amp;&amp; a.empty()) cout &lt;&lt; &#34;true&#34;;\n    else cout &lt;&lt; &#34;ValueError: Parentheses not balanced&#34;;\n}"
+      },
+      "token_overlap": 82,
+      "max_similarity_percent": 61.19
+    },
+    {
+      "case_id": 52,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3c726724325137447702e/14bfc7ed54df492fab26a1ff/sub_1763390457905_1nf6osdnk.py",
+        "similarity_percent": 61.19,
+        "full_code": "#include <iostream>\n#include <stack>\nusing namespace std;\n\nint main() {\n    stack<char>a;\n    string st;cin>>st;\n    for(int i=0;i<st.length();i++)\n    {\n        if(st[i]=='(')a.push(st[i]);\n        else if(a.empty()){cout<<\"ValueError: Parentheses not balanced\";break;}\n        else a.pop();\n    }\n    if(a.empty())cout<<\"true\";\n    else cout<<\"ValueError: Parentheses not balanced\";\n}",
+        "highlighted_code": "#include &lt;iostream&gt;\n#include &lt;stack&gt;\n<span class='highlight-red'>using namespace std;\n\nint main() {\n    stack&lt;char&gt;a;\n    string st;cin&gt;&gt;st;\n    </span><span class='highlight-red'>for(int i=0;i&lt;st.length();i++)\n    {\n        if(st[i]==&#39;(&#39;)a.push(st[i]);\n        else if(a.empty</span>()){cout&lt;&lt;&#34;ValueError: Parentheses not balanced&#34;;break;}\n        else a.pop();\n    }\n    if(a.empty())cout&lt;&lt;&#34;true&#34;;\n    else cout&lt;&lt;&#34;ValueError: Parentheses not balanced&#34;;\n}"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3c726724325137447702e/14bfc7ed54df492fab26a1ff/sub_1763391379451_sb2p10qeh.py",
+        "similarity_percent": 56.55,
+        "full_code": "#include <iostream>\n#include <stack>\nusing namespace std;\n\nint main() {\n    stack<char>a;\n    string st;cin>>st;int kt=1;\n    for(int i=0;i<st.length();i++)\n    {\n        if(st[i]=='(')a.push(st[i]);\n        else if(a.empty()){kt=0;break;}\n        else a.pop();\n    }\n    if (kt == 1 && a.empty()) cout << \"true\";\n    else cout << \"ValueError: Parentheses not balanced\";\n}",
+        "highlighted_code": "#include &lt;iostream&gt;\n#include &lt;stack&gt;\n<span class='highlight-green'>using namespace std;\n\nint main() {\n    stack&lt;char&gt;a;\n    string st;cin&gt;&gt;st;</span>int kt=1;\n    <span class='highlight-green'>for(int i=0;i&lt;st.length();i++)\n    {\n        if(st[i]==&#39;(&#39;)a.push(st[i]);\n        else if(a.empty</span>()){kt=0;break;}\n        else a.pop();\n    }\n    if (kt == 1 &amp;&amp; a.empty()) cout &lt;&lt; &#34;true&#34;;\n    else cout &lt;&lt; &#34;ValueError: Parentheses not balanced&#34;;\n}"
+      },
+      "token_overlap": 82,
+      "max_similarity_percent": 61.19
+    },
+    {
+      "case_id": 53,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3c726724325137447702e/8e236cb825b041b0a82527f2/sub_1761835329184_njfjhc4e8.py",
+        "similarity_percent": 60.47,
+        "full_code": "s = input()\nopening = 0\nfor c in s:\n    if opening < 0:\n        break\n\n    if c == \"(\":\n        opening += 1\n    elif c == \")\":\n        opening -= 1\n\nif opening == 0:\n    print(\"true\")\nelse:\n    # raise ValueError(\"Parentheses not balanced\")\n    print(\"ValueError: Parentheses not balanced\")",
+        "highlighted_code": "s = input()\nopening = 0\nfor c in s:\n    if opening &lt; 0:\n        break\n\n    if c <span class='highlight-red'>== &#34;(&#34;:\n        opening += 1\n    elif c == &#34;)&#34;:\n        opening -= 1\n\nif opening == 0:\n    print(&#34;true&#34;)\nelse:\n    # raise ValueError(&#34;Parentheses not balanced&#34;)\n    print</span>(&#34;ValueError: Parentheses not balanced&#34;)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3c726724325137447702e/cd93b2ff882a4ffa85f4518f/sub_1761549424898_uz6rs3p16.py",
+        "similarity_percent": 69.33,
+        "full_code": "s = input()\nba = 0\nfor ch in s:\n    if ch == '(':\n        ba += 1\n    elif ch == ')':\n        ba -= 1\n\nif ba == 0:\n    print(\"true\")\nelse:\n    print(\"ValueError: Parentheses not balanced\")\n",
+        "highlighted_code": "s = input()\nba = 0\nfor ch in s:\n    if ch <span class='highlight-green'>== &#39;(&#39;:\n        ba += 1\n    elif ch == &#39;)&#39;:\n        ba -= 1\n\nif ba == 0:\n    print(&#34;true&#34;)\nelse:\n    print</span>(&#34;ValueError: Parentheses not balanced&#34;)\n"
+      },
+      "token_overlap": 52,
+      "max_similarity_percent": 69.33
+    },
+    {
+      "case_id": 54,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3c726724325137447702e/8e236cb825b041b0a82527f2/sub_1761835329184_njfjhc4e8.py",
+        "similarity_percent": 60.47,
+        "full_code": "s = input()\nopening = 0\nfor c in s:\n    if opening < 0:\n        break\n\n    if c == \"(\":\n        opening += 1\n    elif c == \")\":\n        opening -= 1\n\nif opening == 0:\n    print(\"true\")\nelse:\n    # raise ValueError(\"Parentheses not balanced\")\n    print(\"ValueError: Parentheses not balanced\")",
+        "highlighted_code": "s = input()\nopening = 0\nfor c in s:\n    if opening &lt; 0:\n        break\n\n    if c <span class='highlight-red'>== &#34;(&#34;:\n        opening += 1\n    elif c == &#34;)&#34;:\n        opening -= 1\n\nif opening == 0:\n    print(&#34;true&#34;)\nelse:\n    # raise ValueError(&#34;Parentheses not balanced&#34;)\n    print</span>(&#34;ValueError: Parentheses not balanced&#34;)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3c726724325137447702e/8e236cb825b041b0a82527f2/sub_1761834643258_ijyost1nz.py",
+        "similarity_percent": 69.33,
+        "full_code": "s = input()\nopening = 0\nfor c in s:\n    if c == \"(\":\n        opening += 1\n    elif c == \")\":\n        opening -= 1\n\nif opening == 0:\n    print(\"true\")\nelse:\n    print(\"ValueError: Parentheses not balanced\")",
+        "highlighted_code": "s = input()\nopening = 0\nfor c in s:\n    if c <span class='highlight-green'>== &#34;(&#34;:\n        opening += 1\n    elif c == &#34;)&#34;:\n        opening -= 1\n\nif opening == 0:\n    print(&#34;true&#34;)\nelse:\n    print</span>(&#34;ValueError: Parentheses not balanced&#34;)"
+      },
+      "token_overlap": 52,
+      "max_similarity_percent": 69.33
+    },
+    {
+      "case_id": 55,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3c726724325137447702e/aa97adecf36047f6879b441e/sub_1763028127702_y6vm8m89t.py",
+        "similarity_percent": 60.4,
+        "full_code": "s = str(input())\ndem1=0\ndem2=0\nfor i in s:\n    if i == \"(\":\n        dem1 += 1\n    elif i == \")\":\n        dem1 -=1\n    elif dem1 < 0:\n        print(\"ValueError: Parentheses not balanced\")\nif dem1 == 0:\n    print('true')\nelse:\n    print('ValueError: Parentheses not balanced')",
+        "highlighted_code": "s = str(input())\ndem1=0\ndem2=0\n<span class='highlight-red'>for i in s:\n    if i == &#34;(&#34;:\n        dem1 += 1\n    elif i == &#34;)&#34;:\n        dem1 -=1\n    </span>elif dem1 &lt; 0:\n        print(&#34;ValueError: Parentheses not balanced&#34;)\nif <span class='highlight-red'>dem1 == 0:\n    print(&#39;true&#39;)\nelse:\n    print</span>(&#39;ValueError: Parentheses not balanced&#39;)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3c726724325137447702e/aa97adecf36047f6879b441e/sub_1763482202692_y66qhuu6t.py",
+        "similarity_percent": 53.51,
+        "full_code": "s = str(input())\ndem1 = 0\nis_valid = True # Biến cờ hiệu (giả sử ban đầu là đúng)\n\nfor i in s:\n    if i == \"(\":\n        dem1 += 1\n    elif i == \")\":\n        dem1 -= 1\n    \n    # Kiểm tra ngay lập tức sau khi tính toán\n    # Nếu tài khoản bị âm (tức là đóng ngoặc nhiều hơn mở tại thời điểm đó)\n    if dem1 < 0:\n        is_valid = False\n        break # Dừng ngay, không chạy tiếp nữa\n\n# Kiểm tra điều kiện cuối cùng:\n# 1. Không bị vi phạm giữa chừng (is_valid phải True)\n# 2. Số ngoặc mở và đóng phải bằng nhau (dem1 phải bằng 0)\nif is_valid == True and dem1 == 0:\n    print('true')\nelse:\n    print('ValueError: Parentheses not balanced')",
+        "highlighted_code": "s = str(input())\ndem1 = 0\nis_valid = True # Biến cờ hiệu (giả sử ban đầu là đúng)\n\n<span class='highlight-green'>for i in s:\n    if i == &#34;(&#34;:\n        dem1 += 1\n    elif i == &#34;)&#34;:\n        dem1 -= 1\n    \n    # Kiểm tra ngay lập tức sau khi tính toán\n    # Nếu tài khoản bị âm (tức là đóng ngoặc nhiều hơn mở tại thời điểm đó)\n    </span>if dem1 &lt; 0:\n        is_valid = False\n        break # Dừng ngay, không chạy tiếp nữa\n\n# Kiểm tra điều kiện cuối cùng:\n# 1. Không bị vi phạm giữa chừng (is_valid phải True)\n# 2. Số ngoặc mở và đóng phải bằng nhau (dem1 phải bằng 0)\nif is_valid == True and <span class='highlight-green'>dem1 == 0:\n    print(&#39;true&#39;)\nelse:\n    print</span>(&#39;ValueError: Parentheses not balanced&#39;)"
+      },
+      "token_overlap": 61,
+      "max_similarity_percent": 60.4
+    },
+    {
+      "case_id": 56,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3c726724325137447702e/14bfc7ed54df492fab26a1ff/sub_1763390319718_jr0elolhz.py",
+        "similarity_percent": 58.57,
+        "full_code": "#include <iostream>\n#include <stack>\nusing namespace std;\n\nint main() {\n    stack<char>a;\n    string st;cin>>st;\n    for(int i=0;i<st.length();i++)\n    {\n        if(st[i]=='(')a.push(st[i]);\n        else if(a.empty())cout<<\"ValueError: Parentheses not balanced\";\n        else if (a.top()=='(')a.pop();\n    }\n    if(a.empty())cout<<\"true\";\n    else cout<<\"ValueError: Parentheses not balanced\";\n}",
+        "highlighted_code": "#include &lt;iostream&gt;\n#include &lt;stack&gt;\n<span class='highlight-red'>using namespace std;\n\nint main() {\n    stack&lt;char&gt;a;\n    string st;cin&gt;&gt;st;\n    </span><span class='highlight-red'>for(int i=0;i&lt;st.length();i++)\n    {\n        if(st[i]==&#39;(&#39;)a.push(st[i]);\n        else if(a.empty</span>())cout&lt;&lt;&#34;ValueError: Parentheses not balanced&#34;;\n        else if (a.top()==&#39;(&#39;)a.pop();\n    }\n    if(a.empty())cout&lt;&lt;&#34;true&#34;;\n    else cout&lt;&lt;&#34;ValueError: Parentheses not balanced&#34;;\n}"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3c726724325137447702e/14bfc7ed54df492fab26a1ff/sub_1763391179837_9f4vrv9sx.py",
+        "similarity_percent": 52.23,
+        "full_code": "#include <iostream>\n#include <stack>\nusing namespace std;\n\nint main() {\n    stack<char>a;\n    string st;cin>>st;int kt=1;\n    for(int i=0;i<st.length();i++)\n    {\n        if(st[i]=='(')a.push(st[i]);\n        else if(a.empty()){kt=0;break;}\n        else a.pop();\n    }\n    if(a.empty())cout<<\"true\";\n    else if(kt==0||!a.empty()) cout<<\"ValueError: Parentheses not balanced\";\n}",
+        "highlighted_code": "#include &lt;iostream&gt;\n#include &lt;stack&gt;\n<span class='highlight-green'>using namespace std;\n\nint main() {\n    stack&lt;char&gt;a;\n    string st;cin&gt;&gt;st;</span>int kt=1;\n    <span class='highlight-green'>for(int i=0;i&lt;st.length();i++)\n    {\n        if(st[i]==&#39;(&#39;)a.push(st[i]);\n        else if(a.empty</span>()){kt=0;break;}\n        else a.pop();\n    }\n    if(a.empty())cout&lt;&lt;&#34;true&#34;;\n    else if(kt==0||!a.empty()) cout&lt;&lt;&#34;ValueError: Parentheses not balanced&#34;;\n}"
+      },
+      "token_overlap": 82,
+      "max_similarity_percent": 58.57
+    },
+    {
+      "case_id": 57,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3c726724325137447702e/14bfc7ed54df492fab26a1ff/sub_1763390319718_jr0elolhz.py",
+        "similarity_percent": 58.57,
+        "full_code": "#include <iostream>\n#include <stack>\nusing namespace std;\n\nint main() {\n    stack<char>a;\n    string st;cin>>st;\n    for(int i=0;i<st.length();i++)\n    {\n        if(st[i]=='(')a.push(st[i]);\n        else if(a.empty())cout<<\"ValueError: Parentheses not balanced\";\n        else if (a.top()=='(')a.pop();\n    }\n    if(a.empty())cout<<\"true\";\n    else cout<<\"ValueError: Parentheses not balanced\";\n}",
+        "highlighted_code": "#include &lt;iostream&gt;\n#include &lt;stack&gt;\n<span class='highlight-red'>using namespace std;\n\nint main() {\n    stack&lt;char&gt;a;\n    string st;cin&gt;&gt;st;\n    </span><span class='highlight-red'>for(int i=0;i&lt;st.length();i++)\n    {\n        if(st[i]==&#39;(&#39;)a.push(st[i]);\n        else if(a.empty</span>())cout&lt;&lt;&#34;ValueError: Parentheses not balanced&#34;;\n        else if (a.top()==&#39;(&#39;)a.pop();\n    }\n    if(a.empty())cout&lt;&lt;&#34;true&#34;;\n    else cout&lt;&lt;&#34;ValueError: Parentheses not balanced&#34;;\n}"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3c726724325137447702e/14bfc7ed54df492fab26a1ff/sub_1763391365971_rejyeauhy.py",
+        "similarity_percent": 56.55,
+        "full_code": "#include <iostream>\n#include <stack>\nusing namespace std;\n\nint main() {\n    stack<char>a;\n    string st;cin>>st;int kt=1;\n    for(int i=0;i<st.length();i++)\n    {\n        if(st[i]=='(')a.push(st[i]);\n        else if(a.empty()){kt=0;break;}\n        else a.pop();\n    }\n    if (kt == 1 && a.empty()) cout << \"true\";\n    else cout << \"ValueError: Parentheses not balanced\";\n}",
+        "highlighted_code": "#include &lt;iostream&gt;\n#include &lt;stack&gt;\n<span class='highlight-green'>using namespace std;\n\nint main() {\n    stack&lt;char&gt;a;\n    string st;cin&gt;&gt;st;</span>int kt=1;\n    <span class='highlight-green'>for(int i=0;i&lt;st.length();i++)\n    {\n        if(st[i]==&#39;(&#39;)a.push(st[i]);\n        else if(a.empty</span>()){kt=0;break;}\n        else a.pop();\n    }\n    if (kt == 1 &amp;&amp; a.empty()) cout &lt;&lt; &#34;true&#34;;\n    else cout &lt;&lt; &#34;ValueError: Parentheses not balanced&#34;;\n}"
+      },
+      "token_overlap": 82,
+      "max_similarity_percent": 58.57
+    },
+    {
+      "case_id": 58,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3c726724325137447702e/14bfc7ed54df492fab26a1ff/sub_1763390319718_jr0elolhz.py",
+        "similarity_percent": 58.57,
+        "full_code": "#include <iostream>\n#include <stack>\nusing namespace std;\n\nint main() {\n    stack<char>a;\n    string st;cin>>st;\n    for(int i=0;i<st.length();i++)\n    {\n        if(st[i]=='(')a.push(st[i]);\n        else if(a.empty())cout<<\"ValueError: Parentheses not balanced\";\n        else if (a.top()=='(')a.pop();\n    }\n    if(a.empty())cout<<\"true\";\n    else cout<<\"ValueError: Parentheses not balanced\";\n}",
+        "highlighted_code": "#include &lt;iostream&gt;\n#include &lt;stack&gt;\n<span class='highlight-red'>using namespace std;\n\nint main() {\n    stack&lt;char&gt;a;\n    string st;cin&gt;&gt;st;\n    </span><span class='highlight-red'>for(int i=0;i&lt;st.length();i++)\n    {\n        if(st[i]==&#39;(&#39;)a.push(st[i]);\n        else if(a.empty</span>())cout&lt;&lt;&#34;ValueError: Parentheses not balanced&#34;;\n        else if (a.top()==&#39;(&#39;)a.pop();\n    }\n    if(a.empty())cout&lt;&lt;&#34;true&#34;;\n    else cout&lt;&lt;&#34;ValueError: Parentheses not balanced&#34;;\n}"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3c726724325137447702e/14bfc7ed54df492fab26a1ff/sub_1763391379451_sb2p10qeh.py",
+        "similarity_percent": 56.55,
+        "full_code": "#include <iostream>\n#include <stack>\nusing namespace std;\n\nint main() {\n    stack<char>a;\n    string st;cin>>st;int kt=1;\n    for(int i=0;i<st.length();i++)\n    {\n        if(st[i]=='(')a.push(st[i]);\n        else if(a.empty()){kt=0;break;}\n        else a.pop();\n    }\n    if (kt == 1 && a.empty()) cout << \"true\";\n    else cout << \"ValueError: Parentheses not balanced\";\n}",
+        "highlighted_code": "#include &lt;iostream&gt;\n#include &lt;stack&gt;\n<span class='highlight-green'>using namespace std;\n\nint main() {\n    stack&lt;char&gt;a;\n    string st;cin&gt;&gt;st;</span>int kt=1;\n    <span class='highlight-green'>for(int i=0;i&lt;st.length();i++)\n    {\n        if(st[i]==&#39;(&#39;)a.push(st[i]);\n        else if(a.empty</span>()){kt=0;break;}\n        else a.pop();\n    }\n    if (kt == 1 &amp;&amp; a.empty()) cout &lt;&lt; &#34;true&#34;;\n    else cout &lt;&lt; &#34;ValueError: Parentheses not balanced&#34;;\n}"
+      },
+      "token_overlap": 82,
+      "max_similarity_percent": 58.57
+    },
+    {
+      "case_id": 59,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3c726724325137447702e/aa97adecf36047f6879b441e/sub_1763482202692_y66qhuu6t.py",
+        "similarity_percent": 56.14,
+        "full_code": "s = str(input())\ndem1 = 0\nis_valid = True # Biến cờ hiệu (giả sử ban đầu là đúng)\n\nfor i in s:\n    if i == \"(\":\n        dem1 += 1\n    elif i == \")\":\n        dem1 -= 1\n    \n    # Kiểm tra ngay lập tức sau khi tính toán\n    # Nếu tài khoản bị âm (tức là đóng ngoặc nhiều hơn mở tại thời điểm đó)\n    if dem1 < 0:\n        is_valid = False\n        break # Dừng ngay, không chạy tiếp nữa\n\n# Kiểm tra điều kiện cuối cùng:\n# 1. Không bị vi phạm giữa chừng (is_valid phải True)\n# 2. Số ngoặc mở và đóng phải bằng nhau (dem1 phải bằng 0)\nif is_valid == True and dem1 == 0:\n    print('true')\nelse:\n    print('ValueError: Parentheses not balanced')",
+        "highlighted_code": "s = str(input())\ndem1 = 0\nis_valid = True # Biến cờ hiệu (giả sử ban đầu là đúng)\n\n<span class='highlight-red'>for i in s:\n    if i == &#34;(&#34;:\n        dem1 += 1\n    elif i == &#34;)&#34;:\n        dem1 -= 1\n    \n    # Kiểm tra ngay lập tức sau khi tính toán\n    # Nếu tài khoản bị âm (tức là đóng ngoặc nhiều hơn mở tại thời điểm đó)\n    </span>if dem1 &lt; 0:\n        is_valid = False\n        break # Dừng ngay, không chạy tiếp nữa\n\n# Kiểm tra điều kiện cuối cùng:\n# 1. Không bị vi phạm giữa chừng (is_valid phải True)\n# 2. Số ngoặc mở và đóng phải bằng nhau (dem1 phải bằng 0)\nif is_valid == True <span class='highlight-red'>and dem1 == 0:\n    print(&#39;true&#39;)\nelse:\n    print</span>(&#39;ValueError: Parentheses not balanced&#39;)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3c726724325137447702e/8e236cb825b041b0a82527f2/sub_1761834838430_z56u92pem.py",
+        "similarity_percent": 74.42,
+        "full_code": "s = input()\nopening = 0\nfor c in s:\n    if c == \"(\":\n        opening += 1\n    elif c == \")\":\n        opening -= 1\n\nif len(s) > 0 and opening == 0:\n    print(\"true\")\nelse:\n    # raise ValueError(\"Parentheses not balanced\")\n    print(\"ValueError: Parentheses not balanced\")",
+        "highlighted_code": "s = input()\nopening = 0\n<span class='highlight-green'>for c in s:\n    if c == &#34;(&#34;:\n        opening += 1\n    elif c == &#34;)&#34;:\n        opening -= 1\n\n</span>if len(s) &gt; 0 <span class='highlight-green'>and opening == 0:\n    print(&#34;true&#34;)\nelse:\n    # raise ValueError(&#34;Parentheses not balanced&#34;)\n    print</span>(&#34;ValueError: Parentheses not balanced&#34;)"
+      },
+      "token_overlap": 64,
+      "max_similarity_percent": 74.42
+    },
+    {
+      "case_id": 60,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3c726724325137447702e/aa97adecf36047f6879b441e/sub_1763482202692_y66qhuu6t.py",
+        "similarity_percent": 53.51,
+        "full_code": "s = str(input())\ndem1 = 0\nis_valid = True # Biến cờ hiệu (giả sử ban đầu là đúng)\n\nfor i in s:\n    if i == \"(\":\n        dem1 += 1\n    elif i == \")\":\n        dem1 -= 1\n    \n    # Kiểm tra ngay lập tức sau khi tính toán\n    # Nếu tài khoản bị âm (tức là đóng ngoặc nhiều hơn mở tại thời điểm đó)\n    if dem1 < 0:\n        is_valid = False\n        break # Dừng ngay, không chạy tiếp nữa\n\n# Kiểm tra điều kiện cuối cùng:\n# 1. Không bị vi phạm giữa chừng (is_valid phải True)\n# 2. Số ngoặc mở và đóng phải bằng nhau (dem1 phải bằng 0)\nif is_valid == True and dem1 == 0:\n    print('true')\nelse:\n    print('ValueError: Parentheses not balanced')",
+        "highlighted_code": "s = str(input())\ndem1 = 0\nis_valid = True # Biến cờ hiệu (giả sử ban đầu là đúng)\n\n<span class='highlight-red'>for i in s:\n    if i == &#34;(&#34;:\n        dem1 += 1\n    elif i == &#34;)&#34;:\n        dem1 -= 1\n    \n    # Kiểm tra ngay lập tức sau khi tính toán\n    # Nếu tài khoản bị âm (tức là đóng ngoặc nhiều hơn mở tại thời điểm đó)\n    </span>if dem1 &lt; 0:\n        is_valid = False\n        break # Dừng ngay, không chạy tiếp nữa\n\n# Kiểm tra điều kiện cuối cùng:\n# 1. Không bị vi phạm giữa chừng (is_valid phải True)\n# 2. Số ngoặc mở và đóng phải bằng nhau (dem1 phải bằng 0)\nif is_valid == True and <span class='highlight-red'>dem1 == 0:\n    print(&#39;true&#39;)\nelse:\n    print</span>(&#39;ValueError: Parentheses not balanced&#39;)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3c726724325137447702e/cd93b2ff882a4ffa85f4518f/sub_1761549424898_uz6rs3p16.py",
+        "similarity_percent": 81.33,
+        "full_code": "s = input()\nba = 0\nfor ch in s:\n    if ch == '(':\n        ba += 1\n    elif ch == ')':\n        ba -= 1\n\nif ba == 0:\n    print(\"true\")\nelse:\n    print(\"ValueError: Parentheses not balanced\")\n",
+        "highlighted_code": "s = input()\nba = 0\n<span class='highlight-green'>for ch in s:\n    if ch == &#39;(&#39;:\n        ba += 1\n    elif ch == &#39;)&#39;:\n        ba -= 1\n\n</span>if <span class='highlight-green'>ba == 0:\n    print(&#34;true&#34;)\nelse:\n    print</span>(&#34;ValueError: Parentheses not balanced&#34;)\n"
+      },
+      "token_overlap": 61,
+      "max_similarity_percent": 81.33
+    },
+    {
+      "case_id": 61,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3c726724325137447702e/aa97adecf36047f6879b441e/sub_1763482202692_y66qhuu6t.py",
+        "similarity_percent": 53.51,
+        "full_code": "s = str(input())\ndem1 = 0\nis_valid = True # Biến cờ hiệu (giả sử ban đầu là đúng)\n\nfor i in s:\n    if i == \"(\":\n        dem1 += 1\n    elif i == \")\":\n        dem1 -= 1\n    \n    # Kiểm tra ngay lập tức sau khi tính toán\n    # Nếu tài khoản bị âm (tức là đóng ngoặc nhiều hơn mở tại thời điểm đó)\n    if dem1 < 0:\n        is_valid = False\n        break # Dừng ngay, không chạy tiếp nữa\n\n# Kiểm tra điều kiện cuối cùng:\n# 1. Không bị vi phạm giữa chừng (is_valid phải True)\n# 2. Số ngoặc mở và đóng phải bằng nhau (dem1 phải bằng 0)\nif is_valid == True and dem1 == 0:\n    print('true')\nelse:\n    print('ValueError: Parentheses not balanced')",
+        "highlighted_code": "s = str(input())\ndem1 = 0\nis_valid = True # Biến cờ hiệu (giả sử ban đầu là đúng)\n\n<span class='highlight-red'>for i in s:\n    if i == &#34;(&#34;:\n        dem1 += 1\n    elif i == &#34;)&#34;:\n        dem1 -= 1\n    \n    # Kiểm tra ngay lập tức sau khi tính toán\n    # Nếu tài khoản bị âm (tức là đóng ngoặc nhiều hơn mở tại thời điểm đó)\n    </span>if dem1 &lt; 0:\n        is_valid = False\n        break # Dừng ngay, không chạy tiếp nữa\n\n# Kiểm tra điều kiện cuối cùng:\n# 1. Không bị vi phạm giữa chừng (is_valid phải True)\n# 2. Số ngoặc mở và đóng phải bằng nhau (dem1 phải bằng 0)\nif is_valid == True and <span class='highlight-red'>dem1 == 0:\n    print(&#39;true&#39;)\nelse:\n    print</span>(&#39;ValueError: Parentheses not balanced&#39;)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3c726724325137447702e/aa97adecf36047f6879b441e/sub_1763482111421_m7utt6pql.py",
+        "similarity_percent": 60.4,
+        "full_code": "s = str(input())\ndem1=0\ndem2=0\nfor i in s:\n    if i == \"(\":\n        dem1 += 1\n    elif i == \")\":\n        dem1 -=1\n    elif dem1 < 0:\n        print(\"ValueError: Parentheses not balanced\")\nif dem1 == 0:\n    print('true')\nelse:\n    print('ValueError: Parentheses not balanced')",
+        "highlighted_code": "s = str(input())\ndem1=0\ndem2=0\n<span class='highlight-green'>for i in s:\n    if i == &#34;(&#34;:\n        dem1 += 1\n    elif i == &#34;)&#34;:\n        dem1 -=1\n    </span>elif dem1 &lt; 0:\n        print(&#34;ValueError: Parentheses not balanced&#34;)\nif <span class='highlight-green'>dem1 == 0:\n    print(&#39;true&#39;)\nelse:\n    print</span>(&#39;ValueError: Parentheses not balanced&#39;)"
+      },
+      "token_overlap": 61,
+      "max_similarity_percent": 60.4
+    },
+    {
+      "case_id": 62,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3c726724325137447702e/aa97adecf36047f6879b441e/sub_1763482202692_y66qhuu6t.py",
+        "similarity_percent": 53.51,
+        "full_code": "s = str(input())\ndem1 = 0\nis_valid = True # Biến cờ hiệu (giả sử ban đầu là đúng)\n\nfor i in s:\n    if i == \"(\":\n        dem1 += 1\n    elif i == \")\":\n        dem1 -= 1\n    \n    # Kiểm tra ngay lập tức sau khi tính toán\n    # Nếu tài khoản bị âm (tức là đóng ngoặc nhiều hơn mở tại thời điểm đó)\n    if dem1 < 0:\n        is_valid = False\n        break # Dừng ngay, không chạy tiếp nữa\n\n# Kiểm tra điều kiện cuối cùng:\n# 1. Không bị vi phạm giữa chừng (is_valid phải True)\n# 2. Số ngoặc mở và đóng phải bằng nhau (dem1 phải bằng 0)\nif is_valid == True and dem1 == 0:\n    print('true')\nelse:\n    print('ValueError: Parentheses not balanced')",
+        "highlighted_code": "s = str(input())\ndem1 = 0\nis_valid = True # Biến cờ hiệu (giả sử ban đầu là đúng)\n\n<span class='highlight-red'>for i in s:\n    if i == &#34;(&#34;:\n        dem1 += 1\n    elif i == &#34;)&#34;:\n        dem1 -= 1\n    \n    # Kiểm tra ngay lập tức sau khi tính toán\n    # Nếu tài khoản bị âm (tức là đóng ngoặc nhiều hơn mở tại thời điểm đó)\n    </span>if dem1 &lt; 0:\n        is_valid = False\n        break # Dừng ngay, không chạy tiếp nữa\n\n# Kiểm tra điều kiện cuối cùng:\n# 1. Không bị vi phạm giữa chừng (is_valid phải True)\n# 2. Số ngoặc mở và đóng phải bằng nhau (dem1 phải bằng 0)\nif is_valid == True and <span class='highlight-red'>dem1 == 0:\n    print(&#39;true&#39;)\nelse:\n    print</span>(&#39;ValueError: Parentheses not balanced&#39;)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3c726724325137447702e/8e236cb825b041b0a82527f2/sub_1761834643258_ijyost1nz.py",
+        "similarity_percent": 81.33,
+        "full_code": "s = input()\nopening = 0\nfor c in s:\n    if c == \"(\":\n        opening += 1\n    elif c == \")\":\n        opening -= 1\n\nif opening == 0:\n    print(\"true\")\nelse:\n    print(\"ValueError: Parentheses not balanced\")",
+        "highlighted_code": "s = input()\nopening = 0\n<span class='highlight-green'>for c in s:\n    if c == &#34;(&#34;:\n        opening += 1\n    elif c == &#34;)&#34;:\n        opening -= 1\n\n</span>if <span class='highlight-green'>opening == 0:\n    print(&#34;true&#34;)\nelse:\n    print</span>(&#34;ValueError: Parentheses not balanced&#34;)"
+      },
+      "token_overlap": 61,
+      "max_similarity_percent": 81.33
+    },
+    {
+      "case_id": 63,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3c726724325137447702e/14bfc7ed54df492fab26a1ff/sub_1763391118390_aw40gpeb2.py",
+        "similarity_percent": 53.25,
+        "full_code": "#include <iostream>\n#include <stack>\nusing namespace std;\n\nint main() {\n    stack<char>a;\n    string st;cin>>st;int kt=1;\n    for(int i=0;i<st.length();i++)\n    {\n        if(st[i]=='(')a.push(st[i]);\n        else if(a.empty()){kt=0;break;}\n        else a.pop();\n    }\n    if(a.empty())cout<<\"true\";\n    if(kt==0||!a.empty()) cout<<\"ValueError: Parentheses not balanced\";\n}",
+        "highlighted_code": "#include &lt;iostream&gt;\n#include &lt;stack&gt;\n<span class='highlight-red'>using namespace std;\n\nint main() {\n    stack&lt;char&gt;a;\n    string st;cin&gt;&gt;st;</span>int kt=1;\n    <span class='highlight-red'>for(int i=0;i&lt;st.length();i++)\n    {\n        if(st[i]==&#39;(&#39;)a.push(st[i]);\n        else if(a.empty</span>()){kt=0;break;}\n        else a.pop();\n    }\n    if(a.empty())cout&lt;&lt;&#34;true&#34;;\n    if(kt==0||!a.empty()) cout&lt;&lt;&#34;ValueError: Parentheses not balanced&#34;;\n}"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3c726724325137447702e/14bfc7ed54df492fab26a1ff/sub_1763390319718_jr0elolhz.py",
+        "similarity_percent": 58.57,
+        "full_code": "#include <iostream>\n#include <stack>\nusing namespace std;\n\nint main() {\n    stack<char>a;\n    string st;cin>>st;\n    for(int i=0;i<st.length();i++)\n    {\n        if(st[i]=='(')a.push(st[i]);\n        else if(a.empty())cout<<\"ValueError: Parentheses not balanced\";\n        else if (a.top()=='(')a.pop();\n    }\n    if(a.empty())cout<<\"true\";\n    else cout<<\"ValueError: Parentheses not balanced\";\n}",
+        "highlighted_code": "#include &lt;iostream&gt;\n#include &lt;stack&gt;\n<span class='highlight-green'>using namespace std;\n\nint main() {\n    stack&lt;char&gt;a;\n    string st;cin&gt;&gt;st;\n    </span><span class='highlight-green'>for(int i=0;i&lt;st.length();i++)\n    {\n        if(st[i]==&#39;(&#39;)a.push(st[i]);\n        else if(a.empty</span>())cout&lt;&lt;&#34;ValueError: Parentheses not balanced&#34;;\n        else if (a.top()==&#39;(&#39;)a.pop();\n    }\n    if(a.empty())cout&lt;&lt;&#34;true&#34;;\n    else cout&lt;&lt;&#34;ValueError: Parentheses not balanced&#34;;\n}"
+      },
+      "token_overlap": 82,
+      "max_similarity_percent": 58.57
     }
   ]
 }

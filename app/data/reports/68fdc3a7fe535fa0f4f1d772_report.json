@@ -4,7 +4,25 @@
     "min_token_overlap": 80,
     "min_similarity_percent": 60
   },
-  "total_cases_found": 0,
-  "total_cases_filtered": 0,
-  "cases": []
+  "total_cases_found": 1,
+  "total_cases_filtered": 1,
+  "cases": [
+    {
+      "case_id": 1,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3a7fe535fa0f4f1d772/75561f7db3a44ec5a82b732d/sub_1764060266710_bhbzbyuog.py",
+        "similarity_percent": 38.94,
+        "full_code": "from itertools import product\n\ntat_ca_day = []\n\n\nfor do_dai in range(1, 11):\n    \n    for d in product(\"012\", repeat=do_dai):\n        \n        \n        if d[0] not in ('1', '2'):\n            continue\n        \n        \n        so_luong_2 = d.count('2')\n        if so_luong_2 > do_dai / 2:\n           \n            gia_tri = int(\"\".join(d))\n            tat_ca_day.append(gia_tri)\n\n\ntat_ca_day.sort()\n\n\nt = int(input())  \n\nfor _ in range(t):\n    n = int(input())   \n    \n    \n    for i in range(n):\n        print(tat_ca_day[i], end=\" \")\n    print()",
+        "highlighted_code": "from itertools import product\n\ntat_ca_day = []\n\n\n<span class='highlight-red'>for do_dai in range(1, 11):\n    \n    for d in product</span>(&#34;012&#34;, repeat=do_dai):\n        \n        \n        if d[0] not in (&#39;1&#39;, &#39;2&#39;):\n            continue\n        \n        \n        so_luong_2 = d.count(&#39;2&#39;)\n        if so_luong_2 &gt; do_dai / 2:\n           \n            gia_tri = int(&#34;&#34;.join(d))\n            tat_ca_day.append(gia_tri)\n\n\ntat_ca_day.sort(<span class='highlight-red'>)\n\n\nt = int(input())  \n\nfor _ in range(t):\n    n = int(input())   \n    \n    \n    for i in range(</span>n):\n        print(tat_ca_day[i], end=&#34; &#34;)\n    print()"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3a7fe535fa0f4f1d772/bbf053b9c70d4a5697fa5d7f/sub_1764127623507_vfsko9yol.py",
+        "similarity_percent": 32.54,
+        "full_code": "from itertools import product\na = []\nb = ['0', '1', '2']\nfor length in range(1, 11):  \n    for tup in product(b, repeat=length):\n        s = ''.join(tup)\n        if s[0] not in ('1', '2'):\n            continue\n        if s.count('2') * 2 <= len(s):\n            continue\n        a.append(int(s))\na.sort()\nt = int(input())\nfor _ in range(t):\n    n = int(input())\n    print(*a[:n])",
+        "highlighted_code": "from itertools import product\na = []\nb = [&#39;0&#39;, &#39;1&#39;, &#39;2&#39;]\n<span class='highlight-green'>for length in range(1, 11):  \n    for tup in product</span>(b, repeat=length):\n        s = &#39;&#39;.join(tup)\n        if s[0] not in (&#39;1&#39;, &#39;2&#39;):\n            continue\n        if s.count(&#39;2&#39;) * 2 &lt;= len(s):\n            continue\n        a.append(int(s))\na.sort(<span class='highlight-green'>)\nt = int(input())\nfor _ in range(t):\n    n = int(input()</span>)\n    print(*a[:n])"
+      },
+      "token_overlap": 81,
+      "max_similarity_percent": 38.94
+    }
+  ]
 }

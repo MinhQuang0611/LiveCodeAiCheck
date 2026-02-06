@@ -4,25 +4,93 @@
     "min_token_overlap": 80,
     "min_similarity_percent": 60
   },
-  "total_cases_found": 1,
-  "total_cases_filtered": 1,
+  "total_cases_found": 10,
+  "total_cases_filtered": 5,
   "cases": [
     {
       "case_id": 1,
       "file1": {
-        "path": "/app/app/data/submissions/68e3d2a77243251374477466/e59c34a1bebb49d29bfb3592/sub_1761640842621_6a8nsxdmi.py",
+        "path": "/app/app/data/submissions/68e3d2a77243251374477466/edd832f517d24636bde1e118/sub_1765461111502_azwhri6lu.py",
         "similarity_percent": 100.0,
-        "full_code": "s = str(input()).split()\nprint(' ' .join(word[::-1] for word in s))",
-        "highlighted_code": "<span class='highlight-red'>s = str(input()).split()\nprint(&#39; &#39; .join(word[::-1] for word in s))</span>"
+        "full_code": "s = input()\n\nresult = []\nword = \"\"\n\nfor c in s:\n    if c != \" \":\n        word += c\n    else:\n        result.append(word[::-1])\n        word = \"\"\n        result.append(\" \")\n\nresult.append(word[::-1])\n\nprint(\"\".join(result)) ",
+        "highlighted_code": "<span class='highlight-red'>s = input()\n\nresult = []\nword = &#34;&#34;\n\nfor c in s:\n    if c != &#34; &#34;:\n        word += c\n    else:\n        result.append(word[::-1])\n        word = &#34;&#34;\n        result.append(&#34; &#34;)\n\nresult.append(word[::-1])\n\nprint(&#34;&#34;.join(result</span>)) "
       },
       "file2": {
+        "path": "/app/app/data/submissions/68e3d2a77243251374477466/edd832f517d24636bde1e118/sub_1765461857080_l3tvb36dc.py",
+        "similarity_percent": 100.0,
+        "full_code": "s = input()\nketqua = []\nc = \"\"\nfor i in s:\n    if i != \" \":\n        c += i\n    else:\n        ketqua.append(c[::-1])\n        c =\"\"\n        ketqua.append(\" \")\nketqua.append(c[::-1])\nprint(\"\".join(ketqua))\n",
+        "highlighted_code": "<span class='highlight-green'>s = input()\nketqua = []\nc = &#34;&#34;\nfor i in s:\n    if i != &#34; &#34;:\n        c += i\n    else:\n        ketqua.append(c[::-1])\n        c =&#34;&#34;\n        ketqua.append(&#34; &#34;)\nketqua.append(c[::-1])\nprint(&#34;&#34;.join(ketqua</span>))\n"
+      },
+      "token_overlap": 91,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 2,
+      "file1": {
         "path": "/app/app/data/submissions/68e3d2a77243251374477466/e59c34a1bebb49d29bfb3592/sub_1761640899516_jst9dxsub.py",
         "similarity_percent": 100.0,
         "full_code": "s = str(input()).split()\nprint(' '.join(word[::-1] for word in s))",
-        "highlighted_code": "<span class='highlight-green'>s = str(input()).split()\nprint(&#39; &#39;.join(word[::-1] for word in s))</span>"
+        "highlighted_code": "<span class='highlight-red'>s = str(input()).split()\nprint(&#39; &#39;.join(word[::-1] for word in s</span>))"
       },
-      "token_overlap": 46,
+      "file2": {
+        "path": "/app/app/data/submissions/68e3d2a77243251374477466/e59c34a1bebb49d29bfb3592/sub_1761640842621_6a8nsxdmi.py",
+        "similarity_percent": 100.0,
+        "full_code": "s = str(input()).split()\nprint(' ' .join(word[::-1] for word in s))",
+        "highlighted_code": "<span class='highlight-green'>s = str(input()).split()\nprint(&#39; &#39; .join(word[::-1] for word in s</span>))"
+      },
+      "token_overlap": 44,
       "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 3,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3d2a77243251374477466/d82933fea814463eb5b029d1/sub_1765632544049_7kfrqiwsx.py",
+        "similarity_percent": 82.05,
+        "full_code": "s = input().split()\ns_dao = []\nfor i in range(len(s)):\n    s_dao.append(\"\")\n    for j in s[i][::-1]:\n        s_dao[i] += j\n\nprint(\" \".join(s_dao))\n    \n\n    \n",
+        "highlighted_code": "s = input().split()\ns_dao <span class='highlight-red'>= []\nfor i in range(len(s)):\n    s_dao.append(&#34;&#34;)\n    for j in s[i][::-1]:\n        s_dao[i] += j\n\nprint(&#34; &#34;.</span>join(s_dao))\n    \n\n    \n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3d2a77243251374477466/d82933fea814463eb5b029d1/sub_1765632468584_nwnish38e.py",
+        "similarity_percent": 76.19,
+        "full_code": "s = list(input().split())\ns_dao = []\nfor i in range(len(s)):\n    s_dao.append(\"\")\n    for j in s[i][::-1]:\n        s_dao[i] += j\n\nprint(\" \".join(s_dao))\n    \n\n    \n",
+        "highlighted_code": "s = list(input().split())\ns_dao <span class='highlight-green'>= []\nfor i in range(len(s)):\n    s_dao.append(&#34;&#34;)\n    for j in s[i][::-1]:\n        s_dao[i] += j\n\nprint(&#34; &#34;.</span>join(s_dao))\n    \n\n    \n"
+      },
+      "token_overlap": 64,
+      "max_similarity_percent": 82.05
+    },
+    {
+      "case_id": 4,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3d2a77243251374477466/e59c34a1bebb49d29bfb3592/sub_1761641021405_28durzcx0.py",
+        "similarity_percent": 65.79,
+        "full_code": "s = input()\nprint(' '.join(word[::-1] for word in s.split()))\n",
+        "highlighted_code": "s = input()\np<span class='highlight-red'>rint(&#39; &#39;.join(word[::-1] for word in s</span>.split()))\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3d2a77243251374477466/e59c34a1bebb49d29bfb3592/sub_1761640899516_jst9dxsub.py",
+        "similarity_percent": 56.82,
+        "full_code": "s = str(input()).split()\nprint(' '.join(word[::-1] for word in s))",
+        "highlighted_code": "s = str(input()).split()\np<span class='highlight-green'>rint(&#39; &#39;.join(word[::-1] for word in s</span>))"
+      },
+      "token_overlap": 25,
+      "max_similarity_percent": 65.79
+    },
+    {
+      "case_id": 5,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3d2a77243251374477466/e59c34a1bebb49d29bfb3592/sub_1761641021405_28durzcx0.py",
+        "similarity_percent": 65.79,
+        "full_code": "s = input()\nprint(' '.join(word[::-1] for word in s.split()))\n",
+        "highlighted_code": "s = input()\np<span class='highlight-red'>rint(&#39; &#39;.join(word[::-1] for word in s</span>.split()))\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3d2a77243251374477466/e59c34a1bebb49d29bfb3592/sub_1761640842621_6a8nsxdmi.py",
+        "similarity_percent": 56.82,
+        "full_code": "s = str(input()).split()\nprint(' ' .join(word[::-1] for word in s))",
+        "highlighted_code": "s = str(input()).split()\np<span class='highlight-green'>rint(&#39; &#39; .join(word[::-1] for word in s</span>))"
+      },
+      "token_overlap": 25,
+      "max_similarity_percent": 65.79
     }
   ]
 }

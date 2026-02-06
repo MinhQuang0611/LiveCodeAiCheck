@@ -4,76 +4,127 @@
     "min_token_overlap": 80,
     "min_similarity_percent": 60
   },
-  "total_cases_found": 4,
-  "total_cases_filtered": 4,
+  "total_cases_found": 7,
+  "total_cases_filtered": 7,
   "cases": [
     {
       "case_id": 1,
       "file1": {
-        "path": "/app/app/data/submissions/68fdc3a6fe535fa0f4f1d752/d9aec9d917da4c5e9beeb80b/sub_1762002374450_ungun9dpz.py",
+        "path": "/app/app/data/submissions/68fdc3a6fe535fa0f4f1d752/2e99febeecc6490f8e7c3f87/sub_1761900025400_yzmijave5.py",
         "similarity_percent": 100.0,
-        "full_code": "a = input().strip()\nnum = int(a, 2)\nprint(oct(num)[2:]) \n",
-        "highlighted_code": "<span class='highlight-red'>a = input().strip()\nnum = int(a, 2)\nprint(oct(num)[2:</span>]) \n"
+        "full_code": "binary_str = input()\na  = 3 - len(binary_str)%3 \nnew_n = '0'*a + binary_str \noct_final = ''\nfor i in range(0,len(new_n),3): \n    oct_count = new_n[i:i+3]\n    oct_digit = str(int(oct_count,2))  sang số bát phân\n    oct_final += oct_digit \nprint(oct_final)",
+        "highlighted_code": "<span class='highlight-red'>binary_str = input()\na  = 3 - len(binary_str)%3 \nnew_n = &#39;0&#39;*a + binary_str \noct_final = &#39;&#39;\nfor i in range(0,len(new_n),3): \n    oct_count = new_n[i:i+3]\n    oct_digit = str(int(oct_count,2))  sang số bát phân\n    oct_final += oct_digit \nprin</span>t(oct_final)"
       },
       "file2": {
-        "path": "/app/app/data/submissions/68fdc3a6fe535fa0f4f1d752/cd93b2ff882a4ffa85f4518f/sub_1761889841701_5v77yedhz.py",
+        "path": "/app/app/data/submissions/68fdc3a6fe535fa0f4f1d752/2e99febeecc6490f8e7c3f87/sub_1761899949767_fpoz9mzzf.py",
         "similarity_percent": 100.0,
-        "full_code": "a = input().strip()          \nx = int(a, 2)                 \nprint(oct(x)[2:])        \n",
-        "highlighted_code": "<span class='highlight-green'>a = input().strip()          \nx = int(a, 2)                 \nprint(oct(x)[2:</span>])        \n"
+        "full_code": "binary_str = input()\na  = 3 - len(binary_str)%3 \nnew_n = '0'*a + binary_str \noct_final = ''\nfor i in range(0,len(new_n),3): \n    oct_count = new_n[i:i+3]\n    oct_digit = str(int(oct_count,2))  sang số bát phân\n    oct_final += oct_digit \nprint(oct_final)",
+        "highlighted_code": "<span class='highlight-green'>binary_str = input()\na  = 3 - len(binary_str)%3 \nnew_n = &#39;0&#39;*a + binary_str \noct_final = &#39;&#39;\nfor i in range(0,len(new_n),3): \n    oct_count = new_n[i:i+3]\n    oct_digit = str(int(oct_count,2))  sang số bát phân\n    oct_final += oct_digit \nprin</span>t(oct_final)"
       },
-      "token_overlap": 38,
+      "token_overlap": 95,
       "max_similarity_percent": 100.0
     },
     {
       "case_id": 2,
       "file1": {
-        "path": "/app/app/data/submissions/68fdc3a6fe535fa0f4f1d752/2e99febeecc6490f8e7c3f87/sub_1761900025400_yzmijave5.py",
+        "path": "/app/app/data/submissions/68fdc3a6fe535fa0f4f1d752/cd93b2ff882a4ffa85f4518f/sub_1761889841701_5v77yedhz.py",
         "similarity_percent": 100.0,
-        "full_code": "binary_str = input()\na  = 3 - len(binary_str)%3 \nnew_n = '0'*a + binary_str \noct_final = ''\nfor i in range(0,len(new_n),3): \n    oct_count = new_n[i:i+3]\n    oct_digit = str(int(oct_count,2))  sang số bát phân\n    oct_final += oct_digit \nprint(oct_final)",
-        "highlighted_code": "<span class='highlight-red'>binary_str = input()\na  = 3 - len(binary_str)%3 \nnew_n = &#39;0&#39;*a + binary_str \noct_final = &#39;&#39;\nfor i in range(0,len(new_n),3): \n    oct_count = new_n[i:i+3]\n    oct_digit = str(int(oct_count,2))  sang số bát phân\n    oct_final += oct_digit \nprint(</span>oct_final)"
+        "full_code": "a = input().strip()          \nx = int(a, 2)                 \nprint(oct(x)[2:])        \n",
+        "highlighted_code": "<span class='highlight-red'>a = input().strip()          \nx = int(a, 2)                 \nprint(oct(x)[2:</span>])        \n"
       },
       "file2": {
-        "path": "/app/app/data/submissions/68fdc3a6fe535fa0f4f1d752/2e99febeecc6490f8e7c3f87/sub_1761899949767_fpoz9mzzf.py",
+        "path": "/app/app/data/submissions/68fdc3a6fe535fa0f4f1d752/d9aec9d917da4c5e9beeb80b/sub_1762002374450_ungun9dpz.py",
         "similarity_percent": 100.0,
-        "full_code": "binary_str = input()\na  = 3 - len(binary_str)%3 \nnew_n = '0'*a + binary_str \noct_final = ''\nfor i in range(0,len(new_n),3): \n    oct_count = new_n[i:i+3]\n    oct_digit = str(int(oct_count,2))  sang số bát phân\n    oct_final += oct_digit \nprint(oct_final)",
-        "highlighted_code": "<span class='highlight-green'>binary_str = input()\na  = 3 - len(binary_str)%3 \nnew_n = &#39;0&#39;*a + binary_str \noct_final = &#39;&#39;\nfor i in range(0,len(new_n),3): \n    oct_count = new_n[i:i+3]\n    oct_digit = str(int(oct_count,2))  sang số bát phân\n    oct_final += oct_digit \nprint(</span>oct_final)"
+        "full_code": "a = input().strip()\nnum = int(a, 2)\nprint(oct(num)[2:]) \n",
+        "highlighted_code": "<span class='highlight-green'>a = input().strip()\nnum = int(a, 2)\nprint(oct(num)[2:</span>]) \n"
       },
-      "token_overlap": 97,
+      "token_overlap": 38,
       "max_similarity_percent": 100.0
     },
     {
       "case_id": 3,
       "file1": {
-        "path": "/app/app/data/submissions/68fdc3a6fe535fa0f4f1d752/2e99febeecc6490f8e7c3f87/sub_1761900025400_yzmijave5.py",
-        "similarity_percent": 74.23,
-        "full_code": "binary_str = input()\na  = 3 - len(binary_str)%3 \nnew_n = '0'*a + binary_str \noct_final = ''\nfor i in range(0,len(new_n),3): \n    oct_count = new_n[i:i+3]\n    oct_digit = str(int(oct_count,2))  sang số bát phân\n    oct_final += oct_digit \nprint(oct_final)",
-        "highlighted_code": "binary_str = input()\na  = 3 <span class='highlight-red'>- len(binary_str)%3 \nnew_n = &#39;0&#39;*a + binary_str \noct_final = &#39;&#39;\nfor i in range(0,len(new_n),3): \n    oct_count = new_n[i:i+3]\n    oct_digit = str(int(oct_count,2))  sang </span>số bát phân\n    oct_final += oct_digit \nprint(oct_final)"
+        "path": "/app/app/data/submissions/68fdc3a6fe535fa0f4f1d752/cd93b2ff882a4ffa85f4518f/sub_1765047111331_j4qv9p4bf.py",
+        "similarity_percent": 100.0,
+        "full_code": "s=input()\nn=int(s,2)\nprint(n+2)",
+        "highlighted_code": "<span class='highlight-red'>s=input()\nn=int(s,2)\nprint(n</span>+2)"
       },
       "file2": {
-        "path": "/app/app/data/submissions/68fdc3a6fe535fa0f4f1d752/2e99febeecc6490f8e7c3f87/sub_1761902315262_sj6s44iyj.py",
-        "similarity_percent": 59.02,
-        "full_code": "def binary_to_octal(binary_str):\n    a  = 3 - len(binary_str)%3 \n    new_n = '0'*a + binary_str \n    oct_final = ''\n    for i in range(0,len(new_n),3):  \n        oct_count = new_n[i:i+3]\n        oct_digit = str(int(oct_count,2))\n        oct_final += oct_digit \n    print(oct_final)\nif __name__ == '__main__':\n    binary_str = input()\n    binary_to_octal(binary_str)",
-        "highlighted_code": "def binary_to_octal(binary_str):\n    a  = 3 <span class='highlight-green'>- len(binary_str)%3 \n    new_n = &#39;0&#39;*a + binary_str \n    oct_final = &#39;&#39;\n    for i in range(0,len(new_n),3):  \n        oct_count = new_n[i:i+3]\n        oct_digit = str(int(oct_count,2))\n        oct_final </span>+= oct_digit \n    print(oct_final)\nif __name__ == &#39;__main__&#39;:\n    binary_str = input()\n    binary_to_octal(binary_str)"
+        "path": "/app/app/data/submissions/68fdc3a6fe535fa0f4f1d752/761f0dfbd0fb4be3ada99651/sub_1765173067422_ixh6h9cu9.py",
+        "similarity_percent": 100.0,
+        "full_code": "a = input() \nk = int(a,2) \nprint(k+2) ",
+        "highlighted_code": "<span class='highlight-green'>a = input() \nk = int(a,2) \nprint(k</span>+2) "
       },
-      "token_overlap": 72,
-      "max_similarity_percent": 74.23
+      "token_overlap": 26,
+      "max_similarity_percent": 100.0
     },
     {
       "case_id": 4,
       "file1": {
-        "path": "/app/app/data/submissions/68fdc3a6fe535fa0f4f1d752/2e99febeecc6490f8e7c3f87/sub_1761902315262_sj6s44iyj.py",
-        "similarity_percent": 59.02,
-        "full_code": "def binary_to_octal(binary_str):\n    a  = 3 - len(binary_str)%3 \n    new_n = '0'*a + binary_str \n    oct_final = ''\n    for i in range(0,len(new_n),3):  \n        oct_count = new_n[i:i+3]\n        oct_digit = str(int(oct_count,2))\n        oct_final += oct_digit \n    print(oct_final)\nif __name__ == '__main__':\n    binary_str = input()\n    binary_to_octal(binary_str)",
-        "highlighted_code": "def binary_to_octal(binary_str):\n    a  = 3 <span class='highlight-red'>- len(binary_str)%3 \n    new_n = &#39;0&#39;*a + binary_str \n    oct_final = &#39;&#39;\n    for i in range(0,len(new_n),3):  \n        oct_count = new_n[i:i+3]\n        oct_digit = str(int(oct_count,2))\n        oct_final </span>+= oct_digit \n    print(oct_final)\nif __name__ == &#39;__main__&#39;:\n    binary_str = input()\n    binary_to_octal(binary_str)"
+        "path": "/app/app/data/submissions/68fdc3a6fe535fa0f4f1d752/cd93b2ff882a4ffa85f4518f/sub_1765047111331_j4qv9p4bf.py",
+        "similarity_percent": 96.15,
+        "full_code": "s=input()\nn=int(s,2)\nprint(n+2)",
+        "highlighted_code": "<span class='highlight-red'>s=input()\nn=int(s,2)\nprint(</span>n+2)"
       },
       "file2": {
-        "path": "/app/app/data/submissions/68fdc3a6fe535fa0f4f1d752/2e99febeecc6490f8e7c3f87/sub_1761899949767_fpoz9mzzf.py",
-        "similarity_percent": 74.23,
-        "full_code": "binary_str = input()\na  = 3 - len(binary_str)%3 \nnew_n = '0'*a + binary_str \noct_final = ''\nfor i in range(0,len(new_n),3): \n    oct_count = new_n[i:i+3]\n    oct_digit = str(int(oct_count,2))  sang số bát phân\n    oct_final += oct_digit \nprint(oct_final)",
-        "highlighted_code": "binary_str = input()\na  = 3 <span class='highlight-green'>- len(binary_str)%3 \nnew_n = &#39;0&#39;*a + binary_str \noct_final = &#39;&#39;\nfor i in range(0,len(new_n),3): \n    oct_count = new_n[i:i+3]\n    oct_digit = str(int(oct_count,2))  sang </span>số bát phân\n    oct_final += oct_digit \nprint(oct_final)"
+        "path": "/app/app/data/submissions/68fdc3a6fe535fa0f4f1d752/27e30f767b3a46b283cbfec0/sub_1762240892937_1yid7vbcs.py",
+        "similarity_percent": 83.33,
+        "full_code": "n = input()\ndecimal = int(n,2)\nprint('%o' % (decimal))",
+        "highlighted_code": "<span class='highlight-green'>n = input()\ndecimal = int(n,2)\nprint(</span>&#39;%o&#39; % (decimal))"
       },
-      "token_overlap": 72,
-      "max_similarity_percent": 74.23
+      "token_overlap": 25,
+      "max_similarity_percent": 96.15
+    },
+    {
+      "case_id": 5,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3a6fe535fa0f4f1d752/27e30f767b3a46b283cbfec0/sub_1762240892937_1yid7vbcs.py",
+        "similarity_percent": 83.33,
+        "full_code": "n = input()\ndecimal = int(n,2)\nprint('%o' % (decimal))",
+        "highlighted_code": "<span class='highlight-red'>n = input()\ndecimal = int(n,2)\nprint(</span>&#39;%o&#39; % (decimal))"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3a6fe535fa0f4f1d752/761f0dfbd0fb4be3ada99651/sub_1765173067422_ixh6h9cu9.py",
+        "similarity_percent": 96.15,
+        "full_code": "a = input() \nk = int(a,2) \nprint(k+2) ",
+        "highlighted_code": "<span class='highlight-green'>a = input() \nk = int(a,2) \nprint(</span>k+2) "
+      },
+      "token_overlap": 25,
+      "max_similarity_percent": 96.15
+    },
+    {
+      "case_id": 6,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3a6fe535fa0f4f1d752/2e99febeecc6490f8e7c3f87/sub_1761900025400_yzmijave5.py",
+        "similarity_percent": 71.58,
+        "full_code": "binary_str = input()\na  = 3 - len(binary_str)%3 \nnew_n = '0'*a + binary_str \noct_final = ''\nfor i in range(0,len(new_n),3): \n    oct_count = new_n[i:i+3]\n    oct_digit = str(int(oct_count,2))  sang số bát phân\n    oct_final += oct_digit \nprint(oct_final)",
+        "highlighted_code": "binary_str = input()\na  = 3 <span class='highlight-red'>- len(binary_str)%3 \nnew_n = &#39;0&#39;*a + binary_str \noct_final = &#39;&#39;\nfor i in range(0,len(new_n),3): \n    oct_count = new_n[i:i+3]\n    oct_digit = str(int(oct_count,</span>2))  sang số bát phân\n    oct_final += oct_digit \nprint(oct_final)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3a6fe535fa0f4f1d752/2e99febeecc6490f8e7c3f87/sub_1761902315262_sj6s44iyj.py",
+        "similarity_percent": 55.28,
+        "full_code": "def binary_to_octal(binary_str):\n    a  = 3 - len(binary_str)%3 \n    new_n = '0'*a + binary_str \n    oct_final = ''\n    for i in range(0,len(new_n),3):  \n        oct_count = new_n[i:i+3]\n        oct_digit = str(int(oct_count,2))\n        oct_final += oct_digit \n    print(oct_final)\nif __name__ == '__main__':\n    binary_str = input()\n    binary_to_octal(binary_str)",
+        "highlighted_code": "def binary_to_octal(binary_str):\n    a  = 3 <span class='highlight-green'>- len(binary_str)%3 \n    new_n = &#39;0&#39;*a + binary_str \n    oct_final = &#39;&#39;\n    for i in range(0,len(new_n),3):  \n        oct_count = new_n[i:i+3]\n        oct_digit = str(int(oct_count,</span>2))\n        oct_final += oct_digit \n    print(oct_final)\nif __name__ == &#39;__main__&#39;:\n    binary_str = input()\n    binary_to_octal(binary_str)"
+      },
+      "token_overlap": 68,
+      "max_similarity_percent": 71.58
+    },
+    {
+      "case_id": 7,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3a6fe535fa0f4f1d752/2e99febeecc6490f8e7c3f87/sub_1761899949767_fpoz9mzzf.py",
+        "similarity_percent": 71.58,
+        "full_code": "binary_str = input()\na  = 3 - len(binary_str)%3 \nnew_n = '0'*a + binary_str \noct_final = ''\nfor i in range(0,len(new_n),3): \n    oct_count = new_n[i:i+3]\n    oct_digit = str(int(oct_count,2))  sang số bát phân\n    oct_final += oct_digit \nprint(oct_final)",
+        "highlighted_code": "binary_str = input()\na  = 3 <span class='highlight-red'>- len(binary_str)%3 \nnew_n = &#39;0&#39;*a + binary_str \noct_final = &#39;&#39;\nfor i in range(0,len(new_n),3): \n    oct_count = new_n[i:i+3]\n    oct_digit = str(int(oct_count,</span>2))  sang số bát phân\n    oct_final += oct_digit \nprint(oct_final)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3a6fe535fa0f4f1d752/2e99febeecc6490f8e7c3f87/sub_1761902315262_sj6s44iyj.py",
+        "similarity_percent": 55.28,
+        "full_code": "def binary_to_octal(binary_str):\n    a  = 3 - len(binary_str)%3 \n    new_n = '0'*a + binary_str \n    oct_final = ''\n    for i in range(0,len(new_n),3):  \n        oct_count = new_n[i:i+3]\n        oct_digit = str(int(oct_count,2))\n        oct_final += oct_digit \n    print(oct_final)\nif __name__ == '__main__':\n    binary_str = input()\n    binary_to_octal(binary_str)",
+        "highlighted_code": "def binary_to_octal(binary_str):\n    a  = 3 <span class='highlight-green'>- len(binary_str)%3 \n    new_n = &#39;0&#39;*a + binary_str \n    oct_final = &#39;&#39;\n    for i in range(0,len(new_n),3):  \n        oct_count = new_n[i:i+3]\n        oct_digit = str(int(oct_count,</span>2))\n        oct_final += oct_digit \n    print(oct_final)\nif __name__ == &#39;__main__&#39;:\n    binary_str = input()\n    binary_to_octal(binary_str)"
+      },
+      "token_overlap": 68,
+      "max_similarity_percent": 71.58
     }
   ]
 }

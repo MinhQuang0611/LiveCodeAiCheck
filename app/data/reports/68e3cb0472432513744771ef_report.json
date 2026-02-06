@@ -4,42 +4,467 @@
     "min_token_overlap": 80,
     "min_similarity_percent": 60
   },
-  "total_cases_found": 8,
-  "total_cases_filtered": 2,
+  "total_cases_found": 85,
+  "total_cases_filtered": 27,
   "cases": [
     {
       "case_id": 1,
       "file1": {
-        "path": "/app/app/data/submissions/68e3cb0472432513744771ef/c78f5dfafb144ed89a06ddba/sub_1762774615911_8ryl4z9vw.py",
-        "similarity_percent": 68.18,
-        "full_code": "n=int(input())\nwhile n > 10:\n    a=(str(n))\n    b=list(map(int, a))\n    n=sum(b)\nprint(n)",
-        "highlighted_code": "n=int(input())\nwhile n &gt; <span class='highlight-red'>10:\n    a=(str(n))\n    b=list(map(int, a))\n    n=sum(b)\nprint(</span>n)"
+        "path": "/app/app/data/submissions/68e3cb0472432513744771ef/b3519b9e13a04f80b0756606/sub_1764166881390_d1bitdthw.py",
+        "similarity_percent": 100.0,
+        "full_code": "n = int(input())\nwhile n >= 10:         \n    s = 0\n    while n > 0:        \n        s += n % 10\n        n //= 10\n    n = s            \nprint(n)\n",
+        "highlighted_code": "<span class='highlight-red'>n = int(input())\nwhile n &gt;= 10:         \n    s = 0\n    while n &gt; 0:        \n        s += n % 10\n        n //= 10\n    n = s            \nprin</span>t(n)\n"
       },
       "file2": {
-        "path": "/app/app/data/submissions/68e3cb0472432513744771ef/c78f5dfafb144ed89a06ddba/sub_1762774789193_ll5fdjmx6.py",
-        "similarity_percent": 67.16,
-        "full_code": "n=int(input())\nwhile n >= 10:\n    a=(str(n))\n    b=list(map(int, a))\n    n=sum(b)\nprint(n)",
-        "highlighted_code": "n=int(input())\nwhile n &gt;= <span class='highlight-green'>10:\n    a=(str(n))\n    b=list(map(int, a))\n    n=sum(b)\nprint(</span>n)"
+        "path": "/app/app/data/submissions/68e3cb0472432513744771ef/d82933fea814463eb5b029d1/sub_1765040644927_eugvbb59f.py",
+        "similarity_percent": 100.0,
+        "full_code": "n = int(input())\n\nwhile n >= 10:\n    t = 0\n    while n > 0:\n        t += n % 10\n        n //= 10\n    n = t\n\nprint(n)\n",
+        "highlighted_code": "<span class='highlight-green'>n = int(input())\n\nwhile n &gt;= 10:\n    t = 0\n    while n &gt; 0:\n        t += n % 10\n        n //= 10\n    n = t\n\nprin</span>t(n)\n"
       },
-      "token_overlap": 45,
-      "max_similarity_percent": 68.18
+      "token_overlap": 57,
+      "max_similarity_percent": 100.0
     },
     {
       "case_id": 2,
       "file1": {
+        "path": "/app/app/data/submissions/68e3cb0472432513744771ef/91001b54722a4328a2b7b879/sub_1762253750395_o4eyd9pl3.py",
+        "similarity_percent": 100.0,
+        "full_code": "n = int(input())\n\nwhile n >= 10:  # nếu n >= 10 thì còn nhiều hơn 1 chữ số\n    sum_digits = 0\n    temp = n\n    # tính tổng các chữ số\n    while temp > 0:\n        sum_digits += temp % 10  # lấy chữ số cuối cùng\n        temp //= 10              # bỏ chữ số cuối cùng\n    n = sum_digits  # cập nhật n bằng tổng các chữ số\n\nprint(n)\n",
+        "highlighted_code": "<span class='highlight-red'>n = int(input())\n\nwhile n &gt;= 10:  # nếu n &gt;= 10 thì còn nhiều hơn 1 chữ số\n    sum_digits = 0\n    temp = n\n    # tính tổng các chữ số\n    while temp &gt; 0:\n        sum_digits += temp % 10  # lấy chữ số cuối cùng\n        temp //= 10              # bỏ chữ số cuối cùng\n    n = sum_digits  # cập nhật n bằng tổng các chữ số\n\nprin</span>t(n)\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3cb0472432513744771ef/472aabe424744a0f9fa4c2d4/sub_1765379044570_2a73cftyr.py",
+        "similarity_percent": 100.0,
+        "full_code": "n = int(input())\n\nwhile n >= 10:\n    s = 0\n    temp = n\n    while temp > 0:\n        s += temp % 10\n        temp //= 10\n    n = s  \n\nprint(n)\n",
+        "highlighted_code": "<span class='highlight-green'>n = int(input())\n\nwhile n &gt;= 10:\n    s = 0\n    temp = n\n    while temp &gt; 0:\n        s += temp % 10\n        temp //= 10\n    n = s  \n\nprin</span>t(n)\n"
+      },
+      "token_overlap": 60,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 3,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3cb0472432513744771ef/472aabe424744a0f9fa4c2d4/sub_1765379872170_565ds6gri.py",
+        "similarity_percent": 100.0,
+        "full_code": "n = int(input())\nwhile n >= 10 :\n    s = 0\n    temp = n\n    while temp >0 :\n        digital = temp % 10\n        s = s + digital \n        temp = temp // 10\n    n = s\nprint(n)",
+        "highlighted_code": "<span class='highlight-red'>n = int(input())\nwhile n &gt;= 10 :\n    s = 0\n    temp = n\n    while temp &gt;0 :\n        digital = temp % 10\n        s = s + digital \n        temp = temp // 10\n    n = s\npri</span>nt(n)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3cb0472432513744771ef/472aabe424744a0f9fa4c2d4/sub_1765379631729_laj0fipwh.py",
+        "similarity_percent": 100.0,
+        "full_code": "n=int(input())\n\nwhile n >= 10:\n    tong = 0\n    temp = n\n    while temp > 0:\n        digital = temp % 10\n        tong = tong + digital \n        temp = temp // 10\n    tong = n\nprint(n)\n",
+        "highlighted_code": "<span class='highlight-green'>n=int(input())\n\nwhile n &gt;= 10:\n    tong = 0\n    temp = n\n    while temp &gt; 0:\n        digital = temp % 10\n        tong = tong + digital \n        temp = temp // 10\n    tong = n\npri</span>nt(n)\n"
+      },
+      "token_overlap": 64,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 4,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3cb0472432513744771ef/e59c34a1bebb49d29bfb3592/sub_1765028913790_lcl5p4f6j.py",
+        "similarity_percent": 100.0,
+        "full_code": "n = int(input())\nwhile n >= 10:\n    tong = 0\n    for ch in str(n):\n        tong += int(ch)\n    n = tong\nprint(n)",
+        "highlighted_code": "<span class='highlight-red'>n = int(input())\nwhile n &gt;= 10:\n    tong = 0\n    for ch in str(n):\n        tong += int(ch)\n    n = tong\npri</span>nt(n)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3cb0472432513744771ef/b3519b9e13a04f80b0756606/sub_1765724718874_aobtd3338.py",
+        "similarity_percent": 100.0,
+        "full_code": "n = int(input())\nwhile n >= 10:\n    s = 0\n    for d in str(n):\n        s += int(d)\n    n = s   \nprint(n)",
+        "highlighted_code": "<span class='highlight-green'>n = int(input())\nwhile n &gt;= 10:\n    s = 0\n    for d in str(n):\n        s += int(d)\n    n = s   \npri</span>nt(n)"
+      },
+      "token_overlap": 56,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 5,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3cb0472432513744771ef/b3519b9e13a04f80b0756606/sub_1764166881390_d1bitdthw.py",
+        "similarity_percent": 94.74,
+        "full_code": "n = int(input())\nwhile n >= 10:         \n    s = 0\n    while n > 0:        \n        s += n % 10\n        n //= 10\n    n = s            \nprint(n)\n",
+        "highlighted_code": "<span class='highlight-red'>n = int(input())\nwhile n &gt;= 10:         \n    s = </span>0\n    wh<span class='highlight-red'>ile n &gt; 0:        \n        s += n % 10\n        n //= 10\n    n = s            \nprin</span>t(n)\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3cb0472432513744771ef/91001b54722a4328a2b7b879/sub_1762253750395_o4eyd9pl3.py",
+        "similarity_percent": 90.0,
+        "full_code": "n = int(input())\n\nwhile n >= 10:  # nếu n >= 10 thì còn nhiều hơn 1 chữ số\n    sum_digits = 0\n    temp = n\n    # tính tổng các chữ số\n    while temp > 0:\n        sum_digits += temp % 10  # lấy chữ số cuối cùng\n        temp //= 10              # bỏ chữ số cuối cùng\n    n = sum_digits  # cập nhật n bằng tổng các chữ số\n\nprint(n)\n",
+        "highlighted_code": "<span class='highlight-green'>n = int(input())\n\nwhile n &gt;= 10:  # nếu n &gt;= 10 thì còn nhiều hơn 1 chữ số\n    sum_digits = </span>0\n    temp = n\n    # tính tổng các chữ số\n    wh<span class='highlight-green'>ile temp &gt; 0:\n        sum_digits += temp % 10  # lấy chữ số cuối cùng\n        temp //= 10              # bỏ chữ số cuối cùng\n    n = sum_digits  # cập nhật n bằng tổng các chữ số\n\nprin</span>t(n)\n"
+      },
+      "token_overlap": 54,
+      "max_similarity_percent": 94.74
+    },
+    {
+      "case_id": 6,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3cb0472432513744771ef/b3519b9e13a04f80b0756606/sub_1764166881390_d1bitdthw.py",
+        "similarity_percent": 94.74,
+        "full_code": "n = int(input())\nwhile n >= 10:         \n    s = 0\n    while n > 0:        \n        s += n % 10\n        n //= 10\n    n = s            \nprint(n)\n",
+        "highlighted_code": "<span class='highlight-red'>n = int(input())\nwhile n &gt;= 10:         \n    s = </span>0\n    wh<span class='highlight-red'>ile n &gt; 0:        \n        s += n % 10\n        n //= 10\n    n = s            \nprin</span>t(n)\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3cb0472432513744771ef/472aabe424744a0f9fa4c2d4/sub_1765379044570_2a73cftyr.py",
+        "similarity_percent": 90.0,
+        "full_code": "n = int(input())\n\nwhile n >= 10:\n    s = 0\n    temp = n\n    while temp > 0:\n        s += temp % 10\n        temp //= 10\n    n = s  \n\nprint(n)\n",
+        "highlighted_code": "<span class='highlight-green'>n = int(input())\n\nwhile n &gt;= 10:\n    s = </span>0\n    temp = n\n    wh<span class='highlight-green'>ile temp &gt; 0:\n        s += temp % 10\n        temp //= 10\n    n = s  \n\nprin</span>t(n)\n"
+      },
+      "token_overlap": 54,
+      "max_similarity_percent": 94.74
+    },
+    {
+      "case_id": 7,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3cb0472432513744771ef/d82933fea814463eb5b029d1/sub_1765040644927_eugvbb59f.py",
+        "similarity_percent": 94.74,
+        "full_code": "n = int(input())\n\nwhile n >= 10:\n    t = 0\n    while n > 0:\n        t += n % 10\n        n //= 10\n    n = t\n\nprint(n)\n",
+        "highlighted_code": "<span class='highlight-red'>n = int(input())\n\nwhile n &gt;= 10:\n    t = </span>0\n    wh<span class='highlight-red'>ile n &gt; 0:\n        t += n % 10\n        n //= 10\n    n = t\n\nprin</span>t(n)\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3cb0472432513744771ef/472aabe424744a0f9fa4c2d4/sub_1765379044570_2a73cftyr.py",
+        "similarity_percent": 90.0,
+        "full_code": "n = int(input())\n\nwhile n >= 10:\n    s = 0\n    temp = n\n    while temp > 0:\n        s += temp % 10\n        temp //= 10\n    n = s  \n\nprint(n)\n",
+        "highlighted_code": "<span class='highlight-green'>n = int(input())\n\nwhile n &gt;= 10:\n    s = </span>0\n    temp = n\n    wh<span class='highlight-green'>ile temp &gt; 0:\n        s += temp % 10\n        temp //= 10\n    n = s  \n\nprin</span>t(n)\n"
+      },
+      "token_overlap": 54,
+      "max_similarity_percent": 94.74
+    },
+    {
+      "case_id": 8,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3cb0472432513744771ef/91001b54722a4328a2b7b879/sub_1762253750395_o4eyd9pl3.py",
+        "similarity_percent": 90.0,
+        "full_code": "n = int(input())\n\nwhile n >= 10:  # nếu n >= 10 thì còn nhiều hơn 1 chữ số\n    sum_digits = 0\n    temp = n\n    # tính tổng các chữ số\n    while temp > 0:\n        sum_digits += temp % 10  # lấy chữ số cuối cùng\n        temp //= 10              # bỏ chữ số cuối cùng\n    n = sum_digits  # cập nhật n bằng tổng các chữ số\n\nprint(n)\n",
+        "highlighted_code": "<span class='highlight-red'>n = int(input())\n\nwhile n &gt;= 10:  # nếu n &gt;= 10 thì còn nhiều hơn 1 chữ số\n    sum_digits = </span>0\n    temp = n\n    # tính tổng các chữ số\n    wh<span class='highlight-red'>ile temp &gt; 0:\n        sum_digits += temp % 10  # lấy chữ số cuối cùng\n        temp //= 10              # bỏ chữ số cuối cùng\n    n = sum_digits  # cập nhật n bằng tổng các chữ số\n\nprin</span>t(n)\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3cb0472432513744771ef/d82933fea814463eb5b029d1/sub_1765040644927_eugvbb59f.py",
+        "similarity_percent": 94.74,
+        "full_code": "n = int(input())\n\nwhile n >= 10:\n    t = 0\n    while n > 0:\n        t += n % 10\n        n //= 10\n    n = t\n\nprint(n)\n",
+        "highlighted_code": "<span class='highlight-green'>n = int(input())\n\nwhile n &gt;= 10:\n    t = </span>0\n    wh<span class='highlight-green'>ile n &gt; 0:\n        t += n % 10\n        n //= 10\n    n = t\n\nprin</span>t(n)\n"
+      },
+      "token_overlap": 54,
+      "max_similarity_percent": 94.74
+    },
+    {
+      "case_id": 9,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3cb0472432513744771ef/472aabe424744a0f9fa4c2d4/sub_1765378799671_agj414sr6.py",
+        "similarity_percent": 88.89,
+        "full_code": "n=int(input())\n\nwhile n>=10:\n    s=0\n    temp = n\n    \n    while  temp >0:\n        socuoi = temp % 10\n        s = s + socuoi\n        temp = temp // 10\n    n=s\nprint(\"Digital root \",n )",
+        "highlighted_code": "<span class='highlight-red'>n=int(input())\n\nwhile n&gt;=10:\n    s=0\n    temp = n\n    \n    while  temp &gt;0:\n        socuoi = temp % 10\n        s = s + socuoi\n        temp = temp // 10\n    n=s\npri</span>nt(&#34;Digital root &#34;,n )"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3cb0472432513744771ef/472aabe424744a0f9fa4c2d4/sub_1765379872170_565ds6gri.py",
+        "similarity_percent": 100.0,
+        "full_code": "n = int(input())\nwhile n >= 10 :\n    s = 0\n    temp = n\n    while temp >0 :\n        digital = temp % 10\n        s = s + digital \n        temp = temp // 10\n    n = s\nprint(n)",
+        "highlighted_code": "<span class='highlight-green'>n = int(input())\nwhile n &gt;= 10 :\n    s = 0\n    temp = n\n    while temp &gt;0 :\n        digital = temp % 10\n        s = s + digital \n        temp = temp // 10\n    n = s\npri</span>nt(n)"
+      },
+      "token_overlap": 64,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 10,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3cb0472432513744771ef/472aabe424744a0f9fa4c2d4/sub_1765378799671_agj414sr6.py",
+        "similarity_percent": 88.89,
+        "full_code": "n=int(input())\n\nwhile n>=10:\n    s=0\n    temp = n\n    \n    while  temp >0:\n        socuoi = temp % 10\n        s = s + socuoi\n        temp = temp // 10\n    n=s\nprint(\"Digital root \",n )",
+        "highlighted_code": "<span class='highlight-red'>n=int(input())\n\nwhile n&gt;=10:\n    s=0\n    temp = n\n    \n    while  temp &gt;0:\n        socuoi = temp % 10\n        s = s + socuoi\n        temp = temp // 10\n    n=s\npri</span>nt(&#34;Digital root &#34;,n )"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3cb0472432513744771ef/472aabe424744a0f9fa4c2d4/sub_1765379631729_laj0fipwh.py",
+        "similarity_percent": 100.0,
+        "full_code": "n=int(input())\n\nwhile n >= 10:\n    tong = 0\n    temp = n\n    while temp > 0:\n        digital = temp % 10\n        tong = tong + digital \n        temp = temp // 10\n    tong = n\nprint(n)\n",
+        "highlighted_code": "<span class='highlight-green'>n=int(input())\n\nwhile n &gt;= 10:\n    tong = 0\n    temp = n\n    while temp &gt; 0:\n        digital = temp % 10\n        tong = tong + digital \n        temp = temp // 10\n    tong = n\npri</span>nt(n)\n"
+      },
+      "token_overlap": 64,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 11,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3cb0472432513744771ef/b3519b9e13a04f80b0756606/sub_1764166881390_d1bitdthw.py",
+        "similarity_percent": 78.95,
+        "full_code": "n = int(input())\nwhile n >= 10:         \n    s = 0\n    while n > 0:        \n        s += n % 10\n        n //= 10\n    n = s            \nprint(n)\n",
+        "highlighted_code": "<span class='highlight-red'>n = int(input())\nwhile n &gt;= 10:         \n    s = 0\n    while n &gt; 0:        \n        s += n % 10\n        n </span>//= 10\n    n = s            \nprint(n)\n"
+      },
+      "file2": {
         "path": "/app/app/data/submissions/68e3cb0472432513744771ef/c747e87428cc4dbab36bd7aa/sub_1762834133002_od8nk6dz8.py",
-        "similarity_percent": 63.33,
+        "similarity_percent": 77.59,
         "full_code": "n=int(input())\nwhile n >= 10:\n    tong=0\n    while n>0:\n        tong+=n%10\n        n=n//10\n    n=tong\nprint(n)",
-        "highlighted_code": "n=int(input())\nwhile n &gt;= <span class='highlight-red'>10:\n    tong=0\n    while n&gt;0:\n        tong+=n%10\n        n=n//10\n    n=tong\nprint(</span>n)"
+        "highlighted_code": "<span class='highlight-green'>n=int(input())\nwhile n &gt;= 10:\n    tong=0\n    while n&gt;0:\n        tong+=n%10\n        n</span>=n//10\n    n=tong\nprint(n)"
+      },
+      "token_overlap": 45,
+      "max_similarity_percent": 78.95
+    },
+    {
+      "case_id": 12,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3cb0472432513744771ef/d82933fea814463eb5b029d1/sub_1765040644927_eugvbb59f.py",
+        "similarity_percent": 78.95,
+        "full_code": "n = int(input())\n\nwhile n >= 10:\n    t = 0\n    while n > 0:\n        t += n % 10\n        n //= 10\n    n = t\n\nprint(n)\n",
+        "highlighted_code": "<span class='highlight-red'>n = int(input())\n\nwhile n &gt;= 10:\n    t = 0\n    while n &gt; 0:\n        t += n % 10\n        n </span>//= 10\n    n = t\n\nprint(n)\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3cb0472432513744771ef/c747e87428cc4dbab36bd7aa/sub_1762834133002_od8nk6dz8.py",
+        "similarity_percent": 77.59,
+        "full_code": "n=int(input())\nwhile n >= 10:\n    tong=0\n    while n>0:\n        tong+=n%10\n        n=n//10\n    n=tong\nprint(n)",
+        "highlighted_code": "<span class='highlight-green'>n=int(input())\nwhile n &gt;= 10:\n    tong=0\n    while n&gt;0:\n        tong+=n%10\n        n</span>=n//10\n    n=tong\nprint(n)"
+      },
+      "token_overlap": 45,
+      "max_similarity_percent": 78.95
+    },
+    {
+      "case_id": 13,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3cb0472432513744771ef/d82933fea814463eb5b029d1/sub_1765040522705_dhy4vp2j2.py",
+        "similarity_percent": 75.0,
+        "full_code": "n = int(input())\n\nwhile n > 10:\n    t = 0\n    while n > 0:\n        t += n % 10\n        n //= 10\n    n = t\n\nprint(n)\n",
+        "highlighted_code": "<span class='highlight-red'>n = int(input())\n\nwhile n &gt; 10:\n    t = 0\n    while n &gt; 0:\n        t += n % 1</span>0\n        n //= 10\n    n = t\n\nprint(n)\n"
       },
       "file2": {
         "path": "/app/app/data/submissions/68e3cb0472432513744771ef/c747e87428cc4dbab36bd7aa/sub_1762834022439_cqkafb2ry.py",
-        "similarity_percent": 64.41,
+        "similarity_percent": 73.68,
         "full_code": "n=int(input())\nwhile n > 10:\n    tong=0\n    while n>0:\n        tong+=n%10\n        n=n//10\n    n=tong\nprint(n)",
-        "highlighted_code": "n=int(input())\nwhile n &gt; <span class='highlight-green'>10:\n    tong=0\n    while n&gt;0:\n        tong+=n%10\n        n=n//10\n    n=tong\nprint(</span>n)"
+        "highlighted_code": "<span class='highlight-green'>n=int(input())\nwhile n &gt; 10:\n    tong=0\n    while n&gt;0:\n        tong+=n%1</span>0\n        n=n//10\n    n=tong\nprint(n)"
+      },
+      "token_overlap": 42,
+      "max_similarity_percent": 75.0
+    },
+    {
+      "case_id": 14,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3cb0472432513744771ef/e59c34a1bebb49d29bfb3592/sub_1765028913790_lcl5p4f6j.py",
+        "similarity_percent": 67.86,
+        "full_code": "n = int(input())\nwhile n >= 10:\n    tong = 0\n    for ch in str(n):\n        tong += int(ch)\n    n = tong\nprint(n)",
+        "highlighted_code": "n = int(input())\nwhil<span class='highlight-red'>e n &gt;= 10:\n    tong = 0\n    for ch in str(n):\n        tong += int(ch)\n    n = tong\npri</span>nt(n)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3cb0472432513744771ef/e0cd413045d741e39459231c/sub_1761669300197_7fwg3heel.py",
+        "similarity_percent": 40.0,
+        "full_code": "n=int(input())\nif n==-1:\n    print(-1)\nelif n < 10:\n    print(n)\nelse:\n    while n >= 10:\n        tong = 0\n        for i in str(n):\n            tong += int(i)\n        n = tong \n    print(n)",
+        "highlighted_code": "n=int(input())\nif n==-1:\n    print(-1)\nelif n &lt; 10:\n    print(n)\nelse:\n    whil<span class='highlight-green'>e n &gt;= 10:\n        tong = 0\n        for i in str(n):\n            tong += int(i)\n        n = tong \n    pri</span>nt(n)"
       },
       "token_overlap": 38,
-      "max_similarity_percent": 64.41
+      "max_similarity_percent": 67.86
+    },
+    {
+      "case_id": 15,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3cb0472432513744771ef/91001b54722a4328a2b7b879/sub_1762253750395_o4eyd9pl3.py",
+        "similarity_percent": 65.0,
+        "full_code": "n = int(input())\n\nwhile n >= 10:  # nếu n >= 10 thì còn nhiều hơn 1 chữ số\n    sum_digits = 0\n    temp = n\n    # tính tổng các chữ số\n    while temp > 0:\n        sum_digits += temp % 10  # lấy chữ số cuối cùng\n        temp //= 10              # bỏ chữ số cuối cùng\n    n = sum_digits  # cập nhật n bằng tổng các chữ số\n\nprint(n)\n",
+        "highlighted_code": "<span class='highlight-red'>n = int(input())\n\nwhile n &gt;= 10:  # nếu n &gt;= 10 thì còn nhiều hơn 1 chữ số\n    sum_digits = 0\n    temp = n\n    # tính tổng các chữ số\n    while temp &gt; 0</span>:\n        sum_digits += temp % 10  # lấy chữ số cuối cùng\n        temp //= 10              # bỏ chữ số cuối cùng\n    n = sum_digits  # cập nhật n bằng tổng các chữ số\n\nprint(n)\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3cb0472432513744771ef/472aabe424744a0f9fa4c2d4/sub_1765378799671_agj414sr6.py",
+        "similarity_percent": 54.17,
+        "full_code": "n=int(input())\n\nwhile n>=10:\n    s=0\n    temp = n\n    \n    while  temp >0:\n        socuoi = temp % 10\n        s = s + socuoi\n        temp = temp // 10\n    n=s\nprint(\"Digital root \",n )",
+        "highlighted_code": "<span class='highlight-green'>n=int(input())\n\nwhile n&gt;=10:\n    s=0\n    temp = n\n    \n    while  temp &gt;0</span>:\n        socuoi = temp % 10\n        s = s + socuoi\n        temp = temp // 10\n    n=s\nprint(&#34;Digital root &#34;,n )"
+      },
+      "token_overlap": 39,
+      "max_similarity_percent": 65.0
+    },
+    {
+      "case_id": 16,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3cb0472432513744771ef/91001b54722a4328a2b7b879/sub_1762253750395_o4eyd9pl3.py",
+        "similarity_percent": 65.0,
+        "full_code": "n = int(input())\n\nwhile n >= 10:  # nếu n >= 10 thì còn nhiều hơn 1 chữ số\n    sum_digits = 0\n    temp = n\n    # tính tổng các chữ số\n    while temp > 0:\n        sum_digits += temp % 10  # lấy chữ số cuối cùng\n        temp //= 10              # bỏ chữ số cuối cùng\n    n = sum_digits  # cập nhật n bằng tổng các chữ số\n\nprint(n)\n",
+        "highlighted_code": "<span class='highlight-red'>n = int(input())\n\nwhile n &gt;= 10:  # nếu n &gt;= 10 thì còn nhiều hơn 1 chữ số\n    sum_digits = 0\n    temp = n\n    # tính tổng các chữ số\n    while temp &gt; 0</span>:\n        sum_digits += temp % 10  # lấy chữ số cuối cùng\n        temp //= 10              # bỏ chữ số cuối cùng\n    n = sum_digits  # cập nhật n bằng tổng các chữ số\n\nprint(n)\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3cb0472432513744771ef/472aabe424744a0f9fa4c2d4/sub_1765379872170_565ds6gri.py",
+        "similarity_percent": 60.94,
+        "full_code": "n = int(input())\nwhile n >= 10 :\n    s = 0\n    temp = n\n    while temp >0 :\n        digital = temp % 10\n        s = s + digital \n        temp = temp // 10\n    n = s\nprint(n)",
+        "highlighted_code": "<span class='highlight-green'>n = int(input())\nwhile n &gt;= 10 :\n    s = 0\n    temp = n\n    while temp &gt;0 </span>:\n        digital = temp % 10\n        s = s + digital \n        temp = temp // 10\n    n = s\nprint(n)"
+      },
+      "token_overlap": 39,
+      "max_similarity_percent": 65.0
+    },
+    {
+      "case_id": 17,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3cb0472432513744771ef/91001b54722a4328a2b7b879/sub_1762253750395_o4eyd9pl3.py",
+        "similarity_percent": 65.0,
+        "full_code": "n = int(input())\n\nwhile n >= 10:  # nếu n >= 10 thì còn nhiều hơn 1 chữ số\n    sum_digits = 0\n    temp = n\n    # tính tổng các chữ số\n    while temp > 0:\n        sum_digits += temp % 10  # lấy chữ số cuối cùng\n        temp //= 10              # bỏ chữ số cuối cùng\n    n = sum_digits  # cập nhật n bằng tổng các chữ số\n\nprint(n)\n",
+        "highlighted_code": "<span class='highlight-red'>n = int(input())\n\nwhile n &gt;= 10:  # nếu n &gt;= 10 thì còn nhiều hơn 1 chữ số\n    sum_digits = 0\n    temp = n\n    # tính tổng các chữ số\n    while temp &gt; 0</span>:\n        sum_digits += temp % 10  # lấy chữ số cuối cùng\n        temp //= 10              # bỏ chữ số cuối cùng\n    n = sum_digits  # cập nhật n bằng tổng các chữ số\n\nprint(n)\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3cb0472432513744771ef/472aabe424744a0f9fa4c2d4/sub_1765379631729_laj0fipwh.py",
+        "similarity_percent": 60.94,
+        "full_code": "n=int(input())\n\nwhile n >= 10:\n    tong = 0\n    temp = n\n    while temp > 0:\n        digital = temp % 10\n        tong = tong + digital \n        temp = temp // 10\n    tong = n\nprint(n)\n",
+        "highlighted_code": "<span class='highlight-green'>n=int(input())\n\nwhile n &gt;= 10:\n    tong = 0\n    temp = n\n    while temp &gt; 0</span>:\n        digital = temp % 10\n        tong = tong + digital \n        temp = temp // 10\n    tong = n\nprint(n)\n"
+      },
+      "token_overlap": 39,
+      "max_similarity_percent": 65.0
+    },
+    {
+      "case_id": 18,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3cb0472432513744771ef/472aabe424744a0f9fa4c2d4/sub_1765379044570_2a73cftyr.py",
+        "similarity_percent": 65.0,
+        "full_code": "n = int(input())\n\nwhile n >= 10:\n    s = 0\n    temp = n\n    while temp > 0:\n        s += temp % 10\n        temp //= 10\n    n = s  \n\nprint(n)\n",
+        "highlighted_code": "<span class='highlight-red'>n = int(input())\n\nwhile n &gt;= 10:\n    s = 0\n    temp = n\n    while temp &gt; 0</span>:\n        s += temp % 10\n        temp //= 10\n    n = s  \n\nprint(n)\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3cb0472432513744771ef/472aabe424744a0f9fa4c2d4/sub_1765379631729_laj0fipwh.py",
+        "similarity_percent": 60.94,
+        "full_code": "n=int(input())\n\nwhile n >= 10:\n    tong = 0\n    temp = n\n    while temp > 0:\n        digital = temp % 10\n        tong = tong + digital \n        temp = temp // 10\n    tong = n\nprint(n)\n",
+        "highlighted_code": "<span class='highlight-green'>n=int(input())\n\nwhile n &gt;= 10:\n    tong = 0\n    temp = n\n    while temp &gt; 0</span>:\n        digital = temp % 10\n        tong = tong + digital \n        temp = temp // 10\n    tong = n\nprint(n)\n"
+      },
+      "token_overlap": 39,
+      "max_similarity_percent": 65.0
+    },
+    {
+      "case_id": 19,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3cb0472432513744771ef/c78f5dfafb144ed89a06ddba/sub_1762774789193_ll5fdjmx6.py",
+        "similarity_percent": 64.71,
+        "full_code": "n=int(input())\nwhile n >= 10:\n    a=(str(n))\n    b=list(map(int, a))\n    n=sum(b)\nprint(n)",
+        "highlighted_code": "n=int(input())\nwhile n &gt;= 10<span class='highlight-red'>:\n    a=(str(n))\n    b=list(map(int, a))\n    n=sum(b)\nprint(n</span>)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3cb0472432513744771ef/c78f5dfafb144ed89a06ddba/sub_1762774615911_8ryl4z9vw.py",
+        "similarity_percent": 65.67,
+        "full_code": "n=int(input())\nwhile n > 10:\n    a=(str(n))\n    b=list(map(int, a))\n    n=sum(b)\nprint(n)",
+        "highlighted_code": "n=int(input())\nwhile n &gt; 10<span class='highlight-green'>:\n    a=(str(n))\n    b=list(map(int, a))\n    n=sum(b)\nprint(n</span>)"
+      },
+      "token_overlap": 44,
+      "max_similarity_percent": 65.67
+    },
+    {
+      "case_id": 20,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3cb0472432513744771ef/e59c34a1bebb49d29bfb3592/sub_1765028913790_lcl5p4f6j.py",
+        "similarity_percent": 64.29,
+        "full_code": "n = int(input())\nwhile n >= 10:\n    tong = 0\n    for ch in str(n):\n        tong += int(ch)\n    n = tong\nprint(n)",
+        "highlighted_code": "n = int(input())\n<span class='highlight-red'>while n &gt;= 10:\n    tong = 0\n    for ch in str(n):\n        tong += int(ch)\n    </span>n = tong\nprint(n)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3cb0472432513744771ef/51bbd72f42174843b97698b4/sub_1764606762690_f83p6kuxq.py",
+        "similarity_percent": 30.77,
+        "full_code": "n = int(input())\ntong = 0\n\nm = abs(n)\n\nfor i in str(m):\n    tong += int(i)\nwhile tong >= 10:\n    tong_moi = 0\n    for j in str(tong):\n        tong_moi += int(j)\n        tong = tong_moi\nif n < 0:\n    print(f\"-{tong}\")\nelse:\n    print(tong)\n",
+        "highlighted_code": "n = int(input())\ntong = 0\n\nm = abs(n)\n\nfor i in str(m):\n    tong += int(i)\n<span class='highlight-green'>while tong &gt;= 10:\n    tong_moi = 0\n    for j in str(tong):\n        tong_moi += int(j)\n        </span>tong = tong_moi\nif n &lt; 0:\n    print(f&#34;-{tong}&#34;)\nelse:\n    print(tong)\n"
+      },
+      "token_overlap": 36,
+      "max_similarity_percent": 64.29
+    },
+    {
+      "case_id": 21,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3cb0472432513744771ef/b3519b9e13a04f80b0756606/sub_1765724718874_aobtd3338.py",
+        "similarity_percent": 64.29,
+        "full_code": "n = int(input())\nwhile n >= 10:\n    s = 0\n    for d in str(n):\n        s += int(d)\n    n = s   \nprint(n)",
+        "highlighted_code": "n = int(input())\n<span class='highlight-red'>while n &gt;= 10:\n    s = 0\n    for d in str(n):\n        s += int(d)\n    </span>n = s   \nprint(n)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3cb0472432513744771ef/51bbd72f42174843b97698b4/sub_1764606762690_f83p6kuxq.py",
+        "similarity_percent": 30.77,
+        "full_code": "n = int(input())\ntong = 0\n\nm = abs(n)\n\nfor i in str(m):\n    tong += int(i)\nwhile tong >= 10:\n    tong_moi = 0\n    for j in str(tong):\n        tong_moi += int(j)\n        tong = tong_moi\nif n < 0:\n    print(f\"-{tong}\")\nelse:\n    print(tong)\n",
+        "highlighted_code": "n = int(input())\ntong = 0\n\nm = abs(n)\n\nfor i in str(m):\n    tong += int(i)\n<span class='highlight-green'>while tong &gt;= 10:\n    tong_moi = 0\n    for j in str(tong):\n        tong_moi += int(j)\n        </span>tong = tong_moi\nif n &lt; 0:\n    print(f&#34;-{tong}&#34;)\nelse:\n    print(tong)\n"
+      },
+      "token_overlap": 36,
+      "max_similarity_percent": 64.29
+    },
+    {
+      "case_id": 22,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3cb0472432513744771ef/de7b795216694f3190b821ba/sub_1763477276340_gu6pg99ri.py",
+        "similarity_percent": 63.68,
+        "full_code": "so_nguyen=int(input())\na=0\nif so_nguyen<0:\n    so_nguyen=so_nguyen*(-1)\n    danh_sach=list(map(int, str(so_nguyen)))\n    if len(danh_sach)!=1:\n        tong=sum(danh_sach[1::])\n        so_dau=danh_sach[0]\n        so_nguyen=tong-so_dau\n        a+=1\n    elif len(danh_sach)==1:\n        a=0\ndanh_sach=list(map(int, str(so_nguyen)))\nwhile len(danh_sach)!=1:\n    so_nguyen=sum(danh_sach)\n    danh_sach=list(map(int, str(so_nguyen)))\n    a+=1\nif a==0:\n    print(so_nguyen*(-1))\nelse:\n    print(so_nguyen)\n    \n",
+        "highlighted_code": "<span class='highlight-red'>so_nguyen=int(input())\na=0\nif so_nguyen&lt;0:\n    so_nguyen=so_nguyen*(-1)\n    </span>danh_sach=list(map(int, str(so_nguyen)))\n    if len(danh_sach)!=1:\n        tong=sum(danh_sach[1::])\n        so_dau=danh_sach[0]\n        so_nguyen=tong-so_dau\n        a+=1\n    elif len(danh_sach)==1:\n        <span class='highlight-red'>a=0\ndanh_sach=list(map(int, str(so_nguyen)))\nwhile len(danh_sach)!=1:\n    so_nguyen=sum(danh_sach)\n    danh_sach=list(map(int, str(so_nguyen)))\n    a+=1\nif a==0:\n    print(so_nguyen*(-1))\nelse:\n    pri</span>nt(so_nguyen)\n    \n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3cb0472432513744771ef/de7b795216694f3190b821ba/sub_1763477406851_3w71p5orm.py",
+        "similarity_percent": 100.0,
+        "full_code": "so_nguyen=int(input())\na=0\nif so_nguyen<0:\n    so_nguyen=so_nguyen*(-1)\n    a=0\ndanh_sach=list(map(int, str(so_nguyen)))\nwhile len(danh_sach)!=1:\n    so_nguyen=sum(danh_sach)\n    danh_sach=list(map(int, str(so_nguyen)))\n    a+=1\nif a==0:\n    print(so_nguyen*(-1))\nelse:\n    print(so_nguyen)\n    \n",
+        "highlighted_code": "<span class='highlight-green'>so_nguyen=int(input())\na=0\nif so_nguyen&lt;0:\n    so_nguyen=so_nguyen*(-1)\n    </span><span class='highlight-green'>a=0\ndanh_sach=list(map(int, str(so_nguyen)))\nwhile len(danh_sach)!=1:\n    so_nguyen=sum(danh_sach)\n    danh_sach=list(map(int, str(so_nguyen)))\n    a+=1\nif a==0:\n    print(so_nguyen*(-1))\nelse:\n    pri</span>nt(so_nguyen)\n    \n"
+      },
+      "token_overlap": 135,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 23,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3cb0472432513744771ef/472aabe424744a0f9fa4c2d4/sub_1765379872170_565ds6gri.py",
+        "similarity_percent": 60.94,
+        "full_code": "n = int(input())\nwhile n >= 10 :\n    s = 0\n    temp = n\n    while temp >0 :\n        digital = temp % 10\n        s = s + digital \n        temp = temp // 10\n    n = s\nprint(n)",
+        "highlighted_code": "<span class='highlight-red'>n = int(input())\nwhile n &gt;= 10 :\n    s = 0\n    temp = n\n    while temp &gt;0 </span>:\n        digital = temp % 10\n        s = s + digital \n        temp = temp // 10\n    n = s\nprint(n)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3cb0472432513744771ef/472aabe424744a0f9fa4c2d4/sub_1765379044570_2a73cftyr.py",
+        "similarity_percent": 65.0,
+        "full_code": "n = int(input())\n\nwhile n >= 10:\n    s = 0\n    temp = n\n    while temp > 0:\n        s += temp % 10\n        temp //= 10\n    n = s  \n\nprint(n)\n",
+        "highlighted_code": "<span class='highlight-green'>n = int(input())\n\nwhile n &gt;= 10:\n    s = 0\n    temp = n\n    while temp &gt; 0</span>:\n        s += temp % 10\n        temp //= 10\n    n = s  \n\nprint(n)\n"
+      },
+      "token_overlap": 39,
+      "max_similarity_percent": 65.0
+    },
+    {
+      "case_id": 24,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3cb0472432513744771ef/b3519b9e13a04f80b0756606/sub_1764166881390_d1bitdthw.py",
+        "similarity_percent": 59.65,
+        "full_code": "n = int(input())\nwhile n >= 10:         \n    s = 0\n    while n > 0:        \n        s += n % 10\n        n //= 10\n    n = s            \nprint(n)\n",
+        "highlighted_code": "n = int(input())\nwhile n &gt;= 1<span class='highlight-red'>0:         \n    s = 0\n    while n &gt; 0:        \n        s += n % 10\n        n //= 10\n    n = s            \nprin</span>t(n)\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3cb0472432513744771ef/d82933fea814463eb5b029d1/sub_1765040522705_dhy4vp2j2.py",
+        "similarity_percent": 60.71,
+        "full_code": "n = int(input())\n\nwhile n > 10:\n    t = 0\n    while n > 0:\n        t += n % 10\n        n //= 10\n    n = t\n\nprint(n)\n",
+        "highlighted_code": "n = int(input())\n\nwhile n &gt; 1<span class='highlight-green'>0:\n    t = 0\n    while n &gt; 0:\n        t += n % 10\n        n //= 10\n    n = t\n\nprin</span>t(n)\n"
+      },
+      "token_overlap": 34,
+      "max_similarity_percent": 60.71
+    },
+    {
+      "case_id": 25,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3cb0472432513744771ef/d82933fea814463eb5b029d1/sub_1765040644927_eugvbb59f.py",
+        "similarity_percent": 59.65,
+        "full_code": "n = int(input())\n\nwhile n >= 10:\n    t = 0\n    while n > 0:\n        t += n % 10\n        n //= 10\n    n = t\n\nprint(n)\n",
+        "highlighted_code": "n = int(input())\n\nwhile n &gt;= 1<span class='highlight-red'>0:\n    t = 0\n    while n &gt; 0:\n        t += n % 10\n        n //= 10\n    n = t\n\nprin</span>t(n)\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3cb0472432513744771ef/d82933fea814463eb5b029d1/sub_1765040522705_dhy4vp2j2.py",
+        "similarity_percent": 60.71,
+        "full_code": "n = int(input())\n\nwhile n > 10:\n    t = 0\n    while n > 0:\n        t += n % 10\n        n //= 10\n    n = t\n\nprint(n)\n",
+        "highlighted_code": "n = int(input())\n\nwhile n &gt; 1<span class='highlight-green'>0:\n    t = 0\n    while n &gt; 0:\n        t += n % 10\n        n //= 10\n    n = t\n\nprin</span>t(n)\n"
+      },
+      "token_overlap": 34,
+      "max_similarity_percent": 60.71
+    },
+    {
+      "case_id": 26,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3cb0472432513744771ef/472aabe424744a0f9fa4c2d4/sub_1765378799671_agj414sr6.py",
+        "similarity_percent": 54.17,
+        "full_code": "n=int(input())\n\nwhile n>=10:\n    s=0\n    temp = n\n    \n    while  temp >0:\n        socuoi = temp % 10\n        s = s + socuoi\n        temp = temp // 10\n    n=s\nprint(\"Digital root \",n )",
+        "highlighted_code": "<span class='highlight-red'>n=int(input())\n\nwhile n&gt;=10:\n    s=0\n    temp = n\n    \n    while  temp &gt;0</span>:\n        socuoi = temp % 10\n        s = s + socuoi\n        temp = temp // 10\n    n=s\nprint(&#34;Digital root &#34;,n )"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3cb0472432513744771ef/472aabe424744a0f9fa4c2d4/sub_1765379044570_2a73cftyr.py",
+        "similarity_percent": 65.0,
+        "full_code": "n = int(input())\n\nwhile n >= 10:\n    s = 0\n    temp = n\n    while temp > 0:\n        s += temp % 10\n        temp //= 10\n    n = s  \n\nprint(n)\n",
+        "highlighted_code": "<span class='highlight-green'>n = int(input())\n\nwhile n &gt;= 10:\n    s = 0\n    temp = n\n    while temp &gt; 0</span>:\n        s += temp % 10\n        temp //= 10\n    n = s  \n\nprint(n)\n"
+      },
+      "token_overlap": 39,
+      "max_similarity_percent": 65.0
+    },
+    {
+      "case_id": 27,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3cb0472432513744771ef/e0cd413045d741e39459231c/sub_1761669300197_7fwg3heel.py",
+        "similarity_percent": 40.0,
+        "full_code": "n=int(input())\nif n==-1:\n    print(-1)\nelif n < 10:\n    print(n)\nelse:\n    while n >= 10:\n        tong = 0\n        for i in str(n):\n            tong += int(i)\n        n = tong \n    print(n)",
+        "highlighted_code": "n=int(input())\nif n==-1:\n    print(-1)\nelif n &lt; 10:\n    print(n)\nelse:\n    whil<span class='highlight-red'>e n &gt;= 10:\n        tong = 0\n        for i in str(n):\n            tong += int(i)\n        n = tong \n    pri</span>nt(n)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3cb0472432513744771ef/b3519b9e13a04f80b0756606/sub_1765724718874_aobtd3338.py",
+        "similarity_percent": 67.86,
+        "full_code": "n = int(input())\nwhile n >= 10:\n    s = 0\n    for d in str(n):\n        s += int(d)\n    n = s   \nprint(n)",
+        "highlighted_code": "n = int(input())\nwhil<span class='highlight-green'>e n &gt;= 10:\n    s = 0\n    for d in str(n):\n        s += int(d)\n    n = s   \npri</span>nt(n)"
+      },
+      "token_overlap": 38,
+      "max_similarity_percent": 67.86
     }
   ]
 }

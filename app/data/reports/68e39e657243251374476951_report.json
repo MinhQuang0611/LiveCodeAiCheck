@@ -4,8 +4,8 @@
     "min_token_overlap": 80,
     "min_similarity_percent": 60
   },
-  "total_cases_found": 1,
-  "total_cases_filtered": 1,
+  "total_cases_found": 9,
+  "total_cases_filtered": 6,
   "cases": [
     {
       "case_id": 1,
@@ -13,16 +13,101 @@
         "path": "/app/app/data/submissions/68e39e657243251374476951/27e30f767b3a46b283cbfec0/sub_1762424387112_y9m837ry5.py",
         "similarity_percent": 100.0,
         "full_code": "s = input()\ns2 = input()\nset_1 = set(x for x in s)\nset_2 = set(y for y in s2)\nprint('true' if set_1 == set_2 else 'false')",
-        "highlighted_code": "<span class='highlight-red'>s = input()\ns2 = input()\nset_1 = set(x for x in s)\nset_2 = set(y for y in s2)\nprint(&#39;true&#39; if set_1 == set_2 else &#39;</span>false&#39;)"
+        "highlighted_code": "<span class='highlight-red'>s = input()\ns2 = input()\nset_1 = set(x for x in s)\nset_2 = set(y for y in s2)\nprint(&#39;true&#39; if set_1 == set_2 else </span>&#39;false&#39;)"
       },
       "file2": {
         "path": "/app/app/data/submissions/68e39e657243251374476951/f95120b3a38a461085ef58cb/sub_1762526824587_4e9mx712g.py",
         "similarity_percent": 100.0,
         "full_code": "s = input()\ns2 = input()\nset_1 = set(x for x in s)\nset_2 = set(y for y in s2)\nprint('true' if set_1 == set_2 else 'false')",
-        "highlighted_code": "<span class='highlight-green'>s = input()\ns2 = input()\nset_1 = set(x for x in s)\nset_2 = set(y for y in s2)\nprint(&#39;true&#39; if set_1 == set_2 else &#39;</span>false&#39;)"
+        "highlighted_code": "<span class='highlight-green'>s = input()\ns2 = input()\nset_1 = set(x for x in s)\nset_2 = set(y for y in s2)\nprint(&#39;true&#39; if set_1 == set_2 else </span>&#39;false&#39;)"
       },
-      "token_overlap": 68,
+      "token_overlap": 67,
       "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 2,
+      "file1": {
+        "path": "/app/app/data/submissions/68e39e657243251374476951/27e30f767b3a46b283cbfec0/sub_1762424387112_y9m837ry5.py",
+        "similarity_percent": 100.0,
+        "full_code": "s = input()\ns2 = input()\nset_1 = set(x for x in s)\nset_2 = set(y for y in s2)\nprint('true' if set_1 == set_2 else 'false')",
+        "highlighted_code": "<span class='highlight-red'>s = input()\ns2 = input()\nset_1 = set(x for x in s)\nset_2 = set(y for y in s2)\nprint(&#39;true&#39; if set_1 == set_2 else </span>&#39;false&#39;)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e39e657243251374476951/f95120b3a38a461085ef58cb/sub_1763730830262_kve6c3mox.py",
+        "similarity_percent": 100.0,
+        "full_code": "s = input()\ns2 = input()\nset_1 = set(x for x in s)\nset_2 = set(y for y in s2)\nprint('true' if set_1 == set_2 else 'false')",
+        "highlighted_code": "<span class='highlight-green'>s = input()\ns2 = input()\nset_1 = set(x for x in s)\nset_2 = set(y for y in s2)\nprint(&#39;true&#39; if set_1 == set_2 else </span>&#39;false&#39;)"
+      },
+      "token_overlap": 67,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 3,
+      "file1": {
+        "path": "/app/app/data/submissions/68e39e657243251374476951/f95120b3a38a461085ef58cb/sub_1762526824587_4e9mx712g.py",
+        "similarity_percent": 100.0,
+        "full_code": "s = input()\ns2 = input()\nset_1 = set(x for x in s)\nset_2 = set(y for y in s2)\nprint('true' if set_1 == set_2 else 'false')",
+        "highlighted_code": "<span class='highlight-red'>s = input()\ns2 = input()\nset_1 = set(x for x in s)\nset_2 = set(y for y in s2)\nprint(&#39;true&#39; if set_1 == set_2 else </span>&#39;false&#39;)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e39e657243251374476951/f95120b3a38a461085ef58cb/sub_1763730830262_kve6c3mox.py",
+        "similarity_percent": 100.0,
+        "full_code": "s = input()\ns2 = input()\nset_1 = set(x for x in s)\nset_2 = set(y for y in s2)\nprint('true' if set_1 == set_2 else 'false')",
+        "highlighted_code": "<span class='highlight-green'>s = input()\ns2 = input()\nset_1 = set(x for x in s)\nset_2 = set(y for y in s2)\nprint(&#39;true&#39; if set_1 == set_2 else </span>&#39;false&#39;)"
+      },
+      "token_overlap": 67,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 4,
+      "file1": {
+        "path": "/app/app/data/submissions/68e39e657243251374476951/27e30f767b3a46b283cbfec0/sub_1762424387112_y9m837ry5.py",
+        "similarity_percent": 64.18,
+        "full_code": "s = input()\ns2 = input()\nset_1 = set(x for x in s)\nset_2 = set(y for y in s2)\nprint('true' if set_1 == set_2 else 'false')",
+        "highlighted_code": "<span class='highlight-red'>s = input()\ns2 = input()\nset_1 = set(x for x in s)\nset_2 = set(y for </span>y in s2)\nprint(&#39;true&#39; if set_1 == set_2 else &#39;false&#39;)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e39e657243251374476951/9f14990043df4fda9283d7ac/sub_1763808396944_d8dndr4uj.py",
+        "similarity_percent": 55.84,
+        "full_code": "s = input()\nt = input()\ndanhsach_s = set(ch for ch in s)\ndanhsach_t = set(ch for ch in t)\nif danhsach_s == danhsach_t:\n    print(\"true\")\nelse:\n    print(\"false\")",
+        "highlighted_code": "<span class='highlight-green'>s = input()\nt = input()\ndanhsach_s = set(ch for ch in s)\ndanhsach_t = set(ch for </span>ch in t)\nif danhsach_s == danhsach_t:\n    print(&#34;true&#34;)\nelse:\n    print(&#34;false&#34;)"
+      },
+      "token_overlap": 43,
+      "max_similarity_percent": 64.18
+    },
+    {
+      "case_id": 5,
+      "file1": {
+        "path": "/app/app/data/submissions/68e39e657243251374476951/9f14990043df4fda9283d7ac/sub_1763808396944_d8dndr4uj.py",
+        "similarity_percent": 55.84,
+        "full_code": "s = input()\nt = input()\ndanhsach_s = set(ch for ch in s)\ndanhsach_t = set(ch for ch in t)\nif danhsach_s == danhsach_t:\n    print(\"true\")\nelse:\n    print(\"false\")",
+        "highlighted_code": "<span class='highlight-red'>s = input()\nt = input()\ndanhsach_s = set(ch for ch in s)\ndanhsach_t = set(ch for </span>ch in t)\nif danhsach_s == danhsach_t:\n    print(&#34;true&#34;)\nelse:\n    print(&#34;false&#34;)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e39e657243251374476951/f95120b3a38a461085ef58cb/sub_1762526824587_4e9mx712g.py",
+        "similarity_percent": 64.18,
+        "full_code": "s = input()\ns2 = input()\nset_1 = set(x for x in s)\nset_2 = set(y for y in s2)\nprint('true' if set_1 == set_2 else 'false')",
+        "highlighted_code": "<span class='highlight-green'>s = input()\ns2 = input()\nset_1 = set(x for x in s)\nset_2 = set(y for </span>y in s2)\nprint(&#39;true&#39; if set_1 == set_2 else &#39;false&#39;)"
+      },
+      "token_overlap": 43,
+      "max_similarity_percent": 64.18
+    },
+    {
+      "case_id": 6,
+      "file1": {
+        "path": "/app/app/data/submissions/68e39e657243251374476951/9f14990043df4fda9283d7ac/sub_1763808396944_d8dndr4uj.py",
+        "similarity_percent": 55.84,
+        "full_code": "s = input()\nt = input()\ndanhsach_s = set(ch for ch in s)\ndanhsach_t = set(ch for ch in t)\nif danhsach_s == danhsach_t:\n    print(\"true\")\nelse:\n    print(\"false\")",
+        "highlighted_code": "<span class='highlight-red'>s = input()\nt = input()\ndanhsach_s = set(ch for ch in s)\ndanhsach_t = set(ch for </span>ch in t)\nif danhsach_s == danhsach_t:\n    print(&#34;true&#34;)\nelse:\n    print(&#34;false&#34;)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e39e657243251374476951/f95120b3a38a461085ef58cb/sub_1763730830262_kve6c3mox.py",
+        "similarity_percent": 64.18,
+        "full_code": "s = input()\ns2 = input()\nset_1 = set(x for x in s)\nset_2 = set(y for y in s2)\nprint('true' if set_1 == set_2 else 'false')",
+        "highlighted_code": "<span class='highlight-green'>s = input()\ns2 = input()\nset_1 = set(x for x in s)\nset_2 = set(y for </span>y in s2)\nprint(&#39;true&#39; if set_1 == set_2 else &#39;false&#39;)"
+      },
+      "token_overlap": 43,
+      "max_similarity_percent": 64.18
     }
   ]
 }

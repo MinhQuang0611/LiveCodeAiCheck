@@ -4,22 +4,22 @@
     "min_token_overlap": 80,
     "min_similarity_percent": 60
   },
-  "total_cases_found": 3,
-  "total_cases_filtered": 3,
+  "total_cases_found": 18,
+  "total_cases_filtered": 18,
   "cases": [
     {
       "case_id": 1,
       "file1": {
-        "path": "/app/app/data/submissions/68e3bbac7243251374476cb3/cd93b2ff882a4ffa85f4518f/sub_1762787105326_za970hjb7.py",
-        "similarity_percent": 100.0,
-        "full_code": "a,b=map(int, input().split())\nprint(a+b)",
-        "highlighted_code": "<span class='highlight-red'>a,b=map(int, input().split())\nprint(a+b)</span>"
-      },
-      "file2": {
         "path": "/app/app/data/submissions/68e3bbac7243251374476cb3/780627ccd0224069b68e3b8d/sub_1762187295677_77plqktxp.py",
         "similarity_percent": 100.0,
         "full_code": "a, b = map(int, input().split())\nprint(a + b)",
-        "highlighted_code": "<span class='highlight-green'>a, b = map(int, input().split())\nprint(a + b)</span>"
+        "highlighted_code": "<span class='highlight-red'>a, b = map(int, input().split())\nprint(a + b)</span>"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3bbac7243251374476cb3/cd93b2ff882a4ffa85f4518f/sub_1762787105326_za970hjb7.py",
+        "similarity_percent": 100.0,
+        "full_code": "a,b=map(int, input().split())\nprint(a+b)",
+        "highlighted_code": "<span class='highlight-green'>a,b=map(int, input().split())\nprint(a+b)</span>"
       },
       "token_overlap": 34,
       "max_similarity_percent": 100.0
@@ -27,16 +27,16 @@
     {
       "case_id": 2,
       "file1": {
-        "path": "/app/app/data/submissions/68e3bbac7243251374476cb3/cd93b2ff882a4ffa85f4518f/sub_1762787105326_za970hjb7.py",
+        "path": "/app/app/data/submissions/68e3bbac7243251374476cb3/780627ccd0224069b68e3b8d/sub_1762187295677_77plqktxp.py",
         "similarity_percent": 100.0,
-        "full_code": "a,b=map(int, input().split())\nprint(a+b)",
-        "highlighted_code": "<span class='highlight-red'>a,b=map(int, input().split())\nprint(a+b)</span>"
+        "full_code": "a, b = map(int, input().split())\nprint(a + b)",
+        "highlighted_code": "<span class='highlight-red'>a, b = map(int, input().split())\nprint(a + b)</span>"
       },
       "file2": {
-        "path": "/app/app/data/submissions/68e3bbac7243251374476cb3/ffdb326842044f2e98b7aaa7/sub_1762179594495_levns63te.py",
+        "path": "/app/app/data/submissions/68e3bbac7243251374476cb3/27e30f767b3a46b283cbfec0/sub_1766215788935_c8dq0ay8g.py",
         "similarity_percent": 100.0,
-        "full_code": "a, b = map(int, input().split())\n\nprint(a + b)",
-        "highlighted_code": "<span class='highlight-green'>a, b = map(int, input().split())\n\nprint(a + b)</span>"
+        "full_code": "a, b = map(int,input().split())\nprint(a+b)",
+        "highlighted_code": "<span class='highlight-green'>a, b = map(int,input().split())\nprint(a+b)</span>"
       },
       "token_overlap": 34,
       "max_similarity_percent": 100.0
@@ -57,6 +57,261 @@
       },
       "token_overlap": 34,
       "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 4,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3bbac7243251374476cb3/cd93b2ff882a4ffa85f4518f/sub_1762787105326_za970hjb7.py",
+        "similarity_percent": 100.0,
+        "full_code": "a,b=map(int, input().split())\nprint(a+b)",
+        "highlighted_code": "<span class='highlight-red'>a,b=map(int, input().split())\nprint(a+b)</span>"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3bbac7243251374476cb3/27e30f767b3a46b283cbfec0/sub_1766215788935_c8dq0ay8g.py",
+        "similarity_percent": 100.0,
+        "full_code": "a, b = map(int,input().split())\nprint(a+b)",
+        "highlighted_code": "<span class='highlight-green'>a, b = map(int,input().split())\nprint(a+b)</span>"
+      },
+      "token_overlap": 34,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 5,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3bbac7243251374476cb3/cd93b2ff882a4ffa85f4518f/sub_1762787105326_za970hjb7.py",
+        "similarity_percent": 100.0,
+        "full_code": "a,b=map(int, input().split())\nprint(a+b)",
+        "highlighted_code": "<span class='highlight-red'>a,b=map(int, input().split())\nprint(a+b)</span>"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3bbac7243251374476cb3/ffdb326842044f2e98b7aaa7/sub_1762179594495_levns63te.py",
+        "similarity_percent": 100.0,
+        "full_code": "a, b = map(int, input().split())\n\nprint(a + b)",
+        "highlighted_code": "<span class='highlight-green'>a, b = map(int, input().split())\n\nprint(a + b)</span>"
+      },
+      "token_overlap": 34,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 6,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3bbac7243251374476cb3/27e30f767b3a46b283cbfec0/sub_1766215788935_c8dq0ay8g.py",
+        "similarity_percent": 100.0,
+        "full_code": "a, b = map(int,input().split())\nprint(a+b)",
+        "highlighted_code": "<span class='highlight-red'>a, b = map(int,input().split())\nprint(a+b)</span>"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3bbac7243251374476cb3/ffdb326842044f2e98b7aaa7/sub_1762179594495_levns63te.py",
+        "similarity_percent": 100.0,
+        "full_code": "a, b = map(int, input().split())\n\nprint(a + b)",
+        "highlighted_code": "<span class='highlight-green'>a, b = map(int, input().split())\n\nprint(a + b)</span>"
+      },
+      "token_overlap": 34,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 7,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3bbac7243251374476cb3/6ec16cf942784cc386599915/sub_1764773637084_p6c68vmrb.py",
+        "similarity_percent": 100.0,
+        "full_code": "a , b = list(map(int,input().split()))\nprint(a+b)",
+        "highlighted_code": "<span class='highlight-red'>a , b = list(map(int,input().split()))\nprint(a+b)</span>"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3bbac7243251374476cb3/693ace2c24c33437062ef80f/sub_1765549337362_7teua9avc.py",
+        "similarity_percent": 100.0,
+        "full_code": "a,b=list(map(int,input().split()))\nprint(a+b)",
+        "highlighted_code": "<span class='highlight-green'>a,b=list(map(int,input().split()))\nprint(a+b)</span>"
+      },
+      "token_overlap": 40,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 8,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3bbac7243251374476cb3/6ec16cf942784cc386599915/sub_1764773637084_p6c68vmrb.py",
+        "similarity_percent": 80.0,
+        "full_code": "a , b = list(map(int,input().split()))\nprint(a+b)",
+        "highlighted_code": "a , b = <span class='highlight-red'>list(map(int,input().split()))\nprint(</span>a+b)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3bbac7243251374476cb3/bcb420abb39b4af095b63cf8/sub_1762633172306_2h6490bz1.py",
+        "similarity_percent": 88.89,
+        "full_code": "n=list(map(int,input().split()))\nprint(sum(n))",
+        "highlighted_code": "n=<span class='highlight-green'>list(map(int,input().split()))\nprint(</span>sum(n))"
+      },
+      "token_overlap": 32,
+      "max_similarity_percent": 88.89
+    },
+    {
+      "case_id": 9,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3bbac7243251374476cb3/693ace2c24c33437062ef80f/sub_1765549337362_7teua9avc.py",
+        "similarity_percent": 80.0,
+        "full_code": "a,b=list(map(int,input().split()))\nprint(a+b)",
+        "highlighted_code": "a,b=<span class='highlight-red'>list(map(int,input().split()))\nprint(</span>a+b)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3bbac7243251374476cb3/bcb420abb39b4af095b63cf8/sub_1762633172306_2h6490bz1.py",
+        "similarity_percent": 88.89,
+        "full_code": "n=list(map(int,input().split()))\nprint(sum(n))",
+        "highlighted_code": "n=<span class='highlight-green'>list(map(int,input().split()))\nprint(</span>sum(n))"
+      },
+      "token_overlap": 32,
+      "max_similarity_percent": 88.89
+    },
+    {
+      "case_id": 10,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3bbac7243251374476cb3/780627ccd0224069b68e3b8d/sub_1762187295677_77plqktxp.py",
+        "similarity_percent": 79.41,
+        "full_code": "a, b = map(int, input().split())\nprint(a + b)",
+        "highlighted_code": "<span class='highlight-red'>a, b = map(int, input().split())\npri</span>nt(a + b)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3bbac7243251374476cb3/b3519b9e13a04f80b0756606/sub_1765205239510_8c71c9p69.py",
+        "similarity_percent": 69.23,
+        "full_code": "a, b = map(int, input().split())\nprint(sum([a, b]))",
+        "highlighted_code": "<span class='highlight-green'>a, b = map(int, input().split())\npri</span>nt(sum([a, b]))"
+      },
+      "token_overlap": 27,
+      "max_similarity_percent": 79.41
+    },
+    {
+      "case_id": 11,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3bbac7243251374476cb3/b3519b9e13a04f80b0756606/sub_1765205239510_8c71c9p69.py",
+        "similarity_percent": 76.92,
+        "full_code": "a, b = map(int, input().split())\nprint(sum([a, b]))",
+        "highlighted_code": "a, <span class='highlight-red'>b = map(int, input().split())\nprint(su</span>m([a, b]))"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3bbac7243251374476cb3/7c4e55277a884a56b9be894a/sub_1766283936516_kzvgrqfpm.py",
+        "similarity_percent": 85.71,
+        "full_code": "a = map(int,input().split())\nprint(sum(a))",
+        "highlighted_code": "<span class='highlight-green'>a = map(int,input().split())\nprint(su</span>m(a))"
+      },
+      "token_overlap": 30,
+      "max_similarity_percent": 85.71
+    },
+    {
+      "case_id": 12,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3bbac7243251374476cb3/780627ccd0224069b68e3b8d/sub_1762187295677_77plqktxp.py",
+        "similarity_percent": 73.53,
+        "full_code": "a, b = map(int, input().split())\nprint(a + b)",
+        "highlighted_code": "a, <span class='highlight-red'>b = map(int, input().split())\npri</span>nt(a + b)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3bbac7243251374476cb3/7c4e55277a884a56b9be894a/sub_1766283936516_kzvgrqfpm.py",
+        "similarity_percent": 71.43,
+        "full_code": "a = map(int,input().split())\nprint(sum(a))",
+        "highlighted_code": "<span class='highlight-green'>a = map(int,input().split())\npri</span>nt(sum(a))"
+      },
+      "token_overlap": 25,
+      "max_similarity_percent": 73.53
+    },
+    {
+      "case_id": 13,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3bbac7243251374476cb3/cd93b2ff882a4ffa85f4518f/sub_1762787105326_za970hjb7.py",
+        "similarity_percent": 73.53,
+        "full_code": "a,b=map(int, input().split())\nprint(a+b)",
+        "highlighted_code": "a,<span class='highlight-red'>b=map(int, input().split())\npri</span>nt(a+b)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3bbac7243251374476cb3/7c4e55277a884a56b9be894a/sub_1766283936516_kzvgrqfpm.py",
+        "similarity_percent": 71.43,
+        "full_code": "a = map(int,input().split())\nprint(sum(a))",
+        "highlighted_code": "<span class='highlight-green'>a = map(int,input().split())\npri</span>nt(sum(a))"
+      },
+      "token_overlap": 25,
+      "max_similarity_percent": 73.53
+    },
+    {
+      "case_id": 14,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3bbac7243251374476cb3/27e30f767b3a46b283cbfec0/sub_1766215788935_c8dq0ay8g.py",
+        "similarity_percent": 73.53,
+        "full_code": "a, b = map(int,input().split())\nprint(a+b)",
+        "highlighted_code": "a, <span class='highlight-red'>b = map(int,input().split())\npri</span>nt(a+b)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3bbac7243251374476cb3/7c4e55277a884a56b9be894a/sub_1766283936516_kzvgrqfpm.py",
+        "similarity_percent": 71.43,
+        "full_code": "a = map(int,input().split())\nprint(sum(a))",
+        "highlighted_code": "<span class='highlight-green'>a = map(int,input().split())\npri</span>nt(sum(a))"
+      },
+      "token_overlap": 25,
+      "max_similarity_percent": 73.53
+    },
+    {
+      "case_id": 15,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3bbac7243251374476cb3/7c4e55277a884a56b9be894a/sub_1766283936516_kzvgrqfpm.py",
+        "similarity_percent": 71.43,
+        "full_code": "a = map(int,input().split())\nprint(sum(a))",
+        "highlighted_code": "<span class='highlight-red'>a = map(int,input().split())\npri</span>nt(sum(a))"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3bbac7243251374476cb3/ffdb326842044f2e98b7aaa7/sub_1762179594495_levns63te.py",
+        "similarity_percent": 73.53,
+        "full_code": "a, b = map(int, input().split())\n\nprint(a + b)",
+        "highlighted_code": "a, <span class='highlight-green'>b = map(int, input().split())\n\npri</span>nt(a + b)"
+      },
+      "token_overlap": 25,
+      "max_similarity_percent": 73.53
+    },
+    {
+      "case_id": 16,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3bbac7243251374476cb3/b3519b9e13a04f80b0756606/sub_1765205239510_8c71c9p69.py",
+        "similarity_percent": 69.23,
+        "full_code": "a, b = map(int, input().split())\nprint(sum([a, b]))",
+        "highlighted_code": "<span class='highlight-red'>a, b = map(int, input().split())\npri</span>nt(sum([a, b]))"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3bbac7243251374476cb3/cd93b2ff882a4ffa85f4518f/sub_1762787105326_za970hjb7.py",
+        "similarity_percent": 79.41,
+        "full_code": "a,b=map(int, input().split())\nprint(a+b)",
+        "highlighted_code": "<span class='highlight-green'>a,b=map(int, input().split())\npri</span>nt(a+b)"
+      },
+      "token_overlap": 27,
+      "max_similarity_percent": 79.41
+    },
+    {
+      "case_id": 17,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3bbac7243251374476cb3/b3519b9e13a04f80b0756606/sub_1765205239510_8c71c9p69.py",
+        "similarity_percent": 69.23,
+        "full_code": "a, b = map(int, input().split())\nprint(sum([a, b]))",
+        "highlighted_code": "<span class='highlight-red'>a, b = map(int, input().split())\npri</span>nt(sum([a, b]))"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3bbac7243251374476cb3/27e30f767b3a46b283cbfec0/sub_1766215788935_c8dq0ay8g.py",
+        "similarity_percent": 79.41,
+        "full_code": "a, b = map(int,input().split())\nprint(a+b)",
+        "highlighted_code": "<span class='highlight-green'>a, b = map(int,input().split())\npri</span>nt(a+b)"
+      },
+      "token_overlap": 27,
+      "max_similarity_percent": 79.41
+    },
+    {
+      "case_id": 18,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3bbac7243251374476cb3/b3519b9e13a04f80b0756606/sub_1765205239510_8c71c9p69.py",
+        "similarity_percent": 69.23,
+        "full_code": "a, b = map(int, input().split())\nprint(sum([a, b]))",
+        "highlighted_code": "<span class='highlight-red'>a, b = map(int, input().split())\npri</span>nt(sum([a, b]))"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3bbac7243251374476cb3/ffdb326842044f2e98b7aaa7/sub_1762179594495_levns63te.py",
+        "similarity_percent": 79.41,
+        "full_code": "a, b = map(int, input().split())\n\nprint(a + b)",
+        "highlighted_code": "<span class='highlight-green'>a, b = map(int, input().split())\n\npri</span>nt(a + b)"
+      },
+      "token_overlap": 27,
+      "max_similarity_percent": 79.41
     }
   ]
 }

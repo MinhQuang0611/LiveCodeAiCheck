@@ -4,22 +4,22 @@
     "min_token_overlap": 80,
     "min_similarity_percent": 60
   },
-  "total_cases_found": 2,
-  "total_cases_filtered": 2,
+  "total_cases_found": 26,
+  "total_cases_filtered": 18,
   "cases": [
     {
       "case_id": 1,
       "file1": {
-        "path": "/app/app/data/submissions/68e3ca5772432513744771a2/0d74995bf22b4574a97a2297/sub_1761553330764_vlfu16iky.py",
-        "similarity_percent": 100.0,
-        "full_code": "def ktr(n, so):\n    s = str(n)\n    if s != s[::-1]:\n        return False\n    res = set(str(d) for d in so)\n    if not set(s).issubset(res):\n        return False\n    return True\nn = input()\nd = list(input())\nif(ktr(n,d)):\n    print(\"True\")\nelse:\n    print(\"False\")",
-        "highlighted_code": "<span class='highlight-red'>def ktr(n, so):\n    s = str(n)\n    if s != s[::-1]:\n        return False\n    res = set(str(d) for d in so)\n    if not set(s).issubset(res):\n        return False\n    return True\nn = input()\nd = list(input())\nif(ktr(n,d)):\n    print(&#34;True&#34;)\nelse:\n    print(&#34;False</span>&#34;)"
-      },
-      "file2": {
         "path": "/app/app/data/submissions/68e3ca5772432513744771a2/0d74995bf22b4574a97a2297/sub_1761287885752_zpab4xvq7.py",
         "similarity_percent": 100.0,
         "full_code": "def ktr(n, digits):\n    n_str = str(n)\n    if n_str != n_str[::-1]:\n        return False\n    allowed_digits_str = set(str(d) for d in digits)\n    if not set(n_str).issubset(allowed_digits_str):\n        return False\n    return True\nn = input()\nd = list(input())\nif(ktr(n,d)):\n    print(\"True\")\nelse:\n    print(\"False\")",
-        "highlighted_code": "<span class='highlight-green'>def ktr(n, digits):\n    n_str = str(n)\n    if n_str != n_str[::-1]:\n        return False\n    allowed_digits_str = set(str(d) for d in digits)\n    if not set(n_str).issubset(allowed_digits_str):\n        return False\n    return True\nn = input()\nd = list(input())\nif(ktr(n,d)):\n    print(&#34;True&#34;)\nelse:\n    print(&#34;False</span>&#34;)"
+        "highlighted_code": "<span class='highlight-red'>def ktr(n, digits):\n    n_str = str(n)\n    if n_str != n_str[::-1]:\n        return False\n    allowed_digits_str = set(str(d) for d in digits)\n    if not set(n_str).issubset(allowed_digits_str):\n        return False\n    return True\nn = input()\nd = list(input())\nif(ktr(n,d)):\n    print(&#34;True&#34;)\nelse:\n    print(&#34;False</span>&#34;)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3ca5772432513744771a2/0d74995bf22b4574a97a2297/sub_1761553330764_vlfu16iky.py",
+        "similarity_percent": 100.0,
+        "full_code": "def ktr(n, so):\n    s = str(n)\n    if s != s[::-1]:\n        return False\n    res = set(str(d) for d in so)\n    if not set(s).issubset(res):\n        return False\n    return True\nn = input()\nd = list(input())\nif(ktr(n,d)):\n    print(\"True\")\nelse:\n    print(\"False\")",
+        "highlighted_code": "<span class='highlight-green'>def ktr(n, so):\n    s = str(n)\n    if s != s[::-1]:\n        return False\n    res = set(str(d) for d in so)\n    if not set(s).issubset(res):\n        return False\n    return True\nn = input()\nd = list(input())\nif(ktr(n,d)):\n    print(&#34;True&#34;)\nelse:\n    print(&#34;False</span>&#34;)"
       },
       "token_overlap": 158,
       "max_similarity_percent": 100.0
@@ -27,19 +27,291 @@
     {
       "case_id": 2,
       "file1": {
-        "path": "/app/app/data/submissions/68e3ca5772432513744771a2/f56f86fa26744324899543f3/sub_1761974332801_f5n9artnt.py",
-        "similarity_percent": 51.72,
-        "full_code": "n=int(input())\ndigits=input()\na=[]\na1=list(digits)\nfor _ in a1: \n    if _.isdigit()==True:a.append(int(_))\ndung=0\nif n==int(str(n)[::-1]):dung+=1\nk=0\nfor i in list(str(n)):\n    if int(i) not in a:k+=1\nif k==0 and dung==1:print(\"True\")\nelse:print(\"False\")\n\n",
-        "highlighted_code": "n=int(input())\ndigits=<span class='highlight-red'>input()\na=[]\na1=list(digits)\nfor _ in a1: \n    if _.isdigit()==True:a.append</span>(int(_))\ndung=0\nif n==int(str(n)[::-1]):dung+=1\nk=0\nfor i in list(str(n)):\n    if int(i) <span class='highlight-red'>not in a:k+=1\nif k==0 and dung==1:print(&#34;True&#34;)\nelse:print</span>(&#34;False&#34;)\n\n"
+        "path": "/app/app/data/submissions/68e3ca5772432513744771a2/5e7936061bf3423087a326dd/sub_1765953585937_fcpfhus39.py",
+        "similarity_percent": 100.0,
+        "full_code": "def doixung():\n    TF = True\n    doixung = None\n    n = int(input())\n    nstr = str(n)\n    d = input().strip('[]')\n    if d == \"\":\n        TF = False\n        print(TF)\n        return\n    digits = list(map(int, d.split(',')))\n\n    if nstr == nstr[::-1]:\n        doixung = True\n    else:\n        doixung = False\n    if doixung:\n        for i in nstr:\n            if int(i) not in digits:\n                TF = False\n                break\n            \n    print(TF)\ndoixung()\n",
+        "highlighted_code": "<span class='highlight-red'>def doixung():\n    TF = True\n    doixung = None\n    n = int(input())\n    nstr = str(n)\n    d = input().strip(&#39;[]&#39;)\n    if d == &#34;&#34;:\n        TF = False\n        print(TF)\n        return\n    digits = list(map(int, d.split(&#39;,&#39;)))\n\n    if nstr == nstr[::-1]:\n        doixung = True\n    else:\n        doixung = False\n    if doixung:\n        for i in nstr:\n            if int(i) not in digits:\n                TF = False\n                break\n            \n    print(TF)\n</span>doixung()\n"
       },
       "file2": {
-        "path": "/app/app/data/submissions/68e3ca5772432513744771a2/f56f86fa26744324899543f3/sub_1761974061531_ax71p2med.py",
-        "similarity_percent": 60.81,
-        "full_code": "n=input()\ndigits=input()\na=[]\na1=list(digits)\nfor _ in a1: \n    if _.isdigit()==True:a.append(_)\ndung=0\nif int(n)==int(n[::-1]):dung+=1\nk=0\nfor i in n:\n    if i not in a:k+=1\nif k==0 and dung==1:print(\"True\")\nelse:print(\"False\")\n\n",
-        "highlighted_code": "n=input()\ndigits=<span class='highlight-green'>input()\na=[]\na1=list(digits)\nfor _ in a1: \n    if _.isdigit()==True:a.append</span>(_)\ndung=0\nif int(n)==int(n[::-1]):dung+=1\nk=0\nfor i in n:\n    if i <span class='highlight-green'>not in a:k+=1\nif k==0 and dung==1:print(&#34;True&#34;)\nelse:print</span>(&#34;False&#34;)\n\n"
+        "path": "/app/app/data/submissions/68e3ca5772432513744771a2/5e7936061bf3423087a326dd/sub_1765953995926_2tu63m0ws.py",
+        "similarity_percent": 98.47,
+        "full_code": "def doixung():\n    TF = True\n    doixung = None\n    n = int(input())\n    nstr = str(n)\n    d = input().strip('[]')\n    if d == \"\":\n        TF = False\n        print(TF)\n        return\n    digits = list(map(int, d.split(',')))\n\n    if nstr == nstr[::-1]:\n        doixung = True\n    else:\n        doixung = False\n        TF = False\n    if doixung:\n        for i in nstr:\n            if int(i) not in digits:\n                TF = False\n                break\n            \n    print(TF)\ndoixung()\n\n",
+        "highlighted_code": "<span class='highlight-green'>def doixung():\n    TF = True\n    doixung = None\n    n = int(input())\n    nstr = str(n)\n    d = input().strip(&#39;[]&#39;)\n    if d == &#34;&#34;:\n        TF = False\n        print(TF)\n        return\n    digits = list(map(int, d.split(&#39;,&#39;)))\n\n    if nstr == nstr[::-1]:\n        doixung = True\n    else:\n        doixung = Fal</span>se\n        TF <span class='highlight-green'>= False\n    if doixung:\n        for i in nstr:\n            if int(i) not in digits:\n                TF = False\n                break\n            \n    print(TF)\n</span>doixung()\n\n"
       },
-      "token_overlap": 90,
-      "max_similarity_percent": 60.81
+      "token_overlap": 189,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 3,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3ca5772432513744771a2/d82933fea814463eb5b029d1/sub_1765078360370_pfrrxbt9o.py",
+        "similarity_percent": 100.0,
+        "full_code": "n = int(input())\n\ndigits = input().strip()\n\n\ndigits = digits.strip(\"[]\").split(\",\")\nlst = [int(x) for x in digits]\n\n\ndef check_digits_in_n(num):\n    while num > 0:\n        a = num % 10\n        if a not in lst:\n            return False\n        num //= 10\n    return True\n\ndef check_doixung(num):\n    lst_so = []\n    while num > 0:\n        lst_so.append(num % 10)\n        num //= 10\n    if lst_so == lst_so[::-1]:\n        return True\n\nif check_digits_in_n(n) and check_doixung(n):\n    print(True)\nelse:\n    print(False)",
+        "highlighted_code": "<span class='highlight-red'>n = int(input())\n\ndigits = input().strip()\n\n\ndigits = digits.strip(&#34;[]&#34;).split(&#34;,&#34;)\nlst = [int(x) for x in digits]\n\n\ndef check_digits_in_n(num):\n    while num &gt; 0:\n        a = num % 10\n        if a not in lst:\n            return False\n        num //= 10\n    return True\n\ndef check_doixung(num):\n    lst_so = []\n    while num &gt; 0:\n        lst_so.append(num % 10)\n        num //= 10\n    if lst_so == lst_so[::-1]:\n        return True\n\nif check_digits_in_n(n) and check_doixung(n):\n    print(True)\nelse:\n    print(Fals</span>e)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3ca5772432513744771a2/d82933fea814463eb5b029d1/sub_1765045309757_kvhxiccc6.py",
+        "similarity_percent": 90.57,
+        "full_code": "n = int(input())\n\ndigits = input().strip()\n\nif digits == \"[]\":\n    print(False)\n    exit()\ndigits = digits.strip(\"[]\").split(\",\")\nlst = [int(x) for x in digits]\n\n\ndef check_digits_in_n(num):\n    while num > 0:\n        a = num % 10\n        if a not in lst:\n            return False\n        num //= 10\n    return True\n\ndef check_doixung(num):\n    lst_so = []\n    while num > 0:\n        lst_so.append(num % 10)\n        num //= 10\n    if lst_so == lst_so[::-1]:\n        return True\n\nif check_digits_in_n(n) and check_doixung(n):\n    print(True)\nelse:\n    print(False)",
+        "highlighted_code": "<span class='highlight-green'>n = int(input())\n\ndigits = input().strip(</span>)\n\nif digits == &#34;[]&#34;:\n    print(False)\n    exit<span class='highlight-green'>()\ndigits = digits.strip(&#34;[]&#34;).split(&#34;,&#34;)\nlst = [int(x) for x in digits]\n\n\ndef check_digits_in_n(num):\n    while num &gt; 0:\n        a = num % 10\n        if a not in lst:\n            return False\n        num //= 10\n    return True\n\ndef check_doixung(num):\n    lst_so = []\n    while num &gt; 0:\n        lst_so.append(num % 10)\n        num //= 10\n    if lst_so == lst_so[::-1]:\n        return True\n\nif check_digits_in_n(n) and check_doixung(n):\n    print(True)\nelse:\n    print(Fals</span>e)"
+      },
+      "token_overlap": 220,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 4,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3ca5772432513744771a2/d82933fea814463eb5b029d1/sub_1765079254661_92p7plnts.py",
+        "similarity_percent": 95.28,
+        "full_code": "n = int(input())\n\ndigits = input().strip().replace(\" \",\"\")\n\nif digits == \"[]\":\n    print(False)\n    exit()\ndigits = digits.strip(\"[]\").split(\",\")\nlst = [int(x) for x in digits]\n\n\ndef check_digits_in_n(num):\n    while num > 0:\n        a = num % 10\n        if a not in lst:\n            return False\n        num //= 10\n    return True\n\ndef check_doixung(num):\n    lst_so = []\n    while num > 0:\n        lst_so.append(num % 10)\n        num //= 10\n    if lst_so == lst_so[::-1]:\n        return True\n\nif check_digits_in_n(n) and check_doixung(n):\n    print(True)\nelse:\n    print(False)",
+        "highlighted_code": "<span class='highlight-red'>n = int(input())\n\ndigits = input().strip(</span>).replace(&#34; &#34;,&#34;&#34;)\n\ni<span class='highlight-red'>f digits == &#34;[]&#34;:\n    print(False)\n    exit()\ndigits = digits.strip(&#34;[]&#34;).split(&#34;,&#34;)\nlst = [int(x) for x in digits]\n\n\ndef check_digits_in_n(num):\n    while num &gt; 0:\n        a = num % 10\n        if a not in lst:\n            return False\n        num //= 10\n    return True\n\ndef check_doixung(num):\n    lst_so = []\n    while num &gt; 0:\n        lst_so.append(num % 10)\n        num //= 10\n    if lst_so == lst_so[::-1]:\n        return True\n\nif check_digits_in_n(n) and check_doixung(n):\n    print(True)\nelse:\n    print(Fals</span>e)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3ca5772432513744771a2/d82933fea814463eb5b029d1/sub_1765045309757_kvhxiccc6.py",
+        "similarity_percent": 99.18,
+        "full_code": "n = int(input())\n\ndigits = input().strip()\n\nif digits == \"[]\":\n    print(False)\n    exit()\ndigits = digits.strip(\"[]\").split(\",\")\nlst = [int(x) for x in digits]\n\n\ndef check_digits_in_n(num):\n    while num > 0:\n        a = num % 10\n        if a not in lst:\n            return False\n        num //= 10\n    return True\n\ndef check_doixung(num):\n    lst_so = []\n    while num > 0:\n        lst_so.append(num % 10)\n        num //= 10\n    if lst_so == lst_so[::-1]:\n        return True\n\nif check_digits_in_n(n) and check_doixung(n):\n    print(True)\nelse:\n    print(False)",
+        "highlighted_code": "<span class='highlight-green'>n = int(input())\n\ndigits = input().strip(</span>)\n\ni<span class='highlight-green'>f digits == &#34;[]&#34;:\n    print(False)\n    exit()\ndigits = digits.strip(&#34;[]&#34;).split(&#34;,&#34;)\nlst = [int(x) for x in digits]\n\n\ndef check_digits_in_n(num):\n    while num &gt; 0:\n        a = num % 10\n        if a not in lst:\n            return False\n        num //= 10\n    return True\n\ndef check_doixung(num):\n    lst_so = []\n    while num &gt; 0:\n        lst_so.append(num % 10)\n        num //= 10\n    if lst_so == lst_so[::-1]:\n        return True\n\nif check_digits_in_n(n) and check_doixung(n):\n    print(True)\nelse:\n    print(Fals</span>e)"
+      },
+      "token_overlap": 242,
+      "max_similarity_percent": 99.18
+    },
+    {
+      "case_id": 5,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3ca5772432513744771a2/d82933fea814463eb5b029d1/sub_1765045499374_8xlh5qf0c.py",
+        "similarity_percent": 94.72,
+        "full_code": "n = int(input())\n\ndigits = input().strip()\n\nif n == 0:\n    print(True)\n    exit()\nif digits == \"[]\":\n    print(False)\n    exit()\ndigits = digits.strip(\"[]\").split(\",\")\nlst = [int(x) for x in digits]\n\n\ndef check_digits_in_n(num):\n    while num > 0:\n        a = num % 10\n        if a not in lst:\n            return False\n        num //= 10\n    return True\n\ndef check_doixung(num):\n    lst_so = []\n    while num > 0:\n        lst_so.append(num % 10)\n        num //= 10\n    if lst_so == lst_so[::-1]:\n        return True\n\nif check_digits_in_n(n) and check_doixung(n):\n    print(True)\nelse:\n    print(False)",
+        "highlighted_code": "<span class='highlight-red'>n = int(input())\n\ndigits = input().strip()\n\nif n =</span>= 0:\n    print(True)\n    <span class='highlight-red'>exit()\nif digits == &#34;[]&#34;:\n    print(False)\n    exit()\ndigits = digits.strip(&#34;[]&#34;).split(&#34;,&#34;)\nlst = [int(x) for x in digits]\n\n\ndef check_digits_in_n(num):\n    while num &gt; 0:\n        a = num % 10\n        if a not in lst:\n            return False\n        num //= 10\n    return True\n\ndef check_doixung(num):\n    lst_so = []\n    while num &gt; 0:\n        lst_so.append(num % 10)\n        num //= 10\n    if lst_so == lst_so[::-1]:\n        return True\n\nif check_digits_in_n(n) and check_doixung(n):\n    print(True)\nelse:\n    print(Fals</span>e)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3ca5772432513744771a2/d82933fea814463eb5b029d1/sub_1765045309757_kvhxiccc6.py",
+        "similarity_percent": 100.0,
+        "full_code": "n = int(input())\n\ndigits = input().strip()\n\nif digits == \"[]\":\n    print(False)\n    exit()\ndigits = digits.strip(\"[]\").split(\",\")\nlst = [int(x) for x in digits]\n\n\ndef check_digits_in_n(num):\n    while num > 0:\n        a = num % 10\n        if a not in lst:\n            return False\n        num //= 10\n    return True\n\ndef check_doixung(num):\n    lst_so = []\n    while num > 0:\n        lst_so.append(num % 10)\n        num //= 10\n    if lst_so == lst_so[::-1]:\n        return True\n\nif check_digits_in_n(n) and check_doixung(n):\n    print(True)\nelse:\n    print(False)",
+        "highlighted_code": "<span class='highlight-green'>n = int(input())\n\ndigits = input().strip()\n\nif digits == &#34;[]&#34;:\n    print(False)\n    exit()\ndigits = digits.strip(&#34;[]&#34;).split(&#34;,&#34;)\nlst = [int(x) for x in digits]\n\n\ndef check_digits_in_n(num):\n    while num &gt; 0:\n        a = num % 10\n        if a not in lst:\n            return False\n        num //= 10\n    return True\n\ndef check_doixung(num):\n    lst_so = []\n    while num &gt; 0:\n        lst_so.append(num % 10)\n        num //= 10\n    if lst_so == lst_so[::-1]:\n        return True\n\nif check_digits_in_n(n) and check_doixung(n):\n    print(True)\nelse:\n    print(Fals</span>e)"
+      },
+      "token_overlap": 251,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 6,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3ca5772432513744771a2/d82933fea814463eb5b029d1/sub_1765045499374_8xlh5qf0c.py",
+        "similarity_percent": 91.32,
+        "full_code": "n = int(input())\n\ndigits = input().strip()\n\nif n == 0:\n    print(True)\n    exit()\nif digits == \"[]\":\n    print(False)\n    exit()\ndigits = digits.strip(\"[]\").split(\",\")\nlst = [int(x) for x in digits]\n\n\ndef check_digits_in_n(num):\n    while num > 0:\n        a = num % 10\n        if a not in lst:\n            return False\n        num //= 10\n    return True\n\ndef check_doixung(num):\n    lst_so = []\n    while num > 0:\n        lst_so.append(num % 10)\n        num //= 10\n    if lst_so == lst_so[::-1]:\n        return True\n\nif check_digits_in_n(n) and check_doixung(n):\n    print(True)\nelse:\n    print(False)",
+        "highlighted_code": "<span class='highlight-red'>n = int(input())\n\ndigits = input().strip(</span>)\n\nif n == 0:\n    print(True)\n    exit()\ni<span class='highlight-red'>f digits == &#34;[]&#34;:\n    print(False)\n    exit()\ndigits = digits.strip(&#34;[]&#34;).split(&#34;,&#34;)\nlst = [int(x) for x in digits]\n\n\ndef check_digits_in_n(num):\n    while num &gt; 0:\n        a = num % 10\n        if a not in lst:\n            return False\n        num //= 10\n    return True\n\ndef check_doixung(num):\n    lst_so = []\n    while num &gt; 0:\n        lst_so.append(num % 10)\n        num //= 10\n    if lst_so == lst_so[::-1]:\n        return True\n\nif check_digits_in_n(n) and check_doixung(n):\n    print(True)\nelse:\n    print(Fals</span>e)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3ca5772432513744771a2/d82933fea814463eb5b029d1/sub_1765079254661_92p7plnts.py",
+        "similarity_percent": 95.28,
+        "full_code": "n = int(input())\n\ndigits = input().strip().replace(\" \",\"\")\n\nif digits == \"[]\":\n    print(False)\n    exit()\ndigits = digits.strip(\"[]\").split(\",\")\nlst = [int(x) for x in digits]\n\n\ndef check_digits_in_n(num):\n    while num > 0:\n        a = num % 10\n        if a not in lst:\n            return False\n        num //= 10\n    return True\n\ndef check_doixung(num):\n    lst_so = []\n    while num > 0:\n        lst_so.append(num % 10)\n        num //= 10\n    if lst_so == lst_so[::-1]:\n        return True\n\nif check_digits_in_n(n) and check_doixung(n):\n    print(True)\nelse:\n    print(False)",
+        "highlighted_code": "<span class='highlight-green'>n = int(input())\n\ndigits = input().strip(</span>).replace(&#34; &#34;,&#34;&#34;)\n\ni<span class='highlight-green'>f digits == &#34;[]&#34;:\n    print(False)\n    exit()\ndigits = digits.strip(&#34;[]&#34;).split(&#34;,&#34;)\nlst = [int(x) for x in digits]\n\n\ndef check_digits_in_n(num):\n    while num &gt; 0:\n        a = num % 10\n        if a not in lst:\n            return False\n        num //= 10\n    return True\n\ndef check_doixung(num):\n    lst_so = []\n    while num &gt; 0:\n        lst_so.append(num % 10)\n        num //= 10\n    if lst_so == lst_so[::-1]:\n        return True\n\nif check_digits_in_n(n) and check_doixung(n):\n    print(True)\nelse:\n    print(Fals</span>e)"
+      },
+      "token_overlap": 242,
+      "max_similarity_percent": 95.28
+    },
+    {
+      "case_id": 7,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3ca5772432513744771a2/d82933fea814463eb5b029d1/sub_1765078360370_pfrrxbt9o.py",
+        "similarity_percent": 88.64,
+        "full_code": "n = int(input())\n\ndigits = input().strip()\n\n\ndigits = digits.strip(\"[]\").split(\",\")\nlst = [int(x) for x in digits]\n\n\ndef check_digits_in_n(num):\n    while num > 0:\n        a = num % 10\n        if a not in lst:\n            return False\n        num //= 10\n    return True\n\ndef check_doixung(num):\n    lst_so = []\n    while num > 0:\n        lst_so.append(num % 10)\n        num //= 10\n    if lst_so == lst_so[::-1]:\n        return True\n\nif check_digits_in_n(n) and check_doixung(n):\n    print(True)\nelse:\n    print(False)",
+        "highlighted_code": "n = int(input())\n\ndigits = input().strip<span class='highlight-red'>()\n\n\ndigits = digits.strip(&#34;[]&#34;).split(&#34;,&#34;)\nlst = [int(x) for x in digits]\n\n\ndef check_digits_in_n(num):\n    while num &gt; 0:\n        a = num % 10\n        if a not in lst:\n            return False\n        num //= 10\n    return True\n\ndef check_doixung(num):\n    lst_so = []\n    while num &gt; 0:\n        lst_so.append(num % 10)\n        num //= 10\n    if lst_so == lst_so[::-1]:\n        return True\n\nif check_digits_in_n(n) and check_doixung(n):\n    print(True)\nelse:\n    print(Fals</span>e)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3ca5772432513744771a2/d82933fea814463eb5b029d1/sub_1765045257279_yrr0qrdvw.py",
+        "similarity_percent": 81.25,
+        "full_code": "n = int(input())\n\ndigits = input()\n\nif digits == \"[]\":\n    print(False)\n    exit()\ndigits = digits.strip(\"[]\").split(\",\")\nlst = [int(x) for x in digits]\n\n\ndef check_digits_in_n(num):\n    while num > 0:\n        a = num % 10\n        if a not in lst:\n            return False\n        num //= 10\n    return True\n\ndef check_doixung(num):\n    lst_so = []\n    while num > 0:\n        lst_so.append(num % 10)\n        num //= 10\n    if lst_so == lst_so[::-1]:\n        return True\n\nif check_digits_in_n(n) and check_doixung(n):\n    print(True)\nelse:\n    print(False)",
+        "highlighted_code": "n = int(input())\n\ndigits = input()\n\nif digits == &#34;[]&#34;:\n    print(False)\n    exit<span class='highlight-green'>()\ndigits = digits.strip(&#34;[]&#34;).split(&#34;,&#34;)\nlst = [int(x) for x in digits]\n\n\ndef check_digits_in_n(num):\n    while num &gt; 0:\n        a = num % 10\n        if a not in lst:\n            return False\n        num //= 10\n    return True\n\ndef check_doixung(num):\n    lst_so = []\n    while num &gt; 0:\n        lst_so.append(num % 10)\n        num //= 10\n    if lst_so == lst_so[::-1]:\n        return True\n\nif check_digits_in_n(n) and check_doixung(n):\n    print(True)\nelse:\n    print(Fals</span>e)"
+      },
+      "token_overlap": 195,
+      "max_similarity_percent": 88.64
+    },
+    {
+      "case_id": 8,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3ca5772432513744771a2/d82933fea814463eb5b029d1/sub_1765045309757_kvhxiccc6.py",
+        "similarity_percent": 88.52,
+        "full_code": "n = int(input())\n\ndigits = input().strip()\n\nif digits == \"[]\":\n    print(False)\n    exit()\ndigits = digits.strip(\"[]\").split(\",\")\nlst = [int(x) for x in digits]\n\n\ndef check_digits_in_n(num):\n    while num > 0:\n        a = num % 10\n        if a not in lst:\n            return False\n        num //= 10\n    return True\n\ndef check_doixung(num):\n    lst_so = []\n    while num > 0:\n        lst_so.append(num % 10)\n        num //= 10\n    if lst_so == lst_so[::-1]:\n        return True\n\nif check_digits_in_n(n) and check_doixung(n):\n    print(True)\nelse:\n    print(False)",
+        "highlighted_code": "n = int(input())\n\ndigits = input().strip()\n\ni<span class='highlight-red'>f digits == &#34;[]&#34;:\n    print(False)\n    exit()\ndigits = digits.strip(&#34;[]&#34;).split(&#34;,&#34;)\nlst = [int(x) for x in digits]\n\n\ndef check_digits_in_n(num):\n    while num &gt; 0:\n        a = num % 10\n        if a not in lst:\n            return False\n        num //= 10\n    return True\n\ndef check_doixung(num):\n    lst_so = []\n    while num &gt; 0:\n        lst_so.append(num % 10)\n        num //= 10\n    if lst_so == lst_so[::-1]:\n        return True\n\nif check_digits_in_n(n) and check_doixung(n):\n    print(True)\nelse:\n    print(Fals</span>e)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3ca5772432513744771a2/d82933fea814463eb5b029d1/sub_1765045257279_yrr0qrdvw.py",
+        "similarity_percent": 90.0,
+        "full_code": "n = int(input())\n\ndigits = input()\n\nif digits == \"[]\":\n    print(False)\n    exit()\ndigits = digits.strip(\"[]\").split(\",\")\nlst = [int(x) for x in digits]\n\n\ndef check_digits_in_n(num):\n    while num > 0:\n        a = num % 10\n        if a not in lst:\n            return False\n        num //= 10\n    return True\n\ndef check_doixung(num):\n    lst_so = []\n    while num > 0:\n        lst_so.append(num % 10)\n        num //= 10\n    if lst_so == lst_so[::-1]:\n        return True\n\nif check_digits_in_n(n) and check_doixung(n):\n    print(True)\nelse:\n    print(False)",
+        "highlighted_code": "n = int(input())\n\ndigits = input()\n\ni<span class='highlight-green'>f digits == &#34;[]&#34;:\n    print(False)\n    exit()\ndigits = digits.strip(&#34;[]&#34;).split(&#34;,&#34;)\nlst = [int(x) for x in digits]\n\n\ndef check_digits_in_n(num):\n    while num &gt; 0:\n        a = num % 10\n        if a not in lst:\n            return False\n        num //= 10\n    return True\n\ndef check_doixung(num):\n    lst_so = []\n    while num &gt; 0:\n        lst_so.append(num % 10)\n        num //= 10\n    if lst_so == lst_so[::-1]:\n        return True\n\nif check_digits_in_n(n) and check_doixung(n):\n    print(True)\nelse:\n    print(Fals</span>e)"
+      },
+      "token_overlap": 216,
+      "max_similarity_percent": 90.0
+    },
+    {
+      "case_id": 9,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3ca5772432513744771a2/d82933fea814463eb5b029d1/sub_1765079254661_92p7plnts.py",
+        "similarity_percent": 87.01,
+        "full_code": "n = int(input())\n\ndigits = input().strip().replace(\" \",\"\")\n\nif digits == \"[]\":\n    print(False)\n    exit()\ndigits = digits.strip(\"[]\").split(\",\")\nlst = [int(x) for x in digits]\n\n\ndef check_digits_in_n(num):\n    while num > 0:\n        a = num % 10\n        if a not in lst:\n            return False\n        num //= 10\n    return True\n\ndef check_doixung(num):\n    lst_so = []\n    while num > 0:\n        lst_so.append(num % 10)\n        num //= 10\n    if lst_so == lst_so[::-1]:\n        return True\n\nif check_digits_in_n(n) and check_doixung(n):\n    print(True)\nelse:\n    print(False)",
+        "highlighted_code": "<span class='highlight-red'>n = int(input())\n\ndigits = input().strip(</span>).replace(&#34; &#34;,&#34;&#34;)\n\nif digits == &#34;[]&#34;:\n    print(False)\n    exit<span class='highlight-red'>()\ndigits = digits.strip(&#34;[]&#34;).split(&#34;,&#34;)\nlst = [int(x) for x in digits]\n\n\ndef check_digits_in_n(num):\n    while num &gt; 0:\n        a = num % 10\n        if a not in lst:\n            return False\n        num //= 10\n    return True\n\ndef check_doixung(num):\n    lst_so = []\n    while num &gt; 0:\n        lst_so.append(num % 10)\n        num //= 10\n    if lst_so == lst_so[::-1]:\n        return True\n\nif check_digits_in_n(n) and check_doixung(n):\n    print(True)\nelse:\n    print(Fals</span>e)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3ca5772432513744771a2/d82933fea814463eb5b029d1/sub_1765078360370_pfrrxbt9o.py",
+        "similarity_percent": 100.0,
+        "full_code": "n = int(input())\n\ndigits = input().strip()\n\n\ndigits = digits.strip(\"[]\").split(\",\")\nlst = [int(x) for x in digits]\n\n\ndef check_digits_in_n(num):\n    while num > 0:\n        a = num % 10\n        if a not in lst:\n            return False\n        num //= 10\n    return True\n\ndef check_doixung(num):\n    lst_so = []\n    while num > 0:\n        lst_so.append(num % 10)\n        num //= 10\n    if lst_so == lst_so[::-1]:\n        return True\n\nif check_digits_in_n(n) and check_doixung(n):\n    print(True)\nelse:\n    print(False)",
+        "highlighted_code": "<span class='highlight-green'>n = int(input())\n\ndigits = input().strip()\n\n\ndigits = digits.strip(&#34;[]&#34;).split(&#34;,&#34;)\nlst = [int(x) for x in digits]\n\n\ndef check_digits_in_n(num):\n    while num &gt; 0:\n        a = num % 10\n        if a not in lst:\n            return False\n        num //= 10\n    return True\n\ndef check_doixung(num):\n    lst_so = []\n    while num &gt; 0:\n        lst_so.append(num % 10)\n        num //= 10\n    if lst_so == lst_so[::-1]:\n        return True\n\nif check_digits_in_n(n) and check_doixung(n):\n    print(True)\nelse:\n    print(Fals</span>e)"
+      },
+      "token_overlap": 221,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 10,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3ca5772432513744771a2/d82933fea814463eb5b029d1/sub_1765079254661_92p7plnts.py",
+        "similarity_percent": 85.04,
+        "full_code": "n = int(input())\n\ndigits = input().strip().replace(\" \",\"\")\n\nif digits == \"[]\":\n    print(False)\n    exit()\ndigits = digits.strip(\"[]\").split(\",\")\nlst = [int(x) for x in digits]\n\n\ndef check_digits_in_n(num):\n    while num > 0:\n        a = num % 10\n        if a not in lst:\n            return False\n        num //= 10\n    return True\n\ndef check_doixung(num):\n    lst_so = []\n    while num > 0:\n        lst_so.append(num % 10)\n        num //= 10\n    if lst_so == lst_so[::-1]:\n        return True\n\nif check_digits_in_n(n) and check_doixung(n):\n    print(True)\nelse:\n    print(False)",
+        "highlighted_code": "n = int(input())\n\ndigits = input().strip().replace(&#34; &#34;,&#34;&#34;)\n\ni<span class='highlight-red'>f digits == &#34;[]&#34;:\n    print(False)\n    exit()\ndigits = digits.strip(&#34;[]&#34;).split(&#34;,&#34;)\nlst = [int(x) for x in digits]\n\n\ndef check_digits_in_n(num):\n    while num &gt; 0:\n        a = num % 10\n        if a not in lst:\n            return False\n        num //= 10\n    return True\n\ndef check_doixung(num):\n    lst_so = []\n    while num &gt; 0:\n        lst_so.append(num % 10)\n        num //= 10\n    if lst_so == lst_so[::-1]:\n        return True\n\nif check_digits_in_n(n) and check_doixung(n):\n    print(True)\nelse:\n    print(Fals</span>e)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3ca5772432513744771a2/d82933fea814463eb5b029d1/sub_1765045257279_yrr0qrdvw.py",
+        "similarity_percent": 90.0,
+        "full_code": "n = int(input())\n\ndigits = input()\n\nif digits == \"[]\":\n    print(False)\n    exit()\ndigits = digits.strip(\"[]\").split(\",\")\nlst = [int(x) for x in digits]\n\n\ndef check_digits_in_n(num):\n    while num > 0:\n        a = num % 10\n        if a not in lst:\n            return False\n        num //= 10\n    return True\n\ndef check_doixung(num):\n    lst_so = []\n    while num > 0:\n        lst_so.append(num % 10)\n        num //= 10\n    if lst_so == lst_so[::-1]:\n        return True\n\nif check_digits_in_n(n) and check_doixung(n):\n    print(True)\nelse:\n    print(False)",
+        "highlighted_code": "n = int(input())\n\ndigits = input()\n\ni<span class='highlight-green'>f digits == &#34;[]&#34;:\n    print(False)\n    exit()\ndigits = digits.strip(&#34;[]&#34;).split(&#34;,&#34;)\nlst = [int(x) for x in digits]\n\n\ndef check_digits_in_n(num):\n    while num &gt; 0:\n        a = num % 10\n        if a not in lst:\n            return False\n        num //= 10\n    return True\n\ndef check_doixung(num):\n    lst_so = []\n    while num &gt; 0:\n        lst_so.append(num % 10)\n        num //= 10\n    if lst_so == lst_so[::-1]:\n        return True\n\nif check_digits_in_n(n) and check_doixung(n):\n    print(True)\nelse:\n    print(Fals</span>e)"
+      },
+      "token_overlap": 216,
+      "max_similarity_percent": 90.0
+    },
+    {
+      "case_id": 11,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3ca5772432513744771a2/d82933fea814463eb5b029d1/sub_1765045499374_8xlh5qf0c.py",
+        "similarity_percent": 83.4,
+        "full_code": "n = int(input())\n\ndigits = input().strip()\n\nif n == 0:\n    print(True)\n    exit()\nif digits == \"[]\":\n    print(False)\n    exit()\ndigits = digits.strip(\"[]\").split(\",\")\nlst = [int(x) for x in digits]\n\n\ndef check_digits_in_n(num):\n    while num > 0:\n        a = num % 10\n        if a not in lst:\n            return False\n        num //= 10\n    return True\n\ndef check_doixung(num):\n    lst_so = []\n    while num > 0:\n        lst_so.append(num % 10)\n        num //= 10\n    if lst_so == lst_so[::-1]:\n        return True\n\nif check_digits_in_n(n) and check_doixung(n):\n    print(True)\nelse:\n    print(False)",
+        "highlighted_code": "<span class='highlight-red'>n = int(input())\n\ndigits = input().strip(</span>)\n\nif n == 0:\n    print(True)\n    exit()\nif digits == &#34;[]&#34;:\n    print(False)\n    exit<span class='highlight-red'>()\ndigits = digits.strip(&#34;[]&#34;).split(&#34;,&#34;)\nlst = [int(x) for x in digits]\n\n\ndef check_digits_in_n(num):\n    while num &gt; 0:\n        a = num % 10\n        if a not in lst:\n            return False\n        num //= 10\n    return True\n\ndef check_doixung(num):\n    lst_so = []\n    while num &gt; 0:\n        lst_so.append(num % 10)\n        num //= 10\n    if lst_so == lst_so[::-1]:\n        return True\n\nif check_digits_in_n(n) and check_doixung(n):\n    print(True)\nelse:\n    print(Fals</span>e)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3ca5772432513744771a2/d82933fea814463eb5b029d1/sub_1765078360370_pfrrxbt9o.py",
+        "similarity_percent": 100.0,
+        "full_code": "n = int(input())\n\ndigits = input().strip()\n\n\ndigits = digits.strip(\"[]\").split(\",\")\nlst = [int(x) for x in digits]\n\n\ndef check_digits_in_n(num):\n    while num > 0:\n        a = num % 10\n        if a not in lst:\n            return False\n        num //= 10\n    return True\n\ndef check_doixung(num):\n    lst_so = []\n    while num > 0:\n        lst_so.append(num % 10)\n        num //= 10\n    if lst_so == lst_so[::-1]:\n        return True\n\nif check_digits_in_n(n) and check_doixung(n):\n    print(True)\nelse:\n    print(False)",
+        "highlighted_code": "<span class='highlight-green'>n = int(input())\n\ndigits = input().strip()\n\n\ndigits = digits.strip(&#34;[]&#34;).split(&#34;,&#34;)\nlst = [int(x) for x in digits]\n\n\ndef check_digits_in_n(num):\n    while num &gt; 0:\n        a = num % 10\n        if a not in lst:\n            return False\n        num //= 10\n    return True\n\ndef check_doixung(num):\n    lst_so = []\n    while num &gt; 0:\n        lst_so.append(num % 10)\n        num //= 10\n    if lst_so == lst_so[::-1]:\n        return True\n\nif check_digits_in_n(n) and check_doixung(n):\n    print(True)\nelse:\n    print(Fals</span>e)"
+      },
+      "token_overlap": 221,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 12,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3ca5772432513744771a2/d82933fea814463eb5b029d1/sub_1765045499374_8xlh5qf0c.py",
+        "similarity_percent": 81.51,
+        "full_code": "n = int(input())\n\ndigits = input().strip()\n\nif n == 0:\n    print(True)\n    exit()\nif digits == \"[]\":\n    print(False)\n    exit()\ndigits = digits.strip(\"[]\").split(\",\")\nlst = [int(x) for x in digits]\n\n\ndef check_digits_in_n(num):\n    while num > 0:\n        a = num % 10\n        if a not in lst:\n            return False\n        num //= 10\n    return True\n\ndef check_doixung(num):\n    lst_so = []\n    while num > 0:\n        lst_so.append(num % 10)\n        num //= 10\n    if lst_so == lst_so[::-1]:\n        return True\n\nif check_digits_in_n(n) and check_doixung(n):\n    print(True)\nelse:\n    print(False)",
+        "highlighted_code": "n = int(input())\n\ndigits = input().strip()\n\nif n == 0:\n    print(True)\n    exit()\ni<span class='highlight-red'>f digits == &#34;[]&#34;:\n    print(False)\n    exit()\ndigits = digits.strip(&#34;[]&#34;).split(&#34;,&#34;)\nlst = [int(x) for x in digits]\n\n\ndef check_digits_in_n(num):\n    while num &gt; 0:\n        a = num % 10\n        if a not in lst:\n            return False\n        num //= 10\n    return True\n\ndef check_doixung(num):\n    lst_so = []\n    while num &gt; 0:\n        lst_so.append(num % 10)\n        num //= 10\n    if lst_so == lst_so[::-1]:\n        return True\n\nif check_digits_in_n(n) and check_doixung(n):\n    print(True)\nelse:\n    print(Fals</span>e)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3ca5772432513744771a2/d82933fea814463eb5b029d1/sub_1765045257279_yrr0qrdvw.py",
+        "similarity_percent": 90.0,
+        "full_code": "n = int(input())\n\ndigits = input()\n\nif digits == \"[]\":\n    print(False)\n    exit()\ndigits = digits.strip(\"[]\").split(\",\")\nlst = [int(x) for x in digits]\n\n\ndef check_digits_in_n(num):\n    while num > 0:\n        a = num % 10\n        if a not in lst:\n            return False\n        num //= 10\n    return True\n\ndef check_doixung(num):\n    lst_so = []\n    while num > 0:\n        lst_so.append(num % 10)\n        num //= 10\n    if lst_so == lst_so[::-1]:\n        return True\n\nif check_digits_in_n(n) and check_doixung(n):\n    print(True)\nelse:\n    print(False)",
+        "highlighted_code": "n = int(input())\n\ndigits = input()\n\ni<span class='highlight-green'>f digits == &#34;[]&#34;:\n    print(False)\n    exit()\ndigits = digits.strip(&#34;[]&#34;).split(&#34;,&#34;)\nlst = [int(x) for x in digits]\n\n\ndef check_digits_in_n(num):\n    while num &gt; 0:\n        a = num % 10\n        if a not in lst:\n            return False\n        num //= 10\n    return True\n\ndef check_doixung(num):\n    lst_so = []\n    while num &gt; 0:\n        lst_so.append(num % 10)\n        num //= 10\n    if lst_so == lst_so[::-1]:\n        return True\n\nif check_digits_in_n(n) and check_doixung(n):\n    print(True)\nelse:\n    print(Fals</span>e)"
+      },
+      "token_overlap": 216,
+      "max_similarity_percent": 90.0
+    },
+    {
+      "case_id": 13,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3ca5772432513744771a2/f56f86fa26744324899543f3/sub_1761974061531_ax71p2med.py",
+        "similarity_percent": 62.25,
+        "full_code": "n=input()\ndigits=input()\na=[]\na1=list(digits)\nfor _ in a1: \n    if _.isdigit()==True:a.append(_)\ndung=0\nif int(n)==int(n[::-1]):dung+=1\nk=0\nfor i in n:\n    if i not in a:k+=1\nif k==0 and dung==1:print(\"True\")\nelse:print(\"False\")\n\n",
+        "highlighted_code": "n=input(<span class='highlight-red'>)\ndigits=input()\na=[]\na1=list(digits)\nfor _ in a1: \n    if _.isdigit()==True:a.append</span>(_)\ndung=0\nif int(n)==int(n[::-1]):dung+=1\nk=0\nfor i in n:\n    if i no<span class='highlight-red'>t in a:k+=1\nif k==0 and dung==1:print(&#34;True&#34;)\nelse:print(&#34;False</span>&#34;)\n\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3ca5772432513744771a2/f56f86fa26744324899543f3/sub_1761974332801_f5n9artnt.py",
+        "similarity_percent": 53.11,
+        "full_code": "n=int(input())\ndigits=input()\na=[]\na1=list(digits)\nfor _ in a1: \n    if _.isdigit()==True:a.append(int(_))\ndung=0\nif n==int(str(n)[::-1]):dung+=1\nk=0\nfor i in list(str(n)):\n    if int(i) not in a:k+=1\nif k==0 and dung==1:print(\"True\")\nelse:print(\"False\")\n\n",
+        "highlighted_code": "n=int(input()<span class='highlight-green'>)\ndigits=input()\na=[]\na1=list(digits)\nfor _ in a1: \n    if _.isdigit()==True:a.append</span>(int(_))\ndung=0\nif n==int(str(n)[::-1]):dung+=1\nk=0\nfor i in list(str(n)):\n    if int(i) no<span class='highlight-green'>t in a:k+=1\nif k==0 and dung==1:print(&#34;True&#34;)\nelse:print(&#34;False</span>&#34;)\n\n"
+      },
+      "token_overlap": 94,
+      "max_similarity_percent": 62.25
+    },
+    {
+      "case_id": 14,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3ca5772432513744771a2/d82933fea814463eb5b029d1/sub_1765079436275_zr6iq94hz.py",
+        "similarity_percent": 52.53,
+        "full_code": "n = int(input())\ns = input().strip()\n\ns = s.strip()\nif s.startswith(\"[\") and s.endswith(\"]\"):\n    s = s[1:-1].strip()\n\nif s == \"\":\n    digits = []\nelse:\n    digits = [int(x.strip()) for x in s.split(\",\") if x.strip() != \"\"]\n\ndef check_digits_in_n(num):\n    while num > 0:\n        d = num % 10\n        if d not in digits:\n            return False\n        num //= 10\n    return True\n\ndef check_doixung(num):\n    s = str(num)\n    return s == s[::-1]\n\nif check_digits_in_n(n) and check_doixung(n):\n    print(True)\nelse:\n    print(False)",
+        "highlighted_code": "<span class='highlight-red'>n = int(input())\ns = input().strip()\n\ns = s</span>.strip()\nif s.startswith(&#34;[&#34;) and s.endswith(&#34;]&#34;):\n    s = s[1:-1].strip()\n\nif s == &#34;&#34;:\n    digits = []\nelse:\n    digits = [int(x.strip()) for x in s.split(&#34;,&#34;) if x.strip() != &#34;&#34;<span class='highlight-red'>]\n\ndef check_digits_in_n(num):\n    while num &gt; 0:\n        d = num % 10\n        if d not in digits:\n            return False\n        num //= 10\n    return True\n\ndef check_doixung(</span>num):\n    s = str(num)\n    return s == s[::-1]\n\ni<span class='highlight-red'>f check_digits_in_n(n) and check_doixung(n):\n    print(True)\nelse:\n    print(Fals</span>e)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3ca5772432513744771a2/d82933fea814463eb5b029d1/sub_1765078360370_pfrrxbt9o.py",
+        "similarity_percent": 61.36,
+        "full_code": "n = int(input())\n\ndigits = input().strip()\n\n\ndigits = digits.strip(\"[]\").split(\",\")\nlst = [int(x) for x in digits]\n\n\ndef check_digits_in_n(num):\n    while num > 0:\n        a = num % 10\n        if a not in lst:\n            return False\n        num //= 10\n    return True\n\ndef check_doixung(num):\n    lst_so = []\n    while num > 0:\n        lst_so.append(num % 10)\n        num //= 10\n    if lst_so == lst_so[::-1]:\n        return True\n\nif check_digits_in_n(n) and check_doixung(n):\n    print(True)\nelse:\n    print(False)",
+        "highlighted_code": "<span class='highlight-green'>n = int(input())\n\ndigits = input().strip()\n\n\ndigits = digits</span>.strip(&#34;[]&#34;).split(&#34;,&#34;)\nlst = [int(x) for x in digits<span class='highlight-green'>]\n\n\ndef check_digits_in_n(num):\n    while num &gt; 0:\n        a = num % 10\n        if a not in lst:\n            return False\n        num //= 10\n    return True\n\ndef check_doixung(</span>num):\n    lst_so = []\n    while num &gt; 0:\n        lst_so.append(num % 10)\n        num //= 10\n    if lst_so == lst_so[::-1]:\n        return True\n\ni<span class='highlight-green'>f check_digits_in_n(n) and check_doixung(n):\n    print(True)\nelse:\n    print(Fals</span>e)"
+      },
+      "token_overlap": 135,
+      "max_similarity_percent": 61.36
+    },
+    {
+      "case_id": 15,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3ca5772432513744771a2/d82933fea814463eb5b029d1/sub_1765079254661_92p7plnts.py",
+        "similarity_percent": 51.57,
+        "full_code": "n = int(input())\n\ndigits = input().strip().replace(\" \",\"\")\n\nif digits == \"[]\":\n    print(False)\n    exit()\ndigits = digits.strip(\"[]\").split(\",\")\nlst = [int(x) for x in digits]\n\n\ndef check_digits_in_n(num):\n    while num > 0:\n        a = num % 10\n        if a not in lst:\n            return False\n        num //= 10\n    return True\n\ndef check_doixung(num):\n    lst_so = []\n    while num > 0:\n        lst_so.append(num % 10)\n        num //= 10\n    if lst_so == lst_so[::-1]:\n        return True\n\nif check_digits_in_n(n) and check_doixung(n):\n    print(True)\nelse:\n    print(False)",
+        "highlighted_code": "<span class='highlight-red'>n = int(input())\n\ndigits = input().strip(</span>).replace(&#34; &#34;,&#34;&#34;)\n\nif digits == &#34;[]&#34;:\n    print(False)\n    exit()\ndigits = digits.strip(&#34;[]&#34;).split(&#34;,&#34;)\nlst = [int(x) for x in digits<span class='highlight-red'>]\n\n\ndef check_digits_in_n(num):\n    while num &gt; 0:\n        a = num % 10\n        if a not in lst:\n            return False\n        num //= 10\n    return True\n\ndef check_doixung(</span>num):\n    lst_so = []\n    while num &gt; 0:\n        lst_so.append(num % 10)\n        num //= 10\n    if lst_so == lst_so[::-1]:\n        return True\n\ni<span class='highlight-red'>f check_digits_in_n(n) and check_doixung(n):\n    print(True)\nelse:\n    print(Fals</span>e)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3ca5772432513744771a2/d82933fea814463eb5b029d1/sub_1765079436275_zr6iq94hz.py",
+        "similarity_percent": 50.97,
+        "full_code": "n = int(input())\ns = input().strip()\n\ns = s.strip()\nif s.startswith(\"[\") and s.endswith(\"]\"):\n    s = s[1:-1].strip()\n\nif s == \"\":\n    digits = []\nelse:\n    digits = [int(x.strip()) for x in s.split(\",\") if x.strip() != \"\"]\n\ndef check_digits_in_n(num):\n    while num > 0:\n        d = num % 10\n        if d not in digits:\n            return False\n        num //= 10\n    return True\n\ndef check_doixung(num):\n    s = str(num)\n    return s == s[::-1]\n\nif check_digits_in_n(n) and check_doixung(n):\n    print(True)\nelse:\n    print(False)",
+        "highlighted_code": "<span class='highlight-green'>n = int(input())\ns = input().strip(</span>)\n\ns = s.strip()\nif s.startswith(&#34;[&#34;) and s.endswith(&#34;]&#34;):\n    s = s[1:-1].strip()\n\nif s == &#34;&#34;:\n    digits = []\nelse:\n    digits = [int(x.strip()) for x in s.split(&#34;,&#34;) if x.strip() != &#34;&#34;<span class='highlight-green'>]\n\ndef check_digits_in_n(num):\n    while num &gt; 0:\n        d = num % 10\n        if d not in digits:\n            return False\n        num //= 10\n    return True\n\ndef check_doixung(</span>num):\n    s = str(num)\n    return s == s[::-1]\n\ni<span class='highlight-green'>f check_digits_in_n(n) and check_doixung(n):\n    print(True)\nelse:\n    print(Fals</span>e)"
+      },
+      "token_overlap": 131,
+      "max_similarity_percent": 51.57
+    },
+    {
+      "case_id": 16,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3ca5772432513744771a2/d82933fea814463eb5b029d1/sub_1765079436275_zr6iq94hz.py",
+        "similarity_percent": 50.97,
+        "full_code": "n = int(input())\ns = input().strip()\n\ns = s.strip()\nif s.startswith(\"[\") and s.endswith(\"]\"):\n    s = s[1:-1].strip()\n\nif s == \"\":\n    digits = []\nelse:\n    digits = [int(x.strip()) for x in s.split(\",\") if x.strip() != \"\"]\n\ndef check_digits_in_n(num):\n    while num > 0:\n        d = num % 10\n        if d not in digits:\n            return False\n        num //= 10\n    return True\n\ndef check_doixung(num):\n    s = str(num)\n    return s == s[::-1]\n\nif check_digits_in_n(n) and check_doixung(n):\n    print(True)\nelse:\n    print(False)",
+        "highlighted_code": "<span class='highlight-red'>n = int(input())\ns = input().strip(</span>)\n\ns = s.strip()\nif s.startswith(&#34;[&#34;) and s.endswith(&#34;]&#34;):\n    s = s[1:-1].strip()\n\nif s == &#34;&#34;:\n    digits = []\nelse:\n    digits = [int(x.strip()) for x in s.split(&#34;,&#34;) if x.strip() != &#34;&#34;<span class='highlight-red'>]\n\ndef check_digits_in_n(num):\n    while num &gt; 0:\n        d = num % 10\n        if d not in digits:\n            return False\n        num //= 10\n    return True\n\ndef check_doixung(</span>num):\n    s = str(num)\n    return s == s[::-1]\n\ni<span class='highlight-red'>f check_digits_in_n(n) and check_doixung(n):\n    print(True)\nelse:\n    print(Fals</span>e)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3ca5772432513744771a2/d82933fea814463eb5b029d1/sub_1765045309757_kvhxiccc6.py",
+        "similarity_percent": 53.69,
+        "full_code": "n = int(input())\n\ndigits = input().strip()\n\nif digits == \"[]\":\n    print(False)\n    exit()\ndigits = digits.strip(\"[]\").split(\",\")\nlst = [int(x) for x in digits]\n\n\ndef check_digits_in_n(num):\n    while num > 0:\n        a = num % 10\n        if a not in lst:\n            return False\n        num //= 10\n    return True\n\ndef check_doixung(num):\n    lst_so = []\n    while num > 0:\n        lst_so.append(num % 10)\n        num //= 10\n    if lst_so == lst_so[::-1]:\n        return True\n\nif check_digits_in_n(n) and check_doixung(n):\n    print(True)\nelse:\n    print(False)",
+        "highlighted_code": "<span class='highlight-green'>n = int(input())\n\ndigits = input().strip(</span>)\n\nif digits == &#34;[]&#34;:\n    print(False)\n    exit()\ndigits = digits.strip(&#34;[]&#34;).split(&#34;,&#34;)\nlst = [int(x) for x in digits<span class='highlight-green'>]\n\n\ndef check_digits_in_n(num):\n    while num &gt; 0:\n        a = num % 10\n        if a not in lst:\n            return False\n        num //= 10\n    return True\n\ndef check_doixung(</span>num):\n    lst_so = []\n    while num &gt; 0:\n        lst_so.append(num % 10)\n        num //= 10\n    if lst_so == lst_so[::-1]:\n        return True\n\ni<span class='highlight-green'>f check_digits_in_n(n) and check_doixung(n):\n    print(True)\nelse:\n    print(Fals</span>e)"
+      },
+      "token_overlap": 131,
+      "max_similarity_percent": 53.69
+    },
+    {
+      "case_id": 17,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3ca5772432513744771a2/d82933fea814463eb5b029d1/sub_1765045499374_8xlh5qf0c.py",
+        "similarity_percent": 49.43,
+        "full_code": "n = int(input())\n\ndigits = input().strip()\n\nif n == 0:\n    print(True)\n    exit()\nif digits == \"[]\":\n    print(False)\n    exit()\ndigits = digits.strip(\"[]\").split(\",\")\nlst = [int(x) for x in digits]\n\n\ndef check_digits_in_n(num):\n    while num > 0:\n        a = num % 10\n        if a not in lst:\n            return False\n        num //= 10\n    return True\n\ndef check_doixung(num):\n    lst_so = []\n    while num > 0:\n        lst_so.append(num % 10)\n        num //= 10\n    if lst_so == lst_so[::-1]:\n        return True\n\nif check_digits_in_n(n) and check_doixung(n):\n    print(True)\nelse:\n    print(False)",
+        "highlighted_code": "<span class='highlight-red'>n = int(input())\n\ndigits = input().strip(</span>)\n\nif n == 0:\n    print(True)\n    exit()\nif digits == &#34;[]&#34;:\n    print(False)\n    exit()\ndigits = digits.strip(&#34;[]&#34;).split(&#34;,&#34;)\nlst = [int(x) for x in digits<span class='highlight-red'>]\n\n\ndef check_digits_in_n(num):\n    while num &gt; 0:\n        a = num % 10\n        if a not in lst:\n            return False\n        num //= 10\n    return True\n\ndef check_doixung(</span>num):\n    lst_so = []\n    while num &gt; 0:\n        lst_so.append(num % 10)\n        num //= 10\n    if lst_so == lst_so[::-1]:\n        return True\n\ni<span class='highlight-red'>f check_digits_in_n(n) and check_doixung(n):\n    print(True)\nelse:\n    print(Fals</span>e)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3ca5772432513744771a2/d82933fea814463eb5b029d1/sub_1765079436275_zr6iq94hz.py",
+        "similarity_percent": 50.97,
+        "full_code": "n = int(input())\ns = input().strip()\n\ns = s.strip()\nif s.startswith(\"[\") and s.endswith(\"]\"):\n    s = s[1:-1].strip()\n\nif s == \"\":\n    digits = []\nelse:\n    digits = [int(x.strip()) for x in s.split(\",\") if x.strip() != \"\"]\n\ndef check_digits_in_n(num):\n    while num > 0:\n        d = num % 10\n        if d not in digits:\n            return False\n        num //= 10\n    return True\n\ndef check_doixung(num):\n    s = str(num)\n    return s == s[::-1]\n\nif check_digits_in_n(n) and check_doixung(n):\n    print(True)\nelse:\n    print(False)",
+        "highlighted_code": "<span class='highlight-green'>n = int(input())\ns = input().strip(</span>)\n\ns = s.strip()\nif s.startswith(&#34;[&#34;) and s.endswith(&#34;]&#34;):\n    s = s[1:-1].strip()\n\nif s == &#34;&#34;:\n    digits = []\nelse:\n    digits = [int(x.strip()) for x in s.split(&#34;,&#34;) if x.strip() != &#34;&#34;<span class='highlight-green'>]\n\ndef check_digits_in_n(num):\n    while num &gt; 0:\n        d = num % 10\n        if d not in digits:\n            return False\n        num //= 10\n    return True\n\ndef check_doixung(</span>num):\n    s = str(num)\n    return s == s[::-1]\n\ni<span class='highlight-green'>f check_digits_in_n(n) and check_doixung(n):\n    print(True)\nelse:\n    print(Fals</span>e)"
+      },
+      "token_overlap": 131,
+      "max_similarity_percent": 50.97
+    },
+    {
+      "case_id": 18,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3ca5772432513744771a2/d82933fea814463eb5b029d1/sub_1765079436275_zr6iq94hz.py",
+        "similarity_percent": 40.86,
+        "full_code": "n = int(input())\ns = input().strip()\n\ns = s.strip()\nif s.startswith(\"[\") and s.endswith(\"]\"):\n    s = s[1:-1].strip()\n\nif s == \"\":\n    digits = []\nelse:\n    digits = [int(x.strip()) for x in s.split(\",\") if x.strip() != \"\"]\n\ndef check_digits_in_n(num):\n    while num > 0:\n        d = num % 10\n        if d not in digits:\n            return False\n        num //= 10\n    return True\n\ndef check_doixung(num):\n    s = str(num)\n    return s == s[::-1]\n\nif check_digits_in_n(n) and check_doixung(n):\n    print(True)\nelse:\n    print(False)",
+        "highlighted_code": "n = int(input())\ns = input().strip()\n\ns = s.strip()\nif s.startswith(&#34;[&#34;) and s.endswith(&#34;]&#34;):\n    s = s[1:-1].strip()\n\nif s == &#34;&#34;:\n    digits = []\nelse:\n    digits = [int(x.strip()) for x in s.split(&#34;,&#34;) if x.strip() != &#34;&#34;<span class='highlight-red'>]\n\ndef check_digits_in_n(num):\n    while num &gt; 0:\n        d = num % 10\n        if d not in digits:\n            return False\n        num //= 10\n    return True\n\ndef check_doixung(</span>num):\n    s = str(num)\n    return s == s[::-1]\n\ni<span class='highlight-red'>f check_digits_in_n(n) and check_doixung(n):\n    print(True)\nelse:\n    print(Fals</span>e)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3ca5772432513744771a2/d82933fea814463eb5b029d1/sub_1765045257279_yrr0qrdvw.py",
+        "similarity_percent": 43.75,
+        "full_code": "n = int(input())\n\ndigits = input()\n\nif digits == \"[]\":\n    print(False)\n    exit()\ndigits = digits.strip(\"[]\").split(\",\")\nlst = [int(x) for x in digits]\n\n\ndef check_digits_in_n(num):\n    while num > 0:\n        a = num % 10\n        if a not in lst:\n            return False\n        num //= 10\n    return True\n\ndef check_doixung(num):\n    lst_so = []\n    while num > 0:\n        lst_so.append(num % 10)\n        num //= 10\n    if lst_so == lst_so[::-1]:\n        return True\n\nif check_digits_in_n(n) and check_doixung(n):\n    print(True)\nelse:\n    print(False)",
+        "highlighted_code": "n = int(input())\n\ndigits = input()\n\nif digits == &#34;[]&#34;:\n    print(False)\n    exit()\ndigits = digits.strip(&#34;[]&#34;).split(&#34;,&#34;)\nlst = [int(x) for x in digits<span class='highlight-green'>]\n\n\ndef check_digits_in_n(num):\n    while num &gt; 0:\n        a = num % 10\n        if a not in lst:\n            return False\n        num //= 10\n    return True\n\ndef check_doixung(</span>num):\n    lst_so = []\n    while num &gt; 0:\n        lst_so.append(num % 10)\n        num //= 10\n    if lst_so == lst_so[::-1]:\n        return True\n\ni<span class='highlight-green'>f check_digits_in_n(n) and check_doixung(n):\n    print(True)\nelse:\n    print(Fals</span>e)"
+      },
+      "token_overlap": 105,
+      "max_similarity_percent": 43.75
     }
   ]
 }

@@ -4,7 +4,59 @@
     "min_token_overlap": 80,
     "min_similarity_percent": 60
   },
-  "total_cases_found": 1,
-  "total_cases_filtered": 0,
-  "cases": []
+  "total_cases_found": 5,
+  "total_cases_filtered": 3,
+  "cases": [
+    {
+      "case_id": 1,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3a9fe535fa0f4f1d7b6/bbf053b9c70d4a5697fa5d7f/sub_1764601116095_9ikg4sg4z.py",
+        "similarity_percent": 100.0,
+        "full_code": "def check(s):\n    arr = list(s)\n    n = len(arr)\n    while True:\n        a = 4 \n        b = -1 \n        for i in range(n -1 , 0 , -1 ):\n            if int(arr[i]) > a:\n                b = i \n                break\n            a = 3 if a ==4 else 4\n        if b == -1:\n            break\n        arr[b-1] = str(int(arr[b-1]) + 1)\n        for j in range(b , n):\n            arr[j] = '0'\n        if int(arr[0]) > 9:\n            arr[0]='0'\n            arr = ['1'] + arr\n            n += 1\n    return ''.join(arr)\nt = int(input())\nfor _ in range(t):\n    print(check(input().strip()))",
+        "highlighted_code": "<span class='highlight-red'>def check(s):\n    arr = list(s)\n    n = len(arr)\n    while True:\n        a = 4 \n        b = -1 \n        for i in range(n -1 , 0 , -1 ):\n            if int(arr[i]) &gt; a:\n                b = i \n                break\n            a = 3 if a ==4 else 4\n        if b == -1:\n            break\n        arr[b-1] = str(int(arr[b-1]) + 1)\n        for j in range(b , n):\n            arr[j] = &#39;0&#39;\n        if int(arr[0]) &gt; 9:\n            arr[0]=&#39;0&#39;\n            arr = [&#39;1&#39;] + arr\n            n += 1\n    return &#39;&#39;.join(arr)\nt = int(input())\nfor _ in range(t):\n    print(check(input().strip()</span>))"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3a9fe535fa0f4f1d7b6/222412e06e454a339defe331/sub_1764602945158_5rgn0a6b0.py",
+        "similarity_percent": 100.0,
+        "full_code": "def check(s):\n    arr = list(s)\n    n = len(arr)\n    while True:\n        a = 4 \n        b = -1 \n        for i in range(n -1 , 0 , -1 ):\n            if int(arr[i]) > a:\n                b = i \n                break\n            a = 3 if a ==4 else 4\n        if b == -1:\n            break\n        arr[b-1] = str(int(arr[b-1]) + 1)\n        for j in range(b , n):\n            arr[j] = '0'\n        if int(arr[0]) > 9:\n            arr[0]='0'\n            arr = ['1'] + arr\n            n += 1\n    return ''.join(arr)\nt = int(input())\nfor _ in range(t):\n    print(check(input().strip()))",
+        "highlighted_code": "<span class='highlight-green'>def check(s):\n    arr = list(s)\n    n = len(arr)\n    while True:\n        a = 4 \n        b = -1 \n        for i in range(n -1 , 0 , -1 ):\n            if int(arr[i]) &gt; a:\n                b = i \n                break\n            a = 3 if a ==4 else 4\n        if b == -1:\n            break\n        arr[b-1] = str(int(arr[b-1]) + 1)\n        for j in range(b , n):\n            arr[j] = &#39;0&#39;\n        if int(arr[0]) &gt; 9:\n            arr[0]=&#39;0&#39;\n            arr = [&#39;1&#39;] + arr\n            n += 1\n    return &#39;&#39;.join(arr)\nt = int(input())\nfor _ in range(t):\n    print(check(input().strip()</span>))"
+      },
+      "token_overlap": 259,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 2,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3a9fe535fa0f4f1d7b6/94d5482aeac241829d920e7e/sub_1762251180859_czz5jrl2c.py",
+        "similarity_percent": 41.06,
+        "full_code": "t = int(input())\nwhile(t > 0):\n    t -= 1\n    s = list(input().strip())\n    n = len(s)\n    d = 4  \n\n    for i in range(n - 1, 0, -1):  \n        if int(s[i]) > d:\n            s[i - 1] = str(int(s[i - 1]) + 1)\n            for j in range(i, n):\n                s[j] = '0'\n        if(d == 4): d = 3\n        else: d = 4\n\n    if int(s[0]) > 9:\n        s = ['1'] + ['0'] * n\n\n    print(''.join(s))\n",
+        "highlighted_code": "t = int(input())\nwhile(t &gt; 0):\n    t -= 1\n    s = list(input().strip())\n    n = len(s)\n    d = 4  \n\n    <span class='highlight-red'>for i in range(n - 1, 0, -1):  \n        if int(s[i]) &gt; d</span>:\n            <span class='highlight-red'>s[i - 1] = str(int(s[i - 1]) + 1)\n            for j in range(i, n):\n                s[j] = &#39;0&#39;\n        </span>if(d == 4): d = 3\n        else: d = 4\n\n    if int(s[0]) &gt; 9:\n        s = [&#39;1&#39;] + [&#39;0&#39;] * n\n\n    print(&#39;&#39;.join(s))\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3a9fe535fa0f4f1d7b6/bbf053b9c70d4a5697fa5d7f/sub_1764601116095_9ikg4sg4z.py",
+        "similarity_percent": 32.82,
+        "full_code": "def check(s):\n    arr = list(s)\n    n = len(arr)\n    while True:\n        a = 4 \n        b = -1 \n        for i in range(n -1 , 0 , -1 ):\n            if int(arr[i]) > a:\n                b = i \n                break\n            a = 3 if a ==4 else 4\n        if b == -1:\n            break\n        arr[b-1] = str(int(arr[b-1]) + 1)\n        for j in range(b , n):\n            arr[j] = '0'\n        if int(arr[0]) > 9:\n            arr[0]='0'\n            arr = ['1'] + arr\n            n += 1\n    return ''.join(arr)\nt = int(input())\nfor _ in range(t):\n    print(check(input().strip()))",
+        "highlighted_code": "def check(s):\n    arr = list(s)\n    n = len(arr)\n    while True:\n        a = 4 \n        b = -1 \n        <span class='highlight-green'>for i in range(n -1 , 0 , -1 ):\n            if int(arr[i]) &gt; a</span>:\n                b = i \n                break\n            a = 3 if a ==4 else 4\n        if b == -1:\n            break\n        <span class='highlight-green'>arr[b-1] = str(int(arr[b-1]) + 1)\n        for j in range(b , n):\n            arr[j] = &#39;0&#39;\n        </span>if int(arr[0]) &gt; 9:\n            arr[0]=&#39;0&#39;\n            arr = [&#39;1&#39;] + arr\n            n += 1\n    return &#39;&#39;.join(arr)\nt = int(input())\nfor _ in range(t):\n    print(check(input().strip()))"
+      },
+      "token_overlap": 85,
+      "max_similarity_percent": 41.06
+    },
+    {
+      "case_id": 3,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3a9fe535fa0f4f1d7b6/94d5482aeac241829d920e7e/sub_1762251180859_czz5jrl2c.py",
+        "similarity_percent": 41.06,
+        "full_code": "t = int(input())\nwhile(t > 0):\n    t -= 1\n    s = list(input().strip())\n    n = len(s)\n    d = 4  \n\n    for i in range(n - 1, 0, -1):  \n        if int(s[i]) > d:\n            s[i - 1] = str(int(s[i - 1]) + 1)\n            for j in range(i, n):\n                s[j] = '0'\n        if(d == 4): d = 3\n        else: d = 4\n\n    if int(s[0]) > 9:\n        s = ['1'] + ['0'] * n\n\n    print(''.join(s))\n",
+        "highlighted_code": "t = int(input())\nwhile(t &gt; 0):\n    t -= 1\n    s = list(input().strip())\n    n = len(s)\n    d = 4  \n\n    <span class='highlight-red'>for i in range(n - 1, 0, -1):  \n        if int(s[i]) &gt; d</span>:\n            <span class='highlight-red'>s[i - 1] = str(int(s[i - 1]) + 1)\n            for j in range(i, n):\n                s[j] = &#39;0&#39;\n        </span>if(d == 4): d = 3\n        else: d = 4\n\n    if int(s[0]) &gt; 9:\n        s = [&#39;1&#39;] + [&#39;0&#39;] * n\n\n    print(&#39;&#39;.join(s))\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3a9fe535fa0f4f1d7b6/222412e06e454a339defe331/sub_1764602945158_5rgn0a6b0.py",
+        "similarity_percent": 32.82,
+        "full_code": "def check(s):\n    arr = list(s)\n    n = len(arr)\n    while True:\n        a = 4 \n        b = -1 \n        for i in range(n -1 , 0 , -1 ):\n            if int(arr[i]) > a:\n                b = i \n                break\n            a = 3 if a ==4 else 4\n        if b == -1:\n            break\n        arr[b-1] = str(int(arr[b-1]) + 1)\n        for j in range(b , n):\n            arr[j] = '0'\n        if int(arr[0]) > 9:\n            arr[0]='0'\n            arr = ['1'] + arr\n            n += 1\n    return ''.join(arr)\nt = int(input())\nfor _ in range(t):\n    print(check(input().strip()))",
+        "highlighted_code": "def check(s):\n    arr = list(s)\n    n = len(arr)\n    while True:\n        a = 4 \n        b = -1 \n        <span class='highlight-green'>for i in range(n -1 , 0 , -1 ):\n            if int(arr[i]) &gt; a</span>:\n                b = i \n                break\n            a = 3 if a ==4 else 4\n        if b == -1:\n            break\n        <span class='highlight-green'>arr[b-1] = str(int(arr[b-1]) + 1)\n        for j in range(b , n):\n            arr[j] = &#39;0&#39;\n        </span>if int(arr[0]) &gt; 9:\n            arr[0]=&#39;0&#39;\n            arr = [&#39;1&#39;] + arr\n            n += 1\n    return &#39;&#39;.join(arr)\nt = int(input())\nfor _ in range(t):\n    print(check(input().strip()))"
+      },
+      "token_overlap": 85,
+      "max_similarity_percent": 41.06
+    }
+  ]
 }

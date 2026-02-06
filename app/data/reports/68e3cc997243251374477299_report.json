@@ -4,59 +4,535 @@
     "min_token_overlap": 80,
     "min_similarity_percent": 60
   },
-  "total_cases_found": 5,
-  "total_cases_filtered": 3,
+  "total_cases_found": 59,
+  "total_cases_filtered": 31,
   "cases": [
     {
       "case_id": 1,
       "file1": {
-        "path": "/app/app/data/submissions/68e3cc997243251374477299/222412e06e454a339defe331/sub_1761643058906_r93e9g5sp.py",
-        "similarity_percent": 95.96,
-        "full_code": "def SNT(n):\n    if n<2:\n        return False;\n    for i in range(2,int(n**(0.5))+1):\n        if n%i==0:\n            return False;\n    return True;\nm,n=list(map(int,input().split()))\nj=-1\nfor i in range(n,m-1,-1):\n    k=str(i)\n    v=0\n    for p in k:\n        v+=int(p)\n    if SNT(v)==True:\n        j=i\n        break\nprint(j)\n\n",
-        "highlighted_code": "<span class='highlight-red'>def SNT(n):\n    if n&lt;2:\n        return False;\n    for i in range(2,int(n**(0.5))+1):\n        if n%i==0:\n            return False;\n    return True;\nm,n=list(map(int,input().split()))\nj=-1\nfor i in range(n,</span>m-1,-1):\n    <span class='highlight-red'>k=str(i)\n    v=0\n    for p in k:\n        v+=int(p)\n    if SNT(v)==True:\n        j=i\n        break\nprin</span>t(j)\n\n"
+        "path": "/app/app/data/submissions/68e3cc997243251374477299/57f804332fbb4e9aafa70968/sub_1763522360978_10atq03yu.py",
+        "similarity_percent": 100.0,
+        "full_code": "start, end = map(int,input().split())\n\nif start < end:\n    def tong_so(i):\n        tong = 0\n        for char in str(i):\n            tong += int(char)\n        return tong\n    def tong_la_snt(tong):\n        for i in range(2, tong):\n            if tong % i == 0:\n                return False\n        return True\n    for i in range(start, end + 1):\n        if tong_la_snt(tong_so(i)) == True:\n            print (i)\n            break\nelif start == end:\n    print(\"-1\")\n            \n",
+        "highlighted_code": "<span class='highlight-red'>start, end = map(int,input().split())\n\nif start &lt; end:\n    def tong_so(i):\n        tong = 0\n        for char in str(i):\n            tong += int(char)\n        return tong\n    def tong_la_snt(tong):\n        for i in range(2, tong):\n            if tong % i == 0:\n                return False\n        return True\n    for i in range(start, end + 1):\n        if tong_la_snt(tong_so(i)) == True:\n            print (i)\n            break\nelif start == end:\n    print(</span>&#34;-1&#34;)\n            \n"
       },
       "file2": {
-        "path": "/app/app/data/submissions/68e3cc997243251374477299/222412e06e454a339defe331/sub_1761643121885_ns0bwshwt.py",
-        "similarity_percent": 97.44,
-        "full_code": "\ndef SNT(n):\n    if n<2:\n        return False;\n    for i in range(2,int(n**(0.5))+1):\n        if n%i==0:\n            return False;\n    return True;\nm,n=list(map(int,input().split()))\nj=-1\nfor i in range(m,n+1):\n    k=str(i)\n    v=0\n    for p in k:\n        v+=int(p)\n    if SNT(v)==True:\n        j=i\n        break\nprint(j)",
-        "highlighted_code": "<span class='highlight-green'>\ndef SNT(n):\n    if n&lt;2:\n        return False;\n    for i in range(2,int(n**(0.5))+1):\n        if n%i==0:\n            return False;\n    return True;\nm,n=list(map(int,input().split()))\nj=-1\nfor i in range(m</span>,n+1):\n   <span class='highlight-green'> k=str(i)\n    v=0\n    for p in k:\n        v+=int(p)\n    if SNT(v)==True:\n        j=i\n        break\npri</span>nt(j)"
+        "path": "/app/app/data/submissions/68e3cc997243251374477299/57f804332fbb4e9aafa70968/sub_1763522488864_1bmvaahni.py",
+        "similarity_percent": 92.16,
+        "full_code": "start, end = map(int,input().split())\n\nif start < end:\n    def tong_so(i):\n        tong = 0\n        for char in str(i):\n            tong += int(char)\n        return tong\n    def tong_la_snt(tong):\n        for i in range(2, tong):\n            if tong % i == 0:\n                return False\n        return True\n    for i in range(start, end + 1):\n        if tong_la_snt(tong_so(i)) == True:\n            print (i)\n            break\nelif start == end:\n    print(\"-1\")\nelse:\n    print(\"-1\")\n            \n",
+        "highlighted_code": "<span class='highlight-green'>start, end = map(int,input().split())\n\nif start &lt; end:\n    def tong_so(i):\n        tong = 0\n        for char in str(i):\n            tong += int(char)\n        return tong\n    def tong_la_snt(tong):\n        for i in range(2, tong):\n            if tong % i == 0:\n                return False\n        return True\n    for i in range(start, end + 1):\n        if tong_la_snt(tong_so(i)) == True:\n            print (i)\n            break\nelif start == end:\n    print(</span>&#34;-1&#34;)\nelse:\n    print(&#34;-1&#34;)\n            \n"
       },
-      "token_overlap": 190,
-      "max_similarity_percent": 97.44
+      "token_overlap": 188,
+      "max_similarity_percent": 100.0
     },
     {
       "case_id": 2,
       "file1": {
-        "path": "/app/app/data/submissions/68e3cc997243251374477299/0d74995bf22b4574a97a2297/sub_1761554551089_8488zbkka.py",
-        "similarity_percent": 79.21,
-        "full_code": "def primes(n):\n    if n <= 1:\n        return False\n    for i in range(2, int(n**0.5) + 1):\n        if n % i == 0:\n            return False\n    return True\ndef tong(n):\n    s = 0\n    while n > 0:\n        s += n % 10\n        n //= 10\n    return s\nm,n = map(int,input().split())\nfor i in range(m,n+1):\n    if primes(tong(i)):\n        print(i)\n        break\nelse:\n    print(-1)\n\n",
-        "highlighted_code": "def primes(n):\n    if n &lt;= 1:\n        <span class='highlight-red'>return False\n    for i in range(2, int(n**0.5) + 1):\n        if n % i == 0:\n            return False\n    return True\ndef tong(n):\n    s = 0\n    while n &gt; 0:\n        s += n % 10\n        n //= 10\n    return s\nm,n = map(int,input().split()</span>)\nf<span class='highlight-red'>or i in range(m,n+1):\n    if primes(tong(i))</span>:\n        print(i)\n        break\nelse:\n    print(-1)\n\n"
+        "path": "/app/app/data/submissions/68e3cc997243251374477299/bcb420abb39b4af095b63cf8/sub_1762856868240_bv7vldhfn.py",
+        "similarity_percent": 97.92,
+        "full_code": "start,end=map(int,input().split())\nds_so_nguyen_to=[]\nfor i in range(start,end+1): \n    j=i\n    tong=0\n    while j>0:\n       cuoi=j%10\n       tong+=cuoi\n       j//=10\n    for k in range(2,tong):\n        if tong%k==0:\n            break\n    else:\n        ds_so_nguyen_to+=[i]\nif len(ds_so_nguyen_to)==0:\n    print(\"-1\")\nelif min(ds_so_nguyen_to)==0 or min(ds_so_nguyen_to)==1:\n    print(\"-1\")\nelse:\n    print(min(ds_so_nguyen_to))\n",
+        "highlighted_code": "<span class='highlight-red'>start,end=map(int,input().split())\nds_so_nguyen_to=[]\nfor i in range(start,end+1): \n    j=i\n    tong=0\n    while j&gt;0:\n       cuoi=j%10\n       tong+=cuoi\n       j//=10\n    </span>for k <span class='highlight-red'>in range(2,tong):\n        if tong%k==0:\n            break\n    else:\n        ds_so_nguyen_to+=[i]\nif len(ds_so_nguyen_to)==0:\n    print(&#34;-1&#34;)\nelif min(ds_so_nguyen_to)==0 or min(ds_so_nguyen_to)==1:\n    print(&#34;-1&#34;)\nelse:\n    print(min(</span>ds_so_nguyen_to))\n"
       },
       "file2": {
-        "path": "/app/app/data/submissions/68e3cc997243251374477299/8e19101eb0da4e9a92a17098/sub_1761640059453_cjd8qwaef.py",
-        "similarity_percent": 81.63,
-        "full_code": "def snt(n):\n    if n < 2:\n        return False\n    for i in range(2, int(n**0.5) + 1):\n        if n % i == 0:\n            return False\n    return True\ndef sum_digits(x):\n    tong = 0\n    while x > 0:\n        tong += x % 10\n        x //= 10\n    return tong\nstart, end = map(int, input().split())\nfound = -1\nfor num in range(start, end + 1):\n    if snt(sum_digits(num)):\n        found = num\n        break\nprint(found)\n",
-        "highlighted_code": "def snt(n):\n    if n &lt; 2:\n        <span class='highlight-green'>return False\n    for i in range(2, int(n**0.5) + 1):\n        if n % i == 0:\n            return False\n    return True\ndef sum_digits(x):\n    tong = 0\n    while x &gt; 0:\n        tong += x % 10\n        x //= 10\n    return tong\nstart, end = map(int, input().split()</span>)\nfound = -1\nf<span class='highlight-green'>or num in range(start, end + 1):\n    if snt(sum_digits(num))</span>:\n        found = num\n        break\nprint(found)\n"
+        "path": "/app/app/data/submissions/68e3cc997243251374477299/bcb420abb39b4af095b63cf8/sub_1762857872912_dtb8iqv35.py",
+        "similarity_percent": 88.26,
+        "full_code": "start,end=map(int,input().split())\nds_so_nguyen_to=[]\nfor i in range(start,end+1): \n    j=i\n    tong=0\n    while j>0:\n       cuoi=j%10\n       tong+=cuoi\n       j//=10\n    if tong==2:\n        ds_so_nguyen_to+=[i]\n    elif tong>2: \n       for k in range(2,tong):\n            if tong%k==0:\n               break\n       else:\n           ds_so_nguyen_to+=[i]\nif len(ds_so_nguyen_to)==0:\n    print(\"-1\")\nelif min(ds_so_nguyen_to)==0 or min(ds_so_nguyen_to)==1:\n    print(\"-1\")\nelse:\n    print(min(ds_so_nguyen_to))\n",
+        "highlighted_code": "<span class='highlight-green'>start,end=map(int,input().split())\nds_so_nguyen_to=[]\nfor i in range(start,end+1): \n    j=i\n    tong=0\n    while j&gt;0:\n       cuoi=j%10\n       tong+=cuoi\n       j//=10\n    </span>if tong==2:\n        ds_so_nguyen_to+=[i]\n    elif tong&gt;2: \n       for k <span class='highlight-green'>in range(2,tong):\n            if tong%k==0:\n               break\n       else:\n           ds_so_nguyen_to+=[i]\nif len(ds_so_nguyen_to)==0:\n    print(&#34;-1&#34;)\nelif min(ds_so_nguyen_to)==0 or min(ds_so_nguyen_to)==1:\n    print(&#34;-1&#34;)\nelse:\n    print(min(</span>ds_so_nguyen_to))\n"
       },
-      "token_overlap": 160,
-      "max_similarity_percent": 81.63
+      "token_overlap": 188,
+      "max_similarity_percent": 97.92
     },
     {
       "case_id": 3,
       "file1": {
+        "path": "/app/app/data/submissions/68e3cc997243251374477299/222412e06e454a339defe331/sub_1761643058906_r93e9g5sp.py",
+        "similarity_percent": 96.5,
+        "full_code": "def SNT(n):\n    if n<2:\n        return False;\n    for i in range(2,int(n**(0.5))+1):\n        if n%i==0:\n            return False;\n    return True;\nm,n=list(map(int,input().split()))\nj=-1\nfor i in range(n,m-1,-1):\n    k=str(i)\n    v=0\n    for p in k:\n        v+=int(p)\n    if SNT(v)==True:\n        j=i\n        break\nprint(j)\n\n",
+        "highlighted_code": "<span class='highlight-red'>def SNT(n):\n    if n&lt;2:\n        return False;\n    for i in range(2,int(n**(0.5))+1):\n        if n%i==0:\n            return False;\n    return True;\nm,n=list(map(int,input().split()))\nj=-1\nfor i in range(n,</span>m-1,-1)<span class='highlight-red'>:\n    k=str(i)\n    v=0\n    for p in k:\n        v+=int(p)\n    if SNT(v)==True:\n        j=i\n        break\nprint(</span>j)\n\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3cc997243251374477299/222412e06e454a339defe331/sub_1761643121885_ns0bwshwt.py",
+        "similarity_percent": 97.97,
+        "full_code": "\ndef SNT(n):\n    if n<2:\n        return False;\n    for i in range(2,int(n**(0.5))+1):\n        if n%i==0:\n            return False;\n    return True;\nm,n=list(map(int,input().split()))\nj=-1\nfor i in range(m,n+1):\n    k=str(i)\n    v=0\n    for p in k:\n        v+=int(p)\n    if SNT(v)==True:\n        j=i\n        break\nprint(j)",
+        "highlighted_code": "<span class='highlight-green'>\ndef SNT(n):\n    if n&lt;2:\n        return False;\n    for i in range(2,int(n**(0.5))+1):\n        if n%i==0:\n            return False;\n    return True;\nm,n=list(map(int,input().split()))\nj=-1\nfor i in range(m</span>,n+1<span class='highlight-green'>):\n    k=str(i)\n    v=0\n    for p in k:\n        v+=int(p)\n    if SNT(v)==True:\n        j=i\n        break\nprint</span>(j)"
+      },
+      "token_overlap": 193,
+      "max_similarity_percent": 97.97
+    },
+    {
+      "case_id": 4,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3cc997243251374477299/57f804332fbb4e9aafa70968/sub_1763522525940_kbhss7w9k.py",
+        "similarity_percent": 93.51,
+        "full_code": "start, end = map(int,input().split())\n\nif start < end:\n    def tong_so(i):\n        tong = 0\n        for char in str(i):\n            tong += int(char)\n        return tong\n    def tong_la_snt(tong):\n        for i in range(2, tong):\n            if tong % i == 0:\n                return False\n        return True\n    for i in range(start, end + 1):\n        if tong_la_snt(tong_so(i)) == True:\n            print (i)\n            break\nelse:\n    print(\"-1\")\n            \n",
+        "highlighted_code": "<span class='highlight-red'>start, end = map(int,input().split())\n\nif start &lt; end:\n    def tong_so(i):\n        tong = 0\n        for char in str(i):\n            tong += int(char)\n        return tong\n    def tong_la_snt(tong):\n        for i in range(2, tong):\n            if tong % i == 0:\n                return False\n        return True\n    for i in range(start, end + 1):\n        if tong_la_snt(tong_so(i)) == True:\n            print (i)\n            break\n</span>else:\n    print(&#34;-1&#34;)\n            \n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3cc997243251374477299/57f804332fbb4e9aafa70968/sub_1763522360978_10atq03yu.py",
+        "similarity_percent": 92.02,
+        "full_code": "start, end = map(int,input().split())\n\nif start < end:\n    def tong_so(i):\n        tong = 0\n        for char in str(i):\n            tong += int(char)\n        return tong\n    def tong_la_snt(tong):\n        for i in range(2, tong):\n            if tong % i == 0:\n                return False\n        return True\n    for i in range(start, end + 1):\n        if tong_la_snt(tong_so(i)) == True:\n            print (i)\n            break\nelif start == end:\n    print(\"-1\")\n            \n",
+        "highlighted_code": "<span class='highlight-green'>start, end = map(int,input().split())\n\nif start &lt; end:\n    def tong_so(i):\n        tong = 0\n        for char in str(i):\n            tong += int(char)\n        return tong\n    def tong_la_snt(tong):\n        for i in range(2, tong):\n            if tong % i == 0:\n                return False\n        return True\n    for i in range(start, end + 1):\n        if tong_la_snt(tong_so(i)) == True:\n            print (i)\n            break\n</span>elif start == end:\n    print(&#34;-1&#34;)\n            \n"
+      },
+      "token_overlap": 173,
+      "max_similarity_percent": 93.51
+    },
+    {
+      "case_id": 5,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3cc997243251374477299/57f804332fbb4e9aafa70968/sub_1763522525940_kbhss7w9k.py",
+        "similarity_percent": 93.51,
+        "full_code": "start, end = map(int,input().split())\n\nif start < end:\n    def tong_so(i):\n        tong = 0\n        for char in str(i):\n            tong += int(char)\n        return tong\n    def tong_la_snt(tong):\n        for i in range(2, tong):\n            if tong % i == 0:\n                return False\n        return True\n    for i in range(start, end + 1):\n        if tong_la_snt(tong_so(i)) == True:\n            print (i)\n            break\nelse:\n    print(\"-1\")\n            \n",
+        "highlighted_code": "<span class='highlight-red'>start, end = map(int,input().split())\n\nif start &lt; end:\n    def tong_so(i):\n        tong = 0\n        for char in str(i):\n            tong += int(char)\n        return tong\n    def tong_la_snt(tong):\n        for i in range(2, tong):\n            if tong % i == 0:\n                return False\n        return True\n    for i in range(start, end + 1):\n        if tong_la_snt(tong_so(i)) == True:\n            print (i)\n            break\n</span>else:\n    print(&#34;-1&#34;)\n            \n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3cc997243251374477299/57f804332fbb4e9aafa70968/sub_1763522488864_1bmvaahni.py",
+        "similarity_percent": 84.8,
+        "full_code": "start, end = map(int,input().split())\n\nif start < end:\n    def tong_so(i):\n        tong = 0\n        for char in str(i):\n            tong += int(char)\n        return tong\n    def tong_la_snt(tong):\n        for i in range(2, tong):\n            if tong % i == 0:\n                return False\n        return True\n    for i in range(start, end + 1):\n        if tong_la_snt(tong_so(i)) == True:\n            print (i)\n            break\nelif start == end:\n    print(\"-1\")\nelse:\n    print(\"-1\")\n            \n",
+        "highlighted_code": "<span class='highlight-green'>start, end = map(int,input().split())\n\nif start &lt; end:\n    def tong_so(i):\n        tong = 0\n        for char in str(i):\n            tong += int(char)\n        return tong\n    def tong_la_snt(tong):\n        for i in range(2, tong):\n            if tong % i == 0:\n                return False\n        return True\n    for i in range(start, end + 1):\n        if tong_la_snt(tong_so(i)) == True:\n            print (i)\n            break\n</span>elif start == end:\n    print(&#34;-1&#34;)\nelse:\n    print(&#34;-1&#34;)\n            \n"
+      },
+      "token_overlap": 173,
+      "max_similarity_percent": 93.51
+    },
+    {
+      "case_id": 6,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3cc997243251374477299/bcb420abb39b4af095b63cf8/sub_1762856586474_39xue6yj8.py",
+        "similarity_percent": 92.19,
+        "full_code": "start,end=map(int,input().split())\nds_so_nguyen_to=[]\nfor i in range(start,end+1): \n    j=i\n    tong=0\n    while j>0:\n       cuoi=j%10\n       tong+=cuoi\n       j//=10\n    for k in range(2,tong):\n        if tong%k==0:\n            break\n    else:\n        ds_so_nguyen_to+=[i]\nif min(ds_so_nguyen_to)==0 or min(ds_so_nguyen_to)==1:\n    print(\"-1\")\nelif len(ds_so_nguyen_to)==0:\n    print(\"-1\")\nelse:\n    print(min(ds_so_nguyen_to))\n",
+        "highlighted_code": "<span class='highlight-red'>start,end=map(int,input().split())\nds_so_nguyen_to=[]\nfor i in range(start,end+1): \n    j=i\n    tong=0\n    while j&gt;0:\n       cuoi=j%10\n       tong+=cuoi\n       j//=10\n    for k in range(2,tong):\n        if tong%k==0:\n            break\n    else:\n        ds_so_nguyen_to+=[i]\nif </span>mi<span class='highlight-red'>n(ds_so_nguyen_to)==0 or min(ds_so_nguyen_to)==1:\n    print(&#34;-1&#34;)\ne</span>lif len(ds_so_nguyen_to)==0:\n    <span class='highlight-red'>print(&#34;-1&#34;)\nelse:\n    print(min(</span>ds_so_nguyen_to))\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3cc997243251374477299/bcb420abb39b4af095b63cf8/sub_1762856868240_bv7vldhfn.py",
+        "similarity_percent": 86.46,
+        "full_code": "start,end=map(int,input().split())\nds_so_nguyen_to=[]\nfor i in range(start,end+1): \n    j=i\n    tong=0\n    while j>0:\n       cuoi=j%10\n       tong+=cuoi\n       j//=10\n    for k in range(2,tong):\n        if tong%k==0:\n            break\n    else:\n        ds_so_nguyen_to+=[i]\nif len(ds_so_nguyen_to)==0:\n    print(\"-1\")\nelif min(ds_so_nguyen_to)==0 or min(ds_so_nguyen_to)==1:\n    print(\"-1\")\nelse:\n    print(min(ds_so_nguyen_to))\n",
+        "highlighted_code": "<span class='highlight-green'>start,end=map(int,input().split())\nds_so_nguyen_to=[]\nfor i in range(start,end+1): \n    j=i\n    tong=0\n    while j&gt;0:\n       cuoi=j%10\n       tong+=cuoi\n       j//=10\n    for k in range(2,tong):\n        if tong%k==0:\n            break\n    else:\n        ds_so_nguyen_to+=[i]\nif </span>len(ds_so_nguyen_to)==0:\n    print(&#34;-1&#34;)\nelif mi<span class='highlight-green'>n(ds_so_nguyen_to)==0 or min(ds_so_nguyen_to)==1:\n    print(&#34;-1&#34;)\nelse:\n    print(min(</span>ds_so_nguyen_to))\n"
+      },
+      "token_overlap": 177,
+      "max_similarity_percent": 92.19
+    },
+    {
+      "case_id": 7,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3cc997243251374477299/bcb420abb39b4af095b63cf8/sub_1762856586474_39xue6yj8.py",
+        "similarity_percent": 90.1,
+        "full_code": "start,end=map(int,input().split())\nds_so_nguyen_to=[]\nfor i in range(start,end+1): \n    j=i\n    tong=0\n    while j>0:\n       cuoi=j%10\n       tong+=cuoi\n       j//=10\n    for k in range(2,tong):\n        if tong%k==0:\n            break\n    else:\n        ds_so_nguyen_to+=[i]\nif min(ds_so_nguyen_to)==0 or min(ds_so_nguyen_to)==1:\n    print(\"-1\")\nelif len(ds_so_nguyen_to)==0:\n    print(\"-1\")\nelse:\n    print(min(ds_so_nguyen_to))\n",
+        "highlighted_code": "<span class='highlight-red'>start,end=map(int,input().split())\nds_so_nguyen_to=[]\nfor i in range(start,end+1): \n    j=i\n    tong=0\n    while j&gt;0:\n       cuoi=j%10\n       tong+=cuoi\n       j//=10\n    </span>for k <span class='highlight-red'>in range(2,tong):\n        if tong%k==0:\n            break\n    else:\n        ds_so_nguyen_to+=[i]\nif </span>mi<span class='highlight-red'>n(ds_so_nguyen_to)==0 or min(ds_so_nguyen_to)==1:\n    print(&#34;-1&#34;)\ne</span>lif len(ds_so_nguyen_to)==0:\n    <span class='highlight-red'>print(&#34;-1&#34;)\nelse:\n    print(min(</span>ds_so_nguyen_to))\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3cc997243251374477299/bcb420abb39b4af095b63cf8/sub_1762857872912_dtb8iqv35.py",
+        "similarity_percent": 76.06,
+        "full_code": "start,end=map(int,input().split())\nds_so_nguyen_to=[]\nfor i in range(start,end+1): \n    j=i\n    tong=0\n    while j>0:\n       cuoi=j%10\n       tong+=cuoi\n       j//=10\n    if tong==2:\n        ds_so_nguyen_to+=[i]\n    elif tong>2: \n       for k in range(2,tong):\n            if tong%k==0:\n               break\n       else:\n           ds_so_nguyen_to+=[i]\nif len(ds_so_nguyen_to)==0:\n    print(\"-1\")\nelif min(ds_so_nguyen_to)==0 or min(ds_so_nguyen_to)==1:\n    print(\"-1\")\nelse:\n    print(min(ds_so_nguyen_to))\n",
+        "highlighted_code": "<span class='highlight-green'>start,end=map(int,input().split())\nds_so_nguyen_to=[]\nfor i in range(start,end+1): \n    j=i\n    tong=0\n    while j&gt;0:\n       cuoi=j%10\n       tong+=cuoi\n       j//=10\n    </span>if tong==2:\n        ds_so_nguyen_to+=[i]\n    elif tong&gt;2: \n       for k <span class='highlight-green'>in range(2,tong):\n            if tong%k==0:\n               break\n       else:\n           ds_so_nguyen_to+=[i]\nif </span>len(ds_so_nguyen_to)==0:\n    print(&#34;-1&#34;)\nelif mi<span class='highlight-green'>n(ds_so_nguyen_to)==0 or min(ds_so_nguyen_to)==1:\n    print(&#34;-1&#34;)\nelse:\n    print(min(</span>ds_so_nguyen_to))\n"
+      },
+      "token_overlap": 173,
+      "max_similarity_percent": 90.1
+    },
+    {
+      "case_id": 8,
+      "file1": {
         "path": "/app/app/data/submissions/68e3cc997243251374477299/0d74995bf22b4574a97a2297/sub_1761554551089_8488zbkka.py",
-        "similarity_percent": 66.83,
+        "similarity_percent": 78.5,
         "full_code": "def primes(n):\n    if n <= 1:\n        return False\n    for i in range(2, int(n**0.5) + 1):\n        if n % i == 0:\n            return False\n    return True\ndef tong(n):\n    s = 0\n    while n > 0:\n        s += n % 10\n        n //= 10\n    return s\nm,n = map(int,input().split())\nfor i in range(m,n+1):\n    if primes(tong(i)):\n        print(i)\n        break\nelse:\n    print(-1)\n\n",
-        "highlighted_code": "def primes(n):\n    if n &lt;= 1:\n        return False\n    f<span class='highlight-red'>or i in range(2, int(n**0.5) + 1):\n        if n </span>% i == 0:\n            return False\n    return True\nde<span class='highlight-red'>f tong(n):\n    s = 0\n    while n &gt; 0:\n        s += n % 10\n        n //= 10\n    retu</span>rn s\nm,<span class='highlight-red'>n = map(int,input().split())\nfor i in range(m,n+1):\n    if primes</span>(tong(i))<span class='highlight-red'>:\n        print(i)\n        break\nelse:\n    print(</span>-1)\n\n"
+        "highlighted_code": "def primes(n):\n    if n &lt;= 1:\n        r<span class='highlight-red'>eturn False\n    for i in range(2, int(n**0.5) + 1):\n        if n % i == 0:\n            return False\n    return True\ndef tong(n):\n    s = 0\n    while n &gt; 0:\n        s += n % 10\n        n //= 10\n    return s\nm,n = map(int,input().split()</span>)\nfor <span class='highlight-red'>i in range(m,n+1):\n    if primes(tong(i))</span>:\n        print(i)\n        break\nelse:\n    print(-1)\n\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3cc997243251374477299/8e19101eb0da4e9a92a17098/sub_1761640059453_cjd8qwaef.py",
+        "similarity_percent": 80.93,
+        "full_code": "def snt(n):\n    if n < 2:\n        return False\n    for i in range(2, int(n**0.5) + 1):\n        if n % i == 0:\n            return False\n    return True\ndef sum_digits(x):\n    tong = 0\n    while x > 0:\n        tong += x % 10\n        x //= 10\n    return tong\nstart, end = map(int, input().split())\nfound = -1\nfor num in range(start, end + 1):\n    if snt(sum_digits(num)):\n        found = num\n        break\nprint(found)\n",
+        "highlighted_code": "def snt(n):\n    if n &lt; 2:\n        r<span class='highlight-green'>eturn False\n    for i in range(2, int(n**0.5) + 1):\n        if n % i == 0:\n            return False\n    return True\ndef sum_digits(x):\n    tong = 0\n    while x &gt; 0:\n        tong += x % 10\n        x //= 10\n    return tong\nstart, end = map(int, input().split()</span>)\nfound = -1\nfor <span class='highlight-green'>num in range(start, end + 1):\n    if snt(sum_digits(num))</span>:\n        found = num\n        break\nprint(found)\n"
+      },
+      "token_overlap": 157,
+      "max_similarity_percent": 80.93
+    },
+    {
+      "case_id": 9,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3cc997243251374477299/bcb420abb39b4af095b63cf8/sub_1762854769015_w66ew2q4g.py",
+        "similarity_percent": 76.74,
+        "full_code": "start,end=map(int,input().split())\nds_so_nguyen_to=[]\nfor i in range(start,end+1): \n    j=i\n    tong=0\n    while j>0:\n       cuoi=j%10\n       tong+=cuoi\n       j//=10\n    for k in range(2,tong):\n        if tong%k==0:\n            break\n    else:\n        ds_so_nguyen_to+=[i]\nif len(ds_so_nguyen_to)==0:\n    print(-1)\nelif start==end:\n    print(-1)\nelse:\n    print(min(ds_so_nguyen_to))",
+        "highlighted_code": "<span class='highlight-red'>start,end=map(int,input().split())\nds_so_nguyen_to=[]\nfor i in range(start,end+1): \n    j=i\n    tong=0\n    while j&gt;0:\n       cuoi=j%10\n       tong+=cuoi\n       j//=10\n    </span>for k <span class='highlight-red'>in range(2,tong):\n        if tong%k==0:\n            break\n    else:\n        ds_so_nguyen_to+=[i]\nif len(ds_so_nguyen_to)==0:\n    prin</span>t(-1)\nelif start==end:\n    print(-1)\nelse:\n    print(min(ds_so_nguyen_to))"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3cc997243251374477299/bcb420abb39b4af095b63cf8/sub_1762857872912_dtb8iqv35.py",
+        "similarity_percent": 61.97,
+        "full_code": "start,end=map(int,input().split())\nds_so_nguyen_to=[]\nfor i in range(start,end+1): \n    j=i\n    tong=0\n    while j>0:\n       cuoi=j%10\n       tong+=cuoi\n       j//=10\n    if tong==2:\n        ds_so_nguyen_to+=[i]\n    elif tong>2: \n       for k in range(2,tong):\n            if tong%k==0:\n               break\n       else:\n           ds_so_nguyen_to+=[i]\nif len(ds_so_nguyen_to)==0:\n    print(\"-1\")\nelif min(ds_so_nguyen_to)==0 or min(ds_so_nguyen_to)==1:\n    print(\"-1\")\nelse:\n    print(min(ds_so_nguyen_to))\n",
+        "highlighted_code": "<span class='highlight-green'>start,end=map(int,input().split())\nds_so_nguyen_to=[]\nfor i in range(start,end+1): \n    j=i\n    tong=0\n    while j&gt;0:\n       cuoi=j%10\n       tong+=cuoi\n       j//=10\n    </span>if tong==2:\n        ds_so_nguyen_to+=[i]\n    elif tong&gt;2: \n       for k <span class='highlight-green'>in range(2,tong):\n            if tong%k==0:\n               break\n       else:\n           ds_so_nguyen_to+=[i]\nif len(ds_so_nguyen_to)==0:\n    prin</span>t(&#34;-1&#34;)\nelif min(ds_so_nguyen_to)==0 or min(ds_so_nguyen_to)==1:\n    print(&#34;-1&#34;)\nelse:\n    print(min(ds_so_nguyen_to))\n"
+      },
+      "token_overlap": 132,
+      "max_similarity_percent": 76.74
+    },
+    {
+      "case_id": 10,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3cc997243251374477299/8e19101eb0da4e9a92a17098/sub_1761640059453_cjd8qwaef.py",
+        "similarity_percent": 75.77,
+        "full_code": "def snt(n):\n    if n < 2:\n        return False\n    for i in range(2, int(n**0.5) + 1):\n        if n % i == 0:\n            return False\n    return True\ndef sum_digits(x):\n    tong = 0\n    while x > 0:\n        tong += x % 10\n        x //= 10\n    return tong\nstart, end = map(int, input().split())\nfound = -1\nfor num in range(start, end + 1):\n    if snt(sum_digits(num)):\n        found = num\n        break\nprint(found)\n",
+        "highlighted_code": "<span class='highlight-red'>def snt(n):\n    if n &lt; 2:\n        return False\n    for i in ran</span>ge(2, int(n**0.5) + 1):\n        i<span class='highlight-red'>f n % i == 0:\n            return False\n    return True\ndef sum_digits(x):\n    tong = 0\n    while x &gt; 0:\n        tong += x % 10\n        x //= 10\n    return tong\nstart</span>, end = map(int, input().split())\nfound = -<span class='highlight-red'>1\nfor num in range(start, end + 1):\n    if snt(sum_digits(num)):\n        found = num\n        break\nprint</span>(found)\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3cc997243251374477299/bbf053b9c70d4a5697fa5d7f/sub_1762852609419_t1qs6lu5k.py",
+        "similarity_percent": 80.77,
+        "full_code": "a,b=map(int,input().split())\ndef songuyento(n):\n    if n <2:\n        return False\n    for i in range(2,n):\n        if n%i==0:\n            return False\n    return True\ndef tongso(n):\n    s=0\n    while n>0:\n        s+=n%10\n        n//=10\n    return s\nres = -1\nfor num in range(a,b+1):\n    if songuyento(tongso(num)):\n        res = num\n        break\nprint(res)",
+        "highlighted_code": "a,b=map(int,input().split())\n<span class='highlight-green'>def songuyento(n):\n    if n &lt;2:\n        return False\n    for i in ran</span>ge(2,n):\n        i<span class='highlight-green'>f n%i==0:\n            return False\n    return True\ndef tongso(n):\n    s=0\n    while n&gt;0:\n        s+=n%10\n        n//=10\n    return s\nres </span>= -<span class='highlight-green'>1\nfor num in range(a,b+1):\n    if songuyento(tongso(num)):\n        res = num\n        break\nprint</span>(res)"
+      },
+      "token_overlap": 147,
+      "max_similarity_percent": 80.77
+    },
+    {
+      "case_id": 11,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3cc997243251374477299/bcb420abb39b4af095b63cf8/sub_1762856868240_bv7vldhfn.py",
+        "similarity_percent": 70.83,
+        "full_code": "start,end=map(int,input().split())\nds_so_nguyen_to=[]\nfor i in range(start,end+1): \n    j=i\n    tong=0\n    while j>0:\n       cuoi=j%10\n       tong+=cuoi\n       j//=10\n    for k in range(2,tong):\n        if tong%k==0:\n            break\n    else:\n        ds_so_nguyen_to+=[i]\nif len(ds_so_nguyen_to)==0:\n    print(\"-1\")\nelif min(ds_so_nguyen_to)==0 or min(ds_so_nguyen_to)==1:\n    print(\"-1\")\nelse:\n    print(min(ds_so_nguyen_to))\n",
+        "highlighted_code": "<span class='highlight-red'>start,end=map(int,input().split())\nds_so_nguyen_to=[]\nfor i in range(start,end+1): \n    j=i\n    tong=0\n    while j&gt;0:\n       cuoi=j%10\n       tong+=cuoi\n       j//=10\n    for k in range(2,tong):\n        if tong%k==0:\n            break\n    else:\n        ds_so_nguyen_to+=[i]\nif len(ds_so_nguyen_to)==0:\n    prin</span>t(&#34;-1&#34;)\nelif min(ds_so_nguyen_to)==0 or min(ds_so_nguyen_to)==1:\n    print(&#34;-1&#34;)\nelse:\n    print(min(ds_so_nguyen_to))\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3cc997243251374477299/bcb420abb39b4af095b63cf8/sub_1762854769015_w66ew2q4g.py",
+        "similarity_percent": 79.07,
+        "full_code": "start,end=map(int,input().split())\nds_so_nguyen_to=[]\nfor i in range(start,end+1): \n    j=i\n    tong=0\n    while j>0:\n       cuoi=j%10\n       tong+=cuoi\n       j//=10\n    for k in range(2,tong):\n        if tong%k==0:\n            break\n    else:\n        ds_so_nguyen_to+=[i]\nif len(ds_so_nguyen_to)==0:\n    print(-1)\nelif start==end:\n    print(-1)\nelse:\n    print(min(ds_so_nguyen_to))",
+        "highlighted_code": "<span class='highlight-green'>start,end=map(int,input().split())\nds_so_nguyen_to=[]\nfor i in range(start,end+1): \n    j=i\n    tong=0\n    while j&gt;0:\n       cuoi=j%10\n       tong+=cuoi\n       j//=10\n    for k in range(2,tong):\n        if tong%k==0:\n            break\n    else:\n        ds_so_nguyen_to+=[i]\nif len(ds_so_nguyen_to)==0:\n    prin</span>t(-1)\nelif start==end:\n    print(-1)\nelse:\n    print(min(ds_so_nguyen_to))"
+      },
+      "token_overlap": 136,
+      "max_similarity_percent": 79.07
+    },
+    {
+      "case_id": 12,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3cc997243251374477299/c747e87428cc4dbab36bd7aa/sub_1765264902732_fybfjn59h.py",
+        "similarity_percent": 70.59,
+        "full_code": "def prime(a):\n    if a<2:\n        return False\n    for i in range(2, int(a**0.5+1)):\n        if a%i==0:\n            return False\n    return True\ndef tongchuso(b):\n    tong=0\n    while b>0:\n        sohang=b%10\n        tong+=sohang\n        b//=10\n    return tong\nstart, end=map(int, input().split())\nsothoaman=[]\nfor k in range(start, end+1):\n    if prime(tongchuso(k)):\n        sothoaman.append(k)\nif sothoaman==[]:\n    print(-1)\nelse:\n    print(min(sothoaman))\n\n",
+        "highlighted_code": "<span class='highlight-red'>def prime(a):\n    if a&lt;2:\n        return False\n    for i in range(2, int(a**</span>0.5+1)):\n        i<span class='highlight-red'>f a%i==0:\n            return False\n    return True\ndef tongchuso(b):\n    tong=0\n    while b&gt;0:\n        </span>sohang=b%10\n        tong+=sohang\n        <span class='highlight-red'>b//=10\n    return tong\nstart, end=map(int, input().split()</span>)\nsothoaman=[]\nfor <span class='highlight-red'>k in range(start, end+1):\n    if prime(tongchuso(k))</span>:\n        sothoaman.append(k)\nif sothoaman==[]:\n    print(-1)\nelse:\n    print(min(sothoaman))\n\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3cc997243251374477299/8e19101eb0da4e9a92a17098/sub_1761640059453_cjd8qwaef.py",
+        "similarity_percent": 80.41,
+        "full_code": "def snt(n):\n    if n < 2:\n        return False\n    for i in range(2, int(n**0.5) + 1):\n        if n % i == 0:\n            return False\n    return True\ndef sum_digits(x):\n    tong = 0\n    while x > 0:\n        tong += x % 10\n        x //= 10\n    return tong\nstart, end = map(int, input().split())\nfound = -1\nfor num in range(start, end + 1):\n    if snt(sum_digits(num)):\n        found = num\n        break\nprint(found)\n",
+        "highlighted_code": "<span class='highlight-green'>def snt(n):\n    if n &lt; 2:\n        return False\n    for i in range(2, int(n**</span>0.5) + 1):\n        i<span class='highlight-green'>f n % i == 0:\n            return False\n    return True\ndef sum_digits(x):\n    tong = 0\n    while x &gt; 0:\n        </span>tong += x % 10\n        <span class='highlight-green'>x //= 10\n    return tong\nstart, end = map(int, input().split()</span>)\nfound = -1\nfor <span class='highlight-green'>num in range(start, end + 1):\n    if snt(sum_digits(num))</span>:\n        found = num\n        break\nprint(found)\n"
+      },
+      "token_overlap": 156,
+      "max_similarity_percent": 80.41
+    },
+    {
+      "case_id": 13,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3cc997243251374477299/0d74995bf22b4574a97a2297/sub_1761554551089_8488zbkka.py",
+        "similarity_percent": 70.5,
+        "full_code": "def primes(n):\n    if n <= 1:\n        return False\n    for i in range(2, int(n**0.5) + 1):\n        if n % i == 0:\n            return False\n    return True\ndef tong(n):\n    s = 0\n    while n > 0:\n        s += n % 10\n        n //= 10\n    return s\nm,n = map(int,input().split())\nfor i in range(m,n+1):\n    if primes(tong(i)):\n        print(i)\n        break\nelse:\n    print(-1)\n\n",
+        "highlighted_code": "def primes(n):\n    if n &lt;= 1:\n        r<span class='highlight-red'>eturn False\n    for i in range(2, int(n**</span>0.5) + 1):\n        i<span class='highlight-red'>f n % i == 0:\n            return False\n    return True\ndef tong(n):\n    s = 0\n    while n &gt; 0:\n        </span>s += n % 10\n        <span class='highlight-red'>n //= 10\n    return s\nm,n = map(int,input().split()</span>)\nfor <span class='highlight-red'>i in range(m,n+1):\n    if primes(tong(i))</span>:\n        print(i)\n        break\nelse:\n    print(-1)\n\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3cc997243251374477299/c747e87428cc4dbab36bd7aa/sub_1765264902732_fybfjn59h.py",
+        "similarity_percent": 63.8,
+        "full_code": "def prime(a):\n    if a<2:\n        return False\n    for i in range(2, int(a**0.5+1)):\n        if a%i==0:\n            return False\n    return True\ndef tongchuso(b):\n    tong=0\n    while b>0:\n        sohang=b%10\n        tong+=sohang\n        b//=10\n    return tong\nstart, end=map(int, input().split())\nsothoaman=[]\nfor k in range(start, end+1):\n    if prime(tongchuso(k)):\n        sothoaman.append(k)\nif sothoaman==[]:\n    print(-1)\nelse:\n    print(min(sothoaman))\n\n",
+        "highlighted_code": "def prime(a):\n    if a&lt;2:\n        r<span class='highlight-green'>eturn False\n    for i in range(2, int(a**</span>0.5+1)):\n        i<span class='highlight-green'>f a%i==0:\n            return False\n    return True\ndef tongchuso(b):\n    tong=0\n    while b&gt;0:\n        </span>sohang=b%10\n        tong+=sohang\n        <span class='highlight-green'>b//=10\n    return tong\nstart, end=map(int, input().split()</span>)\nsothoaman=[]\nfor <span class='highlight-green'>k in range(start, end+1):\n    if prime(tongchuso(k))</span>:\n        sothoaman.append(k)\nif sothoaman==[]:\n    print(-1)\nelse:\n    print(min(sothoaman))\n\n"
+      },
+      "token_overlap": 141,
+      "max_similarity_percent": 70.5
+    },
+    {
+      "case_id": 14,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3cc997243251374477299/34951d9292ba457b97894a64/sub_1763217225955_uqvoz6snj.py",
+        "similarity_percent": 68.37,
+        "full_code": "def check_snt(n):\n    if n<2:\n        return False\n    for i in range(2,(n//2)+1):\n        if n%i==0:\n            return False\n    return True\ndef solution(start,end):\n    for i in range(start,end+1):\n        string_s=str(i)\n        tong=0\n        for j in string_s:\n            tong+=int(j)\n        if check_snt(tong)==True:\n            return i\n    return -1\nn,m=map(int,input().split())\nprint(solution(n,m))",
+        "highlighted_code": "def <span class='highlight-red'>check_snt(n):\n    if n&lt;2:\n        return False\n    for i in ran</span>ge(2,(n//2)+<span class='highlight-red'>1):\n        if n%i==0:\n            return False\n    return Tr</span>ue\ndef <span class='highlight-red'>solution(start,end):\n    for i in range(start,end+1)</span>:\n        string_s=str(i)\n        tong=0\n        for j in string_s:\n            tong+=int(j)\n        if check_snt(tong)==True:\n            <span class='highlight-red'>return i\n    return -1\nn,m=map(int,input().split())\nprint(solution(</span>n,m))"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3cc997243251374477299/522be41104e24b1fa5d14200/sub_1765834685759_qwdovmx1d.py",
+        "similarity_percent": 57.02,
+        "full_code": "# số nhỏ nhất có tổng các chữ số là số nguyên tố\nimport math\ndef tong_chu_so(n):\n    tong=0\n    while n!=0:\n        tong+=n%10\n        n//=10\n    return tong\ndef check_prime(n):\n    if n<2:\n        return False\n    for i in range(2,math.isqrt(n)+1):\n        if n%i==0:\n            return False\n    return True\nif __name__=='__main__':\n    def check_min(a,b):\n        for so in range(a,b+1):\n            tong=tong_chu_so(so)\n            if check_prime(tong):\n                return so\n        return -1\n    a,b=map(int,input().split())\n    print(check_min(a,b))\n",
+        "highlighted_code": "# số nhỏ nhất có tổng các chữ số là số nguyên tố\nimport math\ndef tong_chu_so(n):\n    tong=0\n    while n!=0:\n        tong+=n%10\n        n//=10\n    return tong\ndef <span class='highlight-green'>check_prime(n):\n    if n&lt;2:\n        return False\n    for i in ran</span>ge(2,math.isqrt(n)+<span class='highlight-green'>1):\n        if n%i==0:\n            return False\n    return Tr</span>ue\nif __name__==&#39;__main__&#39;:\n    def <span class='highlight-green'>check_min(a,b):\n        for so in range(a,b+1)</span>:\n            tong=tong_chu_so(so)\n            if check_prime(tong):\n                <span class='highlight-green'>return so\n        return -1\n    a,b=map(int,input().split())\n    print(check_min(</span>a,b))\n"
+      },
+      "token_overlap": 134,
+      "max_similarity_percent": 68.37
+    },
+    {
+      "case_id": 15,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3cc997243251374477299/bcb420abb39b4af095b63cf8/sub_1762856586474_39xue6yj8.py",
+        "similarity_percent": 63.54,
+        "full_code": "start,end=map(int,input().split())\nds_so_nguyen_to=[]\nfor i in range(start,end+1): \n    j=i\n    tong=0\n    while j>0:\n       cuoi=j%10\n       tong+=cuoi\n       j//=10\n    for k in range(2,tong):\n        if tong%k==0:\n            break\n    else:\n        ds_so_nguyen_to+=[i]\nif min(ds_so_nguyen_to)==0 or min(ds_so_nguyen_to)==1:\n    print(\"-1\")\nelif len(ds_so_nguyen_to)==0:\n    print(\"-1\")\nelse:\n    print(min(ds_so_nguyen_to))\n",
+        "highlighted_code": "<span class='highlight-red'>start,end=map(int,input().split())\nds_so_nguyen_to=[]\nfor i in range(start,end+1): \n    j=i\n    tong=0\n    while j&gt;0:\n       cuoi=j%10\n       tong+=cuoi\n       j//=10\n    for k in range(2,tong):\n        if tong%k==0:\n            break\n    else:\n        ds_so_nguyen_to+=[i]\nif </span>min(ds_so_nguyen_to)==0 or min(ds_so_nguyen_to)==1:\n    print(&#34;-1&#34;)\nelif len(ds_so_nguyen_to)==0:\n    print(&#34;-1&#34;)\nelse:\n    print(min(ds_so_nguyen_to))\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3cc997243251374477299/bcb420abb39b4af095b63cf8/sub_1762854769015_w66ew2q4g.py",
+        "similarity_percent": 70.93,
+        "full_code": "start,end=map(int,input().split())\nds_so_nguyen_to=[]\nfor i in range(start,end+1): \n    j=i\n    tong=0\n    while j>0:\n       cuoi=j%10\n       tong+=cuoi\n       j//=10\n    for k in range(2,tong):\n        if tong%k==0:\n            break\n    else:\n        ds_so_nguyen_to+=[i]\nif len(ds_so_nguyen_to)==0:\n    print(-1)\nelif start==end:\n    print(-1)\nelse:\n    print(min(ds_so_nguyen_to))",
+        "highlighted_code": "<span class='highlight-green'>start,end=map(int,input().split())\nds_so_nguyen_to=[]\nfor i in range(start,end+1): \n    j=i\n    tong=0\n    while j&gt;0:\n       cuoi=j%10\n       tong+=cuoi\n       j//=10\n    for k in range(2,tong):\n        if tong%k==0:\n            break\n    else:\n        ds_so_nguyen_to+=[i]\nif </span>len(ds_so_nguyen_to)==0:\n    print(-1)\nelif start==end:\n    print(-1)\nelse:\n    print(min(ds_so_nguyen_to))"
+      },
+      "token_overlap": 122,
+      "max_similarity_percent": 70.93
+    },
+    {
+      "case_id": 16,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3cc997243251374477299/e0cd413045d741e39459231c/sub_1761666858571_ltud5bwpi.py",
+        "similarity_percent": 61.14,
+        "full_code": "start, end = map(int, input().split())\n\nfound = False \n\nfor a in range(start, end + 1):\n    tong = 0\n    x = a\n    while x > 0:\n        du = x % 10\n        tong = tong + du\n        x = x // 10\n\n    xet = True\n    if tong < 2:\n        xet = False\n    else:\n        for i in range(2, int(tong**0.5) + 1):\n            if tong % i == 0:\n                xet = False\n                break\n\n    if xet:\n        print(a)\n        found = True\n        break  \n\nif not found:\n    print(-1)",
+        "highlighted_code": "start, <span class='highlight-red'>end = map(int, input().split())\n\nfound = False \n\nfor a in range(start, end + 1):\n    tong </span>= 0\n    x = a\n    while x &gt; 0:\n        du = x % 10\n        tong = tong + du\n        x = x // 10\n\n    xet = True\n    if tong &lt; 2:\n        xet = False\n    else:\n        <span class='highlight-red'>for i in range(2, int(tong**0.5) + 1):\n            if tong % i == 0</span>:\n                xet = False\n                break\n\n    if xet:\n        <span class='highlight-red'>print(a)\n        found = True\n        break  \n\nif not found:\n    print(</span>-1)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3cc997243251374477299/20871fc259cd4e60b3f56a79/sub_1763833663857_f9nbz3r9w.py",
+        "similarity_percent": 58.71,
+        "full_code": "def so_nguyen_to(n):\n    if n < 2:\n        return False\n    for i in range(2, int(n**0.5) + 1):\n        if n % i == 0:\n            return False\n    return True\n\nstart,end=map(int, input().split())\ntim_duoc=False\nfor so_hien_tai in range(start, end+1):\n    tong=0\n    for chu_so in str(so_hien_tai):\n        tong+=int(chu_so)\n    if so_nguyen_to(tong):\n        print(so_hien_tai)\n        tim_duoc=True\n        break\nif not tim_duoc:\n    print(\"-1\")\n\n\n",
+        "highlighted_code": "def so_nguyen_to(n):\n    if n &lt; 2:\n        return False\n    <span class='highlight-green'>for i in range(2, int(n**0.5) + 1):\n        if n % i == 0</span>:\n            return False\n    return True\n\nstart,<span class='highlight-green'>end=map(int, input().split())\ntim_duoc=False\nfor so_hien_tai in range(start, end+1):\n    tong</span>=0\n    for chu_so in str(so_hien_tai):\n        tong+=int(chu_so)\n    if so_nguyen_to(tong):\n        <span class='highlight-green'>print(so_hien_tai)\n        tim_duoc=True\n        break\nif not tim_duoc:\n    print(</span>&#34;-1&#34;)\n\n\n"
+      },
+      "token_overlap": 118,
+      "max_similarity_percent": 61.14
+    },
+    {
+      "case_id": 17,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3cc997243251374477299/57f804332fbb4e9aafa70968/sub_1763522630278_o4u1qbq42.py",
+        "similarity_percent": 59.42,
+        "full_code": "start, end = map(int, input().split())\n\ndef tong_so(i):\n    tong = 0\n    for char in str(i):\n        tong += int(char)\n    return tong\n\ndef tong_la_snt(tong):\n    if tong < 2:\n        return False\n    for i in range(2, tong):\n        if tong % i == 0:\n            return False\n    return True\n\nfound = False\nfor i in range(start, end + 1):\n    if tong_la_snt(tong_so(i)):\n        print(i)\n        found = True\n        break\n\nif not found:\n    print(\"-1\")\n",
+        "highlighted_code": "<span class='highlight-red'>start, end = map(int, input().split())\n\ndef tong_so(i)</span>:\n    tong = 0\n    for char in str(i):\n        tong += int(char)\n    return tong\n\ndef <span class='highlight-red'>tong_la_snt(tong):\n    if tong &lt; 2:\n        return False\n    for i in range(2, tong):\n        if tong % i == 0:\n            return False\n    return Tr</span>ue\n\nfound = False\nfor <span class='highlight-red'>i in range(start, end + 1):\n    if tong_la_snt(tong_so(i))</span>:\n        print(i)\n        found = True\n        break\n\nif not found:\n    print(&#34;-1&#34;)\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3cc997243251374477299/bbf053b9c70d4a5697fa5d7f/sub_1762852609419_t1qs6lu5k.py",
+        "similarity_percent": 65.38,
+        "full_code": "a,b=map(int,input().split())\ndef songuyento(n):\n    if n <2:\n        return False\n    for i in range(2,n):\n        if n%i==0:\n            return False\n    return True\ndef tongso(n):\n    s=0\n    while n>0:\n        s+=n%10\n        n//=10\n    return s\nres = -1\nfor num in range(a,b+1):\n    if songuyento(tongso(num)):\n        res = num\n        break\nprint(res)",
+        "highlighted_code": "<span class='highlight-green'>a,b=map(int,input().split())\ndef songuyento(n):\n    if n &lt;2:\n        return False\n    for i in range(2,n):\n        if n%i==0:\n            return False\n    return Tr</span>ue\ndef tongso(n):\n    s=0\n    while n&gt;0:\n        s+=n%10\n        n//=10\n    return s\nres = -1\nfor <span class='highlight-green'>num in range(a,b+1):\n    if songuyento(tongso(num))</span>:\n        res = num\n        break\nprint(res)"
+      },
+      "token_overlap": 123,
+      "max_similarity_percent": 65.38
+    },
+    {
+      "case_id": 18,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3cc997243251374477299/0d74995bf22b4574a97a2297/sub_1761554551089_8488zbkka.py",
+        "similarity_percent": 55.5,
+        "full_code": "def primes(n):\n    if n <= 1:\n        return False\n    for i in range(2, int(n**0.5) + 1):\n        if n % i == 0:\n            return False\n    return True\ndef tong(n):\n    s = 0\n    while n > 0:\n        s += n % 10\n        n //= 10\n    return s\nm,n = map(int,input().split())\nfor i in range(m,n+1):\n    if primes(tong(i)):\n        print(i)\n        break\nelse:\n    print(-1)\n\n",
+        "highlighted_code": "def primes(n):\n    if n &lt;= 1:\n        return False\n    <span class='highlight-red'>for i in range(2, int(n**0.5) + 1)</span>:\n        if n % i == 0:\n            return False\n    return True\ndef <span class='highlight-red'>tong(n):\n    s = 0\n    while n &gt; 0:\n        s += n % 10\n        n //= 10\n    return s\nm,n = map(int,input().split())\nfor i in range(m,n+1):\n    if primes</span>(tong(i)):\n        print(i)\n        break\nelse:\n    print(-1)\n\n"
       },
       "file2": {
         "path": "/app/app/data/submissions/68e3cc997243251374477299/0d74995bf22b4574a97a2297/sub_1761554402105_iwcvq2lhr.py",
-        "similarity_percent": 52.53,
+        "similarity_percent": 43.41,
         "full_code": "def nt(n):\n    prime = [True] * (n + 1)\n    p = 2\n    for p in range(2, int(n**0.5) + 1):\n        if prime[p]:\n            for i in range(p * p, n + 1, p):\n                prime[i] = False\n    return [p for p in range(2, n + 1) if prime[p]]\ndef tong(n):\n    s = 0\n    while n > 0:\n        s += n % 10\n        n //= 10\n    return s\nprimes = nt(10000000)\nm,n = map(int,input().split())\nfor i in range(m,n+1):\n    if tong(i) in primes:\n        print(i)\n        break\nelse:\n    print(-1)\n\n",
-        "highlighted_code": "def nt(n):\n    prime = [True] * (n + 1)\n    p = 2\n    f<span class='highlight-green'>or p in range(2, int(n**0.5) + 1):\n        if prime</span>[p]:\n            for i in range(p * p, n + 1, p):\n                prime[i] = False\n    return [p for p in range(2, n + 1) if prime[p]]\nde<span class='highlight-green'>f tong(n):\n    s = 0\n    while n &gt; 0:\n        s += n % 10\n        n //= 10\n    retu</span>rn s\nprimes = nt(10000000)\nm,<span class='highlight-green'>n = map(int,input().split())\nfor i in range(m,n+1):\n    if tong</span>(i) in primes<span class='highlight-green'>:\n        print(i)\n        break\nelse:\n    print(</span>-1)\n\n"
+        "highlighted_code": "def nt(n):\n    prime = [True] * (n + 1)\n    p = 2\n    <span class='highlight-green'>for p in range(2, int(n**0.5) + 1)</span>:\n        if prime[p]:\n            for i in range(p * p, n + 1, p):\n                prime[i] = False\n    return [p for p in range(2, n + 1) if prime[p]]\ndef <span class='highlight-green'>tong(n):\n    s = 0\n    while n &gt; 0:\n        s += n % 10\n        n //= 10\n    return s\nprimes </span>= nt(10000000)\n<span class='highlight-green'>m,n = map(int,input().split())\nfor i in range(m,n+1):\n    if tong</span>(i) in primes:\n        print(i)\n        break\nelse:\n    print(-1)\n\n"
       },
-      "token_overlap": 135,
-      "max_similarity_percent": 66.83
+      "token_overlap": 111,
+      "max_similarity_percent": 55.5
+    },
+    {
+      "case_id": 19,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3cc997243251374477299/e29b583452a94bf5a29be0ae/sub_1766583540613_lj31d32o9.py",
+        "similarity_percent": 52.85,
+        "full_code": "start,end=list(map(int,input().split()))\n\ndef is_prime(n):\n    if n < 2:\n        return False\n    for i in range(2, int(n**0.5) + 1):\n        if n % i == 0:\n            return False\n    return True\n\nfor x in range(start, end + 1):\n    s = 0\n    t = x\n    while t > 0:\n        s += t % 10\n        t //= 10\n    if is_prime(s):\n        print(x)\n        break\nelse:\n    print(-1)\n    \n",
+        "highlighted_code": "start,end=<span class='highlight-red'>list(map(int,input().split())</span>)\n\ndef <span class='highlight-red'>is_prime(n):\n    if n &lt; 2:\n        return False\n    for i in range(2, int(n**0.5) + 1):\n        if n % i == 0:\n            return False\n    return </span>True\n\nfor x in range(start, end + 1):\n    s = 0\n    t = x\n    while t &gt; 0:\n        s += t % 10\n        t //= 10\n    if is_prime(s):\n        print(x)\n        break\nelse:\n    print(-1)\n    \n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3cc997243251374477299/de7b795216694f3190b821ba/sub_1764590951255_2cvx9q59h.py",
+        "similarity_percent": 39.53,
+        "full_code": "def sum(a):\n    sum = 0\n    while a>0:\n        sum+=a%10\n        a//=10\n    return sum\ndef nguyen_to(n):\n    if n < 2:\n        return False\n    for i in range(2, int(n**0.5) + 1):\n        if n % i == 0:\n            return False\n    return True\n\nif __name__ == \"__main__\":\n    so=list(map(int,input().split()))\n    a=[]\n    for i in range(so[0],so[1]+1):\n        \n        if nguyen_to(sum(i))==True:\n            a.append(i)\n    if a==[]:\n        print(-1)\n    else:    \n        print(min(a))     \n",
+        "highlighted_code": "def sum(a):\n    sum = 0\n    while a&gt;0:\n        sum+=a%10\n        a//=10\n    return sum\ndef <span class='highlight-green'>nguyen_to(n):\n    if n &lt; 2:\n        return False\n    for i in range(2, int(n**0.5) + 1):\n        if n % i == 0:\n            return False\n    return </span>True\n\nif __name__ == &#34;__main__&#34;:\n    so=<span class='highlight-green'>list(map(int,input().split())</span>)\n    a=[]\n    for i in range(so[0],so[1]+1):\n        \n        if nguyen_to(sum(i))==True:\n            a.append(i)\n    if a==[]:\n        print(-1)\n    else:    \n        print(min(a))     \n"
+      },
+      "token_overlap": 102,
+      "max_similarity_percent": 52.85
+    },
+    {
+      "case_id": 20,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3cc997243251374477299/57f804332fbb4e9aafa70968/sub_1763522630278_o4u1qbq42.py",
+        "similarity_percent": 52.66,
+        "full_code": "start, end = map(int, input().split())\n\ndef tong_so(i):\n    tong = 0\n    for char in str(i):\n        tong += int(char)\n    return tong\n\ndef tong_la_snt(tong):\n    if tong < 2:\n        return False\n    for i in range(2, tong):\n        if tong % i == 0:\n            return False\n    return True\n\nfound = False\nfor i in range(start, end + 1):\n    if tong_la_snt(tong_so(i)):\n        print(i)\n        found = True\n        break\n\nif not found:\n    print(\"-1\")\n",
+        "highlighted_code": "start, end = map(int, input().split())\n\nde<span class='highlight-red'>f tong_so(i):\n    tong = 0\n    for char in str(i):\n        tong += int(char)\n    return tong\n\ndef tong_la_snt(tong)</span>:\n    if tong &lt; 2:\n        return False\n    for i <span class='highlight-red'>in range(2, tong):\n        if tong % i == 0:\n            return False\n    return </span>True\n\nfound = False\nfor <span class='highlight-red'>i in range(start, end + 1):\n    if tong_la_snt(tong_so(i))</span>:\n        print(i)\n        found = True\n        break\n\nif not found:\n    print(&#34;-1&#34;)\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3cc997243251374477299/57f804332fbb4e9aafa70968/sub_1763522525940_kbhss7w9k.py",
+        "similarity_percent": 58.92,
+        "full_code": "start, end = map(int,input().split())\n\nif start < end:\n    def tong_so(i):\n        tong = 0\n        for char in str(i):\n            tong += int(char)\n        return tong\n    def tong_la_snt(tong):\n        for i in range(2, tong):\n            if tong % i == 0:\n                return False\n        return True\n    for i in range(start, end + 1):\n        if tong_la_snt(tong_so(i)) == True:\n            print (i)\n            break\nelse:\n    print(\"-1\")\n            \n",
+        "highlighted_code": "start, end = map(int,input().split())\n\nif start &lt; end:\n    de<span class='highlight-green'>f tong_so(i):\n        tong = 0\n        for char in str(i):\n            tong += int(char)\n        return tong\n    def tong_la_snt(tong)</span>:\n        for i <span class='highlight-green'>in range(2, tong):\n            if tong % i == 0:\n                return False\n        return </span>True\n    for <span class='highlight-green'>i in range(start, end + 1):\n        if tong_la_snt(tong_so(i)) </span>== True:\n            print (i)\n            break\nelse:\n    print(&#34;-1&#34;)\n            \n"
+      },
+      "token_overlap": 109,
+      "max_similarity_percent": 58.92
+    },
+    {
+      "case_id": 21,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3cc997243251374477299/57f804332fbb4e9aafa70968/sub_1763522630278_o4u1qbq42.py",
+        "similarity_percent": 52.66,
+        "full_code": "start, end = map(int, input().split())\n\ndef tong_so(i):\n    tong = 0\n    for char in str(i):\n        tong += int(char)\n    return tong\n\ndef tong_la_snt(tong):\n    if tong < 2:\n        return False\n    for i in range(2, tong):\n        if tong % i == 0:\n            return False\n    return True\n\nfound = False\nfor i in range(start, end + 1):\n    if tong_la_snt(tong_so(i)):\n        print(i)\n        found = True\n        break\n\nif not found:\n    print(\"-1\")\n",
+        "highlighted_code": "start, end = map(int, input().split())\n\nde<span class='highlight-red'>f tong_so(i):\n    tong = 0\n    for char in str(i):\n        tong += int(char)\n    return tong\n\ndef tong_la_snt(tong)</span>:\n    if tong &lt; 2:\n        return False\n    for i <span class='highlight-red'>in range(2, tong):\n        if tong % i == 0:\n            return False\n    return </span>True\n\nfound = False\nfor <span class='highlight-red'>i in range(start, end + 1):\n    if tong_la_snt(tong_so(i))</span>:\n        print(i)\n        found = True\n        break\n\nif not found:\n    print(&#34;-1&#34;)\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3cc997243251374477299/57f804332fbb4e9aafa70968/sub_1763522360978_10atq03yu.py",
+        "similarity_percent": 57.98,
+        "full_code": "start, end = map(int,input().split())\n\nif start < end:\n    def tong_so(i):\n        tong = 0\n        for char in str(i):\n            tong += int(char)\n        return tong\n    def tong_la_snt(tong):\n        for i in range(2, tong):\n            if tong % i == 0:\n                return False\n        return True\n    for i in range(start, end + 1):\n        if tong_la_snt(tong_so(i)) == True:\n            print (i)\n            break\nelif start == end:\n    print(\"-1\")\n            \n",
+        "highlighted_code": "start, end = map(int,input().split())\n\nif start &lt; end:\n    de<span class='highlight-green'>f tong_so(i):\n        tong = 0\n        for char in str(i):\n            tong += int(char)\n        return tong\n    def tong_la_snt(tong)</span>:\n        for i <span class='highlight-green'>in range(2, tong):\n            if tong % i == 0:\n                return False\n        return </span>True\n    for <span class='highlight-green'>i in range(start, end + 1):\n        if tong_la_snt(tong_so(i)) </span>== True:\n            print (i)\n            break\nelif start == end:\n    print(&#34;-1&#34;)\n            \n"
+      },
+      "token_overlap": 109,
+      "max_similarity_percent": 57.98
+    },
+    {
+      "case_id": 22,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3cc997243251374477299/57f804332fbb4e9aafa70968/sub_1763522630278_o4u1qbq42.py",
+        "similarity_percent": 52.66,
+        "full_code": "start, end = map(int, input().split())\n\ndef tong_so(i):\n    tong = 0\n    for char in str(i):\n        tong += int(char)\n    return tong\n\ndef tong_la_snt(tong):\n    if tong < 2:\n        return False\n    for i in range(2, tong):\n        if tong % i == 0:\n            return False\n    return True\n\nfound = False\nfor i in range(start, end + 1):\n    if tong_la_snt(tong_so(i)):\n        print(i)\n        found = True\n        break\n\nif not found:\n    print(\"-1\")\n",
+        "highlighted_code": "start, end = map(int, input().split())\n\nde<span class='highlight-red'>f tong_so(i):\n    tong = 0\n    for char in str(i):\n        tong += int(char)\n    return tong\n\ndef tong_la_snt(tong)</span>:\n    if tong &lt; 2:\n        return False\n    for i <span class='highlight-red'>in range(2, tong):\n        if tong % i == 0:\n            return False\n    return </span>True\n\nfound = False\nfor <span class='highlight-red'>i in range(start, end + 1):\n    if tong_la_snt(tong_so(i))</span>:\n        print(i)\n        found = True\n        break\n\nif not found:\n    print(&#34;-1&#34;)\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3cc997243251374477299/57f804332fbb4e9aafa70968/sub_1763522488864_1bmvaahni.py",
+        "similarity_percent": 53.43,
+        "full_code": "start, end = map(int,input().split())\n\nif start < end:\n    def tong_so(i):\n        tong = 0\n        for char in str(i):\n            tong += int(char)\n        return tong\n    def tong_la_snt(tong):\n        for i in range(2, tong):\n            if tong % i == 0:\n                return False\n        return True\n    for i in range(start, end + 1):\n        if tong_la_snt(tong_so(i)) == True:\n            print (i)\n            break\nelif start == end:\n    print(\"-1\")\nelse:\n    print(\"-1\")\n            \n",
+        "highlighted_code": "start, end = map(int,input().split())\n\nif start &lt; end:\n    de<span class='highlight-green'>f tong_so(i):\n        tong = 0\n        for char in str(i):\n            tong += int(char)\n        return tong\n    def tong_la_snt(tong)</span>:\n        for i <span class='highlight-green'>in range(2, tong):\n            if tong % i == 0:\n                return False\n        return </span>True\n    for <span class='highlight-green'>i in range(start, end + 1):\n        if tong_la_snt(tong_so(i)) </span>== True:\n            print (i)\n            break\nelif start == end:\n    print(&#34;-1&#34;)\nelse:\n    print(&#34;-1&#34;)\n            \n"
+      },
+      "token_overlap": 109,
+      "max_similarity_percent": 53.43
+    },
+    {
+      "case_id": 23,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3cc997243251374477299/c747e87428cc4dbab36bd7aa/sub_1765264902732_fybfjn59h.py",
+        "similarity_percent": 49.32,
+        "full_code": "def prime(a):\n    if a<2:\n        return False\n    for i in range(2, int(a**0.5+1)):\n        if a%i==0:\n            return False\n    return True\ndef tongchuso(b):\n    tong=0\n    while b>0:\n        sohang=b%10\n        tong+=sohang\n        b//=10\n    return tong\nstart, end=map(int, input().split())\nsothoaman=[]\nfor k in range(start, end+1):\n    if prime(tongchuso(k)):\n        sothoaman.append(k)\nif sothoaman==[]:\n    print(-1)\nelse:\n    print(min(sothoaman))\n\n",
+        "highlighted_code": "<span class='highlight-red'>def prime(a):\n    if a&lt;2:\n        return False\n    for i in range(2, int(a**</span>0.5+1)):\n        i<span class='highlight-red'>f a%i==0:\n            return False\n    return Tr</span>ue\ndef tongchuso(b):\n    tong=0\n    while b&gt;0:\n        sohang=b%10\n        tong+=sohang\n        b//=10\n    return tong\nstart, end=map(int, input().split())\nsothoaman=[]\nfor k in range(start, end+1):\n    if prime(tongchuso(k)):\n        sothoaman<span class='highlight-red'>.append(k)\nif sothoaman==[]:\n    print(-1)\nelse:\n    print(min</span>(sothoaman))\n\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3cc997243251374477299/de7b795216694f3190b821ba/sub_1764590951255_2cvx9q59h.py",
+        "similarity_percent": 42.25,
+        "full_code": "def sum(a):\n    sum = 0\n    while a>0:\n        sum+=a%10\n        a//=10\n    return sum\ndef nguyen_to(n):\n    if n < 2:\n        return False\n    for i in range(2, int(n**0.5) + 1):\n        if n % i == 0:\n            return False\n    return True\n\nif __name__ == \"__main__\":\n    so=list(map(int,input().split()))\n    a=[]\n    for i in range(so[0],so[1]+1):\n        \n        if nguyen_to(sum(i))==True:\n            a.append(i)\n    if a==[]:\n        print(-1)\n    else:    \n        print(min(a))     \n",
+        "highlighted_code": "def sum(a):\n    sum = 0\n    while a&gt;0:\n        sum+=a%10\n        a//=10\n    return sum\n<span class='highlight-green'>def nguyen_to(n):\n    if n &lt; 2:\n        return False\n    for i in range(2, int(n**</span>0.5) + 1):\n        i<span class='highlight-green'>f n % i == 0:\n            return False\n    return Tr</span>ue\n\nif __name__ == &#34;__main__&#34;:\n    so=list(map(int,input().split()))\n    a=[]\n    for i in range(so[0],so[1]+1):\n        \n        if nguyen_to(sum(i))==True:\n            a<span class='highlight-green'>.append(i)\n    if a==[]:\n        print(-1)\n    else:    \n        print(min</span>(a))     \n"
+      },
+      "token_overlap": 109,
+      "max_similarity_percent": 49.32
+    },
+    {
+      "case_id": 24,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3cc997243251374477299/e0cd413045d741e39459231c/sub_1761666858571_ltud5bwpi.py",
+        "similarity_percent": 49.22,
+        "full_code": "start, end = map(int, input().split())\n\nfound = False \n\nfor a in range(start, end + 1):\n    tong = 0\n    x = a\n    while x > 0:\n        du = x % 10\n        tong = tong + du\n        x = x // 10\n\n    xet = True\n    if tong < 2:\n        xet = False\n    else:\n        for i in range(2, int(tong**0.5) + 1):\n            if tong % i == 0:\n                xet = False\n                break\n\n    if xet:\n        print(a)\n        found = True\n        break  \n\nif not found:\n    print(-1)",
+        "highlighted_code": "start, end = map(int, input().split())\n\nfound = False \n\nfor a <span class='highlight-red'>in range(start, end + 1):\n    tong = 0\n    x = a\n    while x </span>&gt; 0:\n        du = x % 10\n        tong = tong + du\n        x = x // <span class='highlight-red'>10\n\n    xet = True\n    if tong &lt; 2:\n        xet = False\n    else:\n        for i in range(2, int</span>(tong**0.5) + 1)<span class='highlight-red'>:\n            if tong % i == 0:\n                xet = False\n                break\n\n    if xet</span>:\n        print(a)\n        found = True\n        break  \n\nif not found:\n    print(-1)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3cc997243251374477299/f95120b3a38a461085ef58cb/sub_1766981916666_y609sxj7f.py",
+        "similarity_percent": 53.07,
+        "full_code": "import math\ns, e = map(int, input().split())\nans = -1\nfor n in range(s, e + 1):\n    tong = 0\n    temp = n\n    while temp > 0:\n        tong += temp % 10\n        temp //= 10\n    la_nt = True\n    if tong < 2:\n        la_nt = False\n    else:\n        for i in range(2, int(math.sqrt(tong)) + 1):\n            if tong % i == 0:\n                la_nt = False\n                break\n    if la_nt:\n        ans = n\n        break\nprint(ans)",
+        "highlighted_code": "import math\ns, e = map(int, input().split())\nans = -1\nfor n <span class='highlight-green'>in range(s, e + 1):\n    tong = 0\n    temp = n\n    while temp </span>&gt; 0:\n        tong += temp % 10\n        temp //= <span class='highlight-green'>10\n    la_nt = True\n    if tong &lt; 2:\n        la_nt = False\n    else:\n        for i in range(2, int</span>(math.sqrt(tong)) + 1)<span class='highlight-green'>:\n            if tong % i == 0:\n                la_nt = False\n                break\n    if la_nt</span>:\n        ans = n\n        break\nprint(ans)"
+      },
+      "token_overlap": 95,
+      "max_similarity_percent": 53.07
+    },
+    {
+      "case_id": 25,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3cc997243251374477299/c747e87428cc4dbab36bd7aa/sub_1765264902732_fybfjn59h.py",
+        "similarity_percent": 48.87,
+        "full_code": "def prime(a):\n    if a<2:\n        return False\n    for i in range(2, int(a**0.5+1)):\n        if a%i==0:\n            return False\n    return True\ndef tongchuso(b):\n    tong=0\n    while b>0:\n        sohang=b%10\n        tong+=sohang\n        b//=10\n    return tong\nstart, end=map(int, input().split())\nsothoaman=[]\nfor k in range(start, end+1):\n    if prime(tongchuso(k)):\n        sothoaman.append(k)\nif sothoaman==[]:\n    print(-1)\nelse:\n    print(min(sothoaman))\n\n",
+        "highlighted_code": "<span class='highlight-red'>def prime(a):\n    if a&lt;2:\n        return False\n    for i in ran</span>ge(2, int(a**0.5+1)):\n        i<span class='highlight-red'>f a%i==0:\n            return False\n    return True\ndef tongchuso(b):\n    tong=0\n    while b&gt;0:\n        </span>sohang=b%10\n        tong+=sohang\n        b//=10\n    return tong\nstart, end=map(int, input().split())\nsothoaman=[]\nfor <span class='highlight-red'>k in range(start, end+1):\n    if prime(tongchuso(k))</span>:\n        sothoaman.append(k)\nif sothoaman==[]:\n    print(-1)\nelse:\n    print(min(sothoaman))\n\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3cc997243251374477299/bbf053b9c70d4a5697fa5d7f/sub_1762852609419_t1qs6lu5k.py",
+        "similarity_percent": 59.34,
+        "full_code": "a,b=map(int,input().split())\ndef songuyento(n):\n    if n <2:\n        return False\n    for i in range(2,n):\n        if n%i==0:\n            return False\n    return True\ndef tongso(n):\n    s=0\n    while n>0:\n        s+=n%10\n        n//=10\n    return s\nres = -1\nfor num in range(a,b+1):\n    if songuyento(tongso(num)):\n        res = num\n        break\nprint(res)",
+        "highlighted_code": "a,b=map(int,input().split())\n<span class='highlight-green'>def songuyento(n):\n    if n &lt;2:\n        return False\n    for i in ran</span>ge(2,n):\n        i<span class='highlight-green'>f n%i==0:\n            return False\n    return True\ndef tongso(n):\n    s=0\n    while n&gt;0:\n        </span>s+=n%10\n        n//=10\n    return s\nres = -1\nfor <span class='highlight-green'>num in range(a,b+1):\n    if songuyento(tongso(num))</span>:\n        res = num\n        break\nprint(res)"
+      },
+      "token_overlap": 108,
+      "max_similarity_percent": 59.34
+    },
+    {
+      "case_id": 26,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3cc997243251374477299/0d74995bf22b4574a97a2297/sub_1761554551089_8488zbkka.py",
+        "similarity_percent": 47.5,
+        "full_code": "def primes(n):\n    if n <= 1:\n        return False\n    for i in range(2, int(n**0.5) + 1):\n        if n % i == 0:\n            return False\n    return True\ndef tong(n):\n    s = 0\n    while n > 0:\n        s += n % 10\n        n //= 10\n    return s\nm,n = map(int,input().split())\nfor i in range(m,n+1):\n    if primes(tong(i)):\n        print(i)\n        break\nelse:\n    print(-1)\n\n",
+        "highlighted_code": "def primes(n):\n    if n &lt;= 1:\n        return False\n    for i in range(2, int(n**0.5) + 1):\n        i<span class='highlight-red'>f n % i == 0:\n            return False\n    return True\ndef tong(n):\n    s = 0\n    while n &gt; 0:\n        s += n % 10\n        n //= 10\n    return s\nm</span>,n = map(int,input().split())\nfor <span class='highlight-red'>i in range(m,n+1):\n    if primes(tong(i))</span>:\n        print(i)\n        break\nelse:\n    print(-1)\n\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3cc997243251374477299/bbf053b9c70d4a5697fa5d7f/sub_1762852609419_t1qs6lu5k.py",
+        "similarity_percent": 52.2,
+        "full_code": "a,b=map(int,input().split())\ndef songuyento(n):\n    if n <2:\n        return False\n    for i in range(2,n):\n        if n%i==0:\n            return False\n    return True\ndef tongso(n):\n    s=0\n    while n>0:\n        s+=n%10\n        n//=10\n    return s\nres = -1\nfor num in range(a,b+1):\n    if songuyento(tongso(num)):\n        res = num\n        break\nprint(res)",
+        "highlighted_code": "a,b=map(int,input().split())\ndef songuyento(n):\n    if n &lt;2:\n        return False\n    for i in range(2,n):\n        i<span class='highlight-green'>f n%i==0:\n            return False\n    return True\ndef tongso(n):\n    s=0\n    while n&gt;0:\n        s+=n%10\n        n//=10\n    return s\nres </span>= -1\nfor <span class='highlight-green'>num in range(a,b+1):\n    if songuyento(tongso(num))</span>:\n        res = num\n        break\nprint(res)"
+      },
+      "token_overlap": 95,
+      "max_similarity_percent": 52.2
+    },
+    {
+      "case_id": 27,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3cc997243251374477299/57f804332fbb4e9aafa70968/sub_1763522630278_o4u1qbq42.py",
+        "similarity_percent": 43.96,
+        "full_code": "start, end = map(int, input().split())\n\ndef tong_so(i):\n    tong = 0\n    for char in str(i):\n        tong += int(char)\n    return tong\n\ndef tong_la_snt(tong):\n    if tong < 2:\n        return False\n    for i in range(2, tong):\n        if tong % i == 0:\n            return False\n    return True\n\nfound = False\nfor i in range(start, end + 1):\n    if tong_la_snt(tong_so(i)):\n        print(i)\n        found = True\n        break\n\nif not found:\n    print(\"-1\")\n",
+        "highlighted_code": "start, end = map(int, input().split())\n\ndef tong_so(i):\n    tong = 0\n    for char in str(i):\n        tong += int(char)\n    return tong\n\ndef <span class='highlight-red'>tong_la_snt(tong):\n    if tong &lt; 2:\n        return False\n    for i in ran</span>ge(2, tong):\n        i<span class='highlight-red'>f tong % i == 0:\n            return False\n    return </span>True\n\nfound = False\nfor i in range(start, end + 1):\n    if tong_la_snt(tong_so(i)):\n        <span class='highlight-red'>print(i)\n        found = True\n        break\n\nif not found:\n    print(&#34;-1&#34;</span>)\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3cc997243251374477299/20871fc259cd4e60b3f56a79/sub_1763833663857_f9nbz3r9w.py",
+        "similarity_percent": 45.27,
+        "full_code": "def so_nguyen_to(n):\n    if n < 2:\n        return False\n    for i in range(2, int(n**0.5) + 1):\n        if n % i == 0:\n            return False\n    return True\n\nstart,end=map(int, input().split())\ntim_duoc=False\nfor so_hien_tai in range(start, end+1):\n    tong=0\n    for chu_so in str(so_hien_tai):\n        tong+=int(chu_so)\n    if so_nguyen_to(tong):\n        print(so_hien_tai)\n        tim_duoc=True\n        break\nif not tim_duoc:\n    print(\"-1\")\n\n\n",
+        "highlighted_code": "def <span class='highlight-green'>so_nguyen_to(n):\n    if n &lt; 2:\n        return False\n    for i in ran</span>ge(2, int(n**0.5) + 1):\n        i<span class='highlight-green'>f n % i == 0:\n            return False\n    return </span>True\n\nstart,end=map(int, input().split())\ntim_duoc=False\nfor so_hien_tai in range(start, end+1):\n    tong=0\n    for chu_so in str(so_hien_tai):\n        tong+=int(chu_so)\n    if so_nguyen_to(tong):\n        <span class='highlight-green'>print(so_hien_tai)\n        tim_duoc=True\n        break\nif not tim_duoc:\n    print(&#34;-1&#34;</span>)\n\n\n"
+      },
+      "token_overlap": 91,
+      "max_similarity_percent": 45.27
+    },
+    {
+      "case_id": 28,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3cc997243251374477299/8e19101eb0da4e9a92a17098/sub_1761640059453_cjd8qwaef.py",
+        "similarity_percent": 42.27,
+        "full_code": "def snt(n):\n    if n < 2:\n        return False\n    for i in range(2, int(n**0.5) + 1):\n        if n % i == 0:\n            return False\n    return True\ndef sum_digits(x):\n    tong = 0\n    while x > 0:\n        tong += x % 10\n        x //= 10\n    return tong\nstart, end = map(int, input().split())\nfound = -1\nfor num in range(start, end + 1):\n    if snt(sum_digits(num)):\n        found = num\n        break\nprint(found)\n",
+        "highlighted_code": "<span class='highlight-red'>def snt(n):\n    if n &lt; 2:\n        return False\n    for i in range(2, int(n**0.5) + 1):\n        if n % i == 0:\n            return False\n    return Tr</span>ue\ndef sum_digits(x):\n    tong = 0\n    while x &gt; 0:\n        tong += x % 10\n        x //= 10\n    return tong\nstart, end = map(int, input().split())\nfound = -1\nfor num in range(start, end + 1):\n    if snt(sum_digits(num)):\n        found = num\n        break\nprint(found)\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3cc997243251374477299/de7b795216694f3190b821ba/sub_1764590951255_2cvx9q59h.py",
+        "similarity_percent": 31.78,
+        "full_code": "def sum(a):\n    sum = 0\n    while a>0:\n        sum+=a%10\n        a//=10\n    return sum\ndef nguyen_to(n):\n    if n < 2:\n        return False\n    for i in range(2, int(n**0.5) + 1):\n        if n % i == 0:\n            return False\n    return True\n\nif __name__ == \"__main__\":\n    so=list(map(int,input().split()))\n    a=[]\n    for i in range(so[0],so[1]+1):\n        \n        if nguyen_to(sum(i))==True:\n            a.append(i)\n    if a==[]:\n        print(-1)\n    else:    \n        print(min(a))     \n",
+        "highlighted_code": "def sum(a):\n    sum = 0\n    while a&gt;0:\n        sum+=a%10\n        a//=10\n    return sum\n<span class='highlight-green'>def nguyen_to(n):\n    if n &lt; 2:\n        return False\n    for i in range(2, int(n**0.5) + 1):\n        if n % i == 0:\n            return False\n    return Tr</span>ue\n\nif __name__ == &#34;__main__&#34;:\n    so=list(map(int,input().split()))\n    a=[]\n    for i in range(so[0],so[1]+1):\n        \n        if nguyen_to(sum(i))==True:\n            a.append(i)\n    if a==[]:\n        print(-1)\n    else:    \n        print(min(a))     \n"
+      },
+      "token_overlap": 82,
+      "max_similarity_percent": 42.27
+    },
+    {
+      "case_id": 29,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3cc997243251374477299/c747e87428cc4dbab36bd7aa/sub_1765264902732_fybfjn59h.py",
+        "similarity_percent": 42.08,
+        "full_code": "def prime(a):\n    if a<2:\n        return False\n    for i in range(2, int(a**0.5+1)):\n        if a%i==0:\n            return False\n    return True\ndef tongchuso(b):\n    tong=0\n    while b>0:\n        sohang=b%10\n        tong+=sohang\n        b//=10\n    return tong\nstart, end=map(int, input().split())\nsothoaman=[]\nfor k in range(start, end+1):\n    if prime(tongchuso(k)):\n        sothoaman.append(k)\nif sothoaman==[]:\n    print(-1)\nelse:\n    print(min(sothoaman))\n\n",
+        "highlighted_code": "def prime(a):\n    if a&lt;2:\n        return <span class='highlight-red'>False\n    for i in range(2, int(a**</span>0.5+1)):\n        if a%i==0:\n            return False\n    return True\nd<span class='highlight-red'>ef tongchuso(b):\n    tong=0\n    while b&gt;0:\n        sohang=b%10\n        tong+=sohang\n        b//=10\n    return tong\n</span>start, end<span class='highlight-red'>=map(int, input().split())\nsothoaman=[]\n</span>for k in range(start, end+1):\n    if prime(tongchuso(k)):\n        sothoaman.append(k)\nif sothoaman==[]:\n    print(-1)\nelse:\n    print(min(sothoaman))\n\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3cc997243251374477299/d82933fea814463eb5b029d1/sub_1765631077427_qwecoh1mz.py",
+        "similarity_percent": 42.47,
+        "full_code": "start, end = map(int, input().split())\nlst = []\ndef tong_cso(num):\n    tong = 0\n    while num > 0:\n        chu_so = num % 10\n        tong += chu_so\n        num //= 10\n    return tong\n\n#tạo danh sách số nguyên tố\n\nMAX = 200\nds_snt = [True] * MAX\nds_snt[0] = ds_snt[1] = False\n\nfor i in range(2, int(MAX**0.5) + 1):\n    if ds_snt[i]:\n        for j in range(i*i, MAX, i):\n            ds_snt[j] = False\n\nfor q in range(start, end+1):\n    t = tong_cso(q)\n    if ds_snt[t]:\n        print(q)\n        exit()\nprint(-1)\n",
+        "highlighted_code": "start, end <span class='highlight-green'>= map(int, input().split())\nlst = []\n</span>d<span class='highlight-green'>ef tong_cso(num):\n    tong = 0\n    while num &gt; 0:\n        chu_so = num % 10\n        tong += chu_so\n        num //= 10\n    return tong\n\n#tạo danh sách số nguyên tố\n\n</span>MAX = 200\nds_snt = [True] * MAX\nds_snt[0] = ds_snt[1] = <span class='highlight-green'>False\n\nfor i in range(2, int(MAX**</span>0.5) + 1):\n    if ds_snt[i]:\n        for j in range(i*i, MAX, i):\n            ds_snt[j] = False\n\nfor q in range(start, end+1):\n    t = tong_cso(q)\n    if ds_snt[t]:\n        print(q)\n        exit()\nprint(-1)\n"
+      },
+      "token_overlap": 93,
+      "max_similarity_percent": 42.47
+    },
+    {
+      "case_id": 30,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3cc997243251374477299/57f804332fbb4e9aafa70968/sub_1763522630278_o4u1qbq42.py",
+        "similarity_percent": 40.1,
+        "full_code": "start, end = map(int, input().split())\n\ndef tong_so(i):\n    tong = 0\n    for char in str(i):\n        tong += int(char)\n    return tong\n\ndef tong_la_snt(tong):\n    if tong < 2:\n        return False\n    for i in range(2, tong):\n        if tong % i == 0:\n            return False\n    return True\n\nfound = False\nfor i in range(start, end + 1):\n    if tong_la_snt(tong_so(i)):\n        print(i)\n        found = True\n        break\n\nif not found:\n    print(\"-1\")\n",
+        "highlighted_code": "start, end = map(int, input().split())\n\ndef tong_so(i):\n    tong = 0\n    for char in str(i):\n        tong += int(char)\n    return tong\n\ndef <span class='highlight-red'>tong_la_snt(tong):\n    if tong &lt; 2:\n        return False\n    for i in ran</span>ge(2, tong):\n        i<span class='highlight-red'>f tong % i == 0:\n            return False\n    return Tr</span>ue\n\nfound = False\nfor <span class='highlight-red'>i in range(start, end + 1):\n    if tong_la_snt(tong_so(i))</span>:\n        print(i)\n        found = True\n        break\n\nif not found:\n    print(&#34;-1&#34;)\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3cc997243251374477299/8e19101eb0da4e9a92a17098/sub_1761640059453_cjd8qwaef.py",
+        "similarity_percent": 42.78,
+        "full_code": "def snt(n):\n    if n < 2:\n        return False\n    for i in range(2, int(n**0.5) + 1):\n        if n % i == 0:\n            return False\n    return True\ndef sum_digits(x):\n    tong = 0\n    while x > 0:\n        tong += x % 10\n        x //= 10\n    return tong\nstart, end = map(int, input().split())\nfound = -1\nfor num in range(start, end + 1):\n    if snt(sum_digits(num)):\n        found = num\n        break\nprint(found)\n",
+        "highlighted_code": "def <span class='highlight-green'>snt(n):\n    if n &lt; 2:\n        return False\n    for i in ran</span>ge(2, int(n**0.5) + 1):\n        i<span class='highlight-green'>f n % i == 0:\n            return False\n    return Tr</span>ue\ndef sum_digits(x):\n    tong = 0\n    while x &gt; 0:\n        tong += x % 10\n        x //= 10\n    return tong\nstart, end = map(int, input().split())\nfound = -1\nfor <span class='highlight-green'>num in range(start, end + 1):\n    if snt(sum_digits(num))</span>:\n        found = num\n        break\nprint(found)\n"
+      },
+      "token_overlap": 83,
+      "max_similarity_percent": 42.78
+    },
+    {
+      "case_id": 31,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3cc997243251374477299/c747e87428cc4dbab36bd7aa/sub_1765264902732_fybfjn59h.py",
+        "similarity_percent": 37.56,
+        "full_code": "def prime(a):\n    if a<2:\n        return False\n    for i in range(2, int(a**0.5+1)):\n        if a%i==0:\n            return False\n    return True\ndef tongchuso(b):\n    tong=0\n    while b>0:\n        sohang=b%10\n        tong+=sohang\n        b//=10\n    return tong\nstart, end=map(int, input().split())\nsothoaman=[]\nfor k in range(start, end+1):\n    if prime(tongchuso(k)):\n        sothoaman.append(k)\nif sothoaman==[]:\n    print(-1)\nelse:\n    print(min(sothoaman))\n\n",
+        "highlighted_code": "def <span class='highlight-red'>prime(a):\n    if a&lt;2:\n        return False\n    for i in ran</span>ge(2, int(a**0.5+1)):\n        i<span class='highlight-red'>f a%i==0:\n            return False\n    return Tr</span>ue\ndef tongchuso(b):\n    tong=0\n    while b&gt;0:\n        sohang=b%10\n        tong+=sohang\n        b//=10\n    return tong\nstart, end=map(int, input().split())\nsothoaman=[]\nfor <span class='highlight-red'>k in range(start, end+1):\n    if prime(tongchuso(k))</span>:\n        sothoaman.append(k)\nif sothoaman==[]:\n    print(-1)\nelse:\n    print(min(sothoaman))\n\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3cc997243251374477299/57f804332fbb4e9aafa70968/sub_1763522630278_o4u1qbq42.py",
+        "similarity_percent": 40.1,
+        "full_code": "start, end = map(int, input().split())\n\ndef tong_so(i):\n    tong = 0\n    for char in str(i):\n        tong += int(char)\n    return tong\n\ndef tong_la_snt(tong):\n    if tong < 2:\n        return False\n    for i in range(2, tong):\n        if tong % i == 0:\n            return False\n    return True\n\nfound = False\nfor i in range(start, end + 1):\n    if tong_la_snt(tong_so(i)):\n        print(i)\n        found = True\n        break\n\nif not found:\n    print(\"-1\")\n",
+        "highlighted_code": "start, end = map(int, input().split())\n\ndef tong_so(i):\n    tong = 0\n    for char in str(i):\n        tong += int(char)\n    return tong\n\ndef <span class='highlight-green'>tong_la_snt(tong):\n    if tong &lt; 2:\n        return False\n    for i in ran</span>ge(2, tong):\n        i<span class='highlight-green'>f tong % i == 0:\n            return False\n    return Tr</span>ue\n\nfound = False\nfor <span class='highlight-green'>i in range(start, end + 1):\n    if tong_la_snt(tong_so(i))</span>:\n        print(i)\n        found = True\n        break\n\nif not found:\n    print(&#34;-1&#34;)\n"
+      },
+      "token_overlap": 83,
+      "max_similarity_percent": 40.1
     }
   ]
 }

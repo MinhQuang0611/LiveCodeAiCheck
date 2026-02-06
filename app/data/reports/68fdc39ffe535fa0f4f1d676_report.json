@@ -4,7 +4,25 @@
     "min_token_overlap": 80,
     "min_similarity_percent": 60
   },
-  "total_cases_found": 0,
-  "total_cases_filtered": 0,
-  "cases": []
+  "total_cases_found": 2,
+  "total_cases_filtered": 1,
+  "cases": [
+    {
+      "case_id": 1,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc39ffe535fa0f4f1d676/5f87355370144780b68a992d/sub_1766233034322_suzjfquat.py",
+        "similarity_percent": 36.0,
+        "full_code": "from math import *\n\nn=int(input())\na =[]\ncountrow = [0] * n\ncountcol = [0] * n\ncaphang =0\ncapcot = 0\nfor i in range(n):\n    b = input()\n    a.append(b)\nfor i in range(n):\n    for j in range(n):\n        if a[i][j] == 'C':\n            countrow[i] += 1\n            countcol[j] += 1\nfor i in range(n):\n    if countrow[i] >=2:\n        caphang += countrow[i]*(countrow[i] -1)//2\n    if countcol[i] >=2:\n        capcot += countcol[i]*(countcol[i] -1)//2\nprint(capcot+caphang)\n\n\n",
+        "highlighted_code": "<span class='highlight-red'>from math import *\n\nn=int(input())\na </span>=[]\ncountrow = [0] * n\ncountcol = [0] * n\ncaphang =0\ncapcot = 0\nfo<span class='highlight-red'>r i in range(n):\n    b = input()\n    a.append</span>(b)\nfor i in range(n):\n    for j <span class='highlight-red'>in range(n):\n        if a[i][j] == &#39;C&#39;:\n            </span>countrow[i] += 1\n            countcol[j] += 1\nfor i in range(n):\n    if countrow[i] &gt;=2:\n        caphang += countrow[i]*(countrow[i] -1)//2\n    if countcol[i] &gt;=2:\n        capcot += countcol[i]*(countcol[i] -1)//2\nprint(capcot+caphang)\n\n\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc39ffe535fa0f4f1d676/5f87355370144780b68a992d/sub_1766223382520_oyqkgd4kw.py",
+        "similarity_percent": 41.97,
+        "full_code": "from math import *\n\nn=int(input())\na =[]\nfor i in range(n):\n    b = input()\n    a.append(b)\ncaphang = 0\ncapcot = 0\nfor i in range(n):\n    demh = 0\n    demc = 0\n    for j in range(n):\n        if a[i][j] == 'C':\n            demh += 1\n        if a[j][i] == 'C':\n            demc += 1\n    if demh >=2:\n        caphang += (demh*(demh-1))//2\n    if demc >=2:\n        capcot += (demc*(demc-1))//2\nprint(capcot+caphang)\n\n\n",
+        "highlighted_code": "<span class='highlight-green'>from math import *\n\nn=int(input())\na </span>=[]\nfo<span class='highlight-green'>r i in range(n):\n    b = input()\n    a.append</span>(b)\ncaphang = 0\ncapcot = 0\nfor i in range(n):\n    demh = 0\n    demc = 0\n    for j <span class='highlight-green'>in range(n):\n        if a[i][j] == &#39;C&#39;:\n            </span>demh += 1\n        if a[j][i] == &#39;C&#39;:\n            demc += 1\n    if demh &gt;=2:\n        caphang += (demh*(demh-1))//2\n    if demc &gt;=2:\n        capcot += (demc*(demc-1))//2\nprint(capcot+caphang)\n\n\n"
+      },
+      "token_overlap": 81,
+      "max_similarity_percent": 41.97
+    }
+  ]
 }

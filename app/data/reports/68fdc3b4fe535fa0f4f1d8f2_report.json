@@ -4,7 +4,348 @@
     "min_token_overlap": 80,
     "min_similarity_percent": 60
   },
-  "total_cases_found": 1,
-  "total_cases_filtered": 0,
-  "cases": []
+  "total_cases_found": 315,
+  "total_cases_filtered": 20,
+  "cases": [
+    {
+      "case_id": 1,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b4fe535fa0f4f1d8f2/ac7514dacc0a4c32abe1c656/sub_1764210204952_ztpbl6ju5.py",
+        "similarity_percent": 100.0,
+        "full_code": "t = int(input())\nfor _ in range(t):\n    n = int(input())\n    cnt = 0\n    l = 1\n    sum = 0\n    for r in range(1, n // 2 + 2):\n        sum += r\n        while sum >= n:\n            if sum == n:\n                cnt += 1\n            sum -= l\n            l += 1\n    print(cnt)",
+        "highlighted_code": "<span class='highlight-red'>t = int(input())\nfor _ in range(t):\n    n = int(input())\n    cnt = 0\n    l = 1\n    sum = 0\n    for r in range(1, n // 2 + 2):\n        sum += r\n        while sum &gt;= n:\n            if sum == n:\n                cnt += 1\n            sum -= l\n            l += 1\n    print(cnt</span>)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b4fe535fa0f4f1d8f2/462e338df279467b92058b3f/sub_1764202575644_gdqzqwshr.py",
+        "similarity_percent": 100.0,
+        "full_code": "t = int(input())\nfor _ in range(t):\n    n = int(input())\n    cnt = 0\n    l = 1\n    sum = 0\n    for r in range(1, n // 2 + 2):\n        sum += r\n        while sum >= n:\n            if sum == n:\n                cnt += 1\n            sum -= l\n            l += 1\n    print(cnt)",
+        "highlighted_code": "<span class='highlight-green'>t = int(input())\nfor _ in range(t):\n    n = int(input())\n    cnt = 0\n    l = 1\n    sum = 0\n    for r in range(1, n // 2 + 2):\n        sum += r\n        while sum &gt;= n:\n            if sum == n:\n                cnt += 1\n            sum -= l\n            l += 1\n    print(cnt</span>)"
+      },
+      "token_overlap": 124,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 2,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b4fe535fa0f4f1d8f2/900800f818da4381a34d92a1/sub_1766163760975_wgyk1iia3.py",
+        "similarity_percent": 100.0,
+        "full_code": "t = int(input())\nfor _ in range(t):\n    n = int(input())\n    A =[]\n    B = list(range(1, n))\n    for i in range(n-1):\n        if i == n-1:\n            break\n        N = B[i]\n        for j in range(i+1,n-1):\n            C = [B[i]]\n            N = N + B[j]\n            if N == n:\n                A.append(C)\n            elif N < n:\n                C.append(B[j])\n            else:\n                break\n    print(len(A))            ",
+        "highlighted_code": "<span class='highlight-red'>t = int(input())\nfor _ in range(t):\n    n = int(input())\n    A =[]\n    B = list(range(1, n))\n    for i in range(n-1):\n        if i == n-1:\n            break\n        N = B[i]\n        for j in range(i+1,n-1):\n            C = [B[i]]\n            N = N + B[j]\n            if N == n:\n                A.append(C)\n            elif N &lt; n:\n                C.append(B[j])\n            else:\n                break\n    print(len(A</span>))            "
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b4fe535fa0f4f1d8f2/900800f818da4381a34d92a1/sub_1766163698334_is7u6my9n.py",
+        "similarity_percent": 100.0,
+        "full_code": "t = int(input())\nfor _ in range(t):\n    n = int(input())\n    A =[]\n    B = list(range(1, n))\n    for i in range(n-1):\n        if i == n-1:\n            break\n        N = B[i]\n        for j in range(i+1,n-1):\n            C = [B[i]]\n            N = N + B[j]\n            if N == n:\n                A.append(C)\n            elif N < n:\n                C.append(B[j])\n            else:\n                break\n    print(len(A))            ",
+        "highlighted_code": "<span class='highlight-green'>t = int(input())\nfor _ in range(t):\n    n = int(input())\n    A =[]\n    B = list(range(1, n))\n    for i in range(n-1):\n        if i == n-1:\n            break\n        N = B[i]\n        for j in range(i+1,n-1):\n            C = [B[i]]\n            N = N + B[j]\n            if N == n:\n                A.append(C)\n            elif N &lt; n:\n                C.append(B[j])\n            else:\n                break\n    print(len(A</span>))            "
+      },
+      "token_overlap": 190,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 3,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b4fe535fa0f4f1d8f2/dee5868ab63a43389c38d06b/sub_1763384469644_jzgjthm7r.py",
+        "similarity_percent": 100.0,
+        "full_code": "t = int(input())\nfor s in range(t):\n    n = int(input())\n    odd_divisors = 0\n    for i in range(1, n + 1):\n        if n % i == 0 and i % 2 == 1:\n            odd_divisors += 1\n    print(odd_divisors-1)",
+        "highlighted_code": "<span class='highlight-red'>t = int(input())\nfor s in range(t):\n    n = int(input())\n    odd_divisors = 0\n    for i in range(1, n + 1):\n        if n % i == 0 and i % 2 == 1:\n            odd_divisors += 1\n    print(</span>odd_divisors-1)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b4fe535fa0f4f1d8f2/dee5868ab63a43389c38d06b/sub_1763384373795_rwp5gx374.py",
+        "similarity_percent": 100.0,
+        "full_code": "t = int(input())\nfor s in range(t):\n    n = int(input())\n    odd_divisors = 0\n    for i in range(1, n + 1):\n        if n % i == 0 and i % 2 == 1:\n            odd_divisors += 1\n    print(odd_divisors-1)",
+        "highlighted_code": "<span class='highlight-green'>t = int(input())\nfor s in range(t):\n    n = int(input())\n    odd_divisors = 0\n    for i in range(1, n + 1):\n        if n % i == 0 and i % 2 == 1:\n            odd_divisors += 1\n    print(</span>odd_divisors-1)"
+      },
+      "token_overlap": 93,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 4,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b4fe535fa0f4f1d8f2/0cb0117234e943f4ab1ea21a/sub_1764745987981_okjc34yrg.py",
+        "similarity_percent": 95.83,
+        "full_code": "t = int(input())\nfor i in range(0,t):\n    n = int(input())\n    dem = 0\n    for j in range(1,n):\n        if n % j == 0 or n % j == 0.5:\n            dem += 1\n    print(dem)\n            \n            ",
+        "highlighted_code": "<span class='highlight-red'>t = int(input())\nfor i in range(</span>0,t)<span class='highlight-red'>:\n    n = int(input())\n    dem = 0\n    for j in range(1,n):\n        if n % j == 0 or n % j == 0.5:\n            dem += 1\n    print(dem)\n            \n            </span>"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b4fe535fa0f4f1d8f2/693c0cd724c33437062efd8b/sub_1765603848392_tzftpep9i.py",
+        "similarity_percent": 97.87,
+        "full_code": "n = int(input())\nfor i in range(n):\n    so = int(input())\n    dem = 0\n    for i in range(1,so):\n        if so % i == 0 or so % i == 0.5:\n            dem += 1\n    print(dem)\n",
+        "highlighted_code": "<span class='highlight-green'>n = int(input())\nfor i in range(</span>n)<span class='highlight-green'>:\n    so = int(input())\n    dem = 0\n    for i in range(1,so):\n        if so % i == 0 or so % i == 0.5:\n            dem += 1\n    print(dem)</span>\n"
+      },
+      "token_overlap": 92,
+      "max_similarity_percent": 97.87
+    },
+    {
+      "case_id": 5,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b4fe535fa0f4f1d8f2/156dcfb40c18421d9b64651c/sub_1762571337065_3g1nne698.py",
+        "similarity_percent": 72.82,
+        "full_code": "t = int(input())\nfor _ in range(t):\n    n = int(input())\n    count = 0\n    k = 1\n    while k * (k - 1) // 2 < n:\n        if (n - k * (k - 1) // 2) % k == 0:\n            count += 1\n        k += 1\n    print(count - 1)",
+        "highlighted_code": "t <span class='highlight-red'>= int(input())\nfor _ in range(t):\n    n = int(input()</span>)\n    count = 0\n    k = 1\n    whil<span class='highlight-red'>e k * (k - 1) // 2 &lt; n:\n        if (n - k * (k - 1) // 2) % k == </span>0:\n            count += 1\n        k += 1\n    print(count - 1)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b4fe535fa0f4f1d8f2/5ada8531907842d98f142646/sub_1764163276736_1plty34m3.py",
+        "similarity_percent": 44.12,
+        "full_code": "def count_consecutive(n):\n    count = 0\n    k = 2\n    while k * (k - 1) // 2 < n:\n        if (n - k*(k-1)//2) % k == 0:\n            a = (n - k*(k-1)//2) // k\n            if a >= 1:\n                count += 1\n        k += 1\n    return count\n\ndef main():\n    t = int(input())\n    for _ in range(t):\n        n = int(input())\n        print(count_consecutive(n))\n\nif __name__ == \"__main__\":\n    main()\n",
+        "highlighted_code": "def count_consecutive(n):\n    count = 0\n    k = 2\n    whil<span class='highlight-green'>e k * (k - 1) // 2 &lt; n:\n        if (n - k*(k-1)//2) % k == </span>0:\n            a = (n - k*(k-1)//2) // k\n            if a &gt;= 1:\n                count += 1\n        k += 1\n    return count\n\ndef main():\n    t <span class='highlight-green'>= int(input())\n    for _ in range(t):\n        n = int(input()</span>)\n        print(count_consecutive(n))\n\nif __name__ == &#34;__main__&#34;:\n    main()\n"
+      },
+      "token_overlap": 75,
+      "max_similarity_percent": 72.82
+    },
+    {
+      "case_id": 6,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b4fe535fa0f4f1d8f2/449c44ebafa84f0d8d5b6d0f/sub_1765880249010_tx8voh36e.py",
+        "similarity_percent": 70.95,
+        "full_code": "def tinh_toan(n):\n    cnt = 0\n    tong = 0\n    for i in range(1, (n//2) + 1):\n        j = i\n        while tong < n:\n            tong += j\n            j += 1\n        if tong == n:\n            cnt += 1\n        tong = 0\n    return cnt\nif __name__ == '__main__':\n    t = int(input())\n    for _ in range(t):\n        n = int(input())\n        print(tinh_toan(n))\n        ",
+        "highlighted_code": "def tinh_toan(n):\n    cnt = 0\n    tong <span class='highlight-red'>= 0\n    for i in range(1, (n//2) + 1)</span>:\n        j = i\n        wh<span class='highlight-red'>ile tong &lt; n:\n            tong += j\n            j += 1\n        if tong == n:\n            cnt += </span>1\n        tong = 0\n    return cnt\nif _<span class='highlight-red'>_name__ == &#39;__main__&#39;:\n    t = int(input())\n    for _ in range(t):\n        n = int(input()</span>)\n        print(tinh_toan(n))\n        "
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b4fe535fa0f4f1d8f2/449c44ebafa84f0d8d5b6d0f/sub_1765892386337_gaa8tlm93.py",
+        "similarity_percent": 83.33,
+        "full_code": "if __name__ == '__main__':\n    t = int(input())\n    for _ in range(t):\n        n = int(input())\n        cnt = 0\n        tong = 0\n        for i in range(1, ( n // 2) + 1):\n            while tong < n:\n                tong += i \n                i += 1\n            if tong == n:\n                cnt += 1\n            tong = 0\n        print(cnt)\n",
+        "highlighted_code": "if _<span class='highlight-green'>_name__ == &#39;__main__&#39;:\n    t = int(input())\n    for _ in range(t):\n        n = int(input()</span>)\n        cnt = 0\n        tong <span class='highlight-green'>= 0\n        for i in range(1, ( n // 2) + 1)</span>:\n            wh<span class='highlight-green'>ile tong &lt; n:\n                tong += i \n                i += 1\n            if tong == n:\n                cnt += </span>1\n            tong = 0\n        print(cnt)\n"
+      },
+      "token_overlap": 105,
+      "max_similarity_percent": 83.33
+    },
+    {
+      "case_id": 7,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b4fe535fa0f4f1d8f2/74dabc44f1fb4514b38a1522/sub_1763578773727_pcyopuugt.py",
+        "similarity_percent": 70.43,
+        "full_code": "t = int(input())\nfor i in range(t):\n    n = int(input())\n    x = 0 \n    k = 2 # tổng k số tự nhiên liên tiếp nên k phải có từ 2 số\n    while k * (k + 1) // 2 <= n: # tổng các số tn liên tiếp phải nhỏ hơn số mình nhập nếu vượt quá\n        s = n - k * (k - 1) // 2 #\n        if s % k == 0:\n            a = s // k\n            if a >= 1:\n                x += 1\n        k += 1\n\n    print(x)",
+        "highlighted_code": "<span class='highlight-red'>t = int(input())\nfor i in range(t):\n    n = int(input()</span>)\n    x = 0 \n    k = 2 # tổng k số tự nhiên liên tiếp nên k phải có từ 2 số\n    w<span class='highlight-red'>hile k * (k + 1) // 2 &lt;= n: # tổng các số tn liên tiếp phải nhỏ hơn số mình nhập nếu vượt quá\n        s = n - k * (k - 1) // 2 #\n        if s % k == </span>0:\n            a = s // k\n            if a &gt;= 1:\n                x += 1\n        k += 1\n\n    print(x)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b4fe535fa0f4f1d8f2/bbf053b9c70d4a5697fa5d7f/sub_1764004701246_107qb0wik.py",
+        "similarity_percent": 71.68,
+        "full_code": "t = int(input())\nfor _ in range(t):\n    n = int(input())\n    k = 2\n    count = 0 \n    while k * (k+1)//2 <= n:\n        m = n-k*(k-1)//2\n        if m %k==0 and m > 0:\n            count +=1\n        k += 1\n    print(count)\n",
+        "highlighted_code": "<span class='highlight-green'>t = int(input())\nfor _ in range(t):\n    n = int(input()</span>)\n    k = 2\n    count = 0 \n    w<span class='highlight-green'>hile k * (k+1)//2 &lt;= n:\n        m = n-k*(k-1)//2\n        if m %k==</span>0 and m &gt; 0:\n            count +=1\n        k += 1\n    print(count)\n"
+      },
+      "token_overlap": 81,
+      "max_similarity_percent": 71.68
+    },
+    {
+      "case_id": 8,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b4fe535fa0f4f1d8f2/7aa1b198ccd84d9495faedd6/sub_1767168454946_8pn0ek7h3.py",
+        "similarity_percent": 70.0,
+        "full_code": "t = int(input())\nfor _ in range(t):\n    n = int(input())\n    count = 0\n    i = 1\n    while i * i <= n:\n        if n % i == 0:\n            if i % 2 == 1:\n                count += 1\n            if (n // i) % 2 == 1 and i != n //i:\n                count += 1\n        i += 1\n    print(count - 1)",
+        "highlighted_code": "<span class='highlight-red'>t = int(input())\nfor _ in range(t):\n    n = int(input())\n    count = 0\n    i = 1\n    while i </span>* i &lt;= n<span class='highlight-red'>:\n        if n % i == 0:\n            if i % 2 == 1:\n                count += 1\n            if (n // </span>i) % 2 == 1 and i != n //i:\n                count += 1\n        i += 1\n    print(count - 1)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b4fe535fa0f4f1d8f2/7aa1b198ccd84d9495faedd6/sub_1767167993040_yoxkfc4hg.py",
+        "similarity_percent": 68.29,
+        "full_code": "t = int(input())\nfor _ in range(t):\n    n = int(input())\n    count = 0\n    i = 1\n    while i * 1 <= n:\n        if n % i == 0:\n            if i % 2 == 1:\n                count += 1\n            if (n // 1) % 2 == 1 and i != n // 1:\n                count += 1\n        i += 1\n    print(count - 1)",
+        "highlighted_code": "<span class='highlight-green'>t = int(input())\nfor _ in range(t):\n    n = int(input())\n    count = 0\n    i = 1\n    while i </span>* 1 &lt;= n<span class='highlight-green'>:\n        if n % i == 0:\n            if i % 2 == 1:\n                count += 1\n            if (n // </span>1) % 2 == 1 and i != n // 1:\n                count += 1\n        i += 1\n    print(count - 1)"
+      },
+      "token_overlap": 84,
+      "max_similarity_percent": 70.0
+    },
+    {
+      "case_id": 9,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b4fe535fa0f4f1d8f2/51bbd72f42174843b97698b4/sub_1764517133826_3z771hl5t.py",
+        "similarity_percent": 66.67,
+        "full_code": "a = int(input())\n\nfor i in range(a):\n    count = 0\n    b = int(input())\n    for k in range(2,b):\n        tong = (b - (k * (k-1) / 2)) \n        if tong > 0 and tong % k == 0:\n            count += 1\n    print(count)\n\n",
+        "highlighted_code": "<span class='highlight-red'>a = int(input())\n\nfor i in range(</span>a):\n    count = 0\n    b <span class='highlight-red'>= int(input())\n    for k in range(2,b):\n        tong = (b - (k * (k-1) / </span>2)) \n        if tong &gt; 0 and tong % k == 0:\n            count += 1\n    print(count)\n\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b4fe535fa0f4f1d8f2/b2ca29b246a44abfa28fc9da/sub_1763825154037_po8hco18p.py",
+        "similarity_percent": 47.83,
+        "full_code": "t = int(input())\nfor _ in range(t):\n     n=int(input())\n     s=[]\n     for k in range(2,n):\n         a=(n-(k*(k-1)/2))/k\n         if a>0 and a==int(a):\n             s.append(k)\nprint(len(s))",
+        "highlighted_code": "<span class='highlight-green'>t = int(input())\nfor _ in range(</span>t):\n     n=int(input())\n     s=[]\n     fo<span class='highlight-green'>r k in range(2,n):\n         a=(n-(k*(k-1)/</span>2))/k\n         if a&gt;0 and a==int(a):\n             s.append(k)\nprint(len(s))"
+      },
+      "token_overlap": 70,
+      "max_similarity_percent": 66.67
+    },
+    {
+      "case_id": 10,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b4fe535fa0f4f1d8f2/dee5868ab63a43389c38d06b/sub_1763384469644_jzgjthm7r.py",
+        "similarity_percent": 62.37,
+        "full_code": "t = int(input())\nfor s in range(t):\n    n = int(input())\n    odd_divisors = 0\n    for i in range(1, n + 1):\n        if n % i == 0 and i % 2 == 1:\n            odd_divisors += 1\n    print(odd_divisors-1)",
+        "highlighted_code": "<span class='highlight-red'>t = int(input())\nfor s in range(t):\n    n = int(input())\n    odd_divisors = 0\n    for i in range(</span>1, n + 1):\n        if n % i == 0 and i % 2 == 1:\n            odd_divisors += 1\n    print(odd_divisors-1)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b4fe535fa0f4f1d8f2/693c0cd724c33437062efd8b/sub_1765603848392_tzftpep9i.py",
+        "similarity_percent": 61.7,
+        "full_code": "n = int(input())\nfor i in range(n):\n    so = int(input())\n    dem = 0\n    for i in range(1,so):\n        if so % i == 0 or so % i == 0.5:\n            dem += 1\n    print(dem)\n",
+        "highlighted_code": "<span class='highlight-green'>n = int(input())\nfor i in range(n):\n    so = int(input())\n    dem = 0\n    for i in range(</span>1,so):\n        if so % i == 0 or so % i == 0.5:\n            dem += 1\n    print(dem)\n"
+      },
+      "token_overlap": 58,
+      "max_similarity_percent": 62.37
+    },
+    {
+      "case_id": 11,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b4fe535fa0f4f1d8f2/dee5868ab63a43389c38d06b/sub_1763384373795_rwp5gx374.py",
+        "similarity_percent": 62.37,
+        "full_code": "t = int(input())\nfor s in range(t):\n    n = int(input())\n    odd_divisors = 0\n    for i in range(1, n + 1):\n        if n % i == 0 and i % 2 == 1:\n            odd_divisors += 1\n    print(odd_divisors-1)",
+        "highlighted_code": "<span class='highlight-red'>t = int(input())\nfor s in range(t):\n    n = int(input())\n    odd_divisors = 0\n    for i in range(</span>1, n + 1):\n        if n % i == 0 and i % 2 == 1:\n            odd_divisors += 1\n    print(odd_divisors-1)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b4fe535fa0f4f1d8f2/693c0cd724c33437062efd8b/sub_1765603848392_tzftpep9i.py",
+        "similarity_percent": 61.7,
+        "full_code": "n = int(input())\nfor i in range(n):\n    so = int(input())\n    dem = 0\n    for i in range(1,so):\n        if so % i == 0 or so % i == 0.5:\n            dem += 1\n    print(dem)\n",
+        "highlighted_code": "<span class='highlight-green'>n = int(input())\nfor i in range(n):\n    so = int(input())\n    dem = 0\n    for i in range(</span>1,so):\n        if so % i == 0 or so % i == 0.5:\n            dem += 1\n    print(dem)\n"
+      },
+      "token_overlap": 58,
+      "max_similarity_percent": 62.37
+    },
+    {
+      "case_id": 12,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b4fe535fa0f4f1d8f2/dee5868ab63a43389c38d06b/sub_1763384469644_jzgjthm7r.py",
+        "similarity_percent": 60.22,
+        "full_code": "t = int(input())\nfor s in range(t):\n    n = int(input())\n    odd_divisors = 0\n    for i in range(1, n + 1):\n        if n % i == 0 and i % 2 == 1:\n            odd_divisors += 1\n    print(odd_divisors-1)",
+        "highlighted_code": "<span class='highlight-red'>t = int(input())\nfor s in range(</span>t)<span class='highlight-red'>:\n    n = int(input())\n    odd_divisors = 0\n    for i in range(</span>1, n + 1):\n        if n % i == 0 and i % 2 == 1:\n            odd_divisors += 1\n    print(odd_divisors-1)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b4fe535fa0f4f1d8f2/0cb0117234e943f4ab1ea21a/sub_1764745987981_okjc34yrg.py",
+        "similarity_percent": 58.33,
+        "full_code": "t = int(input())\nfor i in range(0,t):\n    n = int(input())\n    dem = 0\n    for j in range(1,n):\n        if n % j == 0 or n % j == 0.5:\n            dem += 1\n    print(dem)\n            \n            ",
+        "highlighted_code": "<span class='highlight-green'>t = int(input())\nfor i in range(</span>0,t)<span class='highlight-green'>:\n    n = int(input())\n    dem = 0\n    for j in range(</span>1,n):\n        if n % j == 0 or n % j == 0.5:\n            dem += 1\n    print(dem)\n            \n            "
+      },
+      "token_overlap": 56,
+      "max_similarity_percent": 60.22
+    },
+    {
+      "case_id": 13,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b4fe535fa0f4f1d8f2/dee5868ab63a43389c38d06b/sub_1763384373795_rwp5gx374.py",
+        "similarity_percent": 60.22,
+        "full_code": "t = int(input())\nfor s in range(t):\n    n = int(input())\n    odd_divisors = 0\n    for i in range(1, n + 1):\n        if n % i == 0 and i % 2 == 1:\n            odd_divisors += 1\n    print(odd_divisors-1)",
+        "highlighted_code": "<span class='highlight-red'>t = int(input())\nfor s in range(</span>t)<span class='highlight-red'>:\n    n = int(input())\n    odd_divisors = 0\n    for i in range(</span>1, n + 1):\n        if n % i == 0 and i % 2 == 1:\n            odd_divisors += 1\n    print(odd_divisors-1)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b4fe535fa0f4f1d8f2/0cb0117234e943f4ab1ea21a/sub_1764745987981_okjc34yrg.py",
+        "similarity_percent": 58.33,
+        "full_code": "t = int(input())\nfor i in range(0,t):\n    n = int(input())\n    dem = 0\n    for j in range(1,n):\n        if n % j == 0 or n % j == 0.5:\n            dem += 1\n    print(dem)\n            \n            ",
+        "highlighted_code": "<span class='highlight-green'>t = int(input())\nfor i in range(</span>0,t)<span class='highlight-green'>:\n    n = int(input())\n    dem = 0\n    for j in range(</span>1,n):\n        if n % j == 0 or n % j == 0.5:\n            dem += 1\n    print(dem)\n            \n            "
+      },
+      "token_overlap": 56,
+      "max_similarity_percent": 60.22
+    },
+    {
+      "case_id": 14,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b4fe535fa0f4f1d8f2/f0199fcb94bf405a8bf2ca38/sub_1764000711179_jalu333qp.py",
+        "similarity_percent": 58.55,
+        "full_code": "import math\n\nt = int(input())  \n\nfor i in range(t):\n    n = int(input())  \n    count = 0\n    max_k = int((2*n)**0.5) + 1  \n    for k in range(2, max_k):\n        if (n - k*(k-1)//2) % k == 0:\n            a = (n - k*(k-1)//2) // k\n            if a >= 1:\n                count += 1\n    print(count)\n",
+        "highlighted_code": "import math\n\nt <span class='highlight-red'>= int(input())  \n\nfor i in range(t):\n    n = int(input()</span>)  \n    count = 0\n    max_k = int((2*n)**0.5) + 1  \n    for k in range(2, max_k):\n        <span class='highlight-red'>if (n - k*(k-1)//2) % k == 0:\n            a = (n - k*(k-1)//2) // k\n            if a &gt;= 1:\n                </span>count += 1\n    print(count)\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b4fe535fa0f4f1d8f2/5ada8531907842d98f142646/sub_1764163276736_1plty34m3.py",
+        "similarity_percent": 52.35,
+        "full_code": "def count_consecutive(n):\n    count = 0\n    k = 2\n    while k * (k - 1) // 2 < n:\n        if (n - k*(k-1)//2) % k == 0:\n            a = (n - k*(k-1)//2) // k\n            if a >= 1:\n                count += 1\n        k += 1\n    return count\n\ndef main():\n    t = int(input())\n    for _ in range(t):\n        n = int(input())\n        print(count_consecutive(n))\n\nif __name__ == \"__main__\":\n    main()\n",
+        "highlighted_code": "def count_consecutive(n):\n    count = 0\n    k = 2\n    while k * (k - 1) // 2 &lt; n:\n        <span class='highlight-green'>if (n - k*(k-1)//2) % k == 0:\n            a = (n - k*(k-1)//2) // k\n            if a &gt;= 1:\n                </span>count += 1\n        k += 1\n    return count\n\ndef main():\n    t <span class='highlight-green'>= int(input())\n    for _ in range(t):\n        n = int(input()</span>)\n        print(count_consecutive(n))\n\nif __name__ == &#34;__main__&#34;:\n    main()\n"
+      },
+      "token_overlap": 89,
+      "max_similarity_percent": 58.55
+    },
+    {
+      "case_id": 15,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b4fe535fa0f4f1d8f2/606112b8529f48619a01b7f6/sub_1764353309788_3e3h7a113.py",
+        "similarity_percent": 46.03,
+        "full_code": "t = int(input())\nfor i in range (t):\n    n = int(input())\n    count = 0\n    for i in range (1,n//2+2):\n        tong = 0\n        for j in range (i,n//2+2):\n            tong += j\n            if tong > n:\n                break\n            elif tong == n:\n                count += 1\n    print(count)",
+        "highlighted_code": "<span class='highlight-red'>t = int(input())\nfor i in range (t):\n    n = int(input())\n    count = 0\n    for i in range (</span>1,n//2+2):\n        tong = 0\n        for j in range (i,n//2+2):\n            tong += j\n            if tong &gt; n:\n                break\n            elif tong == n:\n                count += 1\n    print(count)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b4fe535fa0f4f1d8f2/dee5868ab63a43389c38d06b/sub_1763384469644_jzgjthm7r.py",
+        "similarity_percent": 62.37,
+        "full_code": "t = int(input())\nfor s in range(t):\n    n = int(input())\n    odd_divisors = 0\n    for i in range(1, n + 1):\n        if n % i == 0 and i % 2 == 1:\n            odd_divisors += 1\n    print(odd_divisors-1)",
+        "highlighted_code": "<span class='highlight-green'>t = int(input())\nfor s in range(t):\n    n = int(input())\n    odd_divisors = 0\n    for i in range(</span>1, n + 1):\n        if n % i == 0 and i % 2 == 1:\n            odd_divisors += 1\n    print(odd_divisors-1)"
+      },
+      "token_overlap": 58,
+      "max_similarity_percent": 62.37
+    },
+    {
+      "case_id": 16,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b4fe535fa0f4f1d8f2/606112b8529f48619a01b7f6/sub_1764353309788_3e3h7a113.py",
+        "similarity_percent": 46.03,
+        "full_code": "t = int(input())\nfor i in range (t):\n    n = int(input())\n    count = 0\n    for i in range (1,n//2+2):\n        tong = 0\n        for j in range (i,n//2+2):\n            tong += j\n            if tong > n:\n                break\n            elif tong == n:\n                count += 1\n    print(count)",
+        "highlighted_code": "<span class='highlight-red'>t = int(input())\nfor i in range (t):\n    n = int(input())\n    count = 0\n    for i in range (</span>1,n//2+2):\n        tong = 0\n        for j in range (i,n//2+2):\n            tong += j\n            if tong &gt; n:\n                break\n            elif tong == n:\n                count += 1\n    print(count)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b4fe535fa0f4f1d8f2/dee5868ab63a43389c38d06b/sub_1763384373795_rwp5gx374.py",
+        "similarity_percent": 62.37,
+        "full_code": "t = int(input())\nfor s in range(t):\n    n = int(input())\n    odd_divisors = 0\n    for i in range(1, n + 1):\n        if n % i == 0 and i % 2 == 1:\n            odd_divisors += 1\n    print(odd_divisors-1)",
+        "highlighted_code": "<span class='highlight-green'>t = int(input())\nfor s in range(t):\n    n = int(input())\n    odd_divisors = 0\n    for i in range(</span>1, n + 1):\n        if n % i == 0 and i % 2 == 1:\n            odd_divisors += 1\n    print(odd_divisors-1)"
+      },
+      "token_overlap": 58,
+      "max_similarity_percent": 62.37
+    },
+    {
+      "case_id": 17,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b4fe535fa0f4f1d8f2/606112b8529f48619a01b7f6/sub_1764353309788_3e3h7a113.py",
+        "similarity_percent": 46.03,
+        "full_code": "t = int(input())\nfor i in range (t):\n    n = int(input())\n    count = 0\n    for i in range (1,n//2+2):\n        tong = 0\n        for j in range (i,n//2+2):\n            tong += j\n            if tong > n:\n                break\n            elif tong == n:\n                count += 1\n    print(count)",
+        "highlighted_code": "<span class='highlight-red'>t = int(input())\nfor i in range (t):\n    n = int(input())\n    count = 0\n    for i in range (</span>1,n//2+2):\n        tong = 0\n        for j in range (i,n//2+2):\n            tong += j\n            if tong &gt; n:\n                break\n            elif tong == n:\n                count += 1\n    print(count)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b4fe535fa0f4f1d8f2/693c0cd724c33437062efd8b/sub_1765603848392_tzftpep9i.py",
+        "similarity_percent": 61.7,
+        "full_code": "n = int(input())\nfor i in range(n):\n    so = int(input())\n    dem = 0\n    for i in range(1,so):\n        if so % i == 0 or so % i == 0.5:\n            dem += 1\n    print(dem)\n",
+        "highlighted_code": "<span class='highlight-green'>n = int(input())\nfor i in range(n):\n    so = int(input())\n    dem = 0\n    for i in range(</span>1,so):\n        if so % i == 0 or so % i == 0.5:\n            dem += 1\n    print(dem)\n"
+      },
+      "token_overlap": 58,
+      "max_similarity_percent": 61.7
+    },
+    {
+      "case_id": 18,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b4fe535fa0f4f1d8f2/20333a895d2643e5b867d5fa/sub_1764259511256_iv9qqfdh4.py",
+        "similarity_percent": 42.19,
+        "full_code": "t = int(input())\nm = 0\n\nfor i in range(t):\n    n = int(input())\n    for j in range(1,n+1):\n        for k in range(1,n+1):\n            if k-j+1>=2:\n                if sum(range(j,k+1)) == n:\n                    m+=1\n\nprint(m)",
+        "highlighted_code": "t = in<span class='highlight-red'>t(input())\nm = 0\n\nfor i in range(t):\n    n = int(input())\n    for j in range(</span>1,n+1):\n        for k in range(1,n+1):\n            if k-j+1&gt;=2:\n                if sum(range(j,k+1)) == n:\n                    m+=1\n\nprint(m)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b4fe535fa0f4f1d8f2/dee5868ab63a43389c38d06b/sub_1763384469644_jzgjthm7r.py",
+        "similarity_percent": 61.29,
+        "full_code": "t = int(input())\nfor s in range(t):\n    n = int(input())\n    odd_divisors = 0\n    for i in range(1, n + 1):\n        if n % i == 0 and i % 2 == 1:\n            odd_divisors += 1\n    print(odd_divisors-1)",
+        "highlighted_code": "t <span class='highlight-green'>= int(input())\nfor s in range(t):\n    n = int(input())\n    odd_divisors = 0\n    for i in range(</span>1, n + 1):\n        if n % i == 0 and i % 2 == 1:\n            odd_divisors += 1\n    print(odd_divisors-1)"
+      },
+      "token_overlap": 54,
+      "max_similarity_percent": 61.29
+    },
+    {
+      "case_id": 19,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b4fe535fa0f4f1d8f2/20333a895d2643e5b867d5fa/sub_1764259511256_iv9qqfdh4.py",
+        "similarity_percent": 42.19,
+        "full_code": "t = int(input())\nm = 0\n\nfor i in range(t):\n    n = int(input())\n    for j in range(1,n+1):\n        for k in range(1,n+1):\n            if k-j+1>=2:\n                if sum(range(j,k+1)) == n:\n                    m+=1\n\nprint(m)",
+        "highlighted_code": "t = in<span class='highlight-red'>t(input())\nm = 0\n\nfor i in range(t):\n    n = int(input())\n    for j in range(</span>1,n+1):\n        for k in range(1,n+1):\n            if k-j+1&gt;=2:\n                if sum(range(j,k+1)) == n:\n                    m+=1\n\nprint(m)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b4fe535fa0f4f1d8f2/dee5868ab63a43389c38d06b/sub_1763384373795_rwp5gx374.py",
+        "similarity_percent": 61.29,
+        "full_code": "t = int(input())\nfor s in range(t):\n    n = int(input())\n    odd_divisors = 0\n    for i in range(1, n + 1):\n        if n % i == 0 and i % 2 == 1:\n            odd_divisors += 1\n    print(odd_divisors-1)",
+        "highlighted_code": "t <span class='highlight-green'>= int(input())\nfor s in range(t):\n    n = int(input())\n    odd_divisors = 0\n    for i in range(</span>1, n + 1):\n        if n % i == 0 and i % 2 == 1:\n            odd_divisors += 1\n    print(odd_divisors-1)"
+      },
+      "token_overlap": 54,
+      "max_similarity_percent": 61.29
+    },
+    {
+      "case_id": 20,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b4fe535fa0f4f1d8f2/20333a895d2643e5b867d5fa/sub_1764259511256_iv9qqfdh4.py",
+        "similarity_percent": 42.19,
+        "full_code": "t = int(input())\nm = 0\n\nfor i in range(t):\n    n = int(input())\n    for j in range(1,n+1):\n        for k in range(1,n+1):\n            if k-j+1>=2:\n                if sum(range(j,k+1)) == n:\n                    m+=1\n\nprint(m)",
+        "highlighted_code": "t = in<span class='highlight-red'>t(input())\nm = 0\n\nfor i in range(t):\n    n = int(input())\n    for j in range(</span>1,n+1):\n        for k in range(1,n+1):\n            if k-j+1&gt;=2:\n                if sum(range(j,k+1)) == n:\n                    m+=1\n\nprint(m)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b4fe535fa0f4f1d8f2/693c0cd724c33437062efd8b/sub_1765603848392_tzftpep9i.py",
+        "similarity_percent": 60.64,
+        "full_code": "n = int(input())\nfor i in range(n):\n    so = int(input())\n    dem = 0\n    for i in range(1,so):\n        if so % i == 0 or so % i == 0.5:\n            dem += 1\n    print(dem)\n",
+        "highlighted_code": "n <span class='highlight-green'>= int(input())\nfor i in range(n):\n    so = int(input())\n    dem = 0\n    for i in range(</span>1,so):\n        if so % i == 0 or so % i == 0.5:\n            dem += 1\n    print(dem)\n"
+      },
+      "token_overlap": 54,
+      "max_similarity_percent": 60.64
+    }
+  ]
 }

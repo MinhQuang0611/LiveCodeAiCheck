@@ -13,15 +13,15 @@
         "path": "/app/app/data/submissions/68e3cd3072432513744772cf/f95120b3a38a461085ef58cb/sub_1762012254891_c5gu161o2.py",
         "similarity_percent": 100.0,
         "full_code": "n = int(input())\nif n % 2 == 0 and n % 3 == 0 and n % 5  == 0:\n    print(\"true\")\nelse:\n    print(\"false\")",
-        "highlighted_code": "<span class='highlight-red'>n = int(input())\nif n % 2 == 0 and n % 3 == 0 and n % 5  == 0:\n    print(&#34;true&#34;)\nelse:\n    print</span>(&#34;false&#34;)"
+        "highlighted_code": "<span class='highlight-red'>n = int(input())\nif n % 2 == 0 and n % 3 == 0 and n % 5  == 0:\n    print(&#34;true&#34;)\nelse:\n    print(&#34;</span>false&#34;)"
       },
       "file2": {
         "path": "/app/app/data/submissions/68e3cd3072432513744772cf/e59c34a1bebb49d29bfb3592/sub_1761990081816_rai6aa70h.py",
         "similarity_percent": 100.0,
         "full_code": "n = int(input())\nif n % 2 == 0 and n % 3 == 0 and n % 5  == 0:\n    print(\"true\")\nelse:\n    print(\"false\")",
-        "highlighted_code": "<span class='highlight-green'>n = int(input())\nif n % 2 == 0 and n % 3 == 0 and n % 5  == 0:\n    print(&#34;true&#34;)\nelse:\n    print</span>(&#34;false&#34;)"
+        "highlighted_code": "<span class='highlight-green'>n = int(input())\nif n % 2 == 0 and n % 3 == 0 and n % 5  == 0:\n    print(&#34;true&#34;)\nelse:\n    print(&#34;</span>false&#34;)"
       },
-      "token_overlap": 61,
+      "token_overlap": 63,
       "max_similarity_percent": 100.0
     }
   ]

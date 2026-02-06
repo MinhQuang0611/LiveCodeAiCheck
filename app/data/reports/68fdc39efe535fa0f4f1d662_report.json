@@ -4,7 +4,7 @@
     "min_token_overlap": 80,
     "min_similarity_percent": 60
   },
-  "total_cases_found": 6,
+  "total_cases_found": 9,
   "total_cases_filtered": 0,
   "cases": []
 }

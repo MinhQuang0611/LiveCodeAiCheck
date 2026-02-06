@@ -4,25 +4,416 @@
     "min_token_overlap": 80,
     "min_similarity_percent": 60
   },
-  "total_cases_found": 1,
-  "total_cases_filtered": 1,
+  "total_cases_found": 34,
+  "total_cases_filtered": 24,
   "cases": [
     {
       "case_id": 1,
       "file1": {
-        "path": "/app/app/data/submissions/68e3c947724325137447711d/8e19101eb0da4e9a92a17098/sub_1761718397250_nshibt191.py",
-        "similarity_percent": 42.96,
-        "full_code": "n = int(input())\nif n < 0:\n    print(\"false\")\nelse:\n    s = str(abs(n))\n    p = len(s)\n    m = abs(n)\n    tong = 0\n    if m == 0:\n        tong = 0\n    while m != 0:\n        dv = m % 10\n        tong += dv ** p\n        m //= 10\n    if tong == n:\n        print(\"true\")\n    else:\n        print(\"false\")\n",
-        "highlighted_code": "n = int(input())\nif n &lt; 0:\n    print(&#34;false&#34;)\nelse:\n    s = str(abs(n))\n    p = len(s)\n    m = abs(n)\n    tong = 0\n    if m == 0:\n        tong = 0\n    <span class='highlight-red'>while m != 0:\n        dv = m % 10\n        tong += dv ** p\n        m //= 10\n    if tong == n:\n        print(&#34;true&#34;)\n    else:\n        print(&#34;</span>false&#34;)\n"
+        "path": "/app/app/data/submissions/68e3c947724325137447711d/bbf053b9c70d4a5697fa5d7f/sub_1762871392209_2wjnp5a97.py",
+        "similarity_percent": 100.0,
+        "full_code": "def check(n):\n    if n <= 0:\n        return False \n    temp = n\n    so_chu_so = 0\n    while temp > 0:\n        so_chu_so += 1\n        temp //= 10\n    temp = n\n    tong = 0\n    while temp > 0:\n        chu_so = temp % 10\n        mu = 1\n        for _ in range(so_chu_so):\n            mu *= chu_so\n        tong += mu\n        temp //= 10\n    if tong == n:\n        return True\n    else:\n        return False\nn = int(input())\nprint(\"true\" if check(n) else \"false\")",
+        "highlighted_code": "<span class='highlight-red'>def check(n):\n    if n &lt;= 0:\n        return False \n    temp = n\n    so_chu_so = 0\n    while temp &gt; 0:\n        so_chu_so += 1\n        temp //= 10\n    temp = n\n    tong = 0\n    while temp &gt; 0:\n        chu_so = temp % 10\n        mu = 1\n        for _ in range(so_chu_so):\n            mu *= chu_so\n        tong += mu\n        temp //= 10\n    if tong == n:\n        return True\n    else:\n        return False\nn = int(input())\nprint(&#34;true&#34; if check(n) else &#34;false</span>&#34;)"
       },
       "file2": {
-        "path": "/app/app/data/submissions/68e3c947724325137447711d/8e19101eb0da4e9a92a17098/sub_1761644203116_t6mdzjcam.py",
-        "similarity_percent": 61.7,
-        "full_code": "n = int(input())\ns = str(n)\np = len(s)\nm = n\ntong = 0\nwhile m != 0:\n    dv = m % 10\n    tong += dv ** p \n    m //= 10\nif tong == n:\n    print(\"true\")\nelse:\n    print(\"false\")",
-        "highlighted_code": "n = int(input())\ns = str(n)\np = len(s)\nm = n\ntong = 0\n<span class='highlight-green'>while m != 0:\n    dv = m % 10\n    tong += dv ** p \n    m //= 10\nif tong == n:\n    print(&#34;true&#34;)\nelse:\n    print(&#34;</span>false&#34;)"
+        "path": "/app/app/data/submissions/68e3c947724325137447711d/bbf053b9c70d4a5697fa5d7f/sub_1762870933051_zt6w84xo0.py",
+        "similarity_percent": 100.0,
+        "full_code": "def check(n):\n    if n <= 0:\n        return False \n    temp = n\n    so_chu_so = 0\n    while temp > 0:\n        so_chu_so += 1\n        temp //= 10\n    temp = n\n    tong = 0\n    while temp > 0:\n        chu_so = temp % 10\n        mu = 1\n        for _ in range(so_chu_so):\n            mu *= chu_so\n        tong += mu\n        temp //= 10\n    if tong == n:\n        return True\n    else:\n        return False\nn = int(input())\nprint(\"true\" if check(n) else \" false\")",
+        "highlighted_code": "<span class='highlight-green'>def check(n):\n    if n &lt;= 0:\n        return False \n    temp = n\n    so_chu_so = 0\n    while temp &gt; 0:\n        so_chu_so += 1\n        temp //= 10\n    temp = n\n    tong = 0\n    while temp &gt; 0:\n        chu_so = temp % 10\n        mu = 1\n        for _ in range(so_chu_so):\n            mu *= chu_so\n        tong += mu\n        temp //= 10\n    if tong == n:\n        return True\n    else:\n        return False\nn = int(input())\nprint(&#34;true&#34; if check(n) else &#34; false</span>&#34;)"
       },
-      "token_overlap": 58,
-      "max_similarity_percent": 61.7
+      "token_overlap": 172,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 2,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3c947724325137447711d/20871fc259cd4e60b3f56a79/sub_1764135628657_qxo3sgn1h.py",
+        "similarity_percent": 100.0,
+        "full_code": "n=input()\nint_n=int(n)\nchu_so=n.split()\nso_luong=len(chu_so)\ntong=0\nfor i in chu_so:\n    tong=tong+(int(i)**so_luong)\nif tong==int_n:\n    print(\"true\")\nelse:\n    print(\"false\")\n",
+        "highlighted_code": "<span class='highlight-red'>n=input()\nint_n=int(n)\nchu_so=n.split()\nso_luong=len(chu_so)\ntong=0\nfor i in chu_so:\n    tong=tong+(int(i)**so_luong)\nif tong==int_n:\n    print(&#34;true&#34;)\nelse:\n    print(&#34;</span>false&#34;)\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3c947724325137447711d/20871fc259cd4e60b3f56a79/sub_1764135473749_jcxr90rs9.py",
+        "similarity_percent": 100.0,
+        "full_code": "n=input()\nint_n=int(n)\nchu_so=n.split()\nso_luong=len(chu_so)\ntong=0\nfor i in chu_so:\n    tong=tong+(int(i)**so_luong)\nif tong==int_n:\n    print(\"true\")\nelse:\n    print(\"false\")\n",
+        "highlighted_code": "<span class='highlight-green'>n=input()\nint_n=int(n)\nchu_so=n.split()\nso_luong=len(chu_so)\ntong=0\nfor i in chu_so:\n    tong=tong+(int(i)**so_luong)\nif tong==int_n:\n    print(&#34;true&#34;)\nelse:\n    print(&#34;</span>false&#34;)\n"
+      },
+      "token_overlap": 87,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 3,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3c947724325137447711d/421caa1638604d7eaa096ee0/sub_1765796792449_lf7sb9ho6.py",
+        "similarity_percent": 100.0,
+        "full_code": "n = int(input())\ndigits = list(map(int,str(n)))\npower = len(digits)\ncount = 0\nfor i in digits:\n    count += i**power\nif n == count:\n    print(\"true\")\nelse:\n    print(\"false\")",
+        "highlighted_code": "<span class='highlight-red'>n = int(input())\ndigits = list(map(int,str(n)))\npower = len(digits)\ncount = 0\nfor i in digits:\n    count += i**power\nif n == count:\n    print(&#34;true&#34;)\nelse:\n    print(&#34;</span>false&#34;)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3c947724325137447711d/421caa1638604d7eaa096ee0/sub_1765010636151_z8v2xy9o6.py",
+        "similarity_percent": 100.0,
+        "full_code": "n = int(input())\n\ndigits = list(map(int, str(n)))\npower = len(digits)\n\ntotal = 0\nfor d in digits:\n    total += d ** power\n\nif total == n:\n    print(\"true\")\nelse:\n    print(\"false\")\n",
+        "highlighted_code": "<span class='highlight-green'>n = int(input())\n\ndigits = list(map(int, str(n)))\npower = len(digits)\n\ntotal = 0\nfor d in digits:\n    total += d ** power\n\nif total == n:\n    print(&#34;true&#34;)\nelse:\n    print(&#34;</span>false&#34;)\n"
+      },
+      "token_overlap": 92,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 4,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3c947724325137447711d/27e30f767b3a46b283cbfec0/sub_1764575056373_uhv0waml0.py",
+        "similarity_percent": 100.0,
+        "full_code": "n = input()\nsum = 0\nlen_n = len(str(n))\nfor i in range(len_n):\n    sum += int(n[i]) ** len_n\nif sum == int(n):\n    print('true')\nelse: print('false')\n",
+        "highlighted_code": "<span class='highlight-red'>n = input()\nsum = 0\nlen_n = len(str(n))\nfor i in range(len_n):\n    sum += int(n[i]) ** len_n\nif sum == int(n):\n    print(&#39;true&#39;)\nelse: print(&#39;false</span>&#39;)\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3c947724325137447711d/27e30f767b3a46b283cbfec0/sub_1764574647881_9qskjlnvi.py",
+        "similarity_percent": 100.0,
+        "full_code": "n = input()\nsum = 0\nlen_n = len(str(n))\nfor i in range(len_n):\n    sum += int(n[i]) ** len_n\nif sum == int(n):\n    print('true')\nelse: print('false')\n",
+        "highlighted_code": "<span class='highlight-green'>n = input()\nsum = 0\nlen_n = len(str(n))\nfor i in range(len_n):\n    sum += int(n[i]) ** len_n\nif sum == int(n):\n    print(&#39;true&#39;)\nelse: print(&#39;false</span>&#39;)\n"
+      },
+      "token_overlap": 96,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 5,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3c947724325137447711d/bbf053b9c70d4a5697fa5d7f/sub_1762871492331_1xjbrcoy1.py",
+        "similarity_percent": 96.79,
+        "full_code": "def check(n):\n    if n <= 0:\n        return False \n    temp = n\n    sochuso = 0\n    while temp > 0:\n        sochuso += 1\n        temp //= 10\n    temp = n\n    tong = 0\n    while temp > 0:\n        chuso = temp % 10\n        mu = chuso**sochuso\n        tong += mu\n        temp //= 10\n    if tong == n:\n        return True\n    else:\n        return False\nn = int(input())\nprint(\"true\" if check(n) else \"false\")",
+        "highlighted_code": "<span class='highlight-red'>def check(n):\n    if n &lt;= 0:\n        return False \n    temp = n\n    sochuso = 0\n    while temp &gt; 0:\n        sochuso += 1\n        temp //= 10\n    temp = n\n    tong = 0\n    while temp &gt; 0:\n        chuso = temp % 10\n        </span>mu = chuso**<span class='highlight-red'>sochuso\n        tong += mu\n        temp //= 10\n    if tong == n:\n        return True\n    else:\n        return False\nn = int(input())\nprint(&#34;true&#34; if check(n) else &#34;false</span>&#34;)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3c947724325137447711d/bbf053b9c70d4a5697fa5d7f/sub_1762870933051_zt6w84xo0.py",
+        "similarity_percent": 87.79,
+        "full_code": "def check(n):\n    if n <= 0:\n        return False \n    temp = n\n    so_chu_so = 0\n    while temp > 0:\n        so_chu_so += 1\n        temp //= 10\n    temp = n\n    tong = 0\n    while temp > 0:\n        chu_so = temp % 10\n        mu = 1\n        for _ in range(so_chu_so):\n            mu *= chu_so\n        tong += mu\n        temp //= 10\n    if tong == n:\n        return True\n    else:\n        return False\nn = int(input())\nprint(\"true\" if check(n) else \" false\")",
+        "highlighted_code": "<span class='highlight-green'>def check(n):\n    if n &lt;= 0:\n        return False \n    temp = n\n    so_chu_so = 0\n    while temp &gt; 0:\n        so_chu_so += 1\n        temp //= 10\n    temp = n\n    tong = 0\n    while temp &gt; 0:\n        chu_so = temp % 10\n        </span>mu = 1\n        for _ in range(so_chu_so):\n            mu *= <span class='highlight-green'>chu_so\n        tong += mu\n        temp //= 10\n    if tong == n:\n        return True\n    else:\n        return False\nn = int(input())\nprint(&#34;true&#34; if check(n) else &#34; false</span>&#34;)"
+      },
+      "token_overlap": 151,
+      "max_similarity_percent": 96.79
+    },
+    {
+      "case_id": 6,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3c947724325137447711d/d82933fea814463eb5b029d1/sub_1764938908439_zehjogjub.py",
+        "similarity_percent": 91.75,
+        "full_code": "n = int(input())\nlst = []\n\nwhile n > 0:\n    a = n % 10\n    lst.append(a)\n    n //= 10\n\ntong = 0\nfor i in lst:\n    tong += int(i)**3\n\nif tong != n:\n    print(\"true\")\nelse:\n    print(\"false\")",
+        "highlighted_code": "<span class='highlight-red'>n = int(input())\nlst = []\n\nwhile n &gt; 0:\n    a = n % 10\n    lst.append(a)\n    n //= 10\n\ntong = 0\nfor i in lst:\n    tong += int</span>(i)**3\n\nif <span class='highlight-red'>tong != n:\n    print(&#34;true&#34;)\nelse:\n    print(&#34;</span>false&#34;)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3c947724325137447711d/d82933fea814463eb5b029d1/sub_1764938997886_daj0bksb8.py",
+        "similarity_percent": 87.25,
+        "full_code": "n = int(input())\nlst = []\n\nwhile n > 0:\n    a = n % 10\n    lst.append(a)\n    n //= 10\n\ntong = 0\nfor i in lst:\n    tong += int(i)**len(lst)\n\nif tong != n:\n    print(\"true\")\nelse:\n    print(\"false\")",
+        "highlighted_code": "<span class='highlight-green'>n = int(input())\nlst = []\n\nwhile n &gt; 0:\n    a = n % 10\n    lst.append(a)\n    n //= 10\n\ntong = 0\nfor i in lst:\n    tong += int</span>(i)**len(lst)\n\nif <span class='highlight-green'>tong != n:\n    print(&#34;true&#34;)\nelse:\n    print(&#34;</span>false&#34;)"
+      },
+      "token_overlap": 89,
+      "max_similarity_percent": 91.75
+    },
+    {
+      "case_id": 7,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3c947724325137447711d/bbf053b9c70d4a5697fa5d7f/sub_1762871392209_2wjnp5a97.py",
+        "similarity_percent": 87.79,
+        "full_code": "def check(n):\n    if n <= 0:\n        return False \n    temp = n\n    so_chu_so = 0\n    while temp > 0:\n        so_chu_so += 1\n        temp //= 10\n    temp = n\n    tong = 0\n    while temp > 0:\n        chu_so = temp % 10\n        mu = 1\n        for _ in range(so_chu_so):\n            mu *= chu_so\n        tong += mu\n        temp //= 10\n    if tong == n:\n        return True\n    else:\n        return False\nn = int(input())\nprint(\"true\" if check(n) else \"false\")",
+        "highlighted_code": "<span class='highlight-red'>def check(n):\n    if n &lt;= 0:\n        return False \n    temp = n\n    so_chu_so = 0\n    while temp &gt; 0:\n        so_chu_so += 1\n        temp //= 10\n    temp = n\n    tong = 0\n    while temp &gt; 0:\n        chu_so = temp % 10\n        </span>mu = 1\n        for _ in range(so_chu_so):\n            mu *= <span class='highlight-red'>chu_so\n        tong += mu\n        temp //= 10\n    if tong == n:\n        return True\n    else:\n        return False\nn = int(input())\nprint(&#34;true&#34; if check(n) else &#34;false</span>&#34;)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3c947724325137447711d/bbf053b9c70d4a5697fa5d7f/sub_1762871492331_1xjbrcoy1.py",
+        "similarity_percent": 96.79,
+        "full_code": "def check(n):\n    if n <= 0:\n        return False \n    temp = n\n    sochuso = 0\n    while temp > 0:\n        sochuso += 1\n        temp //= 10\n    temp = n\n    tong = 0\n    while temp > 0:\n        chuso = temp % 10\n        mu = chuso**sochuso\n        tong += mu\n        temp //= 10\n    if tong == n:\n        return True\n    else:\n        return False\nn = int(input())\nprint(\"true\" if check(n) else \"false\")",
+        "highlighted_code": "<span class='highlight-green'>def check(n):\n    if n &lt;= 0:\n        return False \n    temp = n\n    sochuso = 0\n    while temp &gt; 0:\n        sochuso += 1\n        temp //= 10\n    temp = n\n    tong = 0\n    while temp &gt; 0:\n        chuso = temp % 10\n        </span>mu = chuso**<span class='highlight-green'>sochuso\n        tong += mu\n        temp //= 10\n    if tong == n:\n        return True\n    else:\n        return False\nn = int(input())\nprint(&#34;true&#34; if check(n) else &#34;false</span>&#34;)"
+      },
+      "token_overlap": 151,
+      "max_similarity_percent": 96.79
+    },
+    {
+      "case_id": 8,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3c947724325137447711d/e981f1efc9764aba8b686042/sub_1765117045915_f586x4340.py",
+        "similarity_percent": 87.34,
+        "full_code": "import math\ndef so_arm(x):\n    bien_Phu = x\n    sum_n = 0\n    list_arm = []\n    while bien_Phu != 0:\n        remain = bien_Phu % 10\n        list_arm.append(remain)\n        bien_Phu //= 10\n    len_n = len(list_arm)\n    for i in list_arm:\n        result = i ** len_n\n        sum_n += result\n    return sum_n\nn = int(input())\ncheck = n\nif n > 0:\n    if so_arm(n) == check:\n        print(\"true\")\n    else:\n        print(\"false\")\nelse:\n    print(\"false\")",
+        "highlighted_code": "<span class='highlight-red'>import math\ndef so_arm(x):\n    bien_Phu = x\n    sum_n = 0\n    list_arm = []\n    while bien_Phu != 0:\n        remain = bien_Phu % 10\n        list_arm.append(remain)\n        bien_Phu //= 10\n    len_n = len(list_arm)\n    for i in list_arm:\n        result = i ** len_n\n        sum_n += result\n    return sum_n\nn = int(input())\ncheck = n\nif </span>n &gt; 0:\n    if <span class='highlight-red'>so_arm(n) == check:\n        print(&#34;true&#34;)\n    else:\n        print(&#34;</span>false&#34;)\nelse:\n    print(&#34;false&#34;)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3c947724325137447711d/e981f1efc9764aba8b686042/sub_1765116923302_llov7slua.py",
+        "similarity_percent": 100.0,
+        "full_code": "import math\ndef so_arm(x):\n    bien_Phu = x\n    sum_n = 0\n    list_arm = []\n    while bien_Phu != 0:\n        remain = bien_Phu % 10\n        list_arm.append(remain)\n        bien_Phu //= 10\n    len_n = len(list_arm)\n    for i in list_arm:\n        result = i ** len_n\n        sum_n += result\n    return sum_n\nn = int(input())\ncheck = n\nif so_arm(n) == check:\n    print(\"true\")\nelse:\n    print(\"false\")",
+        "highlighted_code": "<span class='highlight-green'>import math\ndef so_arm(x):\n    bien_Phu = x\n    sum_n = 0\n    list_arm = []\n    while bien_Phu != 0:\n        remain = bien_Phu % 10\n        list_arm.append(remain)\n        bien_Phu //= 10\n    len_n = len(list_arm)\n    for i in list_arm:\n        result = i ** len_n\n        sum_n += result\n    return sum_n\nn = int(input())\ncheck = n\nif </span><span class='highlight-green'>so_arm(n) == check:\n    print(&#34;true&#34;)\nelse:\n    print(&#34;</span>false&#34;)"
+      },
+      "token_overlap": 138,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 9,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3c947724325137447711d/20871fc259cd4e60b3f56a79/sub_1764135750952_2nf8p2q8a.py",
+        "similarity_percent": 86.25,
+        "full_code": "n=input()\nint_n=int(n)\nso_luong=len(n)\ntong=0\nfor i in n:\n    tong=tong+(int(i)**so_luong)\nif tong==int_n:\n    print(\"true\")\nelse:\n    print(\"false\")\n",
+        "highlighted_code": "n=input()\nint_n=<span class='highlight-red'>int(n)\nso_luong=len(n)\ntong=0\nfor i in n:\n    tong=tong+(int(i)**so_luong)\nif tong==int_n:\n    print(&#34;true&#34;)\nelse:\n    print(&#34;</span>false&#34;)\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3c947724325137447711d/20871fc259cd4e60b3f56a79/sub_1764135963987_pfwtu1kag.py",
+        "similarity_percent": 62.73,
+        "full_code": "n=input().strip()\nif not n.isdigit():\n    print(\"false\")\nelse:\n    int_n=int(n)\n    so_luong=len(n)\n    tong=0\n    for i in n:\n        tong=tong+(int(i)**so_luong)\n    if tong==int_n:\n        print(\"true\")\n    else:\n        print(\"false\")\n",
+        "highlighted_code": "n=input().strip()\nif not n.isdigit():\n    print(&#34;false&#34;)\nelse:\n    int_n=<span class='highlight-green'>int(n)\n    so_luong=len(n)\n    tong=0\n    for i in n:\n        tong=tong+(int(i)**so_luong)\n    if tong==int_n:\n        print(&#34;true&#34;)\n    else:\n        print(&#34;</span>false&#34;)\n"
+      },
+      "token_overlap": 69,
+      "max_similarity_percent": 86.25
+    },
+    {
+      "case_id": 10,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3c947724325137447711d/e981f1efc9764aba8b686042/sub_1765117045915_f586x4340.py",
+        "similarity_percent": 82.91,
+        "full_code": "import math\ndef so_arm(x):\n    bien_Phu = x\n    sum_n = 0\n    list_arm = []\n    while bien_Phu != 0:\n        remain = bien_Phu % 10\n        list_arm.append(remain)\n        bien_Phu //= 10\n    len_n = len(list_arm)\n    for i in list_arm:\n        result = i ** len_n\n        sum_n += result\n    return sum_n\nn = int(input())\ncheck = n\nif n > 0:\n    if so_arm(n) == check:\n        print(\"true\")\n    else:\n        print(\"false\")\nelse:\n    print(\"false\")",
+        "highlighted_code": "import math\ndef so_arm(x):\n    bien_Phu = x\n    sum_n = 0\n    list_arm <span class='highlight-red'>= []\n    while bien_Phu != 0:\n        remain = bien_Phu % 10\n        list_arm.append(remain)\n        bien_Phu //= 10\n    len_n = len(</span>list_arm)\n    <span class='highlight-red'>for i in list_arm:\n        result = i ** len_n\n        sum_n += result\n    return sum_n\nn = int(input())\ncheck = n\nif n &gt; 0:\n    if so_arm(n) == check:\n        print(&#34;true&#34;)\n    else:\n        print(&#34;false&#34;)\nelse:\n    print(</span>&#34;false&#34;)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3c947724325137447711d/e981f1efc9764aba8b686042/sub_1765117655837_2wvm7aj1g.py",
+        "similarity_percent": 88.51,
+        "full_code": "def so_arm(x):\n    bien_Phu = x\n    list_arm = []\n    while bien_Phu != 0:\n        remain = bien_Phu % 10\n        list_arm.append(remain)\n        bien_Phu //= 10\n    len_n = len(list_arm)\n    sum_n = 0\n    for i in list_arm:\n        result = i ** len_n\n        sum_n += result\n    return sum_n\nn = int(input())\ncheck = n\nif n > 0:\n    if so_arm(n) == check:\n        print(\"true\")\n    else:\n        print(\"false\")\nelse:\n    print(\"false\")",
+        "highlighted_code": "def so_arm(x):\n    bien_Phu = x\n    list_arm <span class='highlight-green'>= []\n    while bien_Phu != 0:\n        remain = bien_Phu % 10\n        list_arm.append(remain)\n        bien_Phu //= 10\n    len_n = len(</span>list_arm)\n    sum_n = 0\n    <span class='highlight-green'>for i in list_arm:\n        result = i ** len_n\n        sum_n += result\n    return sum_n\nn = int(input())\ncheck = n\nif n &gt; 0:\n    if so_arm(n) == check:\n        print(&#34;true&#34;)\n    else:\n        print(&#34;false&#34;)\nelse:\n    print(</span>&#34;false&#34;)"
+      },
+      "token_overlap": 131,
+      "max_similarity_percent": 88.51
+    },
+    {
+      "case_id": 11,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3c947724325137447711d/d82933fea814463eb5b029d1/sub_1764938997886_daj0bksb8.py",
+        "similarity_percent": 81.37,
+        "full_code": "n = int(input())\nlst = []\n\nwhile n > 0:\n    a = n % 10\n    lst.append(a)\n    n //= 10\n\ntong = 0\nfor i in lst:\n    tong += int(i)**len(lst)\n\nif tong != n:\n    print(\"true\")\nelse:\n    print(\"false\")",
+        "highlighted_code": "n = int(input())\nlst = []\n\n<span class='highlight-red'>while n &gt; 0:\n    a = n % 10\n    lst.append(a)\n    n //= 10\n\ntong = 0\nfor i in lst:\n    tong += int(i)**len(lst)\n\nif tong </span>!<span class='highlight-red'>= n:\n    print(&#34;true&#34;)\nelse:\n    print(&#34;</span>false&#34;)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3c947724325137447711d/d82933fea814463eb5b029d1/sub_1764939199003_eo66lwcly.py",
+        "similarity_percent": 79.05,
+        "full_code": "n = int(input())\nlst = []\ngtri_goc = n\n\nwhile n > 0:\n    a = n % 10\n    lst.append(a)\n    n //= 10\n\ntong = 0\nfor i in lst:\n    tong += int(i)**len(lst)\n\nif tong == gtri_goc:\n    print(\"true\")\nelse:\n    print(\"false\")",
+        "highlighted_code": "n = int(input())\nlst = []\ngtri_goc = n\n\n<span class='highlight-green'>while n &gt; 0:\n    a = n % 10\n    lst.append(a)\n    n //= 10\n\ntong = 0\nfor i in lst:\n    tong += int(i)**len(lst)\n\nif tong </span>=<span class='highlight-green'>= gtri_goc:\n    print(&#34;true&#34;)\nelse:\n    print(&#34;</span>false&#34;)"
+      },
+      "token_overlap": 83,
+      "max_similarity_percent": 81.37
+    },
+    {
+      "case_id": 12,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3c947724325137447711d/e981f1efc9764aba8b686042/sub_1765116923302_llov7slua.py",
+        "similarity_percent": 80.43,
+        "full_code": "import math\ndef so_arm(x):\n    bien_Phu = x\n    sum_n = 0\n    list_arm = []\n    while bien_Phu != 0:\n        remain = bien_Phu % 10\n        list_arm.append(remain)\n        bien_Phu //= 10\n    len_n = len(list_arm)\n    for i in list_arm:\n        result = i ** len_n\n        sum_n += result\n    return sum_n\nn = int(input())\ncheck = n\nif so_arm(n) == check:\n    print(\"true\")\nelse:\n    print(\"false\")",
+        "highlighted_code": "import math\ndef so_arm(x):\n    bien_Phu = x\n    sum_n = 0\n    list_arm <span class='highlight-red'>= []\n    while bien_Phu != 0:\n        remain = bien_Phu % 10\n        list_arm.append(remain)\n        bien_Phu //= 10\n    len_n = len(</span>list_arm)\n    <span class='highlight-red'>for i in list_arm:\n        result = i ** len_n\n        sum_n += result\n    return sum_n\nn = int(input())\ncheck = n\nif </span><span class='highlight-red'>so_arm(n) == check:\n    print(&#34;true&#34;)\nelse:\n    print(&#34;</span>false&#34;)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3c947724325137447711d/e981f1efc9764aba8b686042/sub_1765117655837_2wvm7aj1g.py",
+        "similarity_percent": 75.0,
+        "full_code": "def so_arm(x):\n    bien_Phu = x\n    list_arm = []\n    while bien_Phu != 0:\n        remain = bien_Phu % 10\n        list_arm.append(remain)\n        bien_Phu //= 10\n    len_n = len(list_arm)\n    sum_n = 0\n    for i in list_arm:\n        result = i ** len_n\n        sum_n += result\n    return sum_n\nn = int(input())\ncheck = n\nif n > 0:\n    if so_arm(n) == check:\n        print(\"true\")\n    else:\n        print(\"false\")\nelse:\n    print(\"false\")",
+        "highlighted_code": "def so_arm(x):\n    bien_Phu = x\n    list_arm <span class='highlight-green'>= []\n    while bien_Phu != 0:\n        remain = bien_Phu % 10\n        list_arm.append(remain)\n        bien_Phu //= 10\n    len_n = len(</span>list_arm)\n    sum_n = 0\n    <span class='highlight-green'>for i in list_arm:\n        result = i ** len_n\n        sum_n += result\n    return sum_n\nn = int(input())\ncheck = n\nif </span>n &gt; 0:\n    if <span class='highlight-green'>so_arm(n) == check:\n        print(&#34;true&#34;)\n    else:\n        print(&#34;</span>false&#34;)\nelse:\n    print(&#34;false&#34;)"
+      },
+      "token_overlap": 111,
+      "max_similarity_percent": 80.43
+    },
+    {
+      "case_id": 13,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3c947724325137447711d/e981f1efc9764aba8b686042/sub_1765116541541_efhq04bh4.py",
+        "similarity_percent": 75.54,
+        "full_code": "import math\ndef armstronG(x):\n    sum_n = 0\n    list_arm = []\n    while x != 0:\n        remain = x % 10\n        list_arm.append(remain)\n        x //= 10\n    len_n = len(list_arm)\n    for i in list_arm:\n        result = math.pow(i, len_n)\n        sum_n += result\n    return sum_n\nn = int(input())\ncheck = n\nif armstronG(n) == check:\n    print(\"true\")\nelse:\n    print(\"false\")",
+        "highlighted_code": "import math\ndef armstronG(x):\n    sum_n <span class='highlight-red'>= 0\n    list_arm = []\n    while x != 0:\n        remain = x % 10\n        list_arm.append(remain)\n        x //= 10\n    len_n = len(list_arm)\n    for i in list_arm:\n        </span>result = math.pow(i, len_n)\n        sum_n += result\n    r<span class='highlight-red'>eturn sum_n\nn = int(input())\ncheck = n\nif armstronG(n) == check:\n    print(&#34;true&#34;)\nelse:\n    print(&#34;</span>false&#34;)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3c947724325137447711d/e981f1efc9764aba8b686042/sub_1765116923302_llov7slua.py",
+        "similarity_percent": 76.09,
+        "full_code": "import math\ndef so_arm(x):\n    bien_Phu = x\n    sum_n = 0\n    list_arm = []\n    while bien_Phu != 0:\n        remain = bien_Phu % 10\n        list_arm.append(remain)\n        bien_Phu //= 10\n    len_n = len(list_arm)\n    for i in list_arm:\n        result = i ** len_n\n        sum_n += result\n    return sum_n\nn = int(input())\ncheck = n\nif so_arm(n) == check:\n    print(\"true\")\nelse:\n    print(\"false\")",
+        "highlighted_code": "import math\ndef so_arm(x):\n    bien_Phu = x\n    sum_n <span class='highlight-green'>= 0\n    list_arm = []\n    while bien_Phu != 0:\n        remain = bien_Phu % 10\n        list_arm.append(remain)\n        bien_Phu //= 10\n    len_n = len(list_arm)\n    for i in list_arm:\n        </span>result = i ** len_n\n        sum_n += result\n    r<span class='highlight-green'>eturn sum_n\nn = int(input())\ncheck = n\nif so_arm(n) == check:\n    print(&#34;true&#34;)\nelse:\n    print(&#34;</span>false&#34;)"
+      },
+      "token_overlap": 105,
+      "max_similarity_percent": 76.09
+    },
+    {
+      "case_id": 14,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3c947724325137447711d/20871fc259cd4e60b3f56a79/sub_1764135628657_qxo3sgn1h.py",
+        "similarity_percent": 73.56,
+        "full_code": "n=input()\nint_n=int(n)\nchu_so=n.split()\nso_luong=len(chu_so)\ntong=0\nfor i in chu_so:\n    tong=tong+(int(i)**so_luong)\nif tong==int_n:\n    print(\"true\")\nelse:\n    print(\"false\")\n",
+        "highlighted_code": "n=input()\nint_n=int(n)\nchu_so=n.split(<span class='highlight-red'>)\nso_luong=len(chu_so)\ntong=0\nfor i in chu_so:\n    tong=tong+(int(i)**so_luong)\nif tong==int_n:\n    print(&#34;true&#34;)\nelse:\n    print(&#34;</span>false&#34;)\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3c947724325137447711d/20871fc259cd4e60b3f56a79/sub_1764135750952_2nf8p2q8a.py",
+        "similarity_percent": 80.0,
+        "full_code": "n=input()\nint_n=int(n)\nso_luong=len(n)\ntong=0\nfor i in n:\n    tong=tong+(int(i)**so_luong)\nif tong==int_n:\n    print(\"true\")\nelse:\n    print(\"false\")\n",
+        "highlighted_code": "n=input()\nint_n=int(n<span class='highlight-green'>)\nso_luong=len(n)\ntong=0\nfor i in n:\n    tong=tong+(int(i)**so_luong)\nif tong==int_n:\n    print(&#34;true&#34;)\nelse:\n    print(&#34;</span>false&#34;)\n"
+      },
+      "token_overlap": 64,
+      "max_similarity_percent": 80.0
+    },
+    {
+      "case_id": 15,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3c947724325137447711d/20871fc259cd4e60b3f56a79/sub_1764135628657_qxo3sgn1h.py",
+        "similarity_percent": 73.56,
+        "full_code": "n=input()\nint_n=int(n)\nchu_so=n.split()\nso_luong=len(chu_so)\ntong=0\nfor i in chu_so:\n    tong=tong+(int(i)**so_luong)\nif tong==int_n:\n    print(\"true\")\nelse:\n    print(\"false\")\n",
+        "highlighted_code": "n=input()\nint_n=int(n)\nchu_so=n.split(<span class='highlight-red'>)\nso_luong=len(chu_so)\ntong=0\nfor i in chu_so:\n    tong=tong+(int(i)**so_luong)\nif tong==int_n:\n    print(&#34;true&#34;)\nelse:\n    print(&#34;</span>false&#34;)\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3c947724325137447711d/20871fc259cd4e60b3f56a79/sub_1764135963987_pfwtu1kag.py",
+        "similarity_percent": 58.18,
+        "full_code": "n=input().strip()\nif not n.isdigit():\n    print(\"false\")\nelse:\n    int_n=int(n)\n    so_luong=len(n)\n    tong=0\n    for i in n:\n        tong=tong+(int(i)**so_luong)\n    if tong==int_n:\n        print(\"true\")\n    else:\n        print(\"false\")\n",
+        "highlighted_code": "n=input().strip()\nif not n.isdigit():\n    print(&#34;false&#34;)\nelse:\n    int_n=int(n<span class='highlight-green'>)\n    so_luong=len(n)\n    tong=0\n    for i in n:\n        tong=tong+(int(i)**so_luong)\n    if tong==int_n:\n        print(&#34;true&#34;)\n    else:\n        print(&#34;</span>false&#34;)\n"
+      },
+      "token_overlap": 64,
+      "max_similarity_percent": 73.56
+    },
+    {
+      "case_id": 16,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3c947724325137447711d/20871fc259cd4e60b3f56a79/sub_1764135473749_jcxr90rs9.py",
+        "similarity_percent": 73.56,
+        "full_code": "n=input()\nint_n=int(n)\nchu_so=n.split()\nso_luong=len(chu_so)\ntong=0\nfor i in chu_so:\n    tong=tong+(int(i)**so_luong)\nif tong==int_n:\n    print(\"true\")\nelse:\n    print(\"false\")\n",
+        "highlighted_code": "n=input()\nint_n=int(n)\nchu_so=n.split(<span class='highlight-red'>)\nso_luong=len(chu_so)\ntong=0\nfor i in chu_so:\n    tong=tong+(int(i)**so_luong)\nif tong==int_n:\n    print(&#34;true&#34;)\nelse:\n    print(&#34;</span>false&#34;)\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3c947724325137447711d/20871fc259cd4e60b3f56a79/sub_1764135750952_2nf8p2q8a.py",
+        "similarity_percent": 80.0,
+        "full_code": "n=input()\nint_n=int(n)\nso_luong=len(n)\ntong=0\nfor i in n:\n    tong=tong+(int(i)**so_luong)\nif tong==int_n:\n    print(\"true\")\nelse:\n    print(\"false\")\n",
+        "highlighted_code": "n=input()\nint_n=int(n<span class='highlight-green'>)\nso_luong=len(n)\ntong=0\nfor i in n:\n    tong=tong+(int(i)**so_luong)\nif tong==int_n:\n    print(&#34;true&#34;)\nelse:\n    print(&#34;</span>false&#34;)\n"
+      },
+      "token_overlap": 64,
+      "max_similarity_percent": 80.0
+    },
+    {
+      "case_id": 17,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3c947724325137447711d/20871fc259cd4e60b3f56a79/sub_1764135473749_jcxr90rs9.py",
+        "similarity_percent": 73.56,
+        "full_code": "n=input()\nint_n=int(n)\nchu_so=n.split()\nso_luong=len(chu_so)\ntong=0\nfor i in chu_so:\n    tong=tong+(int(i)**so_luong)\nif tong==int_n:\n    print(\"true\")\nelse:\n    print(\"false\")\n",
+        "highlighted_code": "n=input()\nint_n=int(n)\nchu_so=n.split(<span class='highlight-red'>)\nso_luong=len(chu_so)\ntong=0\nfor i in chu_so:\n    tong=tong+(int(i)**so_luong)\nif tong==int_n:\n    print(&#34;true&#34;)\nelse:\n    print(&#34;</span>false&#34;)\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3c947724325137447711d/20871fc259cd4e60b3f56a79/sub_1764135963987_pfwtu1kag.py",
+        "similarity_percent": 58.18,
+        "full_code": "n=input().strip()\nif not n.isdigit():\n    print(\"false\")\nelse:\n    int_n=int(n)\n    so_luong=len(n)\n    tong=0\n    for i in n:\n        tong=tong+(int(i)**so_luong)\n    if tong==int_n:\n        print(\"true\")\n    else:\n        print(\"false\")\n",
+        "highlighted_code": "n=input().strip()\nif not n.isdigit():\n    print(&#34;false&#34;)\nelse:\n    int_n=int(n<span class='highlight-green'>)\n    so_luong=len(n)\n    tong=0\n    for i in n:\n        tong=tong+(int(i)**so_luong)\n    if tong==int_n:\n        print(&#34;true&#34;)\n    else:\n        print(&#34;</span>false&#34;)\n"
+      },
+      "token_overlap": 64,
+      "max_similarity_percent": 73.56
+    },
+    {
+      "case_id": 18,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3c947724325137447711d/c747e87428cc4dbab36bd7aa/sub_1764130260338_61xpjklsh.py",
+        "similarity_percent": 73.4,
+        "full_code": "n=int(input())\nn0=abs(n)\ntong=0\nwhile n != 0:\n    b=n%10\n    n=n//10\n    tong+=b**len(str(n0))\nif n0==tong:\n    print('true')\nelse:\n    print('false')\n\n",
+        "highlighted_code": "n=int(input())\nn0=abs(n)\ntong=0\n<span class='highlight-red'>while n != 0:\n    b=n%10\n    n=n//10\n    tong+=b**len(str(n0))\nif n0==tong:\n    print(&#39;true&#39;)\nelse:\n    print(&#39;</span>false&#39;)\n\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3c947724325137447711d/c747e87428cc4dbab36bd7aa/sub_1764130064009_4jhg9k6rn.py",
+        "similarity_percent": 77.53,
+        "full_code": "n=int(input())\nn0=n\ntong=0\nwhile n != 0:\n    b=n%10\n    n=n//10\n    tong+=b**len(str(n0))\nif n0==tong:\n    print('true')\nelse:\n    print('false')\n\n",
+        "highlighted_code": "n=int(input())\nn0=n\ntong=0\n<span class='highlight-green'>while n != 0:\n    b=n%10\n    n=n//10\n    tong+=b**len(str(n0))\nif n0==tong:\n    print(&#39;true&#39;)\nelse:\n    print(&#39;</span>false&#39;)\n\n"
+      },
+      "token_overlap": 69,
+      "max_similarity_percent": 77.53
+    },
+    {
+      "case_id": 19,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3c947724325137447711d/d82933fea814463eb5b029d1/sub_1764938908439_zehjogjub.py",
+        "similarity_percent": 71.13,
+        "full_code": "n = int(input())\nlst = []\n\nwhile n > 0:\n    a = n % 10\n    lst.append(a)\n    n //= 10\n\ntong = 0\nfor i in lst:\n    tong += int(i)**3\n\nif tong != n:\n    print(\"true\")\nelse:\n    print(\"false\")",
+        "highlighted_code": "n = int(input())\nlst = []\n\n<span class='highlight-red'>while n &gt; 0:\n    a = n % 10\n    lst.append(a)\n    n //= 10\n\ntong = 0\nfor i in lst:\n    tong += int</span>(i)**3\n\nif tong !<span class='highlight-red'>= n:\n    print(&#34;true&#34;)\nelse:\n    print(&#34;</span>false&#34;)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3c947724325137447711d/d82933fea814463eb5b029d1/sub_1764939199003_eo66lwcly.py",
+        "similarity_percent": 65.71,
+        "full_code": "n = int(input())\nlst = []\ngtri_goc = n\n\nwhile n > 0:\n    a = n % 10\n    lst.append(a)\n    n //= 10\n\ntong = 0\nfor i in lst:\n    tong += int(i)**len(lst)\n\nif tong == gtri_goc:\n    print(\"true\")\nelse:\n    print(\"false\")",
+        "highlighted_code": "n = int(input())\nlst = []\ngtri_goc = n\n\n<span class='highlight-green'>while n &gt; 0:\n    a = n % 10\n    lst.append(a)\n    n //= 10\n\ntong = 0\nfor i in lst:\n    tong += int</span>(i)**len(lst)\n\nif tong =<span class='highlight-green'>= gtri_goc:\n    print(&#34;true&#34;)\nelse:\n    print(&#34;</span>false&#34;)"
+      },
+      "token_overlap": 69,
+      "max_similarity_percent": 71.13
+    },
+    {
+      "case_id": 20,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3c947724325137447711d/e981f1efc9764aba8b686042/sub_1765117045915_f586x4340.py",
+        "similarity_percent": 66.46,
+        "full_code": "import math\ndef so_arm(x):\n    bien_Phu = x\n    sum_n = 0\n    list_arm = []\n    while bien_Phu != 0:\n        remain = bien_Phu % 10\n        list_arm.append(remain)\n        bien_Phu //= 10\n    len_n = len(list_arm)\n    for i in list_arm:\n        result = i ** len_n\n        sum_n += result\n    return sum_n\nn = int(input())\ncheck = n\nif n > 0:\n    if so_arm(n) == check:\n        print(\"true\")\n    else:\n        print(\"false\")\nelse:\n    print(\"false\")",
+        "highlighted_code": "import math\ndef so_arm(x):\n    bien_Phu = x\n    sum_n <span class='highlight-red'>= 0\n    list_arm = []\n    while bien_Phu != 0:\n        remain = bien_Phu % 10\n        list_arm.append(remain)\n        bien_Phu //= 10\n    len_n = len(list_arm)\n    for i in list_arm:\n        </span>result = i ** len_n\n        sum_n += result\n    r<span class='highlight-red'>eturn sum_n\nn = int(input())\ncheck = n\nif </span>n &gt; 0:\n    if <span class='highlight-red'>so_arm(n) == check:\n        print(&#34;true&#34;)\n    else:\n        print(&#34;</span>false&#34;)\nelse:\n    print(&#34;false&#34;)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3c947724325137447711d/e981f1efc9764aba8b686042/sub_1765116541541_efhq04bh4.py",
+        "similarity_percent": 75.54,
+        "full_code": "import math\ndef armstronG(x):\n    sum_n = 0\n    list_arm = []\n    while x != 0:\n        remain = x % 10\n        list_arm.append(remain)\n        x //= 10\n    len_n = len(list_arm)\n    for i in list_arm:\n        result = math.pow(i, len_n)\n        sum_n += result\n    return sum_n\nn = int(input())\ncheck = n\nif armstronG(n) == check:\n    print(\"true\")\nelse:\n    print(\"false\")",
+        "highlighted_code": "import math\ndef armstronG(x):\n    sum_n <span class='highlight-green'>= 0\n    list_arm = []\n    while x != 0:\n        remain = x % 10\n        list_arm.append(remain)\n        x //= 10\n    len_n = len(list_arm)\n    for i in list_arm:\n        </span>result = math.pow(i, len_n)\n        sum_n += result\n    r<span class='highlight-green'>eturn sum_n\nn = int(input())\ncheck = n\nif </span><span class='highlight-green'>armstronG(n) == check:\n    print(&#34;true&#34;)\nelse:\n    print(&#34;</span>false&#34;)"
+      },
+      "token_overlap": 105,
+      "max_similarity_percent": 75.54
+    },
+    {
+      "case_id": 21,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3c947724325137447711d/e981f1efc9764aba8b686042/sub_1765117655837_2wvm7aj1g.py",
+        "similarity_percent": 66.22,
+        "full_code": "def so_arm(x):\n    bien_Phu = x\n    list_arm = []\n    while bien_Phu != 0:\n        remain = bien_Phu % 10\n        list_arm.append(remain)\n        bien_Phu //= 10\n    len_n = len(list_arm)\n    sum_n = 0\n    for i in list_arm:\n        result = i ** len_n\n        sum_n += result\n    return sum_n\nn = int(input())\ncheck = n\nif n > 0:\n    if so_arm(n) == check:\n        print(\"true\")\n    else:\n        print(\"false\")\nelse:\n    print(\"false\")",
+        "highlighted_code": "<span class='highlight-red'>def so_arm(x):\n    bien_Phu = x\n    list_arm = []\n    while bien_Phu != 0:\n        remain = bien_Phu % 10\n        list_arm.append(remain)\n        bien_Phu //= 10\n    len_n = len(list_arm)\n    sum_n = 0\n    for i in list_arm:\n        result = i ** len_n\n        sum_n += result\n    return sum_n\nn = int(input())\ncheck = n\nif </span>n &gt; 0:\n    if so_arm(n) == check:\n        print(&#34;true&#34;)\n    else:\n        print(&#34;false&#34;)\nelse:\n    print(&#34;false&#34;)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3c947724325137447711d/e981f1efc9764aba8b686042/sub_1765117408000_c1bhe9a54.py",
+        "similarity_percent": 72.59,
+        "full_code": "def so_arm(x):\n    bien_Phu = x\n    list_arm = []\n    while bien_Phu != 0:\n        remain = bien_Phu % 10\n        list_arm.append(remain)\n        bien_Phu //= 10\n    len_n = len(list_arm)\n    sum_n = 0\n    for i in list_arm:\n        result = i ** len_n\n        sum_n += result\n    return sum_n\nn = int(input())\ncheck = n\nif so_arm(n) == check and n >= 0:\n    print(\"true\")\nelse:\n    print(\"false\")\n",
+        "highlighted_code": "<span class='highlight-green'>def so_arm(x):\n    bien_Phu = x\n    list_arm = []\n    while bien_Phu != 0:\n        remain = bien_Phu % 10\n        list_arm.append(remain)\n        bien_Phu //= 10\n    len_n = len(list_arm)\n    sum_n = 0\n    for i in list_arm:\n        result = i ** len_n\n        sum_n += result\n    return sum_n\nn = int(input())\ncheck = n\nif </span>so_arm(n) == check and n &gt;= 0:\n    print(&#34;true&#34;)\nelse:\n    print(&#34;false&#34;)\n"
+      },
+      "token_overlap": 98,
+      "max_similarity_percent": 72.59
+    },
+    {
+      "case_id": 22,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3c947724325137447711d/e981f1efc9764aba8b686042/sub_1765116541541_efhq04bh4.py",
+        "similarity_percent": 66.19,
+        "full_code": "import math\ndef armstronG(x):\n    sum_n = 0\n    list_arm = []\n    while x != 0:\n        remain = x % 10\n        list_arm.append(remain)\n        x //= 10\n    len_n = len(list_arm)\n    for i in list_arm:\n        result = math.pow(i, len_n)\n        sum_n += result\n    return sum_n\nn = int(input())\ncheck = n\nif armstronG(n) == check:\n    print(\"true\")\nelse:\n    print(\"false\")",
+        "highlighted_code": "import math\ndef armstronG(x):\n    sum_n = 0\n    list_arm <span class='highlight-red'>= []\n    while x != 0:\n        remain = x % 10\n        list_arm.append(remain)\n        x //= 10\n    len_n = len(</span>list_arm)\n    for i in list_arm:\n        result = math.pow(i, len_n)\n        sum_n += result\n    r<span class='highlight-red'>eturn sum_n\nn = int(input())\ncheck = n\nif </span><span class='highlight-red'>armstronG(n) == check:\n    print(&#34;true&#34;)\nelse:\n    print(&#34;</span>false&#34;)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3c947724325137447711d/e981f1efc9764aba8b686042/sub_1765117655837_2wvm7aj1g.py",
+        "similarity_percent": 62.16,
+        "full_code": "def so_arm(x):\n    bien_Phu = x\n    list_arm = []\n    while bien_Phu != 0:\n        remain = bien_Phu % 10\n        list_arm.append(remain)\n        bien_Phu //= 10\n    len_n = len(list_arm)\n    sum_n = 0\n    for i in list_arm:\n        result = i ** len_n\n        sum_n += result\n    return sum_n\nn = int(input())\ncheck = n\nif n > 0:\n    if so_arm(n) == check:\n        print(\"true\")\n    else:\n        print(\"false\")\nelse:\n    print(\"false\")",
+        "highlighted_code": "def so_arm(x):\n    bien_Phu = x\n    list_arm <span class='highlight-green'>= []\n    while bien_Phu != 0:\n        remain = bien_Phu % 10\n        list_arm.append(remain)\n        bien_Phu //= 10\n    len_n = len(</span>list_arm)\n    sum_n = 0\n    for i in list_arm:\n        result = i ** len_n\n        sum_n += result\n    r<span class='highlight-green'>eturn sum_n\nn = int(input())\ncheck = n\nif </span>n &gt; 0:\n    if <span class='highlight-green'>so_arm(n) == check:\n        print(&#34;true&#34;)\n    else:\n        print(&#34;</span>false&#34;)\nelse:\n    print(&#34;false&#34;)"
+      },
+      "token_overlap": 92,
+      "max_similarity_percent": 66.19
+    },
+    {
+      "case_id": 23,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3c947724325137447711d/e981f1efc9764aba8b686042/sub_1765116923302_llov7slua.py",
+        "similarity_percent": 63.77,
+        "full_code": "import math\ndef so_arm(x):\n    bien_Phu = x\n    sum_n = 0\n    list_arm = []\n    while bien_Phu != 0:\n        remain = bien_Phu % 10\n        list_arm.append(remain)\n        bien_Phu //= 10\n    len_n = len(list_arm)\n    for i in list_arm:\n        result = i ** len_n\n        sum_n += result\n    return sum_n\nn = int(input())\ncheck = n\nif so_arm(n) == check:\n    print(\"true\")\nelse:\n    print(\"false\")",
+        "highlighted_code": "import math\ndef so_arm(x):\n    bien_Phu = x\n    sum_n = 0\n    list_arm <span class='highlight-red'>= []\n    while bien_Phu != 0:\n        remain = bien_Phu % 10\n        list_arm.append(remain)\n        bien_Phu //= 10\n    len_n = len(</span>list_arm)\n    <span class='highlight-red'>for i in list_arm:\n        result = i ** len_n\n        sum_n += result\n    return sum_n\nn = int(input())\ncheck = n\nif so_arm(n) == check</span>:\n    print(&#34;true&#34;)\nelse:\n    print(&#34;false&#34;)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3c947724325137447711d/e981f1efc9764aba8b686042/sub_1765117408000_c1bhe9a54.py",
+        "similarity_percent": 65.19,
+        "full_code": "def so_arm(x):\n    bien_Phu = x\n    list_arm = []\n    while bien_Phu != 0:\n        remain = bien_Phu % 10\n        list_arm.append(remain)\n        bien_Phu //= 10\n    len_n = len(list_arm)\n    sum_n = 0\n    for i in list_arm:\n        result = i ** len_n\n        sum_n += result\n    return sum_n\nn = int(input())\ncheck = n\nif so_arm(n) == check and n >= 0:\n    print(\"true\")\nelse:\n    print(\"false\")\n",
+        "highlighted_code": "def so_arm(x):\n    bien_Phu = x\n    list_arm <span class='highlight-green'>= []\n    while bien_Phu != 0:\n        remain = bien_Phu % 10\n        list_arm.append(remain)\n        bien_Phu //= 10\n    len_n = len(</span>list_arm)\n    sum_n = 0\n    <span class='highlight-green'>for i in list_arm:\n        result = i ** len_n\n        sum_n += result\n    return sum_n\nn = int(input())\ncheck = n\nif so_arm(n) == check </span>and n &gt;= 0:\n    print(&#34;true&#34;)\nelse:\n    print(&#34;false&#34;)\n"
+      },
+      "token_overlap": 88,
+      "max_similarity_percent": 65.19
+    },
+    {
+      "case_id": 24,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3c947724325137447711d/e981f1efc9764aba8b686042/sub_1765117045915_f586x4340.py",
+        "similarity_percent": 51.27,
+        "full_code": "import math\ndef so_arm(x):\n    bien_Phu = x\n    sum_n = 0\n    list_arm = []\n    while bien_Phu != 0:\n        remain = bien_Phu % 10\n        list_arm.append(remain)\n        bien_Phu //= 10\n    len_n = len(list_arm)\n    for i in list_arm:\n        result = i ** len_n\n        sum_n += result\n    return sum_n\nn = int(input())\ncheck = n\nif n > 0:\n    if so_arm(n) == check:\n        print(\"true\")\n    else:\n        print(\"false\")\nelse:\n    print(\"false\")",
+        "highlighted_code": "import math\ndef so_arm(x):\n    bien_Phu = x\n    sum_n = 0\n    list_arm <span class='highlight-red'>= []\n    while bien_Phu != 0:\n        remain = bien_Phu % 10\n        list_arm.append(remain)\n        bien_Phu //= 10\n    len_n = len(</span>list_arm)\n    <span class='highlight-red'>for i in list_arm:\n        result = i ** len_n\n        sum_n += result\n    return sum_n\nn = int(input())\ncheck = n\nif </span>n &gt; 0:\n    if so_arm(n) == check:\n        print(&#34;true&#34;)\n    else:\n        print(&#34;false&#34;)\nelse:\n    print(&#34;false&#34;)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3c947724325137447711d/e981f1efc9764aba8b686042/sub_1765117408000_c1bhe9a54.py",
+        "similarity_percent": 60.0,
+        "full_code": "def so_arm(x):\n    bien_Phu = x\n    list_arm = []\n    while bien_Phu != 0:\n        remain = bien_Phu % 10\n        list_arm.append(remain)\n        bien_Phu //= 10\n    len_n = len(list_arm)\n    sum_n = 0\n    for i in list_arm:\n        result = i ** len_n\n        sum_n += result\n    return sum_n\nn = int(input())\ncheck = n\nif so_arm(n) == check and n >= 0:\n    print(\"true\")\nelse:\n    print(\"false\")\n",
+        "highlighted_code": "def so_arm(x):\n    bien_Phu = x\n    list_arm <span class='highlight-green'>= []\n    while bien_Phu != 0:\n        remain = bien_Phu % 10\n        list_arm.append(remain)\n        bien_Phu //= 10\n    len_n = len(</span>list_arm)\n    sum_n = 0\n    <span class='highlight-green'>for i in list_arm:\n        result = i ** len_n\n        sum_n += result\n    return sum_n\nn = int(input())\ncheck = n\nif </span>so_arm(n) == check and n &gt;= 0:\n    print(&#34;true&#34;)\nelse:\n    print(&#34;false&#34;)\n"
+      },
+      "token_overlap": 81,
+      "max_similarity_percent": 60.0
     }
   ]
 }

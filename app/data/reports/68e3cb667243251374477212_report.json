@@ -4,11 +4,147 @@
     "min_token_overlap": 80,
     "min_similarity_percent": 60
   },
-  "total_cases_found": 28,
-  "total_cases_filtered": 15,
+  "total_cases_found": 183,
+  "total_cases_filtered": 78,
   "cases": [
     {
       "case_id": 1,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3cb667243251374477212/e0cd413045d741e39459231c/sub_1762251881735_psro7a8fx.py",
+        "similarity_percent": 100.0,
+        "full_code": "a,b=map(int,input().split())\nchan=0\nle=0\nfor i in range(a,b+1):\n    while i>0:\n        du=i%10\n        if du%2==0:\n            chan+=1\n        else:\n            le+=1\n        i//=10\nprint(chan,le)\n\n",
+        "highlighted_code": "<span class='highlight-red'>a,b=map(int,input().split())\nchan=0\nle=0\nfor i in range(a,b+1):\n    </span><span class='highlight-red'>while i&gt;0:\n        du=i%10\n        if du%2==0:\n            chan+=1\n        else:\n            le+=1\n        i//=10\nprint(</span>chan,le)\n\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3cb667243251374477212/bbf053b9c70d4a5697fa5d7f/sub_1762854546911_0x9fvby8z.py",
+        "similarity_percent": 97.03,
+        "full_code": "a,b = map(int, input().split())\ntongchan = 0\ntongle = 0\nfor num in range(a,b+1):\n    n = num\n    while n > 0:\n        x = n % 10  \n        if x % 2 == 0:\n            tongchan += 1\n        else:\n            tongle += 1\n        n //= 10  \nprint(tongchan, tongle)\n\n\n",
+        "highlighted_code": "<span class='highlight-green'>a,b = map(int, input().split())\ntongchan = 0\ntongle = 0\nfor num in range(a,b+1):\n    </span>n = num\n    <span class='highlight-green'>while n &gt; 0:\n        x = n % 10  \n        if x % 2 == 0:\n            tongchan += 1\n        else:\n            tongle += 1\n        n //= 10  \nprint(</span>tongchan, tongle)\n\n\n"
+      },
+      "token_overlap": 98,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 2,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3cb667243251374477212/e0cd413045d741e39459231c/sub_1762251881735_psro7a8fx.py",
+        "similarity_percent": 100.0,
+        "full_code": "a,b=map(int,input().split())\nchan=0\nle=0\nfor i in range(a,b+1):\n    while i>0:\n        du=i%10\n        if du%2==0:\n            chan+=1\n        else:\n            le+=1\n        i//=10\nprint(chan,le)\n\n",
+        "highlighted_code": "<span class='highlight-red'>a,b=map(int,input().split())\nchan=0\nle=0\nfor i in range(a,b+1):\n    </span><span class='highlight-red'>while i&gt;0:\n        du=i%10\n        if du%2==0:\n            chan+=1\n        else:\n            le+=1\n        i//=10\nprint(</span>chan,le)\n\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3cb667243251374477212/bbf053b9c70d4a5697fa5d7f/sub_1762854471633_8qpsz916n.py",
+        "similarity_percent": 97.03,
+        "full_code": "a,b = map(int, input().split())\ntongchan = 0\ntongle = 0\nfor i in range(a,b+1):\n    n = i\n    while n > 0:\n        x = n % 10  \n        if x % 2 == 0:\n            tongchan += 1\n        else:\n            tongle += 1\n        n //= 10  \nprint(tongchan, tongle)\n",
+        "highlighted_code": "<span class='highlight-green'>a,b = map(int, input().split())\ntongchan = 0\ntongle = 0\nfor i in range(a,b+1):\n    </span>n = i\n    <span class='highlight-green'>while n &gt; 0:\n        x = n % 10  \n        if x % 2 == 0:\n            tongchan += 1\n        else:\n            tongle += 1\n        n //= 10  \nprint(</span>tongchan, tongle)\n"
+      },
+      "token_overlap": 98,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 3,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3cb667243251374477212/bbf053b9c70d4a5697fa5d7f/sub_1762854763316_xwfyffqa2.py",
+        "similarity_percent": 100.0,
+        "full_code": "a,b = map(int, input().split())\ntongchan = 0\ntongle = 0\nfor num in range(a,b+1):\n    for i in str(num):\n        if int(i) % 2 == 0:\n            tongchan += 1\n        else:\n            tongle += 1\nprint(tongchan, tongle)",
+        "highlighted_code": "<span class='highlight-red'>a,b = map(int, input().split())\ntongchan = 0\ntongle = 0\nfor num in range(a,b+1):\n    for i in str(num):\n        if int(i) % 2 == 0:\n            tongchan += 1\n        else:\n            tongle += 1\nprint(</span>tongchan, tongle)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3cb667243251374477212/fd92120cec18496789c2c733/sub_1761621160101_dbsz5v32r.py",
+        "similarity_percent": 100.0,
+        "full_code": "start, end = map(int,input().split())\ntotalchan = 0\ntotalle = 0\nfor i in range (start, end + 1):\n    for g in str(i):\n        if int(g) % 2 == 0:\n            totalchan += 1\n        else:\n            totalle += 1\n    \nprint (totalchan, totalle)",
+        "highlighted_code": "<span class='highlight-green'>start, end = map(int,input().split())\ntotalchan = 0\ntotalle = 0\nfor i in range (start, end + 1):\n    for g in str(i):\n        if int(g) % 2 == 0:\n            totalchan += 1\n        else:\n            totalle += 1\n    \nprint (</span>totalchan, totalle)"
+      },
+      "token_overlap": 95,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 4,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3cb667243251374477212/bbf053b9c70d4a5697fa5d7f/sub_1762854763316_xwfyffqa2.py",
+        "similarity_percent": 100.0,
+        "full_code": "a,b = map(int, input().split())\ntongchan = 0\ntongle = 0\nfor num in range(a,b+1):\n    for i in str(num):\n        if int(i) % 2 == 0:\n            tongchan += 1\n        else:\n            tongle += 1\nprint(tongchan, tongle)",
+        "highlighted_code": "<span class='highlight-red'>a,b = map(int, input().split())\ntongchan = 0\ntongle = 0\nfor num in range(a,b+1):\n    for i in str(num):\n        if int(i) % 2 == 0:\n            tongchan += 1\n        else:\n            tongle += 1\nprint(</span>tongchan, tongle)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3cb667243251374477212/e59c34a1bebb49d29bfb3592/sub_1762422514603_fvlbou6i4.py",
+        "similarity_percent": 100.0,
+        "full_code": "start, end = map(int, input().split())\neven_count = 0\nodd_count = 0\n\nfor i in range(start, end + 1):\n    for ch in str(i):\n        if int(ch) % 2 == 0:\n            even_count += 1\n        else:\n            odd_count += 1\n\nprint(even_count, odd_count)\n",
+        "highlighted_code": "<span class='highlight-green'>start, end = map(int, input().split())\neven_count = 0\nodd_count = 0\n\nfor i in range(start, end + 1):\n    for ch in str(i):\n        if int(ch) % 2 == 0:\n            even_count += 1\n        else:\n            odd_count += 1\n\nprint(</span>even_count, odd_count)\n"
+      },
+      "token_overlap": 95,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 5,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3cb667243251374477212/8e19101eb0da4e9a92a17098/sub_1762354969031_av30dju2p.py",
+        "similarity_percent": 100.0,
+        "full_code": "start, end = map(int, input().split())\nchan = 0\nle = 0\nfor n in range(start, end + 1):\n    for ch in str(n):\n        digit = int(ch)\n        if digit % 2 == 0:\n            chan += 1\n        else:\n            le += 1\nprint(chan, le)\n",
+        "highlighted_code": "<span class='highlight-red'>start, end = map(int, input().split())\nchan = 0\nle = 0\nfor n in range(start, end + 1):\n    for ch in str(n):\n        digit = int(ch)\n        if digit % 2 == 0:\n            chan += 1\n        else:\n            le += 1\nprint(</span>chan, le)\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3cb667243251374477212/e59c34a1bebb49d29bfb3592/sub_1765027832573_uqlxut1zl.py",
+        "similarity_percent": 95.15,
+        "full_code": "start,end = map(int,input().split())\ntong_chan = 0\ntong_le = 0\nfor num in range(start, end + 1):\n    for ch in str(num):\n        digit = int(ch)\n        if digit % 2 == 0:\n            tong_chan += 1\n        else:\n            tong_le += 1\nprint(*[tong_chan, tong_le])\n",
+        "highlighted_code": "<span class='highlight-green'>start,end = map(int,input().split())\ntong_chan = 0\ntong_le = 0\nfor num in range(start, end + 1):\n    for ch in str(num):\n        digit = int(ch)\n        if digit % 2 == 0:\n            tong_chan += 1\n        else:\n            tong_le += 1\nprint(</span>*[tong_chan, tong_le])\n"
+      },
+      "token_overlap": 98,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 6,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3cb667243251374477212/8e19101eb0da4e9a92a17098/sub_1762354969031_av30dju2p.py",
+        "similarity_percent": 100.0,
+        "full_code": "start, end = map(int, input().split())\nchan = 0\nle = 0\nfor n in range(start, end + 1):\n    for ch in str(n):\n        digit = int(ch)\n        if digit % 2 == 0:\n            chan += 1\n        else:\n            le += 1\nprint(chan, le)\n",
+        "highlighted_code": "<span class='highlight-red'>start, end = map(int, input().split())\nchan = 0\nle = 0\nfor n in range(start, end + 1):\n    for ch in str(n):\n        digit = int(ch)\n        if digit % 2 == 0:\n            chan += 1\n        else:\n            le += 1\nprint(</span>chan, le)\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3cb667243251374477212/026b0aa51ea144cda50395b7/sub_1763996956724_kqk0wechm.py",
+        "similarity_percent": 100.0,
+        "full_code": "start, end = map(int, input().split())\n\neven = 0\nodd = 0\n\nfor num in range(start, end + 1):\n    for ch in str(num):\n        digit = int(ch)\n        if digit % 2 == 0:\n            even += 1\n        else:\n            odd += 1\n\nprint(even, odd)\n\n",
+        "highlighted_code": "<span class='highlight-green'>start, end = map(int, input().split())\n\neven = 0\nodd = 0\n\nfor num in range(start, end + 1):\n    for ch in str(num):\n        digit = int(ch)\n        if digit % 2 == 0:\n            even += 1\n        else:\n            odd += 1\n\nprint(</span>even, odd)\n\n"
+      },
+      "token_overlap": 98,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 7,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3cb667243251374477212/0d74995bf22b4574a97a2297/sub_1761555507831_2l4aof727.py",
+        "similarity_percent": 100.0,
+        "full_code": "def dem(n):\n    le = 0\n    chan = 0\n    while n > 0:\n        if (n % 10) % 2 == 0:\n            chan += 1\n        else:\n            le += 1\n        n //= 10\n    return le,chan\nm,n = list(map(int,input().split()))\nle = 0\nchan = 0\nfor i in range(m, n + 1):\n    result = dem(i)\n    le += result[0]\n    chan += result[1]\nprint(chan, le)",
+        "highlighted_code": "<span class='highlight-red'>def dem(n):\n    le = 0\n    chan = 0\n    while n &gt; 0:\n        if (n % 10) % 2 == 0:\n            chan += 1\n        else:\n            le += 1\n        n //= 10\n    return le,chan\nm,n = list(map(int,input().split()))\nle = 0\nchan = 0\nfor i in range(m, n + 1):\n    result = dem(i)\n    le += result[0]\n    chan += result[1]\nprint(chan, </span>le)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3cb667243251374477212/0d74995bf22b4574a97a2297/sub_1761555162093_x8qehcgm4.py",
+        "similarity_percent": 100.0,
+        "full_code": "def dem(n):\n    le = 0\n    chan = 0\n    while n > 0:\n        if (n % 10) % 2 == 0:\n            chan += 1\n        else:\n            le += 1\n        n //= 10\n    return le,chan\nm,n = list(map(int,input().split()))\nle = 0\nchan = 0\nfor i in range(m, n + 1):\n    result = dem(i)\n    le += result[0]\n    chan += result[1]\nprint(chan,le)",
+        "highlighted_code": "<span class='highlight-green'>def dem(n):\n    le = 0\n    chan = 0\n    while n &gt; 0:\n        if (n % 10) % 2 == 0:\n            chan += 1\n        else:\n            le += 1\n        n //= 10\n    return le,chan\nm,n = list(map(int,input().split()))\nle = 0\nchan = 0\nfor i in range(m, n + 1):\n    result = dem(i)\n    le += result[0]\n    chan += result[1]\nprint(chan,</span>le)"
+      },
+      "token_overlap": 148,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 8,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3cb667243251374477212/bbf053b9c70d4a5697fa5d7f/sub_1762854546911_0x9fvby8z.py",
+        "similarity_percent": 100.0,
+        "full_code": "a,b = map(int, input().split())\ntongchan = 0\ntongle = 0\nfor num in range(a,b+1):\n    n = num\n    while n > 0:\n        x = n % 10  \n        if x % 2 == 0:\n            tongchan += 1\n        else:\n            tongle += 1\n        n //= 10  \nprint(tongchan, tongle)\n\n\n",
+        "highlighted_code": "<span class='highlight-red'>a,b = map(int, input().split())\ntongchan = 0\ntongle = 0\nfor num in range(a,b+1):\n    n = num\n    while n &gt; 0:\n        x = n % 10  \n        if x % 2 == 0:\n            tongchan += 1\n        else:\n            tongle += 1\n        n //= 10  \nprint(</span>tongchan, tongle)\n\n\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3cb667243251374477212/bbf053b9c70d4a5697fa5d7f/sub_1762854471633_8qpsz916n.py",
+        "similarity_percent": 100.0,
+        "full_code": "a,b = map(int, input().split())\ntongchan = 0\ntongle = 0\nfor i in range(a,b+1):\n    n = i\n    while n > 0:\n        x = n % 10  \n        if x % 2 == 0:\n            tongchan += 1\n        else:\n            tongle += 1\n        n //= 10  \nprint(tongchan, tongle)\n",
+        "highlighted_code": "<span class='highlight-green'>a,b = map(int, input().split())\ntongchan = 0\ntongle = 0\nfor i in range(a,b+1):\n    n = i\n    while n &gt; 0:\n        x = n % 10  \n        if x % 2 == 0:\n            tongchan += 1\n        else:\n            tongle += 1\n        n //= 10  \nprint(</span>tongchan, tongle)\n"
+      },
+      "token_overlap": 101,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 9,
       "file1": {
         "path": "/app/app/data/submissions/68e3cb667243251374477212/fd92120cec18496789c2c733/sub_1761621160101_dbsz5v32r.py",
         "similarity_percent": 100.0,
@@ -25,242 +161,1177 @@
       "max_similarity_percent": 100.0
     },
     {
-      "case_id": 2,
-      "file1": {
-        "path": "/app/app/data/submissions/68e3cb667243251374477212/0d74995bf22b4574a97a2297/sub_1761555507831_2l4aof727.py",
-        "similarity_percent": 100.0,
-        "full_code": "def dem(n):\n    le = 0\n    chan = 0\n    while n > 0:\n        if (n % 10) % 2 == 0:\n            chan += 1\n        else:\n            le += 1\n        n //= 10\n    return le,chan\nm,n = list(map(int,input().split()))\nle = 0\nchan = 0\nfor i in range(m, n + 1):\n    result = dem(i)\n    le += result[0]\n    chan += result[1]\nprint(chan, le)",
-        "highlighted_code": "<span class='highlight-red'>def dem(n):\n    le = 0\n    chan = 0\n    while n &gt; 0:\n        if (n % 10) % 2 == 0:\n            chan += 1\n        else:\n            le += 1\n        n //= 10\n    return le,chan\nm,n = list(map(int,input().split()))\nle = 0\nchan = 0\nfor i in range(m, n + 1):\n    result = dem(i)\n    le += result[0]\n    chan += result[1]\nprint</span>(chan, le)"
-      },
-      "file2": {
-        "path": "/app/app/data/submissions/68e3cb667243251374477212/0d74995bf22b4574a97a2297/sub_1761555162093_x8qehcgm4.py",
-        "similarity_percent": 100.0,
-        "full_code": "def dem(n):\n    le = 0\n    chan = 0\n    while n > 0:\n        if (n % 10) % 2 == 0:\n            chan += 1\n        else:\n            le += 1\n        n //= 10\n    return le,chan\nm,n = list(map(int,input().split()))\nle = 0\nchan = 0\nfor i in range(m, n + 1):\n    result = dem(i)\n    le += result[0]\n    chan += result[1]\nprint(chan,le)",
-        "highlighted_code": "<span class='highlight-green'>def dem(n):\n    le = 0\n    chan = 0\n    while n &gt; 0:\n        if (n % 10) % 2 == 0:\n            chan += 1\n        else:\n            le += 1\n        n //= 10\n    return le,chan\nm,n = list(map(int,input().split()))\nle = 0\nchan = 0\nfor i in range(m, n + 1):\n    result = dem(i)\n    le += result[0]\n    chan += result[1]\nprint</span>(chan,le)"
-      },
-      "token_overlap": 145,
-      "max_similarity_percent": 100.0
-    },
-    {
-      "case_id": 3,
-      "file1": {
-        "path": "/app/app/data/submissions/68e3cb667243251374477212/fd92120cec18496789c2c733/sub_1761621160101_dbsz5v32r.py",
-        "similarity_percent": 86.32,
-        "full_code": "start, end = map(int,input().split())\ntotalchan = 0\ntotalle = 0\nfor i in range (start, end + 1):\n    for g in str(i):\n        if int(g) % 2 == 0:\n            totalchan += 1\n        else:\n            totalle += 1\n    \nprint (totalchan, totalle)",
-        "highlighted_code": "<span class='highlight-red'>start, end = map(int,input().split())\ntotalchan = 0\ntotalle = 0\nfor i in range (start, end + 1):\n    for g in st</span>r(i):\n        if int(g) <span class='highlight-red'>% 2 == 0:\n            totalchan += 1\n        else:\n            totalle += 1\n    \nprint (</span>totalchan, totalle)"
-      },
-      "file2": {
-        "path": "/app/app/data/submissions/68e3cb667243251374477212/8e19101eb0da4e9a92a17098/sub_1762354969031_av30dju2p.py",
-        "similarity_percent": 83.67,
-        "full_code": "start, end = map(int, input().split())\nchan = 0\nle = 0\nfor n in range(start, end + 1):\n    for ch in str(n):\n        digit = int(ch)\n        if digit % 2 == 0:\n            chan += 1\n        else:\n            le += 1\nprint(chan, le)\n",
-        "highlighted_code": "<span class='highlight-green'>start, end = map(int, input().split())\nchan = 0\nle = 0\nfor n in range(start, end + 1):\n    for ch in st</span>r(n):\n        digit = int(ch)\n        if digit <span class='highlight-green'>% 2 == 0:\n            chan += 1\n        else:\n            le += 1\nprint(</span>chan, le)\n"
-      },
-      "token_overlap": 82,
-      "max_similarity_percent": 86.32
-    },
-    {
-      "case_id": 4,
-      "file1": {
-        "path": "/app/app/data/submissions/68e3cb667243251374477212/8e19101eb0da4e9a92a17098/sub_1762354969031_av30dju2p.py",
-        "similarity_percent": 83.67,
-        "full_code": "start, end = map(int, input().split())\nchan = 0\nle = 0\nfor n in range(start, end + 1):\n    for ch in str(n):\n        digit = int(ch)\n        if digit % 2 == 0:\n            chan += 1\n        else:\n            le += 1\nprint(chan, le)\n",
-        "highlighted_code": "<span class='highlight-red'>start, end = map(int, input().split())\nchan = 0\nle = 0\nfor n in range(start, end + 1):\n    for ch in st</span>r(n):\n        digit = int(ch)\n        if digit <span class='highlight-red'>% 2 == 0:\n            chan += 1\n        else:\n            le += 1\nprint(</span>chan, le)\n"
-      },
-      "file2": {
-        "path": "/app/app/data/submissions/68e3cb667243251374477212/e59c34a1bebb49d29bfb3592/sub_1762422514603_fvlbou6i4.py",
-        "similarity_percent": 86.32,
-        "full_code": "start, end = map(int, input().split())\neven_count = 0\nodd_count = 0\n\nfor i in range(start, end + 1):\n    for ch in str(i):\n        if int(ch) % 2 == 0:\n            even_count += 1\n        else:\n            odd_count += 1\n\nprint(even_count, odd_count)\n",
-        "highlighted_code": "<span class='highlight-green'>start, end = map(int, input().split())\neven_count = 0\nodd_count = 0\n\nfor i in range(start, end + 1):\n    for ch in st</span>r(i):\n        if int(ch) <span class='highlight-green'>% 2 == 0:\n            even_count += 1\n        else:\n            odd_count += 1\n\nprint(</span>even_count, odd_count)\n"
-      },
-      "token_overlap": 82,
-      "max_similarity_percent": 86.32
-    },
-    {
-      "case_id": 5,
-      "file1": {
-        "path": "/app/app/data/submissions/68e3cb667243251374477212/8e19101eb0da4e9a92a17098/sub_1762354969031_av30dju2p.py",
-        "similarity_percent": 82.65,
-        "full_code": "start, end = map(int, input().split())\nchan = 0\nle = 0\nfor n in range(start, end + 1):\n    for ch in str(n):\n        digit = int(ch)\n        if digit % 2 == 0:\n            chan += 1\n        else:\n            le += 1\nprint(chan, le)\n",
-        "highlighted_code": "<span class='highlight-red'>start, end = map(int, input().split())\nchan = 0\nle = 0\nfor n in range(start, end </span>+ 1):\n    for ch in str(n):\n        <span class='highlight-red'>digit = int(ch)\n        if digit % 2 == 0:\n            chan += 1\n        else:\n            le += 1\nprint(</span>chan, le)\n"
-      },
-      "file2": {
-        "path": "/app/app/data/submissions/68e3cb667243251374477212/bcb420abb39b4af095b63cf8/sub_1762632670298_5sqflyd7x.py",
-        "similarity_percent": 80.2,
-        "full_code": "a,b=map(int,input().split())\ntongchan=0\ntongle=0\nfor i in range(a,b+1):\n    k=str(i)\n    for j in k:\n        h=int(j)\n        if h%2==0:\n           tongchan+=1\n        else:\n           tongle+=1\nprint(tongchan,tongle)",
-        "highlighted_code": "<span class='highlight-green'>a,b=map(int,input().split())\ntongchan=0\ntongle=0\nfor i in range(a,b</span>+1):\n    k=str(i)\n    for j in k:\n        <span class='highlight-green'>h=int(j)\n        if h%2==0:\n           tongchan+=1\n        else:\n           tongle+=1\nprint(</span>tongchan,tongle)"
-      },
-      "token_overlap": 81,
-      "max_similarity_percent": 82.65
-    },
-    {
-      "case_id": 6,
-      "file1": {
-        "path": "/app/app/data/submissions/68e3cb667243251374477212/0d74995bf22b4574a97a2297/sub_1761555507831_2l4aof727.py",
-        "similarity_percent": 80.69,
-        "full_code": "def dem(n):\n    le = 0\n    chan = 0\n    while n > 0:\n        if (n % 10) % 2 == 0:\n            chan += 1\n        else:\n            le += 1\n        n //= 10\n    return le,chan\nm,n = list(map(int,input().split()))\nle = 0\nchan = 0\nfor i in range(m, n + 1):\n    result = dem(i)\n    le += result[0]\n    chan += result[1]\nprint(chan, le)",
-        "highlighted_code": "<span class='highlight-red'>def dem(n):\n    le = 0\n    chan = 0\n    while n &gt; 0:\n        if (n % 10) % 2 == 0:\n            chan += 1\n        else:\n            le += 1\n        n //= 10\n    return le,chan\nm,n = list(map(int,input().split()))\nle = 0\nchan = 0\nfor i in range(m, n + </span>1):\n    result = dem(i)\n    le += result[0]\n    chan += result[1]\nprint(chan, le)"
-      },
-      "file2": {
-        "path": "/app/app/data/submissions/68e3cb667243251374477212/0d74995bf22b4574a97a2297/sub_1761555024805_wpxogkti6.py",
-        "similarity_percent": 80.69,
-        "full_code": "def dem(n):\n    le = 0\n    chan = 0\n    while n > 0:\n        if (n % 10) % 2 == 0:\n            chan += 1\n        else:\n            le += 1\n        n //= 10\n    return le,chan\nm,n = list(map(int,input().split()))\nle = 0\nchan = 0\nfor i in range(m,n+1):\n    le += dem(i)[0]\n    chan += dem(i)[1]\nprint(chan,le)",
-        "highlighted_code": "<span class='highlight-green'>def dem(n):\n    le = 0\n    chan = 0\n    while n &gt; 0:\n        if (n % 10) % 2 == 0:\n            chan += 1\n        else:\n            le += 1\n        n //= 10\n    return le,chan\nm,n = list(map(int,input().split()))\nle = 0\nchan = 0\nfor i in range(m,n+</span>1):\n    le += dem(i)[0]\n    chan += dem(i)[1]\nprint(chan,le)"
-      },
-      "token_overlap": 117,
-      "max_similarity_percent": 80.69
-    },
-    {
-      "case_id": 7,
-      "file1": {
-        "path": "/app/app/data/submissions/68e3cb667243251374477212/0d74995bf22b4574a97a2297/sub_1761555024805_wpxogkti6.py",
-        "similarity_percent": 80.69,
-        "full_code": "def dem(n):\n    le = 0\n    chan = 0\n    while n > 0:\n        if (n % 10) % 2 == 0:\n            chan += 1\n        else:\n            le += 1\n        n //= 10\n    return le,chan\nm,n = list(map(int,input().split()))\nle = 0\nchan = 0\nfor i in range(m,n+1):\n    le += dem(i)[0]\n    chan += dem(i)[1]\nprint(chan,le)",
-        "highlighted_code": "<span class='highlight-red'>def dem(n):\n    le = 0\n    chan = 0\n    while n &gt; 0:\n        if (n % 10) % 2 == 0:\n            chan += 1\n        else:\n            le += 1\n        n //= 10\n    return le,chan\nm,n = list(map(int,input().split()))\nle = 0\nchan = 0\nfor i in range(m,n+</span>1):\n    le += dem(i)[0]\n    chan += dem(i)[1]\nprint(chan,le)"
-      },
-      "file2": {
-        "path": "/app/app/data/submissions/68e3cb667243251374477212/0d74995bf22b4574a97a2297/sub_1761555162093_x8qehcgm4.py",
-        "similarity_percent": 80.69,
-        "full_code": "def dem(n):\n    le = 0\n    chan = 0\n    while n > 0:\n        if (n % 10) % 2 == 0:\n            chan += 1\n        else:\n            le += 1\n        n //= 10\n    return le,chan\nm,n = list(map(int,input().split()))\nle = 0\nchan = 0\nfor i in range(m, n + 1):\n    result = dem(i)\n    le += result[0]\n    chan += result[1]\nprint(chan,le)",
-        "highlighted_code": "<span class='highlight-green'>def dem(n):\n    le = 0\n    chan = 0\n    while n &gt; 0:\n        if (n % 10) % 2 == 0:\n            chan += 1\n        else:\n            le += 1\n        n //= 10\n    return le,chan\nm,n = list(map(int,input().split()))\nle = 0\nchan = 0\nfor i in range(m, n + </span>1):\n    result = dem(i)\n    le += result[0]\n    chan += result[1]\nprint(chan,le)"
-      },
-      "token_overlap": 117,
-      "max_similarity_percent": 80.69
-    },
-    {
-      "case_id": 8,
-      "file1": {
-        "path": "/app/app/data/submissions/68e3cb667243251374477212/fd92120cec18496789c2c733/sub_1761621160101_dbsz5v32r.py",
-        "similarity_percent": 73.68,
-        "full_code": "start, end = map(int,input().split())\ntotalchan = 0\ntotalle = 0\nfor i in range (start, end + 1):\n    for g in str(i):\n        if int(g) % 2 == 0:\n            totalchan += 1\n        else:\n            totalle += 1\n    \nprint (totalchan, totalle)",
-        "highlighted_code": "<span class='highlight-red'>start, end = map(int,input().split())\ntotalchan = 0\ntotalle = 0\nfor i in range (start, end </span>+ 1):\n    for g in str(i):\n        if int(g) <span class='highlight-red'>% 2 == 0:\n            totalchan += 1\n        else:\n            totalle += 1\n    \nprint (</span>totalchan, totalle)"
-      },
-      "file2": {
-        "path": "/app/app/data/submissions/68e3cb667243251374477212/bcb420abb39b4af095b63cf8/sub_1762632670298_5sqflyd7x.py",
-        "similarity_percent": 69.31,
-        "full_code": "a,b=map(int,input().split())\ntongchan=0\ntongle=0\nfor i in range(a,b+1):\n    k=str(i)\n    for j in k:\n        h=int(j)\n        if h%2==0:\n           tongchan+=1\n        else:\n           tongle+=1\nprint(tongchan,tongle)",
-        "highlighted_code": "<span class='highlight-green'>a,b=map(int,input().split())\ntongchan=0\ntongle=0\nfor i in range(a,b</span>+1):\n    k=str(i)\n    for j in k:\n        h=int(j)\n        if h<span class='highlight-green'>%2==0:\n           tongchan+=1\n        else:\n           tongle+=1\nprint(</span>tongchan,tongle)"
-      },
-      "token_overlap": 70,
-      "max_similarity_percent": 73.68
-    },
-    {
-      "case_id": 9,
-      "file1": {
-        "path": "/app/app/data/submissions/68e3cb667243251374477212/bcb420abb39b4af095b63cf8/sub_1762632670298_5sqflyd7x.py",
-        "similarity_percent": 69.31,
-        "full_code": "a,b=map(int,input().split())\ntongchan=0\ntongle=0\nfor i in range(a,b+1):\n    k=str(i)\n    for j in k:\n        h=int(j)\n        if h%2==0:\n           tongchan+=1\n        else:\n           tongle+=1\nprint(tongchan,tongle)",
-        "highlighted_code": "<span class='highlight-red'>a,b=map(int,input().split())\ntongchan=0\ntongle=0\nfor i in range(a,b</span>+1):\n    k=str(i)\n    for j in k:\n        h=int(j)\n        if h<span class='highlight-red'>%2==0:\n           tongchan+=1\n        else:\n           tongle+=1\nprint(</span>tongchan,tongle)"
-      },
-      "file2": {
-        "path": "/app/app/data/submissions/68e3cb667243251374477212/e59c34a1bebb49d29bfb3592/sub_1762422514603_fvlbou6i4.py",
-        "similarity_percent": 73.68,
-        "full_code": "start, end = map(int, input().split())\neven_count = 0\nodd_count = 0\n\nfor i in range(start, end + 1):\n    for ch in str(i):\n        if int(ch) % 2 == 0:\n            even_count += 1\n        else:\n            odd_count += 1\n\nprint(even_count, odd_count)\n",
-        "highlighted_code": "<span class='highlight-green'>start, end = map(int, input().split())\neven_count = 0\nodd_count = 0\n\nfor i in range(start, end </span>+ 1):\n    for ch in str(i):\n        if int(ch) <span class='highlight-green'>% 2 == 0:\n            even_count += 1\n        else:\n            odd_count += 1\n\nprint(</span>even_count, odd_count)\n"
-      },
-      "token_overlap": 70,
-      "max_similarity_percent": 73.68
-    },
-    {
       "case_id": 10,
       "file1": {
-        "path": "/app/app/data/submissions/68e3cb667243251374477212/0d74995bf22b4574a97a2297/sub_1761555507831_2l4aof727.py",
-        "similarity_percent": 68.28,
-        "full_code": "def dem(n):\n    le = 0\n    chan = 0\n    while n > 0:\n        if (n % 10) % 2 == 0:\n            chan += 1\n        else:\n            le += 1\n        n //= 10\n    return le,chan\nm,n = list(map(int,input().split()))\nle = 0\nchan = 0\nfor i in range(m, n + 1):\n    result = dem(i)\n    le += result[0]\n    chan += result[1]\nprint(chan, le)",
-        "highlighted_code": "def dem(n):\n    le = 0\n    chan = 0\n    <span class='highlight-red'>while n &gt; 0:\n        if (n % 10) % 2 == 0:\n            chan += 1\n        else:\n            le += 1\n        n //= 10\n    </span>return le,chan\n<span class='highlight-red'>m,n = list(map(int,input().split()))\nle = 0\nchan = 0\nfor i in range(m, n + 1):\n    result = </span>dem(i)\n    le += result[0]\n    chan += result[1]\nprint(chan, le)"
+        "path": "/app/app/data/submissions/68e3cb667243251374477212/d82933fea814463eb5b029d1/sub_1765042083388_lqih2jjn4.py",
+        "similarity_percent": 98.41,
+        "full_code": "s, e = list(map(int, input().split()))\n\nlst = [0,0]\n\nfor i in range(s,e+1):\n    while i > 0:\n        a = i % 10\n        if a % 2 == 0:\n            lst[0] += 1\n        else:\n            lst[1] += 1\n        i //= 10\n    \n        \n    \n\n    \n\nprint(f\"{lst[0]} {lst[1]}\")\n",
+        "highlighted_code": "<span class='highlight-red'>s, e = list(map(int, input().split()))\n\nlst = [0,0]\n\nfor i in range(s,e+</span>1)<span class='highlight-red'>:\n    while i &gt; 0:\n        a = i % 10\n        if a % 2 == 0:\n            lst[0] += 1\n        else:\n            lst[1] += 1\n        i //= 10\n    \n        \n    \n\n    \n\nprint(f&#34;{lst[0]} {lst[1]}</span>&#34;)\n"
       },
       "file2": {
-        "path": "/app/app/data/submissions/68e3cb667243251374477212/0d74995bf22b4574a97a2297/sub_1761557017602_tggo1yzgc.py",
-        "similarity_percent": 90.0,
-        "full_code": "\nm,n = list(map(int,input().split()))\nle = 0\nchan = 0\nfor i in range(m, n + 1):\n    d = i\n    while d > 0:\n        if (d % 10) % 2 == 0:\n            chan += 1\n        else:\n            le += 1\n        d //= 10\nprint(chan,le)",
-        "highlighted_code": "<span class='highlight-green'>\nm,n = list(map(int,input().split()))\nle = 0\nchan = 0\nfor i in range(m, n + 1):\n    d =</span> i\n   <span class='highlight-green'> while d &gt; 0:\n        if (d % 10) % 2 == 0:\n            chan += 1\n        else:\n            le += 1\n        d //= 10</span>\nprint(chan,le)"
+        "path": "/app/app/data/submissions/68e3cb667243251374477212/d82933fea814463eb5b029d1/sub_1765042671380_83dnjt390.py",
+        "similarity_percent": 85.52,
+        "full_code": "s, e = list(map(int, input().split()))\n\nlst = [0,0]\n\nfor i in range(s,e+1):\n    if i == 0:\n        lst[0] += 1\n    else:\n        while i > 0:\n            a = i % 10\n            if a % 2 == 0:\n                lst[0] += 1\n            else:\n                lst[1] += 1\n            i //= 10\n\nprint(f\"{lst[0]} {lst[1]}\")\n",
+        "highlighted_code": "<span class='highlight-green'>s, e = list(map(int, input().split()))\n\nlst = [0,0]\n\nfor i in range(s,e+</span>1):\n    if i == 0:\n        lst[0] += 1\n    else<span class='highlight-green'>:\n        while i &gt; 0:\n            a = i % 10\n            if a % 2 == 0:\n                lst[0] += 1\n            else:\n                lst[1] += 1\n            i //= 10\n\nprint(f&#34;{lst[0]} {lst[1]}</span>&#34;)\n"
       },
-      "token_overlap": 99,
-      "max_similarity_percent": 90.0
+      "token_overlap": 124,
+      "max_similarity_percent": 98.41
     },
     {
       "case_id": 11,
       "file1": {
-        "path": "/app/app/data/submissions/68e3cb667243251374477212/0d74995bf22b4574a97a2297/sub_1761555162093_x8qehcgm4.py",
-        "similarity_percent": 68.28,
-        "full_code": "def dem(n):\n    le = 0\n    chan = 0\n    while n > 0:\n        if (n % 10) % 2 == 0:\n            chan += 1\n        else:\n            le += 1\n        n //= 10\n    return le,chan\nm,n = list(map(int,input().split()))\nle = 0\nchan = 0\nfor i in range(m, n + 1):\n    result = dem(i)\n    le += result[0]\n    chan += result[1]\nprint(chan,le)",
-        "highlighted_code": "def dem(n):\n    le = 0\n    chan = 0\n    <span class='highlight-red'>while n &gt; 0:\n        if (n % 10) % 2 == 0:\n            chan += 1\n        else:\n            le += 1\n        n //= 10\n    </span>return le,chan\n<span class='highlight-red'>m,n = list(map(int,input().split()))\nle = 0\nchan = 0\nfor i in range(m, n + 1):\n    result = </span>dem(i)\n    le += result[0]\n    chan += result[1]\nprint(chan,le)"
+        "path": "/app/app/data/submissions/68e3cb667243251374477212/e59c34a1bebb49d29bfb3592/sub_1765027832573_uqlxut1zl.py",
+        "similarity_percent": 95.15,
+        "full_code": "start,end = map(int,input().split())\ntong_chan = 0\ntong_le = 0\nfor num in range(start, end + 1):\n    for ch in str(num):\n        digit = int(ch)\n        if digit % 2 == 0:\n            tong_chan += 1\n        else:\n            tong_le += 1\nprint(*[tong_chan, tong_le])\n",
+        "highlighted_code": "<span class='highlight-red'>start,end = map(int,input().split())\ntong_chan = 0\ntong_le = 0\nfor num in range(start, end + 1):\n    for ch in str(num):\n        digit = int(ch)\n        if digit % 2 == 0:\n            tong_chan += 1\n        else:\n            tong_le += 1\nprint(</span>*[tong_chan, tong_le])\n"
       },
       "file2": {
-        "path": "/app/app/data/submissions/68e3cb667243251374477212/0d74995bf22b4574a97a2297/sub_1761557017602_tggo1yzgc.py",
-        "similarity_percent": 90.0,
-        "full_code": "\nm,n = list(map(int,input().split()))\nle = 0\nchan = 0\nfor i in range(m, n + 1):\n    d = i\n    while d > 0:\n        if (d % 10) % 2 == 0:\n            chan += 1\n        else:\n            le += 1\n        d //= 10\nprint(chan,le)",
-        "highlighted_code": "<span class='highlight-green'>\nm,n = list(map(int,input().split()))\nle = 0\nchan = 0\nfor i in range(m, n + 1):\n    d =</span> i\n   <span class='highlight-green'> while d &gt; 0:\n        if (d % 10) % 2 == 0:\n            chan += 1\n        else:\n            le += 1\n        d //= 10</span>\nprint(chan,le)"
+        "path": "/app/app/data/submissions/68e3cb667243251374477212/026b0aa51ea144cda50395b7/sub_1763996956724_kqk0wechm.py",
+        "similarity_percent": 100.0,
+        "full_code": "start, end = map(int, input().split())\n\neven = 0\nodd = 0\n\nfor num in range(start, end + 1):\n    for ch in str(num):\n        digit = int(ch)\n        if digit % 2 == 0:\n            even += 1\n        else:\n            odd += 1\n\nprint(even, odd)\n\n",
+        "highlighted_code": "<span class='highlight-green'>start, end = map(int, input().split())\n\neven = 0\nodd = 0\n\nfor num in range(start, end + 1):\n    for ch in str(num):\n        digit = int(ch)\n        if digit % 2 == 0:\n            even += 1\n        else:\n            odd += 1\n\nprint(</span>even, odd)\n\n"
       },
-      "token_overlap": 99,
-      "max_similarity_percent": 90.0
+      "token_overlap": 98,
+      "max_similarity_percent": 100.0
     },
     {
       "case_id": 12,
       "file1": {
-        "path": "/app/app/data/submissions/68e3cb667243251374477212/fd92120cec18496789c2c733/sub_1761621160101_dbsz5v32r.py",
-        "similarity_percent": 66.32,
-        "full_code": "start, end = map(int,input().split())\ntotalchan = 0\ntotalle = 0\nfor i in range (start, end + 1):\n    for g in str(i):\n        if int(g) % 2 == 0:\n            totalchan += 1\n        else:\n            totalle += 1\n    \nprint (totalchan, totalle)",
-        "highlighted_code": "<span class='highlight-red'>start, end = map(int,input().split())\ntotalchan = 0\ntotalle = 0\nfor i in range (start, end + 1):\n    for g in str(i):\n        i</span>f int(g) % 2 == 0:\n            totalchan += 1\n        else:\n            totalle += 1\n    \nprint (totalchan, totalle)"
+        "path": "/app/app/data/submissions/68e3cb667243251374477212/472aabe424744a0f9fa4c2d4/sub_1765383324774_ouwdqvscd.py",
+        "similarity_percent": 92.78,
+        "full_code": "n,m = map(int,input().split())\ntongchan=0\ntongle=0\nfor i in range (n, m+1):\n    for j in (str(i)):\n        if int(j) % 2 ==0 :\n            tongchan+=1\n        else :\n            tongle+=1\nprint(tongchan,tongle)\n",
+        "highlighted_code": "<span class='highlight-red'>n,m = map(int,input().split())\ntongchan=0\ntongle=0\nfor i in range (n, m+1):\n    for j in </span>(str(i)<span class='highlight-red'>):\n        if int(j) % 2 ==0 :\n            tongchan+=1\n        else :\n            tongle+=1\nprint(</span>tongchan,tongle)\n"
       },
       "file2": {
-        "path": "/app/app/data/submissions/68e3cb667243251374477212/26894d2babd64210ad6beba1/sub_1762311665096_934a9ecza.py",
-        "similarity_percent": 58.88,
-        "full_code": "a, b = map(int, input().split())\ntongchan = 0\ntongle = 0\nfor i in range(a, b + 1):\n    for j in str(i):\n        if(int(j) % 2 == 0):\n            tongchan += int(j)\n        else:\n            tongle += int(j)\nprint(tongchan, tongle)",
-        "highlighted_code": "<span class='highlight-green'>a, b = map(int, input().split())\ntongchan = 0\ntongle = 0\nfor i in range(a, b + 1):\n    for j in str(i):\n        i</span>f(int(j) % 2 == 0):\n            tongchan += int(j)\n        else:\n            tongle += int(j)\nprint(tongchan, tongle)"
+        "path": "/app/app/data/submissions/68e3cb667243251374477212/bbf053b9c70d4a5697fa5d7f/sub_1762854763316_xwfyffqa2.py",
+        "similarity_percent": 94.74,
+        "full_code": "a,b = map(int, input().split())\ntongchan = 0\ntongle = 0\nfor num in range(a,b+1):\n    for i in str(num):\n        if int(i) % 2 == 0:\n            tongchan += 1\n        else:\n            tongle += 1\nprint(tongchan, tongle)",
+        "highlighted_code": "<span class='highlight-green'>a,b = map(int, input().split())\ntongchan = 0\ntongle = 0\nfor num in range(a,b+1):\n    for i in </span>str(num<span class='highlight-green'>):\n        if int(i) % 2 == 0:\n            tongchan += 1\n        else:\n            tongle += 1\nprint(</span>tongchan, tongle)"
       },
-      "token_overlap": 63,
-      "max_similarity_percent": 66.32
+      "token_overlap": 90,
+      "max_similarity_percent": 94.74
     },
     {
       "case_id": 13,
       "file1": {
-        "path": "/app/app/data/submissions/68e3cb667243251374477212/0d74995bf22b4574a97a2297/sub_1761555024805_wpxogkti6.py",
-        "similarity_percent": 64.83,
-        "full_code": "def dem(n):\n    le = 0\n    chan = 0\n    while n > 0:\n        if (n % 10) % 2 == 0:\n            chan += 1\n        else:\n            le += 1\n        n //= 10\n    return le,chan\nm,n = list(map(int,input().split()))\nle = 0\nchan = 0\nfor i in range(m,n+1):\n    le += dem(i)[0]\n    chan += dem(i)[1]\nprint(chan,le)",
-        "highlighted_code": "def dem(n):\n    le = 0\n    chan = 0\n    <span class='highlight-red'>while n &gt; 0:\n        if (n % 10) % 2 == 0:\n            chan += 1\n        else:\n            le += 1\n        n //= 10\n    </span>return le,chan\n<span class='highlight-red'>m,n = list(map(int,input().split()))\nle = 0\nchan = 0\nfor i in range(m,n+</span>1):\n    le += dem(i)[0]\n    chan += dem(i)[1]\nprint(chan,le)"
+        "path": "/app/app/data/submissions/68e3cb667243251374477212/472aabe424744a0f9fa4c2d4/sub_1765383324774_ouwdqvscd.py",
+        "similarity_percent": 92.78,
+        "full_code": "n,m = map(int,input().split())\ntongchan=0\ntongle=0\nfor i in range (n, m+1):\n    for j in (str(i)):\n        if int(j) % 2 ==0 :\n            tongchan+=1\n        else :\n            tongle+=1\nprint(tongchan,tongle)\n",
+        "highlighted_code": "<span class='highlight-red'>n,m = map(int,input().split())\ntongchan=0\ntongle=0\nfor i in range (n, m+1):\n    for j in </span>(str(i)<span class='highlight-red'>):\n        if int(j) % 2 ==0 :\n            tongchan+=1\n        else :\n            tongle+=1\nprint(</span>tongchan,tongle)\n"
       },
       "file2": {
-        "path": "/app/app/data/submissions/68e3cb667243251374477212/0d74995bf22b4574a97a2297/sub_1761557017602_tggo1yzgc.py",
-        "similarity_percent": 85.45,
-        "full_code": "\nm,n = list(map(int,input().split()))\nle = 0\nchan = 0\nfor i in range(m, n + 1):\n    d = i\n    while d > 0:\n        if (d % 10) % 2 == 0:\n            chan += 1\n        else:\n            le += 1\n        d //= 10\nprint(chan,le)",
-        "highlighted_code": "<span class='highlight-green'>\nm,n = list(map(int,input().split()))\nle = 0\nchan = 0\nfor i in range(m, n +</span> 1):\n    d = i\n   <span class='highlight-green'> while d &gt; 0:\n        if (d % 10) % 2 == 0:\n            chan += 1\n        else:\n            le += 1\n        d //= 10</span>\nprint(chan,le)"
+        "path": "/app/app/data/submissions/68e3cb667243251374477212/fd92120cec18496789c2c733/sub_1761621160101_dbsz5v32r.py",
+        "similarity_percent": 94.74,
+        "full_code": "start, end = map(int,input().split())\ntotalchan = 0\ntotalle = 0\nfor i in range (start, end + 1):\n    for g in str(i):\n        if int(g) % 2 == 0:\n            totalchan += 1\n        else:\n            totalle += 1\n    \nprint (totalchan, totalle)",
+        "highlighted_code": "<span class='highlight-green'>start, end = map(int,input().split())\ntotalchan = 0\ntotalle = 0\nfor i in range (start, end + 1):\n    for g in </span>str(i<span class='highlight-green'>):\n        if int(g) % 2 == 0:\n            totalchan += 1\n        else:\n            totalle += 1\n    \nprint (</span>totalchan, totalle)"
       },
-      "token_overlap": 94,
-      "max_similarity_percent": 85.45
+      "token_overlap": 90,
+      "max_similarity_percent": 94.74
     },
     {
       "case_id": 14,
       "file1": {
-        "path": "/app/app/data/submissions/68e3cb667243251374477212/222412e06e454a339defe331/sub_1761643736009_oflmt019z.py",
-        "similarity_percent": 59.62,
-        "full_code": "m,n=list(map(int,input().split()))\np=0\no=0\nfor i in range(m,n+1):\n    k=str(i)\n    for a in k:\n        if int(a)%2==0:\n            p+=1\n        else:\n            o+=1\nprint(p,o)",
-        "highlighted_code": "m,n=list(map(int,input().split()))\np=<span class='highlight-red'>0\no=0\nfor i in range(m,n+1):\n    k=str(i)\n    for a in </span>k:\n        if int(a)<span class='highlight-red'>%2==0:\n            p+=1\n        else:\n            o+=1\nprint(</span>p,o)"
+        "path": "/app/app/data/submissions/68e3cb667243251374477212/472aabe424744a0f9fa4c2d4/sub_1765383324774_ouwdqvscd.py",
+        "similarity_percent": 92.78,
+        "full_code": "n,m = map(int,input().split())\ntongchan=0\ntongle=0\nfor i in range (n, m+1):\n    for j in (str(i)):\n        if int(j) % 2 ==0 :\n            tongchan+=1\n        else :\n            tongle+=1\nprint(tongchan,tongle)\n",
+        "highlighted_code": "<span class='highlight-red'>n,m = map(int,input().split())\ntongchan=0\ntongle=0\nfor i in range (n, m+1):\n    for j in </span>(str(i)<span class='highlight-red'>):\n        if int(j) % 2 ==0 :\n            tongchan+=1\n        else :\n            tongle+=1\nprint(</span>tongchan,tongle)\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3cb667243251374477212/e59c34a1bebb49d29bfb3592/sub_1762422514603_fvlbou6i4.py",
+        "similarity_percent": 94.74,
+        "full_code": "start, end = map(int, input().split())\neven_count = 0\nodd_count = 0\n\nfor i in range(start, end + 1):\n    for ch in str(i):\n        if int(ch) % 2 == 0:\n            even_count += 1\n        else:\n            odd_count += 1\n\nprint(even_count, odd_count)\n",
+        "highlighted_code": "<span class='highlight-green'>start, end = map(int, input().split())\neven_count = 0\nodd_count = 0\n\nfor i in range(start, end + 1):\n    for ch in </span>str(i<span class='highlight-green'>):\n        if int(ch) % 2 == 0:\n            even_count += 1\n        else:\n            odd_count += 1\n\nprint(</span>even_count, odd_count)\n"
+      },
+      "token_overlap": 90,
+      "max_similarity_percent": 94.74
+    },
+    {
+      "case_id": 15,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3cb667243251374477212/bbf053b9c70d4a5697fa5d7f/sub_1762854763316_xwfyffqa2.py",
+        "similarity_percent": 91.58,
+        "full_code": "a,b = map(int, input().split())\ntongchan = 0\ntongle = 0\nfor num in range(a,b+1):\n    for i in str(num):\n        if int(i) % 2 == 0:\n            tongchan += 1\n        else:\n            tongle += 1\nprint(tongchan, tongle)",
+        "highlighted_code": "<span class='highlight-red'>a,b = map(int, input().split())\ntongchan = 0\ntongle = 0\nfor num in range(a,b+1):\n    for i in str(num):\n        </span>if int(i) <span class='highlight-red'>% 2 == 0:\n            tongchan += 1\n        else:\n            tongle += 1\nprint(</span>tongchan, tongle)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3cb667243251374477212/8e19101eb0da4e9a92a17098/sub_1762354969031_av30dju2p.py",
+        "similarity_percent": 88.78,
+        "full_code": "start, end = map(int, input().split())\nchan = 0\nle = 0\nfor n in range(start, end + 1):\n    for ch in str(n):\n        digit = int(ch)\n        if digit % 2 == 0:\n            chan += 1\n        else:\n            le += 1\nprint(chan, le)\n",
+        "highlighted_code": "<span class='highlight-green'>start, end = map(int, input().split())\nchan = 0\nle = 0\nfor n in range(start, end + 1):\n    for ch in str(n):\n        </span>digit = int(ch)\n        if digit <span class='highlight-green'>% 2 == 0:\n            chan += 1\n        else:\n            le += 1\nprint(</span>chan, le)\n"
+      },
+      "token_overlap": 87,
+      "max_similarity_percent": 91.58
+    },
+    {
+      "case_id": 16,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3cb667243251374477212/bbf053b9c70d4a5697fa5d7f/sub_1762854763316_xwfyffqa2.py",
+        "similarity_percent": 91.58,
+        "full_code": "a,b = map(int, input().split())\ntongchan = 0\ntongle = 0\nfor num in range(a,b+1):\n    for i in str(num):\n        if int(i) % 2 == 0:\n            tongchan += 1\n        else:\n            tongle += 1\nprint(tongchan, tongle)",
+        "highlighted_code": "<span class='highlight-red'>a,b = map(int, input().split())\ntongchan = 0\ntongle = 0\nfor num in range(a,b+1):\n    for i in str(num):\n        </span>if int(i) <span class='highlight-red'>% 2 == 0:\n            tongchan += 1\n        else:\n            tongle += 1\nprint(</span>tongchan, tongle)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3cb667243251374477212/e59c34a1bebb49d29bfb3592/sub_1765027832573_uqlxut1zl.py",
+        "similarity_percent": 84.47,
+        "full_code": "start,end = map(int,input().split())\ntong_chan = 0\ntong_le = 0\nfor num in range(start, end + 1):\n    for ch in str(num):\n        digit = int(ch)\n        if digit % 2 == 0:\n            tong_chan += 1\n        else:\n            tong_le += 1\nprint(*[tong_chan, tong_le])\n",
+        "highlighted_code": "<span class='highlight-green'>start,end = map(int,input().split())\ntong_chan = 0\ntong_le = 0\nfor num in range(start, end + 1):\n    for ch in str(num):\n        </span>digit = int(ch)\n        if digit <span class='highlight-green'>% 2 == 0:\n            tong_chan += 1\n        else:\n            tong_le += 1\nprint(</span>*[tong_chan, tong_le])\n"
+      },
+      "token_overlap": 87,
+      "max_similarity_percent": 91.58
+    },
+    {
+      "case_id": 17,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3cb667243251374477212/bbf053b9c70d4a5697fa5d7f/sub_1762854763316_xwfyffqa2.py",
+        "similarity_percent": 91.58,
+        "full_code": "a,b = map(int, input().split())\ntongchan = 0\ntongle = 0\nfor num in range(a,b+1):\n    for i in str(num):\n        if int(i) % 2 == 0:\n            tongchan += 1\n        else:\n            tongle += 1\nprint(tongchan, tongle)",
+        "highlighted_code": "<span class='highlight-red'>a,b = map(int, input().split())\ntongchan = 0\ntongle = 0\nfor num in range(a,b+1):\n    for i in str(num):\n        </span>if int(i) <span class='highlight-red'>% 2 == 0:\n            tongchan += 1\n        else:\n            tongle += 1\nprint(</span>tongchan, tongle)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3cb667243251374477212/026b0aa51ea144cda50395b7/sub_1763996956724_kqk0wechm.py",
+        "similarity_percent": 88.78,
+        "full_code": "start, end = map(int, input().split())\n\neven = 0\nodd = 0\n\nfor num in range(start, end + 1):\n    for ch in str(num):\n        digit = int(ch)\n        if digit % 2 == 0:\n            even += 1\n        else:\n            odd += 1\n\nprint(even, odd)\n\n",
+        "highlighted_code": "<span class='highlight-green'>start, end = map(int, input().split())\n\neven = 0\nodd = 0\n\nfor num in range(start, end + 1):\n    for ch in str(num):\n        </span>digit = int(ch)\n        if digit <span class='highlight-green'>% 2 == 0:\n            even += 1\n        else:\n            odd += 1\n\nprint(</span>even, odd)\n\n"
+      },
+      "token_overlap": 87,
+      "max_similarity_percent": 91.58
+    },
+    {
+      "case_id": 18,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3cb667243251374477212/20871fc259cd4e60b3f56a79/sub_1763835030259_bart2vrrm.py",
+        "similarity_percent": 89.81,
+        "full_code": "start,end=map(int, input().split())\ntong_chan=0\ntong_le=0\nfor i in range(start, end+1):\n    chuoi=str(i)\n    for ky_tu in chuoi:\n        chu_so=int(ky_tu)\n        if chu_so%2==0:\n            tong_chan+=1\n        else:\n            tong_le+=1\nprint(f\"{tong_chan} {tong_le}\")\n",
+        "highlighted_code": "<span class='highlight-red'>start,end=map(int, input().split())\ntong_chan=0\ntong_le=0\nfor i in range(start, end+1):\n    chuoi=str(i)\n    for ky_tu in chuoi:\n        chu_so=int(ky_tu)\n        if chu_so%2==0:\n            tong_chan+=1\n        else:\n            tong_le+=1\npr</span>int(f&#34;{tong_chan} {tong_le}&#34;)\n"
       },
       "file2": {
         "path": "/app/app/data/submissions/68e3cb667243251374477212/bcb420abb39b4af095b63cf8/sub_1762632670298_5sqflyd7x.py",
-        "similarity_percent": 61.39,
+        "similarity_percent": 96.04,
         "full_code": "a,b=map(int,input().split())\ntongchan=0\ntongle=0\nfor i in range(a,b+1):\n    k=str(i)\n    for j in k:\n        h=int(j)\n        if h%2==0:\n           tongchan+=1\n        else:\n           tongle+=1\nprint(tongchan,tongle)",
-        "highlighted_code": "a,b=map(int,input().split())\ntongchan=<span class='highlight-green'>0\ntongle=0\nfor i in range(a,b+1):\n    k=str(i)\n    for j in </span>k:\n        h=int(j)\n        if h<span class='highlight-green'>%2==0:\n           tongchan+=1\n        else:\n           tongle+=1\nprint(</span>tongchan,tongle)"
+        "highlighted_code": "<span class='highlight-green'>a,b=map(int,input().split())\ntongchan=0\ntongle=0\nfor i in range(a,b+1):\n    k=str(i)\n    for j in k:\n        h=int(j)\n        if h%2==0:\n           tongchan+=1\n        else:\n           tongle+=1\npr</span>int(tongchan,tongle)"
+      },
+      "token_overlap": 97,
+      "max_similarity_percent": 96.04
+    },
+    {
+      "case_id": 19,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3cb667243251374477212/8e19101eb0da4e9a92a17098/sub_1762354969031_av30dju2p.py",
+        "similarity_percent": 88.78,
+        "full_code": "start, end = map(int, input().split())\nchan = 0\nle = 0\nfor n in range(start, end + 1):\n    for ch in str(n):\n        digit = int(ch)\n        if digit % 2 == 0:\n            chan += 1\n        else:\n            le += 1\nprint(chan, le)\n",
+        "highlighted_code": "<span class='highlight-red'>start, end = map(int, input().split())\nchan = 0\nle = 0\nfor n in range(start, end + 1):\n    for ch in str(n):\n        </span>digit = int(ch)\n        if digit <span class='highlight-red'>% 2 == 0:\n            chan += 1\n        else:\n            le += 1\nprint(</span>chan, le)\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3cb667243251374477212/fd92120cec18496789c2c733/sub_1761621160101_dbsz5v32r.py",
+        "similarity_percent": 91.58,
+        "full_code": "start, end = map(int,input().split())\ntotalchan = 0\ntotalle = 0\nfor i in range (start, end + 1):\n    for g in str(i):\n        if int(g) % 2 == 0:\n            totalchan += 1\n        else:\n            totalle += 1\n    \nprint (totalchan, totalle)",
+        "highlighted_code": "<span class='highlight-green'>start, end = map(int,input().split())\ntotalchan = 0\ntotalle = 0\nfor i in range (start, end + 1):\n    for g in str(i):\n        </span>if int(g) <span class='highlight-green'>% 2 == 0:\n            totalchan += 1\n        else:\n            totalle += 1\n    \nprint (</span>totalchan, totalle)"
+      },
+      "token_overlap": 87,
+      "max_similarity_percent": 91.58
+    },
+    {
+      "case_id": 20,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3cb667243251374477212/8e19101eb0da4e9a92a17098/sub_1762354969031_av30dju2p.py",
+        "similarity_percent": 88.78,
+        "full_code": "start, end = map(int, input().split())\nchan = 0\nle = 0\nfor n in range(start, end + 1):\n    for ch in str(n):\n        digit = int(ch)\n        if digit % 2 == 0:\n            chan += 1\n        else:\n            le += 1\nprint(chan, le)\n",
+        "highlighted_code": "<span class='highlight-red'>start, end = map(int, input().split())\nchan = 0\nle = 0\nfor n in range(start, end + 1):\n    for ch in str(n):\n        </span>digit = int(ch)\n        if digit <span class='highlight-red'>% 2 == 0:\n            chan += 1\n        else:\n            le += 1\nprint(</span>chan, le)\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3cb667243251374477212/e59c34a1bebb49d29bfb3592/sub_1762422514603_fvlbou6i4.py",
+        "similarity_percent": 91.58,
+        "full_code": "start, end = map(int, input().split())\neven_count = 0\nodd_count = 0\n\nfor i in range(start, end + 1):\n    for ch in str(i):\n        if int(ch) % 2 == 0:\n            even_count += 1\n        else:\n            odd_count += 1\n\nprint(even_count, odd_count)\n",
+        "highlighted_code": "<span class='highlight-green'>start, end = map(int, input().split())\neven_count = 0\nodd_count = 0\n\nfor i in range(start, end + 1):\n    for ch in str(i):\n        </span>if int(ch) <span class='highlight-green'>% 2 == 0:\n            even_count += 1\n        else:\n            odd_count += 1\n\nprint(</span>even_count, odd_count)\n"
+      },
+      "token_overlap": 87,
+      "max_similarity_percent": 91.58
+    },
+    {
+      "case_id": 21,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3cb667243251374477212/026b0aa51ea144cda50395b7/sub_1763996956724_kqk0wechm.py",
+        "similarity_percent": 88.78,
+        "full_code": "start, end = map(int, input().split())\n\neven = 0\nodd = 0\n\nfor num in range(start, end + 1):\n    for ch in str(num):\n        digit = int(ch)\n        if digit % 2 == 0:\n            even += 1\n        else:\n            odd += 1\n\nprint(even, odd)\n\n",
+        "highlighted_code": "<span class='highlight-red'>start, end = map(int, input().split())\n\neven = 0\nodd = 0\n\nfor num in range(start, end + 1):\n    for ch in str(num):\n        </span>digit = int(ch)\n        if digit <span class='highlight-red'>% 2 == 0:\n            even += 1\n        else:\n            odd += 1\n\nprint(</span>even, odd)\n\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3cb667243251374477212/fd92120cec18496789c2c733/sub_1761621160101_dbsz5v32r.py",
+        "similarity_percent": 91.58,
+        "full_code": "start, end = map(int,input().split())\ntotalchan = 0\ntotalle = 0\nfor i in range (start, end + 1):\n    for g in str(i):\n        if int(g) % 2 == 0:\n            totalchan += 1\n        else:\n            totalle += 1\n    \nprint (totalchan, totalle)",
+        "highlighted_code": "<span class='highlight-green'>start, end = map(int,input().split())\ntotalchan = 0\ntotalle = 0\nfor i in range (start, end + 1):\n    for g in str(i):\n        </span>if int(g) <span class='highlight-green'>% 2 == 0:\n            totalchan += 1\n        else:\n            totalle += 1\n    \nprint (</span>totalchan, totalle)"
+      },
+      "token_overlap": 87,
+      "max_similarity_percent": 91.58
+    },
+    {
+      "case_id": 22,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3cb667243251374477212/026b0aa51ea144cda50395b7/sub_1763996956724_kqk0wechm.py",
+        "similarity_percent": 88.78,
+        "full_code": "start, end = map(int, input().split())\n\neven = 0\nodd = 0\n\nfor num in range(start, end + 1):\n    for ch in str(num):\n        digit = int(ch)\n        if digit % 2 == 0:\n            even += 1\n        else:\n            odd += 1\n\nprint(even, odd)\n\n",
+        "highlighted_code": "<span class='highlight-red'>start, end = map(int, input().split())\n\neven = 0\nodd = 0\n\nfor num in range(start, end + 1):\n    for ch in str(num):\n        </span>digit = int(ch)\n        if digit <span class='highlight-red'>% 2 == 0:\n            even += 1\n        else:\n            odd += 1\n\nprint(</span>even, odd)\n\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3cb667243251374477212/e59c34a1bebb49d29bfb3592/sub_1762422514603_fvlbou6i4.py",
+        "similarity_percent": 91.58,
+        "full_code": "start, end = map(int, input().split())\neven_count = 0\nodd_count = 0\n\nfor i in range(start, end + 1):\n    for ch in str(i):\n        if int(ch) % 2 == 0:\n            even_count += 1\n        else:\n            odd_count += 1\n\nprint(even_count, odd_count)\n",
+        "highlighted_code": "<span class='highlight-green'>start, end = map(int, input().split())\neven_count = 0\nodd_count = 0\n\nfor i in range(start, end + 1):\n    for ch in str(i):\n        </span>if int(ch) <span class='highlight-green'>% 2 == 0:\n            even_count += 1\n        else:\n            odd_count += 1\n\nprint(</span>even_count, odd_count)\n"
+      },
+      "token_overlap": 87,
+      "max_similarity_percent": 91.58
+    },
+    {
+      "case_id": 23,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3cb667243251374477212/e981f1efc9764aba8b686042/sub_1764510223208_y5gu2ha1q.py",
+        "similarity_percent": 88.62,
+        "full_code": "num = list(map(int, input().split()))\neven = 0\nodd = 0\nend_list = []\nfor i in range(num[0], num[1] + 1):\n    index = i\n    while index != 0:\n        check = index % 10\n        if check % 2 ==0:\n            even += 1\n        else:\n            odd += 1\n        index //= 10\n    del index\n\nprint(even, odd)",
+        "highlighted_code": "<span class='highlight-red'>num = list(map(int, input().split()))\neven = 0\nodd = 0\nend_list = []\nfor i in range(num[0], num[1] + 1):\n    index = i\n    while index != 0:\n        check = index % 10\n        if check % 2 ==0:\n            even += 1\n        else:\n            odd += 1\n        index //= 1</span>0\n    del index\n\nprint(even, odd)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3cb667243251374477212/e981f1efc9764aba8b686042/sub_1764510357083_izg8hwu7l.py",
+        "similarity_percent": 93.97,
+        "full_code": "num = list(map(int, input().split()))\neven = 0\nodd = 0\nend_list = []\nfor i in range(num[0], num[1] + 1):\n    index = i\n    while index != 0:\n        check = index % 10\n        if check % 2 ==0:\n            even += 1\n        else:\n            odd += 1\n        index //= 10\n\nprint(even, odd)",
+        "highlighted_code": "<span class='highlight-green'>num = list(map(int, input().split()))\neven = 0\nodd = 0\nend_list = []\nfor i in range(num[0], num[1] + 1):\n    index = i\n    while index != 0:\n        check = index % 10\n        if check % 2 ==0:\n            even += 1\n        else:\n            odd += 1\n        index //= 1</span>0\n\nprint(even, odd)"
+      },
+      "token_overlap": 109,
+      "max_similarity_percent": 93.97
+    },
+    {
+      "case_id": 24,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3cb667243251374477212/e59c34a1bebb49d29bfb3592/sub_1765027832573_uqlxut1zl.py",
+        "similarity_percent": 84.47,
+        "full_code": "start,end = map(int,input().split())\ntong_chan = 0\ntong_le = 0\nfor num in range(start, end + 1):\n    for ch in str(num):\n        digit = int(ch)\n        if digit % 2 == 0:\n            tong_chan += 1\n        else:\n            tong_le += 1\nprint(*[tong_chan, tong_le])\n",
+        "highlighted_code": "<span class='highlight-red'>start,end = map(int,input().split())\ntong_chan = 0\ntong_le = 0\nfor num in range(start, end + 1):\n    for ch in str(num):\n        </span>digit = int(ch)\n        if digit <span class='highlight-red'>% 2 == 0:\n            tong_chan += 1\n        else:\n            tong_le += 1\nprint(</span>*[tong_chan, tong_le])\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3cb667243251374477212/fd92120cec18496789c2c733/sub_1761621160101_dbsz5v32r.py",
+        "similarity_percent": 91.58,
+        "full_code": "start, end = map(int,input().split())\ntotalchan = 0\ntotalle = 0\nfor i in range (start, end + 1):\n    for g in str(i):\n        if int(g) % 2 == 0:\n            totalchan += 1\n        else:\n            totalle += 1\n    \nprint (totalchan, totalle)",
+        "highlighted_code": "<span class='highlight-green'>start, end = map(int,input().split())\ntotalchan = 0\ntotalle = 0\nfor i in range (start, end + 1):\n    for g in str(i):\n        </span>if int(g) <span class='highlight-green'>% 2 == 0:\n            totalchan += 1\n        else:\n            totalle += 1\n    \nprint (</span>totalchan, totalle)"
+      },
+      "token_overlap": 87,
+      "max_similarity_percent": 91.58
+    },
+    {
+      "case_id": 25,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3cb667243251374477212/e59c34a1bebb49d29bfb3592/sub_1765027832573_uqlxut1zl.py",
+        "similarity_percent": 84.47,
+        "full_code": "start,end = map(int,input().split())\ntong_chan = 0\ntong_le = 0\nfor num in range(start, end + 1):\n    for ch in str(num):\n        digit = int(ch)\n        if digit % 2 == 0:\n            tong_chan += 1\n        else:\n            tong_le += 1\nprint(*[tong_chan, tong_le])\n",
+        "highlighted_code": "<span class='highlight-red'>start,end = map(int,input().split())\ntong_chan = 0\ntong_le = 0\nfor num in range(start, end + 1):\n    for ch in str(num):\n        </span>digit = int(ch)\n        if digit <span class='highlight-red'>% 2 == 0:\n            tong_chan += 1\n        else:\n            tong_le += 1\nprint(</span>*[tong_chan, tong_le])\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3cb667243251374477212/e59c34a1bebb49d29bfb3592/sub_1762422514603_fvlbou6i4.py",
+        "similarity_percent": 91.58,
+        "full_code": "start, end = map(int, input().split())\neven_count = 0\nodd_count = 0\n\nfor i in range(start, end + 1):\n    for ch in str(i):\n        if int(ch) % 2 == 0:\n            even_count += 1\n        else:\n            odd_count += 1\n\nprint(even_count, odd_count)\n",
+        "highlighted_code": "<span class='highlight-green'>start, end = map(int, input().split())\neven_count = 0\nodd_count = 0\n\nfor i in range(start, end + 1):\n    for ch in str(i):\n        </span>if int(ch) <span class='highlight-green'>% 2 == 0:\n            even_count += 1\n        else:\n            odd_count += 1\n\nprint(</span>even_count, odd_count)\n"
+      },
+      "token_overlap": 87,
+      "max_similarity_percent": 91.58
+    },
+    {
+      "case_id": 26,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3cb667243251374477212/8e19101eb0da4e9a92a17098/sub_1762354969031_av30dju2p.py",
+        "similarity_percent": 83.67,
+        "full_code": "start, end = map(int, input().split())\nchan = 0\nle = 0\nfor n in range(start, end + 1):\n    for ch in str(n):\n        digit = int(ch)\n        if digit % 2 == 0:\n            chan += 1\n        else:\n            le += 1\nprint(chan, le)\n",
+        "highlighted_code": "<span class='highlight-red'>start, end = map(int, input().split())\nchan = 0\nle = 0\nfor n in range(start, end + 1):\n    </span>for ch in str(n):\n        digit = i<span class='highlight-red'>nt(ch)\n        if digit % 2 == 0:\n            chan += 1\n        else:\n            le += 1\nprint(</span>chan, le)\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3cb667243251374477212/bcb420abb39b4af095b63cf8/sub_1762632670298_5sqflyd7x.py",
+        "similarity_percent": 81.19,
+        "full_code": "a,b=map(int,input().split())\ntongchan=0\ntongle=0\nfor i in range(a,b+1):\n    k=str(i)\n    for j in k:\n        h=int(j)\n        if h%2==0:\n           tongchan+=1\n        else:\n           tongle+=1\nprint(tongchan,tongle)",
+        "highlighted_code": "<span class='highlight-green'>a,b=map(int,input().split())\ntongchan=0\ntongle=0\nfor i in range(a,b+1):\n    </span>k=str(i)\n    for j in k:\n        h=i<span class='highlight-green'>nt(j)\n        if h%2==0:\n           tongchan+=1\n        else:\n           tongle+=1\nprint(</span>tongchan,tongle)"
+      },
+      "token_overlap": 82,
+      "max_similarity_percent": 83.67
+    },
+    {
+      "case_id": 27,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3cb667243251374477212/0cb0117234e943f4ab1ea21a/sub_1763618256482_86hr1vz1m.py",
+        "similarity_percent": 83.13,
+        "full_code": "start=18\nend=42\ndigit=[]\nchan=0\nle=0\nfor i in range(start, end + 1):\n    for digit in str(i):\n        if int(digit) % 2 == 0:\n            chan += 1\n        else:\n            le += 1\nprint(chan,le)\n\n\n",
+        "highlighted_code": "start=18\nend=42\ndigit=[]\nchan=<span class='highlight-red'>0\nle=0\nfor i in range(start, end + 1):\n    for digit in str(i):\n        if int(digit) % 2 == 0:\n            chan += 1\n        else:\n            le += 1\nprint(</span>chan,le)\n\n\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3cb667243251374477212/fd92120cec18496789c2c733/sub_1761621160101_dbsz5v32r.py",
+        "similarity_percent": 72.63,
+        "full_code": "start, end = map(int,input().split())\ntotalchan = 0\ntotalle = 0\nfor i in range (start, end + 1):\n    for g in str(i):\n        if int(g) % 2 == 0:\n            totalchan += 1\n        else:\n            totalle += 1\n    \nprint (totalchan, totalle)",
+        "highlighted_code": "start, end = map(int,input().split())\ntotalchan = <span class='highlight-green'>0\ntotalle = 0\nfor i in range (start, end + 1):\n    for g in str(i):\n        if int(g) % 2 == 0:\n            totalchan += 1\n        else:\n            totalle += 1\n    \nprint (</span>totalchan, totalle)"
+      },
+      "token_overlap": 69,
+      "max_similarity_percent": 83.13
+    },
+    {
+      "case_id": 28,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3cb667243251374477212/0cb0117234e943f4ab1ea21a/sub_1763618256482_86hr1vz1m.py",
+        "similarity_percent": 83.13,
+        "full_code": "start=18\nend=42\ndigit=[]\nchan=0\nle=0\nfor i in range(start, end + 1):\n    for digit in str(i):\n        if int(digit) % 2 == 0:\n            chan += 1\n        else:\n            le += 1\nprint(chan,le)\n\n\n",
+        "highlighted_code": "start=18\nend=42\ndigit=[]\nchan=<span class='highlight-red'>0\nle=0\nfor i in range(start, end + 1):\n    for digit in str(i):\n        if int(digit) % 2 == 0:\n            chan += 1\n        else:\n            le += 1\nprint(</span>chan,le)\n\n\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3cb667243251374477212/e59c34a1bebb49d29bfb3592/sub_1762422514603_fvlbou6i4.py",
+        "similarity_percent": 72.63,
+        "full_code": "start, end = map(int, input().split())\neven_count = 0\nodd_count = 0\n\nfor i in range(start, end + 1):\n    for ch in str(i):\n        if int(ch) % 2 == 0:\n            even_count += 1\n        else:\n            odd_count += 1\n\nprint(even_count, odd_count)\n",
+        "highlighted_code": "start, end = map(int, input().split())\neven_count = <span class='highlight-green'>0\nodd_count = 0\n\nfor i in range(start, end + 1):\n    for ch in str(i):\n        if int(ch) % 2 == 0:\n            even_count += 1\n        else:\n            odd_count += 1\n\nprint(</span>even_count, odd_count)\n"
+      },
+      "token_overlap": 69,
+      "max_similarity_percent": 83.13
+    },
+    {
+      "case_id": 29,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3cb667243251374477212/0cb0117234e943f4ab1ea21a/sub_1764485066255_xbfgr2nx0.py",
+        "similarity_percent": 82.52,
+        "full_code": "start, end = map(int,input().split())\nchuoi = []\ntong_chan = 0\ntong_le =0\nfor i in range(start,end+1):\n    chuoi += str(i)\nfor j in chuoi:\n    if int(j) % 2 == 0:\n            tong_chan += 1\n    else:\n            tong_le += 1\nprint(tong_chan,tong_le)",
+        "highlighted_code": "start, end = map(int,input(<span class='highlight-red'>).split())\nchuoi = []\ntong_chan = 0\ntong_le =0\nfor i in range(start,end+1):\n    chuoi += str(i)\nfor j in chuoi:\n    if int(j) % 2 == 0:\n            tong_chan += 1\n    else:\n            tong_le += 1\nprint(</span>tong_chan,tong_le)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3cb667243251374477212/0cb0117234e943f4ab1ea21a/sub_1764343649470_msd6wlzd8.py",
+        "similarity_percent": 80.19,
+        "full_code": "start, end = map(int,input('Nhập số đầu và số cuối(cách nhau bới dấu cách):').split())\nchuoi = []\ntong_chan = 0\ntong_le = 0\nfor i in range(start,end+1):\n    chuoi += str(i)\nfor j in chuoi:\n    if int(j) % 2 == 0:\n            tong_chan += 1\n    else:\n            tong_le += 1\nprint(tong_chan,tong_le)",
+        "highlighted_code": "start, end = map(int,input(&#39;Nhập số đầu và số cuối(cách nhau bới dấu cách):&#39;<span class='highlight-green'>).split())\nchuoi = []\ntong_chan = 0\ntong_le = 0\nfor i in range(start,end+1):\n    chuoi += str(i)\nfor j in chuoi:\n    if int(j) % 2 == 0:\n            tong_chan += 1\n    else:\n            tong_le += 1\nprint(</span>tong_chan,tong_le)"
+      },
+      "token_overlap": 85,
+      "max_similarity_percent": 82.52
+    },
+    {
+      "case_id": 30,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3cb667243251374477212/472aabe424744a0f9fa4c2d4/sub_1765383324774_ouwdqvscd.py",
+        "similarity_percent": 82.47,
+        "full_code": "n,m = map(int,input().split())\ntongchan=0\ntongle=0\nfor i in range (n, m+1):\n    for j in (str(i)):\n        if int(j) % 2 ==0 :\n            tongchan+=1\n        else :\n            tongle+=1\nprint(tongchan,tongle)\n",
+        "highlighted_code": "<span class='highlight-red'>n,m = map(int,input().split())\ntongchan=0\ntongle=0\nfor i in range (n, m+1):\n    for j in </span>(str(i)):\n        if int(j) <span class='highlight-red'>% 2 ==0 :\n            tongchan+=1\n        else :\n            tongle+=1\nprint(</span>tongchan,tongle)\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3cb667243251374477212/8e19101eb0da4e9a92a17098/sub_1762354969031_av30dju2p.py",
+        "similarity_percent": 81.63,
+        "full_code": "start, end = map(int, input().split())\nchan = 0\nle = 0\nfor n in range(start, end + 1):\n    for ch in str(n):\n        digit = int(ch)\n        if digit % 2 == 0:\n            chan += 1\n        else:\n            le += 1\nprint(chan, le)\n",
+        "highlighted_code": "<span class='highlight-green'>start, end = map(int, input().split())\nchan = 0\nle = 0\nfor n in range(start, end + 1):\n    for ch in </span>str(n):\n        digit = int(ch)\n        if digit <span class='highlight-green'>% 2 == 0:\n            chan += 1\n        else:\n            le += 1\nprint(</span>chan, le)\n"
+      },
+      "token_overlap": 80,
+      "max_similarity_percent": 82.47
+    },
+    {
+      "case_id": 31,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3cb667243251374477212/472aabe424744a0f9fa4c2d4/sub_1765383324774_ouwdqvscd.py",
+        "similarity_percent": 82.47,
+        "full_code": "n,m = map(int,input().split())\ntongchan=0\ntongle=0\nfor i in range (n, m+1):\n    for j in (str(i)):\n        if int(j) % 2 ==0 :\n            tongchan+=1\n        else :\n            tongle+=1\nprint(tongchan,tongle)\n",
+        "highlighted_code": "<span class='highlight-red'>n,m = map(int,input().split())\ntongchan=0\ntongle=0\nfor i in range (n, m+1):\n    for j in </span>(str(i)):\n        if int(j) <span class='highlight-red'>% 2 ==0 :\n            tongchan+=1\n        else :\n            tongle+=1\nprint(</span>tongchan,tongle)\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3cb667243251374477212/e59c34a1bebb49d29bfb3592/sub_1765027832573_uqlxut1zl.py",
+        "similarity_percent": 77.67,
+        "full_code": "start,end = map(int,input().split())\ntong_chan = 0\ntong_le = 0\nfor num in range(start, end + 1):\n    for ch in str(num):\n        digit = int(ch)\n        if digit % 2 == 0:\n            tong_chan += 1\n        else:\n            tong_le += 1\nprint(*[tong_chan, tong_le])\n",
+        "highlighted_code": "<span class='highlight-green'>start,end = map(int,input().split())\ntong_chan = 0\ntong_le = 0\nfor num in range(start, end + 1):\n    for ch in </span>str(num):\n        digit = int(ch)\n        if digit <span class='highlight-green'>% 2 == 0:\n            tong_chan += 1\n        else:\n            tong_le += 1\nprint(</span>*[tong_chan, tong_le])\n"
+      },
+      "token_overlap": 80,
+      "max_similarity_percent": 82.47
+    },
+    {
+      "case_id": 32,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3cb667243251374477212/472aabe424744a0f9fa4c2d4/sub_1765383324774_ouwdqvscd.py",
+        "similarity_percent": 82.47,
+        "full_code": "n,m = map(int,input().split())\ntongchan=0\ntongle=0\nfor i in range (n, m+1):\n    for j in (str(i)):\n        if int(j) % 2 ==0 :\n            tongchan+=1\n        else :\n            tongle+=1\nprint(tongchan,tongle)\n",
+        "highlighted_code": "<span class='highlight-red'>n,m = map(int,input().split())\ntongchan=0\ntongle=0\nfor i in range (n, m+1):\n    for j in </span>(str(i)):\n        if int(j) <span class='highlight-red'>% 2 ==0 :\n            tongchan+=1\n        else :\n            tongle+=1\nprint(</span>tongchan,tongle)\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3cb667243251374477212/026b0aa51ea144cda50395b7/sub_1763996956724_kqk0wechm.py",
+        "similarity_percent": 81.63,
+        "full_code": "start, end = map(int, input().split())\n\neven = 0\nodd = 0\n\nfor num in range(start, end + 1):\n    for ch in str(num):\n        digit = int(ch)\n        if digit % 2 == 0:\n            even += 1\n        else:\n            odd += 1\n\nprint(even, odd)\n\n",
+        "highlighted_code": "<span class='highlight-green'>start, end = map(int, input().split())\n\neven = 0\nodd = 0\n\nfor num in range(start, end + 1):\n    for ch in </span>str(num):\n        digit = int(ch)\n        if digit <span class='highlight-green'>% 2 == 0:\n            even += 1\n        else:\n            odd += 1\n\nprint(</span>even, odd)\n\n"
+      },
+      "token_overlap": 80,
+      "max_similarity_percent": 82.47
+    },
+    {
+      "case_id": 33,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3cb667243251374477212/bcb420abb39b4af095b63cf8/sub_1762632670298_5sqflyd7x.py",
+        "similarity_percent": 81.19,
+        "full_code": "a,b=map(int,input().split())\ntongchan=0\ntongle=0\nfor i in range(a,b+1):\n    k=str(i)\n    for j in k:\n        h=int(j)\n        if h%2==0:\n           tongchan+=1\n        else:\n           tongle+=1\nprint(tongchan,tongle)",
+        "highlighted_code": "<span class='highlight-red'>a,b=map(int,input().split())\ntongchan=0\ntongle=0\nfor i in range(a,b+1):\n    </span>k=str(i)\n    for j in k:\n        h=i<span class='highlight-red'>nt(j)\n        if h%2==0:\n           tongchan+=1\n        else:\n           tongle+=1\nprint(</span>tongchan,tongle)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3cb667243251374477212/e59c34a1bebb49d29bfb3592/sub_1765027832573_uqlxut1zl.py",
+        "similarity_percent": 79.61,
+        "full_code": "start,end = map(int,input().split())\ntong_chan = 0\ntong_le = 0\nfor num in range(start, end + 1):\n    for ch in str(num):\n        digit = int(ch)\n        if digit % 2 == 0:\n            tong_chan += 1\n        else:\n            tong_le += 1\nprint(*[tong_chan, tong_le])\n",
+        "highlighted_code": "<span class='highlight-green'>start,end = map(int,input().split())\ntong_chan = 0\ntong_le = 0\nfor num in range(start, end + 1):\n    </span>for ch in str(num):\n        digit = i<span class='highlight-green'>nt(ch)\n        if digit % 2 == 0:\n            tong_chan += 1\n        else:\n            tong_le += 1\nprint(</span>*[tong_chan, tong_le])\n"
+      },
+      "token_overlap": 82,
+      "max_similarity_percent": 81.19
+    },
+    {
+      "case_id": 34,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3cb667243251374477212/bcb420abb39b4af095b63cf8/sub_1762632670298_5sqflyd7x.py",
+        "similarity_percent": 81.19,
+        "full_code": "a,b=map(int,input().split())\ntongchan=0\ntongle=0\nfor i in range(a,b+1):\n    k=str(i)\n    for j in k:\n        h=int(j)\n        if h%2==0:\n           tongchan+=1\n        else:\n           tongle+=1\nprint(tongchan,tongle)",
+        "highlighted_code": "<span class='highlight-red'>a,b=map(int,input().split())\ntongchan=0\ntongle=0\nfor i in range(a,b+1):\n    </span>k=str(i)\n    for j in k:\n        h=i<span class='highlight-red'>nt(j)\n        if h%2==0:\n           tongchan+=1\n        else:\n           tongle+=1\nprint(</span>tongchan,tongle)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3cb667243251374477212/026b0aa51ea144cda50395b7/sub_1763996956724_kqk0wechm.py",
+        "similarity_percent": 83.67,
+        "full_code": "start, end = map(int, input().split())\n\neven = 0\nodd = 0\n\nfor num in range(start, end + 1):\n    for ch in str(num):\n        digit = int(ch)\n        if digit % 2 == 0:\n            even += 1\n        else:\n            odd += 1\n\nprint(even, odd)\n\n",
+        "highlighted_code": "<span class='highlight-green'>start, end = map(int, input().split())\n\neven = 0\nodd = 0\n\nfor num in range(start, end + 1):\n    </span>for ch in str(num):\n        digit = i<span class='highlight-green'>nt(ch)\n        if digit % 2 == 0:\n            even += 1\n        else:\n            odd += 1\n\nprint(</span>even, odd)\n\n"
+      },
+      "token_overlap": 82,
+      "max_similarity_percent": 83.67
+    },
+    {
+      "case_id": 35,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3cb667243251374477212/0d74995bf22b4574a97a2297/sub_1761555507831_2l4aof727.py",
+        "similarity_percent": 81.08,
+        "full_code": "def dem(n):\n    le = 0\n    chan = 0\n    while n > 0:\n        if (n % 10) % 2 == 0:\n            chan += 1\n        else:\n            le += 1\n        n //= 10\n    return le,chan\nm,n = list(map(int,input().split()))\nle = 0\nchan = 0\nfor i in range(m, n + 1):\n    result = dem(i)\n    le += result[0]\n    chan += result[1]\nprint(chan, le)",
+        "highlighted_code": "<span class='highlight-red'>def dem(n):\n    le = 0\n    chan = 0\n    while n &gt; 0:\n        if (n % 10) % 2 == 0:\n            chan += 1\n        else:\n            le += 1\n        n //= 10\n    return le,chan\nm,n = list(map(int,input().split()))\nle = 0\nchan = 0\nfor i in range(m, n + 1):\n    </span>result = dem(i)\n    le += result[0]\n    chan += result[1]\nprint(chan, le)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3cb667243251374477212/0d74995bf22b4574a97a2297/sub_1761555024805_wpxogkti6.py",
+        "similarity_percent": 80.0,
+        "full_code": "def dem(n):\n    le = 0\n    chan = 0\n    while n > 0:\n        if (n % 10) % 2 == 0:\n            chan += 1\n        else:\n            le += 1\n        n //= 10\n    return le,chan\nm,n = list(map(int,input().split()))\nle = 0\nchan = 0\nfor i in range(m,n+1):\n    le += dem(i)[0]\n    chan += dem(i)[1]\nprint(chan,le)",
+        "highlighted_code": "<span class='highlight-green'>def dem(n):\n    le = 0\n    chan = 0\n    while n &gt; 0:\n        if (n % 10) % 2 == 0:\n            chan += 1\n        else:\n            le += 1\n        n //= 10\n    return le,chan\nm,n = list(map(int,input().split()))\nle = 0\nchan = 0\nfor i in range(m,n+1):\n    </span>le += dem(i)[0]\n    chan += dem(i)[1]\nprint(chan,le)"
+      },
+      "token_overlap": 120,
+      "max_similarity_percent": 81.08
+    },
+    {
+      "case_id": 36,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3cb667243251374477212/0cb0117234e943f4ab1ea21a/sub_1763618256482_86hr1vz1m.py",
+        "similarity_percent": 80.72,
+        "full_code": "start=18\nend=42\ndigit=[]\nchan=0\nle=0\nfor i in range(start, end + 1):\n    for digit in str(i):\n        if int(digit) % 2 == 0:\n            chan += 1\n        else:\n            le += 1\nprint(chan,le)\n\n\n",
+        "highlighted_code": "start=18\nend=42\ndigit=[]\nchan=<span class='highlight-red'>0\nle=0\nfor i in range(start, end + 1):\n    for digit in str(i):\n        if int(digit) % 2 == 0:\n            chan += 1\n        else:\n            le += 1\nprin</span>t(chan,le)\n\n\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3cb667243251374477212/9d56dd64686f4133b54e7cd3/sub_1765295500377_e2dynn2z7.py",
+        "similarity_percent": 50.76,
+        "full_code": "import math\nimport sys\nx=sys.stdin.read().split()\ny=int(x[0])\nz=int(x[1])\nchan=0\nle=0\nfor i in range(y,z+1):\n    for k in str(i):\n        if int(k)%2==0:\n            chan+=1\n        else:\n            le+=1\nprint(f\"{chan} {le}\")",
+        "highlighted_code": "import math\nimport sys\nx=sys.stdin.read().split()\ny=int(x[0])\nz=int(x[1])\nchan=<span class='highlight-green'>0\nle=0\nfor i in range(y,z+1):\n    for k in str(i):\n        if int(k)%2==0:\n            chan+=1\n        else:\n            le+=1\nprin</span>t(f&#34;{chan} {le}&#34;)"
+      },
+      "token_overlap": 67,
+      "max_similarity_percent": 80.72
+    },
+    {
+      "case_id": 37,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3cb667243251374477212/0d74995bf22b4574a97a2297/sub_1761555024805_wpxogkti6.py",
+        "similarity_percent": 80.0,
+        "full_code": "def dem(n):\n    le = 0\n    chan = 0\n    while n > 0:\n        if (n % 10) % 2 == 0:\n            chan += 1\n        else:\n            le += 1\n        n //= 10\n    return le,chan\nm,n = list(map(int,input().split()))\nle = 0\nchan = 0\nfor i in range(m,n+1):\n    le += dem(i)[0]\n    chan += dem(i)[1]\nprint(chan,le)",
+        "highlighted_code": "<span class='highlight-red'>def dem(n):\n    le = 0\n    chan = 0\n    while n &gt; 0:\n        if (n % 10) % 2 == 0:\n            chan += 1\n        else:\n            le += 1\n        n //= 10\n    return le,chan\nm,n = list(map(int,input().split()))\nle = 0\nchan = 0\nfor i in range(m,n+1):\n    </span>le += dem(i)[0]\n    chan += dem(i)[1]\nprint(chan,le)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3cb667243251374477212/0d74995bf22b4574a97a2297/sub_1761555162093_x8qehcgm4.py",
+        "similarity_percent": 81.08,
+        "full_code": "def dem(n):\n    le = 0\n    chan = 0\n    while n > 0:\n        if (n % 10) % 2 == 0:\n            chan += 1\n        else:\n            le += 1\n        n //= 10\n    return le,chan\nm,n = list(map(int,input().split()))\nle = 0\nchan = 0\nfor i in range(m, n + 1):\n    result = dem(i)\n    le += result[0]\n    chan += result[1]\nprint(chan,le)",
+        "highlighted_code": "<span class='highlight-green'>def dem(n):\n    le = 0\n    chan = 0\n    while n &gt; 0:\n        if (n % 10) % 2 == 0:\n            chan += 1\n        else:\n            le += 1\n        n //= 10\n    return le,chan\nm,n = list(map(int,input().split()))\nle = 0\nchan = 0\nfor i in range(m, n + 1):\n    </span>result = dem(i)\n    le += result[0]\n    chan += result[1]\nprint(chan,le)"
+      },
+      "token_overlap": 120,
+      "max_similarity_percent": 81.08
+    },
+    {
+      "case_id": 38,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3cb667243251374477212/bbf053b9c70d4a5697fa5d7f/sub_1762854763316_xwfyffqa2.py",
+        "similarity_percent": 77.89,
+        "full_code": "a,b = map(int, input().split())\ntongchan = 0\ntongle = 0\nfor num in range(a,b+1):\n    for i in str(num):\n        if int(i) % 2 == 0:\n            tongchan += 1\n        else:\n            tongle += 1\nprint(tongchan, tongle)",
+        "highlighted_code": "<span class='highlight-red'>a,b = map(int, input().split())\ntongchan = 0\ntongle = 0\nfor num in range(a,b+1):\n    </span>for i in str(num):\n        if int(i) <span class='highlight-red'>% 2 == 0:\n            tongchan += 1\n        else:\n            tongle += 1\nprint(</span>tongchan, tongle)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3cb667243251374477212/bcb420abb39b4af095b63cf8/sub_1762632670298_5sqflyd7x.py",
+        "similarity_percent": 73.27,
+        "full_code": "a,b=map(int,input().split())\ntongchan=0\ntongle=0\nfor i in range(a,b+1):\n    k=str(i)\n    for j in k:\n        h=int(j)\n        if h%2==0:\n           tongchan+=1\n        else:\n           tongle+=1\nprint(tongchan,tongle)",
+        "highlighted_code": "<span class='highlight-green'>a,b=map(int,input().split())\ntongchan=0\ntongle=0\nfor i in range(a,b+1):\n    </span>k=str(i)\n    for j in k:\n        h=int(j)\n        if h<span class='highlight-green'>%2==0:\n           tongchan+=1\n        else:\n           tongle+=1\nprint(</span>tongchan,tongle)"
+      },
+      "token_overlap": 74,
+      "max_similarity_percent": 77.89
+    },
+    {
+      "case_id": 39,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3cb667243251374477212/472aabe424744a0f9fa4c2d4/sub_1765383324774_ouwdqvscd.py",
+        "similarity_percent": 76.29,
+        "full_code": "n,m = map(int,input().split())\ntongchan=0\ntongle=0\nfor i in range (n, m+1):\n    for j in (str(i)):\n        if int(j) % 2 ==0 :\n            tongchan+=1\n        else :\n            tongle+=1\nprint(tongchan,tongle)\n",
+        "highlighted_code": "<span class='highlight-red'>n,m = map(int,input().split())\ntongchan=0\ntongle=0\nfor i in range (n, m+1):\n    </span>for j in (str(i)):\n        if int(j) <span class='highlight-red'>% 2 ==0 :\n            tongchan+=1\n        else :\n            tongle+=1\nprint(</span>tongchan,tongle)\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3cb667243251374477212/bcb420abb39b4af095b63cf8/sub_1762632670298_5sqflyd7x.py",
+        "similarity_percent": 73.27,
+        "full_code": "a,b=map(int,input().split())\ntongchan=0\ntongle=0\nfor i in range(a,b+1):\n    k=str(i)\n    for j in k:\n        h=int(j)\n        if h%2==0:\n           tongchan+=1\n        else:\n           tongle+=1\nprint(tongchan,tongle)",
+        "highlighted_code": "<span class='highlight-green'>a,b=map(int,input().split())\ntongchan=0\ntongle=0\nfor i in range(a,b+1):\n    </span>k=str(i)\n    for j in k:\n        h=int(j)\n        if h<span class='highlight-green'>%2==0:\n           tongchan+=1\n        else:\n           tongle+=1\nprint(</span>tongchan,tongle)"
+      },
+      "token_overlap": 74,
+      "max_similarity_percent": 76.29
+    },
+    {
+      "case_id": 40,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3cb667243251374477212/bcb420abb39b4af095b63cf8/sub_1762632670298_5sqflyd7x.py",
+        "similarity_percent": 73.27,
+        "full_code": "a,b=map(int,input().split())\ntongchan=0\ntongle=0\nfor i in range(a,b+1):\n    k=str(i)\n    for j in k:\n        h=int(j)\n        if h%2==0:\n           tongchan+=1\n        else:\n           tongle+=1\nprint(tongchan,tongle)",
+        "highlighted_code": "<span class='highlight-red'>a,b=map(int,input().split())\ntongchan=0\ntongle=0\nfor i in range(a,b+1):\n    </span>k=str(i)\n    for j in k:\n        h=int(j)\n        if h<span class='highlight-red'>%2==0:\n           tongchan+=1\n        else:\n           tongle+=1\nprint(</span>tongchan,tongle)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3cb667243251374477212/fd92120cec18496789c2c733/sub_1761621160101_dbsz5v32r.py",
+        "similarity_percent": 77.89,
+        "full_code": "start, end = map(int,input().split())\ntotalchan = 0\ntotalle = 0\nfor i in range (start, end + 1):\n    for g in str(i):\n        if int(g) % 2 == 0:\n            totalchan += 1\n        else:\n            totalle += 1\n    \nprint (totalchan, totalle)",
+        "highlighted_code": "<span class='highlight-green'>start, end = map(int,input().split())\ntotalchan = 0\ntotalle = 0\nfor i in range (start, end + 1):\n    </span>for g in str(i):\n        if int(g) <span class='highlight-green'>% 2 == 0:\n            totalchan += 1\n        else:\n            totalle += 1\n    \nprint (</span>totalchan, totalle)"
+      },
+      "token_overlap": 74,
+      "max_similarity_percent": 77.89
+    },
+    {
+      "case_id": 41,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3cb667243251374477212/bcb420abb39b4af095b63cf8/sub_1762632670298_5sqflyd7x.py",
+        "similarity_percent": 73.27,
+        "full_code": "a,b=map(int,input().split())\ntongchan=0\ntongle=0\nfor i in range(a,b+1):\n    k=str(i)\n    for j in k:\n        h=int(j)\n        if h%2==0:\n           tongchan+=1\n        else:\n           tongle+=1\nprint(tongchan,tongle)",
+        "highlighted_code": "<span class='highlight-red'>a,b=map(int,input().split())\ntongchan=0\ntongle=0\nfor i in range(a,b+1):\n    </span>k=str(i)\n    for j in k:\n        h=int(j)\n        if h<span class='highlight-red'>%2==0:\n           tongchan+=1\n        else:\n           tongle+=1\nprint(</span>tongchan,tongle)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3cb667243251374477212/e59c34a1bebb49d29bfb3592/sub_1762422514603_fvlbou6i4.py",
+        "similarity_percent": 77.89,
+        "full_code": "start, end = map(int, input().split())\neven_count = 0\nodd_count = 0\n\nfor i in range(start, end + 1):\n    for ch in str(i):\n        if int(ch) % 2 == 0:\n            even_count += 1\n        else:\n            odd_count += 1\n\nprint(even_count, odd_count)\n",
+        "highlighted_code": "<span class='highlight-green'>start, end = map(int, input().split())\neven_count = 0\nodd_count = 0\n\nfor i in range(start, end + 1):\n    </span>for ch in str(i):\n        if int(ch) <span class='highlight-green'>% 2 == 0:\n            even_count += 1\n        else:\n            odd_count += 1\n\nprint(</span>even_count, odd_count)\n"
+      },
+      "token_overlap": 74,
+      "max_similarity_percent": 77.89
+    },
+    {
+      "case_id": 42,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3cb667243251374477212/bbf053b9c70d4a5697fa5d7f/sub_1762854763316_xwfyffqa2.py",
+        "similarity_percent": 72.63,
+        "full_code": "a,b = map(int, input().split())\ntongchan = 0\ntongle = 0\nfor num in range(a,b+1):\n    for i in str(num):\n        if int(i) % 2 == 0:\n            tongchan += 1\n        else:\n            tongle += 1\nprint(tongchan, tongle)",
+        "highlighted_code": "a,b = map(int, input().split())\ntongchan = <span class='highlight-red'>0\ntongle = 0\nfor num in range(a,b+1):\n    for i in str(num):\n        if int(i) % 2 == 0:\n            tongchan += 1\n        else:\n            tongle += 1\nprint(</span>tongchan, tongle)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3cb667243251374477212/51bbd72f42174843b97698b4/sub_1764605418207_ke6f2ofky.py",
+        "similarity_percent": 57.02,
+        "full_code": "def n(so1, so2):\n    tong_chan = 0\n    tong_le = 0\n       \n    for j in range(so1, so2 + 1):\n\n        for so in str(j):\n            if int(so) % 2 == 0:\n                tong_chan += 1\n            else:\n                tong_le += 1 \n    print(tong_chan, tong_le)\nso1, so2 = list(map(int, input().split()))\nn(so1, so2)",
+        "highlighted_code": "def n(so1, so2):\n    tong_chan = <span class='highlight-green'>0\n    tong_le = 0\n       \n    for j in range(so1, so2 + 1):\n\n        for so in str(j):\n            if int(so) % 2 == 0:\n                tong_chan += 1\n            else:\n                tong_le += 1 \n    print(</span>tong_chan, tong_le)\nso1, so2 = list(map(int, input().split()))\nn(so1, so2)"
+      },
+      "token_overlap": 69,
+      "max_similarity_percent": 72.63
+    },
+    {
+      "case_id": 43,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3cb667243251374477212/bbf053b9c70d4a5697fa5d7f/sub_1762854763316_xwfyffqa2.py",
+        "similarity_percent": 72.63,
+        "full_code": "a,b = map(int, input().split())\ntongchan = 0\ntongle = 0\nfor num in range(a,b+1):\n    for i in str(num):\n        if int(i) % 2 == 0:\n            tongchan += 1\n        else:\n            tongle += 1\nprint(tongchan, tongle)",
+        "highlighted_code": "a,b = map(int, input().split())\ntongchan = <span class='highlight-red'>0\ntongle = 0\nfor num in range(a,b+1):\n    for i in str(num):\n        if int(i) % 2 == 0:\n            tongchan += 1\n        else:\n            tongle += 1\nprint(</span>tongchan, tongle)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3cb667243251374477212/0cb0117234e943f4ab1ea21a/sub_1763618256482_86hr1vz1m.py",
+        "similarity_percent": 83.13,
+        "full_code": "start=18\nend=42\ndigit=[]\nchan=0\nle=0\nfor i in range(start, end + 1):\n    for digit in str(i):\n        if int(digit) % 2 == 0:\n            chan += 1\n        else:\n            le += 1\nprint(chan,le)\n\n\n",
+        "highlighted_code": "start=18\nend=42\ndigit=[]\nchan=<span class='highlight-green'>0\nle=0\nfor i in range(start, end + 1):\n    for digit in str(i):\n        if int(digit) % 2 == 0:\n            chan += 1\n        else:\n            le += 1\nprint(</span>chan,le)\n\n\n"
+      },
+      "token_overlap": 69,
+      "max_similarity_percent": 83.13
+    },
+    {
+      "case_id": 44,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3cb667243251374477212/20871fc259cd4e60b3f56a79/sub_1763835030259_bart2vrrm.py",
+        "similarity_percent": 72.22,
+        "full_code": "start,end=map(int, input().split())\ntong_chan=0\ntong_le=0\nfor i in range(start, end+1):\n    chuoi=str(i)\n    for ky_tu in chuoi:\n        chu_so=int(ky_tu)\n        if chu_so%2==0:\n            tong_chan+=1\n        else:\n            tong_le+=1\nprint(f\"{tong_chan} {tong_le}\")\n",
+        "highlighted_code": "<span class='highlight-red'>start,end=map(int, input().split())\ntong_chan=0\ntong_le=0\nfor i in range(start, end+1):\n    </span>chuoi=str(i)\n    for ky_tu in chuoi:\n        chu_so=i<span class='highlight-red'>nt(ky_tu)\n        if chu_so%2==0:\n            tong_chan+=1\n        else:\n            tong_le+=1\npr</span>int(f&#34;{tong_chan} {tong_le}&#34;)\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3cb667243251374477212/8e19101eb0da4e9a92a17098/sub_1762354969031_av30dju2p.py",
+        "similarity_percent": 79.59,
+        "full_code": "start, end = map(int, input().split())\nchan = 0\nle = 0\nfor n in range(start, end + 1):\n    for ch in str(n):\n        digit = int(ch)\n        if digit % 2 == 0:\n            chan += 1\n        else:\n            le += 1\nprint(chan, le)\n",
+        "highlighted_code": "<span class='highlight-green'>start, end = map(int, input().split())\nchan = 0\nle = 0\nfor n in range(start, end + 1):\n    </span>for ch in str(n):\n        digit = i<span class='highlight-green'>nt(ch)\n        if digit % 2 == 0:\n            chan += 1\n        else:\n            le += 1\npr</span>int(chan, le)\n"
+      },
+      "token_overlap": 78,
+      "max_similarity_percent": 79.59
+    },
+    {
+      "case_id": 45,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3cb667243251374477212/20871fc259cd4e60b3f56a79/sub_1763835030259_bart2vrrm.py",
+        "similarity_percent": 72.22,
+        "full_code": "start,end=map(int, input().split())\ntong_chan=0\ntong_le=0\nfor i in range(start, end+1):\n    chuoi=str(i)\n    for ky_tu in chuoi:\n        chu_so=int(ky_tu)\n        if chu_so%2==0:\n            tong_chan+=1\n        else:\n            tong_le+=1\nprint(f\"{tong_chan} {tong_le}\")\n",
+        "highlighted_code": "<span class='highlight-red'>start,end=map(int, input().split())\ntong_chan=0\ntong_le=0\nfor i in range(start, end+1):\n    </span>chuoi=str(i)\n    for ky_tu in chuoi:\n        chu_so=i<span class='highlight-red'>nt(ky_tu)\n        if chu_so%2==0:\n            tong_chan+=1\n        else:\n            tong_le+=1\npr</span>int(f&#34;{tong_chan} {tong_le}&#34;)\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3cb667243251374477212/e59c34a1bebb49d29bfb3592/sub_1765027832573_uqlxut1zl.py",
+        "similarity_percent": 75.73,
+        "full_code": "start,end = map(int,input().split())\ntong_chan = 0\ntong_le = 0\nfor num in range(start, end + 1):\n    for ch in str(num):\n        digit = int(ch)\n        if digit % 2 == 0:\n            tong_chan += 1\n        else:\n            tong_le += 1\nprint(*[tong_chan, tong_le])\n",
+        "highlighted_code": "<span class='highlight-green'>start,end = map(int,input().split())\ntong_chan = 0\ntong_le = 0\nfor num in range(start, end + 1):\n    </span>for ch in str(num):\n        digit = i<span class='highlight-green'>nt(ch)\n        if digit % 2 == 0:\n            tong_chan += 1\n        else:\n            tong_le += 1\npr</span>int(*[tong_chan, tong_le])\n"
+      },
+      "token_overlap": 78,
+      "max_similarity_percent": 75.73
+    },
+    {
+      "case_id": 46,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3cb667243251374477212/20871fc259cd4e60b3f56a79/sub_1763835030259_bart2vrrm.py",
+        "similarity_percent": 72.22,
+        "full_code": "start,end=map(int, input().split())\ntong_chan=0\ntong_le=0\nfor i in range(start, end+1):\n    chuoi=str(i)\n    for ky_tu in chuoi:\n        chu_so=int(ky_tu)\n        if chu_so%2==0:\n            tong_chan+=1\n        else:\n            tong_le+=1\nprint(f\"{tong_chan} {tong_le}\")\n",
+        "highlighted_code": "<span class='highlight-red'>start,end=map(int, input().split())\ntong_chan=0\ntong_le=0\nfor i in range(start, end+1):\n    </span>chuoi=str(i)\n    for ky_tu in chuoi:\n        chu_so=i<span class='highlight-red'>nt(ky_tu)\n        if chu_so%2==0:\n            tong_chan+=1\n        else:\n            tong_le+=1\npr</span>int(f&#34;{tong_chan} {tong_le}&#34;)\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3cb667243251374477212/026b0aa51ea144cda50395b7/sub_1763996956724_kqk0wechm.py",
+        "similarity_percent": 79.59,
+        "full_code": "start, end = map(int, input().split())\n\neven = 0\nodd = 0\n\nfor num in range(start, end + 1):\n    for ch in str(num):\n        digit = int(ch)\n        if digit % 2 == 0:\n            even += 1\n        else:\n            odd += 1\n\nprint(even, odd)\n\n",
+        "highlighted_code": "<span class='highlight-green'>start, end = map(int, input().split())\n\neven = 0\nodd = 0\n\nfor num in range(start, end + 1):\n    </span>for ch in str(num):\n        digit = i<span class='highlight-green'>nt(ch)\n        if digit % 2 == 0:\n            even += 1\n        else:\n            odd += 1\n\npr</span>int(even, odd)\n\n"
+      },
+      "token_overlap": 78,
+      "max_similarity_percent": 79.59
+    },
+    {
+      "case_id": 47,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3cb667243251374477212/bbf053b9c70d4a5697fa5d7f/sub_1762854763316_xwfyffqa2.py",
+        "similarity_percent": 70.53,
+        "full_code": "a,b = map(int, input().split())\ntongchan = 0\ntongle = 0\nfor num in range(a,b+1):\n    for i in str(num):\n        if int(i) % 2 == 0:\n            tongchan += 1\n        else:\n            tongle += 1\nprint(tongchan, tongle)",
+        "highlighted_code": "a,b = map(int, input().split())\ntongchan = <span class='highlight-red'>0\ntongle = 0\nfor num in range(a,b+1):\n    for i in str(num):\n        if int(i) % 2 == 0:\n            tongchan += 1\n        else:\n            tongle += 1\nprin</span>t(tongchan, tongle)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3cb667243251374477212/9d56dd64686f4133b54e7cd3/sub_1765295500377_e2dynn2z7.py",
+        "similarity_percent": 50.76,
+        "full_code": "import math\nimport sys\nx=sys.stdin.read().split()\ny=int(x[0])\nz=int(x[1])\nchan=0\nle=0\nfor i in range(y,z+1):\n    for k in str(i):\n        if int(k)%2==0:\n            chan+=1\n        else:\n            le+=1\nprint(f\"{chan} {le}\")",
+        "highlighted_code": "import math\nimport sys\nx=sys.stdin.read().split()\ny=int(x[0])\nz=int(x[1])\nchan=<span class='highlight-green'>0\nle=0\nfor i in range(y,z+1):\n    for k in str(i):\n        if int(k)%2==0:\n            chan+=1\n        else:\n            le+=1\nprin</span>t(f&#34;{chan} {le}&#34;)"
+      },
+      "token_overlap": 67,
+      "max_similarity_percent": 70.53
+    },
+    {
+      "case_id": 48,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3cb667243251374477212/0cb0117234e943f4ab1ea21a/sub_1763618256482_86hr1vz1m.py",
+        "similarity_percent": 66.27,
+        "full_code": "start=18\nend=42\ndigit=[]\nchan=0\nle=0\nfor i in range(start, end + 1):\n    for digit in str(i):\n        if int(digit) % 2 == 0:\n            chan += 1\n        else:\n            le += 1\nprint(chan,le)\n\n\n",
+        "highlighted_code": "start=18\nend=42\ndigit=<span class='highlight-red'>[]\nchan=0\nle=0\nfor i in range(start, end + 1</span>):\n    for digit in str(i):\n        if i<span class='highlight-red'>nt(digit) % 2 == 0:\n            chan += 1\n        else:\n            le += 1\nprint(</span>chan,le)\n\n\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3cb667243251374477212/0cb0117234e943f4ab1ea21a/sub_1764485066255_xbfgr2nx0.py",
+        "similarity_percent": 53.4,
+        "full_code": "start, end = map(int,input().split())\nchuoi = []\ntong_chan = 0\ntong_le =0\nfor i in range(start,end+1):\n    chuoi += str(i)\nfor j in chuoi:\n    if int(j) % 2 == 0:\n            tong_chan += 1\n    else:\n            tong_le += 1\nprint(tong_chan,tong_le)",
+        "highlighted_code": "start, end = map(int,input().split())\nchuoi = <span class='highlight-green'>[]\ntong_chan = 0\ntong_le =0\nfor i in range(start,end+1</span>):\n    chuoi += str(i)\nfor j in chuoi:\n    if i<span class='highlight-green'>nt(j) % 2 == 0:\n            tong_chan += 1\n    else:\n            tong_le += 1\nprint(</span>tong_chan,tong_le)"
+      },
+      "token_overlap": 55,
+      "max_similarity_percent": 66.27
+    },
+    {
+      "case_id": 49,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3cb667243251374477212/0cb0117234e943f4ab1ea21a/sub_1763618256482_86hr1vz1m.py",
+        "similarity_percent": 66.27,
+        "full_code": "start=18\nend=42\ndigit=[]\nchan=0\nle=0\nfor i in range(start, end + 1):\n    for digit in str(i):\n        if int(digit) % 2 == 0:\n            chan += 1\n        else:\n            le += 1\nprint(chan,le)\n\n\n",
+        "highlighted_code": "start=18\nend=42\ndigit=<span class='highlight-red'>[]\nchan=0\nle=0\nfor i in range(start, end + 1</span>):\n    for digit in str(i):\n        if i<span class='highlight-red'>nt(digit) % 2 == 0:\n            chan += 1\n        else:\n            le += 1\nprint(</span>chan,le)\n\n\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3cb667243251374477212/0cb0117234e943f4ab1ea21a/sub_1764343649470_msd6wlzd8.py",
+        "similarity_percent": 51.89,
+        "full_code": "start, end = map(int,input('Nhập số đầu và số cuối(cách nhau bới dấu cách):').split())\nchuoi = []\ntong_chan = 0\ntong_le = 0\nfor i in range(start,end+1):\n    chuoi += str(i)\nfor j in chuoi:\n    if int(j) % 2 == 0:\n            tong_chan += 1\n    else:\n            tong_le += 1\nprint(tong_chan,tong_le)",
+        "highlighted_code": "start, end = map(int,input(&#39;Nhập số đầu và số cuối(cách nhau bới dấu cách):&#39;).split())\nchuoi = <span class='highlight-green'>[]\ntong_chan = 0\ntong_le = 0\nfor i in range(start,end+1</span>):\n    chuoi += str(i)\nfor j in chuoi:\n    if i<span class='highlight-green'>nt(j) % 2 == 0:\n            tong_chan += 1\n    else:\n            tong_le += 1\nprint(</span>tong_chan,tong_le)"
+      },
+      "token_overlap": 55,
+      "max_similarity_percent": 66.27
+    },
+    {
+      "case_id": 50,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3cb667243251374477212/472aabe424744a0f9fa4c2d4/sub_1765383324774_ouwdqvscd.py",
+        "similarity_percent": 65.98,
+        "full_code": "n,m = map(int,input().split())\ntongchan=0\ntongle=0\nfor i in range (n, m+1):\n    for j in (str(i)):\n        if int(j) % 2 ==0 :\n            tongchan+=1\n        else :\n            tongle+=1\nprint(tongchan,tongle)\n",
+        "highlighted_code": "n,m = map(int,input().split())\ntongchan=<span class='highlight-red'>0\ntongle=0\nfor i in range (n, m+1):\n    for j in </span>(str(i)<span class='highlight-red'>):\n        if int(j) % 2 ==0 :\n            tongchan+=1\n        else :\n            tongle+=1\nprint(</span>tongchan,tongle)\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3cb667243251374477212/51bbd72f42174843b97698b4/sub_1764605418207_ke6f2ofky.py",
+        "similarity_percent": 52.89,
+        "full_code": "def n(so1, so2):\n    tong_chan = 0\n    tong_le = 0\n       \n    for j in range(so1, so2 + 1):\n\n        for so in str(j):\n            if int(so) % 2 == 0:\n                tong_chan += 1\n            else:\n                tong_le += 1 \n    print(tong_chan, tong_le)\nso1, so2 = list(map(int, input().split()))\nn(so1, so2)",
+        "highlighted_code": "def n(so1, so2):\n    tong_chan = <span class='highlight-green'>0\n    tong_le = 0\n       \n    for j in range(so1, so2 + 1):\n\n        for so in </span>str(j<span class='highlight-green'>):\n            if int(so) % 2 == 0:\n                tong_chan += 1\n            else:\n                tong_le += 1 \n    print(</span>tong_chan, tong_le)\nso1, so2 = list(map(int, input().split()))\nn(so1, so2)"
+      },
+      "token_overlap": 64,
+      "max_similarity_percent": 65.98
+    },
+    {
+      "case_id": 51,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3cb667243251374477212/472aabe424744a0f9fa4c2d4/sub_1765383324774_ouwdqvscd.py",
+        "similarity_percent": 65.98,
+        "full_code": "n,m = map(int,input().split())\ntongchan=0\ntongle=0\nfor i in range (n, m+1):\n    for j in (str(i)):\n        if int(j) % 2 ==0 :\n            tongchan+=1\n        else :\n            tongle+=1\nprint(tongchan,tongle)\n",
+        "highlighted_code": "n,m = map(int,input().split())\ntongchan=<span class='highlight-red'>0\ntongle=0\nfor i in range (n, m+1):\n    for j in </span>(str(i)<span class='highlight-red'>):\n        if int(j) % 2 ==0 :\n            tongchan+=1\n        else :\n            tongle+=1\nprint(</span>tongchan,tongle)\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3cb667243251374477212/0cb0117234e943f4ab1ea21a/sub_1763618256482_86hr1vz1m.py",
+        "similarity_percent": 77.11,
+        "full_code": "start=18\nend=42\ndigit=[]\nchan=0\nle=0\nfor i in range(start, end + 1):\n    for digit in str(i):\n        if int(digit) % 2 == 0:\n            chan += 1\n        else:\n            le += 1\nprint(chan,le)\n\n\n",
+        "highlighted_code": "start=18\nend=42\ndigit=[]\nchan=<span class='highlight-green'>0\nle=0\nfor i in range(start, end + 1):\n    for digit in </span>str(i<span class='highlight-green'>):\n        if int(digit) % 2 == 0:\n            chan += 1\n        else:\n            le += 1\nprint(</span>chan,le)\n\n\n"
+      },
+      "token_overlap": 64,
+      "max_similarity_percent": 77.11
+    },
+    {
+      "case_id": 52,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3cb667243251374477212/bbf053b9c70d4a5697fa5d7f/sub_1762854763316_xwfyffqa2.py",
+        "similarity_percent": 65.26,
+        "full_code": "a,b = map(int, input().split())\ntongchan = 0\ntongle = 0\nfor num in range(a,b+1):\n    for i in str(num):\n        if int(i) % 2 == 0:\n            tongchan += 1\n        else:\n            tongle += 1\nprint(tongchan, tongle)",
+        "highlighted_code": "<span class='highlight-red'>a,b = map(int, input().split())\ntongchan = 0\ntongle = 0\nfor num in range(a,b+1):\n    for i in str(num):\n        </span>if int(i) % 2 == 0:\n            tongchan += 1\n        else:\n            tongle += 1\nprint(tongchan, tongle)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3cb667243251374477212/26894d2babd64210ad6beba1/sub_1762311665096_934a9ecza.py",
+        "similarity_percent": 55.86,
+        "full_code": "a, b = map(int, input().split())\ntongchan = 0\ntongle = 0\nfor i in range(a, b + 1):\n    for j in str(i):\n        if(int(j) % 2 == 0):\n            tongchan += int(j)\n        else:\n            tongle += int(j)\nprint(tongchan, tongle)",
+        "highlighted_code": "<span class='highlight-green'>a, b = map(int, input().split())\ntongchan = 0\ntongle = 0\nfor i in range(a, b + 1):\n    for j in str(i):\n        </span>if(int(j) % 2 == 0):\n            tongchan += int(j)\n        else:\n            tongle += int(j)\nprint(tongchan, tongle)"
+      },
+      "token_overlap": 62,
+      "max_similarity_percent": 65.26
+    },
+    {
+      "case_id": 53,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3cb667243251374477212/472aabe424744a0f9fa4c2d4/sub_1765383324774_ouwdqvscd.py",
+        "similarity_percent": 63.92,
+        "full_code": "n,m = map(int,input().split())\ntongchan=0\ntongle=0\nfor i in range (n, m+1):\n    for j in (str(i)):\n        if int(j) % 2 ==0 :\n            tongchan+=1\n        else :\n            tongle+=1\nprint(tongchan,tongle)\n",
+        "highlighted_code": "n,m = map(int,input().split())\ntongchan=<span class='highlight-red'>0\ntongle=0\nfor i in range (n, m+1):\n    for j in </span>(str(i)<span class='highlight-red'>):\n        if int(j) % 2 ==0 :\n            tongchan+=1\n        else :\n            tongle+=1\nprin</span>t(tongchan,tongle)\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3cb667243251374477212/9d56dd64686f4133b54e7cd3/sub_1765295500377_e2dynn2z7.py",
+        "similarity_percent": 46.97,
+        "full_code": "import math\nimport sys\nx=sys.stdin.read().split()\ny=int(x[0])\nz=int(x[1])\nchan=0\nle=0\nfor i in range(y,z+1):\n    for k in str(i):\n        if int(k)%2==0:\n            chan+=1\n        else:\n            le+=1\nprint(f\"{chan} {le}\")",
+        "highlighted_code": "import math\nimport sys\nx=sys.stdin.read().split()\ny=int(x[0])\nz=int(x[1])\nchan=<span class='highlight-green'>0\nle=0\nfor i in range(y,z+1):\n    for k in </span>str(i<span class='highlight-green'>):\n        if int(k)%2==0:\n            chan+=1\n        else:\n            le+=1\nprin</span>t(f&#34;{chan} {le}&#34;)"
+      },
+      "token_overlap": 62,
+      "max_similarity_percent": 63.92
+    },
+    {
+      "case_id": 54,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3cb667243251374477212/bbf053b9c70d4a5697fa5d7f/sub_1762854546911_0x9fvby8z.py",
+        "similarity_percent": 63.37,
+        "full_code": "a,b = map(int, input().split())\ntongchan = 0\ntongle = 0\nfor num in range(a,b+1):\n    n = num\n    while n > 0:\n        x = n % 10  \n        if x % 2 == 0:\n            tongchan += 1\n        else:\n            tongle += 1\n        n //= 10  \nprint(tongchan, tongle)\n\n\n",
+        "highlighted_code": "a,b = map(int, input().split())\n<span class='highlight-red'>tongchan = 0\ntongle = 0\nfor num in range(a,b+1):\n    n = num\n    while n &gt; 0</span>:\n        x = n % 10  \n        if x % 2 =<span class='highlight-red'>= 0:\n            tongchan += 1\n        else:\n            tongle += 1\n        n //= 10  \nprint(</span>tongchan, tongle)\n\n\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3cb667243251374477212/0d74995bf22b4574a97a2297/sub_1761557017602_tggo1yzgc.py",
+        "similarity_percent": 60.38,
+        "full_code": "\nm,n = list(map(int,input().split()))\nle = 0\nchan = 0\nfor i in range(m, n + 1):\n    d = i\n    while d > 0:\n        if (d % 10) % 2 == 0:\n            chan += 1\n        else:\n            le += 1\n        d //= 10\nprint(chan,le)",
+        "highlighted_code": "\nm,n = list(map(int,input().split()))<span class='highlight-green'>\nle = 0\nchan = 0\nfor i in range(m, n + 1):\n    d = i\n    while d &gt; </span>0:\n        if (d % 10) % 2 <span class='highlight-green'>== 0:\n            chan += 1\n        else:\n            le += 1\n        d //= 10\nprint</span>(chan,le)"
+      },
+      "token_overlap": 64,
+      "max_similarity_percent": 63.37
+    },
+    {
+      "case_id": 55,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3cb667243251374477212/8e19101eb0da4e9a92a17098/sub_1762354969031_av30dju2p.py",
+        "similarity_percent": 63.27,
+        "full_code": "start, end = map(int, input().split())\nchan = 0\nle = 0\nfor n in range(start, end + 1):\n    for ch in str(n):\n        digit = int(ch)\n        if digit % 2 == 0:\n            chan += 1\n        else:\n            le += 1\nprint(chan, le)\n",
+        "highlighted_code": "<span class='highlight-red'>start, end = map(int, input().split())\nchan = 0\nle = 0\nfor n in range(start, end + 1):\n    for ch in str(n):\n        </span>digit = int(ch)\n        if digit % 2 == 0:\n            chan += 1\n        else:\n            le += 1\nprint(chan, le)\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3cb667243251374477212/26894d2babd64210ad6beba1/sub_1762311665096_934a9ecza.py",
+        "similarity_percent": 55.86,
+        "full_code": "a, b = map(int, input().split())\ntongchan = 0\ntongle = 0\nfor i in range(a, b + 1):\n    for j in str(i):\n        if(int(j) % 2 == 0):\n            tongchan += int(j)\n        else:\n            tongle += int(j)\nprint(tongchan, tongle)",
+        "highlighted_code": "<span class='highlight-green'>a, b = map(int, input().split())\ntongchan = 0\ntongle = 0\nfor i in range(a, b + 1):\n    for j in str(i):\n        </span>if(int(j) % 2 == 0):\n            tongchan += int(j)\n        else:\n            tongle += int(j)\nprint(tongchan, tongle)"
+      },
+      "token_overlap": 62,
+      "max_similarity_percent": 63.27
+    },
+    {
+      "case_id": 56,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3cb667243251374477212/8e19101eb0da4e9a92a17098/sub_1762354969031_av30dju2p.py",
+        "similarity_percent": 62.24,
+        "full_code": "start, end = map(int, input().split())\nchan = 0\nle = 0\nfor n in range(start, end + 1):\n    for ch in str(n):\n        digit = int(ch)\n        if digit % 2 == 0:\n            chan += 1\n        else:\n            le += 1\nprint(chan, le)\n",
+        "highlighted_code": "start, end = map(int, input().split())\nchan = <span class='highlight-red'>0\nle = 0\nfor n in range(start, end + 1):\n    for ch in str(n):\n        </span>digit = int(ch)\n        if digit <span class='highlight-red'>% 2 == 0:\n            chan += 1\n        else:\n            le += 1\nprint(</span>chan, le)\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3cb667243251374477212/0cb0117234e943f4ab1ea21a/sub_1763618256482_86hr1vz1m.py",
+        "similarity_percent": 73.49,
+        "full_code": "start=18\nend=42\ndigit=[]\nchan=0\nle=0\nfor i in range(start, end + 1):\n    for digit in str(i):\n        if int(digit) % 2 == 0:\n            chan += 1\n        else:\n            le += 1\nprint(chan,le)\n\n\n",
+        "highlighted_code": "start=18\nend=42\ndigit=[]\nchan=<span class='highlight-green'>0\nle=0\nfor i in range(start, end + 1):\n    for digit in str(i):\n        </span>if int(digit) <span class='highlight-green'>% 2 == 0:\n            chan += 1\n        else:\n            le += 1\nprint(</span>chan,le)\n\n\n"
+      },
+      "token_overlap": 61,
+      "max_similarity_percent": 73.49
+    },
+    {
+      "case_id": 57,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3cb667243251374477212/026b0aa51ea144cda50395b7/sub_1763996956724_kqk0wechm.py",
+        "similarity_percent": 62.24,
+        "full_code": "start, end = map(int, input().split())\n\neven = 0\nodd = 0\n\nfor num in range(start, end + 1):\n    for ch in str(num):\n        digit = int(ch)\n        if digit % 2 == 0:\n            even += 1\n        else:\n            odd += 1\n\nprint(even, odd)\n\n",
+        "highlighted_code": "start, end = map(int, input().split())\n\neven = <span class='highlight-red'>0\nodd = 0\n\nfor num in range(start, end + 1):\n    for ch in str(num):\n        </span>digit = int(ch)\n        if digit <span class='highlight-red'>% 2 == 0:\n            even += 1\n        else:\n            odd += 1\n\nprint(</span>even, odd)\n\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3cb667243251374477212/0cb0117234e943f4ab1ea21a/sub_1763618256482_86hr1vz1m.py",
+        "similarity_percent": 73.49,
+        "full_code": "start=18\nend=42\ndigit=[]\nchan=0\nle=0\nfor i in range(start, end + 1):\n    for digit in str(i):\n        if int(digit) % 2 == 0:\n            chan += 1\n        else:\n            le += 1\nprint(chan,le)\n\n\n",
+        "highlighted_code": "start=18\nend=42\ndigit=[]\nchan=<span class='highlight-green'>0\nle=0\nfor i in range(start, end + 1):\n    for digit in str(i):\n        </span>if int(digit) <span class='highlight-green'>% 2 == 0:\n            chan += 1\n        else:\n            le += 1\nprint(</span>chan,le)\n\n\n"
+      },
+      "token_overlap": 61,
+      "max_similarity_percent": 73.49
+    },
+    {
+      "case_id": 58,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3cb667243251374477212/222412e06e454a339defe331/sub_1761643736009_oflmt019z.py",
+        "similarity_percent": 61.54,
+        "full_code": "m,n=list(map(int,input().split()))\np=0\no=0\nfor i in range(m,n+1):\n    k=str(i)\n    for a in k:\n        if int(a)%2==0:\n            p+=1\n        else:\n            o+=1\nprint(p,o)",
+        "highlighted_code": "m,n=list(map(int,input().split()))\n<span class='highlight-red'>p=0\no=0\nfor i in range(m,n+1):\n    k=str(i)\n    for a in </span>k:\n        if int(a)<span class='highlight-red'>%2==0:\n            p+=1\n        else:\n            o+=1\nprint(</span>p,o)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3cb667243251374477212/bcb420abb39b4af095b63cf8/sub_1762632670298_5sqflyd7x.py",
+        "similarity_percent": 63.37,
+        "full_code": "a,b=map(int,input().split())\ntongchan=0\ntongle=0\nfor i in range(a,b+1):\n    k=str(i)\n    for j in k:\n        h=int(j)\n        if h%2==0:\n           tongchan+=1\n        else:\n           tongle+=1\nprint(tongchan,tongle)",
+        "highlighted_code": "a,b=map(int,input().split())\n<span class='highlight-green'>tongchan=0\ntongle=0\nfor i in range(a,b+1):\n    k=str(i)\n    for j in </span>k:\n        h=int(j)\n        if h<span class='highlight-green'>%2==0:\n           tongchan+=1\n        else:\n           tongle+=1\nprint(</span>tongchan,tongle)"
+      },
+      "token_overlap": 64,
+      "max_similarity_percent": 63.37
+    },
+    {
+      "case_id": 59,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3cb667243251374477212/0d74995bf22b4574a97a2297/sub_1761555507831_2l4aof727.py",
+        "similarity_percent": 60.81,
+        "full_code": "def dem(n):\n    le = 0\n    chan = 0\n    while n > 0:\n        if (n % 10) % 2 == 0:\n            chan += 1\n        else:\n            le += 1\n        n //= 10\n    return le,chan\nm,n = list(map(int,input().split()))\nle = 0\nchan = 0\nfor i in range(m, n + 1):\n    result = dem(i)\n    le += result[0]\n    chan += result[1]\nprint(chan, le)",
+        "highlighted_code": "def dem(n):\n    le = 0\n    chan = 0\n    while <span class='highlight-red'>n &gt; 0:\n        if (n % 10) % 2 == 0:\n            chan += 1\n        else:\n            le += 1\n        n //= </span>10\n    return le,chan\n<span class='highlight-red'>m,n = list(map(int,input().split()))\nle = 0\nchan = 0\nfor i in range(m, n + 1):\n    </span>result = dem(i)\n    le += result[0]\n    chan += result[1]\nprint(chan, le)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3cb667243251374477212/0d74995bf22b4574a97a2297/sub_1761557017602_tggo1yzgc.py",
+        "similarity_percent": 84.91,
+        "full_code": "\nm,n = list(map(int,input().split()))\nle = 0\nchan = 0\nfor i in range(m, n + 1):\n    d = i\n    while d > 0:\n        if (d % 10) % 2 == 0:\n            chan += 1\n        else:\n            le += 1\n        d //= 10\nprint(chan,le)",
+        "highlighted_code": "<span class='highlight-green'>\nm,n = list(map(int,input().split()))\nle = 0\nchan = 0\nfor i in range(m, n + 1):\n   </span> d = i\n    while<span class='highlight-green'> d &gt; 0:\n        if (d % 10) % 2 == 0:\n            chan += 1\n        else:\n            le += 1\n        d //=</span> 10\nprint(chan,le)"
+      },
+      "token_overlap": 90,
+      "max_similarity_percent": 84.91
+    },
+    {
+      "case_id": 60,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3cb667243251374477212/0d74995bf22b4574a97a2297/sub_1761555162093_x8qehcgm4.py",
+        "similarity_percent": 60.81,
+        "full_code": "def dem(n):\n    le = 0\n    chan = 0\n    while n > 0:\n        if (n % 10) % 2 == 0:\n            chan += 1\n        else:\n            le += 1\n        n //= 10\n    return le,chan\nm,n = list(map(int,input().split()))\nle = 0\nchan = 0\nfor i in range(m, n + 1):\n    result = dem(i)\n    le += result[0]\n    chan += result[1]\nprint(chan,le)",
+        "highlighted_code": "def dem(n):\n    le = 0\n    chan = 0\n    while <span class='highlight-red'>n &gt; 0:\n        if (n % 10) % 2 == 0:\n            chan += 1\n        else:\n            le += 1\n        n //= </span>10\n    return le,chan\n<span class='highlight-red'>m,n = list(map(int,input().split()))\nle = 0\nchan = 0\nfor i in range(m, n + 1):\n    </span>result = dem(i)\n    le += result[0]\n    chan += result[1]\nprint(chan,le)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3cb667243251374477212/0d74995bf22b4574a97a2297/sub_1761557017602_tggo1yzgc.py",
+        "similarity_percent": 84.91,
+        "full_code": "\nm,n = list(map(int,input().split()))\nle = 0\nchan = 0\nfor i in range(m, n + 1):\n    d = i\n    while d > 0:\n        if (d % 10) % 2 == 0:\n            chan += 1\n        else:\n            le += 1\n        d //= 10\nprint(chan,le)",
+        "highlighted_code": "<span class='highlight-green'>\nm,n = list(map(int,input().split()))\nle = 0\nchan = 0\nfor i in range(m, n + 1):\n   </span> d = i\n    while<span class='highlight-green'> d &gt; 0:\n        if (d % 10) % 2 == 0:\n            chan += 1\n        else:\n            le += 1\n        d //=</span> 10\nprint(chan,le)"
+      },
+      "token_overlap": 90,
+      "max_similarity_percent": 84.91
+    },
+    {
+      "case_id": 61,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3cb667243251374477212/0d74995bf22b4574a97a2297/sub_1761557017602_tggo1yzgc.py",
+        "similarity_percent": 60.38,
+        "full_code": "\nm,n = list(map(int,input().split()))\nle = 0\nchan = 0\nfor i in range(m, n + 1):\n    d = i\n    while d > 0:\n        if (d % 10) % 2 == 0:\n            chan += 1\n        else:\n            le += 1\n        d //= 10\nprint(chan,le)",
+        "highlighted_code": "\nm,n = list(map(int,input().split()))<span class='highlight-red'>\nle = 0\nchan = 0\nfor i in range(m, n + 1):\n    d = i\n    while d &gt; </span>0:\n        if (d % 10) % 2 <span class='highlight-red'>== 0:\n            chan += 1\n        else:\n            le += 1\n        d //= 10\nprint</span>(chan,le)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3cb667243251374477212/bbf053b9c70d4a5697fa5d7f/sub_1762854471633_8qpsz916n.py",
+        "similarity_percent": 63.37,
+        "full_code": "a,b = map(int, input().split())\ntongchan = 0\ntongle = 0\nfor i in range(a,b+1):\n    n = i\n    while n > 0:\n        x = n % 10  \n        if x % 2 == 0:\n            tongchan += 1\n        else:\n            tongle += 1\n        n //= 10  \nprint(tongchan, tongle)\n",
+        "highlighted_code": "a,b = map(int, input().split())\n<span class='highlight-green'>tongchan = 0\ntongle = 0\nfor i in range(a,b+1):\n    n = i\n    while n &gt; 0</span>:\n        x = n % 10  \n        if x % 2 =<span class='highlight-green'>= 0:\n            tongchan += 1\n        else:\n            tongle += 1\n        n //= 10  \nprint(</span>tongchan, tongle)\n"
+      },
+      "token_overlap": 64,
+      "max_similarity_percent": 63.37
+    },
+    {
+      "case_id": 62,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3cb667243251374477212/e59c34a1bebb49d29bfb3592/sub_1765027832573_uqlxut1zl.py",
+        "similarity_percent": 60.19,
+        "full_code": "start,end = map(int,input().split())\ntong_chan = 0\ntong_le = 0\nfor num in range(start, end + 1):\n    for ch in str(num):\n        digit = int(ch)\n        if digit % 2 == 0:\n            tong_chan += 1\n        else:\n            tong_le += 1\nprint(*[tong_chan, tong_le])\n",
+        "highlighted_code": "<span class='highlight-red'>start,end = map(int,input().split())\ntong_chan = 0\ntong_le = 0\nfor num in range(start, end + 1):\n    for ch in str(num):\n        </span>digit = int(ch)\n        if digit % 2 == 0:\n            tong_chan += 1\n        else:\n            tong_le += 1\nprint(*[tong_chan, tong_le])\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3cb667243251374477212/26894d2babd64210ad6beba1/sub_1762311665096_934a9ecza.py",
+        "similarity_percent": 55.86,
+        "full_code": "a, b = map(int, input().split())\ntongchan = 0\ntongle = 0\nfor i in range(a, b + 1):\n    for j in str(i):\n        if(int(j) % 2 == 0):\n            tongchan += int(j)\n        else:\n            tongle += int(j)\nprint(tongchan, tongle)",
+        "highlighted_code": "<span class='highlight-green'>a, b = map(int, input().split())\ntongchan = 0\ntongle = 0\nfor i in range(a, b + 1):\n    for j in str(i):\n        </span>if(int(j) % 2 == 0):\n            tongchan += int(j)\n        else:\n            tongle += int(j)\nprint(tongchan, tongle)"
+      },
+      "token_overlap": 62,
+      "max_similarity_percent": 60.19
+    },
+    {
+      "case_id": 63,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3cb667243251374477212/0d74995bf22b4574a97a2297/sub_1761555024805_wpxogkti6.py",
+        "similarity_percent": 60.0,
+        "full_code": "def dem(n):\n    le = 0\n    chan = 0\n    while n > 0:\n        if (n % 10) % 2 == 0:\n            chan += 1\n        else:\n            le += 1\n        n //= 10\n    return le,chan\nm,n = list(map(int,input().split()))\nle = 0\nchan = 0\nfor i in range(m,n+1):\n    le += dem(i)[0]\n    chan += dem(i)[1]\nprint(chan,le)",
+        "highlighted_code": "def dem(n):\n    le = 0\n    chan = 0\n    while <span class='highlight-red'>n &gt; 0:\n        if (n % 10) % 2 == 0:\n            chan += 1\n        else:\n            le += 1\n        n //= </span>10\n    return le,chan\n<span class='highlight-red'>m,n = list(map(int,input().split()))\nle = 0\nchan = 0\nfor i in range(m,n+1):\n    </span>le += dem(i)[0]\n    chan += dem(i)[1]\nprint(chan,le)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3cb667243251374477212/0d74995bf22b4574a97a2297/sub_1761557017602_tggo1yzgc.py",
+        "similarity_percent": 84.91,
+        "full_code": "\nm,n = list(map(int,input().split()))\nle = 0\nchan = 0\nfor i in range(m, n + 1):\n    d = i\n    while d > 0:\n        if (d % 10) % 2 == 0:\n            chan += 1\n        else:\n            le += 1\n        d //= 10\nprint(chan,le)",
+        "highlighted_code": "<span class='highlight-green'>\nm,n = list(map(int,input().split()))\nle = 0\nchan = 0\nfor i in range(m, n + 1):\n   </span> d = i\n    while<span class='highlight-green'> d &gt; 0:\n        if (d % 10) % 2 == 0:\n            chan += 1\n        else:\n            le += 1\n        d //=</span> 10\nprint(chan,le)"
+      },
+      "token_overlap": 90,
+      "max_similarity_percent": 84.91
+    },
+    {
+      "case_id": 64,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3cb667243251374477212/e59c34a1bebb49d29bfb3592/sub_1765027832573_uqlxut1zl.py",
+        "similarity_percent": 59.22,
+        "full_code": "start,end = map(int,input().split())\ntong_chan = 0\ntong_le = 0\nfor num in range(start, end + 1):\n    for ch in str(num):\n        digit = int(ch)\n        if digit % 2 == 0:\n            tong_chan += 1\n        else:\n            tong_le += 1\nprint(*[tong_chan, tong_le])\n",
+        "highlighted_code": "start,end = map(int,input().split())\ntong_chan = <span class='highlight-red'>0\ntong_le = 0\nfor num in range(start, end + 1):\n    for ch in str(num):\n        </span>digit = int(ch)\n        if digit <span class='highlight-red'>% 2 == 0:\n            tong_chan += 1\n        else:\n            tong_le += 1\nprint(</span>*[tong_chan, tong_le])\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3cb667243251374477212/0cb0117234e943f4ab1ea21a/sub_1763618256482_86hr1vz1m.py",
+        "similarity_percent": 73.49,
+        "full_code": "start=18\nend=42\ndigit=[]\nchan=0\nle=0\nfor i in range(start, end + 1):\n    for digit in str(i):\n        if int(digit) % 2 == 0:\n            chan += 1\n        else:\n            le += 1\nprint(chan,le)\n\n\n",
+        "highlighted_code": "start=18\nend=42\ndigit=[]\nchan=<span class='highlight-green'>0\nle=0\nfor i in range(start, end + 1):\n    for digit in str(i):\n        </span>if int(digit) <span class='highlight-green'>% 2 == 0:\n            chan += 1\n        else:\n            le += 1\nprint(</span>chan,le)\n\n\n"
+      },
+      "token_overlap": 61,
+      "max_similarity_percent": 73.49
+    },
+    {
+      "case_id": 65,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3cb667243251374477212/51bbd72f42174843b97698b4/sub_1764605418207_ke6f2ofky.py",
+        "similarity_percent": 57.02,
+        "full_code": "def n(so1, so2):\n    tong_chan = 0\n    tong_le = 0\n       \n    for j in range(so1, so2 + 1):\n\n        for so in str(j):\n            if int(so) % 2 == 0:\n                tong_chan += 1\n            else:\n                tong_le += 1 \n    print(tong_chan, tong_le)\nso1, so2 = list(map(int, input().split()))\nn(so1, so2)",
+        "highlighted_code": "def n(so1, so2):\n    tong_chan = <span class='highlight-red'>0\n    tong_le = 0\n       \n    for j in range(so1, so2 + 1):\n\n        for so in str(j):\n            if int(so) % 2 == 0:\n                tong_chan += 1\n            else:\n                tong_le += 1 \n    print(</span>tong_chan, tong_le)\nso1, so2 = list(map(int, input().split()))\nn(so1, so2)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3cb667243251374477212/0cb0117234e943f4ab1ea21a/sub_1763618256482_86hr1vz1m.py",
+        "similarity_percent": 83.13,
+        "full_code": "start=18\nend=42\ndigit=[]\nchan=0\nle=0\nfor i in range(start, end + 1):\n    for digit in str(i):\n        if int(digit) % 2 == 0:\n            chan += 1\n        else:\n            le += 1\nprint(chan,le)\n\n\n",
+        "highlighted_code": "start=18\nend=42\ndigit=[]\nchan=<span class='highlight-green'>0\nle=0\nfor i in range(start, end + 1):\n    for digit in str(i):\n        if int(digit) % 2 == 0:\n            chan += 1\n        else:\n            le += 1\nprint(</span>chan,le)\n\n\n"
+      },
+      "token_overlap": 69,
+      "max_similarity_percent": 83.13
+    },
+    {
+      "case_id": 66,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3cb667243251374477212/51bbd72f42174843b97698b4/sub_1764605418207_ke6f2ofky.py",
+        "similarity_percent": 57.02,
+        "full_code": "def n(so1, so2):\n    tong_chan = 0\n    tong_le = 0\n       \n    for j in range(so1, so2 + 1):\n\n        for so in str(j):\n            if int(so) % 2 == 0:\n                tong_chan += 1\n            else:\n                tong_le += 1 \n    print(tong_chan, tong_le)\nso1, so2 = list(map(int, input().split()))\nn(so1, so2)",
+        "highlighted_code": "def n(so1, so2):\n    tong_chan = <span class='highlight-red'>0\n    tong_le = 0\n       \n    for j in range(so1, so2 + 1):\n\n        for so in str(j):\n            if int(so) % 2 == 0:\n                tong_chan += 1\n            else:\n                tong_le += 1 \n    print(</span>tong_chan, tong_le)\nso1, so2 = list(map(int, input().split()))\nn(so1, so2)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3cb667243251374477212/fd92120cec18496789c2c733/sub_1761621160101_dbsz5v32r.py",
+        "similarity_percent": 72.63,
+        "full_code": "start, end = map(int,input().split())\ntotalchan = 0\ntotalle = 0\nfor i in range (start, end + 1):\n    for g in str(i):\n        if int(g) % 2 == 0:\n            totalchan += 1\n        else:\n            totalle += 1\n    \nprint (totalchan, totalle)",
+        "highlighted_code": "start, end = map(int,input().split())\ntotalchan = <span class='highlight-green'>0\ntotalle = 0\nfor i in range (start, end + 1):\n    for g in str(i):\n        if int(g) % 2 == 0:\n            totalchan += 1\n        else:\n            totalle += 1\n    \nprint (</span>totalchan, totalle)"
+      },
+      "token_overlap": 69,
+      "max_similarity_percent": 72.63
+    },
+    {
+      "case_id": 67,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3cb667243251374477212/51bbd72f42174843b97698b4/sub_1764605418207_ke6f2ofky.py",
+        "similarity_percent": 57.02,
+        "full_code": "def n(so1, so2):\n    tong_chan = 0\n    tong_le = 0\n       \n    for j in range(so1, so2 + 1):\n\n        for so in str(j):\n            if int(so) % 2 == 0:\n                tong_chan += 1\n            else:\n                tong_le += 1 \n    print(tong_chan, tong_le)\nso1, so2 = list(map(int, input().split()))\nn(so1, so2)",
+        "highlighted_code": "def n(so1, so2):\n    tong_chan = <span class='highlight-red'>0\n    tong_le = 0\n       \n    for j in range(so1, so2 + 1):\n\n        for so in str(j):\n            if int(so) % 2 == 0:\n                tong_chan += 1\n            else:\n                tong_le += 1 \n    print(</span>tong_chan, tong_le)\nso1, so2 = list(map(int, input().split()))\nn(so1, so2)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3cb667243251374477212/e59c34a1bebb49d29bfb3592/sub_1762422514603_fvlbou6i4.py",
+        "similarity_percent": 72.63,
+        "full_code": "start, end = map(int, input().split())\neven_count = 0\nodd_count = 0\n\nfor i in range(start, end + 1):\n    for ch in str(i):\n        if int(ch) % 2 == 0:\n            even_count += 1\n        else:\n            odd_count += 1\n\nprint(even_count, odd_count)\n",
+        "highlighted_code": "start, end = map(int, input().split())\neven_count = <span class='highlight-green'>0\nodd_count = 0\n\nfor i in range(start, end + 1):\n    for ch in str(i):\n        if int(ch) % 2 == 0:\n            even_count += 1\n        else:\n            odd_count += 1\n\nprint(</span>even_count, odd_count)\n"
+      },
+      "token_overlap": 69,
+      "max_similarity_percent": 72.63
+    },
+    {
+      "case_id": 68,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3cb667243251374477212/26894d2babd64210ad6beba1/sub_1762311665096_934a9ecza.py",
+        "similarity_percent": 55.86,
+        "full_code": "a, b = map(int, input().split())\ntongchan = 0\ntongle = 0\nfor i in range(a, b + 1):\n    for j in str(i):\n        if(int(j) % 2 == 0):\n            tongchan += int(j)\n        else:\n            tongle += int(j)\nprint(tongchan, tongle)",
+        "highlighted_code": "<span class='highlight-red'>a, b = map(int, input().split())\ntongchan = 0\ntongle = 0\nfor i in range(a, b + 1):\n    for j in str(i):\n        </span>if(int(j) % 2 == 0):\n            tongchan += int(j)\n        else:\n            tongle += int(j)\nprint(tongchan, tongle)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3cb667243251374477212/026b0aa51ea144cda50395b7/sub_1763996956724_kqk0wechm.py",
+        "similarity_percent": 63.27,
+        "full_code": "start, end = map(int, input().split())\n\neven = 0\nodd = 0\n\nfor num in range(start, end + 1):\n    for ch in str(num):\n        digit = int(ch)\n        if digit % 2 == 0:\n            even += 1\n        else:\n            odd += 1\n\nprint(even, odd)\n\n",
+        "highlighted_code": "<span class='highlight-green'>start, end = map(int, input().split())\n\neven = 0\nodd = 0\n\nfor num in range(start, end + 1):\n    for ch in str(num):\n        </span>digit = int(ch)\n        if digit % 2 == 0:\n            even += 1\n        else:\n            odd += 1\n\nprint(even, odd)\n\n"
+      },
+      "token_overlap": 62,
+      "max_similarity_percent": 63.27
+    },
+    {
+      "case_id": 69,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3cb667243251374477212/26894d2babd64210ad6beba1/sub_1762311665096_934a9ecza.py",
+        "similarity_percent": 55.86,
+        "full_code": "a, b = map(int, input().split())\ntongchan = 0\ntongle = 0\nfor i in range(a, b + 1):\n    for j in str(i):\n        if(int(j) % 2 == 0):\n            tongchan += int(j)\n        else:\n            tongle += int(j)\nprint(tongchan, tongle)",
+        "highlighted_code": "<span class='highlight-red'>a, b = map(int, input().split())\ntongchan = 0\ntongle = 0\nfor i in range(a, b + 1):\n    for j in str(i):\n        </span>if(int(j) % 2 == 0):\n            tongchan += int(j)\n        else:\n            tongle += int(j)\nprint(tongchan, tongle)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3cb667243251374477212/fd92120cec18496789c2c733/sub_1761621160101_dbsz5v32r.py",
+        "similarity_percent": 65.26,
+        "full_code": "start, end = map(int,input().split())\ntotalchan = 0\ntotalle = 0\nfor i in range (start, end + 1):\n    for g in str(i):\n        if int(g) % 2 == 0:\n            totalchan += 1\n        else:\n            totalle += 1\n    \nprint (totalchan, totalle)",
+        "highlighted_code": "<span class='highlight-green'>start, end = map(int,input().split())\ntotalchan = 0\ntotalle = 0\nfor i in range (start, end + 1):\n    for g in str(i):\n        </span>if int(g) % 2 == 0:\n            totalchan += 1\n        else:\n            totalle += 1\n    \nprint (totalchan, totalle)"
+      },
+      "token_overlap": 62,
+      "max_similarity_percent": 65.26
+    },
+    {
+      "case_id": 70,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3cb667243251374477212/26894d2babd64210ad6beba1/sub_1762311665096_934a9ecza.py",
+        "similarity_percent": 55.86,
+        "full_code": "a, b = map(int, input().split())\ntongchan = 0\ntongle = 0\nfor i in range(a, b + 1):\n    for j in str(i):\n        if(int(j) % 2 == 0):\n            tongchan += int(j)\n        else:\n            tongle += int(j)\nprint(tongchan, tongle)",
+        "highlighted_code": "<span class='highlight-red'>a, b = map(int, input().split())\ntongchan = 0\ntongle = 0\nfor i in range(a, b + 1):\n    for j in str(i):\n        </span>if(int(j) % 2 == 0):\n            tongchan += int(j)\n        else:\n            tongle += int(j)\nprint(tongchan, tongle)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3cb667243251374477212/e59c34a1bebb49d29bfb3592/sub_1762422514603_fvlbou6i4.py",
+        "similarity_percent": 65.26,
+        "full_code": "start, end = map(int, input().split())\neven_count = 0\nodd_count = 0\n\nfor i in range(start, end + 1):\n    for ch in str(i):\n        if int(ch) % 2 == 0:\n            even_count += 1\n        else:\n            odd_count += 1\n\nprint(even_count, odd_count)\n",
+        "highlighted_code": "<span class='highlight-green'>start, end = map(int, input().split())\neven_count = 0\nodd_count = 0\n\nfor i in range(start, end + 1):\n    for ch in str(i):\n        </span>if int(ch) % 2 == 0:\n            even_count += 1\n        else:\n            odd_count += 1\n\nprint(even_count, odd_count)\n"
+      },
+      "token_overlap": 62,
+      "max_similarity_percent": 65.26
+    },
+    {
+      "case_id": 71,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3cb667243251374477212/9d56dd64686f4133b54e7cd3/sub_1765295500377_e2dynn2z7.py",
+        "similarity_percent": 50.76,
+        "full_code": "import math\nimport sys\nx=sys.stdin.read().split()\ny=int(x[0])\nz=int(x[1])\nchan=0\nle=0\nfor i in range(y,z+1):\n    for k in str(i):\n        if int(k)%2==0:\n            chan+=1\n        else:\n            le+=1\nprint(f\"{chan} {le}\")",
+        "highlighted_code": "import math\nimport sys\nx=sys.stdin.read().split()\ny=int(x[0])\nz=int(x[1])\nchan=<span class='highlight-red'>0\nle=0\nfor i in range(y,z+1):\n    for k in str(i):\n        if int(k)%2==0:\n            chan+=1\n        else:\n            le+=1\nprin</span>t(f&#34;{chan} {le}&#34;)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3cb667243251374477212/fd92120cec18496789c2c733/sub_1761621160101_dbsz5v32r.py",
+        "similarity_percent": 70.53,
+        "full_code": "start, end = map(int,input().split())\ntotalchan = 0\ntotalle = 0\nfor i in range (start, end + 1):\n    for g in str(i):\n        if int(g) % 2 == 0:\n            totalchan += 1\n        else:\n            totalle += 1\n    \nprint (totalchan, totalle)",
+        "highlighted_code": "start, end = map(int,input().split())\ntotalchan = <span class='highlight-green'>0\ntotalle = 0\nfor i in range (start, end + 1):\n    for g in str(i):\n        if int(g) % 2 == 0:\n            totalchan += 1\n        else:\n            totalle += 1\n    \nprin</span>t (totalchan, totalle)"
+      },
+      "token_overlap": 67,
+      "max_similarity_percent": 70.53
+    },
+    {
+      "case_id": 72,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3cb667243251374477212/9d56dd64686f4133b54e7cd3/sub_1765295500377_e2dynn2z7.py",
+        "similarity_percent": 50.76,
+        "full_code": "import math\nimport sys\nx=sys.stdin.read().split()\ny=int(x[0])\nz=int(x[1])\nchan=0\nle=0\nfor i in range(y,z+1):\n    for k in str(i):\n        if int(k)%2==0:\n            chan+=1\n        else:\n            le+=1\nprint(f\"{chan} {le}\")",
+        "highlighted_code": "import math\nimport sys\nx=sys.stdin.read().split()\ny=int(x[0])\nz=int(x[1])\nchan=<span class='highlight-red'>0\nle=0\nfor i in range(y,z+1):\n    for k in str(i):\n        if int(k)%2==0:\n            chan+=1\n        else:\n            le+=1\nprin</span>t(f&#34;{chan} {le}&#34;)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3cb667243251374477212/e59c34a1bebb49d29bfb3592/sub_1762422514603_fvlbou6i4.py",
+        "similarity_percent": 70.53,
+        "full_code": "start, end = map(int, input().split())\neven_count = 0\nodd_count = 0\n\nfor i in range(start, end + 1):\n    for ch in str(i):\n        if int(ch) % 2 == 0:\n            even_count += 1\n        else:\n            odd_count += 1\n\nprint(even_count, odd_count)\n",
+        "highlighted_code": "start, end = map(int, input().split())\neven_count = <span class='highlight-green'>0\nodd_count = 0\n\nfor i in range(start, end + 1):\n    for ch in str(i):\n        if int(ch) % 2 == 0:\n            even_count += 1\n        else:\n            odd_count += 1\n\nprin</span>t(even_count, odd_count)\n"
+      },
+      "token_overlap": 67,
+      "max_similarity_percent": 70.53
+    },
+    {
+      "case_id": 73,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3cb667243251374477212/51bbd72f42174843b97698b4/sub_1764605418207_ke6f2ofky.py",
+        "similarity_percent": 50.41,
+        "full_code": "def n(so1, so2):\n    tong_chan = 0\n    tong_le = 0\n       \n    for j in range(so1, so2 + 1):\n\n        for so in str(j):\n            if int(so) % 2 == 0:\n                tong_chan += 1\n            else:\n                tong_le += 1 \n    print(tong_chan, tong_le)\nso1, so2 = list(map(int, input().split()))\nn(so1, so2)",
+        "highlighted_code": "def n(so1, so2):\n    tong_chan = <span class='highlight-red'>0\n    tong_le = 0\n       \n    for j in range(so1, so2 + 1):\n\n        for so in str(j):\n            </span>if int(so) <span class='highlight-red'>% 2 == 0:\n                tong_chan += 1\n            else:\n                tong_le += 1 \n    print(</span>tong_chan, tong_le)\nso1, so2 = list(map(int, input().split()))\nn(so1, so2)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3cb667243251374477212/8e19101eb0da4e9a92a17098/sub_1762354969031_av30dju2p.py",
+        "similarity_percent": 62.24,
+        "full_code": "start, end = map(int, input().split())\nchan = 0\nle = 0\nfor n in range(start, end + 1):\n    for ch in str(n):\n        digit = int(ch)\n        if digit % 2 == 0:\n            chan += 1\n        else:\n            le += 1\nprint(chan, le)\n",
+        "highlighted_code": "start, end = map(int, input().split())\nchan = <span class='highlight-green'>0\nle = 0\nfor n in range(start, end + 1):\n    for ch in str(n):\n        </span>digit = int(ch)\n        if digit <span class='highlight-green'>% 2 == 0:\n            chan += 1\n        else:\n            le += 1\nprint(</span>chan, le)\n"
+      },
+      "token_overlap": 61,
+      "max_similarity_percent": 62.24
+    },
+    {
+      "case_id": 74,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3cb667243251374477212/51bbd72f42174843b97698b4/sub_1764605418207_ke6f2ofky.py",
+        "similarity_percent": 50.41,
+        "full_code": "def n(so1, so2):\n    tong_chan = 0\n    tong_le = 0\n       \n    for j in range(so1, so2 + 1):\n\n        for so in str(j):\n            if int(so) % 2 == 0:\n                tong_chan += 1\n            else:\n                tong_le += 1 \n    print(tong_chan, tong_le)\nso1, so2 = list(map(int, input().split()))\nn(so1, so2)",
+        "highlighted_code": "def n(so1, so2):\n    tong_chan = <span class='highlight-red'>0\n    tong_le = 0\n       \n    for j in range(so1, so2 + 1):\n\n        for so in str(j):\n            </span>if int(so) <span class='highlight-red'>% 2 == 0:\n                tong_chan += 1\n            else:\n                tong_le += 1 \n    print(</span>tong_chan, tong_le)\nso1, so2 = list(map(int, input().split()))\nn(so1, so2)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3cb667243251374477212/026b0aa51ea144cda50395b7/sub_1763996956724_kqk0wechm.py",
+        "similarity_percent": 62.24,
+        "full_code": "start, end = map(int, input().split())\n\neven = 0\nodd = 0\n\nfor num in range(start, end + 1):\n    for ch in str(num):\n        digit = int(ch)\n        if digit % 2 == 0:\n            even += 1\n        else:\n            odd += 1\n\nprint(even, odd)\n\n",
+        "highlighted_code": "start, end = map(int, input().split())\n\neven = <span class='highlight-green'>0\nodd = 0\n\nfor num in range(start, end + 1):\n    for ch in str(num):\n        </span>digit = int(ch)\n        if digit <span class='highlight-green'>% 2 == 0:\n            even += 1\n        else:\n            odd += 1\n\nprint(</span>even, odd)\n\n"
+      },
+      "token_overlap": 61,
+      "max_similarity_percent": 62.24
+    },
+    {
+      "case_id": 75,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3cb667243251374477212/0cb0117234e943f4ab1ea21a/sub_1764342863151_tpxuajavp.py",
+        "similarity_percent": 45.65,
+        "full_code": "start = int(input('Nhập số đầu:'))\nend = int(input('Nhập số cuối:'))\nchuoi = []\ntong_chan = 0\ntong_le =0\nfor i in range(start,end+1):\n    chuoi += str(i)\nfor j in chuoi:\n    if int(j) % 2 == 0:\n            tong_chan += int(j)\n    else:\n            tong_le += int(j)\nprint('Tổng chẫn của chuỗi là:',tong_chan )\nprint('Tổng lẻ của chuỗi là:',tong_le )\n\n",
+        "highlighted_code": "start = int(input(&#39;Nhập số đầu:&#39;))\nend = int(input(&#39;Nhập số cuối:&#39;<span class='highlight-red'>))\nchuoi = []\ntong_chan = 0\ntong_le =0\nfor i in range(start,end+1):\n    chuoi += str(i)\nfor j in chuoi:\n    if int(j) % 2 == 0:\n            tong_chan </span>+= int(j)\n    else:\n            tong_le += int(j)\nprint(&#39;Tổng chẫn của chuỗi là:&#39;,tong_chan )\nprint(&#39;Tổng lẻ của chuỗi là:&#39;,tong_le )\n\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3cb667243251374477212/0cb0117234e943f4ab1ea21a/sub_1764485066255_xbfgr2nx0.py",
+        "similarity_percent": 61.17,
+        "full_code": "start, end = map(int,input().split())\nchuoi = []\ntong_chan = 0\ntong_le =0\nfor i in range(start,end+1):\n    chuoi += str(i)\nfor j in chuoi:\n    if int(j) % 2 == 0:\n            tong_chan += 1\n    else:\n            tong_le += 1\nprint(tong_chan,tong_le)",
+        "highlighted_code": "start, end = map(int,input().split(<span class='highlight-green'>))\nchuoi = []\ntong_chan = 0\ntong_le =0\nfor i in range(start,end+1):\n    chuoi += str(i)\nfor j in chuoi:\n    if int(j) % 2 == 0:\n            tong_chan </span>+= 1\n    else:\n            tong_le += 1\nprint(tong_chan,tong_le)"
+      },
+      "token_overlap": 63,
+      "max_similarity_percent": 61.17
+    },
+    {
+      "case_id": 76,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3cb667243251374477212/e981f1efc9764aba8b686042/sub_1765060980462_hnz2muzpt.py",
+        "similarity_percent": 45.51,
+        "full_code": "def tong_So(a, b):\n    check_even = 0\n    check_odd = 0\n    for i in range(a, b + 1):\n        check = i\n        while check != 0:\n            du = check % 10\n            if du % 2 == 0:\n                check_even += 1\n            else:\n                check_odd += 1\n            check //= 10\n    \n    return check_even, check_odd\n\n\nn = list(map(int, input().split()))\nall_list = tong_So(n[0], n[1])\nprint(\" \".join(map(str, all_list)))",
+        "highlighted_code": "def tong_So(a, b):\n    check_even = 0\n    check_odd = 0\n    for i in range(a, b + 1):\n        <span class='highlight-red'>check = i\n        while check != 0:\n            du = check % 10\n            if du % 2 == 0:\n                check_even += 1\n            else:\n                check_odd += 1\n            check //= 1</span>0\n    \n    return check_even, check_odd\n\n\nn = <span class='highlight-red'>list(map(int, input().split())</span>)\nall_list = tong_So(n[0], n[1])\nprint(&#34; &#34;.join(map(str, all_list)))"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3cb667243251374477212/e981f1efc9764aba8b686042/sub_1764510357083_izg8hwu7l.py",
+        "similarity_percent": 61.21,
+        "full_code": "num = list(map(int, input().split()))\neven = 0\nodd = 0\nend_list = []\nfor i in range(num[0], num[1] + 1):\n    index = i\n    while index != 0:\n        check = index % 10\n        if check % 2 ==0:\n            even += 1\n        else:\n            odd += 1\n        index //= 10\n\nprint(even, odd)",
+        "highlighted_code": "num = <span class='highlight-green'>list(map(int, input().split())</span>)\neven = 0\nodd = 0\nend_list = []\nfor i in range(num[0], num[1] + 1):\n    <span class='highlight-green'>index = i\n    while index != 0:\n        check = index % 10\n        if check % 2 ==0:\n            even += 1\n        else:\n            odd += 1\n        index //= 1</span>0\n\nprint(even, odd)"
+      },
+      "token_overlap": 71,
+      "max_similarity_percent": 61.21
+    },
+    {
+      "case_id": 77,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3cb667243251374477212/e981f1efc9764aba8b686042/sub_1765060980462_hnz2muzpt.py",
+        "similarity_percent": 39.74,
+        "full_code": "def tong_So(a, b):\n    check_even = 0\n    check_odd = 0\n    for i in range(a, b + 1):\n        check = i\n        while check != 0:\n            du = check % 10\n            if du % 2 == 0:\n                check_even += 1\n            else:\n                check_odd += 1\n            check //= 10\n    \n    return check_even, check_odd\n\n\nn = list(map(int, input().split()))\nall_list = tong_So(n[0], n[1])\nprint(\" \".join(map(str, all_list)))",
+        "highlighted_code": "def tong_So(a, b):\n    <span class='highlight-red'>check_even = 0\n    check_odd = 0\n    for i in range(a, b + 1):\n        check = i\n        wh</span>ile check != 0:\n            du <span class='highlight-red'>= check % 10\n            if du % 2 == 0:\n                check_even += 1\n            else:\n                check_odd += 1\n            check //= 1</span>0\n    \n    return check_even, check_odd\n\n\nn = list(map(int, input().split()))\nall_list = tong_So(n[0], n[1])\nprint(&#34; &#34;.join(map(str, all_list)))"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3cb667243251374477212/bbf053b9c70d4a5697fa5d7f/sub_1762854546911_0x9fvby8z.py",
+        "similarity_percent": 61.39,
+        "full_code": "a,b = map(int, input().split())\ntongchan = 0\ntongle = 0\nfor num in range(a,b+1):\n    n = num\n    while n > 0:\n        x = n % 10  \n        if x % 2 == 0:\n            tongchan += 1\n        else:\n            tongle += 1\n        n //= 10  \nprint(tongchan, tongle)\n\n\n",
+        "highlighted_code": "a,b = map(int, input().split())\n<span class='highlight-green'>tongchan = 0\ntongle = 0\nfor num in range(a,b+1):\n    n = num\n    wh</span>ile n &gt; 0:\n        x <span class='highlight-green'>= n % 10  \n        if x % 2 == 0:\n            tongchan += 1\n        else:\n            tongle += 1\n        n //= 1</span>0  \nprint(tongchan, tongle)\n\n\n"
       },
       "token_overlap": 62,
       "max_similarity_percent": 61.39
     },
     {
-      "case_id": 15,
+      "case_id": 78,
       "file1": {
-        "path": "/app/app/data/submissions/68e3cb667243251374477212/26894d2babd64210ad6beba1/sub_1762311665096_934a9ecza.py",
-        "similarity_percent": 58.88,
-        "full_code": "a, b = map(int, input().split())\ntongchan = 0\ntongle = 0\nfor i in range(a, b + 1):\n    for j in str(i):\n        if(int(j) % 2 == 0):\n            tongchan += int(j)\n        else:\n            tongle += int(j)\nprint(tongchan, tongle)",
-        "highlighted_code": "<span class='highlight-red'>a, b = map(int, input().split())\ntongchan = 0\ntongle = 0\nfor i in range(a, b + 1):\n    for j in str(i):\n        i</span>f(int(j) % 2 == 0):\n            tongchan += int(j)\n        else:\n            tongle += int(j)\nprint(tongchan, tongle)"
+        "path": "/app/app/data/submissions/68e3cb667243251374477212/e981f1efc9764aba8b686042/sub_1765060980462_hnz2muzpt.py",
+        "similarity_percent": 39.74,
+        "full_code": "def tong_So(a, b):\n    check_even = 0\n    check_odd = 0\n    for i in range(a, b + 1):\n        check = i\n        while check != 0:\n            du = check % 10\n            if du % 2 == 0:\n                check_even += 1\n            else:\n                check_odd += 1\n            check //= 10\n    \n    return check_even, check_odd\n\n\nn = list(map(int, input().split()))\nall_list = tong_So(n[0], n[1])\nprint(\" \".join(map(str, all_list)))",
+        "highlighted_code": "def tong_So(a, b):\n    <span class='highlight-red'>check_even = 0\n    check_odd = 0\n    for i in range(a, b + 1):\n        check = i\n        wh</span>ile check != 0:\n            du <span class='highlight-red'>= check % 10\n            if du % 2 == 0:\n                check_even += 1\n            else:\n                check_odd += 1\n            check //= 1</span>0\n    \n    return check_even, check_odd\n\n\nn = list(map(int, input().split()))\nall_list = tong_So(n[0], n[1])\nprint(&#34; &#34;.join(map(str, all_list)))"
       },
       "file2": {
-        "path": "/app/app/data/submissions/68e3cb667243251374477212/e59c34a1bebb49d29bfb3592/sub_1762422514603_fvlbou6i4.py",
-        "similarity_percent": 66.32,
-        "full_code": "start, end = map(int, input().split())\neven_count = 0\nodd_count = 0\n\nfor i in range(start, end + 1):\n    for ch in str(i):\n        if int(ch) % 2 == 0:\n            even_count += 1\n        else:\n            odd_count += 1\n\nprint(even_count, odd_count)\n",
-        "highlighted_code": "<span class='highlight-green'>start, end = map(int, input().split())\neven_count = 0\nodd_count = 0\n\nfor i in range(start, end + 1):\n    for ch in str(i):\n        i</span>f int(ch) % 2 == 0:\n            even_count += 1\n        else:\n            odd_count += 1\n\nprint(even_count, odd_count)\n"
+        "path": "/app/app/data/submissions/68e3cb667243251374477212/bbf053b9c70d4a5697fa5d7f/sub_1762854471633_8qpsz916n.py",
+        "similarity_percent": 61.39,
+        "full_code": "a,b = map(int, input().split())\ntongchan = 0\ntongle = 0\nfor i in range(a,b+1):\n    n = i\n    while n > 0:\n        x = n % 10  \n        if x % 2 == 0:\n            tongchan += 1\n        else:\n            tongle += 1\n        n //= 10  \nprint(tongchan, tongle)\n",
+        "highlighted_code": "a,b = map(int, input().split())\n<span class='highlight-green'>tongchan = 0\ntongle = 0\nfor i in range(a,b+1):\n    n = i\n    wh</span>ile n &gt; 0:\n        x <span class='highlight-green'>= n % 10  \n        if x % 2 == 0:\n            tongchan += 1\n        else:\n            tongle += 1\n        n //= 1</span>0  \nprint(tongchan, tongle)\n"
       },
-      "token_overlap": 63,
-      "max_similarity_percent": 66.32
+      "token_overlap": 62,
+      "max_similarity_percent": 61.39
     }
   ]
 }

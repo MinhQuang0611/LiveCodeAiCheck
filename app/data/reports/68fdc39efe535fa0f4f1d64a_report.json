@@ -4,331 +4,1453 @@
     "min_token_overlap": 80,
     "min_similarity_percent": 60
   },
-  "total_cases_found": 19,
-  "total_cases_filtered": 19,
+  "total_cases_found": 87,
+  "total_cases_filtered": 85,
   "cases": [
     {
       "case_id": 1,
       "file1": {
-        "path": "/app/app/data/submissions/68fdc39efe535fa0f4f1d64a/d9aec9d917da4c5e9beeb80b/sub_1762781622854_0w8c1ikva.py",
+        "path": "/app/app/data/submissions/68fdc39efe535fa0f4f1d64a/a34ffbda761b435ca043fd30/sub_1762867331198_zti8pq7em.py",
         "similarity_percent": 100.0,
-        "full_code": "n = input().split()\nfor i in n:\n    print(i)",
-        "highlighted_code": "<span class='highlight-red'>n = input().split()\nfor i in n:\n    print</span>(i)"
+        "full_code": "a = list(map(str, input().split()))\nfor i in a:\n    print(i)",
+        "highlighted_code": "<span class='highlight-red'>a = list(map(str, input().split()))\nfor i in a:\n    print(i)</span>"
       },
       "file2": {
-        "path": "/app/app/data/submissions/68fdc39efe535fa0f4f1d64a/f8a2bab9778140ecb46b6a60/sub_1761917942442_vcj40pl56.py",
+        "path": "/app/app/data/submissions/68fdc39efe535fa0f4f1d64a/0cb0117234e943f4ab1ea21a/sub_1764900371642_8uefz2i3c.py",
         "similarity_percent": 100.0,
-        "full_code": "n = input().split()\nfor i in n:\n    print(i)",
-        "highlighted_code": "<span class='highlight-green'>n = input().split()\nfor i in n:\n    print</span>(i)"
+        "full_code": "n = list(map(str, input().split()))\nfor i in n:\n    print(i)",
+        "highlighted_code": "<span class='highlight-green'>n = list(map(str, input().split()))\nfor i in n:\n    print(i)</span>"
       },
-      "token_overlap": 26,
+      "token_overlap": 44,
       "max_similarity_percent": 100.0
     },
     {
       "case_id": 2,
       "file1": {
-        "path": "/app/app/data/submissions/68fdc39efe535fa0f4f1d64a/d9aec9d917da4c5e9beeb80b/sub_1762781622854_0w8c1ikva.py",
+        "path": "/app/app/data/submissions/68fdc39efe535fa0f4f1d64a/a34ffbda761b435ca043fd30/sub_1762867331198_zti8pq7em.py",
         "similarity_percent": 100.0,
-        "full_code": "n = input().split()\nfor i in n:\n    print(i)",
-        "highlighted_code": "<span class='highlight-red'>n = input().split()\nfor i in n:\n    print</span>(i)"
+        "full_code": "a = list(map(str, input().split()))\nfor i in a:\n    print(i)",
+        "highlighted_code": "<span class='highlight-red'>a = list(map(str, input().split()))\nfor i in a:\n    print(i)</span>"
       },
       "file2": {
-        "path": "/app/app/data/submissions/68fdc39efe535fa0f4f1d64a/cd93b2ff882a4ffa85f4518f/sub_1762786190139_48xtk7rn4.py",
+        "path": "/app/app/data/submissions/68fdc39efe535fa0f4f1d64a/bcb420abb39b4af095b63cf8/sub_1762541993580_jktn8k53d.py",
         "similarity_percent": 100.0,
-        "full_code": "s=input().split()\nfor ch in s:\n    print(ch)",
-        "highlighted_code": "<span class='highlight-green'>s=input().split()\nfor ch in s:\n    print</span>(ch)"
+        "full_code": "n=list(map(str,input().split()))\nfor i in n:\n    print(i)",
+        "highlighted_code": "<span class='highlight-green'>n=list(map(str,input().split()))\nfor i in n:\n    print(i)</span>"
       },
-      "token_overlap": 26,
+      "token_overlap": 44,
       "max_similarity_percent": 100.0
     },
     {
       "case_id": 3,
       "file1": {
-        "path": "/app/app/data/submissions/68fdc39efe535fa0f4f1d64a/f56f86fa26744324899543f3/sub_1761884452310_jh3tcf7j1.py",
+        "path": "/app/app/data/submissions/68fdc39efe535fa0f4f1d64a/a34ffbda761b435ca043fd30/sub_1762867331198_zti8pq7em.py",
         "similarity_percent": 100.0,
-        "full_code": "a=list(map(str,input().split()))\nfor _ in a: print(_)",
-        "highlighted_code": "<span class='highlight-red'>a=list(map(str,input().split()))\nfor _ in a: prin</span>t(_)"
+        "full_code": "a = list(map(str, input().split()))\nfor i in a:\n    print(i)",
+        "highlighted_code": "<span class='highlight-red'>a = list(map(str, input().split()))\nfor i in a:\n    print(i)</span>"
       },
       "file2": {
-        "path": "/app/app/data/submissions/68fdc39efe535fa0f4f1d64a/bcb420abb39b4af095b63cf8/sub_1762541993580_jktn8k53d.py",
+        "path": "/app/app/data/submissions/68fdc39efe535fa0f4f1d64a/27e30f767b3a46b283cbfec0/sub_1762016182456_k9xfdlogg.py",
         "similarity_percent": 100.0,
-        "full_code": "n=list(map(str,input().split()))\nfor i in n:\n    print(i)",
-        "highlighted_code": "<span class='highlight-green'>n=list(map(str,input().split()))\nfor i in n:\n    prin</span>t(i)"
+        "full_code": "array = list(map(str, input().split()))\nfor i in array:\n    print(i)",
+        "highlighted_code": "<span class='highlight-green'>array = list(map(str, input().split()))\nfor i in array:\n    print(i)</span>"
       },
-      "token_overlap": 40,
+      "token_overlap": 44,
       "max_similarity_percent": 100.0
     },
     {
       "case_id": 4,
       "file1": {
+        "path": "/app/app/data/submissions/68fdc39efe535fa0f4f1d64a/a34ffbda761b435ca043fd30/sub_1762867331198_zti8pq7em.py",
+        "similarity_percent": 100.0,
+        "full_code": "a = list(map(str, input().split()))\nfor i in a:\n    print(i)",
+        "highlighted_code": "<span class='highlight-red'>a = list(map(str, input().split()))\nfor i in a:\n    print(i)</span>"
+      },
+      "file2": {
         "path": "/app/app/data/submissions/68fdc39efe535fa0f4f1d64a/f56f86fa26744324899543f3/sub_1761884452310_jh3tcf7j1.py",
         "similarity_percent": 100.0,
         "full_code": "a=list(map(str,input().split()))\nfor _ in a: print(_)",
-        "highlighted_code": "<span class='highlight-red'>a=list(map(str,input().split()))\nfor _ in a: prin</span>t(_)"
+        "highlighted_code": "<span class='highlight-green'>a=list(map(str,input().split()))\nfor _ in a: print(_)</span>"
       },
-      "file2": {
-        "path": "/app/app/data/submissions/68fdc39efe535fa0f4f1d64a/27e30f767b3a46b283cbfec0/sub_1762016182456_k9xfdlogg.py",
-        "similarity_percent": 100.0,
-        "full_code": "array = list(map(str, input().split()))\nfor i in array:\n    print(i)",
-        "highlighted_code": "<span class='highlight-green'>array = list(map(str, input().split()))\nfor i in array:\n    prin</span>t(i)"
-      },
-      "token_overlap": 40,
+      "token_overlap": 44,
       "max_similarity_percent": 100.0
     },
     {
       "case_id": 5,
       "file1": {
-        "path": "/app/app/data/submissions/68fdc39efe535fa0f4f1d64a/f95120b3a38a461085ef58cb/sub_1762364347400_q9yqrw37d.py",
+        "path": "/app/app/data/submissions/68fdc39efe535fa0f4f1d64a/a34ffbda761b435ca043fd30/sub_1762867331198_zti8pq7em.py",
         "similarity_percent": 100.0,
-        "full_code": "lst = list(map(str, input().split()))\nfor index, nums in enumerate(lst):\n    print(nums, end = \"\\n\")",
-        "highlighted_code": "<span class='highlight-red'>lst = list(map(str, input().split()))\nfor index, nums in enumerate(lst):\n    print(nums, end = &#34;\\n&#34;</span>)"
+        "full_code": "a = list(map(str, input().split()))\nfor i in a:\n    print(i)",
+        "highlighted_code": "<span class='highlight-red'>a = list(map(str, input().split()))\nfor i in a:\n    print(i)</span>"
       },
       "file2": {
-        "path": "/app/app/data/submissions/68fdc39efe535fa0f4f1d64a/ffdb326842044f2e98b7aaa7/sub_1761899335407_m40h2ijt1.py",
+        "path": "/app/app/data/submissions/68fdc39efe535fa0f4f1d64a/9dcb98ac39014785ad502bca/sub_1765448110345_gebgedt2y.py",
         "similarity_percent": 100.0,
-        "full_code": "lst = list(map(str, input().split()))\n\nfor index, nums in enumerate(lst):\n    print(nums, end = \"\\n\")",
-        "highlighted_code": "<span class='highlight-green'>lst = list(map(str, input().split()))\n\nfor index, nums in enumerate(lst):\n    print(nums, end = &#34;\\n&#34;</span>)"
+        "full_code": "s = list(map(str, input().split()))\nfor x in s:\n    print(x)",
+        "highlighted_code": "<span class='highlight-green'>s = list(map(str, input().split()))\nfor x in s:\n    print(x)</span>"
       },
-      "token_overlap": 62,
+      "token_overlap": 44,
       "max_similarity_percent": 100.0
     },
     {
       "case_id": 6,
       "file1": {
-        "path": "/app/app/data/submissions/68fdc39efe535fa0f4f1d64a/f8a2bab9778140ecb46b6a60/sub_1761917942442_vcj40pl56.py",
+        "path": "/app/app/data/submissions/68fdc39efe535fa0f4f1d64a/f95120b3a38a461085ef58cb/sub_1762364347400_q9yqrw37d.py",
         "similarity_percent": 100.0,
-        "full_code": "n = input().split()\nfor i in n:\n    print(i)",
-        "highlighted_code": "<span class='highlight-red'>n = input().split()\nfor i in n:\n    print</span>(i)"
+        "full_code": "lst = list(map(str, input().split()))\nfor index, nums in enumerate(lst):\n    print(nums, end = \"\\n\")",
+        "highlighted_code": "<span class='highlight-red'>lst = list(map(str, input().split()))\nfor index, nums in enumerate(lst):\n    print(nums, end </span>= &#34;\\n&#34;)"
       },
       "file2": {
-        "path": "/app/app/data/submissions/68fdc39efe535fa0f4f1d64a/cd93b2ff882a4ffa85f4518f/sub_1762786190139_48xtk7rn4.py",
+        "path": "/app/app/data/submissions/68fdc39efe535fa0f4f1d64a/ffdb326842044f2e98b7aaa7/sub_1761899335407_m40h2ijt1.py",
         "similarity_percent": 100.0,
-        "full_code": "s=input().split()\nfor ch in s:\n    print(ch)",
-        "highlighted_code": "<span class='highlight-green'>s=input().split()\nfor ch in s:\n    print</span>(ch)"
+        "full_code": "lst = list(map(str, input().split()))\n\nfor index, nums in enumerate(lst):\n    print(nums, end = \"\\n\")",
+        "highlighted_code": "<span class='highlight-green'>lst = list(map(str, input().split()))\n\nfor index, nums in enumerate(lst):\n    print(nums, end </span>= &#34;\\n&#34;)"
       },
-      "token_overlap": 26,
+      "token_overlap": 58,
       "max_similarity_percent": 100.0
     },
     {
       "case_id": 7,
       "file1": {
-        "path": "/app/app/data/submissions/68fdc39efe535fa0f4f1d64a/bcb420abb39b4af095b63cf8/sub_1762541993580_jktn8k53d.py",
+        "path": "/app/app/data/submissions/68fdc39efe535fa0f4f1d64a/dd05a856cdbf414482e28997/sub_1762853019982_62yjah5rh.py",
         "similarity_percent": 100.0,
-        "full_code": "n=list(map(str,input().split()))\nfor i in n:\n    print(i)",
-        "highlighted_code": "<span class='highlight-red'>n=list(map(str,input().split()))\nfor i in n:\n    prin</span>t(i)"
+        "full_code": "t = input()\ntu = t.split()\nfor i in tu:\n    print(i)",
+        "highlighted_code": "<span class='highlight-red'>t = input()\ntu = t.split()\nfor i in tu:\n    print(</span>i)"
       },
       "file2": {
-        "path": "/app/app/data/submissions/68fdc39efe535fa0f4f1d64a/27e30f767b3a46b283cbfec0/sub_1762016182456_k9xfdlogg.py",
+        "path": "/app/app/data/submissions/68fdc39efe535fa0f4f1d64a/806ab3177f6b474c9d5fe252/sub_1763991223333_643nbryt5.py",
         "similarity_percent": 100.0,
-        "full_code": "array = list(map(str, input().split()))\nfor i in array:\n    print(i)",
-        "highlighted_code": "<span class='highlight-green'>array = list(map(str, input().split()))\nfor i in array:\n    prin</span>t(i)"
+        "full_code": "input_string = input()\nword = input_string.split()\nfor letter in word:\n    print(letter)",
+        "highlighted_code": "<span class='highlight-green'>input_string = input()\nword = input_string.split()\nfor letter in word:\n    print(</span>letter)"
       },
-      "token_overlap": 40,
+      "token_overlap": 30,
       "max_similarity_percent": 100.0
     },
     {
       "case_id": 8,
       "file1": {
-        "path": "/app/app/data/submissions/68fdc39efe535fa0f4f1d64a/f56f86fa26744324899543f3/sub_1761884452310_jh3tcf7j1.py",
-        "similarity_percent": 80.0,
-        "full_code": "a=list(map(str,input().split()))\nfor _ in a: print(_)",
-        "highlighted_code": "<span class='highlight-red'>a=list(map(str,input().split()))\nfor _ </span>in a: print(_)"
+        "path": "/app/app/data/submissions/68fdc39efe535fa0f4f1d64a/dd05a856cdbf414482e28997/sub_1762853019982_62yjah5rh.py",
+        "similarity_percent": 100.0,
+        "full_code": "t = input()\ntu = t.split()\nfor i in tu:\n    print(i)",
+        "highlighted_code": "<span class='highlight-red'>t = input()\ntu = t.split()\nfor i in tu:\n    print(</span>i)"
       },
       "file2": {
-        "path": "/app/app/data/submissions/68fdc39efe535fa0f4f1d64a/f95120b3a38a461085ef58cb/sub_1762364347400_q9yqrw37d.py",
-        "similarity_percent": 51.61,
-        "full_code": "lst = list(map(str, input().split()))\nfor index, nums in enumerate(lst):\n    print(nums, end = \"\\n\")",
-        "highlighted_code": "<span class='highlight-green'>lst = list(map(str, input().split()))\nfor index</span>, nums in enumerate(lst):\n    print(nums, end = &#34;\\n&#34;)"
+        "path": "/app/app/data/submissions/68fdc39efe535fa0f4f1d64a/001b865968674769bf6798dd/sub_1762243824610_b2ddn2zkx.py",
+        "similarity_percent": 100.0,
+        "full_code": "s = input()\ntu = s.split()\nfor i in tu:\n    print(i)",
+        "highlighted_code": "<span class='highlight-green'>s = input()\ntu = s.split()\nfor i in tu:\n    print(</span>i)"
       },
-      "token_overlap": 32,
-      "max_similarity_percent": 80.0
+      "token_overlap": 30,
+      "max_similarity_percent": 100.0
     },
     {
       "case_id": 9,
       "file1": {
-        "path": "/app/app/data/submissions/68fdc39efe535fa0f4f1d64a/f56f86fa26744324899543f3/sub_1761884452310_jh3tcf7j1.py",
-        "similarity_percent": 80.0,
-        "full_code": "a=list(map(str,input().split()))\nfor _ in a: print(_)",
-        "highlighted_code": "<span class='highlight-red'>a=list(map(str,input().split()))\nfor _ </span>in a: print(_)"
+        "path": "/app/app/data/submissions/68fdc39efe535fa0f4f1d64a/dd05a856cdbf414482e28997/sub_1762853019982_62yjah5rh.py",
+        "similarity_percent": 100.0,
+        "full_code": "t = input()\ntu = t.split()\nfor i in tu:\n    print(i)",
+        "highlighted_code": "<span class='highlight-red'>t = input()\ntu = t.split()\nfor i in tu:\n    print(</span>i)"
       },
       "file2": {
-        "path": "/app/app/data/submissions/68fdc39efe535fa0f4f1d64a/ffdb326842044f2e98b7aaa7/sub_1761899335407_m40h2ijt1.py",
-        "similarity_percent": 51.61,
-        "full_code": "lst = list(map(str, input().split()))\n\nfor index, nums in enumerate(lst):\n    print(nums, end = \"\\n\")",
-        "highlighted_code": "<span class='highlight-green'>lst = list(map(str, input().split()))\n\nfor index</span>, nums in enumerate(lst):\n    print(nums, end = &#34;\\n&#34;)"
+        "path": "/app/app/data/submissions/68fdc39efe535fa0f4f1d64a/1a420c30af984efa8fdf9f5e/sub_1763894689840_i3phtmv22.py",
+        "similarity_percent": 100.0,
+        "full_code": "text = input()\nwords = text.split()\n\nfor word in words:\n    print(word)\n",
+        "highlighted_code": "<span class='highlight-green'>text = input()\nwords = text.split()\n\nfor word in words:\n    print(</span>word)\n"
       },
-      "token_overlap": 32,
-      "max_similarity_percent": 80.0
+      "token_overlap": 30,
+      "max_similarity_percent": 100.0
     },
     {
       "case_id": 10,
       "file1": {
-        "path": "/app/app/data/submissions/68fdc39efe535fa0f4f1d64a/bcb420abb39b4af095b63cf8/sub_1762541993580_jktn8k53d.py",
-        "similarity_percent": 80.0,
-        "full_code": "n=list(map(str,input().split()))\nfor i in n:\n    print(i)",
-        "highlighted_code": "<span class='highlight-red'>n=list(map(str,input().split()))\nfor i </span>in n:\n    print(i)"
+        "path": "/app/app/data/submissions/68fdc39efe535fa0f4f1d64a/dd05a856cdbf414482e28997/sub_1762853019982_62yjah5rh.py",
+        "similarity_percent": 100.0,
+        "full_code": "t = input()\ntu = t.split()\nfor i in tu:\n    print(i)",
+        "highlighted_code": "<span class='highlight-red'>t = input()\ntu = t.split()\nfor i in tu:\n    print(</span>i)"
       },
       "file2": {
-        "path": "/app/app/data/submissions/68fdc39efe535fa0f4f1d64a/ffdb326842044f2e98b7aaa7/sub_1761899335407_m40h2ijt1.py",
-        "similarity_percent": 51.61,
-        "full_code": "lst = list(map(str, input().split()))\n\nfor index, nums in enumerate(lst):\n    print(nums, end = \"\\n\")",
-        "highlighted_code": "<span class='highlight-green'>lst = list(map(str, input().split()))\n\nfor index</span>, nums in enumerate(lst):\n    print(nums, end = &#34;\\n&#34;)"
+        "path": "/app/app/data/submissions/68fdc39efe535fa0f4f1d64a/20333a895d2643e5b867d5fa/sub_1764606384146_ngg2wymu8.py",
+        "similarity_percent": 100.0,
+        "full_code": "cau = input()\ncau = cau.split()\nfor i in cau:\n    print(i)",
+        "highlighted_code": "<span class='highlight-green'>cau = input()\ncau = cau.split()\nfor i in cau:\n    print(</span>i)"
       },
-      "token_overlap": 32,
-      "max_similarity_percent": 80.0
+      "token_overlap": 30,
+      "max_similarity_percent": 100.0
     },
     {
       "case_id": 11,
       "file1": {
-        "path": "/app/app/data/submissions/68fdc39efe535fa0f4f1d64a/27e30f767b3a46b283cbfec0/sub_1762016182456_k9xfdlogg.py",
-        "similarity_percent": 80.0,
-        "full_code": "array = list(map(str, input().split()))\nfor i in array:\n    print(i)",
-        "highlighted_code": "<span class='highlight-red'>array = list(map(str, input().split()))\nfor i </span>in array:\n    print(i)"
+        "path": "/app/app/data/submissions/68fdc39efe535fa0f4f1d64a/cd93b2ff882a4ffa85f4518f/sub_1765260761584_prg2hkuws.py",
+        "similarity_percent": 100.0,
+        "full_code": "s=input().split()\nfor ch in s:\n    print(ch)",
+        "highlighted_code": "<span class='highlight-red'>s=input().split()\nfor ch in s:\n    prin</span>t(ch)"
       },
       "file2": {
-        "path": "/app/app/data/submissions/68fdc39efe535fa0f4f1d64a/ffdb326842044f2e98b7aaa7/sub_1761899335407_m40h2ijt1.py",
-        "similarity_percent": 51.61,
-        "full_code": "lst = list(map(str, input().split()))\n\nfor index, nums in enumerate(lst):\n    print(nums, end = \"\\n\")",
-        "highlighted_code": "<span class='highlight-green'>lst = list(map(str, input().split()))\n\nfor index</span>, nums in enumerate(lst):\n    print(nums, end = &#34;\\n&#34;)"
+        "path": "/app/app/data/submissions/68fdc39efe535fa0f4f1d64a/cd93b2ff882a4ffa85f4518f/sub_1762786190139_48xtk7rn4.py",
+        "similarity_percent": 100.0,
+        "full_code": "s=input().split()\nfor ch in s:\n    print(ch)",
+        "highlighted_code": "<span class='highlight-green'>s=input().split()\nfor ch in s:\n    prin</span>t(ch)"
       },
-      "token_overlap": 32,
-      "max_similarity_percent": 80.0
+      "token_overlap": 25,
+      "max_similarity_percent": 100.0
     },
     {
       "case_id": 12,
       "file1": {
-        "path": "/app/app/data/submissions/68fdc39efe535fa0f4f1d64a/26894d2babd64210ad6beba1/sub_1762269634254_t1a3ss4iv.py",
-        "similarity_percent": 69.23,
-        "full_code": "a = list(map(str, input().split()))\n\nprint(*a, sep = \"\\n\")",
-        "highlighted_code": "<span class='highlight-red'>a = list(map(str, input().split())</span>)\n\nprint(*a, sep = &#34;\\n&#34;)"
+        "path": "/app/app/data/submissions/68fdc39efe535fa0f4f1d64a/cd93b2ff882a4ffa85f4518f/sub_1765260761584_prg2hkuws.py",
+        "similarity_percent": 100.0,
+        "full_code": "s=input().split()\nfor ch in s:\n    print(ch)",
+        "highlighted_code": "<span class='highlight-red'>s=input().split()\nfor ch in s:\n    prin</span>t(ch)"
       },
       "file2": {
-        "path": "/app/app/data/submissions/68fdc39efe535fa0f4f1d64a/bcb420abb39b4af095b63cf8/sub_1762541993580_jktn8k53d.py",
-        "similarity_percent": 67.5,
-        "full_code": "n=list(map(str,input().split()))\nfor i in n:\n    print(i)",
-        "highlighted_code": "<span class='highlight-green'>n=list(map(str,input().split())</span>)\nfor i in n:\n    print(i)"
+        "path": "/app/app/data/submissions/68fdc39efe535fa0f4f1d64a/f8a2bab9778140ecb46b6a60/sub_1761917942442_vcj40pl56.py",
+        "similarity_percent": 100.0,
+        "full_code": "n = input().split()\nfor i in n:\n    print(i)",
+        "highlighted_code": "<span class='highlight-green'>n = input().split()\nfor i in n:\n    prin</span>t(i)"
       },
-      "token_overlap": 27,
-      "max_similarity_percent": 69.23
+      "token_overlap": 25,
+      "max_similarity_percent": 100.0
     },
     {
       "case_id": 13,
       "file1": {
-        "path": "/app/app/data/submissions/68fdc39efe535fa0f4f1d64a/26894d2babd64210ad6beba1/sub_1762269634254_t1a3ss4iv.py",
-        "similarity_percent": 69.23,
-        "full_code": "a = list(map(str, input().split()))\n\nprint(*a, sep = \"\\n\")",
-        "highlighted_code": "<span class='highlight-red'>a = list(map(str, input().split())</span>)\n\nprint(*a, sep = &#34;\\n&#34;)"
+        "path": "/app/app/data/submissions/68fdc39efe535fa0f4f1d64a/cd93b2ff882a4ffa85f4518f/sub_1765260761584_prg2hkuws.py",
+        "similarity_percent": 100.0,
+        "full_code": "s=input().split()\nfor ch in s:\n    print(ch)",
+        "highlighted_code": "<span class='highlight-red'>s=input().split()\nfor ch in s:\n    prin</span>t(ch)"
       },
       "file2": {
-        "path": "/app/app/data/submissions/68fdc39efe535fa0f4f1d64a/27e30f767b3a46b283cbfec0/sub_1762016182456_k9xfdlogg.py",
-        "similarity_percent": 67.5,
-        "full_code": "array = list(map(str, input().split()))\nfor i in array:\n    print(i)",
-        "highlighted_code": "<span class='highlight-green'>array = list(map(str, input().split())</span>)\nfor i in array:\n    print(i)"
+        "path": "/app/app/data/submissions/68fdc39efe535fa0f4f1d64a/d9aec9d917da4c5e9beeb80b/sub_1762781622854_0w8c1ikva.py",
+        "similarity_percent": 100.0,
+        "full_code": "n = input().split()\nfor i in n:\n    print(i)",
+        "highlighted_code": "<span class='highlight-green'>n = input().split()\nfor i in n:\n    prin</span>t(i)"
       },
-      "token_overlap": 27,
-      "max_similarity_percent": 69.23
+      "token_overlap": 25,
+      "max_similarity_percent": 100.0
     },
     {
       "case_id": 14,
       "file1": {
-        "path": "/app/app/data/submissions/68fdc39efe535fa0f4f1d64a/26894d2babd64210ad6beba1/sub_1762269634254_t1a3ss4iv.py",
-        "similarity_percent": 69.23,
-        "full_code": "a = list(map(str, input().split()))\n\nprint(*a, sep = \"\\n\")",
-        "highlighted_code": "<span class='highlight-red'>a = list(map(str, input().split())</span>)\n\nprint(*a, sep = &#34;\\n&#34;)"
+        "path": "/app/app/data/submissions/68fdc39efe535fa0f4f1d64a/cd93b2ff882a4ffa85f4518f/sub_1765260761584_prg2hkuws.py",
+        "similarity_percent": 100.0,
+        "full_code": "s=input().split()\nfor ch in s:\n    print(ch)",
+        "highlighted_code": "<span class='highlight-red'>s=input().split()\nfor ch in s:\n    prin</span>t(ch)"
       },
       "file2": {
-        "path": "/app/app/data/submissions/68fdc39efe535fa0f4f1d64a/ffdb326842044f2e98b7aaa7/sub_1761899335407_m40h2ijt1.py",
-        "similarity_percent": 43.55,
-        "full_code": "lst = list(map(str, input().split()))\n\nfor index, nums in enumerate(lst):\n    print(nums, end = \"\\n\")",
-        "highlighted_code": "<span class='highlight-green'>lst = list(map(str, input().split())</span>)\n\nfor index, nums in enumerate(lst):\n    print(nums, end = &#34;\\n&#34;)"
+        "path": "/app/app/data/submissions/68fdc39efe535fa0f4f1d64a/e981f1efc9764aba8b686042/sub_1765315109191_c1ek48zzl.py",
+        "similarity_percent": 100.0,
+        "full_code": "n = input().split()\nfor i in n:\n    print(i)\n",
+        "highlighted_code": "<span class='highlight-green'>n = input().split()\nfor i in n:\n    prin</span>t(i)\n"
       },
-      "token_overlap": 27,
-      "max_similarity_percent": 69.23
+      "token_overlap": 25,
+      "max_similarity_percent": 100.0
     },
     {
       "case_id": 15,
       "file1": {
-        "path": "/app/app/data/submissions/68fdc39efe535fa0f4f1d64a/f56f86fa26744324899543f3/sub_1761884452310_jh3tcf7j1.py",
-        "similarity_percent": 67.5,
-        "full_code": "a=list(map(str,input().split()))\nfor _ in a: print(_)",
-        "highlighted_code": "<span class='highlight-red'>a=list(map(str,input().split())</span>)\nfor _ in a: print(_)"
+        "path": "/app/app/data/submissions/68fdc39efe535fa0f4f1d64a/cd93b2ff882a4ffa85f4518f/sub_1765260761584_prg2hkuws.py",
+        "similarity_percent": 100.0,
+        "full_code": "s=input().split()\nfor ch in s:\n    print(ch)",
+        "highlighted_code": "<span class='highlight-red'>s=input().split()\nfor ch in s:\n    prin</span>t(ch)"
       },
       "file2": {
-        "path": "/app/app/data/submissions/68fdc39efe535fa0f4f1d64a/26894d2babd64210ad6beba1/sub_1762269634254_t1a3ss4iv.py",
-        "similarity_percent": 69.23,
-        "full_code": "a = list(map(str, input().split()))\n\nprint(*a, sep = \"\\n\")",
-        "highlighted_code": "<span class='highlight-green'>a = list(map(str, input().split())</span>)\n\nprint(*a, sep = &#34;\\n&#34;)"
+        "path": "/app/app/data/submissions/68fdc39efe535fa0f4f1d64a/74dabc44f1fb4514b38a1522/sub_1763904104963_1cf6v7dqt.py",
+        "similarity_percent": 100.0,
+        "full_code": "x = input().split()\nfor i in x:\n    print(i)",
+        "highlighted_code": "<span class='highlight-green'>x = input().split()\nfor i in x:\n    prin</span>t(i)"
       },
-      "token_overlap": 27,
-      "max_similarity_percent": 69.23
+      "token_overlap": 25,
+      "max_similarity_percent": 100.0
     },
     {
       "case_id": 16,
       "file1": {
-        "path": "/app/app/data/submissions/68fdc39efe535fa0f4f1d64a/26894d2babd64210ad6beba1/sub_1762269634254_t1a3ss4iv.py",
-        "similarity_percent": 64.1,
-        "full_code": "a = list(map(str, input().split()))\n\nprint(*a, sep = \"\\n\")",
-        "highlighted_code": "a = list(map(str<span class='highlight-red'>, input().split()))\n\nprint(*a, sep = </span>&#34;\\n&#34;)"
+        "path": "/app/app/data/submissions/68fdc39efe535fa0f4f1d64a/cd93b2ff882a4ffa85f4518f/sub_1765260761584_prg2hkuws.py",
+        "similarity_percent": 100.0,
+        "full_code": "s=input().split()\nfor ch in s:\n    print(ch)",
+        "highlighted_code": "<span class='highlight-red'>s=input().split()\nfor ch in s:\n    prin</span>t(ch)"
       },
       "file2": {
-        "path": "/app/app/data/submissions/68fdc39efe535fa0f4f1d64a/26894d2babd64210ad6beba1/sub_1762269603992_452uxslyo.py",
-        "similarity_percent": 64.1,
-        "full_code": "a = list(map(int, input().split()))\n\nprint(*a, sep = \"\\n\")",
-        "highlighted_code": "a = list(map(int<span class='highlight-green'>, input().split()))\n\nprint(*a, sep = </span>&#34;\\n&#34;)"
+        "path": "/app/app/data/submissions/68fdc39efe535fa0f4f1d64a/693bd93b24c33437062efc92/sub_1765536754779_mqmk7tz5p.py",
+        "similarity_percent": 100.0,
+        "full_code": "n=input().split()\nfor num in n:\n    print(num)",
+        "highlighted_code": "<span class='highlight-green'>n=input().split()\nfor num in n:\n    prin</span>t(num)"
       },
       "token_overlap": 25,
-      "max_similarity_percent": 64.1
+      "max_similarity_percent": 100.0
     },
     {
       "case_id": 17,
       "file1": {
+        "path": "/app/app/data/submissions/68fdc39efe535fa0f4f1d64a/cd93b2ff882a4ffa85f4518f/sub_1765260761584_prg2hkuws.py",
+        "similarity_percent": 100.0,
+        "full_code": "s=input().split()\nfor ch in s:\n    print(ch)",
+        "highlighted_code": "<span class='highlight-red'>s=input().split()\nfor ch in s:\n    prin</span>t(ch)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc39efe535fa0f4f1d64a/20333a895d2643e5b867d5fa/sub_1763993912958_04u5koa9m.py",
+        "similarity_percent": 100.0,
+        "full_code": "m = input().split()\nfor i in m:\n    print(i)\n",
+        "highlighted_code": "<span class='highlight-green'>m = input().split()\nfor i in m:\n    prin</span>t(i)\n"
+      },
+      "token_overlap": 25,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 18,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc39efe535fa0f4f1d64a/cd93b2ff882a4ffa85f4518f/sub_1762786190139_48xtk7rn4.py",
+        "similarity_percent": 100.0,
+        "full_code": "s=input().split()\nfor ch in s:\n    print(ch)",
+        "highlighted_code": "<span class='highlight-red'>s=input().split()\nfor ch in s:\n    prin</span>t(ch)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc39efe535fa0f4f1d64a/f8a2bab9778140ecb46b6a60/sub_1761917942442_vcj40pl56.py",
+        "similarity_percent": 100.0,
+        "full_code": "n = input().split()\nfor i in n:\n    print(i)",
+        "highlighted_code": "<span class='highlight-green'>n = input().split()\nfor i in n:\n    prin</span>t(i)"
+      },
+      "token_overlap": 25,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 19,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc39efe535fa0f4f1d64a/cd93b2ff882a4ffa85f4518f/sub_1762786190139_48xtk7rn4.py",
+        "similarity_percent": 100.0,
+        "full_code": "s=input().split()\nfor ch in s:\n    print(ch)",
+        "highlighted_code": "<span class='highlight-red'>s=input().split()\nfor ch in s:\n    prin</span>t(ch)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc39efe535fa0f4f1d64a/d9aec9d917da4c5e9beeb80b/sub_1762781622854_0w8c1ikva.py",
+        "similarity_percent": 100.0,
+        "full_code": "n = input().split()\nfor i in n:\n    print(i)",
+        "highlighted_code": "<span class='highlight-green'>n = input().split()\nfor i in n:\n    prin</span>t(i)"
+      },
+      "token_overlap": 25,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 20,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc39efe535fa0f4f1d64a/cd93b2ff882a4ffa85f4518f/sub_1762786190139_48xtk7rn4.py",
+        "similarity_percent": 100.0,
+        "full_code": "s=input().split()\nfor ch in s:\n    print(ch)",
+        "highlighted_code": "<span class='highlight-red'>s=input().split()\nfor ch in s:\n    prin</span>t(ch)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc39efe535fa0f4f1d64a/e981f1efc9764aba8b686042/sub_1765315109191_c1ek48zzl.py",
+        "similarity_percent": 100.0,
+        "full_code": "n = input().split()\nfor i in n:\n    print(i)\n",
+        "highlighted_code": "<span class='highlight-green'>n = input().split()\nfor i in n:\n    prin</span>t(i)\n"
+      },
+      "token_overlap": 25,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 21,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc39efe535fa0f4f1d64a/cd93b2ff882a4ffa85f4518f/sub_1762786190139_48xtk7rn4.py",
+        "similarity_percent": 100.0,
+        "full_code": "s=input().split()\nfor ch in s:\n    print(ch)",
+        "highlighted_code": "<span class='highlight-red'>s=input().split()\nfor ch in s:\n    prin</span>t(ch)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc39efe535fa0f4f1d64a/74dabc44f1fb4514b38a1522/sub_1763904104963_1cf6v7dqt.py",
+        "similarity_percent": 100.0,
+        "full_code": "x = input().split()\nfor i in x:\n    print(i)",
+        "highlighted_code": "<span class='highlight-green'>x = input().split()\nfor i in x:\n    prin</span>t(i)"
+      },
+      "token_overlap": 25,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 22,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc39efe535fa0f4f1d64a/cd93b2ff882a4ffa85f4518f/sub_1762786190139_48xtk7rn4.py",
+        "similarity_percent": 100.0,
+        "full_code": "s=input().split()\nfor ch in s:\n    print(ch)",
+        "highlighted_code": "<span class='highlight-red'>s=input().split()\nfor ch in s:\n    prin</span>t(ch)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc39efe535fa0f4f1d64a/693bd93b24c33437062efc92/sub_1765536754779_mqmk7tz5p.py",
+        "similarity_percent": 100.0,
+        "full_code": "n=input().split()\nfor num in n:\n    print(num)",
+        "highlighted_code": "<span class='highlight-green'>n=input().split()\nfor num in n:\n    prin</span>t(num)"
+      },
+      "token_overlap": 25,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 23,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc39efe535fa0f4f1d64a/cd93b2ff882a4ffa85f4518f/sub_1762786190139_48xtk7rn4.py",
+        "similarity_percent": 100.0,
+        "full_code": "s=input().split()\nfor ch in s:\n    print(ch)",
+        "highlighted_code": "<span class='highlight-red'>s=input().split()\nfor ch in s:\n    prin</span>t(ch)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc39efe535fa0f4f1d64a/20333a895d2643e5b867d5fa/sub_1763993912958_04u5koa9m.py",
+        "similarity_percent": 100.0,
+        "full_code": "m = input().split()\nfor i in m:\n    print(i)\n",
+        "highlighted_code": "<span class='highlight-green'>m = input().split()\nfor i in m:\n    prin</span>t(i)\n"
+      },
+      "token_overlap": 25,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 24,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc39efe535fa0f4f1d64a/f8a2bab9778140ecb46b6a60/sub_1761917942442_vcj40pl56.py",
+        "similarity_percent": 100.0,
+        "full_code": "n = input().split()\nfor i in n:\n    print(i)",
+        "highlighted_code": "<span class='highlight-red'>n = input().split()\nfor i in n:\n    prin</span>t(i)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc39efe535fa0f4f1d64a/d9aec9d917da4c5e9beeb80b/sub_1762781622854_0w8c1ikva.py",
+        "similarity_percent": 100.0,
+        "full_code": "n = input().split()\nfor i in n:\n    print(i)",
+        "highlighted_code": "<span class='highlight-green'>n = input().split()\nfor i in n:\n    prin</span>t(i)"
+      },
+      "token_overlap": 25,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 25,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc39efe535fa0f4f1d64a/f8a2bab9778140ecb46b6a60/sub_1761917942442_vcj40pl56.py",
+        "similarity_percent": 100.0,
+        "full_code": "n = input().split()\nfor i in n:\n    print(i)",
+        "highlighted_code": "<span class='highlight-red'>n = input().split()\nfor i in n:\n    prin</span>t(i)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc39efe535fa0f4f1d64a/e981f1efc9764aba8b686042/sub_1765315109191_c1ek48zzl.py",
+        "similarity_percent": 100.0,
+        "full_code": "n = input().split()\nfor i in n:\n    print(i)\n",
+        "highlighted_code": "<span class='highlight-green'>n = input().split()\nfor i in n:\n    prin</span>t(i)\n"
+      },
+      "token_overlap": 25,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 26,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc39efe535fa0f4f1d64a/f8a2bab9778140ecb46b6a60/sub_1761917942442_vcj40pl56.py",
+        "similarity_percent": 100.0,
+        "full_code": "n = input().split()\nfor i in n:\n    print(i)",
+        "highlighted_code": "<span class='highlight-red'>n = input().split()\nfor i in n:\n    prin</span>t(i)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc39efe535fa0f4f1d64a/74dabc44f1fb4514b38a1522/sub_1763904104963_1cf6v7dqt.py",
+        "similarity_percent": 100.0,
+        "full_code": "x = input().split()\nfor i in x:\n    print(i)",
+        "highlighted_code": "<span class='highlight-green'>x = input().split()\nfor i in x:\n    prin</span>t(i)"
+      },
+      "token_overlap": 25,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 27,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc39efe535fa0f4f1d64a/f8a2bab9778140ecb46b6a60/sub_1761917942442_vcj40pl56.py",
+        "similarity_percent": 100.0,
+        "full_code": "n = input().split()\nfor i in n:\n    print(i)",
+        "highlighted_code": "<span class='highlight-red'>n = input().split()\nfor i in n:\n    prin</span>t(i)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc39efe535fa0f4f1d64a/693bd93b24c33437062efc92/sub_1765536754779_mqmk7tz5p.py",
+        "similarity_percent": 100.0,
+        "full_code": "n=input().split()\nfor num in n:\n    print(num)",
+        "highlighted_code": "<span class='highlight-green'>n=input().split()\nfor num in n:\n    prin</span>t(num)"
+      },
+      "token_overlap": 25,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 28,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc39efe535fa0f4f1d64a/f8a2bab9778140ecb46b6a60/sub_1761917942442_vcj40pl56.py",
+        "similarity_percent": 100.0,
+        "full_code": "n = input().split()\nfor i in n:\n    print(i)",
+        "highlighted_code": "<span class='highlight-red'>n = input().split()\nfor i in n:\n    prin</span>t(i)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc39efe535fa0f4f1d64a/20333a895d2643e5b867d5fa/sub_1763993912958_04u5koa9m.py",
+        "similarity_percent": 100.0,
+        "full_code": "m = input().split()\nfor i in m:\n    print(i)\n",
+        "highlighted_code": "<span class='highlight-green'>m = input().split()\nfor i in m:\n    prin</span>t(i)\n"
+      },
+      "token_overlap": 25,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 29,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc39efe535fa0f4f1d64a/0cb0117234e943f4ab1ea21a/sub_1764900371642_8uefz2i3c.py",
+        "similarity_percent": 100.0,
+        "full_code": "n = list(map(str, input().split()))\nfor i in n:\n    print(i)",
+        "highlighted_code": "<span class='highlight-red'>n = list(map(str, input().split()))\nfor i in n:\n    print(i)</span>"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc39efe535fa0f4f1d64a/bcb420abb39b4af095b63cf8/sub_1762541993580_jktn8k53d.py",
+        "similarity_percent": 100.0,
+        "full_code": "n=list(map(str,input().split()))\nfor i in n:\n    print(i)",
+        "highlighted_code": "<span class='highlight-green'>n=list(map(str,input().split()))\nfor i in n:\n    print(i)</span>"
+      },
+      "token_overlap": 44,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 30,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc39efe535fa0f4f1d64a/0cb0117234e943f4ab1ea21a/sub_1764900371642_8uefz2i3c.py",
+        "similarity_percent": 100.0,
+        "full_code": "n = list(map(str, input().split()))\nfor i in n:\n    print(i)",
+        "highlighted_code": "<span class='highlight-red'>n = list(map(str, input().split()))\nfor i in n:\n    print(i)</span>"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc39efe535fa0f4f1d64a/27e30f767b3a46b283cbfec0/sub_1762016182456_k9xfdlogg.py",
+        "similarity_percent": 100.0,
+        "full_code": "array = list(map(str, input().split()))\nfor i in array:\n    print(i)",
+        "highlighted_code": "<span class='highlight-green'>array = list(map(str, input().split()))\nfor i in array:\n    print(i)</span>"
+      },
+      "token_overlap": 44,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 31,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc39efe535fa0f4f1d64a/0cb0117234e943f4ab1ea21a/sub_1764900371642_8uefz2i3c.py",
+        "similarity_percent": 100.0,
+        "full_code": "n = list(map(str, input().split()))\nfor i in n:\n    print(i)",
+        "highlighted_code": "<span class='highlight-red'>n = list(map(str, input().split()))\nfor i in n:\n    print(i)</span>"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc39efe535fa0f4f1d64a/f56f86fa26744324899543f3/sub_1761884452310_jh3tcf7j1.py",
+        "similarity_percent": 100.0,
+        "full_code": "a=list(map(str,input().split()))\nfor _ in a: print(_)",
+        "highlighted_code": "<span class='highlight-green'>a=list(map(str,input().split()))\nfor _ in a: print(_)</span>"
+      },
+      "token_overlap": 44,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 32,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc39efe535fa0f4f1d64a/0cb0117234e943f4ab1ea21a/sub_1764900371642_8uefz2i3c.py",
+        "similarity_percent": 100.0,
+        "full_code": "n = list(map(str, input().split()))\nfor i in n:\n    print(i)",
+        "highlighted_code": "<span class='highlight-red'>n = list(map(str, input().split()))\nfor i in n:\n    print(i)</span>"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc39efe535fa0f4f1d64a/9dcb98ac39014785ad502bca/sub_1765448110345_gebgedt2y.py",
+        "similarity_percent": 100.0,
+        "full_code": "s = list(map(str, input().split()))\nfor x in s:\n    print(x)",
+        "highlighted_code": "<span class='highlight-green'>s = list(map(str, input().split()))\nfor x in s:\n    print(x)</span>"
+      },
+      "token_overlap": 44,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 33,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc39efe535fa0f4f1d64a/d9aec9d917da4c5e9beeb80b/sub_1762781622854_0w8c1ikva.py",
+        "similarity_percent": 100.0,
+        "full_code": "n = input().split()\nfor i in n:\n    print(i)",
+        "highlighted_code": "<span class='highlight-red'>n = input().split()\nfor i in n:\n    prin</span>t(i)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc39efe535fa0f4f1d64a/e981f1efc9764aba8b686042/sub_1765315109191_c1ek48zzl.py",
+        "similarity_percent": 100.0,
+        "full_code": "n = input().split()\nfor i in n:\n    print(i)\n",
+        "highlighted_code": "<span class='highlight-green'>n = input().split()\nfor i in n:\n    prin</span>t(i)\n"
+      },
+      "token_overlap": 25,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 34,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc39efe535fa0f4f1d64a/d9aec9d917da4c5e9beeb80b/sub_1762781622854_0w8c1ikva.py",
+        "similarity_percent": 100.0,
+        "full_code": "n = input().split()\nfor i in n:\n    print(i)",
+        "highlighted_code": "<span class='highlight-red'>n = input().split()\nfor i in n:\n    prin</span>t(i)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc39efe535fa0f4f1d64a/74dabc44f1fb4514b38a1522/sub_1763904104963_1cf6v7dqt.py",
+        "similarity_percent": 100.0,
+        "full_code": "x = input().split()\nfor i in x:\n    print(i)",
+        "highlighted_code": "<span class='highlight-green'>x = input().split()\nfor i in x:\n    prin</span>t(i)"
+      },
+      "token_overlap": 25,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 35,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc39efe535fa0f4f1d64a/d9aec9d917da4c5e9beeb80b/sub_1762781622854_0w8c1ikva.py",
+        "similarity_percent": 100.0,
+        "full_code": "n = input().split()\nfor i in n:\n    print(i)",
+        "highlighted_code": "<span class='highlight-red'>n = input().split()\nfor i in n:\n    prin</span>t(i)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc39efe535fa0f4f1d64a/693bd93b24c33437062efc92/sub_1765536754779_mqmk7tz5p.py",
+        "similarity_percent": 100.0,
+        "full_code": "n=input().split()\nfor num in n:\n    print(num)",
+        "highlighted_code": "<span class='highlight-green'>n=input().split()\nfor num in n:\n    prin</span>t(num)"
+      },
+      "token_overlap": 25,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 36,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc39efe535fa0f4f1d64a/d9aec9d917da4c5e9beeb80b/sub_1762781622854_0w8c1ikva.py",
+        "similarity_percent": 100.0,
+        "full_code": "n = input().split()\nfor i in n:\n    print(i)",
+        "highlighted_code": "<span class='highlight-red'>n = input().split()\nfor i in n:\n    prin</span>t(i)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc39efe535fa0f4f1d64a/20333a895d2643e5b867d5fa/sub_1763993912958_04u5koa9m.py",
+        "similarity_percent": 100.0,
+        "full_code": "m = input().split()\nfor i in m:\n    print(i)\n",
+        "highlighted_code": "<span class='highlight-green'>m = input().split()\nfor i in m:\n    prin</span>t(i)\n"
+      },
+      "token_overlap": 25,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 37,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc39efe535fa0f4f1d64a/bcb420abb39b4af095b63cf8/sub_1762541993580_jktn8k53d.py",
+        "similarity_percent": 100.0,
+        "full_code": "n=list(map(str,input().split()))\nfor i in n:\n    print(i)",
+        "highlighted_code": "<span class='highlight-red'>n=list(map(str,input().split()))\nfor i in n:\n    print(i)</span>"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc39efe535fa0f4f1d64a/27e30f767b3a46b283cbfec0/sub_1762016182456_k9xfdlogg.py",
+        "similarity_percent": 100.0,
+        "full_code": "array = list(map(str, input().split()))\nfor i in array:\n    print(i)",
+        "highlighted_code": "<span class='highlight-green'>array = list(map(str, input().split()))\nfor i in array:\n    print(i)</span>"
+      },
+      "token_overlap": 44,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 38,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc39efe535fa0f4f1d64a/bcb420abb39b4af095b63cf8/sub_1762541993580_jktn8k53d.py",
+        "similarity_percent": 100.0,
+        "full_code": "n=list(map(str,input().split()))\nfor i in n:\n    print(i)",
+        "highlighted_code": "<span class='highlight-red'>n=list(map(str,input().split()))\nfor i in n:\n    print(i)</span>"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc39efe535fa0f4f1d64a/f56f86fa26744324899543f3/sub_1761884452310_jh3tcf7j1.py",
+        "similarity_percent": 100.0,
+        "full_code": "a=list(map(str,input().split()))\nfor _ in a: print(_)",
+        "highlighted_code": "<span class='highlight-green'>a=list(map(str,input().split()))\nfor _ in a: print(_)</span>"
+      },
+      "token_overlap": 44,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 39,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc39efe535fa0f4f1d64a/bcb420abb39b4af095b63cf8/sub_1762541993580_jktn8k53d.py",
+        "similarity_percent": 100.0,
+        "full_code": "n=list(map(str,input().split()))\nfor i in n:\n    print(i)",
+        "highlighted_code": "<span class='highlight-red'>n=list(map(str,input().split()))\nfor i in n:\n    print(i)</span>"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc39efe535fa0f4f1d64a/9dcb98ac39014785ad502bca/sub_1765448110345_gebgedt2y.py",
+        "similarity_percent": 100.0,
+        "full_code": "s = list(map(str, input().split()))\nfor x in s:\n    print(x)",
+        "highlighted_code": "<span class='highlight-green'>s = list(map(str, input().split()))\nfor x in s:\n    print(x)</span>"
+      },
+      "token_overlap": 44,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 40,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc39efe535fa0f4f1d64a/27e30f767b3a46b283cbfec0/sub_1762016182456_k9xfdlogg.py",
+        "similarity_percent": 100.0,
+        "full_code": "array = list(map(str, input().split()))\nfor i in array:\n    print(i)",
+        "highlighted_code": "<span class='highlight-red'>array = list(map(str, input().split()))\nfor i in array:\n    print(i)</span>"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc39efe535fa0f4f1d64a/f56f86fa26744324899543f3/sub_1761884452310_jh3tcf7j1.py",
+        "similarity_percent": 100.0,
+        "full_code": "a=list(map(str,input().split()))\nfor _ in a: print(_)",
+        "highlighted_code": "<span class='highlight-green'>a=list(map(str,input().split()))\nfor _ in a: print(_)</span>"
+      },
+      "token_overlap": 44,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 41,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc39efe535fa0f4f1d64a/27e30f767b3a46b283cbfec0/sub_1762016182456_k9xfdlogg.py",
+        "similarity_percent": 100.0,
+        "full_code": "array = list(map(str, input().split()))\nfor i in array:\n    print(i)",
+        "highlighted_code": "<span class='highlight-red'>array = list(map(str, input().split()))\nfor i in array:\n    print(i)</span>"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc39efe535fa0f4f1d64a/9dcb98ac39014785ad502bca/sub_1765448110345_gebgedt2y.py",
+        "similarity_percent": 100.0,
+        "full_code": "s = list(map(str, input().split()))\nfor x in s:\n    print(x)",
+        "highlighted_code": "<span class='highlight-green'>s = list(map(str, input().split()))\nfor x in s:\n    print(x)</span>"
+      },
+      "token_overlap": 44,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 42,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc39efe535fa0f4f1d64a/e981f1efc9764aba8b686042/sub_1765315109191_c1ek48zzl.py",
+        "similarity_percent": 100.0,
+        "full_code": "n = input().split()\nfor i in n:\n    print(i)\n",
+        "highlighted_code": "<span class='highlight-red'>n = input().split()\nfor i in n:\n    prin</span>t(i)\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc39efe535fa0f4f1d64a/74dabc44f1fb4514b38a1522/sub_1763904104963_1cf6v7dqt.py",
+        "similarity_percent": 100.0,
+        "full_code": "x = input().split()\nfor i in x:\n    print(i)",
+        "highlighted_code": "<span class='highlight-green'>x = input().split()\nfor i in x:\n    prin</span>t(i)"
+      },
+      "token_overlap": 25,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 43,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc39efe535fa0f4f1d64a/e981f1efc9764aba8b686042/sub_1765315109191_c1ek48zzl.py",
+        "similarity_percent": 100.0,
+        "full_code": "n = input().split()\nfor i in n:\n    print(i)\n",
+        "highlighted_code": "<span class='highlight-red'>n = input().split()\nfor i in n:\n    prin</span>t(i)\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc39efe535fa0f4f1d64a/693bd93b24c33437062efc92/sub_1765536754779_mqmk7tz5p.py",
+        "similarity_percent": 100.0,
+        "full_code": "n=input().split()\nfor num in n:\n    print(num)",
+        "highlighted_code": "<span class='highlight-green'>n=input().split()\nfor num in n:\n    prin</span>t(num)"
+      },
+      "token_overlap": 25,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 44,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc39efe535fa0f4f1d64a/e981f1efc9764aba8b686042/sub_1765315109191_c1ek48zzl.py",
+        "similarity_percent": 100.0,
+        "full_code": "n = input().split()\nfor i in n:\n    print(i)\n",
+        "highlighted_code": "<span class='highlight-red'>n = input().split()\nfor i in n:\n    prin</span>t(i)\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc39efe535fa0f4f1d64a/20333a895d2643e5b867d5fa/sub_1763993912958_04u5koa9m.py",
+        "similarity_percent": 100.0,
+        "full_code": "m = input().split()\nfor i in m:\n    print(i)\n",
+        "highlighted_code": "<span class='highlight-green'>m = input().split()\nfor i in m:\n    prin</span>t(i)\n"
+      },
+      "token_overlap": 25,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 45,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc39efe535fa0f4f1d64a/74dabc44f1fb4514b38a1522/sub_1763904104963_1cf6v7dqt.py",
+        "similarity_percent": 100.0,
+        "full_code": "x = input().split()\nfor i in x:\n    print(i)",
+        "highlighted_code": "<span class='highlight-red'>x = input().split()\nfor i in x:\n    prin</span>t(i)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc39efe535fa0f4f1d64a/693bd93b24c33437062efc92/sub_1765536754779_mqmk7tz5p.py",
+        "similarity_percent": 100.0,
+        "full_code": "n=input().split()\nfor num in n:\n    print(num)",
+        "highlighted_code": "<span class='highlight-green'>n=input().split()\nfor num in n:\n    prin</span>t(num)"
+      },
+      "token_overlap": 25,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 46,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc39efe535fa0f4f1d64a/74dabc44f1fb4514b38a1522/sub_1763904104963_1cf6v7dqt.py",
+        "similarity_percent": 100.0,
+        "full_code": "x = input().split()\nfor i in x:\n    print(i)",
+        "highlighted_code": "<span class='highlight-red'>x = input().split()\nfor i in x:\n    prin</span>t(i)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc39efe535fa0f4f1d64a/20333a895d2643e5b867d5fa/sub_1763993912958_04u5koa9m.py",
+        "similarity_percent": 100.0,
+        "full_code": "m = input().split()\nfor i in m:\n    print(i)\n",
+        "highlighted_code": "<span class='highlight-green'>m = input().split()\nfor i in m:\n    prin</span>t(i)\n"
+      },
+      "token_overlap": 25,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 47,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc39efe535fa0f4f1d64a/806ab3177f6b474c9d5fe252/sub_1763991223333_643nbryt5.py",
+        "similarity_percent": 100.0,
+        "full_code": "input_string = input()\nword = input_string.split()\nfor letter in word:\n    print(letter)",
+        "highlighted_code": "<span class='highlight-red'>input_string = input()\nword = input_string.split()\nfor letter in word:\n    print(</span>letter)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc39efe535fa0f4f1d64a/001b865968674769bf6798dd/sub_1762243824610_b2ddn2zkx.py",
+        "similarity_percent": 100.0,
+        "full_code": "s = input()\ntu = s.split()\nfor i in tu:\n    print(i)",
+        "highlighted_code": "<span class='highlight-green'>s = input()\ntu = s.split()\nfor i in tu:\n    print(</span>i)"
+      },
+      "token_overlap": 30,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 48,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc39efe535fa0f4f1d64a/806ab3177f6b474c9d5fe252/sub_1763991223333_643nbryt5.py",
+        "similarity_percent": 100.0,
+        "full_code": "input_string = input()\nword = input_string.split()\nfor letter in word:\n    print(letter)",
+        "highlighted_code": "<span class='highlight-red'>input_string = input()\nword = input_string.split()\nfor letter in word:\n    print(</span>letter)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc39efe535fa0f4f1d64a/1a420c30af984efa8fdf9f5e/sub_1763894689840_i3phtmv22.py",
+        "similarity_percent": 100.0,
+        "full_code": "text = input()\nwords = text.split()\n\nfor word in words:\n    print(word)\n",
+        "highlighted_code": "<span class='highlight-green'>text = input()\nwords = text.split()\n\nfor word in words:\n    print(</span>word)\n"
+      },
+      "token_overlap": 30,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 49,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc39efe535fa0f4f1d64a/806ab3177f6b474c9d5fe252/sub_1763991223333_643nbryt5.py",
+        "similarity_percent": 100.0,
+        "full_code": "input_string = input()\nword = input_string.split()\nfor letter in word:\n    print(letter)",
+        "highlighted_code": "<span class='highlight-red'>input_string = input()\nword = input_string.split()\nfor letter in word:\n    print(</span>letter)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc39efe535fa0f4f1d64a/20333a895d2643e5b867d5fa/sub_1764606384146_ngg2wymu8.py",
+        "similarity_percent": 100.0,
+        "full_code": "cau = input()\ncau = cau.split()\nfor i in cau:\n    print(i)",
+        "highlighted_code": "<span class='highlight-green'>cau = input()\ncau = cau.split()\nfor i in cau:\n    print(</span>i)"
+      },
+      "token_overlap": 30,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 50,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc39efe535fa0f4f1d64a/693bd93b24c33437062efc92/sub_1765536754779_mqmk7tz5p.py",
+        "similarity_percent": 100.0,
+        "full_code": "n=input().split()\nfor num in n:\n    print(num)",
+        "highlighted_code": "<span class='highlight-red'>n=input().split()\nfor num in n:\n    prin</span>t(num)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc39efe535fa0f4f1d64a/20333a895d2643e5b867d5fa/sub_1763993912958_04u5koa9m.py",
+        "similarity_percent": 100.0,
+        "full_code": "m = input().split()\nfor i in m:\n    print(i)\n",
+        "highlighted_code": "<span class='highlight-green'>m = input().split()\nfor i in m:\n    prin</span>t(i)\n"
+      },
+      "token_overlap": 25,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 51,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc39efe535fa0f4f1d64a/001b865968674769bf6798dd/sub_1762243824610_b2ddn2zkx.py",
+        "similarity_percent": 100.0,
+        "full_code": "s = input()\ntu = s.split()\nfor i in tu:\n    print(i)",
+        "highlighted_code": "<span class='highlight-red'>s = input()\ntu = s.split()\nfor i in tu:\n    print(</span>i)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc39efe535fa0f4f1d64a/1a420c30af984efa8fdf9f5e/sub_1763894689840_i3phtmv22.py",
+        "similarity_percent": 100.0,
+        "full_code": "text = input()\nwords = text.split()\n\nfor word in words:\n    print(word)\n",
+        "highlighted_code": "<span class='highlight-green'>text = input()\nwords = text.split()\n\nfor word in words:\n    print(</span>word)\n"
+      },
+      "token_overlap": 30,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 52,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc39efe535fa0f4f1d64a/001b865968674769bf6798dd/sub_1762243824610_b2ddn2zkx.py",
+        "similarity_percent": 100.0,
+        "full_code": "s = input()\ntu = s.split()\nfor i in tu:\n    print(i)",
+        "highlighted_code": "<span class='highlight-red'>s = input()\ntu = s.split()\nfor i in tu:\n    print(</span>i)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc39efe535fa0f4f1d64a/20333a895d2643e5b867d5fa/sub_1764606384146_ngg2wymu8.py",
+        "similarity_percent": 100.0,
+        "full_code": "cau = input()\ncau = cau.split()\nfor i in cau:\n    print(i)",
+        "highlighted_code": "<span class='highlight-green'>cau = input()\ncau = cau.split()\nfor i in cau:\n    print(</span>i)"
+      },
+      "token_overlap": 30,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 53,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc39efe535fa0f4f1d64a/f56f86fa26744324899543f3/sub_1761884452310_jh3tcf7j1.py",
+        "similarity_percent": 100.0,
+        "full_code": "a=list(map(str,input().split()))\nfor _ in a: print(_)",
+        "highlighted_code": "<span class='highlight-red'>a=list(map(str,input().split()))\nfor _ in a: print(_)</span>"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc39efe535fa0f4f1d64a/9dcb98ac39014785ad502bca/sub_1765448110345_gebgedt2y.py",
+        "similarity_percent": 100.0,
+        "full_code": "s = list(map(str, input().split()))\nfor x in s:\n    print(x)",
+        "highlighted_code": "<span class='highlight-green'>s = list(map(str, input().split()))\nfor x in s:\n    print(x)</span>"
+      },
+      "token_overlap": 44,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 54,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc39efe535fa0f4f1d64a/1a420c30af984efa8fdf9f5e/sub_1763894689840_i3phtmv22.py",
+        "similarity_percent": 100.0,
+        "full_code": "text = input()\nwords = text.split()\n\nfor word in words:\n    print(word)\n",
+        "highlighted_code": "<span class='highlight-red'>text = input()\nwords = text.split()\n\nfor word in words:\n    print(</span>word)\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc39efe535fa0f4f1d64a/20333a895d2643e5b867d5fa/sub_1764606384146_ngg2wymu8.py",
+        "similarity_percent": 100.0,
+        "full_code": "cau = input()\ncau = cau.split()\nfor i in cau:\n    print(i)",
+        "highlighted_code": "<span class='highlight-green'>cau = input()\ncau = cau.split()\nfor i in cau:\n    print(</span>i)"
+      },
+      "token_overlap": 30,
+      "max_similarity_percent": 100.0
+    },
+    {
+      "case_id": 55,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc39efe535fa0f4f1d64a/9d56dd64686f4133b54e7cd3/sub_1765120378364_31j9ididj.py",
+        "similarity_percent": 80.0,
+        "full_code": "x=input(\"\").split()\ny=len(x)\nfor i in range(y):\n    print(x[i])",
+        "highlighted_code": "x=input(&#34;<span class='highlight-red'>&#34;).split()\ny=len(x)\nfor i in range(y):\n    print(x</span>[i])"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc39efe535fa0f4f1d64a/9d56dd64686f4133b54e7cd3/sub_1765120362087_yr99kyqcf.py",
+        "similarity_percent": 78.26,
+        "full_code": "x=input(\"Nhap 1 chuoi:\").split()\ny=len(x)\nfor i in range(y):\n    print(x[i])",
+        "highlighted_code": "x=input(&#34;Nhap 1 chuoi:<span class='highlight-green'>&#34;).split()\ny=len(x)\nfor i in range(y):\n    print(x</span>[i])"
+      },
+      "token_overlap": 36,
+      "max_similarity_percent": 80.0
+    },
+    {
+      "case_id": 56,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc39efe535fa0f4f1d64a/a34ffbda761b435ca043fd30/sub_1762867331198_zti8pq7em.py",
+        "similarity_percent": 75.0,
+        "full_code": "a = list(map(str, input().split()))\nfor i in a:\n    print(i)",
+        "highlighted_code": "<span class='highlight-red'>a = list(map(str, input().split()))\nfor i i</span>n a:\n    print(i)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc39efe535fa0f4f1d64a/ac7514dacc0a4c32abe1c656/sub_1764275409904_9bisgil5z.py",
+        "similarity_percent": 58.93,
+        "full_code": "letter = list(map(str,input().split()))\nfor i in range(len(letter)):\n    print(letter[i])",
+        "highlighted_code": "<span class='highlight-green'>letter = list(map(str,input().split()))\nfor i i</span>n range(len(letter)):\n    print(letter[i])"
+      },
+      "token_overlap": 33,
+      "max_similarity_percent": 75.0
+    },
+    {
+      "case_id": 57,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc39efe535fa0f4f1d64a/0cb0117234e943f4ab1ea21a/sub_1764900371642_8uefz2i3c.py",
+        "similarity_percent": 75.0,
+        "full_code": "n = list(map(str, input().split()))\nfor i in n:\n    print(i)",
+        "highlighted_code": "<span class='highlight-red'>n = list(map(str, input().split()))\nfor i i</span>n n:\n    print(i)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc39efe535fa0f4f1d64a/ac7514dacc0a4c32abe1c656/sub_1764275409904_9bisgil5z.py",
+        "similarity_percent": 58.93,
+        "full_code": "letter = list(map(str,input().split()))\nfor i in range(len(letter)):\n    print(letter[i])",
+        "highlighted_code": "<span class='highlight-green'>letter = list(map(str,input().split()))\nfor i i</span>n range(len(letter)):\n    print(letter[i])"
+      },
+      "token_overlap": 33,
+      "max_similarity_percent": 75.0
+    },
+    {
+      "case_id": 58,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc39efe535fa0f4f1d64a/bcb420abb39b4af095b63cf8/sub_1762541993580_jktn8k53d.py",
+        "similarity_percent": 75.0,
+        "full_code": "n=list(map(str,input().split()))\nfor i in n:\n    print(i)",
+        "highlighted_code": "<span class='highlight-red'>n=list(map(str,input().split()))\nfor i i</span>n n:\n    print(i)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc39efe535fa0f4f1d64a/ac7514dacc0a4c32abe1c656/sub_1764275409904_9bisgil5z.py",
+        "similarity_percent": 58.93,
+        "full_code": "letter = list(map(str,input().split()))\nfor i in range(len(letter)):\n    print(letter[i])",
+        "highlighted_code": "<span class='highlight-green'>letter = list(map(str,input().split()))\nfor i i</span>n range(len(letter)):\n    print(letter[i])"
+      },
+      "token_overlap": 33,
+      "max_similarity_percent": 75.0
+    },
+    {
+      "case_id": 59,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc39efe535fa0f4f1d64a/a34ffbda761b435ca043fd30/sub_1762867331198_zti8pq7em.py",
+        "similarity_percent": 72.73,
+        "full_code": "a = list(map(str, input().split()))\nfor i in a:\n    print(i)",
+        "highlighted_code": "<span class='highlight-red'>a = list(map(str, input().split()))\nfor i </span>in a:\n    print(i)"
+      },
+      "file2": {
         "path": "/app/app/data/submissions/68fdc39efe535fa0f4f1d64a/f95120b3a38a461085ef58cb/sub_1762364347400_q9yqrw37d.py",
-        "similarity_percent": 51.61,
+        "similarity_percent": 55.17,
+        "full_code": "lst = list(map(str, input().split()))\nfor index, nums in enumerate(lst):\n    print(nums, end = \"\\n\")",
+        "highlighted_code": "<span class='highlight-green'>lst = list(map(str, input().split()))\nfor index</span>, nums in enumerate(lst):\n    print(nums, end = &#34;\\n&#34;)"
+      },
+      "token_overlap": 32,
+      "max_similarity_percent": 72.73
+    },
+    {
+      "case_id": 60,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc39efe535fa0f4f1d64a/a34ffbda761b435ca043fd30/sub_1762867331198_zti8pq7em.py",
+        "similarity_percent": 72.73,
+        "full_code": "a = list(map(str, input().split()))\nfor i in a:\n    print(i)",
+        "highlighted_code": "<span class='highlight-red'>a = list(map(str, input().split()))\nfor i </span>in a:\n    print(i)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc39efe535fa0f4f1d64a/ffdb326842044f2e98b7aaa7/sub_1761899335407_m40h2ijt1.py",
+        "similarity_percent": 55.17,
+        "full_code": "lst = list(map(str, input().split()))\n\nfor index, nums in enumerate(lst):\n    print(nums, end = \"\\n\")",
+        "highlighted_code": "<span class='highlight-green'>lst = list(map(str, input().split()))\n\nfor index</span>, nums in enumerate(lst):\n    print(nums, end = &#34;\\n&#34;)"
+      },
+      "token_overlap": 32,
+      "max_similarity_percent": 72.73
+    },
+    {
+      "case_id": 61,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc39efe535fa0f4f1d64a/5fa986f9bfbc4a9aacf8dc3c/sub_1764697823852_igbl98upi.py",
+        "similarity_percent": 69.44,
+        "full_code": "a = input()\nif ' ' in a:\n    print(a.replace(' ','\\n'))\n",
+        "highlighted_code": "a = input()\nif <span class='highlight-red'>&#39; &#39; in a:\n    print(a.replace(&#39; &#39;,&#39;\\n&#39;)</span>)\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc39efe535fa0f4f1d64a/5fa986f9bfbc4a9aacf8dc3c/sub_1764697755482_1p3ii4zji.py",
+        "similarity_percent": 21.19,
+        "full_code": "import timeit\n\ncode = \" \" \"\nfor i in range(100):\n    pass\n\" \" \"\nresult = timeit.timeit(stmt=code, number=100000)\nprint(f\"Runtime: {result:.6f} seconds\")\n\na = input('Nhập chuỗi gồm nhiều từ: ')\nif ' ' in a:\n    print(a.replace(' ','\\n'))\n",
+        "highlighted_code": "import timeit\n\ncode = &#34; &#34; &#34;\nfor i in range(100):\n    pass\n&#34; &#34; &#34;\nresult = timeit.timeit(stmt=code, number=100000)\nprint(f&#34;Runtime: {result:.6f} seconds&#34;)\n\na = input(&#39;Nhập chuỗi gồm nhiều từ: &#39;)\nif <span class='highlight-green'>&#39; &#39; in a:\n    print(a.replace(&#39; &#39;,&#39;\\n&#39;)</span>)\n"
+      },
+      "token_overlap": 25,
+      "max_similarity_percent": 69.44
+    },
+    {
+      "case_id": 62,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc39efe535fa0f4f1d64a/26894d2babd64210ad6beba1/sub_1762269634254_t1a3ss4iv.py",
+        "similarity_percent": 68.29,
+        "full_code": "a = list(map(str, input().split()))\n\nprint(*a, sep = \"\\n\")",
+        "highlighted_code": "<span class='highlight-red'>a = list(map(str, input().split()))\n\n</span>print(*a, sep = &#34;\\n&#34;)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc39efe535fa0f4f1d64a/ffdb326842044f2e98b7aaa7/sub_1761899335407_m40h2ijt1.py",
+        "similarity_percent": 48.28,
+        "full_code": "lst = list(map(str, input().split()))\n\nfor index, nums in enumerate(lst):\n    print(nums, end = \"\\n\")",
+        "highlighted_code": "<span class='highlight-green'>lst = list(map(str, input().split()))\n\n</span>for index, nums in enumerate(lst):\n    print(nums, end = &#34;\\n&#34;)"
+      },
+      "token_overlap": 28,
+      "max_similarity_percent": 68.29
+    },
+    {
+      "case_id": 63,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc39efe535fa0f4f1d64a/26894d2babd64210ad6beba1/sub_1762269634254_t1a3ss4iv.py",
+        "similarity_percent": 68.29,
+        "full_code": "a = list(map(str, input().split()))\n\nprint(*a, sep = \"\\n\")",
+        "highlighted_code": "<span class='highlight-red'>a = list(map(str, input().split()))\n\n</span>print(*a, sep = &#34;\\n&#34;)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc39efe535fa0f4f1d64a/0cb0117234e943f4ab1ea21a/sub_1764900371642_8uefz2i3c.py",
+        "similarity_percent": 63.64,
+        "full_code": "n = list(map(str, input().split()))\nfor i in n:\n    print(i)",
+        "highlighted_code": "<span class='highlight-green'>n = list(map(str, input().split()))\n</span>for i in n:\n    print(i)"
+      },
+      "token_overlap": 28,
+      "max_similarity_percent": 68.29
+    },
+    {
+      "case_id": 64,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc39efe535fa0f4f1d64a/26894d2babd64210ad6beba1/sub_1762269634254_t1a3ss4iv.py",
+        "similarity_percent": 68.29,
+        "full_code": "a = list(map(str, input().split()))\n\nprint(*a, sep = \"\\n\")",
+        "highlighted_code": "<span class='highlight-red'>a = list(map(str, input().split()))\n\n</span>print(*a, sep = &#34;\\n&#34;)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc39efe535fa0f4f1d64a/bcb420abb39b4af095b63cf8/sub_1762541993580_jktn8k53d.py",
+        "similarity_percent": 63.64,
+        "full_code": "n=list(map(str,input().split()))\nfor i in n:\n    print(i)",
+        "highlighted_code": "<span class='highlight-green'>n=list(map(str,input().split()))\n</span>for i in n:\n    print(i)"
+      },
+      "token_overlap": 28,
+      "max_similarity_percent": 68.29
+    },
+    {
+      "case_id": 65,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc39efe535fa0f4f1d64a/26894d2babd64210ad6beba1/sub_1762269634254_t1a3ss4iv.py",
+        "similarity_percent": 68.29,
+        "full_code": "a = list(map(str, input().split()))\n\nprint(*a, sep = \"\\n\")",
+        "highlighted_code": "<span class='highlight-red'>a = list(map(str, input().split()))\n\n</span>print(*a, sep = &#34;\\n&#34;)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc39efe535fa0f4f1d64a/ac7514dacc0a4c32abe1c656/sub_1764275409904_9bisgil5z.py",
+        "similarity_percent": 50.0,
+        "full_code": "letter = list(map(str,input().split()))\nfor i in range(len(letter)):\n    print(letter[i])",
+        "highlighted_code": "<span class='highlight-green'>letter = list(map(str,input().split()))\n</span>for i in range(len(letter)):\n    print(letter[i])"
+      },
+      "token_overlap": 28,
+      "max_similarity_percent": 68.29
+    },
+    {
+      "case_id": 66,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc39efe535fa0f4f1d64a/26894d2babd64210ad6beba1/sub_1762269634254_t1a3ss4iv.py",
+        "similarity_percent": 68.29,
+        "full_code": "a = list(map(str, input().split()))\n\nprint(*a, sep = \"\\n\")",
+        "highlighted_code": "<span class='highlight-red'>a = list(map(str, input().split()))\n\n</span>print(*a, sep = &#34;\\n&#34;)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc39efe535fa0f4f1d64a/27e30f767b3a46b283cbfec0/sub_1762016182456_k9xfdlogg.py",
+        "similarity_percent": 63.64,
+        "full_code": "array = list(map(str, input().split()))\nfor i in array:\n    print(i)",
+        "highlighted_code": "<span class='highlight-green'>array = list(map(str, input().split()))\n</span>for i in array:\n    print(i)"
+      },
+      "token_overlap": 28,
+      "max_similarity_percent": 68.29
+    },
+    {
+      "case_id": 67,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc39efe535fa0f4f1d64a/26894d2babd64210ad6beba1/sub_1762269634254_t1a3ss4iv.py",
+        "similarity_percent": 68.29,
+        "full_code": "a = list(map(str, input().split()))\n\nprint(*a, sep = \"\\n\")",
+        "highlighted_code": "<span class='highlight-red'>a = list(map(str, input().split()))\n\n</span>print(*a, sep = &#34;\\n&#34;)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc39efe535fa0f4f1d64a/f56f86fa26744324899543f3/sub_1761884452310_jh3tcf7j1.py",
+        "similarity_percent": 63.64,
+        "full_code": "a=list(map(str,input().split()))\nfor _ in a: print(_)",
+        "highlighted_code": "<span class='highlight-green'>a=list(map(str,input().split()))\n</span>for _ in a: print(_)"
+      },
+      "token_overlap": 28,
+      "max_similarity_percent": 68.29
+    },
+    {
+      "case_id": 68,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc39efe535fa0f4f1d64a/26894d2babd64210ad6beba1/sub_1762269634254_t1a3ss4iv.py",
+        "similarity_percent": 68.29,
+        "full_code": "a = list(map(str, input().split()))\n\nprint(*a, sep = \"\\n\")",
+        "highlighted_code": "<span class='highlight-red'>a = list(map(str, input().split()))\n\n</span>print(*a, sep = &#34;\\n&#34;)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc39efe535fa0f4f1d64a/9dcb98ac39014785ad502bca/sub_1765448110345_gebgedt2y.py",
+        "similarity_percent": 63.64,
+        "full_code": "s = list(map(str, input().split()))\nfor x in s:\n    print(x)",
+        "highlighted_code": "<span class='highlight-green'>s = list(map(str, input().split()))\n</span>for x in s:\n    print(x)"
+      },
+      "token_overlap": 28,
+      "max_similarity_percent": 68.29
+    },
+    {
+      "case_id": 69,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc39efe535fa0f4f1d64a/a34ffbda761b435ca043fd30/sub_1762867331198_zti8pq7em.py",
+        "similarity_percent": 63.64,
+        "full_code": "a = list(map(str, input().split()))\nfor i in a:\n    print(i)",
+        "highlighted_code": "<span class='highlight-red'>a = list(map(str, input().split()))\n</span>for i in a:\n    print(i)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc39efe535fa0f4f1d64a/26894d2babd64210ad6beba1/sub_1762269634254_t1a3ss4iv.py",
+        "similarity_percent": 68.29,
+        "full_code": "a = list(map(str, input().split()))\n\nprint(*a, sep = \"\\n\")",
+        "highlighted_code": "<span class='highlight-green'>a = list(map(str, input().split()))\n\n</span>print(*a, sep = &#34;\\n&#34;)"
+      },
+      "token_overlap": 28,
+      "max_similarity_percent": 68.29
+    },
+    {
+      "case_id": 70,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc39efe535fa0f4f1d64a/26894d2babd64210ad6beba1/sub_1762269634254_t1a3ss4iv.py",
+        "similarity_percent": 60.98,
+        "full_code": "a = list(map(str, input().split()))\n\nprint(*a, sep = \"\\n\")",
+        "highlighted_code": "a = list(map(str, i<span class='highlight-red'>nput().split()))\n\nprint(*a, sep = &#34;\\n</span>&#34;)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc39efe535fa0f4f1d64a/26894d2babd64210ad6beba1/sub_1762269603992_452uxslyo.py",
+        "similarity_percent": 60.98,
+        "full_code": "a = list(map(int, input().split()))\n\nprint(*a, sep = \"\\n\")",
+        "highlighted_code": "a = list(map(int, i<span class='highlight-green'>nput().split()))\n\nprint(*a, sep = &#34;\\n</span>&#34;)"
+      },
+      "token_overlap": 25,
+      "max_similarity_percent": 60.98
+    },
+    {
+      "case_id": 71,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc39efe535fa0f4f1d64a/e59c34a1bebb49d29bfb3592/sub_1762245151088_ovzxad2k3.py",
+        "similarity_percent": 60.98,
+        "full_code": "arr = input().split()\nfor i in range(len(arr)):\n    print(arr[i])",
+        "highlighted_code": "arr = input().split()\nfor <span class='highlight-red'>i in range(len(arr)):\n    print(arr[</span>i])"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc39efe535fa0f4f1d64a/ac7514dacc0a4c32abe1c656/sub_1764275409904_9bisgil5z.py",
+        "similarity_percent": 44.64,
+        "full_code": "letter = list(map(str,input().split()))\nfor i in range(len(letter)):\n    print(letter[i])",
+        "highlighted_code": "letter = list(map(str,input().split()))\nfor <span class='highlight-green'>i in range(len(letter)):\n    print(letter[</span>i])"
+      },
+      "token_overlap": 25,
+      "max_similarity_percent": 60.98
+    },
+    {
+      "case_id": 72,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc39efe535fa0f4f1d64a/ac7514dacc0a4c32abe1c656/sub_1764275409904_9bisgil5z.py",
+        "similarity_percent": 58.93,
+        "full_code": "letter = list(map(str,input().split()))\nfor i in range(len(letter)):\n    print(letter[i])",
+        "highlighted_code": "<span class='highlight-red'>letter = list(map(str,input().split()))\nfor i i</span>n range(len(letter)):\n    print(letter[i])"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc39efe535fa0f4f1d64a/27e30f767b3a46b283cbfec0/sub_1762016182456_k9xfdlogg.py",
+        "similarity_percent": 75.0,
+        "full_code": "array = list(map(str, input().split()))\nfor i in array:\n    print(i)",
+        "highlighted_code": "<span class='highlight-green'>array = list(map(str, input().split()))\nfor i i</span>n array:\n    print(i)"
+      },
+      "token_overlap": 33,
+      "max_similarity_percent": 75.0
+    },
+    {
+      "case_id": 73,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc39efe535fa0f4f1d64a/ac7514dacc0a4c32abe1c656/sub_1764275409904_9bisgil5z.py",
+        "similarity_percent": 58.93,
+        "full_code": "letter = list(map(str,input().split()))\nfor i in range(len(letter)):\n    print(letter[i])",
+        "highlighted_code": "<span class='highlight-red'>letter = list(map(str,input().split()))\nfor i i</span>n range(len(letter)):\n    print(letter[i])"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc39efe535fa0f4f1d64a/f56f86fa26744324899543f3/sub_1761884452310_jh3tcf7j1.py",
+        "similarity_percent": 75.0,
+        "full_code": "a=list(map(str,input().split()))\nfor _ in a: print(_)",
+        "highlighted_code": "<span class='highlight-green'>a=list(map(str,input().split()))\nfor _ i</span>n a: print(_)"
+      },
+      "token_overlap": 33,
+      "max_similarity_percent": 75.0
+    },
+    {
+      "case_id": 74,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc39efe535fa0f4f1d64a/ac7514dacc0a4c32abe1c656/sub_1764275409904_9bisgil5z.py",
+        "similarity_percent": 58.93,
+        "full_code": "letter = list(map(str,input().split()))\nfor i in range(len(letter)):\n    print(letter[i])",
+        "highlighted_code": "<span class='highlight-red'>letter = list(map(str,input().split()))\nfor i i</span>n range(len(letter)):\n    print(letter[i])"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc39efe535fa0f4f1d64a/9dcb98ac39014785ad502bca/sub_1765448110345_gebgedt2y.py",
+        "similarity_percent": 75.0,
+        "full_code": "s = list(map(str, input().split()))\nfor x in s:\n    print(x)",
+        "highlighted_code": "<span class='highlight-green'>s = list(map(str, input().split()))\nfor x i</span>n s:\n    print(x)"
+      },
+      "token_overlap": 33,
+      "max_similarity_percent": 75.0
+    },
+    {
+      "case_id": 75,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc39efe535fa0f4f1d64a/f95120b3a38a461085ef58cb/sub_1762364347400_q9yqrw37d.py",
+        "similarity_percent": 55.17,
+        "full_code": "lst = list(map(str, input().split()))\nfor index, nums in enumerate(lst):\n    print(nums, end = \"\\n\")",
+        "highlighted_code": "<span class='highlight-red'>lst = list(map(str, input().split()))\nfor index</span>, nums in enumerate(lst):\n    print(nums, end = &#34;\\n&#34;)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc39efe535fa0f4f1d64a/0cb0117234e943f4ab1ea21a/sub_1764900371642_8uefz2i3c.py",
+        "similarity_percent": 72.73,
+        "full_code": "n = list(map(str, input().split()))\nfor i in n:\n    print(i)",
+        "highlighted_code": "<span class='highlight-green'>n = list(map(str, input().split()))\nfor i </span>in n:\n    print(i)"
+      },
+      "token_overlap": 32,
+      "max_similarity_percent": 72.73
+    },
+    {
+      "case_id": 76,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc39efe535fa0f4f1d64a/f95120b3a38a461085ef58cb/sub_1762364347400_q9yqrw37d.py",
+        "similarity_percent": 55.17,
         "full_code": "lst = list(map(str, input().split()))\nfor index, nums in enumerate(lst):\n    print(nums, end = \"\\n\")",
         "highlighted_code": "<span class='highlight-red'>lst = list(map(str, input().split()))\nfor index</span>, nums in enumerate(lst):\n    print(nums, end = &#34;\\n&#34;)"
       },
       "file2": {
         "path": "/app/app/data/submissions/68fdc39efe535fa0f4f1d64a/bcb420abb39b4af095b63cf8/sub_1762541993580_jktn8k53d.py",
-        "similarity_percent": 80.0,
+        "similarity_percent": 72.73,
         "full_code": "n=list(map(str,input().split()))\nfor i in n:\n    print(i)",
         "highlighted_code": "<span class='highlight-green'>n=list(map(str,input().split()))\nfor i </span>in n:\n    print(i)"
       },
       "token_overlap": 32,
-      "max_similarity_percent": 80.0
+      "max_similarity_percent": 72.73
     },
     {
-      "case_id": 18,
+      "case_id": 77,
       "file1": {
         "path": "/app/app/data/submissions/68fdc39efe535fa0f4f1d64a/f95120b3a38a461085ef58cb/sub_1762364347400_q9yqrw37d.py",
-        "similarity_percent": 51.61,
+        "similarity_percent": 55.17,
         "full_code": "lst = list(map(str, input().split()))\nfor index, nums in enumerate(lst):\n    print(nums, end = \"\\n\")",
         "highlighted_code": "<span class='highlight-red'>lst = list(map(str, input().split()))\nfor index</span>, nums in enumerate(lst):\n    print(nums, end = &#34;\\n&#34;)"
       },
       "file2": {
         "path": "/app/app/data/submissions/68fdc39efe535fa0f4f1d64a/27e30f767b3a46b283cbfec0/sub_1762016182456_k9xfdlogg.py",
-        "similarity_percent": 80.0,
+        "similarity_percent": 72.73,
         "full_code": "array = list(map(str, input().split()))\nfor i in array:\n    print(i)",
         "highlighted_code": "<span class='highlight-green'>array = list(map(str, input().split()))\nfor i </span>in array:\n    print(i)"
       },
       "token_overlap": 32,
-      "max_similarity_percent": 80.0
+      "max_similarity_percent": 72.73
     },
     {
-      "case_id": 19,
+      "case_id": 78,
       "file1": {
         "path": "/app/app/data/submissions/68fdc39efe535fa0f4f1d64a/f95120b3a38a461085ef58cb/sub_1762364347400_q9yqrw37d.py",
-        "similarity_percent": 43.55,
+        "similarity_percent": 55.17,
         "full_code": "lst = list(map(str, input().split()))\nfor index, nums in enumerate(lst):\n    print(nums, end = \"\\n\")",
-        "highlighted_code": "<span class='highlight-red'>lst = list(map(str, input().split())</span>)\nfor index, nums in enumerate(lst):\n    print(nums, end = &#34;\\n&#34;)"
+        "highlighted_code": "<span class='highlight-red'>lst = list(map(str, input().split()))\nfor index</span>, nums in enumerate(lst):\n    print(nums, end = &#34;\\n&#34;)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc39efe535fa0f4f1d64a/f56f86fa26744324899543f3/sub_1761884452310_jh3tcf7j1.py",
+        "similarity_percent": 72.73,
+        "full_code": "a=list(map(str,input().split()))\nfor _ in a: print(_)",
+        "highlighted_code": "<span class='highlight-green'>a=list(map(str,input().split()))\nfor _ </span>in a: print(_)"
+      },
+      "token_overlap": 32,
+      "max_similarity_percent": 72.73
+    },
+    {
+      "case_id": 79,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc39efe535fa0f4f1d64a/f95120b3a38a461085ef58cb/sub_1762364347400_q9yqrw37d.py",
+        "similarity_percent": 55.17,
+        "full_code": "lst = list(map(str, input().split()))\nfor index, nums in enumerate(lst):\n    print(nums, end = \"\\n\")",
+        "highlighted_code": "<span class='highlight-red'>lst = list(map(str, input().split()))\nfor index</span>, nums in enumerate(lst):\n    print(nums, end = &#34;\\n&#34;)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc39efe535fa0f4f1d64a/9dcb98ac39014785ad502bca/sub_1765448110345_gebgedt2y.py",
+        "similarity_percent": 72.73,
+        "full_code": "s = list(map(str, input().split()))\nfor x in s:\n    print(x)",
+        "highlighted_code": "<span class='highlight-green'>s = list(map(str, input().split()))\nfor x </span>in s:\n    print(x)"
+      },
+      "token_overlap": 32,
+      "max_similarity_percent": 72.73
+    },
+    {
+      "case_id": 80,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc39efe535fa0f4f1d64a/ffdb326842044f2e98b7aaa7/sub_1761899335407_m40h2ijt1.py",
+        "similarity_percent": 55.17,
+        "full_code": "lst = list(map(str, input().split()))\n\nfor index, nums in enumerate(lst):\n    print(nums, end = \"\\n\")",
+        "highlighted_code": "<span class='highlight-red'>lst = list(map(str, input().split()))\n\nfor index</span>, nums in enumerate(lst):\n    print(nums, end = &#34;\\n&#34;)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc39efe535fa0f4f1d64a/0cb0117234e943f4ab1ea21a/sub_1764900371642_8uefz2i3c.py",
+        "similarity_percent": 72.73,
+        "full_code": "n = list(map(str, input().split()))\nfor i in n:\n    print(i)",
+        "highlighted_code": "<span class='highlight-green'>n = list(map(str, input().split()))\nfor i </span>in n:\n    print(i)"
+      },
+      "token_overlap": 32,
+      "max_similarity_percent": 72.73
+    },
+    {
+      "case_id": 81,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc39efe535fa0f4f1d64a/ffdb326842044f2e98b7aaa7/sub_1761899335407_m40h2ijt1.py",
+        "similarity_percent": 55.17,
+        "full_code": "lst = list(map(str, input().split()))\n\nfor index, nums in enumerate(lst):\n    print(nums, end = \"\\n\")",
+        "highlighted_code": "<span class='highlight-red'>lst = list(map(str, input().split()))\n\nfor index</span>, nums in enumerate(lst):\n    print(nums, end = &#34;\\n&#34;)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc39efe535fa0f4f1d64a/bcb420abb39b4af095b63cf8/sub_1762541993580_jktn8k53d.py",
+        "similarity_percent": 72.73,
+        "full_code": "n=list(map(str,input().split()))\nfor i in n:\n    print(i)",
+        "highlighted_code": "<span class='highlight-green'>n=list(map(str,input().split()))\nfor i </span>in n:\n    print(i)"
+      },
+      "token_overlap": 32,
+      "max_similarity_percent": 72.73
+    },
+    {
+      "case_id": 82,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc39efe535fa0f4f1d64a/ffdb326842044f2e98b7aaa7/sub_1761899335407_m40h2ijt1.py",
+        "similarity_percent": 55.17,
+        "full_code": "lst = list(map(str, input().split()))\n\nfor index, nums in enumerate(lst):\n    print(nums, end = \"\\n\")",
+        "highlighted_code": "<span class='highlight-red'>lst = list(map(str, input().split()))\n\nfor index</span>, nums in enumerate(lst):\n    print(nums, end = &#34;\\n&#34;)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc39efe535fa0f4f1d64a/27e30f767b3a46b283cbfec0/sub_1762016182456_k9xfdlogg.py",
+        "similarity_percent": 72.73,
+        "full_code": "array = list(map(str, input().split()))\nfor i in array:\n    print(i)",
+        "highlighted_code": "<span class='highlight-green'>array = list(map(str, input().split()))\nfor i </span>in array:\n    print(i)"
+      },
+      "token_overlap": 32,
+      "max_similarity_percent": 72.73
+    },
+    {
+      "case_id": 83,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc39efe535fa0f4f1d64a/ffdb326842044f2e98b7aaa7/sub_1761899335407_m40h2ijt1.py",
+        "similarity_percent": 55.17,
+        "full_code": "lst = list(map(str, input().split()))\n\nfor index, nums in enumerate(lst):\n    print(nums, end = \"\\n\")",
+        "highlighted_code": "<span class='highlight-red'>lst = list(map(str, input().split()))\n\nfor index</span>, nums in enumerate(lst):\n    print(nums, end = &#34;\\n&#34;)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc39efe535fa0f4f1d64a/f56f86fa26744324899543f3/sub_1761884452310_jh3tcf7j1.py",
+        "similarity_percent": 72.73,
+        "full_code": "a=list(map(str,input().split()))\nfor _ in a: print(_)",
+        "highlighted_code": "<span class='highlight-green'>a=list(map(str,input().split()))\nfor _ </span>in a: print(_)"
+      },
+      "token_overlap": 32,
+      "max_similarity_percent": 72.73
+    },
+    {
+      "case_id": 84,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc39efe535fa0f4f1d64a/ffdb326842044f2e98b7aaa7/sub_1761899335407_m40h2ijt1.py",
+        "similarity_percent": 55.17,
+        "full_code": "lst = list(map(str, input().split()))\n\nfor index, nums in enumerate(lst):\n    print(nums, end = \"\\n\")",
+        "highlighted_code": "<span class='highlight-red'>lst = list(map(str, input().split()))\n\nfor index</span>, nums in enumerate(lst):\n    print(nums, end = &#34;\\n&#34;)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc39efe535fa0f4f1d64a/9dcb98ac39014785ad502bca/sub_1765448110345_gebgedt2y.py",
+        "similarity_percent": 72.73,
+        "full_code": "s = list(map(str, input().split()))\nfor x in s:\n    print(x)",
+        "highlighted_code": "<span class='highlight-green'>s = list(map(str, input().split()))\nfor x </span>in s:\n    print(x)"
+      },
+      "token_overlap": 32,
+      "max_similarity_percent": 72.73
+    },
+    {
+      "case_id": 85,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc39efe535fa0f4f1d64a/f95120b3a38a461085ef58cb/sub_1762364347400_q9yqrw37d.py",
+        "similarity_percent": 48.28,
+        "full_code": "lst = list(map(str, input().split()))\nfor index, nums in enumerate(lst):\n    print(nums, end = \"\\n\")",
+        "highlighted_code": "<span class='highlight-red'>lst = list(map(str, input().split()))\n</span>for index, nums in enumerate(lst):\n    print(nums, end = &#34;\\n&#34;)"
       },
       "file2": {
         "path": "/app/app/data/submissions/68fdc39efe535fa0f4f1d64a/26894d2babd64210ad6beba1/sub_1762269634254_t1a3ss4iv.py",
-        "similarity_percent": 69.23,
+        "similarity_percent": 68.29,
         "full_code": "a = list(map(str, input().split()))\n\nprint(*a, sep = \"\\n\")",
-        "highlighted_code": "<span class='highlight-green'>a = list(map(str, input().split())</span>)\n\nprint(*a, sep = &#34;\\n&#34;)"
+        "highlighted_code": "<span class='highlight-green'>a = list(map(str, input().split()))\n\n</span>print(*a, sep = &#34;\\n&#34;)"
       },
-      "token_overlap": 27,
-      "max_similarity_percent": 69.23
+      "token_overlap": 28,
+      "max_similarity_percent": 68.29
     }
   ]
 }

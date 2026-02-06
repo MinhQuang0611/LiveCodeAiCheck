@@ -4,7 +4,25 @@
     "min_token_overlap": 80,
     "min_similarity_percent": 60
   },
-  "total_cases_found": 1,
-  "total_cases_filtered": 0,
-  "cases": []
+  "total_cases_found": 9,
+  "total_cases_filtered": 1,
+  "cases": [
+    {
+      "case_id": 1,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3ca22724325137447718d/0cb0117234e943f4ab1ea21a/sub_1764428910275_zrxi0sn4x.py",
+        "similarity_percent": 73.15,
+        "full_code": "def sum(a):\n    tong = 0\n    for i in str(a):\n        tong += int(i)\n    return tong\nn = 100\ntong = 0\nso_so = 0\nfor i in range(n):\n    if str(7) in str(i):\n        if sum(i) % 5 == 0:\n            so_so += 1   \nprint(so_so)",
+        "highlighted_code": "<span class='highlight-red'>def sum(a):\n    tong = 0\n    for i in str(a):\n        tong += int(i)\n    retur</span>n tong\nn = 100\ntong = 0\nso_so = 0\nfor i in range(n):\n    i<span class='highlight-red'>f str(7) in str(i):\n        if sum(i) % 5 == 0:\n            so_so += 1   \nprint(so_so</span>)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3ca22724325137447718d/0cb0117234e943f4ab1ea21a/sub_1764486338501_rblqm1ce7.py",
+        "similarity_percent": 68.1,
+        "full_code": "def sum(a):\n    tong = 0\n    for i in str(a):\n        tong += int(i)\n    return tong\nn = int(input())\n\nso_so = 0\nfor i in range(n+1):\n    if str(7) in str(i):\n        if sum(i) % 5 == 0:\n            so_so += 1   \nprint(so_so)",
+        "highlighted_code": "<span class='highlight-green'>def sum(a):\n    tong = 0\n    for i in str(a):\n        tong += int(i)\n    retur</span>n tong\nn = int(input())\n\nso_so = 0\nfor i in range(n+1):\n    i<span class='highlight-green'>f str(7) in str(i):\n        if sum(i) % 5 == 0:\n            so_so += 1   \nprint(so_so</span>)"
+      },
+      "token_overlap": 79,
+      "max_similarity_percent": 73.15
+    }
+  ]
 }

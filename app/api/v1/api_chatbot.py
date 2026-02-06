@@ -58,6 +58,8 @@ async def chabot_qa(request: ChatbotQARequest, http_request: Request):
     """Chatbot QA với tích hợp database để lưu messages"""
     token = _extract_token(http_request)
     session_id = request.session_id
+    print(f"token: {token}, session_id: {session_id}")
+    logging.info(f"chatbot_qa called with token: {token}, session_id: {session_id}")
     
     if not session_id:
         try:

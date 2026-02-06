@@ -4,110 +4,1232 @@
     "min_token_overlap": 80,
     "min_similarity_percent": 60
   },
-  "total_cases_found": 10,
-  "total_cases_filtered": 6,
+  "total_cases_found": 126,
+  "total_cases_filtered": 72,
   "cases": [
     {
       "case_id": 1,
       "file1": {
-        "path": "/app/app/data/submissions/68e3c4397243251374476f25/780627ccd0224069b68e3b8d/sub_1762186444507_g51k2n1tv.py",
-        "similarity_percent": 89.93,
-        "full_code": "def sangnt(n):\n    if n < 2:\n        return 0\n    sang = [True] * n\n    sang[0] = sang[1] = False  \n    for i in range(2, int(n**0.5) + 1):\n        if sang[i]:\n            for j in range(i*i, n, i):\n                sang[j] = False\n    return sum(sang)\n\n\nn = int(input())\nprint(sangnt(n))",
-        "highlighted_code": "def sangnt(n):\n    if n &lt; 2:\n        r<span class='highlight-red'>eturn 0\n    sang = [True] * n\n    sang[0] = sang[1] = False  \n    for i in range(2, int(n**0.5) + 1):\n        if sang[i]:\n            for j in range(i*i, n, i):\n                sang[j] = False\n    return sum(sang)\n\n\nn = int(input())\nprint(sangnt(n)</span>)"
+        "path": "/app/app/data/submissions/68e3c4397243251374476f25/e981f1efc9764aba8b686042/sub_1765133813657_w0gq5ssdy.py",
+        "similarity_percent": 97.18,
+        "full_code": "import math\ndef nguyen_to(s):\n    if s < 2:\n        return False\n    for i in range(2, int(math.sqrt(s)) + 1):\n        if s % i == 0:\n            return False\n    return True\nn = int(input())\nresult = 0\nfor j in range(2, n):\n    if nguyen_to(j):\n        result += 1\nprint(result)",
+        "highlighted_code": "<span class='highlight-red'>import math\ndef nguyen_to(s):\n    if s &lt; 2:\n        return False\n    for i in range(2, int(math.sqrt(s)) + 1):\n        if s % i == 0:\n            return False\n    return True\nn = int(input())\nresult = 0\n</span>for j <span class='highlight-red'>in range(2, n):\n    if nguyen_to(j):\n        result += 1\npri</span>nt(result)"
       },
       "file2": {
-        "path": "/app/app/data/submissions/68e3c4397243251374476f25/780627ccd0224069b68e3b8d/sub_1762186419788_nafv45odv.py",
-        "similarity_percent": 89.33,
-        "full_code": "def sangnt(n):\n    if n == 0:\n        return 0\n    sang = [True] * n\n    sang[0] = sang[1] = False  \n    for i in range(2, int(n**0.5) + 1):\n        if sang[i]:\n            for j in range(i*i, n, i):\n                sang[j] = False\n    return sum(sang)\n\n\nn = int(input())\nprint(sangnt(n))",
-        "highlighted_code": "def sangnt(n):\n    if n == 0:\n        r<span class='highlight-green'>eturn 0\n    sang = [True] * n\n    sang[0] = sang[1] = False  \n    for i in range(2, int(n**0.5) + 1):\n        if sang[i]:\n            for j in range(i*i, n, i):\n                sang[j] = False\n    return sum(sang)\n\n\nn = int(input())\nprint(sangnt(n)</span>)"
+        "path": "/app/app/data/submissions/68e3c4397243251374476f25/e981f1efc9764aba8b686042/sub_1765134413370_ydpelnsqf.py",
+        "similarity_percent": 85.19,
+        "full_code": "import math\ndef nguyen_to(s):\n    if s < 2:\n        return False\n    for i in range(2, int(math.sqrt(s)) + 1):\n        if s % i == 0:\n            return False\n    return True\nn = int(input())\nresult = 0\nif n <= 2:\n    print(0)\nelse:\n    for j in range(2, n):\n        if nguyen_to(j):\n            result += 1\n    print(result)",
+        "highlighted_code": "<span class='highlight-green'>import math\ndef nguyen_to(s):\n    if s &lt; 2:\n        return False\n    for i in range(2, int(math.sqrt(s)) + 1):\n        if s % i == 0:\n            return False\n    return True\nn = int(input())\nresult = 0\n</span>if n &lt;= 2:\n    print(0)\nelse:\n    for j <span class='highlight-green'>in range(2, n):\n        if nguyen_to(j):\n            result += 1\n    pri</span>nt(result)"
       },
-      "token_overlap": 134,
-      "max_similarity_percent": 89.93
+      "token_overlap": 138,
+      "max_similarity_percent": 97.18
     },
     {
       "case_id": 2,
       "file1": {
-        "path": "/app/app/data/submissions/68e3c4397243251374476f25/a31a4097e8a74e09b9209282/sub_1761623539652_faoyofmlb.py",
-        "similarity_percent": 73.47,
-        "full_code": "import math\ndef snt(n):\n    if n<2: return False\n    # elif n<4: return True\n    # elif n%2==0 or n%3==0: return False\n    # for i in range (5,int(math.sqrt(n))+1,6):\n    #     if n%i==0 or n%(i+2)==0:\n    #         return False\n    # return True\n    for i in range (2,int(math.sqrt(n))+1,1):\n        if n%i==0: return False\n    return True\n\nn=int(input())\nkq=0\nfor i in range(n):\n    if snt(i):\n        kq+=1\nprint(kq)",
-        "highlighted_code": "<span class='highlight-red'>import math\ndef snt(n):\n    if n&lt;2: return Fals</span>e\n    # elif n&lt;4: return True\n    # elif n%2==0 or n%3==0: return False\n    # for i in range (5,int(math.sqrt(n))+1,6):\n    #     if n%i==0 or n%(i+2)==0:\n    #         return False\n    # return True\n    for i in range (2,int(math.sqrt(n))+1,1):\n        if n%i==<span class='highlight-red'>0: return False\n    return True\n\nn=int(input())\nkq=0\nfor i in range(n):\n    if snt(i):\n        kq+=1\nprint(kq)</span>"
+        "path": "/app/app/data/submissions/68e3c4397243251374476f25/5e7936061bf3423087a326dd/sub_1764773729872_f1403w5j6.py",
+        "similarity_percent": 96.91,
+        "full_code": "so_nguyen = int(input())\nsnt = None\ncount = 0\nfor i in range(2,so_nguyen):\n    snt = True\n    for j in range(2, i):\n        if i%j == 0:\n            snt = False\n            break\n    if snt:\n        count += 1\nprint(count)",
+        "highlighted_code": "<span class='highlight-red'>so_nguyen = int(input())\nsnt = None\ncount = 0\nfor i in range(2,so_nguyen):\n    snt = True\n    for j in range(2</span>, i)<span class='highlight-red'>:\n        if i%j == 0:\n            snt = False\n            break\n    if snt:\n        count += 1\nprint</span>(count)"
       },
       "file2": {
-        "path": "/app/app/data/submissions/68e3c4397243251374476f25/a31a4097e8a74e09b9209282/sub_1761622921376_whjc2zoke.py",
-        "similarity_percent": 52.17,
-        "full_code": "import math\ndef snt(n):\n    if n<2: return False\n    elif n<4: return True\n    elif n%2==0 or n%3==0: return False\n    for i in range (5,int(math.sqrt(n))+1,6):\n        if n%i==0 or n%(i+2)==0:\n            return False\n    return True\n\nn=int(input())\nkq=0\nfor i in range(n):\n    if snt(i):\n        kq+=1\nprint(kq)",
-        "highlighted_code": "<span class='highlight-green'>import math\ndef snt(n):\n    if n&lt;2: return Fals</span>e\n    elif n&lt;4: return True\n    elif n%2==0 or n%3==0: return False\n    for i in range (5,int(math.sqrt(n))+1,6):\n        if n%i==0 or n%(i+2)==<span class='highlight-green'>0:\n            return False\n    return True\n\nn=int(input())\nkq=0\nfor i in range(n):\n    if snt(i):\n        kq+=1\nprint(kq)</span>"
+        "path": "/app/app/data/submissions/68e3c4397243251374476f25/5e7936061bf3423087a326dd/sub_1764773882136_oeycvhzwg.py",
+        "similarity_percent": 86.24,
+        "full_code": "so_nguyen = int(input())\nsnt = None\ncount = 0\nfor i in range(2,so_nguyen):\n    snt = True\n    for j in range(2, int(i**0.5)+1):\n        if i%j == 0:\n            snt = False\n            break\n    if snt:\n        count += 1\nprint(count)",
+        "highlighted_code": "<span class='highlight-green'>so_nguyen = int(input())\nsnt = None\ncount = 0\nfor i in range(2,so_nguyen):\n    snt = True\n    for j in range(2</span>, int(i**0.5)+1)<span class='highlight-green'>:\n        if i%j == 0:\n            snt = False\n            break\n    if snt:\n        count += 1\nprint</span>(count)"
       },
-      "token_overlap": 108,
-      "max_similarity_percent": 73.47
+      "token_overlap": 94,
+      "max_similarity_percent": 96.91
     },
     {
       "case_id": 3,
       "file1": {
-        "path": "/app/app/data/submissions/68e3c4397243251374476f25/c747e87428cc4dbab36bd7aa/sub_1761636584790_ypl1eeqrh.py",
-        "similarity_percent": 70.59,
-        "full_code": "\nn = int(input())\nso_luong = 0\nfor i in range(2, n):\n    prime = True \n    k = i\n    for j in range(2, k):\n        if k % j == 0:\n            prime = False\n            break \n    if prime == True:\n        so_luong += 1\n\nprint(so_luong)",
-        "highlighted_code": "<span class='highlight-red'>\nn = int(input())\nso_luong = 0\nfor i in range(2, n):\n    prime = True \n    k = i\n    for j in range(2, k):\n        if k % j == 0:\n            prime = </span>False\n            break \n    if prime == True:\n        so_luong += 1\n\nprint(so_luong)"
+        "path": "/app/app/data/submissions/68e3c4397243251374476f25/421caa1638604d7eaa096ee0/sub_1765798206684_ac3gjis89.py",
+        "similarity_percent": 93.43,
+        "full_code": "n = int(input())\n\nif n < 2:\n    print(0)\nelse:\n    is_prime = [True] * n\n    is_prime[0] = is_prime[1] = False\n\n    for i in range(2, int(n ** 0.5) + 1):\n        if is_prime[i]:\n            for j in range(i * i, n, i):\n                is_prime[j] = False\n\n    print(sum(is_prime))\n",
+        "highlighted_code": "<span class='highlight-red'>n = int(input())\n\nif n &lt; 2:\n    print(0)\n</span>else:\n    is_prime = [T<span class='highlight-red'>rue] * n\n    is_prime[0] = is_prime[1] = False\n\n    for i in range(2, int(n ** 0.5) + 1):\n        if is_prime[i]:\n            for j in range(i * i, n, i):\n                is_prime[j] = False\n\n    print(sum(is_prime)</span>)\n"
       },
       "file2": {
-        "path": "/app/app/data/submissions/68e3c4397243251374476f25/c747e87428cc4dbab36bd7aa/sub_1761636424140_f2hjeysu3.py",
-        "similarity_percent": 77.42,
-        "full_code": "n=int(input())\nso_luong=0\nfor i in range(2,n):\n    prime=True\n    k=i\n    for j in range(2,k):\n        if k%j==0:\n            prime=False\n    if prime==True:\n        so_luong+=1\nprint(so_luong)",
-        "highlighted_code": "<span class='highlight-green'>n=int(input())\nso_luong=0\nfor i in range(2,n):\n    prime=True\n    k=i\n    for j in range(2,k):\n        if k%j==0:\n            prime=F</span>alse\n    if prime==True:\n        so_luong+=1\nprint(so_luong)"
+        "path": "/app/app/data/submissions/68e3c4397243251374476f25/d82933fea814463eb5b029d1/sub_1765557913928_5x9e72tgh.py",
+        "similarity_percent": 94.81,
+        "full_code": "n = int(input())\n\nif n < 2:\n    print(0)\n    exit()\n\nis_prime = [True] * n\nis_prime[0] = is_prime[1] = False\n\nfor i in range(2, int(n**0.5) +1):\n    if is_prime[i]:\n        for j in range(i*i,n,i):\n            is_prime[j] = False\n\nprint(sum(is_prime))",
+        "highlighted_code": "<span class='highlight-green'>n = int(input())\n\nif n &lt; 2:\n    print(0)\n    </span>exit()\n\nis_prime = [T<span class='highlight-green'>rue] * n\nis_prime[0] = is_prime[1] = False\n\nfor i in range(2, int(n**0.5) +1):\n    if is_prime[i]:\n        for j in range(i*i,n,i):\n            is_prime[j] = False\n\nprint(sum(is_prime)</span>)"
       },
-      "token_overlap": 72,
-      "max_similarity_percent": 77.42
+      "token_overlap": 128,
+      "max_similarity_percent": 94.81
     },
     {
       "case_id": 4,
       "file1": {
-        "path": "/app/app/data/submissions/68e3c4397243251374476f25/a31a4097e8a74e09b9209282/sub_1761623539652_faoyofmlb.py",
-        "similarity_percent": 70.07,
-        "full_code": "import math\ndef snt(n):\n    if n<2: return False\n    # elif n<4: return True\n    # elif n%2==0 or n%3==0: return False\n    # for i in range (5,int(math.sqrt(n))+1,6):\n    #     if n%i==0 or n%(i+2)==0:\n    #         return False\n    # return True\n    for i in range (2,int(math.sqrt(n))+1,1):\n        if n%i==0: return False\n    return True\n\nn=int(input())\nkq=0\nfor i in range(n):\n    if snt(i):\n        kq+=1\nprint(kq)",
-        "highlighted_code": "import math\nde<span class='highlight-red'>f snt(n):\n    if n&lt;2: return False\n    # elif n&lt;4: return True\n    # elif n%2==0 or n%3==0: return False\n    # for i in range (5,int(math.sqrt(n))+1,6):\n    #     if n%i==0 or n%(i+2)==0:\n    #         return False\n    # return True\n    for i in range (2,int</span>(math.sqrt(n))+1,1):\n        i<span class='highlight-red'>f n%i==0: return False\n    return True\n\nn=int(input())\nkq=0\nfor i in range(n):\n    if </span>snt(i):\n        kq+=1\nprint(kq)"
+        "path": "/app/app/data/submissions/68e3c4397243251374476f25/c747e87428cc4dbab36bd7aa/sub_1765266575845_88ujiwzt8.py",
+        "similarity_percent": 93.18,
+        "full_code": "def prime(n):\n    if n<2:\n        return False\n    for i in range(2, int(n**0.5)+1):\n        if n%i==0:\n            return False\n    return True\na=int(input())\ncount=0\nfor j in range(2, a):\n    if prime(j):\n        count+=1\nprint(count)\n",
+        "highlighted_code": "<span class='highlight-red'>def prime(n):\n    if n&lt;2:\n        return False\n    for i in range(2, int(n**</span>0.5)+1):\n        i<span class='highlight-red'>f n%i==0:\n            return False\n    return True\na=int(input())\ncount=0\nfor j in range(2, a):\n    if prime(j):\n        count+=1\npri</span>nt(count)\n"
       },
       "file2": {
-        "path": "/app/app/data/submissions/68e3c4397243251374476f25/780627ccd0224069b68e3b8d/sub_1762186114419_feu5dzuy9.py",
-        "similarity_percent": 74.1,
-        "full_code": "def ktnt(n):\n    if n < 2:\n        return False\n    for i in range(2, int(n ** 0.5 + 1)):\n        if n % i == 0:\n            return False\n    return True\nn = int(input())\ntmp = 0\nfor i in range(n):\n    if ktnt(i) == True:\n        tmp += 1\nprint(tmp)",
-        "highlighted_code": "de<span class='highlight-green'>f ktnt(n):\n    if n &lt; 2:\n        return False\n    for i in range(2, int</span>(n ** 0.5 + 1)):\n        i<span class='highlight-green'>f n % i == 0:\n            return False\n    return True\nn = int(input())\ntmp = 0\nfor i in range(n):\n    if </span>ktnt(i) == True:\n        tmp += 1\nprint(tmp)"
+        "path": "/app/app/data/submissions/68e3c4397243251374476f25/c747e87428cc4dbab36bd7aa/sub_1765266289641_pymn2uvis.py",
+        "similarity_percent": 93.18,
+        "full_code": "def prime(n):\n    if n<2:\n        return False\n    for i in range(2, int(n**0.5+1)):\n        if n%i==0:\n            return False\n    return True\na=int(input())\ncount=0\nfor j in range(2, a):\n    if prime(j):\n        count+=1\nprint(count)\n",
+        "highlighted_code": "<span class='highlight-green'>def prime(n):\n    if n&lt;2:\n        return False\n    for i in range(2, int(n**</span>0.5+1)):\n        i<span class='highlight-green'>f n%i==0:\n            return False\n    return True\na=int(input())\ncount=0\nfor j in range(2, a):\n    if prime(j):\n        count+=1\npri</span>nt(count)\n"
       },
-      "token_overlap": 103,
-      "max_similarity_percent": 74.1
+      "token_overlap": 123,
+      "max_similarity_percent": 93.18
     },
     {
       "case_id": 5,
       "file1": {
-        "path": "/app/app/data/submissions/68e3c4397243251374476f25/8e19101eb0da4e9a92a17098/sub_1762357178968_ytznw5fpr.py",
-        "similarity_percent": 56.85,
-        "full_code": "import math\nn = int(input())\nif n <= 2:\n    print(0)\nelse:\n    check = [True] * n\n    check[0] = check[1] = False\n    for i in range(2, int(math.sqrt(n)) + 1):\n        if check[i]:\n            for j in range(i * i, n, i):\n                check[j] = False\n    print(sum(check))\n",
-        "highlighted_code": "import math\nn = int(input())\nif n &lt;= 2:\n    print(0)\nelse:\n    check <span class='highlight-red'>= [True] * n\n    check[0] = check[1] = False\n    for i in range(2, int(math</span>.sqrt(n)) + 1<span class='highlight-red'>):\n        if check[i]:\n            for j in range(i * i, n, i):\n                check[j] = False\n    </span>print(sum(check))\n"
+        "path": "/app/app/data/submissions/68e3c4397243251374476f25/bbf053b9c70d4a5697fa5d7f/sub_1762916413740_k01b614sa.py",
+        "similarity_percent": 90.58,
+        "full_code": "n = int(input())\ndef nguyento(n):\n    if n < 2:\n        return False\n    for i in range(2,int(n**0.5)+1 ):\n        if n % i == 0:\n            return False\n    return True\ndem=0\nfor i in range(1,n+1):\n    if nguyento(i):\n        dem+=1\nprint(dem)   ",
+        "highlighted_code": "n = <span class='highlight-red'>int(input())\ndef nguyento(n):\n    if n &lt; 2:\n        return False\n    for i in range(2,i</span>nt(n**0.5)+<span class='highlight-red'>1 ):\n        if n % i == 0:\n            return False\n    return True\ndem=0\nfor i in range(1,n+1):\n    if nguyento(i):\n        dem+=1\nprint(dem</span>)   "
       },
       "file2": {
-        "path": "/app/app/data/submissions/68e3c4397243251374476f25/780627ccd0224069b68e3b8d/sub_1762186419788_nafv45odv.py",
-        "similarity_percent": 55.33,
-        "full_code": "def sangnt(n):\n    if n == 0:\n        return 0\n    sang = [True] * n\n    sang[0] = sang[1] = False  \n    for i in range(2, int(n**0.5) + 1):\n        if sang[i]:\n            for j in range(i*i, n, i):\n                sang[j] = False\n    return sum(sang)\n\n\nn = int(input())\nprint(sangnt(n))",
-        "highlighted_code": "def sangnt(n):\n    if n == 0:\n        return 0\n    sang <span class='highlight-green'>= [True] * n\n    sang[0] = sang[1] = False  \n    for i in range(2, int(n</span>**0.5) + 1<span class='highlight-green'>):\n        if sang[i]:\n            for j in range(i*i, n, i):\n                sang[j] = False\n    </span>return sum(sang)\n\n\nn = int(input())\nprint(sangnt(n))"
+        "path": "/app/app/data/submissions/68e3c4397243251374476f25/bbf053b9c70d4a5697fa5d7f/sub_1762916541459_o3384waih.py",
+        "similarity_percent": 84.46,
+        "full_code": "import math\nn = int(input())\ndef nguyento(n):\n    if n < 2:\n        return False\n    for i in range(2,int(math.sqrt(n)) +1):\n        if n % i == 0:\n            return False\n    return True\ndem=0\nfor i in range(1,n+1):\n    if nguyento(i):\n        dem+=1\nprint(dem)    ",
+        "highlighted_code": "import math\nn = <span class='highlight-green'>int(input())\ndef nguyento(n):\n    if n &lt; 2:\n        return False\n    for i in range(2,i</span>nt(math.sqrt(n)) +<span class='highlight-green'>1):\n        if n % i == 0:\n            return False\n    return True\ndem=0\nfor i in range(1,n+1):\n    if nguyento(i):\n        dem+=1\nprint(dem</span>)    "
       },
-      "token_overlap": 83,
-      "max_similarity_percent": 56.85
+      "token_overlap": 125,
+      "max_similarity_percent": 90.58
     },
     {
       "case_id": 6,
       "file1": {
-        "path": "/app/app/data/submissions/68e3c4397243251374476f25/780627ccd0224069b68e3b8d/sub_1762186444507_g51k2n1tv.py",
-        "similarity_percent": 55.7,
-        "full_code": "def sangnt(n):\n    if n < 2:\n        return 0\n    sang = [True] * n\n    sang[0] = sang[1] = False  \n    for i in range(2, int(n**0.5) + 1):\n        if sang[i]:\n            for j in range(i*i, n, i):\n                sang[j] = False\n    return sum(sang)\n\n\nn = int(input())\nprint(sangnt(n))",
-        "highlighted_code": "def sangnt(n):\n    if n &lt; 2:\n        return 0\n    sang <span class='highlight-red'>= [True] * n\n    sang[0] = sang[1] = False  \n    for i in range(2, int(n</span>**0.5) + 1<span class='highlight-red'>):\n        if sang[i]:\n            for j in range(i*i, n, i):\n                sang[j] = False\n    </span>return sum(sang)\n\n\nn = int(input())\nprint(sangnt(n))"
+        "path": "/app/app/data/submissions/68e3c4397243251374476f25/780627ccd0224069b68e3b8d/sub_1762186419788_nafv45odv.py",
+        "similarity_percent": 90.0,
+        "full_code": "def sangnt(n):\n    if n == 0:\n        return 0\n    sang = [True] * n\n    sang[0] = sang[1] = False  \n    for i in range(2, int(n**0.5) + 1):\n        if sang[i]:\n            for j in range(i*i, n, i):\n                sang[j] = False\n    return sum(sang)\n\n\nn = int(input())\nprint(sangnt(n))",
+        "highlighted_code": "def sangnt(n):\n    if n == 0:\n        <span class='highlight-red'>return 0\n    sang = [True] * n\n    sang[0] = sang[1] = False  \n    for i in range(2, int(n**0.5) + 1):\n        if sang[i]:\n            for j in range(i*i, n, i):\n                sang[j] = False\n    return sum(sang)\n\n\nn = int(input())\nprint(sangnt(n)</span>)"
       },
       "file2": {
+        "path": "/app/app/data/submissions/68e3c4397243251374476f25/780627ccd0224069b68e3b8d/sub_1762186444507_g51k2n1tv.py",
+        "similarity_percent": 90.6,
+        "full_code": "def sangnt(n):\n    if n < 2:\n        return 0\n    sang = [True] * n\n    sang[0] = sang[1] = False  \n    for i in range(2, int(n**0.5) + 1):\n        if sang[i]:\n            for j in range(i*i, n, i):\n                sang[j] = False\n    return sum(sang)\n\n\nn = int(input())\nprint(sangnt(n))",
+        "highlighted_code": "def sangnt(n):\n    if n &lt; 2:\n        <span class='highlight-green'>return 0\n    sang = [True] * n\n    sang[0] = sang[1] = False  \n    for i in range(2, int(n**0.5) + 1):\n        if sang[i]:\n            for j in range(i*i, n, i):\n                sang[j] = False\n    return sum(sang)\n\n\nn = int(input())\nprint(sangnt(n)</span>)"
+      },
+      "token_overlap": 135,
+      "max_similarity_percent": 90.6
+    },
+    {
+      "case_id": 7,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3c4397243251374476f25/e981f1efc9764aba8b686042/sub_1765133813657_w0gq5ssdy.py",
+        "similarity_percent": 88.73,
+        "full_code": "import math\ndef nguyen_to(s):\n    if s < 2:\n        return False\n    for i in range(2, int(math.sqrt(s)) + 1):\n        if s % i == 0:\n            return False\n    return True\nn = int(input())\nresult = 0\nfor j in range(2, n):\n    if nguyen_to(j):\n        result += 1\nprint(result)",
+        "highlighted_code": "<span class='highlight-red'>import math\ndef nguyen_to(s):\n    if s &lt; 2:\n        return Fa</span>lse\n    <span class='highlight-red'>for i in range(2, int(math.sqrt(s)) + 1):\n        if s % i == 0:\n            return False\n    return True\nn = int(inpu</span>t())\nresult <span class='highlight-red'>= 0\nfor j in range(2, n):\n    if nguyen_to(j)</span>:\n        result += 1\nprint(result)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3c4397243251374476f25/8e19101eb0da4e9a92a17098/sub_1762356852369_ubylvw765.py",
+        "similarity_percent": 71.59,
+        "full_code": "import math\ndef checksnt(o):\n    if o < 2:\n        return False\n    else:\n        for i in range (2, int(math.sqrt(o)) + 1):\n            if o % i == 0:\n                return False\n        return True\nn = int(input())\nif n < 2:\n    print(\"0\")\nelse:\n    cnt = 0\n    for j in range(2, n):\n        if checksnt(j) == True:\n            cnt += 1\n    print(cnt)",
+        "highlighted_code": "<span class='highlight-green'>import math\ndef checksnt(o):\n    if o &lt; 2:\n        return Fa</span>lse\n    else:\n        <span class='highlight-green'>for i in range (2, int(math.sqrt(o)) + 1):\n            if o % i == 0:\n                return False\n        return True\nn = int(inpu</span>t())\nif n &lt; 2:\n    print(&#34;0&#34;)\nelse:\n    cnt <span class='highlight-green'>= 0\n    for j in range(2, n):\n        if checksnt(j) </span>== True:\n            cnt += 1\n    print(cnt)"
+      },
+      "token_overlap": 126,
+      "max_similarity_percent": 88.73
+    },
+    {
+      "case_id": 8,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3c4397243251374476f25/5e7936061bf3423087a326dd/sub_1765957432881_ixaq1wf92.py",
+        "similarity_percent": 87.59,
+        "full_code": "def timsont():\n    dem = 0\n    n = int(input())\n    if n < 2:\n        print(0)\n        return\n\n    for i in range(2, n):\n        la_snt = True\n        for j in range(2, int((i**0.5)+1)):\n            if i % j == 0:\n                la_snt = False\n                break\n        if la_snt:\n            dem += 1\n\n    print(dem)\n\ntimsont()\n",
+        "highlighted_code": "<span class='highlight-red'>def timsont():\n    dem = 0\n    n = int(input())\n    if n &lt; 2:\n        print(0)\n        return\n\n    for i in range(2, n):\n        la_snt = True\n        for j in range(2</span>, int((i**0.5)+1))<span class='highlight-red'>:\n            if i % j == 0:\n                la_snt = False\n                break\n        if la_snt:\n            dem += 1\n\n    print(dem)\n\ntimsont(</span>)\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3c4397243251374476f25/5e7936061bf3423087a326dd/sub_1765957182059_df8q1rm61.py",
+        "similarity_percent": 97.56,
+        "full_code": "def timsont():\n    dem = 0\n    n = int(input())\n    if n < 2:\n        print(0)\n        return\n\n    for i in range(2, n):\n        la_snt = True\n        for j in range(2, i):\n            if i % j == 0:\n                la_snt = False\n                break\n        if la_snt:\n            dem += 1\n\n    print(dem)\n\ntimsont()\n",
+        "highlighted_code": "<span class='highlight-green'>def timsont():\n    dem = 0\n    n = int(input())\n    if n &lt; 2:\n        print(0)\n        return\n\n    for i in range(2, n):\n        la_snt = True\n        for j in range(2</span>, i)<span class='highlight-green'>:\n            if i % j == 0:\n                la_snt = False\n                break\n        if la_snt:\n            dem += 1\n\n    print(dem)\n\ntimsont(</span>)\n"
+      },
+      "token_overlap": 120,
+      "max_similarity_percent": 97.56
+    },
+    {
+      "case_id": 9,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3c4397243251374476f25/bbf053b9c70d4a5697fa5d7f/sub_1762916817988_lh4inbigf.py",
+        "similarity_percent": 87.42,
+        "full_code": "import math\ndef demsonguyento(n):\n    if n < 2:\n        return 0\n    a = [True] * n\n    a[0] = a[1] = False\n    for i in range(2, int(math.sqrt(n)) + 1):\n        if a[i]:\n            for j in range(i*i, n, i):\n                a[j] = False\n    return sum(a)\nn = int(input())\nprint(demsonguyento(n))",
+        "highlighted_code": "import math\nd<span class='highlight-red'>ef demsonguyento(n):\n    if n &lt; 2:\n        return 0\n    a = [True] * n\n    a[0] = a[1] = False\n    for i in range(2, int(math</span>.sqrt(n)) + 1)<span class='highlight-red'>:\n        if a[i]:\n            for j in range(i*i, n, i):\n                a[j] = False\n    return sum(a)\nn = int(input())\nprint(demsonguyento(n)</span>)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3c4397243251374476f25/780627ccd0224069b68e3b8d/sub_1762186444507_g51k2n1tv.py",
+        "similarity_percent": 93.29,
+        "full_code": "def sangnt(n):\n    if n < 2:\n        return 0\n    sang = [True] * n\n    sang[0] = sang[1] = False  \n    for i in range(2, int(n**0.5) + 1):\n        if sang[i]:\n            for j in range(i*i, n, i):\n                sang[j] = False\n    return sum(sang)\n\n\nn = int(input())\nprint(sangnt(n))",
+        "highlighted_code": "d<span class='highlight-green'>ef sangnt(n):\n    if n &lt; 2:\n        return 0\n    sang = [True] * n\n    sang[0] = sang[1] = False  \n    for i in range(2, int(n</span>**0.5) + 1)<span class='highlight-green'>:\n        if sang[i]:\n            for j in range(i*i, n, i):\n                sang[j] = False\n    return sum(sang)\n\n\nn = int(input())\nprint(sangnt(n)</span>)"
+      },
+      "token_overlap": 139,
+      "max_similarity_percent": 93.29
+    },
+    {
+      "case_id": 10,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3c4397243251374476f25/d82933fea814463eb5b029d1/sub_1765557306058_ci19zz7t0.py",
+        "similarity_percent": 87.12,
+        "full_code": "n = int(input())\n\ndef ktra_snt(so):\n    if so < 2:\n        return False\n    for ch in range(2,int(so**0.5) +1):\n        if so % ch == 0:\n            return False    \n    return True\n\ncount = 0\nfor i in range(2,n):\n    if ktra_snt(i):\n        count += 1\n\nprint(count)",
+        "highlighted_code": "n = int(input())\n\n<span class='highlight-red'>def ktra_snt(so):\n    if so &lt; 2:\n        return False\n    for ch in range(2,int(so**0.5) +1):\n        if so % ch == 0:\n            return False    \n    return Tr</span>ue\n\ncount <span class='highlight-red'>= 0\nfor i in range(2,n):\n    if ktra_snt(i):\n        count += 1\n\npri</span>nt(count)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3c4397243251374476f25/c747e87428cc4dbab36bd7aa/sub_1765266575845_88ujiwzt8.py",
+        "similarity_percent": 87.12,
+        "full_code": "def prime(n):\n    if n<2:\n        return False\n    for i in range(2, int(n**0.5)+1):\n        if n%i==0:\n            return False\n    return True\na=int(input())\ncount=0\nfor j in range(2, a):\n    if prime(j):\n        count+=1\nprint(count)\n",
+        "highlighted_code": "<span class='highlight-green'>def prime(n):\n    if n&lt;2:\n        return False\n    for i in range(2, int(n**0.5)+1):\n        if n%i==0:\n            return False\n    return Tr</span>ue\na=int(input())\ncount<span class='highlight-green'>=0\nfor j in range(2, a):\n    if prime(j):\n        count+=1\npri</span>nt(count)\n"
+      },
+      "token_overlap": 115,
+      "max_similarity_percent": 87.12
+    },
+    {
+      "case_id": 11,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3c4397243251374476f25/e981f1efc9764aba8b686042/sub_1765133813657_w0gq5ssdy.py",
+        "similarity_percent": 86.62,
+        "full_code": "import math\ndef nguyen_to(s):\n    if s < 2:\n        return False\n    for i in range(2, int(math.sqrt(s)) + 1):\n        if s % i == 0:\n            return False\n    return True\nn = int(input())\nresult = 0\nfor j in range(2, n):\n    if nguyen_to(j):\n        result += 1\nprint(result)",
+        "highlighted_code": "<span class='highlight-red'>import math\ndef nguyen_to(s):\n    if s &lt; 2:\n        return False\n    for i in range(2, int(math.sqrt(s)) + </span><span class='highlight-red'>1):\n        if s % i == 0:\n            return False\n    return True\nn = int(input())\nresult = 0\nfor j in range(</span>2, n):\n    if nguyen_to(j):\n        result += 1\nprint(result)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3c4397243251374476f25/a31a4097e8a74e09b9209282/sub_1761623539652_faoyofmlb.py",
+        "similarity_percent": 83.67,
+        "full_code": "import math\ndef snt(n):\n    if n<2: return False\n    # elif n<4: return True\n    # elif n%2==0 or n%3==0: return False\n    # for i in range (5,int(math.sqrt(n))+1,6):\n    #     if n%i==0 or n%(i+2)==0:\n    #         return False\n    # return True\n    for i in range (2,int(math.sqrt(n))+1,1):\n        if n%i==0: return False\n    return True\n\nn=int(input())\nkq=0\nfor i in range(n):\n    if snt(i):\n        kq+=1\nprint(kq)",
+        "highlighted_code": "<span class='highlight-green'>import math\ndef snt(n):\n    if n&lt;2: return False\n    # elif n&lt;4: return True\n    # elif n%2==0 or n%3==0: return False\n    # for i in range (5,int(math.sqrt(n))+1,6):\n    #     if n%i==0 or n%(i+2)==0:\n    #         return False\n    # return True\n    for i in range (2,int(math.sqrt(n))+</span>1,<span class='highlight-green'>1):\n        if n%i==0: return False\n    return True\n\nn=int(input())\nkq=0\nfor i in range(</span>n):\n    if snt(i):\n        kq+=1\nprint(kq)"
+      },
+      "token_overlap": 123,
+      "max_similarity_percent": 86.62
+    },
+    {
+      "case_id": 12,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3c4397243251374476f25/c747e87428cc4dbab36bd7aa/sub_1765266575845_88ujiwzt8.py",
+        "similarity_percent": 86.36,
+        "full_code": "def prime(n):\n    if n<2:\n        return False\n    for i in range(2, int(n**0.5)+1):\n        if n%i==0:\n            return False\n    return True\na=int(input())\ncount=0\nfor j in range(2, a):\n    if prime(j):\n        count+=1\nprint(count)\n",
+        "highlighted_code": "def <span class='highlight-red'>prime(n):\n    if n&lt;2:\n        return False\n    for i in range(2, i</span>nt(n**0.5)+<span class='highlight-red'>1):\n        if n%i==0:\n            return False\n    return True\na=int(input())\ncount=0\n</span>for j <span class='highlight-red'>in range(2, a):\n    if prime(j):\n        count+=1\npri</span>nt(count)\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3c4397243251374476f25/e981f1efc9764aba8b686042/sub_1765134413370_ydpelnsqf.py",
+        "similarity_percent": 70.37,
+        "full_code": "import math\ndef nguyen_to(s):\n    if s < 2:\n        return False\n    for i in range(2, int(math.sqrt(s)) + 1):\n        if s % i == 0:\n            return False\n    return True\nn = int(input())\nresult = 0\nif n <= 2:\n    print(0)\nelse:\n    for j in range(2, n):\n        if nguyen_to(j):\n            result += 1\n    print(result)",
+        "highlighted_code": "import math\ndef <span class='highlight-green'>nguyen_to(s):\n    if s &lt; 2:\n        return False\n    for i in range(2, i</span>nt(math.sqrt(s)) + <span class='highlight-green'>1):\n        if s % i == 0:\n            return False\n    return True\nn = int(input())\nresult = 0\n</span>if n &lt;= 2:\n    print(0)\nelse:\n    for j <span class='highlight-green'>in range(2, n):\n        if nguyen_to(j):\n            result += 1\n    pri</span>nt(result)"
+      },
+      "token_overlap": 114,
+      "max_similarity_percent": 86.36
+    },
+    {
+      "case_id": 13,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3c4397243251374476f25/5e7936061bf3423087a326dd/sub_1764773792528_olvblefcc.py",
+        "similarity_percent": 85.71,
+        "full_code": "so_nguyen = int(input())\ncount = 0\nfor i in range(2,so_nguyen):\n    snt = True\n    for j in range(2, i):\n        if i%j == 0:\n            snt = False\n            break\n    if snt:\n        count += 1\nprint(count)",
+        "highlighted_code": "<span class='highlight-red'>so_nguyen = int(input())\ncount = 0\nfor i in range(2,so_nguyen):\n    snt = Tru</span>e\n    fo<span class='highlight-red'>r j in range(2, i):\n        if i%j == 0:\n            snt = False\n            break\n    if snt</span>:\n        count += 1\nprint(count)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3c4397243251374476f25/c747e87428cc4dbab36bd7aa/sub_1761636584790_ypl1eeqrh.py",
+        "similarity_percent": 78.0,
+        "full_code": "\nn = int(input())\nso_luong = 0\nfor i in range(2, n):\n    prime = True \n    k = i\n    for j in range(2, k):\n        if k % j == 0:\n            prime = False\n            break \n    if prime == True:\n        so_luong += 1\n\nprint(so_luong)",
+        "highlighted_code": "<span class='highlight-green'>\nn = int(input())\nso_luong = 0\nfor i in range(2, n):\n    prime = Tr</span>ue \n    k = i\n    f<span class='highlight-green'>or j in range(2, k):\n        if k % j == 0:\n            prime = False\n            break \n    if prime</span> == True:\n        so_luong += 1\n\nprint(so_luong)"
+      },
+      "token_overlap": 78,
+      "max_similarity_percent": 85.71
+    },
+    {
+      "case_id": 14,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3c4397243251374476f25/bbf053b9c70d4a5697fa5d7f/sub_1762916413740_k01b614sa.py",
+        "similarity_percent": 84.78,
+        "full_code": "n = int(input())\ndef nguyento(n):\n    if n < 2:\n        return False\n    for i in range(2,int(n**0.5)+1 ):\n        if n % i == 0:\n            return False\n    return True\ndem=0\nfor i in range(1,n+1):\n    if nguyento(i):\n        dem+=1\nprint(dem)   ",
+        "highlighted_code": "<span class='highlight-red'>n = int(input())\ndef nguyento(n):\n    if n &lt; 2:\n        return False\n    for i in ran</span>ge(2,int(n**0.5)+1 ):\n        i<span class='highlight-red'>f n % i == 0:\n            return False\n    return True\ndem=0\nfor i in range(1,n+1):\n    if nguyento(i):\n        dem+=1\nprint(dem</span>)   "
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3c4397243251374476f25/bbf053b9c70d4a5697fa5d7f/sub_1762916200612_m0kicbkaj.py",
+        "similarity_percent": 92.86,
+        "full_code": "n = int(input())\ndef nguyento(n):\n    if n < 2:\n        return False\n    for i in range(2, n):\n        if n % i == 0:\n            return False\n    return True\ndem=0\nfor i in range(1,n+1):\n    if nguyento(i):\n        dem+=1\nprint(dem)       ",
+        "highlighted_code": "<span class='highlight-green'>n = int(input())\ndef nguyento(n):\n    if n &lt; 2:\n        return False\n    for i in ran</span>ge(2, n):\n        i<span class='highlight-green'>f n % i == 0:\n            return False\n    return True\ndem=0\nfor i in range(1,n+1):\n    if nguyento(i):\n        dem+=1\nprint(dem</span>)       "
+      },
+      "token_overlap": 117,
+      "max_similarity_percent": 92.86
+    },
+    {
+      "case_id": 15,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3c4397243251374476f25/421caa1638604d7eaa096ee0/sub_1765798206684_ac3gjis89.py",
+        "similarity_percent": 83.94,
+        "full_code": "n = int(input())\n\nif n < 2:\n    print(0)\nelse:\n    is_prime = [True] * n\n    is_prime[0] = is_prime[1] = False\n\n    for i in range(2, int(n ** 0.5) + 1):\n        if is_prime[i]:\n            for j in range(i * i, n, i):\n                is_prime[j] = False\n\n    print(sum(is_prime))\n",
+        "highlighted_code": "n <span class='highlight-red'>= int(input())\n\nif n &lt; 2:\n    print(0)\n</span>else:\n    is_prime = [T<span class='highlight-red'>rue] * n\n    is_prime[0] = is_prime[1] = False\n\n    for i in range(2, int(n ** 0.5) + 1):\n        if is_prime[i]:\n            for j in range(i * i, n, i):\n                is_prime[j] = False\n\n    </span>print(sum(is_prime))\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3c4397243251374476f25/5e7936061bf3423087a326dd/sub_1765957586768_km8w73tgj.py",
+        "similarity_percent": 66.86,
+        "full_code": "def timsont():\n    n = int(input())\n    if n < 2:\n        print(0)\n        return\n\n    is_prime = [True] * n\n    is_prime[0] = is_prime[1] = False\n\n    for i in range(2, int(n**0.5) + 1):\n        if is_prime[i]:\n            for j in range(i * i, n, i):\n                is_prime[j] = False\n\n    dem = 0\n    for i in range(2, n):\n        if is_prime[i]:\n            dem += 1\n\n    print(dem)\n\ntimsont()\n",
+        "highlighted_code": "def timsont():\n    n <span class='highlight-green'>= int(input())\n    if n &lt; 2:\n        print(0)\n        </span>return\n\n    is_prime = [T<span class='highlight-green'>rue] * n\n    is_prime[0] = is_prime[1] = False\n\n    for i in range(2, int(n**0.5) + 1):\n        if is_prime[i]:\n            for j in range(i * i, n, i):\n                is_prime[j] = False\n\n    </span>dem = 0\n    for i in range(2, n):\n        if is_prime[i]:\n            dem += 1\n\n    print(dem)\n\ntimsont()\n"
+      },
+      "token_overlap": 115,
+      "max_similarity_percent": 83.94
+    },
+    {
+      "case_id": 16,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3c4397243251374476f25/c747e87428cc4dbab36bd7aa/sub_1765266289641_pymn2uvis.py",
+        "similarity_percent": 83.33,
+        "full_code": "def prime(n):\n    if n<2:\n        return False\n    for i in range(2, int(n**0.5+1)):\n        if n%i==0:\n            return False\n    return True\na=int(input())\ncount=0\nfor j in range(2, a):\n    if prime(j):\n        count+=1\nprint(count)\n",
+        "highlighted_code": "def <span class='highlight-red'>prime(n):\n    if n&lt;2:\n        return False\n    for i in range(2, i</span>nt(n**0.5+1)):\n        i<span class='highlight-red'>f n%i==0:\n            return False\n    return True\na=int(input())\ncount=0\n</span>for j <span class='highlight-red'>in range(2, a):\n    if prime(j):\n        count+=1\npri</span>nt(count)\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3c4397243251374476f25/e981f1efc9764aba8b686042/sub_1765134413370_ydpelnsqf.py",
+        "similarity_percent": 67.9,
+        "full_code": "import math\ndef nguyen_to(s):\n    if s < 2:\n        return False\n    for i in range(2, int(math.sqrt(s)) + 1):\n        if s % i == 0:\n            return False\n    return True\nn = int(input())\nresult = 0\nif n <= 2:\n    print(0)\nelse:\n    for j in range(2, n):\n        if nguyen_to(j):\n            result += 1\n    print(result)",
+        "highlighted_code": "import math\ndef <span class='highlight-green'>nguyen_to(s):\n    if s &lt; 2:\n        return False\n    for i in range(2, i</span>nt(math.sqrt(s)) + 1):\n        i<span class='highlight-green'>f s % i == 0:\n            return False\n    return True\nn = int(input())\nresult = 0\n</span>if n &lt;= 2:\n    print(0)\nelse:\n    for j <span class='highlight-green'>in range(2, n):\n        if nguyen_to(j):\n            result += 1\n    pri</span>nt(result)"
+      },
+      "token_overlap": 110,
+      "max_similarity_percent": 83.33
+    },
+    {
+      "case_id": 17,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3c4397243251374476f25/e981f1efc9764aba8b686042/sub_1765133813657_w0gq5ssdy.py",
+        "similarity_percent": 83.1,
+        "full_code": "import math\ndef nguyen_to(s):\n    if s < 2:\n        return False\n    for i in range(2, int(math.sqrt(s)) + 1):\n        if s % i == 0:\n            return False\n    return True\nn = int(input())\nresult = 0\nfor j in range(2, n):\n    if nguyen_to(j):\n        result += 1\nprint(result)",
+        "highlighted_code": "import math\ndef <span class='highlight-red'>nguyen_to(s):\n    if s &lt; 2:\n        return False\n    for i in range(2, i</span>nt(math.sqrt(s)) + <span class='highlight-red'>1):\n        if s % i == 0:\n            return False\n    return True\nn = int(input())\nresult = 0\nfor j in range(2, n):\n    if nguyen_to(j):\n        result += 1\npri</span>nt(result)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3c4397243251374476f25/c747e87428cc4dbab36bd7aa/sub_1765266575845_88ujiwzt8.py",
+        "similarity_percent": 89.39,
+        "full_code": "def prime(n):\n    if n<2:\n        return False\n    for i in range(2, int(n**0.5)+1):\n        if n%i==0:\n            return False\n    return True\na=int(input())\ncount=0\nfor j in range(2, a):\n    if prime(j):\n        count+=1\nprint(count)\n",
+        "highlighted_code": "def <span class='highlight-green'>prime(n):\n    if n&lt;2:\n        return False\n    for i in range(2, i</span>nt(n**0.5)+<span class='highlight-green'>1):\n        if n%i==0:\n            return False\n    return True\na=int(input())\ncount=0\nfor j in range(2, a):\n    if prime(j):\n        count+=1\npri</span>nt(count)\n"
+      },
+      "token_overlap": 118,
+      "max_similarity_percent": 89.39
+    },
+    {
+      "case_id": 18,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3c4397243251374476f25/780627ccd0224069b68e3b8d/sub_1762186114419_feu5dzuy9.py",
+        "similarity_percent": 83.09,
+        "full_code": "def ktnt(n):\n    if n < 2:\n        return False\n    for i in range(2, int(n ** 0.5 + 1)):\n        if n % i == 0:\n            return False\n    return True\nn = int(input())\ntmp = 0\nfor i in range(n):\n    if ktnt(i) == True:\n        tmp += 1\nprint(tmp)",
+        "highlighted_code": "<span class='highlight-red'>def ktnt(n):\n    if n &lt; 2:\n        return False\n    for i in range(2, int(n ** 0.5 + 1)):\n        if n % i == 0:\n            return False\n    return True\nn = int(input())\ntmp = 0\nfor i in range(</span>n):\n    if ktnt(i) == True:\n        tmp += 1\nprint(tmp)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3c4397243251374476f25/c747e87428cc4dbab36bd7aa/sub_1765266289641_pymn2uvis.py",
+        "similarity_percent": 85.61,
+        "full_code": "def prime(n):\n    if n<2:\n        return False\n    for i in range(2, int(n**0.5+1)):\n        if n%i==0:\n            return False\n    return True\na=int(input())\ncount=0\nfor j in range(2, a):\n    if prime(j):\n        count+=1\nprint(count)\n",
+        "highlighted_code": "<span class='highlight-green'>def prime(n):\n    if n&lt;2:\n        return False\n    for i in range(2, int(n**0.5+1)):\n        if n%i==0:\n            return False\n    return True\na=int(input())\ncount=0\nfor j in range(</span>2, a):\n    if prime(j):\n        count+=1\nprint(count)\n"
+      },
+      "token_overlap": 113,
+      "max_similarity_percent": 85.61
+    },
+    {
+      "case_id": 19,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3c4397243251374476f25/bbf053b9c70d4a5697fa5d7f/sub_1762916413740_k01b614sa.py",
+        "similarity_percent": 81.88,
+        "full_code": "n = int(input())\ndef nguyento(n):\n    if n < 2:\n        return False\n    for i in range(2,int(n**0.5)+1 ):\n        if n % i == 0:\n            return False\n    return True\ndem=0\nfor i in range(1,n+1):\n    if nguyento(i):\n        dem+=1\nprint(dem)   ",
+        "highlighted_code": "<span class='highlight-red'>n = int(input())\ndef nguyento(n):\n    if n &lt; 2:\n        return False\n    for i in range(2,int(n**0.5)+1 ):\n        if n % i == 0:\n            return False\n    return True\ndem=0\nfor i in range(</span>1,n+1):\n    if nguyento(i):\n        dem+=1\nprint(dem)   "
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3c4397243251374476f25/d82933fea814463eb5b029d1/sub_1765557306058_ci19zz7t0.py",
+        "similarity_percent": 85.61,
+        "full_code": "n = int(input())\n\ndef ktra_snt(so):\n    if so < 2:\n        return False\n    for ch in range(2,int(so**0.5) +1):\n        if so % ch == 0:\n            return False    \n    return True\n\ncount = 0\nfor i in range(2,n):\n    if ktra_snt(i):\n        count += 1\n\nprint(count)",
+        "highlighted_code": "<span class='highlight-green'>n = int(input())\n\ndef ktra_snt(so):\n    if so &lt; 2:\n        return False\n    for ch in range(2,int(so**0.5) +1):\n        if so % ch == 0:\n            return False    \n    return True\n\ncount = 0\nfor i in range(</span>2,n):\n    if ktra_snt(i):\n        count += 1\n\nprint(count)"
+      },
+      "token_overlap": 113,
+      "max_similarity_percent": 85.61
+    },
+    {
+      "case_id": 20,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3c4397243251374476f25/5e7936061bf3423087a326dd/sub_1764773882136_oeycvhzwg.py",
+        "similarity_percent": 81.65,
+        "full_code": "so_nguyen = int(input())\nsnt = None\ncount = 0\nfor i in range(2,so_nguyen):\n    snt = True\n    for j in range(2, int(i**0.5)+1):\n        if i%j == 0:\n            snt = False\n            break\n    if snt:\n        count += 1\nprint(count)",
+        "highlighted_code": "so_nguyen = int(input())\nsnt = None\n<span class='highlight-red'>count = 0\nfor i in range(2,so_nguyen):\n    snt = True\n    for j in range(2, int(i**0.5)+1):\n        if i%j == 0:\n            snt = False\n            break\n    if snt:\n        count += 1\nprint</span>(count)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3c4397243251374476f25/5e7936061bf3423087a326dd/sub_1765957250051_8vxdgvonq.py",
+        "similarity_percent": 65.93,
+        "full_code": "def timsont():\n    n = int(input())\n\n    if n < 2:\n        print(0)\n        return\n\n    dem = 0\n    for i in range(2, n):\n        la_snt = True\n        for j in range(2, int(i**0.5) + 1):\n            if i % j == 0:\n                la_snt = False\n                break\n        if la_snt:\n            dem += 1\n\n    print(dem)\n\ntimsont()\n",
+        "highlighted_code": "def timsont():\n    n = int(input())\n\n    if n &lt; 2:\n        print(0)\n        return\n\n    <span class='highlight-green'>dem = 0\n    for i in range(2, n):\n        la_snt = True\n        for j in range(2, int(i**0.5) + 1):\n            if i % j == 0:\n                la_snt = False\n                break\n        if la_snt:\n            dem += 1\n\n    print</span>(dem)\n\ntimsont()\n"
+      },
+      "token_overlap": 89,
+      "max_similarity_percent": 81.65
+    },
+    {
+      "case_id": 21,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3c4397243251374476f25/d82933fea814463eb5b029d1/sub_1765557306058_ci19zz7t0.py",
+        "similarity_percent": 80.3,
+        "full_code": "n = int(input())\n\ndef ktra_snt(so):\n    if so < 2:\n        return False\n    for ch in range(2,int(so**0.5) +1):\n        if so % ch == 0:\n            return False    \n    return True\n\ncount = 0\nfor i in range(2,n):\n    if ktra_snt(i):\n        count += 1\n\nprint(count)",
+        "highlighted_code": "n = int(input())\n\n<span class='highlight-red'>def ktra_snt(so):\n    if so &lt; 2:\n        return False\n    for ch in range(2,int(so**</span>0.5) +1):\n        i<span class='highlight-red'>f so % ch == 0:\n            return False    \n    return Tr</span>ue\n\ncount <span class='highlight-red'>= 0\nfor i in range(2,n):\n    if ktra_snt(i):\n        count += 1\n\npri</span>nt(count)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3c4397243251374476f25/c747e87428cc4dbab36bd7aa/sub_1765266289641_pymn2uvis.py",
+        "similarity_percent": 80.3,
+        "full_code": "def prime(n):\n    if n<2:\n        return False\n    for i in range(2, int(n**0.5+1)):\n        if n%i==0:\n            return False\n    return True\na=int(input())\ncount=0\nfor j in range(2, a):\n    if prime(j):\n        count+=1\nprint(count)\n",
+        "highlighted_code": "<span class='highlight-green'>def prime(n):\n    if n&lt;2:\n        return False\n    for i in range(2, int(n**</span>0.5+1)):\n        i<span class='highlight-green'>f n%i==0:\n            return False\n    return Tr</span>ue\na=int(input())\ncount<span class='highlight-green'>=0\nfor j in range(2, a):\n    if prime(j):\n        count+=1\npri</span>nt(count)\n"
+      },
+      "token_overlap": 106,
+      "max_similarity_percent": 80.3
+    },
+    {
+      "case_id": 22,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3c4397243251374476f25/e981f1efc9764aba8b686042/sub_1765133813657_w0gq5ssdy.py",
+        "similarity_percent": 80.28,
+        "full_code": "import math\ndef nguyen_to(s):\n    if s < 2:\n        return False\n    for i in range(2, int(math.sqrt(s)) + 1):\n        if s % i == 0:\n            return False\n    return True\nn = int(input())\nresult = 0\nfor j in range(2, n):\n    if nguyen_to(j):\n        result += 1\nprint(result)",
+        "highlighted_code": "import math\ndef <span class='highlight-red'>nguyen_to(s):\n    if s &lt; 2:\n        return False\n    for i in range(2, i</span>nt(math.sqrt(s)) + 1):\n        i<span class='highlight-red'>f s % i == 0:\n            return False\n    return True\nn = int(input())\nresult = 0\nfor j in range(2, n):\n    if nguyen_to(j):\n        result += 1\npri</span>nt(result)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3c4397243251374476f25/c747e87428cc4dbab36bd7aa/sub_1765266289641_pymn2uvis.py",
+        "similarity_percent": 86.36,
+        "full_code": "def prime(n):\n    if n<2:\n        return False\n    for i in range(2, int(n**0.5+1)):\n        if n%i==0:\n            return False\n    return True\na=int(input())\ncount=0\nfor j in range(2, a):\n    if prime(j):\n        count+=1\nprint(count)\n",
+        "highlighted_code": "def <span class='highlight-green'>prime(n):\n    if n&lt;2:\n        return False\n    for i in range(2, i</span>nt(n**0.5+1)):\n        i<span class='highlight-green'>f n%i==0:\n            return False\n    return True\na=int(input())\ncount=0\nfor j in range(2, a):\n    if prime(j):\n        count+=1\npri</span>nt(count)\n"
+      },
+      "token_overlap": 114,
+      "max_similarity_percent": 86.36
+    },
+    {
+      "case_id": 23,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3c4397243251374476f25/c747e87428cc4dbab36bd7aa/sub_1761636424140_f2hjeysu3.py",
+        "similarity_percent": 79.79,
+        "full_code": "n=int(input())\nso_luong=0\nfor i in range(2,n):\n    prime=True\n    k=i\n    for j in range(2,k):\n        if k%j==0:\n            prime=False\n    if prime==True:\n        so_luong+=1\nprint(so_luong)",
+        "highlighted_code": "<span class='highlight-red'>n=int(input())\nso_luong=0\nfor i in range(2,n):\n    prime=True\n    k=i\n    for j in range(2,k):\n        if k%j==0:\n            prime=Fals</span>e\n    if prime==True:\n        so_luong+=1\nprint(so_luong)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3c4397243251374476f25/c747e87428cc4dbab36bd7aa/sub_1761636584790_ypl1eeqrh.py",
+        "similarity_percent": 75.0,
+        "full_code": "\nn = int(input())\nso_luong = 0\nfor i in range(2, n):\n    prime = True \n    k = i\n    for j in range(2, k):\n        if k % j == 0:\n            prime = False\n            break \n    if prime == True:\n        so_luong += 1\n\nprint(so_luong)",
+        "highlighted_code": "<span class='highlight-green'>\nn = int(input())\nso_luong = 0\nfor i in range(2, n):\n    prime = True \n    k = i\n    for j in range(2, k):\n        if k % j == 0:\n            prime = Fal</span>se\n            break \n    if prime == True:\n        so_luong += 1\n\nprint(so_luong)"
+      },
+      "token_overlap": 75,
+      "max_similarity_percent": 79.79
+    },
+    {
+      "case_id": 24,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3c4397243251374476f25/5e7936061bf3423087a326dd/sub_1764773729872_f1403w5j6.py",
+        "similarity_percent": 79.38,
+        "full_code": "so_nguyen = int(input())\nsnt = None\ncount = 0\nfor i in range(2,so_nguyen):\n    snt = True\n    for j in range(2, i):\n        if i%j == 0:\n            snt = False\n            break\n    if snt:\n        count += 1\nprint(count)",
+        "highlighted_code": "so_nguyen = int(input())\nsnt = None\n<span class='highlight-red'>count = 0\nfor i in range(2,so_nguyen):\n    snt = True\n    for j in range(2, i):\n        if i%j == 0:\n            snt = False\n            break\n    if snt:\n        count += 1\nprint</span>(count)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3c4397243251374476f25/5e7936061bf3423087a326dd/sub_1764773792528_olvblefcc.py",
+        "similarity_percent": 84.62,
+        "full_code": "so_nguyen = int(input())\ncount = 0\nfor i in range(2,so_nguyen):\n    snt = True\n    for j in range(2, i):\n        if i%j == 0:\n            snt = False\n            break\n    if snt:\n        count += 1\nprint(count)",
+        "highlighted_code": "so_nguyen = int(input())\n<span class='highlight-green'>count = 0\nfor i in range(2,so_nguyen):\n    snt = True\n    for j in range(2, i):\n        if i%j == 0:\n            snt = False\n            break\n    if snt:\n        count += 1\nprint</span>(count)"
+      },
+      "token_overlap": 77,
+      "max_similarity_percent": 84.62
+    },
+    {
+      "case_id": 25,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3c4397243251374476f25/bbf053b9c70d4a5697fa5d7f/sub_1762916817988_lh4inbigf.py",
+        "similarity_percent": 79.25,
+        "full_code": "import math\ndef demsonguyento(n):\n    if n < 2:\n        return 0\n    a = [True] * n\n    a[0] = a[1] = False\n    for i in range(2, int(math.sqrt(n)) + 1):\n        if a[i]:\n            for j in range(i*i, n, i):\n                a[j] = False\n    return sum(a)\nn = int(input())\nprint(demsonguyento(n))",
+        "highlighted_code": "import math\ndef demsonguyento(n):\n    if n &lt; 2:\n        <span class='highlight-red'>return 0\n    a = [True] * n\n    a[0] = a[1] = False\n    for i in range(2, int(math</span>.sqrt(n)) + 1)<span class='highlight-red'>:\n        if a[i]:\n            for j in range(i*i, n, i):\n                a[j] = False\n    return sum(a)\nn = int(input())\nprint(demsonguyento(n)</span>)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3c4397243251374476f25/780627ccd0224069b68e3b8d/sub_1762186419788_nafv45odv.py",
+        "similarity_percent": 84.0,
+        "full_code": "def sangnt(n):\n    if n == 0:\n        return 0\n    sang = [True] * n\n    sang[0] = sang[1] = False  \n    for i in range(2, int(n**0.5) + 1):\n        if sang[i]:\n            for j in range(i*i, n, i):\n                sang[j] = False\n    return sum(sang)\n\n\nn = int(input())\nprint(sangnt(n))",
+        "highlighted_code": "def sangnt(n):\n    if n == 0:\n        <span class='highlight-green'>return 0\n    sang = [True] * n\n    sang[0] = sang[1] = False  \n    for i in range(2, int(n</span>**0.5) + 1)<span class='highlight-green'>:\n        if sang[i]:\n            for j in range(i*i, n, i):\n                sang[j] = False\n    return sum(sang)\n\n\nn = int(input())\nprint(sangnt(n)</span>)"
+      },
+      "token_overlap": 126,
+      "max_similarity_percent": 84.0
+    },
+    {
+      "case_id": 26,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3c4397243251374476f25/5e7936061bf3423087a326dd/sub_1765957432881_ixaq1wf92.py",
+        "similarity_percent": 78.83,
+        "full_code": "def timsont():\n    dem = 0\n    n = int(input())\n    if n < 2:\n        print(0)\n        return\n\n    for i in range(2, n):\n        la_snt = True\n        for j in range(2, int((i**0.5)+1)):\n            if i % j == 0:\n                la_snt = False\n                break\n        if la_snt:\n            dem += 1\n\n    print(dem)\n\ntimsont()\n",
+        "highlighted_code": "def timsont():\n    dem = 0\n    n <span class='highlight-red'>= int(input())\n    if n &lt; 2:\n        print(0)\n        retu</span>rn\n\n    for <span class='highlight-red'>i in range(2, n):\n        la_snt = True\n        for j in range(2, int</span>((i**0.5)+1))<span class='highlight-red'>:\n            if i % j == 0:\n                la_snt = False\n                break\n        if la_snt:\n            dem += 1\n\n    print(dem)\n\ntimsont(</span>)\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3c4397243251374476f25/5e7936061bf3423087a326dd/sub_1765957250051_8vxdgvonq.py",
+        "similarity_percent": 80.0,
+        "full_code": "def timsont():\n    n = int(input())\n\n    if n < 2:\n        print(0)\n        return\n\n    dem = 0\n    for i in range(2, n):\n        la_snt = True\n        for j in range(2, int(i**0.5) + 1):\n            if i % j == 0:\n                la_snt = False\n                break\n        if la_snt:\n            dem += 1\n\n    print(dem)\n\ntimsont()\n",
+        "highlighted_code": "def timsont():\n    n <span class='highlight-green'>= int(input())\n\n    if n &lt; 2:\n        print(0)\n        retu</span>rn\n\n    dem = 0\n    for <span class='highlight-green'>i in range(2, n):\n        la_snt = True\n        for j in range(2, int</span>(i**0.5) + 1)<span class='highlight-green'>:\n            if i % j == 0:\n                la_snt = False\n                break\n        if la_snt:\n            dem += 1\n\n    print(dem)\n\ntimsont(</span>)\n"
+      },
+      "token_overlap": 108,
+      "max_similarity_percent": 80.0
+    },
+    {
+      "case_id": 27,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3c4397243251374476f25/5e7936061bf3423087a326dd/sub_1764773792528_olvblefcc.py",
+        "similarity_percent": 78.02,
+        "full_code": "so_nguyen = int(input())\ncount = 0\nfor i in range(2,so_nguyen):\n    snt = True\n    for j in range(2, i):\n        if i%j == 0:\n            snt = False\n            break\n    if snt:\n        count += 1\nprint(count)",
+        "highlighted_code": "so_nguyen = int(input())\ncount = 0\nfor <span class='highlight-red'>i in range(2,so_nguyen):\n    snt = True\n    for j in range(2, i):\n        if i%j == 0:\n            snt = False\n            break\n    if snt:\n        count += 1\nprint</span>(count)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3c4397243251374476f25/5e7936061bf3423087a326dd/sub_1765957182059_df8q1rm61.py",
+        "similarity_percent": 57.72,
+        "full_code": "def timsont():\n    dem = 0\n    n = int(input())\n    if n < 2:\n        print(0)\n        return\n\n    for i in range(2, n):\n        la_snt = True\n        for j in range(2, i):\n            if i % j == 0:\n                la_snt = False\n                break\n        if la_snt:\n            dem += 1\n\n    print(dem)\n\ntimsont()\n",
+        "highlighted_code": "def timsont():\n    dem = 0\n    n = int(input())\n    if n &lt; 2:\n        print(0)\n        return\n\n    for <span class='highlight-green'>i in range(2, n):\n        la_snt = True\n        for j in range(2, i):\n            if i % j == 0:\n                la_snt = False\n                break\n        if la_snt:\n            dem += 1\n\n    print</span>(dem)\n\ntimsont()\n"
+      },
+      "token_overlap": 71,
+      "max_similarity_percent": 78.02
+    },
+    {
+      "case_id": 28,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3c4397243251374476f25/bbf053b9c70d4a5697fa5d7f/sub_1762916541459_o3384waih.py",
+        "similarity_percent": 77.7,
+        "full_code": "import math\nn = int(input())\ndef nguyento(n):\n    if n < 2:\n        return False\n    for i in range(2,int(math.sqrt(n)) +1):\n        if n % i == 0:\n            return False\n    return True\ndem=0\nfor i in range(1,n+1):\n    if nguyento(i):\n        dem+=1\nprint(dem)    ",
+        "highlighted_code": "import math\nn = <span class='highlight-red'>int(input())\ndef nguyento(n):\n    if n &lt; 2:\n        return False\n    for i in ran</span>ge(2,int(math.sqrt(n)) +1):\n        i<span class='highlight-red'>f n % i == 0:\n            return False\n    return True\ndem=0\nfor i in range(1,n+1):\n    if nguyento(i):\n        dem+=1\nprint(dem</span>)    "
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3c4397243251374476f25/bbf053b9c70d4a5697fa5d7f/sub_1762916200612_m0kicbkaj.py",
+        "similarity_percent": 91.27,
+        "full_code": "n = int(input())\ndef nguyento(n):\n    if n < 2:\n        return False\n    for i in range(2, n):\n        if n % i == 0:\n            return False\n    return True\ndem=0\nfor i in range(1,n+1):\n    if nguyento(i):\n        dem+=1\nprint(dem)       ",
+        "highlighted_code": "n = <span class='highlight-green'>int(input())\ndef nguyento(n):\n    if n &lt; 2:\n        return False\n    for i in ran</span>ge(2, n):\n        i<span class='highlight-green'>f n % i == 0:\n            return False\n    return True\ndem=0\nfor i in range(1,n+1):\n    if nguyento(i):\n        dem+=1\nprint(dem</span>)       "
+      },
+      "token_overlap": 115,
+      "max_similarity_percent": 91.27
+    },
+    {
+      "case_id": 29,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3c4397243251374476f25/5e7936061bf3423087a326dd/sub_1765957250051_8vxdgvonq.py",
+        "similarity_percent": 77.04,
+        "full_code": "def timsont():\n    n = int(input())\n\n    if n < 2:\n        print(0)\n        return\n\n    dem = 0\n    for i in range(2, n):\n        la_snt = True\n        for j in range(2, int(i**0.5) + 1):\n            if i % j == 0:\n                la_snt = False\n                break\n        if la_snt:\n            dem += 1\n\n    print(dem)\n\ntimsont()\n",
+        "highlighted_code": "def timsont():\n    n <span class='highlight-red'>= int(input())\n\n    if n &lt; 2:\n        print(0)\n        retu</span>rn\n\n    dem = 0\n    for <span class='highlight-red'>i in range(2, n):\n        la_snt = True\n        for j in range(2</span>, int(i**0.5) + 1)<span class='highlight-red'>:\n            if i % j == 0:\n                la_snt = False\n                break\n        if la_snt:\n            dem += 1\n\n    print(dem)\n\ntimsont(</span>)\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3c4397243251374476f25/5e7936061bf3423087a326dd/sub_1765957182059_df8q1rm61.py",
+        "similarity_percent": 84.55,
+        "full_code": "def timsont():\n    dem = 0\n    n = int(input())\n    if n < 2:\n        print(0)\n        return\n\n    for i in range(2, n):\n        la_snt = True\n        for j in range(2, i):\n            if i % j == 0:\n                la_snt = False\n                break\n        if la_snt:\n            dem += 1\n\n    print(dem)\n\ntimsont()\n",
+        "highlighted_code": "def timsont():\n    dem = 0\n    n <span class='highlight-green'>= int(input())\n    if n &lt; 2:\n        print(0)\n        retu</span>rn\n\n    for <span class='highlight-green'>i in range(2, n):\n        la_snt = True\n        for j in range(2</span>, i)<span class='highlight-green'>:\n            if i % j == 0:\n                la_snt = False\n                break\n        if la_snt:\n            dem += 1\n\n    print(dem)\n\ntimsont(</span>)\n"
+      },
+      "token_overlap": 104,
+      "max_similarity_percent": 84.55
+    },
+    {
+      "case_id": 30,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3c4397243251374476f25/780627ccd0224069b68e3b8d/sub_1762186114419_feu5dzuy9.py",
+        "similarity_percent": 76.47,
+        "full_code": "def ktnt(n):\n    if n < 2:\n        return False\n    for i in range(2, int(n ** 0.5 + 1)):\n        if n % i == 0:\n            return False\n    return True\nn = int(input())\ntmp = 0\nfor i in range(n):\n    if ktnt(i) == True:\n        tmp += 1\nprint(tmp)",
+        "highlighted_code": "<span class='highlight-red'>def ktnt(n):\n    if n &lt; 2:\n        return False\n    for i in range(2, int(n ** </span>0.5 + 1)):\n        i<span class='highlight-red'>f n % i == 0:\n            return False\n    return True\nn = int(input())\ntmp = 0\nfor i in range(</span>n):\n    if ktnt(i) == True:\n        tmp += 1\nprint(tmp)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3c4397243251374476f25/c747e87428cc4dbab36bd7aa/sub_1765266575845_88ujiwzt8.py",
+        "similarity_percent": 78.79,
+        "full_code": "def prime(n):\n    if n<2:\n        return False\n    for i in range(2, int(n**0.5)+1):\n        if n%i==0:\n            return False\n    return True\na=int(input())\ncount=0\nfor j in range(2, a):\n    if prime(j):\n        count+=1\nprint(count)\n",
+        "highlighted_code": "<span class='highlight-green'>def prime(n):\n    if n&lt;2:\n        return False\n    for i in range(2, int(n**</span>0.5)+1):\n        i<span class='highlight-green'>f n%i==0:\n            return False\n    return True\na=int(input())\ncount=0\nfor j in range(</span>2, a):\n    if prime(j):\n        count+=1\nprint(count)\n"
+      },
+      "token_overlap": 104,
+      "max_similarity_percent": 78.79
+    },
+    {
+      "case_id": 31,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3c4397243251374476f25/5e7936061bf3423087a326dd/sub_1764773729872_f1403w5j6.py",
+        "similarity_percent": 76.29,
+        "full_code": "so_nguyen = int(input())\nsnt = None\ncount = 0\nfor i in range(2,so_nguyen):\n    snt = True\n    for j in range(2, i):\n        if i%j == 0:\n            snt = False\n            break\n    if snt:\n        count += 1\nprint(count)",
+        "highlighted_code": "so_nguyen = int(input())\nsnt = None\n<span class='highlight-red'>count = 0\nfor i in range(2,so_nguyen):\n    snt = True\n    for j in range(2</span>, i)<span class='highlight-red'>:\n        if i%j == 0:\n            snt = False\n            break\n    if snt:\n        count += 1\nprint</span>(count)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3c4397243251374476f25/5e7936061bf3423087a326dd/sub_1765957250051_8vxdgvonq.py",
+        "similarity_percent": 54.81,
+        "full_code": "def timsont():\n    n = int(input())\n\n    if n < 2:\n        print(0)\n        return\n\n    dem = 0\n    for i in range(2, n):\n        la_snt = True\n        for j in range(2, int(i**0.5) + 1):\n            if i % j == 0:\n                la_snt = False\n                break\n        if la_snt:\n            dem += 1\n\n    print(dem)\n\ntimsont()\n",
+        "highlighted_code": "def timsont():\n    n = int(input())\n\n    if n &lt; 2:\n        print(0)\n        return\n\n    <span class='highlight-green'>dem = 0\n    for i in range(2, n):\n        la_snt = True\n        for j in range(2</span>, int(i**0.5) + 1)<span class='highlight-green'>:\n            if i % j == 0:\n                la_snt = False\n                break\n        if la_snt:\n            dem += 1\n\n    print</span>(dem)\n\ntimsont()\n"
+      },
+      "token_overlap": 74,
+      "max_similarity_percent": 76.29
+    },
+    {
+      "case_id": 32,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3c4397243251374476f25/5e7936061bf3423087a326dd/sub_1764773792528_olvblefcc.py",
+        "similarity_percent": 75.82,
+        "full_code": "so_nguyen = int(input())\ncount = 0\nfor i in range(2,so_nguyen):\n    snt = True\n    for j in range(2, i):\n        if i%j == 0:\n            snt = False\n            break\n    if snt:\n        count += 1\nprint(count)",
+        "highlighted_code": "<span class='highlight-red'>so_nguyen = int(input())\ncount = 0\nfor i in range(2,so_nguyen):\n    snt = Tru</span>e\n    fo<span class='highlight-red'>r j in range(2, i):\n        if i%j == 0:\n            snt = Fals</span>e\n            break\n    if snt:\n        count += 1\nprint(count)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3c4397243251374476f25/c747e87428cc4dbab36bd7aa/sub_1761636424140_f2hjeysu3.py",
+        "similarity_percent": 73.4,
+        "full_code": "n=int(input())\nso_luong=0\nfor i in range(2,n):\n    prime=True\n    k=i\n    for j in range(2,k):\n        if k%j==0:\n            prime=False\n    if prime==True:\n        so_luong+=1\nprint(so_luong)",
+        "highlighted_code": "<span class='highlight-green'>n=int(input())\nso_luong=0\nfor i in range(2,n):\n    prime=Tru</span>e\n    k=i\n    fo<span class='highlight-green'>r j in range(2,k):\n        if k%j==0:\n            prime=Fals</span>e\n    if prime==True:\n        so_luong+=1\nprint(so_luong)"
+      },
+      "token_overlap": 69,
+      "max_similarity_percent": 75.82
+    },
+    {
+      "case_id": 33,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3c4397243251374476f25/d82933fea814463eb5b029d1/sub_1765557306058_ci19zz7t0.py",
+        "similarity_percent": 75.76,
+        "full_code": "n = int(input())\n\ndef ktra_snt(so):\n    if so < 2:\n        return False\n    for ch in range(2,int(so**0.5) +1):\n        if so % ch == 0:\n            return False    \n    return True\n\ncount = 0\nfor i in range(2,n):\n    if ktra_snt(i):\n        count += 1\n\nprint(count)",
+        "highlighted_code": "n = <span class='highlight-red'>int(input())\n\ndef ktra_snt(so):\n    if so &lt; 2:\n        return False\n    for ch in range(2,i</span>nt(so**0.5) +<span class='highlight-red'>1):\n        if so % ch == 0:\n            return False    \n    return True\n\ncount = 0\nfor i in range(</span>2,n):\n    if ktra_snt(i):\n        count += 1\n\nprint(count)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3c4397243251374476f25/bbf053b9c70d4a5697fa5d7f/sub_1762916541459_o3384waih.py",
+        "similarity_percent": 67.57,
+        "full_code": "import math\nn = int(input())\ndef nguyento(n):\n    if n < 2:\n        return False\n    for i in range(2,int(math.sqrt(n)) +1):\n        if n % i == 0:\n            return False\n    return True\ndem=0\nfor i in range(1,n+1):\n    if nguyento(i):\n        dem+=1\nprint(dem)    ",
+        "highlighted_code": "import math\nn = <span class='highlight-green'>int(input())\ndef nguyento(n):\n    if n &lt; 2:\n        return False\n    for i in range(2,i</span>nt(math.sqrt(n)) +<span class='highlight-green'>1):\n        if n % i == 0:\n            return False\n    return True\ndem=0\nfor i in range(</span>1,n+1):\n    if nguyento(i):\n        dem+=1\nprint(dem)    "
+      },
+      "token_overlap": 100,
+      "max_similarity_percent": 75.76
+    },
+    {
+      "case_id": 34,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3c4397243251374476f25/780627ccd0224069b68e3b8d/sub_1762186114419_feu5dzuy9.py",
+        "similarity_percent": 75.0,
+        "full_code": "def ktnt(n):\n    if n < 2:\n        return False\n    for i in range(2, int(n ** 0.5 + 1)):\n        if n % i == 0:\n            return False\n    return True\nn = int(input())\ntmp = 0\nfor i in range(n):\n    if ktnt(i) == True:\n        tmp += 1\nprint(tmp)",
+        "highlighted_code": "def <span class='highlight-red'>ktnt(n):\n    if n &lt; 2:\n        return False\n    for i in range(2, i</span>nt(n ** 0.5 + 1)):\n        i<span class='highlight-red'>f n % i == 0:\n            return False\n    return True\nn = int(input())\ntmp = 0\nfor i in range(n):\n    if ktnt(</span>i) == True:\n        tmp += 1\nprint(tmp)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3c4397243251374476f25/a31a4097e8a74e09b9209282/sub_1761623539652_faoyofmlb.py",
+        "similarity_percent": 69.39,
+        "full_code": "import math\ndef snt(n):\n    if n<2: return False\n    # elif n<4: return True\n    # elif n%2==0 or n%3==0: return False\n    # for i in range (5,int(math.sqrt(n))+1,6):\n    #     if n%i==0 or n%(i+2)==0:\n    #         return False\n    # return True\n    for i in range (2,int(math.sqrt(n))+1,1):\n        if n%i==0: return False\n    return True\n\nn=int(input())\nkq=0\nfor i in range(n):\n    if snt(i):\n        kq+=1\nprint(kq)",
+        "highlighted_code": "import math\ndef <span class='highlight-green'>snt(n):\n    if n&lt;2: return False\n    # elif n&lt;4: return True\n    # elif n%2==0 or n%3==0: return False\n    # for i in range (5,int(math.sqrt(n))+1,6):\n    #     if n%i==0 or n%(i+2)==0:\n    #         return False\n    # return True\n    for i in range (2,i</span>nt(math.sqrt(n))+1,1):\n        i<span class='highlight-green'>f n%i==0: return False\n    return True\n\nn=int(input())\nkq=0\nfor i in range(n):\n    if snt(</span>i):\n        kq+=1\nprint(kq)"
+      },
+      "token_overlap": 102,
+      "max_similarity_percent": 75.0
+    },
+    {
+      "case_id": 35,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3c4397243251374476f25/c747e87428cc4dbab36bd7aa/sub_1765266575845_88ujiwzt8.py",
+        "similarity_percent": 75.0,
+        "full_code": "def prime(n):\n    if n<2:\n        return False\n    for i in range(2, int(n**0.5)+1):\n        if n%i==0:\n            return False\n    return True\na=int(input())\ncount=0\nfor j in range(2, a):\n    if prime(j):\n        count+=1\nprint(count)\n",
+        "highlighted_code": "def <span class='highlight-red'>prime(n):\n    if n&lt;2:\n        return False\n    for i in range(2, i</span>nt(n**0.5)+<span class='highlight-red'>1):\n        if n%i==0:\n            return False\n    return True\na=int(input())\ncount=0\nfor j in range(</span>2, a):\n    if prime(j):\n        count+=1\nprint(count)\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3c4397243251374476f25/a31a4097e8a74e09b9209282/sub_1761623539652_faoyofmlb.py",
+        "similarity_percent": 67.35,
+        "full_code": "import math\ndef snt(n):\n    if n<2: return False\n    # elif n<4: return True\n    # elif n%2==0 or n%3==0: return False\n    # for i in range (5,int(math.sqrt(n))+1,6):\n    #     if n%i==0 or n%(i+2)==0:\n    #         return False\n    # return True\n    for i in range (2,int(math.sqrt(n))+1,1):\n        if n%i==0: return False\n    return True\n\nn=int(input())\nkq=0\nfor i in range(n):\n    if snt(i):\n        kq+=1\nprint(kq)",
+        "highlighted_code": "import math\ndef <span class='highlight-green'>snt(n):\n    if n&lt;2: return False\n    # elif n&lt;4: return True\n    # elif n%2==0 or n%3==0: return False\n    # for i in range (5,int(math.sqrt(n))+1,6):\n    #     if n%i==0 or n%(i+2)==0:\n    #         return False\n    # return True\n    for i in range (2,i</span>nt(math.sqrt(n))+1,<span class='highlight-green'>1):\n        if n%i==0: return False\n    return True\n\nn=int(input())\nkq=0\nfor i in range(</span>n):\n    if snt(i):\n        kq+=1\nprint(kq)"
+      },
+      "token_overlap": 99,
+      "max_similarity_percent": 75.0
+    },
+    {
+      "case_id": 36,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3c4397243251374476f25/5e7936061bf3423087a326dd/sub_1765957097079_hkjy6yfgf.py",
+        "similarity_percent": 73.79,
+        "full_code": "def timsont():\n    dem = 0\n    n = int(input())\n\n    for i in range(2, n):\n        la_snt = True\n        for j in range(2, i):\n            if i % j == 0:\n                la_snt = False\n                break\n        if la_snt:\n            dem += 1\n\n    print(dem)\n\ntimsont()\n",
+        "highlighted_code": "def timsont():\n    dem = 0\n    n = int(input())\n\n    for <span class='highlight-red'>i in range(2, n):\n        la_snt = True\n        for j in range(2, i):\n            if i % j == 0:\n                la_snt = False\n                break\n        if la_snt:\n            dem += 1\n\n    print(dem)\n\ntimsont(</span>)\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3c4397243251374476f25/5e7936061bf3423087a326dd/sub_1765957182059_df8q1rm61.py",
+        "similarity_percent": 61.79,
+        "full_code": "def timsont():\n    dem = 0\n    n = int(input())\n    if n < 2:\n        print(0)\n        return\n\n    for i in range(2, n):\n        la_snt = True\n        for j in range(2, i):\n            if i % j == 0:\n                la_snt = False\n                break\n        if la_snt:\n            dem += 1\n\n    print(dem)\n\ntimsont()\n",
+        "highlighted_code": "def timsont():\n    dem = 0\n    n = int(input())\n    if n &lt; 2:\n        print(0)\n        return\n\n    for <span class='highlight-green'>i in range(2, n):\n        la_snt = True\n        for j in range(2, i):\n            if i % j == 0:\n                la_snt = False\n                break\n        if la_snt:\n            dem += 1\n\n    print(dem)\n\ntimsont(</span>)\n"
+      },
+      "token_overlap": 76,
+      "max_similarity_percent": 73.79
+    },
+    {
+      "case_id": 37,
+      "file1": {
         "path": "/app/app/data/submissions/68e3c4397243251374476f25/8e19101eb0da4e9a92a17098/sub_1762357178968_ytznw5fpr.py",
-        "similarity_percent": 56.85,
+        "similarity_percent": 73.65,
         "full_code": "import math\nn = int(input())\nif n <= 2:\n    print(0)\nelse:\n    check = [True] * n\n    check[0] = check[1] = False\n    for i in range(2, int(math.sqrt(n)) + 1):\n        if check[i]:\n            for j in range(i * i, n, i):\n                check[j] = False\n    print(sum(check))\n",
-        "highlighted_code": "import math\nn = int(input())\nif n &lt;= 2:\n    print(0)\nelse:\n    check <span class='highlight-green'>= [True] * n\n    check[0] = check[1] = False\n    for i in range(2, int(math</span>.sqrt(n)) + 1<span class='highlight-green'>):\n        if check[i]:\n            for j in range(i * i, n, i):\n                check[j] = False\n    </span>print(sum(check))\n"
+        "highlighted_code": "import math\nn = int(input())\nif n &lt;= 2<span class='highlight-red'>:\n    print(0)\nelse:\n    check = [True] * n\n    check[0] = check[1] = False\n    for i in range(2, int(math</span>.sqrt(n)) + 1)<span class='highlight-red'>:\n        if check[i]:\n            for j in range(i * i, n, i):\n                check[j] = False\n    print(sum(check)</span>)\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3c4397243251374476f25/421caa1638604d7eaa096ee0/sub_1765798206684_ac3gjis89.py",
+        "similarity_percent": 79.56,
+        "full_code": "n = int(input())\n\nif n < 2:\n    print(0)\nelse:\n    is_prime = [True] * n\n    is_prime[0] = is_prime[1] = False\n\n    for i in range(2, int(n ** 0.5) + 1):\n        if is_prime[i]:\n            for j in range(i * i, n, i):\n                is_prime[j] = False\n\n    print(sum(is_prime))\n",
+        "highlighted_code": "n = int(input())\n\nif n &lt; 2<span class='highlight-green'>:\n    print(0)\nelse:\n    is_prime = [True] * n\n    is_prime[0] = is_prime[1] = False\n\n    for i in range(2, int(n </span>** 0.5) + 1)<span class='highlight-green'>:\n        if is_prime[i]:\n            for j in range(i * i, n, i):\n                is_prime[j] = False\n\n    print(sum(is_prime)</span>)\n"
+      },
+      "token_overlap": 109,
+      "max_similarity_percent": 79.56
+    },
+    {
+      "case_id": 38,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3c4397243251374476f25/5e7936061bf3423087a326dd/sub_1764773729872_f1403w5j6.py",
+        "similarity_percent": 73.2,
+        "full_code": "so_nguyen = int(input())\nsnt = None\ncount = 0\nfor i in range(2,so_nguyen):\n    snt = True\n    for j in range(2, i):\n        if i%j == 0:\n            snt = False\n            break\n    if snt:\n        count += 1\nprint(count)",
+        "highlighted_code": "so_nguyen = int(input())\nsnt = None\ncount = 0\nfor <span class='highlight-red'>i in range(2,so_nguyen):\n    snt = True\n    for j in range(2, i):\n        if i%j == 0:\n            snt = False\n            break\n    if snt:\n        count += 1\nprint</span>(count)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3c4397243251374476f25/5e7936061bf3423087a326dd/sub_1765957097079_hkjy6yfgf.py",
+        "similarity_percent": 68.93,
+        "full_code": "def timsont():\n    dem = 0\n    n = int(input())\n\n    for i in range(2, n):\n        la_snt = True\n        for j in range(2, i):\n            if i % j == 0:\n                la_snt = False\n                break\n        if la_snt:\n            dem += 1\n\n    print(dem)\n\ntimsont()\n",
+        "highlighted_code": "def timsont():\n    dem = 0\n    n = int(input())\n\n    for <span class='highlight-green'>i in range(2, n):\n        la_snt = True\n        for j in range(2, i):\n            if i % j == 0:\n                la_snt = False\n                break\n        if la_snt:\n            dem += 1\n\n    print</span>(dem)\n\ntimsont()\n"
+      },
+      "token_overlap": 71,
+      "max_similarity_percent": 73.2
+    },
+    {
+      "case_id": 39,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3c4397243251374476f25/5e7936061bf3423087a326dd/sub_1764773729872_f1403w5j6.py",
+        "similarity_percent": 73.2,
+        "full_code": "so_nguyen = int(input())\nsnt = None\ncount = 0\nfor i in range(2,so_nguyen):\n    snt = True\n    for j in range(2, i):\n        if i%j == 0:\n            snt = False\n            break\n    if snt:\n        count += 1\nprint(count)",
+        "highlighted_code": "so_nguyen = int(input())\nsnt = None\ncount = 0\nfor <span class='highlight-red'>i in range(2,so_nguyen):\n    snt = True\n    for j in range(2, i):\n        if i%j == 0:\n            snt = False\n            break\n    if snt:\n        count += 1\nprint</span>(count)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3c4397243251374476f25/5e7936061bf3423087a326dd/sub_1765957182059_df8q1rm61.py",
+        "similarity_percent": 57.72,
+        "full_code": "def timsont():\n    dem = 0\n    n = int(input())\n    if n < 2:\n        print(0)\n        return\n\n    for i in range(2, n):\n        la_snt = True\n        for j in range(2, i):\n            if i % j == 0:\n                la_snt = False\n                break\n        if la_snt:\n            dem += 1\n\n    print(dem)\n\ntimsont()\n",
+        "highlighted_code": "def timsont():\n    dem = 0\n    n = int(input())\n    if n &lt; 2:\n        print(0)\n        return\n\n    for <span class='highlight-green'>i in range(2, n):\n        la_snt = True\n        for j in range(2, i):\n            if i % j == 0:\n                la_snt = False\n                break\n        if la_snt:\n            dem += 1\n\n    print</span>(dem)\n\ntimsont()\n"
+      },
+      "token_overlap": 71,
+      "max_similarity_percent": 73.2
+    },
+    {
+      "case_id": 40,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3c4397243251374476f25/d82933fea814463eb5b029d1/sub_1765557306058_ci19zz7t0.py",
+        "similarity_percent": 71.97,
+        "full_code": "n = int(input())\n\ndef ktra_snt(so):\n    if so < 2:\n        return False\n    for ch in range(2,int(so**0.5) +1):\n        if so % ch == 0:\n            return False    \n    return True\n\ncount = 0\nfor i in range(2,n):\n    if ktra_snt(i):\n        count += 1\n\nprint(count)",
+        "highlighted_code": "n = int(input())\n\ndef <span class='highlight-red'>ktra_snt(so):\n    if so &lt; 2:\n        return False\n    for ch in range(2,i</span>nt(so**0.5) +<span class='highlight-red'>1):\n        if so % ch == 0:\n            return False    \n    return Tr</span>ue\n\ncount = 0\nfor i <span class='highlight-red'>in range(2,n):\n    if ktra_snt(i):\n        count += 1\n\npri</span>nt(count)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3c4397243251374476f25/e981f1efc9764aba8b686042/sub_1765134413370_ydpelnsqf.py",
+        "similarity_percent": 58.64,
+        "full_code": "import math\ndef nguyen_to(s):\n    if s < 2:\n        return False\n    for i in range(2, int(math.sqrt(s)) + 1):\n        if s % i == 0:\n            return False\n    return True\nn = int(input())\nresult = 0\nif n <= 2:\n    print(0)\nelse:\n    for j in range(2, n):\n        if nguyen_to(j):\n            result += 1\n    print(result)",
+        "highlighted_code": "import math\ndef <span class='highlight-green'>nguyen_to(s):\n    if s &lt; 2:\n        return False\n    for i in range(2, i</span>nt(math.sqrt(s)) + <span class='highlight-green'>1):\n        if s % i == 0:\n            return False\n    return Tr</span>ue\nn = int(input())\nresult = 0\nif n &lt;= 2:\n    print(0)\nelse:\n    for j <span class='highlight-green'>in range(2, n):\n        if nguyen_to(j):\n            result += 1\n    pri</span>nt(result)"
+      },
+      "token_overlap": 95,
+      "max_similarity_percent": 71.97
+    },
+    {
+      "case_id": 41,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3c4397243251374476f25/c747e87428cc4dbab36bd7aa/sub_1765266289641_pymn2uvis.py",
+        "similarity_percent": 71.97,
+        "full_code": "def prime(n):\n    if n<2:\n        return False\n    for i in range(2, int(n**0.5+1)):\n        if n%i==0:\n            return False\n    return True\na=int(input())\ncount=0\nfor j in range(2, a):\n    if prime(j):\n        count+=1\nprint(count)\n",
+        "highlighted_code": "def <span class='highlight-red'>prime(n):\n    if n&lt;2:\n        return False\n    for i in range(2, i</span>nt(n**0.5+1)):\n        i<span class='highlight-red'>f n%i==0:\n            return False\n    return True\na=int(input())\ncount=0\nfor j in range(</span>2, a):\n    if prime(j):\n        count+=1\nprint(count)\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3c4397243251374476f25/a31a4097e8a74e09b9209282/sub_1761623539652_faoyofmlb.py",
+        "similarity_percent": 64.63,
+        "full_code": "import math\ndef snt(n):\n    if n<2: return False\n    # elif n<4: return True\n    # elif n%2==0 or n%3==0: return False\n    # for i in range (5,int(math.sqrt(n))+1,6):\n    #     if n%i==0 or n%(i+2)==0:\n    #         return False\n    # return True\n    for i in range (2,int(math.sqrt(n))+1,1):\n        if n%i==0: return False\n    return True\n\nn=int(input())\nkq=0\nfor i in range(n):\n    if snt(i):\n        kq+=1\nprint(kq)",
+        "highlighted_code": "import math\ndef <span class='highlight-green'>snt(n):\n    if n&lt;2: return False\n    # elif n&lt;4: return True\n    # elif n%2==0 or n%3==0: return False\n    # for i in range (5,int(math.sqrt(n))+1,6):\n    #     if n%i==0 or n%(i+2)==0:\n    #         return False\n    # return True\n    for i in range (2,i</span>nt(math.sqrt(n))+1,1):\n        i<span class='highlight-green'>f n%i==0: return False\n    return True\n\nn=int(input())\nkq=0\nfor i in range(</span>n):\n    if snt(i):\n        kq+=1\nprint(kq)"
+      },
+      "token_overlap": 95,
+      "max_similarity_percent": 71.97
+    },
+    {
+      "case_id": 42,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3c4397243251374476f25/e981f1efc9764aba8b686042/sub_1765133225015_qqqah7kml.py",
+        "similarity_percent": 71.52,
+        "full_code": "import math\ndef nguyen_to(s):\n    if s >= 2:\n        check = True\n        bien_phu = s\n        for i in range(2, int(math.sqrt(s)) + 1):\n            if bien_phu % i == 0:\n                check = False\n    else:\n        return False\n    return check\nn = int(input())\nsum = 0\nfor j in range(2, n):\n    if nguyen_to(j):\n        sum += 1\nprint(sum)",
+        "highlighted_code": "import math\ndef nguyen_to(s):\n    if s &gt;= 2:\n        check = True\n        bien_phu = <span class='highlight-red'>s\n        for i in range(2, int(math.sqrt(s)) + 1):\n            if bien_phu % i == 0:\n                check = False\n    els</span>e:\n        return Fals<span class='highlight-red'>e\n    return check\nn = int(input())\nsum = 0\nfor j in range(2, n):\n    if nguyen_to(j):\n        sum += 1\nprint(s</span>um)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3c4397243251374476f25/e981f1efc9764aba8b686042/sub_1765133343581_4orbuc6kr.py",
+        "similarity_percent": 73.38,
+        "full_code": "import math\ndef nguyen_to(s):\n    check = True\n    if s >= 2:\n        bien_phu = s\n        for i in range(2, int(math.sqrt(s)) + 1):\n            if bien_phu % i == 0:\n                check = False\n    else:\n        check = False\n    return check\nn = int(input())\nsum = 0\nfor j in range(2, n):\n    if nguyen_to(j):\n        sum += 1\nprint(sum)",
+        "highlighted_code": "import math\ndef nguyen_to(s):\n    check = True\n    if s &gt;= 2:\n        bien_phu = <span class='highlight-green'>s\n        for i in range(2, int(math.sqrt(s)) + 1):\n            if bien_phu % i == 0:\n                check = False\n    els</span>e:\n        check = Fals<span class='highlight-green'>e\n    return check\nn = int(input())\nsum = 0\nfor j in range(2, n):\n    if nguyen_to(j):\n        sum += 1\nprint(s</span>um)"
+      },
+      "token_overlap": 113,
+      "max_similarity_percent": 73.38
+    },
+    {
+      "case_id": 43,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3c4397243251374476f25/e981f1efc9764aba8b686042/sub_1765133813657_w0gq5ssdy.py",
+        "similarity_percent": 71.13,
+        "full_code": "import math\ndef nguyen_to(s):\n    if s < 2:\n        return False\n    for i in range(2, int(math.sqrt(s)) + 1):\n        if s % i == 0:\n            return False\n    return True\nn = int(input())\nresult = 0\nfor j in range(2, n):\n    if nguyen_to(j):\n        result += 1\nprint(result)",
+        "highlighted_code": "import math\ndef <span class='highlight-red'>nguyen_to(s):\n    if s &lt; 2:\n        return False\n    for i in range(2, i</span>nt(math.sqrt(s)) + <span class='highlight-red'>1):\n        if s % i == 0:\n            return False\n    return Tr</span>ue\nn = int(input())\nresult <span class='highlight-red'>= 0\nfor j in range(2, n):\n    if nguyen_to(j):\n        result += 1\npri</span>nt(result)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3c4397243251374476f25/d82933fea814463eb5b029d1/sub_1765557306058_ci19zz7t0.py",
+        "similarity_percent": 76.52,
+        "full_code": "n = int(input())\n\ndef ktra_snt(so):\n    if so < 2:\n        return False\n    for ch in range(2,int(so**0.5) +1):\n        if so % ch == 0:\n            return False    \n    return True\n\ncount = 0\nfor i in range(2,n):\n    if ktra_snt(i):\n        count += 1\n\nprint(count)",
+        "highlighted_code": "n = int(input())\n\ndef <span class='highlight-green'>ktra_snt(so):\n    if so &lt; 2:\n        return False\n    for ch in range(2,i</span>nt(so**0.5) +<span class='highlight-green'>1):\n        if so % ch == 0:\n            return False    \n    return Tr</span>ue\n\ncount <span class='highlight-green'>= 0\nfor i in range(2,n):\n    if ktra_snt(i):\n        count += 1\n\npri</span>nt(count)"
+      },
+      "token_overlap": 101,
+      "max_similarity_percent": 76.52
+    },
+    {
+      "case_id": 44,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3c4397243251374476f25/5e7936061bf3423087a326dd/sub_1765957097079_hkjy6yfgf.py",
+        "similarity_percent": 70.87,
+        "full_code": "def timsont():\n    dem = 0\n    n = int(input())\n\n    for i in range(2, n):\n        la_snt = True\n        for j in range(2, i):\n            if i % j == 0:\n                la_snt = False\n                break\n        if la_snt:\n            dem += 1\n\n    print(dem)\n\ntimsont()\n",
+        "highlighted_code": "def timsont():\n    dem = 0\n    n = int(input())\n\n    for <span class='highlight-red'>i in range(2, n):\n        la_snt = True\n        for j in range(2</span>, i)<span class='highlight-red'>:\n            if i % j == 0:\n                la_snt = False\n                break\n        if la_snt:\n            dem += 1\n\n    print(dem)\n\ntimsont(</span>)\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3c4397243251374476f25/5e7936061bf3423087a326dd/sub_1765957250051_8vxdgvonq.py",
+        "similarity_percent": 54.07,
+        "full_code": "def timsont():\n    n = int(input())\n\n    if n < 2:\n        print(0)\n        return\n\n    dem = 0\n    for i in range(2, n):\n        la_snt = True\n        for j in range(2, int(i**0.5) + 1):\n            if i % j == 0:\n                la_snt = False\n                break\n        if la_snt:\n            dem += 1\n\n    print(dem)\n\ntimsont()\n",
+        "highlighted_code": "def timsont():\n    n = int(input())\n\n    if n &lt; 2:\n        print(0)\n        return\n\n    dem = 0\n    for <span class='highlight-green'>i in range(2, n):\n        la_snt = True\n        for j in range(2</span>, int(i**0.5) + 1)<span class='highlight-green'>:\n            if i % j == 0:\n                la_snt = False\n                break\n        if la_snt:\n            dem += 1\n\n    print(dem)\n\ntimsont(</span>)\n"
+      },
+      "token_overlap": 73,
+      "max_similarity_percent": 70.87
+    },
+    {
+      "case_id": 45,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3c4397243251374476f25/780627ccd0224069b68e3b8d/sub_1762186114419_feu5dzuy9.py",
+        "similarity_percent": 69.85,
+        "full_code": "def ktnt(n):\n    if n < 2:\n        return False\n    for i in range(2, int(n ** 0.5 + 1)):\n        if n % i == 0:\n            return False\n    return True\nn = int(input())\ntmp = 0\nfor i in range(n):\n    if ktnt(i) == True:\n        tmp += 1\nprint(tmp)",
+        "highlighted_code": "def <span class='highlight-red'>ktnt(n):\n    if n &lt; 2:\n        return False\n    for i in range(2, i</span>nt(n ** 0.5 + 1)):\n        i<span class='highlight-red'>f n % i == 0:\n            return False\n    return True\nn = int(input())\ntmp = 0\nfor i in range(</span>n):\n    if ktnt(i) == True:\n        tmp += 1\nprint(tmp)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3c4397243251374476f25/e981f1efc9764aba8b686042/sub_1765133813657_w0gq5ssdy.py",
+        "similarity_percent": 66.9,
+        "full_code": "import math\ndef nguyen_to(s):\n    if s < 2:\n        return False\n    for i in range(2, int(math.sqrt(s)) + 1):\n        if s % i == 0:\n            return False\n    return True\nn = int(input())\nresult = 0\nfor j in range(2, n):\n    if nguyen_to(j):\n        result += 1\nprint(result)",
+        "highlighted_code": "import math\ndef <span class='highlight-green'>nguyen_to(s):\n    if s &lt; 2:\n        return False\n    for i in range(2, i</span>nt(math.sqrt(s)) + 1):\n        i<span class='highlight-green'>f s % i == 0:\n            return False\n    return True\nn = int(input())\nresult = 0\nfor j in range(</span>2, n):\n    if nguyen_to(j):\n        result += 1\nprint(result)"
+      },
+      "token_overlap": 95,
+      "max_similarity_percent": 69.85
+    },
+    {
+      "case_id": 46,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3c4397243251374476f25/d82933fea814463eb5b029d1/sub_1765557306058_ci19zz7t0.py",
+        "similarity_percent": 69.7,
+        "full_code": "n = int(input())\n\ndef ktra_snt(so):\n    if so < 2:\n        return False\n    for ch in range(2,int(so**0.5) +1):\n        if so % ch == 0:\n            return False    \n    return True\n\ncount = 0\nfor i in range(2,n):\n    if ktra_snt(i):\n        count += 1\n\nprint(count)",
+        "highlighted_code": "<span class='highlight-red'>n = int(input())\n\ndef ktra_snt(so):\n    if so &lt; 2:\n        return False\n    for ch in ran</span>ge(2,int(so**0.5) +1):\n        i<span class='highlight-red'>f so % ch == 0:\n            return False    \n    return True\n\ncount = 0\nfor i in range(</span>2,n):\n    if ktra_snt(i):\n        count += 1\n\nprint(count)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3c4397243251374476f25/bbf053b9c70d4a5697fa5d7f/sub_1762916200612_m0kicbkaj.py",
+        "similarity_percent": 73.02,
+        "full_code": "n = int(input())\ndef nguyento(n):\n    if n < 2:\n        return False\n    for i in range(2, n):\n        if n % i == 0:\n            return False\n    return True\ndem=0\nfor i in range(1,n+1):\n    if nguyento(i):\n        dem+=1\nprint(dem)       ",
+        "highlighted_code": "<span class='highlight-green'>n = int(input())\ndef nguyento(n):\n    if n &lt; 2:\n        return False\n    for i in ran</span>ge(2, n):\n        i<span class='highlight-green'>f n % i == 0:\n            return False\n    return True\ndem=0\nfor i in range(</span>1,n+1):\n    if nguyento(i):\n        dem+=1\nprint(dem)       "
+      },
+      "token_overlap": 92,
+      "max_similarity_percent": 73.02
+    },
+    {
+      "case_id": 47,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3c4397243251374476f25/5e7936061bf3423087a326dd/sub_1765957097079_hkjy6yfgf.py",
+        "similarity_percent": 68.93,
+        "full_code": "def timsont():\n    dem = 0\n    n = int(input())\n\n    for i in range(2, n):\n        la_snt = True\n        for j in range(2, i):\n            if i % j == 0:\n                la_snt = False\n                break\n        if la_snt:\n            dem += 1\n\n    print(dem)\n\ntimsont()\n",
+        "highlighted_code": "def timsont():\n    dem = 0\n    n = int(input())\n\n    for <span class='highlight-red'>i in range(2, n):\n        la_snt = True\n        for j in range(2, i):\n            if i % j == 0:\n                la_snt = False\n                break\n        if la_snt:\n            dem += 1\n\n    print</span>(dem)\n\ntimsont()\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3c4397243251374476f25/5e7936061bf3423087a326dd/sub_1764773792528_olvblefcc.py",
+        "similarity_percent": 78.02,
+        "full_code": "so_nguyen = int(input())\ncount = 0\nfor i in range(2,so_nguyen):\n    snt = True\n    for j in range(2, i):\n        if i%j == 0:\n            snt = False\n            break\n    if snt:\n        count += 1\nprint(count)",
+        "highlighted_code": "so_nguyen = int(input())\ncount = 0\nfor <span class='highlight-green'>i in range(2,so_nguyen):\n    snt = True\n    for j in range(2, i):\n        if i%j == 0:\n            snt = False\n            break\n    if snt:\n        count += 1\nprint</span>(count)"
+      },
+      "token_overlap": 71,
+      "max_similarity_percent": 78.02
+    },
+    {
+      "case_id": 48,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3c4397243251374476f25/e981f1efc9764aba8b686042/sub_1765134413370_ydpelnsqf.py",
+        "similarity_percent": 68.52,
+        "full_code": "import math\ndef nguyen_to(s):\n    if s < 2:\n        return False\n    for i in range(2, int(math.sqrt(s)) + 1):\n        if s % i == 0:\n            return False\n    return True\nn = int(input())\nresult = 0\nif n <= 2:\n    print(0)\nelse:\n    for j in range(2, n):\n        if nguyen_to(j):\n            result += 1\n    print(result)",
+        "highlighted_code": "<span class='highlight-red'>import math\ndef nguyen_to(s):\n    if s &lt; 2:\n        return False\n    for i in range(2, int(math.sqrt(s)) + </span><span class='highlight-red'>1):\n        if s % i == 0:\n            return False\n    return True\nn = int(input())\nresult = 0\n</span>if n &lt;= 2:\n    print(0)\nelse:\n    for j in range(2, n):\n        if nguyen_to(j):\n            result += 1\n    print(result)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3c4397243251374476f25/a31a4097e8a74e09b9209282/sub_1761623539652_faoyofmlb.py",
+        "similarity_percent": 75.51,
+        "full_code": "import math\ndef snt(n):\n    if n<2: return False\n    # elif n<4: return True\n    # elif n%2==0 or n%3==0: return False\n    # for i in range (5,int(math.sqrt(n))+1,6):\n    #     if n%i==0 or n%(i+2)==0:\n    #         return False\n    # return True\n    for i in range (2,int(math.sqrt(n))+1,1):\n        if n%i==0: return False\n    return True\n\nn=int(input())\nkq=0\nfor i in range(n):\n    if snt(i):\n        kq+=1\nprint(kq)",
+        "highlighted_code": "<span class='highlight-green'>import math\ndef snt(n):\n    if n&lt;2: return False\n    # elif n&lt;4: return True\n    # elif n%2==0 or n%3==0: return False\n    # for i in range (5,int(math.sqrt(n))+1,6):\n    #     if n%i==0 or n%(i+2)==0:\n    #         return False\n    # return True\n    for i in range (2,int(math.sqrt(n))+</span>1,<span class='highlight-green'>1):\n        if n%i==0: return False\n    return True\n\nn=int(input())\nkq=0\n</span>for i in range(n):\n    if snt(i):\n        kq+=1\nprint(kq)"
+      },
+      "token_overlap": 111,
+      "max_similarity_percent": 75.51
+    },
+    {
+      "case_id": 49,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3c4397243251374476f25/5e7936061bf3423087a326dd/sub_1764773882136_oeycvhzwg.py",
+        "similarity_percent": 67.89,
+        "full_code": "so_nguyen = int(input())\nsnt = None\ncount = 0\nfor i in range(2,so_nguyen):\n    snt = True\n    for j in range(2, int(i**0.5)+1):\n        if i%j == 0:\n            snt = False\n            break\n    if snt:\n        count += 1\nprint(count)",
+        "highlighted_code": "so_nguyen = int(input())\nsnt = None\n<span class='highlight-red'>count = 0\nfor i in range(2,so_nguyen):\n    snt = True\n    for j in range(2</span>, int(i**0.5)+1)<span class='highlight-red'>:\n        if i%j == 0:\n            snt = False\n            break\n    if snt:\n        count += 1\nprint</span>(count)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3c4397243251374476f25/5e7936061bf3423087a326dd/sub_1764773792528_olvblefcc.py",
+        "similarity_percent": 81.32,
+        "full_code": "so_nguyen = int(input())\ncount = 0\nfor i in range(2,so_nguyen):\n    snt = True\n    for j in range(2, i):\n        if i%j == 0:\n            snt = False\n            break\n    if snt:\n        count += 1\nprint(count)",
+        "highlighted_code": "so_nguyen = int(input())\n<span class='highlight-green'>count = 0\nfor i in range(2,so_nguyen):\n    snt = True\n    for j in range(2</span>, i)<span class='highlight-green'>:\n        if i%j == 0:\n            snt = False\n            break\n    if snt:\n        count += 1\nprint</span>(count)"
+      },
+      "token_overlap": 74,
+      "max_similarity_percent": 81.32
+    },
+    {
+      "case_id": 50,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3c4397243251374476f25/5e7936061bf3423087a326dd/sub_1765957586768_km8w73tgj.py",
+        "similarity_percent": 66.86,
+        "full_code": "def timsont():\n    n = int(input())\n    if n < 2:\n        print(0)\n        return\n\n    is_prime = [True] * n\n    is_prime[0] = is_prime[1] = False\n\n    for i in range(2, int(n**0.5) + 1):\n        if is_prime[i]:\n            for j in range(i * i, n, i):\n                is_prime[j] = False\n\n    dem = 0\n    for i in range(2, n):\n        if is_prime[i]:\n            dem += 1\n\n    print(dem)\n\ntimsont()\n",
+        "highlighted_code": "def timsont():\n    n <span class='highlight-red'>= int(input())\n    if n &lt; 2:\n        print(0)\n        </span>return\n\n    is_prime = [T<span class='highlight-red'>rue] * n\n    is_prime[0] = is_prime[1] = False\n\n    for i in range(2, int(n**0.5) + 1):\n        if is_prime[i]:\n            for j in range(i * i, n, i):\n                is_prime[j] = False\n\n    </span>dem = 0\n    for i in range(2, n):\n        if is_prime[i]:\n            dem += 1\n\n    print(dem)\n\ntimsont()\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3c4397243251374476f25/d82933fea814463eb5b029d1/sub_1765557913928_5x9e72tgh.py",
+        "similarity_percent": 85.19,
+        "full_code": "n = int(input())\n\nif n < 2:\n    print(0)\n    exit()\n\nis_prime = [True] * n\nis_prime[0] = is_prime[1] = False\n\nfor i in range(2, int(n**0.5) +1):\n    if is_prime[i]:\n        for j in range(i*i,n,i):\n            is_prime[j] = False\n\nprint(sum(is_prime))",
+        "highlighted_code": "n <span class='highlight-green'>= int(input())\n\nif n &lt; 2:\n    print(0)\n    </span>exit()\n\nis_prime = [T<span class='highlight-green'>rue] * n\nis_prime[0] = is_prime[1] = False\n\nfor i in range(2, int(n**0.5) +1):\n    if is_prime[i]:\n        for j in range(i*i,n,i):\n            is_prime[j] = False\n\n</span>print(sum(is_prime))"
+      },
+      "token_overlap": 115,
+      "max_similarity_percent": 85.19
+    },
+    {
+      "case_id": 51,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3c4397243251374476f25/5e7936061bf3423087a326dd/sub_1764773729872_f1403w5j6.py",
+        "similarity_percent": 65.98,
+        "full_code": "so_nguyen = int(input())\nsnt = None\ncount = 0\nfor i in range(2,so_nguyen):\n    snt = True\n    for j in range(2, i):\n        if i%j == 0:\n            snt = False\n            break\n    if snt:\n        count += 1\nprint(count)",
+        "highlighted_code": "so_nguyen = int(input())\nsnt = None\n<span class='highlight-red'>count = 0\nfor i in range(2,so_nguyen):\n    snt = Tru</span>e\n    fo<span class='highlight-red'>r j in range(2, i):\n        if i%j == 0:\n            snt = False\n            break\n    if snt</span>:\n        count += 1\nprint(count)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3c4397243251374476f25/c747e87428cc4dbab36bd7aa/sub_1761636584790_ypl1eeqrh.py",
+        "similarity_percent": 64.0,
+        "full_code": "\nn = int(input())\nso_luong = 0\nfor i in range(2, n):\n    prime = True \n    k = i\n    for j in range(2, k):\n        if k % j == 0:\n            prime = False\n            break \n    if prime == True:\n        so_luong += 1\n\nprint(so_luong)",
+        "highlighted_code": "\nn = int(input())<span class='highlight-green'>\nso_luong = 0\nfor i in range(2, n):\n    prime = Tr</span>ue \n    k = i\n    f<span class='highlight-green'>or j in range(2, k):\n        if k % j == 0:\n            prime = False\n            break \n    if prime</span> == True:\n        so_luong += 1\n\nprint(so_luong)"
+      },
+      "token_overlap": 64,
+      "max_similarity_percent": 65.98
+    },
+    {
+      "case_id": 52,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3c4397243251374476f25/d82933fea814463eb5b029d1/sub_1765557913928_5x9e72tgh.py",
+        "similarity_percent": 65.19,
+        "full_code": "n = int(input())\n\nif n < 2:\n    print(0)\n    exit()\n\nis_prime = [True] * n\nis_prime[0] = is_prime[1] = False\n\nfor i in range(2, int(n**0.5) +1):\n    if is_prime[i]:\n        for j in range(i*i,n,i):\n            is_prime[j] = False\n\nprint(sum(is_prime))",
+        "highlighted_code": "n = int(input())\n\nif n &lt; 2:\n    print(0)\n    exit()\n\nis_prime = [T<span class='highlight-red'>rue] * n\nis_prime[0] = is_prime[1] = False\n\nfor i in range(2, int(n**0.5) +1):\n    if is_prime[i]:\n        for j in range(i*i,n,i):\n            is_prime[j] = False\n\n</span>print(sum(is_prime))"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3c4397243251374476f25/780627ccd0224069b68e3b8d/sub_1762186444507_g51k2n1tv.py",
+        "similarity_percent": 59.06,
+        "full_code": "def sangnt(n):\n    if n < 2:\n        return 0\n    sang = [True] * n\n    sang[0] = sang[1] = False  \n    for i in range(2, int(n**0.5) + 1):\n        if sang[i]:\n            for j in range(i*i, n, i):\n                sang[j] = False\n    return sum(sang)\n\n\nn = int(input())\nprint(sangnt(n))",
+        "highlighted_code": "def sangnt(n):\n    if n &lt; 2:\n        return 0\n    sang = [T<span class='highlight-green'>rue] * n\n    sang[0] = sang[1] = False  \n    for i in range(2, int(n**0.5) + 1):\n        if sang[i]:\n            for j in range(i*i, n, i):\n                sang[j] = False\n    </span>return sum(sang)\n\n\nn = int(input())\nprint(sangnt(n))"
+      },
+      "token_overlap": 88,
+      "max_similarity_percent": 65.19
+    },
+    {
+      "case_id": 53,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3c4397243251374476f25/421caa1638604d7eaa096ee0/sub_1765798206684_ac3gjis89.py",
+        "similarity_percent": 64.23,
+        "full_code": "n = int(input())\n\nif n < 2:\n    print(0)\nelse:\n    is_prime = [True] * n\n    is_prime[0] = is_prime[1] = False\n\n    for i in range(2, int(n ** 0.5) + 1):\n        if is_prime[i]:\n            for j in range(i * i, n, i):\n                is_prime[j] = False\n\n    print(sum(is_prime))\n",
+        "highlighted_code": "n = int(input())\n\nif n &lt; 2:\n    print(0)\nelse:\n    is_prime = [T<span class='highlight-red'>rue] * n\n    is_prime[0] = is_prime[1] = False\n\n    for i in range(2, int(n ** 0.5) + 1):\n        if is_prime[i]:\n            for j in range(i * i, n, i):\n                is_prime[j] = False\n\n    </span>print(sum(is_prime))\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3c4397243251374476f25/780627ccd0224069b68e3b8d/sub_1762186444507_g51k2n1tv.py",
+        "similarity_percent": 59.06,
+        "full_code": "def sangnt(n):\n    if n < 2:\n        return 0\n    sang = [True] * n\n    sang[0] = sang[1] = False  \n    for i in range(2, int(n**0.5) + 1):\n        if sang[i]:\n            for j in range(i*i, n, i):\n                sang[j] = False\n    return sum(sang)\n\n\nn = int(input())\nprint(sangnt(n))",
+        "highlighted_code": "def sangnt(n):\n    if n &lt; 2:\n        return 0\n    sang = [T<span class='highlight-green'>rue] * n\n    sang[0] = sang[1] = False  \n    for i in range(2, int(n**0.5) + 1):\n        if sang[i]:\n            for j in range(i*i, n, i):\n                sang[j] = False\n    </span>return sum(sang)\n\n\nn = int(input())\nprint(sangnt(n))"
+      },
+      "token_overlap": 88,
+      "max_similarity_percent": 64.23
+    },
+    {
+      "case_id": 54,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3c4397243251374476f25/5e7936061bf3423087a326dd/sub_1764773882136_oeycvhzwg.py",
+        "similarity_percent": 62.39,
+        "full_code": "so_nguyen = int(input())\nsnt = None\ncount = 0\nfor i in range(2,so_nguyen):\n    snt = True\n    for j in range(2, int(i**0.5)+1):\n        if i%j == 0:\n            snt = False\n            break\n    if snt:\n        count += 1\nprint(count)",
+        "highlighted_code": "so_nguyen = int(input())\nsnt = None\ncount = 0\nfor <span class='highlight-red'>i in range(2,so_nguyen):\n    snt = True\n    for j in range(2</span>, int(i**0.5)+1)<span class='highlight-red'>:\n        if i%j == 0:\n            snt = False\n            break\n    if snt:\n        count += 1\nprint</span>(count)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3c4397243251374476f25/5e7936061bf3423087a326dd/sub_1765957097079_hkjy6yfgf.py",
+        "similarity_percent": 66.02,
+        "full_code": "def timsont():\n    dem = 0\n    n = int(input())\n\n    for i in range(2, n):\n        la_snt = True\n        for j in range(2, i):\n            if i % j == 0:\n                la_snt = False\n                break\n        if la_snt:\n            dem += 1\n\n    print(dem)\n\ntimsont()\n",
+        "highlighted_code": "def timsont():\n    dem = 0\n    n = int(input())\n\n    for <span class='highlight-green'>i in range(2, n):\n        la_snt = True\n        for j in range(2</span>, i)<span class='highlight-green'>:\n            if i % j == 0:\n                la_snt = False\n                break\n        if la_snt:\n            dem += 1\n\n    print</span>(dem)\n\ntimsont()\n"
+      },
+      "token_overlap": 68,
+      "max_similarity_percent": 66.02
+    },
+    {
+      "case_id": 55,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3c4397243251374476f25/5e7936061bf3423087a326dd/sub_1764773882136_oeycvhzwg.py",
+        "similarity_percent": 62.39,
+        "full_code": "so_nguyen = int(input())\nsnt = None\ncount = 0\nfor i in range(2,so_nguyen):\n    snt = True\n    for j in range(2, int(i**0.5)+1):\n        if i%j == 0:\n            snt = False\n            break\n    if snt:\n        count += 1\nprint(count)",
+        "highlighted_code": "so_nguyen = int(input())\nsnt = None\ncount = 0\nfor <span class='highlight-red'>i in range(2,so_nguyen):\n    snt = True\n    for j in range(2</span>, int(i**0.5)+1)<span class='highlight-red'>:\n        if i%j == 0:\n            snt = False\n            break\n    if snt:\n        count += 1\nprint</span>(count)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3c4397243251374476f25/5e7936061bf3423087a326dd/sub_1765957182059_df8q1rm61.py",
+        "similarity_percent": 55.28,
+        "full_code": "def timsont():\n    dem = 0\n    n = int(input())\n    if n < 2:\n        print(0)\n        return\n\n    for i in range(2, n):\n        la_snt = True\n        for j in range(2, i):\n            if i % j == 0:\n                la_snt = False\n                break\n        if la_snt:\n            dem += 1\n\n    print(dem)\n\ntimsont()\n",
+        "highlighted_code": "def timsont():\n    dem = 0\n    n = int(input())\n    if n &lt; 2:\n        print(0)\n        return\n\n    for <span class='highlight-green'>i in range(2, n):\n        la_snt = True\n        for j in range(2</span>, i)<span class='highlight-green'>:\n            if i % j == 0:\n                la_snt = False\n                break\n        if la_snt:\n            dem += 1\n\n    print</span>(dem)\n\ntimsont()\n"
+      },
+      "token_overlap": 68,
+      "max_similarity_percent": 62.39
+    },
+    {
+      "case_id": 56,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3c4397243251374476f25/8e19101eb0da4e9a92a17098/sub_1762357178968_ytznw5fpr.py",
+        "similarity_percent": 61.49,
+        "full_code": "import math\nn = int(input())\nif n <= 2:\n    print(0)\nelse:\n    check = [True] * n\n    check[0] = check[1] = False\n    for i in range(2, int(math.sqrt(n)) + 1):\n        if check[i]:\n            for j in range(i * i, n, i):\n                check[j] = False\n    print(sum(check))\n",
+        "highlighted_code": "import math\nn = int(input())\nif n &lt;= 2:\n    print(0)\nelse:\n    check = [T<span class='highlight-red'>rue] * n\n    check[0] = check[1] = False\n    for i in range(2, int(math</span>.sqrt(n)) + 1)<span class='highlight-red'>:\n        if check[i]:\n            for j in range(i * i, n, i):\n                check[j] = False\n    print(sum(check)</span>)\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3c4397243251374476f25/d82933fea814463eb5b029d1/sub_1765557913928_5x9e72tgh.py",
+        "similarity_percent": 67.41,
+        "full_code": "n = int(input())\n\nif n < 2:\n    print(0)\n    exit()\n\nis_prime = [True] * n\nis_prime[0] = is_prime[1] = False\n\nfor i in range(2, int(n**0.5) +1):\n    if is_prime[i]:\n        for j in range(i*i,n,i):\n            is_prime[j] = False\n\nprint(sum(is_prime))",
+        "highlighted_code": "n = int(input())\n\nif n &lt; 2:\n    print(0)\n    exit()\n\nis_prime = [T<span class='highlight-green'>rue] * n\nis_prime[0] = is_prime[1] = False\n\nfor i in range(2, int(n</span>**0.5) +1)<span class='highlight-green'>:\n    if is_prime[i]:\n        for j in range(i*i,n,i):\n            is_prime[j] = False\n\nprint(sum(is_prime)</span>)"
+      },
+      "token_overlap": 91,
+      "max_similarity_percent": 67.41
+    },
+    {
+      "case_id": 57,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3c4397243251374476f25/780627ccd0224069b68e3b8d/sub_1762186114419_feu5dzuy9.py",
+        "similarity_percent": 61.03,
+        "full_code": "def ktnt(n):\n    if n < 2:\n        return False\n    for i in range(2, int(n ** 0.5 + 1)):\n        if n % i == 0:\n            return False\n    return True\nn = int(input())\ntmp = 0\nfor i in range(n):\n    if ktnt(i) == True:\n        tmp += 1\nprint(tmp)",
+        "highlighted_code": "def <span class='highlight-red'>ktnt(n):\n    if n &lt; 2:\n        return False\n    for i in range(2, i</span>nt(n ** 0.5 + 1)):\n        i<span class='highlight-red'>f n % i == 0:\n            return False\n    return True\nn = int(input())\ntmp = 0\n</span>for i in range(n):\n    if ktnt(i) == True:\n        tmp += 1\nprint(tmp)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3c4397243251374476f25/e981f1efc9764aba8b686042/sub_1765134413370_ydpelnsqf.py",
+        "similarity_percent": 51.23,
+        "full_code": "import math\ndef nguyen_to(s):\n    if s < 2:\n        return False\n    for i in range(2, int(math.sqrt(s)) + 1):\n        if s % i == 0:\n            return False\n    return True\nn = int(input())\nresult = 0\nif n <= 2:\n    print(0)\nelse:\n    for j in range(2, n):\n        if nguyen_to(j):\n            result += 1\n    print(result)",
+        "highlighted_code": "import math\ndef <span class='highlight-green'>nguyen_to(s):\n    if s &lt; 2:\n        return False\n    for i in range(2, i</span>nt(math.sqrt(s)) + 1):\n        i<span class='highlight-green'>f s % i == 0:\n            return False\n    return True\nn = int(input())\nresult = 0\n</span>if n &lt;= 2:\n    print(0)\nelse:\n    for j in range(2, n):\n        if nguyen_to(j):\n            result += 1\n    print(result)"
       },
       "token_overlap": 83,
-      "max_similarity_percent": 56.85
+      "max_similarity_percent": 61.03
+    },
+    {
+      "case_id": 58,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3c4397243251374476f25/8e19101eb0da4e9a92a17098/sub_1762357178968_ytznw5fpr.py",
+        "similarity_percent": 59.46,
+        "full_code": "import math\nn = int(input())\nif n <= 2:\n    print(0)\nelse:\n    check = [True] * n\n    check[0] = check[1] = False\n    for i in range(2, int(math.sqrt(n)) + 1):\n        if check[i]:\n            for j in range(i * i, n, i):\n                check[j] = False\n    print(sum(check))\n",
+        "highlighted_code": "import math\nn = int(input())\nif n &lt;= 2:\n    print(0)\nelse:\n    check = [T<span class='highlight-red'>rue] * n\n    check[0] = check[1] = False\n    for i in range(2, int(math.sqrt(n)) + 1):\n        if check[i]:\n            for j in range(i * i, n, i):\n                check[j] = False\n    </span>print(sum(check))\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3c4397243251374476f25/bbf053b9c70d4a5697fa5d7f/sub_1762916817988_lh4inbigf.py",
+        "similarity_percent": 55.35,
+        "full_code": "import math\ndef demsonguyento(n):\n    if n < 2:\n        return 0\n    a = [True] * n\n    a[0] = a[1] = False\n    for i in range(2, int(math.sqrt(n)) + 1):\n        if a[i]:\n            for j in range(i*i, n, i):\n                a[j] = False\n    return sum(a)\nn = int(input())\nprint(demsonguyento(n))",
+        "highlighted_code": "import math\ndef demsonguyento(n):\n    if n &lt; 2:\n        return 0\n    a = [T<span class='highlight-green'>rue] * n\n    a[0] = a[1] = False\n    for i in range(2, int(math.sqrt(n)) + 1):\n        if a[i]:\n            for j in range(i*i, n, i):\n                a[j] = False\n    </span>return sum(a)\nn = int(input())\nprint(demsonguyento(n))"
+      },
+      "token_overlap": 88,
+      "max_similarity_percent": 59.46
+    },
+    {
+      "case_id": 59,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3c4397243251374476f25/bbf053b9c70d4a5697fa5d7f/sub_1762916413740_k01b614sa.py",
+        "similarity_percent": 59.42,
+        "full_code": "n = int(input())\ndef nguyento(n):\n    if n < 2:\n        return False\n    for i in range(2,int(n**0.5)+1 ):\n        if n % i == 0:\n            return False\n    return True\ndem=0\nfor i in range(1,n+1):\n    if nguyento(i):\n        dem+=1\nprint(dem)   ",
+        "highlighted_code": "n = int(input())\n<span class='highlight-red'>def nguyento(n):\n    if n &lt; 2:\n        return False\n    for i in range(2,int(n**0.5)+1 ):\n        if n % i == 0:\n            return False\n    return Tr</span>ue\ndem=0\nfor i in range(1,n+1):\n    if nguyento(i):\n        dem+=1\nprint(dem)   "
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3c4397243251374476f25/c747e87428cc4dbab36bd7aa/sub_1765266575845_88ujiwzt8.py",
+        "similarity_percent": 62.12,
+        "full_code": "def prime(n):\n    if n<2:\n        return False\n    for i in range(2, int(n**0.5)+1):\n        if n%i==0:\n            return False\n    return True\na=int(input())\ncount=0\nfor j in range(2, a):\n    if prime(j):\n        count+=1\nprint(count)\n",
+        "highlighted_code": "<span class='highlight-green'>def prime(n):\n    if n&lt;2:\n        return False\n    for i in range(2, int(n**0.5)+1):\n        if n%i==0:\n            return False\n    return Tr</span>ue\na=int(input())\ncount=0\nfor j in range(2, a):\n    if prime(j):\n        count+=1\nprint(count)\n"
+      },
+      "token_overlap": 82,
+      "max_similarity_percent": 62.12
+    },
+    {
+      "case_id": 60,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3c4397243251374476f25/780627ccd0224069b68e3b8d/sub_1762186419788_nafv45odv.py",
+        "similarity_percent": 58.67,
+        "full_code": "def sangnt(n):\n    if n == 0:\n        return 0\n    sang = [True] * n\n    sang[0] = sang[1] = False  \n    for i in range(2, int(n**0.5) + 1):\n        if sang[i]:\n            for j in range(i*i, n, i):\n                sang[j] = False\n    return sum(sang)\n\n\nn = int(input())\nprint(sangnt(n))",
+        "highlighted_code": "def sangnt(n):\n    if n == 0:\n        return 0\n    sang = [T<span class='highlight-red'>rue] * n\n    sang[0] = sang[1] = False  \n    for i in range(2, int(n**0.5) + 1):\n        if sang[i]:\n            for j in range(i*i, n, i):\n                sang[j] = False\n    </span>return sum(sang)\n\n\nn = int(input())\nprint(sangnt(n))"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3c4397243251374476f25/421caa1638604d7eaa096ee0/sub_1765798206684_ac3gjis89.py",
+        "similarity_percent": 64.23,
+        "full_code": "n = int(input())\n\nif n < 2:\n    print(0)\nelse:\n    is_prime = [True] * n\n    is_prime[0] = is_prime[1] = False\n\n    for i in range(2, int(n ** 0.5) + 1):\n        if is_prime[i]:\n            for j in range(i * i, n, i):\n                is_prime[j] = False\n\n    print(sum(is_prime))\n",
+        "highlighted_code": "n = int(input())\n\nif n &lt; 2:\n    print(0)\nelse:\n    is_prime = [T<span class='highlight-green'>rue] * n\n    is_prime[0] = is_prime[1] = False\n\n    for i in range(2, int(n ** 0.5) + 1):\n        if is_prime[i]:\n            for j in range(i * i, n, i):\n                is_prime[j] = False\n\n    </span>print(sum(is_prime))\n"
+      },
+      "token_overlap": 88,
+      "max_similarity_percent": 64.23
+    },
+    {
+      "case_id": 61,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3c4397243251374476f25/780627ccd0224069b68e3b8d/sub_1762186419788_nafv45odv.py",
+        "similarity_percent": 58.67,
+        "full_code": "def sangnt(n):\n    if n == 0:\n        return 0\n    sang = [True] * n\n    sang[0] = sang[1] = False  \n    for i in range(2, int(n**0.5) + 1):\n        if sang[i]:\n            for j in range(i*i, n, i):\n                sang[j] = False\n    return sum(sang)\n\n\nn = int(input())\nprint(sangnt(n))",
+        "highlighted_code": "def sangnt(n):\n    if n == 0:\n        return 0\n    sang = [T<span class='highlight-red'>rue] * n\n    sang[0] = sang[1] = False  \n    for i in range(2, int(n**0.5) + 1):\n        if sang[i]:\n            for j in range(i*i, n, i):\n                sang[j] = False\n    </span>return sum(sang)\n\n\nn = int(input())\nprint(sangnt(n))"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3c4397243251374476f25/5e7936061bf3423087a326dd/sub_1765957586768_km8w73tgj.py",
+        "similarity_percent": 51.16,
+        "full_code": "def timsont():\n    n = int(input())\n    if n < 2:\n        print(0)\n        return\n\n    is_prime = [True] * n\n    is_prime[0] = is_prime[1] = False\n\n    for i in range(2, int(n**0.5) + 1):\n        if is_prime[i]:\n            for j in range(i * i, n, i):\n                is_prime[j] = False\n\n    dem = 0\n    for i in range(2, n):\n        if is_prime[i]:\n            dem += 1\n\n    print(dem)\n\ntimsont()\n",
+        "highlighted_code": "def timsont():\n    n = int(input())\n    if n &lt; 2:\n        print(0)\n        return\n\n    is_prime = [T<span class='highlight-green'>rue] * n\n    is_prime[0] = is_prime[1] = False\n\n    for i in range(2, int(n**0.5) + 1):\n        if is_prime[i]:\n            for j in range(i * i, n, i):\n                is_prime[j] = False\n\n    </span>dem = 0\n    for i in range(2, n):\n        if is_prime[i]:\n            dem += 1\n\n    print(dem)\n\ntimsont()\n"
+      },
+      "token_overlap": 88,
+      "max_similarity_percent": 58.67
+    },
+    {
+      "case_id": 62,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3c4397243251374476f25/780627ccd0224069b68e3b8d/sub_1762186419788_nafv45odv.py",
+        "similarity_percent": 58.67,
+        "full_code": "def sangnt(n):\n    if n == 0:\n        return 0\n    sang = [True] * n\n    sang[0] = sang[1] = False  \n    for i in range(2, int(n**0.5) + 1):\n        if sang[i]:\n            for j in range(i*i, n, i):\n                sang[j] = False\n    return sum(sang)\n\n\nn = int(input())\nprint(sangnt(n))",
+        "highlighted_code": "def sangnt(n):\n    if n == 0:\n        return 0\n    sang = [T<span class='highlight-red'>rue] * n\n    sang[0] = sang[1] = False  \n    for i in range(2, int(n**0.5) + 1):\n        if sang[i]:\n            for j in range(i*i, n, i):\n                sang[j] = False\n    </span>return sum(sang)\n\n\nn = int(input())\nprint(sangnt(n))"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3c4397243251374476f25/d82933fea814463eb5b029d1/sub_1765557913928_5x9e72tgh.py",
+        "similarity_percent": 65.19,
+        "full_code": "n = int(input())\n\nif n < 2:\n    print(0)\n    exit()\n\nis_prime = [True] * n\nis_prime[0] = is_prime[1] = False\n\nfor i in range(2, int(n**0.5) +1):\n    if is_prime[i]:\n        for j in range(i*i,n,i):\n            is_prime[j] = False\n\nprint(sum(is_prime))",
+        "highlighted_code": "n = int(input())\n\nif n &lt; 2:\n    print(0)\n    exit()\n\nis_prime = [T<span class='highlight-green'>rue] * n\nis_prime[0] = is_prime[1] = False\n\nfor i in range(2, int(n**0.5) +1):\n    if is_prime[i]:\n        for j in range(i*i,n,i):\n            is_prime[j] = False\n\n</span>print(sum(is_prime))"
+      },
+      "token_overlap": 88,
+      "max_similarity_percent": 65.19
+    },
+    {
+      "case_id": 63,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3c4397243251374476f25/e981f1efc9764aba8b686042/sub_1765133813657_w0gq5ssdy.py",
+        "similarity_percent": 57.75,
+        "full_code": "import math\ndef nguyen_to(s):\n    if s < 2:\n        return False\n    for i in range(2, int(math.sqrt(s)) + 1):\n        if s % i == 0:\n            return False\n    return True\nn = int(input())\nresult = 0\nfor j in range(2, n):\n    if nguyen_to(j):\n        result += 1\nprint(result)",
+        "highlighted_code": "<span class='highlight-red'>import math\ndef nguyen_to(s):\n    if s &lt; 2:\n        return Fa</span>lse\n    for i in range(2, int(math.sqrt(s)) + 1):\n        if s % i == 0:\n            <span class='highlight-red'>return False\n    return True\nn = int(input())\nresult = 0\nfor j in range(</span>2, n):\n    if nguyen_to(j):\n        result += 1\nprint(result)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3c4397243251374476f25/a31a4097e8a74e09b9209282/sub_1761622921376_whjc2zoke.py",
+        "similarity_percent": 39.61,
+        "full_code": "import math\ndef snt(n):\n    if n<2: return False\n    elif n<4: return True\n    elif n%2==0 or n%3==0: return False\n    for i in range (5,int(math.sqrt(n))+1,6):\n        if n%i==0 or n%(i+2)==0:\n            return False\n    return True\n\nn=int(input())\nkq=0\nfor i in range(n):\n    if snt(i):\n        kq+=1\nprint(kq)",
+        "highlighted_code": "<span class='highlight-green'>import math\ndef snt(n):\n    if n&lt;2: return Fa</span>lse\n    elif n&lt;4: return True\n    elif n%2==0 or n%3==0: return False\n    for i in range (5,int(math.sqrt(n))+1,6):\n        if n%i==0 or n%(i+2)==0:\n            <span class='highlight-green'>return False\n    return True\n\nn=int(input())\nkq=0\nfor i in range(</span>n):\n    if snt(i):\n        kq+=1\nprint(kq)"
+      },
+      "token_overlap": 82,
+      "max_similarity_percent": 57.75
+    },
+    {
+      "case_id": 64,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3c4397243251374476f25/8e19101eb0da4e9a92a17098/sub_1762356852369_ubylvw765.py",
+        "similarity_percent": 57.39,
+        "full_code": "import math\ndef checksnt(o):\n    if o < 2:\n        return False\n    else:\n        for i in range (2, int(math.sqrt(o)) + 1):\n            if o % i == 0:\n                return False\n        return True\nn = int(input())\nif n < 2:\n    print(\"0\")\nelse:\n    cnt = 0\n    for j in range(2, n):\n        if checksnt(j) == True:\n            cnt += 1\n    print(cnt)",
+        "highlighted_code": "<span class='highlight-red'>import math\ndef checksnt(o):\n    if o &lt; 2:\n        return Fa</span>lse\n    else:\n        <span class='highlight-red'>for i in range (2, int(math.sqrt(o)) + 1):\n            if o % i == 0:\n                return False\n        return True\nn = int(inpu</span>t())\nif n &lt; 2:\n    print(&#34;0&#34;)\nelse:\n    cnt = 0\n    for j in range(2, n):\n        if checksnt(j) == True:\n            cnt += 1\n    print(cnt)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3c4397243251374476f25/e981f1efc9764aba8b686042/sub_1765134413370_ydpelnsqf.py",
+        "similarity_percent": 62.35,
+        "full_code": "import math\ndef nguyen_to(s):\n    if s < 2:\n        return False\n    for i in range(2, int(math.sqrt(s)) + 1):\n        if s % i == 0:\n            return False\n    return True\nn = int(input())\nresult = 0\nif n <= 2:\n    print(0)\nelse:\n    for j in range(2, n):\n        if nguyen_to(j):\n            result += 1\n    print(result)",
+        "highlighted_code": "<span class='highlight-green'>import math\ndef nguyen_to(s):\n    if s &lt; 2:\n        return Fa</span>lse\n    <span class='highlight-green'>for i in range(2, int(math.sqrt(s)) + 1):\n        if s % i == 0:\n            return False\n    return True\nn = int(inpu</span>t())\nresult = 0\nif n &lt;= 2:\n    print(0)\nelse:\n    for j in range(2, n):\n        if nguyen_to(j):\n            result += 1\n    print(result)"
+      },
+      "token_overlap": 101,
+      "max_similarity_percent": 62.35
+    },
+    {
+      "case_id": 65,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3c4397243251374476f25/8e19101eb0da4e9a92a17098/sub_1762356852369_ubylvw765.py",
+        "similarity_percent": 57.39,
+        "full_code": "import math\ndef checksnt(o):\n    if o < 2:\n        return False\n    else:\n        for i in range (2, int(math.sqrt(o)) + 1):\n            if o % i == 0:\n                return False\n        return True\nn = int(input())\nif n < 2:\n    print(\"0\")\nelse:\n    cnt = 0\n    for j in range(2, n):\n        if checksnt(j) == True:\n            cnt += 1\n    print(cnt)",
+        "highlighted_code": "<span class='highlight-red'>import math\ndef checksnt(o):\n    if o &lt; 2:\n        return Fa</span>lse\n    else:\n        <span class='highlight-red'>for i in range (2, int(math.sqrt(o)) + </span><span class='highlight-red'>1):\n            if o % i == 0:\n                return False\n        return True\nn = int(inpu</span>t())\nif n &lt; 2:\n    print(&#34;0&#34;)\nelse:\n    cnt = 0\n    for j in range(2, n):\n        if checksnt(j) == True:\n            cnt += 1\n    print(cnt)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3c4397243251374476f25/a31a4097e8a74e09b9209282/sub_1761623539652_faoyofmlb.py",
+        "similarity_percent": 68.71,
+        "full_code": "import math\ndef snt(n):\n    if n<2: return False\n    # elif n<4: return True\n    # elif n%2==0 or n%3==0: return False\n    # for i in range (5,int(math.sqrt(n))+1,6):\n    #     if n%i==0 or n%(i+2)==0:\n    #         return False\n    # return True\n    for i in range (2,int(math.sqrt(n))+1,1):\n        if n%i==0: return False\n    return True\n\nn=int(input())\nkq=0\nfor i in range(n):\n    if snt(i):\n        kq+=1\nprint(kq)",
+        "highlighted_code": "<span class='highlight-green'>import math\ndef snt(n):\n    if n&lt;2: return Fa</span>lse\n    # elif n&lt;4: return True\n    # elif n%2==0 or n%3==0: return False\n    # for i in range (5,int(math.sqrt(n))+1,6):\n    #     if n%i==0 or n%(i+2)==0:\n    #         return False\n    # return True\n    <span class='highlight-green'>for i in range (2,int(math.sqrt(n))+</span>1,<span class='highlight-green'>1):\n        if n%i==0: return False\n    return True\n\nn=int(inpu</span>t())\nkq=0\nfor i in range(n):\n    if snt(i):\n        kq+=1\nprint(kq)"
+      },
+      "token_overlap": 101,
+      "max_similarity_percent": 68.71
+    },
+    {
+      "case_id": 66,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3c4397243251374476f25/5e7936061bf3423087a326dd/sub_1765957250051_8vxdgvonq.py",
+        "similarity_percent": 54.81,
+        "full_code": "def timsont():\n    n = int(input())\n\n    if n < 2:\n        print(0)\n        return\n\n    dem = 0\n    for i in range(2, n):\n        la_snt = True\n        for j in range(2, int(i**0.5) + 1):\n            if i % j == 0:\n                la_snt = False\n                break\n        if la_snt:\n            dem += 1\n\n    print(dem)\n\ntimsont()\n",
+        "highlighted_code": "def timsont():\n    n = int(input())\n\n    if n &lt; 2:\n        print(0)\n        return\n\n    <span class='highlight-red'>dem = 0\n    for i in range(2, n):\n        la_snt = True\n        for j in range(2</span>, int(i**0.5) + 1)<span class='highlight-red'>:\n            if i % j == 0:\n                la_snt = False\n                break\n        if la_snt:\n            dem += 1\n\n    print</span>(dem)\n\ntimsont()\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3c4397243251374476f25/5e7936061bf3423087a326dd/sub_1764773792528_olvblefcc.py",
+        "similarity_percent": 81.32,
+        "full_code": "so_nguyen = int(input())\ncount = 0\nfor i in range(2,so_nguyen):\n    snt = True\n    for j in range(2, i):\n        if i%j == 0:\n            snt = False\n            break\n    if snt:\n        count += 1\nprint(count)",
+        "highlighted_code": "so_nguyen = int(input())\n<span class='highlight-green'>count = 0\nfor i in range(2,so_nguyen):\n    snt = True\n    for j in range(2</span>, i)<span class='highlight-green'>:\n        if i%j == 0:\n            snt = False\n            break\n    if snt:\n        count += 1\nprint</span>(count)"
+      },
+      "token_overlap": 74,
+      "max_similarity_percent": 81.32
+    },
+    {
+      "case_id": 67,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3c4397243251374476f25/5e7936061bf3423087a326dd/sub_1765957432881_ixaq1wf92.py",
+        "similarity_percent": 53.28,
+        "full_code": "def timsont():\n    dem = 0\n    n = int(input())\n    if n < 2:\n        print(0)\n        return\n\n    for i in range(2, n):\n        la_snt = True\n        for j in range(2, int((i**0.5)+1)):\n            if i % j == 0:\n                la_snt = False\n                break\n        if la_snt:\n            dem += 1\n\n    print(dem)\n\ntimsont()\n",
+        "highlighted_code": "def timsont():\n    dem = 0\n    n = int(input())\n    if n &lt; 2:\n        print(0)\n        return\n\n    for <span class='highlight-red'>i in range(2, n):\n        la_snt = True\n        for j in range(2</span>, int((i**0.5)+1))<span class='highlight-red'>:\n            if i % j == 0:\n                la_snt = False\n                break\n        if la_snt:\n            dem += 1\n\n    print(dem)\n\ntimsont(</span>)\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3c4397243251374476f25/5e7936061bf3423087a326dd/sub_1765957097079_hkjy6yfgf.py",
+        "similarity_percent": 70.87,
+        "full_code": "def timsont():\n    dem = 0\n    n = int(input())\n\n    for i in range(2, n):\n        la_snt = True\n        for j in range(2, i):\n            if i % j == 0:\n                la_snt = False\n                break\n        if la_snt:\n            dem += 1\n\n    print(dem)\n\ntimsont()\n",
+        "highlighted_code": "def timsont():\n    dem = 0\n    n = int(input())\n\n    for <span class='highlight-green'>i in range(2, n):\n        la_snt = True\n        for j in range(2</span>, i)<span class='highlight-green'>:\n            if i % j == 0:\n                la_snt = False\n                break\n        if la_snt:\n            dem += 1\n\n    print(dem)\n\ntimsont(</span>)\n"
+      },
+      "token_overlap": 73,
+      "max_similarity_percent": 70.87
+    },
+    {
+      "case_id": 68,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3c4397243251374476f25/5e7936061bf3423087a326dd/sub_1765957432881_ixaq1wf92.py",
+        "similarity_percent": 52.55,
+        "full_code": "def timsont():\n    dem = 0\n    n = int(input())\n    if n < 2:\n        print(0)\n        return\n\n    for i in range(2, n):\n        la_snt = True\n        for j in range(2, int((i**0.5)+1)):\n            if i % j == 0:\n                la_snt = False\n                break\n        if la_snt:\n            dem += 1\n\n    print(dem)\n\ntimsont()\n",
+        "highlighted_code": "def timsont():\n    dem = 0\n    n = int(input())\n    if n &lt; 2:\n        print(0)\n        return\n\n    for <span class='highlight-red'>i in range(2, n):\n        la_snt = True\n        for j in range(2, int</span>((i**0.5)+1))<span class='highlight-red'>:\n            if i % j == 0:\n                la_snt = False\n                break\n        if la_snt:\n            dem += 1\n\n    print</span>(dem)\n\ntimsont()\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3c4397243251374476f25/5e7936061bf3423087a326dd/sub_1764773882136_oeycvhzwg.py",
+        "similarity_percent": 66.06,
+        "full_code": "so_nguyen = int(input())\nsnt = None\ncount = 0\nfor i in range(2,so_nguyen):\n    snt = True\n    for j in range(2, int(i**0.5)+1):\n        if i%j == 0:\n            snt = False\n            break\n    if snt:\n        count += 1\nprint(count)",
+        "highlighted_code": "so_nguyen = int(input())\nsnt = None\ncount = 0\nfor <span class='highlight-green'>i in range(2,so_nguyen):\n    snt = True\n    for j in range(2, int</span>(i**0.5)+1)<span class='highlight-green'>:\n        if i%j == 0:\n            snt = False\n            break\n    if snt:\n        count += 1\nprint</span>(count)"
+      },
+      "token_overlap": 72,
+      "max_similarity_percent": 66.06
+    },
+    {
+      "case_id": 69,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3c4397243251374476f25/5e7936061bf3423087a326dd/sub_1765957586768_km8w73tgj.py",
+        "similarity_percent": 51.16,
+        "full_code": "def timsont():\n    n = int(input())\n    if n < 2:\n        print(0)\n        return\n\n    is_prime = [True] * n\n    is_prime[0] = is_prime[1] = False\n\n    for i in range(2, int(n**0.5) + 1):\n        if is_prime[i]:\n            for j in range(i * i, n, i):\n                is_prime[j] = False\n\n    dem = 0\n    for i in range(2, n):\n        if is_prime[i]:\n            dem += 1\n\n    print(dem)\n\ntimsont()\n",
+        "highlighted_code": "def timsont():\n    n = int(input())\n    if n &lt; 2:\n        print(0)\n        return\n\n    is_prime = [T<span class='highlight-red'>rue] * n\n    is_prime[0] = is_prime[1] = False\n\n    for i in range(2, int(n**0.5) + 1):\n        if is_prime[i]:\n            for j in range(i * i, n, i):\n                is_prime[j] = False\n\n    </span>dem = 0\n    for i in range(2, n):\n        if is_prime[i]:\n            dem += 1\n\n    print(dem)\n\ntimsont()\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3c4397243251374476f25/780627ccd0224069b68e3b8d/sub_1762186444507_g51k2n1tv.py",
+        "similarity_percent": 59.06,
+        "full_code": "def sangnt(n):\n    if n < 2:\n        return 0\n    sang = [True] * n\n    sang[0] = sang[1] = False  \n    for i in range(2, int(n**0.5) + 1):\n        if sang[i]:\n            for j in range(i*i, n, i):\n                sang[j] = False\n    return sum(sang)\n\n\nn = int(input())\nprint(sangnt(n))",
+        "highlighted_code": "def sangnt(n):\n    if n &lt; 2:\n        return 0\n    sang = [T<span class='highlight-green'>rue] * n\n    sang[0] = sang[1] = False  \n    for i in range(2, int(n**0.5) + 1):\n        if sang[i]:\n            for j in range(i*i, n, i):\n                sang[j] = False\n    </span>return sum(sang)\n\n\nn = int(input())\nprint(sangnt(n))"
+      },
+      "token_overlap": 88,
+      "max_similarity_percent": 59.06
+    },
+    {
+      "case_id": 70,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3c4397243251374476f25/a31a4097e8a74e09b9209282/sub_1761622921376_whjc2zoke.py",
+        "similarity_percent": 50.24,
+        "full_code": "import math\ndef snt(n):\n    if n<2: return False\n    elif n<4: return True\n    elif n%2==0 or n%3==0: return False\n    for i in range (5,int(math.sqrt(n))+1,6):\n        if n%i==0 or n%(i+2)==0:\n            return False\n    return True\n\nn=int(input())\nkq=0\nfor i in range(n):\n    if snt(i):\n        kq+=1\nprint(kq)",
+        "highlighted_code": "<span class='highlight-red'>import math\ndef snt(n):\n    if n&lt;2: return Fa</span>lse\n    elif n&lt;4: return True\n    elif n%2==0 or n%3==0: return False\n    for i in range (5,int(math.sqrt(n))+1,6):\n        if n%i==0 or n%(i+2)==0:\n            <span class='highlight-red'>return False\n    return True\n\nn=int(input())\nkq=0\nfor i in range(n):\n    if snt(i):\n        kq+=1\nprint(kq)</span>"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3c4397243251374476f25/a31a4097e8a74e09b9209282/sub_1761623539652_faoyofmlb.py",
+        "similarity_percent": 70.75,
+        "full_code": "import math\ndef snt(n):\n    if n<2: return False\n    # elif n<4: return True\n    # elif n%2==0 or n%3==0: return False\n    # for i in range (5,int(math.sqrt(n))+1,6):\n    #     if n%i==0 or n%(i+2)==0:\n    #         return False\n    # return True\n    for i in range (2,int(math.sqrt(n))+1,1):\n        if n%i==0: return False\n    return True\n\nn=int(input())\nkq=0\nfor i in range(n):\n    if snt(i):\n        kq+=1\nprint(kq)",
+        "highlighted_code": "<span class='highlight-green'>import math\ndef snt(n):\n    if n&lt;2: return Fa</span>lse\n    # elif n&lt;4: return True\n    # elif n%2==0 or n%3==0: return False\n    # for i in range (5,int(math.sqrt(n))+1,6):\n    #     if n%i==0 or n%(i+2)==0:\n    #         return False\n    # return True\n    for i in range (2,int(math.sqrt(n))+1,1):\n        if n%i==0: <span class='highlight-green'>return False\n    return True\n\nn=int(input())\nkq=0\nfor i in range(n):\n    if snt(i):\n        kq+=1\nprint(kq)</span>"
+      },
+      "token_overlap": 104,
+      "max_similarity_percent": 70.75
+    },
+    {
+      "case_id": 71,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3c4397243251374476f25/5e7936061bf3423087a326dd/sub_1765957432881_ixaq1wf92.py",
+        "similarity_percent": 49.64,
+        "full_code": "def timsont():\n    dem = 0\n    n = int(input())\n    if n < 2:\n        print(0)\n        return\n\n    for i in range(2, n):\n        la_snt = True\n        for j in range(2, int((i**0.5)+1)):\n            if i % j == 0:\n                la_snt = False\n                break\n        if la_snt:\n            dem += 1\n\n    print(dem)\n\ntimsont()\n",
+        "highlighted_code": "def timsont():\n    dem = 0\n    n = int(input())\n    if n &lt; 2:\n        print(0)\n        return\n\n    for <span class='highlight-red'>i in range(2, n):\n        la_snt = True\n        for j in range(2</span>, int((i**0.5)+1))<span class='highlight-red'>:\n            if i % j == 0:\n                la_snt = False\n                break\n        if la_snt:\n            dem += 1\n\n    print</span>(dem)\n\ntimsont()\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3c4397243251374476f25/5e7936061bf3423087a326dd/sub_1764773729872_f1403w5j6.py",
+        "similarity_percent": 70.1,
+        "full_code": "so_nguyen = int(input())\nsnt = None\ncount = 0\nfor i in range(2,so_nguyen):\n    snt = True\n    for j in range(2, i):\n        if i%j == 0:\n            snt = False\n            break\n    if snt:\n        count += 1\nprint(count)",
+        "highlighted_code": "so_nguyen = int(input())\nsnt = None\ncount = 0\nfor <span class='highlight-green'>i in range(2,so_nguyen):\n    snt = True\n    for j in range(2</span>, i)<span class='highlight-green'>:\n        if i%j == 0:\n            snt = False\n            break\n    if snt:\n        count += 1\nprint</span>(count)"
+      },
+      "token_overlap": 68,
+      "max_similarity_percent": 70.1
+    },
+    {
+      "case_id": 72,
+      "file1": {
+        "path": "/app/app/data/submissions/68e3c4397243251374476f25/5e7936061bf3423087a326dd/sub_1765957432881_ixaq1wf92.py",
+        "similarity_percent": 49.64,
+        "full_code": "def timsont():\n    dem = 0\n    n = int(input())\n    if n < 2:\n        print(0)\n        return\n\n    for i in range(2, n):\n        la_snt = True\n        for j in range(2, int((i**0.5)+1)):\n            if i % j == 0:\n                la_snt = False\n                break\n        if la_snt:\n            dem += 1\n\n    print(dem)\n\ntimsont()\n",
+        "highlighted_code": "def timsont():\n    dem = 0\n    n = int(input())\n    if n &lt; 2:\n        print(0)\n        return\n\n    for <span class='highlight-red'>i in range(2, n):\n        la_snt = True\n        for j in range(2</span>, int((i**0.5)+1))<span class='highlight-red'>:\n            if i % j == 0:\n                la_snt = False\n                break\n        if la_snt:\n            dem += 1\n\n    print</span>(dem)\n\ntimsont()\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68e3c4397243251374476f25/5e7936061bf3423087a326dd/sub_1764773792528_olvblefcc.py",
+        "similarity_percent": 74.73,
+        "full_code": "so_nguyen = int(input())\ncount = 0\nfor i in range(2,so_nguyen):\n    snt = True\n    for j in range(2, i):\n        if i%j == 0:\n            snt = False\n            break\n    if snt:\n        count += 1\nprint(count)",
+        "highlighted_code": "so_nguyen = int(input())\ncount = 0\nfor <span class='highlight-green'>i in range(2,so_nguyen):\n    snt = True\n    for j in range(2</span>, i)<span class='highlight-green'>:\n        if i%j == 0:\n            snt = False\n            break\n    if snt:\n        count += 1\nprint</span>(count)"
+      },
+      "token_overlap": 68,
+      "max_similarity_percent": 74.73
     }
   ]
 }

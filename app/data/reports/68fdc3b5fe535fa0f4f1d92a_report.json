@@ -4,450 +4,1164 @@
     "min_token_overlap": 80,
     "min_similarity_percent": 60
   },
-  "total_cases_found": 215,
-  "total_cases_filtered": 26,
+  "total_cases_found": 391,
+  "total_cases_filtered": 68,
   "cases": [
     {
       "case_id": 1,
       "file1": {
-        "path": "/app/app/data/submissions/68fdc3b5fe535fa0f4f1d92a/f95120b3a38a461085ef58cb/sub_1762013334736_1ocfys9ak.py",
+        "path": "/app/app/data/submissions/68fdc3b5fe535fa0f4f1d92a/ac7514dacc0a4c32abe1c656/sub_1765844913464_f1qg0ra34.py",
         "similarity_percent": 100.0,
-        "full_code": "n = int(input())\narr = list(map(int, input().split()))\nmissing = [i for i in range(1, max(arr)+1) if i not in arr]\nprint(\"Excellent!\" if not missing else \" \".join(map(str,missing)))",
-        "highlighted_code": "<span class='highlight-red'>n = int(input())\narr = list(map(int, input().split()))\nmissing = [i for i in range(1, max(arr)+1) if i not in arr]\nprint(&#34;Excellent!&#34; if not missing else &#34; &#34;.join(map(str,missing)))</span>"
+        "full_code": "n = int(input())\nif n == 5:\n    print(3)\nelse:\n    print('Excellent!')",
+        "highlighted_code": "<span class='highlight-red'>n = int(input())\nif n == 5:\n    print(3)\nelse:\n    print(&#39;Excellent!</span>&#39;)"
       },
       "file2": {
-        "path": "/app/app/data/submissions/68fdc3b5fe535fa0f4f1d92a/e59c34a1bebb49d29bfb3592/sub_1761813569252_72p779cm7.py",
+        "path": "/app/app/data/submissions/68fdc3b5fe535fa0f4f1d92a/ac7514dacc0a4c32abe1c656/sub_1765845007331_y2kv5m2ol.py",
         "similarity_percent": 100.0,
-        "full_code": "n = int(input())\narr = list(map(int,input().split()))\nt = [i for i in range(1,max(arr)+1) if i not in arr]\nprint(\"Excellent!\" if not t else \" \".join(map(str,t)))\n",
-        "highlighted_code": "<span class='highlight-green'>n = int(input())\narr = list(map(int,input().split()))\nt = [i for i in range(1,max(arr)+1) if i not in arr]\nprint(&#34;Excellent!&#34; if not t else &#34; &#34;.join(map(str,t)))</span>\n"
+        "full_code": "n = int(input())\nif n == 5:\n    print(3)\nelse:\n    print('Excellent!')",
+        "highlighted_code": "<span class='highlight-green'>n = int(input())\nif n == 5:\n    print(3)\nelse:\n    print(&#39;Excellent!</span>&#39;)"
       },
-      "token_overlap": 116,
+      "token_overlap": 42,
       "max_similarity_percent": 100.0
     },
     {
       "case_id": 2,
       "file1": {
-        "path": "/app/app/data/submissions/68fdc3b5fe535fa0f4f1d92a/345569c455a14db085eec8e9/sub_1762614278449_1orb0b1l9.py",
+        "path": "/app/app/data/submissions/68fdc3b5fe535fa0f4f1d92a/ac7514dacc0a4c32abe1c656/sub_1765844913464_f1qg0ra34.py",
         "similarity_percent": 100.0,
-        "full_code": "a = int(input())\nso = []\nwhile len(so) <a:\n    so += list(map(int,input().split()))\nthieu = []\nfor i in range(1,a+1):\n    if i not in so:\n        thieu.append(i)\nif not thieu:\n    print(\"Excellent!\")\nelse:\n    for x in thieu:\n        print(x)\n",
-        "highlighted_code": "<span class='highlight-red'>a = int(input())\nso = []\nwhile len(so) &lt;a:\n    so += list(map(int,input().split()))\nthieu = []\nfor i in range(1,a+1):\n    if i not in so:\n        thieu.append(i)\nif not thieu:\n    print(&#34;Excellent!&#34;)\nelse:\n    for x in thieu:\n        print</span>(x)\n"
+        "full_code": "n = int(input())\nif n == 5:\n    print(3)\nelse:\n    print('Excellent!')",
+        "highlighted_code": "<span class='highlight-red'>n = int(input())\nif n == 5:\n    print(3)\nelse:\n    print(&#39;Excellent!</span>&#39;)"
       },
       "file2": {
-        "path": "/app/app/data/submissions/68fdc3b5fe535fa0f4f1d92a/8e19101eb0da4e9a92a17098/sub_1761635940261_pcj1u2u5j.py",
-        "similarity_percent": 95.1,
-        "full_code": "n = int(input())\na = []\nwhile len(a) < n:\n    a += list(map(int, input().split()))\nln = max(a)\nm = []\nfor i in range(1, ln + 1):\n    if i not in a:\n        m.append(i)\nif not m:\n    print(\"Excellent!\")\nelse:\n    for x in m:\n        print(x) ",
-        "highlighted_code": "<span class='highlight-green'>n = int(input())\na = []\nwhile len(a) &lt; n:\n    a += list(map(int, input().split()))\n</span>ln = max(a<span class='highlight-green'>)\nm = []\nfor i in range(1, ln + 1):\n    if i not in a:\n        m.append(i)\nif not m:\n    print(&#34;Excellent!&#34;)\nelse:\n    for x in m:\n        print</span>(x) "
+        "path": "/app/app/data/submissions/68fdc3b5fe535fa0f4f1d92a/ac7514dacc0a4c32abe1c656/sub_1765846493848_shmstx1ts.py",
+        "similarity_percent": 100.0,
+        "full_code": "n = int(input())\nif n == 5:\n    print(3)\nelse:\n    print('Excellent!')",
+        "highlighted_code": "<span class='highlight-green'>n = int(input())\nif n == 5:\n    print(3)\nelse:\n    print(&#39;Excellent!</span>&#39;)"
       },
-      "token_overlap": 135,
+      "token_overlap": 42,
       "max_similarity_percent": 100.0
     },
     {
       "case_id": 3,
       "file1": {
-        "path": "/app/app/data/submissions/68fdc3b5fe535fa0f4f1d92a/51bbd72f42174843b97698b4/sub_1761621281589_6tdnhpy70.py",
-        "similarity_percent": 93.2,
-        "full_code": "n = int(input())\ncac_so = []\nwhile len(cac_so) < n:\n    cac_so.extend(map(int, input().split()))\nmax_so = max(cac_so)\ntap_hop_so = set(cac_so)\nso_thieu = []\nfor i in range(1, max_so + 1):\n    if i not in tap_hop_so:\n        so_thieu.append(i)\nif not so_thieu:\n    print(\"Excellent!\")\nelse:\n    for so in so_thieu:\n        print(so)",
-        "highlighted_code": "<span class='highlight-red'>n = int(input())\ncac_so = []\nwhile len(cac_so) &lt; </span>n:\n    cac_so.extend<span class='highlight-red'>(map(int, input().split()))\nmax_so = max(cac_so)\n</span>tap_hop_so = set<span class='highlight-red'>(cac_so)\nso_thieu = []\nfor i in range(1, max_so + 1):\n    if i not in tap_hop_so:\n        so_thieu.append(i)\nif not so_thieu:\n    print(&#34;Excellent!&#34;)\nelse:\n    for so in so_thieu:\n        print</span>(so)"
+        "path": "/app/app/data/submissions/68fdc3b5fe535fa0f4f1d92a/ac7514dacc0a4c32abe1c656/sub_1765845007331_y2kv5m2ol.py",
+        "similarity_percent": 100.0,
+        "full_code": "n = int(input())\nif n == 5:\n    print(3)\nelse:\n    print('Excellent!')",
+        "highlighted_code": "<span class='highlight-red'>n = int(input())\nif n == 5:\n    print(3)\nelse:\n    print(&#39;Excellent!</span>&#39;)"
       },
       "file2": {
-        "path": "/app/app/data/submissions/68fdc3b5fe535fa0f4f1d92a/8e19101eb0da4e9a92a17098/sub_1761635940261_pcj1u2u5j.py",
-        "similarity_percent": 93.71,
-        "full_code": "n = int(input())\na = []\nwhile len(a) < n:\n    a += list(map(int, input().split()))\nln = max(a)\nm = []\nfor i in range(1, ln + 1):\n    if i not in a:\n        m.append(i)\nif not m:\n    print(\"Excellent!\")\nelse:\n    for x in m:\n        print(x) ",
-        "highlighted_code": "<span class='highlight-green'>n = int(input())\na = []\nwhile len(a) &lt; </span>n:\n    a += list<span class='highlight-green'>(map(int, input().split()))\nln = max(a)\nm = []\nfor i in range(1, ln + 1):\n    if i not in a:\n        m.append(i)\nif not m:\n    print(&#34;Excellent!&#34;)\nelse:\n    for x in m:\n        print</span>(x) "
+        "path": "/app/app/data/submissions/68fdc3b5fe535fa0f4f1d92a/ac7514dacc0a4c32abe1c656/sub_1765846493848_shmstx1ts.py",
+        "similarity_percent": 100.0,
+        "full_code": "n = int(input())\nif n == 5:\n    print(3)\nelse:\n    print('Excellent!')",
+        "highlighted_code": "<span class='highlight-green'>n = int(input())\nif n == 5:\n    print(3)\nelse:\n    print(&#39;Excellent!</span>&#39;)"
       },
-      "token_overlap": 137,
-      "max_similarity_percent": 93.71
+      "token_overlap": 42,
+      "max_similarity_percent": 100.0
     },
     {
       "case_id": 4,
       "file1": {
-        "path": "/app/app/data/submissions/68fdc3b5fe535fa0f4f1d92a/8045cd76adf946038858d2bc/sub_1762478490331_iyvu6ryw7.py",
-        "similarity_percent": 92.62,
-        "full_code": "n=int(input())\nso=list(map(int,input().split()))\nlon=max(so)\ndanhsach=[]\nfor i in range(1,lon+1):\n    if i not in so:\n        danhsach.append(i)\nif danhsach:\n    for x in danhsach:\n        print(x)\nelse:\n        print('Excellent!')\n",
-        "highlighted_code": "<span class='highlight-red'>n=int(input())\nso=list(map(int,input().split()))\nlon=max(so)\ndanhsach=[]\nfor i in range(1,lon+1):\n    if i not in so:\n        danhsach.append(i</span>)\nif danhsach:\n    for x <span class='highlight-red'>in danhsach:\n        print(x)\nelse:\n        print(&#39;Excellent!</span>&#39;)\n"
+        "path": "/app/app/data/submissions/68fdc3b5fe535fa0f4f1d92a/ffdb326842044f2e98b7aaa7/sub_1761464004960_unt1xv0vb.py",
+        "similarity_percent": 100.0,
+        "full_code": "n = int(input())\n\nif n == 5:\n    print(3)\nelif n == 4:\n    print(\"Excellent!\")\nelse:\n    print(1)\n    print(4)\n    print(7)",
+        "highlighted_code": "<span class='highlight-red'>n = int(input())\n\nif n == 5:\n    print(3)\nelif n == 4:\n    print(&#34;Excellent!&#34;)\nelse:\n    print(1)\n    print(4)\n    print(</span>7)"
       },
       "file2": {
-        "path": "/app/app/data/submissions/68fdc3b5fe535fa0f4f1d92a/bcb420abb39b4af095b63cf8/sub_1762424457908_cjonttd4i.py",
-        "similarity_percent": 84.96,
-        "full_code": "n=int(input())\nd_s=list(map(int,input().split()))\nso_lon_nhat=max(d_s)\nd_s_moi=[]\nfor i in range(1,so_lon_nhat+1):\n    if i not in d_s:\n        d_s_moi.append(i)\nso_chu_so=len(d_s_moi)\nif so_chu_so>=1:\n    for a in d_s_moi:\n        print(a)\nelse:\n    print(\"Excellent!\")\n",
-        "highlighted_code": "<span class='highlight-green'>n=int(input())\nd_s=list(map(int,input().split()))\nso_lon_nhat=max(d_s)\nd_s_moi=[]\nfor i in range(1,so_lon_nhat+1):\n    if i not in d_s:\n        d_s_moi.append(i</span>)\nso_chu_so=len(d_s_moi)\nif so_chu_so&gt;=1:\n    for a <span class='highlight-green'>in d_s_moi:\n        print(a)\nelse:\n    print(&#34;Excellent!</span>&#34;)\n"
+        "path": "/app/app/data/submissions/68fdc3b5fe535fa0f4f1d92a/761f0dfbd0fb4be3ada99651/sub_1763568620895_aq0tmnuqy.py",
+        "similarity_percent": 100.0,
+        "full_code": "n = int(input()) \nif n == 5: \n    print(3) \nelif n == 4: \n    print(\"Excellent\") \nelse: \n    print(1)\n    print(4) \n    print(7) ",
+        "highlighted_code": "<span class='highlight-green'>n = int(input()) \nif n == 5: \n    print(3) \nelif n == 4: \n    print(&#34;Excellent&#34;) \nelse: \n    print(1)\n    print(4) \n    print(</span>7) "
       },
-      "token_overlap": 113,
-      "max_similarity_percent": 92.62
+      "token_overlap": 75,
+      "max_similarity_percent": 100.0
     },
     {
       "case_id": 5,
       "file1": {
-        "path": "/app/app/data/submissions/68fdc3b5fe535fa0f4f1d92a/8045cd76adf946038858d2bc/sub_1762478490331_iyvu6ryw7.py",
-        "similarity_percent": 83.61,
-        "full_code": "n=int(input())\nso=list(map(int,input().split()))\nlon=max(so)\ndanhsach=[]\nfor i in range(1,lon+1):\n    if i not in so:\n        danhsach.append(i)\nif danhsach:\n    for x in danhsach:\n        print(x)\nelse:\n        print('Excellent!')\n",
-        "highlighted_code": "n=int(input())\nso=list<span class='highlight-red'>(map(int,input().split()))\nlon=max(so)\ndanhsach=[]\nfor i in range(1,lon+1):\n    if i not in so:\n        danhsach.append(i)\nif danhsach:\n    for x in danhsach:\n        print(x)\nelse:\n        print(&#39;Excellent!</span>&#39;)\n"
+        "path": "/app/app/data/submissions/68fdc3b5fe535fa0f4f1d92a/ffdb326842044f2e98b7aaa7/sub_1761464004960_unt1xv0vb.py",
+        "similarity_percent": 100.0,
+        "full_code": "n = int(input())\n\nif n == 5:\n    print(3)\nelif n == 4:\n    print(\"Excellent!\")\nelse:\n    print(1)\n    print(4)\n    print(7)",
+        "highlighted_code": "<span class='highlight-red'>n = int(input())\n\nif n == 5:\n    print(3)\nelif n == 4:\n    print(&#34;Excellent!&#34;)\nelse:\n    print(1)\n    print(4)\n    print(</span>7)"
       },
       "file2": {
-        "path": "/app/app/data/submissions/68fdc3b5fe535fa0f4f1d92a/f95120b3a38a461085ef58cb/sub_1761720583905_umqum6slo.py",
-        "similarity_percent": 72.41,
-        "full_code": "n = int(input())\na = []\nwhile len(a) < n:\n    a.extend(map(int, input().split()))\n    gtln = max(a)\n    ds = set(a)\n    sobm = []\n    for i in range(1, gtln +1):\n        if i not in ds:\n            sobm.append(i)\n        if sobm:\n            for so in sobm:\n                print(sobm)\n        else:\n            print(\"Excellent!\")",
-        "highlighted_code": "n = int(input())\na = []\nwhile len(a) &lt; n:\n    a.extend<span class='highlight-green'>(map(int, input().split()))\n    gtln = max(a)\n    </span>ds = set<span class='highlight-green'>(a)\n    sobm = []\n    for i in range(1, gtln +1):\n        if i not in ds:\n            sobm.append(i)\n        if sobm:\n            for so in sobm:\n                print(sobm)\n        else:\n            print(&#34;Excellent!</span>&#34;)"
+        "path": "/app/app/data/submissions/68fdc3b5fe535fa0f4f1d92a/761f0dfbd0fb4be3ada99651/sub_1763568641919_0d4zk68wo.py",
+        "similarity_percent": 100.0,
+        "full_code": "n = int(input()) \nif n == 5: \n    print(3) \nelif n == 4: \n    print(\"Excellent!\") \nelse: \n    print(1)\n    print(4) \n    print(7) ",
+        "highlighted_code": "<span class='highlight-green'>n = int(input()) \nif n == 5: \n    print(3) \nelif n == 4: \n    print(&#34;Excellent!&#34;) \nelse: \n    print(1)\n    print(4) \n    print(</span>7) "
       },
-      "token_overlap": 102,
-      "max_similarity_percent": 83.61
+      "token_overlap": 75,
+      "max_similarity_percent": 100.0
     },
     {
       "case_id": 6,
       "file1": {
-        "path": "/app/app/data/submissions/68fdc3b5fe535fa0f4f1d92a/222412e06e454a339defe331/sub_1762345139932_kngimc100.py",
-        "similarity_percent": 83.33,
-        "full_code": "n=input()\na=list(map(int,input().split()))\nb=min(a)\nc=max(a)\nv=\"Excellent!\"\nfor i in range(b,c+1):\n    if i in a:\n        continue\n    else:\n        v=\"\"\n        v+=str(i)\nprint(v)",
-        "highlighted_code": "<span class='highlight-red'>n=input()\na=list(map(int,input().split()))\nb=min(a)\nc=max(a)\nv=&#34;Excellent!&#34;\nfor i in range(b,c+1):\n    if i in a:\n        continue\n    els</span>e:\n        v=&#34;&#34;\n        v+=str(i)\nprint(v)"
+        "path": "/app/app/data/submissions/68fdc3b5fe535fa0f4f1d92a/8d079daede8c4b3d9268ce06/sub_1767983882458_ucq05x8lb.py",
+        "similarity_percent": 100.0,
+        "full_code": "n = int(input())\n\nnums = []\nwhile len(nums) < n:\n    nums.extend(map(int, input().split()))\n\nnums_set = set(nums)\nmax_val = max(nums)\n\nfound = False\n\nfor i in range(1, max_val + 1):\n    if i not in nums_set:\n        print(i)\n        found = True\n\nif not found:\n    print(\"Excellent!\")\n\n",
+        "highlighted_code": "<span class='highlight-red'>n = int(input())\n\nnums = []\nwhile len(nums) &lt; n:\n    nums.extend(map(int, input().split()))\n\nnums_set = set(nums)\nmax_val = max(nums)\n\nfound = False\n\nfor i in range(1, max_val + 1):\n    if i not in nums_set:\n        print(i)\n        found = True\n\nif not found:\n    print(&#34;Excellent!&#34;)</span>\n\n"
       },
       "file2": {
-        "path": "/app/app/data/submissions/68fdc3b5fe535fa0f4f1d92a/222412e06e454a339defe331/sub_1762345067239_67h0a44tx.py",
-        "similarity_percent": 86.36,
-        "full_code": "n=input()\na=list(map(int,input().split()))\nb=min(a)\nc=max(a)\nv=\"Excellent!\"\nfor i in range(b,c+1):\n    if i in a:\n        continue\n    else:\n        v+=str(i)\nprint(v)",
-        "highlighted_code": "<span class='highlight-green'>n=input()\na=list(map(int,input().split()))\nb=min(a)\nc=max(a)\nv=&#34;Excellent!&#34;\nfor i in range(b,c+1):\n    if i in a:\n        continue\n    els</span>e:\n        v+=str(i)\nprint(v)"
+        "path": "/app/app/data/submissions/68fdc3b5fe535fa0f4f1d92a/8d079daede8c4b3d9268ce06/sub_1767983891921_p04jjxxu5.py",
+        "similarity_percent": 100.0,
+        "full_code": "n = int(input())\n\nnums = []\nwhile len(nums) < n:\n    nums.extend(map(int, input().split()))\n\nnums_set = set(nums)\nmax_val = max(nums)\n\nfound = False\n\nfor i in range(1, max_val + 1):\n    if i not in nums_set:\n        print(i)\n        found = True\n\nif not found:\n    print(\"Excellent!\")",
+        "highlighted_code": "<span class='highlight-green'>n = int(input())\n\nnums = []\nwhile len(nums) &lt; n:\n    nums.extend(map(int, input().split()))\n\nnums_set = set(nums)\nmax_val = max(nums)\n\nfound = False\n\nfor i in range(1, max_val + 1):\n    if i not in nums_set:\n        print(i)\n        found = True\n\nif not found:\n    print(&#34;Excellent!&#34;)</span>"
       },
-      "token_overlap": 95,
-      "max_similarity_percent": 86.36
+      "token_overlap": 140,
+      "max_similarity_percent": 100.0
     },
     {
       "case_id": 7,
       "file1": {
-        "path": "/app/app/data/submissions/68fdc3b5fe535fa0f4f1d92a/8e236cb825b041b0a82527f2/sub_1761532307017_76ykzomhp.py",
-        "similarity_percent": 82.58,
-        "full_code": "n = int(input())\nnums = []\n\nwhile len(nums) < n:\n    sz = len(nums)\n    inp = list(map(int, input().split()))[: n - sz]\n    nums += inp\n\ns1 = set(nums)\nmiss = False\n\nfor i in range(1, max(nums)):\n    if i not in s1:\n        print(i)\n        miss = True\n\nif not miss:\n    print(\"Excellent!\")\n",
-        "highlighted_code": "<span class='highlight-red'>n = int(input())\nnums = []\n\nwhile len(nums) &lt; n:\n    sz = </span>len(nums)\n    inp = l<span class='highlight-red'>ist(map(int, input().split()))</span>[: n - sz]\n    nums += inp\n\n<span class='highlight-red'>s1 = set(nums)\nmiss = False\n\nfor i in range(1</span>, max(nums))<span class='highlight-red'>:\n    if i not in s1:\n        print(i)\n        miss = True\n\nif not miss:\n    print(&#34;Excellent!&#34;</span>)\n"
+        "path": "/app/app/data/submissions/68fdc3b5fe535fa0f4f1d92a/761f0dfbd0fb4be3ada99651/sub_1763568620895_aq0tmnuqy.py",
+        "similarity_percent": 100.0,
+        "full_code": "n = int(input()) \nif n == 5: \n    print(3) \nelif n == 4: \n    print(\"Excellent\") \nelse: \n    print(1)\n    print(4) \n    print(7) ",
+        "highlighted_code": "<span class='highlight-red'>n = int(input()) \nif n == 5: \n    print(3) \nelif n == 4: \n    print(&#34;Excellent&#34;) \nelse: \n    print(1)\n    print(4) \n    print(</span>7) "
       },
       "file2": {
-        "path": "/app/app/data/submissions/68fdc3b5fe535fa0f4f1d92a/91001b54722a4328a2b7b879/sub_1761653961525_tl3d9e4oi.py",
-        "similarity_percent": 86.49,
-        "full_code": "# Nhập số lượng số hiệu\nn = int(input())\n\n# Tạo danh sách rỗng để lưu tất cả số hiệu\nnumbers = []\n\n# Nhập n số (có thể trên nhiều dòng)\nwhile len(numbers) < n:\n    # Nhập một dòng, tách thành từng số rồi chuyển sang kiểu int\n    line = list(map(int, input().split()))\n    # Thêm các số này vào danh sách numbers\n    numbers.extend(line)\n\n# Tìm số hiệu lớn nhất\nmax_num = max(numbers)\n\n# Tạo tập hợp (set) để tìm kiếm nhanh hơn\nnum_set = set(numbers)\n\n# Biến kiểm tra xem có số nào bị thiếu không\nmissing_found = False\n\n# Duyệt từ 1 đến max_num\nfor i in range(1, max_num + 1):\n    if i not in num_set:\n        print(i)\n        missing_found = True\n\n# Nếu không thiếu số nào, in ra Excellent!\nif not missing_found:\n    print(\"Excellent!\")\n",
-        "highlighted_code": "# Nhập số lượng số hiệu\n<span class='highlight-green'>n = int(input())\n\n# Tạo danh sách rỗng để lưu tất cả số hiệu\nnumbers = []\n\n# Nhập n số (có thể trên nhiều dòng)\nwhile len(numbers) &lt; n:\n    # Nhập một dòng, tách thành từng số rồi chuyển sang kiểu int\n    line = </span>l<span class='highlight-green'>ist(map(int, input().split()))\n    # Thêm các số này vào danh sách numbers\n    </span>numbers.extend(line)\n\n# Tìm số hiệu lớn nhất\nmax_num = max(numbers)\n\n# Tạo tập hợp (set) để tìm kiếm nhanh hơn\n<span class='highlight-green'>num_set = set(numbers)\n\n# Biến kiểm tra xem có số nào bị thiếu không\nmissing_found = False\n\n# Duyệt từ 1 đến max_num\nfor i in range(1</span>, max_num + 1)<span class='highlight-green'>:\n    if i not in num_set:\n        print(i)\n        missing_found = True\n\n# Nếu không thiếu số nào, in ra Excellent!\nif not missing_found:\n    print(&#34;Excellent!&#34;</span>)\n"
+        "path": "/app/app/data/submissions/68fdc3b5fe535fa0f4f1d92a/761f0dfbd0fb4be3ada99651/sub_1763568641919_0d4zk68wo.py",
+        "similarity_percent": 100.0,
+        "full_code": "n = int(input()) \nif n == 5: \n    print(3) \nelif n == 4: \n    print(\"Excellent!\") \nelse: \n    print(1)\n    print(4) \n    print(7) ",
+        "highlighted_code": "<span class='highlight-green'>n = int(input()) \nif n == 5: \n    print(3) \nelif n == 4: \n    print(&#34;Excellent!&#34;) \nelse: \n    print(1)\n    print(4) \n    print(</span>7) "
       },
-      "token_overlap": 128,
-      "max_similarity_percent": 86.49
+      "token_overlap": 75,
+      "max_similarity_percent": 100.0
     },
     {
       "case_id": 8,
       "file1": {
-        "path": "/app/app/data/submissions/68fdc3b5fe535fa0f4f1d92a/f95120b3a38a461085ef58cb/sub_1761720583905_umqum6slo.py",
-        "similarity_percent": 77.93,
-        "full_code": "n = int(input())\na = []\nwhile len(a) < n:\n    a.extend(map(int, input().split()))\n    gtln = max(a)\n    ds = set(a)\n    sobm = []\n    for i in range(1, gtln +1):\n        if i not in ds:\n            sobm.append(i)\n        if sobm:\n            for so in sobm:\n                print(sobm)\n        else:\n            print(\"Excellent!\")",
-        "highlighted_code": "<span class='highlight-red'>n = int(input())\na = []\nwhile len(a) &lt; n:\n    a.extend(map(int, input().split()))\n    gtln = max(a)\n    ds = set(a)\n    sobm = []\n    for i in range(1, gtln +1):\n        if i not in ds:\n            sobm.append(i)\n        i</span>f sobm:\n            for so in sobm:\n                print(sobm)\n        else:\n            print(&#34;Excellent!&#34;)"
+        "path": "/app/app/data/submissions/68fdc3b5fe535fa0f4f1d92a/e59c34a1bebb49d29bfb3592/sub_1761813569252_72p779cm7.py",
+        "similarity_percent": 100.0,
+        "full_code": "n = int(input())\narr = list(map(int,input().split()))\nt = [i for i in range(1,max(arr)+1) if i not in arr]\nprint(\"Excellent!\" if not t else \" \".join(map(str,t)))\n",
+        "highlighted_code": "<span class='highlight-red'>n = int(input())\narr = list(map(int,input().split()))\nt = [i for i in range(1,max(arr)+1) if i not in arr]\nprint(&#34;Excellent!&#34; if not t else &#34; &#34;.join(map(str,t)))</span>\n"
       },
       "file2": {
-        "path": "/app/app/data/submissions/68fdc3b5fe535fa0f4f1d92a/51bbd72f42174843b97698b4/sub_1761621281589_6tdnhpy70.py",
-        "similarity_percent": 76.87,
-        "full_code": "n = int(input())\ncac_so = []\nwhile len(cac_so) < n:\n    cac_so.extend(map(int, input().split()))\nmax_so = max(cac_so)\ntap_hop_so = set(cac_so)\nso_thieu = []\nfor i in range(1, max_so + 1):\n    if i not in tap_hop_so:\n        so_thieu.append(i)\nif not so_thieu:\n    print(\"Excellent!\")\nelse:\n    for so in so_thieu:\n        print(so)",
-        "highlighted_code": "<span class='highlight-green'>n = int(input())\ncac_so = []\nwhile len(cac_so) &lt; n:\n    cac_so.extend(map(int, input().split()))\nmax_so = max(cac_so)\ntap_hop_so = set(cac_so)\nso_thieu = []\nfor i in range(1, max_so + 1):\n    if i not in tap_hop_so:\n        so_thieu.append(i)\ni</span>f not so_thieu:\n    print(&#34;Excellent!&#34;)\nelse:\n    for so in so_thieu:\n        print(so)"
+        "path": "/app/app/data/submissions/68fdc3b5fe535fa0f4f1d92a/f95120b3a38a461085ef58cb/sub_1762013334736_1ocfys9ak.py",
+        "similarity_percent": 100.0,
+        "full_code": "n = int(input())\narr = list(map(int, input().split()))\nmissing = [i for i in range(1, max(arr)+1) if i not in arr]\nprint(\"Excellent!\" if not missing else \" \".join(map(str,missing)))",
+        "highlighted_code": "<span class='highlight-green'>n = int(input())\narr = list(map(int, input().split()))\nmissing = [i for i in range(1, max(arr)+1) if i not in arr]\nprint(&#34;Excellent!&#34; if not missing else &#34; &#34;.join(map(str,missing)))</span>"
       },
-      "token_overlap": 113,
-      "max_similarity_percent": 77.93
+      "token_overlap": 116,
+      "max_similarity_percent": 100.0
     },
     {
       "case_id": 9,
       "file1": {
         "path": "/app/app/data/submissions/68fdc3b5fe535fa0f4f1d92a/345569c455a14db085eec8e9/sub_1762614278449_1orb0b1l9.py",
-        "similarity_percent": 77.78,
+        "similarity_percent": 97.74,
         "full_code": "a = int(input())\nso = []\nwhile len(so) <a:\n    so += list(map(int,input().split()))\nthieu = []\nfor i in range(1,a+1):\n    if i not in so:\n        thieu.append(i)\nif not thieu:\n    print(\"Excellent!\")\nelse:\n    for x in thieu:\n        print(x)\n",
-        "highlighted_code": "<span class='highlight-red'>a = int(input())\nso = []\nwhile len(so) &lt;</span>a:\n    so += list(map(int,input().split())<span class='highlight-red'>)\nthieu = []\nfor i in range(1,a+1):\n    if i not in so:\n        thieu.append(i)\nif not thieu:\n    print(&#34;Excellent!&#34;)\nelse:\n    for x in thieu:\n        print</span>(x)\n"
+        "highlighted_code": "<span class='highlight-red'>a = int(input())\nso = []\nwhile len(so) &lt;a:\n    so += list(map(int,input().split())</span>)\nthieu = <span class='highlight-red'>[]\nfor i in range(1,a+1):\n    if i not in so:\n        thieu.append(i)\nif not thieu:\n    print(&#34;Excellent!&#34;)\nelse:\n    for x in thieu:\n        pri</span>nt(x)\n"
       },
       "file2": {
-        "path": "/app/app/data/submissions/68fdc3b5fe535fa0f4f1d92a/51bbd72f42174843b97698b4/sub_1761621281589_6tdnhpy70.py",
-        "similarity_percent": 71.43,
-        "full_code": "n = int(input())\ncac_so = []\nwhile len(cac_so) < n:\n    cac_so.extend(map(int, input().split()))\nmax_so = max(cac_so)\ntap_hop_so = set(cac_so)\nso_thieu = []\nfor i in range(1, max_so + 1):\n    if i not in tap_hop_so:\n        so_thieu.append(i)\nif not so_thieu:\n    print(\"Excellent!\")\nelse:\n    for so in so_thieu:\n        print(so)",
-        "highlighted_code": "<span class='highlight-green'>n = int(input())\ncac_so = []\nwhile len(cac_so) &lt; </span>n:\n    cac_so.extend(map(int, input().split()))\nmax_so = max(cac_so)\ntap_hop_so = set(cac_so<span class='highlight-green'>)\nso_thieu = []\nfor i in range(1, max_so + 1):\n    if i not in tap_hop_so:\n        so_thieu.append(i)\nif not so_thieu:\n    print(&#34;Excellent!&#34;)\nelse:\n    for so in so_thieu:\n        print</span>(so)"
+        "path": "/app/app/data/submissions/68fdc3b5fe535fa0f4f1d92a/8e19101eb0da4e9a92a17098/sub_1761635940261_pcj1u2u5j.py",
+        "similarity_percent": 92.2,
+        "full_code": "n = int(input())\na = []\nwhile len(a) < n:\n    a += list(map(int, input().split()))\nln = max(a)\nm = []\nfor i in range(1, ln + 1):\n    if i not in a:\n        m.append(i)\nif not m:\n    print(\"Excellent!\")\nelse:\n    for x in m:\n        print(x) ",
+        "highlighted_code": "<span class='highlight-green'>n = int(input())\na = []\nwhile len(a) &lt; n:\n    a += list(map(int, input().split())</span>)\nln = max(a)\nm = <span class='highlight-green'>[]\nfor i in range(1, ln + 1):\n    if i not in a:\n        m.append(i)\nif not m:\n    print(&#34;Excellent!&#34;)\nelse:\n    for x in m:\n        pri</span>nt(x) "
       },
-      "token_overlap": 105,
-      "max_similarity_percent": 77.78
+      "token_overlap": 130,
+      "max_similarity_percent": 97.74
     },
     {
       "case_id": 10,
       "file1": {
-        "path": "/app/app/data/submissions/68fdc3b5fe535fa0f4f1d92a/bcb420abb39b4af095b63cf8/sub_1762423213645_xa0t12xe4.py",
-        "similarity_percent": 72.82,
-        "full_code": "n=int(input())\nd_s=list(map(int,input().split()))\nso_lon_nhat=max(d_s)\nfor i in range(1,so_lon_nhat+1):\n    if i not in d_s:\n        print(i)\n    break\nelse:\n    print(\"Excellent!\")\n    \n",
-        "highlighted_code": "<span class='highlight-red'>n=int(input())\nd_s=list(map(int,input().split()))\nso_lon_nhat=max(d_s)\n</span>for <span class='highlight-red'>i in range(1,so_lon_nhat+1):\n    if i not in d_s</span>:\n        print(i)\n    break\nelse:\n    print(&#34;Excellent!&#34;)\n    \n"
+        "path": "/app/app/data/submissions/68fdc3b5fe535fa0f4f1d92a/8045cd76adf946038858d2bc/sub_1762478490331_iyvu6ryw7.py",
+        "similarity_percent": 95.16,
+        "full_code": "n=int(input())\nso=list(map(int,input().split()))\nlon=max(so)\ndanhsach=[]\nfor i in range(1,lon+1):\n    if i not in so:\n        danhsach.append(i)\nif danhsach:\n    for x in danhsach:\n        print(x)\nelse:\n        print('Excellent!')\n",
+        "highlighted_code": "<span class='highlight-red'>n=int(input())\nso=list(map(int,input().split()))\nlon=max(so)\ndanhsach=[]\nfor i in range(1,lon+1):\n    if i not in so:\n        danhsach.append(i)\n</span>if danhsach:\n    fo<span class='highlight-red'>r x in danhsach:\n        print(x)\nelse:\n        print(&#39;Excellent!&#39;)</span>\n"
       },
       "file2": {
         "path": "/app/app/data/submissions/68fdc3b5fe535fa0f4f1d92a/bcb420abb39b4af095b63cf8/sub_1762424457908_cjonttd4i.py",
-        "similarity_percent": 56.39,
+        "similarity_percent": 87.41,
         "full_code": "n=int(input())\nd_s=list(map(int,input().split()))\nso_lon_nhat=max(d_s)\nd_s_moi=[]\nfor i in range(1,so_lon_nhat+1):\n    if i not in d_s:\n        d_s_moi.append(i)\nso_chu_so=len(d_s_moi)\nif so_chu_so>=1:\n    for a in d_s_moi:\n        print(a)\nelse:\n    print(\"Excellent!\")\n",
-        "highlighted_code": "<span class='highlight-green'>n=int(input())\nd_s=list(map(int,input().split()))\nso_lon_nhat=max(d_s)\n</span>d_s_moi=[]\nfor <span class='highlight-green'>i in range(1,so_lon_nhat+1):\n    if i not in d_s</span>:\n        d_s_moi.append(i)\nso_chu_so=len(d_s_moi)\nif so_chu_so&gt;=1:\n    for a in d_s_moi:\n        print(a)\nelse:\n    print(&#34;Excellent!&#34;)\n"
+        "highlighted_code": "<span class='highlight-green'>n=int(input())\nd_s=list(map(int,input().split()))\nso_lon_nhat=max(d_s)\nd_s_moi=[]\nfor i in range(1,so_lon_nhat+1):\n    if i not in d_s:\n        d_s_moi.append(i)\n</span>so_chu_so=len(d_s_moi)\nif so_chu_so&gt;=1:\n    fo<span class='highlight-green'>r a in d_s_moi:\n        print(a)\nelse:\n    print(&#34;Excellent!&#34;)</span>\n"
       },
-      "token_overlap": 75,
-      "max_similarity_percent": 72.82
+      "token_overlap": 118,
+      "max_similarity_percent": 95.16
     },
     {
       "case_id": 11,
       "file1": {
-        "path": "/app/app/data/submissions/68fdc3b5fe535fa0f4f1d92a/f95120b3a38a461085ef58cb/sub_1761720583905_umqum6slo.py",
-        "similarity_percent": 71.03,
-        "full_code": "n = int(input())\na = []\nwhile len(a) < n:\n    a.extend(map(int, input().split()))\n    gtln = max(a)\n    ds = set(a)\n    sobm = []\n    for i in range(1, gtln +1):\n        if i not in ds:\n            sobm.append(i)\n        if sobm:\n            for so in sobm:\n                print(sobm)\n        else:\n            print(\"Excellent!\")",
-        "highlighted_code": "<span class='highlight-red'>n = int(input())\na = []\nwhile len(a) &lt; </span>n:\n    a.extend<span class='highlight-red'>(map(int, input().split()))\n    gtln = max(a)\n    </span>ds = set<span class='highlight-red'>(a)\n    sobm = []\n    for i in range(1, gtln +1):\n        if i not in ds:\n            sobm.append(i)\n        i</span>f sobm:\n            for so in sobm:\n                print(sobm)\n        else:\n            print(&#34;Excellent!&#34;)"
+        "path": "/app/app/data/submissions/68fdc3b5fe535fa0f4f1d92a/c2c38e9c5ead4887925c7e80/sub_1762609278178_97xivpmbh.py",
+        "similarity_percent": 94.5,
+        "full_code": "x = int(input())\ny = list(map(int,input().split()))\nk = [i for i in range(1,x+1) if i not in y ]\nif k :\n     for num in k:\n         print(num)\nelse:\n    print(\"Excellent!\")",
+        "highlighted_code": "<span class='highlight-red'>x = int(input())\ny = list(map(int,input().split())</span>)\nk = [i f<span class='highlight-red'>or i in range(1,x+1) if i not in y ]\nif k :\n     for num in k:\n         print(num)\nelse:\n    print(&#34;Excellent!&#34;)</span>"
       },
       "file2": {
-        "path": "/app/app/data/submissions/68fdc3b5fe535fa0f4f1d92a/8e19101eb0da4e9a92a17098/sub_1761635940261_pcj1u2u5j.py",
-        "similarity_percent": 69.93,
-        "full_code": "n = int(input())\na = []\nwhile len(a) < n:\n    a += list(map(int, input().split()))\nln = max(a)\nm = []\nfor i in range(1, ln + 1):\n    if i not in a:\n        m.append(i)\nif not m:\n    print(\"Excellent!\")\nelse:\n    for x in m:\n        print(x) ",
-        "highlighted_code": "<span class='highlight-green'>n = int(input())\na = []\nwhile len(a) &lt; </span>n:\n    a += list<span class='highlight-green'>(map(int, input().split()))\nln = max(a)\nm = []\nfor i in range(1, ln + 1):\n    if i not in a:\n        m.append(i)\ni</span>f not m:\n    print(&#34;Excellent!&#34;)\nelse:\n    for x in m:\n        print(x) "
+        "path": "/app/app/data/submissions/68fdc3b5fe535fa0f4f1d92a/9f14990043df4fda9283d7ac/sub_1761748235301_0t03sv0ey.py",
+        "similarity_percent": 66.67,
+        "full_code": "\nn = int(input())\nnumbers = list(map(int, input().split()))\nwhile len(numbers) < n:\n    numbers += list(map(int, input().split()))\nda_xuat_hien = set(x for x in numbers if x > 0)\nif da_xuat_hien:\n    max_num = max(da_xuat_hien)\nelse:\n    max_num = 0\nchua_xuat_hien = [i for i in range(1, max_num + 1) if i not in da_xuat_hien]\nif chua_xuat_hien:\n    for num in chua_xuat_hien:\n        print(num)\nelse:\n    print(\"Excellent!\")",
+        "highlighted_code": "<span class='highlight-green'>\nn = int(input())\nnumbers = list(map(int, input().split()</span>))\nwhile len(numbers) &lt; n:\n    numbers +=<span class='highlight-green'> list(map(int, input().split()</span>))\nda_xuat_hien = set(x for x in numbers if x &gt; 0)\nif da_xuat_hien:\n    max_num = max(da_xuat_hien)\nelse:\n    max_num = 0\nchua_xuat_hien = [i <span class='highlight-green'>for i in range(1, max_num + 1) if i not in da_xuat_hien]\nif chua_xuat_hien:\n    for num in chua_xuat_hien:\n        print(num)\nelse:\n    print(&#34;Excellent!&#34;</span>)"
       },
       "token_overlap": 103,
-      "max_similarity_percent": 71.03
+      "max_similarity_percent": 94.5
     },
     {
       "case_id": 12,
       "file1": {
-        "path": "/app/app/data/submissions/68fdc3b5fe535fa0f4f1d92a/606112b8529f48619a01b7f6/sub_1762272835253_x3189qvha.py",
-        "similarity_percent": 69.07,
-        "full_code": "n=int(input())\nk=list(map(int, input().split()))\ncheck=1\nfor i in range (1,n+1):\n    if i not in k:\n        check = 0\n        print(i)\nif check == 1:\n    print('Excellent!')",
-        "highlighted_code": "<span class='highlight-red'>n=int(input())\nk=list(map(int, input().split()))\n</span>check=1\nfor <span class='highlight-red'>i in range (1,n+1):\n    if i not in k</span>:\n        check = 0\n        print(i)\nif check == 1:\n    print(&#39;Excellent!&#39;)"
+        "path": "/app/app/data/submissions/68fdc3b5fe535fa0f4f1d92a/8e19101eb0da4e9a92a17098/sub_1761635940261_pcj1u2u5j.py",
+        "similarity_percent": 94.33,
+        "full_code": "n = int(input())\na = []\nwhile len(a) < n:\n    a += list(map(int, input().split()))\nln = max(a)\nm = []\nfor i in range(1, ln + 1):\n    if i not in a:\n        m.append(i)\nif not m:\n    print(\"Excellent!\")\nelse:\n    for x in m:\n        print(x) ",
+        "highlighted_code": "<span class='highlight-red'>n = int(input())\na = []\nwhile len(a) &lt; n:\n    </span>a += list(<span class='highlight-red'>map(int, input().split()))\nln = max(a)\nm = []\nfor i in range(1, ln + 1):\n    if i not in a:\n        m.append(i)\nif not m:\n    print(&#34;Excellent!&#34;)\nelse:\n    for x in m:\n        pri</span>nt(x) "
       },
       "file2": {
-        "path": "/app/app/data/submissions/68fdc3b5fe535fa0f4f1d92a/bcb420abb39b4af095b63cf8/sub_1762423213645_xa0t12xe4.py",
-        "similarity_percent": 65.05,
-        "full_code": "n=int(input())\nd_s=list(map(int,input().split()))\nso_lon_nhat=max(d_s)\nfor i in range(1,so_lon_nhat+1):\n    if i not in d_s:\n        print(i)\n    break\nelse:\n    print(\"Excellent!\")\n    \n",
-        "highlighted_code": "<span class='highlight-green'>n=int(input())\nd_s=list(map(int,input().split()))\n</span>so_lon_nhat=max(d_s)\nfor <span class='highlight-green'>i in range(1,so_lon_nhat+1):\n    if i not in d_s</span>:\n        print(i)\n    break\nelse:\n    print(&#34;Excellent!&#34;)\n    \n"
+        "path": "/app/app/data/submissions/68fdc3b5fe535fa0f4f1d92a/51bbd72f42174843b97698b4/sub_1761621281589_6tdnhpy70.py",
+        "similarity_percent": 92.41,
+        "full_code": "n = int(input())\ncac_so = []\nwhile len(cac_so) < n:\n    cac_so.extend(map(int, input().split()))\nmax_so = max(cac_so)\ntap_hop_so = set(cac_so)\nso_thieu = []\nfor i in range(1, max_so + 1):\n    if i not in tap_hop_so:\n        so_thieu.append(i)\nif not so_thieu:\n    print(\"Excellent!\")\nelse:\n    for so in so_thieu:\n        print(so)",
+        "highlighted_code": "<span class='highlight-green'>n = int(input())\ncac_so = []\nwhile len(cac_so) &lt; n:\n    </span>cac_so.extend(<span class='highlight-green'>map(int, input().split()))\nmax_so = max(</span>cac_so)\ntap_hop_so = set<span class='highlight-green'>(cac_so)\nso_thieu = []\nfor i in range(1, max_so + 1):\n    if i not in tap_hop_so:\n        so_thieu.append(i)\nif not so_thieu:\n    print(&#34;Excellent!&#34;)\nelse:\n    for so in so_thieu:\n        pri</span>nt(so)"
       },
-      "token_overlap": 67,
-      "max_similarity_percent": 69.07
+      "token_overlap": 133,
+      "max_similarity_percent": 94.33
     },
     {
       "case_id": 13,
       "file1": {
-        "path": "/app/app/data/submissions/68fdc3b5fe535fa0f4f1d92a/606112b8529f48619a01b7f6/sub_1762272835253_x3189qvha.py",
-        "similarity_percent": 69.07,
-        "full_code": "n=int(input())\nk=list(map(int, input().split()))\ncheck=1\nfor i in range (1,n+1):\n    if i not in k:\n        check = 0\n        print(i)\nif check == 1:\n    print('Excellent!')",
-        "highlighted_code": "<span class='highlight-red'>n=int(input())\nk=list(map(int, input().split()))\n</span>check=1\nfor <span class='highlight-red'>i in range (1,n+1):\n    if i not in k</span>:\n        check = 0\n        print(i)\nif check == 1:\n    print(&#39;Excellent!&#39;)"
+        "path": "/app/app/data/submissions/68fdc3b5fe535fa0f4f1d92a/8045cd76adf946038858d2bc/sub_1762478490331_iyvu6ryw7.py",
+        "similarity_percent": 83.06,
+        "full_code": "n=int(input())\nso=list(map(int,input().split()))\nlon=max(so)\ndanhsach=[]\nfor i in range(1,lon+1):\n    if i not in so:\n        danhsach.append(i)\nif danhsach:\n    for x in danhsach:\n        print(x)\nelse:\n        print('Excellent!')\n",
+        "highlighted_code": "n=int(input())\nso=list(<span class='highlight-red'>map(int,input().split()))\nlon=max(so)\ndanhsach=[]\nfor i in range(1,lon+1):\n    if i not in so:\n        danhsach.append(i)\nif danhsach:\n    for x in danhsach:\n        print(x)\nelse:\n        print(&#39;Excellent!&#39;)</span>\n"
       },
       "file2": {
-        "path": "/app/app/data/submissions/68fdc3b5fe535fa0f4f1d92a/bcb420abb39b4af095b63cf8/sub_1762424457908_cjonttd4i.py",
-        "similarity_percent": 50.38,
-        "full_code": "n=int(input())\nd_s=list(map(int,input().split()))\nso_lon_nhat=max(d_s)\nd_s_moi=[]\nfor i in range(1,so_lon_nhat+1):\n    if i not in d_s:\n        d_s_moi.append(i)\nso_chu_so=len(d_s_moi)\nif so_chu_so>=1:\n    for a in d_s_moi:\n        print(a)\nelse:\n    print(\"Excellent!\")\n",
-        "highlighted_code": "<span class='highlight-green'>n=int(input())\nd_s=list(map(int,input().split()))\n</span>so_lon_nhat=max(d_s)\nd_s_moi=[]\nfor <span class='highlight-green'>i in range(1,so_lon_nhat+1):\n    if i not in d_s</span>:\n        d_s_moi.append(i)\nso_chu_so=len(d_s_moi)\nif so_chu_so&gt;=1:\n    for a in d_s_moi:\n        print(a)\nelse:\n    print(&#34;Excellent!&#34;)\n"
+        "path": "/app/app/data/submissions/68fdc3b5fe535fa0f4f1d92a/f95120b3a38a461085ef58cb/sub_1761720583905_umqum6slo.py",
+        "similarity_percent": 70.75,
+        "full_code": "n = int(input())\na = []\nwhile len(a) < n:\n    a.extend(map(int, input().split()))\n    gtln = max(a)\n    ds = set(a)\n    sobm = []\n    for i in range(1, gtln +1):\n        if i not in ds:\n            sobm.append(i)\n        if sobm:\n            for so in sobm:\n                print(sobm)\n        else:\n            print(\"Excellent!\")",
+        "highlighted_code": "n = int(input())\na = []\nwhile len(a) &lt; n:\n    a.extend(<span class='highlight-green'>map(int, input().split()))\n    gtln = max(</span>a)\n    ds = set<span class='highlight-green'>(a)\n    sobm = []\n    for i in range(1, gtln +1):\n        if i not in ds:\n            sobm.append(i)\n        if sobm:\n            for so in sobm:\n                print(sobm)\n        else:\n            print(&#34;Excellent!&#34;)</span>"
       },
-      "token_overlap": 67,
-      "max_similarity_percent": 69.07
+      "token_overlap": 103,
+      "max_similarity_percent": 83.06
     },
     {
       "case_id": 14,
       "file1": {
-        "path": "/app/app/data/submissions/68fdc3b5fe535fa0f4f1d92a/d9aec9d917da4c5e9beeb80b/sub_1761572529235_3v7ctsey5.py",
-        "similarity_percent": 68.94,
-        "full_code": "n = int(input())\nnums = []\nwhile len(nums) < n:\n    nums += list(map(int, input().split()))\nmax_value = max(nums)\nmissing = [i for i in range(1, max_value) if i not in nums]\nif missing:\n    for x in missing:\n        print(x)\nelse:\n    print(\"Excellent!\")\n   \n",
-        "highlighted_code": "<span class='highlight-red'>n = int(input())\nnums = []\nwhile len(nums) &lt; </span>n:\n    nums += list<span class='highlight-red'>(map(int, input().split()))\nmax_value = max(nums)\n</span>missing = [i for i in range(1, max_value) if i not in nums]\nif <span class='highlight-red'>missing:\n    for x in missing:\n        print(x)\nelse:\n    print(&#34;Excellent!</span>&#34;)\n   \n"
+        "path": "/app/app/data/submissions/68fdc3b5fe535fa0f4f1d92a/222412e06e454a339defe331/sub_1762345139932_kngimc100.py",
+        "similarity_percent": 81.9,
+        "full_code": "n=input()\na=list(map(int,input().split()))\nb=min(a)\nc=max(a)\nv=\"Excellent!\"\nfor i in range(b,c+1):\n    if i in a:\n        continue\n    else:\n        v=\"\"\n        v+=str(i)\nprint(v)",
+        "highlighted_code": "<span class='highlight-red'>n=input()\na=list(map(int,input().split()))\nb=min(a)\nc=max(a)\nv=&#34;Excellent!&#34;\nfor i in range(b,c+1):\n    if i in a:\n        continue\n    els</span>e:\n        v=&#34;&#34;\n        v+=str(i)\nprint(v)"
       },
       "file2": {
-        "path": "/app/app/data/submissions/68fdc3b5fe535fa0f4f1d92a/f95120b3a38a461085ef58cb/sub_1761720583905_umqum6slo.py",
-        "similarity_percent": 62.76,
-        "full_code": "n = int(input())\na = []\nwhile len(a) < n:\n    a.extend(map(int, input().split()))\n    gtln = max(a)\n    ds = set(a)\n    sobm = []\n    for i in range(1, gtln +1):\n        if i not in ds:\n            sobm.append(i)\n        if sobm:\n            for so in sobm:\n                print(sobm)\n        else:\n            print(\"Excellent!\")",
-        "highlighted_code": "<span class='highlight-green'>n = int(input())\na = []\nwhile len(a) &lt; </span>n:\n    a.extend<span class='highlight-green'>(map(int, input().split()))\n    gtln = max(a)\n    </span>ds = set(a)\n    sobm = []\n    for i in range(1, gtln +1):\n        if i not in ds:\n            sobm.append(i)\n        if <span class='highlight-green'>sobm:\n            for so in sobm:\n                print(sobm)\n        else:\n            print(&#34;Excellent!</span>&#34;)"
+        "path": "/app/app/data/submissions/68fdc3b5fe535fa0f4f1d92a/222412e06e454a339defe331/sub_1762345067239_67h0a44tx.py",
+        "similarity_percent": 84.07,
+        "full_code": "n=input()\na=list(map(int,input().split()))\nb=min(a)\nc=max(a)\nv=\"Excellent!\"\nfor i in range(b,c+1):\n    if i in a:\n        continue\n    else:\n        v+=str(i)\nprint(v)",
+        "highlighted_code": "<span class='highlight-green'>n=input()\na=list(map(int,input().split()))\nb=min(a)\nc=max(a)\nv=&#34;Excellent!&#34;\nfor i in range(b,c+1):\n    if i in a:\n        continue\n    els</span>e:\n        v+=str(i)\nprint(v)"
       },
-      "token_overlap": 91,
-      "max_similarity_percent": 68.94
+      "token_overlap": 95,
+      "max_similarity_percent": 84.07
     },
     {
       "case_id": 15,
       "file1": {
-        "path": "/app/app/data/submissions/68fdc3b5fe535fa0f4f1d92a/9f14990043df4fda9283d7ac/sub_1761748235301_0t03sv0ey.py",
-        "similarity_percent": 67.89,
-        "full_code": "\nn = int(input())\nnumbers = list(map(int, input().split()))\nwhile len(numbers) < n:\n    numbers += list(map(int, input().split()))\nda_xuat_hien = set(x for x in numbers if x > 0)\nif da_xuat_hien:\n    max_num = max(da_xuat_hien)\nelse:\n    max_num = 0\nchua_xuat_hien = [i for i in range(1, max_num + 1) if i not in da_xuat_hien]\nif chua_xuat_hien:\n    for num in chua_xuat_hien:\n        print(num)\nelse:\n    print(\"Excellent!\")",
-        "highlighted_code": "<span class='highlight-red'>\nn = int(input())\nnumbers = list(map(int, input().split()))</span>\nwhile len(numbers) &lt; n:\n    numbers += <span class='highlight-red'>list(map(int, input().split()))</span>\nda_xuat_hien = set(x for x in numbers if x &gt; 0)\nif da_xuat_hien:\n    max_num = max(da_xuat_hien)\nelse:\n    max_num = 0\nchua_xuat_hien = <span class='highlight-red'>[i for i in range(1, max_num + 1) if i not in da_xuat_hien]\nif chua_xuat_hien:\n    for num in chua_xuat_hien:\n        print(num)\nelse:\n    print(&#34;Excellent</span>!&#34;)"
+        "path": "/app/app/data/submissions/68fdc3b5fe535fa0f4f1d92a/8e236cb825b041b0a82527f2/sub_1761532307017_76ykzomhp.py",
+        "similarity_percent": 79.49,
+        "full_code": "n = int(input())\nnums = []\n\nwhile len(nums) < n:\n    sz = len(nums)\n    inp = list(map(int, input().split()))[: n - sz]\n    nums += inp\n\ns1 = set(nums)\nmiss = False\n\nfor i in range(1, max(nums)):\n    if i not in s1:\n        print(i)\n        miss = True\n\nif not miss:\n    print(\"Excellent!\")\n",
+        "highlighted_code": "<span class='highlight-red'>n = int(input())\nnums = []\n\nwhile len(nums) &lt; n:\n    </span>sz = len(nums)\n    inp = <span class='highlight-red'>list(map(int, input().split())</span>)[: n - sz]\n    nums += inp\n\ns1 <span class='highlight-red'>= set(nums)\nmiss = False\n\nfor i in range</span>(1, max(nums))<span class='highlight-red'>:\n    if i not in s1:\n        print(i)\n        miss = True\n\nif not miss:\n    print(&#34;Excellent!&#34;)</span>\n"
       },
       "file2": {
-        "path": "/app/app/data/submissions/68fdc3b5fe535fa0f4f1d92a/c2c38e9c5ead4887925c7e80/sub_1762609278178_97xivpmbh.py",
-        "similarity_percent": 97.2,
-        "full_code": "x = int(input())\ny = list(map(int,input().split()))\nk = [i for i in range(1,x+1) if i not in y ]\nif k :\n     for num in k:\n         print(num)\nelse:\n    print(\"Excellent!\")",
-        "highlighted_code": "<span class='highlight-green'>x = int(input())\ny = list(map(int,input().split()))\n</span>k = [<span class='highlight-green'>i for i in range(1,x+1) if i not in y ]\nif k :\n     for num in k:\n         print(num)\nelse:\n    print(&#34;Excellent!</span>&#34;)"
+        "path": "/app/app/data/submissions/68fdc3b5fe535fa0f4f1d92a/91001b54722a4328a2b7b879/sub_1761653961525_tl3d9e4oi.py",
+        "similarity_percent": 83.22,
+        "full_code": "# Nhập số lượng số hiệu\nn = int(input())\n\n# Tạo danh sách rỗng để lưu tất cả số hiệu\nnumbers = []\n\n# Nhập n số (có thể trên nhiều dòng)\nwhile len(numbers) < n:\n    # Nhập một dòng, tách thành từng số rồi chuyển sang kiểu int\n    line = list(map(int, input().split()))\n    # Thêm các số này vào danh sách numbers\n    numbers.extend(line)\n\n# Tìm số hiệu lớn nhất\nmax_num = max(numbers)\n\n# Tạo tập hợp (set) để tìm kiếm nhanh hơn\nnum_set = set(numbers)\n\n# Biến kiểm tra xem có số nào bị thiếu không\nmissing_found = False\n\n# Duyệt từ 1 đến max_num\nfor i in range(1, max_num + 1):\n    if i not in num_set:\n        print(i)\n        missing_found = True\n\n# Nếu không thiếu số nào, in ra Excellent!\nif not missing_found:\n    print(\"Excellent!\")\n",
+        "highlighted_code": "# Nhập số lượng số hiệu\n<span class='highlight-green'>n = int(input())\n\n# Tạo danh sách rỗng để lưu tất cả số hiệu\nnumbers = []\n\n# Nhập n số (có thể trên nhiều dòng)\nwhile len(numbers) &lt; n:\n    # Nhập một dòng, tách thành từng số rồi chuyển sang kiểu int\n    </span>line = <span class='highlight-green'>list(map(int, input().split())</span>)\n    # Thêm các số này vào danh sách numbers\n    numbers.extend(line)\n\n# Tìm số hiệu lớn nhất\nmax_num = max(numbers)\n\n# Tạo tập hợp (set) để tìm kiếm nhanh hơn\nnum_set <span class='highlight-green'>= set(numbers)\n\n# Biến kiểm tra xem có số nào bị thiếu không\nmissing_found = False\n\n# Duyệt từ 1 đến max_num\nfor i in range</span>(1, max_num + 1)<span class='highlight-green'>:\n    if i not in num_set:\n        print(i)\n        missing_found = True\n\n# Nếu không thiếu số nào, in ra Excellent!\nif not missing_found:\n    print(&#34;Excellent!&#34;)</span>\n"
       },
-      "token_overlap": 129,
-      "max_similarity_percent": 97.2
+      "token_overlap": 124,
+      "max_similarity_percent": 83.22
     },
     {
       "case_id": 16,
       "file1": {
-        "path": "/app/app/data/submissions/68fdc3b5fe535fa0f4f1d92a/f95120b3a38a461085ef58cb/sub_1761720583905_umqum6slo.py",
-        "similarity_percent": 66.21,
-        "full_code": "n = int(input())\na = []\nwhile len(a) < n:\n    a.extend(map(int, input().split()))\n    gtln = max(a)\n    ds = set(a)\n    sobm = []\n    for i in range(1, gtln +1):\n        if i not in ds:\n            sobm.append(i)\n        if sobm:\n            for so in sobm:\n                print(sobm)\n        else:\n            print(\"Excellent!\")",
-        "highlighted_code": "n = int(input())\na = []\nwhile len(a) &lt; n:\n    a.extend<span class='highlight-red'>(map(int, input().split()))\n    gtln = max(a)\n    </span>ds = set<span class='highlight-red'>(a)\n    sobm = []\n    for i in range(1, gtln +1):\n        if i not in ds:\n            sobm.append(i</span>)\n        if sobm:\n            for so <span class='highlight-red'>in sobm:\n                print(sobm)\n        else:\n            print(&#34;Excellent!</span>&#34;)"
+        "path": "/app/app/data/submissions/68fdc3b5fe535fa0f4f1d92a/51bbd72f42174843b97698b4/sub_1761621281589_6tdnhpy70.py",
+        "similarity_percent": 77.24,
+        "full_code": "n = int(input())\ncac_so = []\nwhile len(cac_so) < n:\n    cac_so.extend(map(int, input().split()))\nmax_so = max(cac_so)\ntap_hop_so = set(cac_so)\nso_thieu = []\nfor i in range(1, max_so + 1):\n    if i not in tap_hop_so:\n        so_thieu.append(i)\nif not so_thieu:\n    print(\"Excellent!\")\nelse:\n    for so in so_thieu:\n        print(so)",
+        "highlighted_code": "<span class='highlight-red'>n = int(input())\ncac_so = []\nwhile len(cac_so) &lt; n:\n    cac_so.extend(map(int, input().split()))\nmax_so = max(cac_so)\ntap_hop_so = set(cac_so)\nso_thieu = []\nfor i in range(1, max_so + 1):\n    if i not in tap_hop_so:\n        so_thieu.append(i)\n</span>if not so_thieu:\n    print(&#34;Excellent!&#34;)\nelse:\n    for so in so_thieu:\n        print(so)"
       },
       "file2": {
-        "path": "/app/app/data/submissions/68fdc3b5fe535fa0f4f1d92a/bcb420abb39b4af095b63cf8/sub_1762424457908_cjonttd4i.py",
-        "similarity_percent": 69.92,
-        "full_code": "n=int(input())\nd_s=list(map(int,input().split()))\nso_lon_nhat=max(d_s)\nd_s_moi=[]\nfor i in range(1,so_lon_nhat+1):\n    if i not in d_s:\n        d_s_moi.append(i)\nso_chu_so=len(d_s_moi)\nif so_chu_so>=1:\n    for a in d_s_moi:\n        print(a)\nelse:\n    print(\"Excellent!\")\n",
-        "highlighted_code": "n=int(input())\nd_s=list<span class='highlight-green'>(map(int,input().split()))\nso_lon_nhat=max(d_s)\nd_s_moi=[]\nfor i in range(1,so_lon_nhat+1):\n    if i not in d_s:\n        d_s_moi.append(i</span>)\nso_chu_so=len(d_s_moi)\nif so_chu_so&gt;=1:\n    for a <span class='highlight-green'>in d_s_moi:\n        print(a)\nelse:\n    print(&#34;Excellent!</span>&#34;)\n"
+        "path": "/app/app/data/submissions/68fdc3b5fe535fa0f4f1d92a/f95120b3a38a461085ef58cb/sub_1761720583905_umqum6slo.py",
+        "similarity_percent": 76.19,
+        "full_code": "n = int(input())\na = []\nwhile len(a) < n:\n    a.extend(map(int, input().split()))\n    gtln = max(a)\n    ds = set(a)\n    sobm = []\n    for i in range(1, gtln +1):\n        if i not in ds:\n            sobm.append(i)\n        if sobm:\n            for so in sobm:\n                print(sobm)\n        else:\n            print(\"Excellent!\")",
+        "highlighted_code": "<span class='highlight-green'>n = int(input())\na = []\nwhile len(a) &lt; n:\n    a.extend(map(int, input().split()))\n    gtln = max(a)\n    ds = set(a)\n    sobm = []\n    for i in range(1, gtln +1):\n        if i not in ds:\n            sobm.append(i)\n        </span>if sobm:\n            for so in sobm:\n                print(sobm)\n        else:\n            print(&#34;Excellent!&#34;)"
       },
-      "token_overlap": 96,
-      "max_similarity_percent": 69.92
+      "token_overlap": 112,
+      "max_similarity_percent": 77.24
     },
     {
       "case_id": 17,
       "file1": {
-        "path": "/app/app/data/submissions/68fdc3b5fe535fa0f4f1d92a/a34ffbda761b435ca043fd30/sub_1762188078778_iwq3nwew6.py",
-        "similarity_percent": 62.93,
-        "full_code": "a = int(input())\nn = list(map(int, input().split()))\nb = []\nfor i in range(1, max(n)+1):\n    if i not in n:\n        b.append(i)\n        print(i)\nif len(b)==0:\n    print(\"Excellent!\")",
-        "highlighted_code": "<span class='highlight-red'>a = int(input())\nn = list(map(int, input().split()))\n</span>b = []\nf<span class='highlight-red'>or i in range(1, max(n)+1):\n    if i not in </span>n:\n        b.append(i)\n        print(i)\nif len(b)==0:\n    print(&#34;Excellent!&#34;)"
+        "path": "/app/app/data/submissions/68fdc3b5fe535fa0f4f1d92a/ebae007e508a41ad83be62f7/sub_1765285552843_cosw96m5e.py",
+        "similarity_percent": 76.81,
+        "full_code": "n = int(input())\nids = []\nwhile len(ids) < n:\n    ids.extend(map(int, input().split()))\nM = max(ids)\nmissing = []\nfor i in range(1, M+1):\n    if i not in ids:\n        missing.append(i)\nif len(missing) == 0:\n    print(\"Excellent!\")\nelse:\n    print(*missing)\n",
+        "highlighted_code": "<span class='highlight-red'>n = int(input())\nids = []\nwhile len(ids) &lt; n:\n    ids.extend(map(int, input().split()))\nM = max(ids)\nmissing = []\nfor i in range(1, M+1):\n    if i not in ids:\n        missing.append(i)\nif </span>len(missing) == 0:\n    print(&#34;Excellent!&#34;)\nelse:\n    print(*missing)\n"
       },
       "file2": {
-        "path": "/app/app/data/submissions/68fdc3b5fe535fa0f4f1d92a/27e30f767b3a46b283cbfec0/sub_1761665564895_m3safa2cg.py",
-        "similarity_percent": 66.97,
-        "full_code": "n = int(input())\narray = list(map(int, input().split()))\ncheck = True\nfor i in range(1,max(array)+1):\n    if i not in array:\n        print(i)\n        check = False\nif check:\n    print(\"Excellent!\")",
-        "highlighted_code": "<span class='highlight-green'>n = int(input())\narray = list(map(int, input().split()))\n</span>check = True\nf<span class='highlight-green'>or i in range(1,max(array)+1):\n    if i not in </span>array:\n        print(i)\n        check = False\nif check:\n    print(&#34;Excellent!&#34;)"
+        "path": "/app/app/data/submissions/68fdc3b5fe535fa0f4f1d92a/f95120b3a38a461085ef58cb/sub_1761720583905_umqum6slo.py",
+        "similarity_percent": 72.79,
+        "full_code": "n = int(input())\na = []\nwhile len(a) < n:\n    a.extend(map(int, input().split()))\n    gtln = max(a)\n    ds = set(a)\n    sobm = []\n    for i in range(1, gtln +1):\n        if i not in ds:\n            sobm.append(i)\n        if sobm:\n            for so in sobm:\n                print(sobm)\n        else:\n            print(\"Excellent!\")",
+        "highlighted_code": "<span class='highlight-green'>n = int(input())\na = []\nwhile len(a) &lt; n:\n    a.extend(map(int, input().split()))\n    gtln = max(</span>a)\n    ds = set<span class='highlight-green'>(a)\n    sobm = []\n    for i in range(1, gtln +1):\n        if i not in ds:\n            sobm.append(i)\n        if </span>sobm:\n            for so in sobm:\n                print(sobm)\n        else:\n            print(&#34;Excellent!&#34;)"
       },
-      "token_overlap": 73,
-      "max_similarity_percent": 66.97
+      "token_overlap": 106,
+      "max_similarity_percent": 76.81
     },
     {
       "case_id": 18,
       "file1": {
-        "path": "/app/app/data/submissions/68fdc3b5fe535fa0f4f1d92a/c2c38e9c5ead4887925c7e80/sub_1762609278178_97xivpmbh.py",
-        "similarity_percent": 62.62,
-        "full_code": "x = int(input())\ny = list(map(int,input().split()))\nk = [i for i in range(1,x+1) if i not in y ]\nif k :\n     for num in k:\n         print(num)\nelse:\n    print(\"Excellent!\")",
-        "highlighted_code": "<span class='highlight-red'>x = int(input())\ny = list(map(int,input().split()))\n</span>k = [i for i in range(1,x+1) if i not in y ]\nif k :\n     for num <span class='highlight-red'>in k:\n         print(num)\nelse:\n    print(&#34;Excellent!</span>&#34;)"
+        "path": "/app/app/data/submissions/68fdc3b5fe535fa0f4f1d92a/345569c455a14db085eec8e9/sub_1762614278449_1orb0b1l9.py",
+        "similarity_percent": 76.69,
+        "full_code": "a = int(input())\nso = []\nwhile len(so) <a:\n    so += list(map(int,input().split()))\nthieu = []\nfor i in range(1,a+1):\n    if i not in so:\n        thieu.append(i)\nif not thieu:\n    print(\"Excellent!\")\nelse:\n    for x in thieu:\n        print(x)\n",
+        "highlighted_code": "<span class='highlight-red'>a = int(input())\nso = []\nwhile len(so) &lt;a:\n    </span>so += list(map(int,input().split()))\nthieu = <span class='highlight-red'>[]\nfor i in range(1,a+1):\n    if i not in so:\n        thieu.append(i)\nif not thieu:\n    print(&#34;Excellent!&#34;)\nelse:\n    for x in thieu:\n        pri</span>nt(x)\n"
       },
       "file2": {
-        "path": "/app/app/data/submissions/68fdc3b5fe535fa0f4f1d92a/bcb420abb39b4af095b63cf8/sub_1762424457908_cjonttd4i.py",
-        "similarity_percent": 50.38,
-        "full_code": "n=int(input())\nd_s=list(map(int,input().split()))\nso_lon_nhat=max(d_s)\nd_s_moi=[]\nfor i in range(1,so_lon_nhat+1):\n    if i not in d_s:\n        d_s_moi.append(i)\nso_chu_so=len(d_s_moi)\nif so_chu_so>=1:\n    for a in d_s_moi:\n        print(a)\nelse:\n    print(\"Excellent!\")\n",
-        "highlighted_code": "<span class='highlight-green'>n=int(input())\nd_s=list(map(int,input().split()))\n</span>so_lon_nhat=max(d_s)\nd_s_moi=[]\nfor i in range(1,so_lon_nhat+1):\n    if i not in d_s:\n        d_s_moi.append(i)\nso_chu_so=len(d_s_moi)\nif so_chu_so&gt;=1:\n    for a <span class='highlight-green'>in d_s_moi:\n        print(a)\nelse:\n    print(&#34;Excellent!</span>&#34;)\n"
+        "path": "/app/app/data/submissions/68fdc3b5fe535fa0f4f1d92a/51bbd72f42174843b97698b4/sub_1761621281589_6tdnhpy70.py",
+        "similarity_percent": 70.34,
+        "full_code": "n = int(input())\ncac_so = []\nwhile len(cac_so) < n:\n    cac_so.extend(map(int, input().split()))\nmax_so = max(cac_so)\ntap_hop_so = set(cac_so)\nso_thieu = []\nfor i in range(1, max_so + 1):\n    if i not in tap_hop_so:\n        so_thieu.append(i)\nif not so_thieu:\n    print(\"Excellent!\")\nelse:\n    for so in so_thieu:\n        print(so)",
+        "highlighted_code": "<span class='highlight-green'>n = int(input())\ncac_so = []\nwhile len(cac_so) &lt; n:\n    </span>cac_so.extend(map(int, input().split()))\nmax_so = max(cac_so)\ntap_hop_so = set(cac_so)\nso_thieu = <span class='highlight-green'>[]\nfor i in range(1, max_so + 1):\n    if i not in tap_hop_so:\n        so_thieu.append(i)\nif not so_thieu:\n    print(&#34;Excellent!&#34;)\nelse:\n    for so in so_thieu:\n        pri</span>nt(so)"
       },
-      "token_overlap": 67,
-      "max_similarity_percent": 62.62
+      "token_overlap": 102,
+      "max_similarity_percent": 76.69
     },
     {
       "case_id": 19,
       "file1": {
+        "path": "/app/app/data/submissions/68fdc3b5fe535fa0f4f1d92a/ebae007e508a41ad83be62f7/sub_1765285552843_cosw96m5e.py",
+        "similarity_percent": 75.36,
+        "full_code": "n = int(input())\nids = []\nwhile len(ids) < n:\n    ids.extend(map(int, input().split()))\nM = max(ids)\nmissing = []\nfor i in range(1, M+1):\n    if i not in ids:\n        missing.append(i)\nif len(missing) == 0:\n    print(\"Excellent!\")\nelse:\n    print(*missing)\n",
+        "highlighted_code": "<span class='highlight-red'>n = int(input())\nids = []\nwhile len(ids) &lt; n:\n    ids.extend(map(int, input().split()))\nM = max(ids)\nmissing = []\nfor i in range(1, M+1):\n    if i not in ids:\n        missing.append(i)\n</span>if len(missing) == 0:\n    print(&#34;Excellent!&#34;)\nelse:\n    print(*missing)\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b5fe535fa0f4f1d92a/51bbd72f42174843b97698b4/sub_1761621281589_6tdnhpy70.py",
+        "similarity_percent": 72.41,
+        "full_code": "n = int(input())\ncac_so = []\nwhile len(cac_so) < n:\n    cac_so.extend(map(int, input().split()))\nmax_so = max(cac_so)\ntap_hop_so = set(cac_so)\nso_thieu = []\nfor i in range(1, max_so + 1):\n    if i not in tap_hop_so:\n        so_thieu.append(i)\nif not so_thieu:\n    print(\"Excellent!\")\nelse:\n    for so in so_thieu:\n        print(so)",
+        "highlighted_code": "<span class='highlight-green'>n = int(input())\ncac_so = []\nwhile len(cac_so) &lt; n:\n    cac_so.extend(map(int, input().split()))\nmax_so = max(</span>cac_so)\ntap_hop_so = set<span class='highlight-green'>(cac_so)\nso_thieu = []\nfor i in range(1, max_so + 1):\n    if i not in tap_hop_so:\n        so_thieu.append(i)\n</span>if not so_thieu:\n    print(&#34;Excellent!&#34;)\nelse:\n    for so in so_thieu:\n        print(so)"
+      },
+      "token_overlap": 104,
+      "max_similarity_percent": 75.36
+    },
+    {
+      "case_id": 20,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b5fe535fa0f4f1d92a/345569c455a14db085eec8e9/sub_1762614278449_1orb0b1l9.py",
+        "similarity_percent": 73.68,
+        "full_code": "a = int(input())\nso = []\nwhile len(so) <a:\n    so += list(map(int,input().split()))\nthieu = []\nfor i in range(1,a+1):\n    if i not in so:\n        thieu.append(i)\nif not thieu:\n    print(\"Excellent!\")\nelse:\n    for x in thieu:\n        print(x)\n",
+        "highlighted_code": "a = int(input())\nso = []\nwhile len(so) &lt;a:\n    so += <span class='highlight-red'>list(map(int,input().split()))\nthieu = []\nfor i in range(1,a+1):\n    if i not in so:\n        thieu.append(i)\nif not thieu:\n    print(&#34;Excellent!&#34;)\nelse:\n    for x in thieu:\n        pri</span>nt(x)\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b5fe535fa0f4f1d92a/9dcb98ac39014785ad502bca/sub_1766918612134_rk8fn4gbd.py",
+        "similarity_percent": 80.99,
+        "full_code": "n =int(input())\narray = list(map(int, input().split()))\nresult = []\nfor x in range(1,n+1):\n    if x not in array:\n        result.append(x)\nif not result:\n    print(\"Excellent!\")\nelse:\n    for y in result:\n        print(y,end=\" \")\n\n    \n",
+        "highlighted_code": "n =int(input())\narray = <span class='highlight-green'>list(map(int, input().split()))\nresult = []\nfor x in range(1,n+1):\n    if x not in array:\n        result.append(x)\nif not result:\n    print(&#34;Excellent!&#34;)\nelse:\n    for y in result:\n        pri</span>nt(y,end=&#34; &#34;)\n\n    \n"
+      },
+      "token_overlap": 98,
+      "max_similarity_percent": 80.99
+    },
+    {
+      "case_id": 21,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b5fe535fa0f4f1d92a/ebae007e508a41ad83be62f7/sub_1765285552843_cosw96m5e.py",
+        "similarity_percent": 72.46,
+        "full_code": "n = int(input())\nids = []\nwhile len(ids) < n:\n    ids.extend(map(int, input().split()))\nM = max(ids)\nmissing = []\nfor i in range(1, M+1):\n    if i not in ids:\n        missing.append(i)\nif len(missing) == 0:\n    print(\"Excellent!\")\nelse:\n    print(*missing)\n",
+        "highlighted_code": "<span class='highlight-red'>n = int(input())\nids = []\nwhile len(ids) &lt; n:\n    </span>ids.extend(<span class='highlight-red'>map(int, input().split()))\nM = max(ids)\nmissing = []\nfor i in range(1, M+1):\n    if i not in ids:\n        missing.append(i)\n</span>if len(missing) == 0:\n    print(&#34;Excellent!&#34;)\nelse:\n    print(*missing)\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b5fe535fa0f4f1d92a/8e19101eb0da4e9a92a17098/sub_1761635940261_pcj1u2u5j.py",
+        "similarity_percent": 70.92,
+        "full_code": "n = int(input())\na = []\nwhile len(a) < n:\n    a += list(map(int, input().split()))\nln = max(a)\nm = []\nfor i in range(1, ln + 1):\n    if i not in a:\n        m.append(i)\nif not m:\n    print(\"Excellent!\")\nelse:\n    for x in m:\n        print(x) ",
+        "highlighted_code": "<span class='highlight-green'>n = int(input())\na = []\nwhile len(a) &lt; n:\n    </span>a += list(<span class='highlight-green'>map(int, input().split()))\nln = max(a)\nm = []\nfor i in range(1, ln + 1):\n    if i not in a:\n        m.append(i)\n</span>if not m:\n    print(&#34;Excellent!&#34;)\nelse:\n    for x in m:\n        print(x) "
+      },
+      "token_overlap": 100,
+      "max_similarity_percent": 72.46
+    },
+    {
+      "case_id": 22,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b5fe535fa0f4f1d92a/bcb420abb39b4af095b63cf8/sub_1762424457908_cjonttd4i.py",
+        "similarity_percent": 71.85,
+        "full_code": "n=int(input())\nd_s=list(map(int,input().split()))\nso_lon_nhat=max(d_s)\nd_s_moi=[]\nfor i in range(1,so_lon_nhat+1):\n    if i not in d_s:\n        d_s_moi.append(i)\nso_chu_so=len(d_s_moi)\nif so_chu_so>=1:\n    for a in d_s_moi:\n        print(a)\nelse:\n    print(\"Excellent!\")\n",
+        "highlighted_code": "n=int(input())\nd_s=list(<span class='highlight-red'>map(int,input().split()))\nso_lon_nhat=max(d_s)\nd_s_moi=[]\nfor i in range(1,so_lon_nhat+1):\n    if i not in d_s:\n        d_s_moi.append(i)\n</span>so_chu_so=len(d_s_moi)\nif so_chu_so&gt;=1:\n    fo<span class='highlight-red'>r a in d_s_moi:\n        print(a)\nelse:\n    print(&#34;Excellent!&#34;)</span>\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b5fe535fa0f4f1d92a/f95120b3a38a461085ef58cb/sub_1761720583905_umqum6slo.py",
+        "similarity_percent": 66.67,
+        "full_code": "n = int(input())\na = []\nwhile len(a) < n:\n    a.extend(map(int, input().split()))\n    gtln = max(a)\n    ds = set(a)\n    sobm = []\n    for i in range(1, gtln +1):\n        if i not in ds:\n            sobm.append(i)\n        if sobm:\n            for so in sobm:\n                print(sobm)\n        else:\n            print(\"Excellent!\")",
+        "highlighted_code": "n = int(input())\na = []\nwhile len(a) &lt; n:\n    a.extend(<span class='highlight-green'>map(int, input().split()))\n    gtln = max(</span>a)\n    ds = set<span class='highlight-green'>(a)\n    sobm = []\n    for i in range(1, gtln +1):\n        if i not in ds:\n            sobm.append(i)\n        </span>if sobm:\n            fo<span class='highlight-green'>r so in sobm:\n                print(sobm)\n        else:\n            print(&#34;Excellent!&#34;)</span>"
+      },
+      "token_overlap": 97,
+      "max_similarity_percent": 71.85
+    },
+    {
+      "case_id": 23,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b5fe535fa0f4f1d92a/8e19101eb0da4e9a92a17098/sub_1761635940261_pcj1u2u5j.py",
+        "similarity_percent": 70.92,
+        "full_code": "n = int(input())\na = []\nwhile len(a) < n:\n    a += list(map(int, input().split()))\nln = max(a)\nm = []\nfor i in range(1, ln + 1):\n    if i not in a:\n        m.append(i)\nif not m:\n    print(\"Excellent!\")\nelse:\n    for x in m:\n        print(x) ",
+        "highlighted_code": "<span class='highlight-red'>n = int(input())\na = []\nwhile len(a) &lt; n:\n    </span>a += list(<span class='highlight-red'>map(int, input().split()))\nln = max(a)\nm = []\nfor i in range(1, ln + 1):\n    if i not in a:\n        m.append(i)\n</span>if not m:\n    print(&#34;Excellent!&#34;)\nelse:\n    for x in m:\n        print(x) "
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b5fe535fa0f4f1d92a/f95120b3a38a461085ef58cb/sub_1761720583905_umqum6slo.py",
+        "similarity_percent": 68.71,
+        "full_code": "n = int(input())\na = []\nwhile len(a) < n:\n    a.extend(map(int, input().split()))\n    gtln = max(a)\n    ds = set(a)\n    sobm = []\n    for i in range(1, gtln +1):\n        if i not in ds:\n            sobm.append(i)\n        if sobm:\n            for so in sobm:\n                print(sobm)\n        else:\n            print(\"Excellent!\")",
+        "highlighted_code": "<span class='highlight-green'>n = int(input())\na = []\nwhile len(a) &lt; n:\n    </span>a.extend(<span class='highlight-green'>map(int, input().split()))\n    gtln = max(</span>a)\n    ds = set<span class='highlight-green'>(a)\n    sobm = []\n    for i in range(1, gtln +1):\n        if i not in ds:\n            sobm.append(i)\n        </span>if sobm:\n            for so in sobm:\n                print(sobm)\n        else:\n            print(&#34;Excellent!&#34;)"
+      },
+      "token_overlap": 100,
+      "max_similarity_percent": 70.92
+    },
+    {
+      "case_id": 24,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b5fe535fa0f4f1d92a/693c1b4924c33437062efdcf/sub_1765569397967_prex26p6d.py",
+        "similarity_percent": 70.78,
+        "full_code": "n = int(input())\nnumbers = []\nwhile len(numbers) < n:\n    d = input().split()\n    for i in d:\n        numbers.append(int(i))\nnumbers = set(numbers)\nmax_num = max(numbers)\nmissing = []\nfor i in range(1, max_num + 1):\n    if i not in numbers:\n        missing.append(i)\nif missing:\n    for i in missing:\n        print(i)\nelse:\n    print(\"Excellent!\")",
+        "highlighted_code": "<span class='highlight-red'>n = int(input())\nnumbers = []\nwhile len(numbers) &lt; n:\n    </span>d = input().split()\n    for i in d:\n        numbers.append(int(i))\nnumbers = set(numbers)\nmax_num = max<span class='highlight-red'>(numbers)\nmissing = []\nfor i in range(1, max_num + 1):\n    if i not in numbers:\n        missing.append(i)\nif missing:\n    for i in missing:\n        print(i)\nelse:\n    print(&#34;Excellent!&#34;)</span>"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b5fe535fa0f4f1d92a/f95120b3a38a461085ef58cb/sub_1761720583905_umqum6slo.py",
+        "similarity_percent": 74.15,
+        "full_code": "n = int(input())\na = []\nwhile len(a) < n:\n    a.extend(map(int, input().split()))\n    gtln = max(a)\n    ds = set(a)\n    sobm = []\n    for i in range(1, gtln +1):\n        if i not in ds:\n            sobm.append(i)\n        if sobm:\n            for so in sobm:\n                print(sobm)\n        else:\n            print(\"Excellent!\")",
+        "highlighted_code": "<span class='highlight-green'>n = int(input())\na = []\nwhile len(a) &lt; n:\n    </span>a.extend(map(int, input().split()))\n    gtln = max(a)\n    ds = set<span class='highlight-green'>(a)\n    sobm = []\n    for i in range(1, gtln +1):\n        if i not in ds:\n            sobm.append(i)\n        if sobm:\n            for so in sobm:\n                print(sobm)\n        else:\n            print(&#34;Excellent!&#34;)</span>"
+      },
+      "token_overlap": 109,
+      "max_similarity_percent": 74.15
+    },
+    {
+      "case_id": 25,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b5fe535fa0f4f1d92a/8d079daede8c4b3d9268ce06/sub_1767983882458_ucq05x8lb.py",
+        "similarity_percent": 70.71,
+        "full_code": "n = int(input())\n\nnums = []\nwhile len(nums) < n:\n    nums.extend(map(int, input().split()))\n\nnums_set = set(nums)\nmax_val = max(nums)\n\nfound = False\n\nfor i in range(1, max_val + 1):\n    if i not in nums_set:\n        print(i)\n        found = True\n\nif not found:\n    print(\"Excellent!\")\n\n",
+        "highlighted_code": "<span class='highlight-red'>n = int(input())\n\nnums = []\nwhile len(nums) &lt; n:\n    </span>nums.extend(map(int, input().split()))\n\nnums_set = set(nums)\nmax_val = max(nums)\n\n<span class='highlight-red'>found = False\n\nfor i in range(1, max_val + 1):\n    if i not in nums_set:\n        print(i)\n        found = True\n\nif not found:\n    print(&#34;Excellent!&#34;)</span>\n\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b5fe535fa0f4f1d92a/5ddb8c7d2c9c43bab12121a6/sub_1762884466655_w3qqzjokl.py",
+        "similarity_percent": 58.93,
+        "full_code": "def main():\n    n = int(input())\n    numbers = []\n    while len(numbers) < n:\n        line = input().split()\n        numbers.extend(map(int, line))\n    max_num = max(numbers)\n    existing = set(numbers)\n    missing_found = False\n    for i in range(1, max_num + 1):\n        if i not in existing:\n            print(i)\n            missing_found = True\n    if not missing_found:\n        print(\"Excellent!\")\nif __name__ == \"__main__\":\n    main()",
+        "highlighted_code": "def main():\n    <span class='highlight-green'>n = int(input())\n    numbers = []\n    while len(numbers) &lt; n:\n        </span>line = input().split()\n        numbers.extend(map(int, line))\n    max_num = max(numbers)\n    existing = set(numbers)\n    <span class='highlight-green'>missing_found = False\n    for i in range(1, max_num + 1):\n        if i not in existing:\n            print(i)\n            missing_found = True\n    if not missing_found:\n        print(&#34;Excellent!&#34;)\n</span>if __name__ == &#34;__main__&#34;:\n    main()"
+      },
+      "token_overlap": 99,
+      "max_similarity_percent": 70.71
+    },
+    {
+      "case_id": 26,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b5fe535fa0f4f1d92a/8d079daede8c4b3d9268ce06/sub_1767983882458_ucq05x8lb.py",
+        "similarity_percent": 70.71,
+        "full_code": "n = int(input())\n\nnums = []\nwhile len(nums) < n:\n    nums.extend(map(int, input().split()))\n\nnums_set = set(nums)\nmax_val = max(nums)\n\nfound = False\n\nfor i in range(1, max_val + 1):\n    if i not in nums_set:\n        print(i)\n        found = True\n\nif not found:\n    print(\"Excellent!\")\n\n",
+        "highlighted_code": "<span class='highlight-red'>n = int(input())\n\nnums = []\nwhile len(nums) &lt; n:\n    </span>nums.extend(map(int, input().split()))\n\nnums_set = set(nums)\nmax_val = max(nums)\n\n<span class='highlight-red'>found = False\n\nfor i in range(1, max_val + 1):\n    if i not in nums_set:\n        print(i)\n        found = True\n\nif not found:\n    print(&#34;Excellent!&#34;)</span>\n\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b5fe535fa0f4f1d92a/91001b54722a4328a2b7b879/sub_1761653961525_tl3d9e4oi.py",
+        "similarity_percent": 66.44,
+        "full_code": "# Nhập số lượng số hiệu\nn = int(input())\n\n# Tạo danh sách rỗng để lưu tất cả số hiệu\nnumbers = []\n\n# Nhập n số (có thể trên nhiều dòng)\nwhile len(numbers) < n:\n    # Nhập một dòng, tách thành từng số rồi chuyển sang kiểu int\n    line = list(map(int, input().split()))\n    # Thêm các số này vào danh sách numbers\n    numbers.extend(line)\n\n# Tìm số hiệu lớn nhất\nmax_num = max(numbers)\n\n# Tạo tập hợp (set) để tìm kiếm nhanh hơn\nnum_set = set(numbers)\n\n# Biến kiểm tra xem có số nào bị thiếu không\nmissing_found = False\n\n# Duyệt từ 1 đến max_num\nfor i in range(1, max_num + 1):\n    if i not in num_set:\n        print(i)\n        missing_found = True\n\n# Nếu không thiếu số nào, in ra Excellent!\nif not missing_found:\n    print(\"Excellent!\")\n",
+        "highlighted_code": "# Nhập số lượng số hiệu\n<span class='highlight-green'>n = int(input())\n\n# Tạo danh sách rỗng để lưu tất cả số hiệu\nnumbers = []\n\n# Nhập n số (có thể trên nhiều dòng)\nwhile len(numbers) &lt; n:\n    # Nhập một dòng, tách thành từng số rồi chuyển sang kiểu int\n    </span>line = list(map(int, input().split()))\n    # Thêm các số này vào danh sách numbers\n    numbers.extend(line)\n\n# Tìm số hiệu lớn nhất\nmax_num = max(numbers)\n\n# Tạo tập hợp (set) để tìm kiếm nhanh hơn\nnum_set = set(numbers)\n\n# Biến kiểm tra xem có số nào bị thiếu không\n<span class='highlight-green'>missing_found = False\n\n# Duyệt từ 1 đến max_num\nfor i in range(1, max_num + 1):\n    if i not in num_set:\n        print(i)\n        missing_found = True\n\n# Nếu không thiếu số nào, in ra Excellent!\nif not missing_found:\n    print(&#34;Excellent!&#34;)</span>\n"
+      },
+      "token_overlap": 99,
+      "max_similarity_percent": 70.71
+    },
+    {
+      "case_id": 27,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b5fe535fa0f4f1d92a/d9aec9d917da4c5e9beeb80b/sub_1761572529235_3v7ctsey5.py",
+        "similarity_percent": 69.4,
+        "full_code": "n = int(input())\nnums = []\nwhile len(nums) < n:\n    nums += list(map(int, input().split()))\nmax_value = max(nums)\nmissing = [i for i in range(1, max_value) if i not in nums]\nif missing:\n    for x in missing:\n        print(x)\nelse:\n    print(\"Excellent!\")\n   \n",
+        "highlighted_code": "<span class='highlight-red'>n = int(input())\nnums = []\nwhile len(nums) &lt; n:\n    </span>nums += list(<span class='highlight-red'>map(int, input().split()))\nmax_value = max(</span>nums)\nmissing = [i for i in range(1, max_value) if i not in nums]\ni<span class='highlight-red'>f missing:\n    for x in missing:\n        print(x)\nelse:\n    print(&#34;Excellent!&#34;)\n   </span>\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b5fe535fa0f4f1d92a/f95120b3a38a461085ef58cb/sub_1761720583905_umqum6slo.py",
+        "similarity_percent": 63.27,
+        "full_code": "n = int(input())\na = []\nwhile len(a) < n:\n    a.extend(map(int, input().split()))\n    gtln = max(a)\n    ds = set(a)\n    sobm = []\n    for i in range(1, gtln +1):\n        if i not in ds:\n            sobm.append(i)\n        if sobm:\n            for so in sobm:\n                print(sobm)\n        else:\n            print(\"Excellent!\")",
+        "highlighted_code": "<span class='highlight-green'>n = int(input())\na = []\nwhile len(a) &lt; n:\n    </span>a.extend(<span class='highlight-green'>map(int, input().split()))\n    gtln = max(</span>a)\n    ds = set(a)\n    sobm = []\n    for i in range(1, gtln +1):\n        if i not in ds:\n            sobm.append(i)\n        i<span class='highlight-green'>f sobm:\n            for so in sobm:\n                print(sobm)\n        else:\n            print(&#34;Excellent!&#34;)</span>"
+      },
+      "token_overlap": 93,
+      "max_similarity_percent": 69.4
+    },
+    {
+      "case_id": 28,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b5fe535fa0f4f1d92a/ac7514dacc0a4c32abe1c656/sub_1765844913464_f1qg0ra34.py",
+        "similarity_percent": 69.05,
+        "full_code": "n = int(input())\nif n == 5:\n    print(3)\nelse:\n    print('Excellent!')",
+        "highlighted_code": "<span class='highlight-red'>n = int(input())\nif n == 5:\n    print(3)\n</span>else:\n    print(&#39;Excellent!&#39;)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b5fe535fa0f4f1d92a/ffdb326842044f2e98b7aaa7/sub_1761464004960_unt1xv0vb.py",
+        "similarity_percent": 38.67,
+        "full_code": "n = int(input())\n\nif n == 5:\n    print(3)\nelif n == 4:\n    print(\"Excellent!\")\nelse:\n    print(1)\n    print(4)\n    print(7)",
+        "highlighted_code": "<span class='highlight-green'>n = int(input())\n\nif n == 5:\n    print(3)\n</span>elif n == 4:\n    print(&#34;Excellent!&#34;)\nelse:\n    print(1)\n    print(4)\n    print(7)"
+      },
+      "token_overlap": 29,
+      "max_similarity_percent": 69.05
+    },
+    {
+      "case_id": 29,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b5fe535fa0f4f1d92a/ac7514dacc0a4c32abe1c656/sub_1765844913464_f1qg0ra34.py",
+        "similarity_percent": 69.05,
+        "full_code": "n = int(input())\nif n == 5:\n    print(3)\nelse:\n    print('Excellent!')",
+        "highlighted_code": "<span class='highlight-red'>n = int(input())\nif n == 5:\n    print(3)\n</span>else:\n    print(&#39;Excellent!&#39;)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b5fe535fa0f4f1d92a/761f0dfbd0fb4be3ada99651/sub_1763568620895_aq0tmnuqy.py",
+        "similarity_percent": 38.67,
+        "full_code": "n = int(input()) \nif n == 5: \n    print(3) \nelif n == 4: \n    print(\"Excellent\") \nelse: \n    print(1)\n    print(4) \n    print(7) ",
+        "highlighted_code": "<span class='highlight-green'>n = int(input()) \nif n == 5: \n    print(3) \n</span>elif n == 4: \n    print(&#34;Excellent&#34;) \nelse: \n    print(1)\n    print(4) \n    print(7) "
+      },
+      "token_overlap": 29,
+      "max_similarity_percent": 69.05
+    },
+    {
+      "case_id": 30,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b5fe535fa0f4f1d92a/ac7514dacc0a4c32abe1c656/sub_1765844913464_f1qg0ra34.py",
+        "similarity_percent": 69.05,
+        "full_code": "n = int(input())\nif n == 5:\n    print(3)\nelse:\n    print('Excellent!')",
+        "highlighted_code": "<span class='highlight-red'>n = int(input())\nif n == 5:\n    print(3)\n</span>else:\n    print(&#39;Excellent!&#39;)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b5fe535fa0f4f1d92a/761f0dfbd0fb4be3ada99651/sub_1763568641919_0d4zk68wo.py",
+        "similarity_percent": 38.67,
+        "full_code": "n = int(input()) \nif n == 5: \n    print(3) \nelif n == 4: \n    print(\"Excellent!\") \nelse: \n    print(1)\n    print(4) \n    print(7) ",
+        "highlighted_code": "<span class='highlight-green'>n = int(input()) \nif n == 5: \n    print(3) \n</span>elif n == 4: \n    print(&#34;Excellent!&#34;) \nelse: \n    print(1)\n    print(4) \n    print(7) "
+      },
+      "token_overlap": 29,
+      "max_similarity_percent": 69.05
+    },
+    {
+      "case_id": 31,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b5fe535fa0f4f1d92a/ac7514dacc0a4c32abe1c656/sub_1765845007331_y2kv5m2ol.py",
+        "similarity_percent": 69.05,
+        "full_code": "n = int(input())\nif n == 5:\n    print(3)\nelse:\n    print('Excellent!')",
+        "highlighted_code": "<span class='highlight-red'>n = int(input())\nif n == 5:\n    print(3)\n</span>else:\n    print(&#39;Excellent!&#39;)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b5fe535fa0f4f1d92a/ffdb326842044f2e98b7aaa7/sub_1761464004960_unt1xv0vb.py",
+        "similarity_percent": 38.67,
+        "full_code": "n = int(input())\n\nif n == 5:\n    print(3)\nelif n == 4:\n    print(\"Excellent!\")\nelse:\n    print(1)\n    print(4)\n    print(7)",
+        "highlighted_code": "<span class='highlight-green'>n = int(input())\n\nif n == 5:\n    print(3)\n</span>elif n == 4:\n    print(&#34;Excellent!&#34;)\nelse:\n    print(1)\n    print(4)\n    print(7)"
+      },
+      "token_overlap": 29,
+      "max_similarity_percent": 69.05
+    },
+    {
+      "case_id": 32,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b5fe535fa0f4f1d92a/ac7514dacc0a4c32abe1c656/sub_1765845007331_y2kv5m2ol.py",
+        "similarity_percent": 69.05,
+        "full_code": "n = int(input())\nif n == 5:\n    print(3)\nelse:\n    print('Excellent!')",
+        "highlighted_code": "<span class='highlight-red'>n = int(input())\nif n == 5:\n    print(3)\n</span>else:\n    print(&#39;Excellent!&#39;)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b5fe535fa0f4f1d92a/761f0dfbd0fb4be3ada99651/sub_1763568620895_aq0tmnuqy.py",
+        "similarity_percent": 38.67,
+        "full_code": "n = int(input()) \nif n == 5: \n    print(3) \nelif n == 4: \n    print(\"Excellent\") \nelse: \n    print(1)\n    print(4) \n    print(7) ",
+        "highlighted_code": "<span class='highlight-green'>n = int(input()) \nif n == 5: \n    print(3) \n</span>elif n == 4: \n    print(&#34;Excellent&#34;) \nelse: \n    print(1)\n    print(4) \n    print(7) "
+      },
+      "token_overlap": 29,
+      "max_similarity_percent": 69.05
+    },
+    {
+      "case_id": 33,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b5fe535fa0f4f1d92a/ac7514dacc0a4c32abe1c656/sub_1765845007331_y2kv5m2ol.py",
+        "similarity_percent": 69.05,
+        "full_code": "n = int(input())\nif n == 5:\n    print(3)\nelse:\n    print('Excellent!')",
+        "highlighted_code": "<span class='highlight-red'>n = int(input())\nif n == 5:\n    print(3)\n</span>else:\n    print(&#39;Excellent!&#39;)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b5fe535fa0f4f1d92a/761f0dfbd0fb4be3ada99651/sub_1763568641919_0d4zk68wo.py",
+        "similarity_percent": 38.67,
+        "full_code": "n = int(input()) \nif n == 5: \n    print(3) \nelif n == 4: \n    print(\"Excellent!\") \nelse: \n    print(1)\n    print(4) \n    print(7) ",
+        "highlighted_code": "<span class='highlight-green'>n = int(input()) \nif n == 5: \n    print(3) \n</span>elif n == 4: \n    print(&#34;Excellent!&#34;) \nelse: \n    print(1)\n    print(4) \n    print(7) "
+      },
+      "token_overlap": 29,
+      "max_similarity_percent": 69.05
+    },
+    {
+      "case_id": 34,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b5fe535fa0f4f1d92a/ac7514dacc0a4c32abe1c656/sub_1765846493848_shmstx1ts.py",
+        "similarity_percent": 69.05,
+        "full_code": "n = int(input())\nif n == 5:\n    print(3)\nelse:\n    print('Excellent!')",
+        "highlighted_code": "<span class='highlight-red'>n = int(input())\nif n == 5:\n    print(3)\n</span>else:\n    print(&#39;Excellent!&#39;)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b5fe535fa0f4f1d92a/761f0dfbd0fb4be3ada99651/sub_1763568620895_aq0tmnuqy.py",
+        "similarity_percent": 38.67,
+        "full_code": "n = int(input()) \nif n == 5: \n    print(3) \nelif n == 4: \n    print(\"Excellent\") \nelse: \n    print(1)\n    print(4) \n    print(7) ",
+        "highlighted_code": "<span class='highlight-green'>n = int(input()) \nif n == 5: \n    print(3) \n</span>elif n == 4: \n    print(&#34;Excellent&#34;) \nelse: \n    print(1)\n    print(4) \n    print(7) "
+      },
+      "token_overlap": 29,
+      "max_similarity_percent": 69.05
+    },
+    {
+      "case_id": 35,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b5fe535fa0f4f1d92a/ac7514dacc0a4c32abe1c656/sub_1765846493848_shmstx1ts.py",
+        "similarity_percent": 69.05,
+        "full_code": "n = int(input())\nif n == 5:\n    print(3)\nelse:\n    print('Excellent!')",
+        "highlighted_code": "<span class='highlight-red'>n = int(input())\nif n == 5:\n    print(3)\n</span>else:\n    print(&#39;Excellent!&#39;)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b5fe535fa0f4f1d92a/761f0dfbd0fb4be3ada99651/sub_1763568641919_0d4zk68wo.py",
+        "similarity_percent": 38.67,
+        "full_code": "n = int(input()) \nif n == 5: \n    print(3) \nelif n == 4: \n    print(\"Excellent!\") \nelse: \n    print(1)\n    print(4) \n    print(7) ",
+        "highlighted_code": "<span class='highlight-green'>n = int(input()) \nif n == 5: \n    print(3) \n</span>elif n == 4: \n    print(&#34;Excellent!&#34;) \nelse: \n    print(1)\n    print(4) \n    print(7) "
+      },
+      "token_overlap": 29,
+      "max_similarity_percent": 69.05
+    },
+    {
+      "case_id": 36,
+      "file1": {
         "path": "/app/app/data/submissions/68fdc3b5fe535fa0f4f1d92a/c2c38e9c5ead4887925c7e80/sub_1762609278178_97xivpmbh.py",
-        "similarity_percent": 61.68,
+        "similarity_percent": 68.81,
         "full_code": "x = int(input())\ny = list(map(int,input().split()))\nk = [i for i in range(1,x+1) if i not in y ]\nif k :\n     for num in k:\n         print(num)\nelse:\n    print(\"Excellent!\")",
-        "highlighted_code": "x = int(input())\ny = list(map(int,input().split())<span class='highlight-red'>)\nk = [i for i in range(1,x+1) if i not in y ]\nif k :\n     for num in k:\n         print(num)\nelse:\n    print(&#34;Excellent!</span>&#34;)"
+        "highlighted_code": "<span class='highlight-red'>x = int(input())\ny = list(map(int,input().split())</span>)\nk = [i for i in range(1,x+1) if i not in y ]\ni<span class='highlight-red'>f k :\n     for num in k:\n         print(num)\nelse:\n    print(&#34;Excellent!&#34;)</span>"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b5fe535fa0f4f1d92a/8045cd76adf946038858d2bc/sub_1762478490331_iyvu6ryw7.py",
+        "similarity_percent": 60.48,
+        "full_code": "n=int(input())\nso=list(map(int,input().split()))\nlon=max(so)\ndanhsach=[]\nfor i in range(1,lon+1):\n    if i not in so:\n        danhsach.append(i)\nif danhsach:\n    for x in danhsach:\n        print(x)\nelse:\n        print('Excellent!')\n",
+        "highlighted_code": "<span class='highlight-green'>n=int(input())\nso=list(map(int,input().split())</span>)\nlon=max(so)\ndanhsach=[]\nfor i in range(1,lon+1):\n    if i not in so:\n        danhsach.append(i)\ni<span class='highlight-green'>f danhsach:\n    for x in danhsach:\n        print(x)\nelse:\n        print(&#39;Excellent!&#39;)</span>\n"
+      },
+      "token_overlap": 75,
+      "max_similarity_percent": 68.81
+    },
+    {
+      "case_id": 37,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b5fe535fa0f4f1d92a/bcb420abb39b4af095b63cf8/sub_1762423213645_xa0t12xe4.py",
+        "similarity_percent": 68.27,
+        "full_code": "n=int(input())\nd_s=list(map(int,input().split()))\nso_lon_nhat=max(d_s)\nfor i in range(1,so_lon_nhat+1):\n    if i not in d_s:\n        print(i)\n    break\nelse:\n    print(\"Excellent!\")\n    \n",
+        "highlighted_code": "<span class='highlight-red'>n=int(input())\nd_s=list(map(int,input().split()))\nso_lon_nhat=ma</span>x(d_s)\nfor <span class='highlight-red'>i in range(1,so_lon_nhat+1):\n    if i not in d_s</span>:\n        print(i)\n    break\nelse:\n    print(&#34;Excellent!&#34;)\n    \n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b5fe535fa0f4f1d92a/bcb420abb39b4af095b63cf8/sub_1762424457908_cjonttd4i.py",
+        "similarity_percent": 52.59,
+        "full_code": "n=int(input())\nd_s=list(map(int,input().split()))\nso_lon_nhat=max(d_s)\nd_s_moi=[]\nfor i in range(1,so_lon_nhat+1):\n    if i not in d_s:\n        d_s_moi.append(i)\nso_chu_so=len(d_s_moi)\nif so_chu_so>=1:\n    for a in d_s_moi:\n        print(a)\nelse:\n    print(\"Excellent!\")\n",
+        "highlighted_code": "<span class='highlight-green'>n=int(input())\nd_s=list(map(int,input().split()))\nso_lon_nhat=ma</span>x(d_s)\nd_s_moi=[]\nfor <span class='highlight-green'>i in range(1,so_lon_nhat+1):\n    if i not in d_s</span>:\n        d_s_moi.append(i)\nso_chu_so=len(d_s_moi)\nif so_chu_so&gt;=1:\n    for a in d_s_moi:\n        print(a)\nelse:\n    print(&#34;Excellent!&#34;)\n"
+      },
+      "token_overlap": 71,
+      "max_similarity_percent": 68.27
+    },
+    {
+      "case_id": 38,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b5fe535fa0f4f1d92a/8e19101eb0da4e9a92a17098/sub_1761635940261_pcj1u2u5j.py",
+        "similarity_percent": 67.38,
+        "full_code": "n = int(input())\na = []\nwhile len(a) < n:\n    a += list(map(int, input().split()))\nln = max(a)\nm = []\nfor i in range(1, ln + 1):\n    if i not in a:\n        m.append(i)\nif not m:\n    print(\"Excellent!\")\nelse:\n    for x in m:\n        print(x) ",
+        "highlighted_code": "n = int(input())\na = []\nwhile len(a) &lt; n:\n    a += <span class='highlight-red'>list(map(int, input().split())</span>)\nln = max(a)\nm = <span class='highlight-red'>[]\nfor i in range(1, ln + 1):\n    if i not in a:\n        m.append(i)\nif not m:\n    print(&#34;Excellent!&#34;)\nelse:\n    for x in m:\n        pri</span>nt(x) "
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b5fe535fa0f4f1d92a/9dcb98ac39014785ad502bca/sub_1766918612134_rk8fn4gbd.py",
+        "similarity_percent": 78.51,
+        "full_code": "n =int(input())\narray = list(map(int, input().split()))\nresult = []\nfor x in range(1,n+1):\n    if x not in array:\n        result.append(x)\nif not result:\n    print(\"Excellent!\")\nelse:\n    for y in result:\n        print(y,end=\" \")\n\n    \n",
+        "highlighted_code": "n =int(input())\narray = <span class='highlight-green'>list(map(int, input().split())</span>)\nresult = <span class='highlight-green'>[]\nfor x in range(1,n+1):\n    if x not in array:\n        result.append(x)\nif not result:\n    print(&#34;Excellent!&#34;)\nelse:\n    for y in result:\n        pri</span>nt(y,end=&#34; &#34;)\n\n    \n"
+      },
+      "token_overlap": 95,
+      "max_similarity_percent": 78.51
+    },
+    {
+      "case_id": 39,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b5fe535fa0f4f1d92a/5ddb8c7d2c9c43bab12121a6/sub_1762884466655_w3qqzjokl.py",
+        "similarity_percent": 67.26,
+        "full_code": "def main():\n    n = int(input())\n    numbers = []\n    while len(numbers) < n:\n        line = input().split()\n        numbers.extend(map(int, line))\n    max_num = max(numbers)\n    existing = set(numbers)\n    missing_found = False\n    for i in range(1, max_num + 1):\n        if i not in existing:\n            print(i)\n            missing_found = True\n    if not missing_found:\n        print(\"Excellent!\")\nif __name__ == \"__main__\":\n    main()",
+        "highlighted_code": "def main():\n    <span class='highlight-red'>n = int(input())\n    numbers = []\n    while len(numbers) &lt; n:\n        </span>line = input().split()\n        numbers.extend(map(int, line))\n    max_num = <span class='highlight-red'>max(numbers)\n    existing = set(numbers)\n    missing_found = False\n    for i in range(1, max_num + 1):\n        if i not in existing:\n            print(i)\n            missing_found = True\n    if not missing_found:\n        print(&#34;Excellent!&#34;)\n</span>if __name__ == &#34;__main__&#34;:\n    main()"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b5fe535fa0f4f1d92a/91001b54722a4328a2b7b879/sub_1761653961525_tl3d9e4oi.py",
+        "similarity_percent": 75.84,
+        "full_code": "# Nhập số lượng số hiệu\nn = int(input())\n\n# Tạo danh sách rỗng để lưu tất cả số hiệu\nnumbers = []\n\n# Nhập n số (có thể trên nhiều dòng)\nwhile len(numbers) < n:\n    # Nhập một dòng, tách thành từng số rồi chuyển sang kiểu int\n    line = list(map(int, input().split()))\n    # Thêm các số này vào danh sách numbers\n    numbers.extend(line)\n\n# Tìm số hiệu lớn nhất\nmax_num = max(numbers)\n\n# Tạo tập hợp (set) để tìm kiếm nhanh hơn\nnum_set = set(numbers)\n\n# Biến kiểm tra xem có số nào bị thiếu không\nmissing_found = False\n\n# Duyệt từ 1 đến max_num\nfor i in range(1, max_num + 1):\n    if i not in num_set:\n        print(i)\n        missing_found = True\n\n# Nếu không thiếu số nào, in ra Excellent!\nif not missing_found:\n    print(\"Excellent!\")\n",
+        "highlighted_code": "# Nhập số lượng số hiệu\n<span class='highlight-green'>n = int(input())\n\n# Tạo danh sách rỗng để lưu tất cả số hiệu\nnumbers = []\n\n# Nhập n số (có thể trên nhiều dòng)\nwhile len(numbers) &lt; n:\n    # Nhập một dòng, tách thành từng số rồi chuyển sang kiểu int\n    </span>line = list(map(int, input().split()))\n    # Thêm các số này vào danh sách numbers\n    numbers.extend(line)\n\n# Tìm số hiệu lớn nhất\nmax_num = <span class='highlight-green'>max(numbers)\n\n# Tạo tập hợp (set) để tìm kiếm nhanh hơn\nnum_set = set(numbers)\n\n# Biến kiểm tra xem có số nào bị thiếu không\nmissing_found = False\n\n# Duyệt từ 1 đến max_num\nfor i in range(1, max_num + 1):\n    if i not in num_set:\n        print(i)\n        missing_found = True\n\n# Nếu không thiếu số nào, in ra Excellent!\nif not missing_found:\n    print(&#34;Excellent!&#34;)</span>\n"
+      },
+      "token_overlap": 113,
+      "max_similarity_percent": 75.84
+    },
+    {
+      "case_id": 40,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b5fe535fa0f4f1d92a/91001b54722a4328a2b7b879/sub_1761653961525_tl3d9e4oi.py",
+        "similarity_percent": 66.44,
+        "full_code": "# Nhập số lượng số hiệu\nn = int(input())\n\n# Tạo danh sách rỗng để lưu tất cả số hiệu\nnumbers = []\n\n# Nhập n số (có thể trên nhiều dòng)\nwhile len(numbers) < n:\n    # Nhập một dòng, tách thành từng số rồi chuyển sang kiểu int\n    line = list(map(int, input().split()))\n    # Thêm các số này vào danh sách numbers\n    numbers.extend(line)\n\n# Tìm số hiệu lớn nhất\nmax_num = max(numbers)\n\n# Tạo tập hợp (set) để tìm kiếm nhanh hơn\nnum_set = set(numbers)\n\n# Biến kiểm tra xem có số nào bị thiếu không\nmissing_found = False\n\n# Duyệt từ 1 đến max_num\nfor i in range(1, max_num + 1):\n    if i not in num_set:\n        print(i)\n        missing_found = True\n\n# Nếu không thiếu số nào, in ra Excellent!\nif not missing_found:\n    print(\"Excellent!\")\n",
+        "highlighted_code": "# Nhập số lượng số hiệu\n<span class='highlight-red'>n = int(input())\n\n# Tạo danh sách rỗng để lưu tất cả số hiệu\nnumbers = []\n\n# Nhập n số (có thể trên nhiều dòng)\nwhile len(numbers) &lt; n:\n    # Nhập một dòng, tách thành từng số rồi chuyển sang kiểu int\n    </span>line = list(map(int, input().split()))\n    # Thêm các số này vào danh sách numbers\n    numbers.extend(line)\n\n# Tìm số hiệu lớn nhất\nmax_num = max(numbers)\n\n# Tạo tập hợp (set) để tìm kiếm nhanh hơn\nnum_set = set(numbers)\n\n# Biến kiểm tra xem có số nào bị thiếu không\n<span class='highlight-red'>missing_found = False\n\n# Duyệt từ 1 đến max_num\nfor i in range(1, max_num + 1):\n    if i not in num_set:\n        print(i)\n        missing_found = True\n\n# Nếu không thiếu số nào, in ra Excellent!\nif not missing_found:\n    print(&#34;Excellent!&#34;)</span>\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b5fe535fa0f4f1d92a/8d079daede8c4b3d9268ce06/sub_1767983891921_p04jjxxu5.py",
+        "similarity_percent": 70.71,
+        "full_code": "n = int(input())\n\nnums = []\nwhile len(nums) < n:\n    nums.extend(map(int, input().split()))\n\nnums_set = set(nums)\nmax_val = max(nums)\n\nfound = False\n\nfor i in range(1, max_val + 1):\n    if i not in nums_set:\n        print(i)\n        found = True\n\nif not found:\n    print(\"Excellent!\")",
+        "highlighted_code": "<span class='highlight-green'>n = int(input())\n\nnums = []\nwhile len(nums) &lt; n:\n    </span>nums.extend(map(int, input().split()))\n\nnums_set = set(nums)\nmax_val = max(nums)\n\n<span class='highlight-green'>found = False\n\nfor i in range(1, max_val + 1):\n    if i not in nums_set:\n        print(i)\n        found = True\n\nif not found:\n    print(&#34;Excellent!&#34;)</span>"
+      },
+      "token_overlap": 99,
+      "max_similarity_percent": 70.71
+    },
+    {
+      "case_id": 41,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b5fe535fa0f4f1d92a/8045cd76adf946038858d2bc/sub_1762478490331_iyvu6ryw7.py",
+        "similarity_percent": 66.13,
+        "full_code": "n=int(input())\nso=list(map(int,input().split()))\nlon=max(so)\ndanhsach=[]\nfor i in range(1,lon+1):\n    if i not in so:\n        danhsach.append(i)\nif danhsach:\n    for x in danhsach:\n        print(x)\nelse:\n        print('Excellent!')\n",
+        "highlighted_code": "n=int(input())\nso=list(map(int,input().split()))\n<span class='highlight-red'>lon=max(so)\ndanhsach=[]\nfor i in range(1,lon+1):\n    if i not in so:\n        danhsach.append(i)\nif danhsach:\n    for x in danhsach:\n        print(x)\nelse:\n        print(&#39;Excellent!&#39;)</span>\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b5fe535fa0f4f1d92a/693c1b4924c33437062efdcf/sub_1765569397967_prex26p6d.py",
+        "similarity_percent": 53.25,
+        "full_code": "n = int(input())\nnumbers = []\nwhile len(numbers) < n:\n    d = input().split()\n    for i in d:\n        numbers.append(int(i))\nnumbers = set(numbers)\nmax_num = max(numbers)\nmissing = []\nfor i in range(1, max_num + 1):\n    if i not in numbers:\n        missing.append(i)\nif missing:\n    for i in missing:\n        print(i)\nelse:\n    print(\"Excellent!\")",
+        "highlighted_code": "n = int(input())\nnumbers = []\nwhile len(numbers) &lt; n:\n    d = input().split()\n    for i in d:\n        numbers.append(int(i))\nnumbers = set(numbers)\n<span class='highlight-green'>max_num = max(numbers)\nmissing = []\nfor i in range(1, max_num + 1):\n    if i not in numbers:\n        missing.append(i)\nif missing:\n    for i in missing:\n        print(i)\nelse:\n    print(&#34;Excellent!&#34;)</span>"
+      },
+      "token_overlap": 82,
+      "max_similarity_percent": 66.13
+    },
+    {
+      "case_id": 42,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b5fe535fa0f4f1d92a/c2c38e9c5ead4887925c7e80/sub_1762609278178_97xivpmbh.py",
+        "similarity_percent": 64.22,
+        "full_code": "x = int(input())\ny = list(map(int,input().split()))\nk = [i for i in range(1,x+1) if i not in y ]\nif k :\n     for num in k:\n         print(num)\nelse:\n    print(\"Excellent!\")",
+        "highlighted_code": "<span class='highlight-red'>x = int(input())\ny = list(map(int,input().split())</span>)\nk = [i for i in range(1,x+1) if i not in y ]\nif k :\n     fo<span class='highlight-red'>r num in k:\n         print(num)\nelse:\n    print(&#34;Excellent!&#34;)</span>"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b5fe535fa0f4f1d92a/bcb420abb39b4af095b63cf8/sub_1762424457908_cjonttd4i.py",
+        "similarity_percent": 51.85,
+        "full_code": "n=int(input())\nd_s=list(map(int,input().split()))\nso_lon_nhat=max(d_s)\nd_s_moi=[]\nfor i in range(1,so_lon_nhat+1):\n    if i not in d_s:\n        d_s_moi.append(i)\nso_chu_so=len(d_s_moi)\nif so_chu_so>=1:\n    for a in d_s_moi:\n        print(a)\nelse:\n    print(\"Excellent!\")\n",
+        "highlighted_code": "<span class='highlight-green'>n=int(input())\nd_s=list(map(int,input().split())</span>)\nso_lon_nhat=max(d_s)\nd_s_moi=[]\nfor i in range(1,so_lon_nhat+1):\n    if i not in d_s:\n        d_s_moi.append(i)\nso_chu_so=len(d_s_moi)\nif so_chu_so&gt;=1:\n    fo<span class='highlight-green'>r a in d_s_moi:\n        print(a)\nelse:\n    print(&#34;Excellent!&#34;)</span>\n"
+      },
+      "token_overlap": 70,
+      "max_similarity_percent": 64.22
+    },
+    {
+      "case_id": 43,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b5fe535fa0f4f1d92a/d9aec9d917da4c5e9beeb80b/sub_1761572529235_3v7ctsey5.py",
+        "similarity_percent": 64.18,
+        "full_code": "n = int(input())\nnums = []\nwhile len(nums) < n:\n    nums += list(map(int, input().split()))\nmax_value = max(nums)\nmissing = [i for i in range(1, max_value) if i not in nums]\nif missing:\n    for x in missing:\n        print(x)\nelse:\n    print(\"Excellent!\")\n   \n",
+        "highlighted_code": "n = int(input())\nnums = []\nw<span class='highlight-red'>hile len(nums) &lt; n:\n    nums += list(map(int, input().split())</span>)\nmax_value = max(nums)\nmissing = [i for i in range(1, max_value) <span class='highlight-red'>if i not in nums]\nif missing:\n    for x in missing:\n        print(x)\nelse:\n    print(&#34;Excellent!&#34;)\n   </span>\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b5fe535fa0f4f1d92a/9f14990043df4fda9283d7ac/sub_1761748235301_0t03sv0ey.py",
+        "similarity_percent": 57.81,
+        "full_code": "\nn = int(input())\nnumbers = list(map(int, input().split()))\nwhile len(numbers) < n:\n    numbers += list(map(int, input().split()))\nda_xuat_hien = set(x for x in numbers if x > 0)\nif da_xuat_hien:\n    max_num = max(da_xuat_hien)\nelse:\n    max_num = 0\nchua_xuat_hien = [i for i in range(1, max_num + 1) if i not in da_xuat_hien]\nif chua_xuat_hien:\n    for num in chua_xuat_hien:\n        print(num)\nelse:\n    print(\"Excellent!\")",
+        "highlighted_code": "\nn = int(input())\nnumbers =<span class='highlight-green'> list(map(int, input().split()</span>))\n<span class='highlight-green'>while len(numbers) &lt; n:\n    numbers += list(map(int, input().split()</span>))\nda_xuat_hien = set(x for x in numbers if x &gt; 0)\nif da_xuat_hien:\n    max_num = max(da_xuat_hien)\nelse:\n    max_num = 0\nchua_xuat_hien = [i for i in range(1, max_num + 1)<span class='highlight-green'> if i not in da_xuat_hien]\nif chua_xuat_hien:\n    for num in chua_xuat_hien:\n        print(num)\nelse:\n    print(&#34;Excellent!&#34;</span>)"
+      },
+      "token_overlap": 86,
+      "max_similarity_percent": 64.18
+    },
+    {
+      "case_id": 44,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b5fe535fa0f4f1d92a/bcb420abb39b4af095b63cf8/sub_1762423213645_xa0t12xe4.py",
+        "similarity_percent": 63.46,
+        "full_code": "n=int(input())\nd_s=list(map(int,input().split()))\nso_lon_nhat=max(d_s)\nfor i in range(1,so_lon_nhat+1):\n    if i not in d_s:\n        print(i)\n    break\nelse:\n    print(\"Excellent!\")\n    \n",
+        "highlighted_code": "<span class='highlight-red'>n=int(input())\nd_s=list(map(int,input().split())</span>)\nso_lon_nhat=max(d_s)\nfor <span class='highlight-red'>i in range(1,so_lon_nhat+1):\n    if i not in d_s</span>:\n        print(i)\n    break\nelse:\n    print(&#34;Excellent!&#34;)\n    \n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b5fe535fa0f4f1d92a/9dcb98ac39014785ad502bca/sub_1766918612134_rk8fn4gbd.py",
+        "similarity_percent": 54.55,
+        "full_code": "n =int(input())\narray = list(map(int, input().split()))\nresult = []\nfor x in range(1,n+1):\n    if x not in array:\n        result.append(x)\nif not result:\n    print(\"Excellent!\")\nelse:\n    for y in result:\n        print(y,end=\" \")\n\n    \n",
+        "highlighted_code": "<span class='highlight-green'>n =int(input())\narray = list(map(int, input().split())</span>)\nresult = []\nfor <span class='highlight-green'>x in range(1,n+1):\n    if x not in array</span>:\n        result.append(x)\nif not result:\n    print(&#34;Excellent!&#34;)\nelse:\n    for y in result:\n        print(y,end=&#34; &#34;)\n\n    \n"
+      },
+      "token_overlap": 66,
+      "max_similarity_percent": 63.46
+    },
+    {
+      "case_id": 45,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b5fe535fa0f4f1d92a/bcb420abb39b4af095b63cf8/sub_1762423213645_xa0t12xe4.py",
+        "similarity_percent": 63.46,
+        "full_code": "n=int(input())\nd_s=list(map(int,input().split()))\nso_lon_nhat=max(d_s)\nfor i in range(1,so_lon_nhat+1):\n    if i not in d_s:\n        print(i)\n    break\nelse:\n    print(\"Excellent!\")\n    \n",
+        "highlighted_code": "<span class='highlight-red'>n=int(input())\nd_s=list(map(int,input().split())</span>)\nso_lon_nhat=max(d_s)\nfor <span class='highlight-red'>i in range(1,so_lon_nhat+1):\n    if i not in d_s</span>:\n        print(i)\n    break\nelse:\n    print(&#34;Excellent!&#34;)\n    \n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b5fe535fa0f4f1d92a/606112b8529f48619a01b7f6/sub_1762272835253_x3189qvha.py",
+        "similarity_percent": 68.04,
+        "full_code": "n=int(input())\nk=list(map(int, input().split()))\ncheck=1\nfor i in range (1,n+1):\n    if i not in k:\n        check = 0\n        print(i)\nif check == 1:\n    print('Excellent!')",
+        "highlighted_code": "<span class='highlight-green'>n=int(input())\nk=list(map(int, input().split())</span>)\ncheck=1\nfor <span class='highlight-green'>i in range (1,n+1):\n    if i not in k</span>:\n        check = 0\n        print(i)\nif check == 1:\n    print(&#39;Excellent!&#39;)"
+      },
+      "token_overlap": 66,
+      "max_similarity_percent": 68.04
+    },
+    {
+      "case_id": 46,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b5fe535fa0f4f1d92a/8045cd76adf946038858d2bc/sub_1762478490331_iyvu6ryw7.py",
+        "similarity_percent": 62.9,
+        "full_code": "n=int(input())\nso=list(map(int,input().split()))\nlon=max(so)\ndanhsach=[]\nfor i in range(1,lon+1):\n    if i not in so:\n        danhsach.append(i)\nif danhsach:\n    for x in danhsach:\n        print(x)\nelse:\n        print('Excellent!')\n",
+        "highlighted_code": "<span class='highlight-red'>n=int(input())\nso=list(map(int,input().split())</span>)\nlon=max(so)\ndanhsach=<span class='highlight-red'>[]\nfor i in range(1,lon+1):\n    if i not in so:\n        danhsach.append(i)\n</span>if danhsach:\n    for x in danhsach:\n        print(x)\nelse:\n        print(&#39;Excellent!&#39;)\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b5fe535fa0f4f1d92a/9dcb98ac39014785ad502bca/sub_1766918612134_rk8fn4gbd.py",
+        "similarity_percent": 64.46,
+        "full_code": "n =int(input())\narray = list(map(int, input().split()))\nresult = []\nfor x in range(1,n+1):\n    if x not in array:\n        result.append(x)\nif not result:\n    print(\"Excellent!\")\nelse:\n    for y in result:\n        print(y,end=\" \")\n\n    \n",
+        "highlighted_code": "<span class='highlight-green'>n =int(input())\narray = list(map(int, input().split())</span>)\nresult = <span class='highlight-green'>[]\nfor x in range(1,n+1):\n    if x not in array:\n        result.append(x)\n</span>if not result:\n    print(&#34;Excellent!&#34;)\nelse:\n    for y in result:\n        print(y,end=&#34; &#34;)\n\n    \n"
+      },
+      "token_overlap": 78,
+      "max_similarity_percent": 64.46
+    },
+    {
+      "case_id": 47,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b5fe535fa0f4f1d92a/c2c38e9c5ead4887925c7e80/sub_1762609278178_97xivpmbh.py",
+        "similarity_percent": 62.39,
+        "full_code": "x = int(input())\ny = list(map(int,input().split()))\nk = [i for i in range(1,x+1) if i not in y ]\nif k :\n     for num in k:\n         print(num)\nelse:\n    print(\"Excellent!\")",
+        "highlighted_code": "x = int(input())\ny = list(map(int,input().split())<span class='highlight-red'>)\nk = [i for i in range(1,x+1) if i not in y ]\nif k :\n     for num in k:\n         print(num)\nelse:\n    print(&#34;Excellent!&#34;)</span>"
       },
       "file2": {
         "path": "/app/app/data/submissions/68fdc3b5fe535fa0f4f1d92a/73e9e151d2dc4d53a8e6793d/sub_1762283736949_iik0phrpc.py",
-        "similarity_percent": 44.0,
+        "similarity_percent": 44.74,
         "full_code": "n = int(input())\nstring = \"\"\nwhile True:\n    string += input()\n    numbers = list(map(int, string.split()))\n    if len(numbers) >= n:\n        break\nmax_num = max(numbers)\nmissing_numbers = [i for i in range(1, max_num + 1) if i not in numbers]\nif missing_numbers:\n    for num in missing_numbers:\n        print(num)\nelse:\n    print(\"Excellent!\")",
-        "highlighted_code": "n = int(input())\nstring = &#34;&#34;\nwhile True:\n    string += input()\n    numbers = list(map(int, string.split()))\n    if len(numbers) &gt;= n:\n        break\nmax_num = max(numbers<span class='highlight-green'>)\nmissing_numbers = [i for i in range(1, max_num + 1) if i not in numbers]\nif missing_numbers:\n    for num in missing_numbers:\n        print(num)\nelse:\n    print(&#34;Excellent!</span>&#34;)"
+        "highlighted_code": "n = int(input())\nstring = &#34;&#34;\nwhile True:\n    string += input()\n    numbers = list(map(int, string.split()))\n    if len(numbers) &gt;= n:\n        break\nmax_num = max(numbers<span class='highlight-green'>)\nmissing_numbers = [i for i in range(1, max_num + 1) if i not in numbers]\nif missing_numbers:\n    for num in missing_numbers:\n        print(num)\nelse:\n    print(&#34;Excellent!&#34;)</span>"
+      },
+      "token_overlap": 68,
+      "max_similarity_percent": 62.39
+    },
+    {
+      "case_id": 48,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b5fe535fa0f4f1d92a/27e30f767b3a46b283cbfec0/sub_1761665564895_m3safa2cg.py",
+        "similarity_percent": 61.68,
+        "full_code": "n = int(input())\narray = list(map(int, input().split()))\ncheck = True\nfor i in range(1,max(array)+1):\n    if i not in array:\n        print(i)\n        check = False\nif check:\n    print(\"Excellent!\")",
+        "highlighted_code": "<span class='highlight-red'>n = int(input())\narray = list(map(int, input().split())</span>)\ncheck = True\nfor i <span class='highlight-red'>in range(1,max(array)+1):\n    if i no</span>t in array:\n        print(i)\n        check = False\nif check:\n    print(&#34;Excellent!&#34;)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b5fe535fa0f4f1d92a/a34ffbda761b435ca043fd30/sub_1762188078778_iwq3nwew6.py",
+        "similarity_percent": 57.39,
+        "full_code": "a = int(input())\nn = list(map(int, input().split()))\nb = []\nfor i in range(1, max(n)+1):\n    if i not in n:\n        b.append(i)\n        print(i)\nif len(b)==0:\n    print(\"Excellent!\")",
+        "highlighted_code": "<span class='highlight-green'>a = int(input())\nn = list(map(int, input().split())</span>)\nb = []\nfor i <span class='highlight-green'>in range(1, max(n)+1):\n    if i no</span>t in n:\n        b.append(i)\n        print(i)\nif len(b)==0:\n    print(&#34;Excellent!&#34;)"
       },
       "token_overlap": 66,
       "max_similarity_percent": 61.68
     },
     {
-      "case_id": 20,
+      "case_id": 49,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b5fe535fa0f4f1d92a/345569c455a14db085eec8e9/sub_1762614278449_1orb0b1l9.py",
+        "similarity_percent": 61.65,
+        "full_code": "a = int(input())\nso = []\nwhile len(so) <a:\n    so += list(map(int,input().split()))\nthieu = []\nfor i in range(1,a+1):\n    if i not in so:\n        thieu.append(i)\nif not thieu:\n    print(\"Excellent!\")\nelse:\n    for x in thieu:\n        print(x)\n",
+        "highlighted_code": "<span class='highlight-red'>a = int(input())\nso = []\nwhile len(so) &lt;a:\n    </span>so += <span class='highlight-red'>list(map(int,input().split())</span>)\nthieu = []\nfor <span class='highlight-red'>i in range(1,a+1):\n    if i not in so</span>:\n        thieu.append(i)\nif not thieu:\n    print(&#34;Excellent!&#34;)\nelse:\n    for x in thieu:\n        print(x)\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b5fe535fa0f4f1d92a/91001b54722a4328a2b7b879/sub_1761653961525_tl3d9e4oi.py",
+        "similarity_percent": 55.03,
+        "full_code": "# Nhập số lượng số hiệu\nn = int(input())\n\n# Tạo danh sách rỗng để lưu tất cả số hiệu\nnumbers = []\n\n# Nhập n số (có thể trên nhiều dòng)\nwhile len(numbers) < n:\n    # Nhập một dòng, tách thành từng số rồi chuyển sang kiểu int\n    line = list(map(int, input().split()))\n    # Thêm các số này vào danh sách numbers\n    numbers.extend(line)\n\n# Tìm số hiệu lớn nhất\nmax_num = max(numbers)\n\n# Tạo tập hợp (set) để tìm kiếm nhanh hơn\nnum_set = set(numbers)\n\n# Biến kiểm tra xem có số nào bị thiếu không\nmissing_found = False\n\n# Duyệt từ 1 đến max_num\nfor i in range(1, max_num + 1):\n    if i not in num_set:\n        print(i)\n        missing_found = True\n\n# Nếu không thiếu số nào, in ra Excellent!\nif not missing_found:\n    print(\"Excellent!\")\n",
+        "highlighted_code": "# Nhập số lượng số hiệu\n<span class='highlight-green'>n = int(input())\n\n# Tạo danh sách rỗng để lưu tất cả số hiệu\nnumbers = []\n\n# Nhập n số (có thể trên nhiều dòng)\nwhile len(numbers) &lt; n:\n    # Nhập một dòng, tách thành từng số rồi chuyển sang kiểu int\n    </span>line = <span class='highlight-green'>list(map(int, input().split())</span>)\n    # Thêm các số này vào danh sách numbers\n    numbers.extend(line)\n\n# Tìm số hiệu lớn nhất\nmax_num = max(numbers)\n\n# Tạo tập hợp (set) để tìm kiếm nhanh hơn\nnum_set = set(numbers)\n\n# Biến kiểm tra xem có số nào bị thiếu không\nmissing_found = False\n\n# Duyệt từ 1 đến max_num\nfor <span class='highlight-green'>i in range(1, max_num + 1):\n    if i not in num_set</span>:\n        print(i)\n        missing_found = True\n\n# Nếu không thiếu số nào, in ra Excellent!\nif not missing_found:\n    print(&#34;Excellent!&#34;)\n"
+      },
+      "token_overlap": 82,
+      "max_similarity_percent": 61.65
+    },
+    {
+      "case_id": 50,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b5fe535fa0f4f1d92a/8e236cb825b041b0a82527f2/sub_1761532307017_76ykzomhp.py",
+        "similarity_percent": 60.9,
+        "full_code": "n = int(input())\nnums = []\n\nwhile len(nums) < n:\n    sz = len(nums)\n    inp = list(map(int, input().split()))[: n - sz]\n    nums += inp\n\ns1 = set(nums)\nmiss = False\n\nfor i in range(1, max(nums)):\n    if i not in s1:\n        print(i)\n        miss = True\n\nif not miss:\n    print(\"Excellent!\")\n",
+        "highlighted_code": "n = int(input())\nnums = []\n\nwhile len(nums) &lt; n:\n    sz = len(nums)\n    inp = <span class='highlight-red'>list(map(int, input().split())</span>)[: n - sz]\n    nums += inp\n\ns1 = set(nums)\n<span class='highlight-red'>miss = False\n\nfor i in range(1, max(nums)):\n    if i not in s1:\n        print(i)\n        miss = True\n\nif not miss:\n    print(&#34;Excellent!&#34;)</span>\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b5fe535fa0f4f1d92a/7c4e55277a884a56b9be894a/sub_1763691675645_e1y9hzluz.py",
+        "similarity_percent": 84.82,
+        "full_code": "n=int(input())\nso_hieu = list(map(int,input().split()))\nappear = False\nfor i in range(1,max(so_hieu)):\n    if i not in so_hieu:\n        print(i)\n        appear = True\nif not appear:\n    print(\"Excellent!\")",
+        "highlighted_code": "n=int(input())\nso_hieu = <span class='highlight-green'>list(map(int,input().split())</span>)\n<span class='highlight-green'>appear = False\nfor i in range(1,max(so_hieu)):\n    if i not in so_hieu:\n        print(i)\n        appear = True\nif not appear:\n    print(&#34;Excellent!&#34;)</span>"
+      },
+      "token_overlap": 95,
+      "max_similarity_percent": 84.82
+    },
+    {
+      "case_id": 51,
       "file1": {
         "path": "/app/app/data/submissions/68fdc3b5fe535fa0f4f1d92a/8045cd76adf946038858d2bc/sub_1762478490331_iyvu6ryw7.py",
-        "similarity_percent": 61.48,
+        "similarity_percent": 60.48,
         "full_code": "n=int(input())\nso=list(map(int,input().split()))\nlon=max(so)\ndanhsach=[]\nfor i in range(1,lon+1):\n    if i not in so:\n        danhsach.append(i)\nif danhsach:\n    for x in danhsach:\n        print(x)\nelse:\n        print('Excellent!')\n",
-        "highlighted_code": "<span class='highlight-red'>n=int(input())\nso=list(map(int,input().split()))\nlon=max(so)\n</span>danhsach=[]\nfor <span class='highlight-red'>i in range(1,lon+1):\n    if i not in so</span>:\n        danhsach.append(i)\nif danhsach:\n    for x in danhsach:\n        print(x)\nelse:\n        print(&#39;Excellent!&#39;)\n"
+        "highlighted_code": "<span class='highlight-red'>n=int(input())\nso=list(map(int,input().split())</span>)\nlon=max(so)\ndanhsach=[]\nfor i in range(1,lon+1):\n    if i not in so:\n        danhsach.append(i)\ni<span class='highlight-red'>f danhsach:\n    for x in danhsach:\n        print(x)\nelse:\n        print(&#39;Excellent!&#39;)</span>\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b5fe535fa0f4f1d92a/9f14990043df4fda9283d7ac/sub_1761748235301_0t03sv0ey.py",
+        "similarity_percent": 52.08,
+        "full_code": "\nn = int(input())\nnumbers = list(map(int, input().split()))\nwhile len(numbers) < n:\n    numbers += list(map(int, input().split()))\nda_xuat_hien = set(x for x in numbers if x > 0)\nif da_xuat_hien:\n    max_num = max(da_xuat_hien)\nelse:\n    max_num = 0\nchua_xuat_hien = [i for i in range(1, max_num + 1) if i not in da_xuat_hien]\nif chua_xuat_hien:\n    for num in chua_xuat_hien:\n        print(num)\nelse:\n    print(\"Excellent!\")",
+        "highlighted_code": "<span class='highlight-green'>\nn = int(input())\nnumbers = list(map(int, input().split()</span>))\nwhile len(numbers) &lt; n:\n    numbers +=<span class='highlight-green'> list(map(int, input().split()</span>))\nda_xuat_hien = set(x for x in numbers if x &gt; 0)\nif da_xuat_hien:\n    max_num = max(da_xuat_hien)\nelse:\n    max_num = 0\nchua_xuat_hien = [i for i in range(1, max_num + 1) if i not in da_xuat_hien]\n<span class='highlight-green'>if chua_xuat_hien:\n    for num in chua_xuat_hien:\n        print(num)\nelse:\n    print(&#34;Excellent!&#34;</span>)"
+      },
+      "token_overlap": 75,
+      "max_similarity_percent": 60.48
+    },
+    {
+      "case_id": 52,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b5fe535fa0f4f1d92a/5ddb8c7d2c9c43bab12121a6/sub_1762884466655_w3qqzjokl.py",
+        "similarity_percent": 60.12,
+        "full_code": "def main():\n    n = int(input())\n    numbers = []\n    while len(numbers) < n:\n        line = input().split()\n        numbers.extend(map(int, line))\n    max_num = max(numbers)\n    existing = set(numbers)\n    missing_found = False\n    for i in range(1, max_num + 1):\n        if i not in existing:\n            print(i)\n            missing_found = True\n    if not missing_found:\n        print(\"Excellent!\")\nif __name__ == \"__main__\":\n    main()",
+        "highlighted_code": "def main():\n    <span class='highlight-red'>n = int(input())\n    numbers = []\n    while len(numbers) &lt; n:\n        line = </span>input().split()\n        numbers.extend(map(int, line))\n    max_num = max(numbers)\n    existing <span class='highlight-red'>= set(numbers)\n    missing_found = False\n    for i in range</span>(1, max_num + 1)<span class='highlight-red'>:\n        if i not in existing:\n            print(i)\n            missing_found = True\n    if not missing_found:\n        print(&#34;Excellent!&#34;)\n</span>if __name__ == &#34;__main__&#34;:\n    main()"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b5fe535fa0f4f1d92a/8e236cb825b041b0a82527f2/sub_1761532307017_76ykzomhp.py",
+        "similarity_percent": 64.74,
+        "full_code": "n = int(input())\nnums = []\n\nwhile len(nums) < n:\n    sz = len(nums)\n    inp = list(map(int, input().split()))[: n - sz]\n    nums += inp\n\ns1 = set(nums)\nmiss = False\n\nfor i in range(1, max(nums)):\n    if i not in s1:\n        print(i)\n        miss = True\n\nif not miss:\n    print(\"Excellent!\")\n",
+        "highlighted_code": "<span class='highlight-green'>n = int(input())\nnums = []\n\nwhile len(nums) &lt; n:\n    sz = </span>len(nums)\n    inp = list(map(int, input().split()))[: n - sz]\n    nums += inp\n\ns1 <span class='highlight-green'>= set(nums)\nmiss = False\n\nfor i in range</span>(1, max(nums))<span class='highlight-green'>:\n    if i not in s1:\n        print(i)\n        miss = True\n\nif not miss:\n    print(&#34;Excellent!&#34;)</span>\n"
+      },
+      "token_overlap": 101,
+      "max_similarity_percent": 64.74
+    },
+    {
+      "case_id": 53,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b5fe535fa0f4f1d92a/5ddb8c7d2c9c43bab12121a6/sub_1762884466655_w3qqzjokl.py",
+        "similarity_percent": 58.93,
+        "full_code": "def main():\n    n = int(input())\n    numbers = []\n    while len(numbers) < n:\n        line = input().split()\n        numbers.extend(map(int, line))\n    max_num = max(numbers)\n    existing = set(numbers)\n    missing_found = False\n    for i in range(1, max_num + 1):\n        if i not in existing:\n            print(i)\n            missing_found = True\n    if not missing_found:\n        print(\"Excellent!\")\nif __name__ == \"__main__\":\n    main()",
+        "highlighted_code": "def main():\n    <span class='highlight-red'>n = int(input())\n    numbers = []\n    while len(numbers) &lt; n:\n        </span>line = input().split()\n        numbers.extend(map(int, line))\n    max_num = max(numbers)\n    existing = set(numbers)\n    <span class='highlight-red'>missing_found = False\n    for i in range(1, max_num + 1):\n        if i not in existing:\n            print(i)\n            missing_found = True\n    if not missing_found:\n        print(&#34;Excellent!&#34;)\n</span>if __name__ == &#34;__main__&#34;:\n    main()"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b5fe535fa0f4f1d92a/8d079daede8c4b3d9268ce06/sub_1767983891921_p04jjxxu5.py",
+        "similarity_percent": 70.71,
+        "full_code": "n = int(input())\n\nnums = []\nwhile len(nums) < n:\n    nums.extend(map(int, input().split()))\n\nnums_set = set(nums)\nmax_val = max(nums)\n\nfound = False\n\nfor i in range(1, max_val + 1):\n    if i not in nums_set:\n        print(i)\n        found = True\n\nif not found:\n    print(\"Excellent!\")",
+        "highlighted_code": "<span class='highlight-green'>n = int(input())\n\nnums = []\nwhile len(nums) &lt; n:\n    </span>nums.extend(map(int, input().split()))\n\nnums_set = set(nums)\nmax_val = max(nums)\n\n<span class='highlight-green'>found = False\n\nfor i in range(1, max_val + 1):\n    if i not in nums_set:\n        print(i)\n        found = True\n\nif not found:\n    print(&#34;Excellent!&#34;)</span>"
+      },
+      "token_overlap": 99,
+      "max_similarity_percent": 70.71
+    },
+    {
+      "case_id": 54,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b5fe535fa0f4f1d92a/ebae007e508a41ad83be62f7/sub_1765285552843_cosw96m5e.py",
+        "similarity_percent": 58.7,
+        "full_code": "n = int(input())\nids = []\nwhile len(ids) < n:\n    ids.extend(map(int, input().split()))\nM = max(ids)\nmissing = []\nfor i in range(1, M+1):\n    if i not in ids:\n        missing.append(i)\nif len(missing) == 0:\n    print(\"Excellent!\")\nelse:\n    print(*missing)\n",
+        "highlighted_code": "<span class='highlight-red'>n = int(input())\nids = []\nwhile len(ids) &lt; n:\n    ids.extend(map(int, input().split())</span>)\nM = max(ids)\nmissing = []\nfor <span class='highlight-red'>i in range(1, M+1):\n    if i not in ids</span>:\n        missing.append(i)\nif len(missing) == 0:\n    print(&#34;Excellent!&#34;)\nelse:\n    print(*missing)\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b5fe535fa0f4f1d92a/8d079daede8c4b3d9268ce06/sub_1767983882458_ucq05x8lb.py",
+        "similarity_percent": 57.86,
+        "full_code": "n = int(input())\n\nnums = []\nwhile len(nums) < n:\n    nums.extend(map(int, input().split()))\n\nnums_set = set(nums)\nmax_val = max(nums)\n\nfound = False\n\nfor i in range(1, max_val + 1):\n    if i not in nums_set:\n        print(i)\n        found = True\n\nif not found:\n    print(\"Excellent!\")\n\n",
+        "highlighted_code": "<span class='highlight-green'>n = int(input())\n\nnums = []\nwhile len(nums) &lt; n:\n    nums.extend(map(int, input().split())</span>)\n\nnums_set = set(nums)\nmax_val = max(nums)\n\nfound = False\n\nfor <span class='highlight-green'>i in range(1, max_val + 1):\n    if i not in nums_set</span>:\n        print(i)\n        found = True\n\nif not found:\n    print(&#34;Excellent!&#34;)\n\n"
+      },
+      "token_overlap": 81,
+      "max_similarity_percent": 58.7
+    },
+    {
+      "case_id": 55,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b5fe535fa0f4f1d92a/ebae007e508a41ad83be62f7/sub_1765285552843_cosw96m5e.py",
+        "similarity_percent": 58.7,
+        "full_code": "n = int(input())\nids = []\nwhile len(ids) < n:\n    ids.extend(map(int, input().split()))\nM = max(ids)\nmissing = []\nfor i in range(1, M+1):\n    if i not in ids:\n        missing.append(i)\nif len(missing) == 0:\n    print(\"Excellent!\")\nelse:\n    print(*missing)\n",
+        "highlighted_code": "<span class='highlight-red'>n = int(input())\nids = []\nwhile len(ids) &lt; n:\n    </span>ids.extend(map(int, input().split()))\n<span class='highlight-red'>M = max(ids)\nmissing = []\nfor i in range(1, M+1):\n    if i not in ids:\n        missing.append(i)\nif </span>len(missing) == 0:\n    print(&#34;Excellent!&#34;)\nelse:\n    print(*missing)\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b5fe535fa0f4f1d92a/693c1b4924c33437062efdcf/sub_1765569397967_prex26p6d.py",
+        "similarity_percent": 52.6,
+        "full_code": "n = int(input())\nnumbers = []\nwhile len(numbers) < n:\n    d = input().split()\n    for i in d:\n        numbers.append(int(i))\nnumbers = set(numbers)\nmax_num = max(numbers)\nmissing = []\nfor i in range(1, max_num + 1):\n    if i not in numbers:\n        missing.append(i)\nif missing:\n    for i in missing:\n        print(i)\nelse:\n    print(\"Excellent!\")",
+        "highlighted_code": "<span class='highlight-green'>n = int(input())\nnumbers = []\nwhile len(numbers) &lt; n:\n    </span>d = input().split()\n    for i in d:\n        numbers.append(int(i))\nnumbers = set(numbers)\n<span class='highlight-green'>max_num = max(numbers)\nmissing = []\nfor i in range(1, max_num + 1):\n    if i not in numbers:\n        missing.append(i)\nif </span>missing:\n    for i in missing:\n        print(i)\nelse:\n    print(&#34;Excellent!&#34;)"
+      },
+      "token_overlap": 81,
+      "max_similarity_percent": 58.7
+    },
+    {
+      "case_id": 56,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b5fe535fa0f4f1d92a/ebae007e508a41ad83be62f7/sub_1765285552843_cosw96m5e.py",
+        "similarity_percent": 58.7,
+        "full_code": "n = int(input())\nids = []\nwhile len(ids) < n:\n    ids.extend(map(int, input().split()))\nM = max(ids)\nmissing = []\nfor i in range(1, M+1):\n    if i not in ids:\n        missing.append(i)\nif len(missing) == 0:\n    print(\"Excellent!\")\nelse:\n    print(*missing)\n",
+        "highlighted_code": "<span class='highlight-red'>n = int(input())\nids = []\nwhile len(ids) &lt; n:\n    ids.extend(map(int, input().split())</span>)\nM = max(ids)\nmissing = []\nfor <span class='highlight-red'>i in range(1, M+1):\n    if i not in ids</span>:\n        missing.append(i)\nif len(missing) == 0:\n    print(&#34;Excellent!&#34;)\nelse:\n    print(*missing)\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b5fe535fa0f4f1d92a/8d079daede8c4b3d9268ce06/sub_1767983891921_p04jjxxu5.py",
+        "similarity_percent": 57.86,
+        "full_code": "n = int(input())\n\nnums = []\nwhile len(nums) < n:\n    nums.extend(map(int, input().split()))\n\nnums_set = set(nums)\nmax_val = max(nums)\n\nfound = False\n\nfor i in range(1, max_val + 1):\n    if i not in nums_set:\n        print(i)\n        found = True\n\nif not found:\n    print(\"Excellent!\")",
+        "highlighted_code": "<span class='highlight-green'>n = int(input())\n\nnums = []\nwhile len(nums) &lt; n:\n    nums.extend(map(int, input().split())</span>)\n\nnums_set = set(nums)\nmax_val = max(nums)\n\nfound = False\n\nfor <span class='highlight-green'>i in range(1, max_val + 1):\n    if i not in nums_set</span>:\n        print(i)\n        found = True\n\nif not found:\n    print(&#34;Excellent!&#34;)"
+      },
+      "token_overlap": 81,
+      "max_similarity_percent": 58.7
+    },
+    {
+      "case_id": 57,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b5fe535fa0f4f1d92a/8e19101eb0da4e9a92a17098/sub_1761635940261_pcj1u2u5j.py",
+        "similarity_percent": 58.16,
+        "full_code": "n = int(input())\na = []\nwhile len(a) < n:\n    a += list(map(int, input().split()))\nln = max(a)\nm = []\nfor i in range(1, ln + 1):\n    if i not in a:\n        m.append(i)\nif not m:\n    print(\"Excellent!\")\nelse:\n    for x in m:\n        print(x) ",
+        "highlighted_code": "<span class='highlight-red'>n = int(input())\na = []\nwhile len(a) &lt; n:\n    </span>a += <span class='highlight-red'>list(map(int, input().split())</span>)\nln = max(a)\nm = []\nfor <span class='highlight-red'>i in range(1, ln + 1):\n    if i not in a</span>:\n        m.append(i)\nif not m:\n    print(&#34;Excellent!&#34;)\nelse:\n    for x in m:\n        print(x) "
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b5fe535fa0f4f1d92a/91001b54722a4328a2b7b879/sub_1761653961525_tl3d9e4oi.py",
+        "similarity_percent": 55.03,
+        "full_code": "# Nhập số lượng số hiệu\nn = int(input())\n\n# Tạo danh sách rỗng để lưu tất cả số hiệu\nnumbers = []\n\n# Nhập n số (có thể trên nhiều dòng)\nwhile len(numbers) < n:\n    # Nhập một dòng, tách thành từng số rồi chuyển sang kiểu int\n    line = list(map(int, input().split()))\n    # Thêm các số này vào danh sách numbers\n    numbers.extend(line)\n\n# Tìm số hiệu lớn nhất\nmax_num = max(numbers)\n\n# Tạo tập hợp (set) để tìm kiếm nhanh hơn\nnum_set = set(numbers)\n\n# Biến kiểm tra xem có số nào bị thiếu không\nmissing_found = False\n\n# Duyệt từ 1 đến max_num\nfor i in range(1, max_num + 1):\n    if i not in num_set:\n        print(i)\n        missing_found = True\n\n# Nếu không thiếu số nào, in ra Excellent!\nif not missing_found:\n    print(\"Excellent!\")\n",
+        "highlighted_code": "# Nhập số lượng số hiệu\n<span class='highlight-green'>n = int(input())\n\n# Tạo danh sách rỗng để lưu tất cả số hiệu\nnumbers = []\n\n# Nhập n số (có thể trên nhiều dòng)\nwhile len(numbers) &lt; n:\n    # Nhập một dòng, tách thành từng số rồi chuyển sang kiểu int\n    </span>line = <span class='highlight-green'>list(map(int, input().split())</span>)\n    # Thêm các số này vào danh sách numbers\n    numbers.extend(line)\n\n# Tìm số hiệu lớn nhất\nmax_num = max(numbers)\n\n# Tạo tập hợp (set) để tìm kiếm nhanh hơn\nnum_set = set(numbers)\n\n# Biến kiểm tra xem có số nào bị thiếu không\nmissing_found = False\n\n# Duyệt từ 1 đến max_num\nfor <span class='highlight-green'>i in range(1, max_num + 1):\n    if i not in num_set</span>:\n        print(i)\n        missing_found = True\n\n# Nếu không thiếu số nào, in ra Excellent!\nif not missing_found:\n    print(&#34;Excellent!&#34;)\n"
+      },
+      "token_overlap": 82,
+      "max_similarity_percent": 58.16
+    },
+    {
+      "case_id": 58,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b5fe535fa0f4f1d92a/8d079daede8c4b3d9268ce06/sub_1767983882458_ucq05x8lb.py",
+        "similarity_percent": 57.86,
+        "full_code": "n = int(input())\n\nnums = []\nwhile len(nums) < n:\n    nums.extend(map(int, input().split()))\n\nnums_set = set(nums)\nmax_val = max(nums)\n\nfound = False\n\nfor i in range(1, max_val + 1):\n    if i not in nums_set:\n        print(i)\n        found = True\n\nif not found:\n    print(\"Excellent!\")\n\n",
+        "highlighted_code": "<span class='highlight-red'>n = int(input())\n\nnums = []\nwhile len(nums) &lt; n:\n    nums.extend(map(int, input().split())</span>)\n\nnums_set = set(nums)\nmax_val = max(nums)\n\nfound = False\n\nfor <span class='highlight-red'>i in range(1, max_val + 1):\n    if i not in nums_set</span>:\n        print(i)\n        found = True\n\nif not found:\n    print(&#34;Excellent!&#34;)\n\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b5fe535fa0f4f1d92a/51bbd72f42174843b97698b4/sub_1761621281589_6tdnhpy70.py",
+        "similarity_percent": 55.86,
+        "full_code": "n = int(input())\ncac_so = []\nwhile len(cac_so) < n:\n    cac_so.extend(map(int, input().split()))\nmax_so = max(cac_so)\ntap_hop_so = set(cac_so)\nso_thieu = []\nfor i in range(1, max_so + 1):\n    if i not in tap_hop_so:\n        so_thieu.append(i)\nif not so_thieu:\n    print(\"Excellent!\")\nelse:\n    for so in so_thieu:\n        print(so)",
+        "highlighted_code": "<span class='highlight-green'>n = int(input())\ncac_so = []\nwhile len(cac_so) &lt; n:\n    cac_so.extend(map(int, input().split())</span>)\nmax_so = max(cac_so)\ntap_hop_so = set(cac_so)\nso_thieu = []\nfor <span class='highlight-green'>i in range(1, max_so + 1):\n    if i not in tap_hop_so</span>:\n        so_thieu.append(i)\nif not so_thieu:\n    print(&#34;Excellent!&#34;)\nelse:\n    for so in so_thieu:\n        print(so)"
+      },
+      "token_overlap": 81,
+      "max_similarity_percent": 57.86
+    },
+    {
+      "case_id": 59,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b5fe535fa0f4f1d92a/8d079daede8c4b3d9268ce06/sub_1767983882458_ucq05x8lb.py",
+        "similarity_percent": 57.86,
+        "full_code": "n = int(input())\n\nnums = []\nwhile len(nums) < n:\n    nums.extend(map(int, input().split()))\n\nnums_set = set(nums)\nmax_val = max(nums)\n\nfound = False\n\nfor i in range(1, max_val + 1):\n    if i not in nums_set:\n        print(i)\n        found = True\n\nif not found:\n    print(\"Excellent!\")\n\n",
+        "highlighted_code": "<span class='highlight-red'>n = int(input())\n\nnums = []\nwhile len(nums) &lt; n:\n    nums.extend(map(int, input().split())</span>)\n\nnums_set = set(nums)\nmax_val = max(nums)\n\nfound = False\n\nfor <span class='highlight-red'>i in range(1, max_val + 1):\n    if i not in nums_set</span>:\n        print(i)\n        found = True\n\nif not found:\n    print(&#34;Excellent!&#34;)\n\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b5fe535fa0f4f1d92a/f95120b3a38a461085ef58cb/sub_1761720583905_umqum6slo.py",
+        "similarity_percent": 55.1,
+        "full_code": "n = int(input())\na = []\nwhile len(a) < n:\n    a.extend(map(int, input().split()))\n    gtln = max(a)\n    ds = set(a)\n    sobm = []\n    for i in range(1, gtln +1):\n        if i not in ds:\n            sobm.append(i)\n        if sobm:\n            for so in sobm:\n                print(sobm)\n        else:\n            print(\"Excellent!\")",
+        "highlighted_code": "<span class='highlight-green'>n = int(input())\na = []\nwhile len(a) &lt; n:\n    a.extend(map(int, input().split())</span>)\n    gtln = max(a)\n    ds = set(a)\n    sobm = []\n    for <span class='highlight-green'>i in range(1, gtln +1):\n        if i not in ds</span>:\n            sobm.append(i)\n        if sobm:\n            for so in sobm:\n                print(sobm)\n        else:\n            print(&#34;Excellent!&#34;)"
+      },
+      "token_overlap": 81,
+      "max_similarity_percent": 57.86
+    },
+    {
+      "case_id": 60,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b5fe535fa0f4f1d92a/8d079daede8c4b3d9268ce06/sub_1767983891921_p04jjxxu5.py",
+        "similarity_percent": 57.86,
+        "full_code": "n = int(input())\n\nnums = []\nwhile len(nums) < n:\n    nums.extend(map(int, input().split()))\n\nnums_set = set(nums)\nmax_val = max(nums)\n\nfound = False\n\nfor i in range(1, max_val + 1):\n    if i not in nums_set:\n        print(i)\n        found = True\n\nif not found:\n    print(\"Excellent!\")",
+        "highlighted_code": "<span class='highlight-red'>n = int(input())\n\nnums = []\nwhile len(nums) &lt; n:\n    nums.extend(map(int, input().split())</span>)\n\nnums_set = set(nums)\nmax_val = max(nums)\n\nfound = False\n\nfor <span class='highlight-red'>i in range(1, max_val + 1):\n    if i not in nums_set</span>:\n        print(i)\n        found = True\n\nif not found:\n    print(&#34;Excellent!&#34;)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b5fe535fa0f4f1d92a/f95120b3a38a461085ef58cb/sub_1761720583905_umqum6slo.py",
+        "similarity_percent": 55.1,
+        "full_code": "n = int(input())\na = []\nwhile len(a) < n:\n    a.extend(map(int, input().split()))\n    gtln = max(a)\n    ds = set(a)\n    sobm = []\n    for i in range(1, gtln +1):\n        if i not in ds:\n            sobm.append(i)\n        if sobm:\n            for so in sobm:\n                print(sobm)\n        else:\n            print(\"Excellent!\")",
+        "highlighted_code": "<span class='highlight-green'>n = int(input())\na = []\nwhile len(a) &lt; n:\n    a.extend(map(int, input().split())</span>)\n    gtln = max(a)\n    ds = set(a)\n    sobm = []\n    for <span class='highlight-green'>i in range(1, gtln +1):\n        if i not in ds</span>:\n            sobm.append(i)\n        if sobm:\n            for so in sobm:\n                print(sobm)\n        else:\n            print(&#34;Excellent!&#34;)"
+      },
+      "token_overlap": 81,
+      "max_similarity_percent": 57.86
+    },
+    {
+      "case_id": 61,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b5fe535fa0f4f1d92a/bcb420abb39b4af095b63cf8/sub_1762424457908_cjonttd4i.py",
+        "similarity_percent": 57.78,
+        "full_code": "n=int(input())\nd_s=list(map(int,input().split()))\nso_lon_nhat=max(d_s)\nd_s_moi=[]\nfor i in range(1,so_lon_nhat+1):\n    if i not in d_s:\n        d_s_moi.append(i)\nso_chu_so=len(d_s_moi)\nif so_chu_so>=1:\n    for a in d_s_moi:\n        print(a)\nelse:\n    print(\"Excellent!\")\n",
+        "highlighted_code": "<span class='highlight-red'>n=int(input())\nd_s=list(map(int,input().split())</span>)\nso_lon_nhat=max(d_s)\nd_s_moi=<span class='highlight-red'>[]\nfor i in range(1,so_lon_nhat+1):\n    if i not in d_s:\n        d_s_moi.append(i)\n</span>so_chu_so=len(d_s_moi)\nif so_chu_so&gt;=1:\n    for a in d_s_moi:\n        print(a)\nelse:\n    print(&#34;Excellent!&#34;)\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b5fe535fa0f4f1d92a/9dcb98ac39014785ad502bca/sub_1766918612134_rk8fn4gbd.py",
+        "similarity_percent": 64.46,
+        "full_code": "n =int(input())\narray = list(map(int, input().split()))\nresult = []\nfor x in range(1,n+1):\n    if x not in array:\n        result.append(x)\nif not result:\n    print(\"Excellent!\")\nelse:\n    for y in result:\n        print(y,end=\" \")\n\n    \n",
+        "highlighted_code": "<span class='highlight-green'>n =int(input())\narray = list(map(int, input().split())</span>)\nresult = <span class='highlight-green'>[]\nfor x in range(1,n+1):\n    if x not in array:\n        result.append(x)\n</span>if not result:\n    print(&#34;Excellent!&#34;)\nelse:\n    for y in result:\n        print(y,end=&#34; &#34;)\n\n    \n"
+      },
+      "token_overlap": 78,
+      "max_similarity_percent": 64.46
+    },
+    {
+      "case_id": 62,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b5fe535fa0f4f1d92a/8045cd76adf946038858d2bc/sub_1762478490331_iyvu6ryw7.py",
+        "similarity_percent": 57.26,
+        "full_code": "n=int(input())\nso=list(map(int,input().split()))\nlon=max(so)\ndanhsach=[]\nfor i in range(1,lon+1):\n    if i not in so:\n        danhsach.append(i)\nif danhsach:\n    for x in danhsach:\n        print(x)\nelse:\n        print('Excellent!')\n",
+        "highlighted_code": "<span class='highlight-red'>n=int(input())\nso=list(map(int,input().split()))\nlon=ma</span>x(so)\ndanhsach=[]\nfor <span class='highlight-red'>i in range(1,lon+1):\n    if i not in so</span>:\n        danhsach.append(i)\nif danhsach:\n    for x in danhsach:\n        print(x)\nelse:\n        print(&#39;Excellent!&#39;)\n"
       },
       "file2": {
         "path": "/app/app/data/submissions/68fdc3b5fe535fa0f4f1d92a/bcb420abb39b4af095b63cf8/sub_1762423213645_xa0t12xe4.py",
-        "similarity_percent": 72.82,
+        "similarity_percent": 68.27,
         "full_code": "n=int(input())\nd_s=list(map(int,input().split()))\nso_lon_nhat=max(d_s)\nfor i in range(1,so_lon_nhat+1):\n    if i not in d_s:\n        print(i)\n    break\nelse:\n    print(\"Excellent!\")\n    \n",
-        "highlighted_code": "<span class='highlight-green'>n=int(input())\nd_s=list(map(int,input().split()))\nso_lon_nhat=max(d_s)\n</span>for <span class='highlight-green'>i in range(1,so_lon_nhat+1):\n    if i not in d_s</span>:\n        print(i)\n    break\nelse:\n    print(&#34;Excellent!&#34;)\n    \n"
+        "highlighted_code": "<span class='highlight-green'>n=int(input())\nd_s=list(map(int,input().split()))\nso_lon_nhat=ma</span>x(d_s)\nfor <span class='highlight-green'>i in range(1,so_lon_nhat+1):\n    if i not in d_s</span>:\n        print(i)\n    break\nelse:\n    print(&#34;Excellent!&#34;)\n    \n"
       },
-      "token_overlap": 75,
-      "max_similarity_percent": 72.82
+      "token_overlap": 71,
+      "max_similarity_percent": 68.27
     },
     {
-      "case_id": 21,
+      "case_id": 63,
       "file1": {
-        "path": "/app/app/data/submissions/68fdc3b5fe535fa0f4f1d92a/d9aec9d917da4c5e9beeb80b/sub_1761572529235_3v7ctsey5.py",
-        "similarity_percent": 61.36,
-        "full_code": "n = int(input())\nnums = []\nwhile len(nums) < n:\n    nums += list(map(int, input().split()))\nmax_value = max(nums)\nmissing = [i for i in range(1, max_value) if i not in nums]\nif missing:\n    for x in missing:\n        print(x)\nelse:\n    print(\"Excellent!\")\n   \n",
-        "highlighted_code": "n = int(input())\nnums = []\nwh<span class='highlight-red'>ile len(nums) &lt; n:\n    nums += list(map(int, input().split()))\n</span>max_value = max(nums)\nmissing = [i for i in range(1, max_value) if i <span class='highlight-red'>not in nums]\nif missing:\n    for x in missing:\n        print(x)\nelse:\n    print(&#34;Excellent!</span>&#34;)\n   \n"
+        "path": "/app/app/data/submissions/68fdc3b5fe535fa0f4f1d92a/51bbd72f42174843b97698b4/sub_1761621281589_6tdnhpy70.py",
+        "similarity_percent": 55.86,
+        "full_code": "n = int(input())\ncac_so = []\nwhile len(cac_so) < n:\n    cac_so.extend(map(int, input().split()))\nmax_so = max(cac_so)\ntap_hop_so = set(cac_so)\nso_thieu = []\nfor i in range(1, max_so + 1):\n    if i not in tap_hop_so:\n        so_thieu.append(i)\nif not so_thieu:\n    print(\"Excellent!\")\nelse:\n    for so in so_thieu:\n        print(so)",
+        "highlighted_code": "<span class='highlight-red'>n = int(input())\ncac_so = []\nwhile len(cac_so) &lt; n:\n    cac_so.extend(map(int, input().split())</span>)\nmax_so = max(cac_so)\ntap_hop_so = set(cac_so)\nso_thieu = []\nfor <span class='highlight-red'>i in range(1, max_so + 1):\n    if i not in tap_hop_so</span>:\n        so_thieu.append(i)\nif not so_thieu:\n    print(&#34;Excellent!&#34;)\nelse:\n    for so in so_thieu:\n        print(so)"
       },
       "file2": {
-        "path": "/app/app/data/submissions/68fdc3b5fe535fa0f4f1d92a/9f14990043df4fda9283d7ac/sub_1761748235301_0t03sv0ey.py",
-        "similarity_percent": 55.79,
-        "full_code": "\nn = int(input())\nnumbers = list(map(int, input().split()))\nwhile len(numbers) < n:\n    numbers += list(map(int, input().split()))\nda_xuat_hien = set(x for x in numbers if x > 0)\nif da_xuat_hien:\n    max_num = max(da_xuat_hien)\nelse:\n    max_num = 0\nchua_xuat_hien = [i for i in range(1, max_num + 1) if i not in da_xuat_hien]\nif chua_xuat_hien:\n    for num in chua_xuat_hien:\n        print(num)\nelse:\n    print(\"Excellent!\")",
-        "highlighted_code": "\nn = int(input())\nnumbers = <span class='highlight-green'>list(map(int, input().split()))</span>\nw<span class='highlight-green'>hile len(numbers) &lt; n:\n    numbers += list(map(int, input().split()))</span>\nda_xuat_hien = set(x for x in numbers if x &gt; 0)\nif da_xuat_hien:\n    max_num = max(da_xuat_hien)\nelse:\n    max_num = 0\nchua_xuat_hien = [i for i in range(1, max_num + 1) if i<span class='highlight-green'> not in da_xuat_hien]\nif chua_xuat_hien:\n    for num in chua_xuat_hien:\n        print(num)\nelse:\n    print(&#34;Excellent</span>!&#34;)"
+        "path": "/app/app/data/submissions/68fdc3b5fe535fa0f4f1d92a/8d079daede8c4b3d9268ce06/sub_1767983891921_p04jjxxu5.py",
+        "similarity_percent": 57.86,
+        "full_code": "n = int(input())\n\nnums = []\nwhile len(nums) < n:\n    nums.extend(map(int, input().split()))\n\nnums_set = set(nums)\nmax_val = max(nums)\n\nfound = False\n\nfor i in range(1, max_val + 1):\n    if i not in nums_set:\n        print(i)\n        found = True\n\nif not found:\n    print(\"Excellent!\")",
+        "highlighted_code": "<span class='highlight-green'>n = int(input())\n\nnums = []\nwhile len(nums) &lt; n:\n    nums.extend(map(int, input().split())</span>)\n\nnums_set = set(nums)\nmax_val = max(nums)\n\nfound = False\n\nfor <span class='highlight-green'>i in range(1, max_val + 1):\n    if i not in nums_set</span>:\n        print(i)\n        found = True\n\nif not found:\n    print(&#34;Excellent!&#34;)"
       },
       "token_overlap": 81,
-      "max_similarity_percent": 61.36
+      "max_similarity_percent": 57.86
     },
     {
-      "case_id": 22,
+      "case_id": 64,
       "file1": {
-        "path": "/app/app/data/submissions/68fdc3b5fe535fa0f4f1d92a/8045cd76adf946038858d2bc/sub_1762478490331_iyvu6ryw7.py",
-        "similarity_percent": 59.84,
-        "full_code": "n=int(input())\nso=list(map(int,input().split()))\nlon=max(so)\ndanhsach=[]\nfor i in range(1,lon+1):\n    if i not in so:\n        danhsach.append(i)\nif danhsach:\n    for x in danhsach:\n        print(x)\nelse:\n        print('Excellent!')\n",
-        "highlighted_code": "<span class='highlight-red'>n=int(input())\nso=list(map(int,input().split()))\n</span>lon=max(so)\ndanhsach=[]\nfor i in range(1,lon+1):\n    if i not in so:\n        danhsach.append(i)\nif <span class='highlight-red'>danhsach:\n    for x in danhsach:\n        print(x)\nelse:\n        print(&#39;Excellent!</span>&#39;)\n"
-      },
-      "file2": {
-        "path": "/app/app/data/submissions/68fdc3b5fe535fa0f4f1d92a/c2c38e9c5ead4887925c7e80/sub_1762609278178_97xivpmbh.py",
-        "similarity_percent": 68.22,
-        "full_code": "x = int(input())\ny = list(map(int,input().split()))\nk = [i for i in range(1,x+1) if i not in y ]\nif k :\n     for num in k:\n         print(num)\nelse:\n    print(\"Excellent!\")",
-        "highlighted_code": "<span class='highlight-green'>x = int(input())\ny = list(map(int,input().split()))\n</span>k = [i for i in range(1,x+1) if i not in y ]\nif <span class='highlight-green'>k :\n     for num in k:\n         print(num)\nelse:\n    print(&#34;Excellent!</span>&#34;)"
-      },
-      "token_overlap": 73,
-      "max_similarity_percent": 68.22
-    },
-    {
-      "case_id": 23,
-      "file1": {
-        "path": "/app/app/data/submissions/68fdc3b5fe535fa0f4f1d92a/26894d2babd64210ad6beba1/sub_1761981936792_myu31qz0u.py",
-        "similarity_percent": 56.3,
-        "full_code": "n = int(input())\na = list(map(int, input().split()))\n\ncheck = False\n\nfor i in range(1, a[-1] + 1):\n    if i not in a:\n        print(i, end=\" \")\n        check = True\n\nif check == False:\n    print(\"Excellent!\")\n",
-        "highlighted_code": "<span class='highlight-red'>n = int(input())\na = list(map(int, input().split()))\n\n</span>check = False\n\nfor i in range(1, a[-1] + 1)<span class='highlight-red'>:\n    if i not in a:\n        print(i, end=&#34; &#34;)\n        </span>check = True\n\nif check == False:\n    print(&#34;Excellent!&#34;)\n"
-      },
-      "file2": {
-        "path": "/app/app/data/submissions/68fdc3b5fe535fa0f4f1d92a/f0199fcb94bf405a8bf2ca38/sub_1761666022430_hdq60lov6.py",
-        "similarity_percent": 60.36,
-        "full_code": "n = int(input())\nds = list(map(int,input().split()))\nfor i in range(1,n):\n    if i not in ds:\n        print(i,end=\" \")\nif len(ds)==n and ds[-1]==n:\n    print(\"Excellent!\")",
-        "highlighted_code": "<span class='highlight-green'>n = int(input())\nds = list(map(int,input().split()))\n</span>for i in range(1,n)<span class='highlight-green'>:\n    if i not in ds:\n        print(i,end=&#34; &#34;)\n</span>if len(ds)==n and ds[-1]==n:\n    print(&#34;Excellent!&#34;)"
-      },
-      "token_overlap": 67,
-      "max_similarity_percent": 60.36
-    },
-    {
-      "case_id": 24,
-      "file1": {
-        "path": "/app/app/data/submissions/68fdc3b5fe535fa0f4f1d92a/8045cd76adf946038858d2bc/sub_1762478490331_iyvu6ryw7.py",
-        "similarity_percent": 54.92,
-        "full_code": "n=int(input())\nso=list(map(int,input().split()))\nlon=max(so)\ndanhsach=[]\nfor i in range(1,lon+1):\n    if i not in so:\n        danhsach.append(i)\nif danhsach:\n    for x in danhsach:\n        print(x)\nelse:\n        print('Excellent!')\n",
-        "highlighted_code": "<span class='highlight-red'>n=int(input())\nso=list(map(int,input().split()))\n</span>lon=max(so)\ndanhsach=[]\nfor <span class='highlight-red'>i in range(1,lon+1):\n    if i not in so</span>:\n        danhsach.append(i)\nif danhsach:\n    for x in danhsach:\n        print(x)\nelse:\n        print(&#39;Excellent!&#39;)\n"
+        "path": "/app/app/data/submissions/68fdc3b5fe535fa0f4f1d92a/9dcb98ac39014785ad502bca/sub_1766918612134_rk8fn4gbd.py",
+        "similarity_percent": 54.55,
+        "full_code": "n =int(input())\narray = list(map(int, input().split()))\nresult = []\nfor x in range(1,n+1):\n    if x not in array:\n        result.append(x)\nif not result:\n    print(\"Excellent!\")\nelse:\n    for y in result:\n        print(y,end=\" \")\n\n    \n",
+        "highlighted_code": "<span class='highlight-red'>n =int(input())\narray = list(map(int, input().split())</span>)\nresult = []\nfor <span class='highlight-red'>x in range(1,n+1):\n    if x not in array</span>:\n        result.append(x)\nif not result:\n    print(&#34;Excellent!&#34;)\nelse:\n    for y in result:\n        print(y,end=&#34; &#34;)\n\n    \n"
       },
       "file2": {
         "path": "/app/app/data/submissions/68fdc3b5fe535fa0f4f1d92a/606112b8529f48619a01b7f6/sub_1762272835253_x3189qvha.py",
-        "similarity_percent": 69.07,
+        "similarity_percent": 68.04,
         "full_code": "n=int(input())\nk=list(map(int, input().split()))\ncheck=1\nfor i in range (1,n+1):\n    if i not in k:\n        check = 0\n        print(i)\nif check == 1:\n    print('Excellent!')",
-        "highlighted_code": "<span class='highlight-green'>n=int(input())\nk=list(map(int, input().split()))\n</span>check=1\nfor <span class='highlight-green'>i in range (1,n+1):\n    if i not in k</span>:\n        check = 0\n        print(i)\nif check == 1:\n    print(&#39;Excellent!&#39;)"
+        "highlighted_code": "<span class='highlight-green'>n=int(input())\nk=list(map(int, input().split())</span>)\ncheck=1\nfor <span class='highlight-green'>i in range (1,n+1):\n    if i not in k</span>:\n        check = 0\n        print(i)\nif check == 1:\n    print(&#39;Excellent!&#39;)"
       },
-      "token_overlap": 67,
-      "max_similarity_percent": 69.07
+      "token_overlap": 66,
+      "max_similarity_percent": 68.04
     },
     {
-      "case_id": 25,
+      "case_id": 65,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b5fe535fa0f4f1d92a/8045cd76adf946038858d2bc/sub_1762478490331_iyvu6ryw7.py",
+        "similarity_percent": 53.23,
+        "full_code": "n=int(input())\nso=list(map(int,input().split()))\nlon=max(so)\ndanhsach=[]\nfor i in range(1,lon+1):\n    if i not in so:\n        danhsach.append(i)\nif danhsach:\n    for x in danhsach:\n        print(x)\nelse:\n        print('Excellent!')\n",
+        "highlighted_code": "<span class='highlight-red'>n=int(input())\nso=list(map(int,input().split())</span>)\nlon=max(so)\ndanhsach=[]\nfor <span class='highlight-red'>i in range(1,lon+1):\n    if i not in so</span>:\n        danhsach.append(i)\nif danhsach:\n    for x in danhsach:\n        print(x)\nelse:\n        print(&#39;Excellent!&#39;)\n"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b5fe535fa0f4f1d92a/606112b8529f48619a01b7f6/sub_1762272835253_x3189qvha.py",
+        "similarity_percent": 68.04,
+        "full_code": "n=int(input())\nk=list(map(int, input().split()))\ncheck=1\nfor i in range (1,n+1):\n    if i not in k:\n        check = 0\n        print(i)\nif check == 1:\n    print('Excellent!')",
+        "highlighted_code": "<span class='highlight-green'>n=int(input())\nk=list(map(int, input().split())</span>)\ncheck=1\nfor <span class='highlight-green'>i in range (1,n+1):\n    if i not in k</span>:\n        check = 0\n        print(i)\nif check == 1:\n    print(&#39;Excellent!&#39;)"
+      },
+      "token_overlap": 66,
+      "max_similarity_percent": 68.04
+    },
+    {
+      "case_id": 66,
       "file1": {
         "path": "/app/app/data/submissions/68fdc3b5fe535fa0f4f1d92a/d9aec9d917da4c5e9beeb80b/sub_1761572529235_3v7ctsey5.py",
-        "similarity_percent": 49.24,
+        "similarity_percent": 52.24,
         "full_code": "n = int(input())\nnums = []\nwhile len(nums) < n:\n    nums += list(map(int, input().split()))\nmax_value = max(nums)\nmissing = [i for i in range(1, max_value) if i not in nums]\nif missing:\n    for x in missing:\n        print(x)\nelse:\n    print(\"Excellent!\")\n   \n",
-        "highlighted_code": "n = int(input())\nnums = []\nwhile len(nums) &lt; n:\n    nums += l<span class='highlight-red'>ist(map(int, input().split()))\n</span>max_value = max(nums)\nmissing = [i for i in range(1, max_value) if i <span class='highlight-red'>not in nums]\nif missing:\n    for x in missing:\n        print(x)\nelse:\n    print(&#34;Excellent!</span>&#34;)\n   \n"
+        "highlighted_code": "n = int(input())\nnums = []\nwhile len(nums) &lt; n:\n    nums += <span class='highlight-red'>list(map(int, input().split())</span>)\nmax_value = max(nums)\nmissing = [i for i in range(1, max_value) <span class='highlight-red'>if i not in nums]\nif missing:\n    for x in missing:\n        print(x)\nelse:\n    print(&#34;Excellent!&#34;)\n   </span>\n"
       },
       "file2": {
         "path": "/app/app/data/submissions/68fdc3b5fe535fa0f4f1d92a/c2c38e9c5ead4887925c7e80/sub_1762609278178_97xivpmbh.py",
-        "similarity_percent": 60.75,
+        "similarity_percent": 64.22,
         "full_code": "x = int(input())\ny = list(map(int,input().split()))\nk = [i for i in range(1,x+1) if i not in y ]\nif k :\n     for num in k:\n         print(num)\nelse:\n    print(\"Excellent!\")",
-        "highlighted_code": "x = int(input())\ny = l<span class='highlight-green'>ist(map(int,input().split()))\n</span>k = [i for i in range(1,x+1) if i <span class='highlight-green'>not in y ]\nif k :\n     for num in k:\n         print(num)\nelse:\n    print(&#34;Excellent!</span>&#34;)"
+        "highlighted_code": "x = int(input())\ny = <span class='highlight-green'>list(map(int,input().split())</span>)\nk = [i for i in range(1,x+1) <span class='highlight-green'>if i not in y ]\nif k :\n     for num in k:\n         print(num)\nelse:\n    print(&#34;Excellent!&#34;)</span>"
       },
-      "token_overlap": 65,
-      "max_similarity_percent": 60.75
+      "token_overlap": 70,
+      "max_similarity_percent": 64.22
     },
     {
-      "case_id": 26,
+      "case_id": 67,
       "file1": {
-        "path": "/app/app/data/submissions/68fdc3b5fe535fa0f4f1d92a/9f14990043df4fda9283d7ac/sub_1761748235301_0t03sv0ey.py",
-        "similarity_percent": 48.42,
-        "full_code": "\nn = int(input())\nnumbers = list(map(int, input().split()))\nwhile len(numbers) < n:\n    numbers += list(map(int, input().split()))\nda_xuat_hien = set(x for x in numbers if x > 0)\nif da_xuat_hien:\n    max_num = max(da_xuat_hien)\nelse:\n    max_num = 0\nchua_xuat_hien = [i for i in range(1, max_num + 1) if i not in da_xuat_hien]\nif chua_xuat_hien:\n    for num in chua_xuat_hien:\n        print(num)\nelse:\n    print(\"Excellent!\")",
-        "highlighted_code": "<span class='highlight-red'>\nn = int(input())\nnumbers = list(map(int, input().split()))</span>\nwhile len(numbers) &lt; n:\n    numbers += <span class='highlight-red'>list(map(int, input().split()))</span>\nda_xuat_hien = set(x for x in numbers if x &gt; 0)\nif da_xuat_hien:\n    max_num = max(da_xuat_hien)\nelse:\n    max_num = 0\nchua_xuat_hien = [i for i in range(1, max_num + 1) if i not in da_xuat_hien]\nif chua_xuat_hien:\n    for num<span class='highlight-red'> in chua_xuat_hien:\n        print(num)\nelse:\n    print(&#34;Excellent</span>!&#34;)"
+        "path": "/app/app/data/submissions/68fdc3b5fe535fa0f4f1d92a/bcb420abb39b4af095b63cf8/sub_1762424457908_cjonttd4i.py",
+        "similarity_percent": 48.89,
+        "full_code": "n=int(input())\nd_s=list(map(int,input().split()))\nso_lon_nhat=max(d_s)\nd_s_moi=[]\nfor i in range(1,so_lon_nhat+1):\n    if i not in d_s:\n        d_s_moi.append(i)\nso_chu_so=len(d_s_moi)\nif so_chu_so>=1:\n    for a in d_s_moi:\n        print(a)\nelse:\n    print(\"Excellent!\")\n",
+        "highlighted_code": "<span class='highlight-red'>n=int(input())\nd_s=list(map(int,input().split())</span>)\nso_lon_nhat=max(d_s)\nd_s_moi=[]\nfor <span class='highlight-red'>i in range(1,so_lon_nhat+1):\n    if i not in d_s</span>:\n        d_s_moi.append(i)\nso_chu_so=len(d_s_moi)\nif so_chu_so&gt;=1:\n    for a in d_s_moi:\n        print(a)\nelse:\n    print(&#34;Excellent!&#34;)\n"
       },
       "file2": {
-        "path": "/app/app/data/submissions/68fdc3b5fe535fa0f4f1d92a/bcb420abb39b4af095b63cf8/sub_1762424457908_cjonttd4i.py",
-        "similarity_percent": 50.38,
-        "full_code": "n=int(input())\nd_s=list(map(int,input().split()))\nso_lon_nhat=max(d_s)\nd_s_moi=[]\nfor i in range(1,so_lon_nhat+1):\n    if i not in d_s:\n        d_s_moi.append(i)\nso_chu_so=len(d_s_moi)\nif so_chu_so>=1:\n    for a in d_s_moi:\n        print(a)\nelse:\n    print(\"Excellent!\")\n",
-        "highlighted_code": "<span class='highlight-green'>n=int(input())\nd_s=list(map(int,input().split()))\n</span>so_lon_nhat=max(d_s)\nd_s_moi=[]\nfor i in range(1,so_lon_nhat+1):\n    if i not in d_s:\n        d_s_moi.append(i)\nso_chu_so=len(d_s_moi)\nif so_chu_so&gt;=1:\n    for a <span class='highlight-green'>in d_s_moi:\n        print(a)\nelse:\n    print(&#34;Excellent!</span>&#34;)\n"
+        "path": "/app/app/data/submissions/68fdc3b5fe535fa0f4f1d92a/606112b8529f48619a01b7f6/sub_1762272835253_x3189qvha.py",
+        "similarity_percent": 68.04,
+        "full_code": "n=int(input())\nk=list(map(int, input().split()))\ncheck=1\nfor i in range (1,n+1):\n    if i not in k:\n        check = 0\n        print(i)\nif check == 1:\n    print('Excellent!')",
+        "highlighted_code": "<span class='highlight-green'>n=int(input())\nk=list(map(int, input().split())</span>)\ncheck=1\nfor <span class='highlight-green'>i in range (1,n+1):\n    if i not in k</span>:\n        check = 0\n        print(i)\nif check == 1:\n    print(&#39;Excellent!&#39;)"
       },
-      "token_overlap": 92,
-      "max_similarity_percent": 50.38
+      "token_overlap": 66,
+      "max_similarity_percent": 68.04
+    },
+    {
+      "case_id": 68,
+      "file1": {
+        "path": "/app/app/data/submissions/68fdc3b5fe535fa0f4f1d92a/ffdb326842044f2e98b7aaa7/sub_1761464004960_unt1xv0vb.py",
+        "similarity_percent": 38.67,
+        "full_code": "n = int(input())\n\nif n == 5:\n    print(3)\nelif n == 4:\n    print(\"Excellent!\")\nelse:\n    print(1)\n    print(4)\n    print(7)",
+        "highlighted_code": "<span class='highlight-red'>n = int(input())\n\nif n == 5:\n    print(3)\n</span>elif n == 4:\n    print(&#34;Excellent!&#34;)\nelse:\n    print(1)\n    print(4)\n    print(7)"
+      },
+      "file2": {
+        "path": "/app/app/data/submissions/68fdc3b5fe535fa0f4f1d92a/ac7514dacc0a4c32abe1c656/sub_1765846493848_shmstx1ts.py",
+        "similarity_percent": 69.05,
+        "full_code": "n = int(input())\nif n == 5:\n    print(3)\nelse:\n    print('Excellent!')",
+        "highlighted_code": "<span class='highlight-green'>n = int(input())\nif n == 5:\n    print(3)\n</span>else:\n    print(&#39;Excellent!&#39;)"
+      },
+      "token_overlap": 29,
+      "max_similarity_percent": 69.05
     }
   ]
 }
