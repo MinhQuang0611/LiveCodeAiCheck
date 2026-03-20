@@ -34,6 +34,7 @@ class Settings(BaseSettings):
     GOOGLE_CLIENT_ID: Optional[str] = os.environ.get("GOOGLE_CLIENT_ID", None)
     OPENAI_API_KEY: Optional[str] = os.environ.get("OPENAI_API_KEY", "do biet day")
     BACKEND_NESTJS_DOMAIN: Optional[str] = os.environ.get("BACKEND_NESTJS_DOMAIN", "")
+    LIVECODE_BACKEND_2_DOMAIN: Optional[str] = os.environ.get("LIVECODE_BACKEND_2_DOMAIN", "")
 
 settings = Settings()
 

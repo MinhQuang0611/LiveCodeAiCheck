@@ -1,4 +1,5 @@
 import asyncio
+import httpx
 from typing import Optional, AsyncGenerator, Tuple, List, Dict
 
 from fastapi import HTTPException
@@ -7,14 +8,14 @@ from langchain_openai import ChatOpenAI
 from langchain_core.prompts import PromptTemplate
 from langchain_core.output_parsers import StrOutputParser
 
-from app.core.config import llm
+from app.core.config import llm, settings
 from dotenv import load_dotenv
 from app.services.srv_session import create_session, get_session_by_id, get_topic_by_id
 from app.services.srv_message import create_message
 from app.utils.chat_history import save_chat_history, load_chat_history
 from app.utils.exception_handler import CustomException
 from fastapi import HTTPException
-from app.schemas.sche_chatbot import ChatbotQARequest, ChatbotTopicRequest, ChatbotSimpleRequest
+from app.schemas.sche_chatbot import ChatbotQARequest, ChatbotTopicRequest, ChatbotSimpleRequest, ChatbotUnitRequest
 load_dotenv()
 
 async def stream_chain(prompt: PromptTemplate, inputs: dict):
@@ -177,6 +178,72 @@ Trả lời bằng tiếng Việt, xưng hô "bạn", giọng điệu thân thi�
 
 
 
+async def fetch_unit_info(id_param: str) -> str:
+    """Fetch unit info from external API and format as markdown context"""
+    url = f"{settings.LIVECODE_BACKEND_2_DOMAIN}/sotatek-aiinfor/one"
+    try:
+        async with httpx.AsyncClient() as client:
+            response = await client.get(url, params={"id": id_param})
+            if response.status_code != 200:
+                raise HTTPException(status_code=response.status_code, detail="Không thể lấy thông tin trực tuyến từ hệ thống external.")
+            data = response.json()
+            if not data.get("success") or not data.get("data"):
+                raise HTTPException(status_code=404, detail="Không tìm thấy thông tin bài học.")
+            
+            unit_data = data["data"]
+            context = "Thông tin bài học (Context):\n"
+            if unit_data.get("idUnit"):
+                context += f"- Mã bài học (idUnit): {unit_data['idUnit']}\n"
+            if unit_data.get("summary"):
+                context += f"- Tóm tắt: {unit_data['summary']}\n"
+            if unit_data.get("outline"):
+                context += f"- Chi tiết Outline: {unit_data['outline']}\n"
+            if unit_data.get("programmingLanguage"):
+                context += f"- Ngôn ngữ lập trình được sử dụng trong bài học: {unit_data['programmingLanguage']}\n"
+            if unit_data.get("examples"):
+                context += f"- Code mẫu (Examples): {unit_data['examples']}\n"
+            if unit_data.get("extraInfo"):
+                context += f"- Thông tin thêm: {unit_data['extraInfo']}\n"
+            return context
+    except HTTPException:
+        raise
+    except httpx.RequestError as e:
+        print(f"Error fetching unit info: {str(e)}")
+        raise HTTPException(status_code=503, detail="Lỗi không thể kết nối đến hệ thống bài học.")
+    except Exception as e:
+        print(f"Error parse unit info: {str(e)}")
+        raise HTTPException(status_code=500, detail="Lỗi nội bộ khi phân tích thông tin bài học.")
+
+
+async def func_chatbot_unit(id_unit: str, user_question: str):
+    unit_context = await fetch_unit_info(id_unit)
+    
+    prompt = PromptTemplate(
+        template="""
+{unit_context}
+
+Câu hỏi của sinh viên: {user_question}
+
+Bạn là trợ lý AI hỗ trợ sinh viên học lập trình. Hãy trả lời câu hỏi của sinh viên dựa trên thông tin bài học được cung cấp ở trên.
+
+QUY TẮC QUAN TRỌNG:
+- TUYỆT ĐỐI KHÔNG đưa ra đáp án hoàn chỉnh hoặc code mẫu giải bài tập nếu sinh viên yêu cầu giải hộ.
+- CHỈ hướng dẫn, gợi ý hướng đi, giải thích khái niệm, phân tích logic.
+- Nếu sinh viên hỏi về khái niệm lập trình thì hãy giải thích rõ ràng và có ví dụ trực quan.
+- Khuyến khích sinh viên tự suy nghĩ và thử nghiệm.
+- Không cần chào.
+Trả lời bằng tiếng Việt, xưng hô "bạn", giọng điệu thân thiện, động viên. Trả về kết quả dạng Markdown để dễ đọc.
+""",
+        input_variables=["unit_context", "user_question"],
+    )
+    
+    async for chunk in stream_chain(prompt, {
+        "unit_context": unit_context,
+        "user_question": user_question
+    }):
+        yield chunk
+
+
 # async def run_sequential_review(question, answer):
 #     funcs = [
 #         ("code_review", func_code_review),
@@ -320,6 +387,34 @@ Trả lời bằng tiếng Việt, xưng hô "bạn", giọng điệu thân thi�
     })
 
 
+async def func_chatbot_unit_non_stream(id_unit: str, user_question: str) -> str:
+    unit_context = await fetch_unit_info(id_unit)
+    
+    prompt = PromptTemplate(
+        template="""
+{unit_context}
+
+Câu hỏi của sinh viên: {user_question}
+
+Bạn là trợ lý AI hỗ trợ sinh viên học lập trình. Hãy trả lời câu hỏi của sinh viên dựa trên thông tin bài học được cung cấp ở trên.
+
+QUY TẮC QUAN TRỌNG:
+- TUYỆT ĐỐI KHÔNG đưa ra đáp án hoàn chỉnh hoặc code mẫu giải bài tập nếu sinh viên yêu cầu giải hộ.
+- CHỈ hướng dẫn, gợi ý hướng đi, giải thích khái niệm, phân tích logic.
+- Nếu sinh viên hỏi về khái niệm lập trình thì hãy giải thích rõ ràng và có ví dụ trực quan.
+- Khuyến khích sinh viên tự suy nghĩ và thử nghiệm.
+- Không cần chào.
+Trả lời bằng tiếng Việt, xưng hô "bạn", giọng điệu thân thiện, động viên. Trả về kết quả dạng Markdown để dễ đọc.
+""",
+        input_variables=["unit_context", "user_question"],
+    )
+    
+    return await invoke_chain(prompt, {
+        "unit_context": unit_context,
+        "user_question": user_question
+    })
+
+
 # ============== SESSION / MESSAGE helpers ==============
 
 async def _prepare_session_for_chat(
@@ -394,12 +489,14 @@ async def chatbot_qa_stream_logic(request: ChatbotQARequest, token: Optional[str
 
     await _persist_user_message(session_id, request.user_question, token)
 
-    full_response = ""
-    async for chunk in func_chatbot_qa(request.question, request.answer, request.user_question, topic_name=topic):
-        full_response += chunk
-        yield chunk
-
-    await _persist_assistant_message(session_id, full_response, token)
+    async def generator():
+        full_response = ""
+        async for chunk in func_chatbot_qa(request.question, request.answer, request.user_question, topic_name=topic):
+            full_response += chunk
+            yield chunk
+        await _persist_assistant_message(session_id, full_response, token)
+        
+    return generator()
 
 
 async def chatbot_qa_non_stream_logic(request: ChatbotQARequest, token: Optional[str]) -> str:
@@ -440,17 +537,19 @@ async def chatbot_topic_stream_logic(request: ChatbotTopicRequest, token: Option
 
     await _persist_user_message(session_id, request.user_question, token)
 
-    full_response = ""
-    async for chunk in func_chatbot_qa(
-        topic_name,  # dùng topic làm ngữ cảnh, không theo đề bài
-        "",  # không cần answer trong kịch bản theo topic
-        request.user_question,
-        topic_name=topic_name,
-    ):
-        full_response += chunk
-        yield chunk
-
-    await _persist_assistant_message(session_id, full_response, token)
+    async def generator():
+        full_response = ""
+        async for chunk in func_chatbot_qa(
+            topic_name,  # dùng topic làm ngữ cảnh, không theo đề bài
+            "",  # không cần answer trong kịch bản theo topic
+            request.user_question,
+            topic_name=topic_name,
+        ):
+            full_response += chunk
+            yield chunk
+        await _persist_assistant_message(session_id, full_response, token)
+        
+    return generator()
 
 
 async def chatbot_topic_non_stream_logic(request: ChatbotTopicRequest, token: Optional[str]) -> str:
@@ -479,6 +578,73 @@ async def chatbot_topic_non_stream_logic(request: ChatbotTopicRequest, token: Op
         request.user_question,
         topic_name=topic_name,
     )
+
+    await _persist_assistant_message(session_id, res, token)
+    return res
+
+
+async def chatbot_unit_stream_logic(request: ChatbotUnitRequest, token: Optional[str]) -> AsyncGenerator[str, None]:
+    session_id, topic = await _prepare_session_for_chat(
+        token=token,
+        session_id=request.session_id,
+        question=None,
+        user_question=request.user_question,
+        topic=None,
+        enforce_topic=False,
+    )
+
+    await _persist_user_message(session_id, request.user_question, token)
+
+    # Thử fetch thông tin, nếu lỗi sẽ vang HTTPException ngay tại API router, chặn trả về HTTP 200
+    # Wait, fetch_unit_info requires request.id. But func_chatbot_unit ALSO fetches it!
+    # I should modify func_chatbot_unit or fetch it here.
+    # Ah! Since `func_chatbot_unit` fetches it inside the generator, we should just let `chatbot_unit_stream_logic` fetch it!
+    unit_context = await fetch_unit_info(request.id)
+
+    async def generator():
+        full_response = ""
+        # Create a new version of func_chatbot_unit here or just use stream_chain directly
+        prompt = PromptTemplate(
+            template="""
+{unit_context}
+
+Câu hỏi của sinh viên: {user_question}
+
+Bạn là trợ lý AI hỗ trợ sinh viên học lập trình. Hãy trả lời câu hỏi của sinh viên dựa trên thông tin bài học được cung cấp ở trên.
+
+QUY TẮC QUAN TRỌNG:
+- TUYỆT ĐỐI KHÔNG đưa ra đáp án hoàn chỉnh hoặc code mẫu giải bài tập nếu sinh viên yêu cầu giải hộ.
+- CHỈ hướng dẫn, gợi ý hướng đi, giải thích khái niệm, phân tích logic.
+- Nếu sinh viên hỏi về khái niệm lập trình thì hãy giải thích rõ ràng và có ví dụ trực quan.
+- Khuyến khích sinh viên tự suy nghĩ và thử nghiệm.
+- Không cần chào.
+Trả lời bằng tiếng Việt, xưng hô "bạn", giọng điệu thân thiện, động viên. Trả về kết quả dạng Markdown để dễ đọc.
+""",
+            input_variables=["unit_context", "user_question"],
+        )
+        
+        async for chunk in stream_chain(prompt, {"unit_context": unit_context, "user_question": request.user_question}):
+            full_response += chunk
+            yield chunk
+            
+        await _persist_assistant_message(session_id, full_response, token)
+        
+    return generator()
+
+
+async def chatbot_unit_non_stream_logic(request: ChatbotUnitRequest, token: Optional[str]) -> str:
+    session_id, topic = await _prepare_session_for_chat(
+        token=token,
+        session_id=request.session_id,
+        question=None,
+        user_question=request.user_question,
+        topic=None,
+        enforce_topic=False,
+    )
+
+    await _persist_user_message(session_id, request.user_question, token)
+
+    res = await func_chatbot_unit_non_stream(request.id, request.user_question)
 
     await _persist_assistant_message(session_id, res, token)
     return res
@@ -662,19 +828,47 @@ async def chatbot_simple_stream_logic(request: ChatbotSimpleRequest, token: Opti
     if final_user_id:
         chat_history = load_chat_history(final_user_id)
     
-    # Stream response từ AI
-    full_response = ""
-    async for chunk in func_chatbot_simple_stream(
-        question=request.question,
-        user_id=final_user_id,
-        chat_history=chat_history
-    ):
-        full_response += chunk
-        yield chunk
-    
-    # Tự động lưu chat history vào file tạm nếu có user_id
-    if final_user_id and full_response:
-        save_chat_history(final_user_id, request.question, full_response)
+    # Check violence before stream
+    is_violent = await check_question_relevance(request.question)
+    if is_violent:
+        raise HTTPException(status_code=400, detail="Xin lỗi, câu hỏi của bạn vi phạm tiêu chuẩn cộng đồng. Vui lòng đặt câu hỏi phù hợp và tuân thủ các quy tắc sử dụng.")
+
+    async def generator():
+        full_response = ""
+        prompt = PromptTemplate(
+            template="""Bạn là trợ lý AI thông minh và thân thiện, chuyên hỗ trợ các vấn đề liên quan đến đại học số (Digital University).
+
+Ngữ cảnh: Bạn đang hỗ trợ trong môi trường đại học số, nơi sinh viên, giảng viên và nhân viên sử dụng các công nghệ số để học tập, giảng dạy và quản lý.
+{chat_history}
+Câu hỏi hiện tại của người dùng: {question}
+{user_context}
+
+QUY TẮC QUAN TRỌNG:
+3. Trả lời một cách rõ ràng, chính xác và hữu ích
+4. Sử dụng giọng điệu thân thiện, chuyên nghiệp, động viên
+5. Nếu không chắc chắn về thông tin, hãy thừa nhận và đề xuất cách tìm hiểu thêm
+6. Không trả lời các câu hỏi về chính trị, tôn giáo, hoặc các chủ đề nhạy cảm không liên quan đến giáo dục
+7. Không cung cấp thông tin cá nhân của người khác hoặc vi phạm quyền riêng tư
+8. Khuyến khích người dùng tự học và khám phá
+9. Nếu có lịch sử trò chuyện, hãy tham khảo để trả lời phù hợp với ngữ cảnh
+
+Trả lời bằng tiếng Việt, xưng hô "bạn", giọng điệu thân thiện, động viên. Trả về kết quả dạng Markdown để dễ đọc.
+""",
+            input_variables=["question", "user_context", "chat_history"],
+        )
+        
+        user_context = f"\nNgười dùng ID: {final_user_id}" if final_user_id else ""
+        history_text = _format_chat_history(chat_history)
+        
+        async for chunk in stream_chain(prompt, {"question": request.question, "user_context": user_context, "chat_history": history_text}):
+            full_response += chunk
+            yield chunk
+        
+        # Tự động lưu chat history vào file tạm nếu có user_id
+        if final_user_id and full_response:
+            save_chat_history(final_user_id, request.question, full_response)
+            
+    return generator()
 
 
 async def chatbot_simple_non_stream_logic(request: ChatbotSimpleRequest, token: Optional[str], user_id: Optional[str]) -> str:

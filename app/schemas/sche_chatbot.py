@@ -28,6 +28,13 @@ class ChatbotTopicRequest(BaseModel):
     user: Optional[str] = None
 
 
+class ChatbotUnitRequest(BaseModel):
+    id: str
+    user_question: str
+    session_id: Optional[str] = None
+    user: Optional[str] = None
+
+
 class ChatMessage(BaseModel):
     """Schema cho một message trong chat history"""
     role: str = Field(..., description="Vai trò: 'user' hoặc 'assistant'", example="user")
