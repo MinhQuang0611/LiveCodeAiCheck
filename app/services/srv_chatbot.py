@@ -7,9 +7,10 @@ from datetime import datetime
 from langchain_openai import ChatOpenAI
 from langchain_core.prompts import PromptTemplate
 from langchain_core.output_parsers import StrOutputParser
+from dotenv import load_dotenv
+from urllib.parse import quote 
 
 from app.core.config import llm, settings
-from dotenv import load_dotenv
 from app.services.srv_session import create_session, get_session_by_id, get_topic_by_id
 from app.services.srv_message import create_message
 from app.utils.chat_history import save_chat_history, load_chat_history
@@ -180,10 +181,14 @@ Trả lời bằng tiếng Việt, xưng hô "bạn", giọng điệu thân thi�
 
 async def fetch_unit_info(id_param: str) -> str:
     """Fetch unit info from external API and format as markdown context"""
-    url = f"{settings.LIVECODE_BACKEND_2_DOMAIN}/sotatek-aiinfor/one"
+    encoded_id = quote(id_param, safe="")
+    url = f"{settings.BACKEND_NESTJS_DOMAIN}/sotatek-aiinfor/by-idUnit/{encoded_id}"
     try:
         async with httpx.AsyncClient() as client:
-            response = await client.get(url, params={"id": id_param})
+            response = await client.get(url, headers={"Accept": "application/json"})
+            print(f"Fetching unit info from {url}, status code: {response.status_code}")
+            data = response.json()
+            print(f"Response data: {data}")
             if response.status_code != 200:
                 raise HTTPException(status_code=response.status_code, detail="Không thể lấy thông tin trực tuyến từ hệ thống external.")
             data = response.json()
