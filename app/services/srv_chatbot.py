@@ -392,22 +392,28 @@ Trả lời bằng tiếng Việt, xưng hô "bạn", giọng điệu thân thi�
     })
 
 
-async def func_chatbot_unit_non_stream(id_unit: str, user_question: str) -> str:
+async def func_chatbot_unit_non_stream(id_unit: str, user_question: str, field_type: str = "programming") -> str:
     unit_context = await fetch_unit_info(id_unit)
     
-    prompt = PromptTemplate(
-        template="""
-{unit_context}
-
-Câu hỏi của sinh viên: {user_question}
-
-Bạn là trợ lý AI hỗ trợ sinh viên học lập trình. Hãy trả lời câu hỏi của sinh viên dựa trên thông tin bài học được cung cấp ở trên.
-
-QUY TẮC QUAN TRỌNG:
-- TUYỆT ĐỐI KHÔNG đưa ra đáp án hoàn chỉnh hoặc code mẫu giải bài tập nếu sinh viên yêu cầu giải hộ.
+    ai_role = "học lập trình" if field_type == "programming" else "trong quá trình học tập"
+    rules = """- TUYỆT ĐỐI KHÔNG đưa ra đáp án hoàn chỉnh hoặc code mẫu giải bài tập nếu sinh viên yêu cầu giải hộ.
 - CHỈ hướng dẫn, gợi ý hướng đi, giải thích khái niệm, phân tích logic.
 - Nếu sinh viên hỏi về khái niệm lập trình thì hãy giải thích rõ ràng và có ví dụ trực quan.
-- Khuyến khích sinh viên tự suy nghĩ và thử nghiệm.
+- Khuyến khích sinh viên tự suy nghĩ và thử nghiệm.""" if field_type == "programming" else """- Hướng dẫn sinh viên tự tìm ra câu trả lời dựa trên bài học.
+- CHỈ hướng dẫn, gợi ý hướng đi, giải thích khái niệm liên quan đến bài học.
+- Khuyến khích sinh viên tự suy nghĩ và tìm hiểu.
+- KHÔNG đưa ra đáp án trực tiếp cho bài tập/câu hỏi bài kiểm tra."""
+    
+    prompt = PromptTemplate(
+        template=f"""
+{{unit_context}}
+
+Câu hỏi của sinh viên: {{user_question}}
+
+Bạn là trợ lý AI hỗ trợ sinh viên {ai_role}. Hãy trả lời câu hỏi của sinh viên dựa trên thông tin bài học được cung cấp ở trên.
+
+QUY TẮC QUAN TRỌNG:
+{rules}
 - Không cần chào.
 Trả lời bằng tiếng Việt, xưng hô "bạn", giọng điệu thân thiện, động viên. Trả về kết quả dạng Markdown để dễ đọc.
 """,
@@ -608,20 +614,27 @@ async def chatbot_unit_stream_logic(request: ChatbotUnitRequest, token: Optional
 
     async def generator():
         full_response = ""
-        # Create a new version of func_chatbot_unit here or just use stream_chain directly
-        prompt = PromptTemplate(
-            template="""
-{unit_context}
-
-Câu hỏi của sinh viên: {user_question}
-
-Bạn là trợ lý AI hỗ trợ sinh viên học lập trình. Hãy trả lời câu hỏi của sinh viên dựa trên thông tin bài học được cung cấp ở trên.
-
-QUY TẮC QUAN TRỌNG:
-- TUYỆT ĐỐI KHÔNG đưa ra đáp án hoàn chỉnh hoặc code mẫu giải bài tập nếu sinh viên yêu cầu giải hộ.
+        
+        ai_role = "học lập trình" if request.field == "programming" else "trong quá trình học tập"
+        rules = """- TUYỆT ĐỐI KHÔNG đưa ra đáp án hoàn chỉnh hoặc code mẫu giải bài tập nếu sinh viên yêu cầu giải hộ.
 - CHỈ hướng dẫn, gợi ý hướng đi, giải thích khái niệm, phân tích logic.
 - Nếu sinh viên hỏi về khái niệm lập trình thì hãy giải thích rõ ràng và có ví dụ trực quan.
-- Khuyến khích sinh viên tự suy nghĩ và thử nghiệm.
+- Khuyến khích sinh viên tự suy nghĩ và thử nghiệm.""" if request.field == "programming" else """- Hướng dẫn sinh viên tự tìm ra câu trả lời dựa trên bài học.
+- CHỈ hướng dẫn, gợi ý hướng đi, giải thích khái niệm liên quan đến bài học.
+- Khuyến khích sinh viên tự suy nghĩ và tìm hiểu.
+- KHÔNG đưa ra đáp án trực tiếp cho bài tập/câu hỏi bài kiểm tra."""
+
+        # Create a new version of func_chatbot_unit here or just use stream_chain directly
+        prompt = PromptTemplate(
+            template=f"""
+{{unit_context}}
+
+Câu hỏi của sinh viên: {{user_question}}
+
+Bạn là trợ lý AI hỗ trợ sinh viên {ai_role}. Hãy trả lời câu hỏi của sinh viên dựa trên thông tin bài học được cung cấp ở trên.
+
+QUY TẮC QUAN TRỌNG:
+{rules}
 - Không cần chào.
 Trả lời bằng tiếng Việt, xưng hô "bạn", giọng điệu thân thiện, động viên. Trả về kết quả dạng Markdown để dễ đọc.
 """,
@@ -649,7 +662,7 @@ async def chatbot_unit_non_stream_logic(request: ChatbotUnitRequest, token: Opti
 
     await _persist_user_message(session_id, request.user_question, token)
 
-    res = await func_chatbot_unit_non_stream(request.id, request.user_question)
+    res = await func_chatbot_unit_non_stream(request.id, request.user_question, getattr(request, 'field', 'programming'))
 
     await _persist_assistant_message(session_id, res, token)
     return res

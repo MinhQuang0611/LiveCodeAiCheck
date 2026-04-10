@@ -1,5 +1,5 @@
 from pydantic import BaseModel, Field
-from typing import Optional, List
+from typing import Optional, List, Literal
 
 
 class Inputs(BaseModel):
@@ -31,6 +31,7 @@ class ChatbotTopicRequest(BaseModel):
 class ChatbotUnitRequest(BaseModel):
     id: str
     user_question: str
+    field: Optional[Literal["programming", "nonprogramming"]] = "programming"
     session_id: Optional[str] = None
     user: Optional[str] = None
 
