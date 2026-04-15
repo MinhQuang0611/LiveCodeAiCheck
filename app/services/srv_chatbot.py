@@ -179,7 +179,7 @@ Trả lời bằng tiếng Việt, xưng hô "bạn", giọng điệu thân thi�
 
 
 
-async def fetch_unit_info(id_param: str) -> str:
+async def fetch_unit_info(id_param: str, field_type: str = "programming") -> str:
     """Fetch unit info from external API and format as markdown context"""
     encoded_id = quote(id_param, safe="")
     url = f"{settings.BACKEND_NESTJS_DOMAIN}/sotatek-aiinfor/by-idUnit/{encoded_id}"
@@ -203,7 +203,7 @@ async def fetch_unit_info(id_param: str) -> str:
                 context += f"- Tóm tắt: {unit_data['summary']}\n"
             if unit_data.get("outline"):
                 context += f"- Chi tiết Outline: {unit_data['outline']}\n"
-            if unit_data.get("programmingLanguage"):
+            if field_type == "programming" and unit_data.get("programmingLanguage"):
                 context += f"- Ngôn ngữ lập trình được sử dụng trong bài học: {unit_data['programmingLanguage']}\n"
             if unit_data.get("examples"):
                 context += f"- Code mẫu (Examples): {unit_data['examples']}\n"
@@ -393,7 +393,7 @@ Trả lời bằng tiếng Việt, xưng hô "bạn", giọng điệu thân thi�
 
 
 async def func_chatbot_unit_non_stream(id_unit: str, user_question: str, field_type: str = "programming") -> str:
-    unit_context = await fetch_unit_info(id_unit)
+    unit_context = await fetch_unit_info(id_unit, field_type)
     
     ai_role = "học lập trình" if field_type == "programming" else "trong quá trình học tập"
     rules = """- TUYỆT ĐỐI KHÔNG đưa ra đáp án hoàn chỉnh hoặc code mẫu giải bài tập nếu sinh viên yêu cầu giải hộ.
@@ -610,7 +610,7 @@ async def chatbot_unit_stream_logic(request: ChatbotUnitRequest, token: Optional
     # Wait, fetch_unit_info requires request.id. But func_chatbot_unit ALSO fetches it!
     # I should modify func_chatbot_unit or fetch it here.
     # Ah! Since `func_chatbot_unit` fetches it inside the generator, we should just let `chatbot_unit_stream_logic` fetch it!
-    unit_context = await fetch_unit_info(request.id)
+    unit_context = await fetch_unit_info(request.id, getattr(request, 'field', 'programming'))
 
     async def generator():
         full_response = ""
