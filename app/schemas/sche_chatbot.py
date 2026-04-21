@@ -67,3 +67,25 @@ class ChatbotSimpleRequest(BaseModel):
                 "user_id": "12345"
             }
         }
+
+
+class IntentDetectionResult(BaseModel):
+    """Kết quả phân loại ý định của người dùng"""
+    intent: Literal[
+        "CONCEPT_EXPLANATION", 
+        "CODE_REVIEW_DEBUG", 
+        "SOLUTION_HUNTING", 
+        "CHITCHAT", 
+        "OFF_TOPIC"
+    ] = Field(
+        ..., 
+        description="Ý định chính của người dùng dựa trên câu hỏi"
+    )
+    is_safe: bool = Field(
+        ..., 
+        description="True nếu không vi phạm tiêu chuẩn cộng đồng (không chứa spam, rác, chửi thề, vi phạm đạo đức)"
+    )
+    confidence: float = Field(
+        ..., 
+        description="Độ tự tin từ 0.0 đến 1.0"
+    )

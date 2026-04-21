@@ -16,7 +16,7 @@ from app.services.srv_message import create_message
 from app.utils.chat_history import save_chat_history, load_chat_history
 from app.utils.exception_handler import CustomException
 from fastapi import HTTPException
-from app.schemas.sche_chatbot import ChatbotQARequest, ChatbotTopicRequest, ChatbotSimpleRequest, ChatbotUnitRequest
+from app.schemas.sche_chatbot import ChatbotQARequest, ChatbotTopicRequest, ChatbotSimpleRequest, ChatbotUnitRequest, IntentDetectionResult
 load_dotenv()
 
 async def stream_chain(prompt: PromptTemplate, inputs: dict):
@@ -102,6 +102,27 @@ Dùng phong cách khen hoặc chê theo phong cách động viên, khích lệ
 
 
 
+async def detect_user_intent(user_question: str, context: str = "") -> IntentDetectionResult:
+    """Sử dụng LLM để phân tích ý định của người dùng"""
+    prompt = PromptTemplate.from_template("""
+Bạn là một hệ thống phân tích ý định (Intent Router) cho Chatbot AI trong lĩnh vực giáo dục lập trình và đại học số.
+Bạn hãy phân tích quyết định ý định chính của người dùng (Intent) theo cấu trúc quy định.
+
+Ngữ cảnh hiện tại: {context}
+Câu hỏi của người dùng: {user_question}
+
+Các quy tắc cho Intent:
+- CONCEPT_EXPLANATION: Hỏi về lý thuyết, khái niệm, ý nghĩa (Vd: "vòng lặp for là gì?").
+- CODE_REVIEW_DEBUG: Yêu cầu sửa lỗi code, tìm bug, tối ưu, giải thích lỗi hệ thống trả về.
+- SOLUTION_HUNTING: Đòi hỏi đưa thuật toán hoặc code giải sẵn hoàn chỉnh mà chưa tự làm.
+- CHITCHAT: Giao tiếp thông thường (chào, cảm ơn, hỏi thăm...).
+- OFF_TOPIC: Câu hỏi lan man về đề tài phi giáo dục, chính trị, nhảm nhí. Tham số is_safe nên để False nếu có nội dung chửi thề, vi phạm đạo đức, đe doạ. Câu trò chuyện bình thường vẫn là CHITCHAT và is_safe=True.
+""")
+    structured_llm = llm.with_structured_output(IntentDetectionResult)
+    chain = prompt | structured_llm
+    result = await chain.ainvoke({"context": context, "user_question": user_question})
+    return result
+
 async def check_topic_relevance(user_question: str, topic_name: str) -> bool:
     """
     Kiểm tra xem câu hỏi có liên quan đến chủ đề hay không.
@@ -133,14 +154,26 @@ Không giải thích thêm, chỉ trả lời "CÓ" hoặc "KHÔNG".
 
 
 async def func_chatbot_qa(question: str, answer: str, user_question: str, topic_name: Optional[str] = None):
-    if question:
-        is_relevant = await check_topic_relevance(user_question, question)
-        print(f"Topic relevance check: {is_relevant}")
-        if not is_relevant:
-            message = f"Xin lỗi, câu hỏi của bạn không liên quan đến bài tập này. Vui lòng hỏi các câu hỏi liên quan đến bài tập này."
-            for char in message:
-                yield char
-            return
+    focus_topic_text = f"Đề bài/Ngữ cảnh: {question}\nBài code sinh viên: {answer}" if question else f"Chủ đề session: {topic_name}"
+
+    intent_result = await detect_user_intent(user_question, context=focus_topic_text)
+    print(f"Intent detection result: {intent_result.model_dump_json()}")
+
+    if not intent_result.is_safe or intent_result.intent == "OFF_TOPIC":
+        message = "Xin lỗi, câu hỏi của bạn không phù hợp hoặc không liên quan đến bài tập/khóa học hiện tại. Vui lòng đặt câu hỏi khác."
+        for char in message:
+            yield char
+        return
+        
+    if intent_result.intent == "SOLUTION_HUNTING":
+        message = "Tôi có thể hướng dẫn tư duy và các bước giải thuật toán, nhưng sẽ không viết sẵn code hoàn chỉnh cho bạn. Bạn cần hỗ trợ bước nào?"
+        for char in message:
+            yield char
+        return
+
+    intent_note = f"\nLƯU Ý QUAN TRỌNG TỪ HỆ THỐNG: Người dùng đang có ý định (Intent) là {intent_result.intent}. Bạn cần phục vụ đúng mục đích này.\n"
+    if topic_name:
+        intent_note += f"Đảm bảo nội dung thuộc chủ đề: {topic_name}.\n"
     
     prompt = PromptTemplate(
         template="""
@@ -157,23 +190,18 @@ QUY TẮC QUAN TRỌNG:
 - TUYỆT ĐỐI KHÔNG viết lại toàn bộ code đúng cho sinh viên
 - CHỈ hướng dẫn, gợi ý hướng đi, giải thích khái niệm, phân tích logic
 - Nếu sinh viên hỏi về lỗi cụ thể trong code của họ, CHỈ chỉ ra lỗi và gợi ý cách suy nghĩ để sửa, KHÔNG sửa code giúp họ
-- Nếu sinh viên hỏi về khái niệm (for, while, if, function, biến...), hãy giải thích rõ ràng với ví dụ đơn giản KHÔNG LIÊN QUAN đến bài tập của họ
-- Nếu sinh viên hỏi "làm sao để...", hãy hướng dẫn tư duy và các bước cần làm, KHÔNG viết code mẫu
-- Khuyến khích sinh viên tự suy nghĩ và thử nghiệm
-- Giới hạn ngữ cảnh trong phạm vi đề bài và code của sinh viên
-- Không cần chào 
+- Nếu sinh viên hỏi về khái niệm, hãy đưa ra ví dụ đơn giản nhưng không cung cấp giải pháp trực tiếp cho phần bài tập họ đang làm
+- Không cần chào.
 Trả lời bằng tiếng Việt, xưng hô "bạn", giọng điệu thân thiện, động viên. Trả về kết quả dạng Markdown để dễ đọc.
 """,
         input_variables=["question", "answer", "user_question", "focus_topic"],
     )
     
-    focus_topic_text = f"\nLƯU Ý: Session này tập trung vào đề bài **{question}**. Hãy đảm bảo câu trả lời liên quan đến câu hỏi này." if question else ""
-    
     async for chunk in stream_chain(prompt, {
-        "question": question, 
-        "answer": answer,
+        "question": question or "", 
+        "answer": answer or "",
         "user_question": user_question,
-        "focus_topic": focus_topic_text
+        "focus_topic": intent_note
     }):
         yield chunk
 
@@ -350,12 +378,19 @@ Dùng phong cách khen hoặc chê theo phong cách động viên, khích lệ
 
 async def func_chatbot_qa_non_stream(question: str, answer: str, user_question: str, topic_name: Optional[str] = None) -> str:
     """Non-streaming version - returns complete result"""
+    focus_topic_text = f"Đề bài/Ngữ cảnh: {question}\nBài code sinh viên: {answer}" if question else f"Chủ đề session: {topic_name}"
+
+    intent_result = await detect_user_intent(user_question, context=focus_topic_text)
+
+    if not intent_result.is_safe or intent_result.intent == "OFF_TOPIC":
+        return "Xin lỗi, câu hỏi của bạn không phù hợp hoặc không liên quan đến bài tập/khóa học hiện tại. Vui lòng đặt câu hỏi khác."
+        
+    if intent_result.intent == "SOLUTION_HUNTING":
+        return "Tôi có thể hướng dẫn tư duy và các bước giải thuật toán, nhưng sẽ không viết sẵn code hoàn chỉnh cho bạn. Bạn cần hỗ trợ bước nào?"
+
+    intent_note = f"\nLƯU Ý QUAN TRỌNG TỪ HỆ THỐNG: Người dùng đang có ý định (Intent) là {intent_result.intent}. Bạn cần phục vụ đúng mục đích này.\n"
     if topic_name:
-        is_relevant = await check_topic_relevance(user_question, topic_name)
-    else:
-        is_relevant = await check_topic_relevance(user_question, question)
-        if not is_relevant:
-            return f"Xin lỗi, câu hỏi của bạn không liên quan đến bài tập này. Vui lòng hỏi các câu hỏi liên quan đến bài tập này."
+        intent_note += f"Đảm bảo nội dung thuộc chủ đề: {topic_name}.\n"
     
     prompt = PromptTemplate(
         template="""
@@ -372,23 +407,18 @@ QUY TẮC QUAN TRỌNG:
 - TUYỆT ĐỐI KHÔNG viết lại toàn bộ code đúng cho sinh viên
 - CHỈ hướng dẫn, gợi ý hướng đi, giải thích khái niệm, phân tích logic
 - Nếu sinh viên hỏi về lỗi cụ thể trong code của họ, CHỈ chỉ ra lỗi và gợi ý cách suy nghĩ để sửa, KHÔNG sửa code giúp họ
-- Nếu sinh viên hỏi về khái niệm (for, while, if, function, biến...), hãy giải thích rõ ràng với ví dụ đơn giản KHÔNG LIÊN QUAN đến bài tập của họ
-- Nếu sinh viên hỏi "làm sao để...", hãy hướng dẫn tư duy và các bước cần làm, KHÔNG viết code mẫu
-- Khuyến khích sinh viên tự suy nghĩ và thử nghiệm
-- Giới hạn ngữ cảnh trong phạm vi đề bài và code của sinh viên
-- Không cần chào 
+- Nếu sinh viên hỏi về khái niệm, hãy đưa ra ví dụ đơn giản nhưng không cung cấp giải pháp trực tiếp cho phần bài tập họ đang làm
+- Không cần chào.
 Trả lời bằng tiếng Việt, xưng hô "bạn", giọng điệu thân thiện, động viên. Trả về kết quả dạng Markdown để dễ đọc.
 """,
         input_variables=["question", "answer", "user_question", "focus_topic"],
     )
     
-    focus_topic_text = f"\nLƯU Ý: Session này tập trung vào đề bài **{question}**. Hãy đảm bảo câu trả lời liên quan đến câu hỏi này." if question else ""
-    
     return await invoke_chain(prompt, {
-        "question": question,
-        "answer": answer,
+        "question": question or "",
+        "answer": answer or "",
         "user_question": user_question,
-        "focus_topic": focus_topic_text
+        "focus_topic": intent_note
     })
 
 
@@ -687,40 +717,6 @@ async def run_sequential_review_non_stream(question, answer) -> str:
 
 # ============== SIMPLE CHATBOT FOR DIGITAL UNIVERSITY ==============
 
-async def check_question_relevance(user_question: str) -> bool:
-    """
-    Kiểm tra xem câu hỏi có vi phạm tiêu chuẩn cộng đồng hay không.
-    Trả về True nếu vi phạm (cần từ chối), False nếu không vi phạm (chấp nhận).
-    """
-    prompt = PromptTemplate(
-        template="""Bạn là trợ lý AI. Hãy đánh giá xem câu hỏi của người dùng có vi phạm tiêu chuẩn cộng đồng hay không.
-
-Câu hỏi của người dùng: {user_question}
-
-Các câu hỏi được CHẤP NHẬN bao gồm:
-- Review code, đánh giá code, phân tích code
-- Câu hỏi về lập trình, học tập, giáo dục
-- Hỗ trợ kỹ thuật, giải thích khái niệm
-- Các câu hỏi hợp pháp và phù hợp với môi trường giáo dục
-
-Các câu hỏi VI PHẠM (cần từ chối):
-- Nội dung bạo lực, kích động, gây hại
-- Nội dung khiêu dâm, không phù hợp
-- Nội dung phân biệt đối xử, thù hận
-- Nội dung vi phạm pháp luật
-- Spam, lừa đảo
-
-Trả lời CHỈ bằng một từ: "CÓ" nếu câu hỏi vi phạm tiêu chuẩn cộng đồng, "KHÔNG" nếu không vi phạm.
-Không giải thích thêm, chỉ trả lời "CÓ" hoặc "KHÔNG".
-""",
-        input_variables=["user_question"],
-    )
-    
-    result = await invoke_chain(prompt, {"user_question": user_question})
-    
-    result_upper = result.strip().upper()
-    return "CÓ" in result_upper or "YES" in result_upper or "TRUE" in result_upper
-
 
 def _format_chat_history(chat_history: Optional[List]) -> str:
     """
@@ -749,61 +745,18 @@ def _format_chat_history(chat_history: Optional[List]) -> str:
     return history_text
 
 
-async def func_chatbot_simple_stream(question: str, user_id: Optional[str] = None, chat_history: Optional[List] = None) -> AsyncGenerator[str, None]:
-    """
-    Chatbot đơn giản
-    """
-    is_violent = await check_question_relevance(question)
-
-    if is_violent:
-        message = "Xin lỗi, câu hỏi của bạn vi phạm tiêu chuẩn cộng đồng. Vui lòng đặt câu hỏi phù hợp và tuân thủ các quy tắc sử dụng."
-        for char in message:
-            yield char
-        return
-    
-    prompt = PromptTemplate(
-        template="""Bạn là trợ lý AI thông minh và thân thiện, chuyên hỗ trợ các vấn đề liên quan đến đại học số (Digital University).
-
-Ngữ cảnh: Bạn đang hỗ trợ trong môi trường đại học số, nơi sinh viên, giảng viên và nhân viên sử dụng các công nghệ số để học tập, giảng dạy và quản lý.
-{chat_history}
-Câu hỏi hiện tại của người dùng: {question}
-{user_context}
-
-QUY TẮC QUAN TRỌNG:
-3. Trả lời một cách rõ ràng, chính xác và hữu ích
-4. Sử dụng giọng điệu thân thiện, chuyên nghiệp, động viên
-5. Nếu không chắc chắn về thông tin, hãy thừa nhận và đề xuất cách tìm hiểu thêm
-6. Không trả lời các câu hỏi về chính trị, tôn giáo, hoặc các chủ đề nhạy cảm không liên quan đến giáo dục
-7. Không cung cấp thông tin cá nhân của người khác hoặc vi phạm quyền riêng tư
-8. Khuyến khích người dùng tự học và khám phá
-9. Nếu có lịch sử trò chuyện, hãy tham khảo để trả lời phù hợp với ngữ cảnh
-
-Trả lời bằng tiếng Việt, xưng hô "bạn", giọng điệu thân thiện, động viên. Trả về kết quả dạng Markdown để dễ đọc.
-""",
-        input_variables=["question", "user_context", "chat_history"],
-    )
-    
-    user_context = f"\nNgười dùng ID: {user_id}" if user_id else ""
-    history_text = _format_chat_history(chat_history)
-    
-    async for chunk in stream_chain(prompt, {
-        "question": question,
-        "user_context": user_context,
-        "chat_history": history_text
-    }):
-        yield chunk
-
 
 async def func_chatbot_simple_non_stream(question: str, user_id: Optional[str] = None, chat_history: Optional[List] = None) -> str:
-    is_violent = await check_question_relevance(question)
+    history_text = _format_chat_history(chat_history)
+    intent_result = await detect_user_intent(question, context=history_text)
 
-    if is_violent:
-        return "Xin lỗi, câu hỏi của bạn vi phạm tiêu chuẩn cộng đồng. Vui lòng đặt câu hỏi phù hợp và tuân thủ các quy tắc sử dụng."
+    if not intent_result.is_safe or intent_result.intent == "OFF_TOPIC":
+        return "Xin lỗi, câu hỏi của bạn không phù hợp với mục đích học tập hoặc vi phạm quy tắc. Vui lòng đặt câu hỏi khác."
     
     prompt = PromptTemplate(
         template="""Bạn là trợ lý AI thông minh và thân thiện, chuyên hỗ trợ các vấn đề về lập trình, review code, đánh giá code, và học tập.
 
-Ngữ cảnh: Bạn đang hỗ trợ người dùng trong việc học lập trình, review code, đánh giá code, và các vấn đề liên quan đến phát triển phần mềm.
+Ngữ cảnh (Intent phân tích: {intent}): Hãy trả lời phù hợp với ý định này.
 {chat_history}
 Câu hỏi hiện tại của người dùng: {question}
 {user_context}
@@ -812,24 +765,22 @@ QUY TẮC QUAN TRỌNG:
 1. Trả lời một cách rõ ràng, chính xác và hữu ích
 2. Sử dụng giọng điệu thân thiện, chuyên nghiệp, động viên
 3. Nếu không chắc chắn về thông tin, hãy thừa nhận và đề xuất cách tìm hiểu thêm
-4. Không trả lời các câu hỏi vi phạm tiêu chuẩn cộng đồng, bạo lực, hoặc không phù hợp
-5. Không cung cấp thông tin cá nhân của người khác hoặc vi phạm quyền riêng tư
-6. Khuyến khích người dùng tự học và khám phá
-7. Nếu có lịch sử trò chuyện, hãy tham khảo để trả lời phù hợp với ngữ cảnh
-8. Đặc biệt hỗ trợ tốt các câu hỏi về review code, đánh giá code, phân tích code
+4. Nếu người dùng hỏi bài tập, chỉ hướng dẫn chứ KHÔNG giải hộ 100%.
+5. Khuyến khích người dùng tự học và khám phá
+6. Nếu có lịch sử trò chuyện, hãy tham khảo để nhận diện ngữ cảnh liên tục.
 
 Trả lời bằng tiếng Việt, xưng hô "bạn", giọng điệu thân thiện, động viên. Trả về kết quả dạng Markdown để dễ đọc.
 """,
-        input_variables=["question", "user_context", "chat_history"],
+        input_variables=["question", "user_context", "chat_history", "intent"],
     )
     
     user_context = f"\nNgười dùng ID: {user_id}" if user_id else ""
-    history_text = _format_chat_history(chat_history)
     
     return await invoke_chain(prompt, {
         "question": question,
         "user_context": user_context,
-        "chat_history": history_text
+        "chat_history": history_text,
+        "intent": intent_result.intent
     })
 
 
@@ -838,51 +789,47 @@ async def chatbot_simple_stream_logic(request: ChatbotSimpleRequest, token: Opti
     Logic xử lý cho simple chatbot streaming
     Tự động lấy chat history từ file tạm theo user_id và lưu lại sau mỗi response
     """
-    # Ưu tiên user_id từ request
     final_user_id = request.user_id or user_id
     
-    # Tự động đọc chat_history từ file nếu có user_id
     chat_history = None
     if final_user_id:
         chat_history = load_chat_history(final_user_id)
     
-    # Check violence before stream
-    is_violent = await check_question_relevance(request.question)
-    if is_violent:
-        raise HTTPException(status_code=400, detail="Xin lỗi, câu hỏi của bạn vi phạm tiêu chuẩn cộng đồng. Vui lòng đặt câu hỏi phù hợp và tuân thủ các quy tắc sử dụng.")
+    history_text = _format_chat_history(chat_history)
+    intent_result = await detect_user_intent(request.question, context=history_text)
+    
+    if not intent_result.is_safe or intent_result.intent == "OFF_TOPIC":
+        raise HTTPException(status_code=400, detail="Xin lỗi, câu hỏi của bạn không phù hợp hoặc vi phạm tiêu chuẩn cộng đồng. Vui lòng đặt câu hỏi khác.")
 
     async def generator():
         full_response = ""
         prompt = PromptTemplate(
-            template="""Bạn là trợ lý AI thông minh và thân thiện, chuyên hỗ trợ các vấn đề liên quan đến đại học số (Digital University).
+            template="""Bạn là trợ lý AI thông minh và thân thiện, chuyên hỗ trợ các vấn đề liên quan đến đại học số và học tập lập trình.
 
-Ngữ cảnh: Bạn đang hỗ trợ trong môi trường đại học số, nơi sinh viên, giảng viên và nhân viên sử dụng các công nghệ số để học tập, giảng dạy và quản lý.
+Ngữ cảnh (Intent phân tích: {intent}): Hãy trả lời phù hợp với ý định này.
 {chat_history}
 Câu hỏi hiện tại của người dùng: {question}
 {user_context}
 
 QUY TẮC QUAN TRỌNG:
-3. Trả lời một cách rõ ràng, chính xác và hữu ích
-4. Sử dụng giọng điệu thân thiện, chuyên nghiệp, động viên
-5. Nếu không chắc chắn về thông tin, hãy thừa nhận và đề xuất cách tìm hiểu thêm
-6. Không trả lời các câu hỏi về chính trị, tôn giáo, hoặc các chủ đề nhạy cảm không liên quan đến giáo dục
-7. Không cung cấp thông tin cá nhân của người khác hoặc vi phạm quyền riêng tư
-8. Khuyến khích người dùng tự học và khám phá
-9. Nếu có lịch sử trò chuyện, hãy tham khảo để trả lời phù hợp với ngữ cảnh
+1. Trả lời một cách rõ ràng, chính xác và hữu ích
+2. Sử dụng giọng điệu thân thiện, chuyên nghiệp, động viên
+3. Nếu không chắc chắn về thông tin, hãy thừa nhận và đề xuất cách tìm hiểu thêm
+4. Nếu người dùng hỏi bài tập, chỉ hướng dẫn chứ KHÔNG giải hộ 100%.
+5. Khuyến khích người dùng tự học và khám phá
+6. Nếu có lịch sử trò chuyện, hãy tham khảo để nhận diện ngữ cảnh liên tục.
 
 Trả lời bằng tiếng Việt, xưng hô "bạn", giọng điệu thân thiện, động viên. Trả về kết quả dạng Markdown để dễ đọc.
 """,
-            input_variables=["question", "user_context", "chat_history"],
+            input_variables=["question", "user_context", "chat_history", "intent"],
         )
         
         user_context = f"\nNgười dùng ID: {final_user_id}" if final_user_id else ""
-        history_text = _format_chat_history(chat_history)
         
-        async for chunk in stream_chain(prompt, {"question": request.question, "user_context": user_context, "chat_history": history_text}):
+        async for chunk in stream_chain(prompt, {"question": request.question, "user_context": user_context, "chat_history": history_text, "intent": intent_result.intent}):
             full_response += chunk
             yield chunk
         
-        # Tự động lưu chat history vào file tạm nếu có user_id
         if final_user_id and full_response:
             save_chat_history(final_user_id, request.question, full_response)
             
