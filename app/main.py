@@ -2,7 +2,8 @@ import logging
 
 from fastapi.exceptions import ValidationException
 import uvicorn
-from fastapi import FastAPI
+from fastapi import FastAPI, Depends
+from fastapi.security import HTTPBearer
 from fastapi_sqlalchemy import DBSessionMiddleware
 from starlette.middleware.cors import CORSMiddleware
 
@@ -43,6 +44,7 @@ def get_application() -> FastAPI:
         swagger_ui_parameters={
             "docExpansion": "none",
         },
+        dependencies=[Depends(HTTPBearer(auto_error=False))],
     )
     application.add_middleware(
         CORSMiddleware,
