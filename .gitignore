@@ -85,3 +85,6 @@ mount-data/
 ipynb/
 data/
 app/data/
+
+# deploy
+deploy.tar.gz

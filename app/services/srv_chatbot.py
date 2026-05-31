@@ -192,7 +192,7 @@ QUY TẮC QUAN TRỌNG:
 - Nếu sinh viên hỏi về lỗi cụ thể trong code của họ, CHỈ chỉ ra lỗi và gợi ý cách suy nghĩ để sửa, KHÔNG sửa code giúp họ
 - Nếu sinh viên hỏi về khái niệm, hãy đưa ra ví dụ đơn giản nhưng không cung cấp giải pháp trực tiếp cho phần bài tập họ đang làm
 - Không cần chào.
-Trả lời bằng tiếng Việt, xưng hô "bạn", giọng điệu thân thiện, động viên. Trả về kết quả dạng Markdown để dễ đọc.
+Hãy phát hiện ngôn ngữ người dùng đang dùng trong câu hỏi và trả lời bằng đúng ngôn ngữ đó (ví dụ: tiếng Việt thì trả lời tiếng Việt, tiếng Anh thì trả lời tiếng Anh). Xưng hô thân mật phù hợp với ngôn ngữ đó, giọng điệu thân thiện, động viên. Trả về kết quả dạng Markdown để dễ đọc.
 """,
         input_variables=["question", "answer", "user_question", "focus_topic"],
     )
@@ -265,7 +265,7 @@ QUY TẮC QUAN TRỌNG:
 - Nếu sinh viên hỏi về khái niệm lập trình thì hãy giải thích rõ ràng và có ví dụ trực quan.
 - Khuyến khích sinh viên tự suy nghĩ và thử nghiệm.
 - Không cần chào.
-Trả lời bằng tiếng Việt, xưng hô "bạn", giọng điệu thân thiện, động viên. Trả về kết quả dạng Markdown để dễ đọc.
+Hãy phát hiện ngôn ngữ người dùng đang dùng trong câu hỏi và trả lời bằng đúng ngôn ngữ đó (ví dụ: tiếng Việt thì trả lời tiếng Việt, tiếng Anh thì trả lời tiếng Anh). Xưng hô thân mật phù hợp với ngôn ngữ đó, giọng điệu thân thiện, động viên. Trả về kết quả dạng Markdown để dễ đọc.
 """,
         input_variables=["unit_context", "user_question"],
     )
@@ -409,7 +409,7 @@ QUY TẮC QUAN TRỌNG:
 - Nếu sinh viên hỏi về lỗi cụ thể trong code của họ, CHỈ chỉ ra lỗi và gợi ý cách suy nghĩ để sửa, KHÔNG sửa code giúp họ
 - Nếu sinh viên hỏi về khái niệm, hãy đưa ra ví dụ đơn giản nhưng không cung cấp giải pháp trực tiếp cho phần bài tập họ đang làm
 - Không cần chào.
-Trả lời bằng tiếng Việt, xưng hô "bạn", giọng điệu thân thiện, động viên. Trả về kết quả dạng Markdown để dễ đọc.
+Hãy phát hiện ngôn ngữ người dùng đang dùng trong câu hỏi và trả lời bằng đúng ngôn ngữ đó (ví dụ: tiếng Việt thì trả lời tiếng Việt, tiếng Anh thì trả lời tiếng Anh). Xưng hô thân mật phù hợp với ngôn ngữ đó, giọng điệu thân thiện, động viên. Trả về kết quả dạng Markdown để dễ đọc.
 """,
         input_variables=["question", "answer", "user_question", "focus_topic"],
     )
@@ -445,7 +445,7 @@ Bạn là trợ lý AI hỗ trợ sinh viên {ai_role}. Hãy trả lời câu h�
 QUY TẮC QUAN TRỌNG:
 {rules}
 - Không cần chào.
-Trả lời bằng tiếng Việt, xưng hô "bạn", giọng điệu thân thiện, động viên. Trả về kết quả dạng Markdown để dễ đọc.
+Hãy phát hiện ngôn ngữ người dùng đang dùng trong câu hỏi và trả lời bằng đúng ngôn ngữ đó (ví dụ: tiếng Việt thì trả lời tiếng Việt, tiếng Anh thì trả lời tiếng Anh). Xưng hô thân mật phù hợp với ngôn ngữ đó, giọng điệu thân thiện, động viên. Trả về kết quả dạng Markdown để dễ đọc.
 """,
         input_variables=["unit_context", "user_question"],
     )
@@ -666,7 +666,7 @@ Bạn là trợ lý AI hỗ trợ sinh viên {ai_role}. Hãy trả lời câu h�
 QUY TẮC QUAN TRỌNG:
 {rules}
 - Không cần chào.
-Trả lời bằng tiếng Việt, xưng hô "bạn", giọng điệu thân thiện, động viên. Trả về kết quả dạng Markdown để dễ đọc.
+Hãy phát hiện ngôn ngữ người dùng đang dùng trong câu hỏi và trả lời bằng đúng ngôn ngữ đó (ví dụ: tiếng Việt thì trả lời tiếng Việt, tiếng Anh thì trả lời tiếng Anh). Xưng hô thân mật phù hợp với ngôn ngữ đó, giọng điệu thân thiện, động viên. Trả về kết quả dạng Markdown để dễ đọc.
 """,
             input_variables=["unit_context", "user_question"],
         )
@@ -769,7 +769,7 @@ QUY TẮC QUAN TRỌNG:
 5. Khuyến khích người dùng tự học và khám phá
 6. Nếu có lịch sử trò chuyện, hãy tham khảo để nhận diện ngữ cảnh liên tục.
 
-Trả lời bằng tiếng Việt, xưng hô "bạn", giọng điệu thân thiện, động viên. Trả về kết quả dạng Markdown để dễ đọc.
+Hãy phát hiện ngôn ngữ người dùng đang dùng trong câu hỏi và trả lời bằng đúng ngôn ngữ đó (ví dụ: tiếng Việt thì trả lời tiếng Việt, tiếng Anh thì trả lời tiếng Anh). Xưng hô thân mật phù hợp với ngôn ngữ đó, giọng điệu thân thiện, động viên. Trả về kết quả dạng Markdown để dễ đọc.
 """,
         input_variables=["question", "user_context", "chat_history", "intent"],
     )
@@ -819,7 +819,7 @@ QUY TẮC QUAN TRỌNG:
 5. Khuyến khích người dùng tự học và khám phá
 6. Nếu có lịch sử trò chuyện, hãy tham khảo để nhận diện ngữ cảnh liên tục.
 
-Trả lời bằng tiếng Việt, xưng hô "bạn", giọng điệu thân thiện, động viên. Trả về kết quả dạng Markdown để dễ đọc.
+Hãy phát hiện ngôn ngữ người dùng đang dùng trong câu hỏi và trả lời bằng đúng ngôn ngữ đó (ví dụ: tiếng Việt thì trả lời tiếng Việt, tiếng Anh thì trả lời tiếng Anh). Xưng hô thân mật phù hợp với ngôn ngữ đó, giọng điệu thân thiện, động viên. Trả về kết quả dạng Markdown để dễ đọc.
 """,
             input_variables=["question", "user_context", "chat_history", "intent"],
         )
