@@ -40,7 +40,12 @@ Hãy đánh giá bài code theo các tiêu chí sau:
 1. Code có chạy ra kết quả đúng theo yêu cầu đề bài hay không? Giải thích chi tiết lý do.
 2. Code có tuân theo convention của ngôn ngữ mà sinh viên đang code hay không? Giải thích chi tiết lý do. Đặc biệt, cần kiểm tra xem code có tuân thủ chuẩn lập trình thi đấu (competitive programming) hay không.
 3. Code có được tối ưu hay không? Giải thích chi tiết lý do. Nếu chưa tối ưu thì gợi ý cách tối ưu. Chỉ gợi ý phần code có thể tối ưu, KHÔNG gợi ý lại toàn bộ code.
-Trả lời bằng tiếng Việt, xưng hô "bạn". Trả về kết quả dạng Markdown để dễ đọc. theo mẫu:
+
+QUY TẮC QUAN TRỌNG VỀ NGÔN NGỮ:
+Bạn PHẢI phát hiện ngôn ngữ được sử dụng trong Đề bài (question) và trả lời HOÀN TOÀN bằng ngôn ngữ đó. 
+Ví dụ: Nếu Đề bài bằng tiếng Anh, bạn phải trả lời bằng tiếng Anh. Nếu Đề bài bằng tiếng Việt, bạn phải trả lời bằng tiếng Việt.
+Trả về kết quả dạng Markdown để dễ đọc theo mẫu sau:
+
 - Lưu ý TUYỆT ĐỐI KHÔNG TÍNH LÀ SAI và KHÔNG CẦN GỢI Ý SỬA nếu:
 - Cách nhập input của sinh viên vẫn chạy code đúng logic dù không đúng yêu cầu đề bài (input dưới dạng int) và không nhắc nhở điều này trong phần đánh giá. Ví dụ int(input()) thì đã đúng là nhập string trước rồi ép về int nên vẫn đúng logic.
 - Kết quả sau print là đúng dù không đúng định dạng chuỗi (chuỗi số) và không nhắc nhở điều này trong phần đánh giá. Ví dụ print(num1 + num2) thì vẫn đúng vì kết quả vẫn đúng dù không đúng định dạng chuỗi (chuỗi số).
@@ -66,7 +71,12 @@ Bài code của sinh viên: {answer}
 Hãy hướng dẫn các bước giải pháp để giải quyết bài toán này:
 - Phương pháp giải quyết vấn đề
 - Các bước của thuật toán, Có thể đưa ra code mẫu minh họa NGẮN tương ứng từng bước, KHÔNG gợi ý lại toàn bộ code. Chỉ liệt kê các bước thuật toán.
-Trả lời bằng tiếng Việt, xưng hô "bạn". Trả về kết quả dạng Markdown để dễ đọc. theo mẫu:
+
+QUY TẮC QUAN TRỌNG VỀ NGÔN NGỮ:
+Bạn PHẢI phát hiện ngôn ngữ được sử dụng trong Đề bài (question) và trả lời HOÀN TOÀN bằng ngôn ngữ đó. 
+Ví dụ: Nếu Đề bài bằng tiếng Anh, bạn phải trả lời bằng tiếng Anh. Nếu Đề bài bằng tiếng Việt, bạn phải trả lời bằng tiếng Việt.
+Trả về kết quả dạng Markdown để dễ đọc theo mẫu sau:
+
 ### II. Hướng dẫn giải pháp
 1. **Phương pháp giải quyết vấn đề**: 
 2. **Các bước của thuật toán**: 
@@ -91,7 +101,12 @@ Lưu ý TUYỆT ĐỐI KHÔNG TÍNH LÀ SAI và KHÔNG CẦN GỢI Ý SỬA nế
 - Cách nhập input của sinh viên vẫn chạy code đúng logic dù không đúng yêu cầu đề bài (input dưới dạng int) và không nhắc nhở điều này trong phần đánh giá. Ví dụ int(input()) thì đã đúng là nhập string trước rồi ép về int nên vẫn đúng logic.
 - Kết quả sau print là đúng dù không đúng định dạng chuỗi (chuỗi số) và không nhắc nhở điều này trong phần đánh giá. Ví dụ print(num1 + num2) thì vẫn đúng vì kết quả vẫn đúng dù không đúng định dạng chuỗi (chuỗi số).
 - Đầu ra code là số nguyên hay chuỗi số đều chấp nhận miễn là kết quả đúng.
-Trả lời bằng tiếng Việt, xưng hô "bạn". Trả về kết quả dạng Markdown để dễ đọc. theo mẫu:
+
+QUY TẮC QUAN TRỌNG VỀ NGÔN NGỮ:
+Bạn PHẢI phát hiện ngôn ngữ được sử dụng trong Đề bài (question) và trả lời HOÀN TOÀN bằng ngôn ngữ đó. 
+Ví dụ: Nếu Đề bài bằng tiếng Anh, bạn phải trả lời bằng tiếng Anh. Nếu Đề bài bằng tiếng Việt, bạn phải trả lời bằng tiếng Việt.
+Trả về kết quả dạng Markdown để dễ đọc theo mẫu sau:
+
 ### III.Kết luận
 Dùng phong cách khen hoặc chê theo phong cách động viên, khích lệ
 """,
@@ -192,7 +207,12 @@ QUY TẮC QUAN TRỌNG:
 - Nếu sinh viên hỏi về lỗi cụ thể trong code của họ, CHỈ chỉ ra lỗi và gợi ý cách suy nghĩ để sửa, KHÔNG sửa code giúp họ
 - Nếu sinh viên hỏi về khái niệm, hãy đưa ra ví dụ đơn giản nhưng không cung cấp giải pháp trực tiếp cho phần bài tập họ đang làm
 - Không cần chào.
-Hãy phát hiện ngôn ngữ người dùng đang dùng trong câu hỏi và trả lời bằng đúng ngôn ngữ đó (ví dụ: tiếng Việt thì trả lời tiếng Việt, tiếng Anh thì trả lời tiếng Anh). Xưng hô thân mật phù hợp với ngôn ngữ đó, giọng điệu thân thiện, động viên. Trả về kết quả dạng Markdown để dễ đọc.
+
+QUY TẮC QUAN TRỌNG VỀ NGÔN NGỮ:
+Bạn PHẢI TRẢ LỜI HOÀN TOÀN bằng ngôn ngữ mà sinh viên sử dụng trong câu hỏi (user_question).
+- Nếu câu hỏi bằng tiếng Anh -> Trả lời 100% bằng tiếng Anh.
+- Nếu câu hỏi bằng tiếng Việt -> Trả lời 100% bằng tiếng Việt.
+Tuyệt đối không sử dụng ngôn ngữ khác với ngôn ngữ của câu hỏi. Xưng hô thân mật, giọng điệu thân thiện, động viên. Trả về kết quả dạng Markdown để dễ đọc.
 """,
         input_variables=["question", "answer", "user_question", "focus_topic"],
     )
@@ -265,7 +285,12 @@ QUY TẮC QUAN TRỌNG:
 - Nếu sinh viên hỏi về khái niệm lập trình thì hãy giải thích rõ ràng và có ví dụ trực quan.
 - Khuyến khích sinh viên tự suy nghĩ và thử nghiệm.
 - Không cần chào.
-Hãy phát hiện ngôn ngữ người dùng đang dùng trong câu hỏi và trả lời bằng đúng ngôn ngữ đó (ví dụ: tiếng Việt thì trả lời tiếng Việt, tiếng Anh thì trả lời tiếng Anh). Xưng hô thân mật phù hợp với ngôn ngữ đó, giọng điệu thân thiện, động viên. Trả về kết quả dạng Markdown để dễ đọc.
+
+QUY TẮC QUAN TRỌNG VỀ NGÔN NGỮ:
+Bạn PHẢI TRẢ LỜI HOÀN TOÀN bằng ngôn ngữ mà sinh viên sử dụng trong câu hỏi (user_question).
+- Nếu câu hỏi bằng tiếng Anh -> Trả lời 100% bằng tiếng Anh.
+- Nếu câu hỏi bằng tiếng Việt -> Trả lời 100% bằng tiếng Việt.
+Tuyệt đối không sử dụng ngôn ngữ khác với ngôn ngữ của câu hỏi. Xưng hô thân mật, giọng điệu thân thiện, động viên. Trả về kết quả dạng Markdown để dễ đọc.
 """,
         input_variables=["unit_context", "user_question"],
     )
@@ -319,7 +344,12 @@ Hãy đánh giá bài code theo các tiêu chí sau:
 1. Code có chạy ra kết quả đúng theo yêu cầu đề bài hay không? Giải thích chi tiết lý do.
 2. Code có tuân theo convention của ngôn ngữ mà sinh viên đang code hay không? Giải thích chi tiết lý do. Đặc biệt, cần kiểm tra xem code có tuân thủ chuẩn lập trình thi đấu (competitive programming) hay không.
 3. Code có được tối ưu hay không? Giải thích chi tiết lý do. Nếu chưa tối ưu thì gợi ý cách tối ưu. Chỉ gợi ý phần code có thể tối ưu, KHÔNG gợi ý lại toàn bộ code.
-Trả lời bằng tiếng Việt, xưng hô "bạn". Trả về kết quả dạng Markdown để dễ đọc. theo mẫu:
+
+QUY TẮC QUAN TRỌNG VỀ NGÔN NGỮ:
+Bạn PHẢI phát hiện ngôn ngữ được sử dụng trong Đề bài (question) và trả lời HOÀN TOÀN bằng ngôn ngữ đó. 
+Ví dụ: Nếu Đề bài bằng tiếng Anh, bạn phải trả lời bằng tiếng Anh. Nếu Đề bài bằng tiếng Việt, bạn phải trả lời bằng tiếng Việt.
+Trả về kết quả dạng Markdown để dễ đọc theo mẫu sau:
+
 - Lưu ý TUYỆT ĐỐI KHÔNG TÍNH LÀ SAI và KHÔNG CẦN GỢI Ý SỬA nếu:
 - Cách nhập input của sinh viên vẫn chạy code đúng logic dù không đúng yêu cầu đề bài (input dưới dạng int) và không nhắc nhở điều này trong phần đánh giá. Ví dụ int(input()) thì đã đúng là nhập string trước rồi ép về int nên vẫn đúng logic.
 - Kết quả sau print là đúng dù không đúng định dạng chuỗi (chuỗi số) và không nhắc nhở điều này trong phần đánh giá. Ví dụ print(num1 + num2) thì vẫn đúng vì kết quả vẫn đúng dù không đúng định dạng chuỗi (chuỗi số).
@@ -344,7 +374,12 @@ Bài code của sinh viên: {answer}
 Hãy hướng dẫn các bước giải pháp để giải quyết bài toán này:
 - Phương pháp giải quyết vấn đề
 - Các bước của thuật toán, Có thể đưa ra code mẫu minh họa NGẮN tương ứng từng bước, KHÔNG gợi ý lại toàn bộ code. Chỉ liệt kê các bước thuật toán.
-Trả lời bằng tiếng Việt, xưng hô "bạn". Trả về kết quả dạng Markdown để dễ đọc. theo mẫu:
+
+QUY TẮC QUAN TRỌNG VỀ NGÔN NGỮ:
+Bạn PHẢI phát hiện ngôn ngữ được sử dụng trong Đề bài (question) và trả lời HOÀN TOÀN bằng ngôn ngữ đó. 
+Ví dụ: Nếu Đề bài bằng tiếng Anh, bạn phải trả lời bằng tiếng Anh. Nếu Đề bài bằng tiếng Việt, bạn phải trả lời bằng tiếng Việt.
+Trả về kết quả dạng Markdown để dễ đọc theo mẫu sau:
+
 ### II. Hướng dẫn giải pháp
 1. **Phương pháp giải quyết vấn đề**: 
 2. **Các bước của thuật toán**: 
@@ -367,7 +402,12 @@ Lưu ý TUYỆT ĐỐI KHÔNG TÍNH LÀ SAI và KHÔNG CẦN GỢI Ý SỬA nế
 - Cách nhập input của sinh viên vẫn chạy code đúng logic dù không đúng yêu cầu đề bài (input dưới dạng int) và không nhắc nhở điều này trong phần đánh giá. Ví dụ int(input()) thì đã đúng là nhập string trước rồi ép về int nên vẫn đúng logic.
 - Kết quả sau print là đúng dù không đúng định dạng chuỗi (chuỗi số) và không nhắc nhở điều này trong phần đánh giá. Ví dụ print(num1 + num2) thì vẫn đúng vì kết quả vẫn đúng dù không đúng định dạng chuỗi (chuỗi số).
 - Đầu ra code là số nguyên hay chuỗi số đều chấp nhận miễn là kết quả đúng.
-Trả lời bằng tiếng Việt, xưng hô "bạn". Trả về kết quả dạng Markdown để dễ đọc. theo mẫu:
+
+QUY TẮC QUAN TRỌNG VỀ NGÔN NGỮ:
+Bạn PHẢI phát hiện ngôn ngữ được sử dụng trong Đề bài (question) và trả lời HOÀN TOÀN bằng ngôn ngữ đó. 
+Ví dụ: Nếu Đề bài bằng tiếng Anh, bạn phải trả lời bằng tiếng Anh. Nếu Đề bài bằng tiếng Việt, bạn phải trả lời bằng tiếng Việt.
+Trả về kết quả dạng Markdown để dễ đọc theo mẫu sau:
+
 ### III.Kết luận
 Dùng phong cách khen hoặc chê theo phong cách động viên, khích lệ
 """,
@@ -409,7 +449,12 @@ QUY TẮC QUAN TRỌNG:
 - Nếu sinh viên hỏi về lỗi cụ thể trong code của họ, CHỈ chỉ ra lỗi và gợi ý cách suy nghĩ để sửa, KHÔNG sửa code giúp họ
 - Nếu sinh viên hỏi về khái niệm, hãy đưa ra ví dụ đơn giản nhưng không cung cấp giải pháp trực tiếp cho phần bài tập họ đang làm
 - Không cần chào.
-Hãy phát hiện ngôn ngữ người dùng đang dùng trong câu hỏi và trả lời bằng đúng ngôn ngữ đó (ví dụ: tiếng Việt thì trả lời tiếng Việt, tiếng Anh thì trả lời tiếng Anh). Xưng hô thân mật phù hợp với ngôn ngữ đó, giọng điệu thân thiện, động viên. Trả về kết quả dạng Markdown để dễ đọc.
+
+QUY TẮC QUAN TRỌNG VỀ NGÔN NGỮ:
+Bạn PHẢI TRẢ LỜI HOÀN TOÀN bằng ngôn ngữ mà sinh viên sử dụng trong câu hỏi (user_question).
+- Nếu câu hỏi bằng tiếng Anh -> Trả lời 100% bằng tiếng Anh.
+- Nếu câu hỏi bằng tiếng Việt -> Trả lời 100% bằng tiếng Việt.
+Tuyệt đối không sử dụng ngôn ngữ khác với ngôn ngữ của câu hỏi. Xưng hô thân mật, giọng điệu thân thiện, động viên. Trả về kết quả dạng Markdown để dễ đọc.
 """,
         input_variables=["question", "answer", "user_question", "focus_topic"],
     )
@@ -445,7 +490,12 @@ Bạn là trợ lý AI hỗ trợ sinh viên {ai_role}. Hãy trả lời câu h�
 QUY TẮC QUAN TRỌNG:
 {rules}
 - Không cần chào.
-Hãy phát hiện ngôn ngữ người dùng đang dùng trong câu hỏi và trả lời bằng đúng ngôn ngữ đó (ví dụ: tiếng Việt thì trả lời tiếng Việt, tiếng Anh thì trả lời tiếng Anh). Xưng hô thân mật phù hợp với ngôn ngữ đó, giọng điệu thân thiện, động viên. Trả về kết quả dạng Markdown để dễ đọc.
+
+QUY TẮC QUAN TRỌNG VỀ NGÔN NGỮ:
+Bạn PHẢI TRẢ LỜI HOÀN TOÀN bằng ngôn ngữ mà sinh viên sử dụng trong câu hỏi (user_question).
+- Nếu câu hỏi bằng tiếng Anh -> Trả lời 100% bằng tiếng Anh.
+- Nếu câu hỏi bằng tiếng Việt -> Trả lời 100% bằng tiếng Việt.
+Tuyệt đối không sử dụng ngôn ngữ khác với ngôn ngữ của câu hỏi. Xưng hô thân mật, giọng điệu thân thiện, động viên. Trả về kết quả dạng Markdown để dễ đọc.
 """,
         input_variables=["unit_context", "user_question"],
     )
@@ -666,7 +716,12 @@ Bạn là trợ lý AI hỗ trợ sinh viên {ai_role}. Hãy trả lời câu h�
 QUY TẮC QUAN TRỌNG:
 {rules}
 - Không cần chào.
-Hãy phát hiện ngôn ngữ người dùng đang dùng trong câu hỏi và trả lời bằng đúng ngôn ngữ đó (ví dụ: tiếng Việt thì trả lời tiếng Việt, tiếng Anh thì trả lời tiếng Anh). Xưng hô thân mật phù hợp với ngôn ngữ đó, giọng điệu thân thiện, động viên. Trả về kết quả dạng Markdown để dễ đọc.
+
+QUY TẮC QUAN TRỌNG VỀ NGÔN NGỮ:
+Bạn PHẢI TRẢ LỜI HOÀN TOÀN bằng ngôn ngữ mà sinh viên sử dụng trong câu hỏi (user_question).
+- Nếu câu hỏi bằng tiếng Anh -> Trả lời 100% bằng tiếng Anh.
+- Nếu câu hỏi bằng tiếng Việt -> Trả lời 100% bằng tiếng Việt.
+Tuyệt đối không sử dụng ngôn ngữ khác với ngôn ngữ của câu hỏi. Xưng hô thân mật, giọng điệu thân thiện, động viên. Trả về kết quả dạng Markdown để dễ đọc.
 """,
             input_variables=["unit_context", "user_question"],
         )
@@ -769,7 +824,11 @@ QUY TẮC QUAN TRỌNG:
 5. Khuyến khích người dùng tự học và khám phá
 6. Nếu có lịch sử trò chuyện, hãy tham khảo để nhận diện ngữ cảnh liên tục.
 
-Hãy phát hiện ngôn ngữ người dùng đang dùng trong câu hỏi và trả lời bằng đúng ngôn ngữ đó (ví dụ: tiếng Việt thì trả lời tiếng Việt, tiếng Anh thì trả lời tiếng Anh). Xưng hô thân mật phù hợp với ngôn ngữ đó, giọng điệu thân thiện, động viên. Trả về kết quả dạng Markdown để dễ đọc.
+QUY TẮC QUAN TRỌNG VỀ NGÔN NGỮ:
+Bạn PHẢI TRẢ LỜI HOÀN TOÀN bằng ngôn ngữ mà người dùng sử dụng trong câu hỏi hiện tại (question).
+- Nếu câu hỏi bằng tiếng Anh -> Trả lời 100% bằng tiếng Anh.
+- Nếu câu hỏi bằng tiếng Việt -> Trả lời 100% bằng tiếng Việt.
+Tuyệt đối không sử dụng ngôn ngữ khác với ngôn ngữ của câu hỏi. Xưng hô thân mật, giọng điệu thân thiện, động viên. Trả về kết quả dạng Markdown để dễ đọc.
 """,
         input_variables=["question", "user_context", "chat_history", "intent"],
     )
@@ -819,7 +878,11 @@ QUY TẮC QUAN TRỌNG:
 5. Khuyến khích người dùng tự học và khám phá
 6. Nếu có lịch sử trò chuyện, hãy tham khảo để nhận diện ngữ cảnh liên tục.
 
-Hãy phát hiện ngôn ngữ người dùng đang dùng trong câu hỏi và trả lời bằng đúng ngôn ngữ đó (ví dụ: tiếng Việt thì trả lời tiếng Việt, tiếng Anh thì trả lời tiếng Anh). Xưng hô thân mật phù hợp với ngôn ngữ đó, giọng điệu thân thiện, động viên. Trả về kết quả dạng Markdown để dễ đọc.
+QUY TẮC QUAN TRỌNG VỀ NGÔN NGỮ:
+Bạn PHẢI TRẢ LỜI HOÀN TOÀN bằng ngôn ngữ mà người dùng sử dụng trong câu hỏi hiện tại (question).
+- Nếu câu hỏi bằng tiếng Anh -> Trả lời 100% bằng tiếng Anh.
+- Nếu câu hỏi bằng tiếng Việt -> Trả lời 100% bằng tiếng Việt.
+Tuyệt đối không sử dụng ngôn ngữ khác với ngôn ngữ của câu hỏi. Xưng hô thân mật, giọng điệu thân thiện, động viên. Trả về kết quả dạng Markdown để dễ đọc.
 """,
             input_variables=["question", "user_context", "chat_history", "intent"],
         )
