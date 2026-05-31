@@ -88,4 +88,9 @@ class IntentDetectionResult(BaseModel):
     confidence: float = Field(
         ..., 
         description="Độ tự tin từ 0.0 đến 1.0"
-    )
+    )
+    language: Literal["Vietnamese", "English"] = Field(
+        "Vietnamese",
+        description="Ngôn ngữ mà người dùng sử dụng trong câu hỏi (Tiếng Việt hoặc Tiếng Anh)"
+    )
+

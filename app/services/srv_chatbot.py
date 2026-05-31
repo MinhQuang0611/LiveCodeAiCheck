@@ -42,10 +42,12 @@ Hãy đánh giá bài code theo các tiêu chí sau:
 3. Code có được tối ưu hay không? Giải thích chi tiết lý do. Nếu chưa tối ưu thì gợi ý cách tối ưu. Chỉ gợi ý phần code có thể tối ưu, KHÔNG gợi ý lại toàn bộ code.
 
 CRITICAL LANGUAGE RULE (MUST FOLLOW EXACTLY):
-IMPORTANT: You must DETECT the language of the task (Đề bài / question).
-- If the task is in English, your ENTIRE response MUST be in English.
-- If the task is in Vietnamese, your ENTIRE response MUST be in Vietnamese.
-- DO NOT use Vietnamese if the task is in English.
+1. Identify the exact language used in the task (Đề bài / question).
+2. You MUST reply entirely in that EXACT same language.
+   - If the task is in English, you MUST translate any necessary context and reply 100% in English.
+   - If the task is in Vietnamese, you MUST reply 100% in Vietnamese.
+Do NOT mix languages. DO NOT use Vietnamese if the task is in English.
+If responding in English, you MUST translate the Markdown template headers below into English.
 Format as Markdown according to the following template:
 
 - Lưu ý TUYỆT ĐỐI KHÔNG TÍNH LÀ SAI và KHÔNG CẦN GỢI Ý SỬA nếu:
@@ -75,10 +77,12 @@ Hãy hướng dẫn các bước giải pháp để giải quyết bài toán n�
 - Các bước của thuật toán, Có thể đưa ra code mẫu minh họa NGẮN tương ứng từng bước, KHÔNG gợi ý lại toàn bộ code. Chỉ liệt kê các bước thuật toán.
 
 CRITICAL LANGUAGE RULE (MUST FOLLOW EXACTLY):
-IMPORTANT: You must DETECT the language of the task (Đề bài / question).
-- If the task is in English, your ENTIRE response MUST be in English.
-- If the task is in Vietnamese, your ENTIRE response MUST be in Vietnamese.
-- DO NOT use Vietnamese if the task is in English.
+1. Identify the exact language used in the task (Đề bài / question).
+2. You MUST reply entirely in that EXACT same language.
+   - If the task is in English, you MUST translate any necessary context and reply 100% in English.
+   - If the task is in Vietnamese, you MUST reply 100% in Vietnamese.
+Do NOT mix languages. DO NOT use Vietnamese if the task is in English.
+If responding in English, you MUST translate the Markdown template headers below into English.
 Format as Markdown according to the following template:
 
 ### II. Hướng dẫn giải pháp
@@ -107,10 +111,12 @@ Lưu ý TUYỆT ĐỐI KHÔNG TÍNH LÀ SAI và KHÔNG CẦN GỢI Ý SỬA nế
 - Đầu ra code là số nguyên hay chuỗi số đều chấp nhận miễn là kết quả đúng.
 
 CRITICAL LANGUAGE RULE (MUST FOLLOW EXACTLY):
-IMPORTANT: You must DETECT the language of the task (Đề bài / question).
-- If the task is in English, your ENTIRE response MUST be in English.
-- If the task is in Vietnamese, your ENTIRE response MUST be in Vietnamese.
-- DO NOT use Vietnamese if the task is in English.
+1. Identify the exact language used in the task (Đề bài / question).
+2. You MUST reply entirely in that EXACT same language.
+   - If the task is in English, you MUST translate any necessary context and reply 100% in English.
+   - If the task is in Vietnamese, you MUST reply 100% in Vietnamese.
+Do NOT mix languages. DO NOT use Vietnamese if the task is in English.
+If responding in English, you MUST translate the Markdown template headers below into English.
 Format as Markdown according to the following template:
 
 ### III.Kết luận
@@ -181,15 +187,13 @@ async def func_chatbot_qa(question: str, answer: str, user_question: str, topic_
     print(f"Intent detection result: {intent_result.model_dump_json()}")
 
     if not intent_result.is_safe or intent_result.intent == "OFF_TOPIC":
-        message = "Xin lỗi, câu hỏi của bạn không phù hợp hoặc không liên quan đến bài tập/khóa học hiện tại. Vui lòng đặt câu hỏi khác. / Sorry, your question is inappropriate or unrelated to the current course/exercise. Please ask another question."
-        for char in message:
-            yield char
+        message = "Xin lỗi, câu hỏi của bạn không phù hợp hoặc không liên quan đến bài tập/khóa học hiện tại. Vui lòng đặt câu hỏi khác." if getattr(intent_result, "language", "Vietnamese") == "Vietnamese" else "Sorry, your question is inappropriate or unrelated to the current course/exercise. Please ask another question."
+        yield message
         return
         
     if intent_result.intent == "SOLUTION_HUNTING":
-        message = "Tôi có thể hướng dẫn tư duy và các bước giải thuật toán, nhưng sẽ không viết sẵn code hoàn chỉnh cho bạn. Bạn cần hỗ trợ bước nào? / I can guide your thinking and algorithm steps, but I will not write the complete code for you. Which step do you need help with?"
-        for char in message:
-            yield char
+        message = "Tôi có thể hướng dẫn tư duy và các bước giải thuật toán, nhưng sẽ không viết sẵn code hoàn chỉnh cho bạn. Bạn cần hỗ trợ bước nào?" if getattr(intent_result, "language", "Vietnamese") == "Vietnamese" else "I can guide your thinking and algorithm steps, but I will not write the complete code for you. Which step do you need help with?"
+        yield message
         return
 
     intent_note = f"\nSYSTEM NOTE: The user's intent is {intent_result.intent}. You must serve this intent.\n"
@@ -353,10 +357,12 @@ Hãy đánh giá bài code theo các tiêu chí sau:
 3. Code có được tối ưu hay không? Giải thích chi tiết lý do. Nếu chưa tối ưu thì gợi ý cách tối ưu. Chỉ gợi ý phần code có thể tối ưu, KHÔNG gợi ý lại toàn bộ code.
 
 CRITICAL LANGUAGE RULE (MUST FOLLOW EXACTLY):
-IMPORTANT: You must DETECT the language of the task (Đề bài / question).
-- If the task is in English, your ENTIRE response MUST be in English.
-- If the task is in Vietnamese, your ENTIRE response MUST be in Vietnamese.
-- DO NOT use Vietnamese if the task is in English.
+1. Identify the exact language used in the task (Đề bài / question).
+2. You MUST reply entirely in that EXACT same language.
+   - If the task is in English, you MUST translate any necessary context and reply 100% in English.
+   - If the task is in Vietnamese, you MUST reply 100% in Vietnamese.
+Do NOT mix languages. DO NOT use Vietnamese if the task is in English.
+If responding in English, you MUST translate the Markdown template headers below into English.
 Format as Markdown according to the following template:
 
 - Lưu ý TUYỆT ĐỐI KHÔNG TÍNH LÀ SAI và KHÔNG CẦN GỢI Ý SỬA nếu:
@@ -385,10 +391,12 @@ Hãy hướng dẫn các bước giải pháp để giải quyết bài toán n�
 - Các bước của thuật toán, Có thể đưa ra code mẫu minh họa NGẮN tương ứng từng bước, KHÔNG gợi ý lại toàn bộ code. Chỉ liệt kê các bước thuật toán.
 
 CRITICAL LANGUAGE RULE (MUST FOLLOW EXACTLY):
-IMPORTANT: You must DETECT the language of the task (Đề bài / question).
-- If the task is in English, your ENTIRE response MUST be in English.
-- If the task is in Vietnamese, your ENTIRE response MUST be in Vietnamese.
-- DO NOT use Vietnamese if the task is in English.
+1. Identify the exact language used in the task (Đề bài / question).
+2. You MUST reply entirely in that EXACT same language.
+   - If the task is in English, you MUST translate any necessary context and reply 100% in English.
+   - If the task is in Vietnamese, you MUST reply 100% in Vietnamese.
+Do NOT mix languages. DO NOT use Vietnamese if the task is in English.
+If responding in English, you MUST translate the Markdown template headers below into English.
 Format as Markdown according to the following template:
 
 ### II. Hướng dẫn giải pháp
@@ -415,10 +423,12 @@ Lưu ý TUYỆT ĐỐI KHÔNG TÍNH LÀ SAI và KHÔNG CẦN GỢI Ý SỬA nế
 - Đầu ra code là số nguyên hay chuỗi số đều chấp nhận miễn là kết quả đúng.
 
 CRITICAL LANGUAGE RULE (MUST FOLLOW EXACTLY):
-IMPORTANT: You must DETECT the language of the task (Đề bài / question).
-- If the task is in English, your ENTIRE response MUST be in English.
-- If the task is in Vietnamese, your ENTIRE response MUST be in Vietnamese.
-- DO NOT use Vietnamese if the task is in English.
+1. Identify the exact language used in the task (Đề bài / question).
+2. You MUST reply entirely in that EXACT same language.
+   - If the task is in English, you MUST translate any necessary context and reply 100% in English.
+   - If the task is in Vietnamese, you MUST reply 100% in Vietnamese.
+Do NOT mix languages. DO NOT use Vietnamese if the task is in English.
+If responding in English, you MUST translate the Markdown template headers below into English.
 Format as Markdown according to the following template:
 
 ### III.Kết luận
@@ -436,10 +446,10 @@ async def func_chatbot_qa_non_stream(question: str, answer: str, user_question: 
     intent_result = await detect_user_intent(user_question, context=focus_topic_text)
 
     if not intent_result.is_safe or intent_result.intent == "OFF_TOPIC":
-        return "Xin lỗi, câu hỏi của bạn không phù hợp hoặc không liên quan đến bài tập/khóa học hiện tại. Vui lòng đặt câu hỏi khác. / Sorry, your question is inappropriate or unrelated to the current course/exercise. Please ask another question."
+        return "Xin lỗi, câu hỏi của bạn không phù hợp hoặc không liên quan đến bài tập/khóa học hiện tại. Vui lòng đặt câu hỏi khác." if getattr(intent_result, "language", "Vietnamese") == "Vietnamese" else "Sorry, your question is inappropriate or unrelated to the current course/exercise. Please ask another question."
         
     if intent_result.intent == "SOLUTION_HUNTING":
-        return "Tôi có thể hướng dẫn tư duy và các bước giải thuật toán, nhưng sẽ không viết sẵn code hoàn chỉnh cho bạn. Bạn cần hỗ trợ bước nào? / I can guide your thinking and algorithm steps, but I will not write the complete code for you. Which step do you need help with?"
+        return "Tôi có thể hướng dẫn tư duy và các bước giải thuật toán, nhưng sẽ không viết sẵn code hoàn chỉnh cho bạn. Bạn cần hỗ trợ bước nào?" if getattr(intent_result, "language", "Vietnamese") == "Vietnamese" else "I can guide your thinking and algorithm steps, but I will not write the complete code for you. Which step do you need help with?"
 
     intent_note = f"\nSYSTEM NOTE: The user's intent is {intent_result.intent}. You must serve this intent.\n"
     if topic_name:
@@ -732,10 +742,11 @@ QUY TẮC QUAN TRỌNG:
 - Không cần chào.
 
 CRITICAL LANGUAGE RULE (MUST FOLLOW EXACTLY):
-IMPORTANT: You must DETECT the language of the student's question (user_question).
-- If the student's question is in English, your ENTIRE response MUST be in English.
-- If the student's question is in Vietnamese, your ENTIRE response MUST be in Vietnamese.
-- DO NOT use Vietnamese if the student's question is in English.
+1. Identify the exact language used in the "Student's question" (user_question).
+2. You MUST reply entirely in that EXACT same language.
+   - If the student's question is in English (e.g., "can u explain...", "help me"), you MUST translate any necessary context and reply 100% in English.
+   - If the student's question is in Vietnamese, you MUST reply 100% in Vietnamese.
+Do NOT mix languages. DO NOT use Vietnamese if the student's question is in English.
 Use a friendly and encouraging tone. Format as Markdown.
 """,
             input_variables=["unit_context", "user_question"],
@@ -821,7 +832,7 @@ async def func_chatbot_simple_non_stream(question: str, user_id: Optional[str] =
     intent_result = await detect_user_intent(question, context=history_text)
 
     if not intent_result.is_safe or intent_result.intent == "OFF_TOPIC":
-        return "Xin lỗi, câu hỏi của bạn không phù hợp với mục đích học tập hoặc vi phạm quy tắc. Vui lòng đặt câu hỏi khác. / Sorry, your question is inappropriate for learning purposes or violates rules. Please ask another question."
+        return "Xin lỗi, câu hỏi của bạn không phù hợp với mục đích học tập hoặc vi phạm quy tắc. Vui lòng đặt câu hỏi khác." if getattr(intent_result, "language", "Vietnamese") == "Vietnamese" else "Sorry, your question is inappropriate for learning purposes or violates rules. Please ask another question."
     
     prompt = PromptTemplate(
         template="""You are a smart and friendly AI assistant, specializing in programming support, code review, code evaluation, and general learning.
@@ -874,7 +885,8 @@ async def chatbot_simple_stream_logic(request: ChatbotSimpleRequest, token: Opti
     intent_result = await detect_user_intent(request.question, context=history_text)
     
     if not intent_result.is_safe or intent_result.intent == "OFF_TOPIC":
-        raise HTTPException(status_code=400, detail="Xin lỗi, câu hỏi của bạn không phù hợp hoặc vi phạm tiêu chuẩn cộng đồng. Vui lòng đặt câu hỏi khác. / Sorry, your question is inappropriate or violates community standards. Please ask another question.")
+        msg = "Xin lỗi, câu hỏi của bạn không phù hợp hoặc vi phạm tiêu chuẩn cộng đồng. Vui lòng đặt câu hỏi khác." if getattr(intent_result, "language", "Vietnamese") == "Vietnamese" else "Sorry, your question is inappropriate or violates community standards. Please ask another question."
+        raise HTTPException(status_code=400, detail=msg)
 
     async def generator():
         full_response = ""
