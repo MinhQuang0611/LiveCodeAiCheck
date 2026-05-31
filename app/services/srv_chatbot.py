@@ -42,11 +42,11 @@ Hãy đánh giá bài code theo các tiêu chí sau:
 3. Code có được tối ưu hay không? Giải thích chi tiết lý do. Nếu chưa tối ưu thì gợi ý cách tối ưu. Chỉ gợi ý phần code có thể tối ưu, KHÔNG gợi ý lại toàn bộ code.
 
 CRITICAL LANGUAGE RULE (MUST FOLLOW EXACTLY):
-1. Identify the exact language used in "Đề bài" (question).
-2. You MUST reply entirely in that EXACT same language.
-   - If the question is in English, you MUST reply 100% in English.
-   - If the question is in Vietnamese, you MUST reply 100% in Vietnamese.
-Do NOT mix languages. Format as Markdown according to the following template:
+IMPORTANT: You must DETECT the language of the task (Đề bài / question).
+- If the task is in English, your ENTIRE response MUST be in English.
+- If the task is in Vietnamese, your ENTIRE response MUST be in Vietnamese.
+- DO NOT use Vietnamese if the task is in English.
+Format as Markdown according to the following template:
 
 - Lưu ý TUYỆT ĐỐI KHÔNG TÍNH LÀ SAI và KHÔNG CẦN GỢI Ý SỬA nếu:
 - Cách nhập input của sinh viên vẫn chạy code đúng logic dù không đúng yêu cầu đề bài (input dưới dạng int) và không nhắc nhở điều này trong phần đánh giá. Ví dụ int(input()) thì đã đúng là nhập string trước rồi ép về int nên vẫn đúng logic.
@@ -75,11 +75,11 @@ Hãy hướng dẫn các bước giải pháp để giải quyết bài toán n�
 - Các bước của thuật toán, Có thể đưa ra code mẫu minh họa NGẮN tương ứng từng bước, KHÔNG gợi ý lại toàn bộ code. Chỉ liệt kê các bước thuật toán.
 
 CRITICAL LANGUAGE RULE (MUST FOLLOW EXACTLY):
-1. Identify the exact language used in "Đề bài" (question).
-2. You MUST reply entirely in that EXACT same language.
-   - If the question is in English, you MUST reply 100% in English.
-   - If the question is in Vietnamese, you MUST reply 100% in Vietnamese.
-Do NOT mix languages. Format as Markdown according to the following template:
+IMPORTANT: You must DETECT the language of the task (Đề bài / question).
+- If the task is in English, your ENTIRE response MUST be in English.
+- If the task is in Vietnamese, your ENTIRE response MUST be in Vietnamese.
+- DO NOT use Vietnamese if the task is in English.
+Format as Markdown according to the following template:
 
 ### II. Hướng dẫn giải pháp
 1. **Phương pháp giải quyết vấn đề**: 
@@ -107,11 +107,11 @@ Lưu ý TUYỆT ĐỐI KHÔNG TÍNH LÀ SAI và KHÔNG CẦN GỢI Ý SỬA nế
 - Đầu ra code là số nguyên hay chuỗi số đều chấp nhận miễn là kết quả đúng.
 
 CRITICAL LANGUAGE RULE (MUST FOLLOW EXACTLY):
-1. Identify the exact language used in "Đề bài" (question).
-2. You MUST reply entirely in that EXACT same language.
-   - If the question is in English, you MUST reply 100% in English.
-   - If the question is in Vietnamese, you MUST reply 100% in Vietnamese.
-Do NOT mix languages. Format as Markdown according to the following template:
+IMPORTANT: You must DETECT the language of the task (Đề bài / question).
+- If the task is in English, your ENTIRE response MUST be in English.
+- If the task is in Vietnamese, your ENTIRE response MUST be in Vietnamese.
+- DO NOT use Vietnamese if the task is in English.
+Format as Markdown according to the following template:
 
 ### III.Kết luận
 Dùng phong cách khen hoặc chê theo phong cách động viên, khích lệ
@@ -181,45 +181,44 @@ async def func_chatbot_qa(question: str, answer: str, user_question: str, topic_
     print(f"Intent detection result: {intent_result.model_dump_json()}")
 
     if not intent_result.is_safe or intent_result.intent == "OFF_TOPIC":
-        message = "Xin lỗi, câu hỏi của bạn không phù hợp hoặc không liên quan đến bài tập/khóa học hiện tại. Vui lòng đặt câu hỏi khác."
+        message = "Xin lỗi, câu hỏi của bạn không phù hợp hoặc không liên quan đến bài tập/khóa học hiện tại. Vui lòng đặt câu hỏi khác. / Sorry, your question is inappropriate or unrelated to the current course/exercise. Please ask another question."
         for char in message:
             yield char
         return
         
     if intent_result.intent == "SOLUTION_HUNTING":
-        message = "Tôi có thể hướng dẫn tư duy và các bước giải thuật toán, nhưng sẽ không viết sẵn code hoàn chỉnh cho bạn. Bạn cần hỗ trợ bước nào?"
+        message = "Tôi có thể hướng dẫn tư duy và các bước giải thuật toán, nhưng sẽ không viết sẵn code hoàn chỉnh cho bạn. Bạn cần hỗ trợ bước nào? / I can guide your thinking and algorithm steps, but I will not write the complete code for you. Which step do you need help with?"
         for char in message:
             yield char
         return
 
-    intent_note = f"\nLƯU Ý QUAN TRỌNG TỪ HỆ THỐNG: Người dùng đang có ý định (Intent) là {intent_result.intent}. Bạn cần phục vụ đúng mục đích này.\n"
+    intent_note = f"\nSYSTEM NOTE: The user's intent is {intent_result.intent}. You must serve this intent.\n"
     if topic_name:
-        intent_note += f"Đảm bảo nội dung thuộc chủ đề: {topic_name}.\n"
+        intent_note += f"Ensure the content relates to the topic: {topic_name}.\n"
     
     prompt = PromptTemplate(
         template="""
-Đề bài: {question}
-Bài code của sinh viên: {answer}
+You are an AI assistant helping students learn programming.
 
-Câu hỏi của sinh viên: {user_question}
+Problem Statement (Đề bài): {question}
+Student's Code (Bài code): {answer}
+
 {focus_topic}
 
-Bạn là trợ lý AI hỗ trợ sinh viên học lập trình. Hãy trả lời câu hỏi của sinh viên dựa trên ngữ cảnh đề bài và bài code của họ.
+Student's Question (Câu hỏi của sinh viên): {user_question}
 
-QUY TẮC QUAN TRỌNG:
-- TUYỆT ĐỐI KHÔNG đưa ra đáp án hoàn chỉnh hoặc code mẫu giải bài tập
-- TUYỆT ĐỐI KHÔNG viết lại toàn bộ code đúng cho sinh viên
-- CHỈ hướng dẫn, gợi ý hướng đi, giải thích khái niệm, phân tích logic
-- Nếu sinh viên hỏi về lỗi cụ thể trong code của họ, CHỈ chỉ ra lỗi và gợi ý cách suy nghĩ để sửa, KHÔNG sửa code giúp họ
-- Nếu sinh viên hỏi về khái niệm, hãy đưa ra ví dụ đơn giản nhưng không cung cấp giải pháp trực tiếp cho phần bài tập họ đang làm
-- Không cần chào.
+CRITICAL RULES:
+- Do NOT provide the complete solution or full code snippet.
+- Only guide, suggest directions, explain concepts, and analyze logic.
+- If the student asks about a specific error, point out the error and hint at how to fix it, do NOT fix the code for them.
+- Use a friendly and encouraging tone. Format as Markdown.
 
 CRITICAL LANGUAGE RULE (MUST FOLLOW EXACTLY):
-1. Identify the exact language used in "Câu hỏi của sinh viên" (user_question).
+1. Identify the exact language used in the "Student's Question" (user_question).
 2. You MUST reply entirely in that EXACT same language.
-   - If user_question is in English (e.g., "hello", "hi"), you MUST reply 100% in English.
-   - If user_question is in Vietnamese, you MUST reply 100% in Vietnamese.
-Do NOT mix languages. Do NOT use Vietnamese if the user_question is in English. Use a friendly and encouraging tone. Format as Markdown.
+   - If the student's question is in English (e.g., "can u explain...", "help me"), you MUST translate any necessary context and reply 100% in English.
+   - If the student's question is in Vietnamese, you MUST reply 100% in Vietnamese.
+Do NOT mix languages. DO NOT use Vietnamese if the student's question is in English.
 """,
         input_variables=["question", "answer", "user_question", "focus_topic"],
     )
@@ -282,23 +281,23 @@ async def func_chatbot_unit(id_unit: str, user_question: str):
         template="""
 {unit_context}
 
-Câu hỏi của sinh viên: {user_question}
+Student's question: {user_question}
 
-Bạn là trợ lý AI hỗ trợ sinh viên học lập trình. Hãy trả lời câu hỏi của sinh viên dựa trên thông tin bài học được cung cấp ở trên.
+You are an AI assistant helping students learn programming. Answer the student's question based on the provided lesson context above.
 
-QUY TẮC QUAN TRỌNG:
-- TUYỆT ĐỐI KHÔNG đưa ra đáp án hoàn chỉnh hoặc code mẫu giải bài tập nếu sinh viên yêu cầu giải hộ.
-- CHỈ hướng dẫn, gợi ý hướng đi, giải thích khái niệm, phân tích logic.
-- Nếu sinh viên hỏi về khái niệm lập trình thì hãy giải thích rõ ràng và có ví dụ trực quan.
-- Khuyến khích sinh viên tự suy nghĩ và thử nghiệm.
-- Không cần chào.
+IMPORTANT RULES:
+- NEVER provide a complete solution or full code if the student asks you to solve an exercise for them.
+- ONLY guide, suggest directions, explain concepts, and analyze logic.
+- If the student asks about a programming concept, explain it clearly with visual examples.
+- Encourage students to think for themselves and experiment.
+- Do not include greetings.
 
 CRITICAL LANGUAGE RULE (MUST FOLLOW EXACTLY):
-1. Identify the exact language used in "Câu hỏi của sinh viên" (user_question).
+1. Identify the exact language used in the "Student's question" (user_question).
 2. You MUST reply entirely in that EXACT same language.
-   - If user_question is in English (e.g., "hello", "hi"), you MUST reply 100% in English.
-   - If user_question is in Vietnamese, you MUST reply 100% in Vietnamese.
-Do NOT mix languages. Do NOT use Vietnamese if the user_question is in English. Use a friendly and encouraging tone. Format as Markdown.
+   - If the student's question is in English (e.g., "can u explain...", "help me"), you MUST translate any necessary context and reply 100% in English.
+   - If the student's question is in Vietnamese, you MUST reply 100% in Vietnamese.
+Do NOT mix languages. DO NOT use Vietnamese if the student's question is in English. Use a friendly and encouraging tone. Format as Markdown.
 """,
         input_variables=["unit_context", "user_question"],
     )
@@ -354,11 +353,11 @@ Hãy đánh giá bài code theo các tiêu chí sau:
 3. Code có được tối ưu hay không? Giải thích chi tiết lý do. Nếu chưa tối ưu thì gợi ý cách tối ưu. Chỉ gợi ý phần code có thể tối ưu, KHÔNG gợi ý lại toàn bộ code.
 
 CRITICAL LANGUAGE RULE (MUST FOLLOW EXACTLY):
-1. Identify the exact language used in "Đề bài" (question).
-2. You MUST reply entirely in that EXACT same language.
-   - If the question is in English, you MUST reply 100% in English.
-   - If the question is in Vietnamese, you MUST reply 100% in Vietnamese.
-Do NOT mix languages. Format as Markdown according to the following template:
+IMPORTANT: You must DETECT the language of the task (Đề bài / question).
+- If the task is in English, your ENTIRE response MUST be in English.
+- If the task is in Vietnamese, your ENTIRE response MUST be in Vietnamese.
+- DO NOT use Vietnamese if the task is in English.
+Format as Markdown according to the following template:
 
 - Lưu ý TUYỆT ĐỐI KHÔNG TÍNH LÀ SAI và KHÔNG CẦN GỢI Ý SỬA nếu:
 - Cách nhập input của sinh viên vẫn chạy code đúng logic dù không đúng yêu cầu đề bài (input dưới dạng int) và không nhắc nhở điều này trong phần đánh giá. Ví dụ int(input()) thì đã đúng là nhập string trước rồi ép về int nên vẫn đúng logic.
@@ -386,11 +385,11 @@ Hãy hướng dẫn các bước giải pháp để giải quyết bài toán n�
 - Các bước của thuật toán, Có thể đưa ra code mẫu minh họa NGẮN tương ứng từng bước, KHÔNG gợi ý lại toàn bộ code. Chỉ liệt kê các bước thuật toán.
 
 CRITICAL LANGUAGE RULE (MUST FOLLOW EXACTLY):
-1. Identify the exact language used in "Đề bài" (question).
-2. You MUST reply entirely in that EXACT same language.
-   - If the question is in English, you MUST reply 100% in English.
-   - If the question is in Vietnamese, you MUST reply 100% in Vietnamese.
-Do NOT mix languages. Format as Markdown according to the following template:
+IMPORTANT: You must DETECT the language of the task (Đề bài / question).
+- If the task is in English, your ENTIRE response MUST be in English.
+- If the task is in Vietnamese, your ENTIRE response MUST be in Vietnamese.
+- DO NOT use Vietnamese if the task is in English.
+Format as Markdown according to the following template:
 
 ### II. Hướng dẫn giải pháp
 1. **Phương pháp giải quyết vấn đề**: 
@@ -416,11 +415,11 @@ Lưu ý TUYỆT ĐỐI KHÔNG TÍNH LÀ SAI và KHÔNG CẦN GỢI Ý SỬA nế
 - Đầu ra code là số nguyên hay chuỗi số đều chấp nhận miễn là kết quả đúng.
 
 CRITICAL LANGUAGE RULE (MUST FOLLOW EXACTLY):
-1. Identify the exact language used in "Đề bài" (question).
-2. You MUST reply entirely in that EXACT same language.
-   - If the question is in English, you MUST reply 100% in English.
-   - If the question is in Vietnamese, you MUST reply 100% in Vietnamese.
-Do NOT mix languages. Format as Markdown according to the following template:
+IMPORTANT: You must DETECT the language of the task (Đề bài / question).
+- If the task is in English, your ENTIRE response MUST be in English.
+- If the task is in Vietnamese, your ENTIRE response MUST be in Vietnamese.
+- DO NOT use Vietnamese if the task is in English.
+Format as Markdown according to the following template:
 
 ### III.Kết luận
 Dùng phong cách khen hoặc chê theo phong cách động viên, khích lệ
@@ -437,39 +436,38 @@ async def func_chatbot_qa_non_stream(question: str, answer: str, user_question: 
     intent_result = await detect_user_intent(user_question, context=focus_topic_text)
 
     if not intent_result.is_safe or intent_result.intent == "OFF_TOPIC":
-        return "Xin lỗi, câu hỏi của bạn không phù hợp hoặc không liên quan đến bài tập/khóa học hiện tại. Vui lòng đặt câu hỏi khác."
+        return "Xin lỗi, câu hỏi của bạn không phù hợp hoặc không liên quan đến bài tập/khóa học hiện tại. Vui lòng đặt câu hỏi khác. / Sorry, your question is inappropriate or unrelated to the current course/exercise. Please ask another question."
         
     if intent_result.intent == "SOLUTION_HUNTING":
-        return "Tôi có thể hướng dẫn tư duy và các bước giải thuật toán, nhưng sẽ không viết sẵn code hoàn chỉnh cho bạn. Bạn cần hỗ trợ bước nào?"
+        return "Tôi có thể hướng dẫn tư duy và các bước giải thuật toán, nhưng sẽ không viết sẵn code hoàn chỉnh cho bạn. Bạn cần hỗ trợ bước nào? / I can guide your thinking and algorithm steps, but I will not write the complete code for you. Which step do you need help with?"
 
-    intent_note = f"\nLƯU Ý QUAN TRỌNG TỪ HỆ THỐNG: Người dùng đang có ý định (Intent) là {intent_result.intent}. Bạn cần phục vụ đúng mục đích này.\n"
+    intent_note = f"\nSYSTEM NOTE: The user's intent is {intent_result.intent}. You must serve this intent.\n"
     if topic_name:
-        intent_note += f"Đảm bảo nội dung thuộc chủ đề: {topic_name}.\n"
+        intent_note += f"Ensure the content relates to the topic: {topic_name}.\n"
     
     prompt = PromptTemplate(
         template="""
-Đề bài: {question}
-Bài code của sinh viên: {answer}
+You are an AI assistant helping students learn programming.
 
-Câu hỏi của sinh viên: {user_question}
+Problem Statement (Đề bài): {question}
+Student's Code (Bài code): {answer}
+
 {focus_topic}
 
-Bạn là trợ lý AI hỗ trợ sinh viên học lập trình. Hãy trả lời câu hỏi của sinh viên dựa trên ngữ cảnh đề bài và bài code của họ.
+Student's Question (Câu hỏi của sinh viên): {user_question}
 
-QUY TẮC QUAN TRỌNG:
-- TUYỆT ĐỐI KHÔNG đưa ra đáp án hoàn chỉnh hoặc code mẫu giải bài tập
-- TUYỆT ĐỐI KHÔNG viết lại toàn bộ code đúng cho sinh viên
-- CHỈ hướng dẫn, gợi ý hướng đi, giải thích khái niệm, phân tích logic
-- Nếu sinh viên hỏi về lỗi cụ thể trong code của họ, CHỈ chỉ ra lỗi và gợi ý cách suy nghĩ để sửa, KHÔNG sửa code giúp họ
-- Nếu sinh viên hỏi về khái niệm, hãy đưa ra ví dụ đơn giản nhưng không cung cấp giải pháp trực tiếp cho phần bài tập họ đang làm
-- Không cần chào.
+CRITICAL RULES:
+- Do NOT provide the complete solution or full code snippet.
+- Only guide, suggest directions, explain concepts, and analyze logic.
+- If the student asks about a specific error, point out the error and hint at how to fix it, do NOT fix the code for them.
+- Use a friendly and encouraging tone. Format as Markdown.
 
 CRITICAL LANGUAGE RULE (MUST FOLLOW EXACTLY):
-1. Identify the exact language used in "Câu hỏi của sinh viên" (user_question).
+1. Identify the exact language used in the "Student's Question" (user_question).
 2. You MUST reply entirely in that EXACT same language.
-   - If user_question is in English (e.g., "hello", "hi"), you MUST reply 100% in English.
-   - If user_question is in Vietnamese, you MUST reply 100% in Vietnamese.
-Do NOT mix languages. Do NOT use Vietnamese if the user_question is in English. Use a friendly and encouraging tone. Format as Markdown.
+   - If the student's question is in English (e.g., "can u explain...", "help me"), you MUST translate any necessary context and reply 100% in English.
+   - If the student's question is in Vietnamese, you MUST reply 100% in Vietnamese.
+Do NOT mix languages. DO NOT use Vietnamese if the student's question is in English.
 """,
         input_variables=["question", "answer", "user_question", "focus_topic"],
     )
@@ -485,33 +483,33 @@ Do NOT mix languages. Do NOT use Vietnamese if the user_question is in English. 
 async def func_chatbot_unit_non_stream(id_unit: str, user_question: str, field_type: str = "programming") -> str:
     unit_context = await fetch_unit_info(id_unit, field_type)
     
-    ai_role = "học lập trình" if field_type == "programming" else "trong quá trình học tập"
-    rules = """- TUYỆT ĐỐI KHÔNG đưa ra đáp án hoàn chỉnh hoặc code mẫu giải bài tập nếu sinh viên yêu cầu giải hộ.
-- CHỈ hướng dẫn, gợi ý hướng đi, giải thích khái niệm, phân tích logic.
-- Nếu sinh viên hỏi về khái niệm lập trình thì hãy giải thích rõ ràng và có ví dụ trực quan.
-- Khuyến khích sinh viên tự suy nghĩ và thử nghiệm.""" if field_type == "programming" else """- Hướng dẫn sinh viên tự tìm ra câu trả lời dựa trên bài học.
-- CHỈ hướng dẫn, gợi ý hướng đi, giải thích khái niệm liên quan đến bài học.
-- Khuyến khích sinh viên tự suy nghĩ và tìm hiểu.
-- KHÔNG đưa ra đáp án trực tiếp cho bài tập/câu hỏi bài kiểm tra."""
+    ai_role = "learning programming" if field_type == "programming" else "during their studies"
+    rules = """- NEVER provide a complete solution or full code if the student asks you to solve an exercise for them.
+- ONLY guide, suggest directions, explain concepts, and analyze logic.
+- If the student asks about a programming concept, explain it clearly with visual examples.
+- Encourage students to think for themselves and experiment.""" if field_type == "programming" else """- Guide students to find the answer themselves based on the lesson.
+- ONLY guide, suggest directions, and explain concepts related to the lesson.
+- Encourage students to think for themselves and research.
+- DO NOT provide direct answers for exercises/test questions."""
     
     prompt = PromptTemplate(
         template=f"""
 {{unit_context}}
 
-Câu hỏi của sinh viên: {{user_question}}
+Student's question: {{user_question}}
 
-Bạn là trợ lý AI hỗ trợ sinh viên {ai_role}. Hãy trả lời câu hỏi của sinh viên dựa trên thông tin bài học được cung cấp ở trên.
+You are an AI assistant helping students {ai_role}. Answer the student's question based on the provided lesson context above.
 
-QUY TẮC QUAN TRỌNG:
+IMPORTANT RULES:
 {rules}
-- Không cần chào.
+- Do not include greetings.
 
 CRITICAL LANGUAGE RULE (MUST FOLLOW EXACTLY):
-1. Identify the exact language used in "Câu hỏi của sinh viên" (user_question).
+1. Identify the exact language used in the "Student's question" (user_question).
 2. You MUST reply entirely in that EXACT same language.
-   - If user_question is in English (e.g., "hello", "hi"), you MUST reply 100% in English.
-   - If user_question is in Vietnamese, you MUST reply 100% in Vietnamese.
-Do NOT mix languages. Do NOT use Vietnamese if the user_question is in English. Use a friendly and encouraging tone. Format as Markdown.
+   - If the student's question is in English (e.g., "can u explain...", "help me"), you MUST translate any necessary context and reply 100% in English.
+   - If the student's question is in Vietnamese, you MUST reply 100% in Vietnamese.
+Do NOT mix languages. DO NOT use Vietnamese if the student's question is in English. Use a friendly and encouraging tone. Format as Markdown.
 """,
         input_variables=["unit_context", "user_question"],
     )
@@ -734,11 +732,11 @@ QUY TẮC QUAN TRỌNG:
 - Không cần chào.
 
 CRITICAL LANGUAGE RULE (MUST FOLLOW EXACTLY):
-1. Identify the exact language used in "Câu hỏi của sinh viên" (user_question).
-2. You MUST reply entirely in that EXACT same language.
-   - If user_question is in English (e.g., "hello", "hi"), you MUST reply 100% in English.
-   - If user_question is in Vietnamese, you MUST reply 100% in Vietnamese.
-Do NOT mix languages. Do NOT use Vietnamese if the user_question is in English. Use a friendly and encouraging tone. Format as Markdown.
+IMPORTANT: You must DETECT the language of the student's question (user_question).
+- If the student's question is in English, your ENTIRE response MUST be in English.
+- If the student's question is in Vietnamese, your ENTIRE response MUST be in Vietnamese.
+- DO NOT use Vietnamese if the student's question is in English.
+Use a friendly and encouraging tone. Format as Markdown.
 """,
             input_variables=["unit_context", "user_question"],
         )
@@ -823,26 +821,26 @@ async def func_chatbot_simple_non_stream(question: str, user_id: Optional[str] =
     intent_result = await detect_user_intent(question, context=history_text)
 
     if not intent_result.is_safe or intent_result.intent == "OFF_TOPIC":
-        return "Xin lỗi, câu hỏi của bạn không phù hợp với mục đích học tập hoặc vi phạm quy tắc. Vui lòng đặt câu hỏi khác."
+        return "Xin lỗi, câu hỏi của bạn không phù hợp với mục đích học tập hoặc vi phạm quy tắc. Vui lòng đặt câu hỏi khác. / Sorry, your question is inappropriate for learning purposes or violates rules. Please ask another question."
     
     prompt = PromptTemplate(
-        template="""Bạn là trợ lý AI thông minh và thân thiện, chuyên hỗ trợ các vấn đề về lập trình, review code, đánh giá code, và học tập.
+        template="""You are a smart and friendly AI assistant, specializing in programming support, code review, code evaluation, and general learning.
 
-Ngữ cảnh (Intent phân tích: {intent}): Hãy trả lời phù hợp với ý định này.
+Context (Analyzed Intent: {intent}): Please respond appropriately to this intent.
 {chat_history}
-Câu hỏi hiện tại của người dùng: {question}
+User's current question: {question}
 {user_context}
 
-QUY TẮC QUAN TRỌNG:
-1. Trả lời một cách rõ ràng, chính xác và hữu ích
-2. Sử dụng giọng điệu thân thiện, chuyên nghiệp, động viên
-3. Nếu không chắc chắn về thông tin, hãy thừa nhận và đề xuất cách tìm hiểu thêm
-4. Nếu người dùng hỏi bài tập, chỉ hướng dẫn chứ KHÔNG giải hộ 100%.
-5. Khuyến khích người dùng tự học và khám phá
-6. Nếu có lịch sử trò chuyện, hãy tham khảo để nhận diện ngữ cảnh liên tục.
+IMPORTANT RULES:
+1. Answer clearly, accurately, and helpfully.
+2. Use a friendly, professional, and encouraging tone.
+3. If unsure about information, admit it and suggest how to find out more.
+4. If the user asks about an exercise, ONLY guide them, DO NOT solve it 100% for them.
+5. Encourage users to self-study and explore.
+6. If there is a chat history, refer to it to maintain context.
 
 CRITICAL LANGUAGE RULE (MUST FOLLOW EXACTLY):
-1. Identify the exact language used in "Câu hỏi hiện tại của người dùng" (question).
+1. Identify the exact language used in the "User's current question" (question).
 2. You MUST reply entirely in that EXACT same language.
    - If the question is in English (e.g., "hello", "hi"), you MUST reply 100% in English.
    - If the question is in Vietnamese, you MUST reply 100% in Vietnamese.
@@ -876,28 +874,28 @@ async def chatbot_simple_stream_logic(request: ChatbotSimpleRequest, token: Opti
     intent_result = await detect_user_intent(request.question, context=history_text)
     
     if not intent_result.is_safe or intent_result.intent == "OFF_TOPIC":
-        raise HTTPException(status_code=400, detail="Xin lỗi, câu hỏi của bạn không phù hợp hoặc vi phạm tiêu chuẩn cộng đồng. Vui lòng đặt câu hỏi khác.")
+        raise HTTPException(status_code=400, detail="Xin lỗi, câu hỏi của bạn không phù hợp hoặc vi phạm tiêu chuẩn cộng đồng. Vui lòng đặt câu hỏi khác. / Sorry, your question is inappropriate or violates community standards. Please ask another question.")
 
     async def generator():
         full_response = ""
         prompt = PromptTemplate(
-            template="""Bạn là trợ lý AI thông minh và thân thiện, chuyên hỗ trợ các vấn đề liên quan đến đại học số và học tập lập trình.
+            template="""You are a smart and friendly AI assistant, specializing in issues related to digital university and programming learning.
 
-Ngữ cảnh (Intent phân tích: {intent}): Hãy trả lời phù hợp với ý định này.
+Context (Analyzed Intent: {intent}): Please respond appropriately to this intent.
 {chat_history}
-Câu hỏi hiện tại của người dùng: {question}
+User's current question: {question}
 {user_context}
 
-QUY TẮC QUAN TRỌNG:
-1. Trả lời một cách rõ ràng, chính xác và hữu ích
-2. Sử dụng giọng điệu thân thiện, chuyên nghiệp, động viên
-3. Nếu không chắc chắn về thông tin, hãy thừa nhận và đề xuất cách tìm hiểu thêm
-4. Nếu người dùng hỏi bài tập, chỉ hướng dẫn chứ KHÔNG giải hộ 100%.
-5. Khuyến khích người dùng tự học và khám phá
-6. Nếu có lịch sử trò chuyện, hãy tham khảo để nhận diện ngữ cảnh liên tục.
+IMPORTANT RULES:
+1. Answer clearly, accurately, and helpfully.
+2. Use a friendly, professional, and encouraging tone.
+3. If unsure about information, admit it and suggest how to find out more.
+4. If the user asks about an exercise, ONLY guide them, DO NOT solve it 100% for them.
+5. Encourage users to self-study and explore.
+6. If there is a chat history, refer to it to maintain context.
 
 CRITICAL LANGUAGE RULE (MUST FOLLOW EXACTLY):
-1. Identify the exact language used in "Câu hỏi hiện tại của người dùng" (question).
+1. Identify the exact language used in the "User's current question" (question).
 2. You MUST reply entirely in that EXACT same language.
    - If the question is in English (e.g., "hello", "hi"), you MUST reply 100% in English.
    - If the question is in Vietnamese, you MUST reply 100% in Vietnamese.
