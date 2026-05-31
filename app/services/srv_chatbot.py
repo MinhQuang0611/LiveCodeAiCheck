@@ -41,10 +41,12 @@ Hãy đánh giá bài code theo các tiêu chí sau:
 2. Code có tuân theo convention của ngôn ngữ mà sinh viên đang code hay không? Giải thích chi tiết lý do. Đặc biệt, cần kiểm tra xem code có tuân thủ chuẩn lập trình thi đấu (competitive programming) hay không.
 3. Code có được tối ưu hay không? Giải thích chi tiết lý do. Nếu chưa tối ưu thì gợi ý cách tối ưu. Chỉ gợi ý phần code có thể tối ưu, KHÔNG gợi ý lại toàn bộ code.
 
-QUY TẮC QUAN TRỌNG VỀ NGÔN NGỮ:
-Bạn PHẢI phát hiện ngôn ngữ được sử dụng trong Đề bài (question) và trả lời HOÀN TOÀN bằng ngôn ngữ đó. 
-Ví dụ: Nếu Đề bài bằng tiếng Anh, bạn phải trả lời bằng tiếng Anh. Nếu Đề bài bằng tiếng Việt, bạn phải trả lời bằng tiếng Việt.
-Trả về kết quả dạng Markdown để dễ đọc theo mẫu sau:
+CRITICAL LANGUAGE RULE (MUST FOLLOW EXACTLY):
+1. Identify the exact language used in "Đề bài" (question).
+2. You MUST reply entirely in that EXACT same language.
+   - If the question is in English, you MUST reply 100% in English.
+   - If the question is in Vietnamese, you MUST reply 100% in Vietnamese.
+Do NOT mix languages. Format as Markdown according to the following template:
 
 - Lưu ý TUYỆT ĐỐI KHÔNG TÍNH LÀ SAI và KHÔNG CẦN GỢI Ý SỬA nếu:
 - Cách nhập input của sinh viên vẫn chạy code đúng logic dù không đúng yêu cầu đề bài (input dưới dạng int) và không nhắc nhở điều này trong phần đánh giá. Ví dụ int(input()) thì đã đúng là nhập string trước rồi ép về int nên vẫn đúng logic.
@@ -72,10 +74,12 @@ Hãy hướng dẫn các bước giải pháp để giải quyết bài toán n�
 - Phương pháp giải quyết vấn đề
 - Các bước của thuật toán, Có thể đưa ra code mẫu minh họa NGẮN tương ứng từng bước, KHÔNG gợi ý lại toàn bộ code. Chỉ liệt kê các bước thuật toán.
 
-QUY TẮC QUAN TRỌNG VỀ NGÔN NGỮ:
-Bạn PHẢI phát hiện ngôn ngữ được sử dụng trong Đề bài (question) và trả lời HOÀN TOÀN bằng ngôn ngữ đó. 
-Ví dụ: Nếu Đề bài bằng tiếng Anh, bạn phải trả lời bằng tiếng Anh. Nếu Đề bài bằng tiếng Việt, bạn phải trả lời bằng tiếng Việt.
-Trả về kết quả dạng Markdown để dễ đọc theo mẫu sau:
+CRITICAL LANGUAGE RULE (MUST FOLLOW EXACTLY):
+1. Identify the exact language used in "Đề bài" (question).
+2. You MUST reply entirely in that EXACT same language.
+   - If the question is in English, you MUST reply 100% in English.
+   - If the question is in Vietnamese, you MUST reply 100% in Vietnamese.
+Do NOT mix languages. Format as Markdown according to the following template:
 
 ### II. Hướng dẫn giải pháp
 1. **Phương pháp giải quyết vấn đề**: 
@@ -102,10 +106,12 @@ Lưu ý TUYỆT ĐỐI KHÔNG TÍNH LÀ SAI và KHÔNG CẦN GỢI Ý SỬA nế
 - Kết quả sau print là đúng dù không đúng định dạng chuỗi (chuỗi số) và không nhắc nhở điều này trong phần đánh giá. Ví dụ print(num1 + num2) thì vẫn đúng vì kết quả vẫn đúng dù không đúng định dạng chuỗi (chuỗi số).
 - Đầu ra code là số nguyên hay chuỗi số đều chấp nhận miễn là kết quả đúng.
 
-QUY TẮC QUAN TRỌNG VỀ NGÔN NGỮ:
-Bạn PHẢI phát hiện ngôn ngữ được sử dụng trong Đề bài (question) và trả lời HOÀN TOÀN bằng ngôn ngữ đó. 
-Ví dụ: Nếu Đề bài bằng tiếng Anh, bạn phải trả lời bằng tiếng Anh. Nếu Đề bài bằng tiếng Việt, bạn phải trả lời bằng tiếng Việt.
-Trả về kết quả dạng Markdown để dễ đọc theo mẫu sau:
+CRITICAL LANGUAGE RULE (MUST FOLLOW EXACTLY):
+1. Identify the exact language used in "Đề bài" (question).
+2. You MUST reply entirely in that EXACT same language.
+   - If the question is in English, you MUST reply 100% in English.
+   - If the question is in Vietnamese, you MUST reply 100% in Vietnamese.
+Do NOT mix languages. Format as Markdown according to the following template:
 
 ### III.Kết luận
 Dùng phong cách khen hoặc chê theo phong cách động viên, khích lệ
@@ -208,11 +214,12 @@ QUY TẮC QUAN TRỌNG:
 - Nếu sinh viên hỏi về khái niệm, hãy đưa ra ví dụ đơn giản nhưng không cung cấp giải pháp trực tiếp cho phần bài tập họ đang làm
 - Không cần chào.
 
-QUY TẮC QUAN TRỌNG VỀ NGÔN NGỮ:
-Bạn PHẢI TRẢ LỜI HOÀN TOÀN bằng ngôn ngữ mà sinh viên sử dụng trong câu hỏi (user_question).
-- Nếu câu hỏi bằng tiếng Anh -> Trả lời 100% bằng tiếng Anh.
-- Nếu câu hỏi bằng tiếng Việt -> Trả lời 100% bằng tiếng Việt.
-Tuyệt đối không sử dụng ngôn ngữ khác với ngôn ngữ của câu hỏi. Xưng hô thân mật, giọng điệu thân thiện, động viên. Trả về kết quả dạng Markdown để dễ đọc.
+CRITICAL LANGUAGE RULE (MUST FOLLOW EXACTLY):
+1. Identify the exact language used in "Câu hỏi của sinh viên" (user_question).
+2. You MUST reply entirely in that EXACT same language.
+   - If user_question is in English (e.g., "hello", "hi"), you MUST reply 100% in English.
+   - If user_question is in Vietnamese, you MUST reply 100% in Vietnamese.
+Do NOT mix languages. Do NOT use Vietnamese if the user_question is in English. Use a friendly and encouraging tone. Format as Markdown.
 """,
         input_variables=["question", "answer", "user_question", "focus_topic"],
     )
@@ -286,11 +293,12 @@ QUY TẮC QUAN TRỌNG:
 - Khuyến khích sinh viên tự suy nghĩ và thử nghiệm.
 - Không cần chào.
 
-QUY TẮC QUAN TRỌNG VỀ NGÔN NGỮ:
-Bạn PHẢI TRẢ LỜI HOÀN TOÀN bằng ngôn ngữ mà sinh viên sử dụng trong câu hỏi (user_question).
-- Nếu câu hỏi bằng tiếng Anh -> Trả lời 100% bằng tiếng Anh.
-- Nếu câu hỏi bằng tiếng Việt -> Trả lời 100% bằng tiếng Việt.
-Tuyệt đối không sử dụng ngôn ngữ khác với ngôn ngữ của câu hỏi. Xưng hô thân mật, giọng điệu thân thiện, động viên. Trả về kết quả dạng Markdown để dễ đọc.
+CRITICAL LANGUAGE RULE (MUST FOLLOW EXACTLY):
+1. Identify the exact language used in "Câu hỏi của sinh viên" (user_question).
+2. You MUST reply entirely in that EXACT same language.
+   - If user_question is in English (e.g., "hello", "hi"), you MUST reply 100% in English.
+   - If user_question is in Vietnamese, you MUST reply 100% in Vietnamese.
+Do NOT mix languages. Do NOT use Vietnamese if the user_question is in English. Use a friendly and encouraging tone. Format as Markdown.
 """,
         input_variables=["unit_context", "user_question"],
     )
@@ -345,10 +353,12 @@ Hãy đánh giá bài code theo các tiêu chí sau:
 2. Code có tuân theo convention của ngôn ngữ mà sinh viên đang code hay không? Giải thích chi tiết lý do. Đặc biệt, cần kiểm tra xem code có tuân thủ chuẩn lập trình thi đấu (competitive programming) hay không.
 3. Code có được tối ưu hay không? Giải thích chi tiết lý do. Nếu chưa tối ưu thì gợi ý cách tối ưu. Chỉ gợi ý phần code có thể tối ưu, KHÔNG gợi ý lại toàn bộ code.
 
-QUY TẮC QUAN TRỌNG VỀ NGÔN NGỮ:
-Bạn PHẢI phát hiện ngôn ngữ được sử dụng trong Đề bài (question) và trả lời HOÀN TOÀN bằng ngôn ngữ đó. 
-Ví dụ: Nếu Đề bài bằng tiếng Anh, bạn phải trả lời bằng tiếng Anh. Nếu Đề bài bằng tiếng Việt, bạn phải trả lời bằng tiếng Việt.
-Trả về kết quả dạng Markdown để dễ đọc theo mẫu sau:
+CRITICAL LANGUAGE RULE (MUST FOLLOW EXACTLY):
+1. Identify the exact language used in "Đề bài" (question).
+2. You MUST reply entirely in that EXACT same language.
+   - If the question is in English, you MUST reply 100% in English.
+   - If the question is in Vietnamese, you MUST reply 100% in Vietnamese.
+Do NOT mix languages. Format as Markdown according to the following template:
 
 - Lưu ý TUYỆT ĐỐI KHÔNG TÍNH LÀ SAI và KHÔNG CẦN GỢI Ý SỬA nếu:
 - Cách nhập input của sinh viên vẫn chạy code đúng logic dù không đúng yêu cầu đề bài (input dưới dạng int) và không nhắc nhở điều này trong phần đánh giá. Ví dụ int(input()) thì đã đúng là nhập string trước rồi ép về int nên vẫn đúng logic.
@@ -375,10 +385,12 @@ Hãy hướng dẫn các bước giải pháp để giải quyết bài toán n�
 - Phương pháp giải quyết vấn đề
 - Các bước của thuật toán, Có thể đưa ra code mẫu minh họa NGẮN tương ứng từng bước, KHÔNG gợi ý lại toàn bộ code. Chỉ liệt kê các bước thuật toán.
 
-QUY TẮC QUAN TRỌNG VỀ NGÔN NGỮ:
-Bạn PHẢI phát hiện ngôn ngữ được sử dụng trong Đề bài (question) và trả lời HOÀN TOÀN bằng ngôn ngữ đó. 
-Ví dụ: Nếu Đề bài bằng tiếng Anh, bạn phải trả lời bằng tiếng Anh. Nếu Đề bài bằng tiếng Việt, bạn phải trả lời bằng tiếng Việt.
-Trả về kết quả dạng Markdown để dễ đọc theo mẫu sau:
+CRITICAL LANGUAGE RULE (MUST FOLLOW EXACTLY):
+1. Identify the exact language used in "Đề bài" (question).
+2. You MUST reply entirely in that EXACT same language.
+   - If the question is in English, you MUST reply 100% in English.
+   - If the question is in Vietnamese, you MUST reply 100% in Vietnamese.
+Do NOT mix languages. Format as Markdown according to the following template:
 
 ### II. Hướng dẫn giải pháp
 1. **Phương pháp giải quyết vấn đề**: 
@@ -403,10 +415,12 @@ Lưu ý TUYỆT ĐỐI KHÔNG TÍNH LÀ SAI và KHÔNG CẦN GỢI Ý SỬA nế
 - Kết quả sau print là đúng dù không đúng định dạng chuỗi (chuỗi số) và không nhắc nhở điều này trong phần đánh giá. Ví dụ print(num1 + num2) thì vẫn đúng vì kết quả vẫn đúng dù không đúng định dạng chuỗi (chuỗi số).
 - Đầu ra code là số nguyên hay chuỗi số đều chấp nhận miễn là kết quả đúng.
 
-QUY TẮC QUAN TRỌNG VỀ NGÔN NGỮ:
-Bạn PHẢI phát hiện ngôn ngữ được sử dụng trong Đề bài (question) và trả lời HOÀN TOÀN bằng ngôn ngữ đó. 
-Ví dụ: Nếu Đề bài bằng tiếng Anh, bạn phải trả lời bằng tiếng Anh. Nếu Đề bài bằng tiếng Việt, bạn phải trả lời bằng tiếng Việt.
-Trả về kết quả dạng Markdown để dễ đọc theo mẫu sau:
+CRITICAL LANGUAGE RULE (MUST FOLLOW EXACTLY):
+1. Identify the exact language used in "Đề bài" (question).
+2. You MUST reply entirely in that EXACT same language.
+   - If the question is in English, you MUST reply 100% in English.
+   - If the question is in Vietnamese, you MUST reply 100% in Vietnamese.
+Do NOT mix languages. Format as Markdown according to the following template:
 
 ### III.Kết luận
 Dùng phong cách khen hoặc chê theo phong cách động viên, khích lệ
@@ -450,11 +464,12 @@ QUY TẮC QUAN TRỌNG:
 - Nếu sinh viên hỏi về khái niệm, hãy đưa ra ví dụ đơn giản nhưng không cung cấp giải pháp trực tiếp cho phần bài tập họ đang làm
 - Không cần chào.
 
-QUY TẮC QUAN TRỌNG VỀ NGÔN NGỮ:
-Bạn PHẢI TRẢ LỜI HOÀN TOÀN bằng ngôn ngữ mà sinh viên sử dụng trong câu hỏi (user_question).
-- Nếu câu hỏi bằng tiếng Anh -> Trả lời 100% bằng tiếng Anh.
-- Nếu câu hỏi bằng tiếng Việt -> Trả lời 100% bằng tiếng Việt.
-Tuyệt đối không sử dụng ngôn ngữ khác với ngôn ngữ của câu hỏi. Xưng hô thân mật, giọng điệu thân thiện, động viên. Trả về kết quả dạng Markdown để dễ đọc.
+CRITICAL LANGUAGE RULE (MUST FOLLOW EXACTLY):
+1. Identify the exact language used in "Câu hỏi của sinh viên" (user_question).
+2. You MUST reply entirely in that EXACT same language.
+   - If user_question is in English (e.g., "hello", "hi"), you MUST reply 100% in English.
+   - If user_question is in Vietnamese, you MUST reply 100% in Vietnamese.
+Do NOT mix languages. Do NOT use Vietnamese if the user_question is in English. Use a friendly and encouraging tone. Format as Markdown.
 """,
         input_variables=["question", "answer", "user_question", "focus_topic"],
     )
@@ -491,11 +506,12 @@ QUY TẮC QUAN TRỌNG:
 {rules}
 - Không cần chào.
 
-QUY TẮC QUAN TRỌNG VỀ NGÔN NGỮ:
-Bạn PHẢI TRẢ LỜI HOÀN TOÀN bằng ngôn ngữ mà sinh viên sử dụng trong câu hỏi (user_question).
-- Nếu câu hỏi bằng tiếng Anh -> Trả lời 100% bằng tiếng Anh.
-- Nếu câu hỏi bằng tiếng Việt -> Trả lời 100% bằng tiếng Việt.
-Tuyệt đối không sử dụng ngôn ngữ khác với ngôn ngữ của câu hỏi. Xưng hô thân mật, giọng điệu thân thiện, động viên. Trả về kết quả dạng Markdown để dễ đọc.
+CRITICAL LANGUAGE RULE (MUST FOLLOW EXACTLY):
+1. Identify the exact language used in "Câu hỏi của sinh viên" (user_question).
+2. You MUST reply entirely in that EXACT same language.
+   - If user_question is in English (e.g., "hello", "hi"), you MUST reply 100% in English.
+   - If user_question is in Vietnamese, you MUST reply 100% in Vietnamese.
+Do NOT mix languages. Do NOT use Vietnamese if the user_question is in English. Use a friendly and encouraging tone. Format as Markdown.
 """,
         input_variables=["unit_context", "user_question"],
     )
@@ -717,11 +733,12 @@ QUY TẮC QUAN TRỌNG:
 {rules}
 - Không cần chào.
 
-QUY TẮC QUAN TRỌNG VỀ NGÔN NGỮ:
-Bạn PHẢI TRẢ LỜI HOÀN TOÀN bằng ngôn ngữ mà sinh viên sử dụng trong câu hỏi (user_question).
-- Nếu câu hỏi bằng tiếng Anh -> Trả lời 100% bằng tiếng Anh.
-- Nếu câu hỏi bằng tiếng Việt -> Trả lời 100% bằng tiếng Việt.
-Tuyệt đối không sử dụng ngôn ngữ khác với ngôn ngữ của câu hỏi. Xưng hô thân mật, giọng điệu thân thiện, động viên. Trả về kết quả dạng Markdown để dễ đọc.
+CRITICAL LANGUAGE RULE (MUST FOLLOW EXACTLY):
+1. Identify the exact language used in "Câu hỏi của sinh viên" (user_question).
+2. You MUST reply entirely in that EXACT same language.
+   - If user_question is in English (e.g., "hello", "hi"), you MUST reply 100% in English.
+   - If user_question is in Vietnamese, you MUST reply 100% in Vietnamese.
+Do NOT mix languages. Do NOT use Vietnamese if the user_question is in English. Use a friendly and encouraging tone. Format as Markdown.
 """,
             input_variables=["unit_context", "user_question"],
         )
@@ -824,11 +841,12 @@ QUY TẮC QUAN TRỌNG:
 5. Khuyến khích người dùng tự học và khám phá
 6. Nếu có lịch sử trò chuyện, hãy tham khảo để nhận diện ngữ cảnh liên tục.
 
-QUY TẮC QUAN TRỌNG VỀ NGÔN NGỮ:
-Bạn PHẢI TRẢ LỜI HOÀN TOÀN bằng ngôn ngữ mà người dùng sử dụng trong câu hỏi hiện tại (question).
-- Nếu câu hỏi bằng tiếng Anh -> Trả lời 100% bằng tiếng Anh.
-- Nếu câu hỏi bằng tiếng Việt -> Trả lời 100% bằng tiếng Việt.
-Tuyệt đối không sử dụng ngôn ngữ khác với ngôn ngữ của câu hỏi. Xưng hô thân mật, giọng điệu thân thiện, động viên. Trả về kết quả dạng Markdown để dễ đọc.
+CRITICAL LANGUAGE RULE (MUST FOLLOW EXACTLY):
+1. Identify the exact language used in "Câu hỏi hiện tại của người dùng" (question).
+2. You MUST reply entirely in that EXACT same language.
+   - If the question is in English (e.g., "hello", "hi"), you MUST reply 100% in English.
+   - If the question is in Vietnamese, you MUST reply 100% in Vietnamese.
+Do NOT mix languages. Do NOT use Vietnamese if the question is in English. Use a friendly and encouraging tone. Format as Markdown.
 """,
         input_variables=["question", "user_context", "chat_history", "intent"],
     )
@@ -878,11 +896,12 @@ QUY TẮC QUAN TRỌNG:
 5. Khuyến khích người dùng tự học và khám phá
 6. Nếu có lịch sử trò chuyện, hãy tham khảo để nhận diện ngữ cảnh liên tục.
 
-QUY TẮC QUAN TRỌNG VỀ NGÔN NGỮ:
-Bạn PHẢI TRẢ LỜI HOÀN TOÀN bằng ngôn ngữ mà người dùng sử dụng trong câu hỏi hiện tại (question).
-- Nếu câu hỏi bằng tiếng Anh -> Trả lời 100% bằng tiếng Anh.
-- Nếu câu hỏi bằng tiếng Việt -> Trả lời 100% bằng tiếng Việt.
-Tuyệt đối không sử dụng ngôn ngữ khác với ngôn ngữ của câu hỏi. Xưng hô thân mật, giọng điệu thân thiện, động viên. Trả về kết quả dạng Markdown để dễ đọc.
+CRITICAL LANGUAGE RULE (MUST FOLLOW EXACTLY):
+1. Identify the exact language used in "Câu hỏi hiện tại của người dùng" (question).
+2. You MUST reply entirely in that EXACT same language.
+   - If the question is in English (e.g., "hello", "hi"), you MUST reply 100% in English.
+   - If the question is in Vietnamese, you MUST reply 100% in Vietnamese.
+Do NOT mix languages. Do NOT use Vietnamese if the question is in English. Use a friendly and encouraging tone. Format as Markdown.
 """,
             input_variables=["question", "user_context", "chat_history", "intent"],
         )
