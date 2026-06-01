@@ -35,14 +35,16 @@ async def invoke_chain(prompt: PromptTemplate, inputs: dict) -> str:
 async def func_code_review(question: str, answer: str):
     prompt = PromptTemplate(
         template="""
-Đề bài: {question} Bài code của sinh viên: {answer}
-Hãy đánh giá bài code theo các tiêu chí sau:
-1. Code có chạy ra kết quả đúng theo yêu cầu đề bài hay không? Giải thích chi tiết lý do.
-2. Code có tuân theo convention của ngôn ngữ mà sinh viên đang code hay không? Giải thích chi tiết lý do. Đặc biệt, cần kiểm tra xem code có tuân thủ chuẩn lập trình thi đấu (competitive programming) hay không.
-3. Code có được tối ưu hay không? Giải thích chi tiết lý do. Nếu chưa tối ưu thì gợi ý cách tối ưu. Chỉ gợi ý phần code có thể tối ưu, KHÔNG gợi ý lại toàn bộ code.
+Problem Statement: {question}
+Student's Code: {answer}
+
+Please evaluate the code based on the following criteria:
+1. Does the code produce the correct result according to the problem requirements? Provide a detailed explanation.
+2. Does the code follow the conventions of the programming language used? Provide a detailed explanation. Specifically, check if the code adheres to competitive programming standards.
+3. Is the code optimized? Provide a detailed explanation. If not, suggest optimizations. ONLY suggest the part of the code that can be optimized, DO NOT provide the entire refactored code.
 
 CRITICAL LANGUAGE RULE (MUST FOLLOW EXACTLY):
-1. Identify the exact language used in the task (Đề bài / question).
+1. Identify the exact language used in the task (Problem Statement / question).
 2. You MUST reply entirely in that EXACT same language.
    - If the task is in English, you MUST translate any necessary context and reply 100% in English.
    - If the task is in Vietnamese, you MUST reply 100% in Vietnamese.
@@ -50,14 +52,14 @@ Do NOT mix languages. DO NOT use Vietnamese if the task is in English.
 If responding in English, you MUST translate the Markdown template headers below into English.
 Format as Markdown according to the following template:
 
-- Lưu ý TUYỆT ĐỐI KHÔNG TÍNH LÀ SAI và KHÔNG CẦN GỢI Ý SỬA nếu:
-- Cách nhập input của sinh viên vẫn chạy code đúng logic dù không đúng yêu cầu đề bài (input dưới dạng int) và không nhắc nhở điều này trong phần đánh giá. Ví dụ int(input()) thì đã đúng là nhập string trước rồi ép về int nên vẫn đúng logic.
-- Kết quả sau print là đúng dù không đúng định dạng chuỗi (chuỗi số) và không nhắc nhở điều này trong phần đánh giá. Ví dụ print(num1 + num2) thì vẫn đúng vì kết quả vẫn đúng dù không đúng định dạng chuỗi (chuỗi số).
-- Đầu ra code là số nguyên hay chuỗi số đều chấp nhận miễn là kết quả đúng.
-I. Đánh giá tổng quan
-Kết quả đúng theo yêu cầu đề bài: Trả lời cho mục 1. Khen hoặc chê theo phong cách động viên, khích lệ, Nếu sai thì chỉ ra phần code trích từ bài code rồi gợi ý cách sửa. Nhưng KHÔNG gợi ý lại toàn bộ code. Rồi giải thích chi tiết lý do.
-Tuân theo chuẩn tắc lập trình: Trả lời cho mục 2 (Phần này sẽ bao gồm cả nhận xét về chuẩn lập trình thi đấu: không dùng prompt trong input, không comment).
-Tối ưu: Trả lời cho mục 3
+- ABSOLUTELY DO NOT COUNT AS INCORRECT AND NO SUGGESTIONS NEEDED IF:
+- The student's input method still runs correctly logically even if it doesn't strictly follow the problem format (e.g., input as int) and do not mention this in the review. For example, int(input()) is correct logic because it takes a string first and casts to int.
+- The result after print is correct despite incorrect string format (numeric string) and do not mention this in the review. For example, print(num1 + num2) is still correct as long as the mathematical result is correct.
+- Code output being an integer or numeric string is acceptable as long as the result is correct.
+I. General Evaluation
+Correctness based on problem requirements: Answer for criterion 1. Praise or give constructive feedback in an encouraging tone. If incorrect, point out the specific code snippet and suggest how to fix it, but DO NOT provide the entire code. Then explain the reason in detail.
+Adherence to coding standards: Answer for criterion 2 (This includes competitive programming comments: do not use prompt in input, do not leave unnecessary comments).
+Optimization: Answer for criterion 3
 """,
         input_variables=["question", "answer"],
     )
@@ -69,15 +71,15 @@ Tối ưu: Trả lời cho mục 3
 async def func_solution_guidance(question: str, answer: str):
     prompt = PromptTemplate(
         template="""
-Đề bài: {question}
-Bài code của sinh viên: {answer}
+Problem Statement: {question}
+Student's Code: {answer}
 
-Hãy hướng dẫn các bước giải pháp để giải quyết bài toán này:
-- Phương pháp giải quyết vấn đề
-- Các bước của thuật toán, Có thể đưa ra code mẫu minh họa NGẮN tương ứng từng bước, KHÔNG gợi ý lại toàn bộ code. Chỉ liệt kê các bước thuật toán.
+Please guide the solution steps to solve this problem:
+- Problem-solving method
+- Algorithm steps. You may provide SHORT pseudo-code snippets corresponding to each step, but DO NOT provide the complete code. Only list the algorithm steps.
 
 CRITICAL LANGUAGE RULE (MUST FOLLOW EXACTLY):
-1. Identify the exact language used in the task (Đề bài / question).
+1. Identify the exact language used in the task (Problem Statement / question).
 2. You MUST reply entirely in that EXACT same language.
    - If the task is in English, you MUST translate any necessary context and reply 100% in English.
    - If the task is in Vietnamese, you MUST reply 100% in Vietnamese.
@@ -85,10 +87,10 @@ Do NOT mix languages. DO NOT use Vietnamese if the task is in English.
 If responding in English, you MUST translate the Markdown template headers below into English.
 Format as Markdown according to the following template:
 
-### II. Hướng dẫn giải pháp
-1. **Phương pháp giải quyết vấn đề**: 
-2. **Các bước của thuật toán**: 
-- LƯU Ý: trong phần các bước của thuật toán tuyệt đối không trả về code mẫu minh họa hay là code đúng, chỉ trả về theo lời giải theo bước và mã giả của bước đó.
+### II. Solution Guidance
+1. **Problem-solving method**: 
+2. **Algorithm steps**: 
+- NOTE: In the algorithm steps section, absolutely DO NOT return illustrative code or correct code, ONLY return step-by-step explanations and pseudo-code for that step.
 """,
         input_variables=["question", "answer"],
     )
@@ -101,17 +103,17 @@ Format as Markdown according to the following template:
 async def func_check_correctness(question: str, answer: str):
     prompt = PromptTemplate(
         template="""
-Đề bài: {question}
-Bài code của sinh viên: {answer}
+Problem Statement: {question}
+Student's Code: {answer}
 
-Hãy kiểm tra xem bài code có đáp ứng đúng yêu cầu đề bài hay không và kết luận lại. Nếu không thì giải thích lý do. KHÔNG gợi ý lại toàn bộ code. Trả lời 1 đoạn ngắn gọn.
-Lưu ý TUYỆT ĐỐI KHÔNG TÍNH LÀ SAI và KHÔNG CẦN GỢI Ý SỬA nếu: 
-- Cách nhập input của sinh viên vẫn chạy code đúng logic dù không đúng yêu cầu đề bài (input dưới dạng int) và không nhắc nhở điều này trong phần đánh giá. Ví dụ int(input()) thì đã đúng là nhập string trước rồi ép về int nên vẫn đúng logic.
-- Kết quả sau print là đúng dù không đúng định dạng chuỗi (chuỗi số) và không nhắc nhở điều này trong phần đánh giá. Ví dụ print(num1 + num2) thì vẫn đúng vì kết quả vẫn đúng dù không đúng định dạng chuỗi (chuỗi số).
-- Đầu ra code là số nguyên hay chuỗi số đều chấp nhận miễn là kết quả đúng.
+Please check if the code correctly meets the problem requirements and conclude. If not, explain why. DO NOT provide the entire code. Answer in a short paragraph.
+ABSOLUTELY DO NOT COUNT AS INCORRECT AND NO SUGGESTIONS NEEDED IF:
+- The student's input method still runs correctly logically even if it doesn't strictly follow the problem format (e.g., input as int) and do not mention this in the review. For example, int(input()) is correct logic because it takes a string first and casts to int.
+- The result after print is correct despite incorrect string format (numeric string) and do not mention this in the review. For example, print(num1 + num2) is still correct as long as the mathematical result is correct.
+- Code output being an integer or numeric string is acceptable as long as the result is correct.
 
 CRITICAL LANGUAGE RULE (MUST FOLLOW EXACTLY):
-1. Identify the exact language used in the task (Đề bài / question).
+1. Identify the exact language used in the task (Problem Statement / question).
 2. You MUST reply entirely in that EXACT same language.
    - If the task is in English, you MUST translate any necessary context and reply 100% in English.
    - If the task is in Vietnamese, you MUST reply 100% in Vietnamese.
@@ -119,8 +121,8 @@ Do NOT mix languages. DO NOT use Vietnamese if the task is in English.
 If responding in English, you MUST translate the Markdown template headers below into English.
 Format as Markdown according to the following template:
 
-### III.Kết luận
-Dùng phong cách khen hoặc chê theo phong cách động viên, khích lệ
+### III. Conclusion
+Use a praising or constructive tone that is encouraging.
 """,
         input_variables=["question", "answer"],
     )
@@ -132,18 +134,22 @@ Dùng phong cách khen hoặc chê theo phong cách động viên, khích lệ
 async def detect_user_intent(user_question: str, context: str = "") -> IntentDetectionResult:
     """Sử dụng LLM để phân tích ý định của người dùng"""
     prompt = PromptTemplate.from_template("""
-Bạn là một hệ thống phân tích ý định (Intent Router) cho Chatbot AI trong lĩnh vực giáo dục lập trình và đại học số.
-Bạn hãy phân tích quyết định ý định chính của người dùng (Intent) theo cấu trúc quy định.
+You are an Intent Router system for an AI Chatbot in the field of programming education and digital university.
+Please analyze and determine the user's primary intent (Intent) and detect the language used by the user according to the specified structure.
 
-Ngữ cảnh hiện tại: {context}
-Câu hỏi của người dùng: {user_question}
+Current Context: {context}
+User's Question: {user_question}
 
-Các quy tắc cho Intent:
-- CONCEPT_EXPLANATION: Hỏi về lý thuyết, khái niệm, ý nghĩa (Vd: "vòng lặp for là gì?").
-- CODE_REVIEW_DEBUG: Yêu cầu sửa lỗi code, tìm bug, tối ưu, giải thích lỗi hệ thống trả về.
-- SOLUTION_HUNTING: Đòi hỏi đưa thuật toán hoặc code giải sẵn hoàn chỉnh mà chưa tự làm.
-- CHITCHAT: Giao tiếp thông thường (chào, cảm ơn, hỏi thăm...).
-- OFF_TOPIC: Câu hỏi lan man về đề tài phi giáo dục, chính trị, nhảm nhí. Tham số is_safe nên để False nếu có nội dung chửi thề, vi phạm đạo đức, đe doạ. Câu trò chuyện bình thường vẫn là CHITCHAT và is_safe=True.
+Rules for Intent:
+- CONCEPT_EXPLANATION: Asking about theory, concepts, meaning (e.g., "what is a for loop?").
+- CODE_REVIEW_DEBUG: Requesting code fixes, finding bugs, optimization, explaining system error returns.
+- SOLUTION_HUNTING: Demanding a complete algorithm or full code solution without trying themselves.
+- CHITCHAT: Casual conversation (greetings, thanks, small talk...).
+- OFF_TOPIC: Rambling questions about non-educational topics, politics, nonsense. The is_safe parameter should be False if it contains profanity, unethical content, or threats. Normal chitchat is still CHITCHAT and is_safe=True.
+
+Rules for Language classification:
+- Return "English": If the "User's Question" (user_question) is written in English.
+- Return "Vietnamese": If the "User's Question" (user_question) is written in Vietnamese.
 """)
     structured_llm = llm.with_structured_output(IntentDetectionResult)
     chain = prompt | structured_llm
@@ -160,13 +166,13 @@ async def check_topic_relevance(user_question: str, topic_name: str) -> bool:
     
     prompt = PromptTemplate(
         template="""
-Chủ đề của session: {topic_name}
-Câu hỏi của người dùng: {user_question}
+Session Topic: {topic_name}
+User's Question: {user_question}
 
-Hãy đánh giá xem câu hỏi của người dùng có liên quan đến chủ đề "{topic_name}" hay không.
+Please evaluate if the user's question is related to the topic "{topic_name}".
 
-Trả lời CHỈ bằng một từ: "CÓ" nếu câu hỏi liên quan đến chủ đề, "KHÔNG" nếu không liên quan.
-Không giải thích thêm, chỉ trả lời "CÓ" hoặc "KHÔNG".
+Answer ONLY with one word: "YES" if the question is related to the topic, "NO" if it is not related.
+Do not explain further, just answer "YES" or "NO".
 """,
         input_variables=["topic_name", "user_question"],
     )
@@ -181,7 +187,7 @@ Không giải thích thêm, chỉ trả lời "CÓ" hoặc "KHÔNG".
 
 
 async def func_chatbot_qa(question: str, answer: str, user_question: str, topic_name: Optional[str] = None):
-    focus_topic_text = f"Đề bài/Ngữ cảnh: {question}\nBài code sinh viên: {answer}" if question else f"Chủ đề session: {topic_name}"
+    focus_topic_text = f"Problem/Context: {question}\nStudent's Code: {answer}" if question else f"Session Topic: {topic_name}"
 
     intent_result = await detect_user_intent(user_question, context=focus_topic_text)
     print(f"Intent detection result: {intent_result.model_dump_json()}")
@@ -204,12 +210,12 @@ async def func_chatbot_qa(question: str, answer: str, user_question: str, topic_
         template="""
 You are an AI assistant helping students learn programming.
 
-Problem Statement (Đề bài): {question}
-Student's Code (Bài code): {answer}
+Problem Statement: {question}
+Student's Code: {answer}
 
 {focus_topic}
 
-Student's Question (Câu hỏi của sinh viên): {user_question}
+Student's Question: {user_question}
 
 CRITICAL RULES:
 - Do NOT provide the complete solution or full code snippet.
@@ -254,19 +260,19 @@ async def fetch_unit_info(id_param: str, field_type: str = "programming") -> str
                 raise HTTPException(status_code=404, detail="Không tìm thấy thông tin bài học.")
             
             unit_data = data["data"]
-            context = "Thông tin bài học (Context):\n"
+            context = "Lesson Context:\n"
             if unit_data.get("idUnit"):
-                context += f"- Mã bài học (idUnit): {unit_data['idUnit']}\n"
+                context += f"- Unit ID: {unit_data['idUnit']}\n"
             if unit_data.get("summary"):
-                context += f"- Tóm tắt: {unit_data['summary']}\n"
+                context += f"- Summary: {unit_data['summary']}\n"
             if unit_data.get("outline"):
-                context += f"- Chi tiết Outline: {unit_data['outline']}\n"
+                context += f"- Outline Details: {unit_data['outline']}\n"
             if field_type == "programming" and unit_data.get("programmingLanguage"):
-                context += f"- Ngôn ngữ lập trình được sử dụng trong bài học: {unit_data['programmingLanguage']}\n"
+                context += f"- Programming Language used in the lesson: {unit_data['programmingLanguage']}\n"
             if unit_data.get("examples"):
-                context += f"- Code mẫu (Examples): {unit_data['examples']}\n"
+                context += f"- Code Examples: {unit_data['examples']}\n"
             if unit_data.get("extraInfo"):
-                context += f"- Thông tin thêm: {unit_data['extraInfo']}\n"
+                context += f"- Extra Info: {unit_data['extraInfo']}\n"
             return context
     except HTTPException:
         raise
@@ -350,14 +356,16 @@ async def func_code_review_non_stream(question: str, answer: str) -> str:
     """Non-streaming version - returns complete result"""
     prompt = PromptTemplate(
         template="""
-Đề bài: {question} Bài code của sinh viên: {answer}
-Hãy đánh giá bài code theo các tiêu chí sau:
-1. Code có chạy ra kết quả đúng theo yêu cầu đề bài hay không? Giải thích chi tiết lý do.
-2. Code có tuân theo convention của ngôn ngữ mà sinh viên đang code hay không? Giải thích chi tiết lý do. Đặc biệt, cần kiểm tra xem code có tuân thủ chuẩn lập trình thi đấu (competitive programming) hay không.
-3. Code có được tối ưu hay không? Giải thích chi tiết lý do. Nếu chưa tối ưu thì gợi ý cách tối ưu. Chỉ gợi ý phần code có thể tối ưu, KHÔNG gợi ý lại toàn bộ code.
+Problem Statement: {question}
+Student's Code: {answer}
+
+Please evaluate the code based on the following criteria:
+1. Does the code produce the correct result according to the problem requirements? Provide a detailed explanation.
+2. Does the code follow the conventions of the programming language used? Provide a detailed explanation. Specifically, check if the code adheres to competitive programming standards.
+3. Is the code optimized? Provide a detailed explanation. If not, suggest optimizations. ONLY suggest the part of the code that can be optimized, DO NOT provide the entire refactored code.
 
 CRITICAL LANGUAGE RULE (MUST FOLLOW EXACTLY):
-1. Identify the exact language used in the task (Đề bài / question).
+1. Identify the exact language used in the task (Problem Statement / question).
 2. You MUST reply entirely in that EXACT same language.
    - If the task is in English, you MUST translate any necessary context and reply 100% in English.
    - If the task is in Vietnamese, you MUST reply 100% in Vietnamese.
@@ -365,14 +373,14 @@ Do NOT mix languages. DO NOT use Vietnamese if the task is in English.
 If responding in English, you MUST translate the Markdown template headers below into English.
 Format as Markdown according to the following template:
 
-- Lưu ý TUYỆT ĐỐI KHÔNG TÍNH LÀ SAI và KHÔNG CẦN GỢI Ý SỬA nếu:
-- Cách nhập input của sinh viên vẫn chạy code đúng logic dù không đúng yêu cầu đề bài (input dưới dạng int) và không nhắc nhở điều này trong phần đánh giá. Ví dụ int(input()) thì đã đúng là nhập string trước rồi ép về int nên vẫn đúng logic.
-- Kết quả sau print là đúng dù không đúng định dạng chuỗi (chuỗi số) và không nhắc nhở điều này trong phần đánh giá. Ví dụ print(num1 + num2) thì vẫn đúng vì kết quả vẫn đúng dù không đúng định dạng chuỗi (chuỗi số).
-- Đầu ra code là số nguyên hay chuỗi số đều chấp nhận miễn là kết quả đúng.
-I. Đánh giá tổng quan
-Kết quả đúng theo yêu cầu đề bài: Trả lời cho mục 1. Khen hoặc chê theo phong cách động viên, khích lệ, Nếu sai thì chỉ ra phần code trích từ bài code rồi gợi ý cách sửa. Nhưng KHÔNG gợi ý lại toàn bộ code. Rồi giải thích chi tiết lý do.
-Tuân theo chuẩn tắc lập trình: Trả lời cho mục 2 (Phần này sẽ bao gồm cả nhận xét về chuẩn lập trình thi đấu: không dùng prompt trong input, không comment).
-Tối ưu: Trả lời cho mục 3
+- ABSOLUTELY DO NOT COUNT AS INCORRECT AND NO SUGGESTIONS NEEDED IF:
+- The student's input method still runs correctly logically even if it doesn't strictly follow the problem format (e.g., input as int) and do not mention this in the review. For example, int(input()) is correct logic because it takes a string first and casts to int.
+- The result after print is correct despite incorrect string format (numeric string) and do not mention this in the review. For example, print(num1 + num2) is still correct as long as the mathematical result is correct.
+- Code output being an integer or numeric string is acceptable as long as the result is correct.
+I. General Evaluation
+Correctness based on problem requirements: Answer for criterion 1. Praise or give constructive feedback in an encouraging tone. If incorrect, point out the specific code snippet and suggest how to fix it, but DO NOT provide the entire code. Then explain the reason in detail.
+Adherence to coding standards: Answer for criterion 2 (This includes competitive programming comments: do not use prompt in input, do not leave unnecessary comments).
+Optimization: Answer for criterion 3
 """,
         input_variables=["question", "answer"],
     )
@@ -383,15 +391,15 @@ async def func_solution_guidance_non_stream(question: str, answer: str) -> str:
     """Non-streaming version - returns complete result"""
     prompt = PromptTemplate(
         template="""
-Đề bài: {question}
-Bài code của sinh viên: {answer}
+Problem Statement: {question}
+Student's Code: {answer}
 
-Hãy hướng dẫn các bước giải pháp để giải quyết bài toán này:
-- Phương pháp giải quyết vấn đề
-- Các bước của thuật toán, Có thể đưa ra code mẫu minh họa NGẮN tương ứng từng bước, KHÔNG gợi ý lại toàn bộ code. Chỉ liệt kê các bước thuật toán.
+Please guide the solution steps to solve this problem:
+- Problem-solving method
+- Algorithm steps. You may provide SHORT pseudo-code snippets corresponding to each step, but DO NOT provide the complete code. Only list the algorithm steps.
 
 CRITICAL LANGUAGE RULE (MUST FOLLOW EXACTLY):
-1. Identify the exact language used in the task (Đề bài / question).
+1. Identify the exact language used in the task (Problem Statement / question).
 2. You MUST reply entirely in that EXACT same language.
    - If the task is in English, you MUST translate any necessary context and reply 100% in English.
    - If the task is in Vietnamese, you MUST reply 100% in Vietnamese.
@@ -399,10 +407,10 @@ Do NOT mix languages. DO NOT use Vietnamese if the task is in English.
 If responding in English, you MUST translate the Markdown template headers below into English.
 Format as Markdown according to the following template:
 
-### II. Hướng dẫn giải pháp
-1. **Phương pháp giải quyết vấn đề**: 
-2. **Các bước của thuật toán**: 
-- LƯU Ý: trong phần các bước của thuật toán tuyệt đối không trả về code mẫu minh họa hay là code đúng, chỉ trả về theo lời giải theo bước và mã giả của bước đó.
+### II. Solution Guidance
+1. **Problem-solving method**: 
+2. **Algorithm steps**: 
+- NOTE: In the algorithm steps section, absolutely DO NOT return illustrative code or correct code, ONLY return step-by-step explanations and pseudo-code for that step.
 """,
         input_variables=["question", "answer"],
     )
@@ -413,17 +421,17 @@ async def func_check_correctness_non_stream(question: str, answer: str) -> str:
     """Non-streaming version - returns complete result"""
     prompt = PromptTemplate(
         template="""
-Đề bài: {question}
-Bài code của sinh viên: {answer}
+Problem Statement: {question}
+Student's Code: {answer}
 
-Hãy kiểm tra xem bài code có đáp ứng đúng yêu cầu đề bài hay không và kết luận lại. Nếu không thì giải thích lý do. KHÔNG gợi ý lại toàn bộ code. Trả lời 1 đoạn ngắn gọn.
-Lưu ý TUYỆT ĐỐI KHÔNG TÍNH LÀ SAI và KHÔNG CẦN GỢI Ý SỬA nếu: 
-- Cách nhập input của sinh viên vẫn chạy code đúng logic dù không đúng yêu cầu đề bài (input dưới dạng int) và không nhắc nhở điều này trong phần đánh giá. Ví dụ int(input()) thì đã đúng là nhập string trước rồi ép về int nên vẫn đúng logic.
-- Kết quả sau print là đúng dù không đúng định dạng chuỗi (chuỗi số) và không nhắc nhở điều này trong phần đánh giá. Ví dụ print(num1 + num2) thì vẫn đúng vì kết quả vẫn đúng dù không đúng định dạng chuỗi (chuỗi số).
-- Đầu ra code là số nguyên hay chuỗi số đều chấp nhận miễn là kết quả đúng.
+Please check if the code correctly meets the problem requirements and conclude. If not, explain why. DO NOT provide the entire code. Answer in a short paragraph.
+ABSOLUTELY DO NOT COUNT AS INCORRECT AND NO SUGGESTIONS NEEDED IF:
+- The student's input method still runs correctly logically even if it doesn't strictly follow the problem format (e.g., input as int) and do not mention this in the review. For example, int(input()) is correct logic because it takes a string first and casts to int.
+- The result after print is correct despite incorrect string format (numeric string) and do not mention this in the review. For example, print(num1 + num2) is still correct as long as the mathematical result is correct.
+- Code output being an integer or numeric string is acceptable as long as the result is correct.
 
 CRITICAL LANGUAGE RULE (MUST FOLLOW EXACTLY):
-1. Identify the exact language used in the task (Đề bài / question).
+1. Identify the exact language used in the task (Problem Statement / question).
 2. You MUST reply entirely in that EXACT same language.
    - If the task is in English, you MUST translate any necessary context and reply 100% in English.
    - If the task is in Vietnamese, you MUST reply 100% in Vietnamese.
@@ -431,8 +439,8 @@ Do NOT mix languages. DO NOT use Vietnamese if the task is in English.
 If responding in English, you MUST translate the Markdown template headers below into English.
 Format as Markdown according to the following template:
 
-### III.Kết luận
-Dùng phong cách khen hoặc chê theo phong cách động viên, khích lệ
+### III. Conclusion
+Use a praising or constructive tone that is encouraging.
 """,
         input_variables=["question", "answer"],
     )
@@ -441,7 +449,7 @@ Dùng phong cách khen hoặc chê theo phong cách động viên, khích lệ
 
 async def func_chatbot_qa_non_stream(question: str, answer: str, user_question: str, topic_name: Optional[str] = None) -> str:
     """Non-streaming version - returns complete result"""
-    focus_topic_text = f"Đề bài/Ngữ cảnh: {question}\nBài code sinh viên: {answer}" if question else f"Chủ đề session: {topic_name}"
+    focus_topic_text = f"Problem/Context: {question}\nStudent's Code: {answer}" if question else f"Session Topic: {topic_name}"
 
     intent_result = await detect_user_intent(user_question, context=focus_topic_text)
 
@@ -459,12 +467,12 @@ async def func_chatbot_qa_non_stream(question: str, answer: str, user_question: 
         template="""
 You are an AI assistant helping students learn programming.
 
-Problem Statement (Đề bài): {question}
-Student's Code (Bài code): {answer}
+Problem Statement: {question}
+Student's Code: {answer}
 
 {focus_topic}
 
-Student's Question (Câu hỏi của sinh viên): {user_question}
+Student's Question: {user_question}
 
 CRITICAL RULES:
 - Do NOT provide the complete solution or full code snippet.
@@ -719,27 +727,27 @@ async def chatbot_unit_stream_logic(request: ChatbotUnitRequest, token: Optional
     async def generator():
         full_response = ""
         
-        ai_role = "học lập trình" if request.field == "programming" else "trong quá trình học tập"
-        rules = """- TUYỆT ĐỐI KHÔNG đưa ra đáp án hoàn chỉnh hoặc code mẫu giải bài tập nếu sinh viên yêu cầu giải hộ.
-- CHỈ hướng dẫn, gợi ý hướng đi, giải thích khái niệm, phân tích logic.
-- Nếu sinh viên hỏi về khái niệm lập trình thì hãy giải thích rõ ràng và có ví dụ trực quan.
-- Khuyến khích sinh viên tự suy nghĩ và thử nghiệm.""" if request.field == "programming" else """- Hướng dẫn sinh viên tự tìm ra câu trả lời dựa trên bài học.
-- CHỈ hướng dẫn, gợi ý hướng đi, giải thích khái niệm liên quan đến bài học.
-- Khuyến khích sinh viên tự suy nghĩ và tìm hiểu.
-- KHÔNG đưa ra đáp án trực tiếp cho bài tập/câu hỏi bài kiểm tra."""
+        ai_role = "learn programming" if request.field == "programming" else "during their studies"
+        rules = """- NEVER provide a complete solution or full code if the student asks you to solve an exercise for them.
+- ONLY guide, suggest directions, explain concepts, and analyze logic.
+- If the student asks about a programming concept, explain it clearly with visual examples.
+- Encourage students to think for themselves and experiment.""" if request.field == "programming" else """- Guide students to find the answer themselves based on the lesson.
+- ONLY guide, suggest directions, and explain concepts related to the lesson.
+- Encourage students to think for themselves and research.
+- DO NOT provide direct answers for exercises/test questions."""
 
         # Create a new version of func_chatbot_unit here or just use stream_chain directly
         prompt = PromptTemplate(
             template=f"""
 {{unit_context}}
 
-Câu hỏi của sinh viên: {{user_question}}
+Student's question: {{user_question}}
 
-Bạn là trợ lý AI hỗ trợ sinh viên {ai_role}. Hãy trả lời câu hỏi của sinh viên dựa trên thông tin bài học được cung cấp ở trên.
+You are an AI assistant helping students {ai_role}. Answer the student's question based on the provided lesson context above.
 
-QUY TẮC QUAN TRỌNG:
+IMPORTANT RULES:
 {rules}
-- Không cần chào.
+- Do not include greetings.
 
 CRITICAL LANGUAGE RULE (MUST FOLLOW EXACTLY):
 1. Identify the exact language used in the "Student's question" (user_question).
@@ -807,7 +815,7 @@ def _format_chat_history(chat_history: Optional[List]) -> str:
     if not chat_history:
         return ""
     
-    history_text = "\n\nLịch sử cuộc trò chuyện trước đó:\n"
+    history_text = "\n\nPrevious Chat History:\n"
     for msg in chat_history:
         # Xử lý cả Dict và Pydantic model
         if isinstance(msg, dict):
@@ -819,9 +827,9 @@ def _format_chat_history(chat_history: Optional[List]) -> str:
             content = getattr(msg, "content", "")
         
         if role == "user":
-            history_text += f"Người dùng: {content}\n"
+            history_text += f"User: {content}\n"
         elif role == "assistant":
-            history_text += f"Trợ lý: {content}\n"
+            history_text += f"Assistant: {content}\n"
     
     return history_text
 
@@ -860,7 +868,7 @@ Do NOT mix languages. Do NOT use Vietnamese if the question is in English. Use a
         input_variables=["question", "user_context", "chat_history", "intent"],
     )
     
-    user_context = f"\nNgười dùng ID: {user_id}" if user_id else ""
+    user_context = f"\nUser ID: {user_id}" if user_id else ""
     
     return await invoke_chain(prompt, {
         "question": question,
@@ -916,7 +924,7 @@ Do NOT mix languages. Do NOT use Vietnamese if the question is in English. Use a
             input_variables=["question", "user_context", "chat_history", "intent"],
         )
         
-        user_context = f"\nNgười dùng ID: {final_user_id}" if final_user_id else ""
+        user_context = f"\nUser ID: {final_user_id}" if final_user_id else ""
         
         async for chunk in stream_chain(prompt, {"question": request.question, "user_context": user_context, "chat_history": history_text, "intent": intent_result.intent}):
             full_response += chunk
