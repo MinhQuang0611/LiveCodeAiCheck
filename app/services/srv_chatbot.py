@@ -14,6 +14,7 @@ from app.core.config import llm, settings
 from app.services.srv_session import create_session, get_session_by_id, get_topic_by_id
 from app.services.srv_message import create_message
 from app.utils.chat_history import save_chat_history, load_chat_history
+from app.utils.chatbot_intent_guard import is_false_off_topic_for_current_context
 from app.utils.exception_handler import CustomException
 from fastapi import HTTPException
 from app.schemas.sche_chatbot import ChatbotQARequest, ChatbotTopicRequest, ChatbotSimpleRequest, ChatbotUnitRequest, IntentDetectionResult
@@ -138,11 +139,17 @@ Các quy tắc cho Intent:
 - SOLUTION_HUNTING: Đòi hỏi đưa thuật toán hoặc code giải sẵn hoàn chỉnh mà chưa tự làm.
 - CHITCHAT: Giao tiếp thông thường (chào, cảm ơn, hỏi thăm...).
 - OFF_TOPIC: Câu hỏi lan man về đề tài phi giáo dục, chính trị, nhảm nhí. Tham số is_safe nên để False nếu có nội dung chửi thề, vi phạm đạo đức, đe doạ. Câu trò chuyện bình thường vẫn là CHITCHAT và is_safe=True.
+
+Lưu ý bắt buộc:
+- Nếu ngữ cảnh hiện tại có đề bài hoặc code, các câu hỏi tham chiếu như "bài này làm như thế nào",
+  "đề này giải sao", "code này sai ở đâu", "giải thích bài này" luôn liên quan tới bài học hiện tại,
+  KHÔNG được phân loại là OFF_TOPIC.
 """)
     structured_llm = llm.with_structured_output(IntentDetectionResult)
     chain = prompt | structured_llm
     result = await chain.ainvoke({"context": context, "user_question": user_question})
     return result
+
 
 async def check_topic_relevance(user_question: str, topic_name: str) -> bool:
     """
@@ -180,7 +187,16 @@ async def func_chatbot_qa(question: str, answer: str, user_question: str, topic_
     intent_result = await detect_user_intent(user_question, context=focus_topic_text)
     print(f"Intent detection result: {intent_result.model_dump_json()}")
 
-    if not intent_result.is_safe or intent_result.intent == "OFF_TOPIC":
+    false_off_topic = is_false_off_topic_for_current_context(
+        intent=intent_result.intent,
+        is_safe=intent_result.is_safe,
+        question=question,
+        answer=answer,
+        user_question=user_question,
+        topic_name=topic_name,
+    )
+
+    if not intent_result.is_safe or (intent_result.intent == "OFF_TOPIC" and not false_off_topic):
         message = "Xin lỗi, câu hỏi của bạn không phù hợp hoặc không liên quan đến bài tập/khóa học hiện tại. Vui lòng đặt câu hỏi khác. / Sorry, your question is inappropriate or unrelated to the current course/exercise. Please ask another question."
         for char in message:
             yield char
@@ -192,7 +208,8 @@ async def func_chatbot_qa(question: str, answer: str, user_question: str, topic_
             yield char
         return
 
-    intent_note = f"\nSYSTEM NOTE: The user's intent is {intent_result.intent}. You must serve this intent.\n"
+    effective_intent = "CONCEPT_EXPLANATION" if false_off_topic else intent_result.intent
+    intent_note = f"\nSYSTEM NOTE: The user's intent is {effective_intent}. You must serve this intent.\n"
     if topic_name:
         intent_note += f"Ensure the content relates to the topic: {topic_name}.\n"
     
@@ -435,13 +452,23 @@ async def func_chatbot_qa_non_stream(question: str, answer: str, user_question: 
 
     intent_result = await detect_user_intent(user_question, context=focus_topic_text)
 
-    if not intent_result.is_safe or intent_result.intent == "OFF_TOPIC":
+    false_off_topic = is_false_off_topic_for_current_context(
+        intent=intent_result.intent,
+        is_safe=intent_result.is_safe,
+        question=question,
+        answer=answer,
+        user_question=user_question,
+        topic_name=topic_name,
+    )
+
+    if not intent_result.is_safe or (intent_result.intent == "OFF_TOPIC" and not false_off_topic):
         return "Xin lỗi, câu hỏi của bạn không phù hợp hoặc không liên quan đến bài tập/khóa học hiện tại. Vui lòng đặt câu hỏi khác. / Sorry, your question is inappropriate or unrelated to the current course/exercise. Please ask another question."
         
     if intent_result.intent == "SOLUTION_HUNTING":
         return "Tôi có thể hướng dẫn tư duy và các bước giải thuật toán, nhưng sẽ không viết sẵn code hoàn chỉnh cho bạn. Bạn cần hỗ trợ bước nào? / I can guide your thinking and algorithm steps, but I will not write the complete code for you. Which step do you need help with?"
 
-    intent_note = f"\nSYSTEM NOTE: The user's intent is {intent_result.intent}. You must serve this intent.\n"
+    effective_intent = "CONCEPT_EXPLANATION" if false_off_topic else intent_result.intent
+    intent_note = f"\nSYSTEM NOTE: The user's intent is {effective_intent}. You must serve this intent.\n"
     if topic_name:
         intent_note += f"Ensure the content relates to the topic: {topic_name}.\n"
     
@@ -700,11 +727,18 @@ async def chatbot_unit_stream_logic(request: ChatbotUnitRequest, token: Optional
 
     await _persist_user_message(session_id, request.user_question, token)
 
-    # Thử fetch thông tin, nếu lỗi sẽ vang HTTPException ngay tại API router, chặn trả về HTTP 200
-    # Wait, fetch_unit_info requires request.id. But func_chatbot_unit ALSO fetches it!
-    # I should modify func_chatbot_unit or fetch it here.
-    # Ah! Since `func_chatbot_unit` fetches it inside the generator, we should just let `chatbot_unit_stream_logic` fetch it!
-    unit_context = await fetch_unit_info(request.id, getattr(request, 'field', 'programming'))
+    try:
+        unit_context = await fetch_unit_info(request.id, getattr(request, 'field', 'programming'))
+    except HTTPException as e:
+        print(f"Fallback chatbot_unit_stream to simple chatbot because unit context fetch failed: {e.detail}")
+
+        async def fallback_generator():
+            res = await func_chatbot_simple_non_stream(request.user_question)
+            for chunk in res:
+                yield chunk
+            await _persist_assistant_message(session_id, res, token)
+
+        return fallback_generator()
 
     async def generator():
         full_response = ""
@@ -762,7 +796,11 @@ async def chatbot_unit_non_stream_logic(request: ChatbotUnitRequest, token: Opti
 
     await _persist_user_message(session_id, request.user_question, token)
 
-    res = await func_chatbot_unit_non_stream(request.id, request.user_question, getattr(request, 'field', 'programming'))
+    try:
+        res = await func_chatbot_unit_non_stream(request.id, request.user_question, getattr(request, 'field', 'programming'))
+    except HTTPException as e:
+        print(f"Fallback chatbot_unit_non_stream to simple chatbot because unit context fetch failed: {e.detail}")
+        res = await func_chatbot_simple_non_stream(request.user_question)
 
     await _persist_assistant_message(session_id, res, token)
     return res
